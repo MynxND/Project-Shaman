@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import { castingEnvelope, castPoseFrame, MEDIUM_PRESENTATION, NORWAY_PRESENTATION, JAPAN_PRESENTATION, MEDIUM_RELEASE_STYLE, SKILL_BEHAVIOR_POLICY, VFX_FAMILIES, WORLD_UNIT_PX, type BodyType, type SkillCastEvent } from '@shaman/shared';
+import { castingEnvelope, castPoseFrame, MEDIUM_PRESENTATION, NORWAY_PRESENTATION, JAPAN_PRESENTATION, RUSSIA_PRESENTATION, INDONESIA_PRESENTATION, THAILAND_PRESENTATION, MEDIUM_RELEASE_STYLE, SKILL_BEHAVIOR_POLICY, VFX_FAMILIES, WORLD_UNIT_PX, type BodyType, type SkillCastEvent } from '@shaman/shared';
 import { DARKNESS_DEPTH } from '../world/Lighting';
 import { RitualVfxLayer } from './RitualVfxLayer';
 import type { CharacterSprite } from '../characters/CharacterRig';
@@ -16,7 +16,7 @@ const castKey = (body: string, facing: string) => `skillcast:${body}:${facing}`;
 const fxKey = (id: string) => `skillfx:${id}`;
 const GLOW_KEY = 'light:glow';
 /** Cast poses for every in-game skill; nation circles and releases are drawn by NationVfxLayer. */
-const PRESENTATION = { ...NORWAY_PRESENTATION, ...JAPAN_PRESENTATION, ...MEDIUM_PRESENTATION };
+const PRESENTATION = { ...THAILAND_PRESENTATION, ...INDONESIA_PRESENTATION, ...RUSSIA_PRESENTATION, ...NORWAY_PRESENTATION, ...JAPAN_PRESENTATION, ...MEDIUM_PRESENTATION };
 
 interface Sheet { image: string; width: number; height: number; frames: number; anchor: { x: number; y: number }; scaleRatio?: number }
 interface Manifest { skills: { id: string; displayMs: number; effect: Sheet | null }[]; casts: Record<string, Record<string, Sheet>> }

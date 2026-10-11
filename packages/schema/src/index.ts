@@ -27,6 +27,9 @@ export const PlayerState = schema({
   runes: t.string().default(''),
   /** Onmyoji held talismans, oldest first, comma separated (Gogyō elements); '' for other jobs. */
   held: t.string().default(''),
+  /** Job gauge shown on the HUD: kind ('guard' Juggernaut 0–100, 'pamor' Keris stage 0–3, '' none) and value. */
+  gaugeKind: t.string().default(''),
+  gauge: t.number().default(0),
 }, 'PlayerState');
 export type PlayerState = InstanceType<typeof PlayerState>;
 export const CitizenState = schema({
@@ -43,6 +46,8 @@ export const MonsterState = schema({
   hp: t.number().default(1), hpMax: t.number().default(1),
   /** Active status ids, comma separated (shared MonsterStatus: mark, revealed, trapped, root, freeze, blind, bleed, slow). */
   statuses: t.string().default(''),
+  /** Stack counts, comma separated 'name:n' (Santet needles, Mor Phhee prai jumps). */
+  stacks: t.string().default(''),
 }, 'MonsterState');
 export type MonsterState = InstanceType<typeof MonsterState>;
 /** A skill's ground area for a while (rune traps, snow trail, falcon storm...). World units; owner = caster session. */

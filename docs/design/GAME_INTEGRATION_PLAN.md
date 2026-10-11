@@ -126,3 +126,11 @@ heals, buffs, Ofuda, Sun Pillar, resurrection; a shared player buff/debuff layer
 PROVISIONAL monster debuffs. Synced held ring, summons, zones, statuses; Japan circles/zones/summons/residue in the world;
 Invoke slot, talisman ring and buff bar in the HUD. Server + network tests pass; browser check pending.
 Details: docs/design/combat/JAPAN_COMBAT.md. Next: slice 4 Russia / Indonesia / Thailand.
+
+## Slice 4 result — Russia, Indonesia, Thailand (2026-10-11)
+Juggernaut Guard + tank kit, Taiga bleed hunt (scent dash + reset, execute, Undying Rage), Santet delayed needles +
+detonation + Voodoo Link, Keris poison / stealth / pamor stages / clone, Achan Saiyasat thread square + Hun Phayon +
+colossus, Mor Phhee jumping prai. Every active skill of Medium + 5 nations now runs on the server. New monster statuses
+(stun, fear, taunt, poison, heal block, cursed), player stealth, lethal saves, job gauge, monster stacks.
+Server tests pass; browser check pending (shared dev client stuck in an SSR head asset reload loop).
+Details: docs/design/combat/SLICE4_COMBAT.md. Next (per plan): persistence + accounts (Phase 4), then balance.

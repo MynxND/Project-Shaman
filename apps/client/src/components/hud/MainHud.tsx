@@ -12,6 +12,7 @@ import { SkillHotbar } from './SkillHotbar';
 import { RuneQueue } from './RuneQueue';
 import { GogyoRing } from './GogyoRing';
 import { BuffBar } from './BuffBar';
+import { JobGauge } from './JobGauge';
 import { StatusPanel } from './StatusPanel';
 import { TargetFrame } from './TargetFrame';
 import { TravelOverlay } from './TravelOverlay';
@@ -71,6 +72,7 @@ export function MainHud() {
       <RuneQueue />
       <GogyoRing />
       <BuffBar />
+      <JobGauge />
       <ChatPanel />
       {touch && <Joystick />}
       <Toasts />

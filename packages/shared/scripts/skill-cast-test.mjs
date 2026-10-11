@@ -50,3 +50,10 @@ assert.equal(castPoseFrame(0, 1500, 12, 0), Math.round(12 * 0.65), 'release star
 assert.equal(castPoseFrame(0, 1500, 12, castReleaseMs(12) + 1), null, 'pose ends after the release frames');
 assert.equal(castPoseFrame(100, 0, 12, null), null, 'instant skills have no pose');
 console.log('cast pose: steady-rate intro, ping-pong channel and release frames passed');
+// Game integration slices 1-4: every active skill of the 5 nations has a cast rule and a combat spec.
+{
+  const { SKILL_TREE, SKILL_BEHAVIOR_POLICY, castRule, combatSpec } = await import('../dist/index.js');
+  const missing = Object.values(SKILL_TREE).filter((k) => SKILL_BEHAVIOR_POLICY[k.behavior].hotbar && (!castRule(k.id) || !combatSpec(k.id)));
+  assert.deepEqual(missing.map((k) => k.id), [], 'every hotbar skill is castable in game');
+  console.log('skill casts: every active of Medium + 5 nations is castable in game passed');
+}

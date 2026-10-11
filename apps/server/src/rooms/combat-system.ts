@@ -7,6 +7,7 @@ import {
 import { HunterEffects } from './hunter-effects.js';
 import { RuneSeerEffects } from './rune-seer-effects.js';
 import { JapanEffects } from './japan-effects.js';
+import { NationsEffects } from './nations-effects.js';
 
 // Authoritative combat for one map room: monster spawning and AI, player basic attacks, skill effects on release,
 // damage, death, EXP/level-ups, loot, regeneration and player respawn. Numbers come from packages/shared/src/combat.ts
@@ -67,6 +68,8 @@ export class CombatSystem {
   readonly runeSeer: RuneSeerEffects;
   /** Onmyoji + Miko (talismans, Invoke spells, residue combos, shikigami, purification → blessing) and the player buff layer. */
   readonly japan: JapanEffects;
+  /** Russia, Indonesia and Thailand branches (Guard, blood hunt, needles, pamor, sacred thread + puppet, prai). */
+  readonly nations: NationsEffects;
   /** Walkable map with standing Ice Walls (players and monsters move on this). */
   walkMap: MapDefinition;
 
@@ -101,6 +104,19 @@ export class CombatSystem {
       isDown: (id) => this.isDown(id),
       walkMap: () => this.walkMap,
       reduceCooldown: (id, skillId, ms) => host.reduceCooldown(id, skillId, ms),
+    });
+    this.nations = new NationsEffects({
+      map: host.map, state: host.state, monsters: this.monsters, now: () => host.now(), rng: () => host.rng(), profile: (id) => host.profile(id),
+      setProfile: (id, p) => { host.setProfile(id, p); host.vitals(id); },
+      schedule: (delay, run) => this.pending.push({ at: host.now() + delay, run }),
+      damage: (m, amount, playerId, skill) => { if (m.state !== 'dead') this.damageMonster(m, amount, playerId, skill); },
+      status: (m, status, ms, source) => { host.broadcast({ type: 'status', target: m.id, status, ms, source }); this.sync(m); },
+      fx: (e) => host.broadcast({ type: 'skillfx', ...e }),
+      heal: (id, amount) => this.healPlayer(id, amount),
+      isDown: (id) => this.isDown(id),
+      walkMap: () => this.walkMap,
+      reduceCooldown: (id, skillId, ms) => host.reduceCooldown(id, skillId, ms),
+      cleanse: (id, count) => this.japan.cleanse(id, count),
     });
     const now = host.now();
     for (const region of host.map.spawnRegions ?? []) {
@@ -165,7 +181,7 @@ export class CombatSystem {
     const profile = this.host.profile(playerId);
     if (profile && !this.isDown(playerId) && NATION_SKILL_COMBAT[skillId]) {
       this.lastCombat.set(playerId, this.host.now());
-      if (!this.japan.release(playerId, skillId, targetId, aim) && !this.runeSeer.release(playerId, skillId, targetId, aim)) this.hunter.release(playerId, skillId, targetId, aim, variant);
+      if (!this.nations.release(playerId, skillId, targetId, aim) && !this.japan.release(playerId, skillId, targetId, aim) && !this.runeSeer.release(playerId, skillId, targetId, aim)) this.hunter.release(playerId, skillId, targetId, aim, variant);
       return;
     }
     const rule = SKILL_COMBAT[skillId];
@@ -204,8 +220,9 @@ export class CombatSystem {
 
   private damageMonster(m: MonsterMotion, raw: number, playerId: string, skill?: string) {
     // Player buffs/debuffs (curse, blessings, bonfire, kotodama, Oracle's Vision) scale every source of damage.
-    const amount = raw > 0 ? Math.max(1, Math.round(raw * this.japan.dealtMul(playerId, m))) : raw;
+    const amount = raw > 0 ? Math.max(1, Math.round(raw * this.japan.dealtMul(playerId, m) * this.nations.dealtMul(playerId, m))) : raw;
     m.hp -= amount;
+    this.nations.onDamage(m, amount, playerId, skill);
     this.lastCombat.set(playerId, this.host.now());
     this.host.broadcast({ type: 'damage', target: { kind: 'monster', id: m.id }, amount, source: playerId, ...(skill ? { skill } : {}) });
     if (m.hp > 0) { provokeMonster(m, playerId); this.sync(m); return; }
@@ -218,6 +235,7 @@ export class CombatSystem {
     m.state = 'dead'; m.hp = 0; m.targetId = null; m.swingAt = 0; m.statuses = {}; m.markedBy = undefined;
     this.sync(m);
     this.host.broadcast({ type: 'death', target: { kind: 'monster', id: m.id }, killer });
+    this.nations.onKill(killer, m);
     for (const [pid, a] of this.attacks) if (a.monsterId === m.id) this.attacks.delete(pid);
     if (m.summoned) {
       // Boss minions do not respawn: remove them once the death animation has played.
@@ -241,20 +259,22 @@ export class CombatSystem {
     if (levels > 0) this.host.broadcast({ type: 'levelup', player: killer, level: after.level });
   }
 
-  private hitPlayer(playerId: string, monster: MonsterMotion, fixed?: number) {
+  private hitPlayer(playerId: string, monster: MonsterMotion, fixed?: number, ranged = false) {
     const profile = this.host.profile(playerId);
     if (!profile || this.isDown(playerId)) return;
     const def = MONSTERS[monster.kind]!;
     // Suzu Bell flee dodges; then the hearth shield, kongō shield and damage-taken buffs (weaken, guard, ash barrier, Holy Ward).
-    if (this.japan.dodges(playerId)) { this.host.broadcast({ type: 'damage', target: { kind: 'player', id: playerId }, amount: 0, source: monster.id }); return; }
-    const amount = this.japan.taken(playerId, this.runeSeer.absorb(playerId, fixed ?? physicalDamage(def.atk, 0, this.host.rng())), monster);
+    if (this.japan.dodges(playerId) || this.nations.dodges(playerId)) { this.host.broadcast({ type: 'damage', target: { kind: 'player', id: playerId }, amount: 0, source: monster.id }); return; }
+    const amount = this.nations.taken(playerId, this.japan.taken(playerId, this.runeSeer.absorb(playerId, fixed ?? physicalDamage(def.atk, 0, this.host.rng())), monster), ranged);
     const p = structuredClone(profile);
     p.hp = Math.max(0, p.hp - amount);
+    // Undying Rage / Absolute Soul Defense may turn a lethal blow into a save (they set the new HP themselves).
+    if (p.hp <= 0 && this.nations.onLethal(playerId)) { this.host.broadcast({ type: 'damage', target: { kind: 'player', id: playerId }, amount, source: monster.id }); this.host.vitals(playerId); return; }
     this.lastCombat.set(playerId, this.host.now());
     this.lastHitBy.set(playerId, monster.id);
     this.host.setProfile(playerId, p); this.host.vitals(playerId);
     this.host.broadcast({ type: 'damage', target: { kind: 'player', id: playerId }, amount, source: monster.id });
-    if (p.hp > 0) { this.japan.onPlayerHit(playerId, monster); return; }
+    if (p.hp > 0) { this.japan.onPlayerHit(playerId, monster); this.nations.onPlayerHit(playerId, monster, amount, ranged); return; }
     // Down: no actions until respawn at the map's arrival point (no EXP penalty in this prototype).
     this.downUntil.set(playerId, this.host.now() + PLAYER_RESPAWN_MS);
     this.attacks.delete(playerId);
@@ -273,7 +293,7 @@ export class CombatSystem {
     this.pending.push({ at: this.host.now() + flightMs, run: () => {
       const p = this.host.state.players.get(playerId);
       // Dodgeable: walking more than a unit away from the aimed spot makes it miss.
-      if (p && !p.dead && dist(p, at) <= 1.0) this.hitPlayer(playerId, m);
+      if (p && !p.dead && dist(p, at) <= 1.0) this.hitPlayer(playerId, m, undefined, true);
     } });
   }
 
@@ -322,6 +342,7 @@ export class CombatSystem {
     this.hunter.forget(playerId);
     this.runeSeer.forget(playerId);
     this.japan.forget(playerId);
+    this.nations.forget(playerId);
     for (const m of this.monsters.values()) if (m.targetId === playerId) m.targetId = null;
   }
 
@@ -336,9 +357,10 @@ export class CombatSystem {
     this.hunter.step(now);
     this.runeSeer.step(now);
     this.japan.step(now, dtMs);
+    this.nations.step(now, dtMs);
     // Player statuses everyone sees: every system's buffs and debuffs merged.
     for (const [id, player] of host.state.players) {
-      const list = [...this.hunter.statusesOf(id), ...this.runeSeer.statusesOf(id), ...this.japan.statusesOf(id)].join(',');
+      const list = [...this.hunter.statusesOf(id), ...this.runeSeer.statusesOf(id), ...this.japan.statusesOf(id), ...this.nations.statusesOf(id)].join(',');
       if (player.statuses !== list) player.statuses = list;
     }
     // Respawns.
@@ -360,7 +382,7 @@ export class CombatSystem {
       player.x = host.map.spawn.x; player.y = host.map.spawn.y; player.dead = false;
     }
     // Monster AI.
-    const targets = [...host.state.players.entries()].map(([id, p]) => ({ id, x: p.x, y: p.y, alive: !p.dead }));
+    const targets = [...host.state.players.entries()].map(([id, p]) => ({ id, x: p.x, y: p.y, alive: !p.dead, hidden: this.nations.hidden(id) }));
     for (const m of this.monsters.values()) {
       if (m.state === 'dead') continue;
       const events = stepMonster(m, targets, dtMs, now, this.walkMap, () => host.rng());
@@ -383,7 +405,7 @@ export class CombatSystem {
       const basic = basicAttackFor(profile, BASIC_ATTACK);
       if (d > Math.max(10, basic.range + 2)) { this.attacks.delete(pid); continue; }
       if (d > basic.range + 0.4 || now < a.nextAt) continue;
-      a.nextAt = now + basic.delayMs / this.japan.aspdMul(pid);
+      a.nextAt = now + basic.delayMs / (this.japan.aspdMul(pid) * this.nations.aspdMul(pid));
       player.facing = m.x >= player.x ? (m.y > player.y + 0.6 ? 'south-east' : m.y < player.y - 0.6 ? 'north-east' : 'east') : (m.y > player.y + 0.6 ? 'south-west' : m.y < player.y - 0.6 ? 'north-west' : 'west');
       host.broadcast({ type: 'swing', attacker: { kind: 'player', id: pid }, target: { kind: 'monster', id: m.id } });
       // Blind (a monster debuff) makes half of the blows miss.
@@ -400,7 +422,9 @@ export class CombatSystem {
         } });
         continue;
       }
-      this.damageMonster(m, physicalDamage(atkFor(profile.level), MONSTERS[m.kind]!.def, host.rng()), pid);
+      const hp0 = m.hp;
+      this.damageMonster(m, physicalDamage(atkFor(profile.level) + this.nations.basicBonus(pid), MONSTERS[m.kind]!.def, host.rng()), pid);
+      this.nations.onBasicHit(pid, m, Math.max(0, hp0 - m.hp));
     }
     // Out-of-combat regeneration.
     if (now >= this.nextRegen) {

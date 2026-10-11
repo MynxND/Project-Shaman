@@ -35,10 +35,13 @@ export const TRAP_RUNE_TH: Readonly<Record<TrapRune, string>> = { snare: 'ᚾ �
 /** Monster status ids synced to clients (MonsterState.statuses). */
 export type MonsterStatus = 'mark' | 'revealed' | 'trapped' | 'root' | 'freeze' | 'blind' | 'bleed' | 'slow'
   /** Japan (slice 3): silence (no blows), DEF/MDEF down (Sōkoku earth break), burn, and the Gogyō residue on the target. */
-  | 'silence' | 'def-down' | 'burn' | 'res-wood' | 'res-fire' | 'res-earth' | 'res-metal' | 'res-water';
+  | 'silence' | 'def-down' | 'burn' | 'res-wood' | 'res-fire' | 'res-earth' | 'res-metal' | 'res-water'
+  /** Slice 4: stun (like freeze), fear (flees, no blows), taunt (forced target), poison, heal block (no healing on the way home), cursed (prai / santet curses). */
+  | 'stun' | 'fear' | 'taunt' | 'poison' | 'heal-block' | 'cursed';
 export const MONSTER_STATUS_TH: Readonly<Record<MonsterStatus, string>> = {
   mark: 'เหยื่อที่มาร์ก', revealed: 'เปิดตำแหน่ง', trapped: 'ติดกับดัก', root: 'ถูกตรึง', freeze: 'แช่แข็ง', blind: 'ตาบอด', bleed: 'เลือดไหล', slow: 'ช้าลง',
   silence: 'ผนึกเงียบ', 'def-down': 'เกราะแตก', burn: 'ไหม้', 'res-wood': 'รอยธาตุไม้', 'res-fire': 'รอยธาตุไฟ', 'res-earth': 'รอยธาตุดิน', 'res-metal': 'รอยธาตุโลหะ', 'res-water': 'รอยธาตุน้ำ',
+  stun: 'มึน', fear: 'หวาดกลัว', taunt: 'ถูกยั่วยุ', poison: 'ติดพิษ', 'heal-block': 'ห้ามฟื้นฟู', cursed: 'ต้องคำสาป',
 };
 
 const ARROW_SKILLS = new Set(['twin-shot', 'charged-rune-arrow', 'ullrs-volley']);

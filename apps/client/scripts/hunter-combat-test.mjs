@@ -46,7 +46,7 @@ assert.equal(skillRange('twin-shot', prof.skills), 9 + 5, 'Bow Mastery lengthens
 assert.equal(skillCastError(prof, 'twin-shot', 0, { casting: false, moving: false }, {}), null);
 assert.equal(skillCastError(prof, 'twin-shot', 0, { casting: false, moving: true }, {}), 'moving', 'no casting on the move without Hunter\'s Stride');
 assert.equal(skillCastError({ ...prof, skills: { ...prof.skills, 'hunters-stride': 1 } }, 'twin-shot', 0, { casting: false, moving: true }, {}), null, 'Hunter\'s Stride shoots while walking');
-assert.equal(skillCastError(prof, 'wolf-spirit-armor', 0, { casting: false, moving: false }, {}), 'not-in-game', 'other branches wait for their slice');
+assert.equal(skillCastError({ ...prof, skills: { ...prof.skills, 'wolf-spirit-armor': 1 } }, 'wolf-spirit-armor', 0, { casting: false, moving: false }, {}), null, 'every nation active is castable after slice 4');
 assert.equal(skillCastError(prof, 'bow-mastery', 0, { casting: false, moving: false }, {}), 'not-castable', 'passives never cast');
 const basic = basicAttackFor(prof, BASIC_ATTACK);
 assert.ok(basic.ranged && basic.range === 13 && basic.delayMs < BASIC_ATTACK.delayMs, 'Hunters shoot a bow with Bow Mastery reach and speed');

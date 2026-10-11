@@ -437,7 +437,9 @@ export class FoundationScene extends Phaser.Scene {
       // Name labels stay readable above the night darkness.
       label?.setPosition(sprite.x, sprite.y + 3).setDepth(DARKNESS_DEPTH + 2);
       // Downed players are greyed out until the server respawns them.
-      sprite.setAlpha(player.dead ? 0.55 : 1);
+      // Stealth (Keris): faint to its owner, nearly invisible to others.
+      const stealthed = (player.statuses ?? '').split(',').includes('stealth');
+      sprite.setAlpha(player.dead ? 0.55 : stealthed ? (id === room.sessionId ? 0.5 : 0.25) : 1);
       if (player.dead) sprite.setTint(0x7a7a86);
       else if (sprite.tintTopLeft === 0x7a7a86) sprite.clearTint();
       sprite.syncLayers();
@@ -459,7 +461,7 @@ export class FoundationScene extends Phaser.Scene {
     this.nationVfx?.update(time, this.vfxActors());
     // The local Rune Seer's queue and buffs for the HUD (small strings; only stored when they change).
     const self = room.state?.players?.get(room.sessionId);
-    if (self) useRuneStore.getState().sync(self.runes ?? '', self.statuses ?? '', self.held ?? '');
+    if (self) useRuneStore.getState().sync(self.runes ?? '', self.statuses ?? '', self.held ?? '', self.gaugeKind ?? '', self.gauge ?? 0);
   }
 
   /** The map plus standing Ice Wall cells (synced zones), so local prediction stops at walls like the server does. */
@@ -483,7 +485,7 @@ export class FoundationScene extends Phaser.Scene {
       },
       monster: (id) => {
         const at = this.monsters?.position(id), m = state?.monsters?.get(id);
-        return at && m ? { x: at.x, y: at.y, statuses: m.statuses ?? '' } : null;
+        return at && m ? { x: at.x, y: at.y, statuses: m.statuses ?? '', stacks: m.stacks ?? '' } : null;
       },
       players: () => this.players.keys(),
       monsters: () => state?.monsters?.keys() ?? [],

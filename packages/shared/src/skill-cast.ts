@@ -117,13 +117,66 @@ export const NATION_SKILL_COMBAT: Readonly<Record<string, SkillCombatSpec>> = {
   'divine-miracle-resurrection': { sp: 100, range: 0, target: 'self', areaRadius: 7.5 },
   'kotodama-sacred-song': { sp: 50, range: 0, target: 'self', areaRadius: 5.5 },
   'sun-pillar': { sp: 45, range: 7, target: 'ground', areaRadius: 2.5 },
+  // Russia / Indonesia / Thailand (slice 4): PROVISIONAL SP and ranges (melee skills reach 2 units).
+  'wolf-spirit-armor': { sp: 15, range: 0, target: 'self' },
+  'taunting-howl': { sp: 10, range: 0, target: 'self', areaRadius: 4.5 },
+  'siberian-frost-step': { sp: 15, range: 0, target: 'self', areaRadius: 2.5 },
+  'shield-bash': { sp: 12, range: 2, target: 'enemy' },
+  'snow-fort': { sp: 20, range: 0, target: 'self' },
+  'taigas-absolute-fortress': { sp: 40, range: 0, target: 'self' },
+  'titan-stomp': { sp: 40, range: 0, target: 'self', areaRadius: 3.5 },
+  'warlords-command': { sp: 50, range: 0, target: 'self', areaRadius: 7.5 },
+  'slavic-axe-strike': { sp: 8, range: 2, target: 'enemy' },
+  'berserker-blood': { sp: 10, range: 0, target: 'self' },
+  'wolf-pack-call': { sp: 15, range: 6, target: 'enemy' },
+  'leap-strike': { sp: 15, range: 7, target: 'enemy' },
+  'blood-scent': { sp: 8, range: 7, target: 'enemy' },
+  'bloodthirsty-wolf-frenzy': { sp: 40, range: 0, target: 'self' },
+  'decapitate': { sp: 30, range: 2, target: 'enemy' },
+  'blood-moon': { sp: 50, range: 0, target: 'self', areaRadius: 5.5 },
+  'black-magic-dart': { sp: 10, range: 9, target: 'enemy' },
+  'curse-of-agony': { sp: 12, range: 9, target: 'enemy' },
+  'soul-pluck': { sp: 14, range: 9, target: 'enemy' },
+  'poison-cloud': { sp: 20, range: 9, target: 'ground', areaRadius: 2.5 },
+  'voodoo-link': { sp: 15, range: 9, target: 'enemy' },
+  'curse-of-the-archipelago': { sp: 60, range: 0, target: 'self', areaRadius: 7.5 },
+  'mass-decay': { sp: 40, range: 9, target: 'ground', areaRadius: 4.5 },
+  'heart-stop': { sp: 35, range: 9, target: 'enemy' },
+  'endless-agony': { sp: 25, range: 9, target: 'enemy' },
+  'poison-blade': { sp: 10, range: 0, target: 'self' },
+  'keris-thrust': { sp: 8, range: 2, target: 'enemy' },
+  'shadow-stealth': { sp: 12, range: 0, target: 'self' },
+  'venom-spit': { sp: 10, range: 7, target: 'enemy' },
+  'assassinate': { sp: 12, range: 6, target: 'enemy' },
+  'shadow-flash-strike': { sp: 35, range: 3, target: 'enemy' },
+  'fatal-assassination': { sp: 30, range: 2, target: 'enemy' },
+  'shadow-clone': { sp: 40, range: 0, target: 'self' },
+  'summon-hun-phayon': { sp: 30, range: 0, target: 'self' },
+  'sacred-thread-barrier': { sp: 25, range: 6, target: 'ground', areaRadius: 2.5 },
+  'curse-breaking': { sp: 10, range: 0, target: 'self', areaRadius: 4 },
+  'phayon-repair': { sp: 10, range: 0, target: 'self' },
+  'achans-command': { sp: 12, range: 8, target: 'enemy' },
+  'giant-phayon-colossus': { sp: 80, range: 0, target: 'self' },
+  'fortress-of-sacred-thread': { sp: 80, range: 0, target: 'self', areaRadius: 15.5 },
+  'underworld-soul-pull': { sp: 50, range: 8, target: 'ground', areaRadius: 5.5 },
+  'ghost-possession': { sp: 20, range: 0, target: 'self' },
+  'prai-whispering-curse': { sp: 10, range: 2.5, target: 'enemy' },
+  'soul-drain': { sp: 14, range: 3, target: 'enemy' },
+  'terrorize-howl': { sp: 15, range: 0, target: 'self', areaRadius: 3.5 },
+  'shadow-snare': { sp: 10, range: 6, target: 'enemy' },
+  'prai-curse-explosion': { sp: 40, range: 0, target: 'self' },
+  'shadow-ghost-avatar': { sp: 30, range: 0, target: 'self' },
+  'mass-fear': { sp: 60, range: 0, target: 'self', areaRadius: 7.5 },
 };
 /** Combat spec of any castable skill (Medium or nation). */
 export function combatSpec(skillId: string): SkillCombatSpec | undefined { return SKILL_COMBAT[skillId] ?? NATION_SKILL_COMBAT[skillId]; }
 /** Range for this caster, with passives that extend it (Bow Mastery). */
 export function skillRange(skillId: string, skills: Readonly<Record<string, number>>): number {
   const spec = combatSpec(skillId);
-  return spec ? hunterRange(skillId, spec.range, skills) : 0;
+  if (!spec) return 0;
+  // Santet Reach lengthens the santet's attack spells.
+  const santet = NATION_SKILL_INDEX[skillId]?.branch === 'santet' && spec.target === 'enemy' ? skills['santet-reach'] ?? 0 : 0;
+  return hunterRange(skillId, spec.range, skills) + santet;
 }
 /** Cast rule of any castable skill: Medium source values, else the nation catalogue's cast and cooldown. */
 export function castRule(skillId: string, skills: Readonly<Record<string, number>> = {}): SkillCastRule | undefined {
@@ -134,7 +187,10 @@ export function castRule(skillId: string, skills: Readonly<Record<string, number
   let castMs = skillId === 'charged-rune-arrow' ? HUNTER.chargedCastMs(skills['rune-arrow-mastery'] ?? 0) : k.castMs ?? 0;
   // Rune Reading: ground spells cast faster; Rune Mastery: water/ice spells cool down faster.
   if (GROUND_SPELLS.has(skillId)) castMs = Math.round(castMs * RUNE_SEER.groundCast(skills['rune-reading'] ?? 0));
-  const cooldownMs = Math.round((k.cooldownMs ?? 0) * (WATER_SPELLS.has(skillId) ? RUNE_SEER.runeMasteryCd(skills['rune-mastery'] ?? 0) : 1));
+  // Transcendent Medium: Achan Saiyasat skills cast and cool down 4% × Lv faster.
+  const achan = k.branch === 'achan-saiyasat' ? 1 - 0.04 * (skills['transcendent-medium'] ?? 0) : 1;
+  castMs = Math.round(castMs * achan);
+  const cooldownMs = Math.round((k.cooldownMs ?? 0) * achan * (WATER_SPELLS.has(skillId) ? RUNE_SEER.runeMasteryCd(skills['rune-mastery'] ?? 0) : 1));
   return { castMs, cooldownMs, aim: NATION_SKILL_COMBAT[skillId]!.target === 'ground' ? { kind: 'ahead', units: 3 } : { kind: 'self' } };
 }
 

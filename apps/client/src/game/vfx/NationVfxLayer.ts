@@ -2,7 +2,7 @@ import Phaser from 'phaser';
 import {
   NATION_AREA_BUFFS, RUNE_ART, NATION_CIRCLES, NATION_SKILL_INDEX, NORWAY_PROJECTILE_TRAVEL, NORWAY_VFX_LAYERS, NORWAY_VFX_MAIN,
   NATION_COMPANIONS, SKILL_BEHAVIOR_POLICY, TRAP_RUNES, WORLD_UNIT_PX, type SkillCastEvent, type VfxLayer,
-  GOGYO_TINT, JAPAN_RELEASE_MS, JAPAN_VFX_LAYERS, JAPAN_VFX_MAIN, japanCircleArt, japanCircleTints, type GogyoElement,
+  RUSSIA_VFX_LAYERS, RUSSIA_VFX_MAIN, GOGYO_TINT, JAPAN_RELEASE_MS, JAPAN_VFX_LAYERS, JAPAN_VFX_MAIN, japanCircleArt, japanCircleTints, type GogyoElement,
 } from '@shaman/shared';
 import { DARKNESS_DEPTH } from '../world/Lighting';
 
@@ -15,12 +15,15 @@ import { DARKNESS_DEPTH } from '../world/Lighting';
 
 const LAB_CHARACTER_SCALE = 0.72;
 /** Nations whose skills run in the game so far (their manifests are loaded). */
-const NATIONS = [{ key: 'no', base: '/assets/skills/norway-v1/' }, { key: 'jp', base: '/assets/skills/japan-v1/' }] as const;
+const NATIONS = [
+  { key: 'no', base: '/assets/skills/norway-v1/' }, { key: 'jp', base: '/assets/skills/japan-v1/' }, { key: 'ru', base: '/assets/skills/russia-v1/' },
+  { key: 'id', base: '/assets/skills/indonesia-v1/' }, { key: 'th', base: '/assets/skills/thailand-v1/' },
+] as const;
 const manifestKey = (n: string) => `nation-vfx-${n}`;
 const fx = (id: string) => `nfx:${id}`;
 const DISPLAY_MS = 1400;
-const LAYERS: Readonly<Record<string, readonly VfxLayer[]>> = { ...NORWAY_VFX_LAYERS, ...JAPAN_VFX_LAYERS };
-const MAIN: Readonly<Record<string, { layer: string; asset?: string; tint?: number; offsetY?: number; offsetX?: number }>> = { ...NORWAY_VFX_MAIN, ...JAPAN_VFX_MAIN };
+const LAYERS: Readonly<Record<string, readonly VfxLayer[]>> = { ...NORWAY_VFX_LAYERS, ...JAPAN_VFX_LAYERS, ...RUSSIA_VFX_LAYERS };
+const MAIN: Readonly<Record<string, { layer: string; asset?: string; tint?: number; offsetY?: number; offsetX?: number }>> = { ...NORWAY_VFX_MAIN, ...JAPAN_VFX_MAIN, ...RUSSIA_VFX_MAIN };
 /** Japan circle (archetype art and element tints) or the nation's master circle. */
 const circleOf = (skillId: string, nation: string, branch: string): { art: string; tints: number[] } | null => {
   if (nation === 'jp') return { art: japanCircleArt(skillId), tints: [...japanCircleTints(skillId)] };
@@ -31,7 +34,7 @@ const TRAVEL: Readonly<Record<string, number>> = NORWAY_PROJECTILE_TRAVEL;
 const FRONT = DARKNESS_DEPTH + 1;
 /** Rune glyph art per trap rune (same order as shared TRAP_RUNES) and the burst played when it fires. */
 const TRAP_GLYPH = ['rune-naudiz', 'rune-isa', 'rune-thurisaz', 'rune-dagaz'] as const;
-const STATUS_COLOR: Readonly<Record<string, number>> = { mark: 0xb98cff, revealed: 0xfff2a8, trapped: 0x7fe0c8, root: 0x9ccf6a, freeze: 0x9fdcff, blind: 0x5a5a6e, bleed: 0xe0503a, slow: 0x8ab4e0 };
+const STATUS_COLOR: Readonly<Record<string, number>> = { stun: 0xfff07a, fear: 0x9a5ad8, taunt: 0xe0503a, poison: 0x6ad84a, 'heal-block': 0x404040, cursed: 0x7a3aa8, 'def-down': 0xc89a50, silence: 0xc8c8ff, burn: 0xff8a3a, mark: 0xb98cff, revealed: 0xfff2a8, trapped: 0x7fe0c8, root: 0x9ccf6a, freeze: 0x9fdcff, blind: 0x5a5a6e, bleed: 0xe0503a, slow: 0x8ab4e0 };
 
 interface Sheet { image: string; width: number; height: number; frames: number; anchor: { x: number; y: number }; packedAt?: number }
 interface Pos { x: number; y: number }
@@ -43,7 +46,7 @@ interface Play {
 }
 export interface NationVfxActors {
   player(id: string): { x: number; y: number; depth: number; statuses: string; companion: string; runes: string; held: string } | null;
-  monster(id: string): { x: number; y: number; statuses: string } | null;
+  monster(id: string): { x: number; y: number; statuses: string; stacks?: string } | null;
   players(): Iterable<string>;
   monsters(): Iterable<string>;
   zones(): Iterable<[string, { kind: string; variant: string; x: number; y: number; radius: number; hp: number; hpMax: number }]>;
@@ -283,6 +286,7 @@ export class NationVfxLayer {
     const BASE: Readonly<Record<string, string>> = {
       trap: 'kit-trap-base', 'snow-trail': 'kit-snow-burst', 'falcon-storm': 'no-cast-circle', blizzard: 'blizzard-storm',
       fimbulwinter: 'no-cast-circle', runestone: 'rune-trap', 'ice-wall': 'ice-wall',
+      'ice-ground': 'kit-frost-crack-ring', 'poison-cloud': 'poison-cloud', archipelago: 'curse-of-the-archipelago', 'sacred-thread': 'sacred-thread-barrier', 'thread-fortress': 'th-cast-circle',
       'bonfire-ward': 'bonfire-ward', 'ash-barrier': 'ash-barrier', 'spring-rain': 'cleansing-rain', 'leaf-blade-storm': 'leaf-blade-storm', 'mirror-pond': 'mirror-pond', 'sun-pillar': 'sun-pillar',
     };
     for (const [id, z] of actors.zones()) {
@@ -299,7 +303,7 @@ export class NationVfxLayer {
           glyph: rune && this.has(rune) ? this.image(rune, FRONT) : null,
           extra: extra && this.has(extra) ? this.image(extra, FRONT) : null,
         };
-        if (z.kind === 'falcon-storm' || z.kind === 'fimbulwinter') view.base.setOrigin(0.5);
+        if (z.kind === 'falcon-storm' || z.kind === 'fimbulwinter' || z.kind === 'thread-fortress') view.base.setOrigin(0.5);
         this.zones.set(id, view);
       }
       const sheet = this.sheets[view.base.texture.key.slice(4)]!;
@@ -311,6 +315,15 @@ export class NationVfxLayer {
         view.base.setFrame(loop(0.35, 110)).setScale(Math.max(0.6, z.radius * 2 * U / sheet.width) * 1.1).setPosition(x, y).setDepth(z.kind === 'sun-pillar' || z.kind === 'spring-rain' ? y + 1 : y - 0.4)
           .setTint(z.kind === 'spring-rain' ? 0xb6e8a8 : 0xffffff).setAlpha(0.85).setVisible(true);
       }
+      else if (z.kind === 'ice-ground') view.base.setFrame(Math.min(sheet.frames - 1, 6)).setScale(z.radius * 2 * U / sheet.width).setPosition(x, y).setDepth(y - 0.5).setAlpha(0.7).setVisible(true);
+      else if (z.kind === 'poison-cloud' || z.kind === 'archipelago') view.base.setFrame(loop(0.3, 120)).setScale(z.radius * 2 * U / sheet.width * 1.1).setPosition(x, y).setDepth(y + 0.5).setAlpha(z.kind === 'archipelago' ? 0.55 : 0.8).setVisible(true);
+      else if (z.kind === 'sacred-thread') {
+        // The thread square: the barrier art in the middle and the four sacred cords drawn on the ground.
+        view.base.setFrame(loop(0.4, 120)).setScale(Math.max(0.5, z.radius * U / sheet.width)).setPosition(x, y).setDepth(y - 0.4).setAlpha(0.7).setVisible(true);
+        const g = this.threadLines(id); const r = z.radius * U;
+        g.clear().lineStyle(2, 0xf2ecd8, 0.85).strokeRect(x - r, y - r * 0.6, r * 2, r * 1.2).setDepth(y - 0.3);
+      }
+      else if (z.kind === 'thread-fortress') { const size = z.radius * 2 * U / 192; view.base.setScale(size, size * 0.5).setRotation(now / 4000).setTint(0xe8c876).setPosition(x, y).setAlpha(0.35).setVisible(true); }
       else if (z.kind === 'runestone') view.base.setFrame(sheet.frames - 1).setScale(k).setPosition(x, y).setDepth(y).setAlpha(0.95).setVisible(true);
       else if (z.kind === 'ice-wall') {
         // One upright slab per cell: the sheet's settled frame, narrowed to one cell, taller with the level (variant).
@@ -333,7 +346,7 @@ export class NationVfxLayer {
         view.extra.setFrame(Math.floor(now / 100) % es.frames).setScale(1.3 * k).setPosition(x + Math.cos(a) * z.radius * U * 0.5, y + Math.sin(a) * z.radius * U * 0.25).setDepth(y + Math.sin(a) * z.radius * U * 0.25).setAlpha(0.8).setVisible(true);
       }
     }
-    for (const [id, v] of this.zones) if (!seen.has(id)) { v.base.destroy(); v.glyph?.destroy(); v.extra?.destroy(); this.zones.delete(id); }
+    for (const [id, v] of this.zones) if (!seen.has(id)) { v.base.destroy(); v.glyph?.destroy(); v.extra?.destroy(); this.zones.delete(id); this.lines.get(id)?.destroy(); this.lines.delete(id); }
   }
 
   private runeViews = new Map<string, Phaser.GameObjects.Image[]>();
@@ -382,6 +395,9 @@ export class NationVfxLayer {
     });
   }
 
+  private lines = new Map<string, Phaser.GameObjects.Graphics>();
+  private threadLines(id: string) { let g = this.lines.get(id); if (!g) { g = this.scene.add.graphics(); this.lines.set(id, g); } return g; }
+  private stackLabels = new Map<string, Phaser.GameObjects.Text>();
   private summonViews = new Map<string, { img: Phaser.GameObjects.Image; key: string; acts: number; actAt: number }>();
   private heldViews = new Map<string, Phaser.GameObjects.Image[]>();
   private residueViews = new Map<string, Phaser.GameObjects.Image>();
@@ -399,7 +415,8 @@ export class NationVfxLayer {
     const U = WORLD_UNIT_PX, k = this.k, seen = new Set<string>();
     for (const [id, s] of actors.summons()) {
       seen.add(id);
-      const key = s.great ? `great-${s.kind}` : `shikigami-${s.kind}`;
+      const SUMMON_ART: Record<string, string> = { 'hun-phayon': 'summon-hun-phayon', 'phayon-colossus': 'giant-phayon-colossus', 'shadow-clone': 'shadow-clone' };
+      const key = SUMMON_ART[s.kind] ?? (s.great ? `great-${s.kind}` : `shikigami-${s.kind}`);
       if (!this.has(key)) continue;
       let v = this.summonViews.get(id);
       if (!v || v.key !== key) { v?.img.destroy(); v = { img: this.image(key, 0), key, acts: s.acts, actAt: -1e9 }; this.summonViews.set(id, v); }
@@ -407,7 +424,7 @@ export class NationVfxLayer {
       const sheet = this.sheets[key]!, acting = now - v.actAt < 700;
       const frame = acting ? Math.min(sheet.frames - 1, Math.floor((now - v.actAt) / 700 * sheet.frames)) : Math.floor(now / 160) % Math.max(1, Math.ceil(sheet.frames / 3));
       const x = s.x * U, y = s.y * U;
-      v.img.setFrame(frame).setScale((s.great ? 0.7 : 0.55) * k).setFlipX(s.facing === 'west').setPosition(x, y + Math.sin(now / 300) * 2).setDepth(y).setVisible(true);
+      v.img.setFrame(frame).setScale((s.great || s.kind === 'phayon-colossus' ? 0.7 : 0.55) * k).setAlpha(s.kind === 'shadow-clone' ? 0.7 : 1).setTint(s.kind === 'shadow-clone' ? 0x6a5a8a : 0xffffff).setFlipX(s.facing === 'west').setPosition(x, y + Math.sin(now / 300) * 2).setDepth(y).setVisible(true);
     }
     for (const [id, v] of this.summonViews) if (!seen.has(id)) { v.img.destroy(); this.summonViews.delete(id); }
     // Held talismans orbit the Onmyoji (element-tinted paper), newest in front.
@@ -440,6 +457,18 @@ export class NationVfxLayer {
       v.setTexture(fx(art)).setTint(GOGYO_TINT[res.slice(4) as GogyoElement]).setScale((0.9 + 0.1 * Math.sin(now / 200)) * k).setPosition(m.x * U + 14 * k, m.y * U - 64 * k).setVisible(true);
     }
     for (const [id, v] of this.residueViews) if (!seenM.has(id)) { v.destroy(); this.residueViews.delete(id); }
+    // Santet needles and Mor Phhee prai on monsters.
+    const seenS = new Set<string>();
+    for (const id of actors.monsters()) {
+      const m = actors.monster(id);
+      if (!m?.stacks) continue;
+      seenS.add(id);
+      let t = this.stackLabels.get(id);
+      if (!t) { t = this.scene.add.text(0, 0, '', { fontFamily: 'Tahoma', fontSize: '10px', color: '#f0d8ff', stroke: '#140f0c', strokeThickness: 3, resolution: 3 }).setOrigin(0.5, 1).setDepth(FRONT + 0.6); this.stackLabels.set(id, t); }
+      const label = m.stacks.split(',').map((s) => { const [n, c] = s.split(':'); return n === 'needles' ? 'เข็ม ' + c : n === 'prai' ? 'พราย ×' + (Number(c) + 1) : n === 'oil' ? 'น้ำมันพราย' : ''; }).filter(Boolean).join(' · ');
+      t.setText(label).setPosition(m.x * U, m.y * U - 78 * k).setVisible(true);
+    }
+    for (const [id, t] of this.stackLabels) if (!seenS.has(id)) { t.destroy(); this.stackLabels.delete(id); }
   }
 
   /** Monster statuses: the prey-mark rune above the head and coloured status pips under it. */
@@ -476,6 +505,9 @@ export class NationVfxLayer {
     for (const img of [...this.buffCircles.values(), ...this.companions.values()]) img.destroy();
     for (const v of this.zones.values()) { v.base.destroy(); v.glyph?.destroy(); v.extra?.destroy(); }
     for (const mk of this.markers.values()) { mk.glyph.destroy(); mk.dots.destroy(); }
+    for (const g of this.lines.values()) g.destroy();
+    for (const t of this.stackLabels.values()) t.destroy();
+    this.lines.clear(); this.stackLabels.clear();
     for (const v of this.summonViews.values()) v.img.destroy();
     for (const v of this.heldViews.values()) for (const img of v) img.destroy();
     for (const v of this.residueViews.values()) v.destroy();

@@ -41,7 +41,7 @@ export interface MonsterMotion {
   nextSlamAt?: number; nextSummonAt?: number;
 }
 
-export interface MonsterTarget { id: string; x: number; y: number; alive: boolean }
+export interface MonsterTarget { id: string; x: number; y: number; alive: boolean; hidden?: boolean }
 export type MonsterEvent = { type: 'swing'; monsterId: string; targetId: string } | { type: 'hit'; monsterId: string; targetId: string };
 
 const inSafeZone = (map: MapDefinition, p: Position) => (map.safeZones ?? []).some((r) => pointInRect(p, r));
@@ -93,12 +93,20 @@ export function stepMonster(m: MonsterMotion, players: readonly MonsterTarget[],
   if (m.state === 'dead') return [];
   const has = (status: MonsterStatus) => now < (m.statuses[status] ?? 0);
   // Frozen monsters do nothing; a swing in progress is lost.
-  if (has('freeze')) { m.swingAt = 0; return []; }
+  if (has('freeze') || has('stun')) { m.swingAt = 0; return []; }
+  // Fear: run away from whoever it fears (its current target), no blows.
+  if (has('fear')) {
+    const from = m.targetId ? players.find((p) => p.id === m.targetId) : undefined;
+    m.swingAt = 0;
+    if (from) { const d = dist(m, from) || 1; moveToward(m, { x: m.x + (m.x - from.x) / d * 3, y: m.y + (m.y - from.y) / d * 3 }, def.speed * dtMs / 1000, map); }
+    return [];
+  }
   const rooted = has('root'), blind = has('blind') || has('silence');
   const speed = rooted ? 0 : def.speed * (now < m.slowUntil ? m.slowFactor : 1);
   const step = speed * dtMs / 1000;
   const events: MonsterEvent[] = [];
-  const target = m.targetId ? players.find((p) => p.id === m.targetId && p.alive) ?? null : null;
+  // Hidden players (stealth) cannot be chased or noticed.
+  const target = m.targetId ? players.find((p) => p.id === m.targetId && p.alive && !p.hidden) ?? null : null;
   const giveUp = () => { m.state = 'return'; m.targetId = null; m.swingAt = 0; m.goal = null; };
 
   switch (m.state) {
@@ -107,7 +115,7 @@ export function stepMonster(m: MonsterMotion, players: readonly MonsterTarget[],
       if ((m.aggressive ?? def.behavior === 'aggressive') && !blind) {
         // Summoned minions of a passive kind still need eyes: at least 5 units.
         const range = m.aggressive ? Math.max(def.aggroRange, 5) : def.aggroRange;
-        const seen = players.filter((p) => p.alive && !inSafeZone(map, p) && dist(p, m) <= range).sort((a, b) => dist(a, m) - dist(b, m))[0];
+        const seen = players.filter((p) => p.alive && !p.hidden && !inSafeZone(map, p) && dist(p, m) <= range).sort((a, b) => dist(a, m) - dist(b, m))[0];
         if (seen) { m.state = 'chase'; m.targetId = seen.id; m.goal = null; break; }
       }
       if (m.state === 'idle' && now >= m.nextActionAt) {
@@ -151,7 +159,8 @@ export function stepMonster(m: MonsterMotion, players: readonly MonsterTarget[],
     }
     case 'return': {
       // Walks home briskly, healing on the way like most MMORPG monsters; cannot be re-aggroed until home.
-      if (!rooted && moveToward(m, m.home, step * 1.5, map)) { m.state = 'idle'; m.hp = def.hp; m.nextActionAt = now + 1000; }
+      // Heal Block (Santet) stops the usual healing on the way home.
+      if (!rooted && moveToward(m, m.home, step * 1.5, map)) { m.state = 'idle'; if (!has('heal-block')) m.hp = def.hp; m.nextActionAt = now + 1000; }
       break;
     }
   }

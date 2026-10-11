@@ -64,6 +64,8 @@ export class JapanEffects {
   private active(id: string, b: Buff) { const x = this.buffs.get(id)?.get(b); return x && x.until > this.ctx.now() ? x : undefined; }
   addBuff(id: string, b: Buff, ms: number, power = 1) {
     if (DEBUFFS.has(b) && this.active(id, 'status-immunity')) return;
+    // Sacred Aura (Achan Saiyasat): debuffs on the caster wear off 10% × Lv sooner.
+    if (DEBUFFS.has(b)) { const p = this.ctx.profile(id); if (p && (p.skills['sacred-aura'] ?? 0) > 0) ms *= 1 - Math.min(0.5, 0.1 * (p.skills['sacred-aura'] ?? 0)); }
     const map = this.buffMap(id), cur = map.get(b);
     map.set(b, { until: Math.max(cur?.until ?? 0, this.ctx.now() + ms), power: Math.max(cur && cur.until > this.ctx.now() ? cur.power : 0, power) });
   }
@@ -110,6 +112,15 @@ export class JapanEffects {
   onPlayerHit(id: string, m: MonsterMotion) {
     const d = MONSTER_DEBUFFS[m.kind];
     if (d && this.ctx.rng() < d.chance) this.addBuff(id, d.status, d.ms);
+  }
+  /** Removes up to `count` debuffs without turning them into blessings (Curse Breaking). */
+  cleanse(id: string, count: number): number {
+    const map = this.buffs.get(id);
+    if (!map) return 0;
+    const now = this.ctx.now();
+    const list = [...map.entries()].filter(([k, v]) => DEBUFFS.has(k) && v.until > now).slice(0, count);
+    for (const [k] of list) map.delete(k);
+    return list.length;
   }
   statusesOf(id: string): string[] {
     const now = this.ctx.now();
