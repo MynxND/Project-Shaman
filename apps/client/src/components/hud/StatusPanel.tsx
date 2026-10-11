@@ -1,3 +1,4 @@
+import { jobTitle } from '@/game-data/skill-catalog';
 import { expToNext } from '@shaman/shared';
 import { ProgressBar } from '@/components/ui-kit';
 import { SAMPLE_CLASS_PATH } from '@/game-data/sample-character';
@@ -28,7 +29,7 @@ export function StatusPanel() {
       </button>
       <div className="hud-status-body">
         <h2>{s.name}</h2>
-        <div className="hud-status-sub">Lv. {level} {SAMPLE_CLASS_PATH.current.en}{profile ? '' : ` · Job ${s.jobLevel}`}</div>
+        <div className="hud-status-sub">Lv. {level} {profile ? `${jobTitle(profile).th} · Job ${profile.jobLevel}` : `${SAMPLE_CLASS_PATH.current.en} · Job ${s.jobLevel}`}</div>
         <div className="hud-bar-row"><span>HP</span><ProgressBar label="HP" value={profile?.hp ?? s.hp.current} max={profile?.hpMax ?? s.hp.max} color="var(--sk-crimson)" /></div>
         <div className="hud-bar-row"><span>SP</span><ProgressBar label="SP" value={profile?.sp ?? s.sp.current} max={profile?.spMax ?? s.sp.max} color="var(--sk-jade)" /></div>
         <div className="hud-exp" role="progressbar" aria-label="Base EXP" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(expPct)}>

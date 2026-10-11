@@ -104,3 +104,11 @@ client checks in the browser (desktop + mobile) for each slice; nothing called "
 `migrateJobProfile`), profile job fields, job quests (apprentice trial + one trial per branch), server: migration on
 join/travel, Job EXP on kills, trainer `advance` action. Tests: `job-progression-test.mjs`, NPC advancement test; all
 shared, server and network smoke tests pass. Client UI for job change / skill tree comes with the Ullr Hunter slice.
+
+## Slice 1 result — Ullr Hunter (2026-10-11)
+Job change at the trainer (pick nation + branch), skill tree window (K, per tier), job-aware hotbar (learned actives,
+trap-rune switch, touch paging), class path from the profile; nation cast rules + combat specs; typed Hunter effects on
+the server (arrows + prey mark, falcon strike/auto-dive/storm, 4 rune traps, Ski Dash, Volley, Great Hunt, bow basic
+attack); synced monster statuses, zones and player companion/buffs; world VFX composed from the lab recipes
+(NationVfxLayer). Other nation skills answer "not in game yet". Details + provisional numbers:
+docs/design/combat/ULLR_HUNTER_COMBAT.md. Next: slice 2 Rune Seer.

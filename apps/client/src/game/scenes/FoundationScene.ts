@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 import type { Room } from '@colyseus/sdk';
 import type { GameState } from '@shaman/schema';
-import { BASIC_ATTACK, DEFAULT_APPEARANCE, DEFAULT_MAP_ID, FACINGS, FacingTracker, facingFromVector, getMap, parseBodyType, stepMovement, UMBRAL_CAPITAL, WORLD_UNIT_PX, type BodyType, type Facing, type MapDefinition, type Position } from '@shaman/shared';
+import { BASIC_ATTACK, basicAttackFor, DEFAULT_APPEARANCE, DEFAULT_MAP_ID, FACINGS, FacingTracker, facingFromVector, getMap, parseBodyType, stepMovement, UMBRAL_CAPITAL, WORLD_UNIT_PX, type BodyType, type Facing, type MapDefinition, type Position } from '@shaman/shared';
 import { CharacterSprite, preloadCharacterRig } from '../characters/CharacterRig';
 import { useHeadStore } from '../../stores/head-store';
 
@@ -19,6 +19,7 @@ import { useHudStore } from '@/stores/hud-store';
 import { useProfileStore } from '@/stores/profile-store';
 import { publishMapArt, readMapArt } from '../runtime/minimap-art';
 import { preloadSkillCasts, SkillCastLayer } from '../vfx/SkillCastLayer';
+import { NationVfxLayer, preloadNationVfx, type NationVfxActors } from '../vfx/NationVfxLayer';
 import { useSkillStore } from '@/stores/skill-store';
 import type { SkillCastEvent } from '@shaman/shared';
 import { MonsterLayer, preloadMonsters, type CombatEventLike } from '../world/MonsterLayer';
@@ -55,6 +56,7 @@ export class FoundationScene extends Phaser.Scene {
   private npcs: NpcLayer | null = null;
   private citizens: CitizenLayer | null = null;
   private casts: SkillCastLayer | null = null;
+  private nationVfx: NationVfxLayer | null = null;
   private monsters: MonsterLayer | null = null;
   private portals: PortalLayer | null = null;
   /** The map this scene shows; set from the scene data on every (re)start. */
@@ -93,6 +95,7 @@ export class FoundationScene extends Phaser.Scene {
     preloadCharacterRig(this);
     preloadCitizens(this);
     preloadSkillCasts(this);
+    preloadNationVfx(this);
     preloadMonsters(this);
   }
   create() {
@@ -132,6 +135,8 @@ export class FoundationScene extends Phaser.Scene {
       this.citizens = null;
       this.casts?.destroy();
       this.casts = null;
+      this.nationVfx?.destroy();
+      this.nationVfx = null;
       this.monsters?.destroy();
       this.monsters = null;
       this.portals?.destroy();
@@ -158,6 +163,7 @@ export class FoundationScene extends Phaser.Scene {
     });
     if (this.map.id === UMBRAL_CAPITAL.id) this.citizens = new CitizenLayer(this);
     this.casts = new SkillCastLayer(this, CHARACTER_SCALE);
+    this.nationVfx = new NationVfxLayer(this, CHARACTER_SCALE);
     this.portals = new PortalLayer(this, this.map);
     this.monsters = new MonsterLayer(this, {
       onSelect: (id) => this.engage(id),
@@ -192,7 +198,8 @@ export class FoundationScene extends Phaser.Scene {
   /** Click / tap on a monster: select it, walk into reach if needed, then ask the server to attack. */
   private engage(id: string) {
     useTargetStore.getState().select(id);
-    const reach = BASIC_ATTACK.range - 0.25;
+    const profile = useProfileStore.getState().profile;
+    const reach = (profile ? basicAttackFor(profile, BASIC_ATTACK).range : BASIC_ATTACK.range) - 0.25;
     const inReach = () => { const me = this.predicted, m = this.monsters?.position(id); return !!me && !!m && Math.hypot(m.x - me.x, m.y - me.y) <= reach; };
     if (inReach()) { useTargetStore.getState().attack(id); return; }
     this.movement?.setAuto(() => {
@@ -222,14 +229,18 @@ export class FoundationScene extends Phaser.Scene {
       // Skill casts: the server decides start / release / cancel; the scene draws them and the hotbar follows ours.
       room.onMessage('skill', (event: SkillCastEvent) => {
         this.casts?.receive(event, this.time.now);
+        if (NationVfxLayer.handles(event.skillId)) this.nationVfx?.receive(event, this.time.now, this.vfxActors());
         if (event.caster === room.sessionId) useSkillStore.getState().receive(event);
       });
       room.onMessage('skill:error', (data: { error: string }) => useSkillStore.getState().reject(data.error));
+      room.onMessage('cooldown', (data: { skillId: string; readyInMs: number }) => useSkillStore.getState().setReady(data.skillId, data.readyInMs));
       // Combat: HUD numbers, attack refusals and the events the monster layer draws.
       room.onMessage('vitals', (v: Parameters<ReturnType<typeof useProfileStore.getState>['vitals']>[0]) => useProfileStore.getState().vitals(v));
       room.onMessage('attack:error', (data: { error: string }) => useTargetStore.getState().attackError(data.error));
       room.onMessage('combat', (e: CombatEventLike) => {
         this.monsters?.onEvent(e);
+        if (e.type === 'arrow') this.nationVfx?.arrow(e.from, e.to, e.flightMs, this.time.now, this.vfxActors());
+        if (e.type === 'skillfx') this.nationVfx?.skillFx(e, this.time.now, this.vfxActors());
         const target = useTargetStore.getState();
         if (e.type === 'death' && e.target.kind === 'monster' && target.targetId === e.target.id) target.select(null);
         if (e.type === 'death' && e.target.kind === 'player' && e.target.id === room.sessionId) useHudStore.getState().notify('หมดสติ… จะฟื้นที่จุดปลอดภัยในไม่กี่วินาที', 'warn');
@@ -299,8 +310,12 @@ export class FoundationScene extends Phaser.Scene {
 
   /** Dev-only read-out of the local character for automated walk checks (window.__shamanDebug). */
   private exposeDebug() {
-    const w = window as unknown as { __shamanDebug?: { local: () => unknown; mapArt: () => string | null; zoom: (level?: number) => unknown; camera: () => unknown; lookAt: (x: number, y: number) => void; monsters: () => unknown } };
+    const w = window as unknown as { __shamanDebug?: { local: () => unknown; mapArt: () => string | null; zoom: (level?: number) => unknown; camera: () => unknown; lookAt: (x: number, y: number) => void; monsters: () => unknown; send: (type: string, message?: unknown) => void; engage: (id: string) => void } };
     w.__shamanDebug = {
+      // Send a room message (dev testing of server commands, e.g. dev:job).
+      send: (type, message) => this.room?.send(type, message ?? {}),
+      // Select a monster as if clicked (walk into reach, then attack).
+      engage: (id) => this.engage(id),
       // Living monsters with their on-screen position (CSS px), for automated click-to-attack checks.
       monsters: () => {
         const cam = this.cameras.main, list: { id: string; kind: string; state: string; hp: number; x: number; y: number; sx: number; sy: number }[] = [];
@@ -337,6 +352,7 @@ export class FoundationScene extends Phaser.Scene {
 
   private destroyView(view: PlayerView, id: string) {
     this.casts?.forget(id);
+    this.nationVfx?.forget(id);
     view.sprite.destroy(); view.shadow.destroy(); view.label?.destroy(); view.light?.destroy(); view.hpBar?.destroy();
   }
 
@@ -439,6 +455,25 @@ export class FoundationScene extends Phaser.Scene {
     }
     this.casts?.update(time, (id) => { const v = this.players.get(id); return v ? { sprite: v.sprite, bodyType: v.bodyType } : null; });
     this.monsters?.update(room.state?.monsters, time, delta);
+    this.nationVfx?.update(time, this.vfxActors());
+  }
+
+  /** What the nation VFX layer reads each frame: drawn sprite positions (px), monster positions (units) and synced state. */
+  private vfxActors(): NationVfxActors {
+    const state = this.room?.state;
+    return {
+      player: (id) => {
+        const v = this.players.get(id), p = state?.players?.get(id);
+        return v && p ? { x: v.sprite.x, y: v.sprite.y, depth: v.sprite.depth, statuses: p.statuses ?? '', companion: p.companion ?? '' } : null;
+      },
+      monster: (id) => {
+        const at = this.monsters?.position(id), m = state?.monsters?.get(id);
+        return at && m ? { x: at.x, y: at.y, statuses: m.statuses ?? '' } : null;
+      },
+      players: () => this.players.keys(),
+      monsters: () => state?.monsters?.keys() ?? [],
+      zones: () => (state?.zones ? [...state.zones.entries()] : []) as [string, { kind: string; variant: string; x: number; y: number; radius: number }][],
+    };
   }
 
   /** Art review line-up (?rig=preview): both main characters in all 8 facings on the plaza, walking in place. */

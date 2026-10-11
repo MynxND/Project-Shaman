@@ -51,3 +51,6 @@ export function skillTree(tier: JobTier, branch: string | null): TreeSkill[] {
   return Object.values(SKILL_TREE).filter((k) => k.tier === tier && (tier === 1 || k.branch === branch));
 }
 export function findBranch(branch: string): NationBranch | undefined { return NATION_BRANCHES.find((b) => b.branch === branch); }
+/** Every nation catalogue entry by skill id (cast/cooldown/duration, placement, formula text). */
+export const NATION_SKILL_INDEX: Readonly<Record<string, NationSkill & { nation: string }>> = Object.fromEntries(
+  NATIONS.flatMap(({ nation, skills }) => skills.map((k) => [k.id, { ...k, nation }])));

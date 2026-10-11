@@ -65,3 +65,5 @@ export * from './skill-circles.js';
 export * from './skills-norway.js';
 export * from './skill-registry.js';
 export * from './job-progression.js';
+export * from './hunter-combat.js';
+

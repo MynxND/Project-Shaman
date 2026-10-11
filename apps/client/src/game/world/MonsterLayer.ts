@@ -1,6 +1,6 @@
 import Phaser from 'phaser';
 import type { MonsterState } from '@shaman/schema';
-import { MONSTERS, WORLD_UNIT_PX } from '@shaman/shared';
+import { MONSTER_STATUS_TH, MONSTERS, WORLD_UNIT_PX } from '@shaman/shared';
 import { addContactShadow, DARKNESS_DEPTH } from './Lighting';
 
 // Monsters drawn from the synced room state (positions/HP/state come from the server) plus the combat feedback the
@@ -162,7 +162,7 @@ export class MonsterLayer {
     } else if (e.type === 'damage') {
       const at = e.target.kind === 'monster' ? this.monsterAt(e.target.id) : this.hooks.playerAt(e.target.id);
       if (!at) return;
-      const color = e.target.kind === 'player' ? '#ff6b5a' : e.skill ? '#9ff0d0' : '#ffffff';
+      const color = e.target.kind === 'player' ? '#ff6b5a' : e.skill === 'bleed' ? '#ff8a7a' : e.skill ? '#9ff0d0' : '#ffffff';
       this.floatText(at.x, at.y - 46, e.amount > 0 ? String(e.amount) : e.skill === 'binding-thread' ? 'ช้าลง' : '0', color, e.amount >= 20 ? 15 : 12);
       if (e.target.kind === 'monster') {
         const v = this.views.get(e.target.id);
@@ -181,6 +181,10 @@ export class MonsterLayer {
     } else if (e.type === 'summon') {
       const at = this.monsterAt(e.source);
       if (at) this.floatText(at.x, at.y - 90, 'เรียกภูตใบไม้!', '#9ff0d0', 13, 1200);
+    } else if (e.type === 'status') {
+      const at = this.monsterAt(e.target);
+      const label = MONSTER_STATUS_TH[e.status as keyof typeof MONSTER_STATUS_TH];
+      if (at && label && e.status !== 'trapped') this.floatText(at.x, at.y - 64, label, '#d8c4ff', 11, 900);
     } else if (e.type === 'levelup') {
       const at = this.hooks.playerAt(e.player);
       if (at) {
@@ -257,4 +261,7 @@ export type CombatEventLike =
   | { type: 'loot'; player: string; items: { itemId: string; qty: number }[] }
   | { type: 'projectile'; from: string; to: string; kind: string; flightMs: number }
   | { type: 'telegraph'; source: string; x: number; y: number; radius: number; ms: number }
-  | { type: 'summon'; source: string; ids: string[] };
+  | { type: 'summon'; source: string; ids: string[] }
+  | { type: 'arrow'; from: string; to: string; flightMs: number }
+  | { type: 'status'; target: string; status: string; ms: number; source: string }
+  | { type: 'skillfx'; caster: string; skillId: string; targetId?: string; x?: number; y?: number; variant?: string };

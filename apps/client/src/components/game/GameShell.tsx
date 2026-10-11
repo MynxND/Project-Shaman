@@ -10,7 +10,9 @@ import { MainHud } from '@/components/hud/MainHud';
 import { MarketWindow } from '@/components/market/MarketWindow';
 import { useMarketStore } from '@/stores/market-store';
 import { WorldGuide } from '@/components/hud/WorldGuide';
-import { openAppearance, openCharacter, openInventory, openWorldMap } from '@/components/hud/windows';
+import { openAppearance, openCharacter, openInventory, openSkillTree, openWorldMap } from '@/components/hud/windows';
+import { SkillTreeWindow } from '@/components/skills/SkillTreeWindow';
+import { useSkillTreeStore } from '@/stores/skill-tree-store';
 import { AppearanceWindow } from '@/components/character/AppearanceWindow';
 import { useHeadStore } from '@/stores/head-store';
 import { WorldMapWindow } from '@/components/hud/WorldMapWindow';
@@ -28,7 +30,8 @@ export function GameShell() {
   const mapOpen = useHudStore((s) => s.mapOpen);
   const appearanceOpen = useHeadStore((s) => s.open);
   const talking = useNpcStore((s) => s.talking);
-  // I inventory, C character status, M world map, V appearance; ignored while typing in a field.
+  const skillTreeOpen = useSkillTreeStore((s) => s.open);
+  // I inventory, C character status, M world map, V appearance, K skill tree; ignored while typing in a field.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       const typing = e.target instanceof HTMLElement && (e.target.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName));
@@ -37,6 +40,7 @@ export function GameShell() {
       if (e.key === 'c' || e.key === 'C') openCharacter();
       if (e.key === 'm' || e.key === 'M') openWorldMap();
       if (e.key === 'v' || e.key === 'V') openAppearance();
+      if (e.key === 'k' || e.key === 'K') openSkillTree();
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
@@ -50,6 +54,7 @@ export function GameShell() {
       {marketOpen && <MarketWindow />}
       {mapOpen && <WorldMapWindow />}
       {appearanceOpen && <AppearanceWindow />}
+      {skillTreeOpen && <SkillTreeWindow />}
       {menuOpen && <WorldGuide />}
       <TalkPrompt />
       {talking && <NpcDialog npcId={talking} />}

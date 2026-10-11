@@ -5,7 +5,10 @@
 import type { Facing } from './character.js';
 import type { PlayerProfile } from './economy.js';
 import type { MapDefinition, Position } from './world.js';
-import { MEDIUM_PRESENTATION, SKILL_BEHAVIOR_POLICY } from './skill-system.js';
+import { SKILL_BEHAVIOR_POLICY } from './skill-system.js';
+import { SKILL_COMBAT } from './combat.js';
+import { NATION_SKILL_INDEX, SKILL_TREE } from './skill-registry.js';
+import { castsWhileMoving, HUNTER, hunterRange } from './hunter-combat.js';
 
 export interface SkillCastRule {
   /** Source cast time (ms); 0 = instant. */
@@ -28,14 +31,15 @@ export const SKILL_CAST_RULES: Readonly<Record<string, SkillCastRule>> = {
   'binding-thread': { castMs: 500, cooldownMs: 8000, aim: { kind: 'ahead', units: 3 } },
 };
 
-export type SkillCastError = 'bad-request' | 'unknown-skill' | 'not-castable' | 'not-learned' | 'busy' | 'moving' | 'cooldown'
+export type SkillCastError = 'bad-request' | 'unknown-skill' | 'not-castable' | 'not-in-game' | 'not-learned' | 'busy' | 'moving' | 'cooldown'
   | 'no-sp' | 'no-target' | 'too-far' | 'dead';
 
 export const SKILL_CAST_ERROR_TH: Readonly<Record<SkillCastError, string>> = {
   'bad-request': 'คำขอร่ายสกิลไม่ถูกต้อง',
   'unknown-skill': 'ไม่รู้จักสกิลนี้',
   'not-castable': 'สกิลนี้เป็นสกิลติดตัว ไม่ต้องกดใช้',
-  'not-learned': 'ยังไม่ได้เรียนสกิลนี้ · เรียนได้ที่อาจารย์คง สำนักฝึกคาถา',
+  'not-in-game': 'สกิลนี้ยังไม่เปิดใช้ในเกม · กำลังเชื่อมระบบทีละสาย',
+  'not-learned': 'ยังไม่ได้เรียนสกิลนี้ · เปิดหน้าต่างสกิล (K) เพื่อเรียน',
   busy: 'กำลังร่ายสกิลอื่นอยู่',
   moving: 'หยุดเดินก่อนจึงร่ายสกิลได้',
   cooldown: 'สกิลยังไม่พร้อม (คูลดาวน์)',
@@ -58,22 +62,59 @@ export interface SkillCastEvent {
   aimX: number; aimY: number;
   /** The monster the skill was aimed at, when there was one. */
   targetId?: string;
+  /** Chosen variant (Rune Trap Kit rune: snare / freeze / blast / flash). */
+  variant?: string;
 }
 
-export function parseSkillCastRequest(value: unknown): { skillId: string } | null {
+/** Combat use of a nation skill: SP, world range (units), what it aims at. PROVISIONAL (the catalogue leaves SP and
+ *  world ranges open; Twin Shot's "range 9" is the catalogue value). Only skills whose effects run on the server are
+ *  listed — every other nation skill answers 'not-in-game' until its slice lands. */
+export type SkillAim = 'enemy' | 'self' | 'area' | 'ground' | 'dash';
+export interface SkillCombatSpec { sp: number; range: number; target: SkillAim; areaRadius?: number; variants?: readonly string[] }
+export const NATION_SKILL_COMBAT: Readonly<Record<string, SkillCombatSpec>> = {
+  'twin-shot': { sp: 9, range: 9, target: 'enemy' },
+  'falcon-strike': { sp: 12, range: 9, target: 'enemy' },
+  'ski-dash': { sp: 10, range: 0, target: 'dash' },
+  'rune-trap-kit': { sp: 10, range: 6, target: 'ground', areaRadius: 1.5, variants: ['snare', 'freeze', 'blast', 'flash'] },
+  'charged-rune-arrow': { sp: 22, range: 10, target: 'enemy' },
+  'ullrs-volley': { sp: 45, range: 12, target: 'self', areaRadius: 12 },
+  'great-hunt': { sp: 50, range: 0, target: 'self' },
+  'falcon-storm': { sp: 45, range: 10, target: 'enemy', areaRadius: 2.5 },
+};
+/** Combat spec of any castable skill (Medium or nation). */
+export function combatSpec(skillId: string): SkillCombatSpec | undefined { return SKILL_COMBAT[skillId] ?? NATION_SKILL_COMBAT[skillId]; }
+/** Range for this caster, with passives that extend it (Bow Mastery). */
+export function skillRange(skillId: string, skills: Readonly<Record<string, number>>): number {
+  const spec = combatSpec(skillId);
+  return spec ? hunterRange(skillId, spec.range, skills) : 0;
+}
+/** Cast rule of any castable skill: Medium source values, else the nation catalogue's cast and cooldown. */
+export function castRule(skillId: string, skills: Readonly<Record<string, number>> = {}): SkillCastRule | undefined {
+  const medium = SKILL_CAST_RULES[skillId];
+  if (medium) return medium;
+  const k = NATION_SKILL_INDEX[skillId];
+  if (!k || !NATION_SKILL_COMBAT[skillId]) return undefined;
+  const castMs = skillId === 'charged-rune-arrow' ? HUNTER.chargedCastMs(skills['rune-arrow-mastery'] ?? 0) : k.castMs ?? 0;
+  return { castMs, cooldownMs: k.cooldownMs ?? 0, aim: NATION_SKILL_COMBAT[skillId]!.target === 'ground' ? { kind: 'ahead', units: 3 } : { kind: 'self' } };
+}
+
+export function parseSkillCastRequest(value: unknown): { skillId: string; variant?: string } | null {
   if (typeof value !== 'object' || value === null) return null;
-  const skillId = (value as { skillId?: unknown }).skillId;
-  return typeof skillId === 'string' && skillId.length > 0 && skillId.length <= 64 ? { skillId } : null;
+  const { skillId, variant } = value as { skillId?: unknown; variant?: unknown };
+  if (!(typeof skillId === 'string' && skillId.length > 0 && skillId.length <= 64)) return null;
+  const spec = NATION_SKILL_COMBAT[skillId];
+  return typeof variant === 'string' && spec?.variants?.includes(variant) ? { skillId, variant } : { skillId };
 }
 
 /** Why `skillId` cannot start now, or null when it can. `cooldowns` holds ready-at times (ms). */
 export function skillCastError(profile: PlayerProfile, skillId: string, now: number, state: { casting: boolean; moving: boolean }, cooldowns: Readonly<Record<string, number>>): SkillCastError | null {
-  const presentation = MEDIUM_PRESENTATION[skillId];
-  if (!presentation) return 'unknown-skill';
-  if (!SKILL_BEHAVIOR_POLICY[presentation.behavior].hotbar || !SKILL_CAST_RULES[skillId]) return 'not-castable';
+  const tree = SKILL_TREE[skillId];
+  if (!tree) return 'unknown-skill';
+  if (!SKILL_BEHAVIOR_POLICY[tree.behavior].hotbar) return 'not-castable';
+  if (!castRule(skillId)) return 'not-in-game';
   if ((profile.skills[skillId] ?? 0) <= 0) return 'not-learned';
   if (state.casting) return 'busy';
-  if (state.moving) return 'moving';
+  if (state.moving && !castsWhileMoving(skillId, profile.skills)) return 'moving';
   if ((cooldowns[skillId] ?? 0) > now) return 'cooldown';
   return null;
 }
@@ -86,7 +127,7 @@ const FACING_VECTOR: Readonly<Record<Facing, Position>> = {
 
 /** The presentation point for a skill's release effect, kept inside the map. */
 export function skillAimPoint(skillId: string, from: Position, facing: Facing, map: Pick<MapDefinition, 'width' | 'height'>): Position {
-  const aim = SKILL_CAST_RULES[skillId]?.aim;
+  const aim = castRule(skillId)?.aim;
   if (!aim || aim.kind === 'self') return { x: from.x, y: from.y };
   const v = FACING_VECTOR[facing];
   return {

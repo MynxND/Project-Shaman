@@ -1,26 +1,40 @@
+import { findBranch, JOB_PROGRESSION } from '@shaman/shared';
 import { SAMPLE_CLASS_PATH } from '@/game-data/sample-character';
 import { useCharacterStore } from '@/stores/character-store';
+import { useProfileStore } from '@/stores/profile-store';
+import { openSkillTree } from '@/components/hud/windows';
 
-/** Class progression as written in the skill database. Change-job conditions are not designed, so nothing here is actionable. */
+/** Class progression from the server profile (job-progression.ts); the sample path only shows while offline. */
 export function ClassPath() {
-  const jobLevel = useCharacterStore((s) => s.sheet.jobLevel);
-  const p = SAMPLE_CLASS_PATH;
+  const profile = useProfileStore((s) => s.profile);
+  const sampleJob = useCharacterStore((s) => s.sheet.jobLevel);
+  if (!profile) {
+    const p = SAMPLE_CLASS_PATH;
+    return (
+      <section className="sk-frame-10 sk-panel ch-path" aria-label="เส้นทางอาชีพ">
+        <h4>เส้นทางอาชีพ <small className="sk-muted">ตัวอย่าง · ยังไม่เชื่อมเซิร์ฟเวอร์</small></h4>
+        <ol><li data-state="current"><span className="ch-path-tier">๑</span><div><b>{p.current.en}</b> <span className="sk-muted">Job Lv. {sampleJob}</span></div></li></ol>
+      </section>
+    );
+  }
+  const branch = profile.branch ? findBranch(profile.branch) : undefined;
+  const tiers = [
+    { tier: 1, name: 'ร่างทรงฝึกหัด · Apprentice Shaman', detail: 'สกิล Medium 10 สกิล' },
+    { tier: 2, name: branch ? `${branch.info.thai} · ${branch.info.name}` : 'สายวิชาของชาติ (เลือก 1 จาก 10 สาย)', detail: `ปลดที่ Job Lv ${JOB_PROGRESSION.advanceAt[1]} + บททดสอบร่างทรงฝึกหัด` },
+    { tier: 3, name: branch ? branch.info.tier3 : 'อาชีพขั้นสูงของสาย', detail: `ปลดที่ Job Lv ${JOB_PROGRESSION.advanceAt[2]} ของขั้น ๒ + บททดสอบประจำสาย` },
+  ];
   return (
     <section className="sk-frame-10 sk-panel ch-path" aria-label="เส้นทางอาชีพ">
-      <h4>เส้นทางอาชีพ <small className="sk-muted">Class path · {p.nation.th}</small></h4>
+      <h4>เส้นทางอาชีพ <small className="sk-muted">Base Lv {profile.level} · Job Lv {profile.jobLevel} · แต้มสกิล {profile.skillPoints}</small></h4>
       <ol>
-        <li data-state="current">
-          <span className="ch-path-tier">๑</span>
-          <div><b>{p.current.en}</b> <span className="sk-muted">{p.current.tier} · Job Lv. {jobLevel} · {p.current.skills} สกิล</span></div>
-        </li>
-        <li data-state="locked">
-          <span className="ch-path-tier">๒</span>
-          <div>
-            <div className="sk-muted">เลือก 1 สาย (10 สกิล) แล้วต่ออาชีพที่ ๓ (5 สกิล) · เงื่อนไขเปลี่ยนอาชีพยังไม่ได้ออกแบบ</div>
-            {p.branches.map((b) => <div key={b.id} className="ch-branch"><b>{b.th}</b> <span className="sk-muted">{b.en} → {b.third}</span></div>)}
-          </div>
-        </li>
+        {tiers.map((t) => (
+          <li key={t.tier} data-state={t.tier === profile.jobTier ? 'current' : t.tier < profile.jobTier ? 'done' : 'locked'}>
+            <span className="ch-path-tier">{['๑', '๒', '๓'][t.tier - 1]}</span>
+            <div><b>{t.name}</b> <span className="sk-muted">{t.tier === profile.jobTier ? `กำลังฝึก · Job Lv ${profile.jobLevel}` : t.tier < profile.jobTier ? 'ผ่านแล้ว' : t.detail}</span></div>
+          </li>
+        ))}
       </ol>
+      <button type="button" className="sk-link" onClick={openSkillTree}>เปิดคัมภีร์สกิล (K)</button>
     </section>
   );
 }

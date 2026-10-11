@@ -17,6 +17,12 @@ export const PlayerState = schema({
   head: t.string().default(''),
   /** Temporary in-game expression id, '' when none (cleared by the server after EMOTE_MS). */
   emote: t.string().default(''),
+  /** Job shown to others: nation branch id ('' for an Apprentice Shaman). */
+  branch: t.string().default(''),
+  /** Permanent companion asset beside the player ('' = none), e.g. the Falcon Bond falcon. */
+  companion: t.string().default(''),
+  /** Active buff/status ids, comma separated (e.g. "great-hunt"); timing stays on the server. */
+  statuses: t.string().default(''),
 }, 'PlayerState');
 export type PlayerState = InstanceType<typeof PlayerState>;
 export const CitizenState = schema({
@@ -31,7 +37,18 @@ export const MonsterState = schema({
   facing: t.string().default('east'),
   state: t.string().default('idle'),
   hp: t.number().default(1), hpMax: t.number().default(1),
+  /** Active status ids, comma separated (shared MonsterStatus: mark, revealed, trapped, root, freeze, blind, bleed, slow). */
+  statuses: t.string().default(''),
 }, 'MonsterState');
 export type MonsterState = InstanceType<typeof MonsterState>;
-export const GameState = schema({ mapId: t.string().default(''), players: t.map(PlayerState), citizens: t.map(CitizenState), monsters: t.map(MonsterState) }, 'GameState');
+/** A skill's ground area for a while (rune traps, snow trail, falcon storm...). World units; owner = caster session. */
+export const ZoneState = schema({
+  kind: t.string().default(''),
+  variant: t.string().default(''),
+  owner: t.string().default(''),
+  x: t.float32().default(0), y: t.float32().default(0),
+  radius: t.float32().default(1),
+}, 'ZoneState');
+export type ZoneState = InstanceType<typeof ZoneState>;
+export const GameState = schema({ mapId: t.string().default(''), players: t.map(PlayerState), citizens: t.map(CitizenState), monsters: t.map(MonsterState), zones: t.map(ZoneState) }, 'GameState');
 export type GameState = InstanceType<typeof GameState>;

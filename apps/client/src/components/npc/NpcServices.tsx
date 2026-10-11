@@ -1,12 +1,15 @@
 'use client';
 import { useState } from 'react';
 import {
-  CARRY_CAPACITY, carriedWeight, ITEMS, MEDIUM_SKILLS, NPC_GOLD_RATE, questFor, REFINE_MAX, refineQuote, SHOPS, TELEPORTS,
+  advanceError, advancementQuest, CARRY_CAPACITY, carriedWeight, castRule, findBranch, ITEMS, JOB_PROGRESSION, NATION_BRANCHES, NPC_GOLD_RATE, QUESTS, questFor, REFINE_MAX, refineQuote,
+  SERVICE_ERROR_TH, SHOPS, skillTree, TELEPORTS,
   type InventoryStack, type NpcDefinition, type PlayerProfile,
 } from '@shaman/shared';
 import { Button } from '@/components/ui-kit';
 import { itemIcon } from '@/game-data/sample-inventory';
 import { useProfileStore } from '@/stores/profile-store';
+import { openSkillTree } from '@/components/hud/windows';
+import { jobTitle } from '@/game-data/skill-catalog';
 
 // Real NPC services: every button sends a request to the server (useProfileStore.npc) and the panel redraws from
 // the profile the server sends back. Nothing here changes data locally.
@@ -124,25 +127,47 @@ function Quest({ npc, profile }: Props) {
   );
 }
 
+/** Job change (job-progression.ts): requirements, the branch pick at tier 1, then skills are learned in the tree (K). */
 function Trainer({ npc, profile }: Props) {
-  const { npc: ask, busy } = useProfileStore();
+  const { npc: ask, busy, send } = useProfileStore();
+  const [pick, setPick] = useState<string | null>(null);
+  const title = jobTitle(profile);
+  const tier = profile.jobTier;
+  const need = tier < 3 ? JOB_PROGRESSION.advanceAt[tier as 1 | 2] : null;
+  const quest = advancementQuest(profile);
+  const questDone = !!quest && !!profile.quests[quest]?.done;
+  const error = advanceError(profile, pick ?? undefined);
+  const nations = [...new Set(NATION_BRANCHES.map((b) => b.nation))];
   return (
     <div className="npc-service">
-      <p className="npc-hint">แต้มสกิลคงเหลือ <b>{profile.skillPoints}</b> · ได้เพิ่มจากภารกิจ</p>
-      <ul className="npc-list">
-        {MEDIUM_SKILLS.map((sk) => {
-          const lv = profile.skills[sk.id] ?? 0;
-          return (
-            <li key={sk.id} className="npc-row">
-              <img className="sk-pixel" src={`/assets/ui/hud/skills/${sk.id}.png`} alt="" width={32} height={32} onError={(e) => { e.currentTarget.style.visibility = 'hidden'; }} />
-              <span className="npc-row-name"><b>{sk.name}</b><small>{sk.kind === 'active' ? 'สกิลใช้งาน' : 'สกิลติดตัว'} · Lv {lv} / {sk.maxLevel}</small></span>
-              <span className="npc-row-actions"><Button disabled={busy || profile.skillPoints <= 0 || lv >= sk.maxLevel} onClick={() => ask(npc.id, 'learn', { skillId: sk.id })}>เรียน</Button></span>
-            </li>);
-        })}
-      </ul>
+      <p className="npc-hint">อาชีพตอนนี้ <b>{title.th}</b> · {title.en} · Job Lv <b>{profile.jobLevel}</b> / {JOB_PROGRESSION.maxJobLevel[tier]} · แต้มสกิล <b>{profile.skillPoints}</b></p>
+      <div className="npc-buttons"><Button onClick={openSkillTree}>เปิดคัมภีร์สกิล (K)</Button></div>
+      {need === null ? <p className="npc-hint">เจ้าถึงขั้นสูงสุดของสายแล้ว ฝึกต่อเพื่อเก็บ Job Level และแต้มสกิล</p> : <>
+        <h4>เปลี่ยนอาชีพ → {tier === 1 ? 'สายวิชาของชาติ (ขั้น ๒)' : findBranch(profile.branch ?? '')?.info.tier3 + ' (ขั้น ๓)'}</h4>
+        <ol className="npc-steps">
+          <li data-done={profile.jobLevel >= need}>Job Level {need} ในขั้นนี้ (ตอนนี้ {profile.jobLevel})</li>
+          <li data-done={questDone}>ผ่าน{quest ? QUESTS[quest]?.title : 'บททดสอบ'} · รับภารกิจที่หลวงตาธรรม</li>
+          {tier === 1 && <li data-done={!!pick}>เลือกชาติและสายวิชา</li>}
+        </ol>
+        <p className="sk-muted npc-hint">Base Level ไม่รีเซ็ต · Job Level กลับเป็น 1 · สกิลและแต้มที่มีอยู่ยังอยู่ครบ · สกิลขั้นใหม่ต้องเรียนเองทีละสกิล</p>
+        {tier === 1 && <div className="npc-branches" role="radiogroup" aria-label="เลือกสายวิชา">
+          {nations.map((n) => <div key={n} className="npc-nation"><small>{NATION_TH[n] ?? n}</small>
+            {NATION_BRANCHES.filter((b) => b.nation === n).map((b) => {
+              const live = skillTree(2, b.branch).some((k) => castRule(k.id));
+              return <button key={b.branch} type="button" role="radio" aria-checked={pick === b.branch} className="npc-branch" onClick={() => setPick(b.branch)}>
+                <b>{b.info.thai}</b><small>{b.info.name} → {b.info.tier3}{live ? '' : ' · สกิลยังไม่เปิดในเกม'}</small>
+              </button>;
+            })}</div>)}
+        </div>}
+        <Button variant="primary" disabled={busy || !!error} title={error ? SERVICE_ERROR_TH[error] : undefined}
+          onClick={() => ask(npc.id, 'advance', tier === 1 && pick ? { branch: pick } : {})}>เปลี่ยนอาชีพ</Button>
+        {process.env.NODE_ENV === 'development' && send && <Button disabled={busy} onClick={() => send('dev:job', {})} title="เฉพาะโหมดพัฒนา">ทดสอบ: ข้ามเงื่อนไข</Button>}
+      </>}
     </div>
   );
 }
+
+const NATION_TH: Readonly<Record<string, string>> = { th: 'ไทย', id: 'อินโดนีเซีย', ru: 'รัสเซีย', jp: 'ญี่ปุ่น', no: 'นอร์เวย์' };
 
 function Teleport({ npc, profile }: Props) {
   const { npc: ask, busy } = useProfileStore();

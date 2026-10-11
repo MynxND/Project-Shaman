@@ -17,6 +17,8 @@ interface ProfileState {
   /** Ask an NPC for a service; the answer arrives as a new profile plus a result toast. */
   npc: (npc: string, action: string, extra?: Record<string, unknown>) => void;
   equip: (slot: string, itemId: string | null) => void;
+  /** Learn / raise a skill from the skill tree window (server checks tier, branch, points, prerequisites). */
+  learn: (skillId: string) => void;
 }
 
 export const useProfileStore = create<ProfileState>((set, get) => ({
@@ -40,5 +42,11 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
     const send = get().send;
     if (!send || get().busy) return;
     set({ busy: true }); send('equipment', { slot, itemId });
+  },
+  learn: (skillId) => {
+    const send = get().send;
+    if (!send) { useHudStore.getState().notify('ยังไม่ได้เชื่อมต่อเซิร์ฟเวอร์', 'warn'); return; }
+    if (get().busy) return;
+    set({ busy: true }); send('skill:learn', { skillId });
   },
 }));

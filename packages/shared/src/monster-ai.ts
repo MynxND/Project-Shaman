@@ -3,6 +3,7 @@
 // only chase after being hit (provokeMonster). Monsters never act inside safe zones and never cross blocked ground.
 import { MONSTERS, type MonsterDefinition } from './combat.js';
 import { isBlocked, pointInRect, type MapDefinition, type Position, type SpawnRegion } from './world.js';
+import type { MonsterStatus } from './hunter-combat.js';
 
 export type MonsterAiState = 'idle' | 'wander' | 'chase' | 'attack' | 'return' | 'dead';
 
@@ -25,6 +26,11 @@ export interface MonsterMotion {
   swingAt: number;
   respawnAt: number;
   slowUntil: number; slowFactor: number;
+  /** Status expiry times (ms) set by skills: root/freeze stop movement (freeze also stops attacks), blind stops
+   *  noticing players and makes blows miss; mark/revealed/trapped are the Ullr Hunter's hunt conditions. */
+  statuses: Partial<Record<MonsterStatus, number>>;
+  /** Who marked this prey (the Twin Shot bonus belongs to that hunter) and their Twin Shot level. */
+  markedBy?: { playerId: string; level: number };
   /** Overrides the definition's behaviour (summoned minions are always aggressive). */
   aggressive?: boolean;
   /** Summoned by a boss: never respawns. */
@@ -52,7 +58,7 @@ export function createMonster(id: string, kind: string, region: SpawnRegion, at:
   const def = MONSTERS[kind]!;
   return {
     id, kind, regionId: region.id, home: { ...at }, x: at.x, y: at.y, facing: 'east', state: 'idle', hp: def.hp,
-    targetId: null, goal: null, nextActionAt: now + 1000, lastAttackAt: 0, swingAt: 0, respawnAt: 0, slowUntil: 0, slowFactor: 1,
+    targetId: null, goal: null, nextActionAt: now + 1000, lastAttackAt: 0, swingAt: 0, respawnAt: 0, slowUntil: 0, slowFactor: 1, statuses: {},
   };
 }
 
@@ -83,7 +89,11 @@ export function provokeMonster(m: MonsterMotion, attackerId: string) {
 export function stepMonster(m: MonsterMotion, players: readonly MonsterTarget[], dtMs: number, now: number, map: MapDefinition, rng: () => number): MonsterEvent[] {
   const def: MonsterDefinition = MONSTERS[m.kind]!;
   if (m.state === 'dead') return [];
-  const speed = def.speed * (now < m.slowUntil ? m.slowFactor : 1);
+  const has = (status: MonsterStatus) => now < (m.statuses[status] ?? 0);
+  // Frozen monsters do nothing; a swing in progress is lost.
+  if (has('freeze')) { m.swingAt = 0; return []; }
+  const rooted = has('root'), blind = has('blind');
+  const speed = rooted ? 0 : def.speed * (now < m.slowUntil ? m.slowFactor : 1);
   const step = speed * dtMs / 1000;
   const events: MonsterEvent[] = [];
   const target = m.targetId ? players.find((p) => p.id === m.targetId && p.alive) ?? null : null;
@@ -92,7 +102,7 @@ export function stepMonster(m: MonsterMotion, players: readonly MonsterTarget[],
   switch (m.state) {
     case 'idle':
     case 'wander': {
-      if (m.aggressive ?? def.behavior === 'aggressive') {
+      if ((m.aggressive ?? def.behavior === 'aggressive') && !blind) {
         // Summoned minions of a passive kind still need eyes: at least 5 units.
         const range = m.aggressive ? Math.max(def.aggroRange, 5) : def.aggroRange;
         const seen = players.filter((p) => p.alive && !inSafeZone(map, p) && dist(p, m) <= range).sort((a, b) => dist(a, m) - dist(b, m))[0];
@@ -126,7 +136,7 @@ export function stepMonster(m: MonsterMotion, players: readonly MonsterTarget[],
         if (now >= m.swingAt) {
           m.swingAt = 0;
           // The blow lands only if the target is still within reach (a little grace for latency).
-          if (dist(m, target) <= def.attackRange * 1.25) events.push({ type: 'hit', monsterId: m.id, targetId: target.id });
+          if (!blind && dist(m, target) <= def.attackRange * 1.25) events.push({ type: 'hit', monsterId: m.id, targetId: target.id });
         }
         break;
       }
@@ -139,7 +149,7 @@ export function stepMonster(m: MonsterMotion, players: readonly MonsterTarget[],
     }
     case 'return': {
       // Walks home briskly, healing on the way like most MMORPG monsters; cannot be re-aggroed until home.
-      if (moveToward(m, m.home, step * 1.5, map)) { m.state = 'idle'; m.hp = def.hp; m.nextActionAt = now + 1000; }
+      if (!rooted && moveToward(m, m.home, step * 1.5, map)) { m.state = 'idle'; m.hp = def.hp; m.nextActionAt = now + 1000; }
       break;
     }
   }

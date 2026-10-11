@@ -1,9 +1,10 @@
 import { MonsterState, type GameState } from '@shaman/schema';
 import {
-  addLoot, atkFor, isBlocked, BASIC_ATTACK, bindingSlow, createMonster, gainExp, gainJobExp, JOB_PROGRESSION, ITEMS, magicDamage, matkFor, MONSTERS, physicalDamage,
+  addLoot, atkFor, basicAttackFor, combatSpec, combatStats, isBlocked, BASIC_ATTACK, bindingSlow, HUNTER, NATION_SKILL_COMBAT, skillRange, createMonster, gainExp, gainJobExp, JOB_PROGRESSION, ITEMS, magicDamage, matkFor, MONSTERS, physicalDamage,
   pickSpawnPoint, PLAYER_RESPAWN_MS, pointInRect, provokeMonster, questEvent, REGEN, REGEN_TICK_MS, SKILL_COMBAT, skillDamage,
-  soulHealAmount, stepMonster, type MapDefinition, type MonsterMotion, type PlayerProfile, type Position, type SpawnRegion,
+  soulHealAmount, stepMonster, type MapDefinition, type MonsterStatus, type MonsterMotion, type PlayerProfile, type Position, type SpawnRegion,
 } from '@shaman/shared';
+import { HunterEffects } from './hunter-effects.js';
 
 // Authoritative combat for one map room: monster spawning and AI, player basic attacks, skill effects on release,
 // damage, death, EXP/level-ups, loot, regeneration and player respawn. Numbers come from packages/shared/src/combat.ts
@@ -20,7 +21,13 @@ export type CombatEvent =
   | { type: 'projectile'; from: string; to: string; kind: string; flightMs: number }
   /** A boss area attack warning on the ground (world units), landing after `ms`. */
   | { type: 'telegraph'; source: string; x: number; y: number; radius: number; ms: number }
-  | { type: 'summon'; source: string; ids: string[] };
+  | { type: 'summon'; source: string; ids: string[] }
+  /** A Hunter's bow shot (basic attack): flies from the player to the monster in `flightMs`. */
+  | { type: 'arrow'; from: string; to: string; flightMs: number }
+  /** A status landed on a monster (floating label / icon). */
+  | { type: 'status'; target: string; status: MonsterStatus; ms: number; source: string }
+  /** Secondary skill presentation (falcon auto-dive, volley arrows, trap bursts) played with the skill's VFX. */
+  | { type: 'skillfx'; caster: string; skillId: string; targetId?: string; x?: number; y?: number; variant?: string };
 
 export interface CombatHost {
   map: MapDefinition;
@@ -32,6 +39,8 @@ export interface CombatHost {
   /** HP/SP/level/EXP changed: send the small vitals message (cheaper than a full profile). */
   vitals(id: string): void;
   broadcast(event: CombatEvent): void;
+  /** Hunter's Patience: shortens a skill's remaining cooldown. */
+  reduceCooldown(playerId: string, skillId: string, ms: number): void;
 }
 
 export type AttackError = 'no-target' | 'too-far' | 'dead';
@@ -50,8 +59,18 @@ export class CombatSystem {
   private pending: { at: number; run: () => void }[] = [];
   private summonSeq = 0;
   private nextRegen = 0;
+  /** Ullr Hunter skill families (arrows, falcon, traps, dash, Great Hunt). */
+  readonly hunter: HunterEffects;
 
   constructor(private readonly host: CombatHost) {
+    this.hunter = new HunterEffects({
+      map: host.map, state: host.state, monsters: this.monsters, now: () => host.now(), rng: () => host.rng(), profile: (id) => host.profile(id),
+      schedule: (delay, run) => this.pending.push({ at: host.now() + delay, run }),
+      damage: (m, amount, playerId, skill) => { if (m.state !== 'dead') this.damageMonster(m, amount, playerId, skill); },
+      fx: (e) => host.broadcast({ type: 'skillfx', ...e }),
+      reduceCooldown: (id, skillId, ms) => host.reduceCooldown(id, skillId, ms),
+      status: (m, status, ms, source) => { host.broadcast({ type: 'status', target: m.id, status, ms, source }); this.sync(m); },
+    });
     const now = host.now();
     for (const region of host.map.spawnRegions ?? []) {
       for (const group of region.monsters) for (let i = 0; i < group.count; i++) this.spawn(region, group.kind, `${region.id}-${group.kind}-${i}`, now);
@@ -76,6 +95,9 @@ export class CombatSystem {
     if (!s) return;
     const def = MONSTERS[m.kind]!;
     s.x = m.x; s.y = m.y; s.facing = m.facing; s.state = m.state; s.hp = Math.max(0, m.hp); s.hpMax = def.hp;
+    const now = this.host.now();
+    const statuses = m.state === 'dead' ? '' : (Object.keys(m.statuses) as MonsterStatus[]).filter((k) => (m.statuses[k] ?? 0) > now).join(',');
+    if (s.statuses !== statuses) s.statuses = statuses;
   }
 
   isDown(playerId: string) { return this.downUntil.has(playerId); }
@@ -85,7 +107,8 @@ export class CombatSystem {
     if (this.isDown(playerId)) return 'dead';
     const m = this.monsters.get(monsterId);
     if (!m || m.state === 'dead') return 'no-target';
-    if (dist(at, m) > BASIC_ATTACK.range + 0.6) return 'too-far';
+    const profile = this.host.profile(playerId);
+    if (dist(at, m) > (profile ? basicAttackFor(profile, BASIC_ATTACK).range : BASIC_ATTACK.range) + 0.6) return 'too-far';
     const current = this.attacks.get(playerId);
     this.attacks.set(playerId, { monsterId, nextAt: current?.monsterId === monsterId ? current.nextAt : this.host.now() });
     return null;
@@ -94,18 +117,26 @@ export class CombatSystem {
   stopAttack(playerId: string): string | null { const a = this.attacks.get(playerId); this.attacks.delete(playerId); return a?.monsterId ?? null; }
 
   /** Validates a skill's target at cast start: a living monster within the skill's (provisional) range. */
-  skillTarget(skillId: string, targetId: unknown, at: Position): { error: 'no-target' | 'too-far' | null; aim: Position | null } {
-    const rule = SKILL_COMBAT[skillId];
-    if (!rule || rule.target === 'self' || typeof targetId !== 'string') return { error: null, aim: null };
+  skillTarget(skillId: string, targetId: unknown, at: Position, skills: Readonly<Record<string, number>> = {}): { error: 'no-target' | 'too-far' | null; aim: Position | null } {
+    const rule = combatSpec(skillId);
+    if (!rule || rule.target === 'self' || rule.target === 'dash' || typeof targetId !== 'string') {
+      // Nation single-target skills need a target (Medium kept its "cast at nothing" behaviour).
+      return { error: rule && rule.target === 'enemy' && NATION_SKILL_COMBAT[skillId] ? 'no-target' : null, aim: null };
+    }
     const m = this.monsters.get(targetId);
     if (!m || m.state === 'dead') return { error: 'no-target', aim: null };
-    if (dist(at, m) > rule.range + 0.5) return { error: 'too-far', aim: null };
+    if (dist(at, m) > skillRange(skillId, skills) + 0.5) return { error: 'too-far', aim: null };
     return { error: null, aim: { x: m.x, y: m.y } };
   }
 
   /** A cast released (server timing): apply its effect. Self skills ignore `targetId`. */
-  releaseSkill(playerId: string, skillId: string, targetId: string | null, aim: Position) {
+  releaseSkill(playerId: string, skillId: string, targetId: string | null, aim: Position, variant?: string) {
     const profile = this.host.profile(playerId);
+    if (profile && !this.isDown(playerId) && NATION_SKILL_COMBAT[skillId]) {
+      this.lastCombat.set(playerId, this.host.now());
+      this.hunter.release(playerId, skillId, targetId, aim, variant);
+      return;
+    }
     const rule = SKILL_COMBAT[skillId];
     if (!profile || !rule || this.isDown(playerId)) return;
     const level = profile.skills[skillId] ?? 1;
@@ -130,7 +161,7 @@ export class CombatSystem {
         const def = MONSTERS[m.kind]!;
         if (skillId === 'binding-thread') {
           const slow = bindingSlow(level);
-          m.slowFactor = slow.factor; m.slowUntil = this.host.now() + slow.durationMs;
+          m.slowFactor = slow.factor; m.slowUntil = this.host.now() + slow.durationMs; m.statuses.slow = m.slowUntil;
           provokeMonster(m, playerId);
           this.host.broadcast({ type: 'damage', target: { kind: 'monster', id: m.id }, amount: 0, source: playerId, skill: skillId });
           continue;
@@ -151,7 +182,7 @@ export class CombatSystem {
   private killMonster(m: MonsterMotion, killer: string) {
     const def = MONSTERS[m.kind]!;
     const region = this.region(m.regionId);
-    m.state = 'dead'; m.hp = 0; m.targetId = null; m.swingAt = 0;
+    m.state = 'dead'; m.hp = 0; m.targetId = null; m.swingAt = 0; m.statuses = {}; m.markedBy = undefined;
     this.sync(m);
     this.host.broadcast({ type: 'death', target: { kind: 'monster', id: m.id }, killer });
     for (const [pid, a] of this.attacks) if (a.monsterId === m.id) this.attacks.delete(pid);
@@ -253,6 +284,7 @@ export class CombatSystem {
   /** Removes a leaving player from all combat bookkeeping. */
   forget(playerId: string) {
     this.attacks.delete(playerId); this.lastCombat.delete(playerId); this.downUntil.delete(playerId); this.lastHitBy.delete(playerId);
+    this.hunter.forget(playerId);
     for (const m of this.monsters.values()) if (m.targetId === playerId) m.targetId = null;
   }
 
@@ -264,6 +296,7 @@ export class CombatSystem {
       this.pending = this.pending.filter((p) => p.at > now);
       for (const p of due) p.run();
     }
+    this.hunter.step(now);
     // Respawns.
     for (const r of this.respawns.filter((r) => r.at <= now)) {
       const region = this.region(r.regionId);
@@ -303,11 +336,24 @@ export class CombatSystem {
       const profile = host.profile(pid);
       if (!player || !m || !profile || m.state === 'dead' || player.dead) { this.attacks.delete(pid); continue; }
       const d = dist(player, m);
-      if (d > 10) { this.attacks.delete(pid); continue; }
-      if (d > BASIC_ATTACK.range + 0.4 || now < a.nextAt) continue;
-      a.nextAt = now + BASIC_ATTACK.delayMs;
+      const basic = basicAttackFor(profile, BASIC_ATTACK);
+      if (d > Math.max(10, basic.range + 2)) { this.attacks.delete(pid); continue; }
+      if (d > basic.range + 0.4 || now < a.nextAt) continue;
+      a.nextAt = now + basic.delayMs;
       player.facing = m.x >= player.x ? (m.y > player.y + 0.6 ? 'south-east' : m.y < player.y - 0.6 ? 'north-east' : 'east') : (m.y > player.y + 0.6 ? 'south-west' : m.y < player.y - 0.6 ? 'north-west' : 'west');
       host.broadcast({ type: 'swing', attacker: { kind: 'player', id: pid }, target: { kind: 'monster', id: m.id } });
+      if (basic.ranged) {
+        // Bow shot: damage lands when the arrow arrives (the falcon may follow it, Falcon Bond).
+        const flightMs = Math.round(d / HUNTER.arrowSpeed * 1000);
+        host.broadcast({ type: 'arrow', from: pid, to: m.id, flightMs });
+        const atk = combatStats(profile).atk;
+        this.pending.push({ at: now + flightMs, run: () => {
+          if (m.state === 'dead') return;
+          this.damageMonster(m, this.hunter.basicDamage(pid, m, atk), pid);
+          if ((m.state as string) !== 'dead') this.hunter.onBasicHit(pid, m);
+        } });
+        continue;
+      }
       this.damageMonster(m, physicalDamage(atkFor(profile.level), MONSTERS[m.kind]!.def, host.rng()), pid);
     }
     // Out-of-combat regeneration.

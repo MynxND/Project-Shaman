@@ -1,0 +1,28 @@
+/* Skill tree window (K). Parchment list on the UI kit window; placement from .sk-center-window. */
+.st-window { width: min(760px, calc(100vw - 24px)); z-index: 21; display: flex; flex-direction: column; }
+.st-body { display: flex; flex-direction: column; gap: 8px; min-height: 0; overflow: hidden; }
+.st-job { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: center; padding: 6px 8px; background: #dfcb9f; box-shadow: inset 0 0 0 1px #b39b70; }
+.st-job b { font-size: 16px; font-variant-numeric: tabular-nums; }
+.st-jobexp { flex: 1 1 220px; min-width: 180px; }
+.st-jobexp small { display: block; font-size: 11px; }
+.st-job > small { flex-basis: 100%; }
+.st-locked { margin: 0; padding: 6px 8px; background: #3b2f2a1a; border-left: 3px solid #8d6a3f; font-size: 13px; }
+.st-list { list-style: none; margin: 0; padding: 0 2px 4px 0; display: grid; gap: 6px; overflow-y: auto; min-height: 0; max-height: min(56vh, 560px); }
+.st-skill { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 10px; align-items: start; padding: 6px 8px;
+  background: #ead9b4; box-shadow: inset 0 0 0 1px #b8a074; }
+.st-skill[data-learned="true"] { background: #e6dcc0; box-shadow: inset 0 0 0 1px #8f7a4e, inset 3px 0 0 #5f9d8b; }
+.st-skill[data-locked="true"] { opacity: .72; }
+.st-icon { width: 44px; height: 44px; border-radius: 6px; background: #1d2f2b; image-rendering: pixelated; }
+.st-icon-empty { display: grid; place-items: center; color: #e9d9a8; font-size: 12px; }
+.st-info b { display: block; font-size: 14px; }
+.st-info small { display: block; font-size: 11px; color: #6b5a3f; }
+.st-info p { margin: 3px 0 0; font-size: 12px; line-height: 1.35; }
+.st-info .st-formula { color: #5a4630; font-size: 11.5px; }
+.st-skill .sk-button { align-self: center; min-width: 64px; }
+.st-empty { padding: 16px; }
+@media (max-width: 640px) {
+  .st-window { width: auto; }
+  .st-list { max-height: none; flex: 1 1 auto; }
+  .st-skill { grid-template-columns: 36px minmax(0, 1fr) auto; gap: 8px; }
+  .st-icon { width: 36px; height: 36px; }
+}

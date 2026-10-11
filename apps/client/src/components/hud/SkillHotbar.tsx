@@ -1,18 +1,21 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
-import { MEDIUM_SKILLS, MEDIUM_PRESENTATION, SKILL_BEHAVIOR_POLICY } from '@shaman/shared';
+import { combatSpec, TRAP_RUNE_TH, type TrapRune, type TreeSkill } from '@shaman/shared';
+import { hotbarSkills, skillLabel, useSkillTexts } from '@/game-data/skill-catalog';
 import { useHudStore } from '@/stores/hud-store';
 import { useProfileStore } from '@/stores/profile-store';
 import { useSkillStore } from '@/stores/skill-store';
+import { openSkillTree } from './windows';
 import { RoundButton } from './RoundButton';
 
-// Medium skills from docs/design/skill-database-source.txt. A learned skill casts through the server (cast time,
-// walking interrupts, cooldown, SP) at the selected monster. Damage and healing use provisional numbers (combat.ts).
-const SKILLS = MEDIUM_SKILLS.filter(skill => SKILL_BEHAVIOR_POLICY[MEDIUM_PRESENTATION[skill.id]!.behavior].hotbar);
-/** Touch arc: the first skill sits in the corner, the rest on a quarter circle around it (px from that button). */
-const ARC_RADIUS = 124;
-const ARC_ANGLES = [180, 210, 240, 270];
-const NOTE = 'คลิกมอนสเตอร์เพื่อเลือกเป้าหมาย · ตัวเลขทดลอง';
+// The current job's learned active skills (Medium, then the branch's tier 2 and 3; shared registry). A cast goes to
+// the server (cast time, walking interrupts, cooldown, SP) at the selected monster; numbers are provisional.
+/** Keys for the slots, in order. */
+const KEYS = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
+/** Touch arc: the first skill sits in the corner, the rest on two quarter circles around it (px from that button). */
+const ARC = [...[180, 210, 240, 270].map((a) => ({ a, r: 124 })), ...[228, 249, 270].map((a) => ({ a, r: 196 }))];
+const NOTE = 'คลิกมอนสเตอร์เพื่อเลือกเป้าหมาย · K เปิดหน้าต่างสกิล · ตัวเลขทดลอง';
 const TOUCH_NOTE = 'แตะมอนสเตอร์เพื่อเล็ง';
+const RUNE_LETTER: Readonly<Record<TrapRune, string>> = { snare: 'ᚾ', freeze: 'ᛁ', blast: 'ᚦ', flash: 'ᛞ' };
 
 /** performance.now(), refreshed every animation frame while `active`. */
 function useNow(active: boolean) {
@@ -25,67 +28,89 @@ function useNow(active: boolean) {
   return now;
 }
 
-/** Skill buttons share the carved ring (RoundButton): a quarter arc on touch screens, a row in a HUD panel otherwise. */
+/** Skill buttons share the carved ring (RoundButton): quarter arcs on touch screens, a row in a HUD panel otherwise. */
 export function SkillHotbar({ touch }: { touch: boolean }) {
   const notify = useHudStore((s) => s.notify);
   const profile = useProfileStore((s) => s.profile);
-  const { casting, readyAt, cast } = useSkillStore();
+  const { casting, readyAt, cast, variants, cycleVariant } = useSkillStore();
+  const texts = useSkillTexts();
+  const [page, setPage] = useState(0);
+  const all = hotbarSkills(profile);
+  // Touch arcs hold 8 buttons; more skills are paged with the swap button.
+  const perPage = touch ? ARC.length + 1 : KEYS.length;
+  const pages = Math.max(1, Math.ceil(all.length / perPage));
+  const skills = all.slice((page % pages) * perPage, (page % pages) * perPage + perPage);
   const cooling = Object.values(readyAt).some((t) => t > performance.now());
   const now = useNow(casting !== null || cooling);
 
-  const use = (s: (typeof SKILLS)[number]) => {
+  const use = (s: TreeSkill) => {
     if (!profile) { notify('ยังไม่ได้เชื่อมต่อเซิร์ฟเวอร์', 'warn'); return; }
-    if (!((profile.skills[s.id] ?? 0) > 0)) { notify(`${s.name} · ยังไม่ได้เรียน เรียนได้ที่อาจารย์คง สำนักฝึกคาถา`, 'info'); return; }
+    if (!((profile.skills[s.id] ?? 0) > 0)) { notify(`${skillLabel(s)} · ยังไม่ได้เรียน เปิดหน้าต่างสกิล (K)`, 'info'); return; }
     cast(s.id);
   };
-  const latest = useRef(use);
-  latest.current = use;
+  const latest = useRef({ use, skills });
+  latest.current = { use, skills };
 
-  // Number keys 1-5 cast the matching slot (ignored while typing).
+  // Number keys cast the matching slot (ignored while typing).
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       const t = e.target;
       if (t instanceof HTMLElement && (t.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(t.tagName))) return;
       if (e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
-      const skill = SKILLS[Number(e.key) - 1];
-      if (skill && /^[1-9]$/.test(e.key)) { e.preventDefault(); latest.current(skill); }
+      const i = KEYS.indexOf(e.key);
+      const skill = i >= 0 ? latest.current.skills[i] : undefined;
+      if (skill) { e.preventDefault(); latest.current.use(skill); }
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, []);
 
-  const button = (s: (typeof SKILLS)[number], i: number, className: string, style?: CSSProperties) => {
+  const button = (s: TreeSkill, i: number, className: string, style?: CSSProperties) => {
     const level = profile?.skills[s.id] ?? 0;
     const learned = level > 0;
     const castProgress = casting?.skillId === s.id && casting.castMs > 0 ? Math.min(1, (now - casting.startedAt) / casting.castMs) : null;
     const remaining = Math.max(0, (readyAt[s.id] ?? 0) - now);
-    const label = !profile ? `${s.name} — ออฟไลน์` : learned ? `${s.name} Lv ${level} · กด ${i + 1}` : `${s.name} — ยังไม่ได้เรียน`;
+    const variantsOf = combatSpec(s.id)?.variants as readonly TrapRune[] | undefined;
+    const variant = variantsOf ? (variants[s.id] as TrapRune | undefined) ?? variantsOf[0]! : undefined;
+    const name = skillLabel(s);
+    const label = !profile ? `${name} — ออฟไลน์` : learned ? `${name} Lv ${level} · กด ${KEYS[i] ?? ''}${variant ? ` · รูน ${TRAP_RUNE_TH[variant]}` : ''}` : `${name} — ยังไม่ได้เรียน`;
+    const icon = texts[s.id]?.icon ?? `/assets/skills/medium-v1/${s.id}-icon.png`;
     return (
-      <RoundButton key={s.id} className={className} icon={`/assets/skills/medium-v1/${s.id}-icon.png`} label={label}
-        style={{ ...style, ...(castProgress !== null ? { '--cast': castProgress } : {}) } as CSSProperties}
-        disabled={!profile || !learned} onClick={() => use(s)}>
-        <span className="hud-slot-key">{i + 1}</span>
-        {profile && !learned && <span className="hud-skill-lock" aria-hidden>🔒</span>}
-        {castProgress !== null && <span className="hud-skill-cast" aria-hidden />}
-        {remaining > 0 && <span className="hud-skill-cooldown" aria-hidden>{Math.ceil(remaining / 1000)}</span>}
-      </RoundButton>
+      <span key={s.id} className={'hud-skill-wrap ' + className} style={style}>
+        <RoundButton className="hud-skill-btn" icon={icon} label={label}
+          style={(castProgress !== null ? { '--cast': castProgress } : {}) as CSSProperties}
+          disabled={!profile || !learned} onClick={() => use(s)}>
+          {KEYS[i] && !touch && <span className="hud-slot-key">{KEYS[i]}</span>}
+          {profile && !learned && <span className="hud-skill-lock" aria-hidden>🔒</span>}
+          {castProgress !== null && <span className="hud-skill-cast" aria-hidden />}
+          {remaining > 0 && <span className="hud-skill-cooldown" aria-hidden>{Math.ceil(remaining / 1000)}</span>}
+        </RoundButton>
+        {variant && <button type="button" className="hud-skill-variant pointer-events-auto" title={`เปลี่ยนรูนกับดัก (ตอนนี้ ${TRAP_RUNE_TH[variant]})`}
+          aria-label={`เปลี่ยนรูนกับดัก ตอนนี้ ${TRAP_RUNE_TH[variant]}`} onClick={() => cycleVariant(s.id)}>{RUNE_LETTER[variant]}</button>}
+      </span>
     );
   };
   if (touch) {
     return (
-      <section className="hud-skill-arc" aria-label="ปุ่มสกิล Medium">
+      <section className="hud-skill-arc" aria-label="ปุ่มสกิล">
         <span className="hud-skill-note">{TOUCH_NOTE}</span>
-        {SKILLS.map((s, i) => {
-          const angle = ((ARC_ANGLES[i - 1] ?? 0) * Math.PI) / 180;
-          const style = i === 0 ? undefined : { '--dx': `${Math.round(-Math.cos(angle) * ARC_RADIUS)}px`, '--dy': `${Math.round(-Math.sin(angle) * ARC_RADIUS)}px` } as CSSProperties;
+        {skills.map((s, i) => {
+          const slot = ARC[i - 1];
+          const angle = ((slot?.a ?? 0) * Math.PI) / 180;
+          const style = i === 0 || !slot ? undefined : { '--dx': `${Math.round(-Math.cos(angle) * slot.r)}px`, '--dy': `${Math.round(-Math.sin(angle) * slot.r)}px` } as CSSProperties;
           return button(s, i, i === 0 ? 'hud-skill hud-skill-main' : 'hud-skill', style);
         })}
+        <button type="button" className="hud-skill-tree-btn pointer-events-auto" onClick={openSkillTree} aria-label="เปิดหน้าต่างสกิล">สกิล</button>
+        {pages > 1 && <button type="button" className="hud-skill-page-btn pointer-events-auto" onClick={() => setPage((n) => (n + 1) % pages)} aria-label={`สลับชุดสกิล หน้า ${(page % pages) + 1} จาก ${pages}`}>⟳ {(page % pages) + 1}/{pages}</button>}
       </section>
     );
   }
   return (
-    <section className="hud-panel hud-hotbar pointer-events-auto" aria-label="แถบสกิล Medium">
-      <div className="hud-hotbar-row">{SKILLS.map((s, i) => button(s, i, 'hud-skill-slot'))}</div>
+    <section className="hud-panel hud-hotbar pointer-events-auto" aria-label="แถบสกิล">
+      <div className="hud-hotbar-row">
+        {skills.map((s, i) => button(s, i, 'hud-skill-slot'))}
+        {skills.length === 0 && <span className="sk-muted">ยังไม่มีสกิลใช้งาน · กด K เพื่อเรียน</span>}
+      </div>
       <small>{NOTE}</small>
     </section>
   );

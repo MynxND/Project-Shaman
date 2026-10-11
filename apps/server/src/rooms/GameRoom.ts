@@ -1,14 +1,16 @@
 import { Room, type Client } from '@colyseus/core';
 import { CitizenState, GameState, PlayerState } from '@shaman/schema';
 import { createCitizenMotion, stepCitizen, UMBRAL_CAPITAL, UMBRAL_CITIZENS, type CitizenMotion } from '@shaman/shared';
-import { acceptStopAt, getMap, isMovementInput, MAPS, migrateProfile, newProfile, parseBodyType, pointInRect, questEvent, stepMovement, type BodyType, type MapDefinition, type MovementInput, type PlayerProfile } from '@shaman/shared';
-import { FACINGS, parseSkillCastRequest, SKILL_CAST_RULES, SKILL_COMBAT, skillAimPoint, skillCastError, type Facing, type SkillCastEvent } from '@shaman/shared';
+import { acceptStopAt, getMap, isBlocked, isMovementInput, MAPS, migrateProfile, newProfile, parseBodyType, pointInRect, questEvent, stepMovement, type BodyType, type MapDefinition, type MovementInput, type PlayerProfile } from '@shaman/shared';
+import { advanceJob, castRule, castsWhileMoving, combatSpec, companionFor, FACINGS, JOB_PROGRESSION, advancementQuest, learnSkill, parseSkillCastRequest, skillAimPoint, skillCastError, type Facing, type SkillCastEvent } from '@shaman/shared';
 import { parseNpcRequest, runNpcRequest } from './npc-services.js';
 import { CombatSystem } from './combat-system.js';
 import { consumeTicket, issueTicket } from './travel.js';
 import { decodeHead, EMOTE_MS, encodeHead, encodeLook, equipItem, isExpression, sanitizeEquipment, sanitizeHead } from '@shaman/shared';
 const TICK_MS = 1000 / 30;
 const INPUT_TTL_MS = 300;
+/** Dev-only shortcuts (job level / trial) for testing job advancement; never available in production builds. */
+const DEV_COMMANDS = process.env.NODE_ENV !== 'production';
 
 /** One room per map (the server filters rooms by `mapId`). */
 export class GameRoom extends Room<{ state: GameState }> {
@@ -40,13 +42,13 @@ export class GameRoom extends Room<{ state: GameState }> {
     this.cooldowns.set(id, ready);
     // SP is spent on release (provisional cost); a cast that can no longer pay fizzles like a cancel.
     const profile = this.profiles.get(id);
-    const cost = SKILL_COMBAT[cast.event.skillId]?.sp ?? 0;
+    const cost = combatSpec(cast.event.skillId)?.sp ?? 0;
     if (!profile || profile.sp < cost || this.combat.isDown(id)) { this.broadcast('skill', { ...cast.event, phase: 'cancel' } satisfies SkillCastEvent); return; }
     if (cost > 0) { this.profiles.set(id, { ...profile, sp: profile.sp - cost }); this.sendVitals(id); }
     this.broadcast('skill', { ...cast.event, phase: 'release' } satisfies SkillCastEvent);
     // Re-aim at the target's current position (it may have moved during the cast).
     const target = cast.event.targetId ? this.combat.monsters.get(cast.event.targetId) : undefined;
-    this.combat.releaseSkill(id, cast.event.skillId, cast.event.targetId ?? null, target ? { x: target.x, y: target.y } : { x: cast.event.aimX, y: cast.event.aimY });
+    this.combat.releaseSkill(id, cast.event.skillId, cast.event.targetId ?? null, target ? { x: target.x, y: target.y } : { x: cast.event.aimX, y: cast.event.aimY }, cast.event.variant);
     // A cast pauses auto-attack; afterwards the player goes back to hitting the same monster, as in most MMORPGs.
     const player = this.state.players.get(id);
     if (cast.resumeAttack && player && !player.moving) this.combat.requestAttack(id, cast.resumeAttack, player);
@@ -59,10 +61,19 @@ export class GameRoom extends Room<{ state: GameState }> {
     this.broadcast('skill', { ...cast.event, phase: 'cancel' } satisfies SkillCastEvent);
   }
 
+  /** Job summary everyone sees: branch and the permanent companion (Falcon Bond falcon). */
+  private syncJob(id: string, profile: PlayerProfile) {
+    const player = this.state.players.get(id);
+    if (!player) return;
+    const branch = profile.branch ?? '', companion = companionFor(profile);
+    if (player.branch !== branch) player.branch = branch;
+    if (player.companion !== companion) player.companion = companion;
+  }
   private sendProfile(client: Client, profile: PlayerProfile, result?: { ok: boolean; note?: string; error?: string }) {
     sanitizeEquipment(profile);
     const player = this.state.players.get(client.sessionId);
     if (player) player.look = encodeLook(profile.equipment);
+    this.syncJob(client.sessionId, profile);
     client.send('profile', { profile, ...(result ? { result } : {}) });
   }
   /** Small, frequent update of the numbers the HUD shows during combat. */
@@ -99,6 +110,10 @@ export class GameRoom extends Room<{ state: GameState }> {
       },
       vitals: (id) => this.sendVitals(id),
       broadcast: (event) => this.broadcast('combat', event),
+      reduceCooldown: (id, skillId, ms) => {
+        const ready = this.cooldowns.get(id);
+        if (ready?.[skillId]) { ready[skillId] = Math.max(this.clock.currentTime, ready[skillId]! - ms); this.client(id)?.send('cooldown', { skillId, readyInMs: ready[skillId]! - this.clock.currentTime }); }
+      },
     });
     this.onMessage('move', (client, message: unknown) => {
       if (!isMovementInput(message)) return;
@@ -107,7 +122,13 @@ export class GameRoom extends Room<{ state: GameState }> {
       // Rate-limit movement updates, but never drop a stop: losing it would keep the player walking
       // until the input expires (INPUT_TTL_MS) and the client would visibly slide after releasing keys.
       const isStop = message.x === 0 && message.y === 0;
-      if (!isStop) { this.cancelCast(client.sessionId); this.combat.stopAttack(client.sessionId); }
+      if (!isStop) {
+        // Hunter's Stride: arrow skills keep charging and the bow keeps firing while walking.
+        const cast = this.casts.get(client.sessionId), profile = this.profiles.get(client.sessionId);
+        const stride = !!profile && profile.branch === 'ullr-hunter' && (profile.skills['hunters-stride'] ?? 0) > 0;
+        if (!cast || !profile || !castsWhileMoving(cast.event.skillId, profile.skills)) this.cancelCast(client.sessionId);
+        if (!stride) this.combat.stopAttack(client.sessionId);
+      }
       if (previous && (message.sequence <= previous.value.sequence || (!isStop && this.clock.currentTime - previous.at < 20))) return;
       this.movementInputs.set(client.sessionId, { value: message, at: this.clock.currentTime });
       if (isStop) {
@@ -167,6 +188,47 @@ export class GameRoom extends Room<{ state: GameState }> {
       this.sendProfile(client, out.profile, { ok: true, note: out.note });
       this.sendVitals(client.sessionId);
     });
+    // Skill tree window (K): learn or raise a skill anywhere, with the registry checks (tier, branch, points, prerequisites).
+    this.onMessage('skill:learn', (client, message: unknown) => {
+      const profile = this.profiles.get(client.sessionId);
+      const skillId = (message as { skillId?: unknown } | null)?.skillId;
+      if (!profile) return;
+      if (typeof skillId !== 'string') { this.sendProfile(client, profile, { ok: false, error: 'bad-request' }); return; }
+      const out = learnSkill(profile, skillId);
+      if (!out.ok) { this.sendProfile(client, profile, { ok: false, error: out.error }); return; }
+      this.profiles.set(client.sessionId, out.profile);
+      this.sendProfile(client, out.profile, { ok: true, note: out.note });
+    });
+    // Dev builds only: jump to the advancement Job Level and finish the current job trial, to test job changes.
+    if (DEV_COMMANDS) this.onMessage('dev:job', (client) => {
+      const profile = this.profiles.get(client.sessionId);
+      if (!profile || profile.jobTier === 3) return;
+      const p = structuredClone(profile);
+      const target = JOB_PROGRESSION.advanceAt[p.jobTier as 1 | 2];
+      p.skillPoints += Math.max(0, target - p.jobLevel) * JOB_PROGRESSION.skillPointsPerJobLevel;
+      p.jobLevel = Math.max(p.jobLevel, target);
+      const quest = advancementQuest(p);
+      if (quest) p.quests[quest] = { step: 99, done: true };
+      this.profiles.set(client.sessionId, p);
+      this.sendProfile(client, p, { ok: true, note: 'โหมดทดสอบ: Job Level ' + p.jobLevel + ' และผ่านบททดสอบอาชีพแล้ว' });
+    });
+    // Dev builds only: move to a walkable point (automated browser checks of combat).
+    if (DEV_COMMANDS) this.onMessage('dev:warp', (client, message: unknown) => {
+      const player = this.state.players.get(client.sessionId);
+      const { x, y } = (message ?? {}) as { x?: unknown; y?: unknown };
+      if (!player || typeof x !== 'number' || typeof y !== 'number' || isBlocked(this.map, x, y)) return;
+      player.x = x; player.y = y; player.moving = false; this.movementInputs.delete(client.sessionId);
+    });
+    // Dev builds only: advance without walking to the trainer (automated browser checks); same rules as the trainer.
+    if (DEV_COMMANDS) this.onMessage('dev:advance', (client, message: unknown) => {
+      const profile = this.profiles.get(client.sessionId);
+      const branch = (message as { branch?: unknown } | null)?.branch;
+      if (!profile) return;
+      const out = advanceJob(profile, typeof branch === 'string' ? branch : undefined);
+      if (!out.ok) { this.sendProfile(client, profile, { ok: false, error: out.error }); return; }
+      this.profiles.set(client.sessionId, out.profile);
+      this.sendProfile(client, out.profile, { ok: true, note: 'โหมดทดสอบ: เปลี่ยนอาชีพแล้ว' });
+    });
     // Basic attack on a monster: repeats on the server until the player moves, the target dies or leaves reach.
     this.onMessage('attack', (client, message: unknown) => {
       const player = this.state.players.get(client.sessionId);
@@ -187,9 +249,9 @@ export class GameRoom extends Room<{ state: GameState }> {
       const now = this.clock.currentTime;
       let error: string | null = req ? skillCastError(profile, req.skillId, now, { casting: this.casts.has(client.sessionId), moving: player.moving }, this.cooldowns.get(client.sessionId) ?? {}) : 'bad-request';
       if (!error && req && player.dead) error = 'dead';
-      if (!error && req && profile.sp < (SKILL_COMBAT[req.skillId]?.sp ?? 0)) error = 'no-sp';
+      if (!error && req && profile.sp < (combatSpec(req.skillId)?.sp ?? 0)) error = 'no-sp';
       const targetId = (message as { targetId?: unknown }).targetId;
-      const target = req ? this.combat.skillTarget(req.skillId, targetId, player) : { error: null, aim: null };
+      const target = req && !error ? this.combat.skillTarget(req.skillId, targetId, player, profile.skills) : { error: null, aim: null };
       if (!error && target.error) error = target.error;
       if (error || !req) { client.send('skill:error', { skillId: req?.skillId ?? null, error: error ?? 'bad-request' }); return; }
       const resumeAttack = this.combat.stopAttack(client.sessionId);
@@ -201,11 +263,11 @@ export class GameRoom extends Room<{ state: GameState }> {
         player.facing = (['east', 'south-east', 'south', 'south-west', 'west', 'north-west', 'north', 'north-east'] as const)[(octant + 8) % 8]!;
       } else if (typeof asked === 'string' && (FACINGS as readonly string[]).includes(asked)) player.facing = asked;
       const facing = player.facing as Facing;
-      const rule = SKILL_CAST_RULES[req.skillId]!;
+      const rule = castRule(req.skillId, profile.skills)!;
       const aim = target.aim ?? skillAimPoint(req.skillId, player, facing, this.map);
       const event: SkillCastEvent = {
         caster: client.sessionId, skillId: req.skillId, phase: 'start', castMs: rule.castMs, cooldownMs: rule.cooldownMs, facing,
-        x: player.x, y: player.y, aimX: aim.x, aimY: aim.y, ...(target.aim && typeof targetId === 'string' ? { targetId } : {}),
+        x: player.x, y: player.y, aimX: aim.x, aimY: aim.y, ...(target.aim && typeof targetId === 'string' ? { targetId } : {}), ...(req.variant ? { variant: req.variant } : {}),
       };
       this.casts.set(client.sessionId, { event, releaseAt: now + rule.castMs, resumeAttack });
       this.broadcast('skill', event);
@@ -216,6 +278,7 @@ export class GameRoom extends Room<{ state: GameState }> {
     // Capped so a stalled event loop cannot move a player through a footprint in one step.
     this.setSimulationInterval((deltaMs) => {
       const dt = Math.min(deltaMs, 100) / 1000;
+
       for (const def of this.citizenMotions.size ? UMBRAL_CITIZENS : []) {
         const previous = this.citizenMotions.get(def.id);
         const citizen = this.state.citizens.get(def.id);
@@ -302,3 +365,4 @@ export class GameRoom extends Room<{ state: GameState }> {
     this.portalArmed.delete(id); this.travelling.delete(id); this.bodyTypes.delete(id); this.state.players.delete(id);
   }
 }
+

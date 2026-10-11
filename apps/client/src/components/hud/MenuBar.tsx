@@ -4,7 +4,8 @@ import { useInventoryStore } from '@/stores/inventory-store';
 import { useMarketStore } from '@/stores/market-store';
 import { useUiStore } from '@/stores/ui-store';
 import { useHudStore } from '@/stores/hud-store';
-import { openCharacter, openInventory, openMarket, openWorldMap } from './windows';
+import { openCharacter, openInventory, openMarket, openSkillTree, openWorldMap } from './windows';
+import { useSkillTreeStore } from '@/stores/skill-tree-store';
 
 // UI kit v2 menu icons (PixelLab, one style reference; docs/design/ui/kit-v2.json).
 const iconSrc = (id: string) => `/assets/ui/v2/menu/${id}.png`;
@@ -17,6 +18,7 @@ export function MenuBar() {
   const inventoryOpen = useInventoryStore((s) => s.open);
   const marketOpen = useMarketStore((s) => s.open);
   const mapOpen = useHudStore((s) => s.mapOpen);
+  const skillTreeOpen = useSkillTreeStore((s) => s.open);
   const { menuOpen, toggleMenu } = useUiStore();
   const nav = useRef<HTMLElement>(null);
   // Publish the menu's bottom edge so centre windows (.sk-center-window) open below it instead of covering it.
@@ -33,7 +35,7 @@ export function MenuBar() {
   }, []);
   const entries: MenuEntry[] = [
     { id: 'status', th: 'สถานะ', en: 'Status', hotkey: 'C', open: openCharacter, active: characterOpen },
-    { id: 'skills', th: 'ทักษะ', en: 'Skills' },
+    { id: 'skills', th: 'ทักษะ', en: 'Skills', hotkey: 'K', open: openSkillTree, active: skillTreeOpen },
     // Equipment and class are sections of the character record for now.
     { id: 'equipment', th: 'อุปกรณ์', en: 'Equipment', open: openCharacter, active: characterOpen },
     { id: 'gold', th: 'เงินตรา', en: 'Gold', open: openMarket, active: marketOpen },

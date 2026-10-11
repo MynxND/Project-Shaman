@@ -343,3 +343,15 @@ button.hud-menu-item:focus-visible { outline: 2px solid var(--sk-jade); }
 .hud-travel { position: fixed; inset: 0; display: grid; place-content: center; text-align: center; gap: 4px; pointer-events: none;
   background: radial-gradient(ellipse at center, #0b1a17cc, #050b0aee); color: #cdbb93; font-size: 13px; letter-spacing: .08em; z-index: 60; }
 .hud-travel b { font-family: var(--sk-font-display); font-size: 26px; color: #bff5dc; letter-spacing: 0; text-shadow: 0 0 12px #3f8f73; }
+
+/* Job hotbar (game integration slice 1): each slot is a wrapper so the trap-rune switch can sit on the ring. */
+.hud-skill-wrap:not(.hud-skill) { position: relative; display: inline-block; }
+.hud-skill-btn[data-disabled="true"] .hud-round-icon { filter: saturate(.55) brightness(.8); }
+.hud-skill-btn .hud-round-icon { width: 48px; height: 48px; clip-path: circle(18px at 50% 50%); }
+.hud-skill-variant { position: absolute; right: -2px; top: -2px; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center;
+  background: #1c2f2b; border: 1px solid #c8a85a; color: #e6d8ff; font: 14px/1 'Segoe UI Historic', 'Noto Sans Runic', serif; box-shadow: 0 0 6px #a070ff88; cursor: pointer; }
+.hud-skill-variant:focus-visible { outline: 2px solid #f2e2a8; outline-offset: 1px; }
+.hud-skill-tree-btn { position: absolute; right: 0; top: -30px; padding: 3px 10px; border-radius: 10px; font-size: 12px; color: #f2e6c4;
+  background: #17302bdd; border: 1px solid #b8975088; text-shadow: 0 1px 0 #000; }
+.hud-skill-page-btn { position: absolute; right: 56px; top: -30px; padding: 3px 8px; border-radius: 10px; font-size: 12px; color: #f2e6c4;
+  background: #17302bdd; border: 1px solid #b8975088; text-shadow: 0 1px 0 #000; }
