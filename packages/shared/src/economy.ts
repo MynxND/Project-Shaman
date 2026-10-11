@@ -1,15 +1,17 @@
 // Player profile and NPC services, as pure functions the server runs (the client only displays results).
 // PROVISIONAL rules: prices, refine odds, quest and teleport costs are placeholders (docs/design-decisions.md).
 // Profiles live in server memory for the session only: there is no persistence yet.
-import { ITEMS, MEDIUM_SKILLS, SHOPS } from './catalog.js';
+import { ITEMS, SHOPS } from './catalog.js';
 import type { InventoryStack } from './items.js';
 import type { Position } from './world.js';
 import { gainExp, maxHpFor, maxSpFor } from './combat.js';
 import { EQUIPMENT_VISUALS } from './equipment.js';
+import { learnError, migrateJobProfile, PROFILE_VERSION, type JobProfile } from './job-progression.js';
+import { NATION_BRANCHES, SKILL_TREE, type JobTier } from './skill-registry.js';
 
 /** `count` tracks kills toward the current 'kill' step. */
 export interface QuestProgress { step: number; done: boolean; count?: number }
-export interface PlayerProfile {
+export interface PlayerProfile extends JobProfile {
   silver: number;
   gold: number;
   stacks: InventoryStack[];
@@ -20,6 +22,7 @@ export interface PlayerProfile {
   level: number; exp: number; statusPoints: number;
   hp: number; hpMax: number; sp: number; spMax: number;
   savePoint: Position;
+  /** Unspent skill points (1 per Job Level gained, plus quest rewards) and learned skill levels (kept across job tiers). */
   skillPoints: number;
   skills: Record<string, number>;
   /** Worn equipment by slot (item ids; the items stay in the bag). */
@@ -35,7 +38,7 @@ export const REFINE_MAX = 10;
 export type ServiceError =
   | 'unknown-item' | 'not-sold-here' | 'bad-quantity' | 'not-enough-silver' | 'too-heavy' | 'no-such-stack'
   | 'cannot-sell' | 'storage-full' | 'not-equipment' | 'refine-max' | 'missing-material' | 'skill-max'
-  | 'no-skill-points' | 'unknown-skill' | 'quest-active' | 'quest-done' | 'quest-not-ready' | 'unknown-destination' | 'not-enough-gold' | 'bad-slot' | 'art-unavailable';
+  | 'no-skill-points' | 'unknown-skill' | 'skill-locked' | 'prerequisite' | 'max-tier' | 'job-level-low' | 'job-quest-missing' | 'bad-branch' | 'quest-active' | 'quest-done' | 'quest-not-ready' | 'unknown-destination' | 'not-enough-gold' | 'bad-slot' | 'art-unavailable';
 export type ServiceResult = { ok: true; profile: PlayerProfile; note?: string } | { ok: false; error: ServiceError };
 
 const ok = (profile: PlayerProfile, note?: string): ServiceResult => ({ ok: true, profile, ...(note ? { note } : {}) });
@@ -49,6 +52,7 @@ export function newProfile(spawn: Position): PlayerProfile {
     // A new Medium starts at level 1, a little worn, so the shrine keeper's healing is visible.
     level: 1, exp: 0, statusPoints: 0, hp: Math.round(maxHpFor(1) * 0.6), hpMax: maxHpFor(1), sp: Math.round(maxSpFor(1) * 0.6), spMax: maxSpFor(1),
     savePoint: { ...spawn }, skillPoints: 3, skills: { 'spirit-bolt': 1 }, equipment: {}, quests: {}, nextUid: 1,
+    profileVersion: PROFILE_VERSION, jobTier: 1, nation: null, branch: null, jobLevel: 1, jobExp: 0,
   };
   addItem(p, 'potion-red', 5, 0);
   addItem(p, 'talisman-paper', 10, 0);
@@ -219,16 +223,17 @@ export function setSavePoint(profile: PlayerProfile, at: Position): ServiceResul
 }
 
 export function learnSkill(profile: PlayerProfile, skillId: string): ServiceResult {
-  const skill = MEDIUM_SKILLS.find((s) => s.id === skillId);
-  if (!skill) return fail('unknown-skill');
+  const error = learnError(migrateJobProfile(clone(profile)), skillId);
+  if (error) return fail(error);
+  const skill = SKILL_TREE[skillId]!;
   const level = profile.skills[skillId] ?? 0;
-  if (level >= skill.maxLevel) return fail('skill-max');
-  if (profile.skillPoints <= 0) return fail('no-skill-points');
   const p = clone(profile);
   p.skills[skillId] = level + 1;
   p.skillPoints -= 1;
-  return ok(p, `${skill.name} เลเวล ${level + 1}`);
+  return ok(p, `${skill.thaiName === skill.name ? skill.name : `${skill.thaiName} · ${skill.name}`} เลเวล ${level + 1}`);
 }
+/** Migrates an older saved profile (job fields) — call on every profile entering a room. */
+export function migrateProfile(profile: PlayerProfile): PlayerProfile { return migrateJobProfile(profile); }
 
 // ---- Quests ----
 export type QuestStep = { kind: 'visit'; x: number; y: number; r: number; label: string; mapId?: string } | { kind: 'talk'; npc: string; label: string }
@@ -236,9 +241,36 @@ export type QuestStep = { kind: 'visit'; x: number; y: number; r: number; label:
 export type QuestEvent = { kind: 'visit'; at: Position; mapId?: string } | { kind: 'talk'; npc: string } | { kind: 'kill'; monster: string };
 export interface QuestDefinition { id: string; title: string; giver: string; summary: string; steps: QuestStep[];
   /** A quest that must be finished first (quest chains). */
-  requires?: string; reward: { silver: number; items: [string, number][]; skillPoints: number; exp?: number } }
+  requires?: string; reward: { silver: number; items: [string, number][]; skillPoints: number; exp?: number };
+  /** Only offered to players at this job tier (and branch): the job advancement quests. */
+  job?: { tier: JobTier; branch?: string } }
+
+/** Job advancement quests (user 2026-10-11): the apprentice trial (tier 1 → nation branch) and one trial per branch
+ *  (tier 2 → tier 3). Steps are provisional and reuse existing monsters/NPCs. */
+const JOB_QUESTS: Record<string, QuestDefinition> = {
+  'job-apprentice-trial': {
+    id: 'job-apprentice-trial', title: 'บททดสอบร่างทรงฝึกหัด', giver: 'elder', job: { tier: 1 },
+    summary: 'หลวงตาธรรมจะส่งเจ้าไปเรียนวิชาของชาติใดชาติหนึ่ง พิสูจน์ตัวก่อน: ปราบหุ่นฟางต้องคำสาป 3 ตัวแล้วกลับมารายงาน',
+    steps: [
+      { kind: 'kill', monster: 'cursed-strawling', count: 3, label: 'ปราบหุ่นฟางต้องคำสาป' },
+      { kind: 'talk', npc: 'elder', label: 'กลับไปรายงานหลวงตาธรรม' },
+    ],
+    reward: { silver: 0, items: [], skillPoints: 0 },
+  },
+  ...Object.fromEntries(NATION_BRANCHES.map(({ branch, info }) => [`job-trial-${branch}`, {
+    id: `job-trial-${branch}`, title: `บททดสอบ ${info.tier3}`, giver: 'elder', job: { tier: 2, branch },
+    summary: `พิสูจน์ว่าพร้อมเป็น ${info.tier3}: ดับผีไฟพเนจร 5 ดวง ปราบเจ้าที่รากไม้ต้องสาป แล้วกลับมารายงานหลวงตาธรรม`,
+    steps: [
+      { kind: 'kill', monster: 'spirit-flame', count: 5, label: 'ดับผีไฟพเนจร' },
+      { kind: 'kill', monster: 'cursed-rootkeeper', count: 1, label: 'ปราบเจ้าที่รากไม้ต้องสาป' },
+      { kind: 'talk', npc: 'elder', label: 'กลับไปรายงานหลวงตาธรรม' },
+    ],
+    reward: { silver: 0, items: [], skillPoints: 0 },
+  } satisfies QuestDefinition])),
+};
 
 export const QUESTS: Readonly<Record<string, QuestDefinition>> = {
+  ...JOB_QUESTS,
   'first-steps': {
     id: 'first-steps', title: 'ก้าวแรกของร่างทรง', giver: 'elder',
     summary: 'หลวงตาธรรมอยากให้เจ้ารู้จักเมือง: ไปสักการะต้นโพธิ์ในสวนศิรวิญญาณ รับยาจากป้าบุญมี แล้วกลับมารายงาน',
@@ -298,8 +330,10 @@ export const QUESTS: Readonly<Record<string, QuestDefinition>> = {
 };
 
 /** The quest an NPC offers now: its active quest, else the first one not done whose prerequisite is done. */
+/** Job quests are only for the matching tier/branch. */
+const questOpen = (profile: PlayerProfile, q: QuestDefinition) => !q.job || ((profile.jobTier ?? 1) === q.job.tier && (!q.job.branch || q.job.branch === profile.branch));
 export function questFor(profile: PlayerProfile, npcId: string): QuestDefinition | null {
-  const mine = Object.values(QUESTS).filter((q) => q.giver === npcId);
+  const mine = Object.values(QUESTS).filter((q) => q.giver === npcId && (questOpen(profile, q) || profile.quests[q.id]));
   return mine.find((q) => profile.quests[q.id] && !profile.quests[q.id]!.done)
     ?? mine.find((q) => !profile.quests[q.id] && (!q.requires || profile.quests[q.requires]?.done))
     ?? [...mine].reverse().find((q) => profile.quests[q.id]?.done)
@@ -313,6 +347,7 @@ export function acceptQuest(profile: PlayerProfile, questId: string): ServiceRes
   if (cur?.done) return fail('quest-done');
   if (cur) return fail('quest-active');
   if (q.requires && !profile.quests[q.requires]?.done) return fail('quest-not-ready');
+  if (!questOpen(profile, q)) return fail('quest-not-ready');
   const p = clone(profile);
   p.quests[questId] = { step: 0, done: false };
   return ok(p, `รับภารกิจ: ${q.title}`);
@@ -382,6 +417,9 @@ export const SERVICE_ERROR_TH: Readonly<Record<ServiceError | 'too-far' | 'bad-r
   'quest-done': 'ทำภารกิจนี้สำเร็จแล้ว', 'quest-not-ready': 'ยังไม่มีภารกิจให้', 'unknown-destination': 'ไม่รู้จักจุดหมายนี้',
   'too-far': 'อยู่ไกลเกินไป เดินเข้าไปใกล้อีกหน่อย', 'bad-request': 'คำขอไม่ถูกต้อง',
   'not-enough-gold': 'Gold ไม่พอ',
+  'skill-locked': 'ยังเรียนสกิลนี้ไม่ได้ (ต้องเป็นอาชีพ/ขั้นที่ตรงกัน)', 'prerequisite': 'ต้องเรียนสกิลพื้นฐานก่อน',
+  'max-tier': 'ถึงขั้นอาชีพสูงสุดแล้ว', 'job-level-low': 'Job Level ยังไม่ถึงเกณฑ์เปลี่ยนอาชีพ',
+  'job-quest-missing': 'ต้องผ่านภารกิจเปลี่ยนอาชีพก่อน', 'bad-branch': 'เลือกสายอาชีพไม่ถูกต้อง',
   'bad-slot': 'สวมใส่ไอเทมนี้ในช่องนั้นไม่ได้',
   'art-unavailable': 'ภาพอุปกรณ์นี้ยังไม่พร้อมใช้งาน · ชุดทดลองถูกพักเพราะเปลี่ยนหน้าตาตัวละคร',
 };

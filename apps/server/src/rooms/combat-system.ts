@@ -1,6 +1,6 @@
 import { MonsterState, type GameState } from '@shaman/schema';
 import {
-  addLoot, atkFor, isBlocked, BASIC_ATTACK, bindingSlow, createMonster, gainExp, ITEMS, magicDamage, matkFor, MONSTERS, physicalDamage,
+  addLoot, atkFor, isBlocked, BASIC_ATTACK, bindingSlow, createMonster, gainExp, gainJobExp, JOB_PROGRESSION, ITEMS, magicDamage, matkFor, MONSTERS, physicalDamage,
   pickSpawnPoint, PLAYER_RESPAWN_MS, pointInRect, provokeMonster, questEvent, REGEN, REGEN_TICK_MS, SKILL_COMBAT, skillDamage,
   soulHealAmount, stepMonster, type MapDefinition, type MonsterMotion, type PlayerProfile, type Position, type SpawnRegion,
 } from '@shaman/shared';
@@ -164,11 +164,14 @@ export class CombatSystem {
     if (!profile) return;
     const p = structuredClone(profile);
     const levels = gainExp(p, def.exp);
+    // Job EXP is separate from base EXP (job-progression.ts): explicit per monster, else base EXP × the configured ratio.
+    const jobExp = (def as { jobExp?: number }).jobExp ?? Math.round(def.exp * JOB_PROGRESSION.jobExpRatio);
+    const jobLevels = gainJobExp(p, jobExp);
     const drops = def.drops.filter((d) => this.host.rng() < d.chance).map((d) => ({ itemId: d.itemId, qty: 1 }));
     const looted = addLoot(p, drops, Date.now());
     const quest = questEvent(p, { kind: 'kill', monster: m.kind }, Date.now());
     const after = quest && quest.ok ? quest.profile : p;
-    const notes = [`+${def.exp} EXP`, ...looted.map((d) => `ได้รับ ${ITEMS[d.itemId]?.name.th ?? d.itemId} ×${d.qty}`), ...(quest && quest.ok && quest.note ? [quest.note] : [])];
+    const notes = [`+${def.exp} EXP · +${jobExp} Job EXP`, ...(jobLevels > 0 ? [`Job Level ${p.jobLevel} (+${jobLevels} แต้มสกิล)`] : []), ...looted.map((d) => `ได้รับ ${ITEMS[d.itemId]?.name.th ?? d.itemId} ×${d.qty}`), ...(quest && quest.ok && quest.note ? [quest.note] : [])];
     this.host.setProfile(killer, after, notes.join(' · '));
     if (looted.length) this.host.broadcast({ type: 'loot', player: killer, items: looted });
     if (levels > 0) this.host.broadcast({ type: 'levelup', player: killer, level: after.level });

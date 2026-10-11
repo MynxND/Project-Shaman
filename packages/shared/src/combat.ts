@@ -16,7 +16,8 @@ export const atkFor = (level: number) => 10 + 3 * (level - 1);
 /** Magic attack used by the source skill formulas. */
 export const matkFor = (level: number) => 14 + 4 * (level - 1);
 /** Status points and skill points gained per base level. */
-export const LEVEL_UP_REWARD = { statusPoints: 3, skillPoints: 1 };
+/** Base level-ups give status points only; skill points come from Job Levels (job-progression.ts, user 2026-10-11). */
+export const LEVEL_UP_REWARD = { statusPoints: 3, skillPoints: 0 };
 
 /** Basic attack: reach (world units) and delay between strikes (ms). */
 export const BASIC_ATTACK = { range: 1.8, delayMs: 900 };

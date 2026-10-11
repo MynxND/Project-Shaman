@@ -34,3 +34,13 @@ assert.ok(call('teleporter','teleport',{dest:'market'}).moveTo);
 assert.equal(call('teleporter','teleport',{dest:'invalid'}).error,'unknown-destination');
 const independent=newProfile(map.spawn);assert.equal(independent.hp,newProfile(map.spawn).hp);assert.ok(independent.hp<independent.hpMax);assert.equal(independent.refine[gear],undefined);
 console.log('NPC services: role/range/stock validation, buy/sell, storage, refine, heal/save, learning, exchange, quest acceptance, teleport and profile isolation passed');
+
+// Job advancement at the trainer (job-progression.ts): needs Job Lv 10 + the apprentice trial; then the branch tree opens.
+{ assert.equal(parseNpcRequest({npc:'instructor',action:'advance',branch:42}),null);
+  let r=call('instructor','advance',{branch:'ullr-hunter'}); assert.deepEqual(r,{ok:false,error:'job-level-low'});
+  assert.equal(call('herbalist','advance',{branch:'ullr-hunter'}).ok,false,'only trainers advance jobs');
+  p={...p,jobLevel:10,quests:{...p.quests,'job-apprentice-trial':{step:2,done:true}}};
+  r=call('instructor','advance',{branch:'ullr-hunter'}); assert.ok(r.ok,JSON.stringify(r)); assert.equal(p.jobTier,2); assert.equal(p.branch,'ullr-hunter'); assert.equal(p.jobLevel,1);
+  p={...p,skillPoints:1}; r=call('instructor','learn',{skillId:'twin-shot'}); assert.ok(r.ok); assert.equal(p.skills['twin-shot'],1);
+  assert.equal(call('instructor','learn',{skillId:'frost-bolt'}).error??'', 'skill-locked'); }
+console.log('npc job advancement: trainer-only, level/quest gates, branch pick, tree unlock passed');

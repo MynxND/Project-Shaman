@@ -1,7 +1,7 @@
 import { Room, type Client } from '@colyseus/core';
 import { CitizenState, GameState, PlayerState } from '@shaman/schema';
 import { createCitizenMotion, stepCitizen, UMBRAL_CAPITAL, UMBRAL_CITIZENS, type CitizenMotion } from '@shaman/shared';
-import { acceptStopAt, getMap, isMovementInput, MAPS, newProfile, parseBodyType, pointInRect, questEvent, stepMovement, type BodyType, type MapDefinition, type MovementInput, type PlayerProfile } from '@shaman/shared';
+import { acceptStopAt, getMap, isMovementInput, MAPS, migrateProfile, newProfile, parseBodyType, pointInRect, questEvent, stepMovement, type BodyType, type MapDefinition, type MovementInput, type PlayerProfile } from '@shaman/shared';
 import { FACINGS, parseSkillCastRequest, SKILL_CAST_RULES, SKILL_COMBAT, skillAimPoint, skillCastError, type Facing, type SkillCastEvent } from '@shaman/shared';
 import { parseNpcRequest, runNpcRequest } from './npc-services.js';
 import { CombatSystem } from './combat-system.js';
@@ -287,7 +287,8 @@ export class GameRoom extends Room<{ state: GameState }> {
     player.head = ticket?.head ?? encodeHead(sanitizeHead(opts?.head));
     this.bodyTypes.set(client.sessionId, bodyType);
     // Travellers keep their profile (bag, quests, level); everyone else starts a fresh session profile.
-    const profile = ticket?.profile ?? newProfile(this.map.spawn);
+    // Every profile entering a room passes the save-data migration (job progression fields, profile version).
+    const profile = migrateProfile(ticket?.profile ?? newProfile(this.map.spawn));
     player.hp = profile.hp; player.hpMax = profile.hpMax; player.level = profile.level;
     this.state.players.set(client.sessionId, player);
     this.profiles.set(client.sessionId, profile);

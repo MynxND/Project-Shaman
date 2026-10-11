@@ -1,5 +1,5 @@
 import {
-  acceptQuest, buy, exchangeGold, heal, isBlocked, learnSkill, moveStack, NPC_TALK_RANGE, QUESTS, questEvent, refine, sell, setSavePoint, teleport,
+  acceptQuest, advanceJob, buy, exchangeGold, heal, isBlocked, learnSkill, moveStack, NPC_TALK_RANGE, QUESTS, questEvent, refine, sell, setSavePoint, teleport,
   type MapDefinition, type NpcDefinition, type PlayerProfile, type Position, type ServiceResult,
 } from '@shaman/shared';
 
@@ -13,6 +13,8 @@ export type NpcRequest =
   | { npc: string; action: 'refine'; uid: string }
   | { npc: string; action: 'heal' | 'save' }
   | { npc: string; action: 'learn'; skillId: string }
+  /** Job advancement at a trainer: tier 1 → the chosen nation branch, tier 2 → tier 3 (job-progression.ts). */
+  | { npc: string; action: 'advance'; branch?: string }
   | { npc: string; action: 'accept'; questId: string }
   | { npc: string; action: 'teleport'; dest: string };
 
@@ -30,6 +32,7 @@ export function parseNpcRequest(m: unknown): NpcRequest | null {
     case 'sell': return str(r.uid) && int(r.qty) ? { npc: r.npc, action: 'sell', uid: r.uid, qty: r.qty } : null;
     case 'deposit': case 'withdraw': case 'refine': return str(r.uid) ? { npc: r.npc, action: r.action, uid: r.uid } : null;
     case 'learn': return str(r.skillId) ? { npc: r.npc, action: 'learn', skillId: r.skillId } : null;
+    case 'advance': return r.branch === undefined ? { npc: r.npc, action: 'advance' } : str(r.branch) ? { npc: r.npc, action: 'advance', branch: r.branch } : null;
     case 'accept': return str(r.questId) ? { npc: r.npc, action: 'accept', questId: r.questId } : null;
     case 'teleport': return str(r.dest) ? { npc: r.npc, action: 'teleport', dest: r.dest } : null;
     default: return null;
@@ -42,7 +45,7 @@ const ALLOWED: Record<NpcDefinition['role'], readonly NpcRequest['action'][]> = 
   save: ['talk', 'heal', 'save'],
   healer: ['talk', 'heal'],
   quest: ['talk', 'accept'],
-  trainer: ['talk', 'learn'],
+  trainer: ['talk', 'learn', 'advance'],
   'shop-consumable': ['talk', 'buy', 'sell'],
   'shop-equipment': ['talk', 'buy', 'sell'],
   storage: ['talk', 'deposit', 'withdraw'],
@@ -77,6 +80,11 @@ export function runNpcRequest(map: MapDefinition, profile: PlayerProfile, at: Po
     case 'heal': result = heal(profile); break;
     case 'save': result = setSavePoint(profile, at); break;
     case 'learn': result = learnSkill(profile, req.skillId); break;
+    case 'advance': {
+      const a = advanceJob(profile, req.branch);
+      result = a.ok ? { ok: true, profile: a.profile, note: `เปลี่ยนอาชีพสำเร็จ · ขั้น ${a.profile.jobTier}${a.profile.branch ? ` · ${a.profile.branch}` : ''} · Job Lv 1` } : { ok: false, error: a.error };
+      break;
+    }
     case 'accept':
       if (QUESTS[req.questId]?.giver !== npc.id) return { ok: false, error: 'quest-not-ready' };
       result = acceptQuest(profile, req.questId); break;

@@ -20,7 +20,7 @@ assert.equal(p.level, 1); assert.equal(p.exp, 0); assert.ok(p.hp < p.hpMax, 'sta
 assert.equal(gainExp(p, expToNext(1) - 1), 0);
 assert.equal(gainExp(p, 1), 1, 'one level');
 assert.equal(p.level, 2); assert.equal(p.exp, 0); assert.equal(p.hp, p.hpMax, 'level-up restores HP');
-assert.equal(p.skillPoints, 4); assert.equal(p.statusPoints, 3);
+assert.equal(p.skillPoints, 3, 'base levels give no skill points (job levels do)'); assert.equal(p.statusPoints, 3);
 assert.equal(gainExp(p, expToNext(2) + expToNext(3) + 5), 2, 'several levels at once');
 assert.equal(p.level, 4); assert.equal(p.exp, 5);
 
