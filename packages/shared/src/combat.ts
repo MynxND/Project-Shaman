@@ -23,7 +23,25 @@ export const LEVEL_UP_REWARD = { statusPoints: 3, skillPoints: 0 };
 export const BASIC_ATTACK = { range: 1.8, delayMs: 900 };
 /** Out-of-combat regeneration, every REGEN_TICK_MS: fraction of max HP / SP. */
 export const REGEN_TICK_MS = 4000;
-export const REGEN = { hp: 0.03, sp: 0.04, combatLockMs: 5000 };
+export const REGEN = { hp: 0.03, sp: 0.04, combatLockMs: 5000,
+  /** Phase 5 (PROVISIONAL): in combat, SP still trickles back at 1% of max SP per tick so skill use can last past one SP bar. */
+  combatSp: 0.01 };
+/** Phase 5 (PROVISIONAL): flat ATK bonuses written for the catalogue's RO-like stat scale (e.g. Poison Blade "ATK +20 + Lv × 5")
+ *  are scaled down to the provisional ATK curve (atkFor) until the stat system exists. 1 = catalogue value. */
+export const FLAT_ATK_SCALE = 0.4;
+/** Phase 5 (PROVISIONAL, no party system yet): a kill's EXP is shared by everyone who damaged the monster, in proportion to
+ *  their damage, with +10% to the pool per extra helper (max +50%). Every helper with ≥ `questShare` of the damage gets the
+ *  quest kill; the loot goes to the top damage dealer. */
+export const SHARED_EXP = { bonusPerHelper: 0.1, maxBonus: 0.5, questShare: 0.1 };
+/** Each contributor's base EXP from a kill (rounded, at least 1). `damage` = player id → damage dealt. */
+export function expShares(exp: number, damage: ReadonlyMap<string, number>): Map<string, number> {
+  const total = [...damage.values()].reduce((n, d) => n + d, 0);
+  const out = new Map<string, number>();
+  if (total <= 0) return out;
+  const pool = exp * (1 + Math.min(SHARED_EXP.maxBonus, SHARED_EXP.bonusPerHelper * (damage.size - 1)));
+  for (const [id, d] of damage) out.set(id, Math.max(1, Math.round(pool * d / total)));
+  return out;
+}
 /** A player at 0 HP stays down this long, then returns to the map's arrival point at half HP and SP. */
 export const PLAYER_RESPAWN_MS = 3000;
 
@@ -96,7 +114,8 @@ export const MONSTERS: Readonly<Record<string, MonsterDefinition>> = {
   },
   'cursed-rootkeeper': {
     kind: 'cursed-rootkeeper', name: { th: 'เจ้าที่รากไม้ต้องสาป', en: 'Cursed Rootkeeper' }, level: 10, race: 'demon', behavior: 'aggressive',
-    hp: 1400, atk: 34, def: 10, mdef: 10, speed: 0.9, aggroRange: 4.5, leash: 12, attackRange: 2.2, attackDelayMs: 2400, attackWindupMs: 800,
+    // Phase 5: HP 1400 → 3200 (provisional): a level-10 apprentice took ~15 s solo and a trio ~5 s; now ~70 s solo, ~17 s duo, ~11 s trio (phase5-test.mjs).
+    hp: 3200, atk: 34, def: 10, mdef: 10, speed: 0.9, aggroRange: 4.5, leash: 12, attackRange: 2.2, attackDelayMs: 2400, attackWindupMs: 800,
     exp: 420, drops: [{ itemId: 'holy-water', chance: 1 }, { itemId: 'ghost-feather', chance: 0.6 }, { itemId: 'dark-ore', chance: 0.5 }],
     wander: { pauseMs: [4000, 8000], radius: 1.5 }, size: 'boss',
     boss: {

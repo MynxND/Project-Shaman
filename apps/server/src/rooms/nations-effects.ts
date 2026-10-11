@@ -1,6 +1,6 @@
 import { SummonState, ZoneState, type GameState } from '@shaman/schema';
 import {
-  ACHAN, combatStats, HUNTER, isBlocked, JUGGERNAUT, KERIS, magicDamage, MONSTERS, MOR_PHHEE, physicalDamage, provokeMonster, SANTET, TAIGA,
+  ACHAN, combatStats, FLAT_ATK_SCALE, HUNTER, isBlocked, JUGGERNAUT, KERIS, magicDamage, MONSTERS, MOR_PHHEE, physicalDamage, provokeMonster, SANTET, TAIGA,
   type MapDefinition, type MonsterMotion, type MonsterStatus, type PlayerProfile, type Position,
 } from '@shaman/shared';
 
@@ -228,7 +228,7 @@ export class NationsEffects {
     const wf = this.active(id, 'wolf-frenzy'); if (wf) this.ctx.heal(id, Math.round(amount * wf.power));
   }
   /** Extra basic-attack damage (Poison Blade ATK). */
-  basicBonus(id: string): number { const b = this.active(id, 'poison-blade'); return b ? KERIS.bladeAtk(b.power) : 0; }
+  basicBonus(id: string): number { const b = this.active(id, 'poison-blade'); return b ? Math.round(KERIS.bladeAtk(b.power) * FLAT_ATK_SCALE) : 0; }
   /** Damage just landed on `m` (Voodoo Link shares it with the linked monster). */
   onDamage(m: MonsterMotion, amount: number, owner: string, skill?: string) {
     if (skill === 'voodoo-link' || amount <= 0) return;

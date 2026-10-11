@@ -141,3 +141,10 @@ hashed session tokens, `/auth/register|login|me|logout`, signed-in characters sa
 shutdown and loaded on join (profile, look, map, position), one session per account with takeover, guests unchanged.
 Client sign-in screen, token in localStorage, HUD badge, no rejoin ping-pong. Details: docs/design/PERSISTENCE_AND_ACCOUNTS.md.
 Next: Phase 5 balance + polish.
+
+## Phase 5 result — balance + polish (2026-10-12)
+Balance simulator over the real server effects (balance-sim.mjs) for all 10 branches × early/late; provisional fixes only:
+flat catalogue ATK bonuses scaled to the provisional stat curve, in-combat SP trickle, damage-share EXP (no parties yet),
+boss HP 1400 → 3200; 20-player performance check (0.2 ms average tick); phone badge placement. Catalogue-formula
+outliers (Taiga Wolf Frenzy, Rune Seer Blizzard, Mor Phhee single target) and the tank/support band are listed for
+design review in docs/design/combat/BALANCE_REPORT.md.

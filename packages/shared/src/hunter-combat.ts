@@ -3,7 +3,7 @@
 // PROVISIONAL inputs (documented in docs/design/combat/ULLR_HUNTER_COMBAT.md): the game has no STR/DEX/INT/LUK
 // allocation yet, so `combatStats` derives them from base level + worn equipment; SP costs, world ranges, bleed
 // numbers, crit rules and the basic-attack bow are placeholders the catalogue leaves open.
-import { atkFor, matkFor } from './combat.js';
+import { atkFor, FLAT_ATK_SCALE, matkFor } from './combat.js';
 import { ITEMS } from './catalog.js';
 import type { PlayerProfile } from './economy.js';
 import { NATION_COMPANIONS } from './skills-norway.js';
@@ -16,7 +16,7 @@ export function combatStats(p: Pick<PlayerProfile, 'level' | 'equipment' | 'skil
     const s = id ? ITEMS[id]?.stats : undefined;
     if (s) for (const k of Object.keys(gear) as (keyof typeof gear)[]) gear[k] += s[k] ?? 0;
   }
-  const bow = p.branch === 'ullr-hunter' ? HUNTER.bowAtk(p.skills['bow-mastery'] ?? 0) : 0;
+  const bow = p.branch === 'ullr-hunter' ? Math.round(HUNTER.bowAtk(p.skills['bow-mastery'] ?? 0) * FLAT_ATK_SCALE) : 0;
   return {
     atk: atkFor(p.level) + gear.atk + bow,
     matk: matkFor(p.level) + gear.matk,

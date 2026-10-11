@@ -10,7 +10,7 @@
     "test:network": "node scripts/network-smoke.mjs",
     "test:npc": "node scripts/npc-services-test.mjs && node scripts/npc-network-smoke.mjs",
     "test:skill": "node scripts/skill-network-smoke.mjs && node scripts/invoke-network-smoke.mjs",
-    "test:zone": "node scripts/combat-system-test.mjs && node scripts/hunter-combat-test.mjs && node scripts/rune-seer-combat-test.mjs && node scripts/japan-combat-test.mjs && node scripts/nations-combat-test.mjs && node scripts/zone-network-smoke.mjs",
+    "test:zone": "node scripts/combat-system-test.mjs && node scripts/hunter-combat-test.mjs && node scripts/rune-seer-combat-test.mjs && node scripts/japan-combat-test.mjs && node scripts/nations-combat-test.mjs && node scripts/phase5-test.mjs && node scripts/zone-network-smoke.mjs",
     "test:equipment": "node scripts/equipment-network-smoke.mjs && node scripts/persistence-network-smoke.mjs",
     "test:modular": "node scripts/modular-assets-test.mjs",
     "test:head": "node scripts/head-assets-test.mjs",

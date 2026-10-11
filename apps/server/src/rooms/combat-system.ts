@@ -1,6 +1,6 @@
 import { MonsterState, type GameState } from '@shaman/schema';
 import {
-  addLoot, atkFor, basicAttackFor, combatSpec, combatStats, isBlocked, BASIC_ATTACK, bindingSlow, HUNTER, NATION_SKILL_COMBAT, skillRange, createMonster, gainExp, gainJobExp, JOB_PROGRESSION, ITEMS, magicDamage, matkFor, MONSTERS, physicalDamage,
+  addLoot, atkFor, expShares, SHARED_EXP, basicAttackFor, combatSpec, combatStats, isBlocked, BASIC_ATTACK, bindingSlow, HUNTER, NATION_SKILL_COMBAT, skillRange, createMonster, gainExp, gainJobExp, JOB_PROGRESSION, ITEMS, magicDamage, matkFor, MONSTERS, physicalDamage,
   pickSpawnPoint, PLAYER_RESPAWN_MS, pointInRect, provokeMonster, questEvent, REGEN, REGEN_TICK_MS, SKILL_COMBAT, skillDamage,
   soulHealAmount, stepMonster, type MapDefinition, type MonsterStatus, type MonsterMotion, type PlayerProfile, type Position, type SpawnRegion,
 } from '@shaman/shared';
@@ -61,6 +61,8 @@ export class CombatSystem {
   private lastHitBy = new Map<string, string>();
   private pending: { at: number; run: () => void }[] = [];
   private summonSeq = 0;
+  /** Damage dealt to each living monster by each player (shared EXP, Phase 5). */
+  private damageBy = new Map<string, Map<string, number>>();
   private nextRegen = 0;
   /** Ullr Hunter skill families (arrows, falcon, traps, dash, Great Hunt). */
   readonly hunter: HunterEffects;
@@ -221,6 +223,7 @@ export class CombatSystem {
   private damageMonster(m: MonsterMotion, raw: number, playerId: string, skill?: string) {
     // Player buffs/debuffs (curse, blessings, bonfire, kotodama, Oracle's Vision) scale every source of damage.
     const amount = raw > 0 ? Math.max(1, Math.round(raw * this.japan.dealtMul(playerId, m) * this.nations.dealtMul(playerId, m))) : raw;
+    if (amount > 0 && m.hp > 0) { let d = this.damageBy.get(m.id); if (!d) { d = new Map(); this.damageBy.set(m.id, d); } d.set(playerId, (d.get(playerId) ?? 0) + Math.min(amount, m.hp)); }
     m.hp -= amount;
     this.nations.onDamage(m, amount, playerId, skill);
     this.lastCombat.set(playerId, this.host.now());
@@ -241,22 +244,32 @@ export class CombatSystem {
       // Boss minions do not respawn: remove them once the death animation has played.
       this.pending.push({ at: this.host.now() + 2500, run: () => { this.monsters.delete(m.id); this.host.state.monsters.delete(m.id); } });
     } else this.respawns.push({ regionId: m.regionId, kind: m.kind, id: m.id, at: this.host.now() + (region?.respawnMs ?? 10000) });
-    // Rewards go to the player who landed the killing blow (shared EXP is a later design decision).
-    const profile = this.host.profile(killer);
-    if (!profile) return;
-    const p = structuredClone(profile);
-    const levels = gainExp(p, def.exp);
-    // Job EXP is separate from base EXP (job-progression.ts): explicit per monster, else base EXP × the configured ratio.
-    const jobExp = (def as { jobExp?: number }).jobExp ?? Math.round(def.exp * JOB_PROGRESSION.jobExpRatio);
-    const jobLevels = gainJobExp(p, jobExp);
-    const drops = def.drops.filter((d) => this.host.rng() < d.chance).map((d) => ({ itemId: d.itemId, qty: 1 }));
-    const looted = addLoot(p, drops, Date.now());
-    const quest = questEvent(p, { kind: 'kill', monster: m.kind }, Date.now());
-    const after = quest && quest.ok ? quest.profile : p;
-    const notes = [`+${def.exp} EXP · +${jobExp} Job EXP`, ...(jobLevels > 0 ? [`Job Level ${p.jobLevel} (+${jobLevels} แต้มสกิล)`] : []), ...looted.map((d) => `ได้รับ ${ITEMS[d.itemId]?.name.th ?? d.itemId} ×${d.qty}`), ...(quest && quest.ok && quest.note ? [quest.note] : [])];
-    this.host.setProfile(killer, after, notes.join(' · '));
-    if (looted.length) this.host.broadcast({ type: 'loot', player: killer, items: looted });
-    if (levels > 0) this.host.broadcast({ type: 'levelup', player: killer, level: after.level });
+    // Shared EXP (Phase 5, provisional): every player still in the room who damaged it gets a share by damage; the top
+    // damage dealer takes the loot; helpers with enough damage get the quest kill.
+    const damage = new Map([...(this.damageBy.get(m.id) ?? new Map([[killer, 1]]))].filter(([id]) => this.host.state.players.has(id) && this.host.profile(id)));
+    this.damageBy.delete(m.id);
+    if (!damage.size && this.host.profile(killer)) damage.set(killer, 1);
+    const total = [...damage.values()].reduce((n, d) => n + d, 0);
+    const looter = [...damage.entries()].sort((a, b) => b[1] - a[1])[0]?.[0];
+    const shares = expShares(def.exp, damage);
+    for (const [pid, exp] of shares) {
+      const profile = this.host.profile(pid);
+      if (!profile) continue;
+      const p = structuredClone(profile);
+      const levels = gainExp(p, exp);
+      // Job EXP is separate from base EXP (job-progression.ts): explicit per monster, else base EXP × the configured ratio.
+      const jobExp = Math.max(1, Math.round(((def as { jobExp?: number }).jobExp ?? def.exp * JOB_PROGRESSION.jobExpRatio) * exp / def.exp));
+      const jobLevels = gainJobExp(p, jobExp);
+      const drops = pid === looter ? def.drops.filter((d) => this.host.rng() < d.chance).map((d) => ({ itemId: d.itemId, qty: 1 })) : [];
+      const looted = addLoot(p, drops, Date.now());
+      const credited = (damage.get(pid) ?? 0) / total >= SHARED_EXP.questShare || pid === killer;
+      const quest = credited ? questEvent(p, { kind: 'kill', monster: m.kind }, Date.now()) : null;
+      const after = quest && quest.ok ? quest.profile : p;
+      const notes = [`+${exp} EXP · +${jobExp} Job EXP${damage.size > 1 ? ` (แบ่งกัน ${damage.size} คน)` : ''}`, ...(jobLevels > 0 ? [`Job Level ${p.jobLevel} (+${jobLevels} แต้มสกิล)`] : []), ...looted.map((d) => `ได้รับ ${ITEMS[d.itemId]?.name.th ?? d.itemId} ×${d.qty}`), ...(quest && quest.ok && quest.note ? [quest.note] : [])];
+      this.host.setProfile(pid, after, notes.join(' · '));
+      if (looted.length) this.host.broadcast({ type: 'loot', player: pid, items: looted });
+      if (levels > 0) this.host.broadcast({ type: 'levelup', player: pid, level: after.level });
+    }
   }
 
   private hitPlayer(playerId: string, monster: MonsterMotion, fixed?: number, ranged = false) {
@@ -339,6 +352,7 @@ export class CombatSystem {
   /** Removes a leaving player from all combat bookkeeping. */
   forget(playerId: string) {
     this.attacks.delete(playerId); this.lastCombat.delete(playerId); this.downUntil.delete(playerId); this.lastHitBy.delete(playerId);
+    for (const d of this.damageBy.values()) d.delete(playerId);
     this.hunter.forget(playerId);
     this.runeSeer.forget(playerId);
     this.japan.forget(playerId);
@@ -393,6 +407,7 @@ export class CombatSystem {
         else this.hitPlayer(e.targetId, m);
       }
       if (def.boss) this.bossStep(m, def.boss, now);
+      if (m.state === 'idle' && m.hp >= def.hp && this.damageBy.has(m.id)) this.damageBy.delete(m.id);
       this.sync(m);
     }
     // Player basic attacks.
@@ -426,12 +441,16 @@ export class CombatSystem {
       this.damageMonster(m, physicalDamage(atkFor(profile.level) + this.nations.basicBonus(pid), MONSTERS[m.kind]!.def, host.rng()), pid);
       this.nations.onBasicHit(pid, m, Math.max(0, hp0 - m.hp));
     }
-    // Out-of-combat regeneration.
+    // Regeneration: full out of combat; in combat only a trickle of SP (Phase 5, provisional).
     if (now >= this.nextRegen) {
       this.nextRegen = now + REGEN_TICK_MS;
       for (const id of host.state.players.keys()) {
         const profile = host.profile(id);
-        if (!profile || this.isDown(id) || now - (this.lastCombat.get(id) ?? 0) < REGEN.combatLockMs) continue;
+        if (!profile || this.isDown(id)) continue;
+        if (now - (this.lastCombat.get(id) ?? 0) < REGEN.combatLockMs) {
+          if (profile.sp < profile.spMax) { const p = structuredClone(profile); p.sp = Math.min(p.spMax, p.sp + Math.max(1, Math.round(p.spMax * REGEN.combatSp))); host.setProfile(id, p); host.vitals(id); }
+          continue;
+        }
         if (profile.hp >= profile.hpMax && profile.sp >= profile.spMax) continue;
         const p = structuredClone(profile);
         p.hp = Math.min(p.hpMax, p.hp + Math.max(1, Math.round(p.hpMax * REGEN.hp)));
