@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 import type { Room } from '@colyseus/sdk';
 import type { GameState } from '@shaman/schema';
-import { BASIC_ATTACK, basicAttackFor, DEFAULT_APPEARANCE, DEFAULT_MAP_ID, FACINGS, FacingTracker, facingFromVector, getMap, parseBodyType, stepMovement, UMBRAL_CAPITAL, WORLD_UNIT_PX, type BodyType, type Facing, type MapDefinition, type Position } from '@shaman/shared';
+import { BASIC_ATTACK, basicAttackFor, DEFAULT_APPEARANCE, DEFAULT_MAP_ID, FACINGS, FacingTracker, facingFromVector, getMap, parseBodyType, stepMovement, UMBRAL_CAPITAL, WORLD_UNIT_PX, type BodyType, type Facing, type MapDefinition, type Position, withBlockers } from '@shaman/shared';
 import { CharacterSprite, preloadCharacterRig } from '../characters/CharacterRig';
 import { useHeadStore } from '../../stores/head-store';
 
@@ -25,6 +25,7 @@ import type { SkillCastEvent } from '@shaman/shared';
 import { MonsterLayer, preloadMonsters, type CombatEventLike } from '../world/MonsterLayer';
 import { PortalLayer } from '../world/PortalLayer';
 import { useTargetStore } from '@/stores/target-store';
+import { useRuneStore } from '@/stores/rune-store';
 
 // main-v1 figures are ~118px tall in a 128px frame; 0.5 makes them ~1.9 world units tall.
 const CHARACTER_SCALE = 0.5;
@@ -410,7 +411,7 @@ export class FoundationScene extends Phaser.Scene {
         const input = this.movement.current;
         const from = this.predicted ?? { x: player.x, y: player.y };
         // Cap the step so a long frame (tab refocus) cannot tunnel through a footprint.
-        const step = stepMovement(from, { ...(player.dead ? { x: 0, y: 0 } : input), sequence: 0 }, Math.min(delta, 50) / 1000, this.map);
+        const step = stepMovement(from, { ...(player.dead ? { x: 0, y: 0 } : input), sequence: 0 }, Math.min(delta, 50) / 1000, this.walkMap());
         let next = step.position;
         const error = Math.hypot(player.x - next.x, player.y - next.y);
         const idle = input.x === 0 && input.y === 0;
@@ -456,6 +457,20 @@ export class FoundationScene extends Phaser.Scene {
     this.casts?.update(time, (id) => { const v = this.players.get(id); return v ? { sprite: v.sprite, bodyType: v.bodyType } : null; });
     this.monsters?.update(room.state?.monsters, time, delta);
     this.nationVfx?.update(time, this.vfxActors());
+    // The local Rune Seer's queue and buffs for the HUD (small strings; only stored when they change).
+    const self = room.state?.players?.get(room.sessionId);
+    if (self) useRuneStore.getState().sync(self.runes ?? '', self.statuses ?? '');
+  }
+
+  /** The map plus standing Ice Wall cells (synced zones), so local prediction stops at walls like the server does. */
+  private wallKey = '';
+  private wallMap: MapDefinition = this.map;
+  private walkMap(): MapDefinition {
+    const cells: { x: number; y: number }[] = [];
+    this.room?.state?.zones?.forEach((z) => { if (z.kind === 'ice-wall') cells.push({ x: z.x, y: z.y }); });
+    const key = cells.map((c) => c.x.toFixed(2) + ',' + c.y.toFixed(2)).join(';');
+    if (key !== this.wallKey || (!cells.length && this.wallMap !== this.map)) { this.wallKey = key; this.wallMap = withBlockers(this.map, cells); }
+    return this.wallMap;
   }
 
   /** What the nation VFX layer reads each frame: drawn sprite positions (px), monster positions (units) and synced state. */
@@ -464,7 +479,7 @@ export class FoundationScene extends Phaser.Scene {
     return {
       player: (id) => {
         const v = this.players.get(id), p = state?.players?.get(id);
-        return v && p ? { x: v.sprite.x, y: v.sprite.y, depth: v.sprite.depth, statuses: p.statuses ?? '', companion: p.companion ?? '' } : null;
+        return v && p ? { x: v.sprite.x, y: v.sprite.y, depth: v.sprite.depth, statuses: p.statuses ?? '', companion: p.companion ?? '', runes: p.runes ?? '' } : null;
       },
       monster: (id) => {
         const at = this.monsters?.position(id), m = state?.monsters?.get(id);
@@ -472,7 +487,7 @@ export class FoundationScene extends Phaser.Scene {
       },
       players: () => this.players.keys(),
       monsters: () => state?.monsters?.keys() ?? [],
-      zones: () => (state?.zones ? [...state.zones.entries()] : []) as [string, { kind: string; variant: string; x: number; y: number; radius: number }][],
+      zones: () => (state?.zones ? [...state.zones.entries()] : []) as [string, { kind: string; variant: string; x: number; y: number; radius: number; hp: number; hpMax: number }][],
     };
   }
 

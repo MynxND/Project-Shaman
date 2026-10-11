@@ -355,3 +355,17 @@ button.hud-menu-item:focus-visible { outline: 2px solid var(--sk-jade); }
   background: #17302bdd; border: 1px solid #b8975088; text-shadow: 0 1px 0 #000; }
 .hud-skill-page-btn { position: absolute; right: 56px; top: -30px; padding: 3px 8px; border-radius: 10px; font-size: 12px; color: #f2e6c4;
   background: #17302bdd; border: 1px solid #b8975088; text-shadow: 0 1px 0 #000; }
+
+/* Rune Seer queue (slice 2): above the hotbar on desktop, above the skill arc on touch. */
+.hud-runes { position: absolute; left: 50%; bottom: calc(var(--hud-bottom) + 92px); transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 2px;
+  padding: 3px 8px; background: #14272399; border: 1px solid #b8975066; border-radius: 10px; }
+.hud-runes small { font-size: 10px; color: #e8d9b0; text-shadow: 0 1px 0 #000; }
+.hud-runes ol { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
+.hud-rune { width: 34px; height: 40px; display: grid; place-items: center; border-radius: 6px; background: #1c2f2b; border: 1px solid #5a7a8a; opacity: .78; }
+.hud-rune[data-front="true"] { opacity: 1; border-color: #bfe8ff; box-shadow: 0 0 8px #7cc4ff88; }
+.hud-rune[data-picked="true"] { border-color: #f2e2a8; box-shadow: 0 0 8px #f2e2a8; }
+.hud-rune:disabled { cursor: default; }
+.hud-rune img { image-rendering: pixelated; filter: drop-shadow(0 0 3px #9fd8ff); }
+.hud-rune-set { display: flex; gap: 2px; }
+.hud-rune-set button { padding: 1px 3px; border-radius: 4px; background: #1c2f2b; border: 1px solid #5a7a8a66; }
+.hud-root[data-touch="true"] .hud-runes { left: auto; right: var(--hud-right); transform: none; bottom: calc(var(--hud-bottom) + 260px); }

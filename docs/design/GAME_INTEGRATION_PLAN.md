@@ -112,3 +112,9 @@ the server (arrows + prey mark, falcon strike/auto-dive/storm, 4 rune traps, Ski
 attack); synced monster statuses, zones and player companion/buffs; world VFX composed from the lab recipes
 (NationVfxLayer). Other nation skills answer "not in game yet". Details + provisional numbers:
 docs/design/combat/ULLR_HUNTER_COMBAT.md. Next: slice 2 Rune Seer.
+
+## Slice 2 result — Rune Seer (2026-10-11)
+Rune Cast queue (4 rune effects, Runestone echo, Cast the Lots reorder, Rune Mastery), Frost Bolt, Blizzard, Ice Wall
+(blocks walking on server and in client prediction, HP, melts/cracks), Shatter Rune, Absolute Zero Field, Fimbulwinter,
+passives; synced rune queue and wall HP; world VFX and rune HUD. Server tests pass; browser check pending (dev client
+did not finish loading during concurrent map work). Details: docs/design/combat/RUNE_SEER_COMBAT.md. Next: slice 3 Japan.

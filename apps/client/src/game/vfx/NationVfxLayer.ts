@@ -1,6 +1,6 @@
 import Phaser from 'phaser';
 import {
-  NATION_AREA_BUFFS, NATION_CIRCLES, NATION_SKILL_INDEX, NORWAY_PROJECTILE_TRAVEL, NORWAY_VFX_LAYERS, NORWAY_VFX_MAIN,
+  NATION_AREA_BUFFS, RUNE_ART, NATION_CIRCLES, NATION_SKILL_INDEX, NORWAY_PROJECTILE_TRAVEL, NORWAY_VFX_LAYERS, NORWAY_VFX_MAIN,
   NATION_COMPANIONS, SKILL_BEHAVIOR_POLICY, TRAP_RUNES, WORLD_UNIT_PX, type SkillCastEvent, type VfxLayer,
 } from '@shaman/shared';
 import { DARKNESS_DEPTH } from '../world/Lighting';
@@ -35,11 +35,11 @@ interface Play {
   main: Phaser.GameObjects.Image | null; layers: Phaser.GameObjects.Image[]; placement: string | null;
 }
 export interface NationVfxActors {
-  player(id: string): { x: number; y: number; depth: number; statuses: string; companion: string } | null;
+  player(id: string): { x: number; y: number; depth: number; statuses: string; companion: string; runes: string } | null;
   monster(id: string): { x: number; y: number; statuses: string } | null;
   players(): Iterable<string>;
   monsters(): Iterable<string>;
-  zones(): Iterable<[string, { kind: string; variant: string; x: number; y: number; radius: number }]>;
+  zones(): Iterable<[string, { kind: string; variant: string; x: number; y: number; radius: number; hp: number; hpMax: number }]>;
 }
 
 export function preloadNationVfx(scene: Phaser.Scene) {
@@ -99,6 +99,7 @@ export class NationVfxLayer {
   }
 
   private release(event: SkillCastEvent, now: number, actors: NationVfxActors) {
+    if (event.skillId === 'ice-wall') return;
     const variant = event.variant ? Math.max(0, TRAP_RUNES.indexOf(event.variant as never)) : 0;
     const U = WORLD_UNIT_PX;
     const caster = () => { const p = actors.player(event.caster); return p ? { x: p.x, y: p.y } : null; };
@@ -125,6 +126,7 @@ export class NationVfxLayer {
   /** Secondary presentation from the server (falcon auto-dive, volley arrows, trap bursts). */
   skillFx(e: { caster: string; skillId: string; targetId?: string; x?: number; y?: number; variant?: string }, now: number, actors: NationVfxActors) {
     const U = WORLD_UNIT_PX;
+    if (e.skillId === 'rune-cast') { this.runeFlare(e, now, actors); return; }
     const caster = () => { const p = actors.player(e.caster); return p ? { x: p.x, y: p.y } : null; };
     if (e.skillId === 'rune-trap-kit' && e.x !== undefined && e.y !== undefined) {
       // The trap fires: its rune flares and its burst plays on the trap.
@@ -201,6 +203,7 @@ export class NationVfxLayer {
     for (const [id, img] of this.companions) if (!seenPlayers.has(id)) { img.destroy(); this.companions.delete(id); }
     for (const [id, img] of this.buffCircles) if (!seenPlayers.has(id)) { img.destroy(); this.buffCircles.delete(id); }
     this.updateZones(now, actors);
+    this.updateRunes(now, actors, seenPlayers);
     this.updateMarkers(now, actors);
   }
 
@@ -257,42 +260,105 @@ export class NationVfxLayer {
 
   private destroyPlay(pl: Play) { pl.main?.destroy(); for (const l of pl.layers) l.destroy(); }
 
-  /** Synced ground zones: rune traps (base + rune glyph), the Ski Dash snow trail, the Falcon Storm. */
+  /** Synced ground zones: rune traps, snow trail, falcon storm (Hunter); blizzard, Fimbulwinter, runestones and Ice
+   *  Wall cells (Rune Seer). Ice Wall cells stand upright on their cell, taller per level, fading as the wall cracks. */
   private updateZones(now: number, actors: NationVfxActors) {
     const U = WORLD_UNIT_PX, k = this.k, seen = new Set<string>();
+    const BASE: Readonly<Record<string, string>> = {
+      trap: 'kit-trap-base', 'snow-trail': 'kit-snow-burst', 'falcon-storm': 'no-cast-circle', blizzard: 'blizzard-storm',
+      fimbulwinter: 'no-cast-circle', runestone: 'rune-trap', 'ice-wall': 'ice-wall',
+    };
     for (const [id, z] of actors.zones()) {
       seen.add(id);
       let view = this.zones.get(id);
       const x = z.x * U, y = z.y * U;
       if (!view) {
-        const baseId = z.kind === 'trap' ? 'kit-trap-base' : z.kind === 'snow-trail' ? 'kit-snow-burst' : 'no-cast-circle';
-        if (!this.has(baseId)) continue;
-        const rune = z.kind === 'trap' ? TRAP_GLYPH[Math.max(0, TRAP_RUNES.indexOf(z.variant as never))]! : null;
+        const baseId = BASE[z.kind];
+        if (!baseId || !this.has(baseId)) continue;
+        const rune = z.kind === 'trap' ? TRAP_GLYPH[Math.max(0, TRAP_RUNES.indexOf(z.variant as never))]! : z.kind === 'runestone' ? 'rune-isa' : null;
+        const extra = z.kind === 'falcon-storm' ? 'kit-bone-falcon-dive' : z.kind === 'fimbulwinter' ? 'absolute-zero-field' : null;
         view = {
           base: this.image(baseId, y - 0.4),
-          glyph: rune && this.has(rune) ? this.image(rune, y + 0.1) : null,
-          extra: z.kind === 'falcon-storm' && this.has('kit-bone-falcon-dive') ? this.image('kit-bone-falcon-dive', FRONT) : null,
+          glyph: rune && this.has(rune) ? this.image(rune, FRONT) : null,
+          extra: extra && this.has(extra) ? this.image(extra, FRONT) : null,
         };
-        if (z.kind === 'falcon-storm') view.base.setOrigin(0.5);
+        if (z.kind === 'falcon-storm' || z.kind === 'fimbulwinter') view.base.setOrigin(0.5);
         this.zones.set(id, view);
       }
       const sheet = this.sheets[view.base.texture.key.slice(4)]!;
+      const loop = (lo = 0.35, ms = 110) => { const from = Math.floor(sheet.frames * lo), span = Math.max(1, sheet.frames - from - 1); return from + Math.floor(now / ms) % span; };
       if (z.kind === 'trap') view.base.setFrame(Math.floor(now / 120) % sheet.frames).setScale(k).setPosition(x, y).setTint(0xd8c8ff).setAlpha(0.9).setVisible(true);
-      else if (z.kind === 'snow-trail') {
-        const lo = Math.floor(sheet.frames * 0.35), span = Math.max(1, sheet.frames - lo - 1);
-        view.base.setFrame(lo + Math.floor(now / 110) % span).setScale(z.radius * U / sheet.width * 1.4, z.radius * U / sheet.width).setPosition(x, y + 6 * k).setAlpha(0.45).setVisible(true);
+      else if (z.kind === 'snow-trail') view.base.setFrame(loop()).setScale(z.radius * U / sheet.width * 1.4, z.radius * U / sheet.width).setPosition(x, y + 6 * k).setAlpha(0.45).setVisible(true);
+      else if (z.kind === 'blizzard') view.base.setFrame(loop(0.3, 90)).setScale(z.radius * 2 * U / sheet.width).setPosition(x, y).setDepth(y + 0.5).setAlpha(0.85).setVisible(true);
+      else if (z.kind === 'runestone') view.base.setFrame(sheet.frames - 1).setScale(k).setPosition(x, y).setDepth(y).setAlpha(0.95).setVisible(true);
+      else if (z.kind === 'ice-wall') {
+        // One upright slab per cell: the sheet's settled frame, narrowed to one cell, taller with the level (variant).
+        const height = Number(z.variant) || 1, crack = z.hpMax > 0 ? z.hp / z.hpMax : 1;
+        view.base.setFrame(sheet.frames - 1).setScale(2.2 * U / sheet.width, 2.2 * U / sheet.width * 1.6 * height).setPosition(x, y).setDepth(y + 0.45 * U)
+          .setTint(crack < 0.35 ? 0xb8d8f0 : 0xffffff).setAlpha(0.55 + 0.4 * crack).setVisible(true);
       } else {
+        // Area circles: falcon storm (Hunter purple) and Fimbulwinter (ice blue, whole screen around the caster).
         const size = z.radius * 2 * U / 192;
-        const tints = [NATION_CIRCLES.no!.tints['ullr-hunter']!].flat();
-        view.base.setScale(size, size * 0.5).setRotation(now / 1000 * 0.8).setTint(tints[Math.floor(now / 300) % tints.length]!).setPosition(x, y).setAlpha(0.7).setVisible(true);
+        const tints = z.kind === 'fimbulwinter' ? [0x8ab4e0, 0xf2f8ff] : [NATION_CIRCLES.no!.tints['ullr-hunter']!].flat();
+        view.base.setScale(size, size * 0.5).setRotation(now / 1000 * (z.kind === 'fimbulwinter' ? 0.3 : 0.8)).setTint(tints[Math.floor(now / 300) % tints.length]!).setPosition(x, y).setAlpha(z.kind === 'fimbulwinter' ? 0.45 : 0.7).setVisible(true);
       }
-      view.glyph?.setScale(1.2 * k).setPosition(x, y - 18 * k + Math.sin(now / 400) * 2).setTint(0xe8dcff).setAlpha(0.95).setVisible(true);
-      if (view.extra) {
+      view.glyph?.setScale(1.2 * k).setPosition(x, y - (z.kind === 'runestone' ? 70 : 18) * k + Math.sin(now / 400) * 2).setTint(z.kind === 'runestone' ? 0xbfe8ff : 0xe8dcff).setAlpha(0.95).setVisible(true);
+      if (view.extra && z.kind === 'falcon-storm') {
         const es = this.sheets['kit-bone-falcon-dive']!, a = now / 320;
         view.extra.setFrame(Math.floor(now / 60) % es.frames).setScale(0.8 * k).setPosition(x + Math.cos(a) * z.radius * U * 0.6, y - 30 * k + Math.sin(a) * z.radius * U * 0.3).setFlipX(Math.sin(a) > 0).setVisible(true);
+      } else if (view.extra && z.kind === 'fimbulwinter') {
+        // A frost pillar drifting around the edge of the winter.
+        const es = this.sheets['absolute-zero-field']!, a = now / 900;
+        view.extra.setFrame(Math.floor(now / 100) % es.frames).setScale(1.3 * k).setPosition(x + Math.cos(a) * z.radius * U * 0.5, y + Math.sin(a) * z.radius * U * 0.25).setDepth(y + Math.sin(a) * z.radius * U * 0.25).setAlpha(0.8).setVisible(true);
       }
     }
     for (const [id, v] of this.zones) if (!seen.has(id)) { v.base.destroy(); v.glyph?.destroy(); v.extra?.destroy(); this.zones.delete(id); }
+  }
+
+  private runeViews = new Map<string, Phaser.GameObjects.Image[]>();
+  private shields = new Map<string, Phaser.GameObjects.Image>();
+  private flares: { img: Phaser.GameObjects.Image; start: number; at: () => Pos | null }[] = [];
+  /** A consumed rune flares big over the caster (or the target for Shatter) and fades. */
+  private runeFlare(e: { caster: string; targetId?: string; variant?: string }, now: number, actors: NationVfxActors) {
+    const art = RUNE_ART[e.variant as keyof typeof RUNE_ART];
+    if (!art || !this.has(art)) return;
+    const U = WORLD_UNIT_PX;
+    const at = e.targetId ? () => { const m = actors.monster(e.targetId!); return m ? { x: m.x * U, y: m.y * U } : null; } : () => { const p = actors.player(e.caster); return p ? { x: p.x, y: p.y } : null; };
+    this.flares.push({ img: this.image(art, FRONT + 0.6).setOrigin(0.5), start: now + this.flares.length * 0, at });
+  }
+  /** Rune Seer: the rune queue circles above the head (front rune largest), the hearth shield shimmer, rune flares. */
+  private updateRunes(now: number, actors: NationVfxActors, seen: Set<string>) {
+    const k = this.k;
+    for (const id of seen) {
+      const p = actors.player(id);
+      const runes = p?.runes ? p.runes.split(',') : [];
+      let views = this.runeViews.get(id) ?? [];
+      while (views.length < runes.length) views.push(this.image('rune-isa', FRONT).setOrigin(0.5));
+      while (views.length > runes.length) views.pop()!.destroy();
+      this.runeViews.set(id, views);
+      runes.forEach((r, i) => {
+        const art = RUNE_ART[r as keyof typeof RUNE_ART];
+        if (!p || !art || !this.has(art)) { views[i]!.setVisible(false); return; }
+        const a = now / 1400 + (i / runes.length) * Math.PI * 2;
+        views[i]!.setTexture(fx(art)).setScale((i === 0 ? 1.5 : 1) * k).setPosition(p.x + Math.cos(a) * 26 * k, p.y - 118 * k + Math.sin(a) * 7 * k)
+          .setDepth(Math.sin(a) > 0 ? p.depth + 0.3 : p.depth - 0.3).setTint(i === 0 ? 0xffffff : 0xa8d8ff).setAlpha(i === 0 ? 1 : 0.75).setVisible(true);
+      });
+      const shielded = !!p && p.statuses.split(',').includes('hearth-shield') && this.has('no-cast-circle');
+      let sh = this.shields.get(id);
+      if (shielded) {
+        sh ??= this.image('no-cast-circle', FRONT).setOrigin(0.5);
+        this.shields.set(id, sh);
+        sh.setPosition(p!.x, p!.y - 34 * k).setScale(0.42 * k).setRotation(now / 700).setTint(0xffb060).setAlpha(0.35 + 0.15 * Math.sin(now / 200)).setDepth(p!.depth + 0.2).setVisible(true);
+      } else sh?.setVisible(false);
+    }
+    for (const [id, v] of this.runeViews) if (!seen.has(id)) { for (const img of v) img.destroy(); this.runeViews.delete(id); }
+    for (const [id, img] of this.shields) if (!seen.has(id)) { img.destroy(); this.shields.delete(id); }
+    this.flares = this.flares.filter((f) => {
+      const t = (now - f.start) / 700, at = f.at();
+      if (t >= 1 || !at) { f.img.destroy(); return false; }
+      f.img.setPosition(at.x, at.y - (90 + t * 40) * k).setScale((2.2 + t) * k).setAlpha(Math.min(1, (1 - t) * 2)).setVisible(true);
+      return true;
+    });
   }
 
   /** Monster statuses: the prey-mark rune above the head and coloured status pips under it. */
@@ -329,6 +395,10 @@ export class NationVfxLayer {
     for (const img of [...this.buffCircles.values(), ...this.companions.values()]) img.destroy();
     for (const v of this.zones.values()) { v.base.destroy(); v.glyph?.destroy(); v.extra?.destroy(); }
     for (const mk of this.markers.values()) { mk.glyph.destroy(); mk.dots.destroy(); }
+    for (const v of this.runeViews.values()) for (const img of v) img.destroy();
+    for (const img of this.shields.values()) img.destroy();
+    for (const f of this.flares) f.img.destroy();
+    this.runeViews.clear(); this.shields.clear(); this.flares = [];
     this.circles.clear(); this.buffCircles.clear(); this.companions.clear(); this.zones.clear(); this.markers.clear();
   }
 }

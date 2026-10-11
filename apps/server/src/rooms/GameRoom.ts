@@ -188,6 +188,11 @@ export class GameRoom extends Room<{ state: GameState }> {
       this.sendProfile(client, out.profile, { ok: true, note: out.note });
       this.sendVitals(client.sessionId);
     });
+    // Rune Seer: reorder the three front runes during Cast the Lots, or change the front rune (Rune Mastery).
+    this.onMessage('rune:order', (client, message: unknown) => { this.combat.runeSeer.order(client.sessionId, (message as { order?: unknown } | null)?.order); });
+    this.onMessage('rune:set', (client, message: unknown) => {
+      if (!this.combat.runeSeer.setFront(client.sessionId, (message as { rune?: unknown } | null)?.rune)) client.send('skill:error', { skillId: 'rune-mastery', error: 'cooldown' });
+    });
     // Skill tree window (K): learn or raise a skill anywhere, with the registry checks (tier, branch, points, prerequisites).
     this.onMessage('skill:learn', (client, message: unknown) => {
       const profile = this.profiles.get(client.sessionId);
@@ -292,7 +297,8 @@ export class GameRoom extends Room<{ state: GameState }> {
       for (const [id, player] of this.state.players) {
         const input = this.movementInputs.get(id);
         if (player.dead || this.travelling.has(id) || !input || this.clock.currentTime - input.at > INPUT_TTL_MS) { player.moving = false; continue; }
-        const { position, facing } = stepMovement(player, input.value, dt, this.map);
+        // Ice Walls block walking (CombatSystem.walkMap = the map plus standing wall cells).
+        const { position, facing } = stepMovement(player, input.value, dt, this.combat.walkMap);
         player.moving = facing !== null && (position.x !== player.x || position.y !== player.y);
         player.x = position.x;
         player.y = position.y;

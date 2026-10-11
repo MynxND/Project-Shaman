@@ -9,6 +9,7 @@ import { SKILL_BEHAVIOR_POLICY } from './skill-system.js';
 import { SKILL_COMBAT } from './combat.js';
 import { NATION_SKILL_INDEX, SKILL_TREE } from './skill-registry.js';
 import { castsWhileMoving, HUNTER, hunterRange } from './hunter-combat.js';
+import { GROUND_SPELLS, RUNE_SEER, WATER_SPELLS } from './rune-seer-combat.js';
 
 export interface SkillCastRule {
   /** Source cast time (ms); 0 = instant. */
@@ -80,6 +81,15 @@ export const NATION_SKILL_COMBAT: Readonly<Record<string, SkillCombatSpec>> = {
   'ullrs-volley': { sp: 45, range: 12, target: 'self', areaRadius: 12 },
   'great-hunt': { sp: 50, range: 0, target: 'self' },
   'falcon-storm': { sp: 45, range: 10, target: 'enemy', areaRadius: 2.5 },
+  // Rune Seer (slice 2): PROVISIONAL SP and ranges.
+  'frost-bolt': { sp: 12, range: 9, target: 'enemy' },
+  'blizzard-storm': { sp: 32, range: 9, target: 'ground', areaRadius: 3.5 },
+  'ice-wall': { sp: 25, range: 7, target: 'ground' },
+  'rune-trap': { sp: 15, range: 6, target: 'ground', areaRadius: 3 },
+  prophecy: { sp: 20, range: 0, target: 'self' },
+  'shatter-rune': { sp: 35, range: 9, target: 'enemy' },
+  'absolute-zero-field': { sp: 40, range: 9, target: 'enemy' },
+  fimbulwinter: { sp: 80, range: 0, target: 'self', areaRadius: 7.5 },
 };
 /** Combat spec of any castable skill (Medium or nation). */
 export function combatSpec(skillId: string): SkillCombatSpec | undefined { return SKILL_COMBAT[skillId] ?? NATION_SKILL_COMBAT[skillId]; }
@@ -94,8 +104,11 @@ export function castRule(skillId: string, skills: Readonly<Record<string, number
   if (medium) return medium;
   const k = NATION_SKILL_INDEX[skillId];
   if (!k || !NATION_SKILL_COMBAT[skillId]) return undefined;
-  const castMs = skillId === 'charged-rune-arrow' ? HUNTER.chargedCastMs(skills['rune-arrow-mastery'] ?? 0) : k.castMs ?? 0;
-  return { castMs, cooldownMs: k.cooldownMs ?? 0, aim: NATION_SKILL_COMBAT[skillId]!.target === 'ground' ? { kind: 'ahead', units: 3 } : { kind: 'self' } };
+  let castMs = skillId === 'charged-rune-arrow' ? HUNTER.chargedCastMs(skills['rune-arrow-mastery'] ?? 0) : k.castMs ?? 0;
+  // Rune Reading: ground spells cast faster; Rune Mastery: water/ice spells cool down faster.
+  if (GROUND_SPELLS.has(skillId)) castMs = Math.round(castMs * RUNE_SEER.groundCast(skills['rune-reading'] ?? 0));
+  const cooldownMs = Math.round((k.cooldownMs ?? 0) * (WATER_SPELLS.has(skillId) ? RUNE_SEER.runeMasteryCd(skills['rune-mastery'] ?? 0) : 1));
+  return { castMs, cooldownMs, aim: NATION_SKILL_COMBAT[skillId]!.target === 'ground' ? { kind: 'ahead', units: 3 } : { kind: 'self' } };
 }
 
 export function parseSkillCastRequest(value: unknown): { skillId: string; variant?: string } | null {

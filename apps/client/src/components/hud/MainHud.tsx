@@ -9,6 +9,7 @@ import { MenuBar } from './MenuBar';
 import { MiniMap } from './MiniMap';
 import { QuestTracker } from './QuestTracker';
 import { SkillHotbar } from './SkillHotbar';
+import { RuneQueue } from './RuneQueue';
 import { StatusPanel } from './StatusPanel';
 import { TargetFrame } from './TargetFrame';
 import { TravelOverlay } from './TravelOverlay';
@@ -65,6 +66,7 @@ export function MainHud() {
         <QuestTracker />
       </div>
       <SkillHotbar touch={touch} />
+      <RuneQueue />
       <ChatPanel />
       {touch && <Joystick />}
       <Toasts />

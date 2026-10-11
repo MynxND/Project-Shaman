@@ -5,6 +5,7 @@ import {
   soulHealAmount, stepMonster, type MapDefinition, type MonsterStatus, type MonsterMotion, type PlayerProfile, type Position, type SpawnRegion,
 } from '@shaman/shared';
 import { HunterEffects } from './hunter-effects.js';
+import { RuneSeerEffects } from './rune-seer-effects.js';
 
 // Authoritative combat for one map room: monster spawning and AI, player basic attacks, skill effects on release,
 // damage, death, EXP/level-ups, loot, regeneration and player respawn. Numbers come from packages/shared/src/combat.ts
@@ -61,6 +62,10 @@ export class CombatSystem {
   private nextRegen = 0;
   /** Ullr Hunter skill families (arrows, falcon, traps, dash, Great Hunt). */
   readonly hunter: HunterEffects;
+  /** Rune Seer skill families (rune queue, frost spells, Ice Wall, Runestone, Fimbulwinter). */
+  readonly runeSeer: RuneSeerEffects;
+  /** Walkable map with standing Ice Walls (players and monsters move on this). */
+  walkMap: MapDefinition;
 
   constructor(private readonly host: CombatHost) {
     this.hunter = new HunterEffects({
@@ -70,6 +75,16 @@ export class CombatSystem {
       fx: (e) => host.broadcast({ type: 'skillfx', ...e }),
       reduceCooldown: (id, skillId, ms) => host.reduceCooldown(id, skillId, ms),
       status: (m, status, ms, source) => { host.broadcast({ type: 'status', target: m.id, status, ms, source }); this.sync(m); },
+    });
+    this.walkMap = host.map;
+    this.runeSeer = new RuneSeerEffects({
+      map: host.map, state: host.state, monsters: this.monsters, now: () => host.now(), rng: () => host.rng(), profile: (id) => host.profile(id),
+      setProfile: (id, p) => { host.setProfile(id, p); host.vitals(id); },
+      schedule: (delay, run) => this.pending.push({ at: host.now() + delay, run }),
+      damage: (m, amount, playerId, skill) => { if (m.state !== 'dead') this.damageMonster(m, amount, playerId, skill); },
+      status: (m, status, ms, source) => { host.broadcast({ type: 'status', target: m.id, status, ms, source }); this.sync(m); },
+      fx: (e) => host.broadcast({ type: 'skillfx', ...e }),
+      walls: (map) => { this.walkMap = map; },
     });
     const now = host.now();
     for (const region of host.map.spawnRegions ?? []) {
@@ -134,7 +149,7 @@ export class CombatSystem {
     const profile = this.host.profile(playerId);
     if (profile && !this.isDown(playerId) && NATION_SKILL_COMBAT[skillId]) {
       this.lastCombat.set(playerId, this.host.now());
-      this.hunter.release(playerId, skillId, targetId, aim, variant);
+      if (!this.runeSeer.release(playerId, skillId, targetId, aim)) this.hunter.release(playerId, skillId, targetId, aim, variant);
       return;
     }
     const rule = SKILL_COMBAT[skillId];
@@ -212,7 +227,7 @@ export class CombatSystem {
     const profile = this.host.profile(playerId);
     if (!profile || this.isDown(playerId)) return;
     const def = MONSTERS[monster.kind]!;
-    const amount = fixed ?? physicalDamage(def.atk, 0, this.host.rng());
+    const amount = this.runeSeer.absorb(playerId, fixed ?? physicalDamage(def.atk, 0, this.host.rng()));
     const p = structuredClone(profile);
     p.hp = Math.max(0, p.hp - amount);
     this.lastCombat.set(playerId, this.host.now());
@@ -285,6 +300,7 @@ export class CombatSystem {
   forget(playerId: string) {
     this.attacks.delete(playerId); this.lastCombat.delete(playerId); this.downUntil.delete(playerId); this.lastHitBy.delete(playerId);
     this.hunter.forget(playerId);
+    this.runeSeer.forget(playerId);
     for (const m of this.monsters.values()) if (m.targetId === playerId) m.targetId = null;
   }
 
@@ -297,6 +313,7 @@ export class CombatSystem {
       for (const p of due) p.run();
     }
     this.hunter.step(now);
+    this.runeSeer.step(now);
     // Respawns.
     for (const r of this.respawns.filter((r) => r.at <= now)) {
       const region = this.region(r.regionId);
@@ -319,7 +336,7 @@ export class CombatSystem {
     const targets = [...host.state.players.entries()].map(([id, p]) => ({ id, x: p.x, y: p.y, alive: !p.dead }));
     for (const m of this.monsters.values()) {
       if (m.state === 'dead') continue;
-      const events = stepMonster(m, targets, dtMs, now, host.map, () => host.rng());
+      const events = stepMonster(m, targets, dtMs, now, this.walkMap, () => host.rng());
       const def = MONSTERS[m.kind]!;
       for (const e of events) {
         if (e.type === 'swing') host.broadcast({ type: 'swing', attacker: { kind: 'monster', id: m.id }, target: { kind: 'player', id: e.targetId } });

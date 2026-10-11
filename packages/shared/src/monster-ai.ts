@@ -31,6 +31,8 @@ export interface MonsterMotion {
   statuses: Partial<Record<MonsterStatus, number>>;
   /** Who marked this prey (the Twin Shot bonus belongs to that hunter) and their Twin Shot level. */
   markedBy?: { playerId: string; level: number };
+  /** Attack delay multiplier from auras (Chilling Aura: 1 + 3% × Lv); 1 when absent. */
+  attackDelayMul?: number;
   /** Overrides the definition's behaviour (summoned minions are always aggressive). */
   aggressive?: boolean;
   /** Summoned by a boss: never respawns. */
@@ -141,7 +143,7 @@ export function stepMonster(m: MonsterMotion, players: readonly MonsterTarget[],
         break;
       }
       if (dist(m, target) > def.attackRange * 1.1) { m.state = 'chase'; break; }
-      if (now - m.lastAttackAt >= def.attackDelayMs) {
+      if (now - m.lastAttackAt >= def.attackDelayMs * (m.attackDelayMul ?? 1)) {
         m.lastAttackAt = now; m.swingAt = now + def.attackWindupMs;
         events.push({ type: 'swing', monsterId: m.id, targetId: target.id });
       }

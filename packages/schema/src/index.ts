@@ -23,6 +23,8 @@ export const PlayerState = schema({
   companion: t.string().default(''),
   /** Active buff/status ids, comma separated (e.g. "great-hunt"); timing stays on the server. */
   statuses: t.string().default(''),
+  /** Rune Seer queue, front first, comma separated (NorseRune ids); '' for other jobs. */
+  runes: t.string().default(''),
 }, 'PlayerState');
 export type PlayerState = InstanceType<typeof PlayerState>;
 export const CitizenState = schema({
@@ -48,6 +50,8 @@ export const ZoneState = schema({
   owner: t.string().default(''),
   x: t.float32().default(0), y: t.float32().default(0),
   radius: t.float32().default(1),
+  /** Breakable zones (Ice Wall): remaining and full HP of the whole wall; 0 for others. */
+  hp: t.number().default(0), hpMax: t.number().default(0),
 }, 'ZoneState');
 export type ZoneState = InstanceType<typeof ZoneState>;
 export const GameState = schema({ mapId: t.string().default(''), players: t.map(PlayerState), citizens: t.map(CitizenState), monsters: t.map(MonsterState), zones: t.map(ZoneState) }, 'GameState');
