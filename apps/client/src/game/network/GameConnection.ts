@@ -1,6 +1,7 @@
 import { Client, type Room } from '@colyseus/sdk';
 import { GAME_ROOM, type BodyType, type HeadAppearance } from '@shaman/shared';
 import type { GameState } from '@shaman/schema';
+import { useAccountStore } from '@/stores/account-store';
 
 /** Server URL: NEXT_PUBLIC_GAME_SERVER_URL, else the page's host on port 2567 (works from a phone on the LAN). */
 function serverUrl() {
@@ -25,5 +26,7 @@ export function leaveRoom(room: Room<GameState> | null | undefined) {
 
 /** Joins the room of `mapId`; a travel `ticket` (from a portal) carries the session profile (and head) to the new map. */
 export function joinGame(bodyType: BodyType, mapId: string, ticket?: string, head?: HeadAppearance): Promise<Room<GameState>> {
-  return new Client(serverUrl()).joinOrCreate<GameState>(GAME_ROOM, { bodyType, mapId, ...(ticket ? { ticket } : {}), ...(head ? { head } : {}) });
+  // Signed-in players send their session token; the server loads and saves that account's character.
+  const authToken = useAccountStore.getState().status === 'signed-in' ? useAccountStore.getState().token : null;
+  return new Client(serverUrl()).joinOrCreate<GameState>(GAME_ROOM, { bodyType, mapId, ...(ticket ? { ticket } : {}), ...(head ? { head } : {}), ...(authToken ? { authToken } : {}) });
 }

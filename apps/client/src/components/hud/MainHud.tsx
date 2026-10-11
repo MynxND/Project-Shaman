@@ -13,6 +13,7 @@ import { RuneQueue } from './RuneQueue';
 import { GogyoRing } from './GogyoRing';
 import { BuffBar } from './BuffBar';
 import { JobGauge } from './JobGauge';
+import { AccountBadge } from '@/components/account/AccountGate';
 import { StatusPanel } from './StatusPanel';
 import { TargetFrame } from './TargetFrame';
 import { TravelOverlay } from './TravelOverlay';
@@ -73,6 +74,7 @@ export function MainHud() {
       <GogyoRing />
       <BuffBar />
       <JobGauge />
+      <AccountBadge />
       <ChatPanel />
       {touch && <Joystick />}
       <Toasts />

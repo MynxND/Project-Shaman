@@ -1,0 +1,18 @@
+/* Account gate (Phase 4): dark teal page, parchment card in the UI kit frame; readable on phones (16 px gutter). */
+.acc-page { min-height: 100dvh; display: grid; place-items: center; padding: max(16px, env(safe-area-inset-top)) 16px max(16px, env(safe-area-inset-bottom));
+  background: radial-gradient(ellipse at 50% 30%, #1d3b37 0%, #0e1d1b 70%); }
+.acc-card { width: min(420px, 100%); display: grid; gap: 10px; padding: 22px 22px 18px; background: var(--sk-parchment, #e9d9b4); color: var(--sk-ink, #2a2010); }
+.acc-card h1 { margin: 0; font: 700 26px/1.2 var(--sk-font, serif); }
+.acc-kicker { margin: 0; font-size: 11px; letter-spacing: 3px; color: #8a6a3a; }
+.acc-note { margin: 0 0 4px; font-size: 13px; line-height: 1.45; color: var(--sk-ink-soft, #5a4630); }
+.acc-card label { display: grid; gap: 4px; font-size: 13px; font-weight: 700; }
+.acc-card input { font: 16px/1.3 inherit; padding: 9px 10px; border: 1px solid #a58f6a; border-radius: 4px; background: #fbf4e2; color: inherit; }
+.acc-card input:focus-visible { outline: 2px solid #2f7d63; outline-offset: 1px; }
+.acc-card .sk-button { justify-self: stretch; min-height: 42px; font-size: 15px; }
+.acc-error { margin: 0; padding: 6px 8px; background: #a33a2e1a; border-left: 3px solid #a33a2e; color: #7a2418; font-size: 13px; }
+.acc-link { justify-self: center; background: none; border: 0; padding: 4px; color: #2f6d5a; font-size: 13px; text-decoration: underline; cursor: pointer; }
+.acc-card hr { width: 100%; border: 0; border-top: 1px dashed #a58f6a; margin: 4px 0 0; }
+.acc-badge { position: absolute; left: 50%; transform: translateX(-50%); top: calc(var(--hud-menu-bottom, 0px) + 6px); white-space: nowrap; display: flex; gap: 6px; align-items: center;
+  padding: 3px 4px 3px 10px; border-radius: 12px; background: #14272399; border: 1px solid #b8975066; color: #e8d9b0; font-size: 11px; text-shadow: 0 1px 0 #000; }
+.acc-badge button { padding: 2px 8px; border-radius: 10px; border: 1px solid #b8975088; background: #1c2f2b; color: #f2e6c4; font-size: 11px; cursor: pointer; }
+.acc-badge.acc-guest { border-color: #e07a6a88; }

@@ -134,3 +134,10 @@ colossus, Mor Phhee jumping prai. Every active skill of Medium + 5 nations now r
 (stun, fear, taunt, poison, heal block, cursed), player stealth, lethal saves, job gauge, monster stacks.
 Server tests pass; browser check pending (shared dev client stuck in an SSR head asset reload loop).
 Details: docs/design/combat/SLICE4_COMBAT.md. Next (per plan): persistence + accounts (Phase 4), then balance.
+
+## Phase 4 result — persistence + accounts (2026-10-12)
+SQLite (node:sqlite, no new dependency) behind a `Store` interface (PostgreSQL later), accounts with scrypt passwords and
+hashed session tokens, `/auth/register|login|me|logout`, signed-in characters saved on leave / portal / every 10 s /
+shutdown and loaded on join (profile, look, map, position), one session per account with takeover, guests unchanged.
+Client sign-in screen, token in localStorage, HUD badge, no rejoin ping-pong. Details: docs/design/PERSISTENCE_AND_ACCOUNTS.md.
+Next: Phase 5 balance + polish.

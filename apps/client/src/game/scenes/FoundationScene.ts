@@ -25,6 +25,7 @@ import type { SkillCastEvent } from '@shaman/shared';
 import { MonsterLayer, preloadMonsters, type CombatEventLike } from '../world/MonsterLayer';
 import { PortalLayer } from '../world/PortalLayer';
 import { useTargetStore } from '@/stores/target-store';
+import { useAccountStore } from '@/stores/account-store';
 import { useRuneStore } from '@/stores/rune-store';
 
 // main-v1 figures are ~118px tall in a 128px frame; 0.5 makes them ~1.9 world units tall.
@@ -80,7 +81,8 @@ export class FoundationScene extends Phaser.Scene {
   /** Runs before preload on every start, including a portal restart with { mapId, ticket }. */
   init(data?: { mapId?: string; ticket?: string }) {
     const devMap = process.env.NODE_ENV === 'development' ? new URLSearchParams(window.location.search).get('map') : null;
-    this.map = getMap(data?.mapId ?? devMap ?? DEFAULT_MAP_ID);
+    // A signed-in character resumes on the map it was saved on.
+    this.map = getMap(data?.mapId ?? devMap ?? useAccountStore.getState().character?.mapId ?? DEFAULT_MAP_ID);
     this.ticket = data?.ticket;
     this.disposed = false;
     this.players = new Map();
@@ -263,8 +265,10 @@ export class FoundationScene extends Phaser.Scene {
         useProfileStore.getState().setSender((type, message) => room.send(type, message));
         room.send('profile:get');
       } });
-      room.onLeave(() => {
+      room.onLeave((code) => {
         if (stale()) return;
+        // Another tab or device signed in with this account: do not rejoin (that would kick it back).
+        if (code === 4001) { this.room = null; useProfileStore.getState().setSender(null); this.clearPlayers(); setStatus('disconnected'); useAccountStore.getState().replaced(); return; }
         // The session is gone (left, or the server restarted): clear it and join a fresh room.
         this.room = null;
         useHeadStore.getState().bind(null);
@@ -276,8 +280,10 @@ export class FoundationScene extends Phaser.Scene {
       });
       const keyboard = this.input.keyboard;
       if (keyboard) this.movement = new MovementController(keyboard, (input) => room.send('move', input), () => this.predicted);
-    }).catch(() => {
+    }).catch((err: unknown) => {
       if (stale()) return;
+      // The saved session token is no longer valid: back to the sign-in screen instead of retrying forever.
+      if (String((err as { message?: string })?.message ?? err).includes('not-signed-in')) { useAccountStore.getState().expire(); return; }
       useSessionStore.getState().setTravelling(null);
       setStatus('disconnected');
       this.scheduleRejoin(bodyType);

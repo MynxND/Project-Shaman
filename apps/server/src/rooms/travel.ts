@@ -2,9 +2,9 @@ import { randomUUID } from 'node:crypto';
 import type { BodyType, PlayerProfile, Position } from '@shaman/shared';
 
 // Map travel: each map is its own room, so the leaving room hands the session profile to the next room through a
-// one-time ticket held in server memory. Tickets expire quickly and are consumed on join. (Profiles are still
-// session-only: there is no persistence yet.)
-interface Ticket { mapId: string; arrival: Position; profile: PlayerProfile; bodyType: BodyType; head: string; expires: number }
+// one-time ticket held in server memory. Tickets expire quickly and are consumed on join. A signed-in player's account
+// rides along so the next room keeps saving the same character (persistence/store.ts).
+interface Ticket { mapId: string; arrival: Position; profile: PlayerProfile; bodyType: BodyType; head: string; account?: { id: number; username: string }; expires: number }
 const TICKET_TTL_MS = 60_000;
 const tickets = new Map<string, Ticket>();
 
@@ -23,4 +23,11 @@ export function consumeTicket(id: unknown, mapId: string): Omit<Ticket, 'expires
   if (!t) return null;
   tickets.delete(id);
   return t.expires >= Date.now() && t.mapId === mapId ? t : null;
+}
+
+/** Reads a ticket without consuming it (room auth runs before join). */
+export function peekTicket(id: unknown, mapId: string): Omit<Ticket, 'expires'> | null {
+  if (typeof id !== 'string') return null;
+  const t = tickets.get(id);
+  return t && t.expires >= Date.now() && t.mapId === mapId ? t : null;
 }

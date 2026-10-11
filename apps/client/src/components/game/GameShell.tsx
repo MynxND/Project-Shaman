@@ -1,6 +1,8 @@
 'use client';
 import dynamic from 'next/dynamic';
 import { useEffect } from 'react';
+import { AccountGate, ReplacedNotice } from '@/components/account/AccountGate';
+import { useAccountStore } from '@/stores/account-store';
 import { useUiStore } from '@/stores/ui-store';
 import { useInventoryStore } from '@/stores/inventory-store';
 import { InventoryWindow } from '@/components/inventory/InventoryWindow';
@@ -23,6 +25,8 @@ import { useNpcStore } from '@/stores/npc-store';
 const PhaserHost = dynamic(() => import('./PhaserHost'), { ssr: false });
 
 export function GameShell() {
+  const account = useAccountStore();
+  useEffect(() => { void useAccountStore.getState().check(); }, []);
   const menuOpen = useUiStore((s) => s.menuOpen);
   const inventoryOpen = useInventoryStore((s) => s.open);
   const characterOpen = useCharacterStore((s) => s.open);
@@ -46,6 +50,10 @@ export function GameShell() {
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, []);
+  // Sign in (or play as a guest) before the world loads; a session taken over elsewhere stops here.
+  if (account.status === 'checking') return <main className="cc-page" role="status">กำลังตรวจบัญชี…</main>;
+  if (account.status === 'signed-out') return <AccountGate />;
+  if (account.status === 'replaced') return <ReplacedNotice />;
   return <main className="game-shell relative isolate overflow-hidden">
     <PhaserHost/><div className="world-vignette"/>
     <div className="hud pointer-events-none absolute inset-0">

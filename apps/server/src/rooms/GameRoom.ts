@@ -5,12 +5,19 @@ import { acceptStopAt, getMap, isBlocked, isMovementInput, MAPS, migrateProfile,
 import { advanceJob, castRule, castsWhileMoving, maxHpFor, maxSpFor, combatSpec, companionFor, FACINGS, JOB_PROGRESSION, advancementQuest, learnSkill, parseSkillCastRequest, skillAimPoint, skillCastError, type Facing, type SkillCastEvent } from '@shaman/shared';
 import { parseNpcRequest, runNpcRequest } from './npc-services.js';
 import { CombatSystem } from './combat-system.js';
-import { consumeTicket, issueTicket } from './travel.js';
+import { consumeTicket, issueTicket, peekTicket } from './travel.js';
+import { onlineAccounts, store, type Account } from '../persistence/store.js';
 import { decodeHead, EMOTE_MS, encodeHead, encodeLook, equipItem, isExpression, sanitizeEquipment, sanitizeHead } from '@shaman/shared';
 const TICK_MS = 1000 / 30;
 const INPUT_TTL_MS = 300;
 /** Dev-only shortcuts (job level / trial) for testing job advancement; never available in production builds. */
 const DEV_COMMANDS = process.env.NODE_ENV !== 'production';
+
+/** Every live room, so the process can save all signed-in characters before it exits. */
+const ROOMS = new Set<GameRoom>();
+export function flushAllRooms() { for (const room of ROOMS) room.saveAll(); }
+/** Autosave period for signed-in characters (also saved on leave, on map travel and on Ctrl+C). SHAMAN_AUTOSAVE_MS overrides it. */
+const AUTOSAVE_MS = Number(process.env.SHAMAN_AUTOSAVE_MS) || 10_000;
 
 /** One room per map (the server filters rooms by `mapId`). */
 export class GameRoom extends Room<{ state: GameState }> {
@@ -30,6 +37,8 @@ export class GameRoom extends Room<{ state: GameState }> {
   private portalArmed = new Map<string, boolean>();
   private travelling = new Set<string>();
   private bodyTypes = new Map<string, BodyType>();
+  /** Signed-in sessions: their account (guests are absent and never saved). */
+  private accounts = new Map<string, Account>();
 
   private client(id: string) { return this.clients.find((c) => c.sessionId === id); }
 
@@ -87,6 +96,8 @@ export class GameRoom extends Room<{ state: GameState }> {
   }
 
   onCreate(options?: unknown) {
+    ROOMS.add(this);
+    this.clock.setInterval(() => this.saveAll(), AUTOSAVE_MS);
     this.map = getMap((options as { mapId?: unknown } | undefined)?.mapId);
     this.state.mapId = this.map.id;
     this.patchRate = 50;
@@ -363,34 +374,76 @@ export class GameRoom extends Room<{ state: GameState }> {
       this.combat.forget(id);
       player.moving = false;
       this.movementInputs.delete(id);
-      const ticket = issueTicket({ mapId: dest.id, arrival, profile, bodyType: this.bodyTypes.get(id) ?? 'male', head: player.head });
+      // Save at the destination so a crash mid-travel resumes on the new map; the ticket carries the account over.
+      this.save(id, { mapId: dest.id, x: arrival.x, y: arrival.y });
+      const account = this.accounts.get(id);
+      if (account) onlineAccounts.set(account.id, { sessionId: `travel:${id}`, kick: () => {} });
+      const ticket = issueTicket({ mapId: dest.id, arrival, profile, bodyType: this.bodyTypes.get(id) ?? 'male', head: player.head, ...(account ? { account } : {}) });
       client.send('travel', { mapId: dest.id, ticket, label: portal.label });
     }
   }
 
-  onJoin(client: Client, options?: unknown) {
+  /** Signed-in players (options.authToken from /auth/login) load their saved character; guests play unsaved. One
+   *  session per account: a new login takes over from the old one (which is saved and disconnected). */
+  onAuth(_client: Client, options?: unknown) {
+    const opts = options as { authToken?: unknown; ticket?: unknown } | undefined;
+    const viaTicket = peekTicket(opts?.ticket, this.map.id);
+    if (viaTicket?.account) return viaTicket.account;
+    if (opts?.authToken === undefined) return true;
+    const account = store().accountForToken(opts.authToken);
+    if (!account) throw new Error('not-signed-in');
+    // Already online (another tab or device): that session is saved and disconnected; this login takes over.
+    onlineAccounts.get(account.id)?.kick();
+    return account;
+  }
+
+  /** Saves a signed-in session's character (profile, look, map and position). Guests are skipped. */
+  save(id: string, at?: { mapId: string; x: number; y: number }) {
+    const account = this.accounts.get(id), profile = this.profiles.get(id), player = this.state.players.get(id);
+    if (!account || !profile || !player) return;
+    store().saveCharacter({ accountId: account.id, bodyType: (this.bodyTypes.get(id) ?? 'male') as BodyType, head: player.head, profile,
+      mapId: at?.mapId ?? this.map.id, x: at?.x ?? player.x, y: at?.y ?? player.y, updatedAt: Date.now() });
+  }
+  saveAll() { for (const id of this.accounts.keys()) if (!this.travelling.has(id)) this.save(id); }
+  onDispose() { ROOMS.delete(this); }
+
+  onJoin(client: Client, options?: unknown, auth?: unknown) {
     const opts = options as { bodyType?: unknown; ticket?: unknown; head?: unknown } | undefined;
     const ticket = consumeTicket(opts?.ticket, this.map.id);
+    const account = auth && typeof auth === 'object' && 'id' in auth ? auth as Account : null;
+    // A signed-in player without a ticket continues from the saved character (position only on the same map).
+    const saved = account && !ticket ? store().loadCharacter(account.id) : null;
     const player = new PlayerState();
-    const at = ticket?.arrival ?? this.map.spawn;
+    const at = ticket?.arrival ?? (saved && saved.mapId === this.map.id ? { x: saved.x, y: saved.y } : this.map.spawn);
     player.x = at.x;
     player.y = at.y;
-    const bodyType = ticket?.bodyType ?? parseBodyType(opts?.bodyType);
+    const bodyType = ticket?.bodyType ?? saved?.bodyType ?? parseBodyType(opts?.bodyType);
     player.bodyType = bodyType;
-    player.head = ticket?.head ?? encodeHead(sanitizeHead(opts?.head));
+    player.head = ticket?.head ?? (saved ? encodeHead(sanitizeHead(decodeHead(saved.head))) : encodeHead(sanitizeHead(opts?.head)));
     this.bodyTypes.set(client.sessionId, bodyType);
     // Travellers keep their profile (bag, quests, level); everyone else starts a fresh session profile.
     // Every profile entering a room passes the save-data migration (job progression fields, profile version).
-    const profile = migrateProfile(ticket?.profile ?? newProfile(this.map.spawn));
+    const profile = migrateProfile(ticket?.profile ?? saved?.profile ?? newProfile(this.map.spawn));
     player.hp = profile.hp; player.hpMax = profile.hpMax; player.level = profile.level;
     this.state.players.set(client.sessionId, player);
     this.profiles.set(client.sessionId, profile);
     // Arriving players start disarmed so the arrival point can never bounce them straight back.
     this.portalArmed.set(client.sessionId, false);
+    if (account) {
+      this.accounts.set(client.sessionId, account);
+      onlineAccounts.set(account.id, { sessionId: client.sessionId, kick: () => { this.save(client.sessionId); client.leave(4001, 'signed-in-elsewhere'); } });
+      if (!saved && !ticket) this.save(client.sessionId);
+      client.send('account', { username: account.username, saved: true });
+    }
     this.sendProfile(client, profile);
   }
   onLeave(client: Client) {
     const id = client.sessionId;
+    // Signed-in characters are saved on leave (a traveller was already saved at the portal) and release the account.
+    if (!this.travelling.has(id)) this.save(id);
+    const account = this.accounts.get(id);
+    if (account && onlineAccounts.get(account.id)?.sessionId === id) onlineAccounts.delete(account.id);
+    this.accounts.delete(id);
     this.cancelCast(id); this.combat.forget(id); this.cooldowns.delete(id); this.movementInputs.delete(id); this.profiles.delete(id);
     this.portalArmed.delete(id); this.travelling.delete(id); this.bodyTypes.delete(id); this.state.players.delete(id);
   }
