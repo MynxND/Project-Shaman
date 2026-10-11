@@ -2,7 +2,7 @@ import { Room, type Client } from '@colyseus/core';
 import { CitizenState, GameState, PlayerState } from '@shaman/schema';
 import { createCitizenMotion, stepCitizen, UMBRAL_CAPITAL, UMBRAL_CITIZENS, type CitizenMotion } from '@shaman/shared';
 import { acceptStopAt, getMap, isBlocked, isMovementInput, MAPS, migrateProfile, newProfile, parseBodyType, pointInRect, questEvent, stepMovement, type BodyType, type MapDefinition, type MovementInput, type PlayerProfile } from '@shaman/shared';
-import { advanceJob, castRule, castsWhileMoving, combatSpec, companionFor, FACINGS, JOB_PROGRESSION, advancementQuest, learnSkill, parseSkillCastRequest, skillAimPoint, skillCastError, type Facing, type SkillCastEvent } from '@shaman/shared';
+import { advanceJob, castRule, castsWhileMoving, maxHpFor, maxSpFor, combatSpec, companionFor, FACINGS, JOB_PROGRESSION, advancementQuest, learnSkill, parseSkillCastRequest, skillAimPoint, skillCastError, type Facing, type SkillCastEvent } from '@shaman/shared';
 import { parseNpcRequest, runNpcRequest } from './npc-services.js';
 import { CombatSystem } from './combat-system.js';
 import { consumeTicket, issueTicket } from './travel.js';
@@ -220,6 +220,14 @@ export class GameRoom extends Room<{ state: GameState }> {
       this.sendProfile(client, p, { ok: true, note: 'โหมดทดสอบ: Job Level ' + p.jobLevel + ' และผ่านบททดสอบอาชีพแล้ว' });
     });
     // Dev builds only: move to a walkable point (automated browser checks of combat).
+    // Dev builds only: a sturdy level for browser checks (base level 60, full HP/SP).
+    if (DEV_COMMANDS) this.onMessage('dev:level', (client) => {
+      const profile = this.profiles.get(client.sessionId);
+      if (!profile) return;
+      const p = structuredClone(profile);
+      p.level = Math.max(p.level, 60); p.hpMax = maxHpFor(p.level); p.spMax = maxSpFor(p.level); p.hp = p.hpMax; p.sp = p.spMax;
+      this.profiles.set(client.sessionId, p); this.sendProfile(client, p, { ok: true, note: 'โหมดทดสอบ: Base Lv ' + p.level }); this.sendVitals(client.sessionId);
+    });
     if (DEV_COMMANDS) this.onMessage('dev:warp', (client, message: unknown) => {
       const player = this.state.players.get(client.sessionId);
       const { x, y } = (message ?? {}) as { x?: unknown; y?: unknown };

@@ -65,7 +65,8 @@ export function SkillHotbar({ touch }: { touch: boolean }) {
       const t = e.target;
       if (t instanceof HTMLElement && (t.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(t.tagName))) return;
       if (e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
-      const i = KEYS.indexOf(e.key);
+      // Physical digit keys (Digit1..Digit0): a Thai layout types other characters on the number row.
+      const i = e.code.startsWith('Digit') ? KEYS.indexOf(e.code.slice(5)) : e.code.startsWith('Numpad') ? KEYS.indexOf(e.code.slice(6)) : -1;
       const skill = i >= 0 ? latest.current.skills[i] : undefined;
       if (skill) { e.preventDefault(); latest.current.use(skill); }
     };

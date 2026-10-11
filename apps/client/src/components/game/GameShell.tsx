@@ -36,11 +36,12 @@ export function GameShell() {
     const onKey = (e: KeyboardEvent) => {
       const typing = e.target instanceof HTMLElement && (e.target.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName));
       if (typing || e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
-      if (e.key === 'i' || e.key === 'I') openInventory();
-      if (e.key === 'c' || e.key === 'C') openCharacter();
-      if (e.key === 'm' || e.key === 'M') openWorldMap();
-      if (e.key === 'v' || e.key === 'V') openAppearance();
-      if (e.key === 'k' || e.key === 'K') openSkillTree();
+      // Physical key positions (e.code), so the shortcuts also work with a Thai keyboard layout.
+      if (e.code === 'KeyI') openInventory();
+      if (e.code === 'KeyC') openCharacter();
+      if (e.code === 'KeyM') openWorldMap();
+      if (e.code === 'KeyV') openAppearance();
+      if (e.code === 'KeyK') openSkillTree();
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);

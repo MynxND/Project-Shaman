@@ -41,7 +41,7 @@ export class NpcLayer {
     const t = e.target;
     if (t instanceof HTMLElement && (t.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT', 'BUTTON'].includes(t.tagName))) return;
     if (e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
-    if ((e.key === 'f' || e.key === 'F' || e.key === ' ' || e.key === 'Enter') && this.nearby) { e.preventDefault(); this.hooks.onTalk(this.nearby); }
+    if ((e.code === 'KeyF' || e.key === ' ' || e.key === 'Enter') && this.nearby) { e.preventDefault(); this.hooks.onTalk(this.nearby); }
   };
 
   constructor(private readonly scene: Phaser.Scene, private readonly map: MapDefinition, private readonly hooks: NpcLayerHooks) {
