@@ -118,3 +118,11 @@ Rune Cast queue (4 rune effects, Runestone echo, Cast the Lots reorder, Rune Mas
 (blocks walking on server and in client prediction, HP, melts/cracks), Shatter Rune, Absolute Zero Field, Fimbulwinter,
 passives; synced rune queue and wall HP; world VFX and rune HUD. Server tests pass; browser check pending (dev client
 did not finish loading during concurrent map work). Details: docs/design/combat/RUNE_SEER_COMBAT.md. Next: slice 3 Japan.
+
+## Slice 3 result — Japan: Onmyoji + Miko (2026-10-11)
+Talisman ring + Invoke (15 spells, Invoke cooldown, Mandala), Gogyō residue with Sōshō Flow / Sōkoku Break, Taikyoku
+Balance, shikigami summons with their own behaviour + Ascension, Ring Seal; Miko purification → blessing (Harae signature),
+heals, buffs, Ofuda, Sun Pillar, resurrection; a shared player buff/debuff layer (dealt/taken/regen/dodge/ASPD) and
+PROVISIONAL monster debuffs. Synced held ring, summons, zones, statuses; Japan circles/zones/summons/residue in the world;
+Invoke slot, talisman ring and buff bar in the HUD. Server + network tests pass; browser check pending.
+Details: docs/design/combat/JAPAN_COMBAT.md. Next: slice 4 Russia / Indonesia / Thailand.

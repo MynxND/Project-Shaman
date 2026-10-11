@@ -459,7 +459,7 @@ export class FoundationScene extends Phaser.Scene {
     this.nationVfx?.update(time, this.vfxActors());
     // The local Rune Seer's queue and buffs for the HUD (small strings; only stored when they change).
     const self = room.state?.players?.get(room.sessionId);
-    if (self) useRuneStore.getState().sync(self.runes ?? '', self.statuses ?? '');
+    if (self) useRuneStore.getState().sync(self.runes ?? '', self.statuses ?? '', self.held ?? '');
   }
 
   /** The map plus standing Ice Wall cells (synced zones), so local prediction stops at walls like the server does. */
@@ -479,7 +479,7 @@ export class FoundationScene extends Phaser.Scene {
     return {
       player: (id) => {
         const v = this.players.get(id), p = state?.players?.get(id);
-        return v && p ? { x: v.sprite.x, y: v.sprite.y, depth: v.sprite.depth, statuses: p.statuses ?? '', companion: p.companion ?? '', runes: p.runes ?? '' } : null;
+        return v && p ? { x: v.sprite.x, y: v.sprite.y, depth: v.sprite.depth, statuses: p.statuses ?? '', companion: p.companion ?? '', runes: p.runes ?? '', held: p.held ?? '' } : null;
       },
       monster: (id) => {
         const at = this.monsters?.position(id), m = state?.monsters?.get(id);
@@ -488,6 +488,7 @@ export class FoundationScene extends Phaser.Scene {
       players: () => this.players.keys(),
       monsters: () => state?.monsters?.keys() ?? [],
       zones: () => (state?.zones ? [...state.zones.entries()] : []) as [string, { kind: string; variant: string; x: number; y: number; radius: number; hp: number; hpMax: number }][],
+      summons: () => (state?.summons ? [...state.summons.entries()] : []) as [string, { kind: string; x: number; y: number; facing: string; great: boolean; acts: number }][],
     };
   }
 

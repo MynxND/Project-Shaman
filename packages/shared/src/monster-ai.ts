@@ -94,7 +94,7 @@ export function stepMonster(m: MonsterMotion, players: readonly MonsterTarget[],
   const has = (status: MonsterStatus) => now < (m.statuses[status] ?? 0);
   // Frozen monsters do nothing; a swing in progress is lost.
   if (has('freeze')) { m.swingAt = 0; return []; }
-  const rooted = has('root'), blind = has('blind');
+  const rooted = has('root'), blind = has('blind') || has('silence');
   const speed = rooted ? 0 : def.speed * (now < m.slowUntil ? m.slowFactor : 1);
   const step = speed * dtMs / 1000;
   const events: MonsterEvent[] = [];

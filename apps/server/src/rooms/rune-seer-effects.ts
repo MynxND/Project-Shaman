@@ -288,11 +288,14 @@ export class RuneSeerEffects {
       if (aura > 0) for (const m of this.ctx.monsters.values()) if (m.state !== 'dead' && dist(m, player) <= RUNE_SEER.chillingAura.radius) m.attackDelayMul = Math.max(m.attackDelayMul ?? 1, RUNE_SEER.chillingAura.aspd(aura));
       const runes = s.queue.slice(0, RUNE_SEER.visibleRunes(this.lv(p, 'rune-reading'))).join(',');
       if (player.runes !== runes) player.runes = runes;
-      const list = [s.shield > 0 && s.shieldUntil > now ? 'hearth-shield' : '', s.lotsUntil > now ? 'cast-the-lots' : '', s.fimbulUntil > now ? 'fimbulwinter' : ''].filter(Boolean);
-      // Merge with statuses other systems set (Hunter buffs are never on a seer, so the seer owns the field).
-      const joined = list.join(',');
-      if (player.statuses !== joined) player.statuses = joined;
     }
+  }
+
+  /** Seer buff ids (merged into PlayerState.statuses by the combat system). */
+  statusesOf(id: string): string[] {
+    const s = this.seers.get(id), now = this.ctx.now();
+    if (!s) return [];
+    return [s.shield > 0 && s.shieldUntil > now ? 'hearth-shield' : '', s.lotsUntil > now ? 'cast-the-lots' : '', s.fimbulUntil > now ? 'fimbulwinter' : ''].filter(Boolean);
   }
 
   forget(playerId: string) {

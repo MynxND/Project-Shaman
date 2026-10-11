@@ -265,13 +265,13 @@ export class HunterEffects {
         }
       }
     }
-    // Player buff ids synced for everyone (aura / icons).
-    for (const [id, b] of this.buffs) {
-      const player = this.ctx.state.players.get(id);
-      if (!player) { this.buffs.delete(id); continue; }
-      const list = (Object.keys(b.until) as ('great-hunt' | 'dash-crit')[]).filter((k) => (b.until[k] ?? 0) > now).join(',');
-      if (player.statuses !== list) player.statuses = list;
-    }
+    for (const id of this.buffs.keys()) if (!this.ctx.state.players.has(id)) this.buffs.delete(id);
+  }
+
+  /** Player buff ids (merged into PlayerState.statuses by the combat system). */
+  statusesOf(id: string): string[] {
+    const b = this.buffs.get(id), now = this.ctx.now();
+    return b ? (Object.keys(b.until) as ('great-hunt' | 'dash-crit')[]).filter((k) => (b.until[k] ?? 0) > now) : [];
   }
 
   forget(playerId: string) {

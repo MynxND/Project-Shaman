@@ -2,6 +2,7 @@ import Phaser from 'phaser';
 import {
   NATION_AREA_BUFFS, RUNE_ART, NATION_CIRCLES, NATION_SKILL_INDEX, NORWAY_PROJECTILE_TRAVEL, NORWAY_VFX_LAYERS, NORWAY_VFX_MAIN,
   NATION_COMPANIONS, SKILL_BEHAVIOR_POLICY, TRAP_RUNES, WORLD_UNIT_PX, type SkillCastEvent, type VfxLayer,
+  GOGYO_TINT, JAPAN_RELEASE_MS, JAPAN_VFX_LAYERS, JAPAN_VFX_MAIN, japanCircleArt, japanCircleTints, type GogyoElement,
 } from '@shaman/shared';
 import { DARKNESS_DEPTH } from '../world/Lighting';
 
@@ -14,12 +15,18 @@ import { DARKNESS_DEPTH } from '../world/Lighting';
 
 const LAB_CHARACTER_SCALE = 0.72;
 /** Nations whose skills run in the game so far (their manifests are loaded). */
-const NATIONS = [{ key: 'no', base: '/assets/skills/norway-v1/' }] as const;
+const NATIONS = [{ key: 'no', base: '/assets/skills/norway-v1/' }, { key: 'jp', base: '/assets/skills/japan-v1/' }] as const;
 const manifestKey = (n: string) => `nation-vfx-${n}`;
 const fx = (id: string) => `nfx:${id}`;
 const DISPLAY_MS = 1400;
-const LAYERS: Readonly<Record<string, readonly VfxLayer[]>> = NORWAY_VFX_LAYERS;
-const MAIN: Readonly<Record<string, { layer: string; asset?: string; tint?: number; offsetY?: number }>> = NORWAY_VFX_MAIN;
+const LAYERS: Readonly<Record<string, readonly VfxLayer[]>> = { ...NORWAY_VFX_LAYERS, ...JAPAN_VFX_LAYERS };
+const MAIN: Readonly<Record<string, { layer: string; asset?: string; tint?: number; offsetY?: number; offsetX?: number }>> = { ...NORWAY_VFX_MAIN, ...JAPAN_VFX_MAIN };
+/** Japan circle (archetype art and element tints) or the nation's master circle. */
+const circleOf = (skillId: string, nation: string, branch: string): { art: string; tints: number[] } | null => {
+  if (nation === 'jp') return { art: japanCircleArt(skillId), tints: [...japanCircleTints(skillId)] };
+  const nc = NATION_CIRCLES[nation];
+  return nc ? { art: nc.art, tints: [nc.skillTints?.[skillId] ?? nc.tints[branch] ?? 0xe8c876].flat() } : null;
+};
 const TRAVEL: Readonly<Record<string, number>> = NORWAY_PROJECTILE_TRAVEL;
 const FRONT = DARKNESS_DEPTH + 1;
 /** Rune glyph art per trap rune (same order as shared TRAP_RUNES) and the burst played when it fires. */
@@ -35,11 +42,12 @@ interface Play {
   main: Phaser.GameObjects.Image | null; layers: Phaser.GameObjects.Image[]; placement: string | null;
 }
 export interface NationVfxActors {
-  player(id: string): { x: number; y: number; depth: number; statuses: string; companion: string; runes: string } | null;
+  player(id: string): { x: number; y: number; depth: number; statuses: string; companion: string; runes: string; held: string } | null;
   monster(id: string): { x: number; y: number; statuses: string } | null;
   players(): Iterable<string>;
   monsters(): Iterable<string>;
   zones(): Iterable<[string, { kind: string; variant: string; x: number; y: number; radius: number; hp: number; hpMax: number }]>;
+  summons(): Iterable<[string, { kind: string; x: number; y: number; facing: string; great: boolean; acts: number }]>;
 }
 
 export function preloadNationVfx(scene: Phaser.Scene) {
@@ -85,8 +93,10 @@ export class NationVfxLayer {
     const policy = SKILL_BEHAVIOR_POLICY[skill.behavior];
     const circle = this.circles.get(event.caster);
     if (event.phase === 'start') {
-      if (policy.circle && event.castMs > 0 && this.has(NATION_CIRCLES[skill.nation]?.art ?? '')) {
-        const img = circle?.img ?? this.image(NATION_CIRCLES[skill.nation]!.art, 0).setOrigin(0.5);
+      const art = circleOf(skill.id, skill.nation, skill.branch)?.art ?? '';
+      if (policy.circle && event.castMs > 0 && this.has(art)) {
+        circle?.img.destroy();
+        const img = this.image(art, 0).setOrigin(0.5);
         this.circles.set(event.caster, { event, start: now, released: null, cancelled: null, img });
       }
       if (event.castMs <= 0) this.release(event, now, actors);
@@ -107,7 +117,7 @@ export class NationVfxLayer {
     const target = event.targetId ? () => { const m = actors.monster(event.targetId!); return m ? { x: m.x * U, y: m.y * U } : fixed; } : () => fixed;
     // Ski Dash plays where the hunter left from (the server already moved them).
     const point = event.skillId === 'ski-dash' ? { x: event.x * U, y: event.y * U } : null;
-    this.play(event.skillId, now, caster, target, point, variant);
+    this.play(event.skillId, now, caster, target, point, variant, JAPAN_RELEASE_MS[event.skillId] ?? DISPLAY_MS);
   }
 
   /** A composed release: main art + the recipe's layers, removed after DISPLAY_MS. */
@@ -127,6 +137,12 @@ export class NationVfxLayer {
   skillFx(e: { caster: string; skillId: string; targetId?: string; x?: number; y?: number; variant?: string }, now: number, actors: NationVfxActors) {
     const U = WORLD_UNIT_PX;
     if (e.skillId === 'rune-cast') { this.runeFlare(e, now, actors); return; }
+    if (e.skillId.startsWith('shikigami-')) { this.shikiHit(e, now, actors); return; }
+    if (e.skillId === 'kongo-talisman' && e.variant === 'shatter' && e.x !== undefined && e.y !== undefined) {
+      const at = { x: e.x * U, y: e.y * U };
+      this.play('kongo-talisman', now, () => at, () => at, at, 0, 600);
+      return;
+    }
     const caster = () => { const p = actors.player(e.caster); return p ? { x: p.x, y: p.y } : null; };
     if (e.skillId === 'rune-trap-kit' && e.x !== undefined && e.y !== undefined) {
       // The trap fires: its rune flares and its burst plays on the trap.
@@ -159,14 +175,13 @@ export class NationVfxLayer {
     for (const [id, c] of this.circles) {
       const p = actors.player(id);
       const skill = NATION_SKILL_INDEX[c.event.skillId]!;
-      const nc = NATION_CIRCLES[skill.nation]!;
       const t = now - c.start, cast = c.event.castMs;
       let alpha = 0, scale = 1.3;
       if (c.cancelled !== null) alpha = 0.9 * Math.max(0, 1 - (now - c.cancelled) / 180);
       else if (c.released === null) { const grow = Math.min(1, t / (cast * 0.2)); alpha = 0.9 * grow; scale = 0.9 + 0.4 * grow; if (t > cast + 3000) alpha = 0; }
       else { const since = now - c.released; alpha = since < 80 ? 1 : Math.max(0, 1 - (since - 80) / 180); scale = since < 80 ? 1.42 : 1.3; }
       if (!p || alpha <= 0.01) { c.img.setVisible(false); if (alpha <= 0.01 && (c.cancelled !== null || c.released !== null || t > cast + 3000)) { c.img.destroy(); this.circles.delete(id); } continue; }
-      const tints = [nc.skillTints?.[skill.id] ?? nc.tints[skill.branch] ?? 0xe8c876].flat();
+      const tints = circleOf(skill.id, skill.nation, skill.branch)?.tints ?? [0xe8c876];
       c.img.setPosition(p.x, p.y).setScale(scale * k, scale * k * 0.5).setRotation(t / 1000 * (c.released === null ? 1.2 : 0.6))
         .setTint(tints[Math.floor(now / 400) % tints.length]!).setAlpha(alpha).setDepth(p.depth - 0.5).setVisible(true);
     }
@@ -204,6 +219,7 @@ export class NationVfxLayer {
     for (const [id, img] of this.buffCircles) if (!seenPlayers.has(id)) { img.destroy(); this.buffCircles.delete(id); }
     this.updateZones(now, actors);
     this.updateRunes(now, actors, seenPlayers);
+    this.updateSummons(now, actors);
     this.updateMarkers(now, actors);
   }
 
@@ -234,7 +250,7 @@ export class NationVfxLayer {
       const main = MAIN[pl.skillId];
       const frames = sheet.frames, frame = bow ? Math.floor(now / 50) % frames : Math.max(0, Math.min(frames - 1, Math.floor(amount * frames)));
       pl.main.setFrame(frame).setRotation(pl.placement === 'projectile' ? rotation : 0)
-        .setScale((bow ? 1 : skill?.vfxScale ?? 1) * k).setPosition(Math.round(x), Math.round(y + (main?.offsetY ?? 0) * k))
+        .setScale((bow ? 1 : skill?.vfxScale ?? 1) * k).setPosition(Math.round(x + (main?.offsetX ?? 0) * k), Math.round(y + (main?.offsetY ?? 0) * k))
         .setDepth(main?.layer === 'ground' ? to.y - 0.3 : FRONT).setAlpha(0.95 * (bow ? 1 : fade)).setVisible(!arrived);
       if (main?.tint) pl.main.setTint(main.tint); else pl.main.clearTint();
     }
@@ -267,6 +283,7 @@ export class NationVfxLayer {
     const BASE: Readonly<Record<string, string>> = {
       trap: 'kit-trap-base', 'snow-trail': 'kit-snow-burst', 'falcon-storm': 'no-cast-circle', blizzard: 'blizzard-storm',
       fimbulwinter: 'no-cast-circle', runestone: 'rune-trap', 'ice-wall': 'ice-wall',
+      'bonfire-ward': 'bonfire-ward', 'ash-barrier': 'ash-barrier', 'spring-rain': 'cleansing-rain', 'leaf-blade-storm': 'leaf-blade-storm', 'mirror-pond': 'mirror-pond', 'sun-pillar': 'sun-pillar',
     };
     for (const [id, z] of actors.zones()) {
       seen.add(id);
@@ -290,6 +307,10 @@ export class NationVfxLayer {
       if (z.kind === 'trap') view.base.setFrame(Math.floor(now / 120) % sheet.frames).setScale(k).setPosition(x, y).setTint(0xd8c8ff).setAlpha(0.9).setVisible(true);
       else if (z.kind === 'snow-trail') view.base.setFrame(loop()).setScale(z.radius * U / sheet.width * 1.4, z.radius * U / sheet.width).setPosition(x, y + 6 * k).setAlpha(0.45).setVisible(true);
       else if (z.kind === 'blizzard') view.base.setFrame(loop(0.3, 90)).setScale(z.radius * 2 * U / sheet.width).setPosition(x, y).setDepth(y + 0.5).setAlpha(0.85).setVisible(true);
+      else if (['bonfire-ward', 'ash-barrier', 'spring-rain', 'leaf-blade-storm', 'mirror-pond', 'sun-pillar'].includes(z.kind)) {
+        view.base.setFrame(loop(0.35, 110)).setScale(Math.max(0.6, z.radius * 2 * U / sheet.width) * 1.1).setPosition(x, y).setDepth(z.kind === 'sun-pillar' || z.kind === 'spring-rain' ? y + 1 : y - 0.4)
+          .setTint(z.kind === 'spring-rain' ? 0xb6e8a8 : 0xffffff).setAlpha(0.85).setVisible(true);
+      }
       else if (z.kind === 'runestone') view.base.setFrame(sheet.frames - 1).setScale(k).setPosition(x, y).setDepth(y).setAlpha(0.95).setVisible(true);
       else if (z.kind === 'ice-wall') {
         // One upright slab per cell: the sheet's settled frame, narrowed to one cell, taller with the level (variant).
@@ -361,6 +382,66 @@ export class NationVfxLayer {
     });
   }
 
+  private summonViews = new Map<string, { img: Phaser.GameObjects.Image; key: string; acts: number; actAt: number }>();
+  private heldViews = new Map<string, Phaser.GameObjects.Image[]>();
+  private residueViews = new Map<string, Phaser.GameObjects.Image>();
+  /** A shikigami acts: the element mark of its kind flares on the prey. */
+  private shikiHit(e: { skillId: string; targetId?: string }, now: number, actors: NationVfxActors) {
+    const element: Record<string, GogyoElement> = { kitsune: 'fire', kodama: 'wood', nurikabe: 'earth', kamaitachi: 'metal', mizuchi: 'water' };
+    const el = element[e.skillId.replace('shikigami-', '')];
+    const art = el ? `kit-mark-${el}` : '';
+    if (!art || !this.has(art) || !e.targetId) return;
+    const U = WORLD_UNIT_PX, id = e.targetId;
+    this.flares.push({ img: this.image(art, FRONT + 0.6).setOrigin(0.5).setTint(GOGYO_TINT[el!]), start: now, at: () => { const m = actors.monster(id); return m ? { x: m.x * U, y: m.y * U + 50 * this.k } : null; } });
+  }
+  /** Shikigami (synced summons): their creature sheet loops; an act plays it faster; Ascension swaps to the great form. */
+  private updateSummons(now: number, actors: NationVfxActors) {
+    const U = WORLD_UNIT_PX, k = this.k, seen = new Set<string>();
+    for (const [id, s] of actors.summons()) {
+      seen.add(id);
+      const key = s.great ? `great-${s.kind}` : `shikigami-${s.kind}`;
+      if (!this.has(key)) continue;
+      let v = this.summonViews.get(id);
+      if (!v || v.key !== key) { v?.img.destroy(); v = { img: this.image(key, 0), key, acts: s.acts, actAt: -1e9 }; this.summonViews.set(id, v); }
+      if (s.acts !== v.acts) { v.acts = s.acts; v.actAt = now; }
+      const sheet = this.sheets[key]!, acting = now - v.actAt < 700;
+      const frame = acting ? Math.min(sheet.frames - 1, Math.floor((now - v.actAt) / 700 * sheet.frames)) : Math.floor(now / 160) % Math.max(1, Math.ceil(sheet.frames / 3));
+      const x = s.x * U, y = s.y * U;
+      v.img.setFrame(frame).setScale((s.great ? 0.7 : 0.55) * k).setFlipX(s.facing === 'west').setPosition(x, y + Math.sin(now / 300) * 2).setDepth(y).setVisible(true);
+    }
+    for (const [id, v] of this.summonViews) if (!seen.has(id)) { v.img.destroy(); this.summonViews.delete(id); }
+    // Held talismans orbit the Onmyoji (element-tinted paper), newest in front.
+    for (const id of actors.players()) {
+      const p = actors.player(id);
+      const held = p?.held ? p.held.split(',') as GogyoElement[] : [];
+      const views = this.heldViews.get(id) ?? [];
+      while (views.length < held.length) views.push(this.image('kit-held-talisman', FRONT).setOrigin(0.5));
+      while (views.length > held.length) views.pop()!.destroy();
+      this.heldViews.set(id, views);
+      held.forEach((e, i) => {
+        if (!p || !this.has('kit-held-talisman')) return;
+        const a = now / 900 + (i / held.length) * Math.PI * 2;
+        views[i]!.setFrame(Math.floor(now / 90 + i) % this.sheets['kit-held-talisman']!.frames).setTint(GOGYO_TINT[e]).setScale(0.8 * k)
+          .setPosition(p.x + Math.cos(a) * 30 * k, p.y - 60 * k + Math.sin(a) * 9 * k).setDepth(Math.sin(a) > 0 ? p.depth + 0.3 : p.depth - 0.3).setVisible(true);
+      });
+    }
+    for (const [id, v] of this.heldViews) if (!actors.player(id)) { for (const img of v) img.destroy(); this.heldViews.delete(id); }
+    // Gogyō residue: the element mark floats over the monster's head.
+    const seenM = new Set<string>();
+    for (const id of actors.monsters()) {
+      const m = actors.monster(id);
+      const res = m?.statuses.split(',').find((st) => st.startsWith('res-'));
+      if (!m || !res) continue;
+      const art = `kit-mark-${res.slice(4)}`;
+      if (!this.has(art)) continue;
+      seenM.add(id);
+      let v = this.residueViews.get(id);
+      if (!v) { v = this.image(art, FRONT + 0.4).setOrigin(0.5); this.residueViews.set(id, v); }
+      v.setTexture(fx(art)).setTint(GOGYO_TINT[res.slice(4) as GogyoElement]).setScale((0.9 + 0.1 * Math.sin(now / 200)) * k).setPosition(m.x * U + 14 * k, m.y * U - 64 * k).setVisible(true);
+    }
+    for (const [id, v] of this.residueViews) if (!seenM.has(id)) { v.destroy(); this.residueViews.delete(id); }
+  }
+
   /** Monster statuses: the prey-mark rune above the head and coloured status pips under it. */
   private updateMarkers(now: number, actors: NationVfxActors) {
     const U = WORLD_UNIT_PX, k = this.k, seen = new Set<string>();
@@ -395,6 +476,10 @@ export class NationVfxLayer {
     for (const img of [...this.buffCircles.values(), ...this.companions.values()]) img.destroy();
     for (const v of this.zones.values()) { v.base.destroy(); v.glyph?.destroy(); v.extra?.destroy(); }
     for (const mk of this.markers.values()) { mk.glyph.destroy(); mk.dots.destroy(); }
+    for (const v of this.summonViews.values()) v.img.destroy();
+    for (const v of this.heldViews.values()) for (const img of v) img.destroy();
+    for (const v of this.residueViews.values()) v.destroy();
+    this.summonViews.clear(); this.heldViews.clear(); this.residueViews.clear();
     for (const v of this.runeViews.values()) for (const img of v) img.destroy();
     for (const img of this.shields.values()) img.destroy();
     for (const f of this.flares) f.img.destroy();

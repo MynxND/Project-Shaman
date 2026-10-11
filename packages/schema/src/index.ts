@@ -25,6 +25,8 @@ export const PlayerState = schema({
   statuses: t.string().default(''),
   /** Rune Seer queue, front first, comma separated (NorseRune ids); '' for other jobs. */
   runes: t.string().default(''),
+  /** Onmyoji held talismans, oldest first, comma separated (Gogyō elements); '' for other jobs. */
+  held: t.string().default(''),
 }, 'PlayerState');
 export type PlayerState = InstanceType<typeof PlayerState>;
 export const CitizenState = schema({
@@ -54,5 +56,17 @@ export const ZoneState = schema({
   hp: t.number().default(0), hpMax: t.number().default(0),
 }, 'ZoneState');
 export type ZoneState = InstanceType<typeof ZoneState>;
-export const GameState = schema({ mapId: t.string().default(''), players: t.map(PlayerState), citizens: t.map(CitizenState), monsters: t.map(MonsterState), zones: t.map(ZoneState) }, 'GameState');
+/** A summoned creature (Onmyoji shikigami). kind = kodama | kitsune | nurikabe | kamaitachi | mizuchi; great = Ascension form. */
+export const SummonState = schema({
+  kind: t.string().default(''),
+  owner: t.string().default(''),
+  x: t.float32().default(0), y: t.float32().default(0),
+  facing: t.string().default('east'),
+  hp: t.number().default(1), hpMax: t.number().default(1),
+  great: t.boolean().default(false),
+  /** Bumped each time the creature acts (clients play its attack). */
+  acts: t.number().default(0),
+}, 'SummonState');
+export type SummonState = InstanceType<typeof SummonState>;
+export const GameState = schema({ mapId: t.string().default(''), players: t.map(PlayerState), citizens: t.map(CitizenState), monsters: t.map(MonsterState), zones: t.map(ZoneState), summons: t.map(SummonState) }, 'GameState');
 export type GameState = InstanceType<typeof GameState>;

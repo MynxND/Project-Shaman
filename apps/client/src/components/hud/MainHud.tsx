@@ -10,6 +10,8 @@ import { MiniMap } from './MiniMap';
 import { QuestTracker } from './QuestTracker';
 import { SkillHotbar } from './SkillHotbar';
 import { RuneQueue } from './RuneQueue';
+import { GogyoRing } from './GogyoRing';
+import { BuffBar } from './BuffBar';
 import { StatusPanel } from './StatusPanel';
 import { TargetFrame } from './TargetFrame';
 import { TravelOverlay } from './TravelOverlay';
@@ -67,6 +69,8 @@ export function MainHud() {
       </div>
       <SkillHotbar touch={touch} />
       <RuneQueue />
+      <GogyoRing />
+      <BuffBar />
       <ChatPanel />
       {touch && <Joystick />}
       <Toasts />

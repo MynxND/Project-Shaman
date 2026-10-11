@@ -39,6 +39,7 @@ export class GameRoom extends Room<{ state: GameState }> {
     this.casts.delete(id);
     const ready = this.cooldowns.get(id) ?? {};
     ready[cast.event.skillId] = now + cast.event.cooldownMs;
+    if (cast.event.invoke) ready.invoke = now + (cast.event.invokeCdMs ?? 0);
     this.cooldowns.set(id, ready);
     // SP is spent on release (provisional cost); a cast that can no longer pay fizzles like a cancel.
     const profile = this.profiles.get(id);
@@ -212,6 +213,7 @@ export class GameRoom extends Room<{ state: GameState }> {
       const target = JOB_PROGRESSION.advanceAt[p.jobTier as 1 | 2];
       p.skillPoints += Math.max(0, target - p.jobLevel) * JOB_PROGRESSION.skillPointsPerJobLevel;
       p.jobLevel = Math.max(p.jobLevel, target);
+      p.hp = p.hpMax; p.sp = p.spMax;
       const quest = advancementQuest(p);
       if (quest) p.quests[quest] = { step: 99, done: true };
       this.profiles.set(client.sessionId, p);
@@ -247,12 +249,23 @@ export class GameRoom extends Room<{ state: GameState }> {
     // Skills: the server decides whether a cast starts, when it releases and when it is ready again; on release the
     // combat system applies the (provisional) effect to the validated target.
     this.onMessage('skill', (client, message: unknown) => {
-      const req = parseSkillCastRequest(message);
+      let req = parseSkillCastRequest(message);
       const player = this.state.players.get(client.sessionId);
       const profile = this.profiles.get(client.sessionId);
       if (!player || !profile) return;
       const now = this.clock.currentTime;
-      let error: string | null = req ? skillCastError(profile, req.skillId, now, { casting: this.casts.has(client.sessionId), moving: player.moving }, this.cooldowns.get(client.sessionId) ?? {}) : 'bad-request';
+      // Invoke (Onmyoji): the held talismans pick the spell; the spell then casts like any other skill.
+      let invokeError: string | null = null, invoked = false;
+      if (req?.skillId === 'invoke') {
+        const japan = this.combat.japan, spell = japan.invokeSpell(client.sessionId), ready = this.cooldowns.get(client.sessionId) ?? {};
+        if ((profile.skills['onmyo-seal'] ?? 0) <= 0) invokeError = 'not-learned';
+        else if (!spell) invokeError = 'no-talisman';
+        else if (this.casts.has(client.sessionId)) invokeError = 'busy';
+        else if (player.moving) invokeError = 'moving';
+        else if (!japan.mandala(client.sessionId) && ((ready.invoke ?? 0) > now || (ready[spell] ?? 0) > now)) invokeError = 'cooldown';
+        else { req = { skillId: spell }; invoked = true; }
+      }
+      let error: string | null = invokeError ?? (req ? (invoked ? null : skillCastError(profile, req.skillId, now, { casting: this.casts.has(client.sessionId), moving: player.moving }, this.cooldowns.get(client.sessionId) ?? {})) : 'bad-request');
       if (!error && req && player.dead) error = 'dead';
       if (!error && req && profile.sp < (combatSpec(req.skillId)?.sp ?? 0)) error = 'no-sp';
       const targetId = (message as { targetId?: unknown }).targetId;
@@ -268,11 +281,14 @@ export class GameRoom extends Room<{ state: GameState }> {
         player.facing = (['east', 'south-east', 'south', 'south-west', 'west', 'north-west', 'north', 'north-east'] as const)[(octant + 8) % 8]!;
       } else if (typeof asked === 'string' && (FACINGS as readonly string[]).includes(asked)) player.facing = asked;
       const facing = player.facing as Facing;
-      const rule = castRule(req.skillId, profile.skills)!;
+      const base = castRule(req.skillId, profile.skills)!;
+      // Invoked spells: water talisman casts faster, Gogyō Mandala removes cooldowns, the Invoke button cools down.
+      const rule = invoked ? { ...base, castMs: Math.round(base.castMs * this.combat.japan.castMul(client.sessionId)), cooldownMs: this.combat.japan.mandala(client.sessionId) ? 0 : base.cooldownMs } : base;
       const aim = target.aim ?? skillAimPoint(req.skillId, player, facing, this.map);
       const event: SkillCastEvent = {
         caster: client.sessionId, skillId: req.skillId, phase: 'start', castMs: rule.castMs, cooldownMs: rule.cooldownMs, facing,
         x: player.x, y: player.y, aimX: aim.x, aimY: aim.y, ...(target.aim && typeof targetId === 'string' ? { targetId } : {}), ...(req.variant ? { variant: req.variant } : {}),
+        ...(invoked ? { invoke: true, invokeCdMs: this.combat.japan.invokeCdMs(client.sessionId) } : {}),
       };
       this.casts.set(client.sessionId, { event, releaseAt: now + rule.castMs, resumeAttack });
       this.broadcast('skill', event);

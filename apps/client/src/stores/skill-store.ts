@@ -47,7 +47,7 @@ export const useSkillStore = create<SkillState>((set, get) => ({
   receive: (event) => {
     const now = performance.now();
     if (event.phase === 'start') set({ casting: { skillId: event.skillId, startedAt: now, castMs: event.castMs } });
-    else if (event.phase === 'release') set((s) => ({ casting: null, readyAt: { ...s.readyAt, [event.skillId]: now + event.cooldownMs } }));
+    else if (event.phase === 'release') set((s) => ({ casting: null, readyAt: { ...s.readyAt, [event.skillId]: now + event.cooldownMs, ...(event.invoke ? { invoke: now + (event.invokeCdMs ?? 0) } : {}) } }));
     else { set({ casting: null }); useHudStore.getState().notify('การร่ายถูกขัดจังหวะ', 'warn'); }
   },
   setReady: (skillId, readyInMs) => set((s) => ({ readyAt: { ...s.readyAt, [skillId]: performance.now() + Math.max(0, readyInMs) } })),

@@ -33,9 +33,12 @@ export const TRAP_RUNES: readonly TrapRune[] = ['snare', 'freeze', 'blast', 'fla
 export const TRAP_RUNE_TH: Readonly<Record<TrapRune, string>> = { snare: 'ᚾ ตรึง', freeze: 'ᛁ แช่แข็ง', blast: 'ᚦ ระเบิดหนาม', flash: 'ᛞ แสงวาบ' };
 
 /** Monster status ids synced to clients (MonsterState.statuses). */
-export type MonsterStatus = 'mark' | 'revealed' | 'trapped' | 'root' | 'freeze' | 'blind' | 'bleed' | 'slow';
+export type MonsterStatus = 'mark' | 'revealed' | 'trapped' | 'root' | 'freeze' | 'blind' | 'bleed' | 'slow'
+  /** Japan (slice 3): silence (no blows), DEF/MDEF down (Sōkoku earth break), burn, and the Gogyō residue on the target. */
+  | 'silence' | 'def-down' | 'burn' | 'res-wood' | 'res-fire' | 'res-earth' | 'res-metal' | 'res-water';
 export const MONSTER_STATUS_TH: Readonly<Record<MonsterStatus, string>> = {
   mark: 'เหยื่อที่มาร์ก', revealed: 'เปิดตำแหน่ง', trapped: 'ติดกับดัก', root: 'ถูกตรึง', freeze: 'แช่แข็ง', blind: 'ตาบอด', bleed: 'เลือดไหล', slow: 'ช้าลง',
+  silence: 'ผนึกเงียบ', 'def-down': 'เกราะแตก', burn: 'ไหม้', 'res-wood': 'รอยธาตุไม้', 'res-fire': 'รอยธาตุไฟ', 'res-earth': 'รอยธาตุดิน', 'res-metal': 'รอยธาตุโลหะ', 'res-water': 'รอยธาตุน้ำ',
 };
 
 const ARROW_SKILLS = new Set(['twin-shot', 'charged-rune-arrow', 'ullrs-volley']);

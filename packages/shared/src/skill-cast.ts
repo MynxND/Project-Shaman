@@ -32,7 +32,7 @@ export const SKILL_CAST_RULES: Readonly<Record<string, SkillCastRule>> = {
   'binding-thread': { castMs: 500, cooldownMs: 8000, aim: { kind: 'ahead', units: 3 } },
 };
 
-export type SkillCastError = 'bad-request' | 'unknown-skill' | 'not-castable' | 'not-in-game' | 'not-learned' | 'busy' | 'moving' | 'cooldown'
+export type SkillCastError = 'bad-request' | 'unknown-skill' | 'not-castable' | 'not-in-game' | 'not-learned' | 'no-talisman' | 'busy' | 'moving' | 'cooldown'
   | 'no-sp' | 'no-target' | 'too-far' | 'dead';
 
 export const SKILL_CAST_ERROR_TH: Readonly<Record<SkillCastError, string>> = {
@@ -40,6 +40,7 @@ export const SKILL_CAST_ERROR_TH: Readonly<Record<SkillCastError, string>> = {
   'unknown-skill': 'ไม่รู้จักสกิลนี้',
   'not-castable': 'สกิลนี้เป็นสกิลติดตัว ไม่ต้องกดใช้',
   'not-in-game': 'สกิลนี้ยังไม่เปิดใช้ในเกม · กำลังเชื่อมระบบทีละสาย',
+  'no-talisman': 'ต้องถือยันต์ 2 ใบก่อน Invoke',
   'not-learned': 'ยังไม่ได้เรียนสกิลนี้ · เปิดหน้าต่างสกิล (K) เพื่อเรียน',
   busy: 'กำลังร่ายสกิลอื่นอยู่',
   moving: 'หยุดเดินก่อนจึงร่ายสกิลได้',
@@ -65,6 +66,8 @@ export interface SkillCastEvent {
   targetId?: string;
   /** Chosen variant (Rune Trap Kit rune: snare / freeze / blast / flash). */
   variant?: string;
+  /** Cast through Invoke (Onmyoji): the skill is the invoked spell; the Invoke button cools down for invokeCdMs. */
+  invoke?: boolean; invokeCdMs?: number;
 }
 
 /** Combat use of a nation skill: SP, world range (units), what it aims at. PROVISIONAL (the catalogue leaves SP and
@@ -90,6 +93,30 @@ export const NATION_SKILL_COMBAT: Readonly<Record<string, SkillCombatSpec>> = {
   'shatter-rune': { sp: 35, range: 9, target: 'enemy' },
   'absolute-zero-field': { sp: 40, range: 9, target: 'enemy' },
   fimbulwinter: { sp: 80, range: 0, target: 'self', areaRadius: 7.5 },
+  // Japan (slice 3): PROVISIONAL SP and ranges. Talismans fill the ring; invoked spells are cast through 'invoke'.
+  ...Object.fromEntries(['wood', 'fire', 'earth', 'metal', 'water'].map((e) => [e + '-talisman', { sp: 2, range: 0, target: 'self' } as SkillCombatSpec])),
+  'bonfire-ward': { sp: 18, range: 7, target: 'ground', areaRadius: 2.5 },
+  'ash-barrier': { sp: 18, range: 6, target: 'ground', areaRadius: 2.5 },
+  'kongo-talisman': { sp: 15, range: 0, target: 'self' },
+  'mirror-pond': { sp: 15, range: 7, target: 'ground', areaRadius: 1.5 },
+  'spring-rain': { sp: 25, range: 6, target: 'ground', areaRadius: 3.5 },
+  'root-fissure': { sp: 16, range: 7, target: 'enemy' },
+  mudslide: { sp: 18, range: 5, target: 'enemy' },
+  'steam-burst': { sp: 20, range: 9, target: 'enemy' },
+  'molten-swallows': { sp: 16, range: 9, target: 'enemy' },
+  'leaf-blade-storm': { sp: 24, range: 8, target: 'ground', areaRadius: 2.5 },
+  ...Object.fromEntries(['kodama', 'kitsune', 'nurikabe', 'kamaitachi', 'mizuchi'].map((k) => ['summon-' + k, { sp: 30, range: 0, target: 'self' } as SkillCombatSpec])),
+  'gogyo-mandala': { sp: 40, range: 0, target: 'self' },
+  'gogyo-ring-seal': { sp: 50, range: 0, target: 'self', areaRadius: 5.5 },
+  'shikigami-ascension': { sp: 40, range: 0, target: 'self' },
+  'harae-sweep': { sp: 10, range: 0, target: 'self' },
+  'kagura-purification-dance': { sp: 25, range: 0, target: 'self', areaRadius: 4.5 },
+  'suzu-bell-blessing': { sp: 12, range: 0, target: 'self' },
+  'ofuda-ward-shot': { sp: 10, range: 8, target: 'enemy' },
+  'cleansing-rain': { sp: 40, range: 0, target: 'self', areaRadius: 7.5 },
+  'divine-miracle-resurrection': { sp: 100, range: 0, target: 'self', areaRadius: 7.5 },
+  'kotodama-sacred-song': { sp: 50, range: 0, target: 'self', areaRadius: 5.5 },
+  'sun-pillar': { sp: 45, range: 7, target: 'ground', areaRadius: 2.5 },
 };
 /** Combat spec of any castable skill (Medium or nation). */
 export function combatSpec(skillId: string): SkillCombatSpec | undefined { return SKILL_COMBAT[skillId] ?? NATION_SKILL_COMBAT[skillId]; }

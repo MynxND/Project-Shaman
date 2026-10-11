@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
-import { combatSpec, TRAP_RUNE_TH, type TrapRune, type TreeSkill } from '@shaman/shared';
+import { combatSpec, heldSpell, NATION_SKILL_INDEX, TRAP_RUNE_TH, type TrapRune, type TreeSkill } from '@shaman/shared';
+import { useRuneStore } from '@/stores/rune-store';
 import { hotbarSkills, skillLabel, useSkillTexts } from '@/game-data/skill-catalog';
 import { useHudStore } from '@/stores/hud-store';
 import { useProfileStore } from '@/stores/profile-store';
@@ -16,6 +17,9 @@ const ARC = [...[180, 210, 240, 270].map((a) => ({ a, r: 124 })), ...[228, 249, 
 const NOTE = 'คลิกมอนสเตอร์เพื่อเลือกเป้าหมาย · K เปิดหน้าต่างสกิล · ตัวเลขทดลอง';
 const TOUCH_NOTE = 'แตะมอนสเตอร์เพื่อเล็ง';
 const RUNE_LETTER: Readonly<Record<TrapRune, string>> = { snare: 'ᚾ', freeze: 'ᛁ', blast: 'ᚦ', flash: 'ᛞ' };
+
+/** The Invoke slot (not a tree skill: Onmyō Seal unlocks it). */
+const INVOKE: TreeSkill = { id: 'invoke', name: 'Invoke', thaiName: 'อัญเชิญคาถา', maxLevel: 1, tier: 2, behavior: 'ACTIVE_INSTANT', nation: 'jp', branch: 'onmyoji', requires: [] };
 
 /** performance.now(), refreshed every animation frame while `active`. */
 function useNow(active: boolean) {
@@ -35,7 +39,11 @@ export function SkillHotbar({ touch }: { touch: boolean }) {
   const { casting, readyAt, cast, variants, cycleVariant } = useSkillStore();
   const texts = useSkillTexts();
   const [page, setPage] = useState(0);
-  const all = hotbarSkills(profile);
+  const held = useRuneStore((s) => s.held);
+  // Onmyoji: an Invoke slot after the talismans once Onmyō Seal is learned; it casts the spell the newest two talismans make.
+  const sealed = (profile?.skills['onmyo-seal'] ?? 0) > 0;
+  const all = sealed ? [...hotbarSkills(profile), INVOKE] : hotbarSkills(profile);
+  const invokeSpell = heldSpell(held);
   // Touch arcs hold 8 buttons; more skills are paged with the swap button.
   const perPage = touch ? ARC.length + 1 : KEYS.length;
   const pages = Math.max(1, Math.ceil(all.length / perPage));
@@ -45,7 +53,7 @@ export function SkillHotbar({ touch }: { touch: boolean }) {
 
   const use = (s: TreeSkill) => {
     if (!profile) { notify('ยังไม่ได้เชื่อมต่อเซิร์ฟเวอร์', 'warn'); return; }
-    if (!((profile.skills[s.id] ?? 0) > 0)) { notify(`${skillLabel(s)} · ยังไม่ได้เรียน เปิดหน้าต่างสกิล (K)`, 'info'); return; }
+    if (s.id !== 'invoke' && !((profile.skills[s.id] ?? 0) > 0)) { notify(`${skillLabel(s)} · ยังไม่ได้เรียน เปิดหน้าต่างสกิล (K)`, 'info'); return; }
     cast(s.id);
   };
   const latest = useRef({ use, skills });
@@ -66,15 +74,16 @@ export function SkillHotbar({ touch }: { touch: boolean }) {
   }, []);
 
   const button = (s: TreeSkill, i: number, className: string, style?: CSSProperties) => {
-    const level = profile?.skills[s.id] ?? 0;
+    const level = s.id === 'invoke' ? (sealed ? 1 : 0) : profile?.skills[s.id] ?? 0;
     const learned = level > 0;
     const castProgress = casting?.skillId === s.id && casting.castMs > 0 ? Math.min(1, (now - casting.startedAt) / casting.castMs) : null;
     const remaining = Math.max(0, (readyAt[s.id] ?? 0) - now);
     const variantsOf = combatSpec(s.id)?.variants as readonly TrapRune[] | undefined;
     const variant = variantsOf ? (variants[s.id] as TrapRune | undefined) ?? variantsOf[0]! : undefined;
-    const name = skillLabel(s);
+    const spell = s.id === 'invoke' && invokeSpell ? NATION_SKILL_INDEX[invokeSpell] : undefined;
+    const name = s.id === 'invoke' ? (spell ? `Invoke → ${spell.thaiName}` : 'Invoke · ถือยันต์ 2 ใบก่อน') : skillLabel(s);
     const label = !profile ? `${name} — ออฟไลน์` : learned ? `${name} Lv ${level} · กด ${KEYS[i] ?? ''}${variant ? ` · รูน ${TRAP_RUNE_TH[variant]}` : ''}` : `${name} — ยังไม่ได้เรียน`;
-    const icon = texts[s.id]?.icon ?? `/assets/skills/medium-v1/${s.id}-icon.png`;
+    const icon = (s.id === 'invoke' ? texts[invokeSpell ?? 'onmyo-seal']?.icon ?? texts['onmyo-seal']?.icon : texts[s.id]?.icon) ?? `/assets/skills/medium-v1/${s.id}-icon.png`;
     return (
       <span key={s.id} className={'hud-skill-wrap ' + className} style={style}>
         <RoundButton className="hud-skill-btn" icon={icon} label={label}
