@@ -1,0 +1,241 @@
+{
+  "version": "head-eight/1",
+  "name": "ผมปัดสั้นสีเงิน · หัวพร้อมหน้าและหู",
+  "native": {
+    "width": 128,
+    "height": 128
+  },
+  "order": [
+    "south",
+    "south-east",
+    "east",
+    "north-east",
+    "north",
+    "north-west",
+    "west",
+    "south-west"
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "direction": "south",
+      "url": "/assets/character-v3/head-eight-01/south.png",
+      "sha256": "1ac5ca0956848a2886484a8955e3d4d5f4206bc513c96581b55ade60bf6a4215",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "headPivot": {
+        "x": 62,
+        "y": 49
+      },
+      "anchorReviewed": true,
+      "visualStatus": "candidate",
+      "note": "FRONT ตรงกับภาพตั้งต้นทุกพิกเซล; รออนุมัติรูปทรงผม",
+      "opaqueBounds": {
+        "x0": 43,
+        "y0": 17,
+        "x1": 80,
+        "y1": 49
+      },
+      "sourceUrl": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/2fc24cfa-cf6f-4ea4-a9d5-2bf2ebdc65b1/rotations/south.png"
+    },
+    {
+      "index": 1,
+      "direction": "south-east",
+      "url": "/assets/character-v3/head-eight-01/south-east.png",
+      "sha256": "3cd756ea681a3571bf619505373ec6f78e200c0b3d6088936b26ad587c08b0b5",
+      "rect": {
+        "x": 128,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "headPivot": {
+        "x": 65,
+        "y": 49
+      },
+      "anchorReviewed": false,
+      "visualStatus": "candidate",
+      "note": "หน้าเฉียงขวา; รูปหน้าและปอยผมเป็น candidate ต้องตรวจความต่อเนื่องกับ FRONT",
+      "opaqueBounds": {
+        "x0": 45,
+        "y0": 16,
+        "x1": 81,
+        "y1": 49
+      },
+      "sourceUrl": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/2fc24cfa-cf6f-4ea4-a9d5-2bf2ebdc65b1/rotations/south-east.png"
+    },
+    {
+      "index": 2,
+      "direction": "east",
+      "url": "/assets/character-v3/head-eight-01/east.png",
+      "sha256": "e0ff194091acadf4042ffd76627c88f444830239d59a7dc8dcd62e84d4952ec8",
+      "rect": {
+        "x": 256,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "anchorReviewed": false,
+      "visualStatus": "candidate",
+      "note": "หันขวา เห็นตาข้างเดียว; แนวแสกและปอยหน้าต้องตรวจร่วมกับมุมเฉียง",
+      "opaqueBounds": {
+        "x0": 47,
+        "y0": 16,
+        "x1": 80,
+        "y1": 49
+      },
+      "sourceUrl": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/2fc24cfa-cf6f-4ea4-a9d5-2bf2ebdc65b1/rotations/east.png"
+    },
+    {
+      "index": 3,
+      "direction": "north-east",
+      "url": "/assets/character-v3/head-eight-01/north-east.png",
+      "sha256": "22f5b66ce480a0c2eecc4ebd361aaa57ccfa6b4d78fd8ba89a332f9750dbf9bb",
+      "rect": {
+        "x": 384,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "anchorReviewed": false,
+      "visualStatus": "candidate",
+      "note": "หลังเฉียงขวา เห็นหู/ขอบผิวแต่ไม่เห็นตา; จุดยึดคอยังไม่ยืนยันกับ body",
+      "opaqueBounds": {
+        "x0": 48,
+        "y0": 16,
+        "x1": 82,
+        "y1": 49
+      },
+      "sourceUrl": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/2fc24cfa-cf6f-4ea4-a9d5-2bf2ebdc65b1/rotations/north-east.png"
+    },
+    {
+      "index": 4,
+      "direction": "north",
+      "url": "/assets/character-v3/head-eight-01/north.png",
+      "sha256": "954eb387ddec4a48dcb63c037705753d1a524a6396ee03ac1d353ca624dd98d1",
+      "rect": {
+        "x": 512,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "headPivot": {
+        "x": 64,
+        "y": 49
+      },
+      "anchorReviewed": false,
+      "visualStatus": "candidate",
+      "note": "มุมหลังไม่เห็นหน้าและตา; รูปทรงท้ายทอยและ shading รอผู้ใช้อนุมัติ",
+      "opaqueBounds": {
+        "x0": 47,
+        "y0": 16,
+        "x1": 80,
+        "y1": 49
+      },
+      "sourceUrl": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/2fc24cfa-cf6f-4ea4-a9d5-2bf2ebdc65b1/rotations/north.png"
+    },
+    {
+      "index": 5,
+      "direction": "north-west",
+      "url": "/assets/character-v3/head-eight-01/north-west.png",
+      "sha256": "f7cfab464653ebb612bffee7c196ba547d7590e953a5a9c5ac725d36767e4172",
+      "rect": {
+        "x": 640,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "headPivot": {
+        "x": 64,
+        "y": 49
+      },
+      "anchorReviewed": false,
+      "visualStatus": "candidate",
+      "note": "หลังเฉียงซ้าย เห็นหู/ขอบผิวแต่ไม่เห็นตา; จุดยึดคอยังไม่ยืนยันกับ body",
+      "opaqueBounds": {
+        "x0": 47,
+        "y0": 16,
+        "x1": 79,
+        "y1": 49
+      },
+      "sourceUrl": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/2fc24cfa-cf6f-4ea4-a9d5-2bf2ebdc65b1/rotations/north-west.png"
+    },
+    {
+      "index": 6,
+      "direction": "west",
+      "url": "/assets/character-v3/head-eight-01/west.png",
+      "sha256": "f72b693fd621fc79b1cd76ef6cf4828ef98d9d65f883e2abfb9d888985a808b8",
+      "rect": {
+        "x": 768,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "headPivot": {
+        "x": 65,
+        "y": 49
+      },
+      "anchorReviewed": false,
+      "visualStatus": "candidate",
+      "note": "หันซ้าย เห็นตาข้างเดียว; ไม่ใช้ภาพ mirror แทนจากมุมขวา",
+      "opaqueBounds": {
+        "x0": 47,
+        "y0": 16,
+        "x1": 79,
+        "y1": 49
+      },
+      "sourceUrl": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/2fc24cfa-cf6f-4ea4-a9d5-2bf2ebdc65b1/rotations/west.png"
+    },
+    {
+      "index": 7,
+      "direction": "south-west",
+      "url": "/assets/character-v3/head-eight-01/south-west.png",
+      "sha256": "72bd0701ea25e028f807a707c33600aeb0f3dc6a6656a29ee645ec87c2d273e9",
+      "rect": {
+        "x": 896,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "anchorReviewed": false,
+      "visualStatus": "candidate",
+      "note": "หน้าเฉียงซ้าย; แนวปอยหน้ากับสีผิวต้องตรวจร่วมกับ FRONT",
+      "opaqueBounds": {
+        "x0": 45,
+        "y0": 16,
+        "x1": 82,
+        "y1": 49
+      },
+      "sourceUrl": "https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/2fc24cfa-cf6f-4ea4-a9d5-2bf2ebdc65b1/rotations/south-west.png"
+    }
+  ],
+  "sheet": {
+    "url": "/assets/character-v3/head-eight-01/sheet.png",
+    "sha256": "7b31c35ba9b2f3e35811918bebc18c3bf857ba50d72c111f5f15df78668c6099"
+  },
+  "credits": {
+    "spent": 2,
+    "cap": 2
+  },
+  "frontExact": true,
+  "visualApproved": false,
+  "productionReady": false,
+  "animation": false,
+  "bodyChanged": false
+}

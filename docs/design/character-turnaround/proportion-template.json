@@ -1,0 +1,570 @@
+{
+  "version": 1,
+  "canvas": {
+    "width": 128,
+    "height": 128,
+    "origin": {
+      "x": 64,
+      "y": 124
+    },
+    "footBaseline": 124,
+    "baselineConvention": "Ground edge immediately below master lowest occupied row123; originals are not shifted to fit.",
+    "pixelDensity": "one source pixel per native canvas pixel"
+  },
+  "master": {
+    "view": "south",
+    "status": "user-approved-original-front-byte-exact",
+    "source": "/assets/rig-v2/male/base/idle-south.png",
+    "frame": 0,
+    "mainV1SouthComparison": {
+      "rgbaEqual": false,
+      "selectedReason": "Current head-proof full-body source, native frame0; not a user approval claim."
+    },
+    "approval": {
+      "approved": true,
+      "evidence": "Explicit user request: original rig-v2 male idle-south frame0 native128 untouched byteexact."
+    }
+  },
+  "measurementConvention": "Inclusive native pixel bounds; anatomical coordinates are provisional visual estimates, not detected skeleton joints.",
+  "views": {
+    "south": {
+      "headBounds": {
+        "left": 42,
+        "top": 5,
+        "right": 86,
+        "bottom": 38,
+        "width": 45,
+        "height": 34,
+        "pixels": 875
+      },
+      "headBoundsMeaning": "Opaque head assembly within provisional region, including ornaments; not a certified skull box.",
+      "headRegion": [
+        40,
+        0,
+        89,
+        38
+      ],
+      "shoulders": [
+        [
+          48,
+          43
+        ],
+        [
+          79,
+          43
+        ]
+      ],
+      "torso": [
+        53,
+        42,
+        75,
+        67
+      ],
+      "hips": [
+        [
+          54,
+          77
+        ],
+        [
+          74,
+          77
+        ]
+      ],
+      "wrists": [
+        [
+          38,
+          73
+        ],
+        [
+          91,
+          73
+        ]
+      ],
+      "hands": [
+        [
+          38,
+          78
+        ],
+        [
+          91,
+          78
+        ]
+      ],
+      "neck": [
+        64,
+        38
+      ],
+      "silhouette": {
+        "left": 32,
+        "top": 5,
+        "right": 97,
+        "bottom": 123,
+        "width": 66,
+        "height": 119,
+        "pixels": 4394
+      },
+      "totalHeight": 119,
+      "footBounds": {
+        "left": 43,
+        "top": 108,
+        "right": 85,
+        "bottom": 123,
+        "width": 43,
+        "height": 16,
+        "pixels": 362
+      },
+      "observedLowestPixel": 123,
+      "groundEdgeDelta": 0,
+      "landmarkStatus": "provisional-visible-art-estimates",
+      "semanticChecks": {
+        "trueTargetAngle": "front-retained-requires-user-review",
+        "profileFaceVisibility": "manual-review-required-not-inferred-from-color",
+        "identityMatchesMaster": "manual-review-required"
+      }
+    },
+    "east": {
+      "headBounds": {
+        "left": 40,
+        "top": 5,
+        "right": 82,
+        "bottom": 38,
+        "width": 43,
+        "height": 34,
+        "pixels": 1035
+      },
+      "headBoundsMeaning": "Opaque head assembly within provisional region, including ornaments; not a certified skull box.",
+      "headRegion": [
+        37,
+        0,
+        83,
+        38
+      ],
+      "shoulders": [
+        [
+          57,
+          42
+        ],
+        [
+          70,
+          44
+        ]
+      ],
+      "torso": [
+        54,
+        42,
+        73,
+        67
+      ],
+      "hips": [
+        [
+          55,
+          78
+        ],
+        [
+          72,
+          78
+        ]
+      ],
+      "wrists": [
+        [
+          56,
+          75
+        ],
+        [
+          78,
+          73
+        ]
+      ],
+      "hands": [
+        [
+          57,
+          80
+        ],
+        [
+          79,
+          78
+        ]
+      ],
+      "neck": [
+        66,
+        38
+      ],
+      "silhouette": {
+        "left": 22,
+        "top": 5,
+        "right": 82,
+        "bottom": 124,
+        "width": 61,
+        "height": 120,
+        "pixels": 3945
+      },
+      "totalHeight": 120,
+      "footBounds": {
+        "left": 51,
+        "top": 108,
+        "right": 80,
+        "bottom": 124,
+        "width": 30,
+        "height": 17,
+        "pixels": 355
+      },
+      "observedLowestPixel": 124,
+      "groundEdgeDelta": 1,
+      "landmarkStatus": "provisional-visible-art-estimates",
+      "semanticChecks": {
+        "trueTargetAngle": "not-certified",
+        "profileFaceVisibility": "manual-review-required-not-inferred-from-color",
+        "identityMatchesMaster": "manual-review-required"
+      }
+    },
+    "north": {
+      "headBounds": {
+        "left": 40,
+        "top": 4,
+        "right": 85,
+        "bottom": 40,
+        "width": 46,
+        "height": 37,
+        "pixels": 1008
+      },
+      "headBoundsMeaning": "Opaque head assembly within provisional region, including ornaments; not a certified skull box.",
+      "headRegion": [
+        39,
+        0,
+        87,
+        40
+      ],
+      "shoulders": [
+        [
+          48,
+          45
+        ],
+        [
+          78,
+          45
+        ]
+      ],
+      "torso": [
+        52,
+        43,
+        75,
+        69
+      ],
+      "hips": [
+        [
+          54,
+          78
+        ],
+        [
+          74,
+          78
+        ]
+      ],
+      "wrists": [
+        [
+          38,
+          72
+        ],
+        [
+          88,
+          72
+        ]
+      ],
+      "hands": [
+        [
+          38,
+          77
+        ],
+        [
+          88,
+          77
+        ]
+      ],
+      "neck": [
+        63,
+        41
+      ],
+      "silhouette": {
+        "left": 30,
+        "top": 4,
+        "right": 95,
+        "bottom": 120,
+        "width": 66,
+        "height": 117,
+        "pixels": 4524
+      },
+      "totalHeight": 117,
+      "footBounds": {
+        "left": 44,
+        "top": 108,
+        "right": 82,
+        "bottom": 120,
+        "width": 39,
+        "height": 13,
+        "pixels": 278
+      },
+      "observedLowestPixel": 120,
+      "groundEdgeDelta": -3,
+      "landmarkStatus": "provisional-visible-art-estimates",
+      "semanticChecks": {
+        "trueTargetAngle": "not-certified",
+        "profileFaceVisibility": "manual-review-required-not-inferred-from-color",
+        "identityMatchesMaster": "manual-review-required"
+      }
+    },
+    "west": {
+      "headBounds": {
+        "left": 44,
+        "top": 5,
+        "right": 85,
+        "bottom": 40,
+        "width": 42,
+        "height": 36,
+        "pixels": 1086
+      },
+      "headBoundsMeaning": "Opaque head assembly within provisional region, including ornaments; not a certified skull box.",
+      "headRegion": [
+        35,
+        0,
+        89,
+        40
+      ],
+      "shoulders": [
+        [
+          58,
+          42
+        ],
+        [
+          71,
+          44
+        ]
+      ],
+      "torso": [
+        52,
+        42,
+        72,
+        67
+      ],
+      "hips": [
+        [
+          53,
+          78
+        ],
+        [
+          72,
+          78
+        ]
+      ],
+      "wrists": [
+        [
+          47,
+          74
+        ],
+        [
+          61,
+          76
+        ]
+      ],
+      "hands": [
+        [
+          48,
+          79
+        ],
+        [
+          61,
+          81
+        ]
+      ],
+      "neck": [
+        64,
+        38
+      ],
+      "silhouette": {
+        "left": 44,
+        "top": 5,
+        "right": 102,
+        "bottom": 123,
+        "width": 59,
+        "height": 119,
+        "pixels": 3639
+      },
+      "totalHeight": 119,
+      "footBounds": {
+        "left": 45,
+        "top": 108,
+        "right": 76,
+        "bottom": 123,
+        "width": 32,
+        "height": 16,
+        "pixels": 354
+      },
+      "observedLowestPixel": 123,
+      "groundEdgeDelta": 0,
+      "landmarkStatus": "provisional-visible-art-estimates",
+      "semanticChecks": {
+        "trueTargetAngle": "not-certified",
+        "profileFaceVisibility": "manual-review-required-not-inferred-from-color",
+        "identityMatchesMaster": "manual-review-required"
+      }
+    }
+  },
+  "originalPalette": [
+    {
+      "rgba": "#5c2d2cff",
+      "count": 389
+    },
+    {
+      "rgba": "#4c1d1cff",
+      "count": 327
+    },
+    {
+      "rgba": "#814d49ff",
+      "count": 307
+    },
+    {
+      "rgba": "#e2b7a3ff",
+      "count": 287
+    },
+    {
+      "rgba": "#f7d5c0ff",
+      "count": 281
+    },
+    {
+      "rgba": "#fdf3e7ff",
+      "count": 235
+    },
+    {
+      "rgba": "#d78a74ff",
+      "count": 235
+    },
+    {
+      "rgba": "#371615ff",
+      "count": 189
+    },
+    {
+      "rgba": "#9d473eff",
+      "count": 168
+    },
+    {
+      "rgba": "#704a44ff",
+      "count": 156
+    },
+    {
+      "rgba": "#180807ff",
+      "count": 152
+    },
+    {
+      "rgba": "#cda490ff",
+      "count": 148
+    },
+    {
+      "rgba": "#51302cff",
+      "count": 144
+    },
+    {
+      "rgba": "#ba7666ff",
+      "count": 134
+    },
+    {
+      "rgba": "#f2c7b0ff",
+      "count": 127
+    },
+    {
+      "rgba": "#966d61ff",
+      "count": 122
+    },
+    {
+      "rgba": "#f9e3d2ff",
+      "count": 116
+    },
+    {
+      "rgba": "#240c0bff",
+      "count": 114
+    },
+    {
+      "rgba": "#cd7665ff",
+      "count": 112
+    },
+    {
+      "rgba": "#a27e70ff",
+      "count": 105
+    },
+    {
+      "rgba": "#806059ff",
+      "count": 97
+    },
+    {
+      "rgba": "#77352fff",
+      "count": 76
+    },
+    {
+      "rgba": "#5c3c36ff",
+      "count": 75
+    },
+    {
+      "rgba": "#a16255ff",
+      "count": 46
+    },
+    {
+      "rgba": "#e8aa92ff",
+      "count": 45
+    },
+    {
+      "rgba": "#86312aff",
+      "count": 44
+    },
+    {
+      "rgba": "#de9983ff",
+      "count": 32
+    },
+    {
+      "rgba": "#b56253ff",
+      "count": 29
+    },
+    {
+      "rgba": "#c56455ff",
+      "count": 26
+    },
+    {
+      "rgba": "#60211eff",
+      "count": 24
+    },
+    {
+      "rgba": "#be907fff",
+      "count": 22
+    },
+    {
+      "rgba": "#ac8a7aff",
+      "count": 17
+    },
+    {
+      "rgba": "#b95346ff",
+      "count": 12
+    },
+    {
+      "rgba": "#422120ff",
+      "count": 1
+    }
+  ],
+  "modularReady": false,
+  "futureLayerContract": {
+    "layers": [
+      "base",
+      "hair",
+      "outfit",
+      "headgear",
+      "mainHand",
+      "offHand",
+      "accessory"
+    ],
+    "shared": [
+      "direction",
+      "pose",
+      "frameCount",
+      "canvas",
+      "origin",
+      "footBaseline"
+    ],
+    "status": "not-implemented"
+  }
+}

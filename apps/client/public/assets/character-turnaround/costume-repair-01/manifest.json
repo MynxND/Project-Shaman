@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "native": [
+    128,
+    128
+  ],
+  "approved": false,
+  "productionReady": false,
+  "registeredLook": null,
+  "candidate": null,
+  "newBaseAnimationClips": 0,
+  "cleanAnatomy": false,
+  "chargedCredits": 6,
+  "pendingJobs": [],
+  "views": {
+    "east": {
+      "status": "rejected-costume",
+      "jobId": "17af3205-7375-42c3-9567-8f50af1de725",
+      "source": "/assets/character-turnaround/costume-repair-01/east/input.png",
+      "rejectedPreview": "/assets/character-turnaround/costume-repair-01/east/raw.png",
+      "comparison": "/assets/character-turnaround/costume-repair-01/east/comparison-2x.png",
+      "sourcePngSha256": "eacc451ef3989a503bbcc3a0cde39f5fdb27f1573c86c438e70da34bbd27cf7f",
+      "rawPngSha256": "b8c4ffc4bc490f869b12b9f89f861cdb8d9a1d7a142580ee161eacc87baa46a7",
+      "protectedMismatch": 0
+    },
+    "north": {
+      "status": "blocked-by-right-rejection",
+      "candidate": null
+    },
+    "west": {
+      "status": "blocked-by-right-rejection",
+      "candidate": null
+    }
+  }
+}

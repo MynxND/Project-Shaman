@@ -1,0 +1,6272 @@
+{
+  "version": "ssr/1",
+  "id": "body.medium-novice",
+  "kind": "body",
+  "variant": "medium-novice",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "body-eight-02/south.png",
+      "url": "/assets/character-v3/body-eight-02/south.png",
+      "sha256": "c4c0ade151545e99ba6fa003d4f597142e004c6b8c214147a552df17ed5ab906",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-1.png",
+      "url": "/assets/character-v3/walk-eight-02/south-1.png",
+      "sha256": "0506ba9c6d02f55bbda09c027561cb0b736d6b82758150631af93db87bb21ae7",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-0.png",
+      "url": "/assets/character-v3/walk-eight-02/south-0.png",
+      "sha256": "9e65ad7ac72224e9a9566bf62dd08bcffc9f6793c88b2116f595828a58bbe612",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-3.png",
+      "url": "/assets/character-v3/walk-eight-02/south-3.png",
+      "sha256": "fb550ad6618781537b080696f13d038a7386ad376b5e59a413a69d5f3251b6fe",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-2.png",
+      "url": "/assets/character-v3/walk-eight-02/south-2.png",
+      "sha256": "8bc31426da18e86663afa6c761291f24cc5c8053ba16b5f3fdebac56cf5caf57",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-4.png",
+      "url": "/assets/character-v3/walk-eight-02/south-4.png",
+      "sha256": "8c7d8b57a7f667561d268658ef8dc876a02678a32a30852de0ee8228fd1e9a8d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-5.png",
+      "url": "/assets/character-v3/walk-eight-02/south-5.png",
+      "sha256": "24b349cbbe28e23e3c8668f5f3ca58a7bae82ed97f9c37a2f274325d796f2856",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-7.png",
+      "url": "/assets/character-v3/walk-eight-02/south-7.png",
+      "sha256": "47cab337b8dcac436c54a37d3749c631fbf4ff883f351bc32835c2bf0c328c6a",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-6.png",
+      "url": "/assets/character-v3/walk-eight-02/south-6.png",
+      "sha256": "faad9f919bc75a40f42f59bcbfc247693d7da7f7820752c554700d016787f24d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-1.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-1.png",
+      "sha256": "d07dd492309b3738786bc30a1d0861166e7fa102875bd1d294b8444919c96e3a",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-0.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-0.png",
+      "sha256": "8f746990df4b83d8681bdc570f5b815f39f08072fbc4ecac34cc524dca595538",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-3.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-3.png",
+      "sha256": "2c3f69f3b3f17ab5332e75da59f98e12551001331402b2727418bcc9e938e0e8",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-2.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-2.png",
+      "sha256": "3d07a4c51a5ddef90e8d8264c361cb9f2aa45a08722d6366222b738d82465648",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-5.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-5.png",
+      "sha256": "f7923fec74f7dc5fd1a8cf15eae56b879934c6c45e4a0b0a9f7293a278fc04f5",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-4.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-4.png",
+      "sha256": "fa5a6fcbf3d33d2ea981d89b988be3c84f7cab52d44e1d8f81dd3972bf538cac",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-6.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-6.png",
+      "sha256": "b2e15d353b24329f96b458bd94054c337c3ebabdcb1a509f61375f12fa7bb839",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-7.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-7.png",
+      "sha256": "23ccd31bee26bfbad352a6e992cebc7aba06639b4a42dfbcc3fd99e860ad26f6",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-1.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-1.png",
+      "sha256": "f98cacef223a7386d516905bdb40f6cdefba2481a10872d417f5c1339021195d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-0.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-0.png",
+      "sha256": "560551bb750916eabdeda161601f7d2087cd02e0578f7c21a1a79f94b1ede851",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-2.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-2.png",
+      "sha256": "2351f4ddd0629517a52f769743e73a125ef00b3e87aa551233f06b59191128bb",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-3.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-3.png",
+      "sha256": "097d125b7f2ebdbbc9308251415e03c5c72b931b843719bfbaed9e620bb88da9",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-4.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-4.png",
+      "sha256": "fb18ee598187d13553acc75f8c6540736f765901664acbaf3844570ffdea5cdf",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-7.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-7.png",
+      "sha256": "4f84cc5bc4c681366486d3d44672f51d3a2a99a9cd71bee7a4b8aac02e3941f5",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-6.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-6.png",
+      "sha256": "624a515b8edf6f4c2be355eebd3580537ef9a0aacb4c16878ca229797f69821d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-8.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-8.png",
+      "sha256": "9d38f3b86a5ec2e511b3c95e477e57d79cd0de46393c92a2600d59b747b6e379",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-9.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-9.png",
+      "sha256": "af854489218e0b49467f0e7e5f3ae5a33c244ca8d6513bf86465c6516ef7d94f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-5.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-5.png",
+      "sha256": "5d9c1a82b286afb8f9b54ae871a3f47c132574150731d3d2cea7e46707b9425d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-10.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-10.png",
+      "sha256": "4d20e0f58681ade5338e686e8d83656853cd2cac2e5780f28b2438b1b20bbeeb",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-11.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-11.png",
+      "sha256": "4b0b630c6ffcafe7d30b99c1e2f531a1ce08cce242dff263e3e3957f3ef96a91",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "body-eight-02/south-west.png",
+      "url": "/assets/character-v3/body-eight-02/south-west.png",
+      "sha256": "430bd41aadb003b7aa48d160de5f49cb87af3f9753a2089768005b06717310f3",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-west-1.png",
+      "url": "/assets/character-v3/walk-eight-02/south-west-1.png",
+      "sha256": "76f5f9eee96e447c74aa74b1b67dbcea5c4db1096622ff5edf17a35aab7883e8",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-west-3.png",
+      "url": "/assets/character-v3/walk-eight-02/south-west-3.png",
+      "sha256": "ca3f0f33d4e74892dfa941b51370679f4a0ad69d3bd06255667e58b6195a311d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-west-0.png",
+      "url": "/assets/character-v3/walk-eight-02/south-west-0.png",
+      "sha256": "cc73fbfdc91fa540969b442b6182fcda09c6bd28530fdabc7e4ba00c6a55b16c",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-west-4.png",
+      "url": "/assets/character-v3/walk-eight-02/south-west-4.png",
+      "sha256": "1d9249f30840f38cde8d21461584f23d5fa6359cd363b7cac2493dc46ccbf852",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-west-2.png",
+      "url": "/assets/character-v3/walk-eight-02/south-west-2.png",
+      "sha256": "e19583c280ff7b19ae1a3d9aedeee94491e95da923d184cf7152850e0dfb22e6",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-west-5.png",
+      "url": "/assets/character-v3/walk-eight-02/south-west-5.png",
+      "sha256": "b849de64537531abad47ec3f8ffc844d839b0053c5eaeb93160bec3455a81b48",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-west-7.png",
+      "url": "/assets/character-v3/walk-eight-02/south-west-7.png",
+      "sha256": "83af0bcba3134180911745181c93c587f9c9748bf4cd783e728fac8d9bc0f292",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-west-6.png",
+      "url": "/assets/character-v3/walk-eight-02/south-west-6.png",
+      "sha256": "00282212f00a521fc4281d15a73fd0b53ae94ef94c686e4d8e335366c23fb2d7",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-west-1.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-west-1.png",
+      "sha256": "77a8a42dd18bbf3bb3e4e6ce17b7dc07f3e571ff8ba5b00852539918601a38fe",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-west-2.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-west-2.png",
+      "sha256": "bd13616afeeea2088bd6c2beee9e168562d295e3e4177065aa5e990232d87ea6",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-west-3.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-west-3.png",
+      "sha256": "6f15107857b39049130dc92c29dbb0ff8b847c0f969e6eb2188ec0f6c5f05d7a",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-west-0.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-west-0.png",
+      "sha256": "0f07d46532a12f94625e22f9ee6d5f7f9b0edcac9ccd4eeefebd22791eb3d5e5",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-west-4.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-west-4.png",
+      "sha256": "055d75c36db9a807d36582c06e7327270e30b4b7f2a8620f0de8942504093540",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-west-5.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-west-5.png",
+      "sha256": "56831ef925e906178ece78c3b4e8c27c06861e4a417e476e6a75f5faf48bc095",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-west-6.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-west-6.png",
+      "sha256": "616e60e43440dedee641e966cdf8fbfe00b72356f63aad5d8c655adcdafe2dc5",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-west-7.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-west-7.png",
+      "sha256": "558859dee5075d172e8c9264a09811e073ad27a51973e6f298cdf38ee46d751f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-west-1.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-west-1.png",
+      "sha256": "8c85d65a1d27a44d7ef97a8d1d7a6ac0544c0f1a78588b88a35922a26666576c",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-west-2.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-west-2.png",
+      "sha256": "2b0e03dc405f977ae0ca38ecbdb5e29ce8929d9a1f623a9c9033273bffaef172",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-west-3.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-west-3.png",
+      "sha256": "c4c3fbb6635f66bd674b5e791d79f0def2a5237036d37adeeb5b182dd92966b1",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-west-0.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-west-0.png",
+      "sha256": "3f40fbe5cd8c1580c24714560e3920c75b106b8d3a44acf009698813ee84f557",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-west-5.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-west-5.png",
+      "sha256": "23d5998448d8eb7d09797279889ec864760a9dcb1f67eeaa702ad2a1d847c07b",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-west-7.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-west-7.png",
+      "sha256": "56431759ba5ab3522761f6915fc5df8342b6268c7e6c958c0f001ab0b6064d86",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-west-6.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-west-6.png",
+      "sha256": "173acdbbbbee142d1d8cff001014034060bb5f2ff520255159c7c12488645bb0",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-west-4.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-west-4.png",
+      "sha256": "011b1fa39cb9e082323cc8251c260ed330941f309256b0c50be15fe1d885e481",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-west-8.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-west-8.png",
+      "sha256": "cbdd0b15fa6e1178283ec2d10462754fc8da2a40022c04f9cd25c34400e8db9f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-west-9.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-west-9.png",
+      "sha256": "ce08b8e40a4c6ba4d30a130b5aff35cb2dd9afd86ed8f2e85593f18e8dbb638b",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-west-10.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-west-10.png",
+      "sha256": "f05d55446b9c3901f463920d28950498c37d18163f879e4b8bd8c9bf16d14a12",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-west-11.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-west-11.png",
+      "sha256": "2c7f8e482abd372c918dae60bee654012b92f41e2c894a3e2c7a0e950d502967",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "body-eight-02/west.png",
+      "url": "/assets/character-v3/body-eight-02/west.png",
+      "sha256": "8209286589475ff88520b838bec0e38c4ba64a6fbb7cd33103bb653cde36b6e6",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/west-0.png",
+      "url": "/assets/character-v3/walk-eight-02/west-0.png",
+      "sha256": "13c71b5bcce13d0927f21a8b0304bcbb7549423b5aabc5c394a47fb925163524",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/west-1.png",
+      "url": "/assets/character-v3/walk-eight-02/west-1.png",
+      "sha256": "1d1c1e5bc2f8c9c0e3e24ba8c529992028884112b8cefa2c6de69b74fbd6a4be",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/west-2.png",
+      "url": "/assets/character-v3/walk-eight-02/west-2.png",
+      "sha256": "70e97210b4ca0cd80e797c612f845a145996abcaf9a1a3f0299658d73e4d0d2c",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/west-3.png",
+      "url": "/assets/character-v3/walk-eight-02/west-3.png",
+      "sha256": "58fd3f5cb953956c5250a780a6955965826037be6763294b84577fc727578c77",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/west-5.png",
+      "url": "/assets/character-v3/walk-eight-02/west-5.png",
+      "sha256": "9c8d469ecd4d23280fe4b2e529c91bfad93fe7c61f3aa97b7b74e3843c2757ea",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/west-4.png",
+      "url": "/assets/character-v3/walk-eight-02/west-4.png",
+      "sha256": "2cae5b76bc906bcf151140dcc55f5146a9beea6fd9c70d95000916195ceaff0e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/west-7.png",
+      "url": "/assets/character-v3/walk-eight-02/west-7.png",
+      "sha256": "49252169aa77c0154aa013b8d68e222e7eabdfa23b1d0b11b190799a6a756837",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/west-6.png",
+      "url": "/assets/character-v3/walk-eight-02/west-6.png",
+      "sha256": "06d12ca857b92ac05eb2337e675456a137a7e7b776156c7d5f7a4fbe0f7f3a43",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/west-3.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/west-3.png",
+      "sha256": "eac0541fe0de89b0e1398c9e4fa30ac19d8ab41c67b7c5fdd092563ad98a2bec",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/west-1.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/west-1.png",
+      "sha256": "239b2253fa734cb697df17cb09c1805eda4399fa42fa76154ba5f62b76ca53b0",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/west-2.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/west-2.png",
+      "sha256": "9fe936300625753dd890fd410bccf34017b09c267040c73b8ddf5b301133176c",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/west-5.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/west-5.png",
+      "sha256": "e57f87b152c1e4595108d2e6b0b6585d7fe782f2f449b45037f12537641286df",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/west-0.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/west-0.png",
+      "sha256": "01b6854b077f2356457d60eee2346ee183ab944b87986774e7697b8d615c72ae",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/west-4.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/west-4.png",
+      "sha256": "9df363d723eb4122632516c598868c6803bcd7a17d96e94ab6cf909bb23b9ea9",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/west-6.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/west-6.png",
+      "sha256": "ad4f82ab9660819b3de16724f220f943260c0d896e57cce3832842dadbe5c062",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/west-7.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/west-7.png",
+      "sha256": "e73eb41ef19178ba2339af62f2b8df49c695cc2e50a5db581e531f7489c988d7",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/west-2.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/west-2.png",
+      "sha256": "e117f6b7d9c272d85cd0b29039d6e019ab8e611d42e43c146cd199a4bfc8c5f3",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/west-0.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/west-0.png",
+      "sha256": "14b3ab1a4e42b873961a9ffd2b45c4a5c534078cd00044e8ee81d6ffccdc024c",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/west-3.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/west-3.png",
+      "sha256": "d19f5e3d418e5d57dd4fd394203a381113bb08f69dfa60c66c056d804ead4d90",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/west-1.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/west-1.png",
+      "sha256": "bbbea59cc2cbc57ccdc8eb123f57fc7a2f6b3e8c6c2b77276201bbca6eeabd02",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/west-4.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/west-4.png",
+      "sha256": "be40e38190e87ca6167321a9d8f2eb3a2577e1a771573b4401161d734f1c5a5e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/west-5.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/west-5.png",
+      "sha256": "ab54b986e55cbdc971c4dd7802dc72eb94bba7ba32604561ba89000b28b4266f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/west-6.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/west-6.png",
+      "sha256": "258b5bb90311fc45e512f5416f884d79e715bb0906f9091fbf9b63e4af656b5d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/west-7.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/west-7.png",
+      "sha256": "f4fc1e19d2ab43450913ce10093109f4f4fd48849365f6c3ab40cf7d83df2f0c",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/west-8.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/west-8.png",
+      "sha256": "c837b408285fdcb59a061767a99ed7ca48190ad46cc74927262047c0d6ff68bd",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/west-11.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/west-11.png",
+      "sha256": "f52dec92a9b2941c75c7303566351ec4fa8de784d10b888f7da83400308d136f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/west-9.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/west-9.png",
+      "sha256": "6d23e9f9ee98cd79574a2675a87980e76302eae5fe431960e95d70384b112311",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/west-10.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/west-10.png",
+      "sha256": "22190e151d5996fc51673b6e4ce2365931466a5cb5c4ff5d37868318301216ee",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "body-eight-02/north-west.png",
+      "url": "/assets/character-v3/body-eight-02/north-west.png",
+      "sha256": "cd57d51baa7cd89984ca9e478f59edb3f40c2c5100d784de9891f3de760545ee",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-west-3.png",
+      "url": "/assets/character-v3/walk-eight-02/north-west-3.png",
+      "sha256": "f30e202c037035453ac12724ce65ca1a6d6eeecc00bddd11b0faa85f2830dd98",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-west-2.png",
+      "url": "/assets/character-v3/walk-eight-02/north-west-2.png",
+      "sha256": "b7f0c6558fbc7e10981bb120abda10479b53bb9276c91f88059006c6d85fbbae",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-west-1.png",
+      "url": "/assets/character-v3/walk-eight-02/north-west-1.png",
+      "sha256": "c9e86a10d3f577f637650deaa0362a04cfad6f19c4be81ced47ee9eb4971d22b",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-west-5.png",
+      "url": "/assets/character-v3/walk-eight-02/north-west-5.png",
+      "sha256": "b76bd1d9b9f4b175d847e47f0bbfb9e501cacdb0ebaa53a73deadd545095f625",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-west-0.png",
+      "url": "/assets/character-v3/walk-eight-02/north-west-0.png",
+      "sha256": "8697f6239f07bd1000e76a4f863f8f658280e30b906089bb691b2662796de310",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-west-6.png",
+      "url": "/assets/character-v3/walk-eight-02/north-west-6.png",
+      "sha256": "7af2c2e361a0c5d68ba905e09638d50ce3301b6edf70c37bc48566e39a2075f1",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-west-7.png",
+      "url": "/assets/character-v3/walk-eight-02/north-west-7.png",
+      "sha256": "406c9853a70ca790c3e92e4b78e1b37afadbbbc56697d7f11527d84d6f6bf8e1",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-west-4.png",
+      "url": "/assets/character-v3/walk-eight-02/north-west-4.png",
+      "sha256": "95609decedb024aa7aeb2a2ce4f4cde5be69471f9c30d95c51404d5bc16bf7d1",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-west-0.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-west-0.png",
+      "sha256": "2a893b3f2b62d32cfa0784fa2ff821b769671b4a91f95639bc8927d0156f8f4c",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-west-3.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-west-3.png",
+      "sha256": "0f49c24566a466c006721e8aef5e847389ee3befd2041f258557f5cd8146dcbc",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-west-2.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-west-2.png",
+      "sha256": "bb21ec4cf31a543d441d24bcdb5080534681536e008aa87b4dd06d16626727b5",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-west-4.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-west-4.png",
+      "sha256": "48a0f5d6bec59b691cd9feab3d6bc44c3cb38f053ce21bcd2175b62bb846940c",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-west-1.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-west-1.png",
+      "sha256": "7cd1ac082d59e600b7420318b9610b0559e60f07ef29e5b3cbf73847870c737e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-west-7.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-west-7.png",
+      "sha256": "2cd4336ea0b04bbcfb855cfdc5f3f45f6f1d61f2fe3f0dbb5a96e1a6927d1454",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-west-5.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-west-5.png",
+      "sha256": "d6f9faa50f41f3521507f23bd8a44bd85954a040562b5101b1f356dee04879f1",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-west-6.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-west-6.png",
+      "sha256": "19aee733bb1292e3c146c2ad44b0eb8d13c87f896bb3e58748aed451abdc27e8",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-west-3.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-west-3.png",
+      "sha256": "e750486d820c45eba12ea023559800837910745d034a0116172d2691ee2a46a6",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-west-1.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-west-1.png",
+      "sha256": "c2d10b2487dffa494a16a38276edd10d1c75e542be102a6998a485a719233a20",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-west-0.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-west-0.png",
+      "sha256": "ccb05908573af57f49362546e679a3d5ccc77401747c78f8a64ceeefd6db8de3",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-west-4.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-west-4.png",
+      "sha256": "d670d13d0411751a1d266d0a941fa75c07bba2bea031012dd6031c97ace46711",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-west-5.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-west-5.png",
+      "sha256": "5239aed9712ae14007b4fb30a4fe0a1ae04ef5b01e82052b196a9e9f7911f6dd",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-west-2.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-west-2.png",
+      "sha256": "c6579fb0eae1e2a15a144c9cfe02c69da80725e4c4ea658bcbe77e385717c975",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-west-7.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-west-7.png",
+      "sha256": "08b8c1507ab466129c0c8554dd12446f554609d034382bb6e69cdcad13079933",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-west-8.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-west-8.png",
+      "sha256": "78e1cba056c82d606e8f2f994fdc4b7dd0660d84e10919e14eb43ee391a0a9f8",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-west-6.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-west-6.png",
+      "sha256": "afa41bc84aff30d4b7c3895fe84ed99a02aa696dffb90fb51e6c2fdad7959d1b",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-west-10.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-west-10.png",
+      "sha256": "6c6d7948a4b1db3af7536ffd450bf11996d8ffeffe4f85dfc3915ef92a7e712d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-west-9.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-west-9.png",
+      "sha256": "458617cf19b2e55238e8e7b20af605b320fca052e7a84d48e359c992b43a1b59",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-west-11.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-west-11.png",
+      "sha256": "0572845434e6329fbae97b6887815f0045ebb677e22ed04b7961e03c98a5f98e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "body-eight-02/north.png",
+      "url": "/assets/character-v3/body-eight-02/north.png",
+      "sha256": "cdbed600c498cc81d036020c7356018577e84669cb01e8c979f66e627bd198e8",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-1.png",
+      "url": "/assets/character-v3/walk-eight-02/north-1.png",
+      "sha256": "c4f564e3e5935f8ded44b8e4e26cf562ab7156961744e093f08647e08191561c",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-2.png",
+      "url": "/assets/character-v3/walk-eight-02/north-2.png",
+      "sha256": "19eeabf28f97221857147912205cecc6f766f0b0b132dd1d7dd18e4a2dcaefb8",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-3.png",
+      "url": "/assets/character-v3/walk-eight-02/north-3.png",
+      "sha256": "86120d4db1ce364d7a0bd95b47faf648f26b8e215b5d27032ee82090ea079dbc",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-0.png",
+      "url": "/assets/character-v3/walk-eight-02/north-0.png",
+      "sha256": "e7b474b8565cee61a94ce0236c5ddc87b326fb8affde47a61d0d443ade79c3ce",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-4.png",
+      "url": "/assets/character-v3/walk-eight-02/north-4.png",
+      "sha256": "3e409f202217335137410c253713c4f8ee18ad19439aac95f21efcd180a0b647",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-5.png",
+      "url": "/assets/character-v3/walk-eight-02/north-5.png",
+      "sha256": "dc62331a3dc6ac56d0f846201eb8954f06afbcc38410c93ddd65a762c195e6f0",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-7.png",
+      "url": "/assets/character-v3/walk-eight-02/north-7.png",
+      "sha256": "22b2549907216d33d99d0082e946d612ca4e84394d4678eb4836d6ac9abbe3c4",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-6.png",
+      "url": "/assets/character-v3/walk-eight-02/north-6.png",
+      "sha256": "a988320eea8701f043621e6d272f930bb9daa4a47a9f11d6832602f9a95d2187",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-3.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-3.png",
+      "sha256": "4f5f2e917b46d7d5a28b799635c3f39557a5886b9aac0ff6760022e3bdadc5d0",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-0.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-0.png",
+      "sha256": "6da343d01c8a249d2bcc93f2d9c82b9c52f3c72b99b33f0156a3c08064d44dfe",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-2.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-2.png",
+      "sha256": "4e9ff24275ed1ccaec3cbd3ae011a0cb4c10ebfcbe9598ae4d116ffe0dc6a12d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-7.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-7.png",
+      "sha256": "9ddd395fd07957ee46bb5d0ca4506d3364e7459772d41928de499b3f1cbed74e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-1.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-1.png",
+      "sha256": "4c15ccd03483cff9c9903bf7816a06c817d466573faddcd576ee02b91a37fc6f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-4.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-4.png",
+      "sha256": "66a7524a2a7694376f7af8484f6bcf2f42c1ad139c3d55bd2c66d5b751ad13ab",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-6.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-6.png",
+      "sha256": "3a02a0ae01aec75a4a3b8635120592a47e4d6d8f3693937cc3b1a070f177d375",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-5.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-5.png",
+      "sha256": "8405aee820b9c6396f5bee4f90da11742d7b82ef82da96ff39599140f874736e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-3.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-3.png",
+      "sha256": "c2d3fd781b0228447293acb1e8fc326cab674e0be743c6da9097a4e6446b023f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-2.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-2.png",
+      "sha256": "c147a78d012d0f1f644e5ee5525201c75edc29543aa500c794fc3cd34751cdc0",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-0.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-0.png",
+      "sha256": "6b373672ed5bf186f6d006410ac36c3d9d681882c6d695d44caa470d7422d047",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-1.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-1.png",
+      "sha256": "aa6a888d1c09b5c148bc57753ca5b93e03a17f5cf7805fb28e6da768a84aaba6",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-4.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-4.png",
+      "sha256": "91f0762042f2553b11104570ab497a896a460dfbf5bcd1487749b93a5a104a99",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-5.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-5.png",
+      "sha256": "316300fe09f0602eb8f82185850de1d77059e04481864f8808527b61ff986070",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-8.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-8.png",
+      "sha256": "9ea72b4dd06e63fae298eae287cd17243a456bd7426c4f1332045bebfedbe2e1",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-7.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-7.png",
+      "sha256": "9c796e9b253d2fc4617873100763ca80b78f0ff7c26a65a864e8581312c9943b",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-6.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-6.png",
+      "sha256": "12d73c6efaca07e48639c423ab5166a2e2536e939b6553715edae41cba182cfc",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-9.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-9.png",
+      "sha256": "2cb653a7232669be71d4218df4744910ebfef969bef41dfaba8034115461f06f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-10.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-10.png",
+      "sha256": "978ed6022662921bdf1951b9ea889e6d5af6b5d11a34cb4a8a74ea7dca6fa92d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-11.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-11.png",
+      "sha256": "33c7dd924166cb3d5cf950b510f939a115fea9fa916f6169ff8cd10d91e97339",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "body-eight-02/north-east.png",
+      "url": "/assets/character-v3/body-eight-02/north-east.png",
+      "sha256": "d4276f784a20d8f9a965e3bb7a288b65e22b5f3a5cf07158ff8ebb77511647d4",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-east-1.png",
+      "url": "/assets/character-v3/walk-eight-02/north-east-1.png",
+      "sha256": "abc959e868381bb1721c0a4badd6cd5c92d2e1100fd74844e7b170104166f763",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-east-0.png",
+      "url": "/assets/character-v3/walk-eight-02/north-east-0.png",
+      "sha256": "ad90ca8d68bd3f988a35c03ed122e2ba0bac77e23c7da6ff555f2c33f3dbe353",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-east-2.png",
+      "url": "/assets/character-v3/walk-eight-02/north-east-2.png",
+      "sha256": "b9b577bfc9c0c3acf716c014ba53027c56c88076d0507b37a47a4515419902e7",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-east-3.png",
+      "url": "/assets/character-v3/walk-eight-02/north-east-3.png",
+      "sha256": "56a58037947c95519a8b8edda36dabd65d33d0f0a382c47178a189301b1b3674",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-east-4.png",
+      "url": "/assets/character-v3/walk-eight-02/north-east-4.png",
+      "sha256": "fe17e3d9969de3d11827d02b359e0f150b851948457d51c70436a26ff65c3cf7",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-east-5.png",
+      "url": "/assets/character-v3/walk-eight-02/north-east-5.png",
+      "sha256": "d7d0d0611f94d84befce0ac4b887a9005d077dd3336f6aa0ae3c11bb1dcc57fa",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-east-7.png",
+      "url": "/assets/character-v3/walk-eight-02/north-east-7.png",
+      "sha256": "9025943ffb617fbd192ea9504678e1915033e7a2df0872513ea738adfa2539bb",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/north-east-6.png",
+      "url": "/assets/character-v3/walk-eight-02/north-east-6.png",
+      "sha256": "c15dd6371213a3b9cf4b97c02b78e9279c92a37cab6bf3234306aa515d33fa81",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-east-0.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-east-0.png",
+      "sha256": "1ad6947e0ab969b21ac163fabaf1480be17dc6501d53fbf242436fcf2a0efea5",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-east-2.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-east-2.png",
+      "sha256": "6a458695f36dfb0ded311eac13b704ff73389e72e84b69ee94cc8142367ea408",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-east-1.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-east-1.png",
+      "sha256": "83c594d3150a282e66a15171af5002e1c1729a94c9907b0a49719887817b220e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-east-3.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-east-3.png",
+      "sha256": "7bfb6ad457ece97b46641b84b412fd9a754bfd6f10bc78cd62ffb7f039346910",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-east-7.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-east-7.png",
+      "sha256": "3f8d20f1bcd1f23e142461f993379e298895c396e4afc0ce053684f758ac369f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-east-6.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-east-6.png",
+      "sha256": "cb6d7bccf678ce561e68bfb327a92d16a90458242a886468556b4b0a793aeaeb",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-east-5.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-east-5.png",
+      "sha256": "235420eb394cd846a4e0a85d552c78938a98523bd90f19f0c8977fe858d3b0d9",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/north-east-4.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/north-east-4.png",
+      "sha256": "50e77cf20bb8d2d5cb8fbe56a914431c2db4814861dab4df891489dfd1faf99e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-east-3.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-east-3.png",
+      "sha256": "7f7e1482d2ecb74b41176696c1ce1803df8881f2d9816fc375fc658c2c65b8e1",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-east-1.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-east-1.png",
+      "sha256": "eb55d532515a2cef3103cbad2e918d971147bb941494c9639c8c8bd8b8982964",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-east-2.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-east-2.png",
+      "sha256": "c72be044157c60299cd55039a783fd56b5605be49844f3aed2ec26fb766cab2e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-east-0.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-east-0.png",
+      "sha256": "decd7dc05ce193d90be4c38d39aac458e6a37233cca6a4bc996fe5cf99fc1d2f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-east-4.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-east-4.png",
+      "sha256": "3a86902abca9e58e7f6196c3847475ae1180cbf2517af90acaf566f77fd9d8d7",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-east-6.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-east-6.png",
+      "sha256": "d070a40a27260845d11118aa93eaaaec9b29158a00b2b4719d7fb448623eab7e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-east-5.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-east-5.png",
+      "sha256": "048f64c58faebe269dc4ff42460449b1ad1883d10703d5d4350d23da46a89138",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-east-7.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-east-7.png",
+      "sha256": "35aa5d41cc28131f9efb12c0f2bb30ece5ac7feb910c6f317599eaa07e34bdbf",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-east-8.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-east-8.png",
+      "sha256": "65fef7e08258cec00e3267fd0a79e0e1dca7cbc569dc3054c1c47ab3c0960ad9",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-east-9.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-east-9.png",
+      "sha256": "80a8cf49ec153fe2edead767718c49e9a0b8827faadf9d74e05a95769acf6fde",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-east-10.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-east-10.png",
+      "sha256": "2c40626c3eca46cc35e5936f6f2d8fbcc1602961efcd66164716a47490cadc08",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/north-east-11.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/north-east-11.png",
+      "sha256": "ddc5da2c41d7619c03f6c73859bee498f5ed4749f01fdf63f5756d343a7b4820",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "body-eight-02/east.png",
+      "url": "/assets/character-v3/body-eight-02/east.png",
+      "sha256": "1f06f6bd367716db6c503953bcd65eb8b5a426115438339b040cf39da60c7a03",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/east-0.png",
+      "url": "/assets/character-v3/walk-eight-02/east-0.png",
+      "sha256": "c4f36e224ffc0e9b7744cdf58b75551f06d95c5d3ff86d2452305dbe6766af45",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/east-2.png",
+      "url": "/assets/character-v3/walk-eight-02/east-2.png",
+      "sha256": "c929a3ffa0be8ffe4ba7856ea2ea345dce308b4011fdb5dc91a228c4e585a16b",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/east-3.png",
+      "url": "/assets/character-v3/walk-eight-02/east-3.png",
+      "sha256": "4fa945d8fcb2c548091cf4d0b44e777d7ef459381009b0a68b24ba6036dc0b7d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/east-1.png",
+      "url": "/assets/character-v3/walk-eight-02/east-1.png",
+      "sha256": "4f925b5f5818ff7591aa4f22ddb099ef002b5511de6cf203130080d1ab93b4f3",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/east-4.png",
+      "url": "/assets/character-v3/walk-eight-02/east-4.png",
+      "sha256": "2c05ed9fb259d3e8f4a85933599282da6510ccdde5bf49f7642a210f1429ae04",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/east-6.png",
+      "url": "/assets/character-v3/walk-eight-02/east-6.png",
+      "sha256": "1bffb24dde14d0d0139d0baed496c1f00a6e97f393f58a950edbb66cf2b8fa5f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/east-7.png",
+      "url": "/assets/character-v3/walk-eight-02/east-7.png",
+      "sha256": "ef2738e72dc6098a21b92ee46b46642be4e234f2802a2657b2140651a10172e2",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/east-5.png",
+      "url": "/assets/character-v3/walk-eight-02/east-5.png",
+      "sha256": "1cdbd1487abcfdf5a7e42c97df39070e57e64df08afcfd4eb130cc7a433be0e9",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/east-2.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/east-2.png",
+      "sha256": "21494cc98f01a98626065353894230236435afb3888a4e0af2c8f9f6f674fca6",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/east-3.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/east-3.png",
+      "sha256": "dca23031146b17445379854cc9125556290a29e4a2af9cf8ce3d9e85d219348d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/east-0.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/east-0.png",
+      "sha256": "90f2e5ee30ae59caaffa1077d0af9e8d19da303d67e61332b248d80dc0e74d85",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/east-1.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/east-1.png",
+      "sha256": "e10d26988e191596a723494d35b8450b3cd72fa2fe997214896f730899b4f0fc",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/east-4.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/east-4.png",
+      "sha256": "d10da5127840d93c6d5734f4cb5ef6b689bb4c0354537a05fd423dc559957010",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/east-5.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/east-5.png",
+      "sha256": "76e26cdd3b9ab0fd5fa1ef46c99bd35d2bd97b9dd71e9b6ff13342aa243d77a2",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/east-7.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/east-7.png",
+      "sha256": "f7e8eef499a156b25f0baeed3ea2d7831bd276fa1ad4a2930bd38c46b1da0437",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/east-6.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/east-6.png",
+      "sha256": "9d62c0bd5ec4c768c8881ddd689a28041b0d7019e9550fe4c53ea9bd4858d2af",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/east-6.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/east-6.png",
+      "sha256": "0c9cb6f38fab1edc2a2f9043d84b0a0980f5a2827da6729bf88313d9ba1f0879",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/east-1.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/east-1.png",
+      "sha256": "cd3dd3f5e64e33331be1de0df119b984eff1280a5c92e3b3f05bce0fc6f3e0ac",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/east-3.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/east-3.png",
+      "sha256": "9603b2954453cd55f17f5cc77fca439d1a54737c0530fecbf07f779896221997",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/east-5.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/east-5.png",
+      "sha256": "1be53df8962dd05a48ca6803bafa773d2fb7e61452a8ffbf9402ac3d496cf284",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/east-0.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/east-0.png",
+      "sha256": "3c0c682576ad77fc7443f13c2098132a541ffb4ec955096ac3d3ad00557f36ae",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/east-2.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/east-2.png",
+      "sha256": "2abc581deb61dcaa4eef7c975a41c94a90fb5d929261f0849194faaf38b2bb23",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/east-4.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/east-4.png",
+      "sha256": "d8ab0228fc91f4bbd6b82930f49650e373ece1a68124a908efdc6f5fc50c8817",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/east-7.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/east-7.png",
+      "sha256": "6b47afa3916c91c8d42fa4dc4115a98bcbba7e265bc3033fc7ef25d1154e5a28",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/east-10.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/east-10.png",
+      "sha256": "a46ed1933570f421dd6c2686b896261f92d41d663ace82e06ac468782a54cf99",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/east-9.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/east-9.png",
+      "sha256": "adc8f08a853cc50c74ce3977b0861d1d12303c5de7bde7c796fa909ecdc1d76a",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/east-11.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/east-11.png",
+      "sha256": "b172f50c8ea65bba04d0607603153cc136b0972039622ccd63d4d2c788aedb9f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/east-8.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/east-8.png",
+      "sha256": "9946c47da29485dfc4915f50fc73424b7697ad87db8f32d9c38ac9e55bf48857",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "body-eight-02/south-east.png",
+      "url": "/assets/character-v3/body-eight-02/south-east.png",
+      "sha256": "1ddd879674457c1555543edde9fc1a9dabebf55fd158eebc373c01b859909d8b",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-east-2.png",
+      "url": "/assets/character-v3/walk-eight-02/south-east-2.png",
+      "sha256": "18496b628a0123800928f50a4d85017f02909218c3aff0f9e98f8b64706d76bc",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-east-3.png",
+      "url": "/assets/character-v3/walk-eight-02/south-east-3.png",
+      "sha256": "b0d215d2013540a23351239be4a7221f585d75ab56c487c1629d3421c449aa92",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-east-1.png",
+      "url": "/assets/character-v3/walk-eight-02/south-east-1.png",
+      "sha256": "9911ceb0d48fcb090738a14ae8b449fe66cc8a2853df0cea7a17df67476779d1",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-east-0.png",
+      "url": "/assets/character-v3/walk-eight-02/south-east-0.png",
+      "sha256": "5d55817e0870c85b04cc09ec417d7d3fa716a63fff48b070d72274bf997b3d50",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-east-4.png",
+      "url": "/assets/character-v3/walk-eight-02/south-east-4.png",
+      "sha256": "1c28c8432fec068289f18eed4764b53c066cd960281f9bd2ac4537c423f9bf0e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-east-5.png",
+      "url": "/assets/character-v3/walk-eight-02/south-east-5.png",
+      "sha256": "0cebdb1f6272a43ebe5b29bf61774be3ecdf76891c241b781bd0327c1eb8a9a3",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-east-6.png",
+      "url": "/assets/character-v3/walk-eight-02/south-east-6.png",
+      "sha256": "4fcd991323268a51caa3458f7b76e7879a5775760f6b670bcda0b7be4ccb0858",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "walk-eight-02/south-east-7.png",
+      "url": "/assets/character-v3/walk-eight-02/south-east-7.png",
+      "sha256": "538df323426e55fc236fab17ae00502f5e76492c42ff6fb44347e6d9108dae58",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-east-3.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-east-3.png",
+      "sha256": "d01987c8d49061d8e66ccbcc3c3f10ddb89705248342fc838df7d7623bb0718d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-east-0.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-east-0.png",
+      "sha256": "e43a5c2844596a9d592366380348d1f1e8a1a8be7e3ea6569a47a54b6e94d093",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-east-1.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-east-1.png",
+      "sha256": "00c8cf8fe1167130a551d8e51b171881fda0cc233053fb48ace26b0697e38b44",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-east-2.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-east-2.png",
+      "sha256": "442d7cf8d74138ac2575fad32dc73d7b282fad7b8adff051b4d651097b7c5b34",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-east-5.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-east-5.png",
+      "sha256": "b521a270d006a0bed6124e81cbfde78930a2334f592568d09660001c59f0d73e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-east-4.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-east-4.png",
+      "sha256": "6479cd77e6a2a8ecc4881b09d073822a79e19d7735e4d4d53d394a48c3593224",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-east-6.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-east-6.png",
+      "sha256": "e7c51b6f340b12b818564d57a8b71739b77724a21513861678fa36b9697c732e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/attack/south-east-7.png",
+      "url": "/assets/character-v3/actions-eight-02/attack/south-east-7.png",
+      "sha256": "4b3cc61929d2c699dca57b4fc739de99b69452c65f2b495ee97016a97d4c0348",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-east-0.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-east-0.png",
+      "sha256": "f4dac6102884c283a366e06164744d66f65753eefb8e1676de48e7dfa4e6fd6d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-east-1.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-east-1.png",
+      "sha256": "2c406a82b46c774628af59648a0aa9886c84c62775ce5616a4f22d3e3a9f8f99",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-east-3.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-east-3.png",
+      "sha256": "b994cb488c6c710fe555868141e9feaa0d2fdc941c944b2249b4d4ee15b7dd6f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-east-2.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-east-2.png",
+      "sha256": "3a61fa51456d67e1fbb1258e0f19bf22f98c05f03f42d797b8fcd5520fb7585e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-east-5.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-east-5.png",
+      "sha256": "1478d216a609c52f7b436a21e27cf5ddc0afed5463a3f69edf50663812de310d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-east-7.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-east-7.png",
+      "sha256": "c81e0721c63f1e0390108751bbb83ac9c4eb72e38187752bc9a63ef6fb170f09",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-east-4.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-east-4.png",
+      "sha256": "271377699e6641d33f4c0a8fea4490435b712384a395ab31683b2b3fa44798c9",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-east-8.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-east-8.png",
+      "sha256": "49c4ea6f30910cc3d56b0d538c7d29db6cc07486dd69453bb31fe926cc62da7d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-east-6.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-east-6.png",
+      "sha256": "af4bb01e30e6b53c87f01535437b62b0e8317895c25a169fb3cfa67c8d12ffe7",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-east-11.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-east-11.png",
+      "sha256": "a54c1e561c01b1de21bfa1fbe96f80c43c46e4e8a0c8a8acaf9862c1547dd1e8",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-east-9.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-east-9.png",
+      "sha256": "a6dd1a5e7dff1a2773ea85b1575901e58315706fe2eb9ad5a9e86994c82a8a0b",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "actions-eight-02/cast/south-east-10.png",
+      "url": "/assets/character-v3/actions-eight-02/cast/south-east-10.png",
+      "sha256": "4e5e8d21ae310314b6dfcd8c34432d5d8e080c459a50d488222e9177e7fef606",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "body-eight-02/south.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "1": {
+      "action": "idle",
+      "direction": "south-west",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "body-eight-02/south-west.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "2": {
+      "action": "idle",
+      "direction": "west",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "body-eight-02/west.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "3": {
+      "action": "idle",
+      "direction": "north-west",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "body-eight-02/north-west.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "4": {
+      "action": "idle",
+      "direction": "north",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "body-eight-02/north.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "5": {
+      "action": "idle",
+      "direction": "north-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "body-eight-02/north-east.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "6": {
+      "action": "idle",
+      "direction": "east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "body-eight-02/east.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 59,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "7": {
+      "action": "idle",
+      "direction": "south-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "body-eight-02/south-east.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "8": {
+      "action": "walk",
+      "direction": "south",
+      "intervalMs": 83,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 63,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 63,
+              "y": 47
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 47
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 46
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 46
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 63,
+              "y": 47
+            }
+          }
+        }
+      ]
+    },
+    "9": {
+      "action": "walk",
+      "direction": "south-west",
+      "intervalMs": 83,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-west-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-west-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 60,
+              "y": 52
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-west-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 60,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-west-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-west-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 60,
+              "y": 47
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-west-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 60,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-west-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 60,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-west-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 47
+            }
+          }
+        }
+      ]
+    },
+    "10": {
+      "action": "walk",
+      "direction": "west",
+      "intervalMs": 83,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/west-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 63,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/west-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/west-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/west-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 52
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/west-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/west-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/west-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 52
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/west-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 55
+            }
+          }
+        }
+      ]
+    },
+    "11": {
+      "action": "walk",
+      "direction": "north-west",
+      "intervalMs": 83,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-west-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 63,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-west-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-west-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-west-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 63,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-west-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 65,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-west-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 65,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-west-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 64,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-west-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "12": {
+      "action": "walk",
+      "direction": "north",
+      "intervalMs": 83,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 47
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 47
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 46
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 46
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 47
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 45
+            }
+          }
+        }
+      ]
+    },
+    "13": {
+      "action": "walk",
+      "direction": "north-east",
+      "intervalMs": 83,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-east-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 47
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-east-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 47
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-east-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 47
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-east-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-east-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-east-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 63,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-east-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/north-east-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "14": {
+      "action": "walk",
+      "direction": "east",
+      "intervalMs": 83,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/east-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 59,
+              "y": 47
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/east-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 59,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/east-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 59,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/east-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 59,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/east-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 59,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/east-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 59,
+              "y": 47
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/east-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 60,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/east-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 60,
+              "y": 51
+            }
+          }
+        }
+      ]
+    },
+    "15": {
+      "action": "walk",
+      "direction": "south-east",
+      "intervalMs": 83,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-east-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-east-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 52
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-east-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-east-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 63,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-east-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-east-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-east-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "walk-eight-02/south-east-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 47
+            }
+          }
+        }
+      ]
+    },
+    "16": {
+      "action": "attack",
+      "direction": "south",
+      "intervalMs": 63,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 47
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 46
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 46
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 47
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "17": {
+      "action": "attack",
+      "direction": "south-west",
+      "intervalMs": 63,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-west-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-west-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-west-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-west-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-west-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-west-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 63,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-west-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-west-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 47
+            }
+          }
+        }
+      ]
+    },
+    "18": {
+      "action": "attack",
+      "direction": "west",
+      "intervalMs": 63,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/west-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/west-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/west-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/west-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/west-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 64,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/west-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 64,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/west-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/west-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "19": {
+      "action": "attack",
+      "direction": "north-west",
+      "intervalMs": 63,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-west-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-west-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-west-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-west-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 61,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-west-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 59,
+              "y": 46
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-west-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 60,
+              "y": 47
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-west-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-west-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "20": {
+      "action": "attack",
+      "direction": "north",
+      "intervalMs": 63,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 47
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 64,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 65,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 68,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 66,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 67,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "21": {
+      "action": "attack",
+      "direction": "north-east",
+      "intervalMs": 63,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-east-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-east-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-east-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 61,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-east-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-east-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 65,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-east-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 66,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-east-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 66,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/north-east-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 66,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "22": {
+      "action": "attack",
+      "direction": "east",
+      "intervalMs": 63,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/east-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 59,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/east-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 59,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/east-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 59,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/east-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 58,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/east-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 60,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/east-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 61,
+              "y": 52
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/east-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 60,
+              "y": 54
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/east-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 60,
+              "y": 52
+            }
+          }
+        }
+      ]
+    },
+    "23": {
+      "action": "attack",
+      "direction": "south-east",
+      "intervalMs": 63,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-east-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-east-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-east-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 64,
+              "y": 53
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-east-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 64,
+              "y": 52
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-east-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 64,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-east-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 65,
+              "y": 54
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-east-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 64,
+              "y": 57
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/attack/south-east-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 65,
+              "y": 57
+            }
+          }
+        }
+      ]
+    },
+    "24": {
+      "action": "cast",
+      "direction": "south",
+      "intervalMs": 83,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-8.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-9.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-10.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-11.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "25": {
+      "action": "cast",
+      "direction": "south-west",
+      "intervalMs": 83,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-west-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 63,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-west-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-west-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-west-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-west-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-west-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-west-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-west-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-west-8.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-west-9.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 47
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-west-10.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 63,
+              "y": 46
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-west-11.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 114
+            },
+            "neck": {
+              "x": 64,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "26": {
+      "action": "cast",
+      "direction": "west",
+      "intervalMs": 83,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/west-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/west-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/west-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 66,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/west-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 66,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/west-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 66,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/west-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 66,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/west-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 66,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/west-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 66,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/west-8.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 66,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/west-9.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 66,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/west-10.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/west-11.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 61,
+              "y": 113
+            },
+            "neck": {
+              "x": 65,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "27": {
+      "action": "cast",
+      "direction": "north-west",
+      "intervalMs": 83,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-west-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 64,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-west-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-west-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 61,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-west-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 61,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-west-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 61,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-west-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 61,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-west-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 61,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-west-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 61,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-west-8.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 61,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-west-9.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-west-10.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 63,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-west-11.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 62,
+              "y": 112
+            },
+            "neck": {
+              "x": 64,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "28": {
+      "action": "cast",
+      "direction": "north",
+      "intervalMs": 83,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-8.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-9.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-10.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-11.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "29": {
+      "action": "cast",
+      "direction": "north-east",
+      "intervalMs": 83,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-east-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 63,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-east-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 64,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-east-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 65,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-east-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 65,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-east-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 65,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-east-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 65,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-east-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 65,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-east-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 65,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-east-8.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 65,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-east-9.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 65,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-east-10.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 63,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/north-east-11.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 112
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "30": {
+      "action": "cast",
+      "direction": "east",
+      "intervalMs": 83,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/east-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 59,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/east-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 58,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/east-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 58,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/east-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 58,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/east-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 58,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/east-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 58,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/east-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 58,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/east-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 58,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/east-8.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 58,
+              "y": 51
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/east-9.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 59,
+              "y": 50
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/east-10.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 61,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/east-11.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 63,
+              "y": 113
+            },
+            "neck": {
+              "x": 61,
+              "y": 48
+            }
+          }
+        }
+      ]
+    },
+    "31": {
+      "action": "cast",
+      "direction": "south-east",
+      "intervalMs": 83,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-east-0.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-east-1.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-east-2.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-east-3.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-east-4.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-east-5.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-east-6.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-east-7.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-east-8.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 49
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-east-9.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 62,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-east-10.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 48
+            }
+          }
+        },
+        {
+          "layers": [
+            {
+              "image": "actions-eight-02/cast/south-east-11.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "origin": {
+              "x": 64,
+              "y": 114
+            },
+            "neck": {
+              "x": 61,
+              "y": 48
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "body-eight-02 idle, walk-eight-02, actions-eight-02 attack/cast; anchors copied from their manifests"
+}

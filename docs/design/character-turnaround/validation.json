@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "executableChecks": "passed",
+  "checks": [
+    "retained-source-sha256",
+    "byte-exact-front-png",
+    "all-original-frame0-rgba",
+    "native128-transparent-border",
+    "no-contact-sheet-transform",
+    "pixel-exact-nearest2x",
+    "null-blocked-candidates",
+    "actual-six-generation-receipt",
+    "raw-native128-sha256",
+    "binary-mask-and-exact-unmasked-rgba",
+    "raw-baseline-failure-retained",
+    "raw-comparison-no-transform-exact-nearest2x"
+  ],
+  "sourceBaselineDeltas": {
+    "south": 0,
+    "east": 1,
+    "north": -3,
+    "west": 0
+  },
+  "fourViewAligned": false,
+  "correctedDirections": [],
+  "preservedDirections": [
+    "south"
+  ],
+  "blockedDirections": [
+    "north",
+    "west"
+  ],
+  "proposedDirections": [
+    "east"
+  ],
+  "manualRight90": {
+    "status": "manual-right90-proposal-awaiting-review",
+    "approved": false,
+    "productionReady": false,
+    "evidence": "right90-manual-01/provenance.json",
+    "checks": "Run tools/rig/test_right_profile_correction.mjs for independent per-pixel source replay and preservation."
+  },
+  "hairRepairAttempt": {
+    "status": "failed-no-result",
+    "approved": false,
+    "candidate": null,
+    "evidence": "right90-hair-repair-01/review.json",
+    "outputConservation": "unavailable-no-output-not-a-pass",
+    "observedChargedCredits": 0,
+    "checks": [
+      "raw-input-byte-exact",
+      "front-byte-exact",
+      "binary-mask-hash",
+      "protected-profile-excluded",
+      "no-north-west-promotion",
+      "rejection-history-retained",
+      "full-ledger-retained"
+    ]
+  },
+  "semanticReviewRequired": [
+    "true90-and270-profile",
+    "back180-face-absence",
+    "identity-and-asymmetry",
+    "anatomical-landmarks",
+    "user-approval"
+  ],
+  "approved": false,
+  "additionalChargedCredits": 8,
+  "attemptedDirections": [
+    "east"
+  ],
+  "rejectedDirections": [
+    "east"
+  ],
+  "actualMethod": "reference-guided-native-masked-inpaint",
+  "actualAttemptEvidence": "right90/review.json",
+  "rotationAttempt": {
+    "method": "create_character_pro_flash-owned-first-frame-native-v3-rotations",
+    "observedChargedCredits": 2,
+    "approved": false,
+    "evidence": "rotation-experiment-01/review.json",
+    "checks": [
+      "exact-source-reuse-rgba",
+      "eight-native-raw-hashes",
+      "rejected-preview-byte-exact",
+      "east-baseline-zero-not-semantic-approval",
+      "native-comparison-no-transform",
+      "exact-nearest2x",
+      "null-candidates-and-sequential-stop",
+      "billing-attribution-caveat-retained"
+    ]
+  },
+  "pendingJobs": []
+}

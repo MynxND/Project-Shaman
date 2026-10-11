@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "method": "create_character_pro_flash-owned-first-frame-native-v3-rotations",
+  "sourceSha256": "38de6dd6360b587197e993963b7c4ca5ce73de2cc7c16c6bf536c83f8f96cd66",
+  "ledgerBeforeSha256": "cc87ddb430a0753a07bf9f753a958e9d7e28d1727be3c881f901de3603365595",
+  "sourceApproval": false,
+  "additionalInternalCeiling": 8,
+  "userApprovedNumericalBudget": null,
+  "outputDirections": 8,
+  "reviewSequence": [
+    "east",
+    "north",
+    "west"
+  ],
+  "stopOnFirstObservedFailure": true,
+  "frontRuntimePolicy": "retain-original-byte-exact",
+  "transformations": [],
+  "pendingSubmission": true
+}

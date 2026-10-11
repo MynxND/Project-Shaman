@@ -1,0 +1,57 @@
+/* NPC dialog: portrait on the left, speech and choices on the right. Placement via .sk-center-window. */
+.npc-window { width: min(720px, calc(100vw - 24px)); z-index: 25; }
+.npc-body { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: var(--sk-gap); align-items: start; }
+.npc-portrait { display: grid; place-items: end center; height: 140px; background: radial-gradient(circle at 50% 45%, #f3e6c4, #d9c597 70%); background-clip: padding-box; }
+.npc-portrait img { max-width: 100%; max-height: 132px; image-rendering: pixelated; }
+.npc-line { margin: 0 0 8px; font-size: 15px; line-height: 1.6; color: var(--sk-ink); }
+.npc-line.sk-muted { font-size: 13px; }
+.npc-options { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.npc-options .sk-button { justify-content: space-between; text-align: left; }
+.npc-why { font-size: 11px; font-weight: 400; opacity: .85; margin-left: 8px; }
+@media (max-width: 700px) {
+  .npc-window { bottom: auto; }
+  .npc-body { grid-template-columns: 80px minmax(0, 1fr); }
+  .npc-portrait { height: 104px; }
+  .npc-portrait img { max-height: 96px; }
+  .npc-why { display: none; }
+}
+/* Talk prompt above the hotbar. */
+.npc-prompt {
+  all: unset; box-sizing: border-box; cursor: pointer; position: absolute; left: 50%; bottom: 116px; transform: translateX(-50%);
+  pointer-events: auto; z-index: 20; max-width: calc(100vw - 32px);
+  display: flex; flex-direction: column; align-items: center; padding: 4px 16px;
+  border-style: solid; border-width: 11px 12px 15px; border-image: url('/assets/ui/v2/frame/panel.png') 30 / 30px round; image-rendering: pixelated;
+  background: #1c1713f2; background-clip: padding-box; color: #f3dfb0; font-family: var(--sk-font); text-shadow: 0 1px 0 #000;
+  animation: npc-prompt-in .2s ease-out;
+}
+.npc-prompt b { font: 400 18px/1.2 var(--sk-font-display); }
+.npc-prompt small { font-size: 11px; color: #cdbb93; }
+.npc-prompt:focus-visible { outline: 2px solid var(--sk-jade); }
+@keyframes npc-prompt-in { from { opacity: 0; transform: translate(-50%, 6px); } }
+@media (prefers-reduced-motion: reduce) { .npc-prompt { animation: none; } }
+
+/* Service panels (shop, storage, refine, shrine, quest, trainer, teleport). */
+.npc-service { display: flex; flex-direction: column; gap: 6px; }
+.npc-service h4 { margin: 0; font: 400 19px/1.2 var(--sk-font-display); }
+.npc-hint { margin: 0; font-size: 13px; line-height: 1.5; }
+.npc-tabs { display: flex; gap: 4px; align-items: center; }
+.npc-tabs [role="tab"] { all: unset; cursor: pointer; padding: 3px 12px; font-size: 13px; background: #d9c597; box-shadow: inset 0 0 0 1px #b39b70; }
+.npc-tabs [role="tab"][aria-selected="true"] { background: var(--sk-bronze); font-weight: 700; }
+.npc-weight { margin-left: auto; font-size: 12px; color: var(--sk-ink-soft); }
+.npc-list { list-style: none; margin: 0; padding: 0; max-height: min(260px, 38dvh); overflow-y: auto; display: flex; flex-direction: column; gap: 2px; }
+.npc-row { display: grid; grid-template-columns: 32px minmax(0, 1fr) auto; gap: 8px; align-items: center; padding: 2px 4px; background: #efe2c2; box-shadow: inset 0 0 0 1px #c9b48b; }
+.npc-row img { image-rendering: pixelated; }
+.npc-row-name { display: flex; flex-direction: column; line-height: 1.25; min-width: 0; }
+.npc-row-name b { font-size: 14px; }
+.npc-row-name small { font-size: 11px; color: var(--sk-ink-soft); }
+.npc-row-actions { display: flex; gap: 4px; }
+.npc-row-actions .sk-button { min-height: 30px; font-size: 12px; }
+.npc-two { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.npc-buttons { display: flex; flex-wrap: wrap; gap: 6px; }
+.npc-grid { display: grid; grid-template-columns: 1fr 1fr; }
+.npc-steps { margin: 0; padding-left: 20px; font-size: 13px; line-height: 1.6; }
+.npc-steps li[data-done="true"] { color: #2f7d63; text-decoration: line-through; }
+.npc-steps li[data-current="true"] { font-weight: 700; }
+@media (max-width: 700px) {
+  .npc-two, .npc-grid { grid-template-columns: 1fr; }
+}

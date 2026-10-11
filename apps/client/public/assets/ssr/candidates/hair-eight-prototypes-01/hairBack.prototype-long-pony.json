@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairBack.prototype-long-pony",
+  "kind": "hairBack",
+  "variant": "prototype-long-pony",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "long-pony-hairBack-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-hairBack-fixed.png",
+      "sha256": "0d3dab3aab52496eca143109a11ebe3e8cf1a61d4d4f5cd47bd9c4c1c1bc21b2",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "long-pony-hairBack-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-hairBack-ramp.png",
+      "sha256": "c4c68f660c2219c903066583b6684f57e01bdcd67ec98346e0fdbcb6379da12f",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "long-pony-hairBack-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "long-pony-hairBack-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Original FRONT prototype from one eight-design inpaint on owned head; visual approval pending."
+}

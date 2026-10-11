@@ -1,0 +1,44 @@
+{
+  "version": "ssr/1",
+  "id": "face.violet-sharp",
+  "kind": "face",
+  "variant": "violet-sharp",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": false,
+  "images": [
+    {
+      "id": "face",
+      "url": "/assets/ssr/candidates/face-styles-front-01/violet-sharp-patch.png",
+      "sha256": "f767952e9155691be6e00957a603991a8e13f575b01f88d8bd71c7f84ec74e17",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "face",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  }
+}

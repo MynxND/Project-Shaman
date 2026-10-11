@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.curtain-gold-front-01-candidate",
+  "kind": "hairFront",
+  "variant": "curtain-gold-front-01-candidate",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "golden-ramp",
+      "url": "/assets/ssr/candidates/curtain-gold-front-01/hair-ramp.png",
+      "sha256": "e2d8a9cdfd89e14a7e29e9e28e183c4704d72d7cd2b20b59aa8abde5dc9ce81d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "golden-fixed",
+      "url": "/assets/ssr/candidates/curtain-gold-front-01/hair-fixed.png",
+      "sha256": "2b65b81995f6a093ef915836bf1de1ad743fe884b72596cbfc2681f686b5f25a",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "golden-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "golden-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Original FRONT-only inpaint on owned approved head; Hair Layer Standard filtering. Unapproved candidate, no other directions or gameplay publication."
+}

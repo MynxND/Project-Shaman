@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.prototype-round-bun",
+  "kind": "hairFront",
+  "variant": "prototype-round-bun",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "round-bun-hairFront-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/round-bun-hairFront-fixed.png",
+      "sha256": "a4ed08e9dac71d75a01ed20417a2d5e8dbc5cae28bbaca2626baf52acfc4c9df",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "round-bun-hairFront-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/round-bun-hairFront-ramp.png",
+      "sha256": "1ad1a768f6dbd91784412bdcd9c3b8a7b0a2136992f00242bdca318866d5af83",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "round-bun-hairFront-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "round-bun-hairFront-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Original FRONT prototype from one eight-design inpaint on owned head; visual approval pending."
+}

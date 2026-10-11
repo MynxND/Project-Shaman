@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-09",
+  "url": "http://localhost:3000/characters/v2",
+  "method": "Actual integrated Playwright browser, keyboard radio interactions, source PNG versus main Canvas2D getImageData; no synthetic art. Reset viewport before EACH case for reliable exact-size checks.",
+  "directions": ["south", "east", "north", "west"],
+  "visiblePixels": { "south": 2524, "east": 1931, "north": 2467, "west": 1851 },
+  "sourceCanvasRgbaMismatch": { "south": 0, "east": 0, "north": 0, "west": 0 },
+  "nativeCanvas": [128, 128],
+  "smoothingEnabled": false,
+  "exactViewportPass": [
+    { "name": "desktop", "requested": [1280, 900], "actual": [1280, 900], "directionsChecked": 4, "horizontalOverflow": false },
+    { "name": "portrait", "requested": [390, 844], "actual": [390, 844], "directionsChecked": 4, "horizontalOverflow": false },
+    { "name": "landscape", "requested": [844, 390], "actual": [844, 390], "directionsChecked": 4, "horizontalOverflow": false }
+  ],
+  "nativeDisplay": [128, 128],
+  "nearestScaleChecks": [
+    { "scale": 2, "directionsChecked": 4, "display": [256, 256], "footOverlayCss": [122, 224], "gridCss": "2px 2px", "imageRendering": "pixelated" },
+    { "scale": 3, "directionsChecked": 4, "display": [384, 384], "footOverlayCss": [183, 336], "gridCss": "3px 3px", "imageRendering": "pixelated" }
+  ],
+  "anchorCountPerView": 6,
+  "sharedFootOverlayNative": [61, 112],
+  "disabledAbsentLayersPerView": 7,
+  "southApprovalText": "USER approved",
+  "otherViewApproval": "awaiting USER review",
+  "actualFootDiagnosticsVisible": true,
+  "screenshotPaths": [
+    "browser-desktop-south.png", "browser-desktop-east.png", "browser-desktop-north.png", "browser-desktop-west.png",
+    "browser-portrait-south.png", "browser-portrait-east.png", "browser-portrait-north.png", "browser-portrait-west.png",
+    "browser-landscape-south.png", "browser-landscape-east.png", "browser-landscape-north.png", "browser-landscape-west.png"
+  ],
+  "screenshotsVisuallyInspected": ["browser-desktop-east.png", "browser-portrait-north.png", "browser-landscape-west.png"],
+  "rawArtVisuallyInspected": ["cardinals-native.png", "raw/east.png", "raw/north.png", "raw/west.png"],
+  "limitations": [
+    "Screenshots are actual saved full-page captures, but integrated host changes viewport after capture. They are not exact1280/390/844 dimension proof; separate no-screenshot reset-per-case readings establish the exact viewport results.",
+    "Screenshot matrix actual readings drifted to733x515,296x642,733x338. Inspected captures show complete body/head/hands/feet and truthful pending/absent states.",
+    "Pointer radio check failed to change east in integrated host; keyboard control passed. Pointer/touch ergonomics and physical devices remain unverified.",
+    "Diagnostic Canvas2D readback performance warning observed. Rejected FRONT evidence fetches abort when south unmounts; no claim of console/request-error-free run."
+  ],
+  "userFourViewVisualApproval": false
+}

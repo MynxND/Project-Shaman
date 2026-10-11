@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "id": "medium-male-head-proof-native128",
+  "canvas": {
+    "width": 128,
+    "height": 128,
+    "foot": {
+      "x": 64,
+      "y": 124
+    }
+  },
+  "review": {
+    "approved": false,
+    "stage": "three-view",
+    "limitations": [
+      "Three native static views are for visual review only; PNG coverage does not imply approved artwork.",
+      "Scalp and hidden cloth are masked reconstructions; protected face and original body proportions are retained.",
+      "Short hair uses head-only PixelLab changes layers in all three views; the archived manual north cap is only a fallback without a completed job. Cross-view art consistency needs review.",
+      "Crimson hair-bound ties retain source color; only exact four-stop neutral hair pixels are recolored.",
+      "Crown uses trimmed existing ritual-hat pixels, with face-intersecting tassel pixels removed; side/back seats await reconstructed scalp review.",
+      "Hand-authored skin/ear masks and shoulder-charm boundaries require user visual approval; byte equality alone does not approve the segmentation.",
+      "Three static source frame-0 views only. No animation expansion or main-player integration."
+    ]
+  },
+  "views": {
+    "south": {
+      "neck": {
+        "x": 64,
+        "y": 38
+      },
+      "crownSeat": {
+        "x": 64,
+        "y": 16
+      },
+      "body": "/assets/head-proof/south/body.png",
+      "head": "/assets/head-proof/south/head.png",
+      "source": "/assets/head-proof/south/source.png",
+      "faceMask": "/assets/head-proof/south/faceMask.png",
+      "crown": "/assets/head-proof/south/crown.png",
+      "order": [
+        "hairBack",
+        "body",
+        "head",
+        "hairFront",
+        "crown"
+      ]
+    },
+    "east": {
+      "neck": {
+        "x": 66,
+        "y": 38
+      },
+      "crownSeat": {
+        "x": 65,
+        "y": 15
+      },
+      "body": "/assets/head-proof/east/body.png",
+      "head": "/assets/head-proof/east/head.png",
+      "source": "/assets/head-proof/east/source.png",
+      "faceMask": "/assets/head-proof/east/faceMask.png",
+      "crown": "/assets/head-proof/east/crown.png",
+      "order": [
+        "hairBack",
+        "body",
+        "head",
+        "hairFront",
+        "crown"
+      ]
+    },
+    "north": {
+      "neck": {
+        "x": 63,
+        "y": 41
+      },
+      "crownSeat": {
+        "x": 63,
+        "y": 15
+      },
+      "body": "/assets/head-proof/north/body.png",
+      "head": "/assets/head-proof/north/head.png",
+      "source": "/assets/head-proof/north/source.png",
+      "faceMask": "/assets/head-proof/north/faceMask.png",
+      "crown": "/assets/head-proof/north/crown.png",
+      "order": [
+        "hairBack",
+        "body",
+        "head",
+        "hairFront",
+        "crown"
+      ]
+    }
+  },
+  "hairstyles": [
+    {
+      "id": "original",
+      "name": "Original spikes and tied tail",
+      "views": {
+        "south": {
+          "front": "/assets/head-proof/south/original-front.png",
+          "back": "/assets/head-proof/south/original-back.png"
+        },
+        "east": {
+          "front": "/assets/head-proof/east/original-front.png",
+          "back": "/assets/head-proof/east/original-back.png"
+        },
+        "north": {
+          "front": "/assets/head-proof/north/original-front.png",
+          "back": "/assets/head-proof/north/original-back.png"
+        }
+      }
+    },
+    {
+      "id": "short",
+      "name": "Short layered crop",
+      "views": {
+        "south": {
+          "front": "/assets/head-proof/south/short-front.png",
+          "back": "/assets/head-proof/south/short-back.png"
+        },
+        "east": {
+          "front": "/assets/head-proof/east/short-front.png",
+          "back": "/assets/head-proof/east/short-back.png"
+        },
+        "north": {
+          "front": "/assets/head-proof/north/short-front.png",
+          "back": "/assets/head-proof/north/short-back.png"
+        }
+      }
+    }
+  ],
+  "palettes": [
+    {
+      "id": "silver",
+      "name": "Warm silver",
+      "colors": [
+        "#55433f",
+        "#a29389",
+        "#e0d6c6",
+        "#fff2dc"
+      ]
+    },
+    {
+      "id": "ink",
+      "name": "Ink black",
+      "colors": [
+        "#141820",
+        "#303742",
+        "#535f6e",
+        "#8997a7"
+      ]
+    },
+    {
+      "id": "chestnut",
+      "name": "Chestnut",
+      "colors": [
+        "#352126",
+        "#684039",
+        "#a56b4e",
+        "#daa377"
+      ]
+    },
+    {
+      "id": "jade",
+      "name": "Jade",
+      "colors": [
+        "#173332",
+        "#315f51",
+        "#60977a",
+        "#b5d4a4"
+      ]
+    }
+  ]
+}

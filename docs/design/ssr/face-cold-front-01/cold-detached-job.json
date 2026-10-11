@@ -1,0 +1,29 @@
+{
+  "jsonrpc": "2.0",
+  "id": 2,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"background_job_id\": \"8e4ac126-4d4b-473f-b3d1-bc14fdc96964\",\n  \"image_id\": \"52fbfd32-0982-55ac-9226-506b16d1a939\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"52fbfd32-0982-55ac-9226-506b16d1a939\",\n  \"job_id\": \"8e4ac126-4d4b-473f-b3d1-bc14fdc96964\",\n  \"image_size\": {\n    \"width\": 64,\n    \"height\": 64\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/8e4ac126-4d4b-473f-b3d1-bc14fdc96964/download\"\n}\nPoll get_image(job_id=\"8e4ac126-4d4b-473f-b3d1-bc14fdc96964\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+      }
+    ],
+    "structuredContent": {
+      "background_job_id": "8e4ac126-4d4b-473f-b3d1-bc14fdc96964",
+      "image_id": "52fbfd32-0982-55ac-9226-506b16d1a939",
+      "status": "processing",
+      "source_image_id": "52fbfd32-0982-55ac-9226-506b16d1a939",
+      "job_id": "8e4ac126-4d4b-473f-b3d1-bc14fdc96964",
+      "image_size": {
+        "width": 64,
+        "height": 64
+      },
+      "output_count": 1,
+      "estimated_generations": 5,
+      "pricing_provisional": true,
+      "poll_tool": "get_image",
+      "download_path": "/mcp/images/8e4ac126-4d4b-473f-b3d1-bc14fdc96964/download"
+    },
+    "isError": false
+  }
+}

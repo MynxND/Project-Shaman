@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.prototype-wild-layer",
+  "kind": "hairFront",
+  "variant": "prototype-wild-layer",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "wild-layer-hairFront-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/wild-layer-hairFront-fixed.png",
+      "sha256": "44317f039122fdfa5f12fa34a51905d69416ce68a84d266acf0bb56c38e4eb9e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "wild-layer-hairFront-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/wild-layer-hairFront-ramp.png",
+      "sha256": "7c8eb357d813ea09af894e9f747e3dfd6d980d4ea490ba9bb6687fb1d27ae274",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "wild-layer-hairFront-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "wild-layer-hairFront-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Original FRONT prototype from one eight-design inpaint on owned head; visual approval pending."
+}

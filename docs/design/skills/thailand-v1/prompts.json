@@ -1,0 +1,522 @@
+{
+  "rules": "SHAMAN_WORLD_ART_BIBLE.md, SHAMAN_VFX_DESIGN_SYSTEM.md, docs/design/skills/thailand-v1/DESIGN_REVIEW.md. Original Thai occult fantasy, no real script, no Western symbols, no third-party references. Test batch approved by the user 2026-10-10 (two skills, about 14 generations).",
+  "skills": {
+    "sacred-thread-barrier": {
+      "width": 192,
+      "height": 128,
+      "frames": 12,
+      "seed": 110111,
+      "animSeed": 110201,
+      "placement": "zone (anchor = zone centre on the ground)",
+      "description": "SACRED THREAD BARRIER ground ward VFX. Camera: classic elevated three-quarter top-down MMORPG view looking straight north, NOT isometric. The ward is an AXIS-ALIGNED RECTANGLE lying flat on the ground: its FRONT edge is a perfectly HORIZONTAL straight line along the bottom, its BACK edge is a perfectly HORIZONTAL straight line near the top, the left and right edges are nearly vertical lines, like a flat rectangle seen from above at an angle, wider than tall. It is NOT rotated, NOT a diamond, NOT a rhombus, no corner points at the top or bottom centre. Four short carved antique-bronze ritual stakes stand upright at the four corners (two at the bottom left and right, two at the top left and right). A single taut cream-white sacred cotton thread runs low between the stakes along the four sides, small woven stepped knots and tiny tassels tied along it, faint antique-gold glow along the thread, a few small gold motes rising. The interior is EMPTY and fully transparent, no floor, no fill. Original fictional ornament only, no readable script, no religious symbols. Weathered antique gold, bronze, cream thread palette, crisp deliberate pixel clusters, transparent background, at least 10 pixels of empty margin on every side, no character, no text.",
+      "action": "The sacred thread draws itself around the rectangle starting from the front-left stake, running along each side until the boundary closes, the woven knots light up one by one in antique gold, a gentle gold shimmer pulses along the thread, then it settles into a calm steady faint glow. The interior stays empty and transparent, the boundary stays flat on the ground, same palette, transparent background.",
+      "rejectedSeeds": [
+        {
+          "job": "19c8fc36-cd13-4b2c-ba33-5c3a1a08b14b",
+          "reason": "45-degree diamond"
+        }
+      ]
+    },
+    "prai-whispering-curse": {
+      "width": 128,
+      "height": 160,
+      "frames": 12,
+      "seed": 110301,
+      "animSeed": 110401,
+      "placement": "target (anchor = target feet)",
+      "description": "PRAI WHISPERING CURSE spell VFX for a classic elevated three-quarter MMORPG view: thin dark smoky prai spirit wisps in muted dark crimson and deep violet-black curl and spiral upward around an EMPTY human-sized central space, two or three faint pale translucent whispering ghost mouths and hollow eyes half-formed inside the wisps, tiny dark crimson stepped knot seals and frayed crimson thread fragments drifting in the smoke, small dim ember sparks. The centre is open and transparent so a character stays readable. Eerie and restrained, not gore, no skull icons, no Western runes, no pentagram, no readable script. Muted dark crimson, deep violet-black, dim bone-white highlights palette, crisp pixel clusters, transparent background, at least 8 pixels of empty margin on every side, no character, no floor, no text.",
+      "action": "Whispering prai wisps slither in from the sides and coil upward around the empty centre, the faint ghost mouths open as if whispering then dissolve, the crimson knot seals tighten into the smoke, then the wisps thin out into a few slow drifting dark embers. Keep the centre empty, same palette, transparent background."
+    },
+    "sacred-thread-barrier-v2": {
+      "status": "proposal v2b, awaiting user go (user 2026-10-10: add purple fire, smoke, anything that makes it grand; purple is a user-requested addition beyond the bible family colours)",
+      "width": 256,
+      "height": 160,
+      "frames": 12,
+      "seed": 110121,
+      "animSeed": 110221,
+      "placement": "zone (anchor = circle centre on the ground)",
+      "description": "SACRED THREAD WARD grand ground magic circle VFX, lying completely FLAT on the ground, seen from a classic elevated three-quarter MMORPG camera so the circle is a wide horizontal ELLIPSE (about twice as wide as tall), centred, with transparent margins. Original Thai occult yantra design: several concentric rings of antique gold light, between them bands of tiny original fictional stepped glyph marks (not real script), an outer ring made of twisted cream-white sacred cotton thread with woven knots at eight evenly spaced points, nested stepped square seals and lotus-petal-like pointed arches arranged around the centre, fine radiating gold lines, tall licking tongues of mystical VIOLET-PURPLE spirit fire burning around the outer ring, rolling dark violet smoke curling outward low along the ground beyond the rim, purple embers and gold motes rising from the rings, a few small jade spirit sparks. Rich, intricate and majestic, glowing but crisp, the very centre left calm and darker so a character standing on it stays readable. No pentagram, no hexagram, no European runes, no Western magic circle, no zodiac, no religious symbols, no sci-fi hologram, no vertical portal, no floor texture, no character, no text. Antique gold, bronze, cream thread, glowing violet-purple fire and dark violet smoke, small jade accents, dramatic and majestic, crisp deliberate pixel clusters, transparent background.",
+      "action": "The grand ward ignites from the centre outward: the inner seal flashes in antique gold, the concentric rings draw themselves one after another, the glyph bands light up while slowly rotating in opposite directions, violet-purple spirit flames burst up around the outer ring and flicker, dark violet smoke rolls outward along the ground, the sacred-thread ring tightens and its knots flare, purple embers and gold motes rise, then it settles into a steady majestic burning glow. Stay flat on the ground as an ellipse, flames rise from the rim, same palette, transparent background."
+    },
+    "terrorize-howl": {
+      "status": "seed #3 softened wording, awaiting user approval",
+      "width": 224,
+      "height": 144,
+      "frames": 12,
+      "seed": 110521,
+      "animSeed": 110601,
+      "placement": "self (anchor = caster feet, centre of the wave), drawn under and around the actor; Mass Fear reuses it scaled up",
+      "description": "TERRORIZE HOWL spell VFX for a classic elevated three-quarter fantasy RPG view: a powerful spirit SOUND WAVE spreading outward from an empty centre, lying flat on the ground as a wide horizontal ELLIPSE (about twice as wide as tall). Three separate thin jagged crimson-red ripple rings with gaps between them. Flying outward between the rings: ethereal translucent Thai prai spirit maidens in a folklore fantasy style, pale violet-white glowing figures with very LONG flowing black-violet hair streaming behind them, sorrowful wailing expressions, arms reaching outward, lower bodies trailing into long wisps of smoke (not bedsheet ghosts, not round cartoon ghosts). Tall violet-purple spirit flames rising along the outer ring, dark violet mist rolling outward low along the ground, crimson embers and small purple sparks. The very centre is an empty calm space. Eerie, dramatic and grand fantasy magic, no blood, no skulls, no pentagram, no Western runes, no readable script, no floor texture, no text. Crimson red, deep purple, violet fire, dark violet mist, pale violet spirit glow, black-violet hair, crisp deliberate pixel clusters, transparent background, at least 8 pixels of empty margin on every side.",
+      "action": "The spirit wave spreads from the centre: the first crimson ripple ring expands outward, then the second and third follow, the long-haired prai spirit maidens wail and glide outward with the waves, their long hair flowing behind them, and fade into mist at the rim, violet flames flare up around the outer ring and mist rolls outward along the ground, embers drift, then the waves fade and only drifting mist and a few embers remain. Stay flat on the ground as an ellipse, centre stays empty, same palette, transparent background.",
+      "rejectedSeeds": [
+        {
+          "job": "a199210a-4d9f-44b9-a0a5-8e7896ee8e64",
+          "reason": "Western cartoon sheet ghosts; single solid ring"
+        },
+        {
+          "job": "2870ecef-518b-4160-8ceb-3b3b3392c3bb",
+          "reason": "blocked by PixelLab content policy (wording: violent, terrifying, gaunt screaming face, hollow eyes)"
+        }
+      ]
+    },
+    "soul-drain": {
+      "status": "seed #2 approved by user (soul flames)",
+      "width": 192,
+      "height": 64,
+      "frames": 12,
+      "seed": 110711,
+      "animSeed": 110801,
+      "placement": "tether: horizontal stream, RIGHT end = target, LEFT end = caster; runtime rotates and stretches it between them (like the Spirit Bolt projectile). Soul Harvest / Soul Harvester reuse a short piece at the caster.",
+      "description": "SOUL DRAIN spell VFX, a horizontal side-view magic TETHER BEAM spanning the full width of a wide short canvas: a twisting stream of dark crimson and deep purple spirit energy flowing from the RIGHT end to the LEFT end, made of two or three braided ribbons of violet smoke and crimson light spiralling around each other, three or four small floating SOUL FLAMES being pulled along inside the stream toward the left, each a pale violet-white teardrop will-o-wisp flame with a glowing core and a long flickering tail pointing right, a faint hint of a face only suggested in the flame, NOT cartoon ghosts, NOT round sheet ghosts, no eyes or mouths drawn as cartoon dots, crimson sparks and purple embers trailing off the edges. At the RIGHT end a ragged burst where the soul is torn out (small crimson flare, dark violet mist); at the LEFT end a glowing purple vortex swallowing the stream. Eerie, dramatic fantasy magic in a Thai occult style, no blood, no gore, no skulls, no readable script, no character, no hands, no floor, no text. Crimson red, deep purple, violet mist, pale violet soul glow, crisp deliberate pixel clusters, transparent background, the beam stays inside the canvas with 4 pixels of empty margin top and bottom.",
+      "action": "Spirit energy is ripped out at the right end in a crimson flare and pours leftward: the braided crimson and violet ribbons twist and flow continuously from right to left, pale violet soul flames flicker and are dragged along the stream and swallowed by the swirling purple vortex at the left end, sparks trail off, the flow pulses stronger then thins out. Keep the beam horizontal and the flow direction right to left, same palette, transparent background.",
+      "rejectedSeeds": [
+        {
+          "job": "e1c6ee87-28d6-42ad-b551-5dfae5e0b8d2",
+          "reason": "cartoon round ghosts"
+        }
+      ]
+    },
+    "summon-hun-phayon": {
+      "status": "batch-2 seed approved by user",
+      "batch": 2,
+      "width": 160,
+      "height": 160,
+      "frames": 12,
+      "seed": 112001,
+      "animSeed": 112101,
+      "placement": "summon point (anchor = puppet feet)",
+      "description": "SUMMON HUN PHAYON ritual VFX: a red yantra cloth stake planted in the ground with fluttering cloth tails, a small ring of short black candles and incense sticks, lumps of dark ritual clay and dry straw rising and gathering together into the rough shape of a squat clay puppet figure, red thread wrapped around its arms, grey-violet incense smoke curling around it, candle-amber glow from below. Thai black-magic folk horror style: physical ritual objects, cloth yantra with original ornamental Khom-style glyph strokes and square yantra grids (decorative, not readable text), white sacred cotton thread, cracked earth, candle-amber light, grey-violet incense smoke, old crimson cloth, black ink and ash, dull gold leaf. NOT Chinese, NOT Japanese, NOT anime: no neon energy beams, no crystal or glass shields, no lightning, no clean glowing magic circles, no hanging paper ofuda, no kimono, no sparkle stars. Ominous, eerie and dread-filled, NOT cute, NOT chibi. Crisp deliberate pixel clusters, classic elevated three-quarter MMORPG view, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no readable script, no floor texture, no text.",
+      "action": "The yantra cloth stake drives into the ground, clay lumps and straw lift and press together into a rough puppet shape, red thread winds around its arms, smoke curls, and finally two small amber eyes open on the puppet. Keep the same palette and style, transparent background."
+    },
+    "curse-breaking": {
+      "status": "batch-2 seed approved by user",
+      "batch": 2,
+      "width": 128,
+      "height": 160,
+      "frames": 12,
+      "seed": 112101,
+      "animSeed": 112201,
+      "placement": "target (anchor = target feet)",
+      "description": "CURSE BREAKING VFX: white sacred cotton threads wrapped tightly around an EMPTY human-sized space, drawn taut, vermilion-red ornamental Khom-style yantra glyph strokes floating on the threads, the threads snapping, the glyphs cracking into flakes, scraps of burnt yantra cloth turning into black ash, small rusty nails and needles flying outward, fine mist droplets of holy water. The centre stays open and transparent. Thai black-magic folk horror style: physical ritual objects, cloth yantra with original ornamental Khom-style glyph strokes and square yantra grids (decorative, not readable text), white sacred cotton thread, cracked earth, candle-amber light, grey-violet incense smoke, old crimson cloth, black ink and ash, dull gold leaf. NOT Chinese, NOT Japanese, NOT anime: no neon energy beams, no crystal or glass shields, no lightning, no clean glowing magic circles, no hanging paper ofuda, no kimono, no sparkle stars. Ominous, eerie and dread-filled, NOT cute, NOT chibi. Crisp deliberate pixel clusters, classic elevated three-quarter MMORPG view, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no readable script, no floor texture, no text.",
+      "action": "The sacred threads pull taut around the centre, vermilion glyphs flare, the threads snap one by one, glyphs crack into flakes, nails and needles burst outward, the cloth scraps burn to drifting ash. Keep the same palette and style, transparent background."
+    },
+    "achans-command": {
+      "status": "batch-2 seed approved by user",
+      "batch": 2,
+      "width": 160,
+      "height": 128,
+      "frames": 12,
+      "seed": 112201,
+      "animSeed": 112301,
+      "placement": "target (anchor = target feet, impact on the ground)",
+      "description": "ACHAN COMMAND impact VFX: a large square master yantra seal stamp with ornamental Khom-style strokes slams down onto the ground, an angular shockwave of stepped yantra lines spreading outward flat along the ground in a wide rectangle-ish pattern, chunks of dry cracked earth and dust flying, torn red cloth scraps, candle-amber sparks. Thai black-magic folk horror style: physical ritual objects, cloth yantra with original ornamental Khom-style glyph strokes and square yantra grids (decorative, not readable text), white sacred cotton thread, cracked earth, candle-amber light, grey-violet incense smoke, old crimson cloth, black ink and ash, dull gold leaf. NOT Chinese, NOT Japanese, NOT anime: no neon energy beams, no crystal or glass shields, no lightning, no clean glowing magic circles, no hanging paper ofuda, no kimono, no sparkle stars. Ominous, eerie and dread-filled, NOT cute, NOT chibi. Crisp deliberate pixel clusters, classic elevated three-quarter MMORPG view, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no readable script, no floor texture, no text.",
+      "action": "The master seal slams down, the stepped yantra lines race outward along the ground, earth cracks and chunks fly, dust rises, then the lines fade and the dust settles. Keep the same palette and style, transparent background."
+    },
+    "giant-phayon-colossus": {
+      "status": "batch-2 seed approved by user",
+      "batch": 2,
+      "width": 240,
+      "height": 176,
+      "frames": 12,
+      "seed": 112301,
+      "animSeed": 112401,
+      "placement": "summon point (anchor = colossus feet)",
+      "description": "GIANT PHAYON COLOSSUS grand ritual VFX: a tall carved wooden ritual pillar bursting up from cracked earth, huge red and white yantra cloths with ornamental Khom-style glyph grids wrapping around the pillar and flapping, rings of black candles and banana-leaf offering cones around the base, massive chunks of dark fired clay rising from the ground and assembling into the giant legs and torso of an earthen colossus, thick grey-violet incense smoke, flakes of dull gold leaf swirling, candle-amber glow. Thai black-magic folk horror style: physical ritual objects, cloth yantra with original ornamental Khom-style glyph strokes and square yantra grids (decorative, not readable text), white sacred cotton thread, cracked earth, candle-amber light, grey-violet incense smoke, old crimson cloth, black ink and ash, dull gold leaf. NOT Chinese, NOT Japanese, NOT anime: no neon energy beams, no crystal or glass shields, no lightning, no clean glowing magic circles, no hanging paper ofuda, no kimono, no sparkle stars. Ominous, eerie and dread-filled, NOT cute, NOT chibi. Crisp deliberate pixel clusters, classic elevated three-quarter MMORPG view, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no readable script, no floor texture, no text.",
+      "action": "The ritual pillar erupts from the ground, giant yantra cloths unfurl and wrap around it, candles flare, clay chunks lift from the earth and lock together into the colossus legs and torso, gold leaf swirls, smoke rolls outward. Keep the same palette and style, transparent background."
+    },
+    "underworld-soul-pull": {
+      "status": "batch-2 seed approved by user",
+      "batch": 2,
+      "width": 256,
+      "height": 160,
+      "frames": 12,
+      "seed": 112401,
+      "animSeed": 112501,
+      "placement": "zone (anchor = centre on the ground)",
+      "description": "UNDERWORLD SOUL PULL VFX: a large square yantra drawn flat on cracked ground with stepped borders and ornamental Khom-style strokes, from it many black and dark-red cursed threads shoot out like snares, dragging pale grey translucent wailing spirits across the ground toward the centre, where an old clay jar sealed with red cloth and white sacred thread sucks them in, black ash and grey-violet smoke swirling inward. Thai black-magic folk horror style: physical ritual objects, cloth yantra with original ornamental Khom-style glyph strokes and square yantra grids (decorative, not readable text), white sacred cotton thread, cracked earth, candle-amber light, grey-violet incense smoke, old crimson cloth, black ink and ash, dull gold leaf. NOT Chinese, NOT Japanese, NOT anime: no neon energy beams, no crystal or glass shields, no lightning, no clean glowing magic circles, no hanging paper ofuda, no kimono, no sparkle stars. Ominous, eerie and dread-filled, NOT cute, NOT chibi. Crisp deliberate pixel clusters, classic elevated three-quarter MMORPG view, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no readable script, no floor texture, no text.",
+      "action": "The ground yantra flares, black-red threads lash outward and hook the spirits, dragging them across the ground into the clay jar, the jar shudders and its red cloth seal tightens, ash and smoke spiral inward. Keep the same palette and style, transparent background."
+    },
+    "ghost-possession": {
+      "status": "batch-2 seed approved by user",
+      "batch": 2,
+      "width": 128,
+      "height": 160,
+      "frames": 12,
+      "seed": 112501,
+      "animSeed": 112601,
+      "placement": "self aura while the buff lasts (anchor = caster feet)",
+      "description": "GHOST POSSESSION VFX: a translucent shadowy Thai prai woman in a sabai and sarong overlapping an EMPTY human-sized space as if sinking into a body, her very long black hair and black smoke winding around the space, two small glowing red eye points at head height, grey-violet incense smoke and falling ash. The centre stays transparent so the character shows through. Thai black-magic folk horror style: physical ritual objects, cloth yantra with original ornamental Khom-style glyph strokes and square yantra grids (decorative, not readable text), white sacred cotton thread, cracked earth, candle-amber light, grey-violet incense smoke, old crimson cloth, black ink and ash, dull gold leaf. NOT Chinese, NOT Japanese, NOT anime: no neon energy beams, no crystal or glass shields, no lightning, no clean glowing magic circles, no hanging paper ofuda, no kimono, no sparkle stars. Ominous, eerie and dread-filled, NOT cute, NOT chibi. Crisp deliberate pixel clusters, classic elevated three-quarter MMORPG view, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no readable script, no floor texture, no text.",
+      "action": "The prai woman drifts in and slowly overlaps the centre, her long hair and black smoke wind around it, then two small red eye points ignite at head height, smoke coils in a slow loop. Keep the same palette and style, transparent background."
+    },
+    "shadow-snare": {
+      "status": "batch-2 seed approved by user",
+      "batch": 2,
+      "width": 128,
+      "height": 96,
+      "frames": 12,
+      "seed": 112601,
+      "animSeed": 112701,
+      "placement": "target feet (anchor = target feet)",
+      "description": "SHADOW SNARE VFX: a small square earth yantra drawn on the ground with ornamental Khom-style strokes, black shadowy ghost hands with long nails reaching up from it, together with black sacred threads coiling around an EMPTY space at ankle height, a pool of black prai oil, grey-violet wisps. Thai black-magic folk horror style: physical ritual objects, cloth yantra with original ornamental Khom-style glyph strokes and square yantra grids (decorative, not readable text), white sacred cotton thread, cracked earth, candle-amber light, grey-violet incense smoke, old crimson cloth, black ink and ash, dull gold leaf. NOT Chinese, NOT Japanese, NOT anime: no neon energy beams, no crystal or glass shields, no lightning, no clean glowing magic circles, no hanging paper ofuda, no kimono, no sparkle stars. Ominous, eerie and dread-filled, NOT cute, NOT chibi. Crisp deliberate pixel clusters, classic elevated three-quarter MMORPG view, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no readable script, no floor texture, no text.",
+      "action": "Ghost hands claw up from the earth yantra and grip around the ankles while black threads coil and tighten, they hold and tremble, then slowly sink back into the black oil. Keep the same palette and style, transparent background."
+    },
+    "prai-curse-explosion": {
+      "status": "batch-2 seed approved by user",
+      "batch": 2,
+      "width": 160,
+      "height": 160,
+      "frames": 12,
+      "seed": 112701,
+      "animSeed": 112801,
+      "placement": "target (anchor = target feet)",
+      "description": "PRAI CURSE EXPLOSION VFX: many old crimson curse yantra cloth sheets with ornamental Khom-style glyph grids hovering in a ring that closes in around an EMPTY human-sized space, then bursting apart into splashes of red ink, black ash, cracked glyph fragments and burning cloth scraps, grey-violet smoke, candle-amber embers. No white flash. Thai black-magic folk horror style: physical ritual objects, cloth yantra with original ornamental Khom-style glyph strokes and square yantra grids (decorative, not readable text), white sacred cotton thread, cracked earth, candle-amber light, grey-violet incense smoke, old crimson cloth, black ink and ash, dull gold leaf. NOT Chinese, NOT Japanese, NOT anime: no neon energy beams, no crystal or glass shields, no lightning, no clean glowing magic circles, no hanging paper ofuda, no kimono, no sparkle stars. Ominous, eerie and dread-filled, NOT cute, NOT chibi. Crisp deliberate pixel clusters, classic elevated three-quarter MMORPG view, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no readable script, no floor texture, no text.",
+      "action": "The curse cloths close in around the centre, their glyphs glow dull red, then they burst apart into red ink splashes, black ash and burning scraps, glyph fragments crack and scatter, embers drift down. Keep the same palette and style, transparent background."
+    },
+    "shadow-ghost-avatar": {
+      "status": "batch-2 seed approved by user",
+      "batch": 2,
+      "width": 160,
+      "height": 192,
+      "frames": 12,
+      "seed": 112801,
+      "animSeed": 112901,
+      "placement": "self aura while the form lasts (anchor = caster feet)",
+      "description": "SHADOW GHOST AVATAR VFX: a huge black shadow Thai prai woman in a sabai looming behind an EMPTY human-sized space, her extremely long black hair spreading out to both sides like great wings, scraps of yantra cloth with ornamental Khom-style strokes spinning around, grey-violet smoke and falling ash, faint red eye glints. The centre stays transparent. Thai black-magic folk horror style: physical ritual objects, cloth yantra with original ornamental Khom-style glyph strokes and square yantra grids (decorative, not readable text), white sacred cotton thread, cracked earth, candle-amber light, grey-violet incense smoke, old crimson cloth, black ink and ash, dull gold leaf. NOT Chinese, NOT Japanese, NOT anime: no neon energy beams, no crystal or glass shields, no lightning, no clean glowing magic circles, no hanging paper ofuda, no kimono, no sparkle stars. Ominous, eerie and dread-filled, NOT cute, NOT chibi. Crisp deliberate pixel clusters, classic elevated three-quarter MMORPG view, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no readable script, no floor texture, no text.",
+      "action": "The shadow prai looms behind, her hair-wings spread and sway slowly, yantra cloth scraps orbit and flutter, ash falls, her red eyes glint, in a slow loop. Keep the same palette and style, transparent background."
+    },
+    "absolute-soul-defense": {
+      "status": "batch-2 seed approved by user",
+      "batch": 2,
+      "width": 160,
+      "height": 192,
+      "frames": 12,
+      "seed": 112901,
+      "animSeed": 113001,
+      "placement": "self (anchor = caster feet)",
+      "description": "ABSOLUTE SOUL DEFENSE VFX: four protective yantra cloths with ornamental Khom-style glyph grids floating at the four directions around an EMPTY human-sized space, white sacred threads weaving between them into a protective net, a translucent pale guardian spirit woman in a white sabai standing behind with arms open, candle-amber glow, grey-violet smoke. The centre stays transparent. Thai black-magic folk horror style: physical ritual objects, cloth yantra with original ornamental Khom-style glyph strokes and square yantra grids (decorative, not readable text), white sacred cotton thread, cracked earth, candle-amber light, grey-violet incense smoke, old crimson cloth, black ink and ash, dull gold leaf. NOT Chinese, NOT Japanese, NOT anime: no neon energy beams, no crystal or glass shields, no lightning, no clean glowing magic circles, no hanging paper ofuda, no kimono, no sparkle stars. Ominous, eerie and dread-filled, NOT cute, NOT chibi. Crisp deliberate pixel clusters, classic elevated three-quarter MMORPG view, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no readable script, no floor texture, no text.",
+      "action": "The four yantra cloths unfold around the centre, sacred threads weave a net between them, the guardian spirit rises behind and takes the blow, the net flares amber and the cloths burn away to ash. Keep the same palette and style, transparent background."
+    },
+    "mass-fear": {
+      "status": "batch-2 seed approved by user",
+      "batch": 2,
+      "width": 256,
+      "height": 160,
+      "frames": 12,
+      "seed": 113001,
+      "animSeed": 113101,
+      "placement": "self (anchor = caster feet), drawn around the caster; screen-wide skill",
+      "description": "MASS FEAR VFX: a horde of Thai folk ghosts rising in a wide ring around an EMPTY centre on cracked dark ground: very tall thin gaunt-limbed PRET hungry ghosts with tiny mouths looming at the back, floating KRASUE heads of women with long black hair trailing a glowing red-amber light trail below them (no visible organs), KRAHANG ghost men flapping winnowing-basket wings, wailing prai women in sabai, all translucent grey-violet, swirling grey-violet incense smoke, falling ash, scraps of yantra cloth with ornamental Khom-style strokes torn in the wind, candle-amber glow from the ground cracks. Thai black-magic folk horror style, ominous, eerie and dread-filled, NOT cute, NOT chibi, NOT Chinese, NOT Japanese, NOT anime, no neon energy, no lightning, no glowing magic circle. Crisp deliberate pixel clusters, classic elevated three-quarter MMORPG view, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no readable script, no floor texture, no text.",
+      "action": "The ground cracks glow amber, the ghost horde rises around the centre: pret figures unfold upward, krasue heads float in circles with their light trails, krahang flap their basket wings, prai women wail, smoke and ash swirl, then the horde fades back into the smoke. Keep the same palette and style, transparent background."
+    },
+    "sacred-thread-barrier-thai": {
+      "status": "batch-3 proposal (redesign of an earlier effect), awaiting cost approval",
+      "batch": 3,
+      "publishAs": "sacred-thread-barrier",
+      "width": 256,
+      "height": 160,
+      "frames": 12,
+      "seed": 114001,
+      "animSeed": 114101,
+      "placement": "zone (anchor = ward centre on the ground)",
+      "description": "SACRED THREAD BARRIER ground ward VFX: an axis-aligned square ward lying flat on the ground, seen from a three-quarter view as a wide rectangle, white sacred cotton thread strung low between four carved dark-wood ritual stakes at the corners, a small red yantra cloth flag tied on each stake, a large square yantra grid with stepped borders and ornamental Khom-style strokes drawn on the ground inside in pale rice-flour lines, short black candles at the corners with amber flames, grey-violet incense smoke drifting low. The centre stays open. Thai black-magic folk horror style: physical ritual objects, cloth yantra with original ornamental Khom-style glyph strokes and square yantra grids (decorative, not readable text), white sacred cotton thread, cracked earth, candle-amber light, grey-violet incense smoke, old crimson cloth, black ink and ash. NOT Chinese, NOT Japanese, NOT anime: no neon energy, no crystal, no lightning, no clean glowing magic circle, no hanging paper ofuda, no sparkle stars. Ominous and eerie, NOT cute. Crisp deliberate pixel clusters, classic elevated three-quarter MMORPG view, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no readable script, no floor texture, no text.",
+      "action": "The thread pulls taut from stake to stake, the rice-flour yantra lines appear stroke by stroke, the candle flames flare, the cloth flags flap, smoke drifts, then it settles into a calm flickering loop. Keep the same palette and style, transparent background."
+    },
+    "terrorize-howl-thai": {
+      "status": "batch-3 proposal (redesign of an earlier effect), awaiting cost approval",
+      "batch": 3,
+      "publishAs": "terrorize-howl",
+      "width": 224,
+      "height": 144,
+      "frames": 12,
+      "seed": 114101,
+      "animSeed": 114201,
+      "placement": "self (anchor = caster feet)",
+      "description": "TERRORIZE HOWL VFX: wailing Thai prai women in sabai with very long black hair bursting outward in every direction from an EMPTY centre, their hair whipping, rings of dust and dry earth cracks spreading flat on the ground, torn scraps of yantra cloth with ornamental Khom-style strokes flung outward, falling ash, grey-violet smoke, candle-amber glints. Thai black-magic folk horror style: physical ritual objects, cloth yantra with original ornamental Khom-style glyph strokes and square yantra grids (decorative, not readable text), white sacred cotton thread, cracked earth, candle-amber light, grey-violet incense smoke, old crimson cloth, black ink and ash. NOT Chinese, NOT Japanese, NOT anime: no neon energy, no crystal, no lightning, no clean glowing magic circle, no hanging paper ofuda, no sparkle stars. Ominous and eerie, NOT cute. Crisp deliberate pixel clusters, classic elevated three-quarter MMORPG view, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no readable script, no floor texture, no text.",
+      "action": "The prai women burst outward with a wail, their hair whipping, dust rings and earth cracks spread along the ground, yantra scraps fly and ash falls, then they dissolve into smoke. Keep the same palette and style, transparent background."
+    },
+    "soul-drain-thai": {
+      "status": "batch-3 proposal (redesign of an earlier effect), awaiting cost approval",
+      "batch": 3,
+      "publishAs": "soul-drain",
+      "width": 192,
+      "height": 64,
+      "frames": 12,
+      "seed": 114201,
+      "animSeed": 114301,
+      "placement": "tether: left end = caster, right end = target; runtime rotates and stretches it",
+      "description": "SOUL DRAIN tether VFX, a horizontal side-view strip across a wide short canvas: a taut black-and-red cursed thread running from the RIGHT end to the LEFT end, small red yantra cloth tags tied along it fluttering, a pale grey translucent wailing soul wisp being dragged along the thread toward the left, black ash and grey-violet smoke peeling off the thread, at the RIGHT end the thread is knotted into a torn crimson yantra cloth, at the LEFT end it winds into a small old clay jar sealed with white thread. Thai black-magic folk horror style: physical ritual objects, cloth yantra with original ornamental Khom-style glyph strokes and square yantra grids (decorative, not readable text), white sacred cotton thread, cracked earth, candle-amber light, grey-violet incense smoke, old crimson cloth, black ink and ash. NOT Chinese, NOT Japanese, NOT anime: no neon energy, no crystal, no lightning, no clean glowing magic circle, no hanging paper ofuda, no sparkle stars. Ominous and eerie, NOT cute. Crisp deliberate pixel clusters, classic elevated three-quarter MMORPG view, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no readable script, no floor texture, no text.",
+      "action": "The soul wisp is dragged along the thread from right to left and pulled into the clay jar, the cloth tags flutter, ash and smoke peel off, the thread trembles. Keep the same palette and style, transparent background."
+    },
+    "prai-whispering-curse-thai": {
+      "status": "batch-3 proposal (redesign of an earlier effect), awaiting cost approval",
+      "batch": 3,
+      "publishAs": "prai-whispering-curse",
+      "width": 128,
+      "height": 160,
+      "frames": 12,
+      "seed": 114301,
+      "animSeed": 114401,
+      "placement": "target (anchor = target feet)",
+      "description": "PRAI WHISPERING CURSE VFX: a translucent Thai prai woman in a sabai leaning in from behind an EMPTY human-sized space and whispering at head height, her very long black hair wrapping around the space, crimson ink yantra glyph strokes in ornamental Khom style crawling over the space like spreading ink, grey-violet smoke, falling ash. The centre stays transparent. Thai black-magic folk horror style: physical ritual objects, cloth yantra with original ornamental Khom-style glyph strokes and square yantra grids (decorative, not readable text), white sacred cotton thread, cracked earth, candle-amber light, grey-violet incense smoke, old crimson cloth, black ink and ash. NOT Chinese, NOT Japanese, NOT anime: no neon energy, no crystal, no lightning, no clean glowing magic circle, no hanging paper ofuda, no sparkle stars. Ominous and eerie, NOT cute. Crisp deliberate pixel clusters, classic elevated three-quarter MMORPG view, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no readable script, no floor texture, no text.",
+      "action": "The prai woman leans in and whispers, her hair winds around the centre, crimson ink glyphs crawl and spread over it, smoke coils, then she withdraws and fades while the ink glyphs linger. Keep the same palette and style, transparent background."
+    },
+    "icons-achan-sheet": {
+      "status": "icon test sheet approved by user (2026-10-10)",
+      "icons": true,
+      "width": 256,
+      "height": 256,
+      "frames": 0,
+      "seed": 115001,
+      "animSeed": 0,
+      "placement": "sheet: 4x4 grid of 64x64 icon cells, row-major; cell 16 empty",
+      "order": [
+        "summon-hun-phayon",
+        "sacred-thread-barrier",
+        "curse-breaking",
+        "phayon-repair",
+        "achans-command",
+        "phayon-durability",
+        "sacred-aura",
+        "guardian-link",
+        "ward-mastery",
+        "iron-shield-incantation",
+        "giant-phayon-colossus",
+        "fortress-of-sacred-thread",
+        "underworld-soul-pull",
+        "colossus-resonance",
+        "transcendent-medium"
+      ],
+      "description": "A pixel art RPG SKILL ICON SHEET: a strict 4 by 4 grid of sixteen equal square cells, each cell exactly 64 by 64 pixels, each icon a single object centred inside its own cell with a few pixels of empty transparent space around it, nothing crossing cell borders, no grid lines drawn, no frames, no borders, no text, no numbers. Reading left to right, top to bottom: 1) a small clay puppet figure bound with red thread, a tiny red yantra cloth flag stuck in it; 2) four short wooden stakes with white cotton thread strung between them in a square; 3) a snapped white cotton thread with small rusty nails and needles falling out of it; 4) a cracked clay puppet with glowing amber thread stitching the crack; 5) a square bronze master seal stamp with an ornamental Khom-style yantra grid on its face; 6) a clay puppet chest with a small bronze yantra plate fixed on it; 7) a folded white yantra cloth with a faint amber glowing edge; 8) a red thread tied between a small human doll and a small clay puppet; 9) a coiled skein of white sacred cotton thread with yantra knots; 10) a rolled bronze takrut amulet tube on a dark cord; 11) a giant fist of fired clay wrapped in a red yantra cloth; 12) a dome-shaped net woven from white sacred thread over wooden stakes; 13) an old clay jar sealed with red cloth and white thread, a pale soul wisp being sucked in; 14) a broken clay armour shard with cracks forming a yantra pattern; 15) a black candle with incense smoke curling into an ornamental pattern; 16) empty. All icons share one consistent style: Thai black-magic folk ritual objects, crisp deliberate pixel clusters with dark outlines, strong readable silhouettes, upper-left light, palette of old crimson cloth, candle amber, dull bronze, bone-white thread, dark clay brown, black, small grey-violet smoke accents. Ominous, not cute. Not Chinese, not Japanese, no neon, no sparkles, no readable script, transparent background.",
+      "action": ""
+    },
+    "icons-morphhee-sheet": {
+      "status": "icon sheet 2 proposal, awaiting user approval",
+      "icons": true,
+      "width": 256,
+      "height": 256,
+      "frames": 0,
+      "seed": 115101,
+      "animSeed": 0,
+      "placement": "sheet: 4x4 grid of 64x64 icon cells, row-major; cell 16 empty",
+      "order": [
+        "ghost-possession",
+        "prai-whispering-curse",
+        "soul-drain",
+        "terrorize-howl",
+        "shadow-snare",
+        "dark-affinity",
+        "vampiric-instinct",
+        "soul-harvest",
+        "agile-spirit",
+        "blood-oil-coating",
+        "prai-curse-explosion",
+        "shadow-ghost-avatar",
+        "mass-fear",
+        "soul-harvester",
+        "absolute-soul-defense"
+      ],
+      "description": "A pixel art RPG SKILL ICON SHEET: a strict 4 by 4 grid of sixteen equal square cells, each cell exactly 64 by 64 pixels, each icon a single object centred inside its own cell with a few pixels of empty transparent space around it, nothing crossing cell borders, no grid lines drawn, no frames, no borders, no text, no numbers. Reading left to right, top to bottom: 1) the pale face of a Thai prai ghost woman half hidden behind long black hair, one glowing red eye; 2) the pale lips of a ghost woman whispering, crimson ink yantra strokes drifting out of the mouth; 3) a taut red cursed thread dragging a pale grey soul wisp; 4) the wide open screaming mouth of a long-haired ghost woman, hair flying; 5) a black shadowy ghost hand with long nails clenching tight; 6) a small bronze bowl of black oil with a single crimson drop; 7) a crimson drop running down a black thread; 8) a small clay jar with a pale soul wisp drifting into it; 9) a faint drifting smoky human silhouette floating above the ground; 10) a small glass vial of dark prai oil dripping onto a dagger blade; 11) a crimson yantra cloth bursting apart in flames and ash; 12) the black shadow silhouette of a ghost woman with long hair spreading like wings; 13) a floating Thai krasue ghost head of a woman with long black hair and a glowing red-amber light trail below it; 14) a black clay jar with several pale soul flames circling it; 15) a pale guardian ghost woman in a white sabai holding up a yantra cloth like a shield; 16) empty. All icons share one consistent style: Thai black-magic folk ritual objects, crisp deliberate pixel clusters with dark outlines, strong readable silhouettes, upper-left light, palette of old crimson cloth, candle amber, dull bronze, bone-white thread, dark clay brown, black, small grey-violet smoke accents. Ominous, not cute. Not Chinese, not Japanese, no neon, no sparkles, no readable script, transparent background.",
+      "action": ""
+    },
+    "th-cast-circle": {
+      "status": "approved by user 2026-10-11 (rework v2 art, run cap 45)",
+      "kit": true,
+      "staticKit": true,
+      "width": 192,
+      "height": 192,
+      "frames": 0,
+      "seed": 138001,
+      "animSeed": 0,
+      "placement": "Thailand master casting/area circle (code squashes, rotates, tints)",
+      "description": "THAI YANTRA RITUAL CIRCLE: a concentric Thai occult sak yant style circle with an outer border of woven stepped Pha Yant pattern, a ring band of small original abstract script-like marks (not real letters), four small stepped nested square seals at the four directions joined by thin curved lines, an inner ring of tiny lotus petal outlines and a plain empty round centre. Seen from directly above, flat and perfectly round, symmetrical, drawn ONLY as thin open linework in pale antique gold and warm off-white on a transparent background (no filled bands, no solid discs) so it can be recoloured, crisp pixel art with dark 1-pixel outlines on the lines, no glow blur, no bloom, no readable text or real letters (only original abstract marks), no star shape, no pentagram, no runes, no swastika or kolovrat, no religious symbols, no crossing lines through the centre, transparent background, empty transparent margins.",
+      "action": ""
+    }
+  },
+  "theme": "Thailand: crimson red + purple (user 2026-10-10); grand, layered (fire, smoke, ritual rings); ancient-Thai-style decorative letters drawn in post, never real mantras.",
+  "archive": {
+    "summon-hun-phayon-batch1": {
+      "status": "batch-1 seed approved by user (keep scary, not cute)",
+      "batch": 1,
+      "width": 160,
+      "height": 160,
+      "frames": 12,
+      "seed": 111001,
+      "animSeed": 111101,
+      "placement": "summon point (anchor = feet of the puppet to appear)",
+      "description": "SUMMON HUN PHAYON spell VFX, classic elevated three-quarter MMORPG view: a small crimson ritual ellipse flat on the ground, from it a tall column of purple spirit light rises, inside the column swirling clods of reddish clay and torn talisman paper strips spin upward, crimson spirit sparks crackle, violet flames lick around the base, dark violet mist rolls outward. The column interior is open where a clay puppet will stand. Ominous Thai horror-folklore atmosphere, eerie and dread-filled, dark and unsettling, NOT cute, NOT chibi, NOT cartoonish, no round cartoon ghosts. Thai occult fantasy style, crimson red and deep purple theme with violet fire and dark violet mist, crisp deliberate pixel clusters, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no pentagram, no Western runes, no readable script, no character unless stated, no floor texture, no text.",
+      "action": "The ground ellipse flashes crimson, clay clods and talisman strips burst up and spiral inside a rising column of purple light, sparks crackle, flames lick the base, then the column fades leaving drifting mist. Same palette, transparent background."
+    },
+    "curse-breaking-batch1": {
+      "status": "batch-1 seed approved by user (keep scary, not cute)",
+      "batch": 1,
+      "width": 128,
+      "height": 160,
+      "frames": 12,
+      "seed": 111101,
+      "animSeed": 111201,
+      "placement": "target (anchor = target feet)",
+      "description": "CURSE BREAKING spell VFX, classic elevated three-quarter MMORPG view: several dark crimson cursed threads and small knot seals coiled around an EMPTY human-sized central space, the threads glowing with violet cracks as they SNAP apart, broken thread pieces and knot fragments flying outward, a bright purple purifying flare rising from the bottom, small rose-pink sparks. The centre stays open so a character remains readable. Ominous Thai horror-folklore atmosphere, eerie and dread-filled, dark and unsettling, NOT cute, NOT chibi, NOT cartoonish, no round cartoon ghosts. Thai occult fantasy style, crimson red and deep purple theme with violet fire and dark violet mist, crisp deliberate pixel clusters, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no pentagram, no Western runes, no readable script, no character unless stated, no floor texture, no text.",
+      "action": "The cursed crimson threads tighten, glow with violet cracks, then snap apart one by one and fly outward, a purple purifying flare rises through the centre, sparks drift up and fade. Same palette, transparent background."
+    },
+    "achans-command-batch1": {
+      "status": "batch-1 seed approved by user (keep scary, not cute)",
+      "batch": 1,
+      "width": 160,
+      "height": 128,
+      "frames": 12,
+      "seed": 111201,
+      "animSeed": 111301,
+      "placement": "target (anchor = target feet, impact on the ground)",
+      "description": "ACHAN COMMAND impact VFX, classic elevated three-quarter MMORPG view: a heavy crimson-purple shockwave impact on the ground, a flat cracked crimson ring spreading in an ellipse, chunks of reddish clay and dust flying outward, a short burst of violet energy streaks, crimson sparks. A stunning blow from a charging clay guardian. Ominous Thai horror-folklore atmosphere, eerie and dread-filled, dark and unsettling, NOT cute, NOT chibi, NOT cartoonish, no round cartoon ghosts. Thai occult fantasy style, crimson red and deep purple theme with violet fire and dark violet mist, crisp deliberate pixel clusters, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no pentagram, no Western runes, no readable script, no character unless stated, no floor texture, no text.",
+      "action": "A heavy impact slams the ground: the crimson ring cracks outward, clay chunks and dust fly, violet energy streaks burst, sparks scatter, then dust settles and fades. Same palette, transparent background."
+    },
+    "giant-phayon-colossus-batch1": {
+      "status": "batch-1 seed approved by user (keep scary, not cute)",
+      "batch": 1,
+      "width": 240,
+      "height": 176,
+      "frames": 12,
+      "seed": 111301,
+      "animSeed": 111401,
+      "placement": "summon point (anchor = feet of the colossus)",
+      "description": "GIANT PHAYON COLOSSUS grand summon VFX, classic elevated three-quarter MMORPG view: a large ornate crimson ritual ellipse flat on the ground with nested stepped rings and lotus-petal arches, a massive pillar of purple and crimson spirit fire erupting upward from it, swirling clay boulders and talisman strips spinning up in the pillar, violet flames ringing the ellipse, thick dark violet smoke billowing outward along the ground, crimson embers raining. Majestic and overwhelming. The pillar interior is open where a giant golden clay colossus will stand. Ominous Thai horror-folklore atmosphere, eerie and dread-filled, dark and unsettling, NOT cute, NOT chibi, NOT cartoonish, no round cartoon ghosts. Thai occult fantasy style, crimson red and deep purple theme with violet fire and dark violet mist, crisp deliberate pixel clusters, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no pentagram, no Western runes, no readable script, no character unless stated, no floor texture, no text.",
+      "action": "The great ellipse ignites ring by ring, a towering pillar of purple and crimson fire erupts, clay boulders and talisman strips spiral upward, flames ring the edge and smoke billows outward, then the pillar collapses into embers and smoke. Same palette, transparent background."
+    },
+    "underworld-soul-pull-batch1": {
+      "status": "batch-1 seed approved by user (keep scary, not cute)",
+      "batch": 1,
+      "width": 256,
+      "height": 160,
+      "frames": 12,
+      "seed": 111401,
+      "animSeed": 111501,
+      "placement": "zone (anchor = vortex centre on the ground)",
+      "description": "UNDERWORLD SOUL PULL spell VFX, classic elevated three-quarter MMORPG view: a huge dark purple underworld VORTEX lying flat on the ground as a wide ellipse, spiral arms of violet mist and crimson light twisting inward to a deep dark centre, pale violet soul flames being sucked along the spiral arms, crimson knot seals around the rim, violet flames and dark smoke at the edge. Ominous Thai horror-folklore atmosphere, eerie and dread-filled, dark and unsettling, NOT cute, NOT chibi, NOT cartoonish, no round cartoon ghosts. Thai occult fantasy style, crimson red and deep purple theme with violet fire and dark violet mist, crisp deliberate pixel clusters, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no pentagram, no Western runes, no readable script, no character unless stated, no floor texture, no text.",
+      "action": "The vortex spins faster and faster, spiral arms twist inward, soul flames are dragged along the arms into the dark centre, the rim flames flare, then the vortex collapses inward with a crimson flash. Same palette, transparent background."
+    },
+    "ghost-possession-batch1": {
+      "status": "batch-1 seed approved by user (keep scary, not cute)",
+      "batch": 1,
+      "width": 128,
+      "height": 160,
+      "frames": 12,
+      "seed": 111501,
+      "animSeed": 111601,
+      "placement": "self aura loop while the buff lasts (anchor = caster feet)",
+      "description": "GHOST POSSESSION aura VFX, classic elevated three-quarter MMORPG view: dark violet prai spirit smoke coiling upward around an EMPTY human-sized central space, a faint translucent long-haired prai spirit maiden silhouette hovering behind the space with flowing black-violet hair, small crimson sparks and violet embers rising, a soft crimson glow ring at the bottom. Subtle, eerie, readable, the centre stays open. Ominous Thai horror-folklore atmosphere, eerie and dread-filled, dark and unsettling, NOT cute, NOT chibi, NOT cartoonish, no round cartoon ghosts. Thai occult fantasy style, crimson red and deep purple theme with violet fire and dark violet mist, crisp deliberate pixel clusters, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no pentagram, no Western runes, no readable script, no character unless stated, no floor texture, no text.",
+      "action": "The prai smoke coils slowly upward around the centre in a calm loop, the spirit maiden silhouette sways gently and her hair flows, embers rise, the glow ring breathes softly. Same palette, transparent background."
+    },
+    "shadow-snare-batch1": {
+      "status": "batch-1 seed approved by user (keep scary, not cute)",
+      "batch": 1,
+      "width": 128,
+      "height": 96,
+      "frames": 12,
+      "seed": 111601,
+      "animSeed": 111701,
+      "placement": "target feet (anchor = target feet)",
+      "description": "SHADOW SNARE spell VFX, classic elevated three-quarter MMORPG view: several dark violet smoky shadow hands rising from a small dark crimson ellipse on the ground, the hands reaching up and gripping around an EMPTY space where a character stands, wisps of violet mist, crimson sparks. Eerie but not gore. Ominous Thai horror-folklore atmosphere, eerie and dread-filled, dark and unsettling, NOT cute, NOT chibi, NOT cartoonish, no round cartoon ghosts. Thai occult fantasy style, crimson red and deep purple theme with violet fire and dark violet mist, crisp deliberate pixel clusters, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no pentagram, no Western runes, no readable script, no character unless stated, no floor texture, no text.",
+      "action": "Shadow hands burst up from the crimson ellipse and clamp around the centre, holding tight and trembling, mist swirls, then they slowly sink back into the ground. Same palette, transparent background."
+    },
+    "prai-curse-explosion-batch1": {
+      "status": "batch-1 seed approved by user (keep scary, not cute)",
+      "batch": 1,
+      "width": 160,
+      "height": 160,
+      "frames": 12,
+      "seed": 111701,
+      "animSeed": 111801,
+      "placement": "target (anchor = target feet)",
+      "description": "PRAI CURSE EXPLOSION spell VFX, classic elevated three-quarter MMORPG view: a powerful burst of crimson and purple curse energy around an EMPTY central space, crimson knot seals shattering into fragments, jagged violet lightning arcs, a flat crimson shock ring on the ground, dark violet smoke puffs, rose-pink sparks flying outward. Dramatic and powerful. Ominous Thai horror-folklore atmosphere, eerie and dread-filled, dark and unsettling, NOT cute, NOT chibi, NOT cartoonish, no round cartoon ghosts. Thai occult fantasy style, crimson red and deep purple theme with violet fire and dark violet mist, crisp deliberate pixel clusters, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no pentagram, no Western runes, no readable script, no character unless stated, no floor texture, no text.",
+      "action": "Crimson knot seals glow, crack and shatter outward in a burst of purple and crimson energy, lightning arcs crackle, the ground ring flashes outward, smoke puffs, sparks scatter and fade. Same palette, transparent background."
+    },
+    "shadow-ghost-avatar-batch1": {
+      "status": "batch-1 seed approved by user (keep scary, not cute)",
+      "batch": 1,
+      "width": 160,
+      "height": 192,
+      "frames": 12,
+      "seed": 111801,
+      "animSeed": 111901,
+      "placement": "self aura loop while the form lasts (anchor = caster feet)",
+      "description": "SHADOW GHOST AVATAR aura VFX, classic elevated three-quarter MMORPG view: a towering dark violet shadow flame aura burning upward around an EMPTY human-sized central space, two great wing-like sweeps of black-violet smoke spreading behind, a large faint shadowy long-haired prai maiden figure looming above, crimson ember sparks rising, a dark crimson glow ring on the ground. Powerful, dark and majestic, the centre stays open. Ominous Thai horror-folklore atmosphere, eerie and dread-filled, dark and unsettling, NOT cute, NOT chibi, NOT cartoonish, no round cartoon ghosts. Thai occult fantasy style, crimson red and deep purple theme with violet fire and dark violet mist, crisp deliberate pixel clusters, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no pentagram, no Western runes, no readable script, no character unless stated, no floor texture, no text.",
+      "action": "The shadow flames burn and flicker upward in a loop, the smoke wings slowly spread and fold, the looming prai figure sways with flowing hair, embers rise, the ground ring pulses. Same palette, transparent background."
+    },
+    "absolute-soul-defense-batch1": {
+      "status": "batch-1 seed approved by user (keep scary, not cute)",
+      "batch": 1,
+      "width": 160,
+      "height": 192,
+      "frames": 12,
+      "seed": 111901,
+      "animSeed": 112001,
+      "placement": "self (anchor = caster feet)",
+      "description": "ABSOLUTE SOUL DEFENSE spell VFX, classic elevated three-quarter MMORPG view: a translucent pale violet long-haired prai spirit maiden appearing behind an EMPTY human-sized central space with her arms wrapped protectively around it, a cracking dome-shaped shell of violet light shattering into shards, a crimson revival flare rising from the ground ring, rose-pink sparks. Protective and dramatic, the centre stays open. Ominous Thai horror-folklore atmosphere, eerie and dread-filled, dark and unsettling, NOT cute, NOT chibi, NOT cartoonish, no round cartoon ghosts. Thai occult fantasy style, crimson red and deep purple theme with violet fire and dark violet mist, crisp deliberate pixel clusters, transparent background, empty transparent margins on every side, no blood, no gore, no skulls, no pentagram, no Western runes, no readable script, no character unless stated, no floor texture, no text.",
+      "action": "The prai spirit maiden appears and embraces the centre, the violet shell takes the blow and shatters into shards, a crimson revival flare rises, sparks drift and the maiden fades away. Same palette, transparent background."
+    },
+    "sacred-thread-barrier-pre-thai": {
+      "width": 192,
+      "height": 128,
+      "frames": 12,
+      "seed": 110111,
+      "animSeed": 110201,
+      "placement": "zone (anchor = zone centre on the ground)",
+      "description": "SACRED THREAD BARRIER ground ward VFX. Camera: classic elevated three-quarter top-down MMORPG view looking straight north, NOT isometric. The ward is an AXIS-ALIGNED RECTANGLE lying flat on the ground: its FRONT edge is a perfectly HORIZONTAL straight line along the bottom, its BACK edge is a perfectly HORIZONTAL straight line near the top, the left and right edges are nearly vertical lines, like a flat rectangle seen from above at an angle, wider than tall. It is NOT rotated, NOT a diamond, NOT a rhombus, no corner points at the top or bottom centre. Four short carved antique-bronze ritual stakes stand upright at the four corners (two at the bottom left and right, two at the top left and right). A single taut cream-white sacred cotton thread runs low between the stakes along the four sides, small woven stepped knots and tiny tassels tied along it, faint antique-gold glow along the thread, a few small gold motes rising. The interior is EMPTY and fully transparent, no floor, no fill. Original fictional ornament only, no readable script, no religious symbols. Weathered antique gold, bronze, cream thread palette, crisp deliberate pixel clusters, transparent background, at least 10 pixels of empty margin on every side, no character, no text.",
+      "action": "The sacred thread draws itself around the rectangle starting from the front-left stake, running along each side until the boundary closes, the woven knots light up one by one in antique gold, a gentle gold shimmer pulses along the thread, then it settles into a calm steady faint glow. The interior stays empty and transparent, the boundary stays flat on the ground, same palette, transparent background.",
+      "rejectedSeeds": [
+        {
+          "job": "19c8fc36-cd13-4b2c-ba33-5c3a1a08b14b",
+          "reason": "45-degree diamond"
+        }
+      ]
+    },
+    "terrorize-howl-pre-thai": {
+      "status": "seed #3 softened wording, awaiting user approval",
+      "width": 224,
+      "height": 144,
+      "frames": 12,
+      "seed": 110521,
+      "animSeed": 110601,
+      "placement": "self (anchor = caster feet, centre of the wave), drawn under and around the actor; Mass Fear reuses it scaled up",
+      "description": "TERRORIZE HOWL spell VFX for a classic elevated three-quarter fantasy RPG view: a powerful spirit SOUND WAVE spreading outward from an empty centre, lying flat on the ground as a wide horizontal ELLIPSE (about twice as wide as tall). Three separate thin jagged crimson-red ripple rings with gaps between them. Flying outward between the rings: ethereal translucent Thai prai spirit maidens in a folklore fantasy style, pale violet-white glowing figures with very LONG flowing black-violet hair streaming behind them, sorrowful wailing expressions, arms reaching outward, lower bodies trailing into long wisps of smoke (not bedsheet ghosts, not round cartoon ghosts). Tall violet-purple spirit flames rising along the outer ring, dark violet mist rolling outward low along the ground, crimson embers and small purple sparks. The very centre is an empty calm space. Eerie, dramatic and grand fantasy magic, no blood, no skulls, no pentagram, no Western runes, no readable script, no floor texture, no text. Crimson red, deep purple, violet fire, dark violet mist, pale violet spirit glow, black-violet hair, crisp deliberate pixel clusters, transparent background, at least 8 pixels of empty margin on every side.",
+      "action": "The spirit wave spreads from the centre: the first crimson ripple ring expands outward, then the second and third follow, the long-haired prai spirit maidens wail and glide outward with the waves, their long hair flowing behind them, and fade into mist at the rim, violet flames flare up around the outer ring and mist rolls outward along the ground, embers drift, then the waves fade and only drifting mist and a few embers remain. Stay flat on the ground as an ellipse, centre stays empty, same palette, transparent background.",
+      "rejectedSeeds": [
+        {
+          "job": "a199210a-4d9f-44b9-a0a5-8e7896ee8e64",
+          "reason": "Western cartoon sheet ghosts; single solid ring"
+        },
+        {
+          "job": "2870ecef-518b-4160-8ceb-3b3b3392c3bb",
+          "reason": "blocked by PixelLab content policy (wording: violent, terrifying, gaunt screaming face, hollow eyes)"
+        }
+      ]
+    },
+    "soul-drain-pre-thai": {
+      "status": "seed #2 approved by user (soul flames)",
+      "width": 192,
+      "height": 64,
+      "frames": 12,
+      "seed": 110711,
+      "animSeed": 110801,
+      "placement": "tether: horizontal stream, RIGHT end = target, LEFT end = caster; runtime rotates and stretches it between them (like the Spirit Bolt projectile). Soul Harvest / Soul Harvester reuse a short piece at the caster.",
+      "description": "SOUL DRAIN spell VFX, a horizontal side-view magic TETHER BEAM spanning the full width of a wide short canvas: a twisting stream of dark crimson and deep purple spirit energy flowing from the RIGHT end to the LEFT end, made of two or three braided ribbons of violet smoke and crimson light spiralling around each other, three or four small floating SOUL FLAMES being pulled along inside the stream toward the left, each a pale violet-white teardrop will-o-wisp flame with a glowing core and a long flickering tail pointing right, a faint hint of a face only suggested in the flame, NOT cartoon ghosts, NOT round sheet ghosts, no eyes or mouths drawn as cartoon dots, crimson sparks and purple embers trailing off the edges. At the RIGHT end a ragged burst where the soul is torn out (small crimson flare, dark violet mist); at the LEFT end a glowing purple vortex swallowing the stream. Eerie, dramatic fantasy magic in a Thai occult style, no blood, no gore, no skulls, no readable script, no character, no hands, no floor, no text. Crimson red, deep purple, violet mist, pale violet soul glow, crisp deliberate pixel clusters, transparent background, the beam stays inside the canvas with 4 pixels of empty margin top and bottom.",
+      "action": "Spirit energy is ripped out at the right end in a crimson flare and pours leftward: the braided crimson and violet ribbons twist and flow continuously from right to left, pale violet soul flames flicker and are dragged along the stream and swallowed by the swirling purple vortex at the left end, sparks trail off, the flow pulses stronger then thins out. Keep the beam horizontal and the flow direction right to left, same palette, transparent background.",
+      "rejectedSeeds": [
+        {
+          "job": "e1c6ee87-28d6-42ad-b551-5dfae5e0b8d2",
+          "reason": "cartoon round ghosts"
+        }
+      ]
+    },
+    "prai-whispering-curse-pre-thai": {
+      "width": 128,
+      "height": 160,
+      "frames": 12,
+      "seed": 110301,
+      "animSeed": 110401,
+      "placement": "target (anchor = target feet)",
+      "description": "PRAI WHISPERING CURSE spell VFX for a classic elevated three-quarter MMORPG view: thin dark smoky prai spirit wisps in muted dark crimson and deep violet-black curl and spiral upward around an EMPTY human-sized central space, two or three faint pale translucent whispering ghost mouths and hollow eyes half-formed inside the wisps, tiny dark crimson stepped knot seals and frayed crimson thread fragments drifting in the smoke, small dim ember sparks. The centre is open and transparent so a character stays readable. Eerie and restrained, not gore, no skull icons, no Western runes, no pentagram, no readable script. Muted dark crimson, deep violet-black, dim bone-white highlights palette, crisp pixel clusters, transparent background, at least 8 pixels of empty margin on every side, no character, no floor, no text.",
+      "action": "Whispering prai wisps slither in from the sides and coil upward around the empty centre, the faint ghost mouths open as if whispering then dissolve, the crimson knot seals tighten into the smoke, then the wisps thin out into a few slow drifting dark embers. Keep the centre empty, same palette, transparent background."
+    }
+  }
+}

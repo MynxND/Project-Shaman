@@ -1,0 +1,2 @@
+# White and gray palette split
+User requests true white and renames former white to gray. Shared SSR gray ramp preserves exact former white colours; new white ramp uses neutral bright mids and white highlights. Candidate white previews rebuilt from proven black/gold colour masks; former previews preserved byte-for-byte as gray. Face previews are additive variants using actual composed hair coverage; source face PNGs and approvals untouched. Inspector defaults to new white and offers gray. No generation, credits0. Visual acceptance pending.

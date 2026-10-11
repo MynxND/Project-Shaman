@@ -1,0 +1,153 @@
+{
+  "version": "ssr/1",
+  "id": "face.violet-sharp-eight-01",
+  "kind": "face",
+  "variant": "violet-sharp",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": false,
+  "images": [
+    {
+      "id": "violet-sharp-south-patch",
+      "url": "/assets/ssr/candidates/face-eight-02/violet-sharp-south-patch.png",
+      "sha256": "f767952e9155691be6e00957a603991a8e13f575b01f88d8bd71c7f84ec74e17",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "violet-sharp-south-east-patch",
+      "url": "/assets/ssr/candidates/face-eight-02/violet-sharp-south-east-patch.png",
+      "sha256": "29ff39fe95197ff87bc48b4e838d6ac452a5b4842705990c28ac757d0ff7f4e3",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "violet-sharp-east-patch",
+      "url": "/assets/ssr/candidates/face-eight-02/violet-sharp-east-patch.png",
+      "sha256": "5f66a295cf3cbd6b00560d24e5e508805694cdb023ce9ea084fde0fb1b0bc818",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "violet-sharp-south-patch",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "1": {
+      "action": "idle",
+      "direction": "south-west",
+      "intervalMs": 1000,
+      "mirrorOf": 7
+    },
+    "2": {
+      "action": "idle",
+      "direction": "west",
+      "intervalMs": 1000,
+      "mirrorOf": 6
+    },
+    "3": {
+      "action": "idle",
+      "direction": "north-west",
+      "intervalMs": 1000,
+      "mirrorOf": 5
+    },
+    "4": {
+      "action": "idle",
+      "direction": "north",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [],
+          "anchors": {
+            "neck": {
+              "x": 64,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "5": {
+      "action": "idle",
+      "direction": "north-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "6": {
+      "action": "idle",
+      "direction": "east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "violet-sharp-east-patch",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "7": {
+      "action": "idle",
+      "direction": "south-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "violet-sharp-south-east-patch",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 65,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Exact approved FRONT, new SE/E; SW/W mirror right; back views contain no visible face overlay."
+}

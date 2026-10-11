@@ -1,0 +1,25 @@
+{
+    "jsonrpc":  "2.0",
+    "id":  40,
+    "result":  {
+                   "content":  [
+                                   {
+                                       "type":  "text",
+                                       "text":  "{\n  \"background_job_id\": \"f2653cb1-90d7-4dc1-815c-ec9a5949ae17\",\n  \"character_id\": \"575b6ea1-401e-48e7-ae6c-fc611bc85769\",\n  \"status\": \"processing\",\n  \"first_direction_generated\": false,\n  \"estimated_generations\": 2,\n  \"job_id\": \"f2653cb1-90d7-4dc1-815c-ec9a5949ae17\",\n  \"n_directions\": 8,\n  \"poll_tool\": \"get_character\",\n  \"status_path\": \"/v2/background-jobs/f2653cb1-90d7-4dc1-815c-ec9a5949ae17\",\n  \"download_path\": \"/mcp/characters/575b6ea1-401e-48e7-ae6c-fc611bc85769/download\"\n}\nid: 575b6ea1-401e-48e7-ae6c-fc611bc85769\nPoll get_character(character_id=\"575b6ea1-401e-48e7-ae6c-fc611bc85769\") or /v2/background-jobs/f2653cb1-90d7-4dc1-815c-ec9a5949ae17; wait for the outer job to complete before downloading or animating. The selected first direction is reused without another image charge. Only V3 rotations are billed."
+                                   }
+                               ],
+                   "structuredContent":  {
+                                             "background_job_id":  "f2653cb1-90d7-4dc1-815c-ec9a5949ae17",
+                                             "character_id":  "575b6ea1-401e-48e7-ae6c-fc611bc85769",
+                                             "status":  "processing",
+                                             "first_direction_generated":  false,
+                                             "estimated_generations":  2,
+                                             "job_id":  "f2653cb1-90d7-4dc1-815c-ec9a5949ae17",
+                                             "n_directions":  8,
+                                             "poll_tool":  "get_character",
+                                             "status_path":  "/v2/background-jobs/f2653cb1-90d7-4dc1-815c-ec9a5949ae17",
+                                             "download_path":  "/mcp/characters/575b6ea1-401e-48e7-ae6c-fc611bc85769/download"
+                                         },
+                   "isError":  false
+               }
+}

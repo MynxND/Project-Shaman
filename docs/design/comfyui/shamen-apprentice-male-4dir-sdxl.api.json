@@ -1,0 +1,566 @@
+{
+  "1": {
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "SDXL base"
+    },
+    "inputs": {
+      "ckpt_name": "sd_xl_base_1.0.safetensors"
+    }
+  },
+  "2": {
+    "class_type": "LoraLoader",
+    "_meta": {
+      "title": "Pixel Art XL"
+    },
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "clip": [
+        "1",
+        1
+      ],
+      "lora_name": "pixel-art-xl.safetensors",
+      "strength_model": 1,
+      "strength_clip": 1
+    }
+  },
+  "3": {
+    "class_type": "IPAdapterUnifiedLoader",
+    "_meta": {
+      "title": "IP-Adapter PLUS SDXL"
+    },
+    "inputs": {
+      "model": [
+        "2",
+        0
+      ],
+      "preset": "PLUS (high strength)"
+    }
+  },
+  "4": {
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Canvas 896x1152 (/8 = 112x144), shared by all directions"
+    },
+    "inputs": {
+      "width": 896,
+      "height": 1152,
+      "batch_size": 2
+    }
+  },
+  "20": {
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Reference down: Shamen base male front"
+    },
+    "inputs": {
+      "image": "shamen-base-male-front.png"
+    }
+  },
+  "21": {
+    "class_type": "IPAdapterAdvanced",
+    "_meta": {
+      "title": "IP-Adapter down"
+    },
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "ipadapter": [
+        "3",
+        1
+      ],
+      "image": [
+        "20",
+        0
+      ],
+      "weight": 0.7,
+      "weight_type": "linear",
+      "combine_embeds": "concat",
+      "start_at": 0,
+      "end_at": 0.85,
+      "embeds_scaling": "V only"
+    }
+  },
+  "22": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive down"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        1
+      ],
+      "text": "pixel art, solo, one single character centered, (chibi:1.3), (big head:1.2), about 3 heads tall, full body game sprite, original Global Shaman base character, young boy, spiky messy silver-white hair, red-brown eyes, calm face, dark chocolate brown baggy trousers, apprentice shaman outfit, layered cream long-sleeve tunic with embroidered cuffs, short fur-trimmed shoulder mantle, dark moss green vest, saturated brick red cloth sash with round bronze amulet buckle, hanging woven green and gold patterned apron panel, red prayer ribbons and small feather charm in hair, leather sandals with wrapped ankle cloth, three-quarter front view facing the viewer, standing idle, feet visible, soft cel shading, thin dark outlines, rich warm earthy palette, strong contrast, classic 2000s MMORPG character sprite, plain white background, no ground shadow"
+    }
+  },
+  "23": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative down"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        1
+      ],
+      "text": "tall, long legs, slender, realistic proportions, (multiple characters:1.3), (character sheet:1.3), sprite sheet, turnaround, multiple views, reference sheet, separate weapon, item icons, 3d render, realistic, photo, blurry, painterly, text, watermark, logo, cropped, cut off feet, extra limbs, busy background, scenery, floor, (pastel:1.2), (washed out:1.2), pink tint, desaturated, (ground shadow:1.3), drop shadow, cast shadow, modern clothes, armor"
+    }
+  },
+  "24": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "Sampler down (same seed for every direction)"
+    },
+    "inputs": {
+      "model": [
+        "21",
+        0
+      ],
+      "positive": [
+        "22",
+        0
+      ],
+      "negative": [
+        "23",
+        0
+      ],
+      "latent_image": [
+        "4",
+        0
+      ],
+      "seed": 309,
+      "steps": 28,
+      "cfg": 6,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 1
+    }
+  },
+  "25": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "24",
+        0
+      ],
+      "vae": [
+        "1",
+        2
+      ]
+    }
+  },
+  "26": {
+    "class_type": "ImageScale",
+    "_meta": {
+      "title": "Pixel grid 112x144 (nearest, /8)"
+    },
+    "inputs": {
+      "image": [
+        "25",
+        0
+      ],
+      "upscale_method": "nearest-exact",
+      "width": 112,
+      "height": 144,
+      "crop": "disabled"
+    }
+  },
+  "27": {
+    "class_type": "ShamanPixelColorBoost",
+    "_meta": {
+      "title": "Color boost"
+    },
+    "inputs": {
+      "image": [
+        "26",
+        0
+      ],
+      "saturation": 1.15,
+      "contrast": 1.1
+    }
+  },
+  "28": {
+    "class_type": "ShamanPixelBackgroundKey",
+    "_meta": {
+      "title": "Remove background + ground shadow"
+    },
+    "inputs": {
+      "image": [
+        "27",
+        0
+      ],
+      "tolerance": 0.12,
+      "remove_ground_shadow": true,
+      "shadow_rows": 0.3
+    }
+  },
+  "29": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save down 112x144 RGBA"
+    },
+    "inputs": {
+      "images": [
+        "28",
+        0
+      ],
+      "filename_prefix": "shaman/apprentice_male_down"
+    }
+  },
+  "30": {
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Reference left: Shamen base male side"
+    },
+    "inputs": {
+      "image": "shamen-base-male-side.png"
+    }
+  },
+  "31": {
+    "class_type": "IPAdapterAdvanced",
+    "_meta": {
+      "title": "IP-Adapter left"
+    },
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "ipadapter": [
+        "3",
+        1
+      ],
+      "image": [
+        "30",
+        0
+      ],
+      "weight": 0.75,
+      "weight_type": "linear",
+      "combine_embeds": "concat",
+      "start_at": 0,
+      "end_at": 0.85,
+      "embeds_scaling": "V only"
+    }
+  },
+  "32": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive left"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        1
+      ],
+      "text": "pixel art, solo, one single character centered, (chibi:1.3), (big head:1.2), about 3 heads tall, full body game sprite, original Global Shaman base character, young boy, spiky messy silver-white hair, red-brown eyes, calm face, dark chocolate brown baggy trousers, apprentice shaman outfit, layered cream long-sleeve tunic with embroidered cuffs, short fur-trimmed shoulder mantle, dark moss green vest, saturated brick red cloth sash with round bronze amulet buckle, hanging woven green and gold patterned apron panel, red prayer ribbons and small feather charm in hair, leather sandals with wrapped ankle cloth, (side view:1.3), profile, body and face turned to the left, standing idle, feet visible, soft cel shading, thin dark outlines, rich warm earthy palette, strong contrast, classic 2000s MMORPG character sprite, plain white background, no ground shadow"
+    }
+  },
+  "33": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative left"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        1
+      ],
+      "text": "tall, long legs, slender, realistic proportions, (multiple characters:1.3), (character sheet:1.3), sprite sheet, turnaround, multiple views, reference sheet, separate weapon, item icons, 3d render, realistic, photo, blurry, painterly, text, watermark, logo, cropped, cut off feet, extra limbs, busy background, scenery, floor, (pastel:1.2), (washed out:1.2), pink tint, desaturated, (ground shadow:1.3), drop shadow, cast shadow, modern clothes, armor, front view, facing the viewer"
+    }
+  },
+  "34": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "Sampler left (same seed for every direction)"
+    },
+    "inputs": {
+      "model": [
+        "31",
+        0
+      ],
+      "positive": [
+        "32",
+        0
+      ],
+      "negative": [
+        "33",
+        0
+      ],
+      "latent_image": [
+        "4",
+        0
+      ],
+      "seed": 309,
+      "steps": 28,
+      "cfg": 6,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 1
+    }
+  },
+  "35": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "34",
+        0
+      ],
+      "vae": [
+        "1",
+        2
+      ]
+    }
+  },
+  "36": {
+    "class_type": "ImageScale",
+    "_meta": {
+      "title": "Pixel grid 112x144 (nearest, /8)"
+    },
+    "inputs": {
+      "image": [
+        "35",
+        0
+      ],
+      "upscale_method": "nearest-exact",
+      "width": 112,
+      "height": 144,
+      "crop": "disabled"
+    }
+  },
+  "37": {
+    "class_type": "ShamanPixelColorBoost",
+    "_meta": {
+      "title": "Color boost"
+    },
+    "inputs": {
+      "image": [
+        "36",
+        0
+      ],
+      "saturation": 1.15,
+      "contrast": 1.1
+    }
+  },
+  "38": {
+    "class_type": "ShamanPixelBackgroundKey",
+    "_meta": {
+      "title": "Remove background + ground shadow"
+    },
+    "inputs": {
+      "image": [
+        "37",
+        0
+      ],
+      "tolerance": 0.12,
+      "remove_ground_shadow": true,
+      "shadow_rows": 0.3
+    }
+  },
+  "39": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save left 112x144 RGBA"
+    },
+    "inputs": {
+      "images": [
+        "38",
+        0
+      ],
+      "filename_prefix": "shaman/apprentice_male_left"
+    }
+  },
+  "40": {
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Reference up: Shamen base male back"
+    },
+    "inputs": {
+      "image": "shamen-base-male-back.png"
+    }
+  },
+  "41": {
+    "class_type": "IPAdapterAdvanced",
+    "_meta": {
+      "title": "IP-Adapter up"
+    },
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "ipadapter": [
+        "3",
+        1
+      ],
+      "image": [
+        "40",
+        0
+      ],
+      "weight": 0.75,
+      "weight_type": "linear",
+      "combine_embeds": "concat",
+      "start_at": 0,
+      "end_at": 0.85,
+      "embeds_scaling": "V only"
+    }
+  },
+  "42": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive up"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        1
+      ],
+      "text": "pixel art, solo, one single character centered, (chibi:1.3), (big head:1.2), about 3 heads tall, full body game sprite, original Global Shaman base character, young boy, spiky messy silver-white hair, red-brown eyes, calm face, dark chocolate brown baggy trousers, apprentice shaman outfit, layered cream long-sleeve tunic with embroidered cuffs, short fur-trimmed shoulder mantle, dark moss green vest, saturated brick red cloth sash with round bronze amulet buckle, hanging woven green and gold patterned apron panel, red prayer ribbons and small feather charm in hair, leather sandals with wrapped ankle cloth, (back view:1.4), seen from behind, facing away from the viewer, back of the head visible, standing idle, feet visible, soft cel shading, thin dark outlines, rich warm earthy palette, strong contrast, classic 2000s MMORPG character sprite, plain white background, no ground shadow"
+    }
+  },
+  "43": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative up"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        1
+      ],
+      "text": "tall, long legs, slender, realistic proportions, (multiple characters:1.3), (character sheet:1.3), sprite sheet, turnaround, multiple views, reference sheet, separate weapon, item icons, 3d render, realistic, photo, blurry, painterly, text, watermark, logo, cropped, cut off feet, extra limbs, busy background, scenery, floor, (pastel:1.2), (washed out:1.2), pink tint, desaturated, (ground shadow:1.3), drop shadow, cast shadow, modern clothes, armor, (face:1.3), eyes, front view, facing the viewer"
+    }
+  },
+  "44": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "Sampler up (same seed for every direction)"
+    },
+    "inputs": {
+      "model": [
+        "41",
+        0
+      ],
+      "positive": [
+        "42",
+        0
+      ],
+      "negative": [
+        "43",
+        0
+      ],
+      "latent_image": [
+        "4",
+        0
+      ],
+      "seed": 309,
+      "steps": 28,
+      "cfg": 6,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 1
+    }
+  },
+  "45": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "44",
+        0
+      ],
+      "vae": [
+        "1",
+        2
+      ]
+    }
+  },
+  "46": {
+    "class_type": "ImageScale",
+    "_meta": {
+      "title": "Pixel grid 112x144 (nearest, /8)"
+    },
+    "inputs": {
+      "image": [
+        "45",
+        0
+      ],
+      "upscale_method": "nearest-exact",
+      "width": 112,
+      "height": 144,
+      "crop": "disabled"
+    }
+  },
+  "47": {
+    "class_type": "ShamanPixelColorBoost",
+    "_meta": {
+      "title": "Color boost"
+    },
+    "inputs": {
+      "image": [
+        "46",
+        0
+      ],
+      "saturation": 1.15,
+      "contrast": 1.1
+    }
+  },
+  "48": {
+    "class_type": "ShamanPixelBackgroundKey",
+    "_meta": {
+      "title": "Remove background + ground shadow"
+    },
+    "inputs": {
+      "image": [
+        "47",
+        0
+      ],
+      "tolerance": 0.12,
+      "remove_ground_shadow": true,
+      "shadow_rows": 0.3
+    }
+  },
+  "49": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save up 112x144 RGBA"
+    },
+    "inputs": {
+      "images": [
+        "48",
+        0
+      ],
+      "filename_prefix": "shaman/apprentice_male_up"
+    }
+  },
+  "50": {
+    "class_type": "ImageFlip",
+    "_meta": {
+      "title": "Right = mirrored left"
+    },
+    "inputs": {
+      "image": [
+        "38",
+        0
+      ],
+      "flip_method": "y-axis: horizontally"
+    }
+  },
+  "51": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save right 112x144 RGBA"
+    },
+    "inputs": {
+      "images": [
+        "50",
+        0
+      ],
+      "filename_prefix": "shaman/apprentice_male_right"
+    }
+  }
+}

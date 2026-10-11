@@ -1,0 +1,2 @@
+# Cold far-eye perspective adjustment 03
+User requests reducing the protruding far eye in SE/SW relative to the original face. Free PixelLab guarded patch edits four native pixels at outer eye/sclera edge; existing generated eyelid and iris retained. SW mirrors SE. No paid generation or retry. FRONT and all other directions/styles frozen. Prior 02 remains rejected. Candidate awaits visual approval.

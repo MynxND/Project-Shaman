@@ -1,0 +1,174 @@
+{
+  "status": "proposal 2026-10-09; prompts and art await user review",
+  "rules": "128 px canvas like the main character (same density), three-quarter view facing right (mirrored for left), feet/lowest point at bottom centre, Thai folklore identity, no third-party references.",
+  "monsters": {
+    "leaf-wisp": {
+      "seed": 310101,
+      "seedUrl": "https://api.pixellab.ai/mcp/images/0c5091d8-a514-4b94-b2ba-c18264509753/download",
+      "prompt": "LEAF WISP (ภูตใบไม้), a small harmless Thai forest spirit about half the height of the reference character: a round curled bundle of overlapping green and pale gold heart-shaped leaves wrapped around a softly glowing jade spirit core, two tiny dark bead eyes peeking between the leaves, a short curling leaf tail and two small leaf wings, hovering a little above the ground, gentle and curious, muted forest greens with jade glow and antique gold leaf edges",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "action": "gently bobbing up and down in the air while the leaves rustle softly, slow calm hover loop, stays in place"
+        },
+        "move": {
+          "frames": 8,
+          "action": "floating forward to the right with a soft bobbing drift, leaf wings fluttering, tail swaying"
+        },
+        "attack": {
+          "frames": 8,
+          "action": "winds up by curling its leaves inward, then lunges forward to the right and slaps with a burst of spinning leaves, then returns to its hover pose"
+        },
+        "hurt": {
+          "frames": 4,
+          "action": "flinches backward to the left from a hit, leaves ruffled, jade core flickers dimmer, then recovers"
+        },
+        "death": {
+          "frames": 8,
+          "action": "the leaves come loose and scatter downward, the jade core fades out into a few drifting green motes until nothing is left"
+        }
+      },
+      "size": 128
+    },
+    "cursed-strawling": {
+      "seed": 310201,
+      "size": 128,
+      "prompt": "CURSED STRAWLING (หุ่นฟางต้องคำสาป), a hunched walking straw effigy doll about two thirds of the reference character height, bundled dry straw body bound tightly with faded red sacred thread at the neck, waist, wrists and ankles, two or three pinned blank yellowed paper strips fluttering on its chest, a stitched burlap sack face with mismatched button eyes and a crooked stitched mouth, stubby straw arms and legs, dry straw yellows, faded crimson thread and burlap browns",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "action": "standing in place swaying slowly side to side, straw bristling, paper strips fluttering, slow eerie idle loop"
+        },
+        "move": {
+          "frames": 8,
+          "action": "shambling walk forward to the right with stiff jerky steps, straw arms swinging limply, paper strips flapping"
+        },
+        "attack": {
+          "frames": 8,
+          "action": "slowly raises one straw arm high, pauses, then swings it down hard in a heavy overhead slap toward the right, then recovers to standing"
+        },
+        "hurt": {
+          "frames": 4,
+          "action": "jolts backward to the left from a hit, loose straw bits flying off, then steadies"
+        },
+        "death": {
+          "frames": 8,
+          "action": "the red threads snap, the straw body slumps and falls apart into a loose pile of straw and paper that settles and fades"
+        }
+      },
+      "seedUrl": "https://api.pixellab.ai/mcp/images/b05a1234-73b6-446c-a7b1-8bd81397c8b6/download"
+    },
+    "spirit-flame": {
+      "seed": 310301,
+      "size": 128,
+      "prompt": "WANDERING SPIRIT FLAME (ผีไฟ), a drifting will-o-the-wisp of cool blue-green ghost fire about half the reference character height, floating above the ground, a faint hollow mask-like face inside the flame with two dark eye holes and an open mouth, tall flickering flame tongues on top, a wispy tapering flame tail below, a few small trailing sparks, translucent cold teal and pale jade glow with darker blue edges",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "action": "hovering in place with flickering flame tongues and a gently bobbing body, slow ghostly idle loop"
+        },
+        "move": {
+          "frames": 8,
+          "action": "drifting forward to the right through the air, flame tail trailing behind, flames leaning back"
+        },
+        "attack": {
+          "frames": 8,
+          "action": "flame swells and the mouth opens wide, then it spits a small ghost-fire orb forward to the right with a recoil, then settles back"
+        },
+        "hurt": {
+          "frames": 4,
+          "action": "flame flickers and shrinks back to the left from a hit, sparks scatter, then flares back"
+        },
+        "death": {
+          "frames": 8,
+          "action": "the flame sputters, shrinks, splits into a few small embers that rise and fade out until nothing remains"
+        }
+      },
+      "seedUrl": "https://api.pixellab.ai/mcp/images/f8556986-86c1-4b91-9a03-4642acfb6546/download"
+    },
+    "shadow-macaque": {
+      "seed": 310401,
+      "size": 128,
+      "prompt": "SHADOW MACAQUE (ลิงเงา), a lean crouching temple macaque monkey about sixty percent of the reference character height, dark smoky charcoal fur that frays into wisps of shadow at the tail tip and paws, glowing ember-orange eyes, bared fangs, long arms, a torn red string necklace with a cracked small clay amulet, quick predatory crouched stance on all fours, charcoal greys and smoky purple with ember orange accents",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "action": "crouched in place, breathing quickly, tail flicking, head darting around alertly, restless idle loop"
+        },
+        "move": {
+          "frames": 8,
+          "action": "fast loping run forward to the right on all fours, tail streaming behind"
+        },
+        "attack": {
+          "frames": 8,
+          "action": "crouches low then leaps forward to the right and rakes with both claws in a quick double swipe, then lands back in a crouch"
+        },
+        "hurt": {
+          "frames": 4,
+          "action": "yelps and recoils backward to the left from a hit, fur bristling, then crouches again"
+        },
+        "death": {
+          "frames": 8,
+          "action": "staggers, collapses on its side and dissolves into drifting wisps of dark shadow that fade away completely"
+        }
+      },
+      "seedUrl": "https://api.pixellab.ai/mcp/images/258f8978-2f24-440d-827b-62fae2167e5e/download"
+    },
+    "clay-guardian": {
+      "seed": 310501,
+      "size": 128,
+      "prompt": "CLAY GUARDIAN (ทวารบาลดินเผา), a squat heavy terracotta temple guardian statue come alive, about the reference character height but much broader and heavier, cracked fired-clay body with moss and small roots growing in the cracks, a simple carved tiered crown, a stern carved face with softly glowing jade eyes, huge blocky fists, thick stumpy legs, weathered ochre, brick red and terracotta clay with green moss",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "action": "standing heavily in place, shoulders rising and falling slowly, small dust motes falling from the cracks, slow idle loop"
+        },
+        "move": {
+          "frames": 8,
+          "action": "slow heavy stomping walk forward to the right, whole body rocking with each step, dust puffing at the feet"
+        },
+        "attack": {
+          "frames": 8,
+          "action": "lifts both huge fists high above its head, holds, then smashes them down onto the ground in front to the right with a heavy impact, then straightens up slowly"
+        },
+        "hurt": {
+          "frames": 4,
+          "action": "rocks back to the left from a hit, a few clay chips break off, then steadies"
+        },
+        "death": {
+          "frames": 8,
+          "action": "cracks spread across the whole body, it crumbles apart into a heap of broken terracotta shards and dust that settles and fades"
+        }
+      },
+      "seedUrl": "https://api.pixellab.ai/mcp/images/0a6ea3ba-129b-47cd-83d7-d41897bcf93d/download"
+    },
+    "cursed-rootkeeper": {
+      "seed": 310601,
+      "size": 192,
+      "prompt": "CURSED ROOTKEEPER (เจ้าที่รากไม้ต้องสาป), a mini boss, a towering gnarled banyan tree root spirit nearly twice the reference character height, a hunched body of twisted dark roots and cracked bark wrapped in faded red and yellow sacred cloth strips, its face a weathered carved wooden spirit-house mask with glowing amber eyes, long root arms ending in claw-like tendrils, thick root legs spreading onto the ground, hanging moss and a few dangling blank paper talismans, dark bark browns, faded crimson and saffron cloth, amber eyes",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "action": "standing in place, roots slowly writhing, cloth strips swaying, chest heaving, menacing slow idle loop"
+        },
+        "move": {
+          "frames": 8,
+          "action": "lumbering forward to the right dragging its root legs, roots curling and uncurling with each step"
+        },
+        "attack": {
+          "frames": 8,
+          "action": "rears up and lifts both root arms high, then slams them down into the ground in front to the right, roots burst up from the impact, then it straightens"
+        },
+        "hurt": {
+          "frames": 4,
+          "action": "recoils back to the left from a hit, bark splinters fly, the mask tilts, then it steadies"
+        },
+        "death": {
+          "frames": 8,
+          "action": "dies: the whole body sags, the root legs buckle, it topples forward and collapses flat onto the ground as a heap of withered roots, the mask rolls off, then the heap crumbles and shrinks into dust until almost nothing is left"
+        }
+      },
+      "seedUrl": "https://api.pixellab.ai/mcp/images/aa2e9a82-b6a4-4269-973d-46af484f0270/download"
+    }
+  }
+}

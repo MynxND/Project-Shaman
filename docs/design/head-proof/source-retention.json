@@ -1,0 +1,62 @@
+{
+  "stage": "source-inspection",
+  "approved": false,
+  "sources": {
+    "south": {
+      "strip": "assets/rig-v2/male/base/idle-south.png",
+      "stripSha256": "cbab15d5c78f779b5b346c03b2135502d0c9b2763390b761f201652df8fe45c5",
+      "frame0RgbaSha256": "609c98ee1d8871d15bb38cef34a101a9825f087beea2fe02df66295d2528ff81",
+      "crown": "assets/equipment/hat-ritual/south.png",
+      "crownSha256": "2951faf47ece4defe1921519fe0fb20e4c02948668f4a4f79498331d8bfdf49b",
+      "generated": {
+        "fullNativeCanvas": true,
+        "rawPngSha256": "6875b1ce4275f833e6fd6adfcf27338b0af66fa06f0d802f90f0a4819534bbbe",
+        "unmaskedPixelsVerified": 14702
+      }
+    },
+    "east": {
+      "strip": "assets/rig-v2/male/base/idle-east.png",
+      "stripSha256": "2c72aef150e883d1ef70ea5fa07ace0abc14271049b2b44725496425d32ee67c",
+      "frame0RgbaSha256": "3179c730c8e4a06eac1336cbde7a067062490868644151d8157423986192897d",
+      "crown": "assets/equipment/hat-ritual/east.png",
+      "crownSha256": "b6ff214884c7484b28dc6c75abf4c5e98f9f9e4e502551547803bc65adaf3da7",
+      "generated": {
+        "fullNativeCanvas": true,
+        "rawPngSha256": "6485a346e20126697b5d0cc04c296310ab1890712addb9f191261fb0c72f081a",
+        "unmaskedPixelsVerified": 14215
+      },
+      "bodyCleanup": {
+        "mask": "masks/east-body-cleanup.png",
+        "pixels": 6,
+        "approved": false,
+        "protectedOutsideMaskPixel": [
+          35,
+          73
+        ]
+      }
+    },
+    "north": {
+      "strip": "assets/rig-v2/male/base/idle-north.png",
+      "stripSha256": "9cb7bc9b3a41f8c4815a526f26499009db96104ac4f0c3e8170ee0121173393d",
+      "frame0RgbaSha256": "280e5cc022f9e2a1b8125a0b2f6cc6a8e30ac3b13f0b590d0aa733a78c7dd127",
+      "crown": "assets/equipment/hat-ritual/north.png",
+      "crownSha256": "e8b094f813543a5d9c1618b886d636b77da74212dcaa45f0ffc8bc471cf3c074",
+      "generated": {
+        "fullNativeCanvas": true,
+        "rawPngSha256": "7fc7e12146c8d8327d10a920a333d93de3acead1b4a8573130be2b1bdefa9ca8",
+        "unmaskedPixelsVerified": 13943
+      },
+      "shortCorrection": {
+        "jobId": "5fd50da4-ec4a-445d-aaaa-c534484cdc40",
+        "rawPngSha256": "b5dd6d4f39e402a4f8dfba41e810be4038293b7f10efe1d1934a4e39730d6a27",
+        "request": "prompts/short-north-correction-request.json",
+        "requestSha256": "715ae41e4b2c63d9ead2a77ca4e0ef0b5aafb3fe86648fef1ed8cb055c4060c3",
+        "mask": "masks/north-short-correction-head-only.png",
+        "input": "source-edits/north-short-correction-input.png",
+        "chargedGenerations": 6,
+        "protectedEarNeckOverlap": 0,
+        "approved": false
+      }
+    }
+  }
+}

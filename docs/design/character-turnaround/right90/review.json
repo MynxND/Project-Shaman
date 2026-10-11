@@ -1,0 +1,26 @@
+{
+  "jobId": "1963d87f-6474-472e-bcaa-f8aeaf09d6e3",
+  "status": "rejected",
+  "approved": false,
+  "candidate": null,
+  "method": "reference-guided-native-masked-inpaint",
+  "inspected": ["raw.png", "comparison-native.png", "comparison-2x.png"],
+  "comparedAgainst": [
+    "apps/client/public/assets/rig-v2/male/base/idle-south.png frame0",
+    "apps/client/public/assets/rig-v2/male/base/idle-east.png frame0",
+    "docs/design/character-turnaround/proportion-template.json",
+    "docs/design/comfyui/reference/shamen-base-sheet.webp"
+  ],
+  "observedDefects": [
+    "Output reads front-facing rather than strict right90: paired ears flank the head, no clean right-projecting nose profile, and the face does not hide its far side.",
+    "Both shoulder/arm assemblies remain spread on either side of a broad frontal chest instead of overlapping in a coherent side-depth silhouette.",
+    "Apron remains a broad centered frontal panel with visible central embroidery, not edge-on; shoulder trim and chest ornament arrangement are redrawn rather than a coherent side projection of the preserved front.",
+    "Hair mass and visible costume structure resemble the front but reference copying has replaced the requested direction; resemblance does not establish identity-preserving right90 anatomy.",
+    "Native lowest occupied row122 gives ground edge123, delta-1 against origin/footBaseline124; front lowest row123 and height119 versus raw height118. No translation/scale was used to conceal this."
+  ],
+  "technicalPasses": ["native128", "exact-unmasked-RGBA", "no-mask-escape", "no-sprite-transform", "exact-nearest2x"],
+  "observedLimitation": "This actual boxed-front masked attempt preserved black-mask bytes but failed to follow the explicit right90 anatomy and outfit projection constraints inside the editable region. It is not a reliable candidate. This is one observed failure, not proof that all service methods can never preserve identity.",
+  "stop": true,
+  "blockedDirections": ["north", "west"],
+  "rawArchiveOnly": true
+}

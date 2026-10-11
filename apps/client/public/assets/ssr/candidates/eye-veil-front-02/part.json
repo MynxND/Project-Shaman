@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.eye-veil-front-candidate",
+  "kind": "hairFront",
+  "variant": "eye-veil-front-candidate",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "golden-ramp",
+      "url": "/assets/ssr/candidates/eye-veil-front-02/hair-ramp.png",
+      "sha256": "bb27063abd820907935221c2961395a30f50e3b40b62396e1f29e6a9dbf40647",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "golden-fixed",
+      "url": "/assets/ssr/candidates/eye-veil-front-02/hair-fixed.png",
+      "sha256": "9ef7a6312de90df56108fdc17b421db2eac2c4ac09dfeacdb45754cec4f6c4c9",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "golden-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "golden-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Original FRONT-only inpaint on owned approved head; Hair Layer Standard filtering. Unapproved candidate, no other directions or gameplay publication."
+}

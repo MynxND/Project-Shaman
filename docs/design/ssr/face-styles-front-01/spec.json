@@ -1,0 +1,38 @@
+{
+  "scope": "Two FRONT face-style candidates, neutral expression. Inspector only until approval.",
+  "styles": [
+    {
+      "id": "violet-sharp",
+      "name": "หน้าคม · ตาสีม่วง",
+      "description": "Narrow deep violet irises, confident angled eyebrows, crisp dark upper eyelids, small serious neutral mouth and subtle warm cheek blush. Clearly visible separate eye whites and violet irises, no black eye band, no sunglasses."
+    },
+    {
+      "id": "teal-soft",
+      "name": "หน้าละมุน · ตาฟ้าอมเขียว",
+      "description": "Soft open turquoise teal eyes, relaxed fine gently curved eyebrows, small neutral mouth and very subtle blush. Restrained delicate upper lashes. Clearly visible separate pale eye whites and turquoise irises, no black eye band, no sunglasses."
+    }
+  ],
+  "cap": 10,
+  "attempts": 2,
+  "retries": 0,
+  "source": "apps/client/public/assets/character-v3/head-eight-01/south.png",
+  "sourceHash": "1ac5ca0956848a2886484a8955e3d4d5f4206bc513c96581b55ade60bf6a4215",
+  "nativeCanvas": 128,
+  "crop": {
+    "x": 32,
+    "y": 0,
+    "width": 64,
+    "height": 64
+  },
+  "region": {
+    "x": 53,
+    "y": 35,
+    "width": 20,
+    "height": 13
+  },
+  "neck": {
+    "x": 62,
+    "y": 49
+  },
+  "contract": "Face identity separate from expression. Preserve skull/ears/neck/hair/body. Opaque replacement patch erases old eyes/brows before new face; hair remains above face. References studied as descriptions only, not generation inputs."
+}

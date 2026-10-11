@@ -1,0 +1,227 @@
+{
+  "version": "detachable-head-wardrobe/1",
+  "authorization": "USER approved new88 cap, no retry,11 hairstyles x8 static directions, detachable head+hair on unchanged V2 body. Latest explicit supplied-sheet adaptation request supersedes prior reference-input restriction for this stage only.",
+  "cap": 88,
+  "estimatedFront": 66,
+  "estimatedRotations": 22,
+  "paidAttemptsPerStyle": {
+    "front": 1,
+    "rotation": 1
+  },
+  "native": [
+    128,
+    128
+  ],
+  "origin": {
+    "x": 61,
+    "y": 112
+  },
+  "headAnchor": {
+    "x": 62,
+    "y": 26
+  },
+  "bases": {
+    "south": {
+      "sourcePath": "docs/design/character-v2/body-front-02/raw.png",
+      "sourceSha256": "0ed1ddf448b70a93dc5f624617e832a0af593779b6b7257d65db39b61be35958",
+      "headUrl": "/assets/head-wardrobe-01/canonical-south.png",
+      "headSha256": "1b4c77a38a7efadb18b7f1955109cf9772ee84f610269d5912b1d10cb1320121",
+      "bodyUrl": "/assets/head-wardrobe-01/body-south.png",
+      "bodySha256": "e2757ac2a526f6b5d73a9521c15897801f5b026f546e44752f242d6fb8edc37b",
+      "neckAnchor": {
+        "x": 62,
+        "y": 49
+      },
+      "semanticCut": "visible upper region y<=48; neck and body y>=49; provisional rig, never hidden anatomy",
+      "bodyApproved": true,
+      "diagonalTemplateProvisional": false
+    },
+    "south-west": {
+      "sourcePath": "docs/design/character-v2/body-rotation-01/raw/south-west.png",
+      "sourceSha256": "6302355a59beb0df7e87f17f1344124f8dcaeec103bdb6418541c592e03866d6",
+      "headUrl": "/assets/head-wardrobe-01/canonical-south-west.png",
+      "headSha256": "126fcc5cc2447cca7a25f008b0c12f457ab6b32731c645f4e3a7159e56403d15",
+      "bodyUrl": null,
+      "bodySha256": null,
+      "neckAnchor": {
+        "x": 62,
+        "y": 49
+      },
+      "semanticCut": "visible upper region y<=48; neck and body y>=49; provisional rig, never hidden anatomy",
+      "bodyApproved": false,
+      "diagonalTemplateProvisional": true
+    },
+    "west": {
+      "sourcePath": "docs/design/character-v2/body-rotation-01/raw/west.png",
+      "sourceSha256": "cf8d6815ee91878bd2974089859ede2b40e21a3d1c0840a71b080fe580d4581c",
+      "headUrl": "/assets/head-wardrobe-01/canonical-west.png",
+      "headSha256": "ec3c203295f2e33a17e3ebce9f004f25a14932e44f6895e45888b2099cc73293",
+      "bodyUrl": "/assets/head-wardrobe-01/body-west.png",
+      "bodySha256": "8b633398da919fa442799660462821dfb41014d6773e593c70815a83e8f56eff",
+      "neckAnchor": {
+        "x": 62,
+        "y": 49
+      },
+      "semanticCut": "visible upper region y<=48; neck and body y>=49; provisional rig, never hidden anatomy",
+      "bodyApproved": true,
+      "diagonalTemplateProvisional": false
+    },
+    "north-west": {
+      "sourcePath": "docs/design/character-v2/body-rotation-01/raw/north-west.png",
+      "sourceSha256": "3499e7a442be11409eaacea94b53abd4f4517111878d5964a9667098f7d005fc",
+      "headUrl": "/assets/head-wardrobe-01/canonical-north-west.png",
+      "headSha256": "d0d79f890a8f4359778d8d2e4411d2727573a8fb369880196fcb79a776f0102a",
+      "bodyUrl": null,
+      "bodySha256": null,
+      "neckAnchor": {
+        "x": 62,
+        "y": 49
+      },
+      "semanticCut": "visible upper region y<=48; neck and body y>=49; provisional rig, never hidden anatomy",
+      "bodyApproved": false,
+      "diagonalTemplateProvisional": true
+    },
+    "north": {
+      "sourcePath": "docs/design/character-v2/body-rotation-01/raw/north.png",
+      "sourceSha256": "289b25898984611ecadd7cc1dbd001a9b04ea6b1605644d9b121fe4883fd1107",
+      "headUrl": "/assets/head-wardrobe-01/canonical-north.png",
+      "headSha256": "e490b4ea30f9219cba1ec24ab4d8f9a89f90195642a783fd8736bc0eed6fc38e",
+      "bodyUrl": "/assets/head-wardrobe-01/body-north.png",
+      "bodySha256": "420c8f1c0b51a8fc59d3d3df3d81c997780f019dda3a99e0dcce182afa4dc6bb",
+      "neckAnchor": {
+        "x": 62,
+        "y": 49
+      },
+      "semanticCut": "visible upper region y<=48; neck and body y>=49; provisional rig, never hidden anatomy",
+      "bodyApproved": true,
+      "diagonalTemplateProvisional": false
+    },
+    "north-east": {
+      "sourcePath": "docs/design/character-v2/body-rotation-01/raw/north-east.png",
+      "sourceSha256": "68a37a3af9bedf7cab72d6d0342efc0657cd0b85cd6c14e7ea65227453e476be",
+      "headUrl": "/assets/head-wardrobe-01/canonical-north-east.png",
+      "headSha256": "9c35b876221445f83899d137fef96fbc1c788c86ddc1b869ff43eedbb8264924",
+      "bodyUrl": null,
+      "bodySha256": null,
+      "neckAnchor": {
+        "x": 62,
+        "y": 49
+      },
+      "semanticCut": "visible upper region y<=48; neck and body y>=49; provisional rig, never hidden anatomy",
+      "bodyApproved": false,
+      "diagonalTemplateProvisional": true
+    },
+    "east": {
+      "sourcePath": "docs/design/character-v2/body-rotation-01/raw/east.png",
+      "sourceSha256": "0ebf842c4ae7f6ac03c395918e15f5d166b64754c94551420bd2796ab89f846a",
+      "headUrl": "/assets/head-wardrobe-01/canonical-east.png",
+      "headSha256": "af34f1760a87fd27969cde37c999eaf242f1ab2ecc0499383ba02aa3f423962c",
+      "bodyUrl": "/assets/head-wardrobe-01/body-east.png",
+      "bodySha256": "55449f4fe6274e772bdf45e707acab5f4284e419dfa730e5ab8fd558d92f967b",
+      "neckAnchor": {
+        "x": 62,
+        "y": 49
+      },
+      "semanticCut": "visible upper region y<=48; neck and body y>=49; provisional rig, never hidden anatomy",
+      "bodyApproved": true,
+      "diagonalTemplateProvisional": false
+    },
+    "south-east": {
+      "sourcePath": "docs/design/character-v2/body-rotation-01/raw/south-east.png",
+      "sourceSha256": "672831bdf19fda5081fd499c80ee5c74aa99a95fb7d00441708b7297b52bb481",
+      "headUrl": "/assets/head-wardrobe-01/canonical-south-east.png",
+      "headSha256": "b1c569805ae3ece0d4d340af3a2f51917c62337ccfcb1898fb289876f407e3e8",
+      "bodyUrl": null,
+      "bodySha256": null,
+      "neckAnchor": {
+        "x": 62,
+        "y": 49
+      },
+      "semanticCut": "visible upper region y<=48; neck and body y>=49; provisional rig, never hidden anatomy",
+      "bodyApproved": false,
+      "diagonalTemplateProvisional": true
+    }
+  },
+  "referenceSha256": "58fc9a2ec5415d00fe198c89c43e26fd9dfd9ddcd792b2ad80092a986c6c741f",
+  "styles": [
+    {
+      "id": "swept-spike",
+      "nameThai": "ผมสั้นปัดแหลม",
+      "row": 1,
+      "shape": "Compact short swept silver-lavender spikes, broken asymmetric fringe, restrained volume.",
+      "visualApproved": false
+    },
+    {
+      "id": "tied-curtains",
+      "nameThai": "ผมยาวรวบ",
+      "row": 2,
+      "shape": "Smooth lavender curtains, center part, compact low rear tied tail extending below the neck.",
+      "visualApproved": false
+    },
+    {
+      "id": "layered-shag",
+      "nameThai": "ผมซอยยาว",
+      "row": 3,
+      "shape": "Dark lavender layered shag, ear framing and tapered long nape, separated large feathered locks.",
+      "visualApproved": false
+    },
+    {
+      "id": "round-crop",
+      "nameThai": "ผมสั้นมน",
+      "row": 4,
+      "shape": "Short pale silver rounded crop, soft irregular fringe and tiny side tips, no spikes.",
+      "visualApproved": false
+    },
+    {
+      "id": "textured-crop",
+      "nameThai": "ผมหยักศกสั้น",
+      "row": 5,
+      "shape": "Dark smoky purple tight wavy crop, compact grouped curls and open forehead part.",
+      "visualApproved": false
+    },
+    {
+      "id": "airy-feathers",
+      "nameThai": "ผมซอยปลายเบา",
+      "row": 6,
+      "shape": "Pale lavender airy feathered locks, medium crown, sweeping diagonal fringe with irregular wispy tips.",
+      "visualApproved": false
+    },
+    {
+      "id": "soft-spikes",
+      "nameThai": "ผมแหลมนุ่ม",
+      "row": 7,
+      "shape": "Medium silver-lavender soft pointed locks, separated center fringe and small outward temple tips.",
+      "visualApproved": false
+    },
+    {
+      "id": "side-part",
+      "nameThai": "ผมแสกข้าง",
+      "row": 8,
+      "shape": "Compact dark slate purple side part, smooth low dome and one sweeping forehead lock.",
+      "visualApproved": false
+    },
+    {
+      "id": "smooth-curtains",
+      "nameThai": "ผมแสกกลางประบ่า",
+      "row": 9,
+      "shape": "Muted lavender medium smooth center-part curtains, rounded ear sides and compact nape length.",
+      "visualApproved": false
+    },
+    {
+      "id": "wild-spikes",
+      "nameThai": "ผมแหลมกระจาย",
+      "row": 10,
+      "shape": "Pale silver separated wild spikes, strong asymmetrical star crown, individually readable large locks.",
+      "visualApproved": false
+    },
+    {
+      "id": "tall-crest",
+      "nameThai": "ผมตั้งปัดสูง",
+      "row": 11,
+      "shape": "Tall cream-silver swept crest, sharp backward-flowing tapered spikes and small close temple roots.",
+      "visualApproved": false
+    }
+  ],
+  "animation": false,
+  "gameplayAdoption": false
+}

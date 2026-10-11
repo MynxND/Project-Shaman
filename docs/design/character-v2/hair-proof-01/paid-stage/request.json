@@ -1,0 +1,31 @@
+{
+    "transformations":  [
+
+                        ],
+    "maskTransport":  {
+                          "field":  "mask_image_base64",
+                          "path":  "docs/design/character-v2/hair-proof-01/hair-allowed-mask.png",
+                          "sha256":  "dec7338196218d1e37c00f1d1c3c93efd184e1224d2edd2f8fe33bb1c075271b"
+                      },
+    "arguments":  {
+                      "bounding_box":  {
+                                           "x":  0,
+                                           "y":  0,
+                                           "width":  128,
+                                           "height":  128
+                                       },
+                      "seed":  0,
+                      "description":  "Isolated HAIR ONLY, a short ivory-pearl Shaman crop cap with a small asymmetrical upper-left tuft. Fit the exact owned FRONT02 bald scalp in source_image_id; native128, same alignment. Generate hair clusters ONLY in the white 374-pixel mask x48..76 y16..31. This is a conservative cap-only prototype: NO bangs or face occlusion from y32 down, no sideburns or rear tail. Varied pointed tuft silhouette and coherent strand clusters, NOT a flat helmet. Ivory-pearl material with muted gray-green shadows and warm white highlights, upper-left light; proposed ramp #686C65 #A9ADA0 #D9DCCD #F1EEDB. Binary crisp pixel alpha. Every visible returned pixel must be HAIR, never scalp/skin copied from source, face, ears, neck, body, shorts, clothing, bow, crown, shadow or text. Transparent unused mask pixels and everything outside mask. Return New layer with changes ONLY, NOT a composite. Context is owned new V2 scalp and pose reference only; do not bake context into the layer. No rotation or animation.",
+                      "crop_to_mask":  true,
+                      "source_image_id":  "1fb97f42-4ce5-55e9-903f-a8edd56a67bc",
+                      "no_background":  true,
+                      "output_method":  "New layer with changes",
+                      "context_image":  {
+                                            "source_image_id":  "1fb97f42-4ce5-55e9-903f-a8edd56a67bc",
+                                            "usage_description":  "Exact owned FRONT02 full native canvas as scalp/pose context only. Never copy skin/body into the new layer."
+                                        }
+                  },
+    "outputCount":  1,
+    "sourceSha256":  "0ed1ddf448b70a93dc5f624617e832a0af593779b6b7257d65db39b61be35958",
+    "tool":  "inpaint_image_pro_flash"
+}

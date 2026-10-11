@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "status": "rejected",
+  "approved": false,
+  "candidate": null,
+  "stop": true,
+  "reviewedDirection": "east",
+  "target": "true90-right-profile",
+  "angleAssessment": "Right-facing profile is substantially improved over the failed frontal inpaint; exact camera/anatomy remains unapproved. Angle improvement does not waive identity failures.",
+  "identityAssessment": "fails-master-hair-and-ornament-construction",
+  "observations": [
+    "Generated east has a long loose silver-white hair tail descending behind the shoulder to around the waist, unlike the master front's short spiky head silhouette and discrete ornament/tie construction.",
+    "Master crimson hair ties are not preserved in the generated profile. This is not an acceptable projection of the same asymmetric ornament assembly.",
+    "Warm skin, cream/crimson palette, sandals and near shoulder mantle resemble the reference, but broad coat hem/side-panel construction and embroidery are redrawn and need design review.",
+    "The face reads as a near side view with a right-projecting nose and one near eye; no whole-character alignment correction was applied. This alone does not certify a true90 anatomical turnaround.",
+    "Native east silhouette is 50x118 at left33,top6,right82,bottom123. Shared ground edge124 matches exactly; a one-pixel top difference is not the rejection reason."
+  ],
+  "sourceFront": {
+    "status": "selected-original-not-user-approved",
+    "approved": false,
+    "runtimePngBytesPreserved": true,
+    "serviceSouthRgbaEqual": true,
+    "serviceSouthPngBytesEqual": false,
+    "note": "Service PNG was re-encoded; runtime retains the original file bytes, not the generated south PNG."
+  },
+  "evidence": {
+    "raw": "raw/east.png",
+    "measurements": "measurements.json",
+    "nativeComparison": "east-comparison-native.png",
+    "nearest2xComparison": "east-comparison-2x.png",
+    "comparisonOrder": ["protected-master-front", "original-east-audit", "generated-east-rejected"]
+  },
+  "rejectedPreview": "/assets/character-turnaround/rotation-experiment-01/east-rejected.png",
+  "manualPixelCorrections": [],
+  "transformations": [],
+  "unreviewedGeneratedDirections": ["north", "west", "south-east", "north-east", "north-west", "south-west"],
+  "backLeftPolicy": "Raw outputs archived because the supported rotation tool generates eight views; no back/left assessment or candidate promotion after the east identity failure.",
+  "nextGate": "Explicit master/template review and an identity-consistent native right profile; no hairstyle, equipment or animation generation."
+}

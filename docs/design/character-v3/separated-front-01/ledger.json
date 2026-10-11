@@ -1,0 +1,33 @@
+{
+  "cap": 15,
+  "spent": 15,
+  "reserved": 0,
+  "retries": 0,
+  "authorization": "USER explicitly approved15 credits,3 attempts,no retry after specification",
+  "attempts": [
+    {
+      "status": "completed",
+      "retry": false,
+      "component": "body",
+      "reserved": 0,
+      "charged": 5,
+      "jobId": "eaaf6305-3ebd-4b79-8373-bd6df7b15b86"
+    },
+    {
+      "status": "completed",
+      "retry": false,
+      "component": "head-a",
+      "reserved": 0,
+      "charged": 5,
+      "jobId": "dcb04af2-8304-4eb3-a678-7666dd01f3fc"
+    },
+    {
+      "status": "completed",
+      "retry": false,
+      "component": "head-b",
+      "reserved": 0,
+      "charged": 5,
+      "jobId": "f569329b-90ff-4e1c-a3e8-03adcdbb5d41"
+    }
+  ]
+}

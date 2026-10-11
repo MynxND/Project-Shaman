@@ -1,0 +1,44 @@
+{
+  "version": "ssr/1",
+  "id": "face.cold-detached",
+  "kind": "face",
+  "variant": "cold-detached",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": false,
+  "images": [
+    {
+      "id": "face",
+      "url": "/assets/ssr/candidates/face-cold-front-01/cold-detached-patch.png",
+      "sha256": "4f34ca07da68b4be06751b8680cbd9acb0b95a4bda30816708756816277448b1",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "face",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  }
+}

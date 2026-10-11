@@ -1,0 +1,55 @@
+{
+  "version": "shaman-character-v2-rotation-review/1",
+  "status": "awaiting-user-four-view-review",
+  "userVisualAccepted": false,
+  "sourceFrontVisualApproved": true,
+  "sharedOrigin": { "x": 61, "y": 112 },
+  "bindingApproved": false,
+  "transformations": [],
+  "visualVerdict": "Actual native images inspected: credible bald neutral-body cardinal candidates. East and west show genuine opposite profiles with one near eye/ear and projecting nose, not frontal substitutes. North is square rear with no face. Same compact large-head identity, bare feet, empty hands and charcoal modesty shorts; no hair/equipment. Technical checks do not approve art. Torso/shoulder shading and small silhouette differences need USER review.",
+  "headEstimateMethod": "Manual semantic estimate from native image: chin approximately row48 +/-1 for profiles; rear head boundary approximately row47 +/-1. Not automatic segmentation or exact approved cross-view ratios.",
+  "views": {
+    "south": {
+      "credibleCandidate": true,
+      "visualApproved": true,
+      "actualFoot": { "x": 61, "y": 112 },
+      "actualFootDelta": { "x": 0, "y": 0 },
+      "headHeightRange": [28, 30],
+      "totalHeadsApproximate": [3.1, 3.33],
+      "reason": "Latest USER approval applies only to exact FRONT02 bytes; provider SOUTH byte-identical. Historical FRONT02 review preserved unchanged."
+    },
+    "east": {
+      "credibleCandidate": true,
+      "visualApproved": false,
+      "actualFoot": { "x": 63, "y": 113 },
+      "actualFootDelta": { "x": 2, "y": 1 },
+      "headHeightRange": [27, 29],
+      "totalHeadsApproximate": [3.21, 3.44],
+      "reason": "True right-facing profile, one near eye/ear, projecting nose, edge-on shorts/torso; compact body and large bald head. Chest/arm shading and foot drift unapproved.",
+      "anchors": { "foot": { "x": 61, "y": 112 }, "hairRoot": { "x": 62, "y": 25 }, "headgear": { "x": 62, "y": 21 }, "mainHand": { "x": 57, "y": 78 }, "offHand": { "x": 68, "y": 78 }, "accessories": { "x": 63, "y": 70 } }
+    },
+    "north": {
+      "credibleCandidate": true,
+      "visualApproved": false,
+      "actualFoot": { "x": 63, "y": 111 },
+      "actualFootDelta": { "x": 2, "y": -1 },
+      "headHeightRange": [28, 30],
+      "totalHeadsApproximate": [3.1, 3.33],
+      "reason": "True rear, no face, bald scalp/ears and plain shorts; similar head/body scale. Back shading and foot drift unapproved.",
+      "anchors": { "foot": { "x": 61, "y": 112 }, "hairRoot": { "x": 63, "y": 23 }, "headgear": { "x": 63, "y": 19 }, "mainHand": { "x": 43, "y": 77 }, "offHand": { "x": 82, "y": 77 }, "accessories": { "x": 63, "y": 69 } }
+    },
+    "west": {
+      "credibleCandidate": true,
+      "visualApproved": false,
+      "actualFoot": { "x": 61, "y": 113 },
+      "actualFootDelta": { "x": 0, "y": 1 },
+      "headHeightRange": [27, 29],
+      "totalHeadsApproximate": [3.21, 3.44],
+      "reason": "True left-facing profile with nose left and one near eye/ear; untouched provider output, not manually mirrored. Profile texture/arm differences and foot drift unapproved.",
+      "anchors": { "foot": { "x": 61, "y": 112 }, "hairRoot": { "x": 62, "y": 25 }, "headgear": { "x": 62, "y": 21 }, "mainHand": { "x": 69, "y": 78 }, "offHand": { "x": 57, "y": 78 }, "accessories": { "x": 62, "y": 70 } }
+    }
+  },
+  "anchorPolicy": "Contract foot is shared template origin61,112, NOT a claim of actual lowest foot pixels in E/N/W. Actual alpha-derived feet/deltas are separate diagnostics. Other anchors are provisional manual visible landmarks; no hair/outfit/equipment fit approved.",
+  "missing": ["independent hair", "independent outfit", "approved layer fits", "animations", "USER four-view approval"],
+  "stop": "One authorized rotation completed. STOP for USER four-view review. No retries, transforms, manual mirrored substitutes, hair, outfit, animation, old repairs or live integration."
+}

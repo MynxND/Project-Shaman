@@ -1,0 +1,503 @@
+{
+  "effects": {
+    "spirit-bolt": {
+      "seedJob": "cfad5331-5c7d-4cf7-918f-e9014e3de72c",
+      "request": {
+        "description": "Original Global Shaman MMORPG spell effect sprite, SPIRIT BOLT. One compact pale turquoise soul flame orb with ivory white core, three curved cyan wisps trailing left, a few antique gold sparks. Facing right, clean readable comet silhouette. Pure isolated magic energy only, no character, no scenery, no interface, no border, no writing. Crisp pixel clusters, limited dark teal turquoise ivory antique gold palette, restrained bloom rendered as pixels, classic elevated three-quarter overhead game sprite, centered with generous transparent padding.",
+        "width": 96,
+        "height": 96,
+        "no_background": true,
+        "view": "low top-down",
+        "outline": "selective outline",
+        "shading": "detailed shading",
+        "seed": 101
+      },
+      "animationJob": "91605efb-b2a9-4b5b-9982-cc37c77d8a3e",
+      "animationRequest": {
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/cfad5331-5c7d-4cf7-918f-e9014e3de72c/download",
+        "action": "Soul flame orb gathers inward, swirls its trailing wisps, pulses brighter, releases a sharp ivory flash, then breaks into small teal soul sparks which shrink away. Stay centered on the transparent canvas. No human or scenery.",
+        "frame_count": 8,
+        "no_background": true,
+        "seed": 200
+      },
+      "completed": true
+    },
+    "soul-heal": {
+      "seedJob": "a710562b-3765-4931-98ec-accc9ae93603",
+      "request": {
+        "description": "SOUL HEAL original shaman magic VFX sprite. ONLY insubstantial glowing jade mint and ivory light, a very thin low oval luminous ring near the bottom of the canvas, six separated curved light strokes shaped like lotus PETAL OUTLINES hovering above it, tiny rising ivory healing sparks. Transparent empty center and large gaps between strokes. No real flower, no green leaves, no stem, no roots, no vase, no pedestal, no physical object, no character, no text, no border. Delicate crisp luminous pixel clusters, low overhead MMORPG perspective, generous transparent padding.",
+        "width": 128,
+        "height": 128,
+        "no_background": true,
+        "view": "low top-down",
+        "outline": "lineless",
+        "shading": "detailed shading",
+        "seed": 412
+      },
+      "animationJob": "e03467b8-ce5a-4663-a145-e82fbcf71e95",
+      "animationRequest": {
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/a710562b-3765-4931-98ec-accc9ae93603/download",
+        "action": "Six separated luminous lotus petal outlines open above a low magic ring. Three waves of tiny ivory healing droplets rise upward and disappear. Central light gently pulses, petal strokes become thinner and disperse, ring dissolves into sparse motes. Pure glowing energy on transparency, no plant, leaves, stem or solid objects. Fixed center.",
+        "frame_count": 8,
+        "no_background": true,
+        "seed": 413
+      },
+      "artifactFolder": "soul-heal-v2",
+      "completed": true,
+      "rejectedCandidate": {
+        "seedJob": "81707978-62f4-44ff-accf-75f3264b7cb6",
+        "request": {
+          "description": "Original Global Shaman SOUL HEAL magic effect sprite, a translucent jade turquoise lotus-shaped halo viewed slightly from above, ivory soul droplets and small antique gold motes rising from the center, gentle ring at feet. Healing warmth and sacred spirit blessing, no Christian cross. Isolated energy only, no human, no scene, no text, no frame. Crisp classic MMORPG pixel clusters, clean silhouette, dark teal jade ivory antique gold palette, transparent generous padding.",
+          "width": 128,
+          "height": 128,
+          "no_background": true,
+          "view": "low top-down",
+          "outline": "selective outline",
+          "shading": "detailed shading",
+          "seed": 102
+        },
+        "animationJob": "3f36ede3-4761-4e30-b14c-92998ac435e6",
+        "animationRequest": {
+          "first_frame_url": "https://api.pixellab.ai/mcp/images/81707978-62f4-44ff-accf-75f3264b7cb6/download",
+          "action": "Lotus light ring gently opens petal by petal at the bottom, ivory healing droplets rise in three successive waves, central jade blessing shines, petals close and motes dissolve. Center fixed, no human, no scene.",
+          "frame_count": 8,
+          "no_background": true,
+          "seed": 200
+        },
+        "completed": true,
+        "reason": "Reads as a physical lotus on a stem; regenerate as separated energy strokes."
+      }
+    },
+    "amulet-blast": {
+      "seedJob": "1e440109-209e-4195-920d-36c9e7d7f5ce",
+      "request": {
+        "description": "Original Global Shaman AMULET BLAST magical effect sprite: three cream parchment talisman slips with abstract original non readable red ritual strokes circling a bronze gold spirit seal, a low oval antique gold amber shockwave under them. Isolated energy only on generous transparent padding, no character, no scene, no text, no frame. Crisp detailed classic MMORPG pixel clusters with selective outlines, restrained luminous pixels, dark teal ivory antique gold and the described accent colors. Elevated three quarter overhead game perspective.",
+        "width": 128,
+        "height": 128,
+        "no_background": true,
+        "view": "low top-down",
+        "outline": "selective outline",
+        "shading": "detailed shading",
+        "seed": 102
+      },
+      "animationJob": "47458168-adf0-425b-b454-924399ef3cfa",
+      "animationRequest": {
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/1e440109-209e-4195-920d-36c9e7d7f5ce/download",
+        "action": "Paper talismans whirl once inward, central bronze seal ignites, papers burst into amber light, a single low oval shockwave expands radially then fragments and fades. No fireball mushroom cloud, no human, keep center fixed.",
+        "frame_count": 8,
+        "no_background": true,
+        "seed": 204
+      },
+      "completed": true
+    },
+    "ghost-sight": {
+      "seedJob": "e22136d2-f4a7-49fc-979e-a1e344075b88",
+      "request": {
+        "description": "Original Global Shaman GHOST SIGHT magical effect sprite: one stylized ivory third eye spirit sigil, violet iris and antique gold eyelids, subtle low oval spectral violet detection ring below, no face or head. Isolated energy only on generous transparent padding, no character, no scene, no text, no frame. Crisp detailed classic MMORPG pixel clusters with selective outlines, restrained luminous pixels, dark teal ivory antique gold and the described accent colors. Elevated three quarter overhead game perspective.",
+        "width": 128,
+        "height": 128,
+        "no_background": true,
+        "view": "low top-down",
+        "outline": "selective outline",
+        "shading": "detailed shading",
+        "seed": 102
+      },
+      "animationJob": "e56893ad-6c6b-4084-9187-2374f7bddf6e",
+      "animationRequest": {
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/e22136d2-f4a7-49fc-979e-a1e344075b88/download",
+        "action": "Closed spirit eye smoothly opens, violet iris flashes, one low oval detection ripple expands below it, eye remains open with subtle hovering light motes then softens. No face, no person, fixed center.",
+        "frame_count": 8,
+        "no_background": true,
+        "seed": 205
+      },
+      "completed": true
+    },
+    "binding-thread": {
+      "seedJob": "5fc44202-54b0-48f2-8ebe-553805c1373e",
+      "request": {
+        "description": "Transparent pixel art spell VFX. A swirling magical white light ribbon, slender spiraling white silk-like luminous strokes with tiny red knot-shaped sparks and softly glowing red tips. Airy empty center, three broken elliptical swirls, pure energy, crisp restrained pixel glow. An ankle snare magic effect for an original shaman RPG. Nothing else in the image, just floating light streaks and sparks.",
+        "width": 128,
+        "height": 128,
+        "no_background": true,
+        "view": "low top-down",
+        "outline": "lineless",
+        "detail": "medium detail",
+        "seed": 614
+      },
+      "seedUrl": "https://api.pixellab.ai/mcp/pixel-tools/deb8102b-bbc0-471b-995f-1dfa4ff0da87/image.png",
+      "pixelCleanup": {
+        "sourceImage": "b0c82b70-8807-41e6-b963-08a45f4637bf",
+        "resultImage": "deb8102b-bbc0-471b-995f-1dfa4ff0da87",
+        "changes": [
+          {
+            "operation": "select_mask",
+            "layer": "image",
+            "frames": [
+              1
+            ],
+            "name": "unwanted_floor",
+            "selector": {
+              "kind": "color",
+              "colors": [
+                "#304040ff",
+                "#131c13ff"
+              ],
+              "tolerance": 35
+            },
+            "reason": "Observed dark neutral floor colors inside luminous threads."
+          },
+          {
+            "operation": "brush",
+            "layer": "image",
+            "frames": [
+              1
+            ],
+            "mask": "unwanted_floor",
+            "points": [
+              [
+                31,
+                31
+              ],
+              [
+                95,
+                31
+              ],
+              [
+                95,
+                95
+              ],
+              [
+                31,
+                95
+              ]
+            ],
+            "size": 64,
+            "shape": "square",
+            "mode": "erase",
+            "reason": "Erase physical floor, preserving light thread strokes and red sparks."
+          }
+        ]
+      },
+      "animationJob": "831b6fae-85c2-4f4b-b74e-992a88e8f772",
+      "animationRequest": {
+        "first_frame_url": "https://api.pixellab.ai/mcp/pixel-tools/deb8102b-bbc0-471b-995f-1dfa4ff0da87/image.png",
+        "action": "The thin luminous white binding threads spiral inward in three sweeps, tiny red knot sparks pull closer together and flash, loose ends curl around the empty space and tighten. Threads pulse gently, then the light disperses into thin sparks. Fixed center, pure energy only, transparent empty center. No floor, no platform, no solid rope, no character.",
+        "frame_count": 8,
+        "no_background": true,
+        "seed": 615
+      },
+      "artifactFolder": "binding-thread-v3",
+      "completed": true,
+      "rejectedCandidates": [
+        {
+          "seedJob": "52346618-0e60-4e3b-be02-3f032a9b59ca",
+          "request": {
+            "description": "Original Global Shaman BINDING THREAD magical effect sprite: three luminous ivory sacred threads with red knot accents forming a loose low ankle height spiral cage, sparse bronze gold motes, empty center, no feet or legs. Isolated effect only on generous transparent padding, no character, no scene, no readable writing, no frame. Crisp detailed classic MMORPG pixel clusters, dark teal ivory antique gold and accent colors described. Elevated three quarter overhead game perspective.",
+            "width": 128,
+            "height": 128,
+            "no_background": true,
+            "view": "low top-down",
+            "outline": "selective outline",
+            "shading": "detailed shading",
+            "seed": 104
+          },
+          "animationJob": "b7eec52e-49ca-438f-bc2e-445870a80006",
+          "animationRequest": {
+            "first_frame_url": "https://api.pixellab.ai/mcp/images/52346618-0e60-4e3b-be02-3f032a9b59ca/download",
+            "action": "Three sacred threads uncoil outward then wind inward around an empty low cylinder, red knots tighten and briefly glow, final bound loops gently pulse. No legs, no person, no chain, fixed center.",
+            "frame_count": 8,
+            "no_background": true,
+            "seed": 204
+          },
+          "completed": true,
+          "reason": "Thick rope nest instead of magical thread."
+        },
+        {
+          "seedJob": "fc3da6b8-044b-454e-9d7c-1dcc67ced0e8",
+          "request": {
+            "description": "BINDING THREAD spell VFX, one very thin luminous ivory silk string with three tiny red ritual knots, making three airy incomplete loose loops around an EMPTY low ankle-height cylinder. Large transparent empty center and gaps. Loops drawn as sparse one and two pixel light strokes, no solid thick rope, no coils of straw, no nest, no beads, no plants, no flowers, no object, no human feet. Only white spirit light and muted red knots with tiny gold spark pixels. Original shaman MMORPG low overhead camera, centered transparent game effect.",
+            "width": 128,
+            "height": 128,
+            "no_background": true,
+            "view": "low top-down",
+            "outline": "lineless",
+            "shading": "detailed shading",
+            "seed": 514
+          },
+          "animationJob": "0e6f8e4c-08ab-4c22-8aa2-3b5c0cb0b644",
+          "animationRequest": {
+            "first_frame_url": "https://api.pixellab.ai/mcp/images/fc3da6b8-044b-454e-9d7c-1dcc67ced0e8/download",
+            "action": "Thin white sacred string whips outward then three airy light loops curl inward and tighten around an empty ankle height space. Tiny red knots glow in sequence, loose thread ends settle, loops gently pulse. Keep thin lines separated and transparent empty center. No solid rope or object, no human. Fixed center on transparent canvas.",
+            "frame_count": 8,
+            "no_background": true,
+            "seed": 515
+          },
+          "reason": "Physical base ring remains."
+        }
+      ],
+      "backupCleanup": {
+        "result": "image_id: 8432053f-6b23-4228-8d40-ba29b46ff3fc  (edited from f0950eb6-e62b-4fc2-bf03-ae830cac4f36)\ncanvas: 128x128, 9 frame(s)\n1. select_mask: 0 px changed, 55296 matched\n2. brush: 55296 px changed\nsheet rows: frames [7, 8, 9]\n9 frames changed, in 24,78,103,110; see every one: inspect 8432053f-6b23-4228-8d40-ba29b46ff3fc --frames 1,2,3,4,5,6,7,8,9 --region 24,78,103,110\npalette (41): #b19d7aff x2361, #49323cff x2214, #503b3fff x2019, #3a2633ff x1410, #d5c59fff x1375, #e3d5b2ff x1357, #504339ff x1212, #3f3033ff x1069, #c5b38cff x1044, #906c62ff x1007, #2f1f2dff x984, #675849ff x983, #6c514fff x982, #111626ff x670, #9d8a6cff x664, #b7a68aff x590, … +25 more\ndownload https://api.pixellab.ai/mcp/pixel-tools/8432053f-6b23-4228-8d40-ba29b46ff3fc/: frames.png, animation.gif\nnext: edit 8432053f-6b23-4228-8d40-ba29b46ff3fc --changes […]",
+        "changes": [
+          {
+            "operation": "select_mask",
+            "layer": "image",
+            "frames": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "name": "physical_base",
+            "selector": {
+              "kind": "rectangle",
+              "region": [
+                0,
+                80,
+                127,
+                127
+              ]
+            },
+            "reason": "Observed unwanted physical base in the lower half of every frame."
+          },
+          {
+            "operation": "brush",
+            "layer": "image",
+            "frames": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "mask": "physical_base",
+            "points": [
+              [
+                31,
+                95
+              ],
+              [
+                95,
+                95
+              ]
+            ],
+            "size": 64,
+            "shape": "square",
+            "mode": "erase",
+            "reason": "Remove the base; keep animated sacred thread loop and knots."
+          }
+        ],
+        "status": "not used; clean energy animation completed"
+      }
+    },
+    "spirit-sense": {
+      "seedJob": "9d21dfff-43c1-46d5-a68c-46e129e00ad5",
+      "request": {
+        "description": "Original Global Shaman SPIRIT SENSE magical effect sprite: a thin translucent teal spirit ward crescent shield with a small ivory soul flame emblem and sparse antique gold edge sparks, empty interior, no person. Isolated effect only on generous transparent padding, no character, no scene, no readable writing, no frame. Crisp detailed classic MMORPG pixel clusters, dark teal ivory antique gold and accent colors described. Elevated three quarter overhead game perspective.",
+        "width": 96,
+        "height": 96,
+        "no_background": true,
+        "view": "low top-down",
+        "outline": "selective outline",
+        "shading": "detailed shading",
+        "seed": 105
+      },
+      "animationJob": "d73387ad-825c-4e25-ba73-03d1994360b2",
+      "animationRequest": {
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/9d21dfff-43c1-46d5-a68c-46e129e00ad5/download",
+        "action": "A thin protective crescent ward briefly appears, receives one small ripple at its edge, ivory emblem pulses, shield shrinks into three fading motes. Short quiet defensive trigger, no human, fixed center.",
+        "frame_count": 8,
+        "no_background": true,
+        "seed": 205
+      },
+      "completed": true
+    },
+    "amulet-mastery": {
+      "seedJob": "77272979-8d75-455b-bccc-c754f1b8fc79",
+      "request": {
+        "description": "Original Global Shaman AMULET MASTERY magical effect sprite: one bronze antique gold oval shaman amulet with teal inset soul gem and tiny original abstract ritual marks, isolated with four subtle golden energy strokes. Isolated on generous transparent padding, no human, no scenery, no readable text, no frame. Crisp classic MMORPG pixel clusters, detailed selective outlines, dark teal ivory antique gold and specified accent colors. Elevated three quarter overhead game perspective.",
+        "width": 96,
+        "height": 96,
+        "no_background": true,
+        "view": "low top-down",
+        "outline": "selective outline",
+        "shading": "detailed shading",
+        "seed": 106
+      },
+      "animationJob": "590be48f-5457-4968-b21a-a99c220ba5ce",
+      "animationRequest": {
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/77272979-8d75-455b-bccc-c754f1b8fc79/download",
+        "action": "Teal amulet gem gently brightens, four golden ritual strokes travel once around the bronze edge, a quiet gleam crosses the face then returns to rest. No hand, no person, no scenery.",
+        "frame_count": 8,
+        "no_background": true,
+        "seed": 206
+      },
+      "completed": true
+    },
+    "meditation": {
+      "seedJob": "08c0865e-bdc0-48f6-95a4-544992f845c1",
+      "request": {
+        "description": "Original Global Shaman MEDITATION magical effect sprite: a quiet low oval indigo teal meditation breath ring with one suspended ivory soul droplet and three small jade motes, empty center, no character or furniture. Isolated on generous transparent padding, no human, no scenery, no readable text, no frame. Crisp classic MMORPG pixel clusters, detailed selective outlines, dark teal ivory antique gold and specified accent colors. Elevated three quarter overhead game perspective.",
+        "width": 96,
+        "height": 96,
+        "no_background": true,
+        "view": "low top-down",
+        "outline": "selective outline",
+        "shading": "detailed shading",
+        "seed": 107
+      },
+      "animationJob": "35c4e202-bd78-4063-b4ce-b9ff842fc5ee",
+      "animationRequest": {
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/08c0865e-bdc0-48f6-95a4-544992f845c1/download",
+        "action": "Low breath ring slowly expands and contracts once, single soul droplet rises gently, three motes drift upward and softly fade. Calm sparse SP recovery cue, no person, no scenery, fixed center.",
+        "frame_count": 8,
+        "no_background": true,
+        "seed": 207
+      },
+      "completed": true
+    },
+    "vessel-body": {
+      "seedJob": "fc6b592a-512b-4696-9d5e-b0fd08c1d383",
+      "request": {
+        "description": "Original Global Shaman VESSEL BODY magical effect sprite: two thin nested bronze copper oval spirit vessel aura rings and a small glowing ivory heart shaped soul core, sparse teal edge light, no anatomical body. Isolated on generous transparent padding, no person, no scene, no readable writing, no frame. Crisp detailed classic MMORPG pixel clusters, dark teal ivory antique gold and described accent palette. Elevated three quarter overhead game view.",
+        "width": 96,
+        "height": 96,
+        "no_background": true,
+        "view": "low top-down",
+        "outline": "selective outline",
+        "shading": "detailed shading",
+        "seed": 108
+      },
+      "animationJob": "c3a79f55-feb0-48b9-881a-6aaab723136f",
+      "animationRequest": {
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/fc6b592a-512b-4696-9d5e-b0fd08c1d383/download",
+        "action": "Two copper aura rings gently rise and enclose the ivory soul core, one warm pulse radiates, rings settle and the light fades. Quiet one time unlock cue, no human silhouette, fixed center.",
+        "frame_count": 8,
+        "no_background": true,
+        "seed": 208
+      },
+      "completed": true
+    },
+    "soul-resonance": {
+      "seedJob": "298d9aea-16db-4178-9cd1-22934a17bcfc",
+      "request": {
+        "description": "Original Global Shaman SOUL RESONANCE magical effect sprite: two intertwining thin turquoise ivory soul resonance ribbons making one clean infinity like wave around a tiny bronze spirit bead, sparse golden notes with no musical symbols. Isolated on generous transparent padding, no person, no scene, no readable writing, no frame. Crisp detailed classic MMORPG pixel clusters, dark teal ivory antique gold and described accent palette. Elevated three quarter overhead game view.",
+        "width": 96,
+        "height": 96,
+        "no_background": true,
+        "view": "low top-down",
+        "outline": "selective outline",
+        "shading": "detailed shading",
+        "seed": 109
+      },
+      "animationJob": "f462233b-f742-4800-b0ea-478fe8bee8c2",
+      "animationRequest": {
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/298d9aea-16db-4178-9cd1-22934a17bcfc/download",
+        "action": "Two spirit ribbons oscillate in opposite phase, weave into a synchronized infinity wave, central bronze bead flashes once, ribbons relax to their original shape. Subtle casting support loop, no human, fixed center.",
+        "frame_count": 8,
+        "no_background": true,
+        "seed": 209
+      },
+      "completed": true
+    }
+  },
+  "casts": {
+    "male": {
+      "characterId": "336280fc-8cfd-4a7f-98a3-056f78476544",
+      "group": "11c74fed-e825-48e3-98a7-fd036a6b061a",
+      "request": {
+        "character_id": "336280fc-8cfd-4a7f-98a3-056f78476544",
+        "animation_name": "medium-ritual-cast-v1",
+        "mode": "v3",
+        "frame_count": 8,
+        "keep_first_frame": false,
+        "directions": [
+          "south-east",
+          "east",
+          "north-east",
+          "north",
+          "north-west",
+          "west",
+          "south-west"
+        ],
+        "action_description": "Stationary apprentice shaman ritual spell casting. Feet stay planted in place with no stepping or translation. Keep original face hair clothing ornaments and silhouette. Bring hands together near the bronze chest amulet, lift one palm outward, open both hands to release spirit energy, settle back into starting idle. Subtle cloth movement, readable forearm gesture. Maintain the same facing and elevated three-quarter overhead sprite view in every frame. No magic effect, no particles, no weapon, no background. Smooth reusable casting loop."
+      },
+      "requestedDirections": [
+        "east",
+        "west",
+        "north",
+        "north-east",
+        "north-west",
+        "south-east",
+        "south-west"
+      ],
+      "front": {
+        "characterId": "cf7d9971-d700-4862-b1d3-863137dca224",
+        "group": "6e8bd825-cc75-4ddf-9eff-2ed38b84b938",
+        "request": {
+          "character_id": "cf7d9971-d700-4862-b1d3-863137dca224",
+          "animation_name": "medium-ritual-cast-v1",
+          "mode": "v3",
+          "frame_count": 8,
+          "keep_first_frame": false,
+          "directions": [
+            "south"
+          ],
+          "action_description": "Stationary apprentice shaman ritual spell casting. Feet stay planted in place with no stepping or translation. Keep original face hair clothing ornaments and silhouette. Bring hands together near the bronze chest amulet, lift one palm outward, open both hands to release spirit energy, settle back into starting idle. Subtle cloth movement, readable forearm gesture. Maintain the same facing and elevated three-quarter overhead sprite view in every frame. No magic effect, no particles, no weapon, no background. Smooth reusable casting loop."
+        },
+        "completed": true
+      },
+      "completed": true
+    },
+    "female": {
+      "characterId": "5faf034e-7b29-46ce-9671-0fb4e945049e",
+      "group": "7dc202dc-1504-48ac-9efc-85565e496984",
+      "request": {
+        "character_id": "5faf034e-7b29-46ce-9671-0fb4e945049e",
+        "animation_name": "medium-ritual-cast-v1",
+        "mode": "v3",
+        "frame_count": 8,
+        "keep_first_frame": false,
+        "directions": [
+          "east",
+          "west"
+        ],
+        "action_description": "Stationary apprentice shaman ritual spell casting. Feet stay planted in place with no stepping or translation. Keep original face hair clothing ornaments and silhouette. Bring hands together near the bronze chest amulet, lift one palm outward, open both hands to release spirit energy, settle back into starting idle. Subtle cloth movement, readable forearm gesture. Maintain the same facing and elevated three-quarter overhead sprite view in every frame. No magic effect, no particles, no weapon, no background. Smooth reusable casting loop."
+      },
+      "requestedDirections": [
+        "east",
+        "west",
+        "north",
+        "north-east",
+        "north-west",
+        "south-east",
+        "south-west"
+      ],
+      "front": {
+        "characterId": "83ea8a66-caff-4872-aeae-350e50c765f9",
+        "group": "316cf3b3-07d4-454b-bf9c-622939cf6081",
+        "request": {
+          "character_id": "83ea8a66-caff-4872-aeae-350e50c765f9",
+          "animation_name": "medium-ritual-cast-v1",
+          "mode": "v3",
+          "frame_count": 8,
+          "keep_first_frame": false,
+          "directions": [
+            "south"
+          ],
+          "action_description": "Stationary apprentice shaman ritual spell casting. Feet stay planted in place with no stepping or translation. Keep original face hair clothing ornaments and silhouette. Bring hands together near the bronze chest amulet, lift one palm outward, open both hands to release spirit energy, settle back into starting idle. Subtle cloth movement, readable forearm gesture. Maintain the same facing and elevated three-quarter overhead sprite view in every frame. No magic effect, no particles, no weapon, no background. Smooth reusable casting loop."
+        },
+        "completed": true
+      },
+      "completed": true
+    }
+  }
+}

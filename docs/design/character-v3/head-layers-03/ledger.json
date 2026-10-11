@@ -1,0 +1,67 @@
+{
+  "authorization": "User 2026-10-10: only the approved default face passes; redo hair face-locked via inpaint, staged with user checks. Test: side-sweep east only. | User: expressions only neutral/cold/sad; use the packed credit-saving method and show results.",
+  "cap": 65,
+  "attempts": [
+    {
+      "stage": "test side-sweep east",
+      "tool": "inpaint_image_pro_flash",
+      "reserved": 6,
+      "status": "completed",
+      "retry": false
+    },
+    {
+      "stage": "test side-sweep east fringe-lower",
+      "tool": "inpaint_image_pro_flash",
+      "reserved": 6,
+      "status": "completed",
+      "retry": false,
+      "reason": "User: front lock should fall lower"
+    },
+    {
+      "stage": "pack-hair-side-sweep",
+      "tool": "inpaint_image_pro_flash",
+      "reserved": 9,
+      "status": "completed",
+      "retry": false
+    },
+    {
+      "stage": "pack-face-cold",
+      "tool": "inpaint_image_pro_flash",
+      "reserved": 9,
+      "status": "completed",
+      "retry": false
+    },
+    {
+      "stage": "pack-face-sad",
+      "tool": "inpaint_image_pro_flash",
+      "reserved": 9,
+      "status": "completed",
+      "retry": false
+    },
+    {
+      "stage": "pack-face-closed",
+      "tool": "inpaint_image_pro_flash",
+      "reserved": 9,
+      "status": "completed",
+      "retry": false,
+      "reason": "User: add closed eyes for blinking"
+    },
+    {
+      "stage": "pack-hair-side-sweep-back",
+      "tool": "inpaint_image_pro_flash",
+      "reserved": 6,
+      "status": "completed",
+      "retry": false,
+      "reason": "User 2026-10-10: approved back-view regeneration (12 credits) with volume envelope + nape extension"
+    },
+    {
+      "stage": "pack-hair-default-back",
+      "tool": "inpaint_image_pro_flash",
+      "reserved": 6,
+      "status": "completed",
+      "retry": false,
+      "reason": "User 2026-10-10: approved back-view regeneration (12 credits) with volume envelope + nape extension"
+    }
+  ],
+  "spent": 60
+}

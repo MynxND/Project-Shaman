@@ -1,0 +1,40 @@
+{
+  "tool": "inpaint_image_pro_flash",
+  "arguments": {
+    "description": "Edit only WHITE-mask clothing of LEFT sprite, a strict RIGHT-facing profile. RIGHT sprite is the untouched approved FRONT master, reference only. Preserve the existing side pose and narrow side silhouette. Match FRONT cream embroidered woven tunic, short fur-trimmed mantle, crimson waist sash, weathered bronze amulet, green/gold woven apron and layered cream hem. Project these same garments in genuine side view: narrow hanging apron at front of hips, not a wide frontal skirt; continuous side seams, natural drape and consistent upper-left shading. Keep head, silver tied hair, crimson bow, face, exposed skin, hands, feet and all black-mask RGBA EXACT. No new armor, no cape, no new accessories, no front-facing body, no whole-character reroll, no resize. Repair costume and shading only, not anatomy.",
+    "bounding_box": {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128
+    },
+    "crop_to_mask": true,
+    "no_background": true,
+    "output_method": "Modify current layer",
+    "seed": 911
+  },
+  "inputs": {
+    "image_base64": {
+      "file": "input.png",
+      "pngSha256": "eacc451ef3989a503bbcc3a0cde39f5fdb27f1573c86c438e70da34bbd27cf7f",
+      "source": "docs/design/character-turnaround/foundation-01/east/source.png"
+    },
+    "mask_image_base64": {
+      "file": "mask.png",
+      "pngSha256": "b0aeb1fe7026436111ec2b4b53a6ae36bf1e58b56449a5679649cdb2e54b633b",
+      "source": "docs/design/character-turnaround/foundation-01/east/costume-edit-mask.png"
+    },
+    "context_image": {
+      "file": "context.png",
+      "pngSha256": "f39ca60354cf474f01f8680b5859a0e05091b6733eb846ecde74305736622269",
+      "source": "docs/design/character-turnaround/foundation-01/east/costume-context.png"
+    }
+  },
+  "frontPngSha256": "38de6dd6360b587197e993963b7c4ca5ce73de2cc7c16c6bf536c83f8f96cd66",
+  "native": [
+    128,
+    128
+  ],
+  "approved": false,
+  "productionReady": false
+}

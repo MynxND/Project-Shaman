@@ -1,0 +1,9 @@
+# Validation — 2026-10-09
+
+Passed full workspace build/typecheck; shared skill-system behavioral tests; existing shared rules, live two-client network smoke, NPC services/network tests; strict Medium packaging and transparent sprite/frame verification. Source formulas/CT/CD/durations remain equal to the user's design data. Current production manifest: five active VFX sheets (45 native frames), five stat passive entries with null effects, ten icons, sixteen cast sheets (128 native frames).
+
+Browser checks on `/skills`: Amulet Blast 1s CT shows the gold ground seal below actor feet; paused timeline permits frame inspection. Interruption during cast visibly enters cancellation and never shows release. Spirit Sense has no VFX/filmstrip/cast option; pure modifier preview is 100 → 80 at Lv.10 for Undead/Demon. Ghost Sight has immediate release, no cast circle, disabled cast-only option. Separate aura fixture checkbox turns subtle jade marking on/off; it is not a Medium passive effect. Screenshots show casting and aura states.
+
+Responsive checks: default desktop, portrait 390×844, landscape 844×390; no horizontal overflow, no broken icons and one canvas after orientation changes. Saved `screens/casting-desktop.png`, `casting-portrait.png`, `casting-landscape.png`, `aura-desktop.png`. Temporary viewport override restored; user gameplay tab was not navigated/reloaded. New test tab closed after checks.
+
+Not verified/implemented: live authoritative skill combat; server-driven cast/cancel events; game-world aura buffs, channel and trigger execution; real device performance benchmarks; final visual acceptance across 360 non-Medium skills. Policy tests cover those behavior restrictions, not their future gameplay. Network smoke logs the existing unregistered `profile` listener warnings and passes. This work does not resolve missing costs/ranges or approve provisional mechanics/art.

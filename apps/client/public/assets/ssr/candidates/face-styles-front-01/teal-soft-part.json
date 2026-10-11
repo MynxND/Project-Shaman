@@ -1,0 +1,44 @@
+{
+  "version": "ssr/1",
+  "id": "face.teal-soft",
+  "kind": "face",
+  "variant": "teal-soft",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": false,
+  "images": [
+    {
+      "id": "face",
+      "url": "/assets/ssr/candidates/face-styles-front-01/teal-soft-patch.png",
+      "sha256": "54396c7549cc2f568062f8194b578da58e5f06d0e13d6d382b2ca5a0cf57b6aa",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "face",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  }
+}

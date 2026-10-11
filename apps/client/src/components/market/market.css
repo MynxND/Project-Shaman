@@ -1,0 +1,89 @@
+/* Gold exchange layout. Components come from the UI kit; this file arranges them and styles the chart and book. */
+.mk-window {
+  /* Placement: .sk-center-window (ui-kit). */
+  width: min(1100px, calc(100vw - 24px)); z-index: 23;
+}
+.mk-body {
+  display: grid; gap: var(--sk-gap); align-items: start;
+  grid-template-columns: minmax(0, 1fr) 250px 270px;
+  grid-template-areas: "chart book form" "history history form";
+}
+.mk-chart { grid-area: chart; min-width: 0; }
+.mk-book { grid-area: book; }
+.mk-form { grid-area: form; display: flex; flex-direction: column; gap: 6px; }
+.mk-history { grid-area: history; min-width: 0; }
+.mk-body h4 small { font-weight: 400; margin-left: 4px; }
+.mk-panel-head { display: flex; justify-content: space-between; align-items: center; gap: 6px; flex-wrap: wrap; }
+.mk-seg { display: flex; gap: 4px; }
+.mk-seg .sk-button { min-height: 32px; padding: 0 10px; font-size: 13px; }
+
+/* Chart */
+.mk-ohlc { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin: 2px 0 4px; font-variant-numeric: tabular-nums; }
+.mk-ohlc > b { font-size: 22px; }
+.mk-svg { display: block; width: 100%; height: auto; background: #2b231d; box-shadow: inset 0 0 0 1px #b39b70; touch-action: pan-y; }
+.mk-grid { stroke: #e4d3ab22; stroke-width: 1; }
+.mk-axis { fill: #cdbb93; font: 15px var(--sk-font); text-anchor: end; }
+.mk-last { stroke: var(--sk-bronze); stroke-dasharray: 4 3; stroke-width: 1; }
+.mk-cross { stroke: #e4d3ab66; stroke-width: 1; }
+.mk-up line { stroke: #6fc2a6; } .mk-up rect { fill: #5f9d8b; }
+.mk-down line { stroke: #d17a6a; } .mk-down rect { fill: #9d493d; }
+.mk-svg rect.mk-vol { fill: #b58a4555; }
+
+/* Order book */
+.mk-levels { display: flex; flex-direction: column; }
+.mk-level {
+  all: unset; box-sizing: border-box; position: relative; display: grid; grid-template-columns: 1fr 1fr 1fr; padding: 1px 4px;
+  font: 13px/1.5 var(--sk-font); font-variant-numeric: tabular-nums; cursor: pointer;
+}
+.mk-level > span:not(.mk-depth) { position: relative; text-align: right; }
+.mk-level > span:nth-child(2) { text-align: left; font-weight: 700; }
+.mk-level[data-side="ask"] > span:nth-child(2) { color: var(--sk-crimson); }
+.mk-level[data-side="bid"] > span:nth-child(2) { color: #2f7d63; }
+.mk-depth { position: absolute; right: 0; top: 1px; bottom: 1px; }
+.mk-level[data-side="ask"] .mk-depth { background: #9d493d2e; }
+.mk-level[data-side="bid"] .mk-depth { background: #5f9d8b38; }
+.mk-level:hover, .mk-level:focus-visible { background: #fff6; outline: none; box-shadow: inset 0 0 0 1px var(--sk-bronze); }
+.mk-level-head { cursor: default; color: var(--sk-ink-soft); font-size: 11px; }
+.mk-level-head > span:first-child { text-align: left; }
+.mk-level-head:hover { background: none; box-shadow: none; }
+.mk-spread { margin: 3px 0; padding: 3px 6px; background: #31291f; color: var(--sk-parchment); font-size: 12px; text-align: center; font-variant-numeric: tabular-nums; }
+.mk-spread .sk-up { color: #8fe0c4; } .mk-spread .sk-down { color: #f0a090; }
+
+/* Form */
+.mk-side { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
+.mk-side button { all: unset; cursor: pointer; text-align: center; padding: 6px 0; font: 400 20px/1.2 var(--sk-font-display); background: #d9c597; box-shadow: inset 0 0 0 1px #b39b70; }
+.mk-side button[data-side="buy"][aria-selected="true"] { background: var(--sk-jade); color: #f6efdc; }
+.mk-side button[data-side="sell"][aria-selected="true"] { background: var(--sk-crimson); color: #f6e6dc; }
+.mk-side button:focus-visible, .mk-tab:focus-visible { outline: 2px solid var(--sk-jade); outline-offset: 1px; }
+.mk-seg > .sk-button { flex: 1; }
+.mk-quote { display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; margin: 2px 0; font-variant-numeric: tabular-nums; }
+.mk-quote dt { color: var(--sk-ink-soft); }
+.mk-quote dd { margin: 0; text-align: right; }
+.mk-error { margin: 0; padding: 4px 6px; color: #7c2f25; background: #f3d6cc; border: 1px dashed var(--sk-crimson); font-size: 12px; }
+.mk-form > .sk-button { min-height: 44px; }
+.mk-review, .mk-done { padding: 6px 8px; background: #f6ead0; box-shadow: inset 0 0 0 1px var(--sk-bronze), 0 0 0 2px #e9c47a55; }
+.mk-review p, .mk-done p { margin: 0 0 6px; }
+.mk-review-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+
+/* History */
+.mk-tab { all: unset; cursor: pointer; padding: 3px 10px; font-size: 13px; background: #d9c597; box-shadow: inset 0 0 0 1px #b39b70; }
+.mk-tab[aria-selected="true"] { background: var(--sk-bronze); font-weight: 700; }
+.mk-empty { padding: 4px 0; text-align: center; }
+.mk-table-wrap { overflow-x: auto; max-height: 180px; overflow-y: auto; }
+.mk-table { width: 100%; border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.mk-table th { text-align: left; color: var(--sk-ink-soft); font-weight: 400; border-bottom: 1px dashed #a58f6a; padding: 2px 6px; position: sticky; top: 0; background: #ead9b1; }
+.mk-table td { padding: 2px 6px; border-bottom: 1px dotted #c9b48b; }
+.mk-table .sk-button { min-height: 26px; padding: 0 8px; font-size: 12px; }
+
+/* Tablet / small laptop: chart full width, book and form side by side. */
+@media (max-width: 1000px) {
+  .mk-body { grid-template-columns: minmax(0, 1fr) 270px; grid-template-areas: "chart chart" "book form" "history history"; }
+}
+/* Phone portrait: one column, form right after the chart. */
+@media (max-width: 700px) {
+  .mk-body { grid-template-columns: minmax(0, 1fr); grid-template-areas: "chart" "form" "book" "history"; }
+}
+/* Phone landscape: chart + form, then book and history; scrolls inside the window. */
+@media (max-height: 520px) and (orientation: landscape) {
+  .mk-body { grid-template-columns: minmax(0, 1fr) 270px; grid-template-areas: "chart form" "book form" "history history"; }
+}

@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.prototype-long-pony",
+  "kind": "hairFront",
+  "variant": "prototype-long-pony",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "long-pony-hairFront-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-02/long-pony-hairFront-fixed.png",
+      "sha256": "ebe0144564884955ef0894233b170cbed727b3a31eaad562109d330e54819dcb",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "long-pony-hairFront-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-02/long-pony-hairFront-ramp.png",
+      "sha256": "5be1579c9c6cde010065c9c32efcd094f288bd13b2b0a3b11494919e4df7fd10",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "long-pony-hairFront-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "long-pony-hairFront-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Complete silhouette FRONT repair of the existing eight owned designs; visual approval pending."
+}

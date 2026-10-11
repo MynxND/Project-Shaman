@@ -1,0 +1,198 @@
+{
+  "method": "reference-guided-native-masked-inpaint",
+  "jobId": "1963d87f-6474-472e-bcaa-f8aeaf09d6e3",
+  "rawPngSha256": "9275e46622ea3d93acf47e84896bec2820e4800ed25afe589aee092a4b5cfe5f",
+  "nativeSize": [
+    128,
+    128
+  ],
+  "order": [
+    "preserved-front",
+    "original-east",
+    "raw-right90"
+  ],
+  "noSpriteTransform": true,
+  "exactNearest2x": true,
+  "changedPixels": 4749,
+  "clearedPixels": 984,
+  "addedPixels": 845,
+  "maskEscapePixels": 0,
+  "firstMaskEscapes": [],
+  "allUnmaskedRgbaExact": true,
+  "measured": {
+    "front": {
+      "silhouette": {
+        "left": 32,
+        "top": 5,
+        "right": 97,
+        "bottom": 123,
+        "width": 66,
+        "height": 119,
+        "pixels": 4394
+      },
+      "headBand": {
+        "left": 42,
+        "top": 5,
+        "right": 86,
+        "bottom": 38,
+        "width": 45,
+        "height": 34,
+        "pixels": 875
+      },
+      "shoulderBand": {
+        "left": 39,
+        "top": 39,
+        "right": 86,
+        "bottom": 48,
+        "width": 48,
+        "height": 10,
+        "pixels": 401
+      },
+      "torsoBand": {
+        "left": 32,
+        "top": 49,
+        "right": 97,
+        "bottom": 67,
+        "width": 66,
+        "height": 19,
+        "pixels": 940
+      },
+      "hipBand": {
+        "left": 32,
+        "top": 68,
+        "right": 97,
+        "bottom": 83,
+        "width": 66,
+        "height": 16,
+        "pixels": 833
+      },
+      "footBand": {
+        "left": 43,
+        "top": 108,
+        "right": 85,
+        "bottom": 123,
+        "width": 43,
+        "height": 16,
+        "pixels": 362
+      },
+      "groundEdgeDelta": 0
+    },
+    "originalEast": {
+      "silhouette": {
+        "left": 22,
+        "top": 5,
+        "right": 82,
+        "bottom": 124,
+        "width": 61,
+        "height": 120,
+        "pixels": 3945
+      },
+      "headBand": {
+        "left": 40,
+        "top": 5,
+        "right": 82,
+        "bottom": 38,
+        "width": 43,
+        "height": 34,
+        "pixels": 1035
+      },
+      "shoulderBand": {
+        "left": 35,
+        "top": 39,
+        "right": 76,
+        "bottom": 48,
+        "width": 42,
+        "height": 10,
+        "pixels": 373
+      },
+      "torsoBand": {
+        "left": 22,
+        "top": 49,
+        "right": 82,
+        "bottom": 67,
+        "width": 61,
+        "height": 19,
+        "pixels": 816
+      },
+      "hipBand": {
+        "left": 26,
+        "top": 68,
+        "right": 82,
+        "bottom": 83,
+        "width": 57,
+        "height": 16,
+        "pixels": 585
+      },
+      "footBand": {
+        "left": 51,
+        "top": 108,
+        "right": 80,
+        "bottom": 124,
+        "width": 30,
+        "height": 17,
+        "pixels": 355
+      },
+      "groundEdgeDelta": 1
+    },
+    "rawRight90": {
+      "silhouette": {
+        "left": 37,
+        "top": 5,
+        "right": 88,
+        "bottom": 122,
+        "width": 52,
+        "height": 118,
+        "pixels": 3806
+      },
+      "headBand": {
+        "left": 44,
+        "top": 5,
+        "right": 82,
+        "bottom": 38,
+        "width": 39,
+        "height": 34,
+        "pixels": 801
+      },
+      "shoulderBand": {
+        "left": 42,
+        "top": 39,
+        "right": 83,
+        "bottom": 48,
+        "width": 42,
+        "height": 10,
+        "pixels": 363
+      },
+      "torsoBand": {
+        "left": 37,
+        "top": 49,
+        "right": 88,
+        "bottom": 67,
+        "width": 52,
+        "height": 19,
+        "pixels": 855
+      },
+      "hipBand": {
+        "left": 38,
+        "top": 68,
+        "right": 87,
+        "bottom": 83,
+        "width": 50,
+        "height": 16,
+        "pixels": 713
+      },
+      "footBand": {
+        "left": 49,
+        "top": 108,
+        "right": 82,
+        "bottom": 122,
+        "width": 34,
+        "height": 15,
+        "pixels": 315
+      },
+      "groundEdgeDelta": -1
+    }
+  },
+  "chargedGenerations": 6,
+  "semanticReview": "Pending direct native/nearest2x inspection; byte checks do not prove angle, anatomy or identity.",
+  "approved": false
+}

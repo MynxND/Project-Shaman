@@ -1,0 +1,176 @@
+import type { MapDefinition, MapObject } from '../world.js';
+
+// Umbral Capital / นครมนตร์ทมิฬ — provisional layout, see docs/design/umbral-capital.md.
+// Coordinates are world units; an object's (x, y) is the centre of its base.
+
+const house = (id: string, asset: 'house-a' | 'house-b', x: number, y: number): MapObject =>
+  ({ id, asset, x, y, footprint: asset === 'house-a' ? { w: 4, h: 2.5 } : { w: 2.8, h: 2.5 } });
+const prop = (id: string, asset: string, x: number, y: number, w = 0.8, h = 0.6): MapObject =>
+  ({ id, asset, x, y, footprint: { w, h } });
+
+const crates = (id: string, x: number, y: number) => prop(id, 'crates', x, y, 1.8, 1);
+const barrels = (id: string, x: number, y: number) => prop(id, 'barrels', x, y, 1.6, 0.9);
+const tree = (id: string, x: number, y: number) => prop(id, 'dead-tree', x, y, 1.2, 0.8);
+const lantern = (id: string, x: number, y: number) => prop(id, 'skull-lantern', x, y);
+
+// Density pass (2026-10-08): street lighting, clutter around shops and houses, trees in the grass,
+// ceremony props at the temple and gate. Kept off the street, avenue and plaza walking lanes.
+const DECOR: MapObject[] = [
+  // Lanterns at x 29 / 51 were dropped: the v2 plaza lights its own road mouths.
+  ...[6, 21, 62, 75].map((x, i) => lantern(`street-lantern-n${i}`, x, 29.8)),
+  ...[6, 25, 70, 76].map((x, i) => lantern(`street-lantern-s${i}`, x, 36.6)),
+  prop('temple-brazier-w', 'brazier', 35.5, 20),
+  prop('temple-brazier-e', 'brazier', 44.5, 20),
+  prop('temple-stele-w', 'stele', 30, 12.5),
+  prop('temple-stele-e', 'stele', 50, 12.5),
+  prop('gate-totem-w', 'bone-totem', 31, 53),
+  prop('gate-totem-e', 'bone-totem', 49, 53),
+  prop('academy-cauldron', 'cauldron', 7.5, 38),
+  tree('academy-tree-2', 27, 40.5),
+  tree('west-tree', 2, 36.5),
+  crates('market-crates-1', 52.5, 43.5), crates('market-crates-2', 70, 44),
+  barrels('market-barrels-1', 73.5, 42), barrels('market-barrels-2', 58.5, 44.5),
+  crates('shop-crates', 62, 29.2), barrels('shop-barrels', 72.5, 29.2),
+  ...[[12, 17.5], [30, 19.5], [60, 18.5], [77, 15.5], [13, 53.5], [24, 51.5], [59, 54.5], [69, 51.5]]
+    .map(([x, y], i) => crates(`house-crates-${i}`, x!, y!)),
+  ...[[4.5, 17], [21.5, 15], [51.5, 15], [68, 18], [5, 53.5], [33, 56.5], [51.5, 55.5], [70, 54]]
+    .map(([x, y], i) => barrels(`house-barrels-${i}`, x!, y!)),
+  ...[[2, 6], [14, 4], [24, 6.5], [54, 5], [66, 4], [77, 7], [3, 47], [25, 46], [57, 47.5], [78, 50], [13, 58.5], [64, 58.5]]
+    .map(([x, y], i) => tree(`grass-tree-${i}`, x!, y!)),
+  prop('north-well', 'well', 60, 8.5, 1.1, 0.8),
+];
+
+export const UMBRAL_CAPITAL: MapDefinition = {
+  id: 'umbral-capital',
+  name: 'นครมนตร์ทมิฬ',
+  nameEn: 'Umbral Capital',
+  // Zone names follow docs/design/umbral-capital.md; Thai names are provisional.
+  landmarks: [
+    { id: 'temple', name: { th: 'วิหารวิญญาณดำ', en: 'Temple of the Black Spirit' }, x: 40, y: 11.5, kind: 'temple' },
+    { id: 'plaza', name: { th: 'ลานยันต์ใหญ่', en: 'Great Yantra Plaza' }, x: 40, y: 40, kind: 'plaza' },
+    { id: 'academy', name: { th: 'สำนักศึกษาคำสาป', en: 'Academy of Curses' }, x: 15, y: 26.5, kind: 'school' },
+    { id: 'curse-shop', name: { th: 'ร้านคำสาป', en: 'Curse Shop' }, x: 57, y: 26.5, kind: 'shop' },
+    { id: 'apothecary', name: { th: 'ร้านยาสมุนไพร', en: 'Apothecary' }, x: 68, y: 26.5, kind: 'shop' },
+    { id: 'night-market', name: { th: 'ตลาดราตรี', en: 'Night Market' }, x: 63, y: 41, kind: 'market' },
+    { id: 'city-gate', name: { th: 'ประตูเมือง', en: 'City Gate' }, x: 40, y: 55, kind: 'gate' },
+  ],
+  width: 80,
+  height: 60,
+  // Spawn on the open south side of the Great Yantra Plaza, facing the spirit pillar (UMBRAL_CAPITAL_REDESIGN.md).
+  spawn: { x: 40, y: 36 },
+  // v2 tile ground (PixelLab Wang tilesets); the v1 region textures still show wherever no tile applies.
+  terrain: {
+    base: '',
+    paint: [
+      // Main roads in v2 road tiles (the v1 cobble regions underneath show at their ragged edges).
+      { terrain: 'road', shape: 'rect', x: 37, y: 12, w: 6, h: 48 },
+      { terrain: 'road', shape: 'rect', x: 3, y: 30, w: 74, h: 5 },
+      // Great Yantra Plaza: stone square with a round sandstone floor.
+      { terrain: 'road', shape: 'rect', x: 29, y: 21, w: 22, h: 22 },
+      // Sandstone only under the yantra disc: its stand-alone tile has a text-like glyph, so it must not show.
+      { terrain: 'plaza', shape: 'circle', x: 40, y: 32, r: 6.5 },
+    ],
+  },
+  // Engraved yantra platform (14.5 units across) at the plaza centre; walkable.
+  decals: [{ id: 'plaza-yantra', asset: 'yantra-disc', x: 40, y: 32 }],
+  ground: {
+    base: 'dark-earth',
+    regions: [
+      { material: 'dark-grass', x: 0, y: 0, w: 31, h: 12 },
+      { material: 'dark-grass', x: 49, y: 0, w: 31, h: 12 },
+      { material: 'dark-grass', x: 0, y: 45, w: 30, h: 15 },
+      { material: 'dark-grass', x: 50, y: 45, w: 30, h: 15 },
+      // East-west street: academy -> plaza -> market.
+      { material: 'basalt-cobble', x: 3, y: 30, w: 74, h: 5 },
+      // North-south avenue: temple -> plaza -> city gate.
+      { material: 'basalt-cobble', x: 37, y: 12, w: 6, h: 48 },
+      { material: 'ritual-paving', x: 30, y: 22, w: 20, h: 18 },
+      // Ceremony forecourts in front of the temple and the city gate.
+      { material: 'ritual-paving', x: 34, y: 15, w: 12, h: 6 },
+      { material: 'ritual-paving', x: 34, y: 52, w: 12, h: 5 },
+    ],
+  },
+  objects: [
+    // Temple of the Black Spirit, north of the plaza.
+    { id: 'temple', asset: 'temple', x: 40, y: 15, footprint: { w: 10, h: 4 } },
+    prop('temple-banner-w', 'banner-pole', 33, 15),
+    prop('temple-banner-e', 'banner-pole', 47, 15),
+    // Grand Ritual Plaza.
+    // Great Yantra Plaza (v2, PixelLab; docs/design/UMBRAL_CAPITAL_REDESIGN.md). Spawn (40, 36) stays clear: the
+    // nearest collision is the pillar base 4.5 units north and the ritual pillars 4.4 units away.
+    prop('plaza-spirit-pillar', 'spirit-pillar', 40, 31, 1.6, 0.9),
+    prop('plaza-incense-w', 'incense-urn', 38.2, 31.4, 0.7, 0.4),
+    prop('plaza-incense-e', 'incense-urn', 41.8, 31.4, 0.7, 0.4),
+    prop('plaza-pillar-nw', 'ritual-pillar', 35.6, 27.6, 0.8, 0.5),
+    prop('plaza-pillar-ne', 'ritual-pillar', 44.4, 27.6, 0.8, 0.5),
+    prop('plaza-pillar-sw', 'ritual-pillar', 35.6, 36.4, 0.8, 0.5),
+    prop('plaza-pillar-se', 'ritual-pillar', 44.4, 36.4, 0.8, 0.5),
+    prop('plaza-brazier-nw', 'bronze-brazier', 33, 25.3, 1.2, 0.7),
+    prop('plaza-brazier-ne', 'bronze-brazier', 47, 25.3, 1.2, 0.7),
+    prop('plaza-brazier-sw', 'bronze-brazier', 33, 39, 1.2, 0.7),
+    prop('plaza-brazier-se', 'bronze-brazier', 47, 39, 1.2, 0.7),
+    // Road mouths: lanterns and talisman banners frame each road; the guardian pair faces the gate road.
+    prop('plaza-lantern-n-w', 'ritual-lantern', 36.2, 22.8, 0.8, 0.5),
+    prop('plaza-lantern-n-e', 'ritual-lantern', 43.8, 22.8, 0.8, 0.5),
+    prop('plaza-lantern-w-n', 'ritual-lantern', 30.6, 29.3, 0.8, 0.5),
+    prop('plaza-lantern-w-s', 'ritual-lantern', 30.6, 36.2, 0.8, 0.5),
+    prop('plaza-lantern-e-n', 'ritual-lantern', 49.4, 29.3, 0.8, 0.5),
+    prop('plaza-lantern-e-s', 'ritual-lantern', 49.4, 36.2, 0.8, 0.5),
+    prop('plaza-banner-n-w', 'talisman-banner', 34.6, 22.6, 0.6, 0.4),
+    prop('plaza-banner-n-e', 'talisman-banner', 45.4, 22.6, 0.6, 0.4),
+    { id: 'plaza-guardian-w', asset: 'yak-guardian', x: 35.4, y: 42.6, footprint: { w: 1.6, h: 0.7 } },
+    { id: 'plaza-guardian-e', asset: 'yak-guardian', x: 44.6, y: 42.6, footprint: { w: 1.6, h: 0.7 }, flip: true },
+    prop('plaza-flowers-nw', 'lotus-flowerbed', 30.8, 23.4, 3, 1),
+    prop('plaza-flowers-ne', 'lotus-flowerbed', 49.2, 23.4, 3, 1),
+    prop('plaza-flowers-sw', 'lotus-flowerbed', 30.8, 42.2, 3, 1),
+    prop('plaza-flowers-se', 'lotus-flowerbed', 49.2, 42.2, 3, 1),
+    // Style-test pieces kept outside the plaza.
+    prop('garden-sacred-tree', 'sacred-tree', 26, 44, 2.4, 1.2),
+    // Academy of Curses, west.
+    { id: 'academy', asset: 'academy', x: 15, y: 29, footprint: { w: 6, h: 3 } },
+    prop('west-teak-house', 'teak-house', 24, 28.5, 6, 2.5),
+    prop('academy-stele-1', 'stele', 10, 38),
+    prop('academy-stele-2', 'stele', 15, 38),
+    prop('academy-stele-3', 'stele', 20, 38),
+    prop('academy-tree', 'dead-tree', 5, 41, 1.2, 0.8),
+    prop('west-well', 'well', 12, 22, 1.1, 0.8),
+    // Night Market, east.
+    { id: 'curse-shop', asset: 'curse-shop', x: 57, y: 29, footprint: { w: 5, h: 3 } },
+    { id: 'apothecary', asset: 'apothecary', x: 68, y: 29, footprint: { w: 5, h: 3 } },
+    prop('market-stall-1', 'market-stall', 55, 40, 3, 1.2),
+    prop('market-stall-2', 'market-stall', 61, 40, 3, 1.2),
+    prop('market-stall-3', 'market-stall', 67, 40, 3, 1.2),
+    prop('market-cauldron', 'cauldron', 72, 39),
+    prop('market-lantern-1', 'skull-lantern', 52, 36),
+    prop('market-lantern-2', 'skull-lantern', 64, 36),
+    prop('market-tree', 'dead-tree', 75, 44, 1.2, 0.8),
+    // Residential lanes.
+    house('nw-house-1', 'house-a', 8, 16),
+    house('nw-house-2', 'house-b', 17, 14),
+    house('nw-house-3', 'house-a', 26, 18),
+    house('ne-house-1', 'house-b', 55, 14),
+    house('ne-house-2', 'house-a', 64, 17),
+    house('ne-house-3', 'house-b', 73, 14),
+    house('sw-house-1', 'house-a', 9, 52),
+    house('sw-house-2', 'house-b', 19, 50),
+    house('sw-house-3', 'house-a', 28, 55),
+    house('se-house-1', 'house-a', 55, 53),
+    house('se-house-2', 'house-b', 65, 50),
+    prop('se-well', 'well', 72, 56, 1.1, 0.8),
+    prop('nw-tree', 'dead-tree', 4, 24, 1.2, 0.8),
+    // Avenue to the City Gate.
+    prop('avenue-lantern-w1', 'skull-lantern', 35.5, 45),
+    prop('avenue-lantern-e1', 'skull-lantern', 44.5, 45),
+    prop('avenue-lantern-w2', 'skull-lantern', 35.5, 51),
+    prop('avenue-lantern-e2', 'skull-lantern', 44.5, 51),
+    // The gate sprite has no footprint of its own; its two pillars are blockers so the passage stays open.
+    { id: 'city-gate', asset: 'city-gate', x: 40, y: 58.5, footprint: null },
+    prop('gate-banner-w', 'banner-pole', 33, 57),
+    prop('gate-banner-e', 'banner-pole', 47, 57),
+    ...DECOR,
+  ],
+  blockers: [
+    { x: 35.2, y: 57, w: 2.4, h: 1.5 },
+    { x: 42.4, y: 57, w: 2.4, h: 1.5 },
+  ],
+};

@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-09",
+  "scope": "design-art-generation-builder only",
+  "approved": false,
+  "collectionComplete": false,
+  "completeCandidateStyles": ["natural-short", "tapered-short", "center-part", "high-topknot"],
+  "candidateViews": 16,
+  "chargedJobs": 14,
+  "chargedAdditionalCredits": 84,
+  "pendingJobs": 0,
+  "remainingAuthoredViews": 32,
+  "provisionalRemainingCreditsBeforeRetries": 192,
+  "commands": [
+    {"command":"node tools/rig/build_hair_collection.mjs","status":"passed"},
+    {"command":"node tools/rig/test_hair_collection.mjs","status":"passed","protectedChecks":2132,"palettePixelChecks":2097152},
+    {"command":"pnpm --filter @shaman/client test:head","status":"passed"},
+    {"command":"pnpm typecheck","status":"passed"},
+    {"command":"pnpm build","status":"passed"}
+  ],
+  "browserVerification": "Not performed by art-only worker; renderer/shared integration owned by main",
+  "nextOwner": "main",
+  "handoff": "README.md"
+}

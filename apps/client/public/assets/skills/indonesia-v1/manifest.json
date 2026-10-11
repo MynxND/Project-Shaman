@@ -1,0 +1,455 @@
+{
+  "note": "Indonesia release VFX and icons (PixelLab). Proposals until user review.",
+  "effects": {
+    "black-magic-dart": {
+      "revision": "black-magic-dart-post",
+      "image": "black-magic-dart.png",
+      "width": 128,
+      "height": 64,
+      "frames": 13,
+      "anchor": {
+        "x": 64,
+        "y": 32
+      },
+      "seedJob": "eddf6e4a-c0f9-4963-b565-4fce10e96a26",
+      "animationJob": "4e9d6c30-255a-4d08-9e94-2f6d160850c8",
+      "packedAt": 1791706376922
+    },
+    "curse-of-agony": {
+      "revision": "curse-of-agony-post",
+      "image": "curse-of-agony.png",
+      "width": 128,
+      "height": 160,
+      "frames": 13,
+      "anchor": {
+        "x": 64,
+        "y": 157
+      },
+      "seedJob": "10badf3e-ff01-4d40-aea3-07ed2610e881",
+      "animationJob": "97bd5ff9-7bf5-4954-bc86-dcdbbf6d5389",
+      "packedAt": 1791706377369
+    },
+    "curse-of-the-archipelago": {
+      "revision": "curse-of-the-archipelago-post",
+      "image": "curse-of-the-archipelago.png",
+      "width": 256,
+      "height": 160,
+      "frames": 13,
+      "anchor": {
+        "x": 128,
+        "y": 79
+      },
+      "seedJob": "a5261609-a864-4166-8a23-01ab1f8caca7",
+      "animationJob": "2d2886d6-ecd4-4f01-85a4-8f1d7632f7ac",
+      "packedAt": 1791706377857
+    },
+    "mass-decay": {
+      "revision": "mass-decay-post",
+      "image": "mass-decay.png",
+      "width": 256,
+      "height": 160,
+      "frames": 13,
+      "anchor": {
+        "x": 128,
+        "y": 80
+      },
+      "seedJob": "de38e122-8d80-4df3-be97-a8262694b206",
+      "animationJob": "fc6abd54-469e-4144-81ae-b6bca277e907",
+      "packedAt": 1791706380079
+    },
+    "soul-pluck": {
+      "revision": "soul-pluck-post",
+      "image": "soul-pluck.png",
+      "width": 128,
+      "height": 176,
+      "frames": 13,
+      "anchor": {
+        "x": 64,
+        "y": 171
+      },
+      "seedJob": "db54b288-d7f6-4c1f-9bca-597a969f1303",
+      "animationJob": "026a5791-1cb1-4080-b983-dfc6d475a665",
+      "packedAt": 1791706382413
+    },
+    "voodoo-link": {
+      "revision": "voodoo-link-post",
+      "image": "voodoo-link.png",
+      "width": 192,
+      "height": 64,
+      "frames": 13,
+      "anchor": {
+        "x": 96,
+        "y": 30
+      },
+      "seedJob": "a270df5f-0feb-48ba-b161-cea13ad5acfc",
+      "animationJob": "a057a4dc-e7e9-4bdb-a9a0-b5721a91ac86",
+      "packedAt": 1791706383184
+    },
+    "heart-stop": {
+      "revision": "heart-stop-post",
+      "image": "heart-stop.png",
+      "width": 128,
+      "height": 176,
+      "frames": 13,
+      "anchor": {
+        "x": 64,
+        "y": 172
+      },
+      "seedJob": "bbc58e9d-54e9-4cb4-9a6c-b75257765b01",
+      "animationJob": "80bddcf4-9b03-44cd-8e00-2416019d3b34",
+      "packedAt": 1791706378757
+    },
+    "keris-thrust": {
+      "revision": "keris-thrust-post",
+      "image": "keris-thrust.png",
+      "width": 160,
+      "height": 96,
+      "frames": 13,
+      "anchor": {
+        "x": 80,
+        "y": 50
+      },
+      "seedJob": "d14ae480-082f-4b09-aade-cd7fed26b5ea",
+      "animationJob": "38d6a6ff-8e4f-43c5-bf09-85af95e838f1",
+      "packedAt": 1791706379584
+    },
+    "shadow-stealth": {
+      "revision": "shadow-stealth-post",
+      "image": "shadow-stealth.png",
+      "width": 128,
+      "height": 160,
+      "frames": 13,
+      "anchor": {
+        "x": 64,
+        "y": 156
+      },
+      "seedJob": "88d5081e-da19-4bcd-b514-db8f9a89810d",
+      "animationJob": "cefe5c9b-5b04-402f-9ac5-dfbaf70ddbb4",
+      "packedAt": 1791706381939
+    },
+    "venom-spit": {
+      "revision": "venom-spit-post",
+      "image": "venom-spit.png",
+      "width": 96,
+      "height": 48,
+      "frames": 13,
+      "anchor": {
+        "x": 48,
+        "y": 23
+      },
+      "seedJob": "63b59959-86c9-401a-83ad-d6f9b9357cd5",
+      "animationJob": "2f1e2be5-9277-41a8-ad32-47e731b4ed93",
+      "packedAt": 1791706382788
+    },
+    "assassinate": {
+      "revision": "assassinate-post",
+      "image": "assassinate.png",
+      "width": 192,
+      "height": 64,
+      "frames": 13,
+      "anchor": {
+        "x": 96,
+        "y": 32
+      },
+      "seedJob": "08f16f3e-34f4-4ee1-92a6-838db98ff726",
+      "animationJob": "6443e56d-7d07-4aa5-a6ca-d5721680c10e",
+      "packedAt": 1791706376516
+    },
+    "fatal-assassination": {
+      "revision": "fatal-assassination-post",
+      "image": "fatal-assassination.png",
+      "width": 160,
+      "height": 160,
+      "frames": 13,
+      "anchor": {
+        "x": 80,
+        "y": 157
+      },
+      "seedJob": "e6bcab08-08e7-45f9-8e9b-95abbd598440",
+      "animationJob": "f93a59e4-3103-42a6-a7e2-06392b1fea87",
+      "packedAt": 1791706378312
+    },
+    "poison-blade": {
+      "revision": "poison-blade-post",
+      "image": "poison-blade.png",
+      "width": 128,
+      "height": 160,
+      "frames": 13,
+      "anchor": {
+        "x": 64,
+        "y": 158
+      },
+      "seedJob": "483259ae-2467-495e-a1d9-157c79efb170",
+      "animationJob": "7d0a6e9a-ef65-42a7-a21e-3abeacfe5b20",
+      "packedAt": 1791706380514
+    },
+    "poison-cloud": {
+      "revision": "poison-cloud-post",
+      "image": "poison-cloud.png",
+      "width": 192,
+      "height": 128,
+      "frames": 13,
+      "anchor": {
+        "x": 96,
+        "y": 63
+      },
+      "seedJob": "1ba43966-1352-4370-923d-cdc3613240e5",
+      "animationJob": "348791d0-4d33-4703-b2ae-df02a24aa43d",
+      "packedAt": 1791706380978
+    },
+    "shadow-clone": {
+      "revision": "keris-soul-post",
+      "image": "shadow-clone.png",
+      "width": 96,
+      "height": 128,
+      "frames": 11,
+      "anchor": {
+        "x": 48,
+        "y": 127
+      },
+      "seedJob": "430d363f-3587-455a-b3c3-b1748686ea77",
+      "animationJob": "50f6b2c0-848a-4056-94f6-e130c8d4ae03",
+      "packedAt": 1791706379168
+    },
+    "shadow-flash-strike": {
+      "revision": "shadow-flash-strike-post",
+      "image": "shadow-flash-strike.png",
+      "width": 160,
+      "height": 160,
+      "frames": 13,
+      "anchor": {
+        "x": 80,
+        "y": 157
+      },
+      "seedJob": "e0dbb642-a132-4137-ba33-5833638f8261",
+      "animationJob": "3eec8380-e02a-48e9-9427-ecc5c387c016",
+      "packedAt": 1791706381471
+    },
+    "id-cast-circle": {
+      "revision": "id-cast-circle-post",
+      "image": "id-cast-circle.png",
+      "width": 192,
+      "height": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 96,
+        "y": 91
+      },
+      "seedJob": "e002fabc-11cf-4596-94cd-2ccf0d8cdeba",
+      "animationJob": "",
+      "packedAt": 1791706383453
+    }
+  },
+  "icons": {
+    "black-magic-dart": {
+      "image": "icons/black-magic-dart.png",
+      "sheet": "icons-santet-sheet",
+      "cell": 0,
+      "seedJob": "4e01885d-617c-4b6c-add8-c450ae8783d9",
+      "packedAt": 1791647628167
+    },
+    "curse-of-agony": {
+      "image": "icons/curse-of-agony.png",
+      "sheet": "icons-santet-sheet",
+      "cell": 1,
+      "seedJob": "4e01885d-617c-4b6c-add8-c450ae8783d9",
+      "packedAt": 1791647628169
+    },
+    "soul-pluck": {
+      "image": "icons/soul-pluck.png",
+      "sheet": "icons-santet-sheet",
+      "cell": 2,
+      "seedJob": "4e01885d-617c-4b6c-add8-c450ae8783d9",
+      "packedAt": 1791647628171
+    },
+    "poison-cloud": {
+      "image": "icons/poison-cloud.png",
+      "sheet": "icons-santet-sheet",
+      "cell": 3,
+      "seedJob": "4e01885d-617c-4b6c-add8-c450ae8783d9",
+      "packedAt": 1791647628174
+    },
+    "voodoo-link": {
+      "image": "icons/voodoo-link.png",
+      "sheet": "icons-santet-sheet",
+      "cell": 4,
+      "seedJob": "4e01885d-617c-4b6c-add8-c450ae8783d9",
+      "packedAt": 1791647628176
+    },
+    "dark-aura": {
+      "image": "icons/dark-aura.png",
+      "sheet": "icons-santet-sheet",
+      "cell": 5,
+      "seedJob": "4e01885d-617c-4b6c-add8-c450ae8783d9",
+      "packedAt": 1791647628179
+    },
+    "santet-reach": {
+      "image": "icons/santet-reach.png",
+      "sheet": "icons-santet-sheet",
+      "cell": 6,
+      "seedJob": "4e01885d-617c-4b6c-add8-c450ae8783d9",
+      "packedAt": 1791647628182
+    },
+    "hex-amplify": {
+      "image": "icons/hex-amplify.png",
+      "sheet": "icons-santet-sheet",
+      "cell": 7,
+      "seedJob": "4e01885d-617c-4b6c-add8-c450ae8783d9",
+      "packedAt": 1791647628185
+    },
+    "malice": {
+      "image": "icons/malice.png",
+      "sheet": "icons-santet-sheet",
+      "cell": 8,
+      "seedJob": "4e01885d-617c-4b6c-add8-c450ae8783d9",
+      "packedAt": 1791647628188
+    },
+    "shadow-ward": {
+      "image": "icons/shadow-ward.png",
+      "sheet": "icons-santet-sheet",
+      "cell": 9,
+      "seedJob": "4e01885d-617c-4b6c-add8-c450ae8783d9",
+      "packedAt": 1791647628190
+    },
+    "curse-of-the-archipelago": {
+      "image": "icons/curse-of-the-archipelago.png",
+      "sheet": "icons-santet-sheet",
+      "cell": 10,
+      "seedJob": "4e01885d-617c-4b6c-add8-c450ae8783d9",
+      "packedAt": 1791647628193
+    },
+    "mass-decay": {
+      "image": "icons/mass-decay.png",
+      "sheet": "icons-santet-sheet",
+      "cell": 11,
+      "seedJob": "4e01885d-617c-4b6c-add8-c450ae8783d9",
+      "packedAt": 1791647628196
+    },
+    "heart-stop": {
+      "image": "icons/heart-stop.png",
+      "sheet": "icons-santet-sheet",
+      "cell": 12,
+      "seedJob": "4e01885d-617c-4b6c-add8-c450ae8783d9",
+      "packedAt": 1791647628198
+    },
+    "overlords-curse": {
+      "image": "icons/overlords-curse.png",
+      "sheet": "icons-santet-sheet",
+      "cell": 13,
+      "seedJob": "4e01885d-617c-4b6c-add8-c450ae8783d9",
+      "packedAt": 1791647628202
+    },
+    "endless-agony": {
+      "image": "icons/endless-agony.png",
+      "sheet": "icons-santet-sheet",
+      "cell": 14,
+      "seedJob": "4e01885d-617c-4b6c-add8-c450ae8783d9",
+      "packedAt": 1791647628205
+    },
+    "poison-blade": {
+      "image": "icons/poison-blade.png",
+      "sheet": "icons-keris-sheet",
+      "cell": 0,
+      "seedJob": "ffc25841-bf0a-4723-8ba4-276d54c73b7e",
+      "packedAt": 1791647628314
+    },
+    "keris-thrust": {
+      "image": "icons/keris-thrust.png",
+      "sheet": "icons-keris-sheet",
+      "cell": 1,
+      "seedJob": "ffc25841-bf0a-4723-8ba4-276d54c73b7e",
+      "packedAt": 1791647628316
+    },
+    "shadow-stealth": {
+      "image": "icons/shadow-stealth.png",
+      "sheet": "icons-keris-sheet",
+      "cell": 2,
+      "seedJob": "ffc25841-bf0a-4723-8ba4-276d54c73b7e",
+      "packedAt": 1791647628319
+    },
+    "venom-spit": {
+      "image": "icons/venom-spit.png",
+      "sheet": "icons-keris-sheet",
+      "cell": 3,
+      "seedJob": "ffc25841-bf0a-4723-8ba4-276d54c73b7e",
+      "packedAt": 1791647628322
+    },
+    "assassinate": {
+      "image": "icons/assassinate.png",
+      "sheet": "icons-keris-sheet",
+      "cell": 4,
+      "seedJob": "ffc25841-bf0a-4723-8ba4-276d54c73b7e",
+      "packedAt": 1791647628325
+    },
+    "venom-mastery": {
+      "image": "icons/venom-mastery.png",
+      "sheet": "icons-keris-sheet",
+      "cell": 5,
+      "seedJob": "ffc25841-bf0a-4723-8ba4-276d54c73b7e",
+      "packedAt": 1791647628327
+    },
+    "keris-mastery": {
+      "image": "icons/keris-mastery.png",
+      "sheet": "icons-keris-sheet",
+      "cell": 6,
+      "seedJob": "ffc25841-bf0a-4723-8ba4-276d54c73b7e",
+      "packedAt": 1791647628330
+    },
+    "silent-step": {
+      "image": "icons/silent-step.png",
+      "sheet": "icons-keris-sheet",
+      "cell": 7,
+      "seedJob": "ffc25841-bf0a-4723-8ba4-276d54c73b7e",
+      "packedAt": 1791647628332
+    },
+    "toxic-blood": {
+      "image": "icons/toxic-blood.png",
+      "sheet": "icons-keris-sheet",
+      "cell": 8,
+      "seedJob": "ffc25841-bf0a-4723-8ba4-276d54c73b7e",
+      "packedAt": 1791647628335
+    },
+    "backstab-expert": {
+      "image": "icons/backstab-expert.png",
+      "sheet": "icons-keris-sheet",
+      "cell": 9,
+      "seedJob": "ffc25841-bf0a-4723-8ba4-276d54c73b7e",
+      "packedAt": 1791647628337
+    },
+    "shadow-flash-strike": {
+      "image": "icons/shadow-flash-strike.png",
+      "sheet": "icons-keris-sheet",
+      "cell": 10,
+      "seedJob": "ffc25841-bf0a-4723-8ba4-276d54c73b7e",
+      "packedAt": 1791647628340
+    },
+    "fatal-assassination": {
+      "image": "icons/fatal-assassination.png",
+      "sheet": "icons-keris-sheet",
+      "cell": 11,
+      "seedJob": "ffc25841-bf0a-4723-8ba4-276d54c73b7e",
+      "packedAt": 1791647628343
+    },
+    "shadow-clone": {
+      "image": "icons/shadow-clone.png",
+      "sheet": "icons-keris-sheet",
+      "cell": 12,
+      "seedJob": "ffc25841-bf0a-4723-8ba4-276d54c73b7e",
+      "packedAt": 1791647628346
+    },
+    "shadow-master": {
+      "image": "icons/shadow-master.png",
+      "sheet": "icons-keris-sheet",
+      "cell": 13,
+      "seedJob": "ffc25841-bf0a-4723-8ba4-276d54c73b7e",
+      "packedAt": 1791647628349
+    },
+    "venomous-overdrive": {
+      "image": "icons/venomous-overdrive.png",
+      "sheet": "icons-keris-sheet",
+      "cell": 14,
+      "seedJob": "ffc25841-bf0a-4723-8ba4-276d54c73b7e",
+      "packedAt": 1791647628352
+    }
+  }
+}

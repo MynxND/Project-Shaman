@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.prototype-loose-long",
+  "kind": "hairFront",
+  "variant": "prototype-loose-long",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "loose-long-hairFront-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-02/loose-long-hairFront-fixed.png",
+      "sha256": "b07bbfe2efa1c525aab88195084489d2b30ff2b2abe8630f366c8419d4b5ba8f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "loose-long-hairFront-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-02/loose-long-hairFront-ramp.png",
+      "sha256": "52c69d33169ad3a64bc24d7fa93099feb5dd3ef48cada29227098ac850fdd1aa",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "loose-long-hairFront-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "loose-long-hairFront-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Complete silhouette FRONT repair of the existing eight owned designs; visual approval pending."
+}

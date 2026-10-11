@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.kid-clean-front",
+  "kind": "hairFront",
+  "variant": "kid-clean-front",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": false,
+  "images": [
+    {
+      "id": "kid-ramp",
+      "url": "/assets/ssr/candidates/kid-clean-front-01/hair-ramp.png",
+      "sha256": "40ef6b76c82281831ccca766db2ee46a640579985e55201f4fd465ae1646197f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "kid-fixed",
+      "url": "/assets/ssr/candidates/kid-clean-front-01/hair-fixed.png",
+      "sha256": "738b747eb075007de7ad35f9aea0f7143f31b03ca16fa999647bdb3bf4c5413a",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "kid-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "kid-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "User selected existing center-part silhouette and requested removing all white stripes. Only stripe pixels restored from adjacent vertical hair shading. Original source preserved."
+}

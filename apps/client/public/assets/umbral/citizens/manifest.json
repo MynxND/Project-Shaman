@@ -1,0 +1,100 @@
+{
+  "child": {
+    "scale": 0.4,
+    "directions": {
+      "east": {
+        "idle": {
+          "image": "child-idle-east.png",
+          "width": 136,
+          "height": 136,
+          "frames": 1,
+          "anchor": {
+            "x": 68.0,
+            "y": 122
+          }
+        },
+        "walk": {
+          "image": "child-walk-east.png",
+          "width": 136,
+          "height": 136,
+          "frames": 8,
+          "anchor": {
+            "x": 68.0,
+            "y": 115.0
+          }
+        }
+      },
+      "west": {
+        "idle": {
+          "image": "child-idle-west.png",
+          "width": 136,
+          "height": 136,
+          "frames": 1,
+          "anchor": {
+            "x": 68.0,
+            "y": 124
+          }
+        },
+        "walk": {
+          "image": "child-walk-west.png",
+          "width": 136,
+          "height": 136,
+          "frames": 8,
+          "anchor": {
+            "x": 68.0,
+            "y": 119.0
+          }
+        }
+      }
+    }
+  },
+  "elder": {
+    "scale": 0.5,
+    "directions": {
+      "east": {
+        "idle": {
+          "image": "elder-idle-east.png",
+          "width": 136,
+          "height": 136,
+          "frames": 1,
+          "anchor": {
+            "x": 68.0,
+            "y": 113
+          }
+        },
+        "walk": {
+          "image": "elder-walk-east.png",
+          "width": 136,
+          "height": 136,
+          "frames": 8,
+          "anchor": {
+            "x": 68.0,
+            "y": 112.0
+          }
+        }
+      },
+      "west": {
+        "idle": {
+          "image": "elder-idle-west.png",
+          "width": 136,
+          "height": 136,
+          "frames": 1,
+          "anchor": {
+            "x": 68.0,
+            "y": 113
+          }
+        },
+        "walk": {
+          "image": "elder-walk-west.png",
+          "width": 136,
+          "height": 136,
+          "frames": 8,
+          "anchor": {
+            "x": 68.0,
+            "y": 112.0
+          }
+        }
+      }
+    }
+  }
+}

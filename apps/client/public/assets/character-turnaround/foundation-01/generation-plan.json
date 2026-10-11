@@ -1,0 +1,96 @@
+{
+  "queriedAt": "2026-10-09",
+  "source": "Live get_pro_flash_capabilities(operation=inpaint,width=128,height=128)",
+  "revision": "pro-flash-presets-48-128-2026-09-29",
+  "perImageQuote": {
+    "image": 6,
+    "rotations": 0,
+    "total": 6,
+    "provisional": true
+  },
+  "numericalApprovalReceived": false,
+  "paidJobsSubmitted": 0,
+  "cheapestBoundedNextStage": {
+    "jobs": 3,
+    "creditsEstimate": 18,
+    "retriesIncluded": 0,
+    "sequence": [
+      "RIGHT90 costume only, inspect and stop on drift",
+      "BACK garment consistency, inspect",
+      "LEFT garment consistency, inspect"
+    ],
+    "reuse": "Existing owned north/west references; no fresh eight-view rotation or style generation."
+  },
+  "furtherStages": [
+    {
+      "stage": "Clean bald head and hidden clothed-body reconstruction",
+      "proposedJobs": 4,
+      "creditsEstimate": 24,
+      "guaranteed": false
+    },
+    {
+      "stage": "True independent anatomical body and complete outfit/hair layers",
+      "creditsEstimate": null,
+      "reason": "Requires approved hidden-anatomy design and masks, not a clothed-image extraction."
+    },
+    {
+      "stage": "One approved-new-base animation pilot",
+      "tool": "animate_image",
+      "frameCount": 8,
+      "returnedFrames": 9,
+      "nativeCanvas": [
+        128,
+        128
+      ],
+      "creditsEstimate": 2,
+      "estimateSource": "Cached catalog pixel-cost examples imply 2 at 128x128x8; NOT a live quote or guaranteed charge.",
+      "source": "Approved reconstructed native PNG required; no registered character_id needed.",
+      "gates": [
+        "Static costume/identity review",
+        "Clean-layer and occlusion review",
+        "Numerical budget approval",
+        "Per-frame identity, baseline, anchors and layer review"
+      ],
+      "schemaFields": [
+        "action",
+        "frame_count",
+        "first_frame_base64",
+        "no_background",
+        "seed"
+      ],
+      "required": [
+        "action"
+      ]
+    },
+    {
+      "stage": "Eight-direction idle/walk then attack/cast/hurt/death",
+      "creditsEstimate": null,
+      "reason": "Four diagonal static views and clean-layer frame authoring are unresolved; no invented whole-job total."
+    }
+  ],
+  "schema": {
+    "tool": "inpaint_image_pro_flash",
+    "required": [
+      "description"
+    ],
+    "inputs": [
+      "image_base64",
+      "mask_image_base64",
+      "context_image",
+      "bounding_box"
+    ],
+    "contextLimit": "3x native dimensions; bounding_box required",
+    "binaryMask": "white generate / black preserve, alpha ignored",
+    "outputMethods": [
+      "New layer with changes",
+      "Modify current layer, only changes",
+      "Modify current layer"
+    ],
+    "guaranteesNotOffered": [
+      "identity",
+      "true profile",
+      "complete anatomy",
+      "visual approval"
+    ]
+  }
+}

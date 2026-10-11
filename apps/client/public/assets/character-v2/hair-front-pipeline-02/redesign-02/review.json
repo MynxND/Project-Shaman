@@ -1,0 +1,82 @@
+{
+  "bodySha256": "0ed1ddf448b70a93dc5f624617e832a0af593779b6b7257d65db39b61be35958",
+  "templateUrl": "/assets/character-v2/hair-front-pipeline-02/template.json",
+  "method": "manual-redesign-via-free-workbench",
+  "visualApproved": false,
+  "styles": [
+    {
+      "id": "wind-crop",
+      "nameThai": "ผมสั้นเปิดลม",
+      "layers": [
+        {
+          "pass": "front",
+          "url": "/assets/character-v2/hair-front-pipeline-02/redesign-02/wind-crop-front.png",
+          "sha256": "64f3fa58726bd1c93448c98ed28d3660a3d6820d067c81a2bfe8d9c6f795d43b"
+        }
+      ],
+      "previousUrl": "/assets/character-v2/hair-front-pipeline-02/manual-repair-01/wind-crop-hair.png",
+      "previousSha256": "07287f777d99b3dad88d99b5954012be548fd662440af560b464d435d717e49d",
+      "rootTargetUrl": "/assets/character-v2/hair-front-pipeline-02/redesign-02/wind-crop-root-target.png",
+      "rootTargetSha256": "18c4a8081d8dc215618c4a2fbd0196fc983a62307817ac5f721aaee0aaf52a28",
+      "metrics": {
+        "rootGaps": 0,
+        "visibleScalp": 93,
+        "protectedOverlap": 0
+      },
+      "visualApproved": false,
+      "productionReady": false,
+      "notes": "เปิดหน้าผากระหว่างปอยผม ไม่เติมแผ่นเทา"
+    },
+    {
+      "id": "curtain-bob",
+      "nameThai": "บ๊อบแสกกลาง",
+      "layers": [
+        {
+          "pass": "back",
+          "url": "/assets/character-v2/hair-front-pipeline-02/redesign-02/curtain-bob-back.png",
+          "sha256": "e087e30e90aaf64fcb8540cc5a1997bc17b63a7dbbb21c3c3d03c377105a788e"
+        },
+        {
+          "pass": "front",
+          "url": "/assets/character-v2/hair-front-pipeline-02/redesign-02/curtain-bob-front.png",
+          "sha256": "c8874367fd574b1c7b68d887f55cec8e6c9ef6520c45566eff25fcf5f5ddc2b9"
+        }
+      ],
+      "previousUrl": "/assets/character-v2/hair-front-pipeline-02/manual-repair-01/curtain-bob-hair.png",
+      "previousSha256": "de90d3316494d2db9217976b8226469935e926c666d438475982d7c577dd9597",
+      "rootTargetUrl": "/assets/character-v2/hair-front-pipeline-02/redesign-02/curtain-bob-root-target.png",
+      "rootTargetSha256": "ec86341c2eeb738fa50e787a1660092598d9bfdb3a42ae0732c2fb0c242d9319",
+      "metrics": {
+        "rootGaps": 0,
+        "visibleScalp": 102,
+        "protectedOverlap": 0
+      },
+      "visualApproved": false,
+      "productionReady": false,
+      "notes": "แสกกลางเปิดผิวจริง ใช้บ๊อบโค้งด้านหลังหูแทนแท่งผมด้านหน้า"
+    },
+    {
+      "id": "ritual-knot",
+      "nameThai": "มวยผมพิธี",
+      "layers": [
+        {
+          "pass": "front",
+          "url": "/assets/character-v2/hair-front-pipeline-02/redesign-02/ritual-knot-front.png",
+          "sha256": "97040ae9207e4fa3cac3dfbfb2ddf675fc84edfca1832d3422fa1117a9476d49"
+        }
+      ],
+      "previousUrl": "/assets/character-v2/hair-front-pipeline-02/manual-repair-01/ritual-knot-hair.png",
+      "previousSha256": "db60fccfa4ffed99ae7e9185065760a4784972fba8374f446af2fc45e5b1f4af",
+      "rootTargetUrl": "/assets/character-v2/hair-front-pipeline-02/redesign-02/ritual-knot-root-target.png",
+      "rootTargetSha256": "18c4a8081d8dc215618c4a2fbd0196fc983a62307817ac5f721aaee0aaf52a28",
+      "metrics": {
+        "rootGaps": 0,
+        "visibleScalp": 132,
+        "protectedOverlap": 0
+      },
+      "visualApproved": false,
+      "productionReady": false,
+      "notes": "ไรผมรวบโค้ง เปิดหน้าผาก ไม่พันแถบผมเต็ม scalp"
+    }
+  ]
+}

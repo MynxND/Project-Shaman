@@ -1,0 +1,26 @@
+﻿status: completed
+id: 2ff85890-528d-45d2-82d4-2acaa10e2a82
+name: a single tall ritual staff of pale bone and bronze
+state_name: base
+directions: 8
+size: 96x96px
+view: low top-down
+group: 5b52c9b8-d659-416e-b4d6-8f8ed35c210f
+
+rotations:
+  east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/2ff85890-528d-45d2-82d4-2acaa10e2a82/rotations/east.png
+  west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/2ff85890-528d-45d2-82d4-2acaa10e2a82/rotations/west.png
+  north: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/2ff85890-528d-45d2-82d4-2acaa10e2a82/rotations/north.png
+  south: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/2ff85890-528d-45d2-82d4-2acaa10e2a82/rotations/south.png
+  north-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/2ff85890-528d-45d2-82d4-2acaa10e2a82/rotations/north-east.png
+  north-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/2ff85890-528d-45d2-82d4-2acaa10e2a82/rotations/north-west.png
+  south-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/2ff85890-528d-45d2-82d4-2acaa10e2a82/rotations/south-east.png
+  south-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/2ff85890-528d-45d2-82d4-2acaa10e2a82/rotations/south-west.png
+
+animations: none
+
+download: https://api.pixellab.ai/mcp/objects/2ff85890-528d-45d2-82d4-2acaa10e2a82/download
+spritesheet: https://api.pixellab.ai/mcp/objects/2ff85890-528d-45d2-82d4-2acaa10e2a82/spritesheet (one uniform-grid sheet PNG + layout JSON, zipped)
+
+actions: animate_object(object_id="2ff85890-528d-45d2-82d4-2acaa10e2a82", ...) | create_object_state(object_id="2ff85890-528d-45d2-82d4-2acaa10e2a82", ...) | delete_object(object_id="2ff85890-528d-45d2-82d4-2acaa10e2a82")
+hint: animate_object(object_id="2ff85890-528d-45d2-82d4-2acaa10e2a82", animation_description="...")

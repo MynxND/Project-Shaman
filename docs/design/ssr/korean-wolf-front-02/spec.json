@@ -1,0 +1,30 @@
+{
+  "id": "korean-wolf",
+  "status": "front-design-candidate",
+  "description": "Korean center part with jaw-length feathered sides and longer shaggy nape reaching neck base; charcoal black-grey with silver tips; both original eyes visible",
+  "volume": {
+    "top": 4,
+    "side": 3
+  },
+  "crop": {
+    "x": 32,
+    "y": 0,
+    "width": 64,
+    "height": 64
+  },
+  "nativeCanvas": 128,
+  "headPivot": {
+    "x": 62,
+    "y": 49
+  },
+  "eyeTop": 38,
+  "scope": "FRONT only, approve before other directions. No gameplay integration.",
+  "length": {
+    "jawSides": true,
+    "napeTargetY": [
+      52,
+      56
+    ],
+    "maskBottom": 58
+  }
+}

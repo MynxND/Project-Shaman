@@ -1,0 +1,110 @@
+{
+  "additionalChargedCredits": 8,
+  "additionalReservedCredits": 0,
+  "pendingJobs": [],
+  "jobs": [
+    {
+      "id": "65f45f7e-199e-4079-ade4-6a56f5da0095",
+      "imageId": "3ef2448d-1c40-54e3-897f-c581a6298cc4",
+      "direction": "right90-hair-identity-repair",
+      "status": "completed-failed-no-result",
+      "estimatedGenerations": 6,
+      "chargedGenerations": 0,
+      "method": "native128-narrow-masked-master-hair-tie-repair",
+      "request": "right90-hair-repair-01/request.json",
+      "submitReceipt": "right90-hair-repair-01/submit.json",
+      "resultReceipt": "right90-hair-repair-01/result.json",
+      "review": "right90-hair-repair-01/review.json",
+      "raw": null,
+      "chargeEvidence": "unchanged-observed-account-balance-no-job-charge-field"
+    },
+    {
+      "id": "1963d87f-6474-472e-bcaa-f8aeaf09d6e3",
+      "imageId": "11285eac-dcda-55bb-93ba-dfee443e1e5c",
+      "direction": "right90",
+      "status": "completed-rejected",
+      "estimatedGenerations": 6,
+      "chargedGenerations": 6,
+      "resultReceipt": "right90/result.json",
+      "review": "right90/review.json",
+      "raw": "right90/raw.png",
+      "submitReceipt": "right90/submit.json",
+      "request": "right90/request.json"
+    },
+    {
+      "id": "e3004236-7c93-436a-9a6b-c3139e60edd2",
+      "characterId": "40ffc152-8925-492a-8b5a-e7c296d5deac",
+      "direction": "right90-first-review",
+      "status": "completed-rejected",
+      "estimatedGenerations": 2,
+      "chargedGenerations": 2,
+      "method": "create_character_pro_flash-owned-first-frame-native-v3-rotations",
+      "request": "rotation-experiment-01/request.json",
+      "submitReceipt": "rotation-experiment-01/submit.json",
+      "resultReceipt": "rotation-experiment-01/result-final.json",
+      "review": "rotation-experiment-01/review.json",
+      "raw": "rotation-experiment-01/raw/east.png",
+      "chargeEvidence": "matching-source-reuse-estimate-and-observed-account-balance-delta"
+    }
+  ],
+  "internalCeiling": 14,
+  "userApprovedNumericalBudget": null,
+  "method": "reference-guided-native-masked-inpaint",
+  "request": "right90/request.json",
+  "capabilityQuote": "right90-capability-quote.json",
+  "usageEvidence": {
+    "receiptField": "charged_generations",
+    "before": "right90/balance-before.json",
+    "after": "right90/balance-after.json",
+    "remainingBefore": 177,
+    "remainingAfter": 171,
+    "usedBefore": 1823,
+    "usedAfter": 1829,
+    "unit": "subscription generations; service quote calls these provisional credits"
+  },
+  "policy": "One narrow existing-master east hair/tie repair only, six additional internal credits maximum; no retry. Right review gates all north/west review or generation. No new hairstyle/equipment/animation batch.",
+  "hairRepairInvocation": {
+    "experiment": "right90-hair-repair-01",
+    "additionalInternalCeiling": 6,
+    "userApprovedNumericalBudget": null,
+    "priorChargedCredits": 8,
+    "chargedCredits": 0,
+    "reservedCredits": 0,
+    "status": "failed-no-result-stop-no-retry",
+    "mask": "right90-hair-repair-01/mask-binary.png",
+    "quote": "right90-hair-repair-01/quote.json",
+    "policy": "Repair existing master identity only; preserve exact exposed profile and unmasked RGBA; stop after right review. No retry.",
+    "usageEvidence": {
+      "before": "right90-hair-repair-01/balance-before.json",
+      "after": "right90-hair-repair-01/balance-after.json",
+      "remainingBefore": 169,
+      "remainingAfter": 169,
+      "observedDelta": 0,
+      "chargedGenerationsReceipt": null,
+      "caveat": "Result has no charge field; observed balance unchanged. This is observed0, not a job-specific charged_generations receipt."
+    }
+  },
+  "rotationInvocation": {
+    "additionalInternalCeiling": 8,
+    "userApprovedNumericalBudget": null,
+    "priorInternalCeiling": 6,
+    "priorChargedCredits": 6,
+    "priorPolicy": "One right90 attempt; stop on observed failure. No back/left, hairstyle, equipment or animation generation.",
+    "experiment": "rotation-experiment-01",
+    "quote": "rotation-experiment-01/quote.json",
+    "policy": "One owned-front reference-rotation submission; assess east then north then independent west; stop on observed right failure. No hairstyle/equipment/animation.",
+    "chargedCredits": 2,
+    "reservedCredits": 0,
+    "status": "completed-rejected-right-identity-stop",
+    "usageEvidence": {
+      "before": "rotation-experiment-01/balance-before.json",
+      "after": "rotation-experiment-01/balance-final.json",
+      "remainingBefore": 171,
+      "remainingAfter": 169,
+      "usedBefore": 1829,
+      "usedAfter": 1831,
+      "chargedGenerationsReceipt": null,
+      "caveat": "get_character completion does not expose charged_generations. An unrelated previously-running animation completed during wait-01, so account delta is corroborating evidence, not a job-exclusive billing receipt. Delta2 matches the live rotation-only quote and submit estimate2."
+    }
+  }
+}

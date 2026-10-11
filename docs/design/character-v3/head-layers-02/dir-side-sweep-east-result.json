@@ -1,0 +1,33 @@
+{
+    "jsonrpc":  "2.0",
+    "id":  2,
+    "result":  {
+                   "content":  [
+                                   {
+                                       "type":  "text",
+                                       "text":  "status: completed\nid: ff9cf630-e197-42f0-8512-21ecb30b3a16\njob_id: ff9cf630-e197-42f0-8512-21ecb30b3a16\nframes: 1\ntransparent: yes\nasset_id: 15f0f2df-ad6f-525d-a31c-39278140ed86\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 6 generations\ndownload: https://api.pixellab.ai/mcp/images/ff9cf630-e197-42f0-8512-21ecb30b3a16/download"
+                                   },
+                                   {
+                                       "type":  "image",
+                                       "data":  "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",
+                                       "mimeType":  "image/png"
+                                   }
+                               ],
+                   "structuredContent":  {
+                                             "job_id":  "ff9cf630-e197-42f0-8512-21ecb30b3a16",
+                                             "status":  "completed",
+                                             "frames":  1,
+                                             "download_url":  "https://api.pixellab.ai/mcp/images/ff9cf630-e197-42f0-8512-21ecb30b3a16/download",
+                                             "download_urls":  [
+                                                                   "https://api.pixellab.ai/mcp/images/ff9cf630-e197-42f0-8512-21ecb30b3a16/download"
+                                                               ],
+                                             "asset":  {
+                                                           "id":  "15f0f2df-ad6f-525d-a31c-39278140ed86",
+                                                           "type":  "image",
+                                                           "status":  "saved"
+                                                       },
+                                             "charged_generations":  6.0
+                                         },
+                   "isError":  false
+               }
+}

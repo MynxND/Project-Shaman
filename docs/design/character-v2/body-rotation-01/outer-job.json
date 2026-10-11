@@ -1,0 +1,48 @@
+{
+    "usage":  {
+                  "type":  "generations",
+                  "generations":  2.0
+              },
+    "id":  "f2653cb1-90d7-4dc1-815c-ec9a5949ae17",
+    "status":  "completed",
+    "created_at":  "2026-10-09T16:21:42.135554+00:00",
+    "last_response":  {
+                          "status":  "completed",
+                          "character_id":  "575b6ea1-401e-48e7-ae6c-fc611bc85769",
+                          "storage_urls":  {
+                                               "east":  "https://backblaze.pixellab.ai/file/pixellab-characters/2d12c52f-2de5-459d-8665-38af36c30b1f/575b6ea1-401e-48e7-ae6c-fc611bc85769/rotations/east.png",
+                                               "west":  "https://backblaze.pixellab.ai/file/pixellab-characters/2d12c52f-2de5-459d-8665-38af36c30b1f/575b6ea1-401e-48e7-ae6c-fc611bc85769/rotations/west.png",
+                                               "north":  "https://backblaze.pixellab.ai/file/pixellab-characters/2d12c52f-2de5-459d-8665-38af36c30b1f/575b6ea1-401e-48e7-ae6c-fc611bc85769/rotations/north.png",
+                                               "south":  "https://backblaze.pixellab.ai/file/pixellab-characters/2d12c52f-2de5-459d-8665-38af36c30b1f/575b6ea1-401e-48e7-ae6c-fc611bc85769/rotations/south.png",
+                                               "north-east":  "https://backblaze.pixellab.ai/file/pixellab-characters/2d12c52f-2de5-459d-8665-38af36c30b1f/575b6ea1-401e-48e7-ae6c-fc611bc85769/rotations/north-east.png",
+                                               "north-west":  "https://backblaze.pixellab.ai/file/pixellab-characters/2d12c52f-2de5-459d-8665-38af36c30b1f/575b6ea1-401e-48e7-ae6c-fc611bc85769/rotations/north-west.png",
+                                               "south-east":  "https://backblaze.pixellab.ai/file/pixellab-characters/2d12c52f-2de5-459d-8665-38af36c30b1f/575b6ea1-401e-48e7-ae6c-fc611bc85769/rotations/south-east.png",
+                                               "south-west":  "https://backblaze.pixellab.ai/file/pixellab-characters/2d12c52f-2de5-459d-8665-38af36c30b1f/575b6ea1-401e-48e7-ae6c-fc611bc85769/rotations/south-west.png"
+                                           },
+                          "billing_usage":  {
+                                                "type":  "generations",
+                                                "generations":  2.0
+                                            },
+                          "generation_id":  "1fe4f3f1-8938-4de0-8a55-601da036ced6",
+                          "billing_stages":  [
+                                                 {
+                                                     "stage":  "rotations",
+                                                     "usage":  {
+                                                                   "usd":  0.0,
+                                                                   "type":  "generations",
+                                                                   "generations":  2,
+                                                                   "cost_if_paid":  0.026964459584818946
+                                                               },
+                                                     "generation_id":  "1fe4f3f1-8938-4de0-8a55-601da036ced6"
+                                                 }
+                                             ],
+                          "character_name":  "shaman-v2-front02-reference-rotation-01",
+                          "billing_charged":  true,
+                          "directions_type":  "8-directions",
+                          "generation_mode":  "pro_flash",
+                          "source_image_id":  null,
+                          "directions_count":  8,
+                          "character_description":  "Rotate this exact approved owned FRONT02 bald male Shaman body, NOT a new character. Preserve its expressive large head, face identity, compact soft adult-stylized chibi anatomy, accepted approximately 3.1-3.33-head proportions, warm skin, outline and crisp native pixel clusters. Bald scalp, empty hands, bare feet and plain opaque charcoal modesty shorts only. Neutral standing idle. NO hair, garment, armor, hat, weapon, ornaments, effects or animation. Keep full transparent native128 canvas, source scale and positioning; shared source origin61,112. Do not crop, resize, stretch or translate to fit target landmarks. SOUTH is the exact supplied frontal image, not regenerated. EAST is a true 90-degree right-facing profile: nose projects right, one visible near eye/ear, torso edge-on and arms overlap naturally, not a three-quarter or frontal chest. NORTH is a square true back, no face visible. WEST is a true left-facing profile rotated from the same source, not a manually mirrored east substitute. All views retain the same head size, body identity, skin material and plain shorts construction. Restrained soft anatomy; no added muscular lines. Low top-down classic MMORPG world visibility without perspective distortion.",
+                          "first_direction_generated":  false
+                      }
+}

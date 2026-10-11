@@ -1,0 +1,244 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.face-fit-short-eight-candidate",
+  "kind": "hairFront",
+  "variant": "face-fit-short-eight-candidate",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": false,
+  "images": [
+    {
+      "id": "south-fixed",
+      "url": "/assets/ssr/candidates/eye-veil-eight-01/south-fixed.png",
+      "sha256": "9ef7a6312de90df56108fdc17b421db2eac2c4ac09dfeacdb45754cec4f6c4c9",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "south-ramp",
+      "url": "/assets/ssr/candidates/eye-veil-eight-01/south-ramp.png",
+      "sha256": "04172794addfa6bbce2dd351e4d8e334945df3fe128f61b53de81268bb530f7a",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "south-east-fixed",
+      "url": "/assets/ssr/candidates/eye-veil-eight-01/south-east-fixed.png",
+      "sha256": "5071d53135c38dc50007ae293e9b66bf41ac520653811ee3f78ee042378db005",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "south-east-ramp",
+      "url": "/assets/ssr/candidates/eye-veil-eight-01/south-east-ramp.png",
+      "sha256": "f7650398f4cdb1aba835092a2816a73e8acd0798948ac459fc69266a1fa9081f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "east-fixed",
+      "url": "/assets/ssr/candidates/eye-veil-eight-01/east-fixed.png",
+      "sha256": "ef61a24cddc7e1d7899efe951ed449125cab22987301d40e0b0db64945f6cc5e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "east-ramp",
+      "url": "/assets/ssr/candidates/eye-veil-eight-01/east-ramp.png",
+      "sha256": "dbfbf0b66cbd74c006ce8e976501fc05d3867c888280e6e3d2fcef85de27d132",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "north-east-fixed",
+      "url": "/assets/ssr/candidates/eye-veil-eight-01/north-east-fixed.png",
+      "sha256": "f498150596407b868cbcb5fffbf64f4d1445999826d6c296e012d4d5d622d69d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "north-east-ramp",
+      "url": "/assets/ssr/candidates/eye-veil-eight-01/north-east-ramp.png",
+      "sha256": "dc8cc91cbfda378ef3a1fcd001e3965dac5fc0f2f49df35d263cb74a37bb2880",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "north-fixed",
+      "url": "/assets/ssr/candidates/eye-veil-eight-01/north-fixed.png",
+      "sha256": "6f01eb614c7f920f0766d5bf53e142d0c77099b9bff4de5c251f80859564e342",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "north-ramp",
+      "url": "/assets/ssr/candidates/eye-veil-eight-01/north-ramp.png",
+      "sha256": "011e360caafbd9b3faba136e608181428ae2923ece48361e68ed116e00ce5b79",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "south-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "south-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "1": {
+      "action": "idle",
+      "direction": "south-west",
+      "intervalMs": 1000,
+      "mirrorOf": 7
+    },
+    "2": {
+      "action": "idle",
+      "direction": "west",
+      "intervalMs": 1000,
+      "mirrorOf": 6
+    },
+    "3": {
+      "action": "idle",
+      "direction": "north-west",
+      "intervalMs": 1000,
+      "mirrorOf": 5
+    },
+    "4": {
+      "action": "idle",
+      "direction": "north",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "north-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "north-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 64,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "5": {
+      "action": "idle",
+      "direction": "north-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "north-east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "north-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "6": {
+      "action": "idle",
+      "direction": "east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "7": {
+      "action": "idle",
+      "direction": "south-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "south-east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "south-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 65,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Approved Partial Eye Veil FRONT reused byte-identically; four remaining views in one original owned-reference inpaint. Left views mirrored per Hair Layer Standard v1. Staged visual review only."
+}

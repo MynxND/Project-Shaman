@@ -1,0 +1,1786 @@
+{
+  "version": 1,
+  "id": "medium-male-visible-foundation-01",
+  "canvas": {
+    "width": 128,
+    "height": 128,
+    "foot": {
+      "x": 64,
+      "y": 124
+    }
+  },
+  "productionReady": false,
+  "layerSemantics": "visible-source-partition-not-clean-anatomy",
+  "views": {
+    "south": {
+      "source": {
+        "url": "/assets/character-turnaround/foundation-01/south/source.png",
+        "rgbaSha256": "609c98ee1d8871d15bb38cef34a101a9825f087beea2fe02df66295d2528ff81"
+      },
+      "sourceKind": "approved-front",
+      "approved": true,
+      "anchors": {
+        "foot": {
+          "x": 64,
+          "y": 124
+        },
+        "neck": {
+          "x": 64,
+          "y": 38
+        },
+        "hairRoot": {
+          "x": 64,
+          "y": 22
+        },
+        "headgearSeat": {
+          "x": 64,
+          "y": 16
+        }
+      },
+      "anchorStatus": "provisional-native-pixel",
+      "parts": {
+        "bodyVisible": {
+          "url": "/assets/character-turnaround/foundation-01/south/bodyVisible.png",
+          "rgbaSha256": "edff99bbfb29c8419add8a55bcbe4fd26621bca6a7768ebaebe5462805b8aa3e"
+        },
+        "headVisible": {
+          "url": "/assets/character-turnaround/foundation-01/south/headVisible.png",
+          "rgbaSha256": "3bf109692e3d7c47b70724cba1c33df8b66fdd8c94edf07f05b10005fa8a0891"
+        },
+        "hairVisible": {
+          "url": "/assets/character-turnaround/foundation-01/south/hairVisible.png",
+          "rgbaSha256": "b3339c129cffae314e62cda810f03edde3349cf90fb33b83cda7e80ce84fc3c6"
+        },
+        "outfitVisible": {
+          "url": "/assets/character-turnaround/foundation-01/south/outfitVisible.png",
+          "rgbaSha256": "257e6d74ff8416fcc228e8633a9c71f2087c12fcd06ab644379d7de6c1b38e46"
+        }
+      },
+      "ownershipMask": "/assets/character-turnaround/foundation-01/south/ownership.png",
+      "reconstructionRequired": [
+        "Full hidden torso/limbs under clothing",
+        "Bald scalp under hair and complete occluded hair",
+        "Garment underside, sleeve openings and seams",
+        "Mask/material boundaries and attachment fit need visual review"
+      ]
+    },
+    "east": {
+      "source": {
+        "url": "/assets/character-turnaround/foundation-01/east/source.png",
+        "rgbaSha256": "bdc1cb56a6973ebd0fb1d16497165c50389484a275cbd416752d3de263a2dd15"
+      },
+      "sourceKind": "manual-hair-draft",
+      "approved": false,
+      "anchors": {
+        "foot": {
+          "x": 64,
+          "y": 124
+        },
+        "neck": {
+          "x": 66,
+          "y": 38
+        },
+        "hairRoot": {
+          "x": 58,
+          "y": 26
+        },
+        "headgearSeat": {
+          "x": 65,
+          "y": 15
+        }
+      },
+      "anchorStatus": "provisional-native-pixel",
+      "parts": {
+        "bodyVisible": {
+          "url": "/assets/character-turnaround/foundation-01/east/bodyVisible.png",
+          "rgbaSha256": "e4d57242a148c0bfaf8264af19b22106a544f784692b95912d1127afc7f0dd72"
+        },
+        "headVisible": {
+          "url": "/assets/character-turnaround/foundation-01/east/headVisible.png",
+          "rgbaSha256": "b48a30fde2556a18dd23a01579803309993160db10e418b430722c13cff981a5"
+        },
+        "hairVisible": {
+          "url": "/assets/character-turnaround/foundation-01/east/hairVisible.png",
+          "rgbaSha256": "836ac2660748bb721898e76199af7de1255e2b71de3c332945e4a308c04ca344"
+        },
+        "outfitVisible": {
+          "url": "/assets/character-turnaround/foundation-01/east/outfitVisible.png",
+          "rgbaSha256": "c6d5fa1a6fc9da9e0683f7b2683124202e90b807eeebb390be023263699785c9"
+        }
+      },
+      "ownershipMask": "/assets/character-turnaround/foundation-01/east/ownership.png",
+      "reconstructionRequired": [
+        "Full hidden torso/limbs under clothing",
+        "Bald scalp under hair and complete occluded hair",
+        "Garment underside, sleeve openings and seams",
+        "Mask/material boundaries and attachment fit need visual review"
+      ]
+    },
+    "north": {
+      "source": {
+        "url": "/assets/character-turnaround/foundation-01/north/source.png",
+        "rgbaSha256": "280e5cc022f9e2a1b8125a0b2f6cc6a8e30ac3b13f0b590d0aa733a78c7dd127"
+      },
+      "sourceKind": "owned-rig-reference",
+      "approved": false,
+      "anchors": {
+        "foot": {
+          "x": 64,
+          "y": 124
+        },
+        "neck": {
+          "x": 63,
+          "y": 41
+        },
+        "hairRoot": {
+          "x": 63,
+          "y": 25
+        },
+        "headgearSeat": {
+          "x": 63,
+          "y": 15
+        }
+      },
+      "anchorStatus": "provisional-native-pixel",
+      "parts": {
+        "bodyVisible": {
+          "url": "/assets/character-turnaround/foundation-01/north/bodyVisible.png",
+          "rgbaSha256": "f724a37f97715b8d755e17da43772c18b0476c73c05a2e4b763f91136e4c8fe3"
+        },
+        "headVisible": {
+          "url": "/assets/character-turnaround/foundation-01/north/headVisible.png",
+          "rgbaSha256": "23287e12394e4d4aa0844a5a1050ee0ed8134b35485600b4e44784f6aed220c1"
+        },
+        "hairVisible": {
+          "url": "/assets/character-turnaround/foundation-01/north/hairVisible.png",
+          "rgbaSha256": "91fcf7a34e721b986f1b917864b01a3abd7d76a723097a11a75347bfccc05f65"
+        },
+        "outfitVisible": {
+          "url": "/assets/character-turnaround/foundation-01/north/outfitVisible.png",
+          "rgbaSha256": "141d6d97d1d08de6b43a0ab731d261f1314b3492476d0d339d67edccbe8ff3a2"
+        }
+      },
+      "ownershipMask": "/assets/character-turnaround/foundation-01/north/ownership.png",
+      "reconstructionRequired": [
+        "Full hidden torso/limbs under clothing",
+        "Bald scalp under hair and complete occluded hair",
+        "Garment underside, sleeve openings and seams",
+        "Mask/material boundaries and attachment fit need visual review"
+      ]
+    },
+    "west": {
+      "source": {
+        "url": "/assets/character-turnaround/foundation-01/west/source.png",
+        "rgbaSha256": "dba6da4fae8c6b18cf7ba1d2184e54cb66a1806440afc866247f9abc36047548"
+      },
+      "sourceKind": "owned-rig-reference",
+      "approved": false,
+      "anchors": {
+        "foot": {
+          "x": 64,
+          "y": 124
+        },
+        "neck": {
+          "x": 61,
+          "y": 38
+        },
+        "hairRoot": {
+          "x": 69,
+          "y": 26
+        },
+        "headgearSeat": {
+          "x": 62,
+          "y": 15
+        }
+      },
+      "anchorStatus": "provisional-native-pixel",
+      "parts": {
+        "bodyVisible": {
+          "url": "/assets/character-turnaround/foundation-01/west/bodyVisible.png",
+          "rgbaSha256": "60a4c5da0ab3a0800ac16f066961a1458603f6710ac0015a9000f3accd50c0dc"
+        },
+        "headVisible": {
+          "url": "/assets/character-turnaround/foundation-01/west/headVisible.png",
+          "rgbaSha256": "5792dab988629cfe0b3b2a1913aaa5313dd19481f58172ca45505e364b9e0619"
+        },
+        "hairVisible": {
+          "url": "/assets/character-turnaround/foundation-01/west/hairVisible.png",
+          "rgbaSha256": "8145c759b7b9ee60ac7a8d69b6c52109fa11db7ba4a0d853741130f9ec4c3018"
+        },
+        "outfitVisible": {
+          "url": "/assets/character-turnaround/foundation-01/west/outfitVisible.png",
+          "rgbaSha256": "a65e7d4b1abe20ee954a19eee0e8fd8209d92bf8cee6f688b1e2d4c07070cc81"
+        }
+      },
+      "ownershipMask": "/assets/character-turnaround/foundation-01/west/ownership.png",
+      "reconstructionRequired": [
+        "Full hidden torso/limbs under clothing",
+        "Bald scalp under hair and complete occluded hair",
+        "Garment underside, sleeve openings and seams",
+        "Mask/material boundaries and attachment fit need visual review"
+      ]
+    }
+  },
+  "clips": [
+    {
+      "state": "idle",
+      "view": "south",
+      "sourceUrl": "/assets/rig-v2/male/base/idle-south.png",
+      "sourceFrames": 4,
+      "sourceSha256": "cbab15d5c78f779b5b346c03b2135502d0c9b2763390b761f201652df8fe45c5",
+      "anchors": [
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 27.1
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 6.9
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 28.5
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 8.3
+          }
+        }
+      ],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "idle",
+      "view": "east",
+      "sourceUrl": "/assets/rig-v2/male/base/idle-east.png",
+      "sourceFrames": 4,
+      "sourceSha256": "2c72aef150e883d1ef70ea5fa07ace0abc14271049b2b44725496425d32ee67c",
+      "anchors": [
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 27.3
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 6.9
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 28.7
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 8.4
+          }
+        }
+      ],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "idle",
+      "view": "north",
+      "sourceUrl": "/assets/rig-v2/male/base/idle-north.png",
+      "sourceFrames": 4,
+      "sourceSha256": "9cb7bc9b3a41f8c4815a526f26499009db96104ac4f0c3e8170ee0121173393d",
+      "anchors": [
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 25.7
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 5.8
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 27.1
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 7.2
+          }
+        }
+      ],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "idle",
+      "view": "west",
+      "sourceUrl": "/assets/rig-v2/male/base/idle-west.png",
+      "sourceFrames": 4,
+      "sourceSha256": "dc8f9ebc5008325548ae956c506643b348c3b3981d10cc38e6b3039cc69fee32",
+      "anchors": [
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 27.1
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 6.9
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 28.5
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 8.3
+          }
+        }
+      ],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "walk",
+      "view": "south",
+      "sourceUrl": "/assets/rig-v2/male/base/walk-south.png",
+      "sourceFrames": 8,
+      "sourceSha256": "00767c15d046d2824d2a18337662caff6853c114d2b106b0c76ca7ebb05d919e",
+      "anchors": [
+        {
+          "head": {
+            "x": 65,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 6.2
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 26.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 6.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 26.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 6.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 6.2
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 26.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 6.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 26.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 6.6
+          }
+        }
+      ],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "walk",
+      "view": "east",
+      "sourceUrl": "/assets/rig-v2/male/base/walk-east.png",
+      "sourceFrames": 8,
+      "sourceSha256": "a5c9ca5c5817c38a9e0a4dac6c7e9aefffbdb645b7c22e008b1e805681302207",
+      "anchors": [
+        {
+          "head": {
+            "x": 61,
+            "y": 26.6
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 6.2
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 27
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 6.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 27
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 6.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 26.6
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 6.2
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 27
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 6.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 27
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 6.6
+          }
+        }
+      ],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "walk",
+      "view": "north",
+      "sourceUrl": "/assets/rig-v2/male/base/walk-north.png",
+      "sourceFrames": 8,
+      "sourceSha256": "7127becd1bf059f15112982b512777da43669b53760312240698619bb540b28a",
+      "anchors": [
+        {
+          "head": {
+            "x": 63,
+            "y": 25
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 5.1
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 25.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 5.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 25.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 5.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 25
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 5.1
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 25.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 5.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 25.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 5.5
+          }
+        }
+      ],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "walk",
+      "view": "west",
+      "sourceUrl": "/assets/rig-v2/male/base/walk-west.png",
+      "sourceFrames": 8,
+      "sourceSha256": "e2e855b1c504ce4c638b5de4d99214fe8f85dea0640e93fa99c2c26713bc2638",
+      "anchors": [
+        {
+          "head": {
+            "x": 64,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 6.2
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 26.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 6.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 26.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 6.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 6.2
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 26.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 6.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 26.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 6.6
+          }
+        }
+      ],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "attack",
+      "view": "south",
+      "sourceUrl": "/assets/rig-v2/male/base/attack-south.png",
+      "sourceFrames": 8,
+      "sourceSha256": "edef2a8e6cdfae46a43d5a909938f0142ab29181db6ae162113bee01fa5c8dc0",
+      "anchors": [
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 29.2
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 9
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 30.2
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 10.1
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 30.7
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 10.5
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 30.5
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 10.3
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 29.7
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 9.5
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 28.4
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 8.2
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        }
+      ],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "attack",
+      "view": "east",
+      "sourceUrl": "/assets/rig-v2/male/base/attack-east.png",
+      "sourceFrames": 8,
+      "sourceSha256": "ad9fae2e8585ced717fc2160b09f2767ff663f8d99ff8d8542ac9090ae0962a8",
+      "anchors": [
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 63.4,
+            "y": 28.7
+          },
+          "headgearSeat": {
+            "x": 63.4,
+            "y": 8.3
+          }
+        },
+        {
+          "head": {
+            "x": 65.2,
+            "y": 29.2
+          },
+          "headgearSeat": {
+            "x": 65.2,
+            "y": 8.8
+          }
+        },
+        {
+          "head": {
+            "x": 66,
+            "y": 29.4
+          },
+          "headgearSeat": {
+            "x": 66,
+            "y": 9.1
+          }
+        },
+        {
+          "head": {
+            "x": 65.6,
+            "y": 29.3
+          },
+          "headgearSeat": {
+            "x": 65.6,
+            "y": 9
+          }
+        },
+        {
+          "head": {
+            "x": 64.2,
+            "y": 28.9
+          },
+          "headgearSeat": {
+            "x": 64.2,
+            "y": 8.5
+          }
+        },
+        {
+          "head": {
+            "x": 62,
+            "y": 28.3
+          },
+          "headgearSeat": {
+            "x": 62,
+            "y": 7.9
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        }
+      ],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "attack",
+      "view": "north",
+      "sourceUrl": "/assets/rig-v2/male/base/attack-north.png",
+      "sourceFrames": 8,
+      "sourceSha256": "f2dcbdfcd8576e00ef01bfec9f6ad011b59c474540419f7f3908e7870c4cc9f9",
+      "anchors": [
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.3
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.3
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.4
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.2
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.4
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.3
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.4
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.3
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.3
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        }
+      ],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "attack",
+      "view": "west",
+      "sourceUrl": "/assets/rig-v2/male/base/attack-west.png",
+      "sourceFrames": 8,
+      "sourceSha256": "338190bf75f1431656375ae6ed0e76a8b78493de13067dafb0c1577661eb7ca1",
+      "anchors": [
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 61.7,
+            "y": 28.4
+          },
+          "headgearSeat": {
+            "x": 61.7,
+            "y": 8.3
+          }
+        },
+        {
+          "head": {
+            "x": 59.9,
+            "y": 29
+          },
+          "headgearSeat": {
+            "x": 59.9,
+            "y": 8.8
+          }
+        },
+        {
+          "head": {
+            "x": 59.1,
+            "y": 29.2
+          },
+          "headgearSeat": {
+            "x": 59.1,
+            "y": 9
+          }
+        },
+        {
+          "head": {
+            "x": 59.4,
+            "y": 29.1
+          },
+          "headgearSeat": {
+            "x": 59.4,
+            "y": 8.9
+          }
+        },
+        {
+          "head": {
+            "x": 60.9,
+            "y": 28.7
+          },
+          "headgearSeat": {
+            "x": 60.9,
+            "y": 8.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 28.1
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 7.9
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        }
+      ],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "cast",
+      "view": "south",
+      "sourceUrl": "/assets/rig-v2/male/base/cast-south.png",
+      "sourceFrames": 12,
+      "sourceSha256": "e03e75959fa161f3caccfbf5cf80311c9746c722c1e7821749ceb8cf4acdc2fd",
+      "anchors": [
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 65,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 65,
+            "y": 7.6
+          }
+        }
+      ],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "cast",
+      "view": "east",
+      "sourceUrl": "/assets/rig-v2/male/base/cast-east.png",
+      "sourceFrames": 12,
+      "sourceSha256": "a9d679f0bf9b8a9f16d78a03f23493dedf093ef7a1fe29a54cc64b87069f4d79",
+      "anchors": [
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 61,
+            "y": 28
+          },
+          "headgearSeat": {
+            "x": 61,
+            "y": 7.6
+          }
+        }
+      ],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "cast",
+      "view": "north",
+      "sourceUrl": "/assets/rig-v2/male/base/cast-north.png",
+      "sourceFrames": 12,
+      "sourceSha256": "f4204081ed834dd90be9f4af5f1a4847c8e4603e965c5d4fa5939c6f8f84ac00",
+      "anchors": [
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        },
+        {
+          "head": {
+            "x": 63,
+            "y": 26.4
+          },
+          "headgearSeat": {
+            "x": 63,
+            "y": 6.5
+          }
+        }
+      ],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "cast",
+      "view": "west",
+      "sourceUrl": "/assets/rig-v2/male/base/cast-west.png",
+      "sourceFrames": 12,
+      "sourceSha256": "de26b249e12ddd4c967670a6ff1080dabdb60dc1b4d7983ef9a662a78babc346",
+      "anchors": [
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        },
+        {
+          "head": {
+            "x": 64,
+            "y": 27.8
+          },
+          "headgearSeat": {
+            "x": 64,
+            "y": 7.6
+          }
+        }
+      ],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "hurt",
+      "view": "south",
+      "sourceUrl": null,
+      "sourceFrames": 0,
+      "sourceSha256": null,
+      "anchors": [],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "hurt",
+      "view": "east",
+      "sourceUrl": null,
+      "sourceFrames": 0,
+      "sourceSha256": null,
+      "anchors": [],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "hurt",
+      "view": "north",
+      "sourceUrl": null,
+      "sourceFrames": 0,
+      "sourceSha256": null,
+      "anchors": [],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "hurt",
+      "view": "west",
+      "sourceUrl": null,
+      "sourceFrames": 0,
+      "sourceSha256": null,
+      "anchors": [],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "death",
+      "view": "south",
+      "sourceUrl": null,
+      "sourceFrames": 0,
+      "sourceSha256": null,
+      "anchors": [],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "death",
+      "view": "east",
+      "sourceUrl": null,
+      "sourceFrames": 0,
+      "sourceSha256": null,
+      "anchors": [],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "death",
+      "view": "north",
+      "sourceUrl": null,
+      "sourceFrames": 0,
+      "sourceSha256": null,
+      "anchors": [],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    },
+    {
+      "state": "death",
+      "view": "west",
+      "sourceUrl": null,
+      "sourceFrames": 0,
+      "sourceSha256": null,
+      "anchors": [],
+      "newBaseUrl": null,
+      "newBaseFrames": 0,
+      "approved": false
+    }
+  ]
+}

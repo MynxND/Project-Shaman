@@ -1,0 +1,604 @@
+{
+    "version":  "shaman-character-v2/1",
+    "status":  "review",
+    "approvals":  {
+                      "assetSpecAccepted":  true,
+                      "assetSpecDecision":  "2026-10-09 latest user accepts specification; separate SINGLE new FRONT body authorization max6, no visual art approval.",
+                      "animationAccepted":  false,
+                      "userVisualAccepted":  false
+                  },
+    "budget":  {
+                   "cap":  20,
+                   "spent":  20.0,
+                   "reserved":  0,
+                   "capAuthority":  {
+                                        "decisionPath":  "docs/design/character-v2/hair-proof-01/paid-stage/authorization.json",
+                                        "previousCap":  18,
+                                        "stageId":  "hair-proof-01",
+                                        "maxSubmissions":  1,
+                                        "maxCredits":  6,
+                                        "approvedCap":  20
+                                    }
+               },
+    "poses":  [
+                  {
+                      "id":  "neutral-male-02-idle-south",
+                      "direction":  "south",
+                      "state":  "idle",
+                      "canvas":  {
+                                     "width":  128,
+                                     "height":  128,
+                                     "origin":  {
+                                                    "x":  61,
+                                                    "y":  112
+                                                }
+                                 },
+                      "mode":  "static",
+                      "loop":  false,
+                      "frames":  [
+                                     {
+                                         "durationMs":  null,
+                                         "anchors":  {
+                                                         "foot":  {
+                                                                      "x":  61,
+                                                                      "y":  112
+                                                                  },
+                                                         "hairRoot":  {
+                                                                          "x":  62,
+                                                                          "y":  24
+                                                                      },
+                                                         "headgear":  {
+                                                                          "x":  62,
+                                                                          "y":  20
+                                                                      },
+                                                         "mainHand":  {
+                                                                          "x":  80,
+                                                                          "y":  78
+                                                                      },
+                                                         "offHand":  {
+                                                                         "x":  43,
+                                                                         "y":  78
+                                                                     },
+                                                         "accessories":  {
+                                                                             "x":  62,
+                                                                             "y":  70
+                                                                         }
+                                                     },
+                                         "order":  [
+                                                       "body",
+                                                       "hair",
+                                                       "outfit",
+                                                       "headgear",
+                                                       "mainHand",
+                                                       "offHand",
+                                                       "accessories",
+                                                       "effects"
+                                                   ]
+                                     }
+                                 ]
+                  },
+                  {
+                      "id":  "neutral-male-02-idle-east",
+                      "direction":  "east",
+                      "state":  "idle",
+                      "canvas":  {
+                                     "width":  128,
+                                     "height":  128,
+                                     "origin":  {
+                                                    "x":  61,
+                                                    "y":  112
+                                                }
+                                 },
+                      "mode":  "static",
+                      "loop":  false,
+                      "frames":  [
+                                     {
+                                         "durationMs":  null,
+                                         "anchors":  {
+                                                         "foot":  {
+                                                                      "x":  61,
+                                                                      "y":  112
+                                                                  },
+                                                         "hairRoot":  {
+                                                                          "x":  62,
+                                                                          "y":  25
+                                                                      },
+                                                         "headgear":  {
+                                                                          "x":  62,
+                                                                          "y":  21
+                                                                      },
+                                                         "mainHand":  {
+                                                                          "x":  57,
+                                                                          "y":  78
+                                                                      },
+                                                         "offHand":  {
+                                                                         "x":  68,
+                                                                         "y":  78
+                                                                     },
+                                                         "accessories":  {
+                                                                             "x":  63,
+                                                                             "y":  70
+                                                                         }
+                                                     },
+                                         "order":  [
+                                                       "body",
+                                                       "hair",
+                                                       "outfit",
+                                                       "headgear",
+                                                       "mainHand",
+                                                       "offHand",
+                                                       "accessories",
+                                                       "effects"
+                                                   ]
+                                     }
+                                 ]
+                  },
+                  {
+                      "id":  "neutral-male-02-idle-north",
+                      "direction":  "north",
+                      "state":  "idle",
+                      "canvas":  {
+                                     "width":  128,
+                                     "height":  128,
+                                     "origin":  {
+                                                    "x":  61,
+                                                    "y":  112
+                                                }
+                                 },
+                      "mode":  "static",
+                      "loop":  false,
+                      "frames":  [
+                                     {
+                                         "durationMs":  null,
+                                         "anchors":  {
+                                                         "foot":  {
+                                                                      "x":  61,
+                                                                      "y":  112
+                                                                  },
+                                                         "hairRoot":  {
+                                                                          "x":  63,
+                                                                          "y":  23
+                                                                      },
+                                                         "headgear":  {
+                                                                          "x":  63,
+                                                                          "y":  19
+                                                                      },
+                                                         "mainHand":  {
+                                                                          "x":  43,
+                                                                          "y":  77
+                                                                      },
+                                                         "offHand":  {
+                                                                         "x":  82,
+                                                                         "y":  77
+                                                                     },
+                                                         "accessories":  {
+                                                                             "x":  63,
+                                                                             "y":  69
+                                                                         }
+                                                     },
+                                         "order":  [
+                                                       "body",
+                                                       "hair",
+                                                       "outfit",
+                                                       "headgear",
+                                                       "mainHand",
+                                                       "offHand",
+                                                       "accessories",
+                                                       "effects"
+                                                   ]
+                                     }
+                                 ]
+                  },
+                  {
+                      "id":  "neutral-male-02-idle-west",
+                      "direction":  "west",
+                      "state":  "idle",
+                      "canvas":  {
+                                     "width":  128,
+                                     "height":  128,
+                                     "origin":  {
+                                                    "x":  61,
+                                                    "y":  112
+                                                }
+                                 },
+                      "mode":  "static",
+                      "loop":  false,
+                      "frames":  [
+                                     {
+                                         "durationMs":  null,
+                                         "anchors":  {
+                                                         "foot":  {
+                                                                      "x":  61,
+                                                                      "y":  112
+                                                                  },
+                                                         "hairRoot":  {
+                                                                          "x":  62,
+                                                                          "y":  25
+                                                                      },
+                                                         "headgear":  {
+                                                                          "x":  62,
+                                                                          "y":  21
+                                                                      },
+                                                         "mainHand":  {
+                                                                          "x":  69,
+                                                                          "y":  78
+                                                                      },
+                                                         "offHand":  {
+                                                                         "x":  57,
+                                                                         "y":  78
+                                                                     },
+                                                         "accessories":  {
+                                                                             "x":  62,
+                                                                             "y":  70
+                                                                         }
+                                                     },
+                                         "order":  [
+                                                       "body",
+                                                       "hair",
+                                                       "outfit",
+                                                       "headgear",
+                                                       "mainHand",
+                                                       "offHand",
+                                                       "accessories",
+                                                       "effects"
+                                                   ]
+                                     }
+                                 ]
+                  }
+              ],
+    "assets":  [
+                   {
+                       "id":  "neutral-male-02-body-south",
+                       "itemId":  "neutral-male-02",
+                       "layer":  "body",
+                       "pass":  "body",
+                       "poseId":  "neutral-male-02-idle-south",
+                       "direction":  "south",
+                       "state":  "idle",
+                       "canvas":  {
+                                      "width":  128,
+                                      "height":  128,
+                                      "origin":  {
+                                                     "x":  61,
+                                                     "y":  112
+                                                 }
+                                  },
+                       "timeline":  [
+                                        null
+                                    ],
+                       "frameCount":  1,
+                       "url":  "/assets/character-v2/body-front-02/raw.png",
+                       "provenance":  {
+                                          "kind":  "new-v2",
+                                          "sourcePath":  "docs/design/character-v2/body-front-02/raw.png",
+                                          "sha256":  "0ed1ddf448b70a93dc5f624617e832a0af593779b6b7257d65db39b61be35958",
+                                          "method":  "pixellab",
+                                          "jobId":  "23ffdbb6-a5e0-48d3-b82d-5fcebc9af2ad"
+                                      },
+                       "visualApproved":  true
+                   },
+                   {
+                       "id":  "neutral-male-02-body-east",
+                       "itemId":  "neutral-male-02",
+                       "layer":  "body",
+                       "pass":  "body",
+                       "poseId":  "neutral-male-02-idle-east",
+                       "direction":  "east",
+                       "state":  "idle",
+                       "canvas":  {
+                                      "width":  128,
+                                      "height":  128,
+                                      "origin":  {
+                                                     "x":  61,
+                                                     "y":  112
+                                                 }
+                                  },
+                       "timeline":  [
+                                        null
+                                    ],
+                       "frameCount":  1,
+                       "url":  "/assets/character-v2/body-rotation-01/east.png",
+                       "provenance":  {
+                                          "kind":  "new-v2",
+                                          "sourcePath":  "docs/design/character-v2/body-rotation-01/raw/east.png",
+                                          "sha256":  "0ebf842c4ae7f6ac03c395918e15f5d166b64754c94551420bd2796ab89f846a",
+                                          "method":  "pixellab",
+                                          "jobId":  "f2653cb1-90d7-4dc1-815c-ec9a5949ae17"
+                                      },
+                       "visualApproved":  true
+                   },
+                   {
+                       "id":  "neutral-male-02-body-north",
+                       "itemId":  "neutral-male-02",
+                       "layer":  "body",
+                       "pass":  "body",
+                       "poseId":  "neutral-male-02-idle-north",
+                       "direction":  "north",
+                       "state":  "idle",
+                       "canvas":  {
+                                      "width":  128,
+                                      "height":  128,
+                                      "origin":  {
+                                                     "x":  61,
+                                                     "y":  112
+                                                 }
+                                  },
+                       "timeline":  [
+                                        null
+                                    ],
+                       "frameCount":  1,
+                       "url":  "/assets/character-v2/body-rotation-01/north.png",
+                       "provenance":  {
+                                          "kind":  "new-v2",
+                                          "sourcePath":  "docs/design/character-v2/body-rotation-01/raw/north.png",
+                                          "sha256":  "289b25898984611ecadd7cc1dbd001a9b04ea6b1605644d9b121fe4883fd1107",
+                                          "method":  "pixellab",
+                                          "jobId":  "f2653cb1-90d7-4dc1-815c-ec9a5949ae17"
+                                      },
+                       "visualApproved":  true
+                   },
+                   {
+                       "id":  "neutral-male-02-body-west",
+                       "itemId":  "neutral-male-02",
+                       "layer":  "body",
+                       "pass":  "body",
+                       "poseId":  "neutral-male-02-idle-west",
+                       "direction":  "west",
+                       "state":  "idle",
+                       "canvas":  {
+                                      "width":  128,
+                                      "height":  128,
+                                      "origin":  {
+                                                     "x":  61,
+                                                     "y":  112
+                                                 }
+                                  },
+                       "timeline":  [
+                                        null
+                                    ],
+                       "frameCount":  1,
+                       "url":  "/assets/character-v2/body-rotation-01/west.png",
+                       "provenance":  {
+                                          "kind":  "new-v2",
+                                          "sourcePath":  "docs/design/character-v2/body-rotation-01/raw/west.png",
+                                          "sha256":  "cf8d6815ee91878bd2974089859ede2b40e21a3d1c0840a71b080fe580d4581c",
+                                          "method":  "pixellab",
+                                          "jobId":  "f2653cb1-90d7-4dc1-815c-ec9a5949ae17"
+                                      },
+                       "visualApproved":  true
+                   }
+               ],
+    "frontVisualApproval":  {
+                                "id":  "body-rotation-01",
+                                "date":  "2026-10-09",
+                                "userText":  "ผ่านแล้วครับทำขั้นต่อไปเลย",
+                                "interpretation":  "USER visually approves exact FRONT02 and authorizes NEXT single reference-reuse rotation stage at expected two credits. Accepted estimated 3.1-3.33-head proportions supersede the earlier 3.5-head target for this source only; do not regenerate it.",
+                                "frontVisualApproved":  true,
+                                "approvedSourceSha256":  "0ed1ddf448b70a93dc5f624617e832a0af593779b6b7257d65db39b61be35958",
+                                "maxCredits":  2,
+                                "maxSubmissions":  1,
+                                "rotationAuthorized":  true,
+                                "hairAuthorized":  false,
+                                "outfitAuthorized":  false,
+                                "animationAuthorized":  false,
+                                "retryAuthorized":  false,
+                                "fourViewVisualApproved":  false,
+                                "stop":  "After one rotation, preserve all eight raw images; publish/review only cardinal body views and STOP for USER four-view approval. No alignment transforms or manual mirrored replacements."
+                            },
+    "rotationReview":  {
+                           "version":  "shaman-character-v2-rotation-review/1",
+                           "status":  "awaiting-user-four-view-review",
+                           "userVisualAccepted":  false,
+                           "sourceFrontVisualApproved":  true,
+                           "sharedOrigin":  {
+                                                "x":  61,
+                                                "y":  112
+                                            },
+                           "bindingApproved":  false,
+                           "transformations":  [
+
+                                               ],
+                           "visualVerdict":  "Actual native images inspected: credible bald neutral-body cardinal candidates. East and west show genuine opposite profiles with one near eye/ear and projecting nose, not frontal substitutes. North is square rear with no face. Same compact large-head identity, bare feet, empty hands and charcoal modesty shorts; no hair/equipment. Technical checks do not approve art. Torso/shoulder shading and small silhouette differences need USER review.",
+                           "headEstimateMethod":  "Manual semantic estimate from native image: chin approximately row48 +/-1 for profiles; rear head boundary approximately row47 +/-1. Not automatic segmentation or exact approved cross-view ratios.",
+                           "views":  {
+                                         "south":  {
+                                                       "credibleCandidate":  true,
+                                                       "visualApproved":  true,
+                                                       "actualFoot":  {
+                                                                          "x":  61,
+                                                                          "y":  112
+                                                                      },
+                                                       "actualFootDelta":  {
+                                                                               "x":  0,
+                                                                               "y":  0
+                                                                           },
+                                                       "headHeightRange":  [
+                                                                               28,
+                                                                               30
+                                                                           ],
+                                                       "totalHeadsApproximate":  [
+                                                                                     3.1,
+                                                                                     3.33
+                                                                                 ],
+                                                       "reason":  "Latest USER approval applies only to exact FRONT02 bytes; provider SOUTH byte-identical. Historical FRONT02 review preserved unchanged."
+                                                   },
+                                         "east":  {
+                                                      "credibleCandidate":  true,
+                                                      "visualApproved":  false,
+                                                      "actualFoot":  {
+                                                                         "x":  63,
+                                                                         "y":  113
+                                                                     },
+                                                      "actualFootDelta":  {
+                                                                              "x":  2,
+                                                                              "y":  1
+                                                                          },
+                                                      "headHeightRange":  [
+                                                                              27,
+                                                                              29
+                                                                          ],
+                                                      "totalHeadsApproximate":  [
+                                                                                    3.21,
+                                                                                    3.44
+                                                                                ],
+                                                      "reason":  "True right-facing profile, one near eye/ear, projecting nose, edge-on shorts/torso; compact body and large bald head. Chest/arm shading and foot drift unapproved.",
+                                                      "anchors":  {
+                                                                      "foot":  {
+                                                                                   "x":  61,
+                                                                                   "y":  112
+                                                                               },
+                                                                      "hairRoot":  {
+                                                                                       "x":  62,
+                                                                                       "y":  25
+                                                                                   },
+                                                                      "headgear":  {
+                                                                                       "x":  62,
+                                                                                       "y":  21
+                                                                                   },
+                                                                      "mainHand":  {
+                                                                                       "x":  57,
+                                                                                       "y":  78
+                                                                                   },
+                                                                      "offHand":  {
+                                                                                      "x":  68,
+                                                                                      "y":  78
+                                                                                  },
+                                                                      "accessories":  {
+                                                                                          "x":  63,
+                                                                                          "y":  70
+                                                                                      }
+                                                                  }
+                                                  },
+                                         "north":  {
+                                                       "credibleCandidate":  true,
+                                                       "visualApproved":  false,
+                                                       "actualFoot":  {
+                                                                          "x":  63,
+                                                                          "y":  111
+                                                                      },
+                                                       "actualFootDelta":  {
+                                                                               "x":  2,
+                                                                               "y":  -1
+                                                                           },
+                                                       "headHeightRange":  [
+                                                                               28,
+                                                                               30
+                                                                           ],
+                                                       "totalHeadsApproximate":  [
+                                                                                     3.1,
+                                                                                     3.33
+                                                                                 ],
+                                                       "reason":  "True rear, no face, bald scalp/ears and plain shorts; similar head/body scale. Back shading and foot drift unapproved.",
+                                                       "anchors":  {
+                                                                       "foot":  {
+                                                                                    "x":  61,
+                                                                                    "y":  112
+                                                                                },
+                                                                       "hairRoot":  {
+                                                                                        "x":  63,
+                                                                                        "y":  23
+                                                                                    },
+                                                                       "headgear":  {
+                                                                                        "x":  63,
+                                                                                        "y":  19
+                                                                                    },
+                                                                       "mainHand":  {
+                                                                                        "x":  43,
+                                                                                        "y":  77
+                                                                                    },
+                                                                       "offHand":  {
+                                                                                       "x":  82,
+                                                                                       "y":  77
+                                                                                   },
+                                                                       "accessories":  {
+                                                                                           "x":  63,
+                                                                                           "y":  69
+                                                                                       }
+                                                                   }
+                                                   },
+                                         "west":  {
+                                                      "credibleCandidate":  true,
+                                                      "visualApproved":  false,
+                                                      "actualFoot":  {
+                                                                         "x":  61,
+                                                                         "y":  113
+                                                                     },
+                                                      "actualFootDelta":  {
+                                                                              "x":  0,
+                                                                              "y":  1
+                                                                          },
+                                                      "headHeightRange":  [
+                                                                              27,
+                                                                              29
+                                                                          ],
+                                                      "totalHeadsApproximate":  [
+                                                                                    3.21,
+                                                                                    3.44
+                                                                                ],
+                                                      "reason":  "True left-facing profile with nose left and one near eye/ear; untouched provider output, not manually mirrored. Profile texture/arm differences and foot drift unapproved.",
+                                                      "anchors":  {
+                                                                      "foot":  {
+                                                                                   "x":  61,
+                                                                                   "y":  112
+                                                                               },
+                                                                      "hairRoot":  {
+                                                                                       "x":  62,
+                                                                                       "y":  25
+                                                                                   },
+                                                                      "headgear":  {
+                                                                                       "x":  62,
+                                                                                       "y":  21
+                                                                                   },
+                                                                      "mainHand":  {
+                                                                                       "x":  69,
+                                                                                       "y":  78
+                                                                                   },
+                                                                      "offHand":  {
+                                                                                      "x":  57,
+                                                                                      "y":  78
+                                                                                  },
+                                                                      "accessories":  {
+                                                                                          "x":  62,
+                                                                                          "y":  70
+                                                                                      }
+                                                                  }
+                                                  }
+                                     },
+                           "anchorPolicy":  "Contract foot is shared template origin61,112, NOT a claim of actual lowest foot pixels in E/N/W. Actual alpha-derived feet/deltas are separate diagnostics. Other anchors are provisional manual visible landmarks; no hair/outfit/equipment fit approved.",
+                           "missing":  [
+                                           "independent hair",
+                                           "independent outfit",
+                                           "approved layer fits",
+                                           "animations",
+                                           "USER four-view approval"
+                                       ],
+                           "stop":  "One authorized rotation completed. STOP for USER four-view review. No retries, transforms, manual mirrored substitutes, hair, outfit, animation, old repairs or live integration."
+                       },
+    "bodyFourViewApproval":  {
+                                 "id":  "hair-proof-01",
+                                 "date":  "2026-10-09",
+                                 "userText":  "อนุมัติทั้งหมดเลยทำได้เลย",
+                                 "interpretation":  "Answers the explicit body-four-view approval and V2 cap18-to20 questions. ONE SOUTH isolated ivory-crop-01 cap-only inpaint proof, native128, existing 374-pixel mask only. No face editing, mask expansion, V1 output pixels, full-character generation, other hair directions, outfit, equipment, animation or automatic retry.",
+                                 "previousCap":  18,
+                                 "approvedCap":  20,
+                                 "priorSpent":  14,
+                                 "maxCredits":  6,
+                                 "maxSubmissions":  1,
+                                 "fourViewVisualApproved":  true,
+                                 "hairAuthorized":  true,
+                                 "direction":  "south",
+                                 "itemId":  "ivory-crop-01",
+                                 "maskPath":  "docs/design/character-v2/hair-proof-01/hair-allowed-mask.png",
+                                 "approvedMaskPixels":  374,
+                                 "sourceSha256":  "0ed1ddf448b70a93dc5f624617e832a0af593779b6b7257d65db39b61be35958",
+                                 "bindingApproved":  false,
+                                 "userVisualAccepted":  false,
+                                 "hairVisualApproved":  false,
+                                 "rotationAuthorized":  false,
+                                 "otherDirectionsAuthorized":  false,
+                                 "outfitAuthorized":  false,
+                                 "animationAuthorized":  false,
+                                 "retryAuthorized":  false,
+                                 "stop":  "After ONE actual hair job, archive rejected output or publish only credible SOUTH isolated hair for USER review. No retry or additional paid work. Full body/hair/outfit milestone remains incomplete."
+                             }
+}

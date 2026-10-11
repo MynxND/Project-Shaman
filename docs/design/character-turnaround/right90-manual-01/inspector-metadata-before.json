@@ -1,0 +1,806 @@
+{
+  "version": 1,
+  "id": "shaman-male-original-turnaround-native128",
+  "canvas": {
+    "width": 128,
+    "height": 128,
+    "origin": {
+      "x": 64,
+      "y": 124
+    },
+    "footBaseline": 124,
+    "baselineConvention": "Ground edge immediately below master lowest occupied row123; originals are not shifted to fit.",
+    "pixelDensity": "one source pixel per native canvas pixel"
+  },
+  "master": {
+    "view": "south",
+    "status": "selected-original-not-user-approved",
+    "source": "/assets/rig-v2/male/base/idle-south.png",
+    "frame": 0,
+    "mainV1SouthComparison": {
+      "rgbaEqual": false,
+      "selectedReason": "Current head-proof full-body source, native frame0; not a user approval claim."
+    }
+  },
+  "views": {
+    "south": {
+      "original": "/assets/character-turnaround/south-original.png",
+      "candidate": "/assets/character-turnaround/south-candidate.png",
+      "status": "preserved-original-awaiting-review",
+      "source": {
+        "url": "/assets/rig-v2/male/base/idle-south.png",
+        "frame": 0,
+        "stripSha256": "cbab15d5c78f779b5b346c03b2135502d0c9b2763390b761f201652df8fe45c5",
+        "frame0RgbaSha256": "609c98ee1d8871d15bb38cef34a101a9825f087beea2fe02df66295d2528ff81"
+      },
+      "landmarks": {
+        "headBounds": {
+          "left": 42,
+          "top": 5,
+          "right": 86,
+          "bottom": 38,
+          "width": 45,
+          "height": 34,
+          "pixels": 875
+        },
+        "headBoundsMeaning": "Opaque head assembly within provisional region, including ornaments; not a certified skull box.",
+        "headRegion": [
+          40,
+          0,
+          89,
+          38
+        ],
+        "shoulders": [
+          [
+            48,
+            43
+          ],
+          [
+            79,
+            43
+          ]
+        ],
+        "torso": [
+          53,
+          42,
+          75,
+          67
+        ],
+        "hips": [
+          [
+            54,
+            77
+          ],
+          [
+            74,
+            77
+          ]
+        ],
+        "wrists": [
+          [
+            38,
+            73
+          ],
+          [
+            91,
+            73
+          ]
+        ],
+        "hands": [
+          [
+            38,
+            78
+          ],
+          [
+            91,
+            78
+          ]
+        ],
+        "neck": [
+          64,
+          38
+        ],
+        "silhouette": {
+          "left": 32,
+          "top": 5,
+          "right": 97,
+          "bottom": 123,
+          "width": 66,
+          "height": 119,
+          "pixels": 4394
+        },
+        "totalHeight": 119,
+        "footBounds": {
+          "left": 43,
+          "top": 108,
+          "right": 85,
+          "bottom": 123,
+          "width": 43,
+          "height": 16,
+          "pixels": 362
+        },
+        "observedLowestPixel": 123,
+        "groundEdgeDelta": 0,
+        "landmarkStatus": "provisional-visible-art-estimates",
+        "semanticChecks": {
+          "trueTargetAngle": "front-retained-requires-user-review",
+          "profileFaceVisibility": "manual-review-required-not-inferred-from-color",
+          "identityMatchesMaster": "manual-review-required"
+        }
+      }
+    },
+    "east": {
+      "original": "/assets/character-turnaround/east-original.png",
+      "candidate": null,
+      "status": "blocked-right90-hair-repair-failed",
+      "source": {
+        "url": "/assets/rig-v2/male/base/idle-east.png",
+        "frame": 0,
+        "stripSha256": "2c72aef150e883d1ef70ea5fa07ace0abc14271049b2b44725496425d32ee67c",
+        "frame0RgbaSha256": "3179c730c8e4a06eac1336cbde7a067062490868644151d8157423986192897d"
+      },
+      "landmarks": {
+        "headBounds": {
+          "left": 40,
+          "top": 5,
+          "right": 82,
+          "bottom": 38,
+          "width": 43,
+          "height": 34,
+          "pixels": 1035
+        },
+        "headBoundsMeaning": "Opaque head assembly within provisional region, including ornaments; not a certified skull box.",
+        "headRegion": [
+          37,
+          0,
+          83,
+          38
+        ],
+        "shoulders": [
+          [
+            57,
+            42
+          ],
+          [
+            70,
+            44
+          ]
+        ],
+        "torso": [
+          54,
+          42,
+          73,
+          67
+        ],
+        "hips": [
+          [
+            55,
+            78
+          ],
+          [
+            72,
+            78
+          ]
+        ],
+        "wrists": [
+          [
+            56,
+            75
+          ],
+          [
+            78,
+            73
+          ]
+        ],
+        "hands": [
+          [
+            57,
+            80
+          ],
+          [
+            79,
+            78
+          ]
+        ],
+        "neck": [
+          66,
+          38
+        ],
+        "silhouette": {
+          "left": 22,
+          "top": 5,
+          "right": 82,
+          "bottom": 124,
+          "width": 61,
+          "height": 120,
+          "pixels": 3945
+        },
+        "totalHeight": 120,
+        "footBounds": {
+          "left": 51,
+          "top": 108,
+          "right": 80,
+          "bottom": 124,
+          "width": 30,
+          "height": 17,
+          "pixels": 355
+        },
+        "observedLowestPixel": 124,
+        "groundEdgeDelta": 1,
+        "landmarkStatus": "provisional-visible-art-estimates",
+        "semanticChecks": {
+          "trueTargetAngle": "not-certified",
+          "profileFaceVisibility": "manual-review-required-not-inferred-from-color",
+          "identityMatchesMaster": "manual-review-required"
+        }
+      },
+      "rejectedPreview": "/assets/character-turnaround/rotation-experiment-01/east-rejected.png",
+      "rejectedStatus": "rejected-not-a-candidate-hair-tie-identity-drift",
+      "rejectedMeasurements": {
+        "rawPngSha256": "9b8b667fd712b07eb3efcd78918be98517c38111e512947c5fdfc626172ef142",
+        "rgbaSha256": "8d96f894ecfaaf72b41c56521609d6c77165dc98e7c6668007ab25f853406651",
+        "silhouette": {
+          "left": 33,
+          "top": 6,
+          "right": 82,
+          "bottom": 123,
+          "width": 50,
+          "height": 118,
+          "pixels": 3381
+        },
+        "headAssemblyBounds": {
+          "left": 46,
+          "top": 6,
+          "right": 82,
+          "bottom": 38,
+          "width": 37,
+          "height": 33,
+          "pixels": 803
+        },
+        "footBounds": {
+          "left": 52,
+          "top": 108,
+          "right": 76,
+          "bottom": 123,
+          "width": 25,
+          "height": 16,
+          "pixels": 335
+        },
+        "groundEdgeDelta": 0,
+        "review": "awaiting-first-manual-review"
+      },
+      "rejectedHistory": [
+        {
+          "status": "rejected",
+          "raw": "right90/raw.png",
+          "review": "right90/review.json"
+        },
+        {
+          "status": "rejected",
+          "preview": "/assets/character-turnaround/rotation-experiment-01/east-rejected.png",
+          "review": "rotation-experiment-01/review.json"
+        },
+        {
+          "status": "failed-no-result",
+          "raw": null,
+          "review": "right90-hair-repair-01/review.json"
+        }
+      ],
+      "latestAttempt": {
+        "status": "failed-no-result",
+        "candidate": null,
+        "review": "right90-hair-repair-01/review.json",
+        "outputAvailable": false
+      }
+    },
+    "north": {
+      "original": "/assets/character-turnaround/north-original.png",
+      "candidate": null,
+      "status": "blocked-by-right90-failure",
+      "source": {
+        "url": "/assets/rig-v2/male/base/idle-north.png",
+        "frame": 0,
+        "stripSha256": "9cb7bc9b3a41f8c4815a526f26499009db96104ac4f0c3e8170ee0121173393d",
+        "frame0RgbaSha256": "280e5cc022f9e2a1b8125a0b2f6cc6a8e30ac3b13f0b590d0aa733a78c7dd127"
+      },
+      "landmarks": {
+        "headBounds": {
+          "left": 40,
+          "top": 4,
+          "right": 85,
+          "bottom": 40,
+          "width": 46,
+          "height": 37,
+          "pixels": 1008
+        },
+        "headBoundsMeaning": "Opaque head assembly within provisional region, including ornaments; not a certified skull box.",
+        "headRegion": [
+          39,
+          0,
+          87,
+          40
+        ],
+        "shoulders": [
+          [
+            48,
+            45
+          ],
+          [
+            78,
+            45
+          ]
+        ],
+        "torso": [
+          52,
+          43,
+          75,
+          69
+        ],
+        "hips": [
+          [
+            54,
+            78
+          ],
+          [
+            74,
+            78
+          ]
+        ],
+        "wrists": [
+          [
+            38,
+            72
+          ],
+          [
+            88,
+            72
+          ]
+        ],
+        "hands": [
+          [
+            38,
+            77
+          ],
+          [
+            88,
+            77
+          ]
+        ],
+        "neck": [
+          63,
+          41
+        ],
+        "silhouette": {
+          "left": 30,
+          "top": 4,
+          "right": 95,
+          "bottom": 120,
+          "width": 66,
+          "height": 117,
+          "pixels": 4524
+        },
+        "totalHeight": 117,
+        "footBounds": {
+          "left": 44,
+          "top": 108,
+          "right": 82,
+          "bottom": 120,
+          "width": 39,
+          "height": 13,
+          "pixels": 278
+        },
+        "observedLowestPixel": 120,
+        "groundEdgeDelta": -3,
+        "landmarkStatus": "provisional-visible-art-estimates",
+        "semanticChecks": {
+          "trueTargetAngle": "not-certified",
+          "profileFaceVisibility": "manual-review-required-not-inferred-from-color",
+          "identityMatchesMaster": "manual-review-required"
+        }
+      }
+    },
+    "west": {
+      "original": "/assets/character-turnaround/west-original.png",
+      "candidate": null,
+      "status": "blocked-by-right90-failure",
+      "source": {
+        "url": "/assets/rig-v2/male/base/idle-west.png",
+        "frame": 0,
+        "stripSha256": "dc8f9ebc5008325548ae956c506643b348c3b3981d10cc38e6b3039cc69fee32",
+        "frame0RgbaSha256": "dba6da4fae8c6b18cf7ba1d2184e54cb66a1806440afc866247f9abc36047548"
+      },
+      "landmarks": {
+        "headBounds": {
+          "left": 44,
+          "top": 5,
+          "right": 85,
+          "bottom": 40,
+          "width": 42,
+          "height": 36,
+          "pixels": 1086
+        },
+        "headBoundsMeaning": "Opaque head assembly within provisional region, including ornaments; not a certified skull box.",
+        "headRegion": [
+          35,
+          0,
+          89,
+          40
+        ],
+        "shoulders": [
+          [
+            58,
+            42
+          ],
+          [
+            71,
+            44
+          ]
+        ],
+        "torso": [
+          52,
+          42,
+          72,
+          67
+        ],
+        "hips": [
+          [
+            53,
+            78
+          ],
+          [
+            72,
+            78
+          ]
+        ],
+        "wrists": [
+          [
+            47,
+            74
+          ],
+          [
+            61,
+            76
+          ]
+        ],
+        "hands": [
+          [
+            48,
+            79
+          ],
+          [
+            61,
+            81
+          ]
+        ],
+        "neck": [
+          64,
+          38
+        ],
+        "silhouette": {
+          "left": 44,
+          "top": 5,
+          "right": 102,
+          "bottom": 123,
+          "width": 59,
+          "height": 119,
+          "pixels": 3639
+        },
+        "totalHeight": 119,
+        "footBounds": {
+          "left": 45,
+          "top": 108,
+          "right": 76,
+          "bottom": 123,
+          "width": 32,
+          "height": 16,
+          "pixels": 354
+        },
+        "observedLowestPixel": 123,
+        "groundEdgeDelta": 0,
+        "landmarkStatus": "provisional-visible-art-estimates",
+        "semanticChecks": {
+          "trueTargetAngle": "not-certified",
+          "profileFaceVisibility": "manual-review-required-not-inferred-from-color",
+          "identityMatchesMaster": "manual-review-required"
+        }
+      }
+    }
+  },
+  "review": {
+    "approved": false,
+    "stage": "right90-hair-repair-failed-stop",
+    "limitations": [
+      "Selected original front is not certified user-approved; all art needs user review.",
+      "Only south has a candidate, copied exactly from the original frame-0 archive. One actual right90 edit is rejected; east candidate is null, and back/left are blocked by the sequential stop gate.",
+      "Native source measurements and provisional anatomical landmarks are not semantic proof of a true profile or identity.",
+      "Actual native128 inpaint used an exact BW mask and boxed native256x128 east+front context. Black-mask RGBA remained exact, but output became front-facing with frontal chest/apron, redrawn costume structure and ground-edge delta-1. Reference guidance did not reliably deliver right90 in this observed attempt; no universal inability or identity guarantee is claimed.",
+      "Original ground-edge deltas south0/east+1/north-3/west0 fail an aligned four-view contract; no per-direction translation or scale applied.",
+      "Baked clothed reference; clean base, garment separation, equipment and animations are not delivered.",
+      "Native owned-front V3 rotation preserved south RGBA and improved the east-facing profile/baseline, but introduced a long loose white hair tail and lost crimson hair ties. East raw is exposed only as a rejected comparison; back/left raw are archived and unreviewed after the stop. No manual pixel correction or whole-image transform.",
+      "One narrow existing-master hair/tie repair failed on the service with no output and observed charge0. No retry; latest actual rejected preview retained. Output conservation and corrected identity cannot be assessed without an image."
+    ],
+    "right90": {
+      "jobId": "1963d87f-6474-472e-bcaa-f8aeaf09d6e3",
+      "status": "rejected",
+      "approved": false,
+      "candidate": null,
+      "method": "reference-guided-native-masked-inpaint",
+      "inspected": [
+        "raw.png",
+        "comparison-native.png",
+        "comparison-2x.png"
+      ],
+      "comparedAgainst": [
+        "apps/client/public/assets/rig-v2/male/base/idle-south.png frame0",
+        "apps/client/public/assets/rig-v2/male/base/idle-east.png frame0",
+        "docs/design/character-turnaround/proportion-template.json",
+        "docs/design/comfyui/reference/shamen-base-sheet.webp"
+      ],
+      "observedDefects": [
+        "Output reads front-facing rather than strict right90: paired ears flank the head, no clean right-projecting nose profile, and the face does not hide its far side.",
+        "Both shoulder/arm assemblies remain spread on either side of a broad frontal chest instead of overlapping in a coherent side-depth silhouette.",
+        "Apron remains a broad centered frontal panel with visible central embroidery, not edge-on; shoulder trim and chest ornament arrangement are redrawn rather than a coherent side projection of the preserved front.",
+        "Hair mass and visible costume structure resemble the front but reference copying has replaced the requested direction; resemblance does not establish identity-preserving right90 anatomy.",
+        "Native lowest occupied row122 gives ground edge123, delta-1 against origin/footBaseline124; front lowest row123 and height119 versus raw height118. No translation/scale was used to conceal this."
+      ],
+      "technicalPasses": [
+        "native128",
+        "exact-unmasked-RGBA",
+        "no-mask-escape",
+        "no-sprite-transform",
+        "exact-nearest2x"
+      ],
+      "observedLimitation": "This actual boxed-front masked attempt preserved black-mask bytes but failed to follow the explicit right90 anatomy and outfit projection constraints inside the editable region. It is not a reliable candidate. This is one observed failure, not proof that all service methods can never preserve identity.",
+      "stop": true,
+      "blockedDirections": [
+        "north",
+        "west"
+      ],
+      "rawArchiveOnly": true
+    },
+    "rotation": {
+      "version": 1,
+      "status": "rejected",
+      "approved": false,
+      "candidate": null,
+      "stop": true,
+      "reviewedDirection": "east",
+      "target": "true90-right-profile",
+      "angleAssessment": "Right-facing profile is substantially improved over the failed frontal inpaint; exact camera/anatomy remains unapproved. Angle improvement does not waive identity failures.",
+      "identityAssessment": "fails-master-hair-and-ornament-construction",
+      "observations": [
+        "Generated east has a long loose silver-white hair tail descending behind the shoulder to around the waist, unlike the master front's short spiky head silhouette and discrete ornament/tie construction.",
+        "Master crimson hair ties are not preserved in the generated profile. This is not an acceptable projection of the same asymmetric ornament assembly.",
+        "Warm skin, cream/crimson palette, sandals and near shoulder mantle resemble the reference, but broad coat hem/side-panel construction and embroidery are redrawn and need design review.",
+        "The face reads as a near side view with a right-projecting nose and one near eye; no whole-character alignment correction was applied. This alone does not certify a true90 anatomical turnaround.",
+        "Native east silhouette is 50x118 at left33,top6,right82,bottom123. Shared ground edge124 matches exactly; a one-pixel top difference is not the rejection reason."
+      ],
+      "sourceFront": {
+        "status": "selected-original-not-user-approved",
+        "approved": false,
+        "runtimePngBytesPreserved": true,
+        "serviceSouthRgbaEqual": true,
+        "serviceSouthPngBytesEqual": false,
+        "note": "Service PNG was re-encoded; runtime retains the original file bytes, not the generated south PNG."
+      },
+      "evidence": {
+        "raw": "raw/east.png",
+        "measurements": "measurements.json",
+        "nativeComparison": "east-comparison-native.png",
+        "nearest2xComparison": "east-comparison-2x.png",
+        "comparisonOrder": [
+          "protected-master-front",
+          "original-east-audit",
+          "generated-east-rejected"
+        ]
+      },
+      "rejectedPreview": "/assets/character-turnaround/rotation-experiment-01/east-rejected.png",
+      "manualPixelCorrections": [],
+      "transformations": [],
+      "unreviewedGeneratedDirections": [
+        "north",
+        "west",
+        "south-east",
+        "north-east",
+        "north-west",
+        "south-west"
+      ],
+      "backLeftPolicy": "Raw outputs archived because the supported rotation tool generates eight views; no back/left assessment or candidate promotion after the east identity failure.",
+      "nextGate": "Explicit master/template review and an identity-consistent native right profile; no hairstyle, equipment or animation generation."
+    },
+    "hairRepair": {
+      "version": 1,
+      "status": "failed-no-result",
+      "approved": false,
+      "candidate": null,
+      "stop": true,
+      "reviewedDirection": "east",
+      "jobId": "65f45f7e-199e-4079-ade4-6a56f5da0095",
+      "result": "temporary-server-failure",
+      "raw": null,
+      "chargedGenerationsReceipt": null,
+      "observedChargedCredits": 0,
+      "outputConservation": "unavailable-no-output-not-a-pass",
+      "identityAssessment": "unavailable-no-output",
+      "sourceRetention": {
+        "rawRotationPngExact": true,
+        "masterFrontPngExact": true,
+        "sourcePngSha256": "9b8b667fd712b07eb3efcd78918be98517c38111e512947c5fdfc626172ef142",
+        "frontPngSha256": "38de6dd6360b587197e993963b7c4ca5ce73de2cc7c16c6bf536c83f8f96cd66"
+      },
+      "mask": {
+        "file": "mask-binary.png",
+        "pngSha256": "0e446ed7d6f01b595bdf943a9dcf2de6bc9ac8d4a3174a057e8ebf7fabee4b2e",
+        "selectedPixels": 1351,
+        "protectedPixels": 15033,
+        "selectedProtectedProfilePixels": 0
+      },
+      "observations": [
+        "Before image still has genuine right-facing profile and baseline0, but loose long hair and absent master crimson bow/tied segments remain rejected.",
+        "One narrow reference-guided native128 inpaint was accepted with estimate6, then failed on the service with no output image.",
+        "No raw after image exists; no corrected candidate, scalp-gap inspection, or output body-conservation claim is possible.",
+        "Original east and rotated east skull silhouettes/pose do not align exactly, so no manual source-hair transplant was attempted."
+      ],
+      "evidence": {
+        "request": "request.json",
+        "submit": "submit.json",
+        "result": "result.json",
+        "mask": "mask-binary.png",
+        "protectedProfile": "protected-profile.png",
+        "before": "input.png",
+        "before2x": "input-2x.png",
+        "context": "context-native.png",
+        "context2x": "context-2x.png",
+        "maskOverlay2x": "mask-overlay-2x.png",
+        "after": null,
+        "comparisonAfter": null
+      },
+      "rejectedPreview": "/assets/character-turnaround/rotation-experiment-01/east-rejected.png",
+      "rejectedPreviewPolicy": "Retain latest actual rejected image; failed repair produced no replacement PNG. Prior rejection history is not deleted.",
+      "manualPixelCorrections": [],
+      "transformations": [],
+      "unreviewedGeneratedDirections": [
+        "north",
+        "west"
+      ],
+      "nextGate": "Stop for right-view review and a new explicit repair decision; no retry, back/left, new hairstyles, equipment or animation.",
+      "hiddenGeometry": "Any cloth revealed under old hair is provisional reconstruction only; no clean garment/head-body layers claimed."
+    },
+    "rotationComparison": {
+      "native": "/assets/character-turnaround/rotation-experiment-01/east-comparison-native.png",
+      "enlarged": "/assets/character-turnaround/rotation-experiment-01/east-comparison-2x.png",
+      "order": [
+        "protected-master-front",
+        "original-east-audit",
+        "generated-east-rejected"
+      ],
+      "content": "rejected-rotation-not-a-candidate"
+    }
+  },
+  "generation": {
+    "additionalChargedCredits": 8,
+    "additionalReservedCredits": 0,
+    "pendingJobs": [],
+    "jobs": [
+      {
+        "id": "65f45f7e-199e-4079-ade4-6a56f5da0095",
+        "imageId": "3ef2448d-1c40-54e3-897f-c581a6298cc4",
+        "direction": "right90-hair-identity-repair",
+        "status": "completed-failed-no-result",
+        "estimatedGenerations": 6,
+        "chargedGenerations": 0,
+        "method": "native128-narrow-masked-master-hair-tie-repair",
+        "request": "right90-hair-repair-01/request.json",
+        "submitReceipt": "right90-hair-repair-01/submit.json",
+        "resultReceipt": "right90-hair-repair-01/result.json",
+        "review": "right90-hair-repair-01/review.json",
+        "raw": null,
+        "chargeEvidence": "unchanged-observed-account-balance-no-job-charge-field"
+      },
+      {
+        "id": "1963d87f-6474-472e-bcaa-f8aeaf09d6e3",
+        "imageId": "11285eac-dcda-55bb-93ba-dfee443e1e5c",
+        "direction": "right90",
+        "status": "completed-rejected",
+        "estimatedGenerations": 6,
+        "chargedGenerations": 6,
+        "resultReceipt": "right90/result.json",
+        "review": "right90/review.json",
+        "raw": "right90/raw.png",
+        "submitReceipt": "right90/submit.json",
+        "request": "right90/request.json"
+      },
+      {
+        "id": "e3004236-7c93-436a-9a6b-c3139e60edd2",
+        "characterId": "40ffc152-8925-492a-8b5a-e7c296d5deac",
+        "direction": "right90-first-review",
+        "status": "completed-rejected",
+        "estimatedGenerations": 2,
+        "chargedGenerations": 2,
+        "method": "create_character_pro_flash-owned-first-frame-native-v3-rotations",
+        "request": "rotation-experiment-01/request.json",
+        "submitReceipt": "rotation-experiment-01/submit.json",
+        "resultReceipt": "rotation-experiment-01/result-final.json",
+        "review": "rotation-experiment-01/review.json",
+        "raw": "rotation-experiment-01/raw/east.png",
+        "chargeEvidence": "matching-source-reuse-estimate-and-observed-account-balance-delta"
+      }
+    ],
+    "internalCeiling": 14,
+    "userApprovedNumericalBudget": null,
+    "method": "reference-guided-native-masked-inpaint",
+    "request": "right90/request.json",
+    "capabilityQuote": "right90-capability-quote.json",
+    "usageEvidence": {
+      "receiptField": "charged_generations",
+      "before": "right90/balance-before.json",
+      "after": "right90/balance-after.json",
+      "remainingBefore": 177,
+      "remainingAfter": 171,
+      "usedBefore": 1823,
+      "usedAfter": 1829,
+      "unit": "subscription generations; service quote calls these provisional credits"
+    },
+    "policy": "One narrow existing-master east hair/tie repair only, six additional internal credits maximum; no retry. Right review gates all north/west review or generation. No new hairstyle/equipment/animation batch.",
+    "hairRepairInvocation": {
+      "experiment": "right90-hair-repair-01",
+      "additionalInternalCeiling": 6,
+      "userApprovedNumericalBudget": null,
+      "priorChargedCredits": 8,
+      "chargedCredits": 0,
+      "reservedCredits": 0,
+      "status": "failed-no-result-stop-no-retry",
+      "mask": "right90-hair-repair-01/mask-binary.png",
+      "quote": "right90-hair-repair-01/quote.json",
+      "policy": "Repair existing master identity only; preserve exact exposed profile and unmasked RGBA; stop after right review. No retry.",
+      "usageEvidence": {
+        "before": "right90-hair-repair-01/balance-before.json",
+        "after": "right90-hair-repair-01/balance-after.json",
+        "remainingBefore": 169,
+        "remainingAfter": 169,
+        "observedDelta": 0,
+        "chargedGenerationsReceipt": null,
+        "caveat": "Result has no charge field; observed balance unchanged. This is observed0, not a job-specific charged_generations receipt."
+      }
+    },
+    "rotationInvocation": {
+      "additionalInternalCeiling": 8,
+      "userApprovedNumericalBudget": null,
+      "priorInternalCeiling": 6,
+      "priorChargedCredits": 6,
+      "priorPolicy": "One right90 attempt; stop on observed failure. No back/left, hairstyle, equipment or animation generation.",
+      "experiment": "rotation-experiment-01",
+      "quote": "rotation-experiment-01/quote.json",
+      "policy": "One owned-front reference-rotation submission; assess east then north then independent west; stop on observed right failure. No hairstyle/equipment/animation.",
+      "chargedCredits": 2,
+      "reservedCredits": 0,
+      "status": "completed-rejected-right-identity-stop",
+      "usageEvidence": {
+        "before": "rotation-experiment-01/balance-before.json",
+        "after": "rotation-experiment-01/balance-final.json",
+        "remainingBefore": 171,
+        "remainingAfter": 169,
+        "usedBefore": 1829,
+        "usedAfter": 1831,
+        "chargedGenerationsReceipt": null,
+        "caveat": "get_character completion does not expose charged_generations. An unrelated previously-running animation completed during wait-01, so account delta is corroborating evidence, not a job-exclusive billing receipt. Delta2 matches the live rotation-only quote and submit estimate2."
+      }
+    }
+  },
+  "contactSheets": {
+    "native": "/assets/character-turnaround/originals-native.png",
+    "enlarged": "/assets/character-turnaround/originals-2x.png",
+    "order": [
+      "south",
+      "east",
+      "north",
+      "west"
+    ],
+    "content": "originals-only-not-approved-candidates",
+    "scale": [
+      1,
+      2
+    ],
+    "baseline": 124
+  }
+}

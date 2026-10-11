@@ -1,0 +1,240 @@
+{
+  "complete": false,
+  "approved": false,
+  "internalAdditionalCreditCap": 84,
+  "capSource": "Worker internal ceiling, NOT a user-approved numerical budget",
+  "chargedCredits": 84,
+  "reservedCredits": 84,
+  "jobs": [
+    {
+      "style": "tapered-short",
+      "view": "south",
+      "jobId": "62729d53-cffa-4a05-a6cf-41c0180db3cc",
+      "estimatedCredits": 6,
+      "chargedCredits": 6
+    },
+    {
+      "style": "tapered-short",
+      "view": "east",
+      "jobId": "5806a562-ce68-4bef-9ea5-9241b76a8411",
+      "estimatedCredits": 6,
+      "chargedCredits": 6
+    },
+    {
+      "style": "tapered-short",
+      "view": "north",
+      "jobId": "1b866f93-aa8e-4c8f-830e-c7fb0604de52",
+      "estimatedCredits": 6,
+      "chargedCredits": 6,
+      "superseded": true,
+      "reason": "Original upper scalp gap; archived raw/request preserved"
+    },
+    {
+      "style": "tapered-short",
+      "view": "north",
+      "jobId": "6c9c4af2-5de9-4beb-8565-fa85c2dff87f",
+      "estimatedCredits": 6,
+      "chargedCredits": 6
+    },
+    {
+      "style": "center-part",
+      "view": "south",
+      "jobId": "8594deb4-46f7-446f-aafd-0195e684041e",
+      "estimatedCredits": 6,
+      "chargedCredits": 6
+    },
+    {
+      "style": "center-part",
+      "view": "east",
+      "jobId": "5cb9e3cc-395a-4d8b-82f8-101f6fdb2a39",
+      "estimatedCredits": 6,
+      "chargedCredits": 6
+    },
+    {
+      "style": "center-part",
+      "view": "north",
+      "jobId": "cb4ae554-c5f7-474b-a5c7-631eec1a2145",
+      "estimatedCredits": 6,
+      "chargedCredits": 6
+    },
+    {
+      "style": "high-topknot",
+      "view": "south",
+      "jobId": "ed2362fd-2e3d-46b3-8fa5-998df1f491dc",
+      "estimatedCredits": 6,
+      "chargedCredits": 6
+    },
+    {
+      "style": "high-topknot",
+      "view": "east",
+      "jobId": "7de10184-15c8-42d2-8976-d2dae5e66938",
+      "estimatedCredits": 6,
+      "chargedCredits": 6
+    },
+    {
+      "style": "high-topknot",
+      "view": "north",
+      "jobId": "8b47c320-3145-4bab-ad85-8768031300ed",
+      "estimatedCredits": 6,
+      "chargedCredits": 6,
+      "superseded": true,
+      "reason": "Original upper scalp gap; archived raw/request preserved"
+    },
+    {
+      "style": "high-topknot",
+      "view": "north",
+      "jobId": "25088104-c107-496f-afef-5046925b3ec8",
+      "estimatedCredits": 6,
+      "chargedCredits": 6
+    },
+    {
+      "style": "long-flow",
+      "view": "south",
+      "jobId": "1489ef9a-a61b-486f-af4f-670cdda6f7a2",
+      "estimatedCredits": 6,
+      "chargedCredits": 6
+    },
+    {
+      "style": "long-flow",
+      "view": "east",
+      "jobId": "1b05699f-fa3b-4a7d-9721-f948a22585c6",
+      "estimatedCredits": 6,
+      "chargedCredits": 6
+    },
+    {
+      "style": "long-flow",
+      "view": "north",
+      "jobId": "b7d8df30-b2e9-40af-b4fe-9a9e7990a0b0",
+      "estimatedCredits": 6,
+      "chargedCredits": 6
+    }
+  ],
+  "pendingJobs": [],
+  "styles": {
+    "natural-short": {
+      "south": "complete-candidate",
+      "east": "complete-candidate",
+      "north": "complete-candidate",
+      "west": "complete-candidate"
+    },
+    "tapered-short": {
+      "south": "complete-candidate",
+      "east": "complete-candidate",
+      "north": "complete-candidate",
+      "west": "complete-candidate"
+    },
+    "center-part": {
+      "south": "complete-candidate",
+      "east": "complete-candidate",
+      "north": "complete-candidate",
+      "west": "complete-candidate"
+    },
+    "side-sweep": {
+      "south": "planned",
+      "east": "planned",
+      "north": "planned",
+      "west": "planned"
+    },
+    "undercut": {
+      "south": "planned",
+      "east": "planned",
+      "north": "planned",
+      "west": "planned"
+    },
+    "spiky-up": {
+      "south": "planned",
+      "east": "planned",
+      "north": "planned",
+      "west": "planned"
+    },
+    "low-bun": {
+      "south": "planned",
+      "east": "planned",
+      "north": "planned",
+      "west": "planned"
+    },
+    "high-topknot": {
+      "south": "complete-candidate",
+      "east": "complete-candidate",
+      "north": "complete-candidate",
+      "west": "complete-candidate"
+    },
+    "shoulder-length": {
+      "south": "planned",
+      "east": "planned",
+      "north": "planned",
+      "west": "planned"
+    },
+    "half-tie": {
+      "south": "planned",
+      "east": "planned",
+      "north": "planned",
+      "west": "planned"
+    },
+    "long-flow": {
+      "south": "rejected-length",
+      "east": "rejected-length",
+      "north": "rejected-scalp",
+      "west": "planned"
+    },
+    "single-braid": {
+      "south": "planned",
+      "east": "planned",
+      "north": "planned",
+      "west": "planned"
+    },
+    "twin-braids": {
+      "south": "planned",
+      "east": "planned",
+      "north": "planned",
+      "west": "planned"
+    },
+    "wild-sweep": {
+      "south": "planned",
+      "east": "planned",
+      "north": "planned",
+      "west": "planned"
+    }
+  },
+  "sourceRetention": "docs/design/hair-collection/source-retention.json",
+  "completeStyles": [
+    "natural-short",
+    "tapered-short",
+    "center-part",
+    "high-topknot"
+  ],
+  "pendingStyles": [
+    "side-sweep",
+    "undercut",
+    "spiky-up",
+    "low-bun",
+    "shoulder-length",
+    "half-tie",
+    "long-flow",
+    "single-braid",
+    "twin-braids",
+    "wild-sweep"
+  ],
+  "remainingAuthoredViews": 32,
+  "provisionalRemainingCredits": 192,
+  "paidDrafts": [
+    {
+      "style": "long-flow",
+      "view": "south",
+      "status": "rejected-length",
+      "reason": "Loose long hair must reach native y>=72 in every view; generated bottom=57. Paid draft archived, not a completed guide style."
+    },
+    {
+      "style": "long-flow",
+      "view": "east",
+      "status": "rejected-length",
+      "reason": "Loose long hair must reach native y>=72 in every view; generated bottom=53. Paid draft archived, not a completed guide style."
+    },
+    {
+      "style": "long-flow",
+      "view": "north",
+      "status": "rejected-scalp",
+      "reason": "Generated hair leaves original upper scalp exposed; PixelLab correction required, no copied texture fill."
+    }
+  ]
+}

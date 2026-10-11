@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.kid-stripe-candidate",
+  "kind": "hairFront",
+  "variant": "kid-stripe-candidate",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "kid-ramp",
+      "url": "/assets/ssr/candidates/kid-stripe-01/hair-ramp.png",
+      "sha256": "284340bd4d585f3a30a7b3d2357ff6e926015a8b30012f6844cfbaaa61170dee",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "kid-fixed",
+      "url": "/assets/ssr/candidates/kid-stripe-01/hair-fixed.png",
+      "sha256": "b30af06d68c343b6248f446ae4355476d9c26a2dd2f26351b5d0d708ab575189",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "kid-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "kid-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Original FRONT-only inpaint on owned approved head; Hair Layer Standard filtering. Unapproved candidate, no other directions or gameplay publication."
+}

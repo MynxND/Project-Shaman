@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.swept-spikes-front-01-candidate",
+  "kind": "hairFront",
+  "variant": "swept-spikes-front-01-candidate",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "golden-ramp",
+      "url": "/assets/ssr/candidates/swept-spikes-front-01/hair-ramp.png",
+      "sha256": "0a3bfb6149ba8bcc4211d3fe1681d7390af49ac3cee586ac4fc12d4b2d7d8835",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "golden-fixed",
+      "url": "/assets/ssr/candidates/swept-spikes-front-01/hair-fixed.png",
+      "sha256": "79aeb3c775150f1a2b8751e79bc9d99a966d81acbd1c8c943c4ed4975609bfe5",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "golden-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "golden-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Original FRONT-only inpaint on owned approved head; Hair Layer Standard filtering. Unapproved candidate, no other directions or gameplay publication."
+}

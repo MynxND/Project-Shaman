@@ -1,0 +1,113 @@
+{
+  "goldWorkbenchId": "cf70222d-89bd-4111-b998-d2f9d97c71c3",
+  "neutralWorkbenchId": "2ac5f962-8230-4361-8d03-64970549447d",
+  "cleanup": [
+    {
+      "operation": "select_mask",
+      "layer": "image",
+      "frames": [
+        1
+      ],
+      "name": "stone_floor",
+      "selector": {
+        "kind": "color",
+        "colors": [
+          "#2e3137ff",
+          "#33363bff",
+          "#353942ff",
+          "#3a3e47ff",
+          "#3e444dff",
+          "#444a53ff",
+          "#4b5159ff",
+          "#525961ff",
+          "#596067ff",
+          "#2b2d31ff",
+          "#1e1d1dff",
+          "#272627ff"
+        ],
+        "tolerance": 0
+      },
+      "reason": "Remove painted grey stone filler so the ritual geometry alone overlays the actual world floor."
+    },
+    {
+      "operation": "brush",
+      "layer": "image",
+      "frames": [
+        1
+      ],
+      "mask": "stone_floor",
+      "points": [
+        [
+          31,
+          31
+        ],
+        [
+          95,
+          31
+        ],
+        [
+          31,
+          63
+        ],
+        [
+          95,
+          63
+        ]
+      ],
+      "size": 64,
+      "shape": "square",
+      "mode": "erase",
+      "reason": "Keep all bronze-gold art pixels; erase only exact neutral floor colors."
+    }
+  ],
+  "neutral": [
+    {
+      "operation": "map_colors",
+      "layer": "image",
+      "frames": [
+        1
+      ],
+      "region": [
+        0,
+        0,
+        127,
+        79
+      ],
+      "colors": {
+        "#342011ff": "#343434ff",
+        "#3b2211ff": "#3b3b3bff",
+        "#3f3318ff": "#3f3f3fff",
+        "#412713ff": "#414141ff",
+        "#472b11ff": "#474747ff",
+        "#4d3d19ff": "#4d4d4dff",
+        "#4f3210ff": "#4f4f4fff",
+        "#5c3d12ff": "#5c5c5cff",
+        "#624a1bff": "#626262ff",
+        "#705622ff": "#707070ff",
+        "#785e26ff": "#787878ff",
+        "#82692aff": "#828282ff",
+        "#8d621fff": "#8d8d8dff",
+        "#917835ff": "#919191ff",
+        "#a58138ff": "#a5a5a5ff",
+        "#b39f64ff": "#b3b3b3ff",
+        "#b59346ff": "#b5b5b5ff",
+        "#bf8c39ff": "#bfbfbfff",
+        "#c7a157ff": "#c7c7c7ff",
+        "#ccb76aff": "#ccccccff",
+        "#d4a24fff": "#d4d4d4ff",
+        "#ddae5cff": "#ddddddff",
+        "#e0b975ff": "#e0e0e0ff",
+        "#e5c48dff": "#e5e5e5ff",
+        "#ebd4acff": "#ebebebff",
+        "#141310ff": "#141414ff",
+        "#1d1912ff": "#1d1d1dff",
+        "#271b11ff": "#272727ff",
+        "#272119ff": "#272727ff",
+        "#2f1e12ff": "#2f2f2fff",
+        "#322920ff": "#323232ff",
+        "#f9f0dfff": "#f9f9f9ff"
+      },
+      "reason": "Neutral luminance rendition of the same PixelLab geometry for controlled jade/crimson tinting without double-multiplying antique gold."
+    }
+  ]
+}

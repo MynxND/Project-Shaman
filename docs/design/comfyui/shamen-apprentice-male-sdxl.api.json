@@ -1,0 +1,226 @@
+{
+  "1": {
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "SDXL base"
+    },
+    "inputs": {
+      "ckpt_name": "sd_xl_base_1.0.safetensors"
+    }
+  },
+  "2": {
+    "class_type": "LoraLoader",
+    "_meta": {
+      "title": "Pixel Art XL"
+    },
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "clip": [
+        "1",
+        1
+      ],
+      "lora_name": "pixel-art-xl.safetensors",
+      "strength_model": 1,
+      "strength_clip": 1
+    }
+  },
+  "3": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive: character"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        1
+      ],
+      "text": "pixel art, solo, one single character centered, (chibi:1.3), (big head:1.2), about 3 heads tall, full body game sprite, original Global Shaman base character, young boy, spiky messy silver-white hair, red-brown eyes, calm face, baggy brown trousers, apprentice shaman outfit, layered cream long-sleeve tunic with embroidered cuffs, short fur-trimmed shoulder mantle, red cloth sash with round bronze amulet buckle, hanging woven green and gold patterned apron panel, red prayer ribbons and small feather charm in hair, simple leather sandals with wrapped ankle cloth, soft cel shading, thin soft outlines, warm earthy palette of cream, brick red, moss green and ochre, three-quarter front view, standing idle, feet visible, classic 2000s MMORPG character sprite, plain white background"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        1
+      ],
+      "text": "tall, long legs, slender, realistic proportions, (multiple characters:1.3), (character sheet:1.3), sprite sheet, turnaround, multiple views, reference sheet, separate weapon, item icons, 3d render, realistic, photo, blurry, painterly, text, watermark, logo, cropped, cut off feet, extra limbs, busy background, scenery, floor, shadow, modern clothes, armor"
+    }
+  },
+  "5": {
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Canvas 896x1152 (/8 = 112x144)"
+    },
+    "inputs": {
+      "width": 896,
+      "height": 1152,
+      "batch_size": 4
+    }
+  },
+  "6": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "14",
+        0
+      ],
+      "positive": [
+        "3",
+        0
+      ],
+      "negative": [
+        "4",
+        0
+      ],
+      "latent_image": [
+        "5",
+        0
+      ],
+      "seed": 308,
+      "steps": 28,
+      "cfg": 6,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 1
+    }
+  },
+  "7": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "6",
+        0
+      ],
+      "vae": [
+        "1",
+        2
+      ]
+    }
+  },
+  "8": {
+    "class_type": "ImageScale",
+    "_meta": {
+      "title": "Pixel grid 112x144 (nearest, /8)"
+    },
+    "inputs": {
+      "image": [
+        "7",
+        0
+      ],
+      "upscale_method": "nearest-exact",
+      "width": 112,
+      "height": 144,
+      "crop": "disabled"
+    }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save sprite 112x144 RGBA"
+    },
+    "inputs": {
+      "images": [
+        "15",
+        0
+      ],
+      "filename_prefix": "shaman/apprentice_male_sprite"
+    }
+  },
+  "10": {
+    "class_type": "ImageScale",
+    "_meta": {
+      "title": "Preview x4 (nearest)"
+    },
+    "inputs": {
+      "image": [
+        "15",
+        0
+      ],
+      "upscale_method": "nearest-exact",
+      "width": 448,
+      "height": 576,
+      "crop": "disabled"
+    }
+  },
+  "11": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save preview 448x576 RGBA"
+    },
+    "inputs": {
+      "images": [
+        "10",
+        0
+      ],
+      "filename_prefix": "shaman/apprentice_male_preview"
+    }
+  },
+  "12": {
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Reference: Shamen base male (user concept sheet)"
+    },
+    "inputs": {
+      "image": "shamen-base-male-front.png"
+    }
+  },
+  "13": {
+    "class_type": "IPAdapterUnifiedLoader",
+    "_meta": {
+      "title": "IP-Adapter PLUS SDXL"
+    },
+    "inputs": {
+      "model": [
+        "2",
+        0
+      ],
+      "preset": "PLUS (high strength)"
+    }
+  },
+  "14": {
+    "class_type": "IPAdapterAdvanced",
+    "_meta": {
+      "title": "IP-Adapter apply (linear: identity + proportions)"
+    },
+    "inputs": {
+      "model": [
+        "13",
+        0
+      ],
+      "ipadapter": [
+        "13",
+        1
+      ],
+      "image": [
+        "12",
+        0
+      ],
+      "weight": 0.7,
+      "weight_type": "linear",
+      "combine_embeds": "concat",
+      "start_at": 0,
+      "end_at": 0.85,
+      "embeds_scaling": "V only"
+    }
+  },
+  "15": {
+    "class_type": "ShamanPixelBackgroundKey",
+    "_meta": {
+      "title": "Remove flat background (hard alpha)"
+    },
+    "inputs": {
+      "image": [
+        "8",
+        0
+      ],
+      "tolerance": 0.12
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "approved": false,
+  "internalAdditionalGenerationCap": 6,
+  "priorChargedGenerations": 30,
+  "expectedGenerations": 6,
+  "costBasis": "Four identical native128 masked-inpaint submit receipts; live capabilities do not expose an estimator",
+  "editablePixels": 467,
+  "protectedRegions": [
+    "row >= 37: neck",
+    "row >= 26 and x <= 54 or x >= 72: rear ears/side skin"
+  ],
+  "source": "source-edits/north-short-correction-input.png",
+  "context": "source-edits/north-short-correction-context.png",
+  "request": "prompts/short-north-correction-request.json",
+  "mask": "masks/north-short-correction-head-only.png",
+  "references": [
+    "previews/south-short-head-native.png",
+    "previews/east-short-head-native.png"
+  ],
+  "nativeCanvas": {
+    "width": 128,
+    "height": 128
+  }
+}

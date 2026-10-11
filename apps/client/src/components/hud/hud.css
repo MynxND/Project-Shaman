@@ -1,0 +1,345 @@
+/* Main HUD layout (docs/design/ui-system.md). Dark carved-wood plates with the kit's bronze 10-slice frame; parchment
+   windows stay for menus. Every panel is absolutely placed inside the safe area. */
+.hud-root {
+  --hud-top: max(8px, env(safe-area-inset-top));
+  --hud-bottom: max(8px, env(safe-area-inset-bottom));
+  --hud-left: max(10px, env(safe-area-inset-left));
+  --hud-right: max(10px, env(safe-area-inset-right));
+  position: absolute; inset: 0; font-family: var(--sk-font); color: var(--sk-parchment);
+}
+.hud-panel {
+  /* Kit v2 HUD panel (v2/frame/panel.png, PixelLab): slim carved teak band, bronze corner caps with red thread.
+     Slices 30 keep the corner ornaments whole; the plain band between them repeats. The layout border is the band's
+     inner edge (11/12/15/12 px); the corner art is drawn 30 px deep over the padding corners. */
+  position: absolute;
+  border-style: solid;
+  border-width: calc(11 * var(--sk-px)) calc(12 * var(--sk-px)) calc(15 * var(--sk-px)) calc(12 * var(--sk-px));
+  border-image-source: url('/assets/ui/v2/frame/panel.png');
+  border-image-slice: 30;
+  border-image-width: calc(30 * var(--sk-px));
+  border-image-repeat: round;
+  image-rendering: pixelated;
+  background: #1c1713ee; background-clip: padding-box;
+  box-shadow: inset 0 0 0 1px #00000080, inset 0 8px 12px -8px #000a;
+  filter: drop-shadow(0 6px 10px #0009);
+}
+.hud-panel h2 { margin: 0; font: 400 20px/1.15 var(--sk-font-display); color: #f0dcae; text-shadow: 0 1px 0 #000; }
+.hud-mini-btn {
+  /* Kit v2 icon-button frame (1x, 11 px slices drawn over the whole 30 px button). */
+  all: unset; box-sizing: border-box; cursor: pointer; width: 34px; height: 34px; display: grid; place-items: center; flex: 0 0 auto; position: relative; z-index: 0;
+  border: 1px solid transparent; border-image: url('/assets/ui/v2/frame/iconbutton-9s.png') 11 / 11px stretch; image-rendering: pixelated;
+  color: #fff2cf; background: #2a211a; background-clip: padding-box; font: 700 14px/1 var(--sk-font); text-shadow: 0 1px 0 #000, 0 0 3px #000;
+}
+.hud-mini-btn:hover { background-color: #3d3027; }
+.hud-mini-btn:focus-visible { outline: 2px solid var(--sk-jade); outline-offset: 1px; }
+
+/* Top menu: icon over Thai label and English sub-label. */
+.hud-menu { position: absolute; top: var(--hud-top); right: var(--hud-right); display: flex; gap: 2px; }
+.hud-menu-item {
+  all: unset; box-sizing: border-box; width: 64px; padding: 2px 0 4px; display: flex; flex-direction: column; align-items: center;
+  text-align: center; cursor: pointer; border-radius: 2px; text-shadow: 0 1px 0 #000, 0 0 4px #000;
+}
+.hud-menu-item img { width: 44px; height: 44px; filter: drop-shadow(0 2px 0 #000a); transition: transform .12s; }
+.hud-menu-item b { font: 400 16px/1.1 var(--sk-font-display); color: #f3dfb0; }
+.hud-menu-item small { font-size: 10px; color: #cdbb93; line-height: 1.2; }
+button.hud-menu-item:hover img { transform: translateY(-2px); }
+button.hud-menu-item:focus-visible { outline: 2px solid var(--sk-jade); }
+.hud-menu-item[aria-pressed="true"] { background: radial-gradient(ellipse at 50% 40%, #b58a4566, transparent 70%); }
+.hud-menu-item[aria-disabled="true"] { cursor: not-allowed; }
+.hud-menu-item[aria-disabled="true"] img { filter: grayscale(.85) brightness(.6); }
+.hud-menu-item[aria-disabled="true"] b { color: #a5967a; }
+.hud-menu-item[aria-disabled="true"] small { color: #9d493d; color: #c98f80; }
+
+/* Status: portrait, name, bars, currency, connection. */
+.hud-status { top: var(--hud-top); left: var(--hud-left); width: 310px; display: grid; grid-template-columns: 62px 1fr; gap: 8px; padding: 2px 4px; }
+.hud-portrait {
+  all: unset; cursor: pointer; position: relative; width: 62px; height: 94px; align-self: start;
+}
+/* Opening of the arch in portrait-crop.png: x 13..46, y 29..83; the sprite is drawn at 1x behind it. */
+.hud-portrait-window { position: absolute; left: 13px; top: 29px; width: 34px; height: 55px; overflow: hidden; border-radius: 17px 17px 0 0; background: radial-gradient(circle at 50% 35%, #3f6d61, #142824 75%); }
+.hud-portrait-window img { position: absolute; max-width: none; width: 128px; height: 128px; left: -47px; top: -10px; image-rendering: pixelated; }
+.hud-portrait-frame { position: absolute; inset: 0; width: 62px; height: 94px; max-width: none; image-rendering: pixelated; filter: drop-shadow(0 2px 2px #000a); }
+.hud-portrait:hover .hud-portrait-frame { filter: drop-shadow(0 2px 2px #000a) brightness(1.12); }
+/* Level on the kit v2 bronze medallion (badge/level.png, 1x); the number sits on its dark centre. */
+.hud-portrait-lv {
+  position: absolute; left: 50%; bottom: -10px; transform: translateX(-50%); width: 32px; height: 32px; padding-top: 11px; box-sizing: border-box;
+  background: url('/assets/ui/v2/badge/level.png') center / 32px 32px no-repeat; image-rendering: pixelated;
+  font: 700 11px/1 var(--sk-font); color: #f3dfb0; text-align: center; text-shadow: 0 1px 0 #000, 1px 0 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+.hud-portrait:focus-visible { outline: 2px solid var(--sk-jade); }
+.hud-status-body { min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.hud-status-sub { font-size: 12px; color: #cdbb93; }
+.hud-bar-row { display: grid; grid-template-columns: 22px 1fr; align-items: center; gap: 4px; font: 700 11px var(--sk-font); }
+.hud-exp { position: relative; height: 12px; background: #1a1512; box-shadow: inset 0 0 0 1px #b58a4588; overflow: hidden; }
+.hud-exp span { position: absolute; inset: 0 auto 0 0; background: var(--sk-bronze); }
+.hud-exp em { position: relative; display: block; font: 700 9px/12px var(--sk-font); font-style: normal; text-align: center; color: #fff4dc; text-shadow: 0 1px 0 #000; }
+.hud-status-foot { display: flex; justify-content: space-between; align-items: center; gap: 6px; font-size: 12px; }
+.hud-coin { color: #e9c47a; font-variant-numeric: tabular-nums; }
+.hud-conn { display: inline-flex; align-items: center; gap: 5px; color: #cdbb93; }
+.hud-conn i { width: 7px; height: 7px; background: #c6604b; box-shadow: 0 0 6px #c6604b; }
+.hud-conn[data-status="connected"] i { background: #7fe0c6; box-shadow: 0 0 6px #7fe0c6; }
+.hud-conn[data-status="connecting"] i { background: #e9c47a; box-shadow: 0 0 6px #e9c47a; }
+.hud-sample { font-size: 10px; color: #c98f80; }
+
+/* Quest tracker under the menu. */
+.hud-quest { top: calc(var(--hud-top) + 84px); right: var(--hud-right); width: 230px; padding: 2px 6px 4px; font-size: 13px; }
+.hud-quest header { display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+.hud-quest b { display: block; color: #e9c47a; margin-top: 2px; }
+.hud-quest ul { list-style: none; margin: 2px 0; padding: 0; }
+.hud-quest li[data-done="true"] { color: #8fbfa9; text-decoration: line-through; }
+.hud-quest small, .hud-hotbar small { font-size: 10px; color: #c98f80; }
+
+/* Minimap drawn from map data. */
+.hud-minimap { right: var(--hud-right); bottom: var(--hud-bottom); width: 236px; padding: 0 2px 2px; }
+
+/* Map chrome shared by the minimap and the world map: header (zoom | compass | expand/close), framed view, name plate. */
+.hud-map-head { position: relative; display: flex; justify-content: space-between; align-items: center; gap: 4px; padding: 2px 0 4px; }
+.hud-map-zoom { display: flex; align-items: center; gap: 3px; }
+.hud-map-head .hud-mini-btn { width: 34px; height: 34px; font: 700 15px/1 var(--sk-font); }
+.hud-mini-btn:disabled { opacity: .4; cursor: not-allowed; }
+.hud-map-compass { position: absolute; left: 50%; top: -6px; transform: translateX(-50%); filter: drop-shadow(0 2px 2px #000a); pointer-events: none; }
+.hud-map-canvas, .hud-worldmap-canvas {
+  display: block; width: 100%; box-shadow: 0 0 0 1px #e9c47a66, 0 0 0 2px #b58a45, 0 0 0 4px #1a1512, 0 0 0 5px #b58a4566; background: #1a1512;
+}
+.hud-map-canvas { aspect-ratio: 4 / 3; cursor: zoom-in; }
+.hud-map-foot { margin-top: 7px; padding: 4px 4px 2px; text-align: center; background: linear-gradient(#1a1512, #25201d); box-shadow: inset 0 1px 0 #b58a4588; }
+.hud-map-name { display: flex; flex-direction: column; align-items: center; line-height: 1.1; }
+.hud-map-name b { font: 400 18px/1.15 var(--sk-font-display); color: #f3dfb0; text-shadow: 0 1px 0 #000; }
+.hud-map-name small { font-size: 9px; letter-spacing: 2px; color: #b5a47f; }
+.hud-map-name::after { content: ''; width: 70%; height: 1px; margin: 3px 0 2px; background: linear-gradient(90deg, transparent, #b58a45, transparent); }
+.hud-map-stats { display: flex; justify-content: center; align-items: center; gap: 8px; font: 700 12px var(--sk-font); font-variant-numeric: tabular-nums; color: #e7d6ae; }
+.hud-map-stats span { display: inline-flex; align-items: center; gap: 4px; }
+.hud-map-stats svg { color: #8fd8c4; }
+.hud-map-stats i { width: 1px; height: 12px; background: #b58a4588; }
+
+/* World map window. */
+.hud-worldmap { width: min(760px, calc(100vw - 24px)); padding: 0 4px 4px; z-index: 24; display: flex; flex-direction: column; }
+.hud-worldmap .hud-map-head { padding: 4px 2px 8px; }
+.hud-worldmap-canvas { flex: 1 1 auto; height: min(52vh, 480px); min-height: 180px; cursor: grab; touch-action: none; }
+.hud-worldmap-canvas:active { cursor: grabbing; }
+.hud-map-zoom-label { min-width: 42px; text-align: center; font: 700 12px var(--sk-font); color: #e7d6ae; font-variant-numeric: tabular-nums; }
+.hud-map-btn { all: unset; cursor: pointer; height: 26px; padding: 0 8px; font: 12px var(--sk-font); color: var(--sk-parchment); background: #3a2f27; box-shadow: inset 0 0 0 1px #b58a45aa; white-space: nowrap; }
+.hud-map-btn[aria-pressed="true"] { background: #4d6b5f; }
+.hud-map-btn:focus-visible { outline: 2px solid var(--sk-jade); }
+.hud-map-legend { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: center; margin-top: 8px; font-size: 11px; color: #cdbb93; }
+.hud-map-legend span { display: inline-flex; align-items: center; gap: 4px; }
+.hud-map-legend i { display: inline-block; width: 9px; height: 9px; box-shadow: 0 0 0 1px #120f0d; }
+.hud-lg-self { background: #f3d27a; clip-path: polygon(100% 50%, 0 0, 30% 50%, 0 100%); box-shadow: none !important; }
+.hud-lg-other { background: #8fd8ff; border-radius: 50%; }
+.hud-lg-place { background: #c4573f; transform: rotate(45deg) scale(.8); }
+.hud-lg-shop { background: #5f9d8b; transform: rotate(45deg) scale(.8); }
+.hud-map-hint { margin-left: auto; color: #9d8e70; }
+
+/* Skill hotbar. */
+.hud-hotbar { left: 50%; bottom: var(--hud-bottom); transform: translateX(-50%); padding: 2px 4px; text-align: center; }
+.hud-hotbar-row { display: flex; gap: 2px; }
+.hud-slot-key { position: absolute; left: 2px; top: 0; z-index: 1; font: 700 12px var(--sk-font); color: #f3dfb0; text-shadow: 0 1px 0 #000, 1px 0 0 #000, -1px 0 0 #000, 0 -1px 0 #000; }
+.hud-hotbar small { display: block; margin-top: 2px; }
+
+/* Chat. */
+.hud-chat { left: var(--hud-left); bottom: var(--hud-bottom); width: 330px; padding: 2px 4px; }
+.hud-chat-tabs { display: flex; gap: 3px; align-items: center; }
+.hud-chat-tabs [role="tab"] { all: unset; cursor: pointer; white-space: nowrap; padding: 3px 10px; font-size: 13px; color: #cdbb93; background: #3a2f27; box-shadow: inset 0 0 0 1px #b58a4566; }
+.hud-chat-tabs [role="tab"][aria-selected="true"] { background: var(--sk-bronze); color: var(--sk-wood); font-weight: 700; }
+.hud-chat-tabs [role="tab"]:focus-visible { outline: 2px solid var(--sk-jade); }
+.hud-chat-tabs .hud-mini-btn { margin-left: auto; }
+.hud-chat-log { height: 108px; overflow-y: auto; margin-top: 4px; padding: 4px 6px; background: #120f0dcc; font-size: 12px; line-height: 1.5; }
+.hud-chat-log p { margin: 0; }
+.hud-chat-log time { color: #8b7b62; }
+.hud-chat-log [data-tone="good"] { color: #8fe0c4; }
+.hud-chat-log [data-tone="warn"] { color: #f0a090; }
+.hud-chat-empty { color: #8b7b62; }
+.hud-chat-input { box-sizing: border-box; width: 100%; margin-top: 4px; padding: 6px 8px; font: 12px var(--sk-font); color: var(--sk-parchment); background: #1a1512; border: 1px solid #b58a4566; }
+.hud-chat-input:disabled { cursor: not-allowed; opacity: .75; }
+
+/* Notifications. */
+.hud-toasts { position: absolute; left: 50%; top: calc(var(--hud-top) + 92px); transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.hud-toast {
+  /* Same carved-wood plate and bronze 10-slice frame as the HUD panels; a coloured seal marks the tone. */
+  all: unset; box-sizing: border-box; cursor: pointer; display: flex; align-items: center; gap: 8px; max-width: min(460px, calc(100vw - 24px));
+  border-style: solid;
+  border-width: calc(11 * var(--sk-px)) calc(12 * var(--sk-px)) calc(15 * var(--sk-px)) calc(12 * var(--sk-px));
+  border-image: url('/assets/ui/v2/frame/panel.png') 30 / calc(30 * var(--sk-px)) round; image-rendering: pixelated;
+  background: #1c1713f4; background-clip: padding-box; padding: 2px 10px 2px 4px;
+  font: 13px/1.4 var(--sk-font); color: var(--sk-parchment); text-shadow: 0 1px 0 #000;
+  filter: drop-shadow(0 4px 8px #0009); animation: hud-toast-in .2s ease-out;
+}
+.hud-toast:focus-visible { outline: 2px solid var(--sk-jade); outline-offset: 2px; }
+.hud-toast-seal {
+  flex: 0 0 auto; width: 24px; height: 24px; display: grid; place-items: center; font: 700 13px var(--sk-font); color: #f6ecd6;
+  background: var(--sk-bronze); box-shadow: inset 0 0 0 1px #25201d, inset 0 0 0 2px #e9c47a88; transform: rotate(-4deg);
+}
+.hud-toast[data-tone="good"] .hud-toast-seal { background: var(--sk-jade); }
+.hud-toast[data-tone="warn"] .hud-toast-seal { background: var(--sk-crimson); }
+.hud-toast[data-tone="warn"] { color: #ffd9cf; }
+@keyframes hud-toast-in { from { opacity: 0; transform: translateY(-6px); } }
+@media (prefers-reduced-motion: reduce) { .hud-toast { animation: none; } .hud-menu-item img { transition: none; } }
+
+/* World chronicle window. */
+.hud-guide { width: min(520px, calc(100vw - 24px)); z-index: 22; }
+.hud-guide-body p { margin: 6px 0; }
+.hud-guide-facts { display: flex; flex-wrap: wrap; gap: 6px; }
+.hud-guide-facts span { padding: 2px 8px; background: #dfcb9f; box-shadow: inset 0 0 0 1px #b39b70; font-weight: 700; }
+.hud-guide-body ul { list-style: none; margin: 6px 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.hud-guide-body li { display: flex; align-items: center; gap: 8px; }
+
+/* Tablet / small laptop: menu loses its English line and gets narrower. */
+@media (max-width: 1100px) {
+  .hud-menu-item { width: 56px; }
+  .hud-menu-item img { width: 38px; height: 38px; }
+  .hud-menu-item small { display: none; }
+  .hud-status { width: 280px; }
+  .hud-quest { top: calc(var(--hud-top) + 70px); }
+}
+@media (max-width: 1000px) {
+  .hud-chat { width: 260px; }
+  .hud-minimap { width: 190px; }
+}
+
+/* Phone portrait: menu becomes a scrolling top strip; panels shrink; chat and quests start folded (MainHud). */
+@media (max-width: 700px) {
+  .hud-menu { left: 0; right: 0; top: 0; padding: var(--hud-top) 6px 2px; overflow-x: auto; background: linear-gradient(#120f0de6, #120f0d99 80%, transparent); scrollbar-width: none; }
+  .hud-menu-item { flex: 0 0 52px; width: 52px; }
+  .hud-menu-item img { width: 34px; height: 34px; }
+  .hud-menu-item b { font-size: 13px; }
+  .hud-status { top: calc(var(--hud-top) + 62px); width: 200px; grid-template-columns: 62px 1fr; gap: 4px; }
+  .hud-bar-row { grid-template-columns: 16px 1fr; }
+  .hud-bar-row .sk-bar > em { font-size: 10px; letter-spacing: -.2px; }
+  .hud-panel h2 { font-size: 16px; }
+  .hud-status-sub, .hud-sample, .hud-exp { display: none; }
+  .hud-status-foot { font-size: 11px; }
+  .hud-minimap { top: calc(var(--hud-top) + 62px); bottom: auto; width: 146px; }
+  .hud-minimap .hud-map-name b { font-size: 15px; }
+  .hud-minimap .hud-map-name small { display: none; }
+  .hud-minimap .hud-map-compass { display: none; }
+  .hud-map-hint { display: none; }
+  .hud-worldmap-canvas { height: auto; flex: 1 1 0; }
+  .hud-worldmap { bottom: max(8px, env(safe-area-inset-bottom)); }
+  .hud-quest { top: auto; bottom: calc(var(--hud-bottom) + 100px); right: var(--hud-right); width: 170px; }
+  .hud-chat { bottom: calc(var(--hud-bottom) + 100px); width: min(300px, calc(100vw - 200px)); }
+  .hud-chat[data-open="true"] { width: calc(100vw - 20px); z-index: 1; }
+  .hud-chat-tabs [role="tab"] { padding: 3px 6px; font-size: 12px; }
+  .hud-toasts { top: calc(var(--hud-top) + 250px); width: calc(100vw - 24px); }
+}
+
+/* Phone landscape: short screen; menu row without labels' English, small minimap, folded panels. */
+@media (max-height: 520px) and (orientation: landscape) {
+  .hud-menu-item { width: 46px; }
+  .hud-menu-item img { width: 30px; height: 30px; }
+  .hud-menu-item b { font-size: 12px; }
+  .hud-menu-item small { display: none; }
+  .hud-status { width: 250px; grid-template-columns: 62px 1fr; padding: 0 4px; }
+  .hud-status-sub, .hud-sample { display: none; }
+  .hud-panel h2 { font-size: 15px; }
+  .hud-minimap { width: 160px; }
+  .hud-minimap .hud-map-name small, .hud-minimap .hud-map-compass { display: none; }
+  .hud-worldmap-canvas { height: calc(100dvh - var(--hud-menu-bottom, 60px) - 112px); }
+  .hud-map-legend { display: none; }
+  .hud-worldmap .hud-map-foot { margin-top: 5px; padding: 2px 4px 0; }
+  .hud-worldmap .hud-map-name small, .hud-worldmap .hud-map-name::after { display: none; }
+  .hud-worldmap .hud-map-name b { font-size: 14px; }
+  .hud-quest { top: calc(var(--hud-top) + 56px); width: 190px; }
+  .hud-hotbar small { display: none; }
+  .hud-chat { width: 230px; }
+  .hud-chat-log { height: 64px; }
+  .hud-toasts { top: calc(var(--hud-top) + 60px); }
+}
+
+/* Round buttons: folded panels and touch skills (ring-frame.png at 1x over a dark disc). */
+.hud-round {
+  /* Not `all: unset`: that would also wipe the left/right/top/bottom a folded panel inherits from its anchor class. */
+  appearance: none; border: 0; padding: 0; margin: 0; background: none; color: inherit; font: inherit;
+  box-sizing: border-box; position: relative; width: 64px; height: 64px; cursor: pointer; flex: 0 0 auto;
+  -webkit-tap-highlight-color: transparent; filter: drop-shadow(0 3px 4px #000a);
+}
+.hud-round::before { content: ''; position: absolute; inset: 14px; border-radius: 50%; background: radial-gradient(circle at 50% 40%, #3a2f27, #1a1512 75%); }
+.hud-round-icon { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); max-width: none; image-rendering: pixelated; }
+.hud-round-ring { position: absolute; inset: 0; width: 64px; height: 64px; max-width: none; }
+.hud-round:hover .hud-round-ring, .hud-round:focus-visible .hud-round-ring { filter: brightness(1.2); }
+.hud-round:focus-visible { outline: 2px solid var(--sk-jade); outline-offset: 2px; border-radius: 50%; }
+.hud-round:active { transform: translateY(1px); }
+.hud-round-badge {
+  position: absolute; right: 4px; top: 4px; min-width: 18px; height: 18px; padding: 0 4px; box-sizing: border-box; display: grid; place-items: center;
+  font: 700 11px/1 var(--sk-font); color: #fff4e4; background: var(--sk-crimson); box-shadow: 0 0 0 1px #25201d, 0 0 0 2px #e9c47a88; border-radius: 9px;
+}
+/* A folded panel is just its round button, at the panel's anchor. */
+.hud-root .hud-fold { position: absolute; width: 64px; height: 64px; padding: 0; }
+
+/* Right column: on desktop the minimap and quest keep their own corners; on touch and phones they stack under the menu. */
+.hud-right { display: contents; }
+@media (max-width: 700px) {
+  .hud-right { position: absolute; top: calc(var(--hud-menu-bottom, 64px) + 6px); right: var(--hud-right); display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+  .hud-root .hud-right > * { position: relative; top: auto; right: auto; bottom: auto; }
+}
+.hud-root[data-touch="true"] .hud-right { position: absolute; top: calc(var(--hud-menu-bottom, 64px) + 6px); right: var(--hud-right); display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+.hud-root[data-touch="true"] .hud-right > * { position: relative; top: auto; right: auto; bottom: auto; }
+
+/* Touch: movement stick bottom-left (kit v2 art at 1x: 96 px carved base, 40 px jade knob); chat moves above it. */
+.hud-stick {
+  position: absolute; left: calc(var(--hud-left) + 4px); bottom: calc(var(--hud-bottom) + 4px); width: 152px; height: 152px;
+  touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none;
+}
+.hud-stick-base { position: absolute; left: 28px; top: 28px; width: 96px; height: 96px; max-width: none; opacity: .9; filter: drop-shadow(0 4px 6px #000a); }
+.hud-stick-knob { position: absolute; left: 50%; top: 50%; width: 40px; height: 40px; max-width: none; filter: drop-shadow(0 3px 3px #000b); }
+.hud-stick[data-active="true"] .hud-stick-base { opacity: 1; }
+.hud-root[data-touch="true"] .hud-chat { bottom: calc(var(--hud-bottom) + 166px); }
+
+/* Touch skills: corner button plus a quarter arc for the right thumb. --dx/--dy are the distance left/up from the corner. */
+.hud-skill-arc { position: absolute; right: var(--hud-right); bottom: var(--hud-bottom); width: 192px; height: 192px; pointer-events: none; }
+.hud-skill { position: absolute; right: calc(4px + var(--dx, 0px)); bottom: calc(4px + var(--dy, 0px)); }
+.hud-skill .hud-round-icon, .hud-skill-slot .hud-round-icon { width: 48px; height: 48px; clip-path: circle(18px at 50% 50%); }
+.hud-skill[data-disabled="true"] .hud-round-icon, .hud-skill-slot[data-disabled="true"] .hud-round-icon { filter: saturate(.55) brightness(.8); }
+.hud-skill-main::after { content: ''; position: absolute; inset: 4px; border-radius: 50%; box-shadow: 0 0 10px 2px #5f9d8b88; pointer-events: none; }
+.hud-skill .hud-slot-key, .hud-skill-slot .hud-slot-key { left: 8px; top: 6px; }
+.hud-skill-note { position: absolute; left: 0; top: 4px; font-size: 10px; color: #e8d9b0; text-shadow: 0 1px 0 #000, 0 0 3px #000; }
+/* Cast and cooldown state, driven by server cast events (skill-store). --cast is 0..1 cast progress. */
+.hud-skill-cast { position: absolute; inset: 9px; border-radius: 50%; pointer-events: none;
+  background: conic-gradient(#e8c977cc calc(var(--cast, 0) * 360deg), transparent 0);
+  -webkit-mask: radial-gradient(circle, transparent 17px, #000 18px); mask: radial-gradient(circle, transparent 17px, #000 18px); }
+.hud-skill-cooldown { position: absolute; inset: 14px; border-radius: 50%; display: grid; place-items: center; pointer-events: none;
+  background: #0c0a08b8; color: #f3e3b3; font: 700 14px/1 var(--sk-font); text-shadow: 0 1px 0 #000; }
+.hud-skill-lock { position: absolute; right: 9px; bottom: 8px; font-size: 11px; line-height: 1; pointer-events: none; filter: drop-shadow(0 1px 0 #000); }
+.hud-fold .hud-round-icon { width: 32px; height: 32px; }
+
+@media (max-width: 700px) {
+  .hud-root[data-touch="true"] .hud-chat { bottom: calc(var(--hud-bottom) + 160px); }
+}
+@media (max-height: 520px) and (orientation: landscape) {
+  .hud-root[data-touch="true"] .hud-chat { bottom: calc(var(--hud-bottom) + 150px); }
+  /* Short touch screens: an open chat sits on the bottom edge between the joystick and the skill arc, so it never
+     covers the status panel (the folded chat button stays above the stick). */
+  .hud-root[data-touch="true"] .hud-chat[data-open="true"] {
+    left: calc(var(--hud-left) + 146px); bottom: var(--hud-bottom); width: min(320px, calc(100vw - 146px - 210px - 20px)); z-index: 1;
+  }
+  .hud-stick { width: 136px; height: 136px; }
+  .hud-stick-base { left: 20px; top: 20px; }
+}
+
+/* Narrow non-touch windows: the ring hotbar is too wide for a row, so it becomes a 3-column block bottom-right. */
+@media (max-width: 700px) {
+  .hud-root:not([data-touch="true"]) .hud-hotbar { left: auto; right: var(--hud-right); transform: none; }
+  .hud-root:not([data-touch="true"]) .hud-hotbar-row { display: grid; grid-template-columns: repeat(3, 64px); }
+}
+/* Short touch screens: the folded minimap and quest buttons line up under the menu instead of stacking, so they stay
+   clear of the skill arc. */
+@media (max-height: 520px) and (orientation: landscape) {
+  .hud-root[data-touch="true"] .hud-right { flex-direction: row-reverse; align-items: flex-start; }
+}
+
+/* Kit v2 decorations (desktop only: phones need the space). A pha yant talisman hangs under the status panel and a
+   red thread tassel under the quest panel; both ignore the pointer. */
+@media (min-width: 701px) and (min-height: 521px) {
+  .hud-status::after, .hud-quest:not(.hud-fold)::after { content: ''; position: absolute; pointer-events: none; image-rendering: pixelated; filter: drop-shadow(0 3px 3px #0009); }
+  .hud-status::after { left: 14px; bottom: -58px; width: 32px; height: 64px; background: url('/assets/ui/v2/deco/talisman.png') center / 32px 64px no-repeat; }
+  .hud-quest:not(.hud-fold)::after { right: 10px; bottom: -44px; width: 24px; height: 48px; background: url('/assets/ui/v2/deco/tassel.png') center / 24px 48px no-repeat; }
+}
+
+/* Target frame: the selected monster, under the status panel. */
+.hud-target { position: absolute; top: calc(var(--hud-top) + 118px); left: var(--hud-left); width: 220px; padding: 4px 8px 6px; display: flex; flex-direction: column; gap: 4px; }
+.hud-target-head { display: flex; align-items: baseline; gap: 6px; }
+.hud-target-head b { font-family: var(--sk-font-display); font-size: 15px; color: #f3e3b3; }
+.hud-target-head small { font-size: 11px; color: #cdbb93; flex: 1; }
+/* Portal transition caption over the scene's fade. */
+.hud-travel { position: fixed; inset: 0; display: grid; place-content: center; text-align: center; gap: 4px; pointer-events: none;
+  background: radial-gradient(ellipse at center, #0b1a17cc, #050b0aee); color: #cdbb93; font-size: 13px; letter-spacing: .08em; z-index: 60; }
+.hud-travel b { font-family: var(--sk-font-display); font-size: 26px; color: #bff5dc; letter-spacing: 0; text-shadow: 0 0 12px #3f8f73; }

@@ -1,0 +1,1008 @@
+{
+  "note": "Thailand release VFX (PixelLab). Proposals until user review.",
+  "effects": {
+    "kit-held-talisman": {
+      "revision": "kit-held-talisman-post",
+      "image": "kit-held-talisman.png",
+      "width": 32,
+      "height": 48,
+      "frames": 9,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "seedJob": "4e51e9e4-199a-4009-9a4f-e70bcaa49dc3",
+      "animationJob": "e2d7ae5c-9b6c-4230-ad18-fc04b0dbe214",
+      "packedAt": 1791704948259
+    },
+    "kit-mark-earth": {
+      "revision": "kit-mark-earth-post",
+      "image": "kit-mark-earth.png",
+      "width": 32,
+      "height": 32,
+      "frames": 1,
+      "anchor": {
+        "x": 16,
+        "y": 16
+      },
+      "seedJob": "09c6421e-fed8-44af-9278-c1d83fedd92a",
+      "animationJob": "",
+      "packedAt": 1791704948601
+    },
+    "kit-mark-fire": {
+      "revision": "kit-mark-fire-post",
+      "image": "kit-mark-fire.png",
+      "width": 32,
+      "height": 32,
+      "frames": 1,
+      "anchor": {
+        "x": 16,
+        "y": 15
+      },
+      "seedJob": "09c6421e-fed8-44af-9278-c1d83fedd92a",
+      "animationJob": "",
+      "packedAt": 1791704948956
+    },
+    "kit-mark-metal": {
+      "revision": "kit-mark-metal-post",
+      "image": "kit-mark-metal.png",
+      "width": 32,
+      "height": 32,
+      "frames": 1,
+      "anchor": {
+        "x": 16,
+        "y": 15
+      },
+      "seedJob": "09c6421e-fed8-44af-9278-c1d83fedd92a",
+      "animationJob": "",
+      "packedAt": 1791704949322
+    },
+    "kit-mark-water": {
+      "revision": "kit-mark-water-post",
+      "image": "kit-mark-water.png",
+      "width": 32,
+      "height": 32,
+      "frames": 1,
+      "anchor": {
+        "x": 16,
+        "y": 15
+      },
+      "seedJob": "09c6421e-fed8-44af-9278-c1d83fedd92a",
+      "animationJob": "",
+      "packedAt": 1791704949672
+    },
+    "kit-mark-wood": {
+      "revision": "kit-mark-wood-post",
+      "image": "kit-mark-wood.png",
+      "width": 32,
+      "height": 32,
+      "frames": 1,
+      "anchor": {
+        "x": 16,
+        "y": 16
+      },
+      "seedJob": "09c6421e-fed8-44af-9278-c1d83fedd92a",
+      "animationJob": "",
+      "packedAt": 1791704950025
+    },
+    "kit-ofuda-burst": {
+      "revision": "kit-ofuda-burst-post",
+      "image": "kit-ofuda-burst.png",
+      "width": 128,
+      "height": 96,
+      "frames": 9,
+      "anchor": {
+        "x": 64,
+        "y": 48
+      },
+      "seedJob": "80d6a579-13d2-45f4-9c59-678f332484cb",
+      "animationJob": "17a67015-b0d7-4bb7-aa2f-a6bc4e5344bf",
+      "packedAt": 1791704950532
+    },
+    "kit-paper-swallow": {
+      "revision": "kit-paper-swallow-post",
+      "image": "kit-paper-swallow.png",
+      "width": 48,
+      "height": 32,
+      "frames": 7,
+      "anchor": {
+        "x": 24,
+        "y": 15
+      },
+      "seedJob": "32bf0c76-42b5-495d-a796-e276da2042a9",
+      "animationJob": "be9f367b-591d-454b-b7c3-4371ab5657a3",
+      "packedAt": 1791704950986
+    },
+    "ash-barrier": {
+      "revision": "ash-barrier-post",
+      "image": "ash-barrier.png",
+      "width": 192,
+      "height": 112,
+      "frames": 11,
+      "anchor": {
+        "x": 96,
+        "y": 60
+      },
+      "seedJob": "d6354e1a-54c7-4944-9d0e-41bad511be86",
+      "animationJob": "93508906-0ccf-4826-a895-b2c17a51f9f1",
+      "packedAt": 1791704942604
+    },
+    "bonfire-ward": {
+      "revision": "bonfire-ward-post",
+      "image": "bonfire-ward.png",
+      "width": 192,
+      "height": 112,
+      "frames": 11,
+      "anchor": {
+        "x": 96,
+        "y": 54
+      },
+      "seedJob": "54c9f634-9be0-47a6-b8b4-b741077ac4f3",
+      "animationJob": "95e34081-f834-4758-ba08-d592f05a6cc9",
+      "packedAt": 1791704943135
+    },
+    "kit-blessing-glint": {
+      "revision": "kit-blessing-glint-post",
+      "image": "kit-blessing-glint.png",
+      "width": 64,
+      "height": 64,
+      "frames": 9,
+      "anchor": {
+        "x": 32,
+        "y": 32
+      },
+      "seedJob": "5b484d8e-8613-4ded-bce9-fc2114c4f5ff",
+      "animationJob": "c000dad3-aa1c-44e5-ae4f-eb94fdf004fd",
+      "packedAt": 1791704946754
+    },
+    "kit-gogyo-ring": {
+      "revision": "kit-gogyo-ring-post",
+      "image": "kit-gogyo-ring.png",
+      "width": 192,
+      "height": 96,
+      "frames": 11,
+      "anchor": {
+        "x": 96,
+        "y": 48
+      },
+      "seedJob": "e071444f-fdce-49f0-931a-63ab1356d88a",
+      "animationJob": "012b6113-2e0a-4369-880c-28cfe32445b0",
+      "packedAt": 1791704947319
+    },
+    "kit-gohei-sweep": {
+      "revision": "kit-gohei-sweep-post",
+      "image": "kit-gohei-sweep.png",
+      "width": 128,
+      "height": 64,
+      "frames": 9,
+      "anchor": {
+        "x": 64,
+        "y": 31
+      },
+      "seedJob": "0f44e268-e261-4cd4-9559-8413e7d11e68",
+      "animationJob": "64a13cfa-8d7e-4730-a0e9-0bd18d35f7f4",
+      "packedAt": 1791704947792
+    },
+    "kongo-talisman": {
+      "revision": "kongo-talisman-post",
+      "image": "kongo-talisman.png",
+      "width": 96,
+      "height": 128,
+      "frames": 11,
+      "anchor": {
+        "x": 48,
+        "y": 121
+      },
+      "seedJob": "a3d854ff-d260-4d67-baa9-df39dc2606c8",
+      "animationJob": "06614514-f691-4182-9be7-9451c592a3c6",
+      "packedAt": 1791704951518
+    },
+    "mirror-pond": {
+      "revision": "mirror-pond-post",
+      "image": "mirror-pond.png",
+      "width": 160,
+      "height": 96,
+      "frames": 11,
+      "anchor": {
+        "x": 80,
+        "y": 47
+      },
+      "seedJob": "61f0925f-39c0-4c07-a83f-f669c594ec52",
+      "animationJob": "463c9822-29a3-40b6-8dc9-49105df1004a",
+      "packedAt": 1791704953157
+    },
+    "mudslide": {
+      "revision": "mudslide-post",
+      "image": "mudslide.png",
+      "width": 192,
+      "height": 128,
+      "frames": 11,
+      "anchor": {
+        "x": 96,
+        "y": 63
+      },
+      "seedJob": "b93b2216-1d6a-441f-816c-c3b8af7baa00",
+      "animationJob": "3fa715ca-2b99-4f1f-9950-deedd0c4c5d0",
+      "packedAt": 1791704953682
+    },
+    "root-fissure": {
+      "revision": "root-fissure-post",
+      "image": "root-fissure.png",
+      "width": 224,
+      "height": 96,
+      "frames": 11,
+      "anchor": {
+        "x": 112,
+        "y": 50
+      },
+      "seedJob": "aa6b6745-2d09-4b97-88c8-167aedc0889a",
+      "animationJob": "ff740eba-c185-43bd-9ad3-0a0ccfb79d33",
+      "packedAt": 1791704954208
+    },
+    "steam-burst": {
+      "revision": "steam-burst-post",
+      "image": "steam-burst.png",
+      "width": 96,
+      "height": 160,
+      "frames": 11,
+      "anchor": {
+        "x": 48,
+        "y": 154
+      },
+      "seedJob": "c9c5a13d-81f0-440c-8805-905f036207d4",
+      "animationJob": "270206d6-78da-4c7d-a63c-de4683028a7c",
+      "packedAt": 1791704954981
+    },
+    "cleansing-rain": {
+      "revision": "cleansing-rain-post",
+      "image": "cleansing-rain.png",
+      "width": 224,
+      "height": 144,
+      "frames": 11,
+      "anchor": {
+        "x": 112,
+        "y": 70
+      },
+      "seedJob": "1878eb35-4bfb-4c3e-9323-669b5429e3b6",
+      "animationJob": "4dacc9cb-69e0-4a16-8132-5e4e0c877b8c",
+      "packedAt": 1791704943679
+    },
+    "divine-miracle-resurrection": {
+      "revision": "divine-miracle-resurrection-post",
+      "image": "divine-miracle-resurrection.png",
+      "width": 160,
+      "height": 192,
+      "frames": 13,
+      "anchor": {
+        "x": 80,
+        "y": 186
+      },
+      "seedJob": "996e157a-e0ca-4384-aa3f-c71f62e5b2b5",
+      "animationJob": "4e4d59b7-e143-4fd3-8d1b-0da2702f031d",
+      "packedAt": 1791704944274
+    },
+    "gogyo-ring-seal": {
+      "revision": "gogyo-ring-seal-post",
+      "image": "gogyo-ring-seal.png",
+      "width": 192,
+      "height": 144,
+      "frames": 13,
+      "anchor": {
+        "x": 96,
+        "y": 71
+      },
+      "seedJob": "c1c19d1d-a549-4e28-9a8a-5bd71ba28e98",
+      "animationJob": "6b9420d9-8e4e-4f4a-878a-e51e51aa6e08",
+      "packedAt": 1791704944829
+    },
+    "kagura-purification-dance": {
+      "revision": "kagura-purification-dance-post",
+      "image": "kagura-purification-dance.png",
+      "width": 192,
+      "height": 112,
+      "frames": 11,
+      "anchor": {
+        "x": 96,
+        "y": 54
+      },
+      "seedJob": "5465b744-b174-4c84-a8d8-fca15560fe32",
+      "animationJob": "f504d749-b436-4af4-b45f-61b51a45f65e",
+      "packedAt": 1791704946252
+    },
+    "kotodama-sacred-song": {
+      "revision": "kotodama-sacred-song-post",
+      "image": "kotodama-sacred-song.png",
+      "width": 192,
+      "height": 128,
+      "frames": 11,
+      "anchor": {
+        "x": 96,
+        "y": 61
+      },
+      "seedJob": "cfd33412-d3cf-4dd4-99c7-e81eb555aa00",
+      "animationJob": "161eb131-6a2d-4217-8e04-ccfaf1604bfd",
+      "packedAt": 1791704952096
+    },
+    "leaf-blade-storm": {
+      "revision": "leaf-blade-storm-post",
+      "image": "leaf-blade-storm.png",
+      "width": 192,
+      "height": 128,
+      "frames": 11,
+      "anchor": {
+        "x": 96,
+        "y": 62
+      },
+      "seedJob": "6ab7e597-89a9-434c-a032-a23dfe4b3356",
+      "animationJob": "70b37ca3-99e7-4951-b4e3-01e0aac25e87",
+      "packedAt": 1791704952635
+    },
+    "shikigami-summon": {
+      "revision": "shikigami-summon-post",
+      "image": "shikigami-summon.png",
+      "width": 128,
+      "height": 128,
+      "frames": 11,
+      "anchor": {
+        "x": 64,
+        "y": 119
+      },
+      "seedJob": "68023fca-b47b-44a5-9823-d1554976e1e8",
+      "animationJob": "d0a50d53-4a21-492e-b001-6806d7724af0",
+      "packedAt": 1791701485737
+    },
+    "sun-pillar": {
+      "revision": "sun-pillar-post",
+      "image": "sun-pillar.png",
+      "width": 128,
+      "height": 192,
+      "frames": 13,
+      "anchor": {
+        "x": 64,
+        "y": 186
+      },
+      "seedJob": "d4de83ce-99d4-4064-8e32-24512ca6c0a9",
+      "animationJob": "087250d0-f890-483f-ac57-9f5f206ad50c",
+      "packedAt": 1791704955561
+    },
+    "suzu-bell-blessing": {
+      "revision": "suzu-bell-blessing-post",
+      "image": "suzu-bell-blessing.png",
+      "width": 96,
+      "height": 128,
+      "frames": 9,
+      "anchor": {
+        "x": 48,
+        "y": 63
+      },
+      "seedJob": "4cf5d91f-1d56-4c9f-9bc3-8a576463433e",
+      "animationJob": "1fab9394-c95d-4bd0-9815-f3adaaf93bc8",
+      "packedAt": 1791704956099
+    },
+    "jp-cast-circle-main": {
+      "revision": "jp-cast-circle-main-post",
+      "image": "jp-cast-circle-main.png",
+      "width": 192,
+      "height": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 96,
+        "y": 88
+      },
+      "seedJob": "7ecfd394-aa52-44f8-a908-07512193a8b2",
+      "animationJob": "",
+      "packedAt": 1791704956854
+    },
+    "jp-cast-circle-satellite": {
+      "revision": "jp-cast-circle-satellite-post",
+      "image": "jp-cast-circle-satellite.png",
+      "width": 64,
+      "height": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 29
+      },
+      "seedJob": "c788f136-895b-4eec-8030-35fa7e132a80",
+      "animationJob": "",
+      "packedAt": 1791704957068
+    },
+    "jp-master-circle": {
+      "revision": "jp-master-circle-post",
+      "image": "jp-master-circle.png",
+      "width": 192,
+      "height": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 96,
+        "y": 90
+      },
+      "seedJob": "cd7065b7-581b-4dfc-abac-e3e7a140ced0",
+      "animationJob": "",
+      "packedAt": 1791704957290
+    },
+    "shikigami-kitsune": {
+      "revision": "shikigami-kitsune-attack-post",
+      "image": "shikigami-kitsune.png",
+      "width": 160,
+      "height": 168,
+      "frames": 11,
+      "anchor": {
+        "x": 80,
+        "y": 158
+      },
+      "seedJob": "e69873dc-a8b0-49e5-8d3f-226d58543d41",
+      "animationJob": "fd2b0372-d4dd-4eb5-a972-2f61c8355fcc",
+      "packedAt": 1791704957794
+    },
+    "jp-spirit-smoke": {
+      "revision": "jp-spirit-smoke-post",
+      "image": "jp-spirit-smoke.png",
+      "width": 128,
+      "height": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 64,
+        "y": 35
+      },
+      "seedJob": "f5b2b18a-88b2-484f-8e94-f94de096937f",
+      "animationJob": "",
+      "packedAt": 1791704957999
+    },
+    "jp-ofuda-crest": {
+      "revision": "jp-ofuda-crest-post",
+      "image": "jp-ofuda-crest.png",
+      "width": 64,
+      "height": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "seedJob": "956675c7-b239-4176-bb46-2d30ecc60ad7",
+      "animationJob": "",
+      "packedAt": 1791704958203
+    },
+    "shikigami-kodama": {
+      "revision": "shikigami-kodama-attack-post",
+      "image": "shikigami-kodama.png",
+      "width": 160,
+      "height": 144,
+      "frames": 11,
+      "anchor": {
+        "x": 80,
+        "y": 140
+      },
+      "seedJob": "0f7dba1e-f561-4f4c-9e1e-89c87b987be5",
+      "animationJob": "e34ca663-1fd5-483d-a02f-4b7783405302",
+      "packedAt": 1791704958646
+    },
+    "shikigami-nurikabe": {
+      "revision": "shikigami-nurikabe-attack-post",
+      "image": "shikigami-nurikabe.png",
+      "width": 160,
+      "height": 144,
+      "frames": 11,
+      "anchor": {
+        "x": 80,
+        "y": 140
+      },
+      "seedJob": "ba284ebd-82b2-4ee0-a2b4-a5c2951df4d3",
+      "animationJob": "3ed96384-a5df-46b0-8aa3-450953f8430b",
+      "packedAt": 1791704959219
+    },
+    "shikigami-kamaitachi": {
+      "revision": "shikigami-kamaitachi-attack-post",
+      "image": "shikigami-kamaitachi.png",
+      "width": 160,
+      "height": 144,
+      "frames": 11,
+      "anchor": {
+        "x": 80,
+        "y": 134
+      },
+      "seedJob": "84a1d5d1-6619-4afb-925f-b7610db6e056",
+      "animationJob": "e6d86e5c-cd14-4d4b-adb1-1f611bc7a50f",
+      "packedAt": 1791704959680
+    },
+    "shikigami-mizuchi": {
+      "revision": "shikigami-mizuchi-attack-post",
+      "image": "shikigami-mizuchi.png",
+      "width": 160,
+      "height": 144,
+      "frames": 11,
+      "anchor": {
+        "x": 80,
+        "y": 144
+      },
+      "seedJob": "b83393f2-52a2-4190-b2df-b4f0e7cbd60a",
+      "animationJob": "5dcf7827-cdd9-424b-add6-8dd21b9c4035",
+      "packedAt": 1791704960159
+    },
+    "great-kitsune": {
+      "revision": "great-kitsune-attack-post",
+      "image": "great-kitsune.png",
+      "width": 192,
+      "height": 176,
+      "frames": 11,
+      "anchor": {
+        "x": 96,
+        "y": 169
+      },
+      "seedJob": "d213d353-1c5b-4ff6-93c3-b5ddd5a04244",
+      "animationJob": "1cc61931-053f-4853-8253-c099feafa57b",
+      "packedAt": 1791704960660
+    },
+    "great-nurikabe": {
+      "revision": "great-nurikabe-attack-post",
+      "image": "great-nurikabe.png",
+      "width": 192,
+      "height": 176,
+      "frames": 11,
+      "anchor": {
+        "x": 96,
+        "y": 173
+      },
+      "seedJob": "888c2ad2-6ec1-45be-883b-645a2a693779",
+      "animationJob": "f8080896-2be1-4cba-8442-86e755fa8e4f",
+      "packedAt": 1791704961200
+    },
+    "great-kodama": {
+      "revision": "great-kodama-attack-post",
+      "image": "great-kodama.png",
+      "width": 192,
+      "height": 176,
+      "frames": 8,
+      "anchor": {
+        "x": 96,
+        "y": 173
+      },
+      "seedJob": "0664dae1-4f51-4174-ad2d-12d1fbf144ea",
+      "animationJob": "4499cd26-8227-417a-a9c7-eba7aa990d04",
+      "packedAt": 1791704961630
+    },
+    "great-kamaitachi": {
+      "revision": "great-kamaitachi-attack-post",
+      "image": "great-kamaitachi.png",
+      "width": 192,
+      "height": 176,
+      "frames": 11,
+      "anchor": {
+        "x": 96,
+        "y": 166
+      },
+      "seedJob": "d69d15ff-0287-4ac5-aecc-b99273cb1f79",
+      "animationJob": "fb5f7f93-0925-47e2-916e-43e469cc87c0",
+      "packedAt": 1791704962148
+    },
+    "great-mizuchi": {
+      "revision": "great-mizuchi-attack-post",
+      "image": "great-mizuchi.png",
+      "width": 192,
+      "height": 176,
+      "frames": 11,
+      "anchor": {
+        "x": 96,
+        "y": 173
+      },
+      "seedJob": "f8266202-786e-4bfb-8595-e64967c1f9ab",
+      "animationJob": "c94a4d57-1ebe-49a3-b148-14b2a6fdef54",
+      "packedAt": 1791704962659
+    },
+    "jp-circle-protection": {
+      "revision": "jp-circle-protection-post",
+      "image": "jp-circle-protection.png",
+      "width": 192,
+      "height": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 96,
+        "y": 91
+      },
+      "seedJob": "2e9c332f-da81-40ec-8996-0493bccea138",
+      "animationJob": "",
+      "packedAt": 1791704963022
+    },
+    "jp-circle-summoning": {
+      "revision": "jp-circle-summoning-post",
+      "image": "jp-circle-summoning.png",
+      "width": 192,
+      "height": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 96,
+        "y": 89
+      },
+      "seedJob": "9995ef81-4120-447b-8d80-8e25a8654440",
+      "animationJob": "",
+      "packedAt": 1791704963369
+    },
+    "jp-circle-purification": {
+      "revision": "jp-circle-purification-post",
+      "image": "jp-circle-purification.png",
+      "width": 192,
+      "height": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 96,
+        "y": 96
+      },
+      "seedJob": "caa13a5f-56f3-4485-8919-2a091e7a06a4",
+      "animationJob": "",
+      "packedAt": 1791704963715
+    },
+    "jp-circle-attack": {
+      "revision": "jp-circle-attack-post",
+      "image": "jp-circle-attack.png",
+      "width": 192,
+      "height": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 96,
+        "y": 94
+      },
+      "seedJob": "21bef2b5-adf9-455f-9dff-bc0238527050",
+      "animationJob": "",
+      "packedAt": 1791704964112
+    },
+    "jp-circle-binding": {
+      "revision": "jp-circle-binding-post",
+      "image": "jp-circle-binding.png",
+      "width": 192,
+      "height": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 96,
+        "y": 91
+      },
+      "seedJob": "34abb82e-8d95-451f-b3a3-edda9254bcac",
+      "animationJob": "",
+      "packedAt": 1791704964493
+    },
+    "jp-circle-sealing": {
+      "revision": "jp-circle-sealing-post",
+      "image": "jp-circle-sealing.png",
+      "width": 192,
+      "height": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 96,
+        "y": 88
+      },
+      "seedJob": "4238e5c1-6169-49e2-89fd-8be62e70ae09",
+      "animationJob": "",
+      "packedAt": 1791704964871
+    },
+    "jp-circle-spirit": {
+      "revision": "jp-circle-spirit-post",
+      "image": "jp-circle-spirit.png",
+      "width": 192,
+      "height": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 96,
+        "y": 87
+      },
+      "seedJob": "96a136a5-2647-4815-aef2-d2236c17bb06",
+      "animationJob": "",
+      "packedAt": 1791704965251
+    }
+  },
+  "icons": {
+    "wood-talisman": {
+      "image": "icons/wood-talisman.png",
+      "sheet": "icons-onmyoji-sheet",
+      "cell": 0,
+      "seedJob": "06cec894-0930-40d0-b94a-ebcdbbb149bd",
+      "packedAt": 1791704956235
+    },
+    "fire-talisman": {
+      "image": "icons/fire-talisman.png",
+      "sheet": "icons-onmyoji-sheet",
+      "cell": 1,
+      "seedJob": "06cec894-0930-40d0-b94a-ebcdbbb149bd",
+      "packedAt": 1791704956238
+    },
+    "earth-talisman": {
+      "image": "icons/earth-talisman.png",
+      "sheet": "icons-onmyoji-sheet",
+      "cell": 2,
+      "seedJob": "06cec894-0930-40d0-b94a-ebcdbbb149bd",
+      "packedAt": 1791704956240
+    },
+    "metal-talisman": {
+      "image": "icons/metal-talisman.png",
+      "sheet": "icons-onmyoji-sheet",
+      "cell": 3,
+      "seedJob": "06cec894-0930-40d0-b94a-ebcdbbb149bd",
+      "packedAt": 1791704956243
+    },
+    "water-talisman": {
+      "image": "icons/water-talisman.png",
+      "sheet": "icons-onmyoji-sheet",
+      "cell": 4,
+      "seedJob": "06cec894-0930-40d0-b94a-ebcdbbb149bd",
+      "packedAt": 1791704956246
+    },
+    "onmyo-seal": {
+      "image": "icons/onmyo-seal.png",
+      "sheet": "icons-onmyoji-sheet",
+      "cell": 5,
+      "seedJob": "06cec894-0930-40d0-b94a-ebcdbbb149bd",
+      "packedAt": 1791704956250
+    },
+    "sosho-flow": {
+      "image": "icons/sosho-flow.png",
+      "sheet": "icons-onmyoji-sheet",
+      "cell": 6,
+      "seedJob": "06cec894-0930-40d0-b94a-ebcdbbb149bd",
+      "packedAt": 1791704956253
+    },
+    "sokoku-break": {
+      "image": "icons/sokoku-break.png",
+      "sheet": "icons-onmyoji-sheet",
+      "cell": 7,
+      "seedJob": "06cec894-0930-40d0-b94a-ebcdbbb149bd",
+      "packedAt": 1791704956256
+    },
+    "taikyoku-balance": {
+      "image": "icons/taikyoku-balance.png",
+      "sheet": "icons-onmyoji-sheet",
+      "cell": 8,
+      "seedJob": "06cec894-0930-40d0-b94a-ebcdbbb149bd",
+      "packedAt": 1791704956260
+    },
+    "shikigami-pact": {
+      "image": "icons/shikigami-pact.png",
+      "sheet": "icons-onmyoji-sheet",
+      "cell": 9,
+      "seedJob": "06cec894-0930-40d0-b94a-ebcdbbb149bd",
+      "packedAt": 1791704956263
+    },
+    "gogyo-mandala": {
+      "image": "icons/gogyo-mandala.png",
+      "sheet": "icons-onmyoji-sheet",
+      "cell": 10,
+      "seedJob": "06cec894-0930-40d0-b94a-ebcdbbb149bd",
+      "packedAt": 1791704956266
+    },
+    "gogyo-ring-seal": {
+      "image": "icons/gogyo-ring-seal.png",
+      "sheet": "icons-onmyoji-sheet",
+      "cell": 11,
+      "seedJob": "06cec894-0930-40d0-b94a-ebcdbbb149bd",
+      "packedAt": 1791704956269
+    },
+    "shikigami-ascension": {
+      "image": "icons/shikigami-ascension.png",
+      "sheet": "icons-onmyoji-sheet",
+      "cell": 12,
+      "seedJob": "06cec894-0930-40d0-b94a-ebcdbbb149bd",
+      "packedAt": 1791704956273
+    },
+    "third-talisman": {
+      "image": "icons/third-talisman.png",
+      "sheet": "icons-onmyoji-sheet",
+      "cell": 13,
+      "seedJob": "06cec894-0930-40d0-b94a-ebcdbbb149bd",
+      "packedAt": 1791704956277
+    },
+    "onmyo-mastery": {
+      "image": "icons/onmyo-mastery.png",
+      "sheet": "icons-onmyoji-sheet",
+      "cell": 14,
+      "seedJob": "06cec894-0930-40d0-b94a-ebcdbbb149bd",
+      "packedAt": 1791704956280
+    },
+    "bonfire-ward": {
+      "image": "icons/bonfire-ward.png",
+      "sheet": "icons-onmyoji-spells-sheet",
+      "cell": 0,
+      "seedJob": "8aef4525-7d8f-4d17-9c47-15ad46f0d0ec",
+      "packedAt": 1791704956424
+    },
+    "ash-barrier": {
+      "image": "icons/ash-barrier.png",
+      "sheet": "icons-onmyoji-spells-sheet",
+      "cell": 1,
+      "seedJob": "8aef4525-7d8f-4d17-9c47-15ad46f0d0ec",
+      "packedAt": 1791704956427
+    },
+    "kongo-talisman": {
+      "image": "icons/kongo-talisman.png",
+      "sheet": "icons-onmyoji-spells-sheet",
+      "cell": 2,
+      "seedJob": "8aef4525-7d8f-4d17-9c47-15ad46f0d0ec",
+      "packedAt": 1791704956431
+    },
+    "mirror-pond": {
+      "image": "icons/mirror-pond.png",
+      "sheet": "icons-onmyoji-spells-sheet",
+      "cell": 3,
+      "seedJob": "8aef4525-7d8f-4d17-9c47-15ad46f0d0ec",
+      "packedAt": 1791704956434
+    },
+    "spring-rain": {
+      "image": "icons/spring-rain.png",
+      "sheet": "icons-onmyoji-spells-sheet",
+      "cell": 4,
+      "seedJob": "8aef4525-7d8f-4d17-9c47-15ad46f0d0ec",
+      "packedAt": 1791704956437
+    },
+    "root-fissure": {
+      "image": "icons/root-fissure.png",
+      "sheet": "icons-onmyoji-spells-sheet",
+      "cell": 5,
+      "seedJob": "8aef4525-7d8f-4d17-9c47-15ad46f0d0ec",
+      "packedAt": 1791704956440
+    },
+    "mudslide": {
+      "image": "icons/mudslide.png",
+      "sheet": "icons-onmyoji-spells-sheet",
+      "cell": 6,
+      "seedJob": "8aef4525-7d8f-4d17-9c47-15ad46f0d0ec",
+      "packedAt": 1791704956443
+    },
+    "steam-burst": {
+      "image": "icons/steam-burst.png",
+      "sheet": "icons-onmyoji-spells-sheet",
+      "cell": 7,
+      "seedJob": "8aef4525-7d8f-4d17-9c47-15ad46f0d0ec",
+      "packedAt": 1791704956446
+    },
+    "molten-swallows": {
+      "image": "icons/molten-swallows.png",
+      "sheet": "icons-onmyoji-spells-sheet",
+      "cell": 8,
+      "seedJob": "8aef4525-7d8f-4d17-9c47-15ad46f0d0ec",
+      "packedAt": 1791704956449
+    },
+    "leaf-blade-storm": {
+      "image": "icons/leaf-blade-storm.png",
+      "sheet": "icons-onmyoji-spells-sheet",
+      "cell": 9,
+      "seedJob": "8aef4525-7d8f-4d17-9c47-15ad46f0d0ec",
+      "packedAt": 1791704956454
+    },
+    "summon-kodama": {
+      "image": "icons/summon-kodama.png",
+      "sheet": "icons-onmyoji-spells-sheet",
+      "cell": 10,
+      "seedJob": "8aef4525-7d8f-4d17-9c47-15ad46f0d0ec",
+      "packedAt": 1791704956459
+    },
+    "summon-kitsune": {
+      "image": "icons/summon-kitsune.png",
+      "sheet": "icons-onmyoji-spells-sheet",
+      "cell": 11,
+      "seedJob": "8aef4525-7d8f-4d17-9c47-15ad46f0d0ec",
+      "packedAt": 1791704956462
+    },
+    "summon-nurikabe": {
+      "image": "icons/summon-nurikabe.png",
+      "sheet": "icons-onmyoji-spells-sheet",
+      "cell": 12,
+      "seedJob": "8aef4525-7d8f-4d17-9c47-15ad46f0d0ec",
+      "packedAt": 1791704956466
+    },
+    "summon-kamaitachi": {
+      "image": "icons/summon-kamaitachi.png",
+      "sheet": "icons-onmyoji-spells-sheet",
+      "cell": 13,
+      "seedJob": "8aef4525-7d8f-4d17-9c47-15ad46f0d0ec",
+      "packedAt": 1791704956469
+    },
+    "summon-mizuchi": {
+      "image": "icons/summon-mizuchi.png",
+      "sheet": "icons-onmyoji-spells-sheet",
+      "cell": 14,
+      "seedJob": "8aef4525-7d8f-4d17-9c47-15ad46f0d0ec",
+      "packedAt": 1791704956474
+    },
+    "harae-sweep": {
+      "image": "icons/harae-sweep.png",
+      "sheet": "icons-miko-sheet",
+      "cell": 0,
+      "seedJob": "460013f1-d405-4eab-a5e9-51414d10eab4",
+      "packedAt": 1791704956600
+    },
+    "kagura-purification-dance": {
+      "image": "icons/kagura-purification-dance.png",
+      "sheet": "icons-miko-sheet",
+      "cell": 1,
+      "seedJob": "460013f1-d405-4eab-a5e9-51414d10eab4",
+      "packedAt": 1791704956603
+    },
+    "suzu-bell-blessing": {
+      "image": "icons/suzu-bell-blessing.png",
+      "sheet": "icons-miko-sheet",
+      "cell": 2,
+      "seedJob": "460013f1-d405-4eab-a5e9-51414d10eab4",
+      "packedAt": 1791704956605
+    },
+    "ofuda-ward-shot": {
+      "image": "icons/ofuda-ward-shot.png",
+      "sheet": "icons-miko-sheet",
+      "cell": 3,
+      "seedJob": "460013f1-d405-4eab-a5e9-51414d10eab4",
+      "packedAt": 1791704956608
+    },
+    "cleansing-rain": {
+      "image": "icons/cleansing-rain.png",
+      "sheet": "icons-miko-sheet",
+      "cell": 4,
+      "seedJob": "460013f1-d405-4eab-a5e9-51414d10eab4",
+      "packedAt": 1791704956611
+    },
+    "holy-ward": {
+      "image": "icons/holy-ward.png",
+      "sheet": "icons-miko-sheet",
+      "cell": 5,
+      "seedJob": "460013f1-d405-4eab-a5e9-51414d10eab4",
+      "packedAt": 1791704956615
+    },
+    "priestess-grace": {
+      "image": "icons/priestess-grace.png",
+      "sheet": "icons-miko-sheet",
+      "cell": 6,
+      "seedJob": "460013f1-d405-4eab-a5e9-51414d10eab4",
+      "packedAt": 1791704956618
+    },
+    "blessing-craft": {
+      "image": "icons/blessing-craft.png",
+      "sheet": "icons-miko-sheet",
+      "cell": 7,
+      "seedJob": "460013f1-d405-4eab-a5e9-51414d10eab4",
+      "packedAt": 1791704956620
+    },
+    "purify": {
+      "image": "icons/purify.png",
+      "sheet": "icons-miko-sheet",
+      "cell": 8,
+      "seedJob": "460013f1-d405-4eab-a5e9-51414d10eab4",
+      "packedAt": 1791704956623
+    },
+    "shrine-path": {
+      "image": "icons/shrine-path.png",
+      "sheet": "icons-miko-sheet",
+      "cell": 9,
+      "seedJob": "460013f1-d405-4eab-a5e9-51414d10eab4",
+      "packedAt": 1791704956626
+    },
+    "divine-miracle-resurrection": {
+      "image": "icons/divine-miracle-resurrection.png",
+      "sheet": "icons-miko-sheet",
+      "cell": 10,
+      "seedJob": "460013f1-d405-4eab-a5e9-51414d10eab4",
+      "packedAt": 1791704956630
+    },
+    "kotodama-sacred-song": {
+      "image": "icons/kotodama-sacred-song.png",
+      "sheet": "icons-miko-sheet",
+      "cell": 11,
+      "seedJob": "460013f1-d405-4eab-a5e9-51414d10eab4",
+      "packedAt": 1791704956633
+    },
+    "sun-pillar": {
+      "image": "icons/sun-pillar.png",
+      "sheet": "icons-miko-sheet",
+      "cell": 12,
+      "seedJob": "460013f1-d405-4eab-a5e9-51414d10eab4",
+      "packedAt": 1791704956636
+    },
+    "divine-grace": {
+      "image": "icons/divine-grace.png",
+      "sheet": "icons-miko-sheet",
+      "cell": 13,
+      "seedJob": "460013f1-d405-4eab-a5e9-51414d10eab4",
+      "packedAt": 1791704956640
+    },
+    "oracles-vision": {
+      "image": "icons/oracles-vision.png",
+      "sheet": "icons-miko-sheet",
+      "cell": 14,
+      "seedJob": "460013f1-d405-4eab-a5e9-51414d10eab4",
+      "packedAt": 1791704956642
+    }
+  }
+}

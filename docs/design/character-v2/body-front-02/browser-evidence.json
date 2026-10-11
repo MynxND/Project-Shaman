@@ -1,0 +1,20 @@
+{
+  "url": "http://localhost:3000/characters/v2",
+  "method": "Actual React inspector Canvas2D pixels compared to decoded raw PNG; keyboard direction/anchor controls; full-page screenshots saved and opened for visual inspection.",
+  "viewports": [
+    { "name": "desktop", "width": 1280, "height": 900, "visible": 2524, "rejectedVisible": 2605, "rgbaMismatch": 0, "horizontalOverflow": false, "anchorCount": 6, "footAt2x": { "left": 122, "top": 224 }, "screenshot": "browser-desktop-context.png" },
+    { "name": "portrait", "width": 390, "height": 844, "visible": 2524, "rejectedVisible": 2605, "rgbaMismatch": 0, "horizontalOverflow": false, "anchorCount": 6, "footAt2x": { "left": 122, "top": 224 }, "screenshot": "browser-portrait-context.png" },
+    { "name": "landscape", "width": 844, "height": 390, "visible": 2524, "rejectedVisible": 2605, "rgbaMismatch": 0, "horizontalOverflow": false, "anchorCount": 6, "footAt2x": { "left": 122, "top": 224 }, "screenshot": "browser-landscape-context.png" }
+  ],
+  "missingDirections": "east/north/west each have no candidate canvas and never reuse south; keyboard selected on all3 viewports",
+  "absentLayers": "hair/outfit and other non-body selectors disabled; no V1 fallback",
+  "captureInspection": "Full-page context captures inspected: complete head/hands/feet for candidate and rejected source; partial readiness/approval flags and separate rejected section visible. Portrait element capture also shows full candidate. Some element captures instead contain Layers or clipped body; NOT valid proportion evidence.",
+  "limitations": [
+    "Integrated browser screenshot geometry is host-constrained despite requested viewport. Full-page captures show real rendered content but are not exact physical-device layout proof.",
+    "Pointer check after element capture was intercepted by ledger/labels; keyboard interactions passed. Pointer/touch ergonomics and physical devices not certified.",
+    "Hidden/stale tab timed out on readiness; visible fresh tab loaded correctly.",
+    "Rejected evidence remount on direction changes needs fetch/decode completion; explicit readiness wait was used. AbortController cancellations produced ERR_ABORTED events during rapid navigation, not missing final files.",
+    "Canvas readback performance warning appeared during browser pixel probes; no console-error-free claim.",
+    "All anchors and art are unapproved; visual review is still the user's next gate."
+  ]
+}

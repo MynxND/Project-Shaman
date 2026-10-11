@@ -1,0 +1,77 @@
+{
+  "status": "local-preparation-only-not-an-executable-provider-payload",
+  "tool": "inpaint_image_pro_flash",
+  "submittable": false,
+  "itemId": "ivory-crop-01",
+  "poseId": "neutral-male-02-idle-south",
+  "direction": "south",
+  "canvas": {
+    "width": 128,
+    "height": 128,
+    "origin": {
+      "x": 61,
+      "y": 112
+    }
+  },
+  "localReferences": {
+    "image": "docs/design/character-v2/body-front-02/raw.png",
+    "mask": "docs/design/character-v2/hair-proof-01/hair-allowed-mask.png",
+    "context": "docs/design/character-v2/body-front-02/raw.png"
+  },
+  "unresolvedBindings": {
+    "mask_image_url": "Requires separately authorized upload/encoding of local mask; never interpret a local path as a provider URL."
+  },
+  "providerArguments": {
+    "description": "ONE SOUTH isolated transparent hair-only layer for the exact owned bald FRONT02. Short ivory Shaman crop, small asymmetrical upper-left tuft. Native128 full canvas, unchanged alignment/origin61,112. Match the bald scalp dome at x49..75 y20..31 and extend only into the white native mask x48..76 y16..31. Conservative cap-only prototype: no bangs or hair occlusion on protected forehead/face from y32 downward. Keep both eyes, brows, ears, face, neck and ALL body pixels untouched. Crisp binary-alpha pixel clusters, upper-left light. Proposed ivory ramp #686C65 #A9ADA0 #D9DCCD #F1EEDB ONLY, no skin or copied underlying scalp RGB. Transparent outside hair, including unused white mask pixels. NO body, skin, clothes, crown, bow, long tail, shadow, text, rotation or animation. Return New layer with changes, NOT a composite or cached body; isolation will be independently checked before any review/publication.",
+    "source_image_id": "1fb97f42-4ce5-55e9-903f-a8edd56a67bc",
+    "mask_image_url": null,
+    "crop_to_mask": true,
+    "no_background": true,
+    "output_method": "New layer with changes",
+    "seed": 0,
+    "context_image": {
+      "source_image_id": "1fb97f42-4ce5-55e9-903f-a8edd56a67bc",
+      "usage_description": "Exact owned FRONT02 full native canvas as scalp/pose context only. Never copy skin/body into the new layer."
+    },
+    "bounding_box": {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128
+    }
+  },
+  "providerSeedContext": {
+    "seed": 0,
+    "basis": "Original FRONT02 request arguments.seed; reproducibility hint, not an identity guarantee."
+  },
+  "schemaEvidence": {
+    "path": "docs/design/pixellab-tool-catalog.json",
+    "sha256": "c749153e11df47e32781d424c1eeb1d9ad24b039256b89275bc537b197e05467",
+    "inspection": "Cached local schema only, no live inspection or provider request",
+    "outputIsolation": "Documented changes-only support, not demonstrated for this new hairstyle",
+    "contextDimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "boundingBoxMeaning": "Full native source rectangle in the same full native context; NOT mask bounds"
+  },
+  "budget": {
+    "cap": 18,
+    "spent": 14,
+    "reserved": 0,
+    "pendingCredits": 0,
+    "remaining": 4,
+    "proposedCredits": 6,
+    "estimateProvisional": true,
+    "liveQuoteObtained": false,
+    "deficit": 2,
+    "hairStageAuthorized": false,
+    "fourViewApproved": false,
+    "submittable": false,
+    "submittedJobs": 0,
+    "creditsSpentByPreparation": 0
+  },
+  "realCandidate": null,
+  "visualApproved": false,
+  "productionReady": false
+}

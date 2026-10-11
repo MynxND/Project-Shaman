@@ -1,0 +1,244 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.swept-spikes-eight-01-candidate",
+  "kind": "hairFront",
+  "variant": "swept-spikes-eight-01-candidate",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": false,
+  "images": [
+    {
+      "id": "south-fixed",
+      "url": "/assets/ssr/candidates/swept-spikes-eight-01/south-fixed.png",
+      "sha256": "79aeb3c775150f1a2b8751e79bc9d99a966d81acbd1c8c943c4ed4975609bfe5",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "south-ramp",
+      "url": "/assets/ssr/candidates/swept-spikes-eight-01/south-ramp.png",
+      "sha256": "0a3bfb6149ba8bcc4211d3fe1681d7390af49ac3cee586ac4fc12d4b2d7d8835",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "south-east-fixed",
+      "url": "/assets/ssr/candidates/swept-spikes-eight-01/south-east-fixed.png",
+      "sha256": "d5f111d555126b1c94969af061a7b216d809d455126884423a5f539d3be27dd3",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "south-east-ramp",
+      "url": "/assets/ssr/candidates/swept-spikes-eight-01/south-east-ramp.png",
+      "sha256": "1f8de74dc391468edb94db8ce8fb690dbf816892184757f062f7b561e360eddb",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "east-fixed",
+      "url": "/assets/ssr/candidates/swept-spikes-eight-01/east-fixed.png",
+      "sha256": "adf24d3ccbc7cbec63fd94d978b0066826afb42663b6266531c4bfa2c9683696",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "east-ramp",
+      "url": "/assets/ssr/candidates/swept-spikes-eight-01/east-ramp.png",
+      "sha256": "0fccf8755718b4d210b13a8eb2fd5da1da1214f543b35c4a2aca30c6e91dd76f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "north-east-fixed",
+      "url": "/assets/ssr/candidates/swept-spikes-eight-01/north-east-fixed.png",
+      "sha256": "606583889b9bf15500c0d30cfb80ae8f28408a30f8cad657ff7f6f4d52101a09",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "north-east-ramp",
+      "url": "/assets/ssr/candidates/swept-spikes-eight-01/north-east-ramp.png",
+      "sha256": "e4172306723b3ff82fc2d4fd8dc6955a4034c3be8c3e756dc738e8cadffdc498",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "north-fixed",
+      "url": "/assets/ssr/candidates/swept-spikes-eight-01/north-fixed.png",
+      "sha256": "aaa99bc61f501e7eeba0567bd6b26b790858fb073c1a3f19b3fef79558980d3b",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "north-ramp",
+      "url": "/assets/ssr/candidates/swept-spikes-eight-01/north-ramp.png",
+      "sha256": "0a680c89a1cddd25e5c4eb9f6ab43061505b5ff7aa135356b307f1bebff60020",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "south-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "south-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "1": {
+      "action": "idle",
+      "direction": "south-west",
+      "intervalMs": 1000,
+      "mirrorOf": 7
+    },
+    "2": {
+      "action": "idle",
+      "direction": "west",
+      "intervalMs": 1000,
+      "mirrorOf": 6
+    },
+    "3": {
+      "action": "idle",
+      "direction": "north-west",
+      "intervalMs": 1000,
+      "mirrorOf": 5
+    },
+    "4": {
+      "action": "idle",
+      "direction": "north",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "north-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "north-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 64,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "5": {
+      "action": "idle",
+      "direction": "north-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "north-east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "north-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "6": {
+      "action": "idle",
+      "direction": "east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "7": {
+      "action": "idle",
+      "direction": "south-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "south-east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "south-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 65,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Approved hairstyle FRONT reused byte-identically; four remaining views in one original owned-reference inpaint. Left views mirrored per Hair Layer Standard v1. Staged visual review only."
+}

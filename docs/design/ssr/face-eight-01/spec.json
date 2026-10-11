@@ -1,0 +1,78 @@
+{
+  "faces": [
+    {
+      "id": "violet-sharp",
+      "set": "face-styles-front-01",
+      "approved": {
+        "apps/client/public/assets/ssr/candidates/face-styles-front-01/violet-sharp-part.json": "2a6681f9cd0ece9b4bab96d476658e46d0921fc43dc0607667215f2b0f4d9864",
+        "apps/client/public/assets/ssr/candidates/face-styles-front-01/violet-sharp-patch.png": "f767952e9155691be6e00957a603991a8e13f575b01f88d8bd71c7f84ec74e17",
+        "apps/client/public/assets/ssr/candidates/face-styles-front-01/violet-sharp-short-head.png": "af3d0af7a4f6b976d59b0352b7fd3d88b24d239ffb692db7c1452a0b6515e73c",
+        "apps/client/public/assets/ssr/candidates/face-styles-front-01/violet-sharp-short-body.png": "65b09558c27a9ca03158025d01de7e19d07e9da5e3d4bf252e9d1e2acfcd3685"
+      }
+    },
+    {
+      "id": "teal-soft",
+      "set": "face-styles-front-01",
+      "approved": {
+        "apps/client/public/assets/ssr/candidates/face-styles-front-01/teal-soft-part.json": "b7fcec70e172fc5e00e08980f47dc33cfabe0b51d766fbeaebcdfe6dda70243d",
+        "apps/client/public/assets/ssr/candidates/face-styles-front-01/teal-soft-patch.png": "54396c7549cc2f568062f8194b578da58e5f06d0e13d6d382b2ca5a0cf57b6aa",
+        "apps/client/public/assets/ssr/candidates/face-styles-front-01/teal-soft-short-head.png": "df158c7c3d14d87fec2b6272b0b261f8c04553425c7f3e2da009456bf88f65c4",
+        "apps/client/public/assets/ssr/candidates/face-styles-front-01/teal-soft-short-body.png": "8cc479562a9198a86bd4e0c16e36baf97bb5bbb521a6d5e520c923c857f00134"
+      }
+    },
+    {
+      "id": "cold-detached",
+      "set": "face-cold-front-02",
+      "approved": {
+        "apps/client/public/assets/ssr/candidates/face-cold-front-02/cold-detached-part.json": "74606fd242a3d413773809f46f183d6c2999120a8991fb2d357e704863137d66",
+        "apps/client/public/assets/ssr/candidates/face-cold-front-02/cold-detached-patch.png": "2d2cdc8e852d1f487ec172deac120546e0335d3c587d91a46dba26f7b4aa2112",
+        "apps/client/public/assets/ssr/candidates/face-cold-front-02/cold-detached-short-head.png": "a8f59e61190937b98706c73912bca6c500080ec2e53795e1e247baf18439570f",
+        "apps/client/public/assets/ssr/candidates/face-cold-front-02/cold-detached-short-body.png": "190311d51a646bb5f8749fa99c4bf61d6b813dd5ae7525a1693584db4eb109f1"
+      }
+    }
+  ],
+  "directions": [
+    "south",
+    "south-west",
+    "west",
+    "north-west",
+    "north",
+    "north-east",
+    "east",
+    "south-east"
+  ],
+  "plan": "Reuse exact approved south face parts; one controlled128 packed edit per face for south-east/east visible face areas. Left visible views mirror corresponding right face with mirrored head anchors. North and back diagonals retain existing head and no face overlay, since face not visible. Original body/hair stay frozen.",
+  "scope": "Static idle only; no walk/combat/expression animation, no gameplay publication.",
+  "quote": {
+    "perFace": 6,
+    "total": 18,
+    "attempts": 3,
+    "retries": 0,
+    "status": "Authorized18 /3 attempts /no retry; completed actual18"
+  },
+  "validation": [
+    "Exact approved FRONT pixel reuse",
+    "No changes to hair/body/skull/ears/neck",
+    "Face identity and palette across visible views",
+    "Mirrored anchors",
+    "Native and4x real files in V3 Inspector",
+    "User visual review after delivery"
+  ],
+  "actual": [
+    {
+      "id": "violet-sharp",
+      "spent": 6,
+      "job": "c720ce2f-0815-4001-b4b6-b0c60fcc6cbd"
+    },
+    {
+      "id": "teal-soft",
+      "spent": 6,
+      "job": "01fb3aa3-8ebe-4da4-a19a-ca1bec7f034f"
+    },
+    {
+      "id": "cold-detached",
+      "spent": 6,
+      "job": "55830300-a686-407e-b53e-36e460d1a751"
+    }
+  ]
+}

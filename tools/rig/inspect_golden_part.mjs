@@ -1,0 +1,1 @@
+import{readFile}from'node:fs/promises';import{rgba}from'./body-eight-lib.mjs';import*as H from'./ssr-hair-standard.mjs';const p=await rgba(await readFile('apps/client/public/assets/ssr/candidates/golden-part-01/hair-fixed.png'));for(let k=0;k<H.PX;k++)if(p[k*4+3]&&!H.red(p,k)&&!H.warm(p,k))console.log({x:k%128,y:k/128|0,color:[...p.subarray(k*4,k*4+4)]});

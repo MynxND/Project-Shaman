@@ -1,0 +1,115 @@
+{
+  "version": "ssr/1",
+  "id": "face.sad",
+  "kind": "face",
+  "variant": "sad",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": false,
+  "images": [
+    {
+      "id": "ssr/face-sad-south",
+      "url": "/assets/ssr/layers/face-sad-south.png",
+      "sha256": "0689d32a7994ec813ea6b3ced6dd75e19143c99b9377beebb1b11029f2102f2e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/face-sad-south-east",
+      "url": "/assets/ssr/layers/face-sad-south-east.png",
+      "sha256": "7c87d38be92a98c6fade01d6cb004f846ec1f348d536960d94c5518743d62ce0",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/face-sad-east",
+      "url": "/assets/ssr/layers/face-sad-east.png",
+      "sha256": "be09b2b0ae82970b0943763cf694f2350de0028a75f9e34e8c221c4bbd788c86",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ssr/face-sad-south",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "1": {
+      "action": "idle",
+      "direction": "south-west",
+      "intervalMs": 1000,
+      "mirrorOf": 7
+    },
+    "2": {
+      "action": "idle",
+      "direction": "west",
+      "intervalMs": 1000,
+      "mirrorOf": 6
+    },
+    "6": {
+      "action": "idle",
+      "direction": "east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ssr/face-sad-east",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "7": {
+      "action": "idle",
+      "direction": "south-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ssr/face-sad-south-east",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 65,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "head-layers-03 pack-face-sad (face-locked inpaint test), pixels inside the face zone only · W/SW/NW mirror E/SE/NE (Ragnarok convention, user-approved 2026-10-10)"
+}

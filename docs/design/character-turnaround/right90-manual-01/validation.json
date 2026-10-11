@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "approved": false,
+  "productionReady": false,
+  "native": true,
+  "changedPixels": 1033,
+  "selectedPixels": 1033,
+  "protectedPixels": 15351,
+  "checks": [
+    "exact-front-PNG-and-original-strip-frame0",
+    "raw-before-byteexact",
+    "source-hashes-unchanged",
+    "independent-source-mask-replay",
+    "binary-selection-and-actual-diff",
+    "independent-body-guard-rows",
+    "all-unmasked-RGBA-exact",
+    "profile-face-ear-neck-exact",
+    "protected-visible-body-garment-exact",
+    "legs-sandals-feet-exact",
+    "independent-after-bounds",
+    "native-contact-panel-RGBA-exact",
+    "nearest2x-pixel-replication-exact",
+    "public-design-artifact-equality",
+    "north-west-unchanged",
+    "unknown-manifest-fields-retained",
+    "prior-ledger-accounting-history-retained",
+    "zero-new-jobs-credits"
+  ],
+  "measurements": {
+    "silhouette": {
+      "left": 22,
+      "top": 6,
+      "right": 82,
+      "bottom": 123,
+      "width": 61,
+      "height": 118,
+      "pixels": 3557
+    },
+    "headBounds": {
+      "left": 40,
+      "top": 6,
+      "right": 82,
+      "bottom": 38,
+      "width": 43,
+      "height": 33,
+      "pixels": 1006
+    },
+    "shoulderBounds": {
+      "left": 35,
+      "top": 39,
+      "right": 75,
+      "bottom": 48,
+      "width": 41,
+      "height": 10,
+      "pixels": 297
+    },
+    "torsoBounds": {
+      "left": 22,
+      "top": 49,
+      "right": 76,
+      "bottom": 67,
+      "width": 55,
+      "height": 19,
+      "pixels": 729
+    },
+    "footBounds": {
+      "left": 52,
+      "top": 108,
+      "right": 76,
+      "bottom": 123,
+      "width": 25,
+      "height": 16,
+      "pixels": 335
+    },
+    "observedLowestPixel": 123,
+    "groundEdgeDelta": 0
+  },
+  "currentStage": "manual-right90-proposal-awaiting-review",
+  "frontApproved": true,
+  "rightApproved": false,
+  "productionLimits": [
+    "Hair-only local reference draft. Rotation body keeps its known costume construction differences; no outfit-profile correction is claimed.",
+    "Hair is projected by retaining a compatible native rear-hair attachment only; the original full head was not transplanted. Bow texture and tail spacing still need user review.",
+    "Clothed reference only, not a clean modular body or independent outfit. Equipped registry is unchanged.",
+    "Hidden side face identity cannot be verified against the frontal master. Back/left remain blocked."
+  ]
+}

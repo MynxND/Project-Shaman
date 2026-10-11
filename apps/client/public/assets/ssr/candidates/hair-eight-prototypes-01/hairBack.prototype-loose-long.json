@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairBack.prototype-loose-long",
+  "kind": "hairBack",
+  "variant": "prototype-loose-long",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "loose-long-hairBack-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-hairBack-fixed.png",
+      "sha256": "0d3dab3aab52496eca143109a11ebe3e8cf1a61d4d4f5cd47bd9c4c1c1bc21b2",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "loose-long-hairBack-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-hairBack-ramp.png",
+      "sha256": "3c3ac87897aebaf4f368c1f489e6f5da3c05a56e3f887d0c80d348a91fadeb91",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "loose-long-hairBack-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "loose-long-hairBack-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Original FRONT prototype from one eight-design inpaint on owned head; visual approval pending."
+}

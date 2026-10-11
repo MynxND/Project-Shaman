@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.golden-part-candidate",
+  "kind": "hairFront",
+  "variant": "golden-part-candidate",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "golden-ramp",
+      "url": "/assets/ssr/candidates/golden-part-01/hair-ramp.png",
+      "sha256": "48d99d3fb299503b513c173b914b36f261997616a63159f092ff6027ab2c98c4",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "golden-fixed",
+      "url": "/assets/ssr/candidates/golden-part-01/hair-fixed.png",
+      "sha256": "5003f511fd754a6d5354c4d4b1ec2ebe8d094d2c7daa2b3d263471c48cd13db5",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "golden-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "golden-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Original FRONT-only inpaint on owned approved head; Hair Layer Standard filtering. Unapproved candidate, no other directions or gameplay publication."
+}

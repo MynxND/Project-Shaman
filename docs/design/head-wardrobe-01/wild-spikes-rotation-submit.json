@@ -1,0 +1,25 @@
+{
+    "jsonrpc":  "2.0",
+    "id":  2,
+    "result":  {
+                   "content":  [
+                                   {
+                                       "type":  "text",
+                                       "text":  "{\n  \"background_job_id\": \"66ec8b4c-defd-473f-a13b-4e4f12d2b415\",\n  \"object_id\": \"5dd26b91-c707-4eda-9334-fe9aa7db6623\",\n  \"status\": \"processing\",\n  \"first_direction_generated\": false,\n  \"estimated_generations\": 2,\n  \"job_id\": \"66ec8b4c-defd-473f-a13b-4e4f12d2b415\",\n  \"n_directions\": 8,\n  \"poll_tool\": \"get_object\",\n  \"status_path\": \"/v2/background-jobs/66ec8b4c-defd-473f-a13b-4e4f12d2b415\",\n  \"download_path\": \"/mcp/objects/5dd26b91-c707-4eda-9334-fe9aa7db6623/download\"\n}\nid: 5dd26b91-c707-4eda-9334-fe9aa7db6623\nPoll get_object(object_id=\"5dd26b91-c707-4eda-9334-fe9aa7db6623\") or /v2/background-jobs/66ec8b4c-defd-473f-a13b-4e4f12d2b415; wait for the outer job to complete before downloading or animating. The selected first direction is reused without another image charge. Only V3 rotations are billed."
+                                   }
+                               ],
+                   "structuredContent":  {
+                                             "background_job_id":  "66ec8b4c-defd-473f-a13b-4e4f12d2b415",
+                                             "object_id":  "5dd26b91-c707-4eda-9334-fe9aa7db6623",
+                                             "status":  "processing",
+                                             "first_direction_generated":  false,
+                                             "estimated_generations":  2,
+                                             "job_id":  "66ec8b4c-defd-473f-a13b-4e4f12d2b415",
+                                             "n_directions":  8,
+                                             "poll_tool":  "get_object",
+                                             "status_path":  "/v2/background-jobs/66ec8b4c-defd-473f-a13b-4e4f12d2b415",
+                                             "download_path":  "/mcp/objects/5dd26b91-c707-4eda-9334-fe9aa7db6623/download"
+                                         },
+                   "isError":  false
+               }
+}

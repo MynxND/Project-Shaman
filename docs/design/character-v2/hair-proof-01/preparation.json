@@ -1,0 +1,149 @@
+{
+  "status": "no-credit-preparation-no-hair-art",
+  "sourcePath": "docs/design/character-v2/body-front-02/raw.png",
+  "runtimePath": "apps/client/public/assets/character-v2/body-front-02/raw.png",
+  "sourceSha256": "0ed1ddf448b70a93dc5f624617e832a0af593779b6b7257d65db39b61be35958",
+  "initialLedgerSha256": "8d9383e47822bafb4a6b969273edb7f72f006e89c337e12231591d32b404636a",
+  "untouchedHashes": {
+    "docs/design/character-v2/cost-ledger.json": "8d9383e47822bafb4a6b969273edb7f72f006e89c337e12231591d32b404636a",
+    "apps/client/public/assets/character-v2/manifest.json": "6d2435abccf3dfbd6a6bb6051339cae61ecd42af517eb62eec5f25ffffd24d2c",
+    "docs/design/character-v2/body-front-02/raw.png": "0ed1ddf448b70a93dc5f624617e832a0af593779b6b7257d65db39b61be35958",
+    "apps/client/public/assets/character-v2/body-front-02/raw.png": "0ed1ddf448b70a93dc5f624617e832a0af593779b6b7257d65db39b61be35958",
+    "docs/design/pixellab-tool-catalog.json": "c749153e11df47e32781d424c1eeb1d9ad24b039256b89275bc537b197e05467",
+    "docs/design/character-v2/body-rotation-01/raw/east.png": "0ebf842c4ae7f6ac03c395918e15f5d166b64754c94551420bd2796ab89f846a",
+    "apps/client/public/assets/character-v2/body-rotation-01/east.png": "0ebf842c4ae7f6ac03c395918e15f5d166b64754c94551420bd2796ab89f846a",
+    "docs/design/character-v2/body-rotation-01/raw/north.png": "289b25898984611ecadd7cc1dbd001a9b04ea6b1605644d9b121fe4883fd1107",
+    "apps/client/public/assets/character-v2/body-rotation-01/north.png": "289b25898984611ecadd7cc1dbd001a9b04ea6b1605644d9b121fe4883fd1107",
+    "docs/design/character-v2/body-rotation-01/raw/west.png": "cf8d6815ee91878bd2974089859ede2b40e21a3d1c0840a71b080fe580d4581c",
+    "apps/client/public/assets/character-v2/body-rotation-01/west.png": "cf8d6815ee91878bd2974089859ede2b40e21a3d1c0840a71b080fe580d4581c"
+  },
+  "maskCanvas": {
+    "width": 128,
+    "height": 128
+  },
+  "maskBounds": {
+    "x": 48,
+    "y": 16,
+    "width": 29,
+    "height": 16
+  },
+  "hairSpans": [
+    [
+      16,
+      59,
+      61
+    ],
+    [
+      17,
+      57,
+      63
+    ],
+    [
+      18,
+      55,
+      65
+    ],
+    [
+      19,
+      53,
+      70
+    ],
+    [
+      20,
+      51,
+      73
+    ],
+    [
+      21,
+      50,
+      74
+    ],
+    [
+      22,
+      49,
+      75
+    ],
+    [
+      23,
+      49,
+      76
+    ],
+    [
+      24,
+      48,
+      76
+    ],
+    [
+      25,
+      48,
+      76
+    ],
+    [
+      26,
+      48,
+      76
+    ],
+    [
+      27,
+      48,
+      76
+    ],
+    [
+      28,
+      48,
+      76
+    ],
+    [
+      29,
+      48,
+      76
+    ],
+    [
+      30,
+      48,
+      76
+    ],
+    [
+      31,
+      48,
+      76
+    ]
+  ],
+  "counts": {
+    "hair": 374,
+    "face": 361,
+    "ears": 80,
+    "neck": 47,
+    "protectedAnatomy": 488,
+    "protectedAll": 16010
+  },
+  "protectionOverlapPixels": 0,
+  "budget": {
+    "cap": 18,
+    "spent": 14,
+    "reserved": 0,
+    "pendingCredits": 0,
+    "remaining": 4,
+    "proposedCredits": 6,
+    "estimateProvisional": true,
+    "liveQuoteObtained": false,
+    "deficit": 2,
+    "hairStageAuthorized": false,
+    "fourViewApproved": false,
+    "submittable": false,
+    "submittedJobs": 0,
+    "creditsSpentByPreparation": 0
+  },
+  "scalpObservation": "Actual bald dome starts y20 x58..66, widens through y22 x53..71 and y28 x49..75. Facial features begin around y35; protecting ALL visible forehead/face from y32 is deliberately conservative. Ear lobes protrude around x47..51 / x73..77 y35..43. Chin ends near y48; neck x57..68 y49..52. Native source alpha clips each anatomical protection mask, not a rectangular face cover.",
+  "limitation": "Cap-only prototype. No face-covering bangs, sideburns, rear hair or full four-view proof. Mask silhouette/semantic landmarks are locally inspected proposals, not USER-approved hair anatomy. Provider isolation remains unproven.",
+  "diagnosticsOnly": true,
+  "realCandidate": null,
+  "visualApproved": false,
+  "productionReady": false,
+  "diagnosticColors": {
+    "hair": "cyan allowed region, NOT hair art",
+    "face": "pink protected forehead/face",
+    "ears": "yellow protected ears",
+    "neck": "green protected neck"
+  }
+}

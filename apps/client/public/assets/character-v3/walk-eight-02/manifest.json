@@ -1,0 +1,886 @@
+{
+  "version": "walk-eight/1",
+  "name": "Medium novice · เดิน",
+  "bodySet": "body-eight-02",
+  "fps": 8,
+  "loop": true,
+  "directions": [
+    {
+      "direction": "south",
+      "headUrl": "/assets/character-v3/head-eight-01/south.png",
+      "headSha256": "1ac5ca0956848a2886484a8955e3d4d5f4206bc513c96581b55ade60bf6a4215",
+      "headPivot": {
+        "x": 62,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-0.png",
+          "sha256": "9e65ad7ac72224e9a9566bf62dd08bcffc9f6793c88b2116f595828a58bbe612",
+          "neckPivot": {
+            "x": 63,
+            "y": 48
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-1.png",
+          "sha256": "0506ba9c6d02f55bbda09c027561cb0b736d6b82758150631af93db87bb21ae7",
+          "neckPivot": {
+            "x": 63,
+            "y": 49
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-2.png",
+          "sha256": "8bc31426da18e86663afa6c761291f24cc5c8053ba16b5f3fdebac56cf5caf57",
+          "neckPivot": {
+            "x": 63,
+            "y": 47
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-3.png",
+          "sha256": "fb550ad6618781537b080696f13d038a7386ad376b5e59a413a69d5f3251b6fe",
+          "neckPivot": {
+            "x": 62,
+            "y": 47
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-4.png",
+          "sha256": "8c7d8b57a7f667561d268658ef8dc876a02678a32a30852de0ee8228fd1e9a8d",
+          "neckPivot": {
+            "x": 62,
+            "y": 46
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-5.png",
+          "sha256": "24b349cbbe28e23e3c8668f5f3ca58a7bae82ed97f9c37a2f274325d796f2856",
+          "neckPivot": {
+            "x": 62,
+            "y": 46
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-6.png",
+          "sha256": "faad9f919bc75a40f42f59bcbfc247693d7da7f7820752c554700d016787f24d",
+          "neckPivot": {
+            "x": 62,
+            "y": 48
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-7.png",
+          "sha256": "47cab337b8dcac436c54a37d3749c631fbf4ff883f351bc32835c2bf0c328c6a",
+          "neckPivot": {
+            "x": 63,
+            "y": 47
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "south-east",
+      "headUrl": "/assets/character-v3/head-eight-01/south-east.png",
+      "headSha256": "3cd756ea681a3571bf619505373ec6f78e200c0b3d6088936b26ad587c08b0b5",
+      "headPivot": {
+        "x": 65,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-east-0.png",
+          "sha256": "5d55817e0870c85b04cc09ec417d7d3fa716a63fff48b070d72274bf997b3d50",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-east-1.png",
+          "sha256": "9911ceb0d48fcb090738a14ae8b449fe66cc8a2853df0cea7a17df67476779d1",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-east-2.png",
+          "sha256": "18496b628a0123800928f50a4d85017f02909218c3aff0f9e98f8b64706d76bc",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-east-3.png",
+          "sha256": "b0d215d2013540a23351239be4a7221f585d75ab56c487c1629d3421c449aa92",
+          "neckPivot": {
+            "x": 63,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-east-4.png",
+          "sha256": "1c28c8432fec068289f18eed4764b53c066cd960281f9bd2ac4537c423f9bf0e",
+          "neckPivot": {
+            "x": 63,
+            "y": 49
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-east-5.png",
+          "sha256": "0cebdb1f6272a43ebe5b29bf61774be3ecdf76891c241b781bd0327c1eb8a9a3",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-east-6.png",
+          "sha256": "4fcd991323268a51caa3458f7b76e7879a5775760f6b670bcda0b7be4ccb0858",
+          "neckPivot": {
+            "x": 62,
+            "y": 49
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-east-7.png",
+          "sha256": "538df323426e55fc236fab17ae00502f5e76492c42ff6fb44347e6d9108dae58",
+          "neckPivot": {
+            "x": 62,
+            "y": 47
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        }
+      ]
+    },
+    {
+      "direction": "east",
+      "headUrl": "/assets/character-v3/head-eight-01/east.png",
+      "headSha256": "e0ff194091acadf4042ffd76627c88f444830239d59a7dc8dcd62e84d4952ec8",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/walk-eight-02/east-0.png",
+          "sha256": "c4f36e224ffc0e9b7744cdf58b75551f06d95c5d3ff86d2452305dbe6766af45",
+          "neckPivot": {
+            "x": 59,
+            "y": 47
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/east-1.png",
+          "sha256": "4f925b5f5818ff7591aa4f22ddb099ef002b5511de6cf203130080d1ab93b4f3",
+          "neckPivot": {
+            "x": 59,
+            "y": 48
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/east-2.png",
+          "sha256": "c929a3ffa0be8ffe4ba7856ea2ea345dce308b4011fdb5dc91a228c4e585a16b",
+          "neckPivot": {
+            "x": 59,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/east-3.png",
+          "sha256": "4fa945d8fcb2c548091cf4d0b44e777d7ef459381009b0a68b24ba6036dc0b7d",
+          "neckPivot": {
+            "x": 59,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/east-4.png",
+          "sha256": "2c05ed9fb259d3e8f4a85933599282da6510ccdde5bf49f7642a210f1429ae04",
+          "neckPivot": {
+            "x": 59,
+            "y": 48
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/east-5.png",
+          "sha256": "1cdbd1487abcfdf5a7e42c97df39070e57e64df08afcfd4eb130cc7a433be0e9",
+          "neckPivot": {
+            "x": 59,
+            "y": 47
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/east-6.png",
+          "sha256": "1bffb24dde14d0d0139d0baed496c1f00a6e97f393f58a950edbb66cf2b8fa5f",
+          "neckPivot": {
+            "x": 60,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/east-7.png",
+          "sha256": "ef2738e72dc6098a21b92ee46b46642be4e234f2802a2657b2140651a10172e2",
+          "neckPivot": {
+            "x": 60,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north-east",
+      "headUrl": "/assets/character-v3/head-eight-01/north-east.png",
+      "headSha256": "22f5b66ce480a0c2eecc4ebd361aaa57ccfa6b4d78fd8ba89a332f9750dbf9bb",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-east-0.png",
+          "sha256": "ad90ca8d68bd3f988a35c03ed122e2ba0bac77e23c7da6ff555f2c33f3dbe353",
+          "neckPivot": {
+            "x": 62,
+            "y": 47
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-east-1.png",
+          "sha256": "abc959e868381bb1721c0a4badd6cd5c92d2e1100fd74844e7b170104166f763",
+          "neckPivot": {
+            "x": 62,
+            "y": 47
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-east-2.png",
+          "sha256": "b9b577bfc9c0c3acf716c014ba53027c56c88076d0507b37a47a4515419902e7",
+          "neckPivot": {
+            "x": 62,
+            "y": 47
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-east-3.png",
+          "sha256": "56a58037947c95519a8b8edda36dabd65d33d0f0a382c47178a189301b1b3674",
+          "neckPivot": {
+            "x": 62,
+            "y": 48
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-east-4.png",
+          "sha256": "fe17e3d9969de3d11827d02b359e0f150b851948457d51c70436a26ff65c3cf7",
+          "neckPivot": {
+            "x": 62,
+            "y": 47
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-east-5.png",
+          "sha256": "d7d0d0611f94d84befce0ac4b887a9005d077dd3336f6aa0ae3c11bb1dcc57fa",
+          "neckPivot": {
+            "x": 63,
+            "y": 48
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-east-6.png",
+          "sha256": "c15dd6371213a3b9cf4b97c02b78e9279c92a37cab6bf3234306aa515d33fa81",
+          "neckPivot": {
+            "x": 63,
+            "y": 49
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-east-7.png",
+          "sha256": "9025943ffb617fbd192ea9504678e1915033e7a2df0872513ea738adfa2539bb",
+          "neckPivot": {
+            "x": 63,
+            "y": 49
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north",
+      "headUrl": "/assets/character-v3/head-eight-01/north.png",
+      "headSha256": "954eb387ddec4a48dcb63c037705753d1a524a6396ee03ac1d353ca624dd98d1",
+      "headPivot": {
+        "x": 64,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-0.png",
+          "sha256": "e7b474b8565cee61a94ce0236c5ddc87b326fb8affde47a61d0d443ade79c3ce",
+          "neckPivot": {
+            "x": 62,
+            "y": 46
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-1.png",
+          "sha256": "c4f564e3e5935f8ded44b8e4e26cf562ab7156961744e093f08647e08191561c",
+          "neckPivot": {
+            "x": 62,
+            "y": 48
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-2.png",
+          "sha256": "19eeabf28f97221857147912205cecc6f766f0b0b132dd1d7dd18e4a2dcaefb8",
+          "neckPivot": {
+            "x": 62,
+            "y": 47
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-3.png",
+          "sha256": "86120d4db1ce364d7a0bd95b47faf648f26b8e215b5d27032ee82090ea079dbc",
+          "neckPivot": {
+            "x": 62,
+            "y": 46
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-4.png",
+          "sha256": "3e409f202217335137410c253713c4f8ee18ad19439aac95f21efcd180a0b647",
+          "neckPivot": {
+            "x": 62,
+            "y": 46
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-5.png",
+          "sha256": "dc62331a3dc6ac56d0f846201eb8954f06afbcc38410c93ddd65a762c195e6f0",
+          "neckPivot": {
+            "x": 62,
+            "y": 48
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-6.png",
+          "sha256": "a988320eea8701f043621e6d272f930bb9daa4a47a9f11d6832602f9a95d2187",
+          "neckPivot": {
+            "x": 62,
+            "y": 47
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-7.png",
+          "sha256": "22b2549907216d33d99d0082e946d612ca4e84394d4678eb4836d6ac9abbe3c4",
+          "neckPivot": {
+            "x": 62,
+            "y": 45
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north-west",
+      "headUrl": "/assets/character-v3/head-eight-01/north-west.png",
+      "headSha256": "f7cfab464653ebb612bffee7c196ba547d7590e953a5a9c5ac725d36767e4172",
+      "headPivot": {
+        "x": 64,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-west-0.png",
+          "sha256": "8697f6239f07bd1000e76a4f863f8f658280e30b906089bb691b2662796de310",
+          "neckPivot": {
+            "x": 61,
+            "y": 49
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-west-1.png",
+          "sha256": "c9e86a10d3f577f637650deaa0362a04cfad6f19c4be81ced47ee9eb4971d22b",
+          "neckPivot": {
+            "x": 60,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-west-2.png",
+          "sha256": "b7f0c6558fbc7e10981bb120abda10479b53bb9276c91f88059006c6d85fbbae",
+          "neckPivot": {
+            "x": 60,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-west-3.png",
+          "sha256": "f30e202c037035453ac12724ce65ca1a6d6eeecc00bddd11b0faa85f2830dd98",
+          "neckPivot": {
+            "x": 62,
+            "y": 49
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-west-4.png",
+          "sha256": "95609decedb024aa7aeb2a2ce4f4cde5be69471f9c30d95c51404d5bc16bf7d1",
+          "neckPivot": {
+            "x": 63,
+            "y": 47
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-west-5.png",
+          "sha256": "b76bd1d9b9f4b175d847e47f0bbfb9e501cacdb0ebaa53a73deadd545095f625",
+          "neckPivot": {
+            "x": 63,
+            "y": 48
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-west-6.png",
+          "sha256": "7af2c2e361a0c5d68ba905e09638d50ce3301b6edf70c37bc48566e39a2075f1",
+          "neckPivot": {
+            "x": 62,
+            "y": 48
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/north-west-7.png",
+          "sha256": "406c9853a70ca790c3e92e4b78e1b37afadbbbc56697d7f11527d84d6f6bf8e1",
+          "neckPivot": {
+            "x": 61,
+            "y": 48
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "west",
+      "headUrl": "/assets/character-v3/head-eight-01/west.png",
+      "headSha256": "f72b693fd621fc79b1cd76ef6cf4828ef98d9d65f883e2abfb9d888985a808b8",
+      "headPivot": {
+        "x": 65,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/walk-eight-02/west-0.png",
+          "sha256": "13c71b5bcce13d0927f21a8b0304bcbb7549423b5aabc5c394a47fb925163524",
+          "neckPivot": {
+            "x": 65,
+            "y": 46
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/west-1.png",
+          "sha256": "1d1c1e5bc2f8c9c0e3e24ba8c529992028884112b8cefa2c6de69b74fbd6a4be",
+          "neckPivot": {
+            "x": 64,
+            "y": 47
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/west-2.png",
+          "sha256": "70e97210b4ca0cd80e797c612f845a145996abcaf9a1a3f0299658d73e4d0d2c",
+          "neckPivot": {
+            "x": 64,
+            "y": 49
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/west-3.png",
+          "sha256": "58fd3f5cb953956c5250a780a6955965826037be6763294b84577fc727578c77",
+          "neckPivot": {
+            "x": 64,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/west-4.png",
+          "sha256": "2cae5b76bc906bcf151140dcc55f5146a9beea6fd9c70d95000916195ceaff0e",
+          "neckPivot": {
+            "x": 64,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/west-5.png",
+          "sha256": "9c8d469ecd4d23280fe4b2e529c91bfad93fe7c61f3aa97b7b74e3843c2757ea",
+          "neckPivot": {
+            "x": 64,
+            "y": 49
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/west-6.png",
+          "sha256": "06d12ca857b92ac05eb2337e675456a137a7e7b776156c7d5f7a4fbe0f7f3a43",
+          "neckPivot": {
+            "x": 65,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/west-7.png",
+          "sha256": "49252169aa77c0154aa013b8d68e222e7eabdfa23b1d0b11b190799a6a756837",
+          "neckPivot": {
+            "x": 64,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        }
+      ]
+    },
+    {
+      "direction": "south-west",
+      "headUrl": "/assets/character-v3/head-eight-01/south-west.png",
+      "headSha256": "72bd0701ea25e028f807a707c33600aeb0f3dc6a6656a29ee645ec87c2d273e9",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-west-0.png",
+          "sha256": "cc73fbfdc91fa540969b442b6182fcda09c6bd28530fdabc7e4ba00c6a55b16c",
+          "neckPivot": {
+            "x": 61,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-west-1.png",
+          "sha256": "76f5f9eee96e447c74aa74b1b67dbcea5c4db1096622ff5edf17a35aab7883e8",
+          "neckPivot": {
+            "x": 60,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-west-2.png",
+          "sha256": "e19583c280ff7b19ae1a3d9aedeee94491e95da923d184cf7152850e0dfb22e6",
+          "neckPivot": {
+            "x": 60,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-west-3.png",
+          "sha256": "ca3f0f33d4e74892dfa941b51370679f4a0ad69d3bd06255667e58b6195a311d",
+          "neckPivot": {
+            "x": 61,
+            "y": 49
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-west-4.png",
+          "sha256": "1d9249f30840f38cde8d21461584f23d5fa6359cd363b7cac2493dc46ccbf852",
+          "neckPivot": {
+            "x": 60,
+            "y": 47
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-west-5.png",
+          "sha256": "b849de64537531abad47ec3f8ffc844d839b0053c5eaeb93160bec3455a81b48",
+          "neckPivot": {
+            "x": 60,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-west-6.png",
+          "sha256": "00282212f00a521fc4281d15a73fd0b53ae94ef94c686e4d8e335366c23fb2d7",
+          "neckPivot": {
+            "x": 60,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/walk-eight-02/south-west-7.png",
+          "sha256": "83af0bcba3134180911745181c93c587f9c9748bf4cd783e728fac8d9bc0f292",
+          "neckPivot": {
+            "x": 61,
+            "y": 47
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        }
+      ]
+    }
+  ],
+  "credits": {
+    "spent": 23,
+    "cap": 36
+  },
+  "sheet": {
+    "url": "/assets/character-v3/walk-eight-02/sheet.png",
+    "sha256": "07fea61cd2c086cc13e289471d466cd9015b790ce4ab4e8ab09ea5c920973c9d",
+    "frameWidth": 128,
+    "frameHeight": 128
+  },
+  "sourceFrames": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "visualApproved": false
+}

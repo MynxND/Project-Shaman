@@ -1,0 +1,1 @@
+import{json}from'./body-eight-lib.mjs';const r=await json('docs/design/ssr/hair-eight-prototypes-02/boundary-audit.json');for(const s of r)console.log(s.id,JSON.stringify(s.edge.filter(([x,y])=>x<=38||x>=90||y<=8||y>=90)));const s=await json('docs/design/ssr/hair-eight-prototypes-02/specs.json');

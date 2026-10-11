@@ -1,0 +1,26 @@
+﻿status: completed
+id: 53cee355-6395-4224-96ad-3975524fb178
+name: a single shaman shoulder shawl collar made of rows
+state_name: base
+directions: 8
+size: 64x64px
+view: low top-down
+group: 6361dee1-32db-4d21-8c74-348f31a495cf
+
+rotations:
+  east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/53cee355-6395-4224-96ad-3975524fb178/rotations/east.png
+  west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/53cee355-6395-4224-96ad-3975524fb178/rotations/west.png
+  north: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/53cee355-6395-4224-96ad-3975524fb178/rotations/north.png
+  south: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/53cee355-6395-4224-96ad-3975524fb178/rotations/south.png
+  north-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/53cee355-6395-4224-96ad-3975524fb178/rotations/north-east.png
+  north-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/53cee355-6395-4224-96ad-3975524fb178/rotations/north-west.png
+  south-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/53cee355-6395-4224-96ad-3975524fb178/rotations/south-east.png
+  south-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/53cee355-6395-4224-96ad-3975524fb178/rotations/south-west.png
+
+animations: none
+
+download: https://api.pixellab.ai/mcp/objects/53cee355-6395-4224-96ad-3975524fb178/download
+spritesheet: https://api.pixellab.ai/mcp/objects/53cee355-6395-4224-96ad-3975524fb178/spritesheet (one uniform-grid sheet PNG + layout JSON, zipped)
+
+actions: animate_object(object_id="53cee355-6395-4224-96ad-3975524fb178", ...) | create_object_state(object_id="53cee355-6395-4224-96ad-3975524fb178", ...) | delete_object(object_id="53cee355-6395-4224-96ad-3975524fb178")
+hint: animate_object(object_id="53cee355-6395-4224-96ad-3975524fb178", animation_description="...")

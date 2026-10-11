@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-09",
+  "focused": {
+    "nativeInputFrontContextMask": "passed",
+    "rawProtectedRgba": "passed",
+    "protectedPixels": 14832,
+    "protectedMismatches": 0,
+    "changedPixels": 1261,
+    "contactAndExactNearest2x": "passed",
+    "liveSchemaAndJobChargeProvenance": "passed",
+    "duplicatePreparationWithoutLedgerReset": "passed",
+    "finalBudgetAndRejectedRuntimeReview": "passed",
+    "foundationPixelRegression": "passed",
+    "sharedFoundationContractAssets": "passed"
+  },
+  "workspace": {
+    "pnpmTypecheck": "passed",
+    "pnpmBuild": "passed",
+    "touchedEditorDiagnostics": "clear"
+  },
+  "browser": {
+    "review": "review.html",
+    "viewports": [
+      { "width": 1280, "height": 900, "loadedImages": 5, "documentOverflow": false, "clippedText": false },
+      { "width": 390, "height": 844, "loadedImages": 5, "documentOverflow": false, "clippedText": false },
+      { "width": 844, "height": 390, "loadedImages": 5, "documentOverflow": false, "clippedText": false }
+    ],
+    "physicalDevices": "not-tested",
+    "savedBrowserScreenshots": [],
+    "screenshotLimitation": "Integrated browser image.decode request hung and was cancelled by reload; direct geometry/loaded-image checks then passed. Element screenshot timed out waiting for stability. No successful browser screenshot claimed.",
+    "directRasterVisualInspection": ["east/raw.png", "east/comparison-2x.png"]
+  },
+  "artVerdict": "rejected-costume-construction",
+  "productionReady": false,
+  "approved": false,
+  "newBaseAnimationClips": 0
+}

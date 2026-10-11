@@ -1,0 +1,1 @@
+{"name":"@shaman/server","version":"0.0.0","private":true,"type":"module","scripts":{"dev":"tsx watch src/index.ts","build":"tsc","start":"node dist/index.js","typecheck":"tsc --noEmit"},"dependencies":{"@shaman/shared":"workspace:*","@shaman/schema":"workspace:*","@colyseus/core":"0.18.18","@colyseus/ws-transport":"0.18.4"},"devDependencies":{"tsx":"^4.20.0"}}

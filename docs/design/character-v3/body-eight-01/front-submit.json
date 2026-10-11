@@ -1,0 +1,29 @@
+{
+    "jsonrpc":  "2.0",
+    "id":  2,
+    "result":  {
+                   "content":  [
+                                   {
+                                       "type":  "text",
+                                       "text":  "{\n  \"background_job_id\": \"2bbc90c5-2aed-4ef5-8b0a-ca104dd3ac19\",\n  \"image_id\": \"e164b556-7a68-5f31-a7ac-3e17f8cf05c9\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"e164b556-7a68-5f31-a7ac-3e17f8cf05c9\",\n  \"job_id\": \"2bbc90c5-2aed-4ef5-8b0a-ca104dd3ac19\",\n  \"image_size\": {\n    \"width\": 128,\n    \"height\": 128\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 6,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/2bbc90c5-2aed-4ef5-8b0a-ca104dd3ac19/download\"\n}\nPoll get_image(job_id=\"2bbc90c5-2aed-4ef5-8b0a-ca104dd3ac19\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+                                   }
+                               ],
+                   "structuredContent":  {
+                                             "background_job_id":  "2bbc90c5-2aed-4ef5-8b0a-ca104dd3ac19",
+                                             "image_id":  "e164b556-7a68-5f31-a7ac-3e17f8cf05c9",
+                                             "status":  "processing",
+                                             "source_image_id":  "e164b556-7a68-5f31-a7ac-3e17f8cf05c9",
+                                             "job_id":  "2bbc90c5-2aed-4ef5-8b0a-ca104dd3ac19",
+                                             "image_size":  {
+                                                                "width":  128,
+                                                                "height":  128
+                                                            },
+                                             "output_count":  1,
+                                             "estimated_generations":  6,
+                                             "pricing_provisional":  true,
+                                             "poll_tool":  "get_image",
+                                             "download_path":  "/mcp/images/2bbc90c5-2aed-4ef5-8b0a-ca104dd3ac19/download"
+                                         },
+                   "isError":  false
+               }
+}

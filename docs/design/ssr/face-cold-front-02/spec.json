@@ -1,0 +1,35 @@
+{
+  "scope": "One FRONT cold detached face candidate. Await visual approval.",
+  "styles": [
+    {
+      "id": "cold-detached",
+      "name": "เย็นชา · เบื่อโลก",
+      "description": "Emotionless detached bored expression: half-lidded narrow eyes, clearly visible small muted grey-violet irises and pale eye whites beneath low straight upper eyelids. Relaxed almost-horizontal fine brows, not angry V-shaped brows. Small flat closed mouth, no smile, no blush, no tears, no dramatic dark under-eye patches. Calm deadpan gaze, not sleepy closed eyes or sadness. Keep separate readable eyes, no black eye band and no sunglasses."
+    }
+  ],
+  "cap": 5,
+  "attempts": 1,
+  "retries": 0,
+  "source": "apps/client/public/assets/character-v3/head-eight-01/south.png",
+  "sourceHash": "1ac5ca0956848a2886484a8955e3d4d5f4206bc513c96581b55ade60bf6a4215",
+  "nativeCanvas": 128,
+  "crop": {
+    "x": 32,
+    "y": 0,
+    "width": 64,
+    "height": 64
+  },
+  "region": {
+    "x": 53,
+    "y": 31,
+    "width": 20,
+    "height": 17
+  },
+  "neck": {
+    "x": 62,
+    "y": 49
+  },
+  "contract": "Face identity separate from expression. Preserve skull/ears/neck/hair/body. Opaque replacement patch erases old eyes/brows before new face; hair remains above face. References studied as descriptions only, not generation inputs.",
+  "authorization": "User rejected patched face and explicitly authorizes new generation. Quote5, one attempt, no automatic retry.",
+  "status": "New FRONT candidate; previous version rejected"
+}

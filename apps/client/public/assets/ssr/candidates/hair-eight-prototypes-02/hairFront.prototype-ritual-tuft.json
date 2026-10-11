@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.prototype-ritual-tuft",
+  "kind": "hairFront",
+  "variant": "prototype-ritual-tuft",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "ritual-tuft-hairFront-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-02/ritual-tuft-hairFront-fixed.png",
+      "sha256": "48e207e2babf54bc6f310189c139a092ef21f658e161d26844831d9a7f0327f8",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ritual-tuft-hairFront-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-02/ritual-tuft-hairFront-ramp.png",
+      "sha256": "826e110a3c98edb469a0dff9de7c5c75e5166e520fcc1f7e374795ca15f8dc32",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ritual-tuft-hairFront-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "ritual-tuft-hairFront-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Complete silhouette FRONT repair of the existing eight owned designs; visual approval pending."
+}

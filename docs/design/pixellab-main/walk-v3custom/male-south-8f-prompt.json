@@ -1,0 +1,14 @@
+{
+  "character_id": "336280fc-8cfd-4a7f-98a3-056f78476544",
+  "mode": "v3",
+  "directions": [
+    "south"
+  ],
+  "frame_count": 8,
+  "keep_first_frame": false,
+  "animation_name": "walk-front-8",
+  "action_description": "walk cycle in place seen exactly from the front, the character walks straight toward the camera: chest, shoulders, hips and face stay perfectly square to the viewer and symmetrical in every frame, the body never rotates, the head never turns and nothing behind the back swings into view; only the legs alternate steps (contact, passing, push-off) and the arms swing gently at the sides; very small vertical bob",
+  "start_and_end_frame": "docs/design/pixellab-main/front/male-idle-straight.png",
+  "candidates": 3,
+  "selection": "lowest worst-frame score from tools/sprites/frontal_score.py"
+}

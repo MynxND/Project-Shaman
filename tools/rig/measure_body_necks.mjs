@@ -1,0 +1,1 @@
+import{readFile}from'node:fs/promises';import{dir,order,rgba}from'./body-eight-lib.mjs';for(const d of order){const p=await rgba(await readFile(dir+d+'-raw.png'));console.log(d);for(let y=46;y<53;y++){let xs=[];for(let x=30;x<90;x++)if(p[(y*128+x)*4+3])xs.push(x);if(xs.length)console.log(y,Math.min(...xs),Math.max(...xs));}}

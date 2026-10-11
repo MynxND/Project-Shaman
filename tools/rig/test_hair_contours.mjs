@@ -1,0 +1,4 @@
+import assert from'node:assert/strict';import{readFile}from'node:fs/promises';import{rgba,json,save}from'./body-eight-lib.mjs';const d='docs/design/ssr/hair-eight-prototypes-02/',m=await json(d+'manifest.json'),report=[];
+for(const s of m.styles){let b=await rgba(await readFile('apps/client/public/assets/ssr/candidates/hair-eight-prototypes-02/'+s.id+'-silver-hair.png'));const alpha=(x,y)=>b[(y*128+x)*4+3]>0;let pixels=0,canvasContact=0,run=0,maxRun=0;for(let y=0;y<128;y++)for(let x=0;x<128;x++)if(alpha(x,y)){pixels++;if(x<3||x>124||y<3||y>124)canvasContact++;}for(const y of [s.top>4?3:8,...(s.long?[]:[48])]){run=0;for(let x=38;x<=90;x++){run=alpha(x,y)?run+1:0;maxRun=Math.max(maxRun,run);}}assert.equal(canvasContact,0,s.id+' native edge contact');assert(maxRun<4,s.id+' flat generation envelope cutoff');report.push({id:s.id,pixels,canvasContact,maxBoundaryRun:maxRun});}
+await save(d+'contour-validation.json',report);console.log(report);
+

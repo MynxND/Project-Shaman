@@ -1,0 +1,475 @@
+{
+  "version": "medium-v1",
+  "source": "PixelLab",
+  "previewOnly": true,
+  "unknowns": {
+    "spCost": null,
+    "targetRangeWorld": null,
+    "ghostSightRangeWorld": null,
+    "castInterruptPolicy": null,
+    "amuletMasteryPercentBasis": null,
+    "vesselBodyPercentBasis": null,
+    "cellWorldSize": null
+  },
+  "skills": [
+    {
+      "id": "spirit-bolt",
+      "name": "Spirit Bolt",
+      "thai": "ศรวิญญาณ",
+      "kind": "active",
+      "maxLevel": 10,
+      "castMs": 1500,
+      "cooldownMs": 1000,
+      "durationMs": null,
+      "formula": "MDMG = MATK × (1.0 + Lv × 0.15); ×1.3 ต่อ Undead/Demon",
+      "target": "เป้าหมายเดี่ยว",
+      "color": "#70ede0",
+      "displayMs": 750,
+      "visual": "รวบรวมแสงที่เครื่องราง → ลูกไฟวิญญาณพุ่ง → แตกเป็นเศษวิญญาณ",
+      "behavior": "ACTIVE_CAST",
+      "effect": {
+        "image": "spirit-bolt.png",
+        "width": 96,
+        "height": 96,
+        "frames": 9,
+        "anchor": {
+          "x": 48.0,
+          "y": 48.0
+        }
+      },
+      "icon": "spirit-bolt-icon.png",
+      "seedJob": "cfad5331-5c7d-4cf7-918f-e9014e3de72c",
+      "animationJob": "91605efb-b2a9-4b5b-9982-cc37c77d8a3e"
+    },
+    {
+      "id": "soul-heal",
+      "name": "Soul Heal",
+      "thai": "เยียวยาวิญญาณ",
+      "kind": "active",
+      "maxLevel": 10,
+      "castMs": 2000,
+      "cooldownMs": 2000,
+      "durationMs": null,
+      "formula": "Heal = MATK × (1.0 + Lv × 0.2) + Max SP × 0.05",
+      "target": "เป้าหมายเดี่ยว",
+      "color": "#9fecac",
+      "displayMs": 1200,
+      "visual": "ประนมมือ → กลีบแสงรองเท้าเป้าหมาย → หยดวิญญาณลอยขึ้น",
+      "behavior": "ACTIVE_CAST",
+      "effect": {
+        "image": "soul-heal.png",
+        "width": 128,
+        "height": 128,
+        "frames": 9,
+        "anchor": {
+          "x": 64.0,
+          "y": 64.0
+        }
+      },
+      "icon": "soul-heal-icon.png",
+      "seedJob": "a710562b-3765-4931-98ec-accc9ae93603",
+      "animationJob": "e03467b8-ce5a-4663-a145-e82fbcf71e95"
+    },
+    {
+      "id": "amulet-blast",
+      "name": "Amulet Blast",
+      "thai": "ยันต์ระเบิด",
+      "kind": "active",
+      "maxLevel": 5,
+      "castMs": 1000,
+      "cooldownMs": 3000,
+      "durationMs": null,
+      "formula": "MDMG = MATK × (1.5 + Lv × 0.2)",
+      "target": "พื้นที่ 3×3 ช่องรอบเป้าหมาย",
+      "color": "#e6b35f",
+      "displayMs": 900,
+      "visual": "ปลุกยันต์ → ยันต์หมุนพุ่ง → แตกเป็นวงอาคมต่ำติดพื้น",
+      "behavior": "ACTIVE_CAST",
+      "effect": {
+        "image": "amulet-blast.png",
+        "width": 128,
+        "height": 128,
+        "frames": 9,
+        "anchor": {
+          "x": 64.0,
+          "y": 64.0
+        }
+      },
+      "icon": "amulet-blast-icon.png",
+      "seedJob": "1e440109-209e-4195-920d-36c9e7d7f5ce",
+      "animationJob": "47458168-adf0-425b-b454-924399ef3cfa"
+    },
+    {
+      "id": "ghost-sight",
+      "name": "Ghost Sight",
+      "thai": "เนตรวิญญาณ",
+      "kind": "active",
+      "maxLevel": 5,
+      "castMs": 0,
+      "cooldownMs": 30000,
+      "durationMs": 60000,
+      "formula": "MDEF = MDEF Base + 10 × Lv; เปิดเผย Cloaking/Hiding",
+      "target": "ตนเองและศัตรูในระยะตรวจจับที่ยังไม่กำหนด",
+      "color": "#b9a1f3",
+      "displayMs": 1200,
+      "visual": "ตาที่สามเปิดทันที → วงสแกนแผ่ต่ำ → สัญลักษณ์เนตรจางคงอยู่",
+      "behavior": "ACTIVE_INSTANT",
+      "effect": {
+        "image": "ghost-sight.png",
+        "width": 128,
+        "height": 128,
+        "frames": 9,
+        "anchor": {
+          "x": 64.0,
+          "y": 64.0
+        }
+      },
+      "icon": "ghost-sight-icon.png",
+      "seedJob": "e22136d2-f4a7-49fc-979e-a1e344075b88",
+      "animationJob": "e56893ad-6c6b-4084-9187-2374f7bddf6e"
+    },
+    {
+      "id": "binding-thread",
+      "name": "Binding Thread",
+      "thai": "ด้ายพันธนาการ",
+      "kind": "active",
+      "maxLevel": 5,
+      "castMs": 500,
+      "cooldownMs": 8000,
+      "durationMs": 5000,
+      "formula": "Movement Speed ลดลง 20% + Lv × 10% เป็นเวลา 5 วินาที",
+      "target": "เป้าหมายเดี่ยว",
+      "color": "#e89382",
+      "displayMs": 1000,
+      "visual": "สะบัดด้าย → ด้ายขาวแดงขดระดับข้อเท้า → ปมสว่างเต้นเบา",
+      "behavior": "ACTIVE_CAST",
+      "effect": {
+        "image": "binding-thread.png",
+        "width": 128,
+        "height": 128,
+        "frames": 9,
+        "anchor": {
+          "x": 64.0,
+          "y": 64.0
+        }
+      },
+      "icon": "binding-thread-icon.png",
+      "seedJob": "5fc44202-54b0-48f2-8ebe-553805c1373e",
+      "animationJob": "831b6fae-85c2-4f4b-b74e-992a88e8f772"
+    },
+    {
+      "id": "spirit-sense",
+      "name": "Spirit Sense",
+      "thai": "สัมผัสวิญญาณ",
+      "kind": "passive",
+      "maxLevel": 10,
+      "castMs": null,
+      "cooldownMs": null,
+      "durationMs": null,
+      "formula": "ลดดาเมจจาก Undead/Demon = 2% × Lv (สูงสุด 20%)",
+      "target": "ตนเอง เมื่อได้รับการโจมตีประเภทที่กำหนด",
+      "color": "#82c8db",
+      "displayMs": 600,
+      "visual": "โบนัสค่าสถานะ · ไม่มีท่าร่าย วงร่าย หรือ VFX",
+      "behavior": "PASSIVE_STAT",
+      "effect": null,
+      "icon": "spirit-sense-icon.png",
+      "seedJob": "9d21dfff-43c1-46d5-a68c-46e129e00ad5",
+      "animationJob": "d73387ad-825c-4e25-ba73-03d1994360b2"
+    },
+    {
+      "id": "amulet-mastery",
+      "name": "Amulet Mastery",
+      "thai": "ชำนาญเครื่องราง",
+      "kind": "passive",
+      "maxLevel": 10,
+      "castMs": null,
+      "cooldownMs": null,
+      "durationMs": null,
+      "formula": "Weapon MATK = Weapon MATK + 5 × Lv + (Lv × 1%)",
+      "target": "ตนเอง เมื่อใช้อาวุธเครื่องราง/คทาสั้น",
+      "color": "#d8b76e",
+      "displayMs": 700,
+      "visual": "โบนัสค่าสถานะ · ไม่มีท่าร่าย วงร่าย หรือ VFX",
+      "behavior": "PASSIVE_STAT",
+      "effect": null,
+      "icon": "amulet-mastery-icon.png",
+      "seedJob": "77272979-8d75-455b-bccc-c754f1b8fc79",
+      "animationJob": "590be48f-5457-4968-b21a-a99c220ba5ce"
+    },
+    {
+      "id": "meditation",
+      "name": "Meditation",
+      "thai": "สมาธิ",
+      "kind": "passive",
+      "maxLevel": 10,
+      "castMs": null,
+      "cooldownMs": null,
+      "durationMs": null,
+      "formula": "เพิ่มการฟื้น SP 3 × Lv หน่วย ทุก 10 วินาที ขณะไม่ต่อสู้",
+      "target": "ตนเอง นอกการต่อสู้",
+      "color": "#89bfda",
+      "displayMs": 1600,
+      "visual": "โบนัสค่าสถานะ · ไม่มีท่าร่าย วงร่าย หรือ VFX",
+      "behavior": "PASSIVE_STAT",
+      "effect": null,
+      "icon": "meditation-icon.png",
+      "seedJob": "08c0865e-bdc0-48f6-95a4-544992f845c1",
+      "animationJob": "35c4e202-bd78-4063-b4ce-b9ff842fc5ee"
+    },
+    {
+      "id": "vessel-body",
+      "name": "Vessel Body",
+      "thai": "ภาชนะวิญญาณ",
+      "kind": "passive",
+      "maxLevel": 5,
+      "castMs": null,
+      "cooldownMs": null,
+      "durationMs": null,
+      "formula": "Max HP = Max HP + (Lv × 3%)",
+      "target": "ตนเอง เมื่อปรับค่าสถานะ",
+      "color": "#c99586",
+      "displayMs": 900,
+      "visual": "โบนัสค่าสถานะ · ไม่มีท่าร่าย วงร่าย หรือ VFX",
+      "behavior": "PASSIVE_STAT",
+      "effect": null,
+      "icon": "vessel-body-icon.png",
+      "seedJob": "fc6b592a-512b-4696-9d5e-b0fd08c1d383",
+      "animationJob": "c3a79f55-feb0-48b9-881a-6aaab723136f"
+    },
+    {
+      "id": "soul-resonance",
+      "name": "Soul Resonance",
+      "thai": "สอดประสานวิญญาณ",
+      "kind": "passive",
+      "maxLevel": 5,
+      "castMs": null,
+      "cooldownMs": null,
+      "durationMs": null,
+      "formula": "ลด Base Cast Time 2% × Lv (สูงสุด 10%)",
+      "target": "ตนเอง ระหว่างการร่ายที่มี CT",
+      "color": "#85dbcf",
+      "displayMs": 800,
+      "visual": "โบนัสค่าสถานะ · ไม่มีท่าร่าย วงร่าย หรือ VFX",
+      "behavior": "PASSIVE_STAT",
+      "effect": null,
+      "icon": "soul-resonance-icon.png",
+      "seedJob": "298d9aea-16db-4178-9cd1-22934a17bcfc",
+      "animationJob": "f462233b-f742-4800-b0ea-478fe8bee8c2"
+    }
+  ],
+  "casts": {
+    "male": {
+      "south": {
+        "image": "cast-male-south.png",
+        "width": 184,
+        "height": 184,
+        "frames": 8,
+        "anchor": {
+          "x": 92.0,
+          "y": 176
+        },
+        "scaleRatio": 1.039301310043668,
+        "characterId": "cf7d9971-d700-4862-b1d3-863137dca224",
+        "animationGroup": "6e8bd825-cc75-4ddf-9eff-2ed38b84b938"
+      },
+      "south-east": {
+        "image": "cast-male-south-east.png",
+        "width": 184,
+        "height": 184,
+        "frames": 8,
+        "anchor": {
+          "x": 92.0,
+          "y": 176
+        },
+        "scaleRatio": 1.0218340611353711,
+        "characterId": "336280fc-8cfd-4a7f-98a3-056f78476544",
+        "animationGroup": "11c74fed-e825-48e3-98a7-fd036a6b061a"
+      },
+      "east": {
+        "image": "cast-male-east.png",
+        "width": 188,
+        "height": 188,
+        "frames": 8,
+        "anchor": {
+          "x": 94.0,
+          "y": 180
+        },
+        "scaleRatio": 1.0,
+        "characterId": "336280fc-8cfd-4a7f-98a3-056f78476544",
+        "animationGroup": "11c74fed-e825-48e3-98a7-fd036a6b061a"
+      },
+      "north-east": {
+        "image": "cast-male-north-east.png",
+        "width": 184,
+        "height": 184,
+        "frames": 8,
+        "anchor": {
+          "x": 92.0,
+          "y": 176
+        },
+        "scaleRatio": 1.017094017094017,
+        "characterId": "336280fc-8cfd-4a7f-98a3-056f78476544",
+        "animationGroup": "11c74fed-e825-48e3-98a7-fd036a6b061a"
+      },
+      "north": {
+        "image": "cast-male-north.png",
+        "width": 184,
+        "height": 184,
+        "frames": 8,
+        "anchor": {
+          "x": 92.0,
+          "y": 176
+        },
+        "scaleRatio": 1.0129870129870129,
+        "characterId": "336280fc-8cfd-4a7f-98a3-056f78476544",
+        "animationGroup": "11c74fed-e825-48e3-98a7-fd036a6b061a"
+      },
+      "north-west": {
+        "image": "cast-male-north-west.png",
+        "width": 184,
+        "height": 184,
+        "frames": 8,
+        "anchor": {
+          "x": 92.0,
+          "y": 176
+        },
+        "scaleRatio": 1.0172413793103448,
+        "characterId": "336280fc-8cfd-4a7f-98a3-056f78476544",
+        "animationGroup": "11c74fed-e825-48e3-98a7-fd036a6b061a"
+      },
+      "west": {
+        "image": "cast-male-west.png",
+        "width": 184,
+        "height": 184,
+        "frames": 8,
+        "anchor": {
+          "x": 92.0,
+          "y": 176
+        },
+        "scaleRatio": 1.017094017094017,
+        "characterId": "336280fc-8cfd-4a7f-98a3-056f78476544",
+        "animationGroup": "11c74fed-e825-48e3-98a7-fd036a6b061a"
+      },
+      "south-west": {
+        "image": "cast-male-south-west.png",
+        "width": 188,
+        "height": 188,
+        "frames": 8,
+        "anchor": {
+          "x": 94.0,
+          "y": 180
+        },
+        "scaleRatio": 1.0,
+        "characterId": "336280fc-8cfd-4a7f-98a3-056f78476544",
+        "animationGroup": "11c74fed-e825-48e3-98a7-fd036a6b061a"
+      }
+    },
+    "female": {
+      "south": {
+        "image": "cast-female-south.png",
+        "width": 184,
+        "height": 184,
+        "frames": 8,
+        "anchor": {
+          "x": 92.0,
+          "y": 176
+        },
+        "scaleRatio": 1.004255319148936,
+        "characterId": "83ea8a66-caff-4872-aeae-350e50c765f9",
+        "animationGroup": "316cf3b3-07d4-454b-bf9c-622939cf6081"
+      },
+      "south-east": {
+        "image": "cast-female-south-east.png",
+        "width": 184,
+        "height": 184,
+        "frames": 8,
+        "anchor": {
+          "x": 92.0,
+          "y": 176
+        },
+        "scaleRatio": 1.017391304347826,
+        "characterId": "5faf034e-7b29-46ce-9671-0fb4e945049e",
+        "animationGroup": "7dc202dc-1504-48ac-9efc-85565e496984"
+      },
+      "east": {
+        "image": "cast-female-east.png",
+        "width": 184,
+        "height": 184,
+        "frames": 8,
+        "anchor": {
+          "x": 92.0,
+          "y": 176
+        },
+        "scaleRatio": 1.0353982300884956,
+        "characterId": "5faf034e-7b29-46ce-9671-0fb4e945049e",
+        "animationGroup": "7dc202dc-1504-48ac-9efc-85565e496984"
+      },
+      "north-east": {
+        "image": "cast-female-north-east.png",
+        "width": 176,
+        "height": 176,
+        "frames": 8,
+        "anchor": {
+          "x": 88.0,
+          "y": 168
+        },
+        "scaleRatio": 1.0089285714285714,
+        "characterId": "5faf034e-7b29-46ce-9671-0fb4e945049e",
+        "animationGroup": "7dc202dc-1504-48ac-9efc-85565e496984"
+      },
+      "north": {
+        "image": "cast-female-north.png",
+        "width": 180,
+        "height": 180,
+        "frames": 8,
+        "anchor": {
+          "x": 90.0,
+          "y": 172
+        },
+        "scaleRatio": 1.0135746606334841,
+        "characterId": "5faf034e-7b29-46ce-9671-0fb4e945049e",
+        "animationGroup": "7dc202dc-1504-48ac-9efc-85565e496984"
+      },
+      "north-west": {
+        "image": "cast-female-north-west.png",
+        "width": 180,
+        "height": 180,
+        "frames": 8,
+        "anchor": {
+          "x": 90.0,
+          "y": 172
+        },
+        "scaleRatio": 1.0178571428571428,
+        "characterId": "5faf034e-7b29-46ce-9671-0fb4e945049e",
+        "animationGroup": "7dc202dc-1504-48ac-9efc-85565e496984"
+      },
+      "west": {
+        "image": "cast-female-west.png",
+        "width": 176,
+        "height": 176,
+        "frames": 8,
+        "anchor": {
+          "x": 88.0,
+          "y": 168
+        },
+        "scaleRatio": 1.0,
+        "characterId": "5faf034e-7b29-46ce-9671-0fb4e945049e",
+        "animationGroup": "7dc202dc-1504-48ac-9efc-85565e496984"
+      },
+      "south-west": {
+        "image": "cast-female-south-west.png",
+        "width": 184,
+        "height": 184,
+        "frames": 8,
+        "anchor": {
+          "x": 92.0,
+          "y": 176
+        },
+        "scaleRatio": 1.008695652173913,
+        "characterId": "5faf034e-7b29-46ce-9671-0fb4e945049e",
+        "animationGroup": "7dc202dc-1504-48ac-9efc-85565e496984"
+      }
+    }
+  }
+}

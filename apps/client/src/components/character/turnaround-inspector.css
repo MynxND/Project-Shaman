@@ -1,0 +1,21 @@
+.right-profile-review { border-top:1px solid #8d805b; padding-block:16px; }
+.right-review-scale { display:flex; gap:16px; border:0; padding:0; margin-block:12px; }
+.right-review-scale label { display:flex; align-items:center; gap:6px; min-height:44px; }
+.right-review-scale input { accent-color:#d6b46c; }
+.right-profile-native { grid-template-columns:repeat(auto-fit,minmax(144px,1fr)); }
+.turnaround-inspector { min-height:100dvh; background:#142c28; color:#ece3bf; font-family:Tahoma,sans-serif; padding:24px max(16px,env(safe-area-inset-right)); letter-spacing:0; }
+.turnaround-inspector > * { max-width:1120px; margin-inline:auto; }
+.turnaround-inspector h1 { font-size:24px; font-weight:500; margin-block:0 12px; }
+.turnaround-inspector h2 { font-size:15px; font-weight:500; }
+.turnaround-inspector p,.turnaround-inspector footer { font-size:13px; line-height:1.6; }
+.turnaround-inspector [role=status],.turnaround-blocked { color:#efb879; }
+.turnaround-controls { display:flex; flex-wrap:wrap; align-items:center; gap:20px; margin-block:24px; }
+.turnaround-controls label { display:flex; align-items:center; gap:8px; font-size:13px; }
+.turnaround-controls select { min-height:44px; background:#203b36; color:#ece3bf; border:1px solid #8d805b; padding:8px; }
+.turnaround-controls input { width:24px; height:24px; accent-color:#d6b46c; }
+.turnaround-inspector a { color:#d6b46c; }
+.turnaround-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(256px,1fr)); gap:12px; border-block:1px solid #8d805b; padding-block:12px; }
+.turnaround-grid section { min-width:0; text-align:center; }
+.turnaround-grid canvas { display:block; width:256px; height:256px; margin-inline:auto; image-rendering:pixelated; background-color:#203b36; background-image:linear-gradient(#39544b55 1px,transparent 1px),linear-gradient(90deg,#39544b55 1px,transparent 1px); background-size:16px 16px; }
+.turnaround-inspector footer { margin-block:16px; }
+.turnaround-inspector details { border-top:1px solid #8d805b; padding-block:16px; }

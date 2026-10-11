@@ -1,0 +1,8 @@
+{
+  "approved": false,
+  "reason": "Detached generated remnant after long-tail removal; six pixels inside the existing scalp/hidden-cloth edit mask only. Not an outfit redraw.",
+  "source": "raw/scalp-east.png",
+  "pixels": [[40,64,122,102,95,255],[40,65,125,110,105,255],[40,66,252,252,251,255],[39,66,122,102,95,255],[40,67,101,92,93,255],[39,67,90,72,68,255]],
+  "protectedOutsideMaskPixel": [35,73],
+  "action": "Clear only these six RGBA pixels in the derived body; retain raw output and original source."
+}

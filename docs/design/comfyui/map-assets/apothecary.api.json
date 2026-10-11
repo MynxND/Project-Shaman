@@ -1,0 +1,151 @@
+{
+  "1": {
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "SDXL base"
+    },
+    "inputs": {
+      "ckpt_name": "sd_xl_base_1.0.safetensors"
+    }
+  },
+  "2": {
+    "class_type": "LoraLoader",
+    "_meta": {
+      "title": "Pixel Art XL"
+    },
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "clip": [
+        "1",
+        1
+      ],
+      "lora_name": "pixel-art-xl.safetensors",
+      "strength_model": 1,
+      "strength_clip": 1
+    }
+  },
+  "3": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive apothecary"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        1
+      ],
+      "text": "pixel art, witch apothecary shop, crooked dark wooden house, shelves of glowing green potion jars at the front window, hanging herbs, dark shamanic black magic capital city, basalt and obsidian stone, weathered dark wood, bone white details, tarnished gold trim, crimson prayer banners, violet and green spirit fire glow, classic 2000s MMORPG town asset, elevated three-quarter overhead view looking down at about 45 degrees, upright front facing the viewer, top visible from above, (one single isolated game asset sprite:1.3), whole object visible, (small in frame with wide empty white margin on all sides:1.3), crisp pixel art, detailed shading, plain white background, no ground, no characters, no text"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative"
+    },
+    "inputs": {
+      "clip": [
+        "2",
+        1
+      ],
+      "text": "(multiple objects:1.4), (sprite sheet, collection, set of items:1.3), (cropped, touching the edges, filling the frame:1.3), isometric diamond, top-down floor plan, side view, flat front elevation, cinematic, perspective scenery, landscape, horizon, sky, multiple buildings, city, street, ground tiles, grass field, people, characters, text, watermark, logo, blurry, painterly, 3d render, photo, cropped, cut off, cast shadow, drop shadow, frame, border"
+    }
+  },
+  "5": {
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Canvas 1024x1024"
+    },
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "batch_size": 4
+    }
+  },
+  "6": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "2",
+        0
+      ],
+      "positive": [
+        "3",
+        0
+      ],
+      "negative": [
+        "4",
+        0
+      ],
+      "latent_image": [
+        "5",
+        0
+      ],
+      "seed": 2001,
+      "steps": 28,
+      "cfg": 6.5,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 1
+    }
+  },
+  "7": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "6",
+        0
+      ],
+      "vae": [
+        "1",
+        2
+      ]
+    }
+  },
+  "8": {
+    "class_type": "ImageScale",
+    "_meta": {
+      "title": "Pixel grid 128x128 (nearest, /8)"
+    },
+    "inputs": {
+      "image": [
+        "7",
+        0
+      ],
+      "upscale_method": "nearest-exact",
+      "width": 128,
+      "height": 128,
+      "crop": "disabled"
+    }
+  },
+  "9": {
+    "class_type": "ShamanPixelBackgroundKey",
+    "_meta": {
+      "title": "Remove background + ground shadow"
+    },
+    "inputs": {
+      "image": [
+        "8",
+        0
+      ],
+      "tolerance": 0.1,
+      "remove_ground_shadow": true,
+      "shadow_rows": 0.25
+    }
+  },
+  "10": {
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save apothecary RGBA"
+    },
+    "inputs": {
+      "images": [
+        "9",
+        0
+      ],
+      "filename_prefix": "umbral/apothecary"
+    }
+  }
+}

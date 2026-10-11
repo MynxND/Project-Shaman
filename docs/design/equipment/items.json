@@ -1,0 +1,82 @@
+{
+  "status": "proposal 2026-10-09: first modular equipment set; art and fit await user review",
+  "rules": "PixelLab create_object_pro_flash, 8 views (low top-down, the character camera), drawn at the character's native 128 px density and shown at the same 0.5 scale. Each item is a rigid layer attached to a body anchor tracked per frame (tools/equipment/build_anchors.py). No third-party references.",
+  "items": {
+    "hat-ngob": {
+      "slot": "head",
+      "size": [
+        64,
+        64
+      ],
+      "seed": 410111,
+      "prompt": "a single empty woven bamboo conical Thai farmer hat (ngob) with a dark red cloth band, wide shallow cone, natural straw and bamboo tones, the hat alone floating, nothing under the brim, front view as if worn by a person facing the viewer"
+    },
+    "hat-ritual": {
+      "slot": "head",
+      "size": [
+        64,
+        64
+      ],
+      "seed": 410102,
+      "prompt": "a single empty small ritual shaman headpiece: a weathered bronze circlet ring with a short stepped lotus-bud point at the front and two short red silk tassels at the sides, the headpiece alone floating, nothing inside the ring, front view as if worn by a person facing the viewer"
+    },
+    "collar-bronze": {
+      "slot": "body",
+      "size": [
+        64,
+        64
+      ],
+      "seed": 410201,
+      "prompt": "a single ornamental shoulder collar armour piece: a wide flat crescent mantle of overlapping antique bronze scale plates with gold edging and a round amulet at the centre, resting on the shoulders around the neck, seen as worn by a person facing the viewer, the item alone floating with an empty middle where the body would be, no neck, no torso, no head, no hair, no person",
+      "status": "superseded 2026-10-09: rigid overlays read as pasted on (user review); art kept for provenance, not shipped"
+    },
+    "collar-jade": {
+      "slot": "body",
+      "size": [
+        64,
+        64
+      ],
+      "seed": 410202,
+      "prompt": "a single shaman shoulder shawl collar made of rows of jade green beads and small carved bone plaques with a dark teal cloth lining, resting on the shoulders around the neck, seen as worn by a person facing the viewer, the item alone floating with an empty middle where the body would be, no neck, no torso, no head, no hair, no person",
+      "status": "superseded 2026-10-09: rigid overlays read as pasted on (user review); art kept for provenance, not shipped"
+    },
+    "sash-red": {
+      "slot": "waist",
+      "size": [
+        64,
+        48
+      ],
+      "seed": 410301,
+      "prompt": "a single wide dark crimson woven waist sash belt with a bronze buckle at the front and a short hanging embroidered cloth panel below it, worn around a waist, seen as worn by a person facing the viewer, the item alone floating with an empty middle where the body would be, no neck, no torso, no head, no hair, no person",
+      "status": "superseded 2026-10-09: rigid overlays read as pasted on (user review); art kept for provenance, not shipped"
+    },
+    "belt-talisman": {
+      "slot": "waist",
+      "size": [
+        64,
+        48
+      ],
+      "seed": 410302,
+      "prompt": "a single brown leather belt with three hanging wooden talisman tablets on red cords and a small cloth pouch at one hip, worn around a waist, seen as worn by a person facing the viewer, the item alone floating with an empty middle where the body would be, no neck, no torso, no head, no hair, no person",
+      "status": "superseded 2026-10-09: rigid overlays read as pasted on (user review); art kept for provenance, not shipped"
+    },
+    "staff-bell": {
+      "slot": "weapon",
+      "size": [
+        64,
+        96
+      ],
+      "seed": 410401,
+      "prompt": "a single tall carved dark wooden shaman staff with a small bronze bell and red cloth tied under its curled top, standing upright and slightly diagonal, no hand, no person, no hair, no body"
+    },
+    "staff-bone": {
+      "slot": "weapon",
+      "size": [
+        64,
+        96
+      ],
+      "seed": 410402,
+      "prompt": "a single tall ritual staff of pale bone and bronze bands topped with a small jade orb held by bronze prongs, standing upright and slightly diagonal, no hand, no person, no hair, no body"
+    }
+  }
+}

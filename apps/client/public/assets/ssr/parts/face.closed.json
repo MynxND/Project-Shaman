@@ -1,0 +1,115 @@
+{
+  "version": "ssr/1",
+  "id": "face.closed",
+  "kind": "face",
+  "variant": "closed",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": false,
+  "images": [
+    {
+      "id": "ssr/face-closed-south",
+      "url": "/assets/ssr/layers/face-closed-south.png",
+      "sha256": "6aeec13d208cc496daca6a955dd49960f0da548abe6fb0c6ae2b9c4762edce8b",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/face-closed-south-east",
+      "url": "/assets/ssr/layers/face-closed-south-east.png",
+      "sha256": "cfc3cfe8203757f3ade893ca743c8d2a948476b9b75e720bc294aa7cb676b988",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/face-closed-east",
+      "url": "/assets/ssr/layers/face-closed-east.png",
+      "sha256": "fb7b6adad7a24c85297668b7551a466661fed8e5cb20e539bc88f865ca592d00",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ssr/face-closed-south",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "1": {
+      "action": "idle",
+      "direction": "south-west",
+      "intervalMs": 1000,
+      "mirrorOf": 7
+    },
+    "2": {
+      "action": "idle",
+      "direction": "west",
+      "intervalMs": 1000,
+      "mirrorOf": 6
+    },
+    "6": {
+      "action": "idle",
+      "direction": "east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ssr/face-closed-east",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "7": {
+      "action": "idle",
+      "direction": "south-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ssr/face-closed-south-east",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 65,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "head-layers-03 pack-face-closed (face-locked inpaint test), pixels inside the face zone only · W/SW/NW mirror E/SE/NE (Ragnarok convention, user-approved 2026-10-10)"
+}

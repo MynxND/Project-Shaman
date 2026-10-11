@@ -1,0 +1,39 @@
+{
+  "version": "shaman-character-v2-front-review/1",
+  "status": "review",
+  "credibleCandidate": true,
+  "visualApproved": false,
+  "userVisualAccepted": false,
+  "candidatePublished": true,
+  "direction": "south",
+  "jobId": "23ffdbb6-a5e0-48d3-b82d-5fcebc9af2ad",
+  "imageId": "1fb97f42-4ce5-55e9-903f-a8edd56a67bc",
+  "sourcePath": "docs/design/character-v2/body-front-02/raw.png",
+  "url": "/assets/character-v2/body-front-02/raw.png",
+  "sha256": "0ed1ddf448b70a93dc5f624617e832a0af593779b6b7257d65db39b61be35958",
+  "reason": "Credible SOUTH-only visual-review proposal, not user-approved. Much larger expressive bald head and shorter softer torso/legs than rejected FRONT01; true front, plain opaque charcoal shorts, empty rounded hands and bare feet. Simplified chest shading remains a visual concern, not a claim of perfect compliance with no anatomy lines. Silhouette occupancy93 is below requested rough100-110. No hair, outfit, other views or animation delivered. No pixel repairs/transforms.",
+  "proportions": {
+    "provisional": true,
+    "scalpTopRow": 20,
+    "chinRowEstimate": 48,
+    "chinRowUncertainty": 1,
+    "headHeightEstimate": 29,
+    "headHeightRange": [28, 30],
+    "figureHeight": 93,
+    "totalHeadsApproximate": [3.1, 3.33],
+    "method": "Alpha scan establishes scalp top20 and sole112, inclusive figure height93. Manual visual inspection locates jaw/chin about row48 +/-1 (not neck); head28-30 yields93/30 to93/28. Not an automatic semantic segmentation, exact3.5 claim or user approval. No resizing/cropping/padding/stretching."
+  },
+  "landmarks": {
+    "provisional": true,
+    "bindingApproved": false,
+    "foot": { "x": 61, "y": 112 },
+    "hairRoot": { "x": 62, "y": 24 },
+    "headgear": { "x": 62, "y": 20 },
+    "mainHand": { "x": 80, "y": 78 },
+    "offHand": { "x": 43, "y": 78 },
+    "accessories": { "x": 62, "y": 70 },
+    "method": "Actual alpha lowest row112; foot x61 is rounded midpoint of BOTH feet bottom-five-row extents43..79. Other anchors manually placed on visible scalp/hands/waist, fit UNAPPROVED. Body includes head; modest undershorts remain baked base coverage, not interchangeable outfit. Hidden anatomy and all cross-view modular fits remain unverified."
+  },
+  "missing": ["east", "north", "west", "hair", "outfit", "animations"],
+  "stop": "Mandatory user visual review of this actual FRONT; separate approval required before any rotation/reference reuse. No automatic retries, rotation, hair, outfit or animation."
+}

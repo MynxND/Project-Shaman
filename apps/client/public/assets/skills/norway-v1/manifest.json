@@ -1,0 +1,637 @@
+{
+  "note": "Thailand release VFX (PixelLab). Proposals until user review.",
+  "effects": {
+    "absolute-zero-field": {
+      "revision": "absolute-zero-field-post",
+      "image": "absolute-zero-field.png",
+      "width": 96,
+      "height": 128,
+      "frames": 11,
+      "anchor": {
+        "x": 48,
+        "y": 127
+      },
+      "seedJob": "f6c0be68-d148-479b-bbf8-0937ea7d96ef",
+      "animationJob": "2aacb5de-ad1e-478c-bdeb-c9d5131d2fa9",
+      "packedAt": 1791715325103
+    },
+    "blizzard-storm": {
+      "revision": "blizzard-storm-post",
+      "image": "blizzard-storm.png",
+      "width": 224,
+      "height": 144,
+      "frames": 11,
+      "anchor": {
+        "x": 112,
+        "y": 72
+      },
+      "seedJob": "1d248be9-f8ec-4020-a52c-f7462f263c07",
+      "animationJob": "58dfc40f-d292-4986-b2a5-5bbc82a3f52e",
+      "packedAt": 1791715325574
+    },
+    "charged-rune-arrow": {
+      "revision": "charged-rune-arrow-post",
+      "image": "charged-rune-arrow.png",
+      "width": 128,
+      "height": 96,
+      "frames": 11,
+      "anchor": {
+        "x": 64,
+        "y": 46
+      },
+      "seedJob": "8582a031-0100-4042-857e-d6f1bbb15eb5",
+      "animationJob": "e4baf043-6753-4c94-96a6-8a150b5ef9cc",
+      "packedAt": 1791715326032
+    },
+    "frost-bolt": {
+      "revision": "frost-bolt-post",
+      "image": "frost-bolt.png",
+      "width": 96,
+      "height": 48,
+      "frames": 7,
+      "anchor": {
+        "x": 48,
+        "y": 24
+      },
+      "seedJob": "1d204385-e946-4229-b314-24187c95b88e",
+      "animationJob": "9bf2ef0b-2969-4129-8d79-5bba0fdcc702",
+      "packedAt": 1791715326459
+    },
+    "great-hunt": {
+      "revision": "great-hunt-post",
+      "image": "great-hunt.png",
+      "width": 192,
+      "height": 128,
+      "frames": 11,
+      "anchor": {
+        "x": 96,
+        "y": 62
+      },
+      "seedJob": "268b42a5-c77f-4101-9d5d-3bc8230ce4fa",
+      "animationJob": "4a5841b6-825f-406b-815b-4bfbea254594",
+      "packedAt": 1791715326915
+    },
+    "ice-wall": {
+      "revision": "ice-wall-post",
+      "image": "ice-wall.png",
+      "width": 192,
+      "height": 96,
+      "frames": 11,
+      "anchor": {
+        "x": 96,
+        "y": 52
+      },
+      "seedJob": "f9b15f4e-5ed9-4a0a-bc70-fad1b67347b0",
+      "animationJob": "5f7c71c2-ce5c-4a86-b80f-e2894a6ca375",
+      "packedAt": 1791715327363
+    },
+    "kit-rune-arrow": {
+      "revision": "kit-rune-arrow-post",
+      "image": "kit-rune-arrow.png",
+      "width": 96,
+      "height": 32,
+      "frames": 7,
+      "anchor": {
+        "x": 48,
+        "y": 16
+      },
+      "seedJob": "9afe480f-e31b-4e23-9e13-ca3dc900168d",
+      "animationJob": "fb035254-ff94-4c27-8c8e-6b0792a2fb47",
+      "packedAt": 1791715329312
+    },
+    "kit-snow-burst": {
+      "revision": "kit-snow-burst-post",
+      "image": "kit-snow-burst.png",
+      "width": 128,
+      "height": 96,
+      "frames": 9,
+      "anchor": {
+        "x": 64,
+        "y": 47
+      },
+      "seedJob": "40c2b2fc-7733-4d17-a481-5d37de4ee2fe",
+      "animationJob": "a8ab1626-d361-46eb-961b-6d166e85856d",
+      "packedAt": 1791715329724
+    },
+    "kit-trap-base": {
+      "revision": "kit-trap-base-post",
+      "image": "kit-trap-base.png",
+      "width": 64,
+      "height": 64,
+      "frames": 9,
+      "anchor": {
+        "x": 32,
+        "y": 32
+      },
+      "seedJob": "b33489f4-fa06-446d-99e3-b013222e0fb7",
+      "animationJob": "85cb5c59-f96e-4645-816e-558357c3c52c",
+      "packedAt": 1791715330974
+    },
+    "prophecy": {
+      "revision": "prophecy-post",
+      "image": "prophecy.png",
+      "width": 128,
+      "height": 128,
+      "frames": 11,
+      "anchor": {
+        "x": 64,
+        "y": 63
+      },
+      "seedJob": "ff978ba4-31c2-456e-90e0-58646ce13e69",
+      "animationJob": "6c808339-2777-44ae-b404-337ad7153505",
+      "packedAt": 1791715331469
+    },
+    "rune-trap": {
+      "revision": "rune-trap-post",
+      "image": "rune-trap.png",
+      "width": 96,
+      "height": 128,
+      "frames": 9,
+      "anchor": {
+        "x": 48,
+        "y": 121
+      },
+      "seedJob": "1a735d62-be87-4def-b701-44d9c7421f16",
+      "animationJob": "0645d7d8-8927-4ea4-b353-322d280f8f51",
+      "packedAt": 1791715332030
+    },
+    "shatter-rune": {
+      "revision": "shatter-rune-post",
+      "image": "shatter-rune.png",
+      "width": 128,
+      "height": 128,
+      "frames": 11,
+      "anchor": {
+        "x": 64,
+        "y": 64
+      },
+      "seedJob": "88d447ac-7366-42ec-ae0f-6f9d57909197",
+      "animationJob": "98a5b5e5-ef79-43f8-8f62-99efc441ce1a",
+      "packedAt": 1791715332494
+    },
+    "trap-blast": {
+      "revision": "trap-blast-post",
+      "image": "trap-blast.png",
+      "width": 96,
+      "height": 96,
+      "frames": 9,
+      "anchor": {
+        "x": 48,
+        "y": 48
+      },
+      "seedJob": "ec46a260-2de4-4fc3-8f41-0a87656a5f54",
+      "animationJob": "545c8bdf-3291-4ca4-96ea-81d133ce9443",
+      "packedAt": 1791715332915
+    },
+    "trap-flash": {
+      "revision": "trap-flash-post",
+      "image": "trap-flash.png",
+      "width": 96,
+      "height": 96,
+      "frames": 9,
+      "anchor": {
+        "x": 48,
+        "y": 48
+      },
+      "seedJob": "42f78b78-6ecc-4994-90d5-f43f927124e0",
+      "animationJob": "e31bb53a-d96c-4220-8d3d-d7907945d7c9",
+      "packedAt": 1791715333334
+    },
+    "trap-snare": {
+      "revision": "trap-snare-post",
+      "image": "trap-snare.png",
+      "width": 96,
+      "height": 64,
+      "frames": 9,
+      "anchor": {
+        "x": 48,
+        "y": 32
+      },
+      "seedJob": "8df840f0-9bd5-4f77-a8f1-0dd13445c86d",
+      "animationJob": "a193ef67-7344-4c67-a5d2-c573c4138940",
+      "packedAt": 1791715333736
+    },
+    "no-cast-circle": {
+      "revision": "no-cast-circle-post",
+      "image": "no-cast-circle.png",
+      "width": 192,
+      "height": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 96,
+        "y": 92
+      },
+      "seedJob": "6604299c-95b6-4465-a83c-92956c19c9b4",
+      "animationJob": "",
+      "packedAt": 1791715334042
+    },
+    "rune-dagaz": {
+      "revision": "rune-dagaz-post",
+      "image": "rune-dagaz.png",
+      "width": 24,
+      "height": 32,
+      "frames": 1,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "seedJob": "code-drawn (Segoe UI Historic, Unicode Runic block)",
+      "animationJob": "",
+      "packedAt": 1791715334955
+    },
+    "rune-hagalaz": {
+      "revision": "rune-hagalaz-post",
+      "image": "rune-hagalaz.png",
+      "width": 24,
+      "height": 32,
+      "frames": 1,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "seedJob": "code-drawn (Segoe UI Historic, Unicode Runic block)",
+      "animationJob": "",
+      "packedAt": 1791715334302
+    },
+    "rune-isa": {
+      "revision": "rune-isa-post",
+      "image": "rune-isa.png",
+      "width": 24,
+      "height": 32,
+      "frames": 1,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "seedJob": "code-drawn (Segoe UI Historic, Unicode Runic block)",
+      "animationJob": "",
+      "packedAt": 1791715334175
+    },
+    "rune-kenaz": {
+      "revision": "rune-kenaz-post",
+      "image": "rune-kenaz.png",
+      "width": 24,
+      "height": 32,
+      "frames": 1,
+      "anchor": {
+        "x": 12,
+        "y": 17
+      },
+      "seedJob": "code-drawn (Segoe UI Historic, Unicode Runic block)",
+      "animationJob": "",
+      "packedAt": 1791715334565
+    },
+    "rune-naudiz": {
+      "revision": "rune-naudiz-post",
+      "image": "rune-naudiz.png",
+      "width": 24,
+      "height": 32,
+      "frames": 1,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "seedJob": "code-drawn (Segoe UI Historic, Unicode Runic block)",
+      "animationJob": "",
+      "packedAt": 1791715334694
+    },
+    "rune-perthro": {
+      "revision": "rune-perthro-post",
+      "image": "rune-perthro.png",
+      "width": 24,
+      "height": 32,
+      "frames": 1,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "seedJob": "code-drawn (Segoe UI Historic, Unicode Runic block)",
+      "animationJob": "",
+      "packedAt": 1791715334434
+    },
+    "rune-raidho": {
+      "revision": "rune-raidho-post",
+      "image": "rune-raidho.png",
+      "width": 24,
+      "height": 32,
+      "frames": 1,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "seedJob": "code-drawn (Segoe UI Historic, Unicode Runic block)",
+      "animationJob": "",
+      "packedAt": 1791715335224
+    },
+    "rune-thurisaz": {
+      "revision": "rune-thurisaz-post",
+      "image": "rune-thurisaz.png",
+      "width": 24,
+      "height": 32,
+      "frames": 1,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "seedJob": "code-drawn (Segoe UI Historic, Unicode Runic block)",
+      "animationJob": "",
+      "packedAt": 1791715334819
+    },
+    "rune-uruz": {
+      "revision": "rune-uruz-post",
+      "image": "rune-uruz.png",
+      "width": 24,
+      "height": 32,
+      "frames": 1,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "seedJob": "code-drawn (Segoe UI Historic, Unicode Runic block)",
+      "animationJob": "",
+      "packedAt": 1791715335085
+    },
+    "kit-falcon": {
+      "revision": "kit-falcon-post",
+      "image": "kit-falcon.png",
+      "width": 128,
+      "height": 128,
+      "frames": 11,
+      "anchor": {
+        "x": 64,
+        "y": 64
+      },
+      "seedJob": "f98a7ea1-2961-4b26-ba7e-53716df37f03",
+      "animationJob": "91fa75cf-f990-450e-b0d0-7cea669680f8",
+      "packedAt": 1791715328922
+    },
+    "kit-bone-falcon-dive": {
+      "revision": "kit-bone-falcon-dive-post",
+      "image": "kit-bone-falcon-dive.png",
+      "width": 128,
+      "height": 128,
+      "frames": 17,
+      "anchor": {
+        "x": 64,
+        "y": 64
+      },
+      "seedJob": "4ddacab3-e8d8-4734-983d-e5443e720821",
+      "animationJob": "0a8457c6-817f-4031-bc5f-7977d7e65ac2",
+      "packedAt": 1791715327946
+    },
+    "kit-bone-falcon": {
+      "revision": "kit-bone-falcon-post",
+      "image": "kit-bone-falcon.png",
+      "width": 128,
+      "height": 128,
+      "frames": 17,
+      "anchor": {
+        "x": 64,
+        "y": 64
+      },
+      "seedJob": "4ddacab3-e8d8-4734-983d-e5443e720821",
+      "animationJob": "6b6d833c-05e0-4a8e-8b83-6b5f13364f32",
+      "packedAt": 1791715328486
+    },
+    "kit-spirit-arrow": {
+      "revision": "kit-spirit-arrow-post",
+      "image": "kit-spirit-arrow.png",
+      "width": 96,
+      "height": 32,
+      "frames": 7,
+      "anchor": {
+        "x": 48,
+        "y": 15
+      },
+      "seedJob": "e7d8ba58-022c-44ca-9359-de1d3386db1e",
+      "animationJob": "1100e4a6-f6fc-4592-aec1-3a2f56793714",
+      "packedAt": 1791715330095
+    },
+    "kit-spirit-impact": {
+      "revision": "kit-spirit-impact-post",
+      "image": "kit-spirit-impact.png",
+      "width": 128,
+      "height": 128,
+      "frames": 13,
+      "anchor": {
+        "x": 64,
+        "y": 64
+      },
+      "seedJob": "bebd8adc-6b64-4db9-9553-0d3a06500c30",
+      "animationJob": "a2ceabd1-2fd2-4f3d-a841-3d703d9b28f7",
+      "packedAt": 1791715330580
+    }
+  },
+  "icons": {
+    "twin-shot": {
+      "image": "icons/twin-shot.png",
+      "sheet": "icons-ullr-hunter-sheet",
+      "cell": 0,
+      "seedJob": "67172c15-be55-4959-a26c-497ffd023a18",
+      "packedAt": 1791715335335
+    },
+    "falcon-strike": {
+      "image": "icons/falcon-strike.png",
+      "sheet": "icons-ullr-hunter-sheet",
+      "cell": 1,
+      "seedJob": "67172c15-be55-4959-a26c-497ffd023a18",
+      "packedAt": 1791715335338
+    },
+    "ski-dash": {
+      "image": "icons/ski-dash.png",
+      "sheet": "icons-ullr-hunter-sheet",
+      "cell": 2,
+      "seedJob": "67172c15-be55-4959-a26c-497ffd023a18",
+      "packedAt": 1791715335340
+    },
+    "rune-trap-kit": {
+      "image": "icons/rune-trap-kit.png",
+      "sheet": "icons-ullr-hunter-sheet",
+      "cell": 3,
+      "seedJob": "67172c15-be55-4959-a26c-497ffd023a18",
+      "packedAt": 1791715335343
+    },
+    "charged-rune-arrow": {
+      "image": "icons/charged-rune-arrow.png",
+      "sheet": "icons-ullr-hunter-sheet",
+      "cell": 4,
+      "seedJob": "67172c15-be55-4959-a26c-497ffd023a18",
+      "packedAt": 1791715335345
+    },
+    "bow-mastery": {
+      "image": "icons/bow-mastery.png",
+      "sheet": "icons-ullr-hunter-sheet",
+      "cell": 5,
+      "seedJob": "67172c15-be55-4959-a26c-497ffd023a18",
+      "packedAt": 1791715335347
+    },
+    "falcon-bond": {
+      "image": "icons/falcon-bond.png",
+      "sheet": "icons-ullr-hunter-sheet",
+      "cell": 6,
+      "seedJob": "67172c15-be55-4959-a26c-497ffd023a18",
+      "packedAt": 1791715335350
+    },
+    "trappers-craft": {
+      "image": "icons/trappers-craft.png",
+      "sheet": "icons-ullr-hunter-sheet",
+      "cell": 7,
+      "seedJob": "67172c15-be55-4959-a26c-497ffd023a18",
+      "packedAt": 1791715335353
+    },
+    "trackers-eye": {
+      "image": "icons/trackers-eye.png",
+      "sheet": "icons-ullr-hunter-sheet",
+      "cell": 8,
+      "seedJob": "67172c15-be55-4959-a26c-497ffd023a18",
+      "packedAt": 1791715335356
+    },
+    "hunters-stride": {
+      "image": "icons/hunters-stride.png",
+      "sheet": "icons-ullr-hunter-sheet",
+      "cell": 9,
+      "seedJob": "67172c15-be55-4959-a26c-497ffd023a18",
+      "packedAt": 1791715335360
+    },
+    "ullrs-volley": {
+      "image": "icons/ullrs-volley.png",
+      "sheet": "icons-ullr-hunter-sheet",
+      "cell": 10,
+      "seedJob": "67172c15-be55-4959-a26c-497ffd023a18",
+      "packedAt": 1791715335362
+    },
+    "great-hunt": {
+      "image": "icons/great-hunt.png",
+      "sheet": "icons-ullr-hunter-sheet",
+      "cell": 11,
+      "seedJob": "67172c15-be55-4959-a26c-497ffd023a18",
+      "packedAt": 1791715335364
+    },
+    "falcon-storm": {
+      "image": "icons/falcon-storm.png",
+      "sheet": "icons-ullr-hunter-sheet",
+      "cell": 12,
+      "seedJob": "67172c15-be55-4959-a26c-497ffd023a18",
+      "packedAt": 1791715335367
+    },
+    "rune-arrow-mastery": {
+      "image": "icons/rune-arrow-mastery.png",
+      "sheet": "icons-ullr-hunter-sheet",
+      "cell": 13,
+      "seedJob": "67172c15-be55-4959-a26c-497ffd023a18",
+      "packedAt": 1791715335370
+    },
+    "hunters-patience": {
+      "image": "icons/hunters-patience.png",
+      "sheet": "icons-ullr-hunter-sheet",
+      "cell": 14,
+      "seedJob": "67172c15-be55-4959-a26c-497ffd023a18",
+      "packedAt": 1791715335374
+    },
+    "blizzard-storm": {
+      "image": "icons/blizzard-storm.png",
+      "sheet": "icons-rune-seer-sheet",
+      "cell": 0,
+      "seedJob": "a70dbbb3-e942-4518-9fb6-1ae15378e1e3",
+      "packedAt": 1791715335491
+    },
+    "rune-trap": {
+      "image": "icons/rune-trap.png",
+      "sheet": "icons-rune-seer-sheet",
+      "cell": 1,
+      "seedJob": "a70dbbb3-e942-4518-9fb6-1ae15378e1e3",
+      "packedAt": 1791715335494
+    },
+    "prophecy": {
+      "image": "icons/prophecy.png",
+      "sheet": "icons-rune-seer-sheet",
+      "cell": 2,
+      "seedJob": "a70dbbb3-e942-4518-9fb6-1ae15378e1e3",
+      "packedAt": 1791715335497
+    },
+    "frost-bolt": {
+      "image": "icons/frost-bolt.png",
+      "sheet": "icons-rune-seer-sheet",
+      "cell": 3,
+      "seedJob": "a70dbbb3-e942-4518-9fb6-1ae15378e1e3",
+      "packedAt": 1791715335499
+    },
+    "ice-wall": {
+      "image": "icons/ice-wall.png",
+      "sheet": "icons-rune-seer-sheet",
+      "cell": 4,
+      "seedJob": "a70dbbb3-e942-4518-9fb6-1ae15378e1e3",
+      "packedAt": 1791715335502
+    },
+    "frost-mastery": {
+      "image": "icons/frost-mastery.png",
+      "sheet": "icons-rune-seer-sheet",
+      "cell": 5,
+      "seedJob": "a70dbbb3-e942-4518-9fb6-1ae15378e1e3",
+      "packedAt": 1791715335504
+    },
+    "rune-reading": {
+      "image": "icons/rune-reading.png",
+      "sheet": "icons-rune-seer-sheet",
+      "cell": 6,
+      "seedJob": "a70dbbb3-e942-4518-9fb6-1ae15378e1e3",
+      "packedAt": 1791715335507
+    },
+    "chilling-aura": {
+      "image": "icons/chilling-aura.png",
+      "sheet": "icons-rune-seer-sheet",
+      "cell": 7,
+      "seedJob": "a70dbbb3-e942-4518-9fb6-1ae15378e1e3",
+      "packedAt": 1791715335510
+    },
+    "winters-grasp": {
+      "image": "icons/winters-grasp.png",
+      "sheet": "icons-rune-seer-sheet",
+      "cell": 8,
+      "seedJob": "a70dbbb3-e942-4518-9fb6-1ae15378e1e3",
+      "packedAt": 1791715335513
+    },
+    "cold-blood": {
+      "image": "icons/cold-blood.png",
+      "sheet": "icons-rune-seer-sheet",
+      "cell": 9,
+      "seedJob": "a70dbbb3-e942-4518-9fb6-1ae15378e1e3",
+      "packedAt": 1791715335516
+    },
+    "fimbulwinter": {
+      "image": "icons/fimbulwinter.png",
+      "sheet": "icons-rune-seer-sheet",
+      "cell": 10,
+      "seedJob": "a70dbbb3-e942-4518-9fb6-1ae15378e1e3",
+      "packedAt": 1791715335520
+    },
+    "absolute-zero-field": {
+      "image": "icons/absolute-zero-field.png",
+      "sheet": "icons-rune-seer-sheet",
+      "cell": 11,
+      "seedJob": "a70dbbb3-e942-4518-9fb6-1ae15378e1e3",
+      "packedAt": 1791715335522
+    },
+    "shatter-rune": {
+      "image": "icons/shatter-rune.png",
+      "sheet": "icons-rune-seer-sheet",
+      "cell": 12,
+      "seedJob": "a70dbbb3-e942-4518-9fb6-1ae15378e1e3",
+      "packedAt": 1791715335526
+    },
+    "rune-mastery": {
+      "image": "icons/rune-mastery.png",
+      "sheet": "icons-rune-seer-sheet",
+      "cell": 13,
+      "seedJob": "a70dbbb3-e942-4518-9fb6-1ae15378e1e3",
+      "packedAt": 1791715335530
+    },
+    "frost-penetration": {
+      "image": "icons/frost-penetration.png",
+      "sheet": "icons-rune-seer-sheet",
+      "cell": 14,
+      "seedJob": "a70dbbb3-e942-4518-9fb6-1ae15378e1e3",
+      "packedAt": 1791715335534
+    }
+  }
+}

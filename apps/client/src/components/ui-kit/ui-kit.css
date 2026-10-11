@@ -1,0 +1,206 @@
+/* Sacred Talisman UI kit (docs/design/ui-system.md). Frames are PixelLab pieces drawn as 9-slices at an integer
+   pixel scale (--sk-px) so every border shares one pixel density; interiors are flat CSS colours per variant. */
+:root {
+  --sk-wood: #25201d;
+  --sk-parchment: #e4d3ab;
+  --sk-parchment-dim: #cdb88c;
+  --sk-bronze: #b58a45;
+  --sk-jade: #5f9d8b;
+  --sk-crimson: #9d493d;
+  --sk-ink: #49372d;
+  --sk-ink-soft: #6b5544;
+  --sk-shadow: #120f0d;
+  /* One pixel scale for every frame: 1x by default, 2x only on very large screens. */
+  --sk-px: 1px;
+  --sk-gap: 8px;
+  --sk-font: var(--font-noto-thai), 'Noto Sans Thai', Tahoma, 'Leelawadee UI', sans-serif;
+  /* Thai headings: ornamental display face, Noto as fallback for missing glyphs. */
+  --sk-font-display: var(--font-torsilp), var(--font-noto-thai), Tahoma, serif;
+  --sk-rarity-common: #8a7a63;
+  --sk-rarity-uncommon: #5f9d8b;
+  --sk-rarity-rare: #6d7fc4;
+  --sk-rarity-legendary: #c08a3e;
+}
+@media (min-width: 1800px) and (min-height: 1000px) { :root { --sk-px: 2px; } }
+@media (max-width: 700px), (max-height: 520px) { :root { --sk-gap: 6px; } }
+
+.sk-pixel { image-rendering: pixelated; }
+
+/* Window (kit v2): carved teak frame from PixelLab (docs/design/ui/kit-v2.json), 9-slice source window-9s.png built by
+   tools/ui/build_kit_v2.py. Slices 80/35/41/34: the deep top slice keeps the corner talisman cloth and finials whole.
+   The layout border is the band's inner edge (tucked under the band); the image is drawn deeper than the border, so
+   cloth and finials hang over the outer margin. Chrome needs a non-zero border-width to paint a border-image. */
+.sk-window {
+  position: relative; color: var(--sk-ink); font-family: var(--sk-font);
+  border-style: solid;
+  border-width: calc(36 * var(--sk-px)) calc(33 * var(--sk-px)) calc(39 * var(--sk-px)) calc(31 * var(--sk-px));
+  border-image-source: url('/assets/ui/v2/frame/window-9s.png');
+  border-image-slice: 80 35 41 34;
+  border-image-width: calc(80 * var(--sk-px)) calc(35 * var(--sk-px)) calc(41 * var(--sk-px)) calc(34 * var(--sk-px));
+  border-image-repeat: round;
+  image-rendering: pixelated;
+  background: #e4d3ab; background-clip: padding-box;
+  box-shadow: inset 0 0 0 1px #3a281d, inset 0 12px 14px -10px #0007;
+  padding: 4px 6px 6px;
+  filter: drop-shadow(0 8px 18px #0009);
+}
+/* Bronze medallion hanging from the top band on its thread (cut from the same frame art). */
+.sk-window::before {
+  content: ''; position: absolute; left: 50%; top: calc(-2 * var(--sk-px)); transform: translateX(-50%); z-index: 1; pointer-events: none;
+  width: calc(25 * var(--sk-px)); height: calc(31 * var(--sk-px));
+  background: url('/assets/ui/v2/ornament/medallion.png') center / 100% 100% no-repeat; image-rendering: pixelated;
+}
+@media (max-width: 700px) { .sk-window::before { display: none; } }
+.sk-window-head { display: flex; align-items: center; gap: var(--sk-gap); margin-bottom: 4px; flex-wrap: wrap; }
+.sk-window-actions { display: flex; gap: var(--sk-gap); align-items: center; flex-wrap: wrap; }
+/* Narrow windows: counters drop to their own row so the close button stays on the title row. */
+@media (max-width: 700px) { .sk-window-actions { order: 3; flex-basis: 100%; } }
+.sk-title { display: flex; flex-direction: column; line-height: 1.1; padding-right: 8px; }
+.sk-title b { font: 400 30px/1.1 var(--sk-font-display); color: var(--sk-ink); }
+@media (max-width: 700px) { .sk-title b { font-size: 24px; } }
+.sk-title small { font-size: 12px; color: var(--sk-ink-soft); letter-spacing: .5px; }
+.sk-head-spacer { flex: 1; }
+
+/* Frame pieces sharing the 10 px bronze corner. */
+.sk-frame-10 {
+  border-style: solid; border-width: calc(10 * var(--sk-px));
+  border-image-slice: 10; border-image-width: calc(10 * var(--sk-px)); border-image-repeat: stretch;
+  image-rendering: pixelated;
+}
+.sk-button {
+  min-height: 40px; padding: 2px 10px; display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  font: 600 14px var(--sk-font); color: var(--sk-ink); background: var(--sk-parchment); background-clip: padding-box;
+  cursor: pointer; user-select: none; white-space: nowrap;
+}
+.sk-button:hover:not(:disabled) { background-color: #efe0bb; }
+.sk-button:active:not(:disabled) { transform: translateY(1px); }
+.sk-button[data-variant="primary"] { background-color: var(--sk-bronze); color: var(--sk-wood); }
+.sk-button[data-variant="primary"]:hover:not(:disabled) { background-color: #c79a52; }
+.sk-button[data-variant="danger"] { background-color: var(--sk-crimson); color: #f4e4d0; }
+.sk-button[data-variant="danger"]:hover:not(:disabled) { background-color: #b25547; }
+.sk-button:disabled { background-color: #9c917c; color: #5c5244; cursor: not-allowed; filter: grayscale(.6); }
+.sk-button:focus-visible, .sk-tab:focus-visible, .sk-slot:focus-visible, .sk-field:focus-within { outline: 2px solid var(--sk-jade); outline-offset: 2px; }
+
+.sk-icon-button { width: 40px; height: 40px; padding: 0; background: var(--sk-parchment); background-clip: padding-box; display: grid; place-items: center; color: var(--sk-ink); font-size: 16px; cursor: pointer; }
+.sk-icon-button[aria-pressed="true"] { background-color: var(--sk-bronze); }
+.sk-icon-button[data-variant="danger"] { background-color: var(--sk-crimson); color: #f4e4d0; }
+
+/* Tabs */
+.sk-tabs { display: flex; flex-direction: column; gap: 6px; }
+.sk-tab {
+  display: grid; grid-template-columns: 28px 1fr; align-items: center; gap: 6px; text-align: left;
+  min-height: 46px; padding: 0 6px; background: var(--sk-parchment-dim); background-clip: padding-box; color: var(--sk-ink); cursor: pointer;
+}
+.sk-tab b { font-size: 14px; display: block; }
+.sk-tab small { font-size: 11px; color: var(--sk-ink-soft); display: block; }
+.sk-tab[aria-selected="true"] { background-color: var(--sk-bronze); }
+.sk-tab[aria-selected="true"] small { color: var(--sk-ink); }
+.sk-tab-icon { width: 28px; height: 28px; display: grid; place-items: center; font-size: 18px; }
+
+/* Fields */
+.sk-field { display: flex; align-items: center; gap: 6px; background: #f1e5c6; background-clip: padding-box; min-height: 40px; padding: 0 6px; }
+.sk-field input, .sk-field select { all: unset; flex: 1; min-width: 0; font: 14px var(--sk-font); color: var(--sk-ink); }
+.sk-field input::placeholder { color: var(--sk-ink-soft); }
+.sk-field select { cursor: pointer; }
+.sk-field select option { color: var(--sk-ink); background: var(--sk-parchment); }
+
+/* Item slot (kit v2): calm parchment tile with a faint yantra (v2/frame/slot-plain.png, 24 px at 2x = 48 px) so the
+   item reads first; the ornate carved slot hid the items (user feedback 2026-10-09). Item icons stay 32 px at 1x. */
+.sk-slot {
+  border: 0; border-image: none; appearance: none;
+  position: relative; width: 48px; height: 48px; flex: 0 0 auto; padding: 0; display: grid; place-items: center;
+  background: url('/assets/ui/v2/frame/slot-plain.png') center / 48px 48px no-repeat; image-rendering: pixelated; cursor: pointer;
+  box-shadow: 0 0 0 1px #5a4130;
+}
+.sk-slot img { width: 32px; height: 32px; object-fit: contain; image-rendering: pixelated; }
+.sk-slot[data-empty="true"] { cursor: default; filter: brightness(.92); }
+.sk-slot:hover:not([data-empty="true"]) { filter: brightness(1.12); }
+.sk-slot[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--sk-bronze), 0 0 8px 1px #e9c47a; }
+.sk-slot-qty { position: absolute; right: 3px; bottom: 1px; font: 700 12px var(--sk-font); color: #fff7e4; text-shadow: 1px 1px 0 var(--sk-shadow), -1px 1px 0 var(--sk-shadow), 1px -1px 0 var(--sk-shadow), -1px -1px 0 var(--sk-shadow); }
+.sk-slot-rarity { position: absolute; left: 3px; top: 3px; width: 6px; height: 6px; background: var(--rarity); box-shadow: 0 0 0 1px var(--sk-shadow); }
+
+/* Panels (tooltip / detail): bar piece is too thin, so reuse the slot corners on a larger plate. */
+.sk-panel { background: #ead9b1; background-clip: padding-box; padding: 4px 6px; color: var(--sk-ink); font: 13px/1.5 var(--sk-font); }
+.sk-panel h4 { margin: 0; font: 400 21px/1.3 var(--sk-font-display); }
+.sk-panel h4 small { font: 400 12px var(--sk-font); }
+.sk-panel .sk-muted { color: var(--sk-ink-soft); font-size: 12px; }
+.sk-panel hr { border: 0; border-top: 1px dashed #a58f6a; margin: 6px 0; }
+.sk-stat-row { display: flex; justify-content: space-between; gap: 8px; font-variant-numeric: tabular-nums; }
+.sk-up { color: #2f7d63; font-weight: 700; }
+.sk-down { color: var(--sk-crimson); font-weight: 700; }
+
+/* Currency and capacity chips */
+.sk-chip { white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; background: #31291f; background-clip: padding-box; color: var(--sk-parchment); font: 600 14px var(--sk-font); min-height: 36px; padding: 0 8px; font-variant-numeric: tabular-nums; }
+.sk-chip[data-warn="true"] { color: #ffb4a4; }
+
+/* Progress bar: 145x28 piece. */
+/* Height leaves room inside the 10 px frame for the fill and the value text. */
+.sk-bar { position: relative; height: calc(20 * var(--sk-px) + 14px); background: #2b231d; background-clip: padding-box; overflow: hidden; }
+.sk-bar > span { position: absolute; inset: 0 auto 0 0; background: var(--bar-color, var(--sk-jade)); }
+.sk-bar > em { position: relative; font: 700 11px var(--sk-font); font-style: normal; color: #fff7e4; display: grid; place-items: center; height: 100%; text-shadow: 1px 1px 0 var(--sk-shadow); }
+
+.sk-sample-badge { font: 12px var(--sk-font); color: var(--sk-crimson); border: 1px dashed var(--sk-crimson); padding: 2px 6px; background: #f3e4c4; }
+
+/* Number field: label, value, unit. */
+.sk-field-label { font-size: 12px; color: var(--sk-ink-soft); white-space: nowrap; }
+.sk-field input[inputmode="numeric"] { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+.sk-field-unit { font-size: 12px; color: var(--sk-ink-soft); }
+.sk-field[data-invalid="true"] { background-color: #f3d6cc; }
+.sk-field[data-disabled="true"] { background-color: #d9caa6; opacity: .7; }
+
+/* Centre-screen windows (inventory, character, market, chronicle) are centred in the area BELOW the HUD menu bar.
+   --hud-menu-bottom is the menu's bottom edge in px, measured by the HUD (0 when there is no menu). */
+.sk-center-window {
+  --sk-area-top: calc(var(--hud-menu-bottom, 0px) + 6px);
+  position: absolute; left: 50%; top: calc((var(--sk-area-top) + 100dvh - 8px) / 2); transform: translate(-50%, -50%);
+  max-height: calc(100dvh - var(--sk-area-top) - 8px); overflow: auto;
+}
+/* Phone portrait: a sheet filling the space under the menu strip. */
+@media (max-width: 700px) {
+  .sk-center-window { left: 8px; right: 8px; top: var(--sk-area-top); bottom: max(8px, env(safe-area-inset-bottom)); transform: none; width: auto; max-height: none; }
+}
+/* Phone landscape: top-aligned under the menu, scrolls inside. */
+@media (max-height: 520px) and (orientation: landscape) {
+  .sk-center-window { top: var(--sk-area-top); transform: translate(-50%, 0); max-height: calc(100dvh - var(--sk-area-top) - 6px); }
+}
+
+
+/* ---- UI kit v2 control frames (PixelLab Pro Flash, docs/design/ui/kit-v2.json; 9-slice sources and measured slices
+   from tools/ui/build_kit_v2.py). Drawn at 1x like the window and panel frames; interiors stay CSS colours. ---- */
+.sk-button, .sk-tab {
+  /* Carved teak button: bronze end caps with red thread, plain bands between them. */
+  border-width: calc(9 * var(--sk-px)) calc(16 * var(--sk-px));
+  border-image-source: url('/assets/ui/v2/frame/button-9s.png');
+  border-image-slice: 9 16; border-image-width: calc(9 * var(--sk-px)) calc(16 * var(--sk-px)); border-image-repeat: stretch;
+}
+.sk-button { padding: 2px 4px; }
+.sk-tab { padding: 0 2px; }
+.sk-field, .sk-panel {
+  /* Recessed teak frame with gold corner studs (centre gems replaced by plain line for tiling). */
+  border-width: calc(8 * var(--sk-px));
+  border-image-source: url('/assets/ui/v2/frame/field-9s.png');
+  border-image-slice: 8; border-image-width: calc(8 * var(--sk-px)); border-image-repeat: stretch;
+}
+.sk-chip {
+  /* Antique bronze plate with riveted end bosses. */
+  border-width: calc(10 * var(--sk-px)) calc(17 * var(--sk-px)) calc(10 * var(--sk-px)) calc(16 * var(--sk-px));
+  border-image-source: url('/assets/ui/v2/frame/plate-9s.png');
+  border-image-slice: 10 17 10 16; border-image-width: calc(10 * var(--sk-px)) calc(17 * var(--sk-px)) calc(10 * var(--sk-px)) calc(16 * var(--sk-px));
+  border-image-repeat: stretch;
+  background-color: #2a211a; min-height: 34px; padding: 0 2px;
+}
+.sk-icon-button {
+  border-width: calc(11 * var(--sk-px));
+  border-image-source: url('/assets/ui/v2/frame/iconbutton-9s.png');
+  border-image-slice: 11; border-image-width: calc(11 * var(--sk-px)); border-image-repeat: stretch;
+  overflow: visible;
+}
+.sk-bar {
+  /* Thin channel between lotus-bud end caps; the value text sits over the channel and frame. */
+  border-width: calc(3 * var(--sk-px)) calc(25 * var(--sk-px)) calc(5 * var(--sk-px));
+  border-image-source: url('/assets/ui/v2/frame/bar-9s.png');
+  border-image-slice: 3 25 5; border-image-width: calc(3 * var(--sk-px)) calc(25 * var(--sk-px)) calc(5 * var(--sk-px)); border-image-repeat: stretch;
+  height: calc(8 * var(--sk-px) + 12px); background: #1a1512; overflow: visible;
+}
+.sk-bar > span { overflow: hidden; }
+.sk-bar > em { white-space: nowrap; font-size: 11px; line-height: 1; text-shadow: 1px 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000, 1px 0 0 #000; }

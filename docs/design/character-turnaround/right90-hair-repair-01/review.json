@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "status": "failed-no-result",
+  "approved": false,
+  "candidate": null,
+  "stop": true,
+  "reviewedDirection": "east",
+  "jobId": "65f45f7e-199e-4079-ade4-6a56f5da0095",
+  "result": "temporary-server-failure",
+  "raw": null,
+  "chargedGenerationsReceipt": null,
+  "observedChargedCredits": 0,
+  "outputConservation": "unavailable-no-output-not-a-pass",
+  "identityAssessment": "unavailable-no-output",
+  "sourceRetention": {
+    "rawRotationPngExact": true,
+    "masterFrontPngExact": true,
+    "sourcePngSha256": "9b8b667fd712b07eb3efcd78918be98517c38111e512947c5fdfc626172ef142",
+    "frontPngSha256": "38de6dd6360b587197e993963b7c4ca5ce73de2cc7c16c6bf536c83f8f96cd66"
+  },
+  "mask": {
+    "file": "mask-binary.png",
+    "pngSha256": "0e446ed7d6f01b595bdf943a9dcf2de6bc9ac8d4a3174a057e8ebf7fabee4b2e",
+    "selectedPixels": 1351,
+    "protectedPixels": 15033,
+    "selectedProtectedProfilePixels": 0
+  },
+  "observations": [
+    "Before image still has genuine right-facing profile and baseline0, but loose long hair and absent master crimson bow/tied segments remain rejected.",
+    "One narrow reference-guided native128 inpaint was accepted with estimate6, then failed on the service with no output image.",
+    "No raw after image exists; no corrected candidate, scalp-gap inspection, or output body-conservation claim is possible.",
+    "Original east and rotated east skull silhouettes/pose do not align exactly, so no manual source-hair transplant was attempted."
+  ],
+  "evidence": {
+    "request": "request.json",
+    "submit": "submit.json",
+    "result": "result.json",
+    "mask": "mask-binary.png",
+    "protectedProfile": "protected-profile.png",
+    "before": "input.png",
+    "before2x": "input-2x.png",
+    "context": "context-native.png",
+    "context2x": "context-2x.png",
+    "maskOverlay2x": "mask-overlay-2x.png",
+    "after": null,
+    "comparisonAfter": null
+  },
+  "rejectedPreview": "/assets/character-turnaround/rotation-experiment-01/east-rejected.png",
+  "rejectedPreviewPolicy": "Retain latest actual rejected image; failed repair produced no replacement PNG. Prior rejection history is not deleted.",
+  "manualPixelCorrections": [],
+  "transformations": [],
+  "unreviewedGeneratedDirections": [
+    "north",
+    "west"
+  ],
+  "nextGate": "Stop for right-view review and a new explicit repair decision; no retry, back/left, new hairstyles, equipment or animation.",
+  "hiddenGeometry": "Any cloth revealed under old hair is provisional reconstruction only; no clean garment/head-body layers claimed."
+}

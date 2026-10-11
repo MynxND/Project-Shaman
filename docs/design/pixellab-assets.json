@@ -1,0 +1,53 @@
+{
+  "provider": "PixelLab MCP",
+  "setting": "Global Shaman",
+  "character": {
+    "id": "6e6f0ffd-d87f-4ce1-802a-2da101eae877",
+    "name": "Medium Foundation v1",
+    "nativeSize": 92,
+    "directions": 8,
+    "status": "completed",
+    "animation": null,
+    "use": "superseded by mainCharacters (2026-10-08)"
+  },
+  "groundTile": {
+    "id": "2606fd72-385f-47ab-8ccc-09abeb6f3eff",
+    "nativeSize": 64,
+    "status": "completed",
+    "use": "archived: rejected diamond perspective"
+  },
+  "mapConcept": {
+    "assetId": "44b07cf9-85c7-5a96-a281-cc380a97bc23",
+    "provider": "PixelLab",
+    "perspective": "Classic RO elevated three-quarter map concept",
+    "jobId": "f0ada808-8515-4701-b3d2-ad352a385fc5",
+    "width": 400,
+    "height": 300,
+    "file": "apps/client/public/assets/pixellab/spirit-town-ro-v2.png",
+    "status": "completed"
+  },
+  "mainCharacters": {
+    "provider": "PixelLab MCP create_character mode v3 (reference rotation)",
+    "reference": "docs/design/comfyui/reference/shamen-base-sheet.webp front views -> docs/design/pixellab-main/<body>-south-ref.png",
+    "male": {
+      "id": "336280fc-8cfd-4a7f-98a3-056f78476544",
+      "name": "Shaman Main Male v1",
+      "size": 128,
+      "directions": 8,
+      "generations": 2,
+      "files": "apps/client/public/assets/pixellab/main-male-v1/",
+      "animation": null
+    },
+    "female": {
+      "id": "5faf034e-7b29-46ce-9671-0fb4e945049e",
+      "name": "Shaman Main Female v1",
+      "size": 128,
+      "directions": 8,
+      "generations": 2,
+      "files": "apps/client/public/assets/pixellab/main-female-v1/",
+      "animation": null
+    },
+    "manifest": "apps/client/public/assets/pixellab/main-v1-manifest.json (tools/sprites/build_main_v1.py)",
+    "status": "in game, pending user approval"
+  }
+}

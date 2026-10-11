@@ -1,0 +1,412 @@
+# Design decisions
+
+## Hair V3 reference study and FRONT candidates — 2026-10-10
+
+USER reauthorizes V2 neutral-male-02 for this candidate round; V3 bodies remain
+unapproved. Official RO galleries are studied remotely for techniques only; no
+third-party sprite files enter the repo or AI inputs. See design/hair-v3 for
+reference catalog, original five-color guide,14 silhouette concepts and three
+original dark-hair FRONT candidates. Inspector defaults to these hash-checked
+PNGs, supports flat/shaded comparison and back/main/fringe visibility. Actual
+source/body/origin unchanged. Seven free guarded Workbench edits including one
+pixel knot-root cleanup, paid0, live balance125 to125; old paid18 untouched.
+Typecheck/build and source/layer tests pass; visual approval remains USER-only.
+No other directions, animation, approved asset overwrite or gameplay adoption.
+
+
+## FRONT redesign after USER rejection — 2026-10-10
+
+USER rejected all three manual-repair-01 images and requested all corrections.
+Current inspector uses hair-front-pipeline-02/redesign-02: natural open hairlines,
+no blanket gray scalp fill, and bob back/base/front layering around unchanged V2
+neutral-male-02. Root attachment targets exclude intentional visible skin.
+Zero root gaps is a technical measurement, never visual approval. All three new
+FRONT drafts remain unapproved. Four free exact PixelLab Workbench edits added0
+paid generations. Original18 /three attempts /no retry remains frozen. No other
+directions, animation, extra generation or gameplay adoption. Rejected inspector
+is collapsed as history. See redesign-02/README.md.
+
+## Continue the same three FRONT hair repairs — 2026-10-10
+
+USER “แก้ไขต่อไปครับ” authorizes repair after rejected-output review. Existing
+18/18 paid cap is unchanged; use free PixelLab Workbench exact edits, no paid
+requests. Raw outputs remain rejected and immutable; manual derivatives get
+separate provenance and source/repair comparison in editor. Original body/head
+bytes remain exact; all3 pass conservative scalp/protection/palette checks.
+No USER visual approval, gameplay adoption, other styles/directions or animation.
+
+## Explicit V2 head selection and new bounded hair budget — 2026-10-10
+
+USER explicitly permits V2 neutral-male-02 instead of waiting for approved V3,
+then approves maximum18 new generations/3 attempts/no retry. New stage is separate
+from frozen historical20/20 ledger. Geometry templates derive from actual source;
+14 design specs, React static editor and3 blank-layer/context-head inpaints only.
+Completed6 each, no pending or retry. All raw layers fail hair-only isolation;
+retain rejected outputs unchanged in review, never publish into gameplay manifest.
+Build/PNG success does not approve art. STOP for visual review; no further
+directions/animation. See character-v2/hair-front-pipeline-02/README.md.
+
+## Original V2 Three FRONT Hair Drafts - 2026-10-10
+
+Newest request uses approved original V2 body, rejects prior hair, and permits
+manual head-template authoring when cost gate blocks paid generation. Actual live
+schema-first inpaint128 quote6, three estimated18 NOT authorized, attempts0/cost0;
+paid ledger20/20 unchanged. Three SOUTH pairs only, no bow, no skin/hair cleanup
+or borrowed pixels, false visual/full gates. Concurrent preliminary files preserved
+and unselectable. See character-v2/hair-fit-front-01/ROW_FRONT_REVIEW.md. STOP for review.
+
+## New V3 Compact FRONT Prototype - 2026-10-10
+
+Latest USER asks for independently redrawn native128 A/B/C, same identity/pose/
+pixel style and baseline112, not V2 retouching. Original manual integer geometry
+is authorized here; live PixelLab schemas and free128 quote6 inspected, no paid
+budget/job authorized. Prior V2cap20/spent20/remaining0 and192 archive/runtime
+files stay byte-exact. Three new30x34 heads/faces identical; heights90/98/105
+with rounded B3.267 rather than exact3.25. No source crops, body deformation,
+third-party sprite/model input or V2 contract spoofing. Independent review route,
+provisional visible anchors, no skeleton/animation/attachment fit claim.
+All V3 art/anchor/body-lock gates false; A recommendation is not approval.
+STOP at three-front USER review, no hair/equipment/directions/live adoption.
+See `docs/design/character-v3/proportion-front-01/README.md`.
+
+## Rejected Long Hair And Independent Redesign - 2026-10-10
+
+USER forcefully rejects long-manual01 FRONT and requests actual MMORPG reference
+research and a new design, not another cape retouch. Three official illustrations
+viewed; two FFXIV URLs failed404 and are not reference evidence. New original
+silver SOUTH split pair published for review only. Rejected pair/binding retained,
+not concurrently loaded. Four body PNGs/assets, poses and entire paid ledger
+unchanged, spent20/cap20/additional0. No paid calls or further hairstyle directions,
+outfit, animation or live integration. UserVisualAccepted and hair approval false.
+Reference findings, visual concerns and browser limits recorded in
+character-v2/hair-long-redesign-02. Previous long-hair entry is rejected history.
+
+## Loose Long Hair Without Bow - 2026-10-10
+
+Latest USER "อยากได้ทรงผม ผมยาวเหมือนโมเดลก่อนหน้านี้ของเราทำมาเลยอนุมัติใช้ token ตลอด"
+then "ไม่ต้องมีโบว์แดง" requests new long silver-ivory art, not crop recolor or
+visual approval. Token permission is NOT unlimited paid PixelLab credits: cap20/
+spent20/remaining0 retained, zero paid calls. One original manual SOUTH split
+pair, rear waist-length and front shoulder locks, native128/origin61,112/static
+null; body files/assets exact. Existing contract used, SOUTH order only updated.
+Original crop draft files/review retained; original binding archived, not selected
+in split pose. No fake empty rear layer, V1 pixel reuse, outfit, animation, other
+hair direction or live changes. Hair/full visual approval false; STOP for review.
+All historical paid jobs/receipts/unknown ledger fields conserved; only additive
+manualStages credits0. See character-v2/hair-long-manual-01/README.md.
+
+## Zero-Credit Manual FRONT Hair - 2026-10-10
+
+USER proceed follows the recommendation to author a new isolated hair layer from
+scratch instead of paid regeneration. Native rowmap, not rejected-skin removal or
+V1 extraction; SOUTH only, deliberate forehead-only fringe permitted, body exact.
+New manual draft uses single hair pass, methodmanual/jobIdnull; no shared contract
+or live renderer migration. Paid history20/20 remains frozen; manual accounting0
+is additive and preserves unknown existing fields. Hair/full visual approvalfalse;
+STOP for review. Evidence: character-v2/hair-manual-01/README.md.
+
+## Body4 Approval And One SOUTH Hair Attempt - 2026-10-09
+
+USER "อนุมัติทั้งหมดเลยทำได้เลย" answers explicit body4views approval and
+raiseV2cap18-to20 questions. Narrow scope: ONE SOUTH isolated cap-only hair,
+max6/max1/no retry, existing374 mask, no face editing, other directions or outfit.
+Actual jobb8fa5d1b-b7dd-43ac-bd3c-885fef12afe1 receipt6; V2spent20/cap20/
+remaining0/pending0. Output skin/scalp contaminated, rejected unchanged; no hair
+publication. Four bodies visually approved without pixel edits; anchors remain
+provisional and full userVisualAcceptedfalse. Prior decisions below are history.
+Separate authorization/snapshots/receipt: hair-proof-01/paid-stage/README.md.
+
+## FRONT02 Approval And Rotation Stop - 2026-10-09
+
+USER "ผ่านแล้วครับทำขั้นต่อไปเลย" visually approves byte-exact FRONT02 and ONE
+reference rotation expected2. Its estimated3.1-3.33 heads are accepted for this
+asset, superseding target3.5 only here. One create_character_pro_flash reuse job
+completed actual2 (outer billing receipt), no first-image generation. Raw8 retained,
+only four cardinal bodies published: SOUTHtrue/E,N,Wfalse. Actual foot deltas
+E+2,+1 / N+2,-1 / W0,+1 remain disclosed; common origin61,112 does not translate
+images or certify bindings. V2spent14/cap18/remaining4/pending0. STOP for USER
+four-view review; no retries/hair/outfit/animation or live migration. Prior records
+below retain their historical decisions and receipts.
+
+## New Character V2 Scope - 2026-10-09
+
+Technical-only from-scratch V2, separate from all old repair/collection work.
+Old art is reference ONLY; no deletion, live migration, fourteen-hair expansion
+or new animation. Latest spec accepted and SINGLE FRONT max6 authorized.
+FRONT01 create128 completed/receipt6, rejected elongated muscular anatomy;
+exact raw retained and displayed separately. Latest proceed authorized ONE
+revised FRONT02 max6, completed/receipt6. New raw supplies one unapproved SOUTH
+static proposal (estimated3.1-3.33 heads, not exact3.5); no transforms.
+Cap18/spent12/reserved0/pending0/remaining6. Original ledger authorization and
+billing evidence retained; stage02 authorization/billing are separate records.
+Visual FRONT approval and separate stage authorization still gate rotations;
+hair/outfit/further retry remain unauthorized. See character-v2/body-front-02/README.md.
+
+## Bounded Costume Stage - 2026-10-09
+
+Proceed was interpreted by the coordinator as maximum18 costume credits,
+sequential RIGHT/BACK/LEFT, no retries; not anatomy/animation authorization.
+One genuine native128 RIGHT inpaint completed, actual charge6, protected RGBA
+mismatch0. Art rejected: broad pale side hem and apron/mantle/sash mismatch
+remain. BACK/LEFT stopped, pending0; unused12 is not anatomy budget. Prior
+accounting/source/frontend registries remain unchanged. Review-only artifact:
+`character-turnaround/costume-repair-01/README.md`. No clean body/scalp,
+headgear-fit approval or new-base clips delivered.
+
+## Expanded Character Foundation Scope - 2026-10-09
+
+User now permits RIGHT90 costume, BACK/LEFT, clean modular separation, all-view
+hair/headgear anchors and new-base animation work. This supersedes earlier
+right-only/back-left/animation scope stops, not the FRONT-only art approval or
+the need for numerical paid-generation approval. `character-turnaround/foundation-01`
+contains four untouched native review sources, visible partition evidence,
+provisional anchors and explicit archived/new-base coverage. No clean hidden
+anatomy, corrected costume or approved animation is claimed. No paid job was
+submitted; original assets and live gameplay are unchanged. The React modular
+inspector now exposes this evidence separately from its retained right-only
+review, with source-only FRONT approval, provisional anchors and archive-only
+animation coverage. ZERO paid jobs are authorized for this client integration.
+
+## Detachable head wardrobe — 2026-10-10
+User approved an 88-credit cap (no retry) for 11 hairstyles x 8 static views as
+detachable head-with-face-and-hair on the unchanged headless V2 body (neck cut y49).
+Spent exactly 88 (PixelLab balance 125 -> 37). 85 of 88 views are published
+candidates; soft-spikes north/north-west/north-east drew a face on the back view and
+are excluded, not retried. SOUTH keeps the identity-locked inpaint face; other views
+keep the rotation's own face because pasting canonical pixels produced seams.
+Nothing is visually approved, animated or used in gameplay; diagonal bodies remain
+unapproved. Inspector: /characters/v2. Details: docs/design/head-wardrobe-01/README.md.
+
+## Modular equipment continuation — 2026-10-09
+**Latest right-only art decision:** the user explicitly approves the original
+rig-v2 male idle-south frame0, native128 untouched. Deterministic local manual
+hair repair is permitted for this same hairstyle only. The new right-only draft
+retains the raw rotation's face/body and restores exact original rear hair/bow
+pixels inside recorded native masks. It is not approved, production-ready, a
+clean base or a new registered outfit. Costume projection and texture join
+still need review; back/left, equipment and animation expansion remain stopped.
+No paid job/credit in this task. See character-turnaround/right90-manual-01.
+
+**Latest head scope supersedes garment customization below:** user permits a
+headless Medium class-clothed body with independent hair-free Shaman head, two
+real hair silhouettes, multiple colors and one crown. No player outfit selector
+is required. `/characters/head` presents static front/side/back and four palettes.
+Hidden scalp/cloth and hairstyle art remain reconstruction proposals. User rejected
+the first rear hair pass: long tail was incorrectly occluded by torso, and the
+short rear cap used incoherent copied texture. North long hair now overlays the
+torso; north short is newly painted from owned front/profile references, not the
+archived texture-copy cap. Technical checks do not approve Ragnarok-inspired style.
+Only user visual approval opens eight-direction idle/walk; review those before
+attack/cast/hurt/death and main-player migration. Earlier modular/garment directions
+below are historical, not the next action. See `docs/design/head-proof/README.md`.
+
+
+**Latest rebuild request:** independent base body, hair, outfit, headgear, main/off-hand, accessories and effects supersede the earlier whole-clothed-body recommendation below. A separate `/characters/modular` engineering proof uses extracted original pixels, a shared clock and per-layer assets; it is not an approved new body or two complete outfits. No migration or server garment availability is enabled. Require independently protected masks, reconstructed body/hair and full visual review before main-player integration. Details: `docs/design/modular-character/README.md`.
+
+**Superseded outfit approach:** the user rejected bronze-ward because face, hair and proportions changed when equipping it. The whole-body variant is disabled in shared look encoding/decoding, server equip validation, runtime packaging and the inspector. Existing pending local workers were stopped and nine pending PixelLab jobs cancelled. Raw art stays archived. Clothing must preserve the existing character and needs a reviewed garment/mask reconstruction; shared skeleton generation does not prove identity preservation. No replacement clothing is claimed complete.
+
+The user's review rejected rigid clothing overlays and a back-mounted staff. Continue Claude's shared-skeleton rig: preserve existing identity and 128px native artwork, use a complete clothed-body outfit variant, and attach weapons at the authored hand joint with frame-specific axis/depth. Headgear follows crown/tilt. Independent hair/top/pants cannot be recovered perfectly from flattened originals and remain explicit art reconstruction work. Equipment is session-authoritative and visible to peers; bonuses are displayed as provisional data and do not yet change combat formulas. `/characters` and live equipped-status screenshots are review evidence, not final art approval.
+
+## Confirmed from source
+
+12 nations, 24 branches, shared Medium with 10 skills. Each branch contains 10 second-job and 5 third-job skills: 370 entries total. Source was copied without changing formulas from D:/CaseShop/ข้อความ.txt.
+
+## Technical choices
+
+Map perspective corrected by user: Classic Ragnarok Online elevated three-quarter overhead map. New concept must come from PixelLab. Previous imagegen cliffside plaza and diamond sandstone tile are archived experiments, not approved map references.
+
+pnpm workspaces, TypeScript strict, separate schema package, Phaser 3.90.0, Next.js 16.4.0, React 19.3.0, Colyseus core 0.18.18 / transport 0.18.4 / SDK 0.18.5 / schema 5.0.36. Lockfile fixes transitive versions.
+
+shadcn/ui is configured for future generated components. Present HUD is a placeholder, not the completed hand-drawn art direction.
+
+Character appearance (user, 2026-10-08): players will change hairstyle, face, skin tone and outfit; class outfits layer over one base body. Main characters (PixelLab main-v1) and the rig contract are in docs/design/character-rig.md.
+
+## Open design questions
+
+- Character customisation scope: which hairstyles/faces/skin tones ship, whether body type is a separate choice, and how class outfits interact with player-chosen appearance.
+
+- Job levels, point budgets, prerequisite edges, inheritance and respec rules.
+- Whether nation restricts class access and whether branches can be mixed.
+- Define all screen-wide skills with fixed world ranges, including offscreen bonuses.
+- Damage order: shields, defense, reductions, transfer, reflection and lifesteal.
+- Prevent reflect/proc recursion; define kill attribution and server RNG policy.
+- HP costs: current versus maximum HP, nonlethal policy, timing and interruption refunds.
+- Blood Sacrifice: reset eligibility and exclusions.
+- Scarlet Rot: boss HP floor, stacking and encounter reset.
+- Blood Price: explicit accumulation formula and 15% cap.
+- Probability caps, critical units, flat/percentage modifier ordering.
+- Zero cooldown skills: action cadence and resource atomicity.
+- PvE/PvP differences and boss CC immunity.
+- World time, line of sight, facing, summon limits and map transfer policy.
+
+## Proposed, not approved world theme
+
+A shared spirit hub connected to twelve regions is the provisional visual direction authorized for the first art slice. Spirit Confluence is a working name; geography and nation maps remain undecided. See docs/art-direction.md and asset-prompts.md for the original generated assets.
+
+## Provisional NPC prototype — 2026-10-09
+
+The existing Claude NPC slice is continued with authoritative services, actual profile-backed HUD and fixed-rate Gold exchange (buy 100 Silver, sell 90 Silver). These rates, costs and rewards require design approval. Ambient population starts with three children and two elders walking safe authored paths, pausing and returning; they cannot be interacted with. Service NPCs remain stationary. Progress is in-memory per session; no durable progression is implied.
+
+## Medium skill visual proposal — 2026-10-09
+
+Active VFX revision 2 follows the user's request for stronger thematic coherence: jade/ivory spirit ribbons and revelation light, antique-gold talisman bursts and crimson binding knots. Soul Heal uses an open center around the actor, with a shared ground seal pulse. PixelLab source jobs, rejected candidates, native frames and workbench corrections are retained. Artwork is implemented for review, not design approval; desktop was inspected, mobile viewport verification remains open due to a browser override mismatch.
+
+**Superseded passive presentation:** the user's later world-consistent rules require all five Medium passives to be PASSIVE_STAT, with no cast/circle/release/aura. Earlier generated passive cues remain archived experiments only. The four root `SHAMAN_*` documents are mandatory constraints; exact implementation swatches/phase ratios and new circle art remain visual proposals. 370-entry classifications outside Medium are suggestions, not approval; source cultural lore is retained and conflicting motifs require review. Passive-aura demonstration uses a clearly separate fixture, not an invented Medium skill. Spirit Sense's source modifier is implemented/tested as a pure function but awaits authoritative combat integration.
+
+User supplied the ten common Medium skill rules and requested PixelLab skill/cast/effect design. Preserve their max levels, formulas, CT/CD and durations. A common ritual casting gesture is reused by non-instant active skills; each skill has distinct effect art. Ghost Sight is instant, and passives are automatic trigger/unlock cues with no manual cast. Individual throwing/blessing poses and persistent status indicators remain future refinements. SP costs, world targeting/reveal ranges, cast interruption, 3×3 cell size and percentage bases for Amulet Mastery/Vessel Body remain explicitly unresolved; preview timing/palettes are visual proposals. No combat behavior is inferred from this art pass.
+
+**Starter hunting zone (2026-10-09, provisional).** The user's brief asked for portal travel, monsters, combat,
+EXP and level-ups.
+
+What was implemented:
+- Each map is a server room. Portals hand the session profile over with one-time tickets.
+- The server owns monster AI, damage, EXP, loot and respawn.
+- The old client-only sample level 24 was replaced by a server profile starting at level 1. The status panel now shows
+  the real level, HP, SP and EXP.
+
+Decisions taken for the prototype, all still open for review:
+- Every combat number in `combat.ts`, including MATK, SP costs and skill ranges that the source left open.
+- One world unit taken as one "cell" for Amulet Blast's 3x3 area.
+- Killing blow takes all EXP and loot.
+- No death penalty.
+- Loot goes straight into the bag.
+- Monsters are mirrored two-direction sprites.
+- Village NPC sprites are placeholders.
+
+## Complete-head authoring clarification — 2026-10-10
+Hair selection replaces the whole co-designed head, including face and ears, on a headless body. The previous FRONT inpaint locked the old face and is not accepted as fulfilling this art requirement. Inspector uses lossless head-wardrobe-02 derivatives for review; complete head PNGs are preserved and rear occlusion is handled by body draw order. No new paid calls; 88/88 spent. Artistic redesign remains outstanding, with no automatic approval or gameplay adoption.
+
+## V3 separated anatomy decision — 2026-10-10
+User requires new headless body plus independent bald head, superseding previous whole-head hairstyle workaround for this stage. V2 stays unchanged and visible only as comparison. FRONT IDLE receives three original PixelLab assets under explicitly approved15 credits/3 attempts/no retry; actual15 spent. New hierarchy supports independent head/optional component attachment. Do not count empty hair slots as a passed hair-swap visual test. Stop for visual approval; no other directions or animations.
+
+## Whole-head component choice — 2026-10-10
+USER confirms body is headless and hairstyle belongs in the full head (face+ears+hair). This supersedes separate hair selection for current V3 review. Preserve V2 visual identity. Revision02 uses reconstructed independent body and one existing owned full-head FRONT plus bald identity reference. No scaled replacement body, no face underlay. Additional cost0/free Workbench1; old paid evidence immutable. Stop for visual approval.
+
+## Head-set unit and8frame order — 2026-10-10
+A hairstyle item is one complete head set (face/ears/skull/hair),8static direction images in order S,SE,E,NE,N,NW,W,SW. User authorizes one test set. Existing SOUTH reused byte-equivalent in pixels; rotation-only quote2 and balance delta2, one attempt/no retry. Native atlas metadata added; body and previous sources unchanged. No automatic production approval; do not extend styles/animations until user review.
+
+## Dressed headless body, eight static views — 2026-10-10
+User approves head-eight-01 visually and requests one full-body costume set in eight static directions. Separate user-approval.json preserves historical head manifest/PNG/ledger. New body-eight-01 uses one PixelLab outfit edit6 and rotation-only2, no retries. Original FRONT neck/limbs/hands/feet outside clothing region preserved exactly; approved head files frozen. Native BodyOrigin/NeckPivot/HeadPivot drive nested Phaser attachments in Inspector, with actual body/head/assembled modes and head-only offsets. Costume changes replace headless body as a unit, not independent shirt/pants items. No animation, more outfits or live-world migration. Body and cross-direction neck fit require user visual review. See design/character-v3/body-eight-01/README.md.
+
+
+## Medium novice outfit, eight static views — 2026-10-10
+User replaces the novice outfit with their "Medium (Base Class)" concept sheet and requests eight new body frames. New set body-eight-02: one PixelLab edit_image_pro_flash (reference = headless crop of the concept FRONT) on the original headless body, then rotation-only create_object_pro_flash; actual 8 generations (used 1988 → 1996), no retries. Approved head-eight-01 frozen and reused; neck anchors measured per direction. body-eight-01 kept for comparison; Inspector /characters/v3 now has an outfit selector that swaps the whole headless body under the same head. Body pipeline scripts take BODY_SET. Static views only, visualApproved false pending user review. See design/character-v3/body-eight-02/README.md.
+
+
+## Eight-direction walk (walk-eight-02) — 2026-10-10
+User approved body-eight-02 and requested walking. One animate_object v3 call on the headless body object, 8 frames/direction, actual 16 generations; south and north regenerated at user request; north now uses an explicit contralateral skeleton (animate_with_skeleton_v3), total 23. Approved static heads ride a per-frame NeckAnchor measured from each frame neck stump; frames are ground-locked to the idle baseline. New walk-eight model, WalkEightInspector on /characters/v3, publish/test scripts. Not yet wired into the live world; visual approval pending. See design/character-v3/walk-eight-02/README.md.
+
+
+## Layered V3 head: hairstyles, colours, expressions — 2026-10-10
+Head split into bald base + expression overlay + tinted hair on the neck pivot. 4 hairstyles x 8 directions, 8 runtime hair colours, 6 expressions (5 overlays x 5 facing views) with auto-blink. PlayerState.head/emote synced and validated by the server; Appearance window (V) for creation-time choice and in-game emotes. 130 generations. Next: hair-back layer and the remaining 10 styles, women V3. See design/character-v3/head-layers-01/README.md.
+
+
+## Hair redesign (head-layers-02) — 2026-10-10
+User rejected v1 hair (scalp visible from side/back, inconsistent faces). Four new approved designs, each direction drawn on the shared bald base; only hair pixels kept, faces always from the one base. Automated scalp-coverage gate (>=97%) and a head-on-body review before delivery. Topknot cord moved to an untinted accent layer. 156 generations. See design/character-v3/head-layers-02/README.md.
+
+- 2026-10-10: Hair Layer Standard v1 (docs/design/ssr/HAIR_STANDARD.md) is mandatory for any new hairstyle/expression. Left head views mirror right views (Ragnarok convention).
+- 2026-10-10: SSR Phase 4 — the in-game V3 head uses the SSR parts by default; the legacy head-layers head is only a fallback (`?rig=legacy`, unsupported hairstyles). New hairstyles/expressions ship as SSR parts only.
+
+## New Golden Apprentice FRONT design — 2026-10-10
+One original soft side-part hair candidate based on written visual observations of the user's customization screenshot. Current SSR Hair Layer Standard: FRONT first; no 8-view generation before review. One64-native inpaint actual5 credits, no retry, approved face/eyes unchanged and production parts/body/palettes frozen. Separate candidate ramp/fixed part plus shared-composer gold/silver/black before/after previews on /characters/v3 and /characters/ssr. Not added to gameplay selection or production part index. See design/ssr/golden-part-01/README.md. User visual approval pending.
+
+## Golden Apprentice eight-view candidate — 2026-10-10
+
+User approved the soft side-part FRONT (“ทรงนี้ผมโอเคครับเริ่มเลย”). Approval receipt and frozen source hashes: docs/design/ssr/golden-part-eight-01/front-approval.json. Reused FRONT unchanged; one native128 packed inpaint for SE/E/NE/N, three mirrored left views including anchors under Hair Layer Standard v1. Actual6 additional credits, one attempt, no retries (style total11 including FRONT5). Runtime SSR part and96 verified comparison PNGs remain staged under /assets/ssr/candidates/golden-part-eight-01/; production index, gameplay selection, approved body/head base/palettes remain unchanged. V3 and SSR Inspectors show eight static views, native/4x, three palettes, body/head/before/silhouette. Local face-lock, coverage, hole, anchor, mirror, hash checks and typecheck/client build pass. Desktop/mobile review performed. Additional views await user visual approval; no new animation or other hairstyle generated. See docs/design/ssr/golden-part-eight-01/README.md.
+## Golden Apprentice eight directions — USER APPROVED 2026-10-10
+User reviewed the V3 Inspector and replied “ผ่านครับ”. All eight static views are visually approved. Exact part/image hashes and the user's statement are recorded in docs/design/ssr/golden-part-eight-01/approval.json (runtime copy beside part.json). Manifest and Inspector now reflect approval; publisher refuses overwriting this approved version. No extra PixelLab credits, new assets, animations or live selection changes in this approval step.
+## Style3 Kid Stripe FRONT — 2026-10-10
+User requested a Death the Kid-inspired hairstyle as style3. New center-part FRONT candidate on the same owned Shaman face/body, three intentional white bands on character-left hair. One64-native inpaint actual5 credits, no retries; no third-party image inputs. Main mass uses black SSR palette, declared untinted white stripe mask remains fixed. Local mask/face/coverage/hole/stripe gates pass; FRONT awaits user visual approval before more directions. Earlier approved Golden Apprentice untouched; production index/gameplay unchanged. See docs/design/ssr/kid-stripe-01/README.md. Future directional stripe placement must preserve anatomical left rather than blindly mirror white markings.
+## Eight replacement hairstyle FRONT prototypes — 2026-10-10
+User rejected Kid Stripe and requested eight distinct designs from a supplied hairstyle prototype sheet. One packed FRONT inpaint on owned reference heads, actual9 credits, one attempt/no retries. Eight silhouettes: short, medium side-part, ponytail, round bun, messy, eye-swept fringe, loose long, pointed tied tuft. New independent hairBack layers for long styles; original face/body and approved Golden Apprentice unchanged. Per-design prototype masks explicitly permit tied top volume and style6 reversible eye occlusion per user reference; these are awaiting visual review, not blanket production standard changes. V3/SSR Inspector has eight-style native/4x and hair/head/body/silhouette review. Kid Stripe moved to rejected history. No new directions, animations or gameplay publication. See docs/design/ssr/hair-eight-prototypes-01/README.md.
+## Clean black center-part eight-view candidate — 2026-10-10
+User selected the former Kid Stripe silhouette and requested removing white bands plus eight directions. New clean FRONT restores46 stripe pixels only; original silhouette/other pixels frozen. One128 packed owned-reference PixelLab inpaint, actual6 credits, one attempt/no retry, four new right/back views and three standard left mirrors. SSR neck anchors and original face/body unchanged. V3/SSR Inspectors show native/4x staged comparisons; no gameplay publication or animation. Technical gates pass; awaiting user visual review. See design/ssr/kid-clean-eight-01/README.md.
+
+## Complete silhouettes for eight FRONT prototypes — 2026-10-10
+User reports clipped ends in the eight-design sheet. New hair-eight-prototypes-02 expands generation margins; one intentional repair inpaint actual9 credits/no retry, plus pixel cleanup on three flat-cut tied fan tips. Full original face/body/head anchors retained, with existing style6 eye occlusion exception. V3/SSR Inspectors show repaired version and before comparison. Selected4x details remove empty canvas margins only, preserve every opaque pixel and fit mobile width. Native/contour/face/layer/hash gates pass; visual approval pending. No new directions or gameplay publication. See design/ssr/hair-eight-prototypes-02/README.md.
+
+## Single-style FRONT face-fit redesign — 2026-10-10
+User rejects eight-design face fit and authorizes proposed one-style-first redesign. face-fit-short-01: longer brow-adjacent fringe, compact crown, original owned face/body; one64-native inpaint actual5/no retry. V3/SSR Inspector top panel compares prior plain-short vs new body/head in three palettes/native/4x. Technical gates pass, visual approval pending before any expansion. Other styles/approved assets untouched. See design/ssr/face-fit-short-01/README.md.
+
+## User approved style1 FRONT — 2026-10-10
+User replied “ผ่านครับอันนี้”. face-fit-short-01 FRONT is visually approved; exact image/part hashes recorded in approval.json, publisher refuses overwriting this version. Inspector reflects approval. This receipt does not approve other styles, directions or gameplay publication. Approval step uses0 additional PixelLab credits.
+- 2026-10-10: Thailand VFX theme colours are crimson red + purple (user). Thai skill effects may use ancient-Thai-style decorative letters (user); they are drawn as original letter shapes, not real mantras or sacred texts (bible: no copied sacred writing).
+
+## Approved face-fit FRONT extended to eight views — 2026-10-10
+User requests eight directions for approved face-fit-short-01. New face-fit-short-eight-01 reuses FRONT pixels exactly, one native128 packed inpaint for four right/back views, three standard left mirrors including neck anchors. Actual6 credits/one attempt/no retries;5 SE skull edge pixels cleaned locally. Original face/body/base/palettes frozen. V3/SSR Inspectors top panel shows96 hashed native/4x comparisons in three palettes; technical gates pass, added views await visual review. No other hairstyles, animation or gameplay publication. See design/ssr/face-fit-short-eight-01/README.md.
+
+## Fuller diagonal fringe and Eye Veil FRONT — 2026-10-10
+User requests fuller SE/SW bangs then a new full eye-cover fringe. face-fit-short-eight-02 changes SE/SW only; other six views exact, lower forehead coverage20->49 pixels. eye-veil-front-01 FRONT uses explicitly authorized reversible both-eye occlusion, base face/eyes remain untouched, eye whites fully covered. Two controlled64-native calls, actual5+5=10 credits, no retries; local eye-slit and scalp cleanup archived. Inspectors show both candidates, before/after and native/4x. Tests/typecheck/build pass; visual review pending, no extra directions for new style or gameplay publication.
+
+
+## Eye Veil FRONT 02 whole-hair redesign — 2026-10-10
+User rejected the patched vertical fringe and requested a new generation. One64-native owned-head inpaint, actual5 credits / one attempt / no retry; new crown-to-tip diagonal locks, small directional eye-slit cleanup. FRONT remains pending visual approval. Inspector compares rejected01 with new02; original face/body, approved styles and gameplay selection unchanged. See design/ssr/eye-veil-front-02/README.md.
+
+
+## Eye Veil partial fringe FRONT03 — 2026-10-10
+User clarifies partial hair occlusion with original eyes visible, superseding full cover. Local alpha trim, crown unchanged, source02 retained,0 additional credits. V3/SSR Inspector selects03; eyes verified against original SSR base. FRONT visual review pending, no direction expansion or gameplay changes. See design/ssr/eye-veil-front-03/README.md.
+
+
+## Partial Eye Veil eight static views — 2026-10-10
+User requests eight directions from partial-eye FRONT03. Exact FRONT reuse; one128 packed inpaint for SE/E/NE/N plus three standard left mirrors. Actual6 credits, one attempt, no retries. Separate SSR candidate and96 comparisons in V3/SSR Inspector; original body/base/palettes frozen, no gameplay publication or animation. Technical gates pass, added directions await user visual review. See design/ssr/eye-veil-eight-01/README.md.
+
+
+## Korean center-part Wolf Cut FRONT — 2026-10-11
+User chooses charcoal black-grey with silver tips. One native64 owned-head inpaint, actual5 credits/one attempt/no retries. Separate fixed silver-tip mask plus recolorable dark hair ramp; original face/body/neck frozen. V3/SSR Inspector defaults to black and shows actual candidate PNGs, native/4x and head/body comparison. FRONT visual review pending; no directions, animation or gameplay publication. See design/ssr/korean-wolf-front-01/README.md.
+
+
+## Korean Wolf Cut longer FRONT02 — 2026-10-11
+User requests jaw-length sides and nape to neck base. One64-native inpaint on owned prior art, job charged5/one attempt/no retry. Expanded mask and fixed silver tips retain original face/eyes/body/neck. FRONT01 frozen and shown before02 in V3/SSR Inspector. FRONT visual review pending; no other directions or gameplay publication. See design/ssr/korean-wolf-front-02/README.md.
+
+
+## Korean Wolf Cut Long eight views — 2026-10-11
+User approves FRONT02 and requests eight static directions. FRONT exact reuse, one128 owned-head inpaint for SE/E/NE/N and three mirrored left views, job charged6/one attempt/no retries. Fixed silver-tip masks retain dye independently of charcoal ramp.96 real comparisons and native/4x in V3/SSR Inspector; original face/body/neck frozen. Technical gates pass; added views await user visual review. No animation or gameplay publication. See design/ssr/korean-wolf-eight-01/README.md.
+
+## White is the default hair colour — 2026-10-11
+User explicitly requested white default for every hairstyle. All candidate selectors and shared DEFAULT_HEAD now default to white; valid saved colours remain unchanged. Existing SSR white ramp adds630 verified previews without generation. Approved source PNGs/manifests and fixed accents unchanged; separate white manifests preserve source/output hashes. Inspector fetches use bounded shared queue. See design/ssr/white-hair-default-01/README.md.
+
+
+## Two V3 FRONT face identities — 2026-10-11
+Violet Sharp and Teal Soft neutral-expression candidates use independent SSR face replacement parts beneath existing hair. V3 Inspector adds face/hair selection, head/body and native/4x comparisons. Actual10 credits /2 attempts/no retry. Existing gameplay protocol and approved assets unchanged; FRONT visual approval pending. See docs/design/ssr/face-styles-front-01/README.md.
+
+
+## Cold Detached V3 face FRONT — 2026-10-11
+Added third FRONT face candidate to V3 Inspector: half-lidded deadpan eyes and flat mouth. Independent face part below hair, frozen head/body/neck. New approved cap5, actual5, one attempt/no retry; prior two faces unchanged. Local cleanup logged; visual approval pending before other directions. See docs/design/ssr/face-cold-front-01/README.md.
+
+
+## Cold face FRONT02 regeneration — 2026-10-11
+User rejected patched FRONT01 and authorized one new5-credit generation. Wider eyebrow/face mask produces shading and expression together; owned V3 head only. Separate candidate version; prior files retained. Inspector selects02; FRONT approval pending, no extra directions or gameplay publication. See docs/design/ssr/face-cold-front-02/README.md.
+
+
+## Three V3 faces extended to eight static directions — 2026-10-11
+User approved exact FRONTs and new cap18 /3 attempts/no retry. One128 face-only SE/E inpaint per style, actual6+6+6=18. FRONT exact file reuse; SW/W mirror right with native anchors; back views retain head with no face overlay. V3 Inspector adds three-face eight-direction native/4x head/body comparisons. No gameplay publication, hair/body changes or animation. New-angle visual approval pending. See docs/design/ssr/face-eight-01/README.md.
+
+
+## Cold diagonal eye balance revision — 2026-10-11
+face-eight-02 changes only cold SE/SW eye clusters after user reports imbalance. Original mask cut through near eye; new complete near/far half-lidded clusters keep perspective. FRONT, other directions/faces and rig frozen. Local cleanup extra0 credits. Inspector revision awaits visual review. See docs/design/ssr/face-eight-02/README.md.
+
+
+## Cold far-eye perspective adjustment 03 — 2026-10-11
+User rejected manual02; withdrawn. Free PixelLab guarded four-pixel outer far-eye/sclera reduction in cold SE, SW mirrored. All other directions/styles and approved FRONT frozen. V3 Inspector selects03, visual approval pending, added credits0. See design/ssr/face-eight-03/README.md.
+
+## White/gray hair palette split — 2026-10-11
+Former white is now selectable gray; new white uses brighter neutral mids. Shared SSR palette and candidate selectors updated, additive face preview variants keep face/skin/body unchanged. No generation credits. See design/ssr/white-gray-01/README.md.
+
+## Thai skill names are plain readable Thai — 2026-10-11
+Thai-UI skill names (`thaiName`) for Thailand, Indonesia and Russia use everyday Thai a player understands at a glance (`docs/design/skills/SKILL_NAMES.md`). A Pali-Sanskrit set was applied first the same day and withdrawn by the user as too hard to read; common Pali-Sanskrit words (มหา, โลหิต, วิญญาณ, อมตะ, ปราการ) are fine, rare roots are not. Mastery passives start with "ชำนาญ". Future nations follow the same rule.
+
+## Skill tree uniqueness rework — 2026-10-11
+After three nations the user found branches too alike (`docs/design/skills/SKILL_TREE_UNIQUENESS_AUDIT.md`). Approved: one signature mechanic per branch, global no-duplicate rules, explicit MELEE/MID/RANGED range classes. Bows: Norway gets a mobile bow hunter (Ullr Hunter, falcon + traps, replaces Seidr Witch); USA Spirit Archer stays a stationary long-range sniper. Japan is reworked first and keeps 2 classes × 3 jobs (Medium → Onmyoji → Grand Onmyoji Master; Medium → Miko → High Oracle Priestess): Onmyoji v2 Five Phases invoker approved (`docs/design/skills/japan-v1/ONMYOJI_V2_DESIGN.md`); Miko v2 and the Japan VFX language are drafts awaiting approval. Thailand, Indonesia and Russia are reworked after Japan.
+
+
+## Japan cultural visual exception + circle archetypes — 2026-10-11
+User decisions on the Onmyoji/shikigami circle reference sheet (docs/design/skills/japan-v1/CIRCLE_SET_REFERENCE.md): (1) gameplay stays the 5 Gogyō elements and 15 spells unchanged; the sheet's 8 circles become **visual circle archetypes by skill function** (Protection, Summoning, Purification, Attack, Binding, Sealing, Spirit Manifestation, Ultimate Ritual) coloured by the skill's Gogyō element — light/dark/moon/dimension are visual motifs only; one Onmyoji circle system with interchangeable layers, not unrelated circles per skill. (2) **Japan-only exception** to the art bible: torii (shrine rituals, major summons), yin-yang (in-yo), eight-direction hakke patterns, ofuda talismans and Japanese ceremonial patterns are allowed for Japan's Onmyoji/Shikigami assets; script prefers original fictional brush strokes, real kanji only when meaning and form are verified, never random fake kanji presented as real, no arbitrary mixing of Chinese/Japanese/Korean symbols. (3) Circles lie flat on the ground with a smaller upright crest floating above (camera rule kept). (4) Prototype first: one master ground circle, one floating ofuda component, one spirit smoke component, max 20 credits; the other 7 archetypes wait for approval of the master. Do not regenerate approved assets without permission.
+
+## Thailand / Indonesia / Russia rework v2 — 2026-10-11
+Applied the approved signature mechanics as a rework overlay on the source catalogues (`REWORK` + `applyRework` in `skills-*.ts`, docs/design/skills/REWORK_V2.md): Achan = thread lines (MID), Mor Phhee = melee possessed fighter with jumping prai (MELEE), Santet = teluh sending with stored needles (RANGED), Keris = pamor awakening, poison Keris-only (MELEE), Juggernaut = Guard meter + frost ground (MELEE), Taiga = bleed-hunt trails, low-HP power left to Mexico (MELEE). Skill ids unchanged so icons/VFX keep mapping; branches carry `range` and `signature` (shown in the lab header). Placeholder art: Shield Clang (howl art) and Keris Soul (clone art) need re-skins later.
+
+## Norway catalogue + nation circles — 2026-10-11
+Norway designed and catalogued (`skills-norway.ts`, docs/design/skills/norway-v1/NORWAY_DESIGN.md): Rune Seer reworked around a random 3-rune Rune Cast queue (Runestone replaces Rune Trap; Cast the Lots replaces the party crit buff), Ullr Hunter is the mobile bow hunter (Prey Mark → falcon reveal → Snare → Charged Rune Arrow, +25% per hunt condition). Runes are original carved staves because the art bible forbids European runes. Thailand/Indonesia/Russia got master casting circles and buff circles/auras (`skill-circles.ts`); Shield Clang and Keris Soul have their own art. Norway VFX generation awaits the user's credit approval (PRODUCTION_SPEC.md, cap 210).
+
+## Norway rune exception + Hunter v2 — 2026-10-11
+User: focus Norway on the Ullr Hunter as an RO-Hunter-like bow class (best bow class, unique skills) and allow real runes. Hunter v2: Twin Shot (two arrows, marks prey), Falcon Strike + Falcon Bond (falcon also dives on its own from LUK), Rune Trap Kit (Naudiz snare, Isa freeze, Thurisaz thorn blast, Dagaz flash) + Trapper's Craft, Charged Rune Arrow (Uruz), longest bow range, shoot while moving. Rune Seer queue: Isa, Hagalaz, Perthro, Kenaz. Runes are drawn in code from the Unicode Runic block; extremist-associated runes excluded.

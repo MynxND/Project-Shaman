@@ -1,0 +1,8 @@
+import {readFile,mkdir} from 'node:fs/promises';
+import {json,save,hash} from './body-eight-lib.mjs';
+const root='docs/design/ssr/face-eight-01/';await mkdir(root,{recursive:true});
+const faces=[{id:'violet-sharp',set:'face-styles-front-01'},{id:'teal-soft',set:'face-styles-front-01'},{id:'cold-detached',set:'face-cold-front-02'}];
+for(const face of faces){const base='apps/client/public/assets/ssr/candidates/'+face.set+'/';face.approved={};for(const suffix of ['-part.json','-patch.png','-short-head.png','-short-body.png']){const path=base+face.id+suffix;face.approved[path]=hash(await readFile(path));}}
+await save(root+'front-approval.json',{date:'2026-10-11',authorization:'ผ่านครับทำ 8 ทิศของทั้ง 3 หน้าเลย',scope:'Exact FRONT versions only. Additional directions require visual review.',faces});
+await save(root+'spec.json',{faces,directions:['south','south-west','west','north-west','north','north-east','east','south-east'],plan:'Reuse exact approved south face parts; one controlled128 packed edit per face for south-east/east visible face areas. Left visible views mirror corresponding right face with mirrored head anchors. North and back diagonals retain existing head and no face overlay, since face not visible. Original body/hair stay frozen.',scope:'Static idle only; no walk/combat/expression animation, no gameplay publication.',quote:{perFace:6,total:18,attempts:3,retries:0,status:'awaiting explicit new credit cap'},validation:['Exact approved FRONT pixel reuse','No changes to hair/body/skull/ears/neck','Face identity and palette across visible views','Mirrored anchors','Native and4x real files in V3 Inspector','User visual review after delivery']});
+console.log('Locked three approved FRONT faces and eight-direction plan');

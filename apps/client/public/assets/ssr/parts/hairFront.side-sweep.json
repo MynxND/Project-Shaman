@@ -1,0 +1,244 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.side-sweep",
+  "kind": "hairFront",
+  "variant": "side-sweep",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": false,
+  "images": [
+    {
+      "id": "ssr/hair-side-sweep-south-accent",
+      "url": "/assets/ssr/layers/hair-side-sweep-south-accent.png",
+      "sha256": "88776184e7cae84a5e0e61aad06836f1ea1efdb6a4e0c44f1cc04a292193f723",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/hair-side-sweep-south-ramp",
+      "url": "/assets/ssr/layers/hair-side-sweep-south-ramp.png",
+      "sha256": "efb553d98df074c3fd6d748f536b147ae7f874f691f4778deb28886afa5e4255",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/hair-side-sweep-north-accent",
+      "url": "/assets/ssr/layers/hair-side-sweep-north-accent.png",
+      "sha256": "476291c303b6c2d5f24b3e8234c6e14c8540ab309726fef89d2a4d1ee12d985e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/hair-side-sweep-north-ramp",
+      "url": "/assets/ssr/layers/hair-side-sweep-north-ramp.png",
+      "sha256": "d46ab19e8181f634261d18737e31d7c794bf3bc8337a7c8693720a5016336fc3",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/hair-side-sweep-north-east-accent",
+      "url": "/assets/ssr/layers/hair-side-sweep-north-east-accent.png",
+      "sha256": "b6bea14a2ad3d73d9452d379cc1d61b8dc74e89a4f22cf734e4518d5b9ebdeff",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/hair-side-sweep-north-east-ramp",
+      "url": "/assets/ssr/layers/hair-side-sweep-north-east-ramp.png",
+      "sha256": "ffab181f26391e1983b9354757445a5a20d01ad9084f0aa44a163a6905d09419",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/hair-side-sweep-east-accent",
+      "url": "/assets/ssr/layers/hair-side-sweep-east-accent.png",
+      "sha256": "18f54e529022b6eb250e13d0363b9d9e0204dfd4c71b1f12f4ad238bc9cb458c",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/hair-side-sweep-east-ramp",
+      "url": "/assets/ssr/layers/hair-side-sweep-east-ramp.png",
+      "sha256": "3eac9d312497ea018f1d0bc0296790e2c512f258f0d8c72c858d2ef25b4e5abd",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/hair-side-sweep-south-east-accent",
+      "url": "/assets/ssr/layers/hair-side-sweep-south-east-accent.png",
+      "sha256": "358f433df4b6993338361c88ba60f35e081a54e4e1ad4afb4ceb7ffd9180041e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/hair-side-sweep-south-east-ramp",
+      "url": "/assets/ssr/layers/hair-side-sweep-south-east-ramp.png",
+      "sha256": "2041553f6186605fa86361c3587a304aeb8ed79eb22c87b2ccbe2c3493485597",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ssr/hair-side-sweep-south-accent",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "ssr/hair-side-sweep-south-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "1": {
+      "action": "idle",
+      "direction": "south-west",
+      "intervalMs": 1000,
+      "mirrorOf": 7
+    },
+    "2": {
+      "action": "idle",
+      "direction": "west",
+      "intervalMs": 1000,
+      "mirrorOf": 6
+    },
+    "3": {
+      "action": "idle",
+      "direction": "north-west",
+      "intervalMs": 1000,
+      "mirrorOf": 5
+    },
+    "4": {
+      "action": "idle",
+      "direction": "north",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ssr/hair-side-sweep-north-accent",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "ssr/hair-side-sweep-north-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 64,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "5": {
+      "action": "idle",
+      "direction": "north-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ssr/hair-side-sweep-north-east-accent",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "ssr/hair-side-sweep-north-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "6": {
+      "action": "idle",
+      "direction": "east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ssr/hair-side-sweep-east-accent",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "ssr/hair-side-sweep-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "7": {
+      "action": "idle",
+      "direction": "south-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ssr/hair-side-sweep-south-east-accent",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "ssr/hair-side-sweep-south-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 65,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "head-layers-03 pack-hair-side-sweep (face-locked inpaint test) filtered by Hair Layer Standard v1 · W/SW/NW mirror E/SE/NE (Ragnarok convention, user-approved 2026-10-10)"
+}

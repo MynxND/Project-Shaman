@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "rightOnlyReview": {
+    "front": "/assets/character-turnaround/right90-manual-01/front.png",
+    "originalRight": "/assets/character-turnaround/right90-manual-01/original-right.png",
+    "before": "/assets/character-turnaround/right90-manual-01/before.png",
+    "after": "/assets/character-turnaround/right90-manual-01/after.png",
+    "comparisonNative": "/assets/character-turnaround/right90-manual-01/comparison-native.png",
+    "comparison2x": "/assets/character-turnaround/right90-manual-01/comparison-2x.png",
+    "comparisonOrder": [
+      "approved-front",
+      "original-rig-v2-right",
+      "raw-rotation-before",
+      "manual-right-after"
+    ],
+    "editSelection": "/assets/character-turnaround/right90-manual-01/edit-selection.png",
+    "pixelDiff": "/assets/character-turnaround/right90-manual-01/pixel-diff.png",
+    "review": {
+      "approved": false,
+      "productionReady": false,
+      "stop": true,
+      "scope": "right-only",
+      "frontApprovedByExplicitUserRequest": true,
+      "limitations": [
+        "Hair-only local reference draft. Rotation body keeps its known costume construction differences; no outfit-profile correction is claimed.",
+        "Hair is projected by retaining a compatible native rear-hair attachment only; the original full head was not transplanted. Bow texture and tail spacing still need user review.",
+        "Clothed reference only, not a clean modular body or independent outfit. Equipped registry is unchanged.",
+        "Hidden side face identity cannot be verified against the frontal master. Back/left remain blocked."
+      ]
+    },
+    "status": "manual-right90-proposal-awaiting-review",
+    "source": {
+      "path": "docs/design/character-turnaround/rotation-experiment-01/raw/east.png",
+      "pngSha256": "9b8b667fd712b07eb3efcd78918be98517c38111e512947c5fdfc626172ef142",
+      "rgbaSha256": "8d96f894ecfaaf72b41c56521609d6c77165dc98e7c6668007ab25f853406651",
+      "kind": "archived-PixelLab-front-reference-rotation-raw-not-original-rig-v2"
+    },
+    "provenance": "/assets/character-turnaround/right90-manual-01/provenance.json",
+    "landmarks": {
+      "silhouette": {
+        "left": 22,
+        "top": 6,
+        "right": 82,
+        "bottom": 123,
+        "width": 61,
+        "height": 118,
+        "pixels": 3557
+      },
+      "headBounds": {
+        "left": 40,
+        "top": 6,
+        "right": 82,
+        "bottom": 38,
+        "width": 43,
+        "height": 33,
+        "pixels": 1006
+      },
+      "shoulderBounds": {
+        "left": 35,
+        "top": 39,
+        "right": 75,
+        "bottom": 48,
+        "width": 41,
+        "height": 10,
+        "pixels": 297
+      },
+      "torsoBounds": {
+        "left": 22,
+        "top": 49,
+        "right": 76,
+        "bottom": 67,
+        "width": 55,
+        "height": 19,
+        "pixels": 729
+      },
+      "footBounds": {
+        "left": 52,
+        "top": 108,
+        "right": 76,
+        "bottom": 123,
+        "width": 25,
+        "height": 16,
+        "pixels": 335
+      },
+      "observedLowestPixel": 123,
+      "groundEdgeDelta": 0,
+      "headBoundsMeaning": "Native occupied head assembly band y0..38 including bow; not an anatomical skull box.",
+      "nativeRootContacts": [
+        [
+          [
+            57,
+            20
+          ],
+          [
+            58,
+            20
+          ]
+        ],
+        [
+          [
+            57,
+            21
+          ],
+          [
+            58,
+            21
+          ]
+        ],
+        [
+          [
+            57,
+            22
+          ],
+          [
+            58,
+            22
+          ]
+        ],
+        [
+          [
+            57,
+            23
+          ],
+          [
+            58,
+            23
+          ]
+        ],
+        [
+          [
+            57,
+            24
+          ],
+          [
+            58,
+            24
+          ]
+        ],
+        [
+          [
+            57,
+            25
+          ],
+          [
+            58,
+            25
+          ]
+        ],
+        [
+          [
+            57,
+            26
+          ],
+          [
+            58,
+            26
+          ]
+        ],
+        [
+          [
+            57,
+            27
+          ],
+          [
+            58,
+            27
+          ]
+        ],
+        [
+          [
+            57,
+            28
+          ],
+          [
+            58,
+            28
+          ]
+        ],
+        [
+          [
+            57,
+            29
+          ],
+          [
+            58,
+            29
+          ]
+        ],
+        [
+          [
+            57,
+            30
+          ],
+          [
+            58,
+            30
+          ]
+        ],
+        [
+          [
+            57,
+            31
+          ],
+          [
+            58,
+            31
+          ]
+        ],
+        [
+          [
+            57,
+            32
+          ],
+          [
+            58,
+            32
+          ]
+        ],
+        [
+          [
+            57,
+            33
+          ],
+          [
+            58,
+            33
+          ]
+        ],
+        [
+          [
+            57,
+            34
+          ],
+          [
+            58,
+            34
+          ]
+        ]
+      ]
+    },
+    "origin": {
+      "x": 64,
+      "y": 124
+    },
+    "originalRightSource": {
+      "path": "apps/client/public/assets/character-turnaround/east-original.png",
+      "pngSha256": "05bfe330cceed61c8b1c350e2248bb168fe36c034b1c2bfcbc0877cd0788b81a",
+      "rgbaSha256": "3179c730c8e4a06eac1336cbde7a067062490868644151d8157423986192897d"
+    },
+    "native": true,
+    "frontApproval": {
+      "approved": true,
+      "evidence": "Explicit user request: original rig-v2 male idle-south frame0 native128 untouched byteexact."
+    },
+    "browserEvidence": {
+      "native": "/assets/character-turnaround/right90-manual-01/browser-comparison-native.png",
+      "nearest2x": "/assets/character-turnaround/right90-manual-01/browser-comparison-2x.png",
+      "status": "captured-and-visually-inspected",
+      "nativeSpriteDisplay": [
+        128,
+        128
+      ],
+      "doubledSpriteDisplay": [
+        256,
+        256
+      ],
+      "nativeCapture": [
+        512,
+        153
+      ],
+      "doubledCapture": [
+        512,
+        562
+      ],
+      "doubledLayout": "Two separately scrolled/captured unscaled panel pairs joined by exact screenshot RGBA row concatenation; checker-backed, no screenshot resampling. Wide native/2x PNG sheets remain available.",
+      "pairScreenshots": [
+        "/assets/character-turnaround/right90-manual-01/browser-2x-front-original.png",
+        "/assets/character-turnaround/right90-manual-01/browser-2x-before-after.png"
+      ],
+      "initialViewerFailure": "Built-in PNG viewer auto-fit and wide/tall viewport screenshots clipped evidence; replaced by separately scrolled pair captures. No app inspector change."
+    }
+  }
+}

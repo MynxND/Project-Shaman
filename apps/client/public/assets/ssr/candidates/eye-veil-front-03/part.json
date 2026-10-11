@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.eye-veil-front-candidate",
+  "kind": "hairFront",
+  "variant": "eye-veil-front-candidate",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "golden-ramp",
+      "url": "/assets/ssr/candidates/eye-veil-front-03/hair-ramp.png",
+      "sha256": "04172794addfa6bbce2dd351e4d8e334945df3fe128f61b53de81268bb530f7a",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "golden-fixed",
+      "url": "/assets/ssr/candidates/eye-veil-front-03/hair-fixed.png",
+      "sha256": "9ef7a6312de90df56108fdc17b421db2eac2c4ac09dfeacdb45754cec4f6c4c9",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "golden-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "golden-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Local partial-fringe derivative of owned FRONT02; original eyes visible; Hair Layer Standard filtering. Unapproved candidate, no other directions or gameplay publication."
+}

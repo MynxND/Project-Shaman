@@ -1,0 +1,13 @@
+{
+    "jsonrpc":  "2.0",
+    "id":  2,
+    "result":  {
+                   "content":  [
+                                   {
+                                       "type":  "text",
+                                       "text":  "1 job(s) finished after 3s, 4 still running:\ncb4ae554-c5f7-474b-a5c7-631eec1a2145 completed (creator-image, took 40s)\n7de10184-15c8-42d2-8976-d2dae5e66938 still running (creator-image, eta ~15s)\n8b47c320-3145-4bab-ad85-8768031300ed still running (creator-image, eta ~15s)\n1b05699f-fa3b-4a7d-9721-f948a22585c6 still running (creator-image, eta ~15s)\nb7d8df30-b2e9-40af-b4fe-9a9e7990a0b0 still running (creator-image, eta ~15s)\nhint: wait_for_jobs() again for the jobs still running"
+                                   }
+                               ],
+                   "isError":  false
+               }
+}

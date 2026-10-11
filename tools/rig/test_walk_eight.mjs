@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';import{readFile}from'node:fs/promises';import{createRequire}from'node:module';import{json,order,hash,sharp,rgba,bounds}from'./body-eight-lib.mjs';
+const ts=createRequire(new URL('../../apps/client/package.json',import.meta.url))('typescript');
+async function module(path){let code=ts.transpileModule(await readFile(path,'utf8'),{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;code=code.replace("from './body-eight-model'",`from 'data:text/javascript;base64,${Buffer.from(ts.transpileModule(await readFile('apps/client/src/game/characters/body-eight-model.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText).toString('base64')}'`);return import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));}
+const{parseWalkEight,walkHeadPosition}=await module('apps/client/src/game/characters/walk-eight-model.ts');
+const m=parseWalkEight(await json('apps/client/public/assets/character-v3/walk-eight-02/manifest.json'));assert.throws(()=>parseWalkEight({...m,directions:m.directions.slice(1)}));
+const body=await json('apps/client/public/assets/character-v3/body-eight-02/manifest.json'),sheet=await readFile('apps/client/public/assets/character-v3/walk-eight-02/sheet.png');assert.equal(hash(sheet),m.sheet.sha256);
+let frames=0;for(const[i,d]of m.directions.entries()){assert.equal(d.direction,order[i]);assert.equal(d.headSha256,body.frames[i].headSha256);assert.equal(hash(await readFile('apps/client/public'+d.headUrl)),d.headSha256,'Approved head changed');
+ const restY1=bounds(await rgba(await readFile(`apps/client/public/assets/character-v3/body-eight-02/${d.direction}.png`))).y1;
+ for(const[j,f]of d.frames.entries()){const b=await readFile('apps/client/public'+f.url),p=await rgba(b),bb=bounds(p);assert.equal(hash(b),f.sha256);assert(bb.y0>=42,'Head pixels above neck '+f.url);assert.equal(bb.y1,restY1,'Foot off ground '+f.url);
+  assert(Math.abs(f.neckPivot.y-body.frames[i].neckPivot.y)<=7,'Neck jump '+f.url);const slice=await sharp(sheet).extract({left:j*128,top:i*128,width:128,height:128}).ensureAlpha().raw().toBuffer();assert(slice.equals(p),'Lossy sheet');
+  for(const o of [{x:-4,y:3},{x:0,y:0}]){const h=walkHeadPosition(d,j,o);assert.equal(h.x,f.neckPivot.x-d.headPivot.x+o.x);assert.equal(h.y,f.neckPivot.y-d.headPivot.y+o.y);}frames++;}}
+const l=await json('docs/design/character-v3/walk-eight-02/ledger.json');assert.equal(l.spent,m.credits.spent);assert(l.spent<=l.cap);
+console.log(`Walk: ${frames} headless frames on ground baseline, approved heads frozen, lossless sheet, per-frame neck attachment; actual ${l.spent} credits, no automatic retry. Visual approval pending.`);

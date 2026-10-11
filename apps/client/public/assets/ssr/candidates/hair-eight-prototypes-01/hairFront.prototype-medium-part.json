@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.prototype-medium-part",
+  "kind": "hairFront",
+  "variant": "prototype-medium-part",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "medium-part-hairFront-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/medium-part-hairFront-fixed.png",
+      "sha256": "2149dcc1ef2da8defcc6ce2909a36d9ae81d549d390254e026f30665c1baffa9",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "medium-part-hairFront-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/medium-part-hairFront-ramp.png",
+      "sha256": "c99ab95e716880de77027ebdac66d3f160d8f16846e2951f6774c17eb7925fb2",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "medium-part-hairFront-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "medium-part-hairFront-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Original FRONT prototype from one eight-design inpaint on owned head; visual approval pending."
+}

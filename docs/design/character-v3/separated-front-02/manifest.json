@@ -1,0 +1,118 @@
+{
+  "version": "separated-front/1",
+  "variant": "whole-head-v2-identity",
+  "direction": "south",
+  "state": "idle",
+  "visualApproved": false,
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "sceneFoot": {
+    "x": 61,
+    "y": 112
+  },
+  "bodyOrigin": {
+    "x": 61,
+    "y": 112
+  },
+  "neckPivot": {
+    "x": 62,
+    "y": 49
+  },
+  "hairPivot": {
+    "x": 62,
+    "y": 26
+  },
+  "headgearPivot": {
+    "x": 62,
+    "y": 20
+  },
+  "leftHand": {
+    "x": 80,
+    "y": 78
+  },
+  "rightHand": {
+    "x": 43,
+    "y": 78
+  },
+  "accessoryPivot": {
+    "x": 62,
+    "y": 70
+  },
+  "footBaseline": 112,
+  "parts": [
+    {
+      "id": "body",
+      "slot": "body",
+      "name": "ตัว V2 เดิม · ซ่อมคอ",
+      "pivot": {
+        "x": 61,
+        "y": 112
+      },
+      "width": 128,
+      "height": 128,
+      "url": "/assets/character-v3/separated-front-02/body.png",
+      "sha256": "796bda9d4d73c49e180475f3e0a370ae7c01137e79d8775373aa35caa8ae571b",
+      "provenance": "docs/design/character-v3/separated-front-02/body-workbench-result.json"
+    },
+    {
+      "id": "swept-head",
+      "slot": "head",
+      "name": "หัวพร้อมผมปัดสั้น · FRONT candidate",
+      "pivot": {
+        "x": 62,
+        "y": 49
+      },
+      "width": 128,
+      "height": 128,
+      "url": "/assets/character-v3/separated-front-02/swept-head.png",
+      "sha256": "1ac5ca0956848a2886484a8955e3d4d5f4206bc513c96581b55ade60bf6a4215",
+      "provenance": "docs/design/head-wardrobe-01/swept-spike-front-result.json"
+    },
+    {
+      "id": "neutral-head",
+      "slot": "head",
+      "name": "หัวเดิมไม่มีผม · เทียบ identity",
+      "pivot": {
+        "x": 62,
+        "y": 49
+      },
+      "width": 128,
+      "height": 128,
+      "url": "/assets/character-v3/separated-front-02/neutral-head.png",
+      "sha256": "5a75d7ce2e3c9951d260af48fe760dfb5da70894ff7955d93c08ae1aefdd978b",
+      "provenance": "apps/client/public/assets/character-v2/body-front-02/raw.png"
+    }
+  ],
+  "bodyId": "body",
+  "headIds": [
+    "swept-head",
+    "neutral-head"
+  ],
+  "hairSets": [],
+  "emptySlots": [
+    "headgear",
+    "outfit",
+    "weapon",
+    "offhand",
+    "accessories"
+  ],
+  "credits": {
+    "cap": 0,
+    "spent": 0,
+    "reserved": 0
+  },
+  "reference": {
+    "url": "/assets/character-v2/body-front-02/raw.png",
+    "sha256": "0ed1ddf448b70a93dc5f624617e832a0af593779b6b7257d65db39b61be35958"
+  },
+  "review": {
+    "userVisualApproved": false,
+    "bodyIdentityPreserved": true,
+    "headFaceIdentityPreserved": true,
+    "neckRepairPixels": 12,
+    "hairCandidateReused": true
+  },
+  "scope": "FRONT IDLE one existing hairstyle; whole-head swaps; paid0; no other direction or animation"
+}

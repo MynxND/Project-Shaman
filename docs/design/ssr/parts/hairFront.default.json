@@ -1,0 +1,208 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.default",
+  "kind": "hairFront",
+  "variant": "default",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": false,
+  "images": [
+    {
+      "id": "ssr/hair-default-south-ramp",
+      "url": "/assets/ssr/layers/hair-default-south-ramp.png",
+      "sha256": "08d86f0007fa34017c3b531edf4567f7d637cf9247409acf876b3891e4f083a7",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/hair-default-north-accent",
+      "url": "/assets/ssr/layers/hair-default-north-accent.png",
+      "sha256": "d31f7cab07ddd1e53b5608e9c401c1bae3a90538ccd3f1322fe4a602278d607c",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/hair-default-north-ramp",
+      "url": "/assets/ssr/layers/hair-default-north-ramp.png",
+      "sha256": "c5ad401f8c80ede89734194340367726b268dc60119f00b52bdb843fe23f4b43",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/hair-default-north-east-accent",
+      "url": "/assets/ssr/layers/hair-default-north-east-accent.png",
+      "sha256": "92bf1264a038ffd15116caeeed4c10b3210672803dd9a7b674972167774f4550",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/hair-default-north-east-ramp",
+      "url": "/assets/ssr/layers/hair-default-north-east-ramp.png",
+      "sha256": "6ee6474434f8d4176a74635cfd7c35d4c41e74ba970812133362ebc27df1ced9",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/hair-default-east-ramp",
+      "url": "/assets/ssr/layers/hair-default-east-ramp.png",
+      "sha256": "c8dd38c970716f04d22d6f1f47195ac223ef4682a5b78275cbafadbe60a403a8",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ssr/hair-default-south-east-ramp",
+      "url": "/assets/ssr/layers/hair-default-south-east-ramp.png",
+      "sha256": "6a8f916e5ef4f728b50cda1a38954a1cd4a7682e274547e30026a42afe822939",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ssr/hair-default-south-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "1": {
+      "action": "idle",
+      "direction": "south-west",
+      "intervalMs": 1000,
+      "mirrorOf": 7
+    },
+    "2": {
+      "action": "idle",
+      "direction": "west",
+      "intervalMs": 1000,
+      "mirrorOf": 6
+    },
+    "3": {
+      "action": "idle",
+      "direction": "north-west",
+      "intervalMs": 1000,
+      "mirrorOf": 5
+    },
+    "4": {
+      "action": "idle",
+      "direction": "north",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ssr/hair-default-north-accent",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "ssr/hair-default-north-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 64,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "5": {
+      "action": "idle",
+      "direction": "north-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ssr/hair-default-north-east-accent",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "ssr/hair-default-north-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "6": {
+      "action": "idle",
+      "direction": "east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ssr/hair-default-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "7": {
+      "action": "idle",
+      "direction": "south-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ssr/hair-default-south-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 65,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "head-eight-01 hair (approved default) filtered by Hair Layer Standard v1 · W/SW/NW mirror E/SE/NE (Ragnarok convention, user-approved 2026-10-10)"
+}

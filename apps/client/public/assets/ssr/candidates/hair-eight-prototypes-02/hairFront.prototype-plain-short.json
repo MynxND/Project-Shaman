@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.prototype-plain-short",
+  "kind": "hairFront",
+  "variant": "prototype-plain-short",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "plain-short-hairFront-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-02/plain-short-hairFront-fixed.png",
+      "sha256": "ae5be6582067648f6aa3a2d0949c68fd2881268e4b585da2b796c3dcc8c36b69",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "plain-short-hairFront-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-02/plain-short-hairFront-ramp.png",
+      "sha256": "696001cc5e736f9f00ff2f207a53f5884da94b40557a785e4e5b697ee13b00bf",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "plain-short-hairFront-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "plain-short-hairFront-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Complete silhouette FRONT repair of the existing eight owned designs; visual approval pending."
+}

@@ -1,0 +1,33 @@
+{
+  "jsonrpc": "2.0",
+  "id": 2,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "status: completed\nid: 8e4ac126-4d4b-473f-b3d1-bc14fdc96964\njob_id: 8e4ac126-4d4b-473f-b3d1-bc14fdc96964\nframes: 1\ntransparent: yes\nasset_id: 52fbfd32-0982-55ac-9226-506b16d1a939\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 5 generations\ndownload: https://api.pixellab.ai/mcp/images/8e4ac126-4d4b-473f-b3d1-bc14fdc96964/download"
+      },
+      {
+        "type": "image",
+        "data": "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",
+        "mimeType": "image/png"
+      }
+    ],
+    "structuredContent": {
+      "job_id": "8e4ac126-4d4b-473f-b3d1-bc14fdc96964",
+      "status": "completed",
+      "frames": 1,
+      "download_url": "https://api.pixellab.ai/mcp/images/8e4ac126-4d4b-473f-b3d1-bc14fdc96964/download",
+      "download_urls": [
+        "https://api.pixellab.ai/mcp/images/8e4ac126-4d4b-473f-b3d1-bc14fdc96964/download"
+      ],
+      "asset": {
+        "id": "52fbfd32-0982-55ac-9226-506b16d1a939",
+        "type": "image",
+        "status": "saved"
+      },
+      "charged_generations": 5.0
+    },
+    "isError": false
+  }
+}

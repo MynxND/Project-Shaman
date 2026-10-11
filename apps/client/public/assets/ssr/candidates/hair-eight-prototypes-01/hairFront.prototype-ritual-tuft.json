@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.prototype-ritual-tuft",
+  "kind": "hairFront",
+  "variant": "prototype-ritual-tuft",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "ritual-tuft-hairFront-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/ritual-tuft-hairFront-fixed.png",
+      "sha256": "3193da45318a8b14638e4a90f740f89298c3d158c4e32a4af50dfbe7a4e06b40",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ritual-tuft-hairFront-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/ritual-tuft-hairFront-ramp.png",
+      "sha256": "f68a9e359367470a97ed30e6ee2cdbed4797ea17be585965d738f930e50af584",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "ritual-tuft-hairFront-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "ritual-tuft-hairFront-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Original FRONT prototype from one eight-design inpaint on owned head; visual approval pending."
+}

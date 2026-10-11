@@ -1,0 +1,168 @@
+{
+  "method": "manual",
+  "source": "Original integer pixel clusters authored on measured V2 template; palette-only transparent extraction from those authored masks. No existing hair pixels or V3 input.",
+  "jobId": null,
+  "creditsSpent": 0,
+  "paidCalls": 0,
+  "budget": {
+    "cap": 20,
+    "spent": 20,
+    "remaining": 0,
+    "paidBlocked": true,
+    "newNumericalBudgetApproved": false,
+    "maxPaidAttemptsPerStyle": 1
+  },
+  "bodySha256": "0ed1ddf448b70a93dc5f624617e832a0af593779b6b7257d65db39b61be35958",
+  "artSha256": "8e591e239a504d34b4eb0a3f72da2404119943d30406f367c8418ceb9e47f111",
+  "templatePath": "docs/design/character-v2/hair-fit-front-01/head-template.json",
+  "records": [
+    {
+      "itemId": "classic-adventurer-short-fit01",
+      "labelThai": "01 นักผจญภัยผมสั้น",
+      "design": "Compact, lightly tousled overlapping short locks. No accessory.",
+      "sources": {
+        "hair-back": "41cc08de9c830d663643c4d6ad625008296d0ab93efdeaded612f2a9406f5cfd",
+        "hair-front": "134af510a197be52adc2f2db86f0b0ba0a10929dcd4bbf34d269e0dfab259cbf",
+        "hair-only": "d40031c817b2445c987968231f384f137832d1dec534d001bd64a486172f7053",
+        "composite": "6adeec77a1c1ab0cd5cd71803006df8b18265179592c873b4c49d71f86f5a1f5"
+      },
+      "metrics": {
+        "passes": {
+          "hairBack": {
+            "left": 48,
+            "top": 28,
+            "right": 77,
+            "bottom": 47,
+            "visible": 462,
+            "hiddenRgb": 0,
+            "partialAlpha": 0,
+            "nonPalette": 0,
+            "skinPixels": 0,
+            "redPixels": 0,
+            "sourceCopies": 0
+          },
+          "hairFront": {
+            "left": 48,
+            "top": 17,
+            "right": 76,
+            "bottom": 34,
+            "visible": 343,
+            "hiddenRgb": 0,
+            "partialAlpha": 0,
+            "nonPalette": 0,
+            "skinPixels": 0,
+            "redPixels": 0,
+            "sourceCopies": 0
+          }
+        },
+        "scalpHoles": 0,
+        "protectedFeatureMismatch": 0,
+        "foreheadOcclusion": 28,
+        "visibleRear": 14,
+        "visibleRearBelowJaw": 13
+      },
+      "hairVisualApproved": false,
+      "userVisualAccepted": false
+    },
+    {
+      "itemId": "thai-shaman-apprentice-fit01",
+      "labelThai": "02 ศิษย์ชาแมนผมเลเยอร์",
+      "design": "Medium tapered side locks, softly parted crown, small hair-bound gathering behind the neck. No bow, ribbon or decorative tie.",
+      "sources": {
+        "hair-back": "93cf08a8cec4b6a89e2476304113d215dab5a2ea6cef51ce144418de8a74ca03",
+        "hair-front": "eb92435b38d6736097dd1672e0a744f4d5c3f8f2c587521060941c362b970959",
+        "hair-only": "cb27142548ff0848dbb039be01f68689b09bc41baf96d00d5bf73856c1ec46fe",
+        "composite": "491d9e4bbf9e450898ab3a973f2ed991f85c99cac850966fba08e9736e5d7312"
+      },
+      "metrics": {
+        "passes": {
+          "hairBack": {
+            "left": 46,
+            "top": 26,
+            "right": 79,
+            "bottom": 57,
+            "visible": 474,
+            "hiddenRgb": 0,
+            "partialAlpha": 0,
+            "nonPalette": 0,
+            "skinPixels": 0,
+            "redPixels": 0,
+            "sourceCopies": 0
+          },
+          "hairFront": {
+            "left": 47,
+            "top": 18,
+            "right": 78,
+            "bottom": 34,
+            "visible": 361,
+            "hiddenRgb": 0,
+            "partialAlpha": 0,
+            "nonPalette": 0,
+            "skinPixels": 0,
+            "redPixels": 0,
+            "sourceCopies": 0
+          }
+        },
+        "scalpHoles": 0,
+        "protectedFeatureMismatch": 0,
+        "foreheadOcclusion": 20,
+        "visibleRear": 130,
+        "visibleRearBelowJaw": 98
+      },
+      "hairVisualApproved": false,
+      "userVisualAccepted": false
+    },
+    {
+      "itemId": "ritual-topknot-fit01",
+      "labelThai": "03 มวยผมพิธีกรรม",
+      "design": "Small compact hair-wrapped knot, swept-back rounded temple planes and restrained nape. Original Thai fantasy, no jewellery or tall tower.",
+      "sources": {
+        "hair-back": "55c610ae774719cf5149d6b57fec67ba002695fa8caf4b4d4138e9644f76430d",
+        "hair-front": "bdd120ef8e8c2d52611054fda67072435d04f7e9f5d1ea418ddc90e05b8c0cbe",
+        "hair-only": "cf6325a5b5ee1842cb48b1504fb682f24bafee24f59c01df4a147858e0e9266a",
+        "composite": "22e500b81d4ef5c8cffbad9c2d8b0784ab0701074d690d200eee23a640866902"
+      },
+      "metrics": {
+        "passes": {
+          "hairBack": {
+            "left": 48,
+            "top": 28,
+            "right": 76,
+            "bottom": 46,
+            "visible": 452,
+            "hiddenRgb": 0,
+            "partialAlpha": 0,
+            "nonPalette": 0,
+            "skinPixels": 0,
+            "redPixels": 0,
+            "sourceCopies": 0
+          },
+          "hairFront": {
+            "left": 48,
+            "top": 12,
+            "right": 76,
+            "bottom": 34,
+            "visible": 363,
+            "hiddenRgb": 0,
+            "partialAlpha": 0,
+            "nonPalette": 0,
+            "skinPixels": 0,
+            "redPixels": 0,
+            "sourceCopies": 0
+          }
+        },
+        "scalpHoles": 0,
+        "protectedFeatureMismatch": 0,
+        "foreheadOcclusion": 4,
+        "visibleRear": 9,
+        "visibleRearBelowJaw": 9
+      },
+      "hairVisualApproved": false,
+      "userVisualAccepted": false
+    }
+  ],
+  "userVisualAccepted": false,
+  "productionReady": false,
+  "visualInspectionCompleted": false,
+  "stop": "Exactly three FRONT proposals for USER review. No other direction, collection, outfit, animation or live changes."
+}

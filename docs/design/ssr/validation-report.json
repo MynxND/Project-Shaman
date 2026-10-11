@@ -1,0 +1,756 @@
+{
+  "generated": "2026-10-10T11:19:51.561Z",
+  "errors": 1,
+  "warns": 21,
+  "byCode": {
+    "anchor-jump": 13,
+    "missing-event": 8,
+    "scale": 1
+  },
+  "neckStats": {
+    "idle": {
+      "south": {
+        "x": [
+          62,
+          62
+        ],
+        "y": [
+          48,
+          48
+        ]
+      },
+      "south-west": {
+        "x": [
+          62,
+          62
+        ],
+        "y": [
+          48,
+          48
+        ]
+      },
+      "west": {
+        "x": [
+          65,
+          65
+        ],
+        "y": [
+          48,
+          48
+        ]
+      },
+      "north-west": {
+        "x": [
+          62,
+          62
+        ],
+        "y": [
+          48,
+          48
+        ]
+      },
+      "north": {
+        "x": [
+          62,
+          62
+        ],
+        "y": [
+          48,
+          48
+        ]
+      },
+      "north-east": {
+        "x": [
+          62,
+          62
+        ],
+        "y": [
+          48,
+          48
+        ]
+      },
+      "east": {
+        "x": [
+          59,
+          59
+        ],
+        "y": [
+          48,
+          48
+        ]
+      },
+      "south-east": {
+        "x": [
+          62,
+          62
+        ],
+        "y": [
+          48,
+          48
+        ]
+      }
+    },
+    "walk": {
+      "south": {
+        "x": [
+          62,
+          63
+        ],
+        "y": [
+          46,
+          49
+        ]
+      },
+      "south-west": {
+        "x": [
+          60,
+          61
+        ],
+        "y": [
+          47,
+          52
+        ]
+      },
+      "west": {
+        "x": [
+          63,
+          65
+        ],
+        "y": [
+          48,
+          55
+        ]
+      },
+      "north-west": {
+        "x": [
+          62,
+          65
+        ],
+        "y": [
+          49,
+          51
+        ]
+      },
+      "north": {
+        "x": [
+          62,
+          62
+        ],
+        "y": [
+          45,
+          48
+        ]
+      },
+      "north-east": {
+        "x": [
+          62,
+          63
+        ],
+        "y": [
+          47,
+          49
+        ]
+      },
+      "east": {
+        "x": [
+          59,
+          60
+        ],
+        "y": [
+          47,
+          51
+        ]
+      },
+      "south-east": {
+        "x": [
+          62,
+          63
+        ],
+        "y": [
+          47,
+          52
+        ]
+      }
+    },
+    "attack": {
+      "south": {
+        "x": [
+          62,
+          62
+        ],
+        "y": [
+          46,
+          49
+        ]
+      },
+      "south-west": {
+        "x": [
+          62,
+          63
+        ],
+        "y": [
+          47,
+          49
+        ]
+      },
+      "west": {
+        "x": [
+          64,
+          65
+        ],
+        "y": [
+          48,
+          48
+        ]
+      },
+      "north-west": {
+        "x": [
+          59,
+          62
+        ],
+        "y": [
+          46,
+          48
+        ]
+      },
+      "north": {
+        "x": [
+          62,
+          68
+        ],
+        "y": [
+          47,
+          51
+        ]
+      },
+      "north-east": {
+        "x": [
+          61,
+          66
+        ],
+        "y": [
+          48,
+          50
+        ]
+      },
+      "east": {
+        "x": [
+          58,
+          61
+        ],
+        "y": [
+          48,
+          54
+        ]
+      },
+      "south-east": {
+        "x": [
+          61,
+          65
+        ],
+        "y": [
+          48,
+          57
+        ]
+      }
+    },
+    "cast": {
+      "south": {
+        "x": [
+          62,
+          62
+        ],
+        "y": [
+          48,
+          50
+        ]
+      },
+      "south-west": {
+        "x": [
+          61,
+          64
+        ],
+        "y": [
+          46,
+          49
+        ]
+      },
+      "west": {
+        "x": [
+          65,
+          66
+        ],
+        "y": [
+          48,
+          51
+        ]
+      },
+      "north-west": {
+        "x": [
+          61,
+          64
+        ],
+        "y": [
+          48,
+          51
+        ]
+      },
+      "north": {
+        "x": [
+          62,
+          62
+        ],
+        "y": [
+          48,
+          48
+        ]
+      },
+      "north-east": {
+        "x": [
+          62,
+          65
+        ],
+        "y": [
+          48,
+          51
+        ]
+      },
+      "east": {
+        "x": [
+          58,
+          61
+        ],
+        "y": [
+          48,
+          51
+        ]
+      },
+      "south-east": {
+        "x": [
+          61,
+          62
+        ],
+        "y": [
+          48,
+          49
+        ]
+      }
+    }
+  },
+  "faceLock": {
+    "south": 0,
+    "south-west": 0,
+    "west": 0,
+    "north-west": 0,
+    "north": 0,
+    "north-east": 0,
+    "east": 0,
+    "south-east": 0
+  },
+  "standard": {
+    "hairFront.default": {
+      "south": {
+        "faceCover": 0,
+        "foreign": 0,
+        "holes": 0,
+        "untintedGrey": 0,
+        "scalpGap": 0.004
+      },
+      "south-west": {
+        "faceCover": 0,
+        "foreign": 0,
+        "holes": 0,
+        "untintedGrey": 0,
+        "scalpGap": 0
+      },
+      "west": {
+        "faceCover": 0,
+        "foreign": 0,
+        "holes": 0,
+        "untintedGrey": 0,
+        "scalpGap": 0
+      },
+      "north-west": {
+        "faceCover": 0,
+        "foreign": 0,
+        "holes": 0,
+        "untintedGrey": 0,
+        "scalpGap": 0.001
+      },
+      "north": {
+        "faceCover": 0,
+        "foreign": 0,
+        "holes": 0,
+        "untintedGrey": 0,
+        "scalpGap": 0
+      },
+      "north-east": {
+        "faceCover": 0,
+        "foreign": 0,
+        "holes": 0,
+        "untintedGrey": 0,
+        "scalpGap": 0.001
+      },
+      "east": {
+        "faceCover": 0,
+        "foreign": 0,
+        "holes": 0,
+        "untintedGrey": 0,
+        "scalpGap": 0
+      },
+      "south-east": {
+        "faceCover": 0,
+        "foreign": 0,
+        "holes": 0,
+        "untintedGrey": 0,
+        "scalpGap": 0
+      }
+    },
+    "hairFront.side-sweep": {
+      "south": {
+        "faceCover": 0,
+        "foreign": 0,
+        "holes": 0,
+        "untintedGrey": 0,
+        "scalpGap": 0
+      },
+      "south-west": {
+        "faceCover": 0,
+        "foreign": 0,
+        "holes": 0,
+        "untintedGrey": 0,
+        "scalpGap": 0
+      },
+      "west": {
+        "faceCover": 0,
+        "foreign": 0,
+        "holes": 0,
+        "untintedGrey": 0,
+        "scalpGap": 0.002
+      },
+      "north-west": {
+        "faceCover": 0,
+        "foreign": 0,
+        "holes": 0,
+        "untintedGrey": 0,
+        "scalpGap": 0.001
+      },
+      "north": {
+        "faceCover": 0,
+        "foreign": 0,
+        "holes": 0,
+        "untintedGrey": 0,
+        "scalpGap": 0.001
+      },
+      "north-east": {
+        "faceCover": 0,
+        "foreign": 0,
+        "holes": 0,
+        "untintedGrey": 0,
+        "scalpGap": 0.001
+      },
+      "east": {
+        "faceCover": 0,
+        "foreign": 0,
+        "holes": 0,
+        "untintedGrey": 0,
+        "scalpGap": 0.002
+      },
+      "south-east": {
+        "faceCover": 0,
+        "foreign": 0,
+        "holes": 0,
+        "untintedGrey": 0,
+        "scalpGap": 0
+      }
+    }
+  },
+  "paletteStats": {
+    "south": {
+      "pixel": 6.8,
+      "tone": 1.4
+    },
+    "south-west": {
+      "pixel": 7.2,
+      "tone": 0.5
+    },
+    "west": {
+      "pixel": 7.1,
+      "tone": 0.1
+    },
+    "north-west": {
+      "pixel": 41.7,
+      "tone": 3
+    },
+    "north": {
+      "pixel": 41.1,
+      "tone": 2.2
+    },
+    "north-east": {
+      "pixel": 41.7,
+      "tone": 3
+    },
+    "east": {
+      "pixel": 7.1,
+      "tone": 0.1
+    },
+    "south-east": {
+      "pixel": 7.2,
+      "tone": 0.5
+    }
+  },
+  "volumeStats": {
+    "hairFront.default": {
+      "south": {
+        "ratio": 0.34,
+        "headWidth": 38,
+        "bodyWidth": 46
+      },
+      "south-west": {
+        "ratio": 0.34,
+        "headWidth": 37,
+        "bodyWidth": 46
+      },
+      "west": {
+        "ratio": 0.343,
+        "headWidth": 34,
+        "bodyWidth": 46
+      },
+      "north-west": {
+        "ratio": 0.366,
+        "headWidth": 39,
+        "bodyWidth": 46
+      },
+      "north": {
+        "ratio": 0.366,
+        "headWidth": 37,
+        "bodyWidth": 46
+      },
+      "north-east": {
+        "ratio": 0.366,
+        "headWidth": 39,
+        "bodyWidth": 46
+      },
+      "east": {
+        "ratio": 0.343,
+        "headWidth": 34,
+        "bodyWidth": 46
+      },
+      "south-east": {
+        "ratio": 0.34,
+        "headWidth": 37,
+        "bodyWidth": 46
+      }
+    },
+    "hairFront.side-sweep": {
+      "south": {
+        "ratio": 0.366,
+        "headWidth": 44,
+        "bodyWidth": 46
+      },
+      "south-west": {
+        "ratio": 0.365,
+        "headWidth": 43,
+        "bodyWidth": 46
+      },
+      "west": {
+        "ratio": 0.369,
+        "headWidth": 39,
+        "bodyWidth": 46
+      },
+      "north-west": {
+        "ratio": 0.373,
+        "headWidth": 38,
+        "bodyWidth": 46
+      },
+      "north": {
+        "ratio": 0.373,
+        "headWidth": 39,
+        "bodyWidth": 46
+      },
+      "north-east": {
+        "ratio": 0.373,
+        "headWidth": 38,
+        "bodyWidth": 46
+      },
+      "east": {
+        "ratio": 0.369,
+        "headWidth": 39,
+        "bodyWidth": 46
+      },
+      "south-east": {
+        "ratio": 0.365,
+        "headWidth": 43,
+        "bodyWidth": 46
+      }
+    }
+  },
+  "issues": [
+    {
+      "severity": "warn",
+      "code": "anchor-jump",
+      "part": "body.medium-novice",
+      "message": "neck moves 4px between frames 4->5",
+      "clip": 9,
+      "frame": 4
+    },
+    {
+      "severity": "warn",
+      "code": "anchor-jump",
+      "part": "body.medium-novice",
+      "message": "neck moves 3px between frames 6->7",
+      "clip": 9,
+      "frame": 6
+    },
+    {
+      "severity": "warn",
+      "code": "anchor-jump",
+      "part": "body.medium-novice",
+      "message": "neck moves 3px between frames 7->0",
+      "clip": 9,
+      "frame": 7
+    },
+    {
+      "severity": "warn",
+      "code": "anchor-jump",
+      "part": "body.medium-novice",
+      "message": "neck moves 3px between frames 6->7",
+      "clip": 10,
+      "frame": 6
+    },
+    {
+      "severity": "error",
+      "code": "anchor-jump",
+      "part": "body.medium-novice",
+      "message": "neck jumps 7px between frames 7->0",
+      "clip": 10,
+      "frame": 7
+    },
+    {
+      "severity": "warn",
+      "code": "anchor-jump",
+      "part": "body.medium-novice",
+      "message": "neck moves 3px between frames 5->6",
+      "clip": 14,
+      "frame": 5
+    },
+    {
+      "severity": "warn",
+      "code": "anchor-jump",
+      "part": "body.medium-novice",
+      "message": "neck moves 4px between frames 7->0",
+      "clip": 14,
+      "frame": 7
+    },
+    {
+      "severity": "warn",
+      "code": "anchor-jump",
+      "part": "body.medium-novice",
+      "message": "neck moves 3px between frames 7->0",
+      "clip": 15,
+      "frame": 7
+    },
+    {
+      "severity": "warn",
+      "code": "missing-event",
+      "part": "body.medium-novice",
+      "message": "attack south: no \"hit\" event frame",
+      "clip": 16
+    },
+    {
+      "severity": "warn",
+      "code": "missing-event",
+      "part": "body.medium-novice",
+      "message": "attack south-west: no \"hit\" event frame",
+      "clip": 17
+    },
+    {
+      "severity": "warn",
+      "code": "missing-event",
+      "part": "body.medium-novice",
+      "message": "attack west: no \"hit\" event frame",
+      "clip": 18
+    },
+    {
+      "severity": "warn",
+      "code": "missing-event",
+      "part": "body.medium-novice",
+      "message": "attack north-west: no \"hit\" event frame",
+      "clip": 19
+    },
+    {
+      "severity": "warn",
+      "code": "missing-event",
+      "part": "body.medium-novice",
+      "message": "attack north: no \"hit\" event frame",
+      "clip": 20
+    },
+    {
+      "severity": "warn",
+      "code": "anchor-jump",
+      "part": "body.medium-novice",
+      "message": "neck moves 3px between frames 3->4",
+      "clip": 20,
+      "frame": 3
+    },
+    {
+      "severity": "warn",
+      "code": "anchor-jump",
+      "part": "body.medium-novice",
+      "message": "neck moves 5px between frames 6->7 (one-shot motion: check the art)",
+      "clip": 20,
+      "frame": 6
+    },
+    {
+      "severity": "warn",
+      "code": "missing-event",
+      "part": "body.medium-novice",
+      "message": "attack north-east: no \"hit\" event frame",
+      "clip": 21
+    },
+    {
+      "severity": "warn",
+      "code": "missing-event",
+      "part": "body.medium-novice",
+      "message": "attack east: no \"hit\" event frame",
+      "clip": 22
+    },
+    {
+      "severity": "warn",
+      "code": "missing-event",
+      "part": "body.medium-novice",
+      "message": "attack south-east: no \"hit\" event frame",
+      "clip": 23
+    },
+    {
+      "severity": "warn",
+      "code": "anchor-jump",
+      "part": "body.medium-novice",
+      "message": "neck moves 5px between frames 1->2 (one-shot motion: check the art)",
+      "clip": 23,
+      "frame": 1
+    },
+    {
+      "severity": "warn",
+      "code": "anchor-jump",
+      "part": "body.medium-novice",
+      "message": "neck moves 3px between frames 4->5",
+      "clip": 23,
+      "frame": 4
+    },
+    {
+      "severity": "warn",
+      "code": "anchor-jump",
+      "part": "body.medium-novice",
+      "message": "neck moves 3px between frames 5->6",
+      "clip": 23,
+      "frame": 5
+    },
+    {
+      "severity": "warn",
+      "code": "scale",
+      "part": "runtime",
+      "message": "V3 world scale 0.608 is not an integer ratio (pixel shimmer)"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+node_modules/
+.next/
+dist/
+*.tsbuildinfo
+.env*
+!.env.example
+
+# Local machine settings (Claude Code permissions, scheduler locks)
+.claude/settings.local.json
+.claude/*.lock

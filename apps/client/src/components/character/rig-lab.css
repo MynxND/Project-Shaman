@@ -1,0 +1,10 @@
+.rig-lab { min-height:100dvh; padding: max(20px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) max(20px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left)); background:#142c28; color:#e8d9b1; font-family:Tahoma,sans-serif; }
+.rig-lab h1 { color:#d6b46c; font-size:24px; margin:16px 0; }
+.rig-lab a { color:#d6b46c; }
+.rig-lab p { font-size:14px; line-height:1.7; }
+.rig-lab-stage { height:300px; max-width:850px; border:1px solid #8d805b; image-rendering:pixelated; overflow:hidden; }
+.rig-lab-controls { display:flex; flex-wrap:wrap; align-items:end; gap:12px; max-width:850px; }
+.rig-lab-controls label { display:flex; flex-direction:column; gap:6px; font-size:14px; }
+.rig-lab-controls select,.rig-lab-controls button { min-height:44px; padding:8px; border:1px solid #8d805b; background:#203b36; color:#e8d9b1; font:inherit; }
+.rig-lab-controls input { min-height:44px; }
+@media(max-width:600px) { .rig-lab-stage { height:280px; } .rig-lab-controls label { flex:1 1 140px; } }

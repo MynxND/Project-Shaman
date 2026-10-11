@@ -1,0 +1,14 @@
+/* SSR prototype layout: canvas left, editor/inspection right; stacks on narrow screens. */
+.ssr-main { display: grid; grid-template-columns: minmax(0, auto) minmax(260px, 1fr); gap: 16px; align-items: start; }
+.ssr-canvas { display: block; image-rendering: pixelated; }
+.ssr-side { display: grid; gap: 12px; }
+.ssr-box { margin: 0; padding: 8px 12px; border: 1px solid #647668; }
+.ssr-box legend { padding: 0 6px; }
+.ssr-box button, .ssr .sr-controls button { font: inherit; color: inherit; background: #19352f; border: 1px solid #647668; padding: 6px 10px; min-height: 36px; cursor: pointer; }
+.ssr-box button:disabled, .ssr .sr-controls button:disabled { opacity: .45; cursor: default; }
+.ssr-pad { display: grid; grid-template-columns: repeat(3, 44px); gap: 4px; margin: 6px 0; }
+.ssr-necks { display: flex; flex-wrap: wrap; gap: 4px; margin: 0; padding: 0; list-style: none; }
+.ssr-necks li[aria-current='true'] button { background: #1f5a52; box-shadow: inset 0 0 0 2px #d6b25e; }
+.ssr-box li[data-severity='error'] { color: #ff9a8a; }
+.ssr-box li[data-severity='warn'] { color: #f0d27a; }
+@media (max-width: 760px) { .ssr-main { grid-template-columns: minmax(0, 1fr); } }

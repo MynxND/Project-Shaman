@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "authorization": "Latest proceed instruction interpreted by coordinator as bounded costume authorization",
+  "maximumCredits": 18,
+  "retries": 0,
+  "priorLedger": "../generation-ledger.json",
+  "priorLedgerSha256": "d7f082429d0df28738bc5b859560d0a87b4c06e3edc81d03a86a58c3489cd2fe",
+  "jobs": [
+    {
+      "id": "17af3205-7375-42c3-9567-8f50af1de725",
+      "imageId": "c280516d-09d7-5645-a5f0-2c4faaea5ba6",
+      "estimatedCredits": 6,
+      "chargedCredits": 6,
+      "status": "completed-rejected-costume",
+      "view": "east",
+      "review": "east/review.json",
+      "raw": "east/raw.png",
+      "chargeEvidence": "east/result.json#result.structuredContent.charged_generations"
+    }
+  ],
+  "pendingJobs": [],
+  "chargedCredits": 6,
+  "reservedCredits": 0,
+  "anatomyAnimationAuthorized": false,
+  "approved": false,
+  "status": "stopped-right-costume-rejected-no-retry",
+  "remainingAuthorizationUnused": 12
+}

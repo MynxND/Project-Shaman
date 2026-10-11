@@ -1,0 +1,53 @@
+/* Inventory layout. Components come from the UI kit; this file only arranges them. */
+.inv-window {
+  /* Placement: .sk-center-window (ui-kit). */
+  width: min(1060px, calc(100vw - 24px)); z-index: 20;
+}
+.inv-title-icon { image-rendering: pixelated; }
+.inv-body { display: grid; grid-template-columns: 170px minmax(0, 1fr) 250px; gap: var(--sk-gap); align-items: start; }
+/* Shorter category tabs so the window still fits a 720 px screen inside the thicker v2 frame. */
+.inv-body > .sk-tabs { gap: 5px; }
+.inv-body > .sk-tabs .sk-tab { min-height: 0; padding-top: 1px; padding-bottom: 1px; }
+.inv-body > .sk-tabs .sk-tab b, .inv-body > .sk-tabs .sk-tab small { line-height: 1.15; }
+.inv-main { display: flex; flex-direction: column; gap: var(--sk-gap); min-width: 0; }
+.inv-toolbar { display: grid; grid-template-columns: minmax(0, 1fr) 150px; gap: var(--sk-gap); }
+.inv-grid { display: grid; grid-template-columns: repeat(auto-fill, 48px); justify-content: center; gap: 4px; max-width: 464px; margin: 0 auto; width: 100%; }
+.inv-empty { margin: 0; color: var(--sk-ink-soft); font-size: 13px; }
+.inv-footer { display: flex; align-items: center; gap: var(--sk-gap); flex-wrap: wrap; }
+.inv-page { font: 700 14px var(--sk-font); font-variant-numeric: tabular-nums; min-width: 48px; text-align: center; }
+.inv-detail-col { display: flex; flex-direction: column; gap: var(--sk-gap); }
+.inv-detail-empty { color: var(--sk-ink-soft); text-align: center; padding: 24px 8px; }
+.inv-detail-head { display: grid; grid-template-columns: 56px 1fr; gap: 8px; align-items: center; }
+.inv-detail-icon { cursor: default; }
+.inv-rarity { font-weight: 700; font-size: 12px; }
+.inv-desc { margin: 0 0 6px; }
+
+/* Tablet and small laptop: details move under the grid. */
+@media (max-width: 1000px) {
+  .inv-body { grid-template-columns: 150px minmax(0, 1fr); }
+  .inv-detail-col { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; }
+  .inv-detail-col > * { flex: 1 1 240px; }
+}
+/* Phone portrait: full-screen sheet, tabs become a scrolling row, grid of 5. */
+@media (max-width: 700px) {
+  .inv-body { grid-template-columns: minmax(0, 1fr); }
+  .inv-body > .sk-tabs { flex-direction: row; overflow-x: auto; padding-bottom: 2px; }
+  .inv-body > .sk-tabs .sk-tab { flex: 0 0 auto; min-height: 40px; }
+  .inv-body > .sk-tabs .sk-tab small { display: none; }
+  .inv-body > .sk-tabs .sk-tab b { white-space: nowrap; }
+  .inv-toolbar { grid-template-columns: minmax(0, 1fr) 110px; }
+  /* As many 54 px slots as fit beside the frame (4 on a 375 px phone). */
+  .inv-grid { grid-template-columns: repeat(auto-fill, 48px); }
+  /* Details stay pinned to the bottom of the sheet so a tap shows them without scrolling past empty slots. */
+  .inv-detail-col { position: sticky; bottom: 0; z-index: 1; flex-direction: column; gap: 4px; max-height: 45dvh; overflow-y: auto; filter: drop-shadow(0 -4px 6px #0006); }
+  .inv-detail-col > * { flex: 0 0 auto; }
+  .inv-detail-empty { display: none; }
+}
+/* Phone landscape: short screen, keep tabs as a row and the grid wide. */
+@media (max-height: 520px) and (orientation: landscape) {
+  .inv-body { grid-template-columns: minmax(0, 1fr) 200px; }
+  .inv-body > .sk-tabs { grid-column: 1 / -1; flex-direction: row; overflow-x: auto; }
+  .inv-body > .sk-tabs .sk-tab small { display: none; }
+  .inv-body > .sk-tabs .sk-tab b { white-space: nowrap; }
+  .inv-detail-col { grid-column: auto; flex-direction: column; }
+}

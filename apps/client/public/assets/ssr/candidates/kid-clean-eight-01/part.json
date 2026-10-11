@@ -1,0 +1,244 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.kid-clean-eight-candidate",
+  "kind": "hairFront",
+  "variant": "kid-clean-eight-candidate",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": false,
+  "images": [
+    {
+      "id": "south-fixed",
+      "url": "/assets/ssr/candidates/kid-clean-eight-01/south-fixed.png",
+      "sha256": "738b747eb075007de7ad35f9aea0f7143f31b03ca16fa999647bdb3bf4c5413a",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "south-ramp",
+      "url": "/assets/ssr/candidates/kid-clean-eight-01/south-ramp.png",
+      "sha256": "40ef6b76c82281831ccca766db2ee46a640579985e55201f4fd465ae1646197f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "south-east-fixed",
+      "url": "/assets/ssr/candidates/kid-clean-eight-01/south-east-fixed.png",
+      "sha256": "cbb84a011cf873926ebfc697211cc875432813aabbdf9bb0b7785aeea2f91225",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "south-east-ramp",
+      "url": "/assets/ssr/candidates/kid-clean-eight-01/south-east-ramp.png",
+      "sha256": "527252d08a2b51c50bd4230f97a8bb2684edd8fa33f683805652ac98f33e4859",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "east-fixed",
+      "url": "/assets/ssr/candidates/kid-clean-eight-01/east-fixed.png",
+      "sha256": "e2c845d4b0e99e5d8225d95948d01dea434d10056937310b0ecb724ee4bd068b",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "east-ramp",
+      "url": "/assets/ssr/candidates/kid-clean-eight-01/east-ramp.png",
+      "sha256": "58dc70e1c280efbbe7bfbc30b1d4f405080d583984aefe7160d1b38341d0b433",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "north-east-fixed",
+      "url": "/assets/ssr/candidates/kid-clean-eight-01/north-east-fixed.png",
+      "sha256": "ce989cfe94faac72d74cbec087d84460a9a802d3fda91adcd3313685d5c76747",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "north-east-ramp",
+      "url": "/assets/ssr/candidates/kid-clean-eight-01/north-east-ramp.png",
+      "sha256": "1e54f3a7df07459a1938c4e55eefa2c8fc62050f517fd26f9eeb0f0f5b24dc96",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "north-fixed",
+      "url": "/assets/ssr/candidates/kid-clean-eight-01/north-fixed.png",
+      "sha256": "56897130f6dc64b4bfe9a12a1be084d9b9b79bf3e6295770ac0faa11ca93e015",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "north-ramp",
+      "url": "/assets/ssr/candidates/kid-clean-eight-01/north-ramp.png",
+      "sha256": "495e82d195915ab97f221dc5d521862b804dec90f9982c114d18d2fcf81786a0",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "south-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "south-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "1": {
+      "action": "idle",
+      "direction": "south-west",
+      "intervalMs": 1000,
+      "mirrorOf": 7
+    },
+    "2": {
+      "action": "idle",
+      "direction": "west",
+      "intervalMs": 1000,
+      "mirrorOf": 6
+    },
+    "3": {
+      "action": "idle",
+      "direction": "north-west",
+      "intervalMs": 1000,
+      "mirrorOf": 5
+    },
+    "4": {
+      "action": "idle",
+      "direction": "north",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "north-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "north-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 64,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "5": {
+      "action": "idle",
+      "direction": "north-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "north-east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "north-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "6": {
+      "action": "idle",
+      "direction": "east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "7": {
+      "action": "idle",
+      "direction": "south-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "south-east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "south-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 65,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Approved Clean Center Part FRONT reused byte-identically; four remaining views in one original owned-reference inpaint. Left views mirrored per Hair Layer Standard v1. Staged visual review only."
+}

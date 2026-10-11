@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-10",
+  "url": "http://localhost:3000/characters/v2",
+  "method": "Actual React inspector; radio/checkbox focus plus Space. Canvas compared byte-by-byte against fetched, hashed PNGs composed in pose order before screenshot capture.",
+  "viewports": { "desktop": [1280,900], "portrait": [390,844], "landscape": [844,390] },
+  "columns": ["viewport","direction","hairOn","visible","mismatch","hashMismatch","overflow","hairDisabled","hairSelection"],
+  "results": [
+    ["desktop","south",true,2978,0,0,false,false,"ivory-long02-manual"],
+    ["desktop","south",false,2524,0,0,false,false,"ivory-long02-manual"],
+    ["desktop","east",false,1931,0,0,false,true,""],
+    ["desktop","north",false,2467,0,0,false,true,""],
+    ["desktop","west",false,1851,0,0,false,true,""],
+    ["portrait","south",true,2978,0,0,false,false,"ivory-long02-manual"],
+    ["portrait","south",false,2524,0,0,false,false,"ivory-long02-manual"],
+    ["portrait","east",false,1931,0,0,false,true,""],
+    ["portrait","north",false,2467,0,0,false,true,""],
+    ["portrait","west",false,1851,0,0,false,true,""],
+    ["landscape","south",true,2978,0,0,false,false,"ivory-long02-manual"],
+    ["landscape","south",false,2524,0,0,false,false,"ivory-long02-manual"],
+    ["landscape","east",false,1931,0,0,false,true,""],
+    ["landscape","north",false,2467,0,0,false,true,""],
+    ["landscape","west",false,1851,0,0,false,true,""]
+  ],
+  "actualViewportMatchedRequestedBeforeCapture": true,
+  "imageSmoothingEnabledAllCases": false,
+  "fullVisualAcceptedAllCases": false,
+  "screenshotsActuallyInspected": true,
+  "responsiveScreenshotFidelityVerified": false,
+  "pointerVerified": false,
+  "realDeviceTest": false,
+  "notes": "Six saved on/off PNGs inspected; figures visible and correct. Capture host changes output dimensions/reflow, so these are not real-device responsive sign-off. Hidden tab initial loading stalled; fresh visible tab passed. No runtime errors were observed, but no persistent pageerror listener was installed. Font preload/readback performance warnings belong to the existing inspector/browser probe."
+}

@@ -1,0 +1,700 @@
+﻿{
+    "spirit-pillar":  {
+                          "kind":  "object",
+                          "width":  48,
+                          "height":  112,
+                          "description":  "Thai city spirit pillar shrine, gold lotus-bud top, wrapped in red and yellow sacred cloth, incense at the base, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                          "upper":  null,
+                          "id":  "fd991175-19a7-489e-b578-af80f7b9057d"
+                      },
+    "sacred-tree":  {
+                        "kind":  "object",
+                        "width":  128,
+                        "height":  160,
+                        "description":  "ancient sacred bodhi tree, twisted trunk wrapped in colourful cloth sashes, small spirit house at its roots, dark green canopy, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                        "upper":  null,
+                        "id":  "719b3bf3-df5d-4f8f-b020-d2a9a7f96a21"
+                    },
+    "house-teak":  {
+                       "kind":  "object",
+                       "width":  160,
+                       "height":  160,
+                       "description":  "traditional Thai teak house, steep layered roof with gable finials, carved panels, front porch with steps, lantern by the door, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                       "upper":  null,
+                       "id":  "3ec7e136-2f7f-40a7-8711-e176f37ad916"
+                   },
+    "tiles-plaza":  {
+                        "kind":  "tileset",
+                        "width":  16,
+                        "height":  16,
+                        "description":  "weathered grey stone cobble road",
+                        "upper":  "ornate sacred plaza paving of warm sandstone slabs with engraved Thai yantra geometric lines",
+                        "id":  "0b30ce76-4265-4299-87e5-caee6ab58246"
+                    },
+    "house-front":  {
+                        "kind":  "pro",
+                        "width":  160,
+                        "height":  160,
+                        "description":  "traditional Thai teak house seen from the front and slightly above like a classic 2D RPG town, the front facade faces the camera straight on and is symmetric, steep layered roof with gold gable finials, carved panels, front porch with steps, red cloth banner, not isometric, no ground tile, transparent background, no text",
+                        "upper":  "",
+                        "id":  "a8647521-90ab-43dc-8366-a9c1457ad0c4"
+                    },
+    "tiles-plaza2":  {
+                         "kind":  "tileset",
+                         "width":  16,
+                         "height":  16,
+                         "description":  "weathered grey stone cobble road",
+                         "upper":  [
+                                       "large square slabs of pale weathered beige sandstone with thin dark joints and faint engraved lines, muted colours",
+                                       {
+                                           "lower_base_tile_id":  "eca11e4b-7d96-4ac2-81e4-b9b3e099c690"
+                                       }
+                                   ],
+                         "id":  "0b1f9b3a-1ddf-4dd8-9289-658c70229b14"
+                     },
+    "yantra-disc":  {
+                        "kind":  "pro",
+                        "width":  256,
+                        "height":  256,
+                        "description":  "flat circular ceremonial stone platform seen from directly above, engraved original Thai sacred yantra geometry with concentric rings, lotus petals and radiating lines, pale weathered sandstone with antique gold inlay and a few red cloth offerings at the rim, no text, no letters, transparent background",
+                        "upper":  "",
+                        "id":  "9763c8c5-936d-4a53-8d36-d12fad7b088a"
+                    },
+    "ritual-pillar":  {
+                          "kind":  "object",
+                          "width":  32,
+                          "height":  80,
+                          "description":  "small Thai ritual pillar with a gold lotus top, red and yellow cloth bands, carved stone base, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                          "upper":  null,
+                          "id":  "71db36f9-3272-4bd1-8f25-099254fd43e7"
+                      },
+    "brazier":  {
+                    "kind":  "object",
+                    "width":  48,
+                    "height":  64,
+                    "description":  "bronze ritual brazier bowl on three carved legs with warm amber fire, Thai temple style, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                    "upper":  null,
+                    "id":  "d10d7ad2-b07a-4d88-8356-61af20ee6148"
+                },
+    "guardian":  {
+                     "kind":  "object",
+                     "width":  64,
+                     "height":  112,
+                     "description":  "Thai temple giant guardian statue standing with a club, painted stone with gold crown, facing right, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                     "upper":  null,
+                     "id":  "c27ab7e9-6446-4954-8d3f-11a1ccccade9"
+                 },
+    "banner-pole":  {
+                        "kind":  "object",
+                        "width":  32,
+                        "height":  96,
+                        "description":  "tall teak pole with a hanging red talisman banner with a gold yantra pattern and a bronze finial, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                        "upper":  null,
+                        "id":  "aa548c93-5e4b-4985-bc1b-c0d3a832ad98"
+                    },
+    "flowerbed":  {
+                      "kind":  "object",
+                      "width":  64,
+                      "height":  48,
+                      "description":  "low carved stone flowerbed with orange marigolds and pink lotus buds, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                      "upper":  null,
+                      "id":  "f869e7ee-cb60-424c-b584-65bc8b4d5f02"
+                  },
+    "incense":  {
+                    "kind":  "object",
+                    "width":  32,
+                    "height":  48,
+                    "description":  "small bronze incense burner urn with smoking incense sticks and marigold garland, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                    "upper":  null,
+                    "id":  "c2b4d730-01e1-4b2c-b63d-d58c423f2ba0"
+                },
+    "brazier-s":  {
+                      "kind":  "object",
+                      "width":  32,
+                      "height":  40,
+                      "description":  "bronze ritual brazier bowl on three carved legs with warm amber fire, Thai temple style, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                      "upper":  null,
+                      "id":  "ba9c00d9-5b66-4603-a977-fc670103af9f"
+                  },
+    "guardian-s":  {
+                       "kind":  "object",
+                       "width":  48,
+                       "height":  80,
+                       "description":  "Thai temple giant guardian statue standing with a club on a stone pedestal, painted stone with gold crown, facing right, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                       "upper":  null,
+                       "id":  "1823a79e-a47b-4098-8b1c-3f804698cfcb"
+                   },
+    "flowerbed-s":  {
+                        "kind":  "object",
+                        "width":  48,
+                        "height":  32,
+                        "description":  "low carved stone flowerbed with orange marigolds and pink lotus buds, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                        "upper":  null,
+                        "id":  "cceb7955-ec8f-46c3-a681-0e366f44f032"
+                    },
+    "ritual-pillar-s":  {
+                            "kind":  "object",
+                            "width":  32,
+                            "height":  64,
+                            "description":  "small Thai ritual pillar with a gold lotus top, red and yellow cloth bands, carved stone base, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                            "upper":  null,
+                            "id":  "9124c348-be62-4845-b055-ed5ff86daab1"
+                        },
+    "temple-thai":  {
+                        "kind":  "pro",
+                        "width":  256,
+                        "height":  208,
+                        "description":  "grand Thai ritual temple hall, multi-tiered layered dark red and gold roof with chofa finials, white and dark teak walls, wide stone staircase in front with naga balustrades, glowing doorway, seen from the front and slightly above like a classic 2D RPG town, symmetric front facade facing the camera, not isometric, no ground tile, transparent background, no text",
+                        "upper":  "",
+                        "id":  "101272cb-6efa-4fda-8acf-9bd50398fc38"
+                    },
+    "training-hall":  {
+                          "kind":  "pro",
+                          "width":  192,
+                          "height":  160,
+                          "description":  "Thai shaman training hall, open-sided teak sala pavilion with a two-tier red roof and gold finials, low stone platform with front steps, ritual banners, seen from the front and slightly above like a classic 2D RPG town, symmetric front facade facing the camera, not isometric, no ground tile, transparent background, no text",
+                          "upper":  "",
+                          "id":  "604f2326-b90f-44ae-8529-38d526bc5824"
+                      },
+    "house-stilt":  {
+                        "kind":  "pro",
+                        "width":  128,
+                        "height":  128,
+                        "description":  "small Thai village house on short wooden stilts, steep thatched roof, woven bamboo walls, front ladder, potted plants, seen from the front and slightly above like a classic 2D RPG town, symmetric front facade facing the camera, not isometric, no ground tile, transparent background, no text",
+                        "upper":  "",
+                        "id":  "2e293145-f086-4765-a6f1-6a3e2558f729"
+                    },
+    "house-row":  {
+                      "kind":  "pro",
+                      "width":  160,
+                      "height":  128,
+                      "description":  "Thai teak shophouse with a long low dark tiled roof, wooden folding doors, a hanging red lantern and a cloth sign, seen from the front and slightly above like a classic 2D RPG town, symmetric front facade facing the camera, not isometric, no ground tile, transparent background, no text",
+                      "upper":  "",
+                      "id":  "4e9acbc5-fe71-453e-929e-0b9b7c92592f"
+                  },
+    "fence":  {
+                  "kind":  "object",
+                  "width":  48,
+                  "height":  32,
+                  "description":  "short carved teak garden fence segment seen from the front, posts with small gold caps, red thread tied, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                  "upper":  null,
+                  "id":  "49475a6b-bdfe-4d4c-b7de-00824dc84c7d"
+              },
+    "dummy":  {
+                  "kind":  "object",
+                  "width":  32,
+                  "height":  48,
+                  "description":  "straw and wood training dummy on a post with paper talismans stuck on it, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                  "upper":  null,
+                  "id":  "67707091-c8f1-42ad-bbce-4ae507ab2012"
+              },
+    "tiles-grass-road":  {
+                             "kind":  "tileset",
+                             "width":  16,
+                             "height":  16,
+                             "description":  "dark green grass lawn with tiny wild flowers",
+                             "upper":  [
+                                           "weathered grey stone cobble road",
+                                           {
+                                               "upper_base_tile_id":  "eca11e4b-7d96-4ac2-81e4-b9b3e099c690"
+                                           }
+                                       ],
+                             "id":  "d21119cd-9dcf-46c8-bca2-374a849952c6"
+                         },
+    "tiles-grass-road2":  {
+                              "kind":  "tileset",
+                              "width":  16,
+                              "height":  16,
+                              "description":  "dark muted mossy green grass with a few tiny dark flowers, shadowy night palette",
+                              "upper":  [
+                                            "weathered grey stone cobble road",
+                                            {
+                                                "upper_base_tile_id":  "eca11e4b-7d96-4ac2-81e4-b9b3e099c690"
+                                            }
+                                        ],
+                              "id":  "a168f460-1b11-4932-b01f-d6f6b05122af"
+                          },
+    "bridge-h":  {
+                     "kind":  "object",
+                     "width":  64,
+                     "height":  48,
+                     "description":  "short arched teak footbridge crossing from left to right, red wooden railings, stone abutments, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                     "upper":  null,
+                     "id":  "62be6b17-9f37-42b2-b028-244d28c3f2ef"
+                 },
+    "bridge-v":  {
+                     "kind":  "object",
+                     "width":  48,
+                     "height":  64,
+                     "description":  "short flat teak footbridge running straight away from the viewer, red wooden railings on both sides, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                     "upper":  null,
+                     "id":  "2123c1f3-c7fa-4a97-875c-343d0937ed52"
+                 },
+    "wall":  {
+                 "kind":  "pro",
+                 "width":  128,
+                 "height":  64,
+                 "description":  "straight section of an old grey stone city wall with a crenellated top, moss, small red cloth banners, seen from the front and slightly above like a classic 2D RPG town, front facing the camera, not isometric, no ground tile, transparent background, no text",
+                 "upper":  "",
+                 "id":  "d040b2a2-6d5e-452e-b075-add0fb08fb08"
+             },
+    "tower":  {
+                  "kind":  "object",
+                  "width":  64,
+                  "height":  112,
+                  "description":  "Thai city wall corner watchtower, square grey stone base, teak upper floor with a red tiered roof and gold finial, glowing lanterns, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                  "upper":  null,
+                  "id":  "0a7e26bb-52a9-45b7-9a7c-fd6c9a1c6095"
+              },
+    "pine":  {
+                 "kind":  "object",
+                 "width":  48,
+                 "height":  80,
+                 "description":  "tall slender dark green cypress tree, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                 "upper":  null,
+                 "id":  "d44b9817-d80d-4a56-8a63-8d11900e4c3b"
+             },
+    "blossom":  {
+                    "kind":  "object",
+                    "width":  96,
+                    "height":  96,
+                    "description":  "tree covered in pink blossoms with a dark trunk, a few petals on the ground, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                    "upper":  null,
+                    "id":  "762f4cc9-cbe0-4bc8-a078-ac217e48617f"
+                },
+    "bush":  {
+                 "kind":  "object",
+                 "width":  48,
+                 "height":  32,
+                 "description":  "round dark green shrub with small orange flowers, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                 "upper":  null,
+                 "id":  "d1d3e341-bf55-48d7-b15a-80487d4e08c5"
+             },
+    "lotus-pads":  {
+                       "kind":  "object",
+                       "width":  32,
+                       "height":  32,
+                       "description":  "floating lotus pads with one pink lotus flower, seen from above, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                       "upper":  null,
+                       "id":  "2dae322d-0c81-44ef-87fe-1ddb23b70742"
+                   },
+    "tiles-water":  {
+                        "kind":  "tileset",
+                        "width":  16,
+                        "height":  16,
+                        "description":  "deep dark blue canal water with gentle ripples",
+                        "upper":  [
+                                      "dark muted mossy green grass with a few tiny dark flowers, shadowy night palette",
+                                      {
+                                          "transition_description":  "carved grey stone canal edge",
+                                          "upper_base_tile_id":  "c2d52436-164a-44bd-b912-b068817a33d0"
+                                      }
+                                  ],
+                        "id":  "b09cc7d9-011e-4839-8042-a7b5b22ad877"
+                    },
+    "tiles-dirt":  {
+                       "kind":  "tileset",
+                       "width":  16,
+                       "height":  16,
+                       "description":  "dark muted mossy green grass with a few tiny dark flowers, shadowy night palette",
+                       "upper":  [
+                                     "packed brown earth footpath with small pebbles",
+                                     {
+                                         "lower_base_tile_id":  "c2d52436-164a-44bd-b912-b068817a33d0"
+                                     }
+                                 ],
+                       "id":  "5d2cd5e0-6670-45f7-811a-9e45f7e0a592"
+                   },
+    "pine2":  {
+                  "kind":  "object",
+                  "width":  48,
+                  "height":  80,
+                  "description":  "single tall slender dark green cypress tree on its own, no buildings, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                  "upper":  null,
+                  "id":  "67e106c6-c490-41d6-ab86-a9feeffd5e7f"
+              },
+    "gate-thai":  {
+                      "kind":  "pro",
+                      "width":  192,
+                      "height":  160,
+                      "description":  "grand Thai city gate seen from the front and slightly above like a classic 2D RPG town, two thick white and red stone pillars joined by a tiered red and gold Thai roof with chofa finials, wide open passage in the middle, red cloth banners, glowing lanterns, symmetric, front facing the camera, not isometric, no ground tile, transparent background, no text",
+                      "upper":  "",
+                      "id":  "038d2055-4b9d-4d1a-b05e-36953658e7cc"
+                  },
+    "tiles-road-calm":  {
+                            "kind":  "tileset",
+                            "width":  16,
+                            "height":  16,
+                            "description":  "dark muted mossy green grass with a few tiny dark flowers, shadowy night palette",
+                            "upper":  [
+                                          "worn grey flagstone road of large irregular stones with soft muted colours and subtle thin joints",
+                                          {
+                                              "lower_base_tile_id":  "c2d52436-164a-44bd-b912-b068817a33d0"
+                                          }
+                                      ],
+                            "id":  "5cbe16b4-81e0-4a34-8cc3-57bbda417231"
+                        },
+    "wall-side":  {
+                      "kind":  "pro",
+                      "width":  48,
+                      "height":  128,
+                      "description":  "straight section of an old grey stone city wall running north to south, seen from above at a three-quarter angle like a classic 2D RPG town: a long vertical strip showing the crenellated top walkway with moss and the inner stone face along its right side, small red cloth banner, fills the canvas from top to bottom, no ground tile, transparent background, no text",
+                      "upper":  "",
+                      "id":  "67fa4c25-f94b-4e12-acff-e5db10538066"
+                  },
+    "wall-side-obj":  {
+                          "kind":  "object",
+                          "width":  48,
+                          "height":  128,
+                          "description":  "long straight grey stone city wall segment running from the top of the image to the bottom, crenellated walkway on top, stone face on the right side, moss, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                          "upper":  null,
+                          "id":  "ab3dfa09-2539-484d-9be3-85f3fd3e11a1"
+                      },
+    "light-talisman":  {
+                           "kind":  "object",
+                           "width":  32,
+                           "height":  48,
+                           "description":  "short carved teak lantern post with an antique bronze lantern glowing warm amber, red sacred thread and a small hanging Thai talisman cloth, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                           "upper":  null,
+                           "id":  "7e73fa88-7086-40b2-bc68-6118ea72df6e"
+                       },
+    "light-spirit":  {
+                         "kind":  "object",
+                         "width":  32,
+                         "height":  48,
+                         "description":  "carved grey stone lantern pedestal with an engraved Thai occult motif, holding a softly glowing jade green spirit crystal, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                         "upper":  null,
+                         "id":  "d1089828-cb4a-4b1a-bee6-7b6df732d0c3"
+                     },
+    "light-brazier":  {
+                          "kind":  "object",
+                          "width":  48,
+                          "height":  48,
+                          "description":  "weathered bronze ritual fire brazier bowl with carved Thai flame ornaments, glowing embers and small ceremonial flames, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                          "upper":  null,
+                          "id":  "ad8f4065-ea4d-429a-942e-edb9646189fd"
+                      },
+    "light-hanging":  {
+                          "kind":  "object",
+                          "width":  32,
+                          "height":  32,
+                          "description":  "small red paper lantern hanging from a short carved wooden wall bracket, warm glow, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                          "upper":  null,
+                          "id":  "042f1955-8ab3-43cc-b1ca-bd6d13b7ff00"
+                      },
+    "reeds":  {
+                  "kind":  "object",
+                  "width":  32,
+                  "height":  32,
+                  "description":  "clump of tall green canal reeds and grasses growing at a water edge, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                  "upper":  null,
+                  "id":  "1c8e95d0-8e9d-492a-a777-2372b024e51a"
+              },
+    "moss-stones":  {
+                        "kind":  "object",
+                        "width":  32,
+                        "height":  32,
+                        "description":  "two or three low mossy grey garden stones with small ferns, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                        "upper":  null,
+                        "id":  "945efb3e-0a8c-495e-9206-06ad8ea10c54"
+                    },
+    "clay-pots":  {
+                      "kind":  "object",
+                      "width":  32,
+                      "height":  32,
+                      "description":  "group of three terracotta clay pots with small green herbs and a marigold, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                      "upper":  null,
+                      "id":  "7d767a10-229a-4558-a795-6cdebe6a4249"
+                  },
+    "stone-bed":  {
+                      "kind":  "object",
+                      "width":  64,
+                      "height":  32,
+                      "description":  "low rectangular planting bed with a carved grey stone border filled with neat low green shrubs and a few red flowers, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                      "upper":  null,
+                      "id":  "a9c2a34c-9484-4c3a-8f55-03853fda996d"
+                  },
+    "stepping":  {
+                     "kind":  "object",
+                     "width":  32,
+                     "height":  32,
+                     "description":  "three flat round stepping stones set in grass, seen from above, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                     "upper":  null,
+                     "id":  "ef605222-f02b-4a8f-99ff-16a6d221c52a"
+                 },
+    "shrub-low":  {
+                      "kind":  "object",
+                      "width":  48,
+                      "height":  32,
+                      "description":  "low clipped dark green hedge shrub cluster, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                      "upper":  null,
+                      "id":  "3050d63b-94d2-4bed-9ecb-9ab2fed7f4d1"
+                  },
+    "small-tree":  {
+                       "kind":  "object",
+                       "width":  48,
+                       "height":  64,
+                       "description":  "small round shade tree with a dark green canopy and a slim trunk, classic 2D MMORPG town art, elevated three-quarter view, ancient Thai shaman style, carved teak, grey stone, gold trim, red cloth, jade accents, no text",
+                       "upper":  null,
+                       "id":  "f8c24279-98af-41e4-b027-8577b96f8ee8"
+                   },
+    "npc-guide":  {
+                      "kind":  "pro",
+                      "width":  128,
+                      "height":  128,
+                      "description":  "friendly young town guide in a jade and cream Thai tunic holding a paper map scroll, full body standing still facing the viewer, same chibi proportions, outline and pixel density as the reference character, Thai shaman fantasy, transparent background, no text",
+                      "upper":  [
+                                    "",
+                                    {
+                                        "style":  "apps/client/public/assets/pixellab/main-female-v1/south.png"
+                                    }
+                                ],
+                      "id":  "39afdb28-9fb4-4679-a035-df949e7c912d"
+                  },
+    "npc-elder":  {
+                      "kind":  "pro",
+                      "width":  128,
+                      "height":  128,
+                      "description":  "elderly temple master in dark red and saffron robes with prayer beads and a white beard, full body standing still facing the viewer, same chibi proportions, outline and pixel density as the reference character, Thai shaman fantasy, transparent background, no text",
+                      "upper":  [
+                                    "",
+                                    {
+                                        "style":  "apps/client/public/assets/pixellab/main-female-v1/south.png"
+                                    }
+                                ],
+                      "id":  "3888b089-e29d-4d2f-8b26-890f8cc38faa"
+                  },
+    "npc-instructor":  {
+                           "kind":  "pro",
+                           "width":  128,
+                           "height":  128,
+                           "description":  "stern shaman instructor in black and red ritual garb with a carved staff and talisman papers, full body standing still facing the viewer, same chibi proportions, outline and pixel density as the reference character, Thai shaman fantasy, transparent background, no text",
+                           "upper":  [
+                                         "",
+                                         {
+                                             "style":  "apps/client/public/assets/pixellab/main-female-v1/south.png"
+                                         }
+                                     ],
+                           "id":  "0fa2dc87-c119-432b-b92d-37ee2303f61f"
+                       },
+    "npc-herbalist":  {
+                          "kind":  "pro",
+                          "width":  128,
+                          "height":  128,
+                          "description":  "kind herbal healer woman with a woven herb basket, green and brown cloth, flower in her hair, full body standing still facing the viewer, same chibi proportions, outline and pixel density as the reference character, Thai shaman fantasy, transparent background, no text",
+                          "upper":  [
+                                        "",
+                                        {
+                                            "style":  "apps/client/public/assets/pixellab/main-female-v1/south.png"
+                                        }
+                                    ],
+                          "id":  "15d8462d-2a7c-4297-8f22-813384c84d2a"
+                      },
+    "npc-talisman":  {
+                         "kind":  "pro",
+                         "width":  128,
+                         "height":  128,
+                         "description":  "talisman craftsman with a red headband holding a glowing yellow talisman paper, apron with ink brushes, full body standing still facing the viewer, same chibi proportions, outline and pixel density as the reference character, Thai shaman fantasy, transparent background, no text",
+                         "upper":  [
+                                       "",
+                                       {
+                                           "style":  "apps/client/public/assets/pixellab/main-female-v1/south.png"
+                                       }
+                                   ],
+                         "id":  "b4cd551c-4f6b-4ea5-8a74-26764cf584b7"
+                     },
+    "npc-trader":  {
+                       "kind":  "pro",
+                       "width":  128,
+                       "height":  128,
+                       "description":  "plump merchant in rich gold and crimson silk with a coin pouch and an abacus, full body standing still facing the viewer, same chibi proportions, outline and pixel density as the reference character, Thai shaman fantasy, transparent background, no text",
+                       "upper":  [
+                                     "",
+                                     {
+                                         "style":  "apps/client/public/assets/pixellab/main-female-v1/south.png"
+                                     }
+                                 ],
+                       "id":  "ad1d0590-ed2e-402b-b470-a53b72f78e10"
+                   },
+    "npc-storage":  {
+                        "kind":  "pro",
+                        "width":  128,
+                        "height":  128,
+                        "description":  "storage keeper with a big key ring and a wooden chest strapped to his back, brown work clothes, full body standing still facing the viewer, same chibi proportions, outline and pixel density as the reference character, Thai shaman fantasy, transparent background, no text",
+                        "upper":  [
+                                      "",
+                                      {
+                                          "style":  "apps/client/public/assets/pixellab/main-female-v1/south.png"
+                                      }
+                                  ],
+                        "id":  "ea53958d-d239-4771-8911-04336e33adb1"
+                    },
+    "npc-smith":  {
+                      "kind":  "pro",
+                      "width":  128,
+                      "height":  128,
+                      "description":  "muscular amulet smith with a bronze hammer and leather apron, rolled sleeves, full body standing still facing the viewer, same chibi proportions, outline and pixel density as the reference character, Thai shaman fantasy, transparent background, no text",
+                      "upper":  [
+                                    "",
+                                    {
+                                        "style":  "apps/client/public/assets/pixellab/main-female-v1/south.png"
+                                    }
+                                ],
+                      "id":  "e62ef49b-26bd-43fb-bdbf-ce061afea5da"
+                  },
+    "npc-teleporter":  {
+                           "kind":  "pro",
+                           "width":  128,
+                           "height":  128,
+                           "description":  "mysterious spirit medium woman in flowing violet and white robes holding a glowing jade orb, full body standing still facing the viewer, same chibi proportions, outline and pixel density as the reference character, Thai shaman fantasy, transparent background, no text",
+                           "upper":  [
+                                         "",
+                                         {
+                                             "style":  "apps/client/public/assets/pixellab/main-female-v1/south.png"
+                                         }
+                                     ],
+                           "id":  "fbaf1253-4ea3-4081-a2d5-1048b3c625fe"
+                       },
+    "npc-guard":  {
+                      "kind":  "pro",
+                      "width":  128,
+                      "height":  128,
+                      "description":  "city gate guard in teak and bronze Thai armour with a spear and a red sash, full body standing still facing the viewer, same chibi proportions, outline and pixel density as the reference character, Thai shaman fantasy, transparent background, no text",
+                      "upper":  [
+                                    "",
+                                    {
+                                        "style":  "apps/client/public/assets/pixellab/main-female-v1/south.png"
+                                    }
+                                ],
+                      "id":  "b5457930-286f-4c07-af29-860b56d7ba15"
+                  },
+    "npc-keeper":  {
+                       "kind":  "pro",
+                       "width":  128,
+                       "height":  128,
+                       "description":  "shrine keeper woman in white and gold holding a small incense bowl, calm smile, full body standing still facing the viewer, same chibi proportions, outline and pixel density as the reference character, Thai shaman fantasy, transparent background, no text",
+                       "upper":  [
+                                     "",
+                                     {
+                                         "style":  "apps/client/public/assets/pixellab/main-female-v1/south.png"
+                                     }
+                                 ],
+                       "id":  "25662e90-52e6-4d44-923c-351cc141b017"
+                   },
+    "walker-boy":  {
+                       "kind":  "pro",
+                       "width":  128,
+                       "height":  128,
+                       "description":  "small village boy about eight years old, much shorter than an adult, simple orange shirt and brown shorts, barefoot, cheerful, full body standing straight facing the viewer, arms relaxed, same outline and pixel density as the reference character, Thai village townsfolk, transparent background, no text",
+                       "upper":  [
+                                     "",
+                                     {
+                                         "style":  "apps/client/public/assets/pixellab/main-female-v1/south.png"
+                                     }
+                                 ],
+                       "id":  "f4ecab3a-50c6-4228-bac2-8e92064fc417"
+                   },
+    "walker-girl":  {
+                        "kind":  "pro",
+                        "width":  128,
+                        "height":  128,
+                        "description":  "small village girl about seven years old, much shorter than an adult, pink blouse and green sarong, hair in two buns, full body standing straight facing the viewer, arms relaxed, same outline and pixel density as the reference character, Thai village townsfolk, transparent background, no text",
+                        "upper":  [
+                                      "",
+                                      {
+                                          "style":  "apps/client/public/assets/pixellab/main-female-v1/south.png"
+                                      }
+                                  ],
+                        "id":  "134595a9-5da2-48c4-98cb-66b3788c352f"
+                    },
+    "walker-grandpa":  {
+                           "kind":  "pro",
+                           "width":  128,
+                           "height":  128,
+                           "description":  "elderly grandfather with a white beard and a walking stick, faded indigo shirt and loose fisherman trousers, slightly stooped, full body standing straight facing the viewer, arms relaxed, same outline and pixel density as the reference character, Thai village townsfolk, transparent background, no text",
+                           "upper":  [
+                                         "",
+                                         {
+                                             "style":  "apps/client/public/assets/pixellab/main-female-v1/south.png"
+                                         }
+                                     ],
+                           "id":  "2c6060f8-95b7-4865-a322-7019acbd3437"
+                       },
+    "walker-grandma":  {
+                           "kind":  "pro",
+                           "width":  128,
+                           "height":  128,
+                           "description":  "elderly grandmother with grey hair in a bun, cream blouse and dark patterned sarong, carrying a small woven basket, full body standing straight facing the viewer, arms relaxed, same outline and pixel density as the reference character, Thai village townsfolk, transparent background, no text",
+                           "upper":  [
+                                         "",
+                                         {
+                                             "style":  "apps/client/public/assets/pixellab/main-female-v1/south.png"
+                                         }
+                                     ],
+                           "id":  "3e50184f-238a-4a42-b997-5a4601df3162"
+                       },
+    "sw-bamboo":  {
+                      "kind":  "object",
+                      "width":  48,
+                      "height":  80,
+                      "description":  "dense clump of tall green bamboo stalks with leaves, a few yellowed stalks, classic 2D MMORPG forest art, elevated three-quarter view, Thai shaman folklore, muted greens, moss, weathered wood and stone, no text",
+                      "upper":  null,
+                      "id":  "deaccdbf-847a-4759-bda4-32160ac75379"
+                  },
+    "sw-jungle-tree":  {
+                           "kind":  "object",
+                           "width":  96,
+                           "height":  112,
+                           "description":  "large ancient tropical forest tree with buttress roots and a dark green layered canopy, moss on the bark, classic 2D MMORPG forest art, elevated three-quarter view, Thai shaman folklore, muted greens, moss, weathered wood and stone, no text",
+                           "upper":  null,
+                           "id":  "e940256d-61bb-48e1-8fd8-7e0f7fdb003e"
+                       },
+    "sw-mossy-rock":  {
+                          "kind":  "object",
+                          "width":  48,
+                          "height":  32,
+                          "description":  "low mossy grey boulder with small ferns at its base, classic 2D MMORPG forest art, elevated three-quarter view, Thai shaman folklore, muted greens, moss, weathered wood and stone, no text",
+                          "upper":  null,
+                          "id":  "b1a70c55-11a4-4259-b084-90adc58a12af"
+                      },
+    "sw-fern":  {
+                    "kind":  "object",
+                    "width":  32,
+                    "height":  32,
+                    "description":  "low clump of wild forest ferns and broad leaves, classic 2D MMORPG forest art, elevated three-quarter view, Thai shaman folklore, muted greens, moss, weathered wood and stone, no text",
+                    "upper":  null,
+                    "id":  "702e1767-47c8-4705-b73f-c59d61b8bbe9"
+                },
+    "sw-cursed-tree":  {
+                           "kind":  "object",
+                           "width":  64,
+                           "height":  96,
+                           "description":  "twisted leafless black cursed tree wrapped in faded red cloth strips and hanging paper talismans, classic 2D MMORPG forest art, elevated three-quarter view, Thai shaman folklore, muted greens, moss, weathered wood and stone, no text",
+                           "upper":  null,
+                           "id":  "9ac3cbdc-0871-4b7c-bcd1-87147d75faad"
+                       },
+    "sw-ruined-shrine":  {
+                             "kind":  "object",
+                             "width":  96,
+                             "height":  96,
+                             "description":  "abandoned crumbling Thai stone spirit shrine with a broken tiered roof, cracked steps, roots and moss growing over it, classic 2D MMORPG forest art, elevated three-quarter view, Thai shaman folklore, muted greens, moss, weathered wood and stone, no text",
+                             "upper":  null,
+                             "id":  "846faf3e-4a6d-4ca3-97b5-c894ff6c95de"
+                         },
+    "sw-spirit-house":  {
+                            "kind":  "object",
+                            "width":  32,
+                            "height":  48,
+                            "description":  "small weathered Thai spirit house on a wooden post with tiny offerings and a marigold garland, classic 2D MMORPG forest art, elevated three-quarter view, Thai shaman folklore, muted greens, moss, weathered wood and stone, no text",
+                            "upper":  null,
+                            "id":  "de4e7a98-e5a7-4d47-a2ed-a29677892ac1"
+                        },
+    "sw-noticeboard":  {
+                           "kind":  "object",
+                           "width":  48,
+                           "height":  48,
+                           "description":  "village teak notice board on two posts with pinned blank paper notes and a small roof, classic 2D MMORPG forest art, elevated three-quarter view, Thai shaman folklore, muted greens, moss, weathered wood and stone, no text",
+                           "upper":  null,
+                           "id":  "b2d44387-6a15-42e7-97fe-9f256c022825"
+                       }
+}

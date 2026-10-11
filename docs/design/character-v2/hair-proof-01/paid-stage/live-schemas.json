@@ -1,0 +1,360 @@
+[
+    {
+        "name":  "inpaint_image_pro_flash",
+        "description":  "Replace white-mask pixels with Pro Flash, preserving unmasked RGBA bytes exactly.\n\nSource: image_url, image_base64, or owned source_image_id. Mask: a rectangle\n(all four mask_x/y/width/height), OR a same-size mask PNG via base64/URL.\nMask RGB must be pure white=generate or black=keep; mask alpha is ignored.\nEmpty masks are rejected. crop_to_mask is always true. Changes-only output\nis transparent outside the mask; Modify current layer returns a composite.\nOptional context_image requires bounding_box locating the source and is at\nmost three times its native dimensions. No images or masks are rescaled.\nQuery get_pro_flash_capabilities for shapes; poll the job with get_image.",
+        "inputSchema":  {
+                            "additionalProperties":  false,
+                            "properties":  {
+                                               "description":  {
+                                                                   "maxLength":  2000,
+                                                                   "minLength":  1,
+                                                                   "type":  "string"
+                                                               },
+                                               "image_base64":  {
+                                                                    "default":  null,
+                                                                    "type":  [
+                                                                                 "string",
+                                                                                 "null"
+                                                                             ]
+                                                                },
+                                               "image_url":  {
+                                                                 "default":  null,
+                                                                 "type":  [
+                                                                              "string",
+                                                                              "null"
+                                                                          ]
+                                                             },
+                                               "source_image_id":  {
+                                                                       "default":  null,
+                                                                       "type":  [
+                                                                                    "string",
+                                                                                    "null"
+                                                                                ]
+                                                                   },
+                                               "mask_x":  {
+                                                              "default":  null,
+                                                              "type":  [
+                                                                           "integer",
+                                                                           "null"
+                                                                       ]
+                                                          },
+                                               "mask_y":  {
+                                                              "default":  null,
+                                                              "type":  [
+                                                                           "integer",
+                                                                           "null"
+                                                                       ]
+                                                          },
+                                               "mask_width":  {
+                                                                  "default":  null,
+                                                                  "exclusiveMinimum":  0,
+                                                                  "type":  [
+                                                                               "integer",
+                                                                               "null"
+                                                                           ]
+                                                              },
+                                               "mask_height":  {
+                                                                   "default":  null,
+                                                                   "exclusiveMinimum":  0,
+                                                                   "type":  [
+                                                                                "integer",
+                                                                                "null"
+                                                                            ]
+                                                               },
+                                               "mask_image_base64":  {
+                                                                         "default":  null,
+                                                                         "type":  [
+                                                                                      "string",
+                                                                                      "null"
+                                                                                  ]
+                                                                     },
+                                               "mask_image_url":  {
+                                                                      "default":  null,
+                                                                      "type":  [
+                                                                                   "string",
+                                                                                   "null"
+                                                                               ]
+                                                                  },
+                                               "context_image":  {
+                                                                     "default":  null,
+                                                                     "additionalProperties":  false,
+                                                                     "description":  "One URL, encoded image, or owned image ID plus its reference instructions.",
+                                                                     "properties":  {
+                                                                                        "base64":  {
+                                                                                                       "default":  null,
+                                                                                                       "type":  [
+                                                                                                                    "string",
+                                                                                                                    "null"
+                                                                                                                ]
+                                                                                                   },
+                                                                                        "url":  {
+                                                                                                    "default":  null,
+                                                                                                    "type":  [
+                                                                                                                 "string",
+                                                                                                                 "null"
+                                                                                                             ]
+                                                                                                },
+                                                                                        "source_image_id":  {
+                                                                                                                "default":  null,
+                                                                                                                "type":  [
+                                                                                                                             "string",
+                                                                                                                             "null"
+                                                                                                                         ]
+                                                                                                            },
+                                                                                        "usage_description":  {
+                                                                                                                  "default":  null,
+                                                                                                                  "description":  "How this reference should guide appearance.",
+                                                                                                                  "type":  [
+                                                                                                                               "string",
+                                                                                                                               "null"
+                                                                                                                           ]
+                                                                                                              }
+                                                                                    },
+                                                                     "type":  [
+                                                                                  "object",
+                                                                                  "null"
+                                                                              ]
+                                                                 },
+                                               "bounding_box":  {
+                                                                    "default":  null,
+                                                                    "additionalProperties":  false,
+                                                                    "description":  "The native source rectangle within the additional context image.",
+                                                                    "properties":  {
+                                                                                       "x":  {
+                                                                                                 "minimum":  0,
+                                                                                                 "type":  "integer"
+                                                                                             },
+                                                                                       "y":  {
+                                                                                                 "minimum":  0,
+                                                                                                 "type":  "integer"
+                                                                                             },
+                                                                                       "width":  {
+                                                                                                     "exclusiveMinimum":  0,
+                                                                                                     "type":  "integer"
+                                                                                                 },
+                                                                                       "height":  {
+                                                                                                      "exclusiveMinimum":  0,
+                                                                                                      "type":  "integer"
+                                                                                                  }
+                                                                                   },
+                                                                    "required":  [
+                                                                                     "x",
+                                                                                     "y",
+                                                                                     "width",
+                                                                                     "height"
+                                                                                 ],
+                                                                    "type":  [
+                                                                                 "object",
+                                                                                 "null"
+                                                                             ]
+                                                                },
+                                               "crop_to_mask":  {
+                                                                    "const":  true,
+                                                                    "default":  true,
+                                                                    "type":  "boolean"
+                                                                },
+                                               "no_background":  {
+                                                                     "default":  null,
+                                                                     "type":  [
+                                                                                  "boolean",
+                                                                                  "null"
+                                                                              ]
+                                                                 },
+                                               "background_removal_task":  {
+                                                                               "default":  "remove_simple_background",
+                                                                               "enum":  [
+                                                                                            "remove_simple_background",
+                                                                                            "remove_complex_background"
+                                                                                        ],
+                                                                               "type":  "string"
+                                                                           },
+                                               "output_method":  {
+                                                                     "default":  "Modify current layer",
+                                                                     "enum":  [
+                                                                                  "New layer with changes",
+                                                                                  "Modify current layer, only changes",
+                                                                                  "Modify current layer"
+                                                                              ],
+                                                                     "type":  "string"
+                                                                 },
+                                               "seed":  {
+                                                            "default":  0,
+                                                            "minimum":  0,
+                                                            "type":  "integer"
+                                                        },
+                                               "project_id":  {
+                                                                  "default":  null,
+                                                                  "type":  [
+                                                                               "string",
+                                                                               "null"
+                                                                           ]
+                                                              }
+                                           },
+                            "required":  [
+                                             "description"
+                                         ],
+                            "type":  "object"
+                        },
+        "annotations":  {
+                            "readOnlyHint":  false,
+                            "destructiveHint":  false,
+                            "idempotentHint":  false,
+                            "openWorldHint":  false
+                        },
+        "_meta":  {
+                      "fastmcp":  {
+                                      "tags":  [
+
+                                               ]
+                                  }
+                  }
+    },
+    {
+        "name":  "get_pro_flash_capabilities",
+        "description":  "Get Pro Flash exact native size pairs, controls and one-image output counts.\n\nFree identity-only lookup. Supply operation, width and height together for\na provisional quote split into image/rotations/total. Finishing a selected\npreview bills only rotations; one-direction object finalization costs zero.\nLarger research sizes are not supported generation sizes. Read this before\nselecting dimensions for image, character or object creation, edit or inpaint.",
+        "inputSchema":  {
+                            "additionalProperties":  false,
+                            "properties":  {
+                                               "operation":  {
+                                                                 "default":  null,
+                                                                 "enum":  [
+                                                                              "create",
+                                                                              "edit",
+                                                                              "inpaint",
+                                                                              "character",
+                                                                              "object",
+                                                                              null
+                                                                          ],
+                                                                 "type":  [
+                                                                              "string",
+                                                                              "null"
+                                                                          ]
+                                                             },
+                                               "width":  {
+                                                             "default":  null,
+                                                             "type":  [
+                                                                          "integer",
+                                                                          "null"
+                                                                      ]
+                                                         },
+                                               "height":  {
+                                                              "default":  null,
+                                                              "type":  [
+                                                                           "integer",
+                                                                           "null"
+                                                                       ]
+                                                          },
+                                               "n_directions":  {
+                                                                    "default":  8,
+                                                                    "type":  "integer"
+                                                                }
+                                           },
+                            "type":  "object"
+                        },
+        "annotations":  {
+                            "readOnlyHint":  true,
+                            "destructiveHint":  false,
+                            "idempotentHint":  true,
+                            "openWorldHint":  false
+                        },
+        "_meta":  {
+                      "fastmcp":  {
+                                      "tags":  [
+
+                                               ]
+                                  }
+                  }
+    },
+    {
+        "name":  "get_image",
+        "description":  "Get a raw-image result by job id.\n\nReturns the image(s) inline plus no-auth download URLs when completed, or\nprogress/error otherwise. A completed job also reports its gallery save:\nthe Creator ``asset_id`` once saved, or a failure note (the image is still\ndelivered) while the save is being retried.",
+        "inputSchema":  {
+                            "additionalProperties":  false,
+                            "properties":  {
+                                               "job_id":  {
+                                                              "description":  "The job id returned by any raw-image tool (create_image_pixflux, create_image_pixen, create_image_pro, edit_image, edit_image_pixen, transfer_outfit, inpaint_image, animate_image, image_to_pixelart, unzoom_image, correct_pixelart, reduce_colors).",
+                                                              "type":  "string"
+                                                          },
+                                               "index":  {
+                                                             "default":  null,
+                                                             "description":  "Return only this frame, inline. Use it to reach frames past the first few of a long animation without fetching a URL.",
+                                                             "type":  [
+                                                                          "integer",
+                                                                          "null"
+                                                                      ]
+                                                         }
+                                           },
+                            "required":  [
+                                             "job_id"
+                                         ],
+                            "type":  "object"
+                        },
+        "annotations":  {
+                            "readOnlyHint":  false,
+                            "destructiveHint":  false,
+                            "idempotentHint":  true,
+                            "openWorldHint":  false
+                        },
+        "_meta":  {
+                      "fastmcp":  {
+                                      "tags":  [
+
+                                               ]
+                                  }
+                  }
+    },
+    {
+        "name":  "get_balance",
+        "description":  "Check your account balance: remaining credits (USD) and subscription generations.",
+        "inputSchema":  {
+                            "additionalProperties":  false,
+                            "properties":  {
+
+                                           },
+                            "type":  "object"
+                        },
+        "annotations":  {
+                            "readOnlyHint":  true,
+                            "destructiveHint":  false,
+                            "idempotentHint":  true,
+                            "openWorldHint":  false
+                        },
+        "_meta":  {
+                      "fastmcp":  {
+                                      "tags":  [
+
+                                               ]
+                                  }
+                  }
+    },
+    {
+        "name":  "wait_for_jobs",
+        "description":  "Wait for your running generations instead of sleeping and polling.\n\nReturns as soon as ANY of your pending/processing jobs finishes, immediately\nwhen none are running, or at the timeout. Free. Then call the matching get_*\ntool for the result; call wait_for_jobs again for the jobs still running.",
+        "inputSchema":  {
+                            "additionalProperties":  false,
+                            "properties":  {
+                                               "timeout_seconds":  {
+                                                                       "default":  240,
+                                                                       "description":  "Give up waiting after this many seconds (jobs keep running).",
+                                                                       "maximum":  540,
+                                                                       "minimum":  5,
+                                                                       "type":  "integer"
+                                                                   }
+                                           },
+                            "type":  "object"
+                        },
+        "annotations":  {
+                            "readOnlyHint":  true,
+                            "destructiveHint":  false,
+                            "idempotentHint":  true,
+                            "openWorldHint":  false
+                        },
+        "_meta":  {
+                      "fastmcp":  {
+                                      "tags":  [
+
+                                               ]
+                                  }
+                  }
+    }
+]

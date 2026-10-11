@@ -1,0 +1,26 @@
+﻿status: completed
+id: 16ee6e4e-1b42-4da6-9be5-915da781e9f9
+name: a single woven bamboo conical Thai farmer hat (ngo
+state_name: base
+directions: 8
+size: 64x64px
+view: low top-down
+group: cb215fc2-b0b6-469a-9bb4-d7d34d4d484e
+
+rotations:
+  east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/16ee6e4e-1b42-4da6-9be5-915da781e9f9/rotations/east.png
+  west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/16ee6e4e-1b42-4da6-9be5-915da781e9f9/rotations/west.png
+  north: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/16ee6e4e-1b42-4da6-9be5-915da781e9f9/rotations/north.png
+  south: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/16ee6e4e-1b42-4da6-9be5-915da781e9f9/rotations/south.png
+  north-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/16ee6e4e-1b42-4da6-9be5-915da781e9f9/rotations/north-east.png
+  north-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/16ee6e4e-1b42-4da6-9be5-915da781e9f9/rotations/north-west.png
+  south-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/16ee6e4e-1b42-4da6-9be5-915da781e9f9/rotations/south-east.png
+  south-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/16ee6e4e-1b42-4da6-9be5-915da781e9f9/rotations/south-west.png
+
+animations: none
+
+download: https://api.pixellab.ai/mcp/objects/16ee6e4e-1b42-4da6-9be5-915da781e9f9/download
+spritesheet: https://api.pixellab.ai/mcp/objects/16ee6e4e-1b42-4da6-9be5-915da781e9f9/spritesheet (one uniform-grid sheet PNG + layout JSON, zipped)
+
+actions: animate_object(object_id="16ee6e4e-1b42-4da6-9be5-915da781e9f9", ...) | create_object_state(object_id="16ee6e4e-1b42-4da6-9be5-915da781e9f9", ...) | delete_object(object_id="16ee6e4e-1b42-4da6-9be5-915da781e9f9")
+hint: animate_object(object_id="16ee6e4e-1b42-4da6-9be5-915da781e9f9", animation_description="...")

@@ -1,0 +1,63 @@
+{
+  "authorization": "User requests V3 attack and cast animations (2026-10-10). One animate_object v3 call each, 8 directions, no auto retry.",
+  "cap": 74,
+  "attempts": [
+    {
+      "stage": "attack",
+      "tool": "animate_object",
+      "reserved": 20,
+      "status": "completed",
+      "retry": false
+    },
+    {
+      "stage": "cast",
+      "tool": "animate_object",
+      "reserved": 20,
+      "status": "completed",
+      "retry": false
+    },
+    {
+      "stage": "attack-fix NE/NW/W/SW",
+      "tool": "animate_object",
+      "reserved": 10,
+      "status": "completed",
+      "retry": false,
+      "reason": "First attack: NE held a knife, NW slash arc, W/SW rotated off-facing"
+    },
+    {
+      "stage": "cast-fix NW",
+      "tool": "animate_object",
+      "reserved": 3,
+      "status": "completed",
+      "retry": false,
+      "reason": "NW cast raised fists above the shoulders (flex pose)"
+    },
+    {
+      "stage": "skeleton attack NW/W/SW + cast NW",
+      "tool": "animate_with_skeleton_v3",
+      "reserved": 12,
+      "status": "completed",
+      "retry": false,
+      "reason": "Prompt-only fixes still drifted (sparkles, turning, raised hands)"
+    },
+    {
+      "stage": "skeleton attack S + cast N",
+      "tool": "animate_with_skeleton_v3",
+      "reserved": 6,
+      "status": "completed",
+      "retry": false,
+      "reason": "S attack torso rotated off-facing; N cast drew hands on the back"
+    },
+    {
+      "stage": "skeleton cast N v2",
+      "tool": "animate_with_skeleton_v3",
+      "reserved": 3,
+      "status": "completed",
+      "retry": false,
+      "reason": "N cast still drew hands on the back; elbows-only pose"
+    }
+  ],
+  "spent": 72,
+  "reserved": 0,
+  "status": "completed"
+}

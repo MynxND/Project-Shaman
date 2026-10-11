@@ -1,0 +1,1340 @@
+{
+  "version": "detachable-head-wardrobe/2",
+  "authorization": "USER approved new88 cap, no retry,11 hairstyles x8 static directions, detachable head+hair on unchanged V2 body. Latest explicit supplied-sheet adaptation request supersedes prior reference-input restriction for this stage only.",
+  "cap": 88,
+  "estimatedFront": 66,
+  "estimatedRotations": 22,
+  "paidAttemptsPerStyle": {
+    "front": 1,
+    "rotation": 1
+  },
+  "native": [
+    128,
+    128
+  ],
+  "origin": {
+    "x": 61,
+    "y": 112
+  },
+  "headAnchor": {
+    "x": 62,
+    "y": 26
+  },
+  "bases": {
+    "south": {
+      "sourcePath": "docs/design/character-v2/body-front-02/raw.png",
+      "sourceSha256": "0ed1ddf448b70a93dc5f624617e832a0af593779b6b7257d65db39b61be35958",
+      "headUrl": "/assets/head-wardrobe-02/canonical-south.png",
+      "headSha256": "1b4c77a38a7efadb18b7f1955109cf9772ee84f610269d5912b1d10cb1320121",
+      "bodyUrl": "/assets/head-wardrobe-02/body-south.png",
+      "bodySha256": "e2757ac2a526f6b5d73a9521c15897801f5b026f546e44752f242d6fb8edc37b",
+      "neckAnchor": {
+        "x": 62,
+        "y": 49
+      },
+      "semanticCut": "visible upper region y<=48; neck and body y>=49; provisional rig, never hidden anatomy",
+      "bodyApproved": true,
+      "diagonalTemplateProvisional": false
+    },
+    "south-west": {
+      "sourcePath": "docs/design/character-v2/body-rotation-01/raw/south-west.png",
+      "sourceSha256": "6302355a59beb0df7e87f17f1344124f8dcaeec103bdb6418541c592e03866d6",
+      "headUrl": "/assets/head-wardrobe-02/canonical-south-west.png",
+      "headSha256": "126fcc5cc2447cca7a25f008b0c12f457ab6b32731c645f4e3a7159e56403d15",
+      "bodyUrl": null,
+      "bodySha256": null,
+      "neckAnchor": {
+        "x": 62,
+        "y": 49
+      },
+      "semanticCut": "visible upper region y<=48; neck and body y>=49; provisional rig, never hidden anatomy",
+      "bodyApproved": false,
+      "diagonalTemplateProvisional": true
+    },
+    "west": {
+      "sourcePath": "docs/design/character-v2/body-rotation-01/raw/west.png",
+      "sourceSha256": "cf8d6815ee91878bd2974089859ede2b40e21a3d1c0840a71b080fe580d4581c",
+      "headUrl": "/assets/head-wardrobe-02/canonical-west.png",
+      "headSha256": "ec3c203295f2e33a17e3ebce9f004f25a14932e44f6895e45888b2099cc73293",
+      "bodyUrl": "/assets/head-wardrobe-02/body-west.png",
+      "bodySha256": "8b633398da919fa442799660462821dfb41014d6773e593c70815a83e8f56eff",
+      "neckAnchor": {
+        "x": 62,
+        "y": 49
+      },
+      "semanticCut": "visible upper region y<=48; neck and body y>=49; provisional rig, never hidden anatomy",
+      "bodyApproved": true,
+      "diagonalTemplateProvisional": false
+    },
+    "north-west": {
+      "sourcePath": "docs/design/character-v2/body-rotation-01/raw/north-west.png",
+      "sourceSha256": "3499e7a442be11409eaacea94b53abd4f4517111878d5964a9667098f7d005fc",
+      "headUrl": "/assets/head-wardrobe-02/canonical-north-west.png",
+      "headSha256": "d0d79f890a8f4359778d8d2e4411d2727573a8fb369880196fcb79a776f0102a",
+      "bodyUrl": null,
+      "bodySha256": null,
+      "neckAnchor": {
+        "x": 62,
+        "y": 49
+      },
+      "semanticCut": "visible upper region y<=48; neck and body y>=49; provisional rig, never hidden anatomy",
+      "bodyApproved": false,
+      "diagonalTemplateProvisional": true
+    },
+    "north": {
+      "sourcePath": "docs/design/character-v2/body-rotation-01/raw/north.png",
+      "sourceSha256": "289b25898984611ecadd7cc1dbd001a9b04ea6b1605644d9b121fe4883fd1107",
+      "headUrl": "/assets/head-wardrobe-02/canonical-north.png",
+      "headSha256": "e490b4ea30f9219cba1ec24ab4d8f9a89f90195642a783fd8736bc0eed6fc38e",
+      "bodyUrl": "/assets/head-wardrobe-02/body-north.png",
+      "bodySha256": "420c8f1c0b51a8fc59d3d3df3d81c997780f019dda3a99e0dcce182afa4dc6bb",
+      "neckAnchor": {
+        "x": 62,
+        "y": 49
+      },
+      "semanticCut": "visible upper region y<=48; neck and body y>=49; provisional rig, never hidden anatomy",
+      "bodyApproved": true,
+      "diagonalTemplateProvisional": false
+    },
+    "north-east": {
+      "sourcePath": "docs/design/character-v2/body-rotation-01/raw/north-east.png",
+      "sourceSha256": "68a37a3af9bedf7cab72d6d0342efc0657cd0b85cd6c14e7ea65227453e476be",
+      "headUrl": "/assets/head-wardrobe-02/canonical-north-east.png",
+      "headSha256": "9c35b876221445f83899d137fef96fbc1c788c86ddc1b869ff43eedbb8264924",
+      "bodyUrl": null,
+      "bodySha256": null,
+      "neckAnchor": {
+        "x": 62,
+        "y": 49
+      },
+      "semanticCut": "visible upper region y<=48; neck and body y>=49; provisional rig, never hidden anatomy",
+      "bodyApproved": false,
+      "diagonalTemplateProvisional": true
+    },
+    "east": {
+      "sourcePath": "docs/design/character-v2/body-rotation-01/raw/east.png",
+      "sourceSha256": "0ebf842c4ae7f6ac03c395918e15f5d166b64754c94551420bd2796ab89f846a",
+      "headUrl": "/assets/head-wardrobe-02/canonical-east.png",
+      "headSha256": "af34f1760a87fd27969cde37c999eaf242f1ab2ecc0499383ba02aa3f423962c",
+      "bodyUrl": "/assets/head-wardrobe-02/body-east.png",
+      "bodySha256": "55449f4fe6274e772bdf45e707acab5f4284e419dfa730e5ab8fd558d92f967b",
+      "neckAnchor": {
+        "x": 62,
+        "y": 49
+      },
+      "semanticCut": "visible upper region y<=48; neck and body y>=49; provisional rig, never hidden anatomy",
+      "bodyApproved": true,
+      "diagonalTemplateProvisional": false
+    },
+    "south-east": {
+      "sourcePath": "docs/design/character-v2/body-rotation-01/raw/south-east.png",
+      "sourceSha256": "672831bdf19fda5081fd499c80ee5c74aa99a95fb7d00441708b7297b52bb481",
+      "headUrl": "/assets/head-wardrobe-02/canonical-south-east.png",
+      "headSha256": "b1c569805ae3ece0d4d340af3a2f51917c62337ccfcb1898fb289876f407e3e8",
+      "bodyUrl": null,
+      "bodySha256": null,
+      "neckAnchor": {
+        "x": 62,
+        "y": 49
+      },
+      "semanticCut": "visible upper region y<=48; neck and body y>=49; provisional rig, never hidden anatomy",
+      "bodyApproved": false,
+      "diagonalTemplateProvisional": true
+    }
+  },
+  "referenceSha256": "58fc9a2ec5415d00fe198c89c43e26fd9dfd9ddcd792b2ad80092a986c6c741f",
+  "styles": [
+    {
+      "id": "swept-spike",
+      "nameThai": "ผมสั้นปัดแหลม",
+      "row": 1,
+      "shape": "Compact short swept silver-lavender spikes, broken asymmetric fringe, restrained volume.",
+      "visualApproved": false,
+      "views": {
+        "south": {
+          "headUrl": "/assets/head-wardrobe-02/swept-spike-south-head.png",
+          "headSha256": "54b71173789d745c7e44e5b5b19e44e6c1aa4cf44fe372b6d41537f5c85d324e",
+          "backUrl": "/assets/head-wardrobe-02/swept-spike-south-back.png",
+          "backSha256": "393d8605ef289e86a7f382c3ecd40277bbd4b2b534ca68c4d5aed3353f154c19",
+          "completeUrl": "/assets/head-wardrobe-02/swept-spike-south-complete.png",
+          "completeSha256": "e8c977e3eb02a3fff079f893a777fe948b187ff4ca21444eec14c0b322180635",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-west": {
+          "headUrl": "/assets/head-wardrobe-02/swept-spike-south-west-head.png",
+          "headSha256": "325114e7edf8d0c4bcadd623c9caf5e90be4afd698e08f42c808126c98197804",
+          "backUrl": "/assets/head-wardrobe-02/swept-spike-south-west-back.png",
+          "backSha256": "46e11ddaefc8d420d1650a1bc44d1c8a86c38eee4ad32951e86737f15564acee",
+          "completeUrl": "/assets/head-wardrobe-02/swept-spike-south-west-complete.png",
+          "completeSha256": "43a775c4787b4ed84aa4dfbe2451330198b5c4f85480c19b8f25f0a6827e1873",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "west": {
+          "headUrl": "/assets/head-wardrobe-02/swept-spike-west-head.png",
+          "headSha256": "da8051bf554569846281a300876fd5ae5bfc2b0b83d8d565948921aa586ca311",
+          "backUrl": "/assets/head-wardrobe-02/swept-spike-west-back.png",
+          "backSha256": "fa9f54a4c0383700192985fc676e8934dbaf557b399f0ac6b4cf364c871b3a5f",
+          "completeUrl": "/assets/head-wardrobe-02/swept-spike-west-complete.png",
+          "completeSha256": "93041051b1bf75c31883329c988917e3827e11672f365f9f6354a25167fa0c33",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-west": {
+          "headUrl": "/assets/head-wardrobe-02/swept-spike-north-west-head.png",
+          "headSha256": "a80694efc55404eaf90181c47fd8e7c227111a3d1319d860c135e175e2844f38",
+          "backUrl": "/assets/head-wardrobe-02/swept-spike-north-west-back.png",
+          "backSha256": "4dbc52b9ae6d5ec9d1669a3f4d3be2fefc155beca2b2a849ee2cd9a077c7e80f",
+          "completeUrl": "/assets/head-wardrobe-02/swept-spike-north-west-complete.png",
+          "completeSha256": "1bf17e48eeef61f98e0ca3c58f80a4f2e793538f0e024ea7550a7172976b65f4",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north": {
+          "headUrl": "/assets/head-wardrobe-02/swept-spike-north-head.png",
+          "headSha256": "406e2fc3759e901ac44353bed45f4da0b61772ccbb312e6ecfa92faaf3fff565",
+          "backUrl": "/assets/head-wardrobe-02/swept-spike-north-back.png",
+          "backSha256": "a201fb0ae35da035ff0a2172cd8ac4be13771bc5e52049b51fa229b4638530ac",
+          "completeUrl": "/assets/head-wardrobe-02/swept-spike-north-complete.png",
+          "completeSha256": "199a8ddfca7d0606fd109d0a3ef2c572cf514b76eac7a41deb8cbd2aa07a165e",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-east": {
+          "headUrl": "/assets/head-wardrobe-02/swept-spike-north-east-head.png",
+          "headSha256": "2a0542036a5692a4414805a8f969202c15edff373961bddf3da4f7bdda5969dd",
+          "backUrl": "/assets/head-wardrobe-02/swept-spike-north-east-back.png",
+          "backSha256": "6a8c8c17526ba0f6e6c20f5411f3d59e0739863f1e0fc892772ab7adbdd2b6a1",
+          "completeUrl": "/assets/head-wardrobe-02/swept-spike-north-east-complete.png",
+          "completeSha256": "3b3a07b6a22d9dded728e3c40386ed349c8015cd6b09023c2e5f08580a1b6761",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "east": {
+          "headUrl": "/assets/head-wardrobe-02/swept-spike-east-head.png",
+          "headSha256": "ecba718d52e46ccf683b1d44ca48885bab55361256f1406be914373521e2d7ea",
+          "backUrl": "/assets/head-wardrobe-02/swept-spike-east-back.png",
+          "backSha256": "4c7e815d70ed5dce7af82bbb39d0a83fd0151fdf91402de3bfdec2ed82f0aaf1",
+          "completeUrl": "/assets/head-wardrobe-02/swept-spike-east-complete.png",
+          "completeSha256": "8c7297fd4f9baa31f75ecb1a99e5585ecc68e238c891c7c60191fe81550a9b38",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-east": {
+          "headUrl": "/assets/head-wardrobe-02/swept-spike-south-east-head.png",
+          "headSha256": "b60bcd8bb4e929f0a3325a071dac5284619d61edf21de0cd7b854b7333547ea8",
+          "backUrl": "/assets/head-wardrobe-02/swept-spike-south-east-back.png",
+          "backSha256": "3f9bbc15fa1ad1f7b31266b22eebfc14f1c6b03fb70e29070ca7fcc63950eb2c",
+          "completeUrl": "/assets/head-wardrobe-02/swept-spike-south-east-complete.png",
+          "completeSha256": "535bbb12ad775b62e7d307f608fc1f55af95d1775764488938d78c8e5b864a2d",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        }
+      },
+      "defectDirections": []
+    },
+    {
+      "id": "tied-curtains",
+      "nameThai": "ผมยาวรวบ",
+      "row": 2,
+      "shape": "Smooth lavender curtains, center part, compact low rear tied tail extending below the neck.",
+      "visualApproved": false,
+      "views": {
+        "south": {
+          "headUrl": "/assets/head-wardrobe-02/tied-curtains-south-head.png",
+          "headSha256": "6fc10a417f174309e0bd008e0c9753432fe64e12bfb9ea42a712d471281f1a97",
+          "backUrl": "/assets/head-wardrobe-02/tied-curtains-south-back.png",
+          "backSha256": "393d8605ef289e86a7f382c3ecd40277bbd4b2b534ca68c4d5aed3353f154c19",
+          "completeUrl": "/assets/head-wardrobe-02/tied-curtains-south-complete.png",
+          "completeSha256": "bf2c7503bee028bc076310994e6eda2b0a2990300055397b0c9e2157b5f1c6a9",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-west": {
+          "headUrl": "/assets/head-wardrobe-02/tied-curtains-south-west-head.png",
+          "headSha256": "521f39c4850f7708a4911950b484ccb936246dec7b9513ad90bfe062c67725ed",
+          "backUrl": "/assets/head-wardrobe-02/tied-curtains-south-west-back.png",
+          "backSha256": "ba3f20995cf61cd0ed7575a6dbc4101355f32ce42db7eb6a42bcf02f66344aa6",
+          "completeUrl": "/assets/head-wardrobe-02/tied-curtains-south-west-complete.png",
+          "completeSha256": "a2fea0510af1b4a5014de4abac56d52660de9f0a96cedd94d88aab3608243eaa",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "west": {
+          "headUrl": "/assets/head-wardrobe-02/tied-curtains-west-head.png",
+          "headSha256": "1c2f2d825cdd9643237211ed6193b6be3382203a0f701b7ce796d9c3d6e5172b",
+          "backUrl": "/assets/head-wardrobe-02/tied-curtains-west-back.png",
+          "backSha256": "98a714f387840e532a99c7a84b7d9d462206450d1868928929cfa6f27a38132e",
+          "completeUrl": "/assets/head-wardrobe-02/tied-curtains-west-complete.png",
+          "completeSha256": "e2a88945e1951186e124ba79fdff39ac85e9a6699c6f6270c500972cffe0e2f0",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-west": {
+          "headUrl": "/assets/head-wardrobe-02/tied-curtains-north-west-head.png",
+          "headSha256": "695be1ca8b95daa3eeac445409263661a55ffc44d11e4c4d6db6cc746476d353",
+          "backUrl": "/assets/head-wardrobe-02/tied-curtains-north-west-back.png",
+          "backSha256": "570cd7cebb0afc31556c87512aaa57b056117c782512bea3258a5b8f088910b2",
+          "completeUrl": "/assets/head-wardrobe-02/tied-curtains-north-west-complete.png",
+          "completeSha256": "2c42a0879910f3a29b853aa82eb87771066b72792d67f1c30534021d5747e0b0",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north": {
+          "headUrl": "/assets/head-wardrobe-02/tied-curtains-north-head.png",
+          "headSha256": "3f7293186ba2123b0d1610c5c537f3ed89df1e012a040657e07f01b4c7cf40db",
+          "backUrl": "/assets/head-wardrobe-02/tied-curtains-north-back.png",
+          "backSha256": "a48e8a751e0158e2d05d505cb3156262f9c99e4b04b6ae067e9a92fc23877ec3",
+          "completeUrl": "/assets/head-wardrobe-02/tied-curtains-north-complete.png",
+          "completeSha256": "de66478a558654c9a985885359d4cf197ecbcf5e526de219635a7b14b0620d67",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-east": {
+          "headUrl": "/assets/head-wardrobe-02/tied-curtains-north-east-head.png",
+          "headSha256": "576b516c48e3e3d302cd800a0de29b4a2b97b674a43f4d3f8512058f644d1eb7",
+          "backUrl": "/assets/head-wardrobe-02/tied-curtains-north-east-back.png",
+          "backSha256": "c8687cc1273dc59769d281b327b699fe4397db74b236f2f41b1174387faed3c7",
+          "completeUrl": "/assets/head-wardrobe-02/tied-curtains-north-east-complete.png",
+          "completeSha256": "dbfad246fc84a77def28f5d6a3a8cb9e5f3299e1693b07b88e9d1cb2197c5634",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "east": {
+          "headUrl": "/assets/head-wardrobe-02/tied-curtains-east-head.png",
+          "headSha256": "58cb8d90a3c524d8f6fd6aeff6c804158081a1dd66cb82b4f08f0f2f1e3fd652",
+          "backUrl": "/assets/head-wardrobe-02/tied-curtains-east-back.png",
+          "backSha256": "b147ee256101add298d16aa48c4aa1ad201667ac1243cbdd5ff80c98c5f4282e",
+          "completeUrl": "/assets/head-wardrobe-02/tied-curtains-east-complete.png",
+          "completeSha256": "55be57c8048149b71d6deb5319773083de31fa2023c41717b146917a3c203a28",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-east": {
+          "headUrl": "/assets/head-wardrobe-02/tied-curtains-south-east-head.png",
+          "headSha256": "57a38d4e7dfe3cf5a4a4907ef0e4cc225807e1738774ec8f712ae311aeaedc4f",
+          "backUrl": "/assets/head-wardrobe-02/tied-curtains-south-east-back.png",
+          "backSha256": "457fd1c6aa85d79fa824b26b89be73fd06811404833c5d610d93d55db6e081d8",
+          "completeUrl": "/assets/head-wardrobe-02/tied-curtains-south-east-complete.png",
+          "completeSha256": "59093147323f30ace4328deafe413ac49782a3e0c95e8bd1e2d35e95118d209a",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        }
+      },
+      "defectDirections": []
+    },
+    {
+      "id": "layered-shag",
+      "nameThai": "ผมซอยยาว",
+      "row": 3,
+      "shape": "Dark lavender layered shag, ear framing and tapered long nape, separated large feathered locks.",
+      "visualApproved": false,
+      "views": {
+        "south": {
+          "headUrl": "/assets/head-wardrobe-02/layered-shag-south-head.png",
+          "headSha256": "558b430defa36450d3543b21da7a089e0a9733158fa94bd74624437553ad40bd",
+          "backUrl": "/assets/head-wardrobe-02/layered-shag-south-back.png",
+          "backSha256": "16ed4ff8fa4736258a3d2203c0de1b81c522cf7ab54062b1f0b404255a0f8819",
+          "completeUrl": "/assets/head-wardrobe-02/layered-shag-south-complete.png",
+          "completeSha256": "5b017191dd89747d7953380ee84b8f1ec6d27a5d76e9716eb583ab41764b8459",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-west": {
+          "headUrl": "/assets/head-wardrobe-02/layered-shag-south-west-head.png",
+          "headSha256": "1a52a496ce8941aefecbb9cfd7714ff7dd36f6f34828754131cac40e6b23e354",
+          "backUrl": "/assets/head-wardrobe-02/layered-shag-south-west-back.png",
+          "backSha256": "6b48da38b39de8414714558c03013a22fd567016cae325942326eec12ffe70b5",
+          "completeUrl": "/assets/head-wardrobe-02/layered-shag-south-west-complete.png",
+          "completeSha256": "3a133b102833183ff2a18bc29aed9f77e0f5e7b065547185885ec3d98d8e8f01",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "west": {
+          "headUrl": "/assets/head-wardrobe-02/layered-shag-west-head.png",
+          "headSha256": "48794b990aa8e0585dd621c67a69d0dbe052e4b32d34562dd2db0d6d0a9e2985",
+          "backUrl": "/assets/head-wardrobe-02/layered-shag-west-back.png",
+          "backSha256": "69d5b668996eb5e8a92bbc14a430cd798c9d6bf0f3cc484e8c84580da79c3acc",
+          "completeUrl": "/assets/head-wardrobe-02/layered-shag-west-complete.png",
+          "completeSha256": "4ad5d3107c5a8bc5c64de431715fbd19966adfd8860aa33ad23819f13b2856e6",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-west": {
+          "headUrl": "/assets/head-wardrobe-02/layered-shag-north-west-head.png",
+          "headSha256": "bd86c5cca1ac03670699410563519c55f0bd74596ccd516c40b22a1595ff87b9",
+          "backUrl": "/assets/head-wardrobe-02/layered-shag-north-west-back.png",
+          "backSha256": "5d5ffc371ba1b154e8c0fa6c0cf0a5aea8484fdf5aa2c4700fc724b5265aa223",
+          "completeUrl": "/assets/head-wardrobe-02/layered-shag-north-west-complete.png",
+          "completeSha256": "6d34813172f410d9f6e4727605e6077989736e237924efe855e1022724330aad",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north": {
+          "headUrl": "/assets/head-wardrobe-02/layered-shag-north-head.png",
+          "headSha256": "5e6e03961ed8720959166af159ba1b294526e2124c3fdf99e640599bbbf3941e",
+          "backUrl": "/assets/head-wardrobe-02/layered-shag-north-back.png",
+          "backSha256": "003fc0ba97c9f549020adfd6a810100b9584f14160e8464c22259d92793c59bd",
+          "completeUrl": "/assets/head-wardrobe-02/layered-shag-north-complete.png",
+          "completeSha256": "b527896c304ceff053f10223f7dee09a4795672f81bdbd02710238f6b8beb9c2",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-east": {
+          "headUrl": "/assets/head-wardrobe-02/layered-shag-north-east-head.png",
+          "headSha256": "d9a399beab76438141a042b46b9ec674473ad512a04e11dccf54a861656e2824",
+          "backUrl": "/assets/head-wardrobe-02/layered-shag-north-east-back.png",
+          "backSha256": "23b87abdb44097e7be8a3f298f34e965f2ab49d4f2ca99dcb9ddc419c06fb6a0",
+          "completeUrl": "/assets/head-wardrobe-02/layered-shag-north-east-complete.png",
+          "completeSha256": "44fc58379b99bd5b9a8e72ea719c23e5f4d85998d4f102e9cb3ef59a213a34bc",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "east": {
+          "headUrl": "/assets/head-wardrobe-02/layered-shag-east-head.png",
+          "headSha256": "74c19ae29e080493397a7ab35c01b7efa0848bfd85abebac6f31b39cb5e85d78",
+          "backUrl": "/assets/head-wardrobe-02/layered-shag-east-back.png",
+          "backSha256": "acd698c9b0daa87ea750ab979decabd6bc2a3e0b514f134a8a242141e41526ca",
+          "completeUrl": "/assets/head-wardrobe-02/layered-shag-east-complete.png",
+          "completeSha256": "a1bd285f61b01b26654800e7a67804b7d805e89adee4016afe128ff3f696bb86",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-east": {
+          "headUrl": "/assets/head-wardrobe-02/layered-shag-south-east-head.png",
+          "headSha256": "4a1c535f06f564e24c5dd6ba81f3981810e4c98ef2b1f0b1da3c0c84805b6ac4",
+          "backUrl": "/assets/head-wardrobe-02/layered-shag-south-east-back.png",
+          "backSha256": "4f2122e2691046318802572fb6fc97fd1ad2bdd39825cc846123e94c8e63c2e2",
+          "completeUrl": "/assets/head-wardrobe-02/layered-shag-south-east-complete.png",
+          "completeSha256": "b672d70309276c7bd88e6ddb1d7b7a4d9a9bd0bdc6cffae393aa0308fedfdec4",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        }
+      },
+      "defectDirections": []
+    },
+    {
+      "id": "round-crop",
+      "nameThai": "ผมสั้นมน",
+      "row": 4,
+      "shape": "Short pale silver rounded crop, soft irregular fringe and tiny side tips, no spikes.",
+      "visualApproved": false,
+      "views": {
+        "south": {
+          "headUrl": "/assets/head-wardrobe-02/round-crop-south-head.png",
+          "headSha256": "b2767f98ce7ed34d381a48a1f421d4081d26d8f0f359eb2731beefe6002715d2",
+          "backUrl": "/assets/head-wardrobe-02/round-crop-south-back.png",
+          "backSha256": "393d8605ef289e86a7f382c3ecd40277bbd4b2b534ca68c4d5aed3353f154c19",
+          "completeUrl": "/assets/head-wardrobe-02/round-crop-south-complete.png",
+          "completeSha256": "44c10f222f7a98b3cb1fd3241acd820bd740100d159125de82133c02bbea0176",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-west": {
+          "headUrl": "/assets/head-wardrobe-02/round-crop-south-west-head.png",
+          "headSha256": "8be915bc460a5eded344757d751eb668d9f32254785dfb9c2cf89daf20a664a8",
+          "backUrl": "/assets/head-wardrobe-02/round-crop-south-west-back.png",
+          "backSha256": "f38bbe092360fce00d1d0d0adcb49f13a0b6903890a2c2941fad74f110a68ccc",
+          "completeUrl": "/assets/head-wardrobe-02/round-crop-south-west-complete.png",
+          "completeSha256": "618a888da07af152c322343e486d229cc61aba2796ac06c58dfccce30fca99eb",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "west": {
+          "headUrl": "/assets/head-wardrobe-02/round-crop-west-head.png",
+          "headSha256": "d8f297dcb386e602bb45065fbc2610b7947007c74e6edaaed20e6afefcb9f5a5",
+          "backUrl": "/assets/head-wardrobe-02/round-crop-west-back.png",
+          "backSha256": "7acb8eb3584a1f21286dcd75670fdfdccaaf2048bac8a4bce0148a43efa18a16",
+          "completeUrl": "/assets/head-wardrobe-02/round-crop-west-complete.png",
+          "completeSha256": "3c188b32e427e4aab308e63ed79075da79a5e5a3b76f21f63ccaa36ae60b2353",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-west": {
+          "headUrl": "/assets/head-wardrobe-02/round-crop-north-west-head.png",
+          "headSha256": "f7f035da11556a41f66fdc929f642347c276b23f76f9987841bd85ea66cd858a",
+          "backUrl": "/assets/head-wardrobe-02/round-crop-north-west-back.png",
+          "backSha256": "26bb45a7c1e750ca54a13ae6fc6272d970c6b14459d2a928167bdd949387818a",
+          "completeUrl": "/assets/head-wardrobe-02/round-crop-north-west-complete.png",
+          "completeSha256": "e0b4330f6860563475e6f5e8a6daf61bdf0449c24796e251c9edff34efd94abe",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north": {
+          "headUrl": "/assets/head-wardrobe-02/round-crop-north-head.png",
+          "headSha256": "eab1882bd096bb8dc15f1513f41529ec46038bb37ed5bab20e11dda6d4100d5b",
+          "backUrl": "/assets/head-wardrobe-02/round-crop-north-back.png",
+          "backSha256": "a1d45c1c7aefe3cc720eebbf86f01478079115be3fd6d19e85d0b6453884cbd1",
+          "completeUrl": "/assets/head-wardrobe-02/round-crop-north-complete.png",
+          "completeSha256": "1e8c834f65e2fb5317dcc85934cf399b41b3bf64f5b18793537d8b00c2f5a9fe",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-east": {
+          "headUrl": "/assets/head-wardrobe-02/round-crop-north-east-head.png",
+          "headSha256": "1cee561ecd9e31163d891e20d1bd1368baa35f616f923606385b42165d4aa885",
+          "backUrl": "/assets/head-wardrobe-02/round-crop-north-east-back.png",
+          "backSha256": "39cdb804de695666d4761b4e10b79498c8e97c1e399289920ec7d1d491905d44",
+          "completeUrl": "/assets/head-wardrobe-02/round-crop-north-east-complete.png",
+          "completeSha256": "4a87e41d379a0f4ff1d8660ce6844048515a9081dd4aa2f85ee792d921878e46",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "east": {
+          "headUrl": "/assets/head-wardrobe-02/round-crop-east-head.png",
+          "headSha256": "806a4be33d4e1ef9a90fa4325d8ed571c56352f53897d1cd8ff62ee7601b1030",
+          "backUrl": "/assets/head-wardrobe-02/round-crop-east-back.png",
+          "backSha256": "1a3284a65ed9ef69a6e50b1a9f0b6db2e35917c42c25d82a7d3c9d1693693790",
+          "completeUrl": "/assets/head-wardrobe-02/round-crop-east-complete.png",
+          "completeSha256": "fd879419fd34282e9a17e5afd9b50509b0723b301b20b42d236310ea1204aa3f",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-east": {
+          "headUrl": "/assets/head-wardrobe-02/round-crop-south-east-head.png",
+          "headSha256": "289395d8e9c886fa03668ecd8284e1a559bb373a40f7f2259d46027ee4f2516b",
+          "backUrl": "/assets/head-wardrobe-02/round-crop-south-east-back.png",
+          "backSha256": "03a0a946080dda3dcea104cccc34af966f1c17d4f48398565b4827a78982a9ae",
+          "completeUrl": "/assets/head-wardrobe-02/round-crop-south-east-complete.png",
+          "completeSha256": "41bc3449cc7a8e9815c703efc61de86cd459283194b463d37892371d4be0c951",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        }
+      },
+      "defectDirections": []
+    },
+    {
+      "id": "textured-crop",
+      "nameThai": "ผมหยักศกสั้น",
+      "row": 5,
+      "shape": "Dark smoky purple tight wavy crop, compact grouped curls and open forehead part.",
+      "visualApproved": false,
+      "views": {
+        "south": {
+          "headUrl": "/assets/head-wardrobe-02/textured-crop-south-head.png",
+          "headSha256": "91573f6c4434196bdb7ba4b78e39098d702d388818d0c36c1bf5dcd72ff8d5a0",
+          "backUrl": "/assets/head-wardrobe-02/textured-crop-south-back.png",
+          "backSha256": "393d8605ef289e86a7f382c3ecd40277bbd4b2b534ca68c4d5aed3353f154c19",
+          "completeUrl": "/assets/head-wardrobe-02/textured-crop-south-complete.png",
+          "completeSha256": "1b7e925cf443d5f5e213a2de98d49cd10f05935cb2087a2e496b8a96d789ee92",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-west": {
+          "headUrl": "/assets/head-wardrobe-02/textured-crop-south-west-head.png",
+          "headSha256": "016e70c915e9dcf28b05a76f9992aaa6a1bb93a6fa6af937ce2971e9dc9f6196",
+          "backUrl": "/assets/head-wardrobe-02/textured-crop-south-west-back.png",
+          "backSha256": "3e9a8ebc5d4ede425380dc234946134441dc3b90834c0d4d4a287eba8cda4fe9",
+          "completeUrl": "/assets/head-wardrobe-02/textured-crop-south-west-complete.png",
+          "completeSha256": "b53da08c0e27104832aa32e172edfc23905dcdb81006d8ef6183665953384554",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "west": {
+          "headUrl": "/assets/head-wardrobe-02/textured-crop-west-head.png",
+          "headSha256": "1ae7e432be1324356a9f01ed7b9d7a8c32777e86be18599935e26609060e753d",
+          "backUrl": "/assets/head-wardrobe-02/textured-crop-west-back.png",
+          "backSha256": "70bcb702a73c2e05ae36ddb29716b01ca7d8daf575e547d2a33e8f9118a42428",
+          "completeUrl": "/assets/head-wardrobe-02/textured-crop-west-complete.png",
+          "completeSha256": "0980731d0ce5f60df63249fec24a809a6369bdfba878d0aaa0f3345c89cbf592",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-west": {
+          "headUrl": "/assets/head-wardrobe-02/textured-crop-north-west-head.png",
+          "headSha256": "f2b90b58c75864149cb7726a4720139cbc443f7a9231da1407b5328c47e7d6c5",
+          "backUrl": "/assets/head-wardrobe-02/textured-crop-north-west-back.png",
+          "backSha256": "5af6377e354f255ec7b9ff7a2469d975e8791ac4e5abce4c4778a32951b35fcf",
+          "completeUrl": "/assets/head-wardrobe-02/textured-crop-north-west-complete.png",
+          "completeSha256": "f64bb62c697bfad4973bb03e079a69d96525674e39161fc2c648c4dfc558eb82",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north": {
+          "headUrl": "/assets/head-wardrobe-02/textured-crop-north-head.png",
+          "headSha256": "2c46f5b67ecfbe566caa98f28e2516d90deb3289e543f9f1f72185103af1f481",
+          "backUrl": "/assets/head-wardrobe-02/textured-crop-north-back.png",
+          "backSha256": "b9c2f1c79ab827143900a686b8e045706e7cf2d54bc10f3f9f6c3b69eb71fa84",
+          "completeUrl": "/assets/head-wardrobe-02/textured-crop-north-complete.png",
+          "completeSha256": "d0dc98c08bf22f4ce6248617931c0648903aaf637e775ceac48bd90f2e624139",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-east": {
+          "headUrl": "/assets/head-wardrobe-02/textured-crop-north-east-head.png",
+          "headSha256": "078ebd7e6a9307cc752c84b235af287d52c40af3a2ad7eddcb3f920a2fdce273",
+          "backUrl": "/assets/head-wardrobe-02/textured-crop-north-east-back.png",
+          "backSha256": "740746bbcc518c7148d99b892465ce7bfca9cc178f5255bd38ce51070d60f74c",
+          "completeUrl": "/assets/head-wardrobe-02/textured-crop-north-east-complete.png",
+          "completeSha256": "b976de57d6d75bebaac34c383882a2e4ce72d0d14883fa4e3c984cb954a438a0",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "east": {
+          "headUrl": "/assets/head-wardrobe-02/textured-crop-east-head.png",
+          "headSha256": "16eac5c20f3b2c6f9b41ebd94bc316786fff4f24b733ce669d2ddfb4a7c54f54",
+          "backUrl": "/assets/head-wardrobe-02/textured-crop-east-back.png",
+          "backSha256": "b7353dc6161133d0de33c16ebd2807c9be41573982976038be6213896cf0d48b",
+          "completeUrl": "/assets/head-wardrobe-02/textured-crop-east-complete.png",
+          "completeSha256": "d3937c43543088d3333af367d3baec610fc68e4afe4715c283ea41f3ce5511f7",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-east": {
+          "headUrl": "/assets/head-wardrobe-02/textured-crop-south-east-head.png",
+          "headSha256": "3e97902ee3f39db3b7f62ba166bef31a7f4f460e94bba1e5f95d60f8ebd293dd",
+          "backUrl": "/assets/head-wardrobe-02/textured-crop-south-east-back.png",
+          "backSha256": "da31d1b724fec02ef1d5fe0b9723fe7bdb2462d91a84e5d07300c45b1d5e1476",
+          "completeUrl": "/assets/head-wardrobe-02/textured-crop-south-east-complete.png",
+          "completeSha256": "f7db6a440fd089c93af3545854588fa9bb91f8fcc741be8856d65f856d61fe7b",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        }
+      },
+      "defectDirections": []
+    },
+    {
+      "id": "airy-feathers",
+      "nameThai": "ผมซอยปลายเบา",
+      "row": 6,
+      "shape": "Pale lavender airy feathered locks, medium crown, sweeping diagonal fringe with irregular wispy tips.",
+      "visualApproved": false,
+      "views": {
+        "south": {
+          "headUrl": "/assets/head-wardrobe-02/airy-feathers-south-head.png",
+          "headSha256": "d9d0e7f5c3551a9d711dbeb3f14dce7ee4df14816b1747fdb3101affcc65da72",
+          "backUrl": "/assets/head-wardrobe-02/airy-feathers-south-back.png",
+          "backSha256": "393d8605ef289e86a7f382c3ecd40277bbd4b2b534ca68c4d5aed3353f154c19",
+          "completeUrl": "/assets/head-wardrobe-02/airy-feathers-south-complete.png",
+          "completeSha256": "8c34f3ed23895d01dae0140ef30e4d9120aeedd15638ef9e6e4c524a8f6eb912",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-west": {
+          "headUrl": "/assets/head-wardrobe-02/airy-feathers-south-west-head.png",
+          "headSha256": "7974468cccc05e86cb99c42c36b21138708a25b71ab48574e2dfa47693ddd027",
+          "backUrl": "/assets/head-wardrobe-02/airy-feathers-south-west-back.png",
+          "backSha256": "aed9cd70fb016082b34b3736fe94380f4b922f671e10d6d3c5f92087bf3cd28a",
+          "completeUrl": "/assets/head-wardrobe-02/airy-feathers-south-west-complete.png",
+          "completeSha256": "f70d206e94ce7690957d2606d921befa59b38c086582b80ca7e44004493b2942",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "west": {
+          "headUrl": "/assets/head-wardrobe-02/airy-feathers-west-head.png",
+          "headSha256": "01202875e5f4436c5c9f503bd6334d4473eb905faf166b91e8c7dfcbd5879777",
+          "backUrl": "/assets/head-wardrobe-02/airy-feathers-west-back.png",
+          "backSha256": "4b208e5072ca9bddd8797f371d546f6a8ba1f37c09674359632c9a8d14bacc11",
+          "completeUrl": "/assets/head-wardrobe-02/airy-feathers-west-complete.png",
+          "completeSha256": "0234d382919c1d12b5a1559f7ea8c54a79733ac58ee1035b0d4e732ca51352ad",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-west": {
+          "headUrl": "/assets/head-wardrobe-02/airy-feathers-north-west-head.png",
+          "headSha256": "f2216a8cf29d68aee1fca93178e79dd995a9a44a39d81769905dace263b160d0",
+          "backUrl": "/assets/head-wardrobe-02/airy-feathers-north-west-back.png",
+          "backSha256": "976499d687396fb73242c849f9fa469bb262ccd453fa162186882b4650b226fb",
+          "completeUrl": "/assets/head-wardrobe-02/airy-feathers-north-west-complete.png",
+          "completeSha256": "30add241336d1ce7e103d0f518e70749b85a6831526c90f580844f4cb7efc6f4",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north": {
+          "headUrl": "/assets/head-wardrobe-02/airy-feathers-north-head.png",
+          "headSha256": "a9a71b0cd4726c33ecc3e21f7ae500518a0d408fafd6b517fe345ca24b4a5cad",
+          "backUrl": "/assets/head-wardrobe-02/airy-feathers-north-back.png",
+          "backSha256": "db13a45c73211caa418438caaba94ae7f5c2b93852a0d553602bd604c140aa76",
+          "completeUrl": "/assets/head-wardrobe-02/airy-feathers-north-complete.png",
+          "completeSha256": "a5b614a29dc9a0966d24c01ddbb030a79cd6df14d7512d767d20892cd21bcede",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-east": {
+          "headUrl": "/assets/head-wardrobe-02/airy-feathers-north-east-head.png",
+          "headSha256": "84e962f1fd40b21a0f3e2d925baafc791654f380d8c53b316591017f55f2eb13",
+          "backUrl": "/assets/head-wardrobe-02/airy-feathers-north-east-back.png",
+          "backSha256": "238607544a4c85850fa4f558fb1014b1a6259cc16ef1dcb86f42d24f7d4fc264",
+          "completeUrl": "/assets/head-wardrobe-02/airy-feathers-north-east-complete.png",
+          "completeSha256": "12ba0a40e6170d7a4e3211a29e4249d76aa608c49b0c2d0293335f5286060137",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "east": {
+          "headUrl": "/assets/head-wardrobe-02/airy-feathers-east-head.png",
+          "headSha256": "9c16342f0f47beda5910be75e1dfb9993e3b8e1cdfb43d7e083e43963d7534f1",
+          "backUrl": "/assets/head-wardrobe-02/airy-feathers-east-back.png",
+          "backSha256": "191cf68fecaf815e8ca86d52745b9727836fc2ba40dcce4f2b6ef2c038fc9d14",
+          "completeUrl": "/assets/head-wardrobe-02/airy-feathers-east-complete.png",
+          "completeSha256": "c33ea44a8c2edae2fa5d3e73eb47c70455714205f189866a80048c7d523f36df",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-east": {
+          "headUrl": "/assets/head-wardrobe-02/airy-feathers-south-east-head.png",
+          "headSha256": "6e2dfcc50c7802794bc906468350dbe398ae0898efae9b17877d39e4f79ce755",
+          "backUrl": "/assets/head-wardrobe-02/airy-feathers-south-east-back.png",
+          "backSha256": "6ff096b34fbbd19071295c6a24e4d3392ccf1c0bc15e02d516bedbc502c59322",
+          "completeUrl": "/assets/head-wardrobe-02/airy-feathers-south-east-complete.png",
+          "completeSha256": "13411fdea9bc09a5091c749d23c44686c2dfbda1e3ed79a6299c527b8f9a034c",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        }
+      },
+      "defectDirections": []
+    },
+    {
+      "id": "soft-spikes",
+      "nameThai": "ผมแหลมนุ่ม",
+      "row": 7,
+      "shape": "Medium silver-lavender soft pointed locks, separated center fringe and small outward temple tips.",
+      "visualApproved": false,
+      "views": {
+        "south": {
+          "headUrl": "/assets/head-wardrobe-02/soft-spikes-south-head.png",
+          "headSha256": "6bb20ffada6b42b118ebcd1eff93b5332ae42165ee99f69aa3321f733694fc87",
+          "backUrl": "/assets/head-wardrobe-02/soft-spikes-south-back.png",
+          "backSha256": "393d8605ef289e86a7f382c3ecd40277bbd4b2b534ca68c4d5aed3353f154c19",
+          "completeUrl": "/assets/head-wardrobe-02/soft-spikes-south-complete.png",
+          "completeSha256": "f6fa5fc09214ddcd150f181d173c750928efa63270cae6e0993137aed46ea5ed",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-west": {
+          "headUrl": "/assets/head-wardrobe-02/soft-spikes-south-west-head.png",
+          "headSha256": "6c0e617c0180980327b5dfb2e1d0fc5e6079103c5136152f394c8e2151364325",
+          "backUrl": "/assets/head-wardrobe-02/soft-spikes-south-west-back.png",
+          "backSha256": "d382563fef90f4ed6b6a387de3ea54e3c521a42efb62984e31310a9de82d2824",
+          "completeUrl": "/assets/head-wardrobe-02/soft-spikes-south-west-complete.png",
+          "completeSha256": "efc5714fb5f4c1e0bf480b6a09d80abe9038a29848a6ba2e93137f6445d700ac",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "west": {
+          "headUrl": "/assets/head-wardrobe-02/soft-spikes-west-head.png",
+          "headSha256": "072c7de4d0d4424e1bac5c4282d0dfe6c24e0964b729824d81077b73547d330e",
+          "backUrl": "/assets/head-wardrobe-02/soft-spikes-west-back.png",
+          "backSha256": "79becbdb9fbaf0f61cd9be5d06bc1bf2d21ff92c9d52b0252126eaa51bb25178",
+          "completeUrl": "/assets/head-wardrobe-02/soft-spikes-west-complete.png",
+          "completeSha256": "09f64f231cbb86852d977d8bd2357f96a34552926e53ed8b38a5a947291390db",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "east": {
+          "headUrl": "/assets/head-wardrobe-02/soft-spikes-east-head.png",
+          "headSha256": "a884b74504cafab22d28ebb3f4d0a0345e482ac2bbf99df5822ee90333370e3c",
+          "backUrl": "/assets/head-wardrobe-02/soft-spikes-east-back.png",
+          "backSha256": "a0424671898b6cae415eab0ab46265d88a57131c08daa7d9ca5f3310f306cf91",
+          "completeUrl": "/assets/head-wardrobe-02/soft-spikes-east-complete.png",
+          "completeSha256": "ae14864582c29939a2d32dec1f6412e0f33506f4fc19ff0ebeca6461911befff",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-east": {
+          "headUrl": "/assets/head-wardrobe-02/soft-spikes-south-east-head.png",
+          "headSha256": "c074b1615656dd53f90c49561adf5b1fc755e9e554dd0d1f2b1eb86c1b7aadbd",
+          "backUrl": "/assets/head-wardrobe-02/soft-spikes-south-east-back.png",
+          "backSha256": "0a8168d21e9d4261bd096e976b07221130166fa8f72e64a50b2a91a1348f6393",
+          "completeUrl": "/assets/head-wardrobe-02/soft-spikes-south-east-complete.png",
+          "completeSha256": "c1865fd3c7f09105da9939d1edeae9540878c2e08ab47886b6fc839c8247ffcb",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        }
+      },
+      "defectDirections": [
+        "north-west",
+        "north",
+        "north-east"
+      ]
+    },
+    {
+      "id": "side-part",
+      "nameThai": "ผมแสกข้าง",
+      "row": 8,
+      "shape": "Compact dark slate purple side part, smooth low dome and one sweeping forehead lock.",
+      "visualApproved": false,
+      "views": {
+        "south": {
+          "headUrl": "/assets/head-wardrobe-02/side-part-south-head.png",
+          "headSha256": "b9605c8632066a0e0e9547a06c313f1125423950be9fabfe286a6db37dd4eaf1",
+          "backUrl": "/assets/head-wardrobe-02/side-part-south-back.png",
+          "backSha256": "393d8605ef289e86a7f382c3ecd40277bbd4b2b534ca68c4d5aed3353f154c19",
+          "completeUrl": "/assets/head-wardrobe-02/side-part-south-complete.png",
+          "completeSha256": "8580c609f3d953a70160e36003b362d8aa1f013f21744ef51a2cab5157a4ab9f",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-west": {
+          "headUrl": "/assets/head-wardrobe-02/side-part-south-west-head.png",
+          "headSha256": "5157f5b65fb1dfc37df215e2de22c9bf4db6222b8b7cf2417736d7c52f4d598e",
+          "backUrl": "/assets/head-wardrobe-02/side-part-south-west-back.png",
+          "backSha256": "d2149eca49bec611dee36009baecf43ccc927d2affc4c25d9599069b7fb7eebf",
+          "completeUrl": "/assets/head-wardrobe-02/side-part-south-west-complete.png",
+          "completeSha256": "2435db467df44a61705deb4421181ee0763b518dc988ed3a918abdeffc46aee9",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "west": {
+          "headUrl": "/assets/head-wardrobe-02/side-part-west-head.png",
+          "headSha256": "1b5e7b3210e949ac08d0709b62086d623d36f8d971cdedbe70d670e092d5930b",
+          "backUrl": "/assets/head-wardrobe-02/side-part-west-back.png",
+          "backSha256": "c97a131e60c86ee3881b661f259d4d228754cb128d8a3aa020ccf4ee32ab1665",
+          "completeUrl": "/assets/head-wardrobe-02/side-part-west-complete.png",
+          "completeSha256": "f46ca6b2e93322f55ac3b99b24c79240fec475229771ede58790d2148beba573",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-west": {
+          "headUrl": "/assets/head-wardrobe-02/side-part-north-west-head.png",
+          "headSha256": "6291d4b7bf88f8fa998e308fd4b46ea37adbf1bf09d055d0f5ca414f60913d13",
+          "backUrl": "/assets/head-wardrobe-02/side-part-north-west-back.png",
+          "backSha256": "527840eb478eaf324cc1741e8636f2e0b4d7edeb0282276863c018d380386719",
+          "completeUrl": "/assets/head-wardrobe-02/side-part-north-west-complete.png",
+          "completeSha256": "5b711eb093a181618c0e6a05c1967ad2dac54ef67078e284c83fdbaf8755ae95",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north": {
+          "headUrl": "/assets/head-wardrobe-02/side-part-north-head.png",
+          "headSha256": "dcd070387151a0b7c1087c8991703663a829299b81afc0cb33e743f3681740d1",
+          "backUrl": "/assets/head-wardrobe-02/side-part-north-back.png",
+          "backSha256": "6bc5262a292f5cd88e3e46965074a8917faebf0a5bc1631acc6d56205a46c801",
+          "completeUrl": "/assets/head-wardrobe-02/side-part-north-complete.png",
+          "completeSha256": "cdf946caf42697e81e602cfcb02aa80c7b851ab418eee8ba972bbf96fedfee52",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-east": {
+          "headUrl": "/assets/head-wardrobe-02/side-part-north-east-head.png",
+          "headSha256": "08306d6b4bce4fbcd623caee80ec3618d9d4a02c06777a979e3a46e7aa1ce2f7",
+          "backUrl": "/assets/head-wardrobe-02/side-part-north-east-back.png",
+          "backSha256": "11432813f9d39d29558e5bf03eac581818d3aa2303b28022dbe425adb1d73dda",
+          "completeUrl": "/assets/head-wardrobe-02/side-part-north-east-complete.png",
+          "completeSha256": "54cfe615684ed01ee33760a5c95f6906088108e6b67bc3cec95115cc1d24bcc2",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "east": {
+          "headUrl": "/assets/head-wardrobe-02/side-part-east-head.png",
+          "headSha256": "47c217d82c193b45c8653c60fd6fbabae300e347dd0e781a180affbe158d8a8a",
+          "backUrl": "/assets/head-wardrobe-02/side-part-east-back.png",
+          "backSha256": "45b04eaf9d8633eb1c361eed6368792d94499ba3d6715e5329629c2d520c42bf",
+          "completeUrl": "/assets/head-wardrobe-02/side-part-east-complete.png",
+          "completeSha256": "78491092317a9d1f6fe9f7a688b15ab17158b45566932b5e4ecd50f40d562131",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-east": {
+          "headUrl": "/assets/head-wardrobe-02/side-part-south-east-head.png",
+          "headSha256": "7bffdc60b355377ef947ab0be647d08d1b23beb5a37dbb4f0fd851b9f16ebc12",
+          "backUrl": "/assets/head-wardrobe-02/side-part-south-east-back.png",
+          "backSha256": "ae5b8c57503ccb3399f7f9ac3090a33e8631cba98a9bd3b43c6ebdc713e4d3f5",
+          "completeUrl": "/assets/head-wardrobe-02/side-part-south-east-complete.png",
+          "completeSha256": "109e972713a60bacc96af51790947c34d0b474224046be6a6bc46a81144125ed",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        }
+      },
+      "defectDirections": []
+    },
+    {
+      "id": "smooth-curtains",
+      "nameThai": "ผมแสกกลางประบ่า",
+      "row": 9,
+      "shape": "Muted lavender medium smooth center-part curtains, rounded ear sides and compact nape length.",
+      "visualApproved": false,
+      "views": {
+        "south": {
+          "headUrl": "/assets/head-wardrobe-02/smooth-curtains-south-head.png",
+          "headSha256": "d4eef71b606af430050a6d63bde35dc3f99d86ba87b1bcac514757bc5c268964",
+          "backUrl": "/assets/head-wardrobe-02/smooth-curtains-south-back.png",
+          "backSha256": "393d8605ef289e86a7f382c3ecd40277bbd4b2b534ca68c4d5aed3353f154c19",
+          "completeUrl": "/assets/head-wardrobe-02/smooth-curtains-south-complete.png",
+          "completeSha256": "5ef1cc9eb618651bfeda248afb52de6c147c553b113f3493525699cd413c550d",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-west": {
+          "headUrl": "/assets/head-wardrobe-02/smooth-curtains-south-west-head.png",
+          "headSha256": "87f4a667943e5a328074705d299176a6475a99a3af14f91bc7b880a09f62c622",
+          "backUrl": "/assets/head-wardrobe-02/smooth-curtains-south-west-back.png",
+          "backSha256": "f5f7d2661704c29ab22fe30076b26871250784ce2bfe996d14c94168112adfa1",
+          "completeUrl": "/assets/head-wardrobe-02/smooth-curtains-south-west-complete.png",
+          "completeSha256": "ef893183975c1763df427e025703ac045e35145a5cd76171fa1a95780451eebb",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "west": {
+          "headUrl": "/assets/head-wardrobe-02/smooth-curtains-west-head.png",
+          "headSha256": "3cc0a35cf0c6f0e4a67c27bdaa6e39de410d94f7da06a140c0ced81ff7e21c7e",
+          "backUrl": "/assets/head-wardrobe-02/smooth-curtains-west-back.png",
+          "backSha256": "5f63137103907f217397a65eadbe878b04b1b1346a58bf4d1bc35bbb296bafdb",
+          "completeUrl": "/assets/head-wardrobe-02/smooth-curtains-west-complete.png",
+          "completeSha256": "378f8f574647df03001d57854ecf32d5a85d15d8abad135e7d43e0e255b6781e",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-west": {
+          "headUrl": "/assets/head-wardrobe-02/smooth-curtains-north-west-head.png",
+          "headSha256": "cb9b2239a7b245d641235684c7c4b4d4643d84dc4ef418bd234008042b4539da",
+          "backUrl": "/assets/head-wardrobe-02/smooth-curtains-north-west-back.png",
+          "backSha256": "2ccd211c818138a1a8f0039236a0a46f0f66f9336f22a8b8041f8e73f78768f5",
+          "completeUrl": "/assets/head-wardrobe-02/smooth-curtains-north-west-complete.png",
+          "completeSha256": "db6964ccd04e85f0af158b5f02cf37afd309f48b9d10e5a8d9f7c567ebde5677",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north": {
+          "headUrl": "/assets/head-wardrobe-02/smooth-curtains-north-head.png",
+          "headSha256": "91a0e4d99f65fdfb59dc5701ad8d34b6688ae8b3dec6ae0bb8b12efc18632d85",
+          "backUrl": "/assets/head-wardrobe-02/smooth-curtains-north-back.png",
+          "backSha256": "bb32e801dd2ca2855ea82a9beab754abab817fc1f4d80d65d698e91ca6f3705c",
+          "completeUrl": "/assets/head-wardrobe-02/smooth-curtains-north-complete.png",
+          "completeSha256": "e1d8c70045c299caefd94209009a0f8550b9ff9f193f2291b9c65762fb66efcb",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-east": {
+          "headUrl": "/assets/head-wardrobe-02/smooth-curtains-north-east-head.png",
+          "headSha256": "ff3c09adfcf36180c0c209503b62e36437ce10745b19a4ea21e0add37089d298",
+          "backUrl": "/assets/head-wardrobe-02/smooth-curtains-north-east-back.png",
+          "backSha256": "fb13e55e1859977d1468ace36d05d8f080522f81d4fcc81faae1a6b44bdd1856",
+          "completeUrl": "/assets/head-wardrobe-02/smooth-curtains-north-east-complete.png",
+          "completeSha256": "c2ff9e2a5b88b777c2fac94f7037721e21f6d7c6c60d3fa803628847cfaedd52",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "east": {
+          "headUrl": "/assets/head-wardrobe-02/smooth-curtains-east-head.png",
+          "headSha256": "637f6cd3c60f8a1991bca379cd67a5d73a27c2c4db4393b524a3f089f10215ea",
+          "backUrl": "/assets/head-wardrobe-02/smooth-curtains-east-back.png",
+          "backSha256": "62a0e87370196936d0b4bcab08729dac68b886cfca6a2e66e55ba36059033d27",
+          "completeUrl": "/assets/head-wardrobe-02/smooth-curtains-east-complete.png",
+          "completeSha256": "f457660f2092a35b366c38cad53235a886c2881faae48fd463d914ed14e908fe",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-east": {
+          "headUrl": "/assets/head-wardrobe-02/smooth-curtains-south-east-head.png",
+          "headSha256": "37aae5344f01577ac07300578a9ddbc66e05070486754e3838babbc864212d0a",
+          "backUrl": "/assets/head-wardrobe-02/smooth-curtains-south-east-back.png",
+          "backSha256": "0fa55fef7f08ce03de2129c78bc618af70f4d629c49063e1cea5b93ae978be2e",
+          "completeUrl": "/assets/head-wardrobe-02/smooth-curtains-south-east-complete.png",
+          "completeSha256": "9950a68350db63029ecc151b9acaf4561c55a3c183f9058a852238a588c077fc",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        }
+      },
+      "defectDirections": []
+    },
+    {
+      "id": "wild-spikes",
+      "nameThai": "ผมแหลมกระจาย",
+      "row": 10,
+      "shape": "Pale silver separated wild spikes, strong asymmetrical star crown, individually readable large locks.",
+      "visualApproved": false,
+      "views": {
+        "south": {
+          "headUrl": "/assets/head-wardrobe-02/wild-spikes-south-head.png",
+          "headSha256": "3a7221ebeb18cbb7366ad45f996dd74eb2d3f4a7cd6a5e75d1a52c214b692054",
+          "backUrl": "/assets/head-wardrobe-02/wild-spikes-south-back.png",
+          "backSha256": "393d8605ef289e86a7f382c3ecd40277bbd4b2b534ca68c4d5aed3353f154c19",
+          "completeUrl": "/assets/head-wardrobe-02/wild-spikes-south-complete.png",
+          "completeSha256": "2799016cab5f88a0687f2a67a1ac9b26f7c9d7d0e25232640158a0c415f56c2b",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-west": {
+          "headUrl": "/assets/head-wardrobe-02/wild-spikes-south-west-head.png",
+          "headSha256": "723d02b9b629271ff9357557771ea9cbf5f965d2910ffd6f89940f174fc9603b",
+          "backUrl": "/assets/head-wardrobe-02/wild-spikes-south-west-back.png",
+          "backSha256": "f01a6a69b77e590c2359c4782fe956c254e5f79b733fb0c8ab61f2d1a6514b28",
+          "completeUrl": "/assets/head-wardrobe-02/wild-spikes-south-west-complete.png",
+          "completeSha256": "32263f1ef22b067bed37121efc4bc60e05b06850e759936fb8836ed2a8ce1775",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "west": {
+          "headUrl": "/assets/head-wardrobe-02/wild-spikes-west-head.png",
+          "headSha256": "491ab32fb5884b54cb6957406f0ac67d50b2bc85bfe3a9e7fbd096bc0f71262c",
+          "backUrl": "/assets/head-wardrobe-02/wild-spikes-west-back.png",
+          "backSha256": "33dd8ce878a2cdd600f3cae6632fa895b7053ed57ad5a06a8638607495359bfb",
+          "completeUrl": "/assets/head-wardrobe-02/wild-spikes-west-complete.png",
+          "completeSha256": "3204eef7f7fcd05cf82438f1e53ca7d5974a43f3b13d457a2a7127d9633df52e",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-west": {
+          "headUrl": "/assets/head-wardrobe-02/wild-spikes-north-west-head.png",
+          "headSha256": "b8142ec49723e1fcea3d12ac875dccee9cf6e641cd30ad0d3943ee8388657e69",
+          "backUrl": "/assets/head-wardrobe-02/wild-spikes-north-west-back.png",
+          "backSha256": "3d44383cc622992ff269d9c5fe1c9a349ac042263d4464577b05637eaf24927c",
+          "completeUrl": "/assets/head-wardrobe-02/wild-spikes-north-west-complete.png",
+          "completeSha256": "288ff2b7f2cbfb803ea9a0242098f4695eb7f47e278cb990ca3d43cf0c7a636d",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north": {
+          "headUrl": "/assets/head-wardrobe-02/wild-spikes-north-head.png",
+          "headSha256": "d1d26bdd3185e58fb5fe864958bf0662fd011e2413c24a84365127f921f46302",
+          "backUrl": "/assets/head-wardrobe-02/wild-spikes-north-back.png",
+          "backSha256": "ae8e33b57314a2bcad2386670b9a70a697adb79fc15bfa130c261dd0ee127212",
+          "completeUrl": "/assets/head-wardrobe-02/wild-spikes-north-complete.png",
+          "completeSha256": "fa2025861c83513d9fbab498cd3c17d9e816f1055053c743ec40bcaf36713238",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-east": {
+          "headUrl": "/assets/head-wardrobe-02/wild-spikes-north-east-head.png",
+          "headSha256": "af576e5509e9591013fa3358c1592994dbab97f96b722a5692266578509056cc",
+          "backUrl": "/assets/head-wardrobe-02/wild-spikes-north-east-back.png",
+          "backSha256": "f958dc97dad4f581c3e07804757c1246e4cf57b3916dc4394eaa1482e1ca4316",
+          "completeUrl": "/assets/head-wardrobe-02/wild-spikes-north-east-complete.png",
+          "completeSha256": "f832dfdcb6bf4c9517466174ea9553a6224df0561d1d0d2a5324296e68eb2f9c",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "east": {
+          "headUrl": "/assets/head-wardrobe-02/wild-spikes-east-head.png",
+          "headSha256": "6e31f0b584fa3168dd2ebf90f4b316039f291d11a88bbfe329c4fc8b08656e85",
+          "backUrl": "/assets/head-wardrobe-02/wild-spikes-east-back.png",
+          "backSha256": "5e9e3f01296aa1a0f97ce23cdf1c203d8095fbc79145b595fcaf347bc1f67d44",
+          "completeUrl": "/assets/head-wardrobe-02/wild-spikes-east-complete.png",
+          "completeSha256": "e1354ee16b6456e9f8d3996a9351b0bed1a4b991bfe1ec75346db722d059d29a",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-east": {
+          "headUrl": "/assets/head-wardrobe-02/wild-spikes-south-east-head.png",
+          "headSha256": "38d2011a5c306ba6c160417ddfc2ccdfe3ed30a4ba38ada07dfc9f675913f2bd",
+          "backUrl": "/assets/head-wardrobe-02/wild-spikes-south-east-back.png",
+          "backSha256": "299421142d70c7086b5e055a32043d075ce42619b0b442e97ec17578b2cad1e1",
+          "completeUrl": "/assets/head-wardrobe-02/wild-spikes-south-east-complete.png",
+          "completeSha256": "0a4748e0b4dc3ec6652a9ed57e3b98c49ca9766c70de041f5a8145866658dc40",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        }
+      },
+      "defectDirections": []
+    },
+    {
+      "id": "tall-crest",
+      "nameThai": "ผมตั้งปัดสูง",
+      "row": 11,
+      "shape": "Tall cream-silver swept crest, sharp backward-flowing tapered spikes and small close temple roots.",
+      "visualApproved": false,
+      "views": {
+        "south": {
+          "headUrl": "/assets/head-wardrobe-02/tall-crest-south-head.png",
+          "headSha256": "845e5381f697fe8062a46cf2ff894c2314d9345e244c09e724d7840a47030514",
+          "backUrl": "/assets/head-wardrobe-02/tall-crest-south-back.png",
+          "backSha256": "393d8605ef289e86a7f382c3ecd40277bbd4b2b534ca68c4d5aed3353f154c19",
+          "completeUrl": "/assets/head-wardrobe-02/tall-crest-south-complete.png",
+          "completeSha256": "e876fd7ad95ea4b63b34a77b5ccbcc6db9d79ed77a5644c6d589657d2becb272",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-west": {
+          "headUrl": "/assets/head-wardrobe-02/tall-crest-south-west-head.png",
+          "headSha256": "6cdae03b657cbc1583afeff8ea4ff64a6f19de96e707b44c0ad8d4f1095c599b",
+          "backUrl": "/assets/head-wardrobe-02/tall-crest-south-west-back.png",
+          "backSha256": "856f7f1187dafc87eca1587f3ad3f45bfcd3b4dd7554ccda3ee708cfae8bb313",
+          "completeUrl": "/assets/head-wardrobe-02/tall-crest-south-west-complete.png",
+          "completeSha256": "010fc6d9fbabfe544299ffaf317e646d55e9c069c8d2cc75891e6a5fbd3c43e0",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "west": {
+          "headUrl": "/assets/head-wardrobe-02/tall-crest-west-head.png",
+          "headSha256": "c8e348f03271427497baad1a2c825dddd0d923978b0c4e1b9e6abaa4089eb2dd",
+          "backUrl": "/assets/head-wardrobe-02/tall-crest-west-back.png",
+          "backSha256": "1a696d1ebd1a105745f6dd961f010586ad3bf49da11e54f7578601d1a2ed4554",
+          "completeUrl": "/assets/head-wardrobe-02/tall-crest-west-complete.png",
+          "completeSha256": "a6db620ca9e5813b305dec05a4f3c74ae0b30ecd9c8096de25ae64f721a7b0ad",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-west": {
+          "headUrl": "/assets/head-wardrobe-02/tall-crest-north-west-head.png",
+          "headSha256": "ba2041f1fe2a0417fbce1dd297d7da8c3652039b57223fc711067c89f11bd33f",
+          "backUrl": "/assets/head-wardrobe-02/tall-crest-north-west-back.png",
+          "backSha256": "c7aebdc5a72511137de89f1fa2b276af0279620bf75b5e0b61584b9b01af81e2",
+          "completeUrl": "/assets/head-wardrobe-02/tall-crest-north-west-complete.png",
+          "completeSha256": "0e74e0de1c0d22820980e20ef6bea4d9a95f508ef3e96b062f668e9e66abad82",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north": {
+          "headUrl": "/assets/head-wardrobe-02/tall-crest-north-head.png",
+          "headSha256": "64f0483ec07df9ff9d9f829581f2391840930ff1c42481a52679385840ba5ba7",
+          "backUrl": "/assets/head-wardrobe-02/tall-crest-north-back.png",
+          "backSha256": "c7aebdc5a72511137de89f1fa2b276af0279620bf75b5e0b61584b9b01af81e2",
+          "completeUrl": "/assets/head-wardrobe-02/tall-crest-north-complete.png",
+          "completeSha256": "537c3bb12c4bb80cbfbccbb3eb6058797865ab1e9377c29105126ffa4eff326d",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "north-east": {
+          "headUrl": "/assets/head-wardrobe-02/tall-crest-north-east-head.png",
+          "headSha256": "c56c51f8a3be624ab5de3a83cf24433bd4088685350a5daed27462e76151dedb",
+          "backUrl": "/assets/head-wardrobe-02/tall-crest-north-east-back.png",
+          "backSha256": "c7aebdc5a72511137de89f1fa2b276af0279620bf75b5e0b61584b9b01af81e2",
+          "completeUrl": "/assets/head-wardrobe-02/tall-crest-north-east-complete.png",
+          "completeSha256": "50268c33fa187c562f5f74910e464d808cf6438cebb70dda2c69888a9b9c1111",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "east": {
+          "headUrl": "/assets/head-wardrobe-02/tall-crest-east-head.png",
+          "headSha256": "0a585745a22083bd77236293b5297560fc069563669426ef9d6e3d7cd9d9ca01",
+          "backUrl": "/assets/head-wardrobe-02/tall-crest-east-back.png",
+          "backSha256": "aa46f591430c7d274f3743da010821be24117f7ccce87c97ce6f162b7e5433d1",
+          "completeUrl": "/assets/head-wardrobe-02/tall-crest-east-complete.png",
+          "completeSha256": "d96ae8c0d2393c7dae864f1456953060de5396e1cfe602eda3d416f140c7ac10",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        },
+        "south-east": {
+          "headUrl": "/assets/head-wardrobe-02/tall-crest-south-east-head.png",
+          "headSha256": "bff05e81edec08ad8cdc1c012b11d91e67a6db34a78515279beca64fe5f66108",
+          "backUrl": "/assets/head-wardrobe-02/tall-crest-south-east-back.png",
+          "backSha256": "20b3c6722439996eb14e3745497be905c2d13f8f696f87c45566a1dce1e321e7",
+          "completeUrl": "/assets/head-wardrobe-02/tall-crest-south-east-complete.png",
+          "completeSha256": "5692f85a90862ba85c4f20470c7169272371652b542cbf06309d288a972119b6",
+          "visualApproved": false,
+          "alignmentReviewed": false
+        }
+      },
+      "defectDirections": []
+    }
+  ],
+  "animation": false,
+  "gameplayAdoption": false,
+  "authoringStatus": "FRONT is legacy face-locked inpaint; whole-head co-design still required",
+  "composition": "rear head pixels -> headless body -> upper head; no original face underlay",
+  "ledger": {
+    "cap": 88,
+    "spent": 88,
+    "reserved": 0,
+    "attempts": [
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "swept-spike",
+        "reserved": 6,
+        "stage": "front",
+        "charged": 6,
+        "jobId": "214d8bb4-ad26-4f8c-9c8a-64b143a9d69e"
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "tied-curtains",
+        "reserved": 6,
+        "stage": "front",
+        "jobId": "b8ef1384-dfec-4ba2-ae87-ef6cecb0b21c",
+        "charged": 6
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "layered-shag",
+        "reserved": 6,
+        "stage": "front",
+        "jobId": "f0f91dd3-a944-438c-8fe3-662bf411443d",
+        "charged": 6
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "round-crop",
+        "reserved": 6,
+        "stage": "front",
+        "jobId": "466f0696-905a-4f7c-a4e7-38782758bc64",
+        "charged": 6
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "textured-crop",
+        "reserved": 6,
+        "stage": "front",
+        "jobId": "0c845f57-a5fc-42a5-ae80-14369c904acb",
+        "charged": 6
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "airy-feathers",
+        "reserved": 6,
+        "stage": "front",
+        "jobId": "0a6fa115-6ea5-4c66-b96c-292ab597b15d",
+        "charged": 6
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "soft-spikes",
+        "reserved": 6,
+        "stage": "front",
+        "jobId": "d3f59534-8549-4bdf-90c9-84325654ae61",
+        "charged": 6
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "side-part",
+        "reserved": 6,
+        "stage": "front",
+        "jobId": "dc3db303-0733-4217-81b8-e24d975b0f47",
+        "charged": 6
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "smooth-curtains",
+        "reserved": 6,
+        "stage": "front",
+        "jobId": "924b4954-43a8-4f24-8de0-becf50f9ac93",
+        "charged": 6
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "wild-spikes",
+        "reserved": 6,
+        "stage": "front",
+        "jobId": "f0c0d3d5-1c32-4166-8be0-6f07b9bdfea8",
+        "charged": 6
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "tall-crest",
+        "reserved": 6,
+        "stage": "front",
+        "jobId": "4fb6c07e-bc96-460a-8be8-1162a909a41c",
+        "charged": 6
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "swept-spike",
+        "reserved": 2,
+        "stage": "rotation",
+        "objectId": "393b25ea-239d-4747-a7a5-cc2371cdb8e2",
+        "charged": 2
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "tied-curtains",
+        "reserved": 2,
+        "stage": "rotation",
+        "objectId": "5d10c71a-1561-43c1-9ed0-c9f360b4e875",
+        "charged": 2
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "layered-shag",
+        "reserved": 2,
+        "stage": "rotation",
+        "objectId": "8804bde9-3860-48ed-913a-5c4b3ec36296",
+        "charged": 2
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "round-crop",
+        "reserved": 2,
+        "stage": "rotation",
+        "objectId": "4923c15a-0d6a-4ba9-8d32-929de13b30f4",
+        "charged": 2
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "textured-crop",
+        "reserved": 2,
+        "stage": "rotation",
+        "objectId": "7556d7a5-337e-4b5e-a21d-ac14542462ab",
+        "charged": 2
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "airy-feathers",
+        "reserved": 2,
+        "stage": "rotation",
+        "objectId": "6bf89eb3-fa3e-4dd6-9add-8c1503ef728d",
+        "charged": 2
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "soft-spikes",
+        "reserved": 2,
+        "stage": "rotation",
+        "objectId": "cbc8e73b-d688-4cf6-80de-0ebf907ccad5",
+        "charged": 2
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "side-part",
+        "reserved": 2,
+        "stage": "rotation",
+        "objectId": "24ddbc00-6292-4d47-9ee4-9c8eaee75ca3",
+        "charged": 2
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "smooth-curtains",
+        "reserved": 2,
+        "stage": "rotation",
+        "objectId": "ab0db21c-42c0-4ded-a03f-55e7d62c6cbf",
+        "charged": 2
+      },
+      {
+        "retry": false,
+        "status": "rejected-concurrency",
+        "style": "wild-spikes",
+        "reserved": 0,
+        "stage": "rotation",
+        "note": "PixelLab refused before running: Tier 1 max 8 concurrent jobs. Not charged; not a generation retry."
+      },
+      {
+        "retry": false,
+        "status": "rejected-concurrency",
+        "style": "tall-crest",
+        "reserved": 0,
+        "stage": "rotation",
+        "note": "PixelLab refused before running: Tier 1 max 8 concurrent jobs. Not charged; not a generation retry."
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "wild-spikes",
+        "reserved": 2,
+        "stage": "rotation",
+        "objectId": "5dd26b91-c707-4eda-9334-fe9aa7db6623",
+        "charged": 2
+      },
+      {
+        "retry": false,
+        "status": "completed",
+        "style": "tall-crest",
+        "reserved": 2,
+        "stage": "rotation",
+        "objectId": "f15677f9-3dea-433c-ac07-ccf36a6ccff3",
+        "charged": 2
+      }
+    ],
+    "retries": 0
+  },
+  "visualApproved": false,
+  "productionReady": false
+}

@@ -1,0 +1,105 @@
+{
+  "version": "shaman-character-v2/1",
+  "status": "review",
+  "approvals": {
+    "assetSpecAccepted": true,
+    "assetSpecDecision": "2026-10-09 latest user accepts specification; separate SINGLE new FRONT body authorization max6, no visual art approval.",
+    "animationAccepted": false,
+    "userVisualAccepted": false
+  },
+  "budget": {
+    "cap": 18,
+    "spent": 12,
+    "reserved": 0
+  },
+  "poses": [
+    {
+      "id": "neutral-male-02-idle-south",
+      "direction": "south",
+      "state": "idle",
+      "canvas": {
+        "width": 128,
+        "height": 128,
+        "origin": {
+          "x": 61,
+          "y": 112
+        }
+      },
+      "mode": "static",
+      "loop": false,
+      "frames": [
+        {
+          "durationMs": null,
+          "anchors": {
+            "foot": {
+              "x": 61,
+              "y": 112
+            },
+            "hairRoot": {
+              "x": 62,
+              "y": 24
+            },
+            "headgear": {
+              "x": 62,
+              "y": 20
+            },
+            "mainHand": {
+              "x": 80,
+              "y": 78
+            },
+            "offHand": {
+              "x": 43,
+              "y": 78
+            },
+            "accessories": {
+              "x": 62,
+              "y": 70
+            }
+          },
+          "order": [
+            "body",
+            "hair",
+            "outfit",
+            "headgear",
+            "mainHand",
+            "offHand",
+            "accessories",
+            "effects"
+          ]
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "neutral-male-02-body-south",
+      "itemId": "neutral-male-02",
+      "layer": "body",
+      "pass": "body",
+      "poseId": "neutral-male-02-idle-south",
+      "direction": "south",
+      "state": "idle",
+      "canvas": {
+        "width": 128,
+        "height": 128,
+        "origin": {
+          "x": 61,
+          "y": 112
+        }
+      },
+      "timeline": [
+        null
+      ],
+      "frameCount": 1,
+      "url": "/assets/character-v2/body-front-02/raw.png",
+      "provenance": {
+        "kind": "new-v2",
+        "sourcePath": "docs/design/character-v2/body-front-02/raw.png",
+        "sha256": "0ed1ddf448b70a93dc5f624617e832a0af593779b6b7257d65db39b61be35958",
+        "method": "pixellab",
+        "jobId": "23ffdbb6-a5e0-48d3-b82d-5fcebc9af2ad"
+      },
+      "visualApproved": false
+    }
+  ]
+}

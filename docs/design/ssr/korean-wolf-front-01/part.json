@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.korean-wolf-front-candidate",
+  "kind": "hairFront",
+  "variant": "korean-wolf-front-candidate",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "golden-ramp",
+      "url": "/assets/ssr/candidates/korean-wolf-front-01/hair-ramp.png",
+      "sha256": "22809b62df95297c59621f89b42ae29212b30bf471747062ae93b299a199cf4d",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "golden-fixed",
+      "url": "/assets/ssr/candidates/korean-wolf-front-01/hair-fixed.png",
+      "sha256": "678ac9b735121cac044557854ccb96cff995d7b4ce0b5cc2f27e954722f65268",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "golden-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "golden-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Original FRONT-only inpaint on owned approved head; Hair Layer Standard filtering. Unapproved candidate, no other directions or gameplay publication."
+}

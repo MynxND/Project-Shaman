@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Costume repair 01 - rejected RIGHT</title>
+<style>
+:root { color-scheme: dark; --gold: #d6b46c; --ink: #ece3bf; --panel: #18312e; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: #101c1a; font: 16px/1.5 Georgia, serif; letter-spacing: 0; }
+main { max-width: 1120px; padding: 24px; margin: auto; }
+h1 { font-size: 26px; margin: 0 0 12px; color: var(--gold); }
+h2 { font-size: 20px; margin: 24px 0 8px; }
+a { color: var(--gold); overflow-wrap: anywhere; }
+.actors { display: grid; grid-template-columns: repeat(auto-fit,minmax(256px,1fr)); gap: 16px; }
+figure { margin: 0; }
+.sprite { display: block; width: 256px; height: 256px; max-width: 100%; object-fit: contain; image-rendering: pixelated; background: repeating-conic-gradient(#18312e 0% 25%,#213e38 0% 50%) 50% / 16px 16px; }
+figcaption { margin-top: 8px; font-size: 15px; }
+.strip { overflow-x: auto; background: var(--panel); }
+.strip img { display: block; width: 1024px; height: 256px; max-width: none; image-rendering: pixelated; }
+dl { display: grid; grid-template-columns: minmax(0,140px) minmax(0,1fr); gap: 6px 16px; }
+dt,dd { margin: 0; overflow-wrap: anywhere; }
+@media(max-width:360px) { main { padding: 16px; } .actors { grid-template-columns: minmax(0,1fr); } }
+</style>
+<main>
+<h1>Costume Repair 01</h1>
+<p>RIGHT rejected: broad pale side hem and unresolved FRONT apron/mantle/sash construction. BACK and LEFT stopped.</p>
+<div class="actors">
+<figure><img class="sprite" src="east/front.png" alt="Approved unchanged FRONT"><figcaption>FRONT: approved source</figcaption></figure>
+<figure><img class="sprite" src="east/input.png" alt="Prior RIGHT profile"><figcaption>RIGHT: input, unapproved</figcaption></figure>
+<figure><img class="sprite" src="east/raw.png" alt="Actual generated RIGHT costume result"><figcaption>RIGHT: actual generated raw, rejected</figcaption></figure>
+<figure><img class="sprite" src="east/mask.png" alt="Native binary garment edit mask"><figcaption>Mask: 1,552 editable pixels</figcaption></figure>
+</div>
+<h2>Exact Comparison</h2>
+<div class="strip"><img src="east/comparison-2x.png" alt="FRONT, RIGHT input, RIGHT raw, binary mask at exact two times native size"></div>
+<dl><dt>Job</dt><dd>17af3205-7375-42c3-9567-8f50af1de725</dd><dt>Credits</dt><dd>6 actual / 6 provisional estimate / 18 maximum; pending 0</dd><dt>Pixel Check</dt><dd>1,261 changed; 14,832 protected; 0 RGBA mismatches</dd><dt>Production</dt><dd>Blocked; candidate null; no clean anatomy/scalp or new-base animation</dd></dl>
+<p><a href="east/raw.png">Raw PNG</a> | <a href="east/review.json">Art verdict</a> | <a href="ledger.json">Stage ledger</a> | <a href="runtime-review.json">Runtime review metadata</a></p>
+</main>
+</html>

@@ -1,0 +1,113 @@
+{
+  "version": "separated-front/1",
+  "direction": "south",
+  "state": "idle",
+  "visualApproved": false,
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "sceneFoot": {
+    "x": 64,
+    "y": 112
+  },
+  "bodyOrigin": {
+    "x": 32,
+    "y": 61
+  },
+  "neckPivot": {
+    "x": 32,
+    "y": 17
+  },
+  "hairPivot": {
+    "x": 16,
+    "y": 8
+  },
+  "headgearPivot": {
+    "x": 16,
+    "y": 4
+  },
+  "leftHand": {
+    "x": 46,
+    "y": 36
+  },
+  "rightHand": {
+    "x": 17,
+    "y": 37
+  },
+  "accessoryPivot": {
+    "x": 32,
+    "y": 31
+  },
+  "footBaseline": 61,
+  "parts": [
+    {
+      "id": "body",
+      "slot": "body",
+      "name": "ตัวไร้หัว FRONT",
+      "pivot": {
+        "x": 32,
+        "y": 61
+      },
+      "width": 64,
+      "height": 64,
+      "url": "/assets/character-v3/separated-front-01/body.png",
+      "sha256": "021b1a8aca3b8d383e453765b021295e6dc6bae97935944df57bc14bbe4a9184",
+      "provenance": "docs/design/character-v3/separated-front-01/body-result.json"
+    },
+    {
+      "id": "head-a",
+      "slot": "head",
+      "name": "หัว A · หน้าสงบ",
+      "pivot": {
+        "x": 16,
+        "y": 27
+      },
+      "width": 32,
+      "height": 32,
+      "url": "/assets/character-v3/separated-front-01/head-a.png",
+      "sha256": "36ec2cf49adf5558e44b32a8c350cc572c91da9f55ea2e9d61d8b3a40453e392",
+      "provenance": "docs/design/character-v3/separated-front-01/head-a-result.json"
+    },
+    {
+      "id": "head-b",
+      "slot": "head",
+      "name": "หัว B · คิ้วกว้าง",
+      "pivot": {
+        "x": 16,
+        "y": 28
+      },
+      "width": 32,
+      "height": 32,
+      "url": "/assets/character-v3/separated-front-01/head-b.png",
+      "sha256": "40dfdc04186868318218181d81226e5937cb67d224abfc9ba3279bdd1562b138",
+      "provenance": "docs/design/character-v3/separated-front-01/head-b-result.json"
+    }
+  ],
+  "bodyId": "body",
+  "headIds": [
+    "head-a",
+    "head-b"
+  ],
+  "hairSets": [],
+  "emptySlots": [
+    "backHair",
+    "frontHair",
+    "headgear",
+    "outfit",
+    "weapon",
+    "offhand",
+    "accessories"
+  ],
+  "credits": {
+    "cap": 15,
+    "spent": 15,
+    "reserved": 0
+  },
+  "reference": {
+    "url": "/assets/character-v2/body-front-02/raw.png",
+    "sha256": "0ed1ddf448b70a93dc5f624617e832a0af593779b6b7257d65db39b61be35958"
+  },
+  "landmarksStatus": "Measured FRONT candidate landmarks; user art approval pending",
+  "scope": "FRONT IDLE only; no generated hair, gear, other directions or animation"
+}

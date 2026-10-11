@@ -1,0 +1,279 @@
+[
+    {
+        "name":  "create_image_pro_flash",
+        "description":  "Create one Pro Flash pixel-art image with an optional left-box style image.\n\nCustom sizes (Beta) accept width and height from 16 to 256 in multiples of 4 pixels.\nQuery get_pro_flash_capabilities for native presets and provisional cost.\nThe style image accepts {url}, {base64}, or {source_image_id}; prefer URLs\nfor uploaded images. Style art must fit the native canvas without resizing.\nstyle_options selects color_palette, outline, detail and shading independently.\nDefault style uses existing PixelLab art. Returns one image; the provisional\ngeneration charge varies with the canvas. Failed pixel grids use image-to-\npixel-art with fixer on the generated box. Poll get_image(job_id); use\nsource_image_id after completion.",
+        "inputSchema":  {
+                            "additionalProperties":  false,
+                            "properties":  {
+                                               "description":  {
+                                                                   "maxLength":  2000,
+                                                                   "minLength":  1,
+                                                                   "type":  "string"
+                                                               },
+                                               "width":  {
+                                                             "default":  64,
+                                                             "description":  "Native sizes: 16x16 (experimental), 24x24, 32x32, 32x48, 48x48, 64x64, 96x64, 96x96, 128x128. Custom size (Beta): integer width 16â256 and height 16â256. Both dimensions must be multiples of 4 pixels. Pixel-grid recovery uses image-to-pixel-art with fixer when needed. No native image resizing.",
+                                                             "maximum":  256,
+                                                             "minimum":  16,
+                                                             "multipleOf":  4,
+                                                             "type":  "integer"
+                                                         },
+                                               "height":  {
+                                                              "default":  64,
+                                                              "maximum":  256,
+                                                              "minimum":  16,
+                                                              "multipleOf":  4,
+                                                              "type":  "integer"
+                                                          },
+                                               "no_background":  {
+                                                                     "default":  true,
+                                                                     "type":  "boolean"
+                                                                 },
+                                               "style_image":  {
+                                                                   "default":  null,
+                                                                   "additionalProperties":  false,
+                                                                   "description":  "One URL, encoded image, or owned image ID plus its reference instructions.",
+                                                                   "properties":  {
+                                                                                      "base64":  {
+                                                                                                     "default":  null,
+                                                                                                     "type":  [
+                                                                                                                  "string",
+                                                                                                                  "null"
+                                                                                                              ]
+                                                                                                 },
+                                                                                      "url":  {
+                                                                                                  "default":  null,
+                                                                                                  "type":  [
+                                                                                                               "string",
+                                                                                                               "null"
+                                                                                                           ]
+                                                                                              },
+                                                                                      "source_image_id":  {
+                                                                                                              "default":  null,
+                                                                                                              "type":  [
+                                                                                                                           "string",
+                                                                                                                           "null"
+                                                                                                                       ]
+                                                                                                          },
+                                                                                      "usage_description":  {
+                                                                                                                "default":  null,
+                                                                                                                "description":  "How this reference should guide appearance.",
+                                                                                                                "type":  [
+                                                                                                                             "string",
+                                                                                                                             "null"
+                                                                                                                         ]
+                                                                                                            }
+                                                                                  },
+                                                                   "type":  [
+                                                                                "object",
+                                                                                "null"
+                                                                            ]
+                                                               },
+                                               "style_options":  {
+                                                                     "default":  null,
+                                                                     "additionalProperties":  false,
+                                                                     "description":  "Choose which visual traits to copy from the style image.",
+                                                                     "properties":  {
+                                                                                        "color_palette":  {
+                                                                                                              "default":  true,
+                                                                                                              "type":  "boolean"
+                                                                                                          },
+                                                                                        "outline":  {
+                                                                                                        "default":  true,
+                                                                                                        "type":  "boolean"
+                                                                                                    },
+                                                                                        "detail":  {
+                                                                                                       "default":  true,
+                                                                                                       "type":  "boolean"
+                                                                                                   },
+                                                                                        "shading":  {
+                                                                                                        "default":  true,
+                                                                                                        "type":  "boolean"
+                                                                                                    }
+                                                                                    },
+                                                                     "type":  [
+                                                                                  "object",
+                                                                                  "null"
+                                                                              ]
+                                                                 },
+                                               "seed":  {
+                                                            "default":  0,
+                                                            "minimum":  0,
+                                                            "type":  "integer"
+                                                        },
+                                               "project_id":  {
+                                                                  "default":  null,
+                                                                  "type":  [
+                                                                               "string",
+                                                                               "null"
+                                                                           ]
+                                                              }
+                                           },
+                            "required":  [
+                                             "description"
+                                         ],
+                            "type":  "object"
+                        },
+        "annotations":  {
+                            "readOnlyHint":  false,
+                            "destructiveHint":  false,
+                            "idempotentHint":  false,
+                            "openWorldHint":  false
+                        },
+        "_meta":  {
+                      "fastmcp":  {
+                                      "tags":  [
+
+                                               ]
+                                  }
+                  }
+    },
+    {
+        "name":  "get_pro_flash_capabilities",
+        "description":  "Get Pro Flash exact native size pairs, controls and one-image output counts.\n\nFree identity-only lookup. Supply operation, width and height together for\na provisional quote split into image/rotations/total. Finishing a selected\npreview bills only rotations; one-direction object finalization costs zero.\nLarger research sizes are not supported generation sizes. Read this before\nselecting dimensions for image, character or object creation, edit or inpaint.",
+        "inputSchema":  {
+                            "additionalProperties":  false,
+                            "properties":  {
+                                               "operation":  {
+                                                                 "default":  null,
+                                                                 "enum":  [
+                                                                              "create",
+                                                                              "edit",
+                                                                              "inpaint",
+                                                                              "character",
+                                                                              "object",
+                                                                              null
+                                                                          ],
+                                                                 "type":  [
+                                                                              "string",
+                                                                              "null"
+                                                                          ]
+                                                             },
+                                               "width":  {
+                                                             "default":  null,
+                                                             "type":  [
+                                                                          "integer",
+                                                                          "null"
+                                                                      ]
+                                                         },
+                                               "height":  {
+                                                              "default":  null,
+                                                              "type":  [
+                                                                           "integer",
+                                                                           "null"
+                                                                       ]
+                                                          },
+                                               "n_directions":  {
+                                                                    "default":  8,
+                                                                    "type":  "integer"
+                                                                }
+                                           },
+                            "type":  "object"
+                        },
+        "annotations":  {
+                            "readOnlyHint":  true,
+                            "destructiveHint":  false,
+                            "idempotentHint":  true,
+                            "openWorldHint":  false
+                        },
+        "_meta":  {
+                      "fastmcp":  {
+                                      "tags":  [
+
+                                               ]
+                                  }
+                  }
+    },
+    {
+        "name":  "get_image",
+        "description":  "Get a raw-image result by job id.\n\nReturns the image(s) inline plus no-auth download URLs when completed, or\nprogress/error otherwise. A completed job also reports its gallery save:\nthe Creator ``asset_id`` once saved, or a failure note (the image is still\ndelivered) while the save is being retried.",
+        "inputSchema":  {
+                            "additionalProperties":  false,
+                            "properties":  {
+                                               "job_id":  {
+                                                              "description":  "The job id returned by any raw-image tool (create_image_pixflux, create_image_pixen, create_image_pro, edit_image, edit_image_pixen, transfer_outfit, inpaint_image, animate_image, image_to_pixelart, unzoom_image, correct_pixelart, reduce_colors).",
+                                                              "type":  "string"
+                                                          },
+                                               "index":  {
+                                                             "default":  null,
+                                                             "description":  "Return only this frame, inline. Use it to reach frames past the first few of a long animation without fetching a URL.",
+                                                             "type":  [
+                                                                          "integer",
+                                                                          "null"
+                                                                      ]
+                                                         }
+                                           },
+                            "required":  [
+                                             "job_id"
+                                         ],
+                            "type":  "object"
+                        },
+        "annotations":  {
+                            "readOnlyHint":  false,
+                            "destructiveHint":  false,
+                            "idempotentHint":  true,
+                            "openWorldHint":  false
+                        },
+        "_meta":  {
+                      "fastmcp":  {
+                                      "tags":  [
+
+                                               ]
+                                  }
+                  }
+    },
+    {
+        "name":  "get_balance",
+        "description":  "Check your account balance: remaining credits (USD) and subscription generations.",
+        "inputSchema":  {
+                            "additionalProperties":  false,
+                            "properties":  {
+
+                                           },
+                            "type":  "object"
+                        },
+        "annotations":  {
+                            "readOnlyHint":  true,
+                            "destructiveHint":  false,
+                            "idempotentHint":  true,
+                            "openWorldHint":  false
+                        },
+        "_meta":  {
+                      "fastmcp":  {
+                                      "tags":  [
+
+                                               ]
+                                  }
+                  }
+    },
+    {
+        "name":  "wait_for_jobs",
+        "description":  "Wait for your running generations instead of sleeping and polling.\n\nReturns as soon as ANY of your pending/processing jobs finishes, immediately\nwhen none are running, or at the timeout. Free. Then call the matching get_*\ntool for the result; call wait_for_jobs again for the jobs still running.",
+        "inputSchema":  {
+                            "additionalProperties":  false,
+                            "properties":  {
+                                               "timeout_seconds":  {
+                                                                       "default":  240,
+                                                                       "description":  "Give up waiting after this many seconds (jobs keep running).",
+                                                                       "maximum":  540,
+                                                                       "minimum":  5,
+                                                                       "type":  "integer"
+                                                                   }
+                                           },
+                            "type":  "object"
+                        },
+        "annotations":  {
+                            "readOnlyHint":  true,
+                            "destructiveHint":  false,
+                            "idempotentHint":  true,
+                            "openWorldHint":  false
+                        },
+        "_meta":  {
+                      "fastmcp":  {
+                                      "tags":  [
+
+                                               ]
+                                  }
+                  }
+    }
+]

@@ -1,0 +1,20 @@
+{
+  "name": "project-shaman",
+  "private": true,
+  "packageManager": "pnpm@11.22.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter \"./apps/*\" dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm --filter @shaman/shared test && pnpm --filter @shaman/client test:network && pnpm --filter @shaman/client test:npc && pnpm --filter @shaman/client test:skill && pnpm --filter @shaman/client test:zone && pnpm --filter @shaman/client test:equipment",
+    "rig:convert": "node tools/rig/ssr-convert.mjs",
+    "rig:validate": "node tools/rig/ssr-validate.mjs"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "^24"
+  }
+}

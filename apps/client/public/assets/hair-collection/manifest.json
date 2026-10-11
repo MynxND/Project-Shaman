@@ -1,0 +1,1363 @@
+{
+  "version": 1,
+  "id": "shaman-male-hair-collection-native128",
+  "canvas": {
+    "width": 128,
+    "height": 128,
+    "foot": {
+      "x": 64,
+      "y": 124
+    }
+  },
+  "review": {
+    "approved": false,
+    "stage": "four-static-view-collection",
+    "limitations": [
+      "Only complete-candidate views have loadable hair URLs. Planned or rejected views must not silently use another named style.",
+      "West uses an explicit native reflection x=128-x about foot x=64, not an independent generation. Directional side-sweep and wild-sweep need authored west.",
+      "No animations, face/body reroll, or main-world integration. Native128 head-proof remains untouched.",
+      "Screenshot bitmap absent from this worker context; exact supplied labels and described silhouettes drive draft designs."
+    ]
+  },
+  "views": {
+    "south": {
+      "neck": {
+        "x": 64,
+        "y": 38
+      },
+      "crownSeat": {
+        "x": 64,
+        "y": 16
+      },
+      "body": "/assets/head-proof/south/body.png",
+      "head": "/assets/head-proof/south/head.png",
+      "source": "/assets/head-proof/south/source.png",
+      "faceMask": "/assets/head-proof/south/faceMask.png",
+      "crown": "/assets/head-proof/south/crown.png",
+      "order": [
+        "hairBack",
+        "body",
+        "head",
+        "hairFront",
+        "crown"
+      ],
+      "foot": {
+        "x": 64,
+        "y": 124
+      },
+      "provenance": "unchanged head-proof"
+    },
+    "east": {
+      "neck": {
+        "x": 66,
+        "y": 38
+      },
+      "crownSeat": {
+        "x": 65,
+        "y": 15
+      },
+      "body": "/assets/head-proof/east/body.png",
+      "head": "/assets/head-proof/east/head.png",
+      "source": "/assets/head-proof/east/source.png",
+      "faceMask": "/assets/head-proof/east/faceMask.png",
+      "crown": "/assets/head-proof/east/crown.png",
+      "order": [
+        "hairBack",
+        "body",
+        "head",
+        "hairFront",
+        "crown"
+      ],
+      "foot": {
+        "x": 64,
+        "y": 124
+      },
+      "provenance": "unchanged head-proof"
+    },
+    "north": {
+      "neck": {
+        "x": 63,
+        "y": 41
+      },
+      "crownSeat": {
+        "x": 63,
+        "y": 15
+      },
+      "body": "/assets/head-proof/north/body.png",
+      "head": "/assets/head-proof/north/head.png",
+      "source": "/assets/head-proof/north/source.png",
+      "faceMask": "/assets/head-proof/north/faceMask.png",
+      "crown": "/assets/head-proof/north/crown.png",
+      "order": [
+        "hairBack",
+        "body",
+        "head",
+        "hairFront",
+        "crown"
+      ],
+      "foot": {
+        "x": 64,
+        "y": 124
+      },
+      "provenance": "unchanged head-proof"
+    },
+    "west": {
+      "neck": {
+        "x": 62,
+        "y": 38
+      },
+      "crownSeat": {
+        "x": 63,
+        "y": 15
+      },
+      "body": "/assets/hair-collection/base/west/body.png",
+      "head": "/assets/hair-collection/base/west/head.png",
+      "source": "/assets/hair-collection/base/west/source.png",
+      "faceMask": "/assets/hair-collection/base/west/faceMask.png",
+      "crown": "/assets/hair-collection/base/west/crown.png",
+      "order": [
+        "hairBack",
+        "body",
+        "head",
+        "hairFront",
+        "crown"
+      ],
+      "foot": {
+        "x": 64,
+        "y": 124
+      },
+      "provenance": "anchor-preserving mirrored east base; no body/head generation"
+    }
+  },
+  "palettes": [
+    {
+      "id": "silver",
+      "name": "Warm silver",
+      "colors": [
+        "#55433f",
+        "#a29389",
+        "#e0d6c6",
+        "#fff2dc"
+      ]
+    },
+    {
+      "id": "ink",
+      "name": "Ink black",
+      "colors": [
+        "#141820",
+        "#303742",
+        "#535f6e",
+        "#8997a7"
+      ]
+    },
+    {
+      "id": "chestnut",
+      "name": "Chestnut",
+      "colors": [
+        "#352126",
+        "#684039",
+        "#a56b4e",
+        "#daa377"
+      ]
+    },
+    {
+      "id": "jade",
+      "name": "Jade",
+      "colors": [
+        "#173332",
+        "#315f51",
+        "#60977a",
+        "#b5d4a4"
+      ]
+    }
+  ],
+  "hairstyles": [
+    {
+      "id": "natural-short",
+      "name": "ผมสั้นธรรมดา",
+      "design": {
+        "silhouette": "Compact rounded short crop, soft uneven fringe, short clean nape, no high spikes or tail.",
+        "length": "short",
+        "asymmetry": "Existing slightly swept fringe reverses chirality in the west mirror; not independently painted."
+      },
+      "status": "complete-candidate",
+      "views": {
+        "south": {
+          "status": "complete-candidate",
+          "front": "/assets/hair-collection/natural-short/south/front.png",
+          "back": "/assets/hair-collection/natural-short/south/back.png",
+          "request": "docs/design/hair-collection/prompts/natural-short-south.json",
+          "mask": "docs/design/hair-collection/masks/natural-short-south.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "reused",
+          "provenance": {
+            "kind": "existing-corrected-pixellab-hair",
+            "sourceFront": "/assets/head-proof/south/short-front.png",
+            "sourceBack": "/assets/head-proof/south/short-back.png",
+            "independentGeneration": false
+          },
+          "bounds": {
+            "left": 50,
+            "top": 10,
+            "right": 77,
+            "bottom": 29
+          },
+          "upperScalpPixelsVerified": 92,
+          "scalpGaps": [],
+          "pixelCount": 368,
+          "fixedMaterialPixels": 7
+        },
+        "east": {
+          "status": "complete-candidate",
+          "front": "/assets/hair-collection/natural-short/east/front.png",
+          "back": "/assets/hair-collection/natural-short/east/back.png",
+          "request": "docs/design/hair-collection/prompts/natural-short-east.json",
+          "mask": "docs/design/hair-collection/masks/natural-short-east.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "reused",
+          "provenance": {
+            "kind": "existing-corrected-pixellab-hair",
+            "sourceFront": "/assets/head-proof/east/short-front.png",
+            "sourceBack": "/assets/head-proof/east/short-back.png",
+            "independentGeneration": false
+          },
+          "bounds": {
+            "left": 53,
+            "top": 11,
+            "right": 77,
+            "bottom": 30
+          },
+          "upperScalpPixelsVerified": 84,
+          "scalpGaps": [],
+          "pixelCount": 318,
+          "fixedMaterialPixels": 1
+        },
+        "north": {
+          "status": "complete-candidate",
+          "front": "/assets/hair-collection/natural-short/north/front.png",
+          "back": "/assets/hair-collection/natural-short/north/back.png",
+          "request": "docs/design/hair-collection/prompts/natural-short-north.json",
+          "mask": "docs/design/hair-collection/masks/natural-short-north.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "reused",
+          "provenance": {
+            "kind": "existing-corrected-pixellab-hair",
+            "sourceFront": "/assets/head-proof/north/short-front.png",
+            "sourceBack": "/assets/head-proof/north/short-back.png",
+            "independentGeneration": false
+          },
+          "bounds": {
+            "left": 51,
+            "top": 10,
+            "right": 74,
+            "bottom": 36
+          },
+          "upperScalpPixelsVerified": 95,
+          "scalpGaps": [],
+          "pixelCount": 466,
+          "fixedMaterialPixels": 0
+        },
+        "west": {
+          "status": "complete-candidate",
+          "front": "/assets/hair-collection/natural-short/west/front.png",
+          "back": "/assets/hair-collection/natural-short/west/back.png",
+          "generation": "derived-mirror",
+          "provenance": {
+            "kind": "mirror-east",
+            "independentGeneration": false,
+            "reflection": "x=128-x around foot x=64",
+            "caveat": "Existing slightly swept fringe reverses chirality in the west mirror; not independently painted."
+          }
+        }
+      },
+      "portrait": "/assets/hair-collection/natural-short/portrait.png"
+    },
+    {
+      "id": "tapered-short",
+      "name": "ผมสั้นซอย",
+      "design": {
+        "silhouette": "Distinct close tapered temples and nape, small separated feathered upper locks, low textured crown, no rounded helmet and no tail.",
+        "length": "short",
+        "asymmetry": "Small irregular locks are mirrored, not a claim of separately painted strands."
+      },
+      "status": "complete-candidate",
+      "views": {
+        "south": {
+          "status": "complete-candidate",
+          "front": "/assets/hair-collection/tapered-short/south/front.png",
+          "back": "/assets/hair-collection/tapered-short/south/back.png",
+          "request": "docs/design/hair-collection/prompts/tapered-short-south.json",
+          "mask": "docs/design/hair-collection/masks/tapered-short-south.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "completed",
+          "jobId": "62729d53-cffa-4a05-a6cf-41c0180db3cc",
+          "provenance": {
+            "kind": "PixelLab native128 masked head-only changes",
+            "rawSha256": "a8477aae06c15f40aade3d0b327e6332c9252cd7e8b82776d409d228608af394",
+            "requestSha256": "ae989977767fc1ad0fb57e6f5fb43df48a2fab52b34ba0a8ac405ef4a98ef2c3",
+            "jobId": "62729d53-cffa-4a05-a6cf-41c0180db3cc",
+            "chargedCredits": 6,
+            "independentGeneration": true,
+            "maskViolations": 0
+          },
+          "bounds": {
+            "left": 43,
+            "top": 11,
+            "right": 81,
+            "bottom": 36
+          },
+          "upperScalpPixelsVerified": 92,
+          "scalpGaps": [],
+          "pixelCount": 377,
+          "fixedMaterialPixels": 155
+        },
+        "east": {
+          "status": "complete-candidate",
+          "front": "/assets/hair-collection/tapered-short/east/front.png",
+          "back": "/assets/hair-collection/tapered-short/east/back.png",
+          "request": "docs/design/hair-collection/prompts/tapered-short-east.json",
+          "mask": "docs/design/hair-collection/masks/tapered-short-east.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "completed",
+          "jobId": "5806a562-ce68-4bef-9ea5-9241b76a8411",
+          "provenance": {
+            "kind": "PixelLab native128 masked head-only changes",
+            "rawSha256": "2c542c598f90c094b2cb64fcc3091f86392b69ca5208d25871b9e7bc0c4ce311",
+            "requestSha256": "6e2bd3308f29a3fa2a39b3fc0fd4c200bb0fb4641b3bb1bd01d05de5c22b9138",
+            "jobId": "5806a562-ce68-4bef-9ea5-9241b76a8411",
+            "chargedCredits": 6,
+            "independentGeneration": true,
+            "maskViolations": 0
+          },
+          "bounds": {
+            "left": 51,
+            "top": 11,
+            "right": 74,
+            "bottom": 36
+          },
+          "upperScalpPixelsVerified": 84,
+          "scalpGaps": [],
+          "pixelCount": 344,
+          "fixedMaterialPixels": 70
+        },
+        "north": {
+          "status": "complete-candidate",
+          "front": "/assets/hair-collection/tapered-short/north/front.png",
+          "back": "/assets/hair-collection/tapered-short/north/back.png",
+          "request": "docs/design/hair-collection/prompts/tapered-short-north-correction.json",
+          "mask": "docs/design/hair-collection/masks/tapered-short-north-correction.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "completed",
+          "jobId": "6c9c4af2-5de9-4beb-8565-fa85c2dff87f",
+          "provenance": {
+            "kind": "PixelLab native128 masked head-only changes",
+            "rawSha256": "355d720f299651387dba2d28749e578c8925ea7970774cb3c218146002f07fa7",
+            "requestSha256": "200f2436a0d002928f87dce25b773a7dc979794ad2838fb1aef8cc69a30aceb0",
+            "jobId": "6c9c4af2-5de9-4beb-8565-fa85c2dff87f",
+            "chargedCredits": 6,
+            "independentGeneration": true,
+            "maskViolations": 0
+          },
+          "bounds": {
+            "left": 49,
+            "top": 12,
+            "right": 75,
+            "bottom": 36
+          },
+          "upperScalpPixelsVerified": 95,
+          "scalpGaps": [],
+          "pixelCount": 451,
+          "fixedMaterialPixels": 11
+        },
+        "west": {
+          "status": "complete-candidate",
+          "front": "/assets/hair-collection/tapered-short/west/front.png",
+          "back": "/assets/hair-collection/tapered-short/west/back.png",
+          "generation": "derived-mirror",
+          "provenance": {
+            "kind": "mirror-east",
+            "independentGeneration": false,
+            "reflection": "x=128-x around foot x=64",
+            "caveat": "Small irregular locks are mirrored, not a claim of separately painted strands."
+          }
+        }
+      },
+      "portrait": "/assets/hair-collection/tapered-short/portrait.png"
+    },
+    {
+      "id": "center-part",
+      "name": "แสกกลาง",
+      "design": {
+        "silhouette": "Visible center part at crown, two balanced curtain fringe wings framing forehead above protected eyes, ear-length sides, softly tapered nape. No one-sided sweep.",
+        "length": "short",
+        "asymmetry": "Center part is bilaterally balanced; strand lighting is mirrored in west."
+      },
+      "status": "complete-candidate",
+      "views": {
+        "south": {
+          "status": "complete-candidate",
+          "front": "/assets/hair-collection/center-part/south/front.png",
+          "back": "/assets/hair-collection/center-part/south/back.png",
+          "request": "docs/design/hair-collection/prompts/center-part-south.json",
+          "mask": "docs/design/hair-collection/masks/center-part-south.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "completed",
+          "jobId": "8594deb4-46f7-446f-aafd-0195e684041e",
+          "provenance": {
+            "kind": "PixelLab native128 masked head-only changes",
+            "rawSha256": "c7a243bcbecf28497bb5f3bef7d17cfd18faae3daadffcd9f03d0ababb43190e",
+            "requestSha256": "bd2eba6268fe4cb97f14de97ad5e84f23b8e780a27a92a8d568c7a13d4f2014b",
+            "jobId": "8594deb4-46f7-446f-aafd-0195e684041e",
+            "chargedCredits": 6,
+            "independentGeneration": true,
+            "maskViolations": 0
+          },
+          "bounds": {
+            "left": 43,
+            "top": 10,
+            "right": 81,
+            "bottom": 36
+          },
+          "upperScalpPixelsVerified": 92,
+          "scalpGaps": [],
+          "pixelCount": 454,
+          "fixedMaterialPixels": 66
+        },
+        "east": {
+          "status": "complete-candidate",
+          "front": "/assets/hair-collection/center-part/east/front.png",
+          "back": "/assets/hair-collection/center-part/east/back.png",
+          "request": "docs/design/hair-collection/prompts/center-part-east.json",
+          "mask": "docs/design/hair-collection/masks/center-part-east.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "completed",
+          "jobId": "5cb9e3cc-395a-4d8b-82f8-101f6fdb2a39",
+          "provenance": {
+            "kind": "PixelLab native128 masked head-only changes",
+            "rawSha256": "be88c7fa4d54acf93abf9d2d07116442b612081f87e15ded8f7b11513f824c7d",
+            "requestSha256": "39d02354126e6861b746e1ef063113fb3d4135d6cf512c6eb4a6b3065547d68b",
+            "jobId": "5cb9e3cc-395a-4d8b-82f8-101f6fdb2a39",
+            "chargedCredits": 6,
+            "independentGeneration": true,
+            "maskViolations": 0
+          },
+          "bounds": {
+            "left": 50,
+            "top": 13,
+            "right": 77,
+            "bottom": 37
+          },
+          "upperScalpPixelsVerified": 84,
+          "scalpGaps": [],
+          "pixelCount": 388,
+          "fixedMaterialPixels": 55
+        },
+        "north": {
+          "status": "complete-candidate",
+          "front": "/assets/hair-collection/center-part/north/front.png",
+          "back": "/assets/hair-collection/center-part/north/back.png",
+          "request": "docs/design/hair-collection/prompts/center-part-north.json",
+          "mask": "docs/design/hair-collection/masks/center-part-north.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "completed",
+          "jobId": "cb4ae554-c5f7-474b-a5c7-631eec1a2145",
+          "provenance": {
+            "kind": "PixelLab native128 masked head-only changes",
+            "rawSha256": "398c313d80f7dfe054d2003331ce7286ff0ded59fb64421eb30a5bc3766777da",
+            "requestSha256": "3de1a325d62b331743b8509391c3de352631d2a75f26256acfa65431dbe62a01",
+            "jobId": "cb4ae554-c5f7-474b-a5c7-631eec1a2145",
+            "chargedCredits": 6,
+            "independentGeneration": true,
+            "maskViolations": 0
+          },
+          "bounds": {
+            "left": 46,
+            "top": 12,
+            "right": 80,
+            "bottom": 39
+          },
+          "upperScalpPixelsVerified": 95,
+          "scalpGaps": [],
+          "pixelCount": 556,
+          "fixedMaterialPixels": 65
+        },
+        "west": {
+          "status": "complete-candidate",
+          "front": "/assets/hair-collection/center-part/west/front.png",
+          "back": "/assets/hair-collection/center-part/west/back.png",
+          "generation": "derived-mirror",
+          "provenance": {
+            "kind": "mirror-east",
+            "independentGeneration": false,
+            "reflection": "x=128-x around foot x=64",
+            "caveat": "Center part is bilaterally balanced; strand lighting is mirrored in west."
+          }
+        }
+      },
+      "portrait": "/assets/hair-collection/center-part/portrait.png"
+    },
+    {
+      "id": "side-sweep",
+      "name": "ปัดข้าง",
+      "design": {
+        "silhouette": "Strong left-rooted side part with a single broad fringe swept to character right, one exposed temple and one longer fringe wing, cropped nape.",
+        "length": "short",
+        "asymmetry": "One-sided part must retain anatomical handedness; an east mirror is not an independently correct opposite profile."
+      },
+      "status": "pending-art",
+      "views": {
+        "south": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/side-sweep-south.json",
+          "mask": "docs/design/hair-collection/masks/side-sweep-south.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "east": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/side-sweep-east.json",
+          "mask": "docs/design/hair-collection/masks/side-sweep-east.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "north": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/side-sweep-north.json",
+          "mask": "docs/design/hair-collection/masks/side-sweep-north.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "west": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "generation": "not-submitted",
+          "provenance": {
+            "kind": "authored-required",
+            "independentGeneration": false,
+            "reflection": "x=128-x around foot x=64",
+            "caveat": "One-sided part must retain anatomical handedness; an east mirror is not an independently correct opposite profile."
+          }
+        }
+      },
+      "portrait": null
+    },
+    {
+      "id": "undercut",
+      "name": "รองทรง",
+      "design": {
+        "silhouette": "Close dark-shaded cropped temples and nape under a wider dense upper shelf, clear stepped transition, moderate height, no towering spikes.",
+        "length": "short",
+        "asymmetry": "Balanced undercut; west lighting and small strands mirrored."
+      },
+      "status": "pending-art",
+      "views": {
+        "south": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/undercut-south.json",
+          "mask": "docs/design/hair-collection/masks/undercut-south.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "east": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/undercut-east.json",
+          "mask": "docs/design/hair-collection/masks/undercut-east.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "north": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/undercut-north.json",
+          "mask": "docs/design/hair-collection/masks/undercut-north.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "west": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "generation": "not-submitted",
+          "provenance": {
+            "kind": "mirror-east",
+            "independentGeneration": false,
+            "reflection": "x=128-x around foot x=64",
+            "caveat": "Balanced undercut; west lighting and small strands mirrored."
+          }
+        }
+      },
+      "portrait": null
+    },
+    {
+      "id": "spiky-up",
+      "name": "สั้นตั้ง",
+      "design": {
+        "silhouette": "Five to seven compact upright separated spikes above crown, tight short sides and nape, no swept crest and no trailing locks.",
+        "length": "short",
+        "asymmetry": "Upright balanced crest; small strand asymmetry mirrored."
+      },
+      "status": "pending-art",
+      "views": {
+        "south": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/spiky-up-south.json",
+          "mask": "docs/design/hair-collection/masks/spiky-up-south.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "east": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/spiky-up-east.json",
+          "mask": "docs/design/hair-collection/masks/spiky-up-east.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "north": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/spiky-up-north.json",
+          "mask": "docs/design/hair-collection/masks/spiky-up-north.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "west": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "generation": "not-submitted",
+          "provenance": {
+            "kind": "mirror-east",
+            "independentGeneration": false,
+            "reflection": "x=128-x around foot x=64",
+            "caveat": "Upright balanced crest; small strand asymmetry mirrored."
+          }
+        }
+      },
+      "portrait": null
+    },
+    {
+      "id": "low-bun",
+      "name": "มวยต่ำ",
+      "design": {
+        "silhouette": "Smooth swept-back cap with one compact coiled bun centered low at the nape, short fixed crimson woven tie, no high knot or loose long tail.",
+        "length": "bun",
+        "asymmetry": "Centered bun; fixed crimson tie has no left/right emblem and is mirrored."
+      },
+      "status": "pending-art",
+      "views": {
+        "south": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/low-bun-south.json",
+          "mask": "docs/design/hair-collection/masks/low-bun-south.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "east": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/low-bun-east.json",
+          "mask": "docs/design/hair-collection/masks/low-bun-east.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "north": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/low-bun-north.json",
+          "mask": "docs/design/hair-collection/masks/low-bun-north.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "west": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "generation": "not-submitted",
+          "provenance": {
+            "kind": "mirror-east",
+            "independentGeneration": false,
+            "reflection": "x=128-x around foot x=64",
+            "caveat": "Centered bun; fixed crimson tie has no left/right emblem and is mirrored."
+          }
+        }
+      },
+      "portrait": null
+    },
+    {
+      "id": "high-topknot",
+      "name": "มวยสูง",
+      "design": {
+        "silhouette": "Swept-back compact scalp cap and one unmistakable small coiled HIGH topknot above rear crown, short fixed crimson woven tie, clean exposed nape. No feather, loose ponytail or low bun.",
+        "length": "bun",
+        "asymmetry": "Centered knot, unlettered tie; west shading mirrored."
+      },
+      "status": "complete-candidate",
+      "views": {
+        "south": {
+          "status": "complete-candidate",
+          "front": "/assets/hair-collection/high-topknot/south/front.png",
+          "back": "/assets/hair-collection/high-topknot/south/back.png",
+          "request": "docs/design/hair-collection/prompts/high-topknot-south.json",
+          "mask": "docs/design/hair-collection/masks/high-topknot-south.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "completed",
+          "jobId": "ed2362fd-2e3d-46b3-8fa5-998df1f491dc",
+          "provenance": {
+            "kind": "PixelLab native128 masked head-only changes",
+            "rawSha256": "8020824d8ec374a479e7de96014559ca47b977b2ce477251308fbbabf98e3b98",
+            "requestSha256": "8aca303347b8847523575f90c2b585c1f271e93f2a946bb724b0f8096bae23a1",
+            "jobId": "ed2362fd-2e3d-46b3-8fa5-998df1f491dc",
+            "chargedCredits": 6,
+            "independentGeneration": true,
+            "maskViolations": 0
+          },
+          "bounds": {
+            "left": 43,
+            "top": 6,
+            "right": 81,
+            "bottom": 37
+          },
+          "upperScalpPixelsVerified": 92,
+          "scalpGaps": [],
+          "pixelCount": 409,
+          "fixedMaterialPixels": 177
+        },
+        "east": {
+          "status": "complete-candidate",
+          "front": "/assets/hair-collection/high-topknot/east/front.png",
+          "back": "/assets/hair-collection/high-topknot/east/back.png",
+          "request": "docs/design/hair-collection/prompts/high-topknot-east.json",
+          "mask": "docs/design/hair-collection/masks/high-topknot-east.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "completed",
+          "jobId": "7de10184-15c8-42d2-8976-d2dae5e66938",
+          "provenance": {
+            "kind": "PixelLab native128 masked head-only changes",
+            "rawSha256": "9bee1b6063d9e569a4a4f361b21d1a00311245e1b8190ba7a47e7aa7b93987d3",
+            "requestSha256": "e5e392a7d5ff80f92b94608f5e4241bc2316790fc33ce64770ab30604aed3e60",
+            "jobId": "7de10184-15c8-42d2-8976-d2dae5e66938",
+            "chargedCredits": 6,
+            "independentGeneration": true,
+            "maskViolations": 0
+          },
+          "bounds": {
+            "left": 51,
+            "top": 7,
+            "right": 72,
+            "bottom": 37
+          },
+          "upperScalpPixelsVerified": 84,
+          "scalpGaps": [],
+          "pixelCount": 399,
+          "fixedMaterialPixels": 106
+        },
+        "north": {
+          "status": "complete-candidate",
+          "front": "/assets/hair-collection/high-topknot/north/front.png",
+          "back": "/assets/hair-collection/high-topknot/north/back.png",
+          "request": "docs/design/hair-collection/prompts/high-topknot-north-correction.json",
+          "mask": "docs/design/hair-collection/masks/high-topknot-north-correction.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "completed",
+          "jobId": "25088104-c107-496f-afef-5046925b3ec8",
+          "provenance": {
+            "kind": "PixelLab native128 masked head-only changes",
+            "rawSha256": "c1542814a4075b56ba283abcc81fb86f433d36ab26aa707e6ebe91add6486b5f",
+            "requestSha256": "ae77678d3836f807eced817d043d277cb5d44a32f06435682c23eba953cd8f0a",
+            "jobId": "25088104-c107-496f-afef-5046925b3ec8",
+            "chargedCredits": 6,
+            "independentGeneration": true,
+            "maskViolations": 0
+          },
+          "bounds": {
+            "left": 52,
+            "top": 7,
+            "right": 78,
+            "bottom": 36
+          },
+          "upperScalpPixelsVerified": 95,
+          "scalpGaps": [],
+          "pixelCount": 472,
+          "fixedMaterialPixels": 76
+        },
+        "west": {
+          "status": "complete-candidate",
+          "front": "/assets/hair-collection/high-topknot/west/front.png",
+          "back": "/assets/hair-collection/high-topknot/west/back.png",
+          "generation": "derived-mirror",
+          "provenance": {
+            "kind": "mirror-east",
+            "independentGeneration": false,
+            "reflection": "x=128-x around foot x=64",
+            "caveat": "Centered knot, unlettered tie; west shading mirrored."
+          }
+        }
+      },
+      "portrait": "/assets/hair-collection/high-topknot/portrait.png"
+    },
+    {
+      "id": "shoulder-length",
+      "name": "ผมยาวประบ่า",
+      "design": {
+        "silhouette": "Open soft parted fringe, straight layered locks reaching exactly shoulder line, broad blunt-ended lower silhouette, no waist tail or hair tie.",
+        "length": "shoulder",
+        "asymmetry": "Balanced loose shoulder locks; lighting mirrored in west."
+      },
+      "status": "pending-art",
+      "views": {
+        "south": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/shoulder-length-south.json",
+          "mask": "docs/design/hair-collection/masks/shoulder-length-south.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "east": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/shoulder-length-east.json",
+          "mask": "docs/design/hair-collection/masks/shoulder-length-east.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "north": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/shoulder-length-north.json",
+          "mask": "docs/design/hair-collection/masks/shoulder-length-north.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "west": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "generation": "not-submitted",
+          "provenance": {
+            "kind": "mirror-east",
+            "independentGeneration": false,
+            "reflection": "x=128-x around foot x=64",
+            "caveat": "Balanced loose shoulder locks; lighting mirrored in west."
+          }
+        }
+      },
+      "portrait": null
+    },
+    {
+      "id": "half-tie",
+      "name": "ผมยาวมัดครึ่งหัว",
+      "design": {
+        "silhouette": "Upper hair gathered into a small centered rear tie with crimson cord; lower half remains loose and reaches upper back, distinct split between gathered crown and free side lengths.",
+        "length": "long",
+        "asymmetry": "Centered half tie with no emblem; west lighting mirrored."
+      },
+      "status": "pending-art",
+      "views": {
+        "south": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/half-tie-south.json",
+          "mask": "docs/design/hair-collection/masks/half-tie-south.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "east": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/half-tie-east.json",
+          "mask": "docs/design/hair-collection/masks/half-tie-east.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "north": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/half-tie-north.json",
+          "mask": "docs/design/hair-collection/masks/half-tie-north.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "west": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "generation": "not-submitted",
+          "provenance": {
+            "kind": "mirror-east",
+            "independentGeneration": false,
+            "reflection": "x=128-x around foot x=64",
+            "caveat": "Centered half tie with no emblem; west lighting mirrored."
+          }
+        }
+      },
+      "portrait": null
+    },
+    {
+      "id": "long-flow",
+      "name": "ผมยาวปล่อย",
+      "design": {
+        "silhouette": "Fully loose long flowing hair with open center fringe, broad continuous gently tapered lengths down to waist level, visible long side/back lengths in all views. NO braid, bun, knot, bow, ribbon or feathers.",
+        "length": "long",
+        "asymmetry": "Balanced loose lengths; tiny strand variations and light direction mirrored in west."
+      },
+      "status": "pending-art",
+      "views": {
+        "south": {
+          "status": "rejected-length",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/long-flow-south.json",
+          "mask": "docs/design/hair-collection/masks/long-flow-south.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "completed",
+          "jobId": "1489ef9a-a61b-486f-af4f-670cdda6f7a2",
+          "provenance": {
+            "kind": "PixelLab native128 masked head-only changes",
+            "rawSha256": "541ae8636dabaaf6b4d20d646a11c8a45eea11d92131f58d1d1c9043e3589c97",
+            "requestSha256": "ee38644211c062ae373714f5c5f16daf004f0e4b6d8e3bb5a3646e3f3dc8f0c4",
+            "jobId": "1489ef9a-a61b-486f-af4f-670cdda6f7a2",
+            "chargedCredits": 6,
+            "independentGeneration": true,
+            "maskViolations": 0
+          },
+          "bounds": {
+            "left": 43,
+            "top": 12,
+            "right": 81,
+            "bottom": 57
+          },
+          "upperScalpPixelsVerified": 92,
+          "scalpGaps": [],
+          "pixelCount": 955,
+          "fixedMaterialPixels": 134,
+          "reason": "Loose long hair must reach native y>=72 in every view; generated bottom=57. Paid draft archived, not a completed guide style.",
+          "paidDraft": {
+            "front": "/assets/hair-collection/long-flow/south/front.png",
+            "back": "/assets/hair-collection/long-flow/south/back.png",
+            "publicUse": false
+          }
+        },
+        "east": {
+          "status": "rejected-length",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/long-flow-east.json",
+          "mask": "docs/design/hair-collection/masks/long-flow-east.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "completed",
+          "jobId": "1b05699f-fa3b-4a7d-9721-f948a22585c6",
+          "provenance": {
+            "kind": "PixelLab native128 masked head-only changes",
+            "rawSha256": "6ca72b94d3b9b6d31be02e9093a0ca808b3b9f0679d9bcb874c0ef0a01dde334",
+            "requestSha256": "fef61890f18379c52dfef67464c7debabe1f9387e00586f88cae3a183ad98dbe",
+            "jobId": "1b05699f-fa3b-4a7d-9721-f948a22585c6",
+            "chargedCredits": 6,
+            "independentGeneration": true,
+            "maskViolations": 0
+          },
+          "bounds": {
+            "left": 47,
+            "top": 12,
+            "right": 77,
+            "bottom": 53
+          },
+          "upperScalpPixelsVerified": 84,
+          "scalpGaps": [],
+          "pixelCount": 750,
+          "fixedMaterialPixels": 143,
+          "reason": "Loose long hair must reach native y>=72 in every view; generated bottom=53. Paid draft archived, not a completed guide style.",
+          "paidDraft": {
+            "front": "/assets/hair-collection/long-flow/east/front.png",
+            "back": "/assets/hair-collection/long-flow/east/back.png",
+            "publicUse": false
+          }
+        },
+        "north": {
+          "status": "rejected-scalp",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/long-flow-north.json",
+          "mask": "docs/design/hair-collection/masks/long-flow-north.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "completed",
+          "jobId": "b7d8df30-b2e9-40af-b4fe-9a9e7990a0b0",
+          "provenance": {
+            "kind": "PixelLab native128 masked head-only changes",
+            "rawSha256": "04590f620c1bec7dbc3deeb2ca0f2c991d8bbf1106af1837f8f32983657021f7",
+            "requestSha256": "16cd33739d8810c22b92c5024401c315d638090cc5b6e47a6c9d8543c1f7488f",
+            "jobId": "b7d8df30-b2e9-40af-b4fe-9a9e7990a0b0",
+            "chargedCredits": 6,
+            "independentGeneration": true,
+            "maskViolations": 0
+          },
+          "bounds": {
+            "left": 43,
+            "top": 13,
+            "right": 79,
+            "bottom": 60
+          },
+          "upperScalpPixelsVerified": 94,
+          "scalpGaps": [
+            [
+              71,
+              17
+            ]
+          ],
+          "pixelCount": 1097,
+          "fixedMaterialPixels": 71,
+          "reason": "Generated hair leaves original upper scalp exposed; PixelLab correction required, no copied texture fill.",
+          "paidDraft": {
+            "front": "/assets/hair-collection/long-flow/north/front.png",
+            "back": "/assets/hair-collection/long-flow/north/back.png",
+            "publicUse": false
+          }
+        },
+        "west": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "generation": "not-submitted",
+          "provenance": {
+            "kind": "mirror-east",
+            "independentGeneration": false,
+            "reflection": "x=128-x around foot x=64",
+            "caveat": "Balanced loose lengths; tiny strand variations and light direction mirrored in west."
+          }
+        }
+      },
+      "portrait": null
+    },
+    {
+      "id": "single-braid",
+      "name": "ผมเปียเดี่ยว",
+      "design": {
+        "silhouette": "Neat swept-back cap and one centered thick interwoven braid descending to mid-back, repeated readable alternating braid lobes, fixed crimson end tie, no twin side tails.",
+        "length": "long",
+        "asymmetry": "Centered braid; weave handedness and lighting mirrored in west."
+      },
+      "status": "pending-art",
+      "views": {
+        "south": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/single-braid-south.json",
+          "mask": "docs/design/hair-collection/masks/single-braid-south.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "east": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/single-braid-east.json",
+          "mask": "docs/design/hair-collection/masks/single-braid-east.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "north": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/single-braid-north.json",
+          "mask": "docs/design/hair-collection/masks/single-braid-north.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "west": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "generation": "not-submitted",
+          "provenance": {
+            "kind": "mirror-east",
+            "independentGeneration": false,
+            "reflection": "x=128-x around foot x=64",
+            "caveat": "Centered braid; weave handedness and lighting mirrored in west."
+          }
+        }
+      },
+      "portrait": null
+    },
+    {
+      "id": "twin-braids",
+      "name": "ผมเปียคู่",
+      "design": {
+        "silhouette": "Center-parted compact crown with TWO separated braids behind the ears reaching chest or mid-back level, alternating braid lobes, two fixed crimson end ties, never one merged tail.",
+        "length": "long",
+        "asymmetry": "Balanced paired braids; profile may occlude far braid, recorded as mirror approximation."
+      },
+      "status": "pending-art",
+      "views": {
+        "south": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/twin-braids-south.json",
+          "mask": "docs/design/hair-collection/masks/twin-braids-south.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "east": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/twin-braids-east.json",
+          "mask": "docs/design/hair-collection/masks/twin-braids-east.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "north": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/twin-braids-north.json",
+          "mask": "docs/design/hair-collection/masks/twin-braids-north.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "west": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "generation": "not-submitted",
+          "provenance": {
+            "kind": "mirror-east",
+            "independentGeneration": false,
+            "reflection": "x=128-x around foot x=64",
+            "caveat": "Balanced paired braids; profile may occlude far braid, recorded as mirror approximation."
+          }
+        }
+      },
+      "portrait": null
+    },
+    {
+      "id": "wild-sweep",
+      "name": "ทรงพลิ้วเสย",
+      "design": {
+        "silhouette": "Loose broad swept-back windblown crest with several outward curved pointed locks, open forehead, irregular short-to-medium back locks, NO tied long tail, feathers or bow.",
+        "length": "short",
+        "asymmetry": "Directional wind sweep requires an authored opposite profile; original tied-tail hairstyle is not this design."
+      },
+      "status": "pending-art",
+      "views": {
+        "south": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/wild-sweep-south.json",
+          "mask": "docs/design/hair-collection/masks/wild-sweep-south.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "east": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/wild-sweep-east.json",
+          "mask": "docs/design/hair-collection/masks/wild-sweep-east.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "north": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "request": "docs/design/hair-collection/prompts/wild-sweep-north.json",
+          "mask": "docs/design/hair-collection/masks/wild-sweep-north.png",
+          "nativeCanvas": {
+            "width": 128,
+            "height": 128
+          },
+          "generation": "not-submitted"
+        },
+        "west": {
+          "status": "planned",
+          "front": null,
+          "back": null,
+          "generation": "not-submitted",
+          "provenance": {
+            "kind": "authored-required",
+            "independentGeneration": false,
+            "reflection": "x=128-x around foot x=64",
+            "caveat": "Directional wind sweep requires an authored opposite profile; original tied-tail hairstyle is not this design."
+          }
+        }
+      },
+      "portrait": null
+    }
+  ],
+  "fallback": {
+    "id": "original",
+    "name": "Original spikes and tied tail",
+    "sourceManifest": "/assets/head-proof/manifest.json",
+    "guideStyle": false
+  },
+  "materials": {
+    "neutralHairStops": [
+      48,
+      104,
+      168,
+      232
+    ],
+    "fixedTie": "Crimson colored pixels are not recolored",
+    "layerOrder": [
+      "hairBack",
+      "body",
+      "head",
+      "hairFront",
+      "crown"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+﻿status: completed
+id: 0d0464ad-7828-4fc1-b242-feac2952aefd
+name: a single tall carved dark wooden shaman staff with
+state_name: base
+directions: 8
+size: 96x96px
+view: low top-down
+group: 750cc54c-330c-4e85-9542-45652daa315d
+
+rotations:
+  east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/0d0464ad-7828-4fc1-b242-feac2952aefd/rotations/east.png
+  west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/0d0464ad-7828-4fc1-b242-feac2952aefd/rotations/west.png
+  north: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/0d0464ad-7828-4fc1-b242-feac2952aefd/rotations/north.png
+  south: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/0d0464ad-7828-4fc1-b242-feac2952aefd/rotations/south.png
+  north-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/0d0464ad-7828-4fc1-b242-feac2952aefd/rotations/north-east.png
+  north-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/0d0464ad-7828-4fc1-b242-feac2952aefd/rotations/north-west.png
+  south-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/0d0464ad-7828-4fc1-b242-feac2952aefd/rotations/south-east.png
+  south-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/0d0464ad-7828-4fc1-b242-feac2952aefd/rotations/south-west.png
+
+animations: none
+
+download: https://api.pixellab.ai/mcp/objects/0d0464ad-7828-4fc1-b242-feac2952aefd/download
+spritesheet: https://api.pixellab.ai/mcp/objects/0d0464ad-7828-4fc1-b242-feac2952aefd/spritesheet (one uniform-grid sheet PNG + layout JSON, zipped)
+
+actions: animate_object(object_id="0d0464ad-7828-4fc1-b242-feac2952aefd", ...) | create_object_state(object_id="0d0464ad-7828-4fc1-b242-feac2952aefd", ...) | delete_object(object_id="0d0464ad-7828-4fc1-b242-feac2952aefd")
+hint: animate_object(object_id="0d0464ad-7828-4fc1-b242-feac2952aefd", animation_description="...")

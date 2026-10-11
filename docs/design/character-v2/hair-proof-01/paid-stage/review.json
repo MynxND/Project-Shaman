@@ -1,0 +1,135 @@
+{
+  "version": "shaman-character-v2-hair-review/1",
+  "status": "completed-rejected-skin-contamination",
+  "jobId": "b8fa5d1b-b7dd-43ac-bd3c-885fef12afe1",
+  "rawPath": "docs/design/character-v2/hair-proof-01/paid-stage/raw.png",
+  "rawSha256": "36bb69f558affade950c8658ff30d2b2fd364c55a831afff1dbc01ccd6ac532d",
+  "sourceSha256": "0ed1ddf448b70a93dc5f624617e832a0af593779b6b7257d65db39b61be35958",
+  "metrics": {
+    "nativeWidth": 128,
+    "nativeHeight": 128,
+    "visible": 355,
+    "outsideMask": 0,
+    "partialAlpha": 0,
+    "hiddenRgb": 0,
+    "sourceCopies": 18,
+    "skinLikePixels": 94,
+    "bounds": {
+      "minX": 48,
+      "minY": 17,
+      "maxX": 76,
+      "maxY": 31
+    }
+  },
+  "colors": [
+    [
+      "122,112,93,255",
+      7
+    ],
+    [
+      "166,154,132,255",
+      19
+    ],
+    [
+      "201,190,170,255",
+      34
+    ],
+    [
+      "173,163,140,255",
+      21
+    ],
+    [
+      "188,179,158,255",
+      27
+    ],
+    [
+      "147,139,119,255",
+      9
+    ],
+    [
+      "228,217,203,255",
+      38
+    ],
+    [
+      "242,230,220,255",
+      50
+    ],
+    [
+      "214,203,185,255",
+      34
+    ],
+    [
+      "130,122,102,255",
+      4
+    ],
+    [
+      "104,95,79,255",
+      2
+    ],
+    [
+      "247,245,245,255",
+      4
+    ],
+    [
+      "107,88,90,255",
+      1
+    ],
+    [
+      "84,73,67,255",
+      1
+    ],
+    [
+      "139,130,110,255",
+      6
+    ],
+    [
+      "155,148,126,255",
+      4
+    ],
+    [
+      "214,169,141,255",
+      2
+    ],
+    [
+      "243,201,168,255",
+      69
+    ],
+    [
+      "241,192,157,255",
+      3
+    ],
+    [
+      "238,184,148,255",
+      9
+    ],
+    [
+      "233,174,139,255",
+      2
+    ],
+    [
+      "222,153,122,255",
+      5
+    ],
+    [
+      "228,164,129,255",
+      3
+    ],
+    [
+      "164,141,126,255",
+      1
+    ]
+  ],
+  "protectedMismatch": 0,
+  "frozenPixels": 16010,
+  "transformations": [],
+  "credibleCandidate": false,
+  "isolationAccepted": false,
+  "visualApproved": false,
+  "productionReady": false,
+  "published": false,
+  "retryAuthorized": false,
+  "visualVerdict": "Actual provider PNG contains ivory hair at the top plus a visible warm skin/scalp band beneath it INSIDE the editable cap mask. This is not a hair-only layer. Reject untouched raw, never erase generated skin and claim service isolation. Shape is a compact cap; the approved mask forbids natural bangs and full hairstyle coverage.",
+  "stop": "ONE job completed, actual6, V2 cap20 spent20 remaining0 pending0. No retry, other hair directions, outfit, animation or live integration.",
+  "diagnosticOnly": true,
+  "compositePath": "docs/design/character-v2/hair-proof-01/paid-stage/rejected-composite-diagnostic.png"
+}

@@ -1,0 +1,28 @@
+{
+  "version": "shaman-character-v2-front-review/1",
+  "status": "rejected",
+  "credibleCandidate": false,
+  "visualApproved": false,
+  "userVisualAccepted": false,
+  "candidatePublished": false,
+  "direction": "south",
+  "jobId": "db62932a-ffab-46fa-871d-1b8ba6ba09ff",
+  "sourcePath": "docs/design/character-v2/body-front-01/raw.png",
+  "url": "/assets/character-v2/body-front-01/raw.png",
+  "sha256": "efcbe296b4bfda8d6e627776404223300d1bd9452e590dadc698485bc1c208aa",
+  "reason": "Rejected technical art review: elongated muscular anatomy and small head read about 4.5-5 heads, not the approved restrained chibi approximately 3.5 heads. Bald scalp, plain opaque shorts, empty hands and straight frontal stance are present. No retry or rotations.",
+  "reasonThai": "ไม่ตรง spec: ลำตัวยาว กล้ามชัด และศีรษะเล็กกว่าสัดส่วน chibi ที่กำหนด ภาพนี้ถูกปฏิเสธ ยังไม่ใช่ body candidate",
+  "landmarks": {
+    "provisional": true,
+    "bindingApproved": false,
+    "foot": { "x": 61, "y": 121 },
+    "hairRoot": { "x": 60, "y": 17 },
+    "headgear": { "x": 60, "y": 13 },
+    "mainHand": { "x": 79, "y": 75 },
+    "offHand": { "x": 41, "y": 75 },
+    "accessories": { "x": 60, "y": 58 },
+    "method": "Native visual inspection plus alpha row measurements; foot x is midpoint of both foot extents in bottom rows, y is actual lowest opaque row. Attachment seats are provisional visible-landmark estimates, not fit-approved. No shift, stretch, padding or source edits."
+  },
+  "missing": ["east", "north", "west", "hair", "outfit", "animations"],
+  "stop": "User must review actual FRONT. Rejected proof permits no automatic paid retry or rotation."
+}

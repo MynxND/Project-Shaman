@@ -1,0 +1,41 @@
+{
+  "authorization": "User approved body-eight-02 and requests an 8-direction walk. One animate_object v3 call (8 frames/dir), no auto retry.",
+  "cap": 36,
+  "attempts": [
+    {
+      "stage": "walk",
+      "tool": "animate_object",
+      "reserved": 24,
+      "status": "completed",
+      "retry": false
+    },
+    {
+      "stage": "walk-south-v2",
+      "tool": "animate_object",
+      "reserved": 4,
+      "status": "completed",
+      "retry": false,
+      "reason": "User rejected S torso twist; regenerate south only"
+    },
+    {
+      "stage": "walk-north-v2",
+      "tool": "animate_object",
+      "reserved": 4,
+      "status": "completed",
+      "retry": false,
+      "reason": "User: N arms swing together and legs step together; regenerate north only"
+    },
+    {
+      "stage": "walk-north-skeleton",
+      "tool": "animate_with_skeleton_v3",
+      "reserved": 4,
+      "status": "completed",
+      "retry": false,
+      "reason": "User: arms still swing together; explicit contralateral skeleton test on north"
+    }
+  ],
+  "spent": 23,
+  "reserved": 0,
+  "retries": 0,
+  "status": "completed"
+}

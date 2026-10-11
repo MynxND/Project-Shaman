@@ -1,0 +1,49 @@
+{
+  "method": "reference-guided-native-masked-inpaint",
+  "tool": "inpaint_image_pro_flash",
+  "internalAdditionalCreditCap": 6,
+  "userApprovedNumericalBudget": null,
+  "submitted": false,
+  "editablePixels": 7788,
+  "editableTransparentPixels": 3843,
+  "protectedPixels": 8596,
+  "maskRegions": [
+    {
+      "left": 20,
+      "top": 3,
+      "right": 88,
+      "bottom": 106
+    },
+    {
+      "left": 49,
+      "top": 107,
+      "right": 82,
+      "bottom": 124
+    }
+  ],
+  "nativeSize": [
+    128,
+    128
+  ],
+  "contextSize": [
+    256,
+    128
+  ],
+  "boundingBox": {
+    "x": 0,
+    "y": 0,
+    "width": 128,
+    "height": 128
+  },
+  "source": "apps/client/public/assets/rig-v2/male/base/idle-east.png",
+  "frame": 0,
+  "preservedFront": "apps/client/public/assets/rig-v2/male/base/idle-south.png",
+  "ownedReferenceSheet": "docs/design/comfyui/reference/shamen-base-sheet.webp",
+  "proportionTemplate": "docs/design/character-turnaround/proportion-template.json",
+  "sourceRgbaSha256": "3179c730c8e4a06eac1336cbde7a067062490868644151d8157423986192897d",
+  "frontPngSha256": "38de6dd6360b587197e993963b7c4ca5ce73de2cc7c16c6bf536c83f8f96cd66",
+  "maskPngSha256": "150b29c9d8562beb240dd1a6edf31288edb39e6ed11097723b88b4a95661444e",
+  "noSpriteTransform": true,
+  "approved": false,
+  "reviewGate": "One attempt only; inspect native and nearest2x. Reject on angle, anatomy, identity or baseline failure; no back/left generation."
+}

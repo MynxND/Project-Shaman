@@ -1,0 +1,26 @@
+﻿status: completed
+id: 6af74acf-18d4-4b18-aee2-cfcaeb3bcbbb
+name: a single wide dark crimson woven waist sash belt w
+state_name: base
+directions: 8
+size: 64x64px
+view: low top-down
+group: 95179e80-5f49-4d44-974d-2b395a4fb114
+
+rotations:
+  east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/6af74acf-18d4-4b18-aee2-cfcaeb3bcbbb/rotations/east.png
+  west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/6af74acf-18d4-4b18-aee2-cfcaeb3bcbbb/rotations/west.png
+  north: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/6af74acf-18d4-4b18-aee2-cfcaeb3bcbbb/rotations/north.png
+  south: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/6af74acf-18d4-4b18-aee2-cfcaeb3bcbbb/rotations/south.png
+  north-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/6af74acf-18d4-4b18-aee2-cfcaeb3bcbbb/rotations/north-east.png
+  north-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/6af74acf-18d4-4b18-aee2-cfcaeb3bcbbb/rotations/north-west.png
+  south-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/6af74acf-18d4-4b18-aee2-cfcaeb3bcbbb/rotations/south-east.png
+  south-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/6af74acf-18d4-4b18-aee2-cfcaeb3bcbbb/rotations/south-west.png
+
+animations: none
+
+download: https://api.pixellab.ai/mcp/objects/6af74acf-18d4-4b18-aee2-cfcaeb3bcbbb/download
+spritesheet: https://api.pixellab.ai/mcp/objects/6af74acf-18d4-4b18-aee2-cfcaeb3bcbbb/spritesheet (one uniform-grid sheet PNG + layout JSON, zipped)
+
+actions: animate_object(object_id="6af74acf-18d4-4b18-aee2-cfcaeb3bcbbb", ...) | create_object_state(object_id="6af74acf-18d4-4b18-aee2-cfcaeb3bcbbb", ...) | delete_object(object_id="6af74acf-18d4-4b18-aee2-cfcaeb3bcbbb")
+hint: animate_object(object_id="6af74acf-18d4-4b18-aee2-cfcaeb3bcbbb", animation_description="...")

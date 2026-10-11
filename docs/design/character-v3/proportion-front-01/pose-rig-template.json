@@ -1,0 +1,369 @@
+{
+  "version": "shaman-v3-visible-front-landmarks/1",
+  "provisional": true,
+  "bindingApproved": false,
+  "bodyLocked": false,
+  "convention": "screen-left/right; visible reference coordinates, not skeleton bones or certified equipment bindings",
+  "deformation": false,
+  "skeletonBones": false,
+  "policy": "Only after USER art approval may the chosen body be locked. Later hair/equipment must bind without changing its exposed body pixels. No attachment assets are present now.",
+  "poses": [
+    {
+      "id": "base-character-v3-A-idle-south",
+      "variant": "A",
+      "direction": "south",
+      "state": "idle",
+      "mode": "static",
+      "canvas": {
+        "width": 128,
+        "height": 128,
+        "origin": {
+          "x": 61,
+          "y": 112
+        }
+      },
+      "frames": [
+        {
+          "durationMs": null,
+          "anchors": {
+            "head": {
+              "x": 61,
+              "y": 33
+            },
+            "neck": {
+              "x": 61,
+              "y": 54
+            },
+            "shoulderLeft": {
+              "x": 46,
+              "y": 60
+            },
+            "shoulderRight": {
+              "x": 78,
+              "y": 60
+            },
+            "elbowLeft": {
+              "x": 43,
+              "y": 69
+            },
+            "elbowRight": {
+              "x": 80,
+              "y": 69
+            },
+            "handLeft": {
+              "x": 42,
+              "y": 81
+            },
+            "handRight": {
+              "x": 82,
+              "y": 81
+            },
+            "waist": {
+              "x": 61,
+              "y": 74
+            },
+            "hipLeft": {
+              "x": 54,
+              "y": 82
+            },
+            "hipRight": {
+              "x": 70,
+              "y": 82
+            },
+            "kneeLeft": {
+              "x": 52,
+              "y": 98
+            },
+            "kneeRight": {
+              "x": 70,
+              "y": 98
+            },
+            "foot": {
+              "x": 61,
+              "y": 112
+            },
+            "footLeft": {
+              "x": 49,
+              "y": 112
+            },
+            "footRight": {
+              "x": 74,
+              "y": 112
+            },
+            "hair": {
+              "x": 61,
+              "y": 27
+            },
+            "headgear": {
+              "x": 61,
+              "y": 23
+            },
+            "mainHand": {
+              "x": 82,
+              "y": 81
+            },
+            "offHand": {
+              "x": 42,
+              "y": 81
+            },
+            "accessories": {
+              "x": 61,
+              "y": 74
+            }
+          }
+        }
+      ],
+      "bodySourceSha256": "f5f3d666f23fc22eaa88eadccc705b913f2a9a60d7e223bbaef62960b78c7adb",
+      "visualApproved": false,
+      "availableLayers": [
+        "body"
+      ],
+      "missingLayers": [
+        "hair",
+        "outfit",
+        "headgear",
+        "mainHand",
+        "offHand",
+        "accessories"
+      ]
+    },
+    {
+      "id": "base-character-v3-B-idle-south",
+      "variant": "B",
+      "direction": "south",
+      "state": "idle",
+      "mode": "static",
+      "canvas": {
+        "width": 128,
+        "height": 128,
+        "origin": {
+          "x": 61,
+          "y": 112
+        }
+      },
+      "frames": [
+        {
+          "durationMs": null,
+          "anchors": {
+            "head": {
+              "x": 61,
+              "y": 25
+            },
+            "neck": {
+              "x": 61,
+              "y": 46
+            },
+            "shoulderLeft": {
+              "x": 46,
+              "y": 52
+            },
+            "shoulderRight": {
+              "x": 78,
+              "y": 52
+            },
+            "elbowLeft": {
+              "x": 43,
+              "y": 63
+            },
+            "elbowRight": {
+              "x": 80,
+              "y": 63
+            },
+            "handLeft": {
+              "x": 42,
+              "y": 77
+            },
+            "handRight": {
+              "x": 82,
+              "y": 77
+            },
+            "waist": {
+              "x": 61,
+              "y": 69
+            },
+            "hipLeft": {
+              "x": 54,
+              "y": 80
+            },
+            "hipRight": {
+              "x": 70,
+              "y": 80
+            },
+            "kneeLeft": {
+              "x": 52,
+              "y": 96
+            },
+            "kneeRight": {
+              "x": 70,
+              "y": 96
+            },
+            "foot": {
+              "x": 61,
+              "y": 112
+            },
+            "footLeft": {
+              "x": 49,
+              "y": 112
+            },
+            "footRight": {
+              "x": 74,
+              "y": 112
+            },
+            "hair": {
+              "x": 61,
+              "y": 19
+            },
+            "headgear": {
+              "x": 61,
+              "y": 15
+            },
+            "mainHand": {
+              "x": 82,
+              "y": 77
+            },
+            "offHand": {
+              "x": 42,
+              "y": 77
+            },
+            "accessories": {
+              "x": 61,
+              "y": 69
+            }
+          }
+        }
+      ],
+      "bodySourceSha256": "e7de54cec25475a96c2d911aba7b61b29f7ec6d7d2369a5cb7f0888682713da3",
+      "visualApproved": false,
+      "availableLayers": [
+        "body"
+      ],
+      "missingLayers": [
+        "hair",
+        "outfit",
+        "headgear",
+        "mainHand",
+        "offHand",
+        "accessories"
+      ]
+    },
+    {
+      "id": "base-character-v3-C-idle-south",
+      "variant": "C",
+      "direction": "south",
+      "state": "idle",
+      "mode": "static",
+      "canvas": {
+        "width": 128,
+        "height": 128,
+        "origin": {
+          "x": 61,
+          "y": 112
+        }
+      },
+      "frames": [
+        {
+          "durationMs": null,
+          "anchors": {
+            "head": {
+              "x": 61,
+              "y": 18
+            },
+            "neck": {
+              "x": 61,
+              "y": 39
+            },
+            "shoulderLeft": {
+              "x": 46,
+              "y": 45
+            },
+            "shoulderRight": {
+              "x": 78,
+              "y": 45
+            },
+            "elbowLeft": {
+              "x": 43,
+              "y": 57
+            },
+            "elbowRight": {
+              "x": 80,
+              "y": 57
+            },
+            "handLeft": {
+              "x": 42,
+              "y": 73
+            },
+            "handRight": {
+              "x": 82,
+              "y": 73
+            },
+            "waist": {
+              "x": 61,
+              "y": 65
+            },
+            "hipLeft": {
+              "x": 54,
+              "y": 78
+            },
+            "hipRight": {
+              "x": 70,
+              "y": 78
+            },
+            "kneeLeft": {
+              "x": 52,
+              "y": 94
+            },
+            "kneeRight": {
+              "x": 70,
+              "y": 94
+            },
+            "foot": {
+              "x": 61,
+              "y": 112
+            },
+            "footLeft": {
+              "x": 49,
+              "y": 112
+            },
+            "footRight": {
+              "x": 74,
+              "y": 112
+            },
+            "hair": {
+              "x": 61,
+              "y": 12
+            },
+            "headgear": {
+              "x": 61,
+              "y": 8
+            },
+            "mainHand": {
+              "x": 82,
+              "y": 73
+            },
+            "offHand": {
+              "x": 42,
+              "y": 73
+            },
+            "accessories": {
+              "x": 61,
+              "y": 65
+            }
+          }
+        }
+      ],
+      "bodySourceSha256": "cd9e7f18d21a9f4757ddffe6ed746f21dea63945855cd301447f25f7fb84adde",
+      "visualApproved": false,
+      "availableLayers": [
+        "body"
+      ],
+      "missingLayers": [
+        "hair",
+        "outfit",
+        "headgear",
+        "mainHand",
+        "offHand",
+        "accessories"
+      ]
+    }
+  ]
+}

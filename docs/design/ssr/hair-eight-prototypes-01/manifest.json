@@ -1,0 +1,822 @@
+{
+  "version": "hair-prototype-eight/1",
+  "visualApproved": false,
+  "directions": [
+    "south"
+  ],
+  "credits": {
+    "cap": 9,
+    "spent": 9
+  },
+  "styles": [
+    {
+      "id": "plain-short",
+      "name": "ผมสั้นธรรมดา",
+      "number": 1,
+      "parts": [
+        {
+          "id": "hairFront.prototype-plain-short",
+          "url": "/assets/ssr/candidates/hair-eight-prototypes-01/hairFront.prototype-plain-short.json"
+        }
+      ],
+      "unmaskedChanged": 0,
+      "filled": 0,
+      "trimmed": 0,
+      "cleaned": 0,
+      "protectedCleared": 0,
+      "edgeFilled": 0,
+      "postTrimHoles": 0,
+      "eyeOcclusion": false,
+      "long": false,
+      "top": 4,
+      "visualApproved": false
+    },
+    {
+      "id": "medium-part",
+      "name": "ผมกลางแสกข้าง",
+      "number": 2,
+      "parts": [
+        {
+          "id": "hairFront.prototype-medium-part",
+          "url": "/assets/ssr/candidates/hair-eight-prototypes-01/hairFront.prototype-medium-part.json"
+        }
+      ],
+      "unmaskedChanged": 0,
+      "filled": 0,
+      "trimmed": 0,
+      "cleaned": 0,
+      "protectedCleared": 0,
+      "edgeFilled": 0,
+      "postTrimHoles": 0,
+      "eyeOcclusion": false,
+      "long": false,
+      "top": 4,
+      "visualApproved": false
+    },
+    {
+      "id": "long-pony",
+      "name": "ผมยาวมัดหาง",
+      "number": 3,
+      "parts": [
+        {
+          "id": "hairFront.prototype-long-pony",
+          "url": "/assets/ssr/candidates/hair-eight-prototypes-01/hairFront.prototype-long-pony.json"
+        },
+        {
+          "id": "hairBack.prototype-long-pony",
+          "url": "/assets/ssr/candidates/hair-eight-prototypes-01/hairBack.prototype-long-pony.json"
+        }
+      ],
+      "unmaskedChanged": 0,
+      "filled": 4,
+      "trimmed": 0,
+      "cleaned": 0,
+      "protectedCleared": 2,
+      "edgeFilled": 0,
+      "postTrimHoles": 0,
+      "eyeOcclusion": false,
+      "long": true,
+      "top": 4,
+      "visualApproved": false
+    },
+    {
+      "id": "round-bun",
+      "name": "ผมรวบมวย",
+      "number": 4,
+      "parts": [
+        {
+          "id": "hairFront.prototype-round-bun",
+          "url": "/assets/ssr/candidates/hair-eight-prototypes-01/hairFront.prototype-round-bun.json"
+        }
+      ],
+      "unmaskedChanged": 0,
+      "filled": 10,
+      "trimmed": 0,
+      "cleaned": 0,
+      "protectedCleared": 0,
+      "edgeFilled": 6,
+      "postTrimHoles": 0,
+      "eyeOcclusion": false,
+      "long": false,
+      "top": 10,
+      "visualApproved": false
+    },
+    {
+      "id": "wild-layer",
+      "name": "ผมยุ่งเท่ ๆ",
+      "number": 5,
+      "parts": [
+        {
+          "id": "hairFront.prototype-wild-layer",
+          "url": "/assets/ssr/candidates/hair-eight-prototypes-01/hairFront.prototype-wild-layer.json"
+        }
+      ],
+      "unmaskedChanged": 0,
+      "filled": 3,
+      "trimmed": 0,
+      "cleaned": 1,
+      "protectedCleared": 0,
+      "edgeFilled": 0,
+      "postTrimHoles": 0,
+      "eyeOcclusion": false,
+      "long": false,
+      "top": 4,
+      "visualApproved": false
+    },
+    {
+      "id": "eye-sweep",
+      "name": "ผมปัดยาวปิดตา",
+      "number": 6,
+      "parts": [
+        {
+          "id": "hairFront.prototype-eye-sweep",
+          "url": "/assets/ssr/candidates/hair-eight-prototypes-01/hairFront.prototype-eye-sweep.json"
+        }
+      ],
+      "unmaskedChanged": 0,
+      "filled": 4,
+      "trimmed": 0,
+      "cleaned": 0,
+      "protectedCleared": 1,
+      "edgeFilled": 0,
+      "postTrimHoles": 0,
+      "eyeOcclusion": true,
+      "long": false,
+      "top": 4,
+      "visualApproved": false
+    },
+    {
+      "id": "loose-long",
+      "name": "ผมยาวปล่อย",
+      "number": 7,
+      "parts": [
+        {
+          "id": "hairFront.prototype-loose-long",
+          "url": "/assets/ssr/candidates/hair-eight-prototypes-01/hairFront.prototype-loose-long.json"
+        },
+        {
+          "id": "hairBack.prototype-loose-long",
+          "url": "/assets/ssr/candidates/hair-eight-prototypes-01/hairBack.prototype-loose-long.json"
+        }
+      ],
+      "unmaskedChanged": 0,
+      "filled": 38,
+      "trimmed": 11,
+      "cleaned": 12,
+      "protectedCleared": 4,
+      "edgeFilled": 0,
+      "postTrimHoles": 12,
+      "eyeOcclusion": false,
+      "long": true,
+      "top": 4,
+      "visualApproved": false
+    },
+    {
+      "id": "ritual-tuft",
+      "name": "ผมทรงจุก",
+      "number": 8,
+      "parts": [
+        {
+          "id": "hairFront.prototype-ritual-tuft",
+          "url": "/assets/ssr/candidates/hair-eight-prototypes-01/hairFront.prototype-ritual-tuft.json"
+        }
+      ],
+      "unmaskedChanged": 0,
+      "filled": 5,
+      "trimmed": 0,
+      "cleaned": 0,
+      "protectedCleared": 0,
+      "edgeFilled": 0,
+      "postTrimHoles": 0,
+      "eyeOcclusion": false,
+      "long": false,
+      "top": 12,
+      "visualApproved": false
+    }
+  ],
+  "images": [
+    {
+      "id": "plain-short-hairFront-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/plain-short-hairFront-fixed.png",
+      "sha256": "31019a74ed080ac7f55e8d3d7571a56fa3b5394c52685889635896a516d01d77",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "plain-short-hairFront-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/plain-short-hairFront-ramp.png",
+      "sha256": "35a8af9f0cc66ae8b6ad116c70bdcb0821ceec00347926846f376a2a51b5a9cf",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "medium-part-hairFront-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/medium-part-hairFront-fixed.png",
+      "sha256": "2149dcc1ef2da8defcc6ce2909a36d9ae81d549d390254e026f30665c1baffa9",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "medium-part-hairFront-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/medium-part-hairFront-ramp.png",
+      "sha256": "c99ab95e716880de77027ebdac66d3f160d8f16846e2951f6774c17eb7925fb2",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "long-pony-hairFront-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-hairFront-fixed.png",
+      "sha256": "66950680ac5bb7bc8ff915fd81d04a95df59e603ab37a047dfa666e178cddf48",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "long-pony-hairFront-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-hairFront-ramp.png",
+      "sha256": "49fd5450f4e9c5c52df709054e854ab7a08c2939d4e7ccc81aaa010049686e28",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "long-pony-hairBack-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-hairBack-fixed.png",
+      "sha256": "0d3dab3aab52496eca143109a11ebe3e8cf1a61d4d4f5cd47bd9c4c1c1bc21b2",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "long-pony-hairBack-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-hairBack-ramp.png",
+      "sha256": "c4c68f660c2219c903066583b6684f57e01bdcd67ec98346e0fdbcb6379da12f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "round-bun-hairFront-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/round-bun-hairFront-fixed.png",
+      "sha256": "a4ed08e9dac71d75a01ed20417a2d5e8dbc5cae28bbaca2626baf52acfc4c9df",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "round-bun-hairFront-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/round-bun-hairFront-ramp.png",
+      "sha256": "1ad1a768f6dbd91784412bdcd9c3b8a7b0a2136992f00242bdca318866d5af83",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "wild-layer-hairFront-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/wild-layer-hairFront-fixed.png",
+      "sha256": "44317f039122fdfa5f12fa34a51905d69416ce68a84d266acf0bb56c38e4eb9e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "wild-layer-hairFront-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/wild-layer-hairFront-ramp.png",
+      "sha256": "7c8eb357d813ea09af894e9f747e3dfd6d980d4ea490ba9bb6687fb1d27ae274",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "eye-sweep-hairFront-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/eye-sweep-hairFront-fixed.png",
+      "sha256": "7f6b7c6e1247cd0d21bbbd5557096707921fd9c22a72d9fe805946127d63c593",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "eye-sweep-hairFront-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/eye-sweep-hairFront-ramp.png",
+      "sha256": "9b7da2f8cb79877494458908e3d5c35b45e301c5ae02147c6e688057358eb907",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "loose-long-hairFront-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-hairFront-fixed.png",
+      "sha256": "ebf5e62144ba7a049b9a9bfe7ea283d8602a00e4f3ca54630a3aa41ac6f6ad24",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "loose-long-hairFront-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-hairFront-ramp.png",
+      "sha256": "d56d9720533fd65d4f915ad8d5f92ccdf6489ebd3f8ea0964e5acee82bb0e42c",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "loose-long-hairBack-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-hairBack-fixed.png",
+      "sha256": "0d3dab3aab52496eca143109a11ebe3e8cf1a61d4d4f5cd47bd9c4c1c1bc21b2",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "loose-long-hairBack-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-hairBack-ramp.png",
+      "sha256": "3c3ac87897aebaf4f368c1f489e6f5da3c05a56e3f887d0c80d348a91fadeb91",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ritual-tuft-hairFront-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/ritual-tuft-hairFront-fixed.png",
+      "sha256": "3193da45318a8b14638e4a90f740f89298c3d158c4e32a4af50dfbe7a4e06b40",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "ritual-tuft-hairFront-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/ritual-tuft-hairFront-ramp.png",
+      "sha256": "f68a9e359367470a97ed30e6ee2cdbed4797ea17be585965d738f930e50af584",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "files": [
+    {
+      "id": "plain-short-silver-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/plain-short-silver-body.png",
+      "sha256": "7f972ae485bb3d749e9a3648a218157b430e67a8a7f9d4f44d27913436b7c299"
+    },
+    {
+      "id": "plain-short-silver-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/plain-short-silver-head.png",
+      "sha256": "a18a41f705096ba355d3a7a98fc03f97ddf5f2ed4d3acf75b04b0c7babbc6972"
+    },
+    {
+      "id": "plain-short-silver-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/plain-short-silver-hair.png",
+      "sha256": "fd2dbd427d23b2d1951da2673004eba4936397d08e05958986be73dfa65589f3"
+    },
+    {
+      "id": "plain-short-silver-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/plain-short-silver-silhouette.png",
+      "sha256": "6d3bcbeb21d9538ae5dad371f2cae53009ea8107a7c9219154834672b2643559"
+    },
+    {
+      "id": "plain-short-black-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/plain-short-black-body.png",
+      "sha256": "f0345fb23487f20ca2fa022ea16399d21dbaf4f5ff36eb6cf61973053d641867"
+    },
+    {
+      "id": "plain-short-black-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/plain-short-black-head.png",
+      "sha256": "373047e4125c41d078987a950e1f01fc6a1e60a3ec816a83af3e2a7325f3638b"
+    },
+    {
+      "id": "plain-short-black-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/plain-short-black-hair.png",
+      "sha256": "9e2726a2030aabf6420ada07a098522bdb03edf82e4560154713fb44a4ab7216"
+    },
+    {
+      "id": "plain-short-black-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/plain-short-black-silhouette.png",
+      "sha256": "6d3bcbeb21d9538ae5dad371f2cae53009ea8107a7c9219154834672b2643559"
+    },
+    {
+      "id": "plain-short-gold-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/plain-short-gold-body.png",
+      "sha256": "8da36f9b86349320de3cd1d441216b2a34e536e29b005f924df7e629419c83c8"
+    },
+    {
+      "id": "plain-short-gold-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/plain-short-gold-head.png",
+      "sha256": "397231b25927527dd660418a9698ba87801f15977ea112d7f60231b013faf9a0"
+    },
+    {
+      "id": "plain-short-gold-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/plain-short-gold-hair.png",
+      "sha256": "277d87f7173bfba1a8437f815b4bfc320731c2154f821f94e3d9ff677f35fdb9"
+    },
+    {
+      "id": "plain-short-gold-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/plain-short-gold-silhouette.png",
+      "sha256": "6d3bcbeb21d9538ae5dad371f2cae53009ea8107a7c9219154834672b2643559"
+    },
+    {
+      "id": "medium-part-silver-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/medium-part-silver-body.png",
+      "sha256": "0baf37dc631eac3a1831210d4f326424390623c928ded6bfb159384ad423450b"
+    },
+    {
+      "id": "medium-part-silver-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/medium-part-silver-head.png",
+      "sha256": "c76f79d746f594cc05086894a713d559e6d8e3cd25f3c463ead4b1db73f03d38"
+    },
+    {
+      "id": "medium-part-silver-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/medium-part-silver-hair.png",
+      "sha256": "dcd1f04495117802e2835539112a513bcec5d24bbceda92d4cc185bc3a90ed7d"
+    },
+    {
+      "id": "medium-part-silver-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/medium-part-silver-silhouette.png",
+      "sha256": "092fc80f74ac2d3211834193b6c944d17671bec276f570c8a9426c971c529eae"
+    },
+    {
+      "id": "medium-part-black-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/medium-part-black-body.png",
+      "sha256": "3179a19b4c5b79859eb241549d8e7fe5c2b8153fbdf7a54bf55a8e8be55d4730"
+    },
+    {
+      "id": "medium-part-black-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/medium-part-black-head.png",
+      "sha256": "b9263fbc561e7dc253ad9a2f3d5cd2041db26d77eb9ddf75cb388bc1763e336d"
+    },
+    {
+      "id": "medium-part-black-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/medium-part-black-hair.png",
+      "sha256": "4b0fb5cdbb208792c5a74814e3a268abb0bbf6fc211370aaa4a4dad44a729691"
+    },
+    {
+      "id": "medium-part-black-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/medium-part-black-silhouette.png",
+      "sha256": "092fc80f74ac2d3211834193b6c944d17671bec276f570c8a9426c971c529eae"
+    },
+    {
+      "id": "medium-part-gold-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/medium-part-gold-body.png",
+      "sha256": "eb0074610ec6cbe7d160819e52887c57b4d3f3530bd9360a3e973ef04c26995a"
+    },
+    {
+      "id": "medium-part-gold-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/medium-part-gold-head.png",
+      "sha256": "8cb3f8f884ae3242a9b5573e4b887fec1708c54974b84b25e3232c512c3ec8a2"
+    },
+    {
+      "id": "medium-part-gold-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/medium-part-gold-hair.png",
+      "sha256": "57520da706a885a84dedbb838661c95d449a63378dd1ffa4142f01b483839bb5"
+    },
+    {
+      "id": "medium-part-gold-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/medium-part-gold-silhouette.png",
+      "sha256": "092fc80f74ac2d3211834193b6c944d17671bec276f570c8a9426c971c529eae"
+    },
+    {
+      "id": "long-pony-silver-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-silver-body.png",
+      "sha256": "61d92998a03bbb9325c61d69a48741cba2cbe7630f6c673d831263b917ea00ec"
+    },
+    {
+      "id": "long-pony-silver-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-silver-head.png",
+      "sha256": "65f7315c078efbeb228ae66999927e97b73855cbc39ead20e1a83982d3a956c9"
+    },
+    {
+      "id": "long-pony-silver-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-silver-hair.png",
+      "sha256": "c94bad2f17aafa20ec2f406bbb3f0da7ca264f37ab0cebb2bb96d6b1be51f7ac"
+    },
+    {
+      "id": "long-pony-silver-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-silver-silhouette.png",
+      "sha256": "bcaac6d392e7d5199093fad40dfe017d45045ed5c703b91188d3b9d6b0383ccc"
+    },
+    {
+      "id": "long-pony-black-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-black-body.png",
+      "sha256": "d23c913c091968a4ec3d0f553dc2bdc1d44048dc3bb4048989dccfd04167c96d"
+    },
+    {
+      "id": "long-pony-black-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-black-head.png",
+      "sha256": "8882676eca5406a0c3eb00d2e28ed5bd4d661ac78be65dafd93569eecc92037e"
+    },
+    {
+      "id": "long-pony-black-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-black-hair.png",
+      "sha256": "2c34054a13eab4f182ffd60af63b980b3cc0f9b18fb875222fec7b86a3a0ca9d"
+    },
+    {
+      "id": "long-pony-black-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-black-silhouette.png",
+      "sha256": "bcaac6d392e7d5199093fad40dfe017d45045ed5c703b91188d3b9d6b0383ccc"
+    },
+    {
+      "id": "long-pony-gold-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-gold-body.png",
+      "sha256": "8ad8caccede9764df95ac06af6ef1388dae1e179fc1906e63aaf75c6f7b92400"
+    },
+    {
+      "id": "long-pony-gold-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-gold-head.png",
+      "sha256": "a2f9fc86b41b225a3defbdca8809264ef85a1a01edb09dcf5b45a548a65419c4"
+    },
+    {
+      "id": "long-pony-gold-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-gold-hair.png",
+      "sha256": "90ef49037f8c4a7542aa3f78a997cedd2ca4b698b38742468dc4ea4222dfbec5"
+    },
+    {
+      "id": "long-pony-gold-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/long-pony-gold-silhouette.png",
+      "sha256": "bcaac6d392e7d5199093fad40dfe017d45045ed5c703b91188d3b9d6b0383ccc"
+    },
+    {
+      "id": "round-bun-silver-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/round-bun-silver-body.png",
+      "sha256": "21bcf28a225c7415575f06605eddde038baabbee10cbb41d6eb4e9e194ed4880"
+    },
+    {
+      "id": "round-bun-silver-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/round-bun-silver-head.png",
+      "sha256": "14538051c47754deaddcb20d4493605d5f82fe6490c63566ffaaaebe2f97e907"
+    },
+    {
+      "id": "round-bun-silver-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/round-bun-silver-hair.png",
+      "sha256": "cf738e4ebc44489844d05e64ecd9c73bc59c85e417cc52777d37be6b38205902"
+    },
+    {
+      "id": "round-bun-silver-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/round-bun-silver-silhouette.png",
+      "sha256": "5aa93392261d2fb4971ea166886acb191d9e58ff41a77205247da92830f530ce"
+    },
+    {
+      "id": "round-bun-black-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/round-bun-black-body.png",
+      "sha256": "000c35e9f0aba416f9bd2ce3461f188520e70aa6589e3bb782b7ead6cf7f58cf"
+    },
+    {
+      "id": "round-bun-black-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/round-bun-black-head.png",
+      "sha256": "3b5e2060426a4c13a656ce5d4f531d40c4f121e5828838f2a93a92332376a207"
+    },
+    {
+      "id": "round-bun-black-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/round-bun-black-hair.png",
+      "sha256": "04acbbc1f7f133292df0c3e5b21a8b46bfedb8da3957afb6e34561c8a5b7a50a"
+    },
+    {
+      "id": "round-bun-black-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/round-bun-black-silhouette.png",
+      "sha256": "5aa93392261d2fb4971ea166886acb191d9e58ff41a77205247da92830f530ce"
+    },
+    {
+      "id": "round-bun-gold-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/round-bun-gold-body.png",
+      "sha256": "f19596db760c0b34026e3ce2369c55f968aeadf43e8e1953f2d066286d740c36"
+    },
+    {
+      "id": "round-bun-gold-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/round-bun-gold-head.png",
+      "sha256": "7168483defd3733c2dadf718406ac346ea984eab96c9d117f9a014ed2b50c0fa"
+    },
+    {
+      "id": "round-bun-gold-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/round-bun-gold-hair.png",
+      "sha256": "e7ec5a6784d8a0b7035bae6f2c29f59fd23f1e11819206ef6d018da34f96df8d"
+    },
+    {
+      "id": "round-bun-gold-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/round-bun-gold-silhouette.png",
+      "sha256": "5aa93392261d2fb4971ea166886acb191d9e58ff41a77205247da92830f530ce"
+    },
+    {
+      "id": "wild-layer-silver-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/wild-layer-silver-body.png",
+      "sha256": "bb634bf517a48ff66a350a2210c1e0c351348a1225e9b908aac1f8d12caf7eb4"
+    },
+    {
+      "id": "wild-layer-silver-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/wild-layer-silver-head.png",
+      "sha256": "194a41863a7edaa5d7fb523e4cddcf1cd754ece9e8a89b022de3a7bbd187fc36"
+    },
+    {
+      "id": "wild-layer-silver-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/wild-layer-silver-hair.png",
+      "sha256": "c04e7d236864c65ade1d70bcc4649ca889055a73c5f40477a5622c7c97e56707"
+    },
+    {
+      "id": "wild-layer-silver-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/wild-layer-silver-silhouette.png",
+      "sha256": "43ec8825d9fbc38d8616edfc018411d4ac6f30655ddc913bbbbbfbd7257528a3"
+    },
+    {
+      "id": "wild-layer-black-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/wild-layer-black-body.png",
+      "sha256": "ba0e2ee768caa896ba7e357fdcfd97e924ead0caedf70be45182f16fa7ce7cf8"
+    },
+    {
+      "id": "wild-layer-black-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/wild-layer-black-head.png",
+      "sha256": "f64bfcd83a6b11b2273fa71312b5ff265291eeaead8fdbee69e08177463b92d9"
+    },
+    {
+      "id": "wild-layer-black-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/wild-layer-black-hair.png",
+      "sha256": "fcc7b67f7be587f7f48f56bbc82e159077bdb610149dd9538b3cab2a2ef0680f"
+    },
+    {
+      "id": "wild-layer-black-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/wild-layer-black-silhouette.png",
+      "sha256": "43ec8825d9fbc38d8616edfc018411d4ac6f30655ddc913bbbbbfbd7257528a3"
+    },
+    {
+      "id": "wild-layer-gold-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/wild-layer-gold-body.png",
+      "sha256": "2db69166afdf44d46c3208311db1efc0d480594b0253ee636a9e5a3a95234e7f"
+    },
+    {
+      "id": "wild-layer-gold-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/wild-layer-gold-head.png",
+      "sha256": "f5a234fe4b40c860bf9382d020c2b1da373b8cd2fabff0e772bb0d5d88184095"
+    },
+    {
+      "id": "wild-layer-gold-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/wild-layer-gold-hair.png",
+      "sha256": "d86b79a18a9669d7de7d38e0c2958f07ff238204247c63a4792aaac6540ae17d"
+    },
+    {
+      "id": "wild-layer-gold-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/wild-layer-gold-silhouette.png",
+      "sha256": "43ec8825d9fbc38d8616edfc018411d4ac6f30655ddc913bbbbbfbd7257528a3"
+    },
+    {
+      "id": "eye-sweep-silver-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/eye-sweep-silver-body.png",
+      "sha256": "af3816d89a5e8f013dd1ab1bfdd786c4ee1c08a5eff6ce4a61f8eb072b23b89e"
+    },
+    {
+      "id": "eye-sweep-silver-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/eye-sweep-silver-head.png",
+      "sha256": "e9a5bc8dcb4a45b8d49ebba767b8553d03eccb77b91e54a9ebdb919a61aa7141"
+    },
+    {
+      "id": "eye-sweep-silver-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/eye-sweep-silver-hair.png",
+      "sha256": "c4832b654a6501fe9fccd5830645fab9301fd9bc8b2078f18a8c003e1cc86aef"
+    },
+    {
+      "id": "eye-sweep-silver-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/eye-sweep-silver-silhouette.png",
+      "sha256": "7e1b2039462693e01dece00450668aac6d7f574bba936b8fdfcebb14ebdb538e"
+    },
+    {
+      "id": "eye-sweep-black-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/eye-sweep-black-body.png",
+      "sha256": "c5ea0aa08726e72a9a3cb8074920be870afa005de654b5b198ed123ccdec64ab"
+    },
+    {
+      "id": "eye-sweep-black-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/eye-sweep-black-head.png",
+      "sha256": "e0af960b7a9f62fe6d5f766e14f754ac82895cfa1199d2f37d894d1d4b1c9a6e"
+    },
+    {
+      "id": "eye-sweep-black-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/eye-sweep-black-hair.png",
+      "sha256": "92db88d0d556af4cb0df2357ddc3f881d46e408a59b53d4dfb69eee3f21b9452"
+    },
+    {
+      "id": "eye-sweep-black-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/eye-sweep-black-silhouette.png",
+      "sha256": "7e1b2039462693e01dece00450668aac6d7f574bba936b8fdfcebb14ebdb538e"
+    },
+    {
+      "id": "eye-sweep-gold-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/eye-sweep-gold-body.png",
+      "sha256": "2c677e42211176ffedfec69a38a439ff962ff335e37b45ffc01eca73496a8464"
+    },
+    {
+      "id": "eye-sweep-gold-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/eye-sweep-gold-head.png",
+      "sha256": "05539118b88c0ea13b660ebd17d1cd8b5d2635d4435fbce3642ec1006a0ca403"
+    },
+    {
+      "id": "eye-sweep-gold-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/eye-sweep-gold-hair.png",
+      "sha256": "14681f9e49f1ff3280b676dbcf068acc8d66748e36c3236e54981465d8646349"
+    },
+    {
+      "id": "eye-sweep-gold-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/eye-sweep-gold-silhouette.png",
+      "sha256": "7e1b2039462693e01dece00450668aac6d7f574bba936b8fdfcebb14ebdb538e"
+    },
+    {
+      "id": "loose-long-silver-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-silver-body.png",
+      "sha256": "f75e9eaddcbc83793e16e8f9afe7d1954319dd8859ac2b0876b0651ec7f7c944"
+    },
+    {
+      "id": "loose-long-silver-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-silver-head.png",
+      "sha256": "7709f886b7dea8f2df2ebdcad4f425adc8ba91d6bd1923f0f9c8ef4a2e4b32e0"
+    },
+    {
+      "id": "loose-long-silver-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-silver-hair.png",
+      "sha256": "1419a11440551d1713bc5b51081e61c1fffa207ae8230ce39e8bbb18164eae3a"
+    },
+    {
+      "id": "loose-long-silver-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-silver-silhouette.png",
+      "sha256": "b14a39d185b688fdb9234ca049b55a5e0d0aeead0944d5ebfdb92b10f8f77630"
+    },
+    {
+      "id": "loose-long-black-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-black-body.png",
+      "sha256": "d6f8b0b8035ce4ec073aa262064b3a08b3697f07b5a29a08f36b7b206fb20b67"
+    },
+    {
+      "id": "loose-long-black-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-black-head.png",
+      "sha256": "29904df36ab96fc05d54b1b2006904310e98ab47371ddb141acc749e3de3893a"
+    },
+    {
+      "id": "loose-long-black-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-black-hair.png",
+      "sha256": "e7a47c9a0f060db6a13b20daa3288acec82af65ce77671ce141f25d35217074a"
+    },
+    {
+      "id": "loose-long-black-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-black-silhouette.png",
+      "sha256": "b14a39d185b688fdb9234ca049b55a5e0d0aeead0944d5ebfdb92b10f8f77630"
+    },
+    {
+      "id": "loose-long-gold-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-gold-body.png",
+      "sha256": "781b8d9f553dd5b90161077d1a36f3174dc7151d67bb22765f3991c7d360937c"
+    },
+    {
+      "id": "loose-long-gold-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-gold-head.png",
+      "sha256": "50c462a871c04f240e7b55b79a18d9dba2a396e4debf5753a404884bc71f76b5"
+    },
+    {
+      "id": "loose-long-gold-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-gold-hair.png",
+      "sha256": "28d7cbbad9aa6596dfc47290b61ebb212f92e93f9683355200a480a41028f22f"
+    },
+    {
+      "id": "loose-long-gold-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/loose-long-gold-silhouette.png",
+      "sha256": "b14a39d185b688fdb9234ca049b55a5e0d0aeead0944d5ebfdb92b10f8f77630"
+    },
+    {
+      "id": "ritual-tuft-silver-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/ritual-tuft-silver-body.png",
+      "sha256": "e416721b890a161e4b65dee69c6261c8e0dd1b069f2047db90c45ca706f17dfa"
+    },
+    {
+      "id": "ritual-tuft-silver-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/ritual-tuft-silver-head.png",
+      "sha256": "a92e1ddf6853be8fdc08fe7d5b2da96566e62f7f3ca118fa397b1216152ba941"
+    },
+    {
+      "id": "ritual-tuft-silver-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/ritual-tuft-silver-hair.png",
+      "sha256": "bd44cf9eaaa693fd0dc8c7414332aabb5b17987cbea8a203fbeb1ce205183875"
+    },
+    {
+      "id": "ritual-tuft-silver-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/ritual-tuft-silver-silhouette.png",
+      "sha256": "00f575967bfccec655160d9f95541d09e48459c9777b4db73ab48b7a8b9b256c"
+    },
+    {
+      "id": "ritual-tuft-black-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/ritual-tuft-black-body.png",
+      "sha256": "e3e79a4cabe53947aaab4eb9a99376018b3772b00715ddaa4983c99519369971"
+    },
+    {
+      "id": "ritual-tuft-black-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/ritual-tuft-black-head.png",
+      "sha256": "4936a8386ede50617332b38b80cbd3947c949ff709132a0bb51feb4bc0312202"
+    },
+    {
+      "id": "ritual-tuft-black-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/ritual-tuft-black-hair.png",
+      "sha256": "4477e118af15d43343697790e028a4ed0e41289c5bc8276f2e84c456e9f230e2"
+    },
+    {
+      "id": "ritual-tuft-black-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/ritual-tuft-black-silhouette.png",
+      "sha256": "00f575967bfccec655160d9f95541d09e48459c9777b4db73ab48b7a8b9b256c"
+    },
+    {
+      "id": "ritual-tuft-gold-body",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/ritual-tuft-gold-body.png",
+      "sha256": "401e66cf0b73ef65568a2de78464e4e989ad44b713ebbb12bd161ece218e720b"
+    },
+    {
+      "id": "ritual-tuft-gold-head",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/ritual-tuft-gold-head.png",
+      "sha256": "b8cdd382fc493bd6f96e896f9eff60a60c6fabef653c9fdc1db84cb8feddcfdb"
+    },
+    {
+      "id": "ritual-tuft-gold-hair",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/ritual-tuft-gold-hair.png",
+      "sha256": "2d47d20705a406f4dd7106fb6bf2d76e6cf16c7f4a0ce73b6a5ecce4d37651d1"
+    },
+    {
+      "id": "ritual-tuft-gold-silhouette",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/ritual-tuft-gold-silhouette.png",
+      "sha256": "00f575967bfccec655160d9f95541d09e48459c9777b4db73ab48b7a8b9b256c"
+    }
+  ],
+  "scope": "Eight different FRONT designs, not eight directions. Original face/body unchanged. New tied-volume/eye-occlusion prototypes require visual review."
+}

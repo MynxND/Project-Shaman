@@ -1,0 +1,396 @@
+# Architecture
+
+## Hair V3 reference study and FRONT candidates — 2026-10-10
+
+USER reauthorizes V2 neutral-male-02 for this candidate round; V3 bodies remain
+unapproved. Official RO galleries are studied remotely for techniques only; no
+third-party sprite files enter the repo or AI inputs. See design/hair-v3 for
+reference catalog, original five-color guide,14 silhouette concepts and three
+original dark-hair FRONT candidates. Inspector defaults to these hash-checked
+PNGs, supports flat/shaded comparison and back/main/fringe visibility. Actual
+source/body/origin unchanged. Seven free guarded Workbench edits including one
+pixel knot-root cleanup, paid0, live balance125 to125; old paid18 untouched.
+Typecheck/build and source/layer tests pass; visual approval remains USER-only.
+No other directions, animation, approved asset overwrite or gameplay adoption.
+
+
+## FRONT redesign after USER rejection — 2026-10-10
+
+USER rejected all three manual-repair-01 images and requested all corrections.
+Current inspector uses hair-front-pipeline-02/redesign-02: natural open hairlines,
+no blanket gray scalp fill, and bob back/base/front layering around unchanged V2
+neutral-male-02. Root attachment targets exclude intentional visible skin.
+Zero root gaps is a technical measurement, never visual approval. All three new
+FRONT drafts remain unapproved. Four free exact PixelLab Workbench edits added0
+paid generations. Original18 /three attempts /no retry remains frozen. No other
+directions, animation, extra generation or gameplay adoption. Rejected inspector
+is collapsed as history. See redesign-02/README.md.
+
+## V2 FRONT manual repair follow-up — 2026-10-10
+
+USER requests continued correction of the same3 FRONT outputs. Free PixelLab
+Workbench guarded patches produce separate manual derivatives; raw receipts,
+base/body/gameplay manifest and historical ledgers stay exact. `HairFrontEditor`
+loads repair-review JSON by default, retains independently hash-checked raw art,
+adds version selection and raw/repair comparison. Scalp/protected/skin-palette
+checks pass, visual/production flags remainfalse; added paid generations0.
+See `design/character-v2/hair-front-pipeline-02/manual-repair-01/README.md`.
+
+## V2 FRONT hair editor and isolated-layer experiment — 2026-10-10
+
+USER explicitly authorizes original V2 neutral-male-02 and separate18-generation,
+three-attempt/no-retry stage. `/characters/v2` now leads with `HairFrontEditor`:
+native128 real assets, hash-checked base/output, head/scalp/eye/ear guides,
+provisional head anchor62,26, origin61,112, local integer offsets,1x/4x and
+before/after. Independent review JSON; no shared schema, gameplay manifest,
+body bytes or historical ledger mutation.14 design specs, only3 FRONT provider
+attempts. All three raw layers contain skin; knot additionally misses scalp.
+Rejected diagnostic outputs, NOT modular-ready hair or visual approval. Actual18,
+pending0/retries0. See `design/character-v2/hair-front-pipeline-02/README.md`.
+
+## Original V2 Head-Fit FRONT - 2026-10-10
+
+Newest request restores original approved neutral-male-02 for three FRONT hair
+drafts, not V3. Existing shared split-pass pose and static inspector are retained;
+V2HeadFitReview adds verified-image diagnostics and separate guide canvas only.
+All body4 bytes/poses and paid ledger20/20 unchanged; V3 retained untouched.
+See docs/design/character-v2/hair-fit-front-01/ROW_FRONT_REVIEW.md. No live migration.
+
+## Independent V3 FRONT Comparison - 2026-10-10
+
+Latest USER requests a compact new base, superseding V2 continuation for this task.
+Independent `/characters/v3` React/Canvas inspector validates its own V3 manifest,
+four128 native comparison PNGs, same-foot origin61,112 and native/nearest4x views.
+Three original manual FRONT candidates share a byte-identical new head/face,
+not V2 scale/deformation. Visible-coordinate rig templates are provisional, not
+skeleton bones. V2 design/runtime192 files and ledger20/20 stay byte-exact; only
+an inspector navigation link is added. No shared V2 contract/gameplay migration.
+All V3 approval/lock/direction/equipment/animation/live gates false; paid0.
+See `docs/design/character-v3/proportion-front-01/README.md`.
+
+## V2 Hair Redesign 02 - 2026-10-10
+
+USER rejects long-manual01 FRONT. Existing static split-pass inspector now selects
+one new independently authored SOUTH pair, ivory-long02-manual. Old binding is
+archived unavailable; old files, all body assets/poses and paid ledger byte-exact.
+No renderer, schema or gameplay changes. Native128/origin61,112/staticnull,
+hairBack/body/hairFront; other hair views absent and visual approval false.
+See character-v2/hair-long-redesign-02/README.md. Earlier sections are history.
+
+## V2 Long Hair Split Proof - 2026-10-10
+
+Latest USER requests long silver-ivory hair like owned prior art, with no red bow.
+New original manual SOUTH pair uses existing shared/Canvas split-pass support;
+only SOUTH pose order changes to hairBack/body/outfit/hairFront, stable pose ID,
+native128/origin61,112/static-null. Four body files/assets remain exact. Crop draft
+binding and original pose retained in archivedHairDrafts, unavailable in the new
+split pose rather than fabricated blank rear art. Other hair directions fail
+closed. Paid20/20 unchanged, additional0, no live renderer/contract changes.
+Hair/full visual approval false; see character-v2/hair-long-manual-01/README.md.
+
+## V2 Manual Hair Publication - 2026-10-10
+
+Existing static inspector and shared V2 contract accept one new SOUTH manual hair
+pass after body. Same native128/origin61,112/static-null timeline, byte-exact PNG
+provenance; other directions remain absent with no fallback. Only inspector status
+text and additive publication/evidence change; no gameplay/equipment changes.
+Historical paid checker uses exact post-paid/pre-manual snapshot; separate manual
+tests conserve bodies, paid jobs/receipts, unknown fields and bounded20/20 budget.
+Visual approval remains false; see character-v2/hair-manual-01/README.md.
+
+## Character V2 SOUTH Hair Stop - 2026-10-09
+
+USER approves body4views and bounded cap18-to20 ONE SOUTH cap-only hair proof.
+One native128 changes-only inpaint charged6: spent20/cap20/remaining0/pending0.
+Returned layer contains visible scalp/skin inside the mask and is rejected raw,
+NOT runtime hair. Body PNGs stay byte-exact, all four body assets approved; anchor
+fit provisional, full userVisualAcceptedfalse. Shared contract permits cap20 only
+with the documentary hair-stage authority. No live renderer changes or retry.
+Evidence: character-v2/hair-proof-01/paid-stage/README.md.
+
+## Character V2 Rotation Review - 2026-10-09
+
+USER approves exact FRONT02 and one same-source rotation at2. Actual outer job
+receipt charged2, first_direction_generatedfalse; dedicated cap18/spent14,
+reserved0/pending0/remaining4. Existing inspector now consumes four real static
+cardinal body PNGs: SOUTH approved, E/N/W awaiting USER review. Shared128 canvas
+origin61,112 is a template; actual feet/deltas remain separate diagnostics, no
+alignment transforms. Hair/outfit absent, full visual milestone false. No live
+renderer/server/animation changes. See character-v2/body-rotation-01/README.md.
+
+## Character V2 Technical Draft - 2026-10-09
+
+Independent `shared/character-v2.ts` and `/characters/v2` static React/Canvas2D
+inspector consume only new V2 manifests, with exact pose/timeline/origin bindings
+and verified PNG dimensions/hash. One separately authorized revised FRONT02
+create128 job charged6 supplies an unapproved SOUTH static candidate only;
+manifest `review` is partial evidence, not modular readiness. FRONT01 charged6
+remains rejected/archived and shown separately at `/characters/v2`.
+Cap18/spent12/reserved0/pending0/remaining6; actual provisional foot61/112.
+No visual acceptance or live integration. Old repair paths stop for
+this task; originals stay untouched. See `docs/design/character-v2/specification.md`.
+
+## Character Foundation Evidence - 2026-10-09
+
+`shared/character-foundation.ts` adds a four-cardinal-view draft data contract,
+separating approved source identity, visible pixel partitions, provisional
+attachment coordinates, archived rig coverage and missing new-base clips.
+Its validator rejects claims that extraction is clean anatomy or that archived
+animation is new-base animation. `tools/rig/build_character_foundation.mjs`
+creates reversible static review assets, masks and unsubmitted repair recipes
+under `character-turnaround/foundation-01`. Client integration now adds a focused
+`CharacterFoundationInspector` above the existing right-only review at
+`/characters/modular`, consuming the unchanged contract and runtime manifest.
+It validates on load, aborts fetch on unmount, renders static native/nearest2x
+images and provisional overlays, and exposes archived coverage/anchor evidence
+without playing it as new-base animation. HeadRig, LayeredCharacter, server data
+and gameplay asset selection remain unchanged.
+
+## Ownership
+Hair collection review now uses `shared/hair-collection.ts`: fourteen named
+design records with ready-only four-view asset selection. Nullable pending URLs
+cannot reach Phaser. `/characters/head` loads only complete candidates, uses the
+existing head/body sources and resized native-scale rows, and retains the old
+head-proof files. Mirrored west is declared explicitly. No gameplay mutation.
+
+Latest head proof scope (2026-10-09): class-fixed clothing on a headless body with
+independent hair-free head, front/back hair and crown. `shared/head-rig.ts` owns
+native128, foot/neck/layer validation and hair-only palettes. `/characters/head`
+is an isolated React/Phaser static review, not a room or world-player migration.
+One scene survives resize. Source face bytes and fixed materials are protected.
+User visual approval of south/east/north gates eight-direction idle/walk, whose
+review gates attack/cast/hurt/death. Main-world gameplay and old renderers remain
+intact. See `docs/design/head-proof/README.md` for provenance and verification.
+
+
+React owns HUD, menus, responsive layout and accessibility. Zustand holds UI state and later selected player status; it must not hold every entity position each render frame.
+
+Phaser owns sprites, camera, projection, animation and interpolation. A future GameRuntime owns one network session, input controller and typed command bridge. React communicates with this interface rather than reaching into scenes.
+
+Colyseus owns authoritative positions and later combat, cooldowns, resources, loot and inventory. Client sends intent, never trusted positions or damage.
+
+## Dependency flow
+
+client -> shared + schema
+server -> shared + schema
+schema -> @colyseus/schema
+shared -> no runtime framework
+
+Both applications run as separate processes. Room state is temporary and keyed by sessionId. A future persisted characterId must be separate from sessionId.
+
+## Coordinates and responsive layout
+
+Server stores continuous world coordinates. Final world-to-screen projection must match the user's Classic Ragnarok Online map perspective; viewport dimensions cannot affect combat range. The initial diamond projection utility is unused scaffold and is not the approved map camera.
+
+Canvas parent fills dynamic viewport. Phaser RESIZE and ResizeObserver update the existing canvas and camera. Rotation must not destroy the runtime or reconnect a room. HUD uses safe-area padding and pointer-events only on interactive controls.
+
+Current scene displays a 400x300 PixelLab sanctuary town concept following the Classic RO camera direction, and every connected player as a PixelLab main character (main-v1, 8 directions; docs/design/character-rig.md). The map is Umbral Capital (docs/design/umbral-capital.md), shared as data in packages/shared/src/maps/umbral-capital.ts: 80 x 60 world units at 32 px per unit, ground material regions, objects with base footprints and invisible blockers. The server blocks footprints and map edges; the client draws ground TileSprites and object sprites depth-sorted by base y, with the camera following the local player. The preview camera preserves aspect ratio using cover framing; portrait crops the sides, landscape may crop the top/bottom. Original imagegen backdrop and diamond tile are retained as archived experiments.
+
+## Initial networking policy
+
+Landscape correction (2026-10-09, pending visual approval): the failed planter/sapling pass was removed while retaining mature blossoms and all city district objects. Only the northwest garden is redesigned, with one curved stone route joining the existing lotus pond and sacred tree, three low vegetation masses and a relocated offering area. Shared collision and map dimensions remain authoritative; low groundcover is walk-through. Exact coordinates: `LANDSCAPE_LAYOUT_PLAN.md`. Development-only `?gardenReview=wide|normal|close` frames the garden for repeatable screenshots without moving a player or changing the room; production ignores it.
+
+30 simulation steps per second; 50ms state patches; maximum 20 players per room. Latest valid input expires after 300ms. Diagonal movement is normalized. These are prototype assumptions, not benchmark results.
+
+Stops carry the client's predicted resting point (`stopAt`); the server adopts it only within MAX_STOP_CORRECTION (0.25 s of walking) and on walkable ground (`acceptStopAt`), otherwise it keeps its own position. The client waits 400 ms after a stop before settling toward the server, so stopping no longer slides by the network latency.
+
+Server simulation steps by real elapsed time (capped at 100 ms) rather than a fixed 1/30 s, because OS timers fire less often than requested; stop inputs bypass the 20 ms movement rate limit. Both are covered by the network smoke test.
+
+Implemented (Phase 1 start): `stepMovement` in shared is the single movement rule (speed 4 units/s, normalised diagonals, collision with slide, facing from input) used by GameRoom. PlayerState syncs x, y, facing, moving and bodyType (validated join option). Client joins via `game/network/GameConnection.ts` (NEXT_PUBLIC_GAME_SERVER_URL or the page host on port 2567), sends movement intent from `game/input/MovementController.ts` (WASD/arrows, or the touch joystick via `game/input/touch-stick.ts` when no key is held; both are 8-way) on change and every 100ms while held, renders all players from room state with exponential smoothing and depth by y, and leaves the room on scene shutdown/destroy. Connection status lives in a Zustand session store and drives the HUD badge.
+
+Local prediction: the local player is simulated every render frame with the shared `stepMovement` and real frame time (capped at 50ms), so it moves smoothly at any refresh rate (60-120Hz+); it snaps to the server when more than 2 units apart and settles toward it while idle. Remote players use exponential smoothing toward server positions. The camera follows the predicted sprite exactly.
+
+Reconnect: the SDK retries a dropped session (HUD shows connecting); if the session is gone, e.g. after a server restart, the scene clears players and joins a fresh room after 2s using a browser timer (Phaser's clock pauses in hidden tabs).
+
+Next: mobile joystick, client-side prediction/reconciliation for the local player, pixel-accurate collision.
+
+Production work remains: authentication, persistence, robust rate limiting, authorized origins, reconnect policy, collision, monitoring and load testing. No deployment is configured.
+
+## Skill system boundaries
+
+Definitions specify stable IDs, tier, prerequisites and effects. Execution belongs to server effect handlers, not descriptions or parsed LaTeX. Unresolved fields are null and must block use until resolved.
+
+Planned effect families: damage/heal, status/modifier, area field, summon, displacement, transformation, channel, revive and resource transactions. Introduce each when implementing representative skills, rather than building a generic scripting engine immediately.
+
+References used for initial compatibility checks:
+- https://docs.colyseus.io/room
+- https://docs.colyseus.io/state/schema
+- https://docs.phaser.io/phaser/concepts/scale-manager
+- https://nextjs.org/docs/app/guides/lazy-loading
+
+HUD widgets that need the local player's position (minimap) read it through `apps/client/src/game/runtime/local-player.ts`, a probe registered by the Phaser scene and polled at a low rate; positions are not stored in Zustand.
+
+## Town services and citizens — 2026-10-09
+
+`npc` requests are validated by GameRoom against NPC role, authoritative player distance, item stock and profile balance. Healing, save points, shops, storage, refining, introductory quest, trainer unlock and local teleport update a private session-only PlayerProfile. Gold exchange is a provisional fixed-rate NPC service, separate from the sample player market. React receives profile snapshots; HUD HP/SP and Silver use these snapshots. Learned skills are recorded prerequisites/unlocks; combat execution is still pending.
+
+Five ambient citizens (three children, two elders) are simulated by the server using shared safe horizontal routes, endpoint pauses and collision checks. CitizenState synchronizes positions, facing and motion directly to Phaser CitizenLayer; Zustand does not store their positions. They have no interaction prompts or collision footprints. PixelLab supplies original idle rotations and eight-frame east/west walks; raw archives, prompts and a deterministic sprite-sheet builder remain in the repository.
+
+Profiles have no authentication/database persistence: leaving a session or restarting the server resets progress. Rates, rewards, inventory, refining and travel costs are prototype design data, not approved economy.
+
+## Medium skill asset preview — 2026-10-09
+
+Active release revision 2: framework-independent `MEDIUM_RELEASE_STYLE` centralizes placement, native orientation, art scale, ground pulse and projectile impact split. The lab composes PixelLab-native frames with the existing shared seal geometry; source targeting/ranges remain separate from viewer fitting. Current active sheets contain 69 frames; no gameplay execution or passive VFX is introduced. See `docs/design/skill-system/medium-v2-art-review.md`. Amulet Blast is on art revision v3 (2026-10-09): asymmetric margin-bounded sheet, ground pulse disabled, enforced by `verify_medium_vfx.py`.
+
+Central rules adopted later on 2026-10-09: `packages/shared/src/skill-system.ts` defines seven behavior categories, Medium presentation references, validation, CT-aware/cancellable visual envelopes and deterministic aura visibility budgets. The hotbar and lab consume that policy. `game/vfx/RitualVfxLayer.ts` owns reusable foot-anchored circle/aura sprites; `/skills` demonstrates cancellation and a separate aura fixture. Production manifests exclude all five PASSIVE_STAT effects; icons remain. All 370 source records are audited in `docs/design/skill-system/classification.json`, with non-Medium behavior suggestions marked for review. There is still no authoritative combat execution.
+
+`/skills` is an independent React/Phaser visual asset viewer, not a gameplay room. React owns skill selection, body/direction, playback and scrub controls; one Phaser scene owns sprite composition and frame playback. Resize preserves that scene, and unmount destroys its game/ResizeObserver. Assets and anchors come from `/assets/skills/medium-v1/manifest.json`; provenance and user formulas are retained in `docs/design/skills/medium-v1/`. No Colyseus requests or player profile mutations occur here. Main-world skill buttons use the new PixelLab icons but remain disabled until authoritative combat exists.
+
+
+## Skill casting, presentation only — 2026-10-09
+
+User decision: skills can be cast in the world, with no effects yet.
+
+**Server (`GameRoom` `skill` message).** Validates the request with `skillCastError` from `packages/shared/src/skill-cast.ts`:
+- the skill must be an active hotbar skill and learned in the session profile;
+- the caster must not already be casting, must not be moving, and the skill must be off cooldown.
+
+It then broadcasts `skill` events (`start`, then `release` after the source CT, or `cancel`) to every client. CT and
+cooldown come from the source data. A non-stop movement input cancels the cast: no release and no cooldown. Rejections go
+only to the caster as `skill:error`. Nothing is spent, targeted, damaged or healed.
+
+**Client.**
+- `game/vfx/SkillCastLayer.ts` draws casts for every player. It shows the cast pose, then `RitualVfxLayer` (now scaled
+  for the world) draws the ground circle with a light, then the release effect starts on the server's `release`. It
+  reuses one object set per caster.
+- `stores/skill-store.ts` holds only the local hotbar state (casting progress and ready-at times), not positions.
+- `SkillHotbar` casts learned skills by click, tap or keys 1–5, shows lock, cast and cooldown states, and labels the
+  bar "no damage/heal yet".
+
+**Tests.**
+- `packages/shared/scripts/skill-cast-test.mjs`: unit tests.
+- `apps/client/scripts/skill-network-smoke.mjs` (`test:skill`, part of `pnpm test`): two-client live server test.
+- Screenshots: `docs/design/skill-system/screens/world-*.png`.
+
+## Modular character equipment — continuation 2026-10-09
+
+Rebuild proof (later request, not a migration): `packages/shared/src/modular-character.ts` provides one independent pose clock, eight-layer contract and equipment-slot adapter. `game/characters/LayeredCharacter.ts` composes persistent same-canvas layers in a container. `/characters/modular` uses existing-art extraction plus two cloth palettes and existing weapons/headgear, with explicit missing hurt/death states. Draft masks, residual clothing and partial hair prevent main-world adoption. Existing `CharacterSprite`, world casts, profile encoding and server item registry are unchanged. Audit, evidence and review gates: `docs/design/modular-character/README.md`; PixelLab changes-only workflow: `docs/design/modular-character/PIPELINE.md`.
+
+Identity correction: whole-body bronze-ward is rejected and omitted from the runtime manifest. The shared visual registry controls serialization, outfit resolution and server availability; stale looks resolve to the original base and stale equipped outfits are removed on profile synchronization. The inspector disables outfit switching with an explicit reason. Real interchangeable clothing requires identity-preserving garment/mask layers, not another character sprite set.
+
+`CharacterSprite` keeps its existing movement/animation interface and can draw rig-v2 outfit strips. `EquipmentLayers` owns two reusable attachment images per actor, sampling the body's current frame for main-hand grip/tip/depth and crown/tilt. Server `equipment` messages validate session ownership/slot/player state and synchronize an encoded `PlayerState.look`; React sends intent from the bag and displays live worn slots. World casts reuse the same outfit/attachments. A static status portrait reads the same manifest's idle frame; `/characters` is an independent asset inspector. Native assets are 128px; flattened hair/top/pants remain reconstruction work. See `docs/design/equipment/README.md` for coverage and validation status.
+
+## Maps, portals and monster combat — implementation detail
+
+**Maps and travel.**
+- Every map is a `MapDefinition` in the shared `MAPS` registry: Umbral Capital and Whispering Spiritwood.
+- Each map runs in its own Colyseus room: `filterBy(['mapId'])`, with `GameRoom` reading `options.mapId`.
+- Portals are map data: trigger area, destination portal and safe arrival point. The server checks them every tick.
+  Re-entry is armed only after the player has stood outside all portals.
+- Travel hands the session profile to the next room through a one-time in-memory ticket (`rooms/travel.ts`).
+- The client restarts its Phaser scene with `{ mapId, ticket }`. React HUD map widgets follow `useActiveMap()`.
+- Zustand holds only the active map id and a travel caption.
+
+**Combat (`rooms/combat-system.ts`).**
+- Owns the monsters spawned from explicit spawn regions and steps the shared, pure `monster-ai.ts`.
+- Runs player auto-attacks, then applies skill effects when the existing cast pipeline releases.
+- Handles damage, death, EXP and level-ups (shared `gainExp`), loot (`addLoot`), kill quest steps, regeneration and
+  player respawn.
+
+**Synced state and messages.**
+- `MonsterState`: kind, position, facing, AI state, HP. Players also sync HP, level and a downed flag.
+- Transient feedback is broadcast as `combat` events: swing, damage, heal, death, levelup, loot.
+- The owner gets small `vitals` updates instead of full profiles.
+
+**Client and data.**
+- Phaser `MonsterLayer` draws monsters and feedback. `PortalLayer` draws portals.
+- `target-store` holds only the selected monster id.
+- Every number is provisional: `packages/shared/src/combat.ts` and `docs/design/combat/README.md`.
+- Design and status: `docs/design/spiritwood/README.md`.
+
+## Independent FRONT V3 rig — 2026-10-10
+Audit confirms V2 body PNG contains a full head. New `/characters/v3` separated-front-01 inspector uses original headless body and two bald heads, not V2 crops. Phaser nested BodyRoot/NeckAnchor/HeadRoot attaches native chin pivots to measured neck32,17 on body64; scene foot64,112. Head XY/bob/quarter-turn transforms leave body stationary; real independent textures prove A-E. Empty hair/equipment slots remain unpopulated under FRONT-only scope; F hair swap is not visually verified. New user-authorized15/15 credits,3 calls,no retry. All frozen V2 files unchanged; no gameplay migration. See design/character-v3/separated-front-01/audit.md, specification.md and README.md. User visual approval pending.
+
+## Whole-head V3 with original V2 appearance — 2026-10-10
+Latest USER correction chooses independent headless body plus complete face/ears/hair head asset. `/characters/v3` now defaults to separated-front-02, preserving V2 native scale, face, limbs, skin and shorts. Body has12 manually reconstructed neck pixels via free PixelLab Workbench; styled head reuses one owned FRONT candidate. Neck/head pivots62,49; foot/origin61,112. Phaser hierarchy unchanged; whole-head mode disables separate hair overlays. Neutral rest assembly reconstructs original V2 RGBA exactly. Old small-body V3 retained as rejected-direction history. Added paid0; no new directions/animation/gameplay change. See design/character-v3/separated-front-02.
+
+## Eight-direction whole-head candidate — 2026-10-10
+USER approves one hairstyle x8static head directions. Inspector adds head-eight-01 above existing FRONT Phaser rig: actual128 PNGs and1024x128 atlas, explicit S/SE/E/NE/N/NW/W/SW frame order, verified hashes,1x/4x review and per-view pivots. SOUTH retains source pixels exactly; other anchors remain provisional and head-only because body attachment is not reviewed. One PixelLab rotation-only submission actual2 credits (22->20), no retry/body changes/animation. Whole head includes face/ears/hair. User visual approval pending. See design/character-v3/head-eight-01.
+
+## Dressed headless body, eight static views — 2026-10-10
+User approves head-eight-01 visually and requests one full-body costume set in eight static directions. Separate user-approval.json preserves historical head manifest/PNG/ledger. New body-eight-01 uses one PixelLab outfit edit6 and rotation-only2, no retries. Original FRONT neck/limbs/hands/feet outside clothing region preserved exactly; approved head files frozen. Native BodyOrigin/NeckPivot/HeadPivot drive nested Phaser attachments in Inspector, with actual body/head/assembled modes and head-only offsets. Costume changes replace headless body as a unit, not independent shirt/pants items. No animation, more outfits or live-world migration. Body and cross-direction neck fit require user visual review. See design/character-v3/body-eight-01/README.md.
+
+
+## Character V3 in the live world — 2026-10-10
+The male main character now renders with Character V3: `CharacterSprite` delegates to `V3Puppet` (apps/client/src/game/characters/V3Puppet.ts) when the body-eight-02 and walk-eight-02 manifests load. The body sprite plays the headless walk (8 frames/direction, step rate from WALK_SPEED/WALK_CYCLE_UNITS) or the idle rotation; a separate head image (head-eight-01) is placed every frame at that frame neck pivot, at body depth +0.01. V3 is drawn at 118/97 of the scene character scale to match rig-v2 height. No V3 attack/cast art yet: attack is a no-op and casts report handled so no old-rig pose sprite appears; equipment layers are hidden for V3. Female keeps rig-v2. If V3 assets fail to load the previous rig is used.
+
+
+## V3 attack and cast in the live world — 2026-10-10
+Character V3 now has an 8-direction palm-strike attack (8 frames) and cast (12 frames on the shared castPoseFrame timeline), headless bodies with the approved head on a per-frame neck pivot. Mixed sources per direction (prompt animation, explicit skeleton, one mirrored NW cast); 72 generations. `?rig=preview&pose=attack|cast&frame=N` shows them in the map. See design/character-v3/actions-eight-02/README.md.
+
+
+## Layered V3 head: hairstyles, colours, expressions — 2026-10-10
+Head split into bald base + expression overlay + tinted hair on the neck pivot. 4 hairstyles x 8 directions, 8 runtime hair colours, 6 expressions (5 overlays x 5 facing views) with auto-blink. PlayerState.head/emote synced and validated by the server; Appearance window (V) for creation-time choice and in-game emotes. 130 generations. Next: hair-back layer and the remaining 10 styles, women V3. See design/character-v3/head-layers-01/README.md.
+
+
+## SSR Phase 1 — contract, validator, converter — 2026-10-10
+User approved Phase 1 of docs/design/character-sprite-architecture.md. Added shared `sprite-rig.ts` (+ tests), `pnpm rig:convert` and `pnpm rig:validate`. Existing V3 assets converted without generation; first report: 3 anchor-jump errors (walk W 8 px), face lock 0 px changed, fringe/expression zone overlap, 2 small hair holes, no hit events, non-integer scale. Game untouched. See design/ssr/README.md.
+
+## SSR Phase 4 — game draws V3 heads with the SSR composer — 2026-10-10
+Game V3 heads now draw through the shared `ssrCompose` (apps/client/src/game/characters/SsrHead.ts): SSR skin base + expression part + palette-recoloured hair, mirrored left views and SSR body neck anchors (anchor overrides baked by `rig:convert`). Body sprite/animations, server and protocol unchanged except the shared expression list gains `cold`. Hairstyles without SSR parts (spiky-up, high-topknot) and the switch `?rig=legacy` / localStorage `shaman.rig=legacy` use the head-layers-01 head. Appearance window (V) previews with the same parts (ssr-canvas.ts) and lists only SSR styles (natural-short, side-sweep) and faces (neutral, cold, sad; closed = blink/emote). Back views regenerated (12 credits, approved) and volume cap/tone lock added to the hair standard. Remaining: 3 neck anchor jumps (walk W, attack N/SE) to fix in /characters/ssr; female characters still use the previous rig.
+
+## New Golden Apprentice FRONT design — 2026-10-10
+One original soft side-part hair candidate based on written visual observations of the user's customization screenshot. Current SSR Hair Layer Standard: FRONT first; no 8-view generation before review. One64-native inpaint actual5 credits, no retry, approved face/eyes unchanged and production parts/body/palettes frozen. Separate candidate ramp/fixed part plus shared-composer gold/silver/black before/after previews on /characters/v3 and /characters/ssr. Not added to gameplay selection or production part index. See design/ssr/golden-part-01/README.md. User visual approval pending.
+
+## Golden Apprentice eight-view candidate — 2026-10-10
+
+User approved the soft side-part FRONT (“ทรงนี้ผมโอเคครับเริ่มเลย”). Approval receipt and frozen source hashes: docs/design/ssr/golden-part-eight-01/front-approval.json. Reused FRONT unchanged; one native128 packed inpaint for SE/E/NE/N, three mirrored left views including anchors under Hair Layer Standard v1. Actual6 additional credits, one attempt, no retries (style total11 including FRONT5). Runtime SSR part and96 verified comparison PNGs remain staged under /assets/ssr/candidates/golden-part-eight-01/; production index, gameplay selection, approved body/head base/palettes remain unchanged. V3 and SSR Inspectors show eight static views, native/4x, three palettes, body/head/before/silhouette. Local face-lock, coverage, hole, anchor, mirror, hash checks and typecheck/client build pass. Desktop/mobile review performed. Additional views await user visual approval; no new animation or other hairstyle generated. See docs/design/ssr/golden-part-eight-01/README.md.
+## Golden Apprentice eight directions — USER APPROVED 2026-10-10
+User reviewed the V3 Inspector and replied “ผ่านครับ”. All eight static views are visually approved. Exact part/image hashes and the user's statement are recorded in docs/design/ssr/golden-part-eight-01/approval.json (runtime copy beside part.json). Manifest and Inspector now reflect approval; publisher refuses overwriting this approved version. No extra PixelLab credits, new assets, animations or live selection changes in this approval step.
+## Style3 Kid Stripe FRONT — 2026-10-10
+User requested a Death the Kid-inspired hairstyle as style3. New center-part FRONT candidate on the same owned Shaman face/body, three intentional white bands on character-left hair. One64-native inpaint actual5 credits, no retries; no third-party image inputs. Main mass uses black SSR palette, declared untinted white stripe mask remains fixed. Local mask/face/coverage/hole/stripe gates pass; FRONT awaits user visual approval before more directions. Earlier approved Golden Apprentice untouched; production index/gameplay unchanged. See docs/design/ssr/kid-stripe-01/README.md. Future directional stripe placement must preserve anatomical left rather than blindly mirror white markings.
+## Eight replacement hairstyle FRONT prototypes — 2026-10-10
+User rejected Kid Stripe and requested eight distinct designs from a supplied hairstyle prototype sheet. One packed FRONT inpaint on owned reference heads, actual9 credits, one attempt/no retries. Eight silhouettes: short, medium side-part, ponytail, round bun, messy, eye-swept fringe, loose long, pointed tied tuft. New independent hairBack layers for long styles; original face/body and approved Golden Apprentice unchanged. Per-design prototype masks explicitly permit tied top volume and style6 reversible eye occlusion per user reference; these are awaiting visual review, not blanket production standard changes. V3/SSR Inspector has eight-style native/4x and hair/head/body/silhouette review. Kid Stripe moved to rejected history. No new directions, animations or gameplay publication. See docs/design/ssr/hair-eight-prototypes-01/README.md.
+## Clean black center-part eight-view candidate — 2026-10-10
+User selected the former Kid Stripe silhouette and requested removing white bands plus eight directions. New clean FRONT restores46 stripe pixels only; original silhouette/other pixels frozen. One128 packed owned-reference PixelLab inpaint, actual6 credits, one attempt/no retry, four new right/back views and three standard left mirrors. SSR neck anchors and original face/body unchanged. V3/SSR Inspectors show native/4x staged comparisons; no gameplay publication or animation. Technical gates pass; awaiting user visual review. See design/ssr/kid-clean-eight-01/README.md.
+
+## Complete silhouettes for eight FRONT prototypes — 2026-10-10
+User reports clipped ends in the eight-design sheet. New hair-eight-prototypes-02 expands generation margins; one intentional repair inpaint actual9 credits/no retry, plus pixel cleanup on three flat-cut tied fan tips. Full original face/body/head anchors retained, with existing style6 eye occlusion exception. V3/SSR Inspectors show repaired version and before comparison. Selected4x details remove empty canvas margins only, preserve every opaque pixel and fit mobile width. Native/contour/face/layer/hash gates pass; visual approval pending. No new directions or gameplay publication. See design/ssr/hair-eight-prototypes-02/README.md.
+
+## Single-style FRONT face-fit redesign — 2026-10-10
+User rejects eight-design face fit and authorizes proposed one-style-first redesign. face-fit-short-01: longer brow-adjacent fringe, compact crown, original owned face/body; one64-native inpaint actual5/no retry. V3/SSR Inspector top panel compares prior plain-short vs new body/head in three palettes/native/4x. Technical gates pass, visual approval pending before any expansion. Other styles/approved assets untouched. See design/ssr/face-fit-short-01/README.md.
+
+## User approved style1 FRONT — 2026-10-10
+User replied “ผ่านครับอันนี้”. face-fit-short-01 FRONT is visually approved; exact image/part hashes recorded in approval.json, publisher refuses overwriting this version. Inspector reflects approval. This receipt does not approve other styles, directions or gameplay publication. Approval step uses0 additional PixelLab credits.
+
+## Approved face-fit FRONT extended to eight views — 2026-10-10
+User requests eight directions for approved face-fit-short-01. New face-fit-short-eight-01 reuses FRONT pixels exactly, one native128 packed inpaint for four right/back views, three standard left mirrors including neck anchors. Actual6 credits/one attempt/no retries;5 SE skull edge pixels cleaned locally. Original face/body/base/palettes frozen. V3/SSR Inspectors top panel shows96 hashed native/4x comparisons in three palettes; technical gates pass, added views await visual review. No other hairstyles, animation or gameplay publication. See design/ssr/face-fit-short-eight-01/README.md.
+
+## Fuller diagonal fringe and Eye Veil FRONT — 2026-10-10
+User requests fuller SE/SW bangs then a new full eye-cover fringe. face-fit-short-eight-02 changes SE/SW only; other six views exact, lower forehead coverage20->49 pixels. eye-veil-front-01 FRONT uses explicitly authorized reversible both-eye occlusion, base face/eyes remain untouched, eye whites fully covered. Two controlled64-native calls, actual5+5=10 credits, no retries; local eye-slit and scalp cleanup archived. Inspectors show both candidates, before/after and native/4x. Tests/typecheck/build pass; visual review pending, no extra directions for new style or gameplay publication.
+
+
+## Partial Eye Veil eight static views — 2026-10-10
+User requests eight directions from partial-eye FRONT03. Exact FRONT reuse; one128 packed inpaint for SE/E/NE/N plus three standard left mirrors. Actual6 credits, one attempt, no retries. Separate SSR candidate and96 comparisons in V3/SSR Inspector; original body/base/palettes frozen, no gameplay publication or animation. Technical gates pass, added directions await user visual review. See design/ssr/eye-veil-eight-01/README.md.
+
+
+## Korean center-part Wolf Cut FRONT — 2026-10-11
+User chooses charcoal black-grey with silver tips. One native64 owned-head inpaint, actual5 credits/one attempt/no retries. Separate fixed silver-tip mask plus recolorable dark hair ramp; original face/body/neck frozen. V3/SSR Inspector defaults to black and shows actual candidate PNGs, native/4x and head/body comparison. FRONT visual review pending; no directions, animation or gameplay publication. See design/ssr/korean-wolf-front-01/README.md.
+
+
+## Korean Wolf Cut longer FRONT02 — 2026-10-11
+User requests jaw-length sides and nape to neck base. One64-native inpaint on owned prior art, job charged5/one attempt/no retry. Expanded mask and fixed silver tips retain original face/eyes/body/neck. FRONT01 frozen and shown before02 in V3/SSR Inspector. FRONT visual review pending; no other directions or gameplay publication. See design/ssr/korean-wolf-front-02/README.md.
+
+
+## Korean Wolf Cut Long eight views — 2026-10-11
+User approves FRONT02 and requests eight static directions. FRONT exact reuse, one128 owned-head inpaint for SE/E/NE/N and three mirrored left views, job charged6/one attempt/no retries. Fixed silver-tip masks retain dye independently of charcoal ramp.96 real comparisons and native/4x in V3/SSR Inspector; original face/body/neck frozen. Technical gates pass; added views await user visual review. No animation or gameplay publication. See design/ssr/korean-wolf-eight-01/README.md.
+
+## Additional FRONT review panels — 2026-10-11
+ExtraFrontDesigns reuses the SSR candidate contract for swept-spikes-front-01 and curtain-gold-front-01. Actual SHA-checked PNGs and independent hair parts; golden curtains declare a candidate-local warm gold palette override without changing shared palettes. Existing gameplay/rig unchanged. FRONT-only review stage.
+
+
+## Two approved FRONT designs extended to eight views — 2026-10-11
+ExtraEightDesigns shows independent SSR hair parts for swept-spikes-eight-01 and curtain-gold-eight-01, 128 native comparisons plus128 lossless detail previews per design. FRONT layers/three prior palette head previews reused exactly. Four palettes include existing red ramp; warm gold override stays candidate-local. Real shared-composer head/body/before/silhouette previews and native/4x. Gameplay part index unchanged.
+
+
+## Two V3 FRONT face identities — 2026-10-11
+Violet Sharp and Teal Soft neutral-expression candidates use independent SSR face replacement parts beneath existing hair. V3 Inspector adds face/hair selection, head/body and native/4x comparisons. Actual10 credits /2 attempts/no retry. Existing gameplay protocol and approved assets unchanged; FRONT visual approval pending. See docs/design/ssr/face-styles-front-01/README.md.
+
+
+## Cold Detached V3 face FRONT — 2026-10-11
+Added third FRONT face candidate to V3 Inspector: half-lidded deadpan eyes and flat mouth. Independent face part below hair, frozen head/body/neck. New approved cap5, actual5, one attempt/no retry; prior two faces unchanged. Local cleanup logged; visual approval pending before other directions. See docs/design/ssr/face-cold-front-01/README.md.
+
+
+## Three V3 faces extended to eight static directions — 2026-10-11
+User approved exact FRONTs and new cap18 /3 attempts/no retry. One128 face-only SE/E inpaint per style, actual6+6+6=18. FRONT exact file reuse; SW/W mirror right with native anchors; back views retain head with no face overlay. V3 Inspector adds three-face eight-direction native/4x head/body comparisons. No gameplay publication, hair/body changes or animation. New-angle visual approval pending. See docs/design/ssr/face-eight-01/README.md.
+

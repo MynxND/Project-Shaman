@@ -1,0 +1,13 @@
+{
+    "jsonrpc":  "2.0",
+    "id":  2,
+    "result":  {
+                   "content":  [
+                                   {
+                                       "type":  "text",
+                                       "text":  "4 validation errors for call[get_image]\njob_id\n  Missing required argument [type=missing_argument, input_value={\u0027jsonrpc\u0027: \u00272.0\u0027, \u0027id\u0027: ...ad\u0027}, \u0027isError\u0027: False}}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing_argument\njsonrpc\n  Unexpected keyword argument [type=unexpected_keyword_argument, input_value=\u00272.0\u0027, input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/unexpected_keyword_argument\nid\n  Unexpected keyword argument [type=unexpected_keyword_argument, input_value=2, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.13/v/unexpected_keyword_argument\nresult\n  Unexpected keyword argument [type=unexpected_keyword_argument, input_value={\u0027content\u0027: [{\u0027type\u0027: \u0027te...oad\u0027}, \u0027isError\u0027: False}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/unexpected_keyword_argument"
+                                   }
+                               ],
+                   "isError":  true
+               }
+}

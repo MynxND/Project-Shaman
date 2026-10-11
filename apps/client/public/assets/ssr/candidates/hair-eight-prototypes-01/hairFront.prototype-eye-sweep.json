@@ -1,0 +1,58 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.prototype-eye-sweep",
+  "kind": "hairFront",
+  "variant": "prototype-eye-sweep",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": true,
+  "images": [
+    {
+      "id": "eye-sweep-hairFront-fixed",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/eye-sweep-hairFront-fixed.png",
+      "sha256": "7f6b7c6e1247cd0d21bbbd5557096707921fd9c22a72d9fe805946127d63c593",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "eye-sweep-hairFront-ramp",
+      "url": "/assets/ssr/candidates/hair-eight-prototypes-01/eye-sweep-hairFront-ramp.png",
+      "sha256": "9b7da2f8cb79877494458908e3d5c35b45e301c5ae02147c6e688057358eb907",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "eye-sweep-hairFront-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "eye-sweep-hairFront-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Original FRONT prototype from one eight-design inpaint on owned head; visual approval pending."
+}

@@ -1,0 +1,29 @@
+{
+  "tool": "inpaint_image_pro_flash",
+  "submitted": false,
+  "requiresNumericalCostApproval": true,
+  "quotedProvisionalCredits": 6,
+  "files": {
+    "image_base64": "east/source.png",
+    "mask_image_base64": "east/costume-edit-mask.png",
+    "context_image": "east/costume-context.png"
+  },
+  "arguments": {
+    "description": "Repair only WHITE mask clothing in the LEFT sprite (east view). RIGHT sprite is the approved FRONT master, reference only. Match its cream woven tunic, crimson sash, aged bronze amulet, green/gold apron construction, fur mantle, hem and consistent shading in this view. Keep native pose, face, head, tied silver hair, exposed skin and feet exactly. Do not copy frontal panel width into a side view. No new accessories, no whole character redraw, no resizing. Mask is a conservative visible-garment draft, not permission to reconstruct anatomy.",
+    "bounding_box": {
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128
+    },
+    "crop_to_mask": true,
+    "no_background": true,
+    "output_method": "Modify current layer",
+    "seed": 911
+  },
+  "limitations": [
+    "Mask covers visible garment pixels only, excluding y114+ footwear; it cannot complete hidden anatomy or expand the silhouette.",
+    "Hand-authored mask must be visually reviewed before submission; generated output must pass unmasked RGBA conservation and costume review.",
+    "files names describe local PNG-to-base64 encoding; this is an unsubmitted request recipe, not a service receipt."
+  ]
+}

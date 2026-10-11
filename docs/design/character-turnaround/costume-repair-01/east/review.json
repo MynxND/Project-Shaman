@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "view": "east",
+  "jobId": "17af3205-7375-42c3-9567-8f50af1de725",
+  "status": "rejected-costume-construction",
+  "approved": false,
+  "productionReady": false,
+  "credibleCandidate": false,
+  "candidate": null,
+  "stop": true,
+  "raw": "raw.png",
+  "comparison": "comparison-2x.png",
+  "visualInspection": "Raw native and exact2x FRONT / input / result / mask inspected directly, 2026-10-09.",
+  "observations": [
+    "Genuine right-facing profile, face, tied silver hair, crimson bow and footwear remain unchanged outside mask.",
+    "Generated tunic/apron trim and shoulder details change, but the broad pale triangular rear-side hem remains instead of resolving the FRONT garment construction.",
+    "The narrow front-side green/gold strip and dark/red shoulder-waist assembly still do not convincingly project the approved FRONT apron, mantle and sash.",
+    "1261 changed pixels and zero protected RGBA mismatches establish technical conservation, not a coherent costume or art approval."
+  ],
+  "nextPaidJobs": "STOP: no BACK, LEFT, retry, anatomy or animation submissions.",
+  "cleanBody": false,
+  "cleanScalp": false,
+  "newBaseAnimationClips": 0
+}

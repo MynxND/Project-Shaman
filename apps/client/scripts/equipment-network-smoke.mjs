@@ -1,0 +1,47 @@
+import assert from 'node:assert/strict';
+import { spawn } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
+import { Client } from '@colyseus/sdk';
+import { GAME_ROOM } from '../../../packages/shared/dist/index.js';
+
+const server = spawn(process.execPath, [fileURLToPath(new URL('../../server/dist/index.js', import.meta.url))], { env: { ...process.env, GAME_SERVER_PORT: '2586' }, stdio: ['ignore', 'pipe', 'pipe'] });
+const rooms = []; let errors = '';
+server.stderr.on('data', d => errors += d);
+const waitFor = async (check, label) => { const start = Date.now(); while (Date.now() - start < 5000) { if (check()) return; await new Promise(r => setTimeout(r, 20)); } throw Error(`timeout ${label}: ${errors}`); };
+try {
+  await new Promise((resolve, reject) => { const timeout = setTimeout(() => reject(Error('server startup timeout')), 10000); server.stdout.on('data', d => { if (String(d).includes('listening')) { clearTimeout(timeout); resolve(); } }); server.on('error', reject); });
+  const client = new Client('ws://localhost:2586');
+  const a = await client.joinOrCreate(GAME_ROOM, { bodyType: 'male' }); rooms.push(a);
+  const b = await client.joinOrCreate(GAME_ROOM); rooms.push(b);
+  let profile, result, received = 0;
+  a.onMessage('profile', data => { profile = data.profile; result = data.result; received++; });
+  b.onMessage('profile', () => {});
+  const casts=[];
+  a.onMessage('skill', e => casts.push(e)); b.onMessage('skill', () => {});
+  a.onMessage('skill:error', () => {}); b.onMessage('skill:error', () => {});
+  for (const room of rooms) room.onMessage('vitals', () => {});
+  a.send('profile:get');
+  await waitFor(() => profile && b.state.players.get(a.sessionId)?.look === 'weapon:staff-bell', 'starter visible to peer');
+  const before = profile.silver;
+  const send = async message => { const count = received; a.send('equipment', message); await waitFor(() => received > count, 'equipment reply'); };
+  await send({ slot: 'weapon', itemId: 'staff-bone' });
+  assert.equal(result.ok, true); assert.equal(profile.equipment.weapon, 'staff-bone'); assert.equal(profile.silver, before);
+  await waitFor(() => b.state.players.get(a.sessionId)?.look === 'weapon:staff-bone', 'peer sees weapon swap');
+  await send({ slot: 'head', itemId: 'staff-bone' }); assert.equal(result.ok, false);
+  await send({ slot: 'body', itemId: 'spirit-sash' }); assert.equal(result.ok, false, 'unowned item refused');
+  await send({ slot: 'weapon', itemId: 7 }); assert.equal(result.ok, false, 'bad message refused');
+  await send({ slot: 'head', itemId: 'hat-ngob' }); assert.equal(result.ok, true);
+  await waitFor(() => b.state.players.get(a.sessionId)?.look.includes('head:hat-ngob'), 'peer sees hat');
+  await send({ slot: 'body', itemId: 'robe-bronze-ward' }); assert.equal(result.error, 'art-unavailable');
+  assert.equal(profile.equipment.body, undefined);
+  assert.equal(b.state.players.get(a.sessionId)?.look.includes('body:'), false);
+  a.send('skill', { skillId: 'spirit-bolt' });
+  await waitFor(() => casts.some(e => e.phase === 'start'), 'cast starts');
+  await send({ slot: 'weapon', itemId: 'staff-bell' }); assert.equal(result.ok, true);
+  await waitFor(() => casts.some(e => e.phase === 'release'), 'equipping preserves cast');
+  assert.equal(casts.some(e => e.phase === 'cancel'), false);
+  await send({ slot: 'weapon', itemId: null }); assert.equal(result.ok, true);
+  await waitFor(() => !b.state.players.get(a.sessionId)?.look.includes('weapon:'), 'unequip removes peer layer');
+  assert.equal(b.state.players.get(b.sessionId)?.look, 'weapon:staff-bell', 'equipment isolated by session');
+  console.log('PASS equipment network: authoritative validation, equip/unequip, peer look sync and profile isolation');
+} finally { for (const room of rooms) await room.leave().catch(() => {}); server.kill(); }

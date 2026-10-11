@@ -1,0 +1,27 @@
+{
+  "version": "whole-head-authoring/1",
+  "status": "specification-only; no generation submitted",
+  "base": "V2 neutral-male-02, explicitly authorized",
+  "assetUnit": "complete detachable head: face, eyes, ears, skull and hairstyle designed together",
+  "canvas": { "width": 128, "height": 128, "pixelScale": 1 },
+  "bodyOrigin": { "x": 61, "y": 112 },
+  "provisionalNeckSocket": { "x": 62, "y": 49 },
+  "authoringRules": [
+    "Reference own body to match native scale, palette, light direction and neck socket.",
+    "Do not preserve or paste the old face pixels inside the new head.",
+    "Draw an original coherent complete head with a compact readable silhouette.",
+    "Keep body pixels outside the head asset; never generate a replacement body.",
+    "Preserve complete head source; derive occlusion layers without deleting pixels.",
+    "Review head silhouette, face-hair relationship and neck seam before creating rotations.",
+    "Do not treat a fixed y49 crop as an artist-approved anatomical mask.",
+    "Review per-view rear/foreground occlusion for long locks and tails.",
+    "No retries or paid calls under the exhausted 88-credit stage."
+  ],
+  "acceptance": [
+    "Whole head works alone without the old face underneath.",
+    "Changing style replaces all head pixels and retains the same body.",
+    "Unequipping removes face, ears, skull and all hair together.",
+    "Co-designed face and hair look consistent at native1x and nearest4x.",
+    "Per-view neck anchor and hair occlusion reviewed visually by the user."
+  ]
+}

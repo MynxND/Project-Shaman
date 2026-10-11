@@ -1,0 +1,38 @@
+.skill-lab { min-height: 100dvh; padding: max(20px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(24px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left)); color: #eee1be; background: radial-gradient(ellipse at 35% 0, #284842, transparent 65%), #101d1d; font: 15px/1.6 Tahoma, sans-serif; }
+.skill-lab header { display: flex; align-items: center; gap: 26px; max-width: 1320px; margin: 0 auto 22px; }
+.skill-lab header a { color: #cfb578; white-space: nowrap; }.skill-lab header p, .skill-lab h1, .skill-lab h2, .skill-lab h3 { margin: 0; }
+.skill-lab h1 { font: 30px/1.4 Georgia, Tahoma, serif; color: #e6cd8f; }.skill-kicker { font-size: 10px; letter-spacing: .23em; color: #89b9a9; }
+.skill-badge { margin-left: auto; border: 1px solid #786d47; padding: 6px 12px; font-size: 12px; color: #d7c393; }
+.skill-workspace { display: grid; grid-template-columns: minmax(0,1fr) 340px; max-width: 1320px; margin: auto; gap: 18px; }
+.skill-preview, .skill-detail { min-width: 0; background: #182d2b; border: 1px solid #796945; box-shadow: 0 10px 24px #0004; }
+.skill-stage { height: clamp(240px, 34vw, 390px); width: 100%; overflow: hidden; background: #18312e; }.skill-stage canvas { image-rendering: pixelated; }
+.skill-controls { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 10px; padding: 14px; }.skill-controls label { display: grid; gap: 2px; font-size: 11px; color: #b3c4b8; }
+.skill-lab button, .skill-lab select { color: #eadcaf; background: #263d35; border: 1px solid #8a784f; min-height: 40px; padding: 6px 12px; font: inherit; border-radius: 2px; }
+.skill-lab button:hover, .skill-lab select:focus { background: #385046; }.skill-lab button:focus-visible { outline: 2px solid #98e7d4; outline-offset: 3px; }
+.skill-scrub { display: block; padding: 0 14px; font-size: 12px; }.skill-scrub input { width: 100%; accent-color: #c4b17c; display: block; margin: 8px 0; }.skill-note { color: #afbdad; font-size: 12px; padding: 0 14px; }
+.skill-detail { padding: 20px; }.skill-title { display: flex; align-items: center; gap: 10px; }.skill-title img, .skill-catalog img { image-rendering: pixelated; object-fit: contain; }
+.skill-title p { font-size: 10px; letter-spacing: .13em; color: #a4c3ad; margin: 0; }.skill-title h2 { font-size: 22px; color: #ebd498; }.skill-title h3 { font-size: 14px; font-weight: normal; }
+.skill-detail dl { margin: 20px 0; }.skill-detail dl div { padding: 8px 0; border-bottom: 1px solid #ffffff14; }.skill-detail dt { font-size: 11px; color: #a3b7a7; }.skill-detail dd { margin: 2px 0 0; }
+.skill-formula { padding: 12px; color: #ecdfbb; background: #112220; border-left: 2px solid #c7a768; font-size: 13px; }.skill-detail .skill-note { padding: 0; }
+.skill-catalog { max-width: 1320px; margin: 20px auto; display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 10px; }
+.skill-catalog button { position: relative; display: flex; align-items: center; flex-direction: column; padding: 14px 5px; min-width: 0; background: #1b302c; }.skill-catalog button[aria-pressed="true"] { background: #34493a; border-color: #f1cb79; box-shadow: inset 0 0 0 1px #cfb576; }
+.skill-catalog b { font-size: 14px; }.skill-catalog small { color: #b8c0ad; font-size: 11px; }.skill-number { position: absolute; left: 8px; top: 6px; color: #809882; font-size: 10px; }
+.skill-lab details { max-width: 1320px; margin: auto; border: 1px solid #53664f; padding: 12px; }.skill-lab summary { cursor: pointer; }.skill-filmstrip { display: flex; gap: 5px; overflow-x: auto; padding-top: 10px; }.skill-filmstrip > div { background: #243b35; text-align: center; }.skill-filmstrip > div > div { image-rendering: pixelated; }
+@media (max-width: 1000px) { .skill-workspace { grid-template-columns: minmax(0,1fr); }.skill-detail { padding: 16px; }.skill-catalog { grid-template-columns: repeat(5,minmax(0,1fr)); }.skill-badge { display: none; } }
+@media (max-width: 600px) { .skill-lab { padding: 12px; }.skill-lab header { gap: 12px; align-items: flex-start; }.skill-lab header a { font-size: 12px; }.skill-lab h1 { font-size: 22px; }.skill-lab header p:not(.skill-kicker) { font-size: 12px; }.skill-catalog { grid-template-columns: repeat(2,minmax(0,1fr)); }.skill-stage { height: 320px; }.skill-controls { gap: 8px; }.skill-controls label { flex: 1; }.skill-controls select { max-width: 100%; padding: 6px; }.skill-title h2 { font-size: 20px; } }
+
+
+/* Thai branch switch and icon placeholders (no PixelLab icons yet). */
+.skill-sets { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; }
+.skill-sets button { padding: 6px 12px; border: 1px solid #6b5a33; background: #18312e; color: #ece3bf; border-radius: 4px; font: inherit; cursor: pointer; }
+.skill-sets button[aria-selected="true"] { background: #d6b46c; color: #18312e; font-weight: 700; }
+.skill-icon-placeholder { display: inline-grid; place-items: center; width: 64px; height: 64px; flex: none; border: 2px dashed; border-radius: 6px; color: #ece3bf; background: #142421; font-weight: 700; }
+.skill-icon-placeholder.small { width: 54px; height: 54px; }
+/* Onmyoji invoke preview: five element buttons + Invoke (pick two elements → the invoked spell). */
+.gogyo-wheel { max-width: 1320px; margin: 16px auto 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.gogyo-wheel span { min-width: 140px; color: #ece3bf; }
+.gogyo-wheel button { min-width: 56px; min-height: 40px; padding: 6px 12px; border: 2px solid; border-radius: 6px; background: #18312e; color: #ece3bf; font: inherit; cursor: pointer; }
+.gogyo-wheel button.invoke { border-color: #d6b46c; }
+.gogyo-wheel button:disabled { opacity: .5; cursor: default; }
+/* Branch signature mechanic line under the lab header (uniqueness rework). */
+.skill-lab header .skill-signature { margin-top: 4px; color: #d6b46c; font-size: 13px; }

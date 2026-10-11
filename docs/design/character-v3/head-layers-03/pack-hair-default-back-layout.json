@@ -1,0 +1,29 @@
+{
+ "W": 128,
+ "H": 64,
+ "CELL": 64,
+ "layout": [
+  {
+   "direction": "north",
+   "cell": {
+    "x": 0,
+    "y": 0
+   },
+   "crop": {
+    "x": 32,
+    "y": 0
+   }
+  },
+  {
+   "direction": "north-east",
+   "cell": {
+    "x": 64,
+    "y": 0
+   },
+   "crop": {
+    "x": 32,
+    "y": 0
+   }
+  }
+ ]
+}

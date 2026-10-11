@@ -1,0 +1,70 @@
+{
+  "bodySha256": "0ed1ddf448b70a93dc5f624617e832a0af593779b6b7257d65db39b61be35958",
+  "templateUrl": "/assets/character-v2/hair-front-pipeline-02/template.json",
+  "styles": [
+    {
+      "id": "wind-crop",
+      "nameThai": "ผมสั้นเปิดลม",
+      "status": "technical-issues / visual-review-required",
+      "url": "/assets/character-v2/hair-front-pipeline-02/wind-crop-raw.png",
+      "sha256": "fce8690c8bf96eefcd5c07bd53b6d754a12f757b55a42c3c2454e0118e710a39",
+      "metrics": {
+        "visible": 564,
+        "colors": 22,
+        "scalpGaps": 0,
+        "protectedOverlap": 0,
+        "semitransparent": 0,
+        "outsideMask": 0,
+        "warmSkinLike": 124
+      },
+      "visualApproved": false,
+      "productionReady": false,
+      "jobId": "634c3548-7111-4c12-b391-c70a64c2f35a",
+      "isolationRejected": true,
+      "visualFindings": "ไม่ผ่าน hair-only: มีผิวหน้าผากและเส้นคิ้วปะปน ปอยสั้นแยกชัดแต่ยอดถูกตัดแบนด้วยขอบ mask"
+    },
+    {
+      "id": "curtain-bob",
+      "nameThai": "บ๊อบแสกกลาง",
+      "status": "technical-issues / visual-review-required",
+      "url": "/assets/character-v2/hair-front-pipeline-02/curtain-bob-raw.png",
+      "sha256": "f5a54fddf64c04d67912716ebc6daa771f36e8bb3a856d4a81203d1a3a9d4e7a",
+      "metrics": {
+        "visible": 511,
+        "colors": 13,
+        "scalpGaps": 0,
+        "protectedOverlap": 0,
+        "semitransparent": 0,
+        "outsideMask": 0,
+        "warmSkinLike": 101
+      },
+      "visualApproved": false,
+      "productionReady": false,
+      "jobId": "3c328e1d-8742-4d88-b621-1e449ba91834",
+      "isolationRejected": true,
+      "visualFindings": "ไม่ผ่าน hair-only: มีผิวหน้าผากและเส้นคิ้วปะปน ทรงม่านแสกกลางต่างจากผมสั้น แต่ความยาวไม่ถึงบ๊อบตามสเปก"
+    },
+    {
+      "id": "ritual-knot",
+      "nameThai": "มวยผมพิธี",
+      "status": "technical-issues / visual-review-required",
+      "url": "/assets/character-v2/hair-front-pipeline-02/ritual-knot-raw.png",
+      "sha256": "7723455ea6bd6ac33bec2269f06c661ef765162165a1d7a53460bc50b6cee507",
+      "metrics": {
+        "visible": 320,
+        "colors": 12,
+        "scalpGaps": 146,
+        "protectedOverlap": 0,
+        "semitransparent": 0,
+        "outsideMask": 0,
+        "warmSkinLike": 22
+      },
+      "visualApproved": false,
+      "productionReady": false,
+      "jobId": "8bbcc047-2d6a-4b8c-9b0b-2e9dea8f638f",
+      "isolationRejected": true,
+      "visualFindings": "ไม่ผ่าน hair-only: มีผิวบริเวณไรผมปะปน และ scalp coverage ไม่ครบ มวยสูงอ่านออกแต่ยังใช้เปลี่ยนสีผมไม่ได้"
+    }
+  ],
+  "visualApproved": false
+}
