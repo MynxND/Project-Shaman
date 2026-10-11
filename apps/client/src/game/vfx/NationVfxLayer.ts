@@ -422,7 +422,11 @@ export class NationVfxLayer {
       if (!v || v.key !== key) { v?.img.destroy(); v = { img: this.image(key, 0), key, acts: s.acts, actAt: -1e9 }; this.summonViews.set(id, v); }
       if (s.acts !== v.acts) { v.acts = s.acts; v.actAt = now; }
       const sheet = this.sheets[key]!, acting = now - v.actAt < 700;
-      const frame = acting ? Math.min(sheet.frames - 1, Math.floor((now - v.actAt) / 700 * sheet.frames)) : Math.floor(now / 160) % Math.max(1, Math.ceil(sheet.frames / 3));
+      // Shikigami sheets idle on their first third; the slice-4 summons use their summon release art, which is only fully
+      // formed in its last frames, so those idle on the last four.
+      const formed = !!SUMMON_ART[s.kind];
+      const idle = formed ? sheet.frames - 4 + Math.floor(now / 180) % 4 : Math.floor(now / 160) % Math.max(1, Math.ceil(sheet.frames / 3));
+      const frame = acting && !formed ? Math.min(sheet.frames - 1, Math.floor((now - v.actAt) / 700 * sheet.frames)) : Math.max(0, idle);
       const x = s.x * U, y = s.y * U;
       v.img.setFrame(frame).setScale((s.great || s.kind === 'phayon-colossus' ? 0.7 : 0.55) * k).setAlpha(s.kind === 'shadow-clone' ? 0.7 : 1).setTint(s.kind === 'shadow-clone' ? 0x6a5a8a : 0xffffff).setFlipX(s.facing === 'west').setPosition(x, y + Math.sin(now / 300) * 2).setDepth(y).setVisible(true);
     }

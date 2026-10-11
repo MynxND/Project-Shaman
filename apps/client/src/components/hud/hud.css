@@ -357,7 +357,7 @@ button.hud-menu-item:focus-visible { outline: 2px solid var(--sk-jade); }
   background: #17302bdd; border: 1px solid #b8975088; text-shadow: 0 1px 0 #000; }
 
 /* Rune Seer queue (slice 2): above the hotbar on desktop, above the skill arc on touch. */
-.hud-runes { position: absolute; left: 50%; bottom: calc(var(--hud-bottom) + 92px); transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 2px;
+.hud-runes { position: absolute; left: 50%; bottom: calc(var(--hud-bottom) + 100px); transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 2px;
   padding: 3px 8px; background: #14272399; border: 1px solid #b8975066; border-radius: 10px; }
 .hud-runes small { font-size: 10px; color: #e8d9b0; text-shadow: 0 1px 0 #000; }
 .hud-runes ol { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
@@ -371,7 +371,7 @@ button.hud-menu-item:focus-visible { outline: 2px solid var(--sk-jade); }
 .hud-root[data-touch="true"] .hud-runes { left: auto; right: var(--hud-right); transform: none; bottom: calc(var(--hud-bottom) + 260px); }
 
 /* Onmyoji talisman ring and the local buff bar (slice 3). */
-.hud-gogyo { position: absolute; left: 50%; bottom: calc(var(--hud-bottom) + 92px); transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 2px;
+.hud-gogyo { position: absolute; left: 50%; bottom: calc(var(--hud-bottom) + 100px); transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 2px;
   padding: 3px 8px; background: #14272399; border: 1px solid #b8975066; border-radius: 10px; }
 .hud-gogyo ol { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
 .hud-gogyo li { min-width: 34px; padding: 2px 6px; text-align: center; border-radius: 6px; border: 1px solid; background: #f3ead2; font-weight: 700; font-size: 13px; text-shadow: 0 0 1px #0006; }
@@ -383,7 +383,7 @@ button.hud-menu-item:focus-visible { outline: 2px solid var(--sk-jade); }
 .hud-buffs li[data-debuff="true"] { color: #fff2ec; background: #a33a2ee6; border-color: #e07a6a; }
 
 /* Job gauge (slice 4): Juggernaut Guard / Keris pamor. */
-.hud-gauge { position: absolute; left: 50%; bottom: calc(var(--hud-bottom) + 92px); transform: translateX(-50%); width: 180px; padding: 3px 8px; background: #14272399; border: 1px solid #b8975066; border-radius: 10px; text-align: center; }
+.hud-gauge { position: absolute; left: 50%; bottom: calc(var(--hud-bottom) + 100px); transform: translateX(-50%); width: 180px; padding: 3px 8px; background: #14272399; border: 1px solid #b8975066; border-radius: 10px; text-align: center; }
 .hud-gauge small { font-size: 10px; color: #e8d9b0; text-shadow: 0 1px 0 #000; }
 .hud-gauge-bar { height: 6px; border-radius: 3px; background: #0d1a17; overflow: hidden; }
 .hud-gauge-bar span { display: block; height: 100%; transition: width .2s; }
