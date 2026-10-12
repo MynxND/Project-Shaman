@@ -11,7 +11,7 @@ import { joinGame, leaveRoom } from '../network/GameConnection';
 import { preloadMapAssets, renderMap } from '../world/MapRenderer';
 import { addContactShadow, addPlayerLight, DARKNESS_DEPTH } from '../world/Lighting';
 import { useSessionStore } from '@/stores/session-store';
-import { setMonsterProbe, setPlayersProbe } from '../runtime/local-player';
+import { setAttackProbe, setMonsterProbe, setPlayersProbe } from '../runtime/local-player';
 import { NpcLayer } from '../world/NpcLayer';
 import { CitizenLayer, preloadCitizens } from '../world/CitizenLayer';
 import { useNpcStore } from '@/stores/npc-store';
@@ -128,6 +128,7 @@ export class FoundationScene extends Phaser.Scene {
       this.generation += 1;
       setPlayersProbe(null);
       setMonsterProbe(null);
+      setAttackProbe(null);
       publishMapArt(null);
       window.clearTimeout(this.rejoinTimer);
       this.scale.off(Phaser.Scale.Events.RESIZE, resize);
@@ -192,6 +193,15 @@ export class FoundationScene extends Phaser.Scene {
         else others.push({ x: view.sprite.x / U, y: view.sprite.y / U });
       }
       return { self, others, count: this.players.size };
+    });
+    // Attack button / Q: the selected monster, else the nearest living one within 12 units; walk into reach, then attack.
+    setAttackProbe(() => {
+      const me = this.predicted, selected = useTargetStore.getState().targetId;
+      if (!me || !this.monsters) return false;
+      const id = selected && this.monsters.position(selected) ? selected : this.monsters.nearest(me, 12);
+      if (!id) return false;
+      this.engage(id);
+      return true;
     });
     setMonsterProbe((id) => { const m = this.room?.state?.monsters?.get(id); return m ? { kind: m.kind, hp: m.hp, hpMax: m.hpMax, dead: m.state === 'dead' } : null; });
     this.events.once(Phaser.Scenes.Events.SHUTDOWN, cleanup);

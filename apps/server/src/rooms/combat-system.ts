@@ -150,6 +150,8 @@ export class CombatSystem {
   }
 
   isDown(playerId: string) { return this.downUntil.has(playerId); }
+  /** Hit or attacked within the combat lock (REGEN.combatLockMs): no skill reset while fighting. */
+  inCombat(playerId: string) { return this.host.now() - (this.lastCombat.get(playerId) ?? -Infinity) < REGEN.combatLockMs || this.attacks.has(playerId); }
 
   /** Player asks to auto-attack a monster (repeats every BASIC_ATTACK.delayMs while in reach). */
   requestAttack(playerId: string, monsterId: string, at: Position): AttackError | null {

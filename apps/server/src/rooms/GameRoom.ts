@@ -2,7 +2,7 @@ import { Room, type Client } from '@colyseus/core';
 import { CitizenState, GameState, PlayerState } from '@shaman/schema';
 import { createCitizenMotion, stepCitizen, UMBRAL_CAPITAL, UMBRAL_CITIZENS, type CitizenMotion } from '@shaman/shared';
 import { acceptStopAt, getMap, isBlocked, isMovementInput, MAPS, migrateProfile, newProfile, parseBodyType, pointInRect, questEvent, stepMovement, type BodyType, type MapDefinition, type MovementInput, type PlayerProfile } from '@shaman/shared';
-import { advanceJob, castRule, castsWhileMoving, maxHpFor, maxSpFor, combatSpec, companionFor, FACINGS, JOB_PROGRESSION, advancementQuest, learnSkill, parseSkillCastRequest, skillAimPoint, skillCastError, type Facing, type SkillCastEvent } from '@shaman/shared';
+import { advanceJob, castRule, castsWhileMoving, maxHpFor, maxSpFor, combatSpec, companionFor, FACINGS, JOB_PROGRESSION, advancementQuest, learnSkill, resetSkills, parseSkillCastRequest, skillAimPoint, skillCastError, type Facing, type SkillCastEvent } from '@shaman/shared';
 import { parseNpcRequest, runNpcRequest } from './npc-services.js';
 import { CombatSystem } from './combat-system.js';
 import { consumeTicket, issueTicket, peekTicket } from './travel.js';
@@ -212,6 +212,16 @@ export class GameRoom extends Room<{ state: GameState }> {
       if (!profile) return;
       if (typeof skillId !== 'string') { this.sendProfile(client, profile, { ok: false, error: 'bad-request' }); return; }
       const out = learnSkill(profile, skillId);
+      if (!out.ok) { this.sendProfile(client, profile, { ok: false, error: out.error }); return; }
+      this.profiles.set(client.sessionId, out.profile);
+      this.sendProfile(client, out.profile, { ok: true, note: out.note });
+    });
+    // Skill book reset button: every learned level back to skill points for Silver (economy.ts SKILL_RESET, provisional price).
+    this.onMessage('skill:reset', (client) => {
+      const profile = this.profiles.get(client.sessionId);
+      if (!profile) return;
+      if (this.combat.inCombat(client.sessionId) || this.combat.isDown(client.sessionId)) { this.sendProfile(client, profile, { ok: false, error: 'in-combat' }); return; }
+      const out = resetSkills(profile);
       if (!out.ok) { this.sendProfile(client, profile, { ok: false, error: out.error }); return; }
       this.profiles.set(client.sessionId, out.profile);
       this.sendProfile(client, out.profile, { ok: true, note: out.note });

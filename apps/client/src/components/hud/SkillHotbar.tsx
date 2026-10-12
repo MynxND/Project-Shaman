@@ -7,6 +7,7 @@ import { useProfileStore } from '@/stores/profile-store';
 import { useSkillStore } from '@/stores/skill-store';
 import { openSkillTree } from './windows';
 import { RoundButton } from './RoundButton';
+import { engageTarget } from '@/game/runtime/local-player';
 
 // The current job's learned active skills (Medium, then the branch's tier 2 and 3; shared registry). A cast goes to
 // the server (cast time, walking interrupts, cooldown, SP) at the selected monster; numbers are provisional.
@@ -14,8 +15,9 @@ import { RoundButton } from './RoundButton';
 const KEYS = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
 /** Touch arc: the first skill sits in the corner, the rest on two quarter circles around it (px from that button). */
 const ARC = [...[180, 210, 240, 270].map((a) => ({ a, r: 124 })), ...[228, 249, 270].map((a) => ({ a, r: 196 }))];
-const NOTE = 'คลิกมอนสเตอร์เพื่อเลือกเป้าหมาย · K เปิดหน้าต่างสกิล · ตัวเลขทดลอง';
-const TOUCH_NOTE = 'แตะมอนสเตอร์เพื่อเล็ง';
+const NOTE = 'Q โจมตีปกติ · คลิกมอนสเตอร์เพื่อเลือกเป้าหมาย · K เปิดหน้าต่างสกิล';
+const TOUCH_NOTE = 'แตะมอนสเตอร์เพื่อเล็ง · ปุ่มดาบโจมตีปกติ';
+const ATTACK_ICON = '/assets/ui/skill-book/cat-attack.png';
 const RUNE_LETTER: Readonly<Record<TrapRune, string>> = { snare: 'ᚾ', freeze: 'ᛁ', blast: 'ᚦ', flash: 'ᛞ' };
 
 /** The Invoke slot (not a tree skill: Onmyō Seal unlocks it). */
@@ -44,8 +46,8 @@ export function SkillHotbar({ touch }: { touch: boolean }) {
   const sealed = (profile?.skills['onmyo-seal'] ?? 0) > 0;
   const all = sealed ? [...hotbarSkills(profile), INVOKE] : hotbarSkills(profile);
   const invokeSpell = heldSpell(held);
-  // Touch arcs hold 8 buttons; more skills are paged with the swap button.
-  const perPage = touch ? ARC.length + 1 : KEYS.length;
+  // Touch: the corner button is the basic attack and the arcs hold 7 skills; more skills are paged with the swap button.
+  const perPage = touch ? ARC.length : KEYS.length;
   const pages = Math.max(1, Math.ceil(all.length / perPage));
   const skills = all.slice((page % pages) * perPage, (page % pages) * perPage + perPage);
   const cooling = Object.values(readyAt).some((t) => t > performance.now());
@@ -56,8 +58,26 @@ export function SkillHotbar({ touch }: { touch: boolean }) {
     if (s.id !== 'invoke' && !((profile.skills[s.id] ?? 0) > 0)) { notify(`${skillLabel(s)} · ยังไม่ได้เรียน เปิดหน้าต่างสกิล (K)`, 'info'); return; }
     cast(s.id);
   };
-  const latest = useRef({ use, skills });
-  latest.current = { use, skills };
+  // Basic attack: the selected monster, else the nearest one (the scene walks into reach; the server decides the hits).
+  const attack = () => {
+    if (!profile) { notify('ยังไม่ได้เชื่อมต่อเซิร์ฟเวอร์', 'warn'); return; }
+    if (!engageTarget()) notify('ไม่มีมอนสเตอร์อยู่ใกล้ ๆ', 'info');
+  };
+  // Publish the desktop hotbar's top edge and centre so job panels (runes, talismans, gauges) sit just above it.
+  const bar = useRef<HTMLElement>(null);
+  useEffect(() => {
+    const el = bar.current;
+    if (!el || touch) return;
+    const root = document.documentElement;
+    const publish = () => { const r = el.getBoundingClientRect(); root.style.setProperty('--hud-hotbar-up', `${Math.ceil(window.innerHeight - r.top)}px`); root.style.setProperty('--hud-hotbar-cx', `${Math.round(r.left + r.width / 2)}px`); };
+    publish();
+    const observer = new ResizeObserver(publish);
+    observer.observe(el);
+    window.addEventListener('resize', publish);
+    return () => { observer.disconnect(); window.removeEventListener('resize', publish); root.style.removeProperty('--hud-hotbar-up'); root.style.removeProperty('--hud-hotbar-cx'); };
+  }, [touch]);
+  const latest = useRef({ use, skills, attack });
+  latest.current = { use, skills, attack };
 
   // Number keys cast the matching slot (ignored while typing).
   useEffect(() => {
@@ -65,6 +85,7 @@ export function SkillHotbar({ touch }: { touch: boolean }) {
       const t = e.target;
       if (t instanceof HTMLElement && (t.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(t.tagName))) return;
       if (e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
+      if (e.code === 'KeyQ') { e.preventDefault(); latest.current.attack(); return; }
       // Physical digit keys (Digit1..Digit0): a Thai layout types other characters on the number row.
       const i = e.code.startsWith('Digit') ? KEYS.indexOf(e.code.slice(5)) : e.code.startsWith('Numpad') ? KEYS.indexOf(e.code.slice(6)) : -1;
       const skill = i >= 0 ? latest.current.skills[i] : undefined;
@@ -100,15 +121,23 @@ export function SkillHotbar({ touch }: { touch: boolean }) {
       </span>
     );
   };
+  const attackButton = (className: string) => (
+    <span className={'hud-skill-wrap hud-attack ' + className}>
+      <RoundButton className="hud-skill-btn hud-attack-btn" icon={ATTACK_ICON} label="โจมตีปกติ · กด Q" disabled={!profile} onClick={attack}>
+        {!touch && <span className="hud-slot-key">Q</span>}
+      </RoundButton>
+    </span>
+  );
   if (touch) {
     return (
       <section className="hud-skill-arc" aria-label="ปุ่มสกิล">
         <span className="hud-skill-note">{TOUCH_NOTE}</span>
+        {attackButton('hud-skill hud-skill-main')}
         {skills.map((s, i) => {
-          const slot = ARC[i - 1];
-          const angle = ((slot?.a ?? 0) * Math.PI) / 180;
-          const style = i === 0 || !slot ? undefined : { '--dx': `${Math.round(-Math.cos(angle) * slot.r)}px`, '--dy': `${Math.round(-Math.sin(angle) * slot.r)}px` } as CSSProperties;
-          return button(s, i, i === 0 ? 'hud-skill hud-skill-main' : 'hud-skill', style);
+          const slot = ARC[i]!;
+          const angle = (slot.a * Math.PI) / 180;
+          const style = { '--dx': `${Math.round(-Math.cos(angle) * slot.r)}px`, '--dy': `${Math.round(-Math.sin(angle) * slot.r)}px` } as CSSProperties;
+          return button(s, i, 'hud-skill', style);
         })}
         <button type="button" className="hud-skill-tree-btn pointer-events-auto" onClick={openSkillTree} aria-label="เปิดหน้าต่างสกิล">สกิล</button>
         {pages > 1 && <button type="button" className="hud-skill-page-btn pointer-events-auto" onClick={() => setPage((n) => (n + 1) % pages)} aria-label={`สลับชุดสกิล หน้า ${(page % pages) + 1} จาก ${pages}`}>⟳ {(page % pages) + 1}/{pages}</button>}
@@ -116,8 +145,9 @@ export function SkillHotbar({ touch }: { touch: boolean }) {
     );
   }
   return (
-    <section className="hud-panel hud-hotbar pointer-events-auto" aria-label="แถบสกิล">
+    <section ref={bar} className="hud-panel hud-hotbar pointer-events-auto" aria-label="แถบสกิล">
       <div className="hud-hotbar-row">
+        {attackButton('hud-skill-slot')}
         {skills.map((s, i) => button(s, i, 'hud-skill-slot'))}
         {skills.length === 0 && <span className="sk-muted">ยังไม่มีสกิลใช้งาน · กด K เพื่อเรียน</span>}
       </div>

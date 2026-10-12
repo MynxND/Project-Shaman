@@ -20,3 +20,9 @@ export interface MonsterSnapshot { kind: string; hp: number; hpMax: number; dead
 let monsterProbe: ((id: string) => MonsterSnapshot | null) | null = null;
 export function setMonsterProbe(fn: ((id: string) => MonsterSnapshot | null) | null) { monsterProbe = fn; }
 export function readMonster(id: string): MonsterSnapshot | null { return monsterProbe?.(id) ?? null; }
+
+// Attack button / Q: the scene engages the selected monster, else the nearest living one (walks into reach first).
+// Returns false when there is nothing to attack.
+let attackProbe: (() => boolean) | null = null;
+export function setAttackProbe(fn: (() => boolean) | null) { attackProbe = fn; }
+export function engageTarget(): boolean { return attackProbe?.() ?? false; }

@@ -19,6 +19,8 @@ interface ProfileState {
   equip: (slot: string, itemId: string | null) => void;
   /** Learn / raise a skill from the skill tree window (server checks tier, branch, points, prerequisites). */
   learn: (skillId: string) => void;
+  /** Skill book reset: refund every learned level for Silver (server checks price and combat). */
+  resetSkills: () => void;
 }
 
 export const useProfileStore = create<ProfileState>((set, get) => ({
@@ -48,5 +50,11 @@ export const useProfileStore = create<ProfileState>((set, get) => ({
     if (!send) { useHudStore.getState().notify('ยังไม่ได้เชื่อมต่อเซิร์ฟเวอร์', 'warn'); return; }
     if (get().busy) return;
     set({ busy: true }); send('skill:learn', { skillId });
+  },
+  resetSkills: () => {
+    const send = get().send;
+    if (!send) { useHudStore.getState().notify('ยังไม่ได้เชื่อมต่อเซิร์ฟเวอร์', 'warn'); return; }
+    if (get().busy) return;
+    set({ busy: true }); send('skill:reset', {});
   },
 }));

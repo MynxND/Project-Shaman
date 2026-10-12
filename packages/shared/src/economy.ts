@@ -38,7 +38,7 @@ export const REFINE_MAX = 10;
 export type ServiceError =
   | 'unknown-item' | 'not-sold-here' | 'bad-quantity' | 'not-enough-silver' | 'too-heavy' | 'no-such-stack'
   | 'cannot-sell' | 'storage-full' | 'not-equipment' | 'refine-max' | 'missing-material' | 'skill-max'
-  | 'no-skill-points' | 'unknown-skill' | 'skill-locked' | 'prerequisite' | 'max-tier' | 'job-level-low' | 'job-quest-missing' | 'bad-branch' | 'quest-active' | 'quest-done' | 'quest-not-ready' | 'unknown-destination' | 'not-enough-gold' | 'bad-slot' | 'art-unavailable';
+  | 'no-skill-points' | 'unknown-skill' | 'skill-locked' | 'prerequisite' | 'max-tier' | 'job-level-low' | 'job-quest-missing' | 'bad-branch' | 'quest-active' | 'quest-done' | 'quest-not-ready' | 'unknown-destination' | 'not-enough-gold' | 'bad-slot' | 'art-unavailable' | 'nothing-to-reset' | 'in-combat';
 export type ServiceResult = { ok: true; profile: PlayerProfile; note?: string } | { ok: false; error: ServiceError };
 
 const ok = (profile: PlayerProfile, note?: string): ServiceResult => ({ ok: true, profile, ...(note ? { note } : {}) });
@@ -232,6 +232,25 @@ export function learnSkill(profile: PlayerProfile, skillId: string): ServiceResu
   p.skillPoints -= 1;
   return ok(p, `${skill.thaiName === skill.name ? skill.name : `${skill.thaiName} · ${skill.name}`} เลเวล ${level + 1}`);
 }
+/** Skill reset for Silver (user request 2026-10-12; price PROVISIONAL): every learned level goes back to the skill-point
+ *  pool except the free starting Spirit Bolt Lv 1 (newProfile). Cost = silverPerPoint × refunded points, at least minSilver. */
+export const SKILL_RESET = { silverPerPoint: 100, minSilver: 500, free: { 'spirit-bolt': 1 } as Readonly<Record<string, number>> };
+/** Points a reset would refund and its Silver price. */
+export function skillResetCost(profile: Pick<PlayerProfile, 'skills'>): { points: number; silver: number } {
+  let points = 0;
+  for (const [id, lv] of Object.entries(profile.skills)) points += Math.max(0, lv - (SKILL_RESET.free[id] ?? 0));
+  return { points, silver: points > 0 ? Math.max(SKILL_RESET.minSilver, points * SKILL_RESET.silverPerPoint) : 0 };
+}
+export function resetSkills(profile: PlayerProfile): ServiceResult {
+  const { points, silver } = skillResetCost(profile);
+  if (points <= 0) return fail('nothing-to-reset');
+  if (profile.silver < silver) return fail('not-enough-silver');
+  const p = clone(profile);
+  p.silver -= silver;
+  p.skills = Object.fromEntries(Object.entries(SKILL_RESET.free).filter(([id]) => (profile.skills[id] ?? 0) > 0));
+  p.skillPoints += points;
+  return ok(p, `รีเซ็ตสกิลแล้ว · ได้แต้มสกิลคืน ${points} แต้ม · จ่าย ${silver.toLocaleString()} Silver`);
+}
 /** Migrates an older saved profile (job fields) — call on every profile entering a room. */
 export function migrateProfile(profile: PlayerProfile): PlayerProfile { return migrateJobProfile(profile); }
 
@@ -412,7 +431,7 @@ export const SERVICE_ERROR_TH: Readonly<Record<ServiceError | 'too-far' | 'bad-r
   'unknown-item': 'ไม่รู้จักไอเทมนี้', 'not-sold-here': 'ร้านนี้ไม่ได้ขายของชิ้นนี้', 'bad-quantity': 'จำนวนไม่ถูกต้อง',
   'not-enough-silver': 'Silver ไม่พอ', 'too-heavy': 'ของหนักเกินกว่าจะแบกไหว', 'no-such-stack': 'ไม่พบไอเทมนี้แล้ว',
   'cannot-sell': 'ของชิ้นนี้ขายไม่ได้', 'storage-full': 'คลังเต็มแล้ว', 'not-equipment': 'ลงอาคมได้เฉพาะอุปกรณ์',
-  'refine-max': 'ลงอาคมถึงระดับสูงสุดแล้ว', 'missing-material': 'แร่ทมิฬไม่พอ', 'skill-max': 'สกิลนี้เลเวลสูงสุดแล้ว',
+  'refine-max': 'ลงอาคมถึงระดับสูงสุดแล้ว', 'missing-material': 'แร่ทมิฬไม่พอ', 'skill-max': 'สกิลนี้เลเวลสูงสุดแล้ว', 'nothing-to-reset': 'ยังไม่มีแต้มสกิลให้รีเซ็ต', 'in-combat': 'กำลังต่อสู้อยู่ ออกจากการต่อสู้ก่อน (5 วินาที)',
   'no-skill-points': 'แต้มสกิลไม่พอ', 'unknown-skill': 'ไม่รู้จักสกิลนี้', 'quest-active': 'รับภารกิจนี้อยู่แล้ว',
   'quest-done': 'ทำภารกิจนี้สำเร็จแล้ว', 'quest-not-ready': 'ยังไม่มีภารกิจให้', 'unknown-destination': 'ไม่รู้จักจุดหมายนี้',
   'too-far': 'อยู่ไกลเกินไป เดินเข้าไปใกล้อีกหน่อย', 'bad-request': 'คำขอไม่ถูกต้อง',

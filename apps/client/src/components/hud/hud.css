@@ -390,3 +390,15 @@ button.hud-menu-item:focus-visible { outline: 2px solid var(--sk-jade); }
 .hud-root[data-touch="true"] .hud-gauge { left: auto; right: var(--hud-right); transform: none; bottom: calc(var(--hud-bottom) + 260px); }
 /* Current Character V3 model in the portrait arch (PlayerPortrait canvas, 128 px frame). */
 .hud-portrait-window .player-portrait canvas { position: absolute; width: 128px; height: 128px; left: -47px; top: -14px; image-rendering: pixelated; }
+/* Basic attack button (Q / touch corner): crimson disc behind the PixelLab crossed-blades icon. */
+.hud-attack .hud-round-icon { background: radial-gradient(circle, #7a2418, #2a0c08 70%); }
+.hud-attack.hud-skill-main::after { box-shadow: 0 0 12px 3px #d9533f88; }
+/* Non-touch windows: the hotbar (attack + skills) sits centred in the free space between chat (330 px) and the minimap
+   (236 px) and wraps to a second row instead of sliding under either panel. */
+@media (min-width: 701px) {
+  .hud-root:not([data-touch="true"]) .hud-hotbar { --hud-free-l: calc(var(--hud-left) + 340px); --hud-free-r: calc(var(--hud-right) + 246px);
+    left: calc((var(--hud-free-l) + 100vw - var(--hud-free-r)) / 2); max-width: calc(100vw - var(--hud-free-l) - var(--hud-free-r)); }
+  .hud-root:not([data-touch="true"]) .hud-hotbar-row { flex-wrap: wrap; justify-content: center; }
+}
+/* Job panels follow the published hotbar edge (SkillHotbar) on non-touch windows, so a two-row hotbar never covers them. */
+.hud-root:not([data-touch="true"]) :is(.hud-runes, .hud-gogyo, .hud-gauge) { left: var(--hud-hotbar-cx, 50%); bottom: calc(var(--hud-hotbar-up, 100px) + 6px); }

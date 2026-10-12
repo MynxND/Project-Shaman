@@ -2,7 +2,7 @@
 import { useEffect, useState, type CSSProperties } from 'react';
 import {
   castRule, combatSpec, findBranch, JOB_PROGRESSION, jobExpToNext, learnError, NATION_SKILL_INDEX, SERVICE_ERROR_TH, skillElement,
-  skillLevelText, skillRange, type JobTier, type PlayerProfile, type TreeSkill,
+  skillLevelText, skillRange, skillResetCost, type JobTier, type PlayerProfile, type TreeSkill,
 } from '@shaman/shared';
 import { PlayerPortrait } from '@/components/character/PlayerPortrait';
 import { inGame, isActive, jobTitle, jobTrees, NATION_TH, useSkillTexts, type SkillEffect, type SkillText } from '@/game-data/skill-catalog';
@@ -137,11 +137,13 @@ export function SkillTreeWindow() {
   const { close, tier: picked, setTier } = useSkillTreeStore();
   const profile = useProfileStore((s) => s.profile);
   const learn = useProfileStore((s) => s.learn);
+  const resetSkills = useProfileStore((s) => s.resetSkills);
   const busy = useProfileStore((s) => s.busy);
   const texts = useSkillTexts();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [category, setCategory] = useState<Category>('all');
   const [help, setHelp] = useState(false);
+  const [confirmReset, setConfirmReset] = useState(false);
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') close(); };
     window.addEventListener('keydown', onKey);
@@ -181,6 +183,7 @@ export function SkillTreeWindow() {
     { id: 'passive', th: 'สกิลพาสซีฟ', en: 'Passive Skills', skills: shown.filter((k) => !isActive(k)) },
   ].filter((g) => g.skills.length);
   const selected = tree.skills.find((k) => k.id === selectedId) ?? shown[0] ?? tree.skills[0]!;
+  const reset = skillResetCost(profile);
   const node = (k: TreeSkill) => <SkillNode key={k.id} k={k} profile={profile} text={texts[k.id]} selected={k.id === selected.id} locked={!tree.unlocked} busy={busy}
     onSelect={() => setSelectedId(k.id)} onLearn={() => { setSelectedId(k.id); learn(k.id); }} />;
 
@@ -198,6 +201,8 @@ export function SkillTreeWindow() {
       </div>
       <div className="sb-actions">
         <span className="sb-points" title="แต้มสกิลคงเหลือ"><span aria-hidden>✦</span> แต้มสกิล <b>{profile.skillPoints}</b></span>
+        <button type="button" className="sb-reset-btn" onClick={() => setConfirmReset(true)} disabled={busy || reset.points === 0}
+          title={reset.points ? `รีเซ็ตสกิลทั้งหมด · ${reset.silver.toLocaleString()} Silver` : 'ยังไม่มีแต้มสกิลให้รีเซ็ต'}><span aria-hidden>↻</span> รีเซ็ต</button>
         <button type="button" className="sb-help-btn" onClick={() => setHelp((v) => !v)} aria-expanded={help} aria-label="วิธีใช้คัมภีร์สกิล">?</button>
       </div>
     </header>
@@ -245,6 +250,18 @@ export function SkillTreeWindow() {
       ))}
     </section>
 
+    {confirmReset && <div className="sb-confirm" role="alertdialog" aria-labelledby="sb-confirm-title">
+      <div className="sb-confirm-box">
+        <h4 id="sb-confirm-title">รีเซ็ตสกิลทั้งหมด?</h4>
+        <p>ทุกสกิลที่เรียนไว้จะกลับเป็นเลเวล 0 (ยกเว้น Spirit Bolt Lv 1 ที่ได้ฟรีตอนเริ่ม) และได้แต้มสกิลคืน <b>{reset.points}</b> แต้ม</p>
+        <p className="sb-confirm-cost">ค่ารีเซ็ต <b>{reset.silver.toLocaleString()} Silver</b> · มีอยู่ {profile.silver.toLocaleString()} Silver</p>
+        {profile.silver < reset.silver && <p className="sb-why">Silver ไม่พอ</p>}
+        <div className="sb-confirm-actions">
+          <button type="button" onClick={() => setConfirmReset(false)}>ยกเลิก</button>
+          <button type="button" className="sb-confirm-ok" disabled={busy || profile.silver < reset.silver} onClick={() => { resetSkills(); setConfirmReset(false); }}>ยืนยันรีเซ็ต</button>
+        </div>
+      </div>
+    </div>}
     <SkillDetail key={selected.id} k={selected} profile={profile} text={texts[selected.id]} busy={busy} onLearn={() => learn(selected.id)} />
     <img className="sb-tassel sb-tassel-l sk-pixel" src={`${ART}/talisman-strip.png`} alt="" aria-hidden />
     <img className="sb-tassel sb-tassel-r sk-pixel" src={`${ART}/talisman-strip.png`} alt="" aria-hidden />

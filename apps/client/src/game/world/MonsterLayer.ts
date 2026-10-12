@@ -247,6 +247,17 @@ export class MonsterLayer {
     return v && !v.dead ? { x: v.sprite.x / WORLD_UNIT_PX, y: v.sprite.y / WORLD_UNIT_PX } : null;
   }
 
+  /** Nearest living monster within `maxDist` world units of `from` (attack button with no target). */
+  nearest(from: { x: number; y: number }, maxDist: number): string | null {
+    let best: string | null = null, bestD = maxDist;
+    for (const [id, v] of this.views) {
+      if (v.dead) continue;
+      const d = Math.hypot(v.sprite.x / WORLD_UNIT_PX - from.x, v.sprite.y / WORLD_UNIT_PX - from.y);
+      if (d <= bestD) { best = id; bestD = d; }
+    }
+    return best;
+  }
+
   private destroyView(v: View) { v.sprite.destroy(); v.shadow.destroy(); v.ring.destroy(); v.label.destroy(); v.bar.destroy(); }
   destroy() { for (const v of this.views.values()) this.destroyView(v); this.views.clear(); }
 }
