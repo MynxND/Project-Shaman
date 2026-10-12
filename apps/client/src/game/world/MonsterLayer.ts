@@ -176,6 +176,8 @@ export class MonsterLayer {
       if (at) this.floatText(at.x, at.y - 52, `+${e.amount}`, '#8dffb0', 13);
     } else if (e.type === 'projectile') {
       this.projectile(e.from, e.to, e.flightMs);
+    } else if (e.type === 'bolt') {
+      this.bolt(e.from, e.to, e.flightMs);
     } else if (e.type === 'telegraph') {
       this.telegraph(e.x * WORLD_UNIT_PX, e.y * WORLD_UNIT_PX, e.radius * WORLD_UNIT_PX, e.ms);
     } else if (e.type === 'summon') {
@@ -206,6 +208,20 @@ export class MonsterLayer {
     const parts = [core, ...(glow ? [glow] : [])];
     for (const p of parts) p.setDepth(DARKNESS_DEPTH + 1);
     this.scene.tweens.add({ targets: parts, x: to.x, y: to.y - 26, duration: Math.max(120, flightMs), ease: 'Sine.easeIn',
+      onComplete: () => { for (const p of parts) p.destroy(); } });
+  }
+
+  /** A magic weapon's basic attack: a spirit bolt from the player's hand height to the monster (violet glow + core). */
+  private bolt(fromId: string, toId: string, flightMs: number) {
+    const from = this.hooks.playerAt(fromId), to = this.monsterAt(toId);
+    if (!from || !to) return;
+    const glow = this.scene.textures.exists('light:glow')
+      ? this.scene.add.image(from.x, from.y - 34, 'light:glow').setTint(0x9fb8ff).setBlendMode(Phaser.BlendModes.ADD).setDisplaySize(24, 24)
+      : null;
+    const core = this.scene.add.ellipse(from.x, from.y - 34, 6, 6, 0xeef2ff, 1);
+    const parts = [core, ...(glow ? [glow] : [])];
+    for (const p of parts) p.setDepth(DARKNESS_DEPTH + 1);
+    this.scene.tweens.add({ targets: parts, x: to.x, y: to.y - 30, duration: Math.max(100, flightMs), ease: 'Sine.easeOut',
       onComplete: () => { for (const p of parts) p.destroy(); } });
   }
 
@@ -274,5 +290,6 @@ export type CombatEventLike =
   | { type: 'telegraph'; source: string; x: number; y: number; radius: number; ms: number }
   | { type: 'summon'; source: string; ids: string[] }
   | { type: 'arrow'; from: string; to: string; flightMs: number }
+  | { type: 'bolt'; from: string; to: string; flightMs: number }
   | { type: 'status'; target: string; status: string; ms: number; source: string }
   | { type: 'skillfx'; caster: string; skillId: string; targetId?: string; x?: number; y?: number; variant?: string };

@@ -1,6 +1,6 @@
 import { MonsterState, type GameState } from '@shaman/schema';
 import {
-  addLoot, atkFor, expShares, SHARED_EXP, basicAttackFor, combatSpec, combatStats, isBlocked, BASIC_ATTACK, bindingSlow, HUNTER, NATION_SKILL_COMBAT, skillRange, createMonster, gainExp, gainJobExp, JOB_PROGRESSION, ITEMS, magicDamage, matkFor, MONSTERS, physicalDamage,
+  addLoot, atkFor, expShares, MAGIC_BOLT, SHARED_EXP, basicAttackFor, combatSpec, combatStats, isBlocked, BASIC_ATTACK, bindingSlow, HUNTER, NATION_SKILL_COMBAT, skillRange, createMonster, gainExp, gainJobExp, JOB_PROGRESSION, ITEMS, magicDamage, matkFor, MONSTERS, physicalDamage,
   pickSpawnPoint, PLAYER_RESPAWN_MS, pointInRect, provokeMonster, questEvent, REGEN, REGEN_TICK_MS, SKILL_COMBAT, skillDamage,
   soulHealAmount, stepMonster, type MapDefinition, type MonsterStatus, type MonsterMotion, type PlayerProfile, type Position, type SpawnRegion,
 } from '@shaman/shared';
@@ -27,6 +27,8 @@ export type CombatEvent =
   | { type: 'summon'; source: string; ids: string[] }
   /** A Hunter's bow shot (basic attack): flies from the player to the monster in `flightMs`. */
   | { type: 'arrow'; from: string; to: string; flightMs: number }
+  /** Magic weapon basic attack: a spirit bolt from a player to a monster (MAGIC_BOLT). */
+  | { type: 'bolt'; from: string; to: string; flightMs: number }
   /** A status landed on a monster (floating label / icon). */
   | { type: 'status'; target: string; status: MonsterStatus; ms: number; source: string }
   /** Secondary skill presentation (falcon auto-dive, volley arrows, trap bursts) played with the skill's VFX. */
@@ -427,6 +429,14 @@ export class CombatSystem {
       host.broadcast({ type: 'swing', attacker: { kind: 'player', id: pid }, target: { kind: 'monster', id: m.id } });
       // Blind (a monster debuff) makes half of the blows miss.
       if (this.japan.misses(pid)) { host.broadcast({ type: 'damage', target: { kind: 'monster', id: m.id }, amount: 0, source: pid }); continue; }
+      if (basic.bolt) {
+        // Magic weapon: a spirit bolt (MATK vs MDEF) that lands when it arrives.
+        const flightMs = Math.round(d / MAGIC_BOLT.speed * 1000);
+        host.broadcast({ type: 'bolt', from: pid, to: m.id, flightMs });
+        const matk = combatStats(profile).matk;
+        this.pending.push({ at: now + flightMs, run: () => { if (m.state !== 'dead') this.damageMonster(m, magicDamage(matk, MONSTERS[m.kind]!.mdef, host.rng()), pid); } });
+        continue;
+      }
       if (basic.ranged) {
         // Bow shot: damage lands when the arrow arrives (the falcon may follow it, Falcon Bond).
         const flightMs = Math.round(d / HUNTER.arrowSpeed * 1000);

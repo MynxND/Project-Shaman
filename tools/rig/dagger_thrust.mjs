@@ -108,7 +108,8 @@ for (const dir of Object.keys(IDLE)) {
   await writeFile(p(`${OUT}${dir}-poses.json`), JSON.stringify(poses.map((j) => Object.fromEntries(Object.entries(j).map(([k, v]) => [k, v.map((x) => Math.round(x * 10) / 10)])))));
   await writeFile(p(`${OUT}${dir}-request.json`), JSON.stringify({
     description: 'headless body only, ends at a short neck stump with nothing above it; a wavy dark keris dagger gripped in each closed fist, blades pointing forward, knees bent in a low fighting stance; off-white short-sleeved shirt, crossed brown straps, crimson sash, yellow paper talisman at the hip, small amber gourd, charcoal baggy knee shorts, white wraps, brown sandals; no effects, no slash trails',
-    action: 'low crouched silat stance, fast alternating stabs: the right keris stabs and returns to the hip, then the left keris stabs and returns, guard hand raised', direction: dir, view: 'low top-down',
+    // `action` is limited to 100 characters by PixelLab.
+    action: 'crouched silat stance, alternating right then left keris stabs', direction: dir, view: 'low top-down',
     first_frame_base64: reference.toString('base64'), first_frame_keypoints: kp(dir, IDLE[dir]), keypoints: poses.map((j) => kp(dir, j)),
     template_id: 'mannequin', no_background: true,
   }));

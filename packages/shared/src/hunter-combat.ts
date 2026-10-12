@@ -7,6 +7,7 @@ import { atkFor, FLAT_ATK_SCALE, matkFor } from './combat.js';
 import { ITEMS } from './catalog.js';
 import type { PlayerProfile } from './economy.js';
 import { NATION_COMPANIONS } from './skills-norway.js';
+import { EQUIPMENT_VISUALS, MAGIC_BOLT } from './equipment.js';
 
 /** Derived combat numbers for a profile (provisional until the stat system exists). */
 export interface CombatStats { atk: number; matk: number; dex: number; int: number; luk: number }
@@ -114,8 +115,11 @@ export function castsWhileMoving(skillId: string, skills: Readonly<Record<string
   return ARROW_SKILLS.has(skillId) && (skills['hunters-stride'] ?? 0) > 0;
 }
 
-/** Basic attack reach (units) and delay (ms) for a profile: Ullr Hunters shoot a bow. */
-export function basicAttackFor(p: Pick<PlayerProfile, 'branch' | 'skills'>, melee: { range: number; delayMs: number }): { range: number; delayMs: number; ranged: boolean } {
+/** Basic attack reach (units) and delay (ms) for a profile: Ullr Hunters shoot a bow; a magic weapon (EQUIPMENT_VISUALS
+ *  `bolt`: staffs, wand, fan, gohei) casts a spirit bolt from range; everything else strikes in melee. */
+export function basicAttackFor(p: Pick<PlayerProfile, 'branch' | 'skills'> & { equipment?: PlayerProfile['equipment'] }, melee: { range: number; delayMs: number }): { range: number; delayMs: number; ranged: boolean; bolt?: boolean } {
+  const weapon = p.equipment?.weapon ? EQUIPMENT_VISUALS[p.equipment.weapon] : undefined;
+  if (p.branch !== 'ullr-hunter' && weapon?.kind === 'weapon' && weapon.bolt) return { range: MAGIC_BOLT.range, delayMs: melee.delayMs, ranged: true, bolt: true };
   if (p.branch !== 'ullr-hunter') return { ...melee, ranged: false };
   const lv = p.skills['bow-mastery'] ?? 0;
   return { range: HUNTER.basicRange + HUNTER.bowRange(lv), delayMs: Math.round(melee.delayMs / HUNTER.bowAspd(lv)), ranged: true };

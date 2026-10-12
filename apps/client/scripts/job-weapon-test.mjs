@@ -3,7 +3,7 @@
 // listed weapon has art for all 8 facings and V3 hand anchors cover every frame. Run after `pnpm build`.
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
-import { advanceJobWithWeapon, BRANCH_WEAPONS, EQUIPMENT_VISUALS, ITEMS, JOB_PROGRESSION, migrateProfile, newProfile, WHISPERING_SPIRITWOOD } from '../../../packages/shared/dist/index.js';
+import { advanceJobWithWeapon, BASIC_ATTACK, basicAttackFor, BRANCH_WEAPONS, MAGIC_BOLT, EQUIPMENT_VISUALS, ITEMS, JOB_PROGRESSION, migrateProfile, newProfile, WHISPERING_SPIRITWOOD } from '../../../packages/shared/dist/index.js';
 
 const FACINGS = ['south', 'south-east', 'east', 'north-east', 'north', 'north-west', 'west', 'south-west'];
 const ready = (p) => ({ ...structuredClone(p), jobLevel: JOB_PROGRESSION.advanceAt[1], quests: { ...p.quests, 'job-apprentice-trial': { step: 99, done: true } } });
@@ -21,6 +21,13 @@ for (const [branch, id] of Object.entries(BRANCH_WEAPONS)) {
   const legacy = { ...structuredClone(out.profile), stacks: out.profile.stacks.filter((s) => s.itemId !== id), equipment: { weapon: 'staff-bell' } };
   assert.equal(migrateProfile(legacy).equipment.weapon, id, 'characters that advanced earlier receive it on load');
 }
+// Basic attack follows the weapon: magic weapons cast a bolt from range, blades stay melee, the hunter keeps the bow.
+const attackWith = (weapon, branch = 'keris') => basicAttackFor({ branch, skills: {}, equipment: weapon ? { weapon } : {} }, BASIC_ATTACK);
+assert.deepEqual([attackWith('staff-rune-seer').bolt, attackWith('staff-rune-seer').range], [true, MAGIC_BOLT.range], 'staff = spirit bolt from range');
+assert.equal(attackWith('staff-bell').bolt, true, 'starter staff casts too');
+assert.equal(attackWith('keris').ranged, false, 'keris is melee');
+assert.equal(attackWith(null).range, BASIC_ATTACK.range, 'bare hands are melee');
+assert.equal(attackWith('bow-ullr', 'ullr-hunter').bolt, undefined, 'hunter shoots arrows');
 const anchors = JSON.parse(readFileSync(new URL('../public/assets/character-v3/hand-anchors.json', import.meta.url), 'utf8'));
 for (const action of ['idle', 'walk', 'attack', 'cast']) for (const f of FACINGS) for (const e of anchors.actions[action][f]) assert.ok(e.main && e.off && e.neck, `${action} ${f} has both hands`);
-console.log(`job weapons: ${Object.keys(BRANCH_WEAPONS).length} branch weapon(s) granted at job change and on load, art for 8 facings, V3 hand anchors complete`);
+console.log(`job weapons: ${Object.keys(BRANCH_WEAPONS).length} branch weapon(s) granted at job change and on load, art for 8 facings, V3 hand anchors complete, weapon-based basic attack range`);

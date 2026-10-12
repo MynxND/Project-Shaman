@@ -40,7 +40,8 @@ const addPlayer = (w, id, level, extra = {}) => {
 // 1b. Two players share a kill in the real combat system.
 {
   const w = world();
-  const a = addPlayer(w, 'a', 20), b = addPlayer(w, 'b', 20);
+  // Bare-handed (melee) so both blows land in the same tick; magic weapons would fire bolts with a flight time.
+  const a = addPlayer(w, 'a', 20, { equipment: {} }), b = addPlayer(w, 'b', 20, { equipment: {} });
   const m = [...w.combat.monsters.values()].find((x) => x.kind === 'cursed-strawling');
   a.x = b.x = m.x - 1; a.y = b.y = m.y;
   const exp0 = { a: w.profiles.get('a').exp, b: w.profiles.get('b').exp };
