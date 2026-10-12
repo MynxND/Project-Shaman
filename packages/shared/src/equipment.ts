@@ -15,8 +15,9 @@ export type VisualSlot = (typeof VISUAL_SLOTS)[number];
 export type EquipmentVisual =
   /** Swaps the body sprite set (docs/design/rig/raw/<body>/<outfit>/...). */
   | { slot: 'body'; kind: 'outfit'; outfit: string }
-  /** Main-hand weapon; `grip` is where the hand holds it, as a fraction of the image height from the top. */
-  | { slot: 'weapon'; kind: 'weapon'; grip: number; scale?: number }
+  /** Main-hand weapon; `grip` is where the hand holds it, as a fraction of the image height from the top. `offhand`
+   *  names extra art held in the other hand (Juggernaut's shield, the Keris branch's second keris), with its own grip. */
+  | { slot: 'weapon'; kind: 'weapon'; grip: number; scale?: number; offhand?: { art: string; grip: number; scale?: number } }
   /** Headgear on the crown; `lift` moves it along the head axis (rig pixels, + = down onto the head). */
   | { slot: 'head'; kind: 'headgear'; lift: number; scale?: number };
 
@@ -29,8 +30,16 @@ export const EQUIPMENT_VISUALS: Readonly<Record<string, EquipmentVisual>> = {
   // Do not expose an outfit until identity-preserving garment art is reviewed.
   'staff-bell': { slot: 'weapon', kind: 'weapon', grip: 0.62 },
   'staff-bone': { slot: 'weapon', kind: 'weapon', grip: 0.62 },
+  // Job weapons (user-approved list 2026-10-12, PixelLab create_object_pro_flash 8 views, docs/design/equipment/items.json).
+  'axe-taiga': { slot: 'weapon', kind: 'weapon', grip: 0.72, scale: 0.7 },
   'hat-ngob': { slot: 'head', kind: 'headgear', lift: 18, scale: 0.9 },
   'hat-ritual': { slot: 'head', kind: 'headgear', lift: 34, scale: 0.75 },
+};
+
+/** Each branch's job weapon, given by the trainer at the job change (and to characters that changed job before the
+ *  weapon existed). Only branches whose art is packaged are listed; the rest are added as their art is approved. */
+export const BRANCH_WEAPONS: Readonly<Record<string, string>> = {
+  taiga: 'axe-taiga',
 };
 
 /** What a player wears, as synced in PlayerState.look: "slot:itemId" pairs joined by commas. */

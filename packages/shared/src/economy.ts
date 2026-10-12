@@ -5,8 +5,8 @@ import { ITEMS, SHOPS } from './catalog.js';
 import type { InventoryStack } from './items.js';
 import type { Position } from './world.js';
 import { gainExp, maxHpFor, maxSpFor } from './combat.js';
-import { EQUIPMENT_VISUALS } from './equipment.js';
-import { learnError, migrateJobProfile, PROFILE_VERSION, type JobProfile } from './job-progression.js';
+import { BRANCH_WEAPONS, EQUIPMENT_VISUALS } from './equipment.js';
+import { advanceJob, learnError, migrateJobProfile, PROFILE_VERSION, type JobError, type JobProfile } from './job-progression.js';
 import { NATION_BRANCHES, SKILL_TREE, type JobTier } from './skill-registry.js';
 
 /** `count` tracks kills toward the current 'kill' step. */
@@ -252,7 +252,26 @@ export function resetSkills(profile: PlayerProfile): ServiceResult {
   return ok(p, `รีเซ็ตสกิลแล้ว · ได้แต้มสกิลคืน ${points} แต้ม · จ่าย ${silver.toLocaleString()} Silver`);
 }
 /** Migrates an older saved profile (job fields) — call on every profile entering a room. */
-export function migrateProfile(profile: PlayerProfile): PlayerProfile { return migrateJobProfile(profile); }
+export function migrateProfile(profile: PlayerProfile): PlayerProfile { return grantBranchWeapon(migrateJobProfile(profile)).profile; }
+
+/** Gives the branch's job weapon (BRANCH_WEAPONS) if the character has a branch and does not own it yet, and wears it
+ *  when the weapon hand holds nothing or the starter staff. Returns the item given, if any. */
+export function grantBranchWeapon(profile: PlayerProfile): { profile: PlayerProfile; given: string | null } {
+  const id = profile.branch ? BRANCH_WEAPONS[profile.branch] : undefined;
+  if (!id || !ITEMS[id] || profile.stacks.some((s) => s.itemId === id) || profile.storage.some((s) => s.itemId === id)) return { profile, given: null };
+  const p = clone(profile);
+  addItem(p, id, 1, 0);
+  if (!p.equipment.weapon || p.equipment.weapon === 'staff-bell') p.equipment = { ...p.equipment, weapon: id };
+  return { profile: p, given: id };
+}
+/** Job change at the trainer (job-progression.ts rules) plus the new branch's job weapon. */
+export function advanceJobWithWeapon(profile: PlayerProfile, branch?: string): { ok: true; profile: PlayerProfile; note: string } | { ok: false; error: JobError } {
+  const a = advanceJob(profile, branch);
+  if (!a.ok) return a;
+  const g = grantBranchWeapon(a.profile);
+  const name = g.given ? ITEMS[g.given]?.name.th : null;
+  return { ok: true, profile: g.profile, note: `เปลี่ยนอาชีพสำเร็จ · ขั้น ${g.profile.jobTier}${g.profile.branch ? ` · ${g.profile.branch}` : ''} · Job Lv 1${name ? ` · ได้รับ${name}` : ''}` };
+}
 
 // ---- Quests ----
 export type QuestStep = { kind: 'visit'; x: number; y: number; r: number; label: string; mapId?: string } | { kind: 'talk'; npc: string; label: string }

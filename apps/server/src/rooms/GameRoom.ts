@@ -2,7 +2,7 @@ import { Room, type Client } from '@colyseus/core';
 import { CitizenState, GameState, PlayerState } from '@shaman/schema';
 import { createCitizenMotion, stepCitizen, UMBRAL_CAPITAL, UMBRAL_CITIZENS, type CitizenMotion } from '@shaman/shared';
 import { acceptStopAt, getMap, isBlocked, isMovementInput, MAPS, migrateProfile, newProfile, parseBodyType, pointInRect, questEvent, stepMovement, type BodyType, type MapDefinition, type MovementInput, type PlayerProfile } from '@shaman/shared';
-import { advanceJob, castRule, castsWhileMoving, maxHpFor, maxSpFor, combatSpec, companionFor, FACINGS, JOB_PROGRESSION, advancementQuest, learnSkill, resetSkills, parseSkillCastRequest, skillAimPoint, skillCastError, type Facing, type SkillCastEvent } from '@shaman/shared';
+import { advanceJobWithWeapon, castRule, castsWhileMoving, maxHpFor, maxSpFor, combatSpec, companionFor, FACINGS, JOB_PROGRESSION, advancementQuest, learnSkill, resetSkills, parseSkillCastRequest, skillAimPoint, skillCastError, type Facing, type SkillCastEvent } from '@shaman/shared';
 import { parseNpcRequest, runNpcRequest } from './npc-services.js';
 import { CombatSystem } from './combat-system.js';
 import { consumeTicket, issueTicket, peekTicket } from './travel.js';
@@ -260,7 +260,7 @@ export class GameRoom extends Room<{ state: GameState }> {
       const profile = this.profiles.get(client.sessionId);
       const branch = (message as { branch?: unknown } | null)?.branch;
       if (!profile) return;
-      const out = advanceJob(profile, typeof branch === 'string' ? branch : undefined);
+      const out = advanceJobWithWeapon(profile, typeof branch === 'string' ? branch : undefined);
       if (!out.ok) { this.sendProfile(client, profile, { ok: false, error: out.error }); return; }
       this.profiles.set(client.sessionId, out.profile);
       this.sendProfile(client, out.profile, { ok: true, note: 'โหมดทดสอบ: เปลี่ยนอาชีพแล้ว' });

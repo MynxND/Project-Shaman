@@ -1,5 +1,5 @@
 import {
-  acceptQuest, advanceJob, buy, exchangeGold, heal, isBlocked, learnSkill, moveStack, NPC_TALK_RANGE, QUESTS, questEvent, refine, sell, setSavePoint, teleport,
+  acceptQuest, advanceJobWithWeapon, buy, exchangeGold, heal, isBlocked, learnSkill, moveStack, NPC_TALK_RANGE, QUESTS, questEvent, refine, sell, setSavePoint, teleport,
   type MapDefinition, type NpcDefinition, type PlayerProfile, type Position, type ServiceResult,
 } from '@shaman/shared';
 
@@ -81,8 +81,9 @@ export function runNpcRequest(map: MapDefinition, profile: PlayerProfile, at: Po
     case 'save': result = setSavePoint(profile, at); break;
     case 'learn': result = learnSkill(profile, req.skillId); break;
     case 'advance': {
-      const a = advanceJob(profile, req.branch);
-      result = a.ok ? { ok: true, profile: a.profile, note: `เปลี่ยนอาชีพสำเร็จ · ขั้น ${a.profile.jobTier}${a.profile.branch ? ` · ${a.profile.branch}` : ''} · Job Lv 1` } : { ok: false, error: a.error };
+      // Job change plus the branch's job weapon (economy.ts advanceJobWithWeapon).
+      const a = advanceJobWithWeapon(profile, req.branch);
+      result = a.ok ? { ok: true, profile: a.profile, note: a.note } : { ok: false, error: a.error };
       break;
     }
     case 'accept':

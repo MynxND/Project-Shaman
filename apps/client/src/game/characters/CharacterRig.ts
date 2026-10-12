@@ -1,6 +1,7 @@
 import Phaser from 'phaser';
 import { decodeHead, decodeLook, isExpression, outfitOf, type Look } from '@shaman/shared';
 import { EquipmentLayers, MODULAR_KEY, preloadModularRig, rigKey, type ModularManifest, type RigAction } from './ModularRig';
+import { v3WeaponFrame } from './v3-weapon';
 import { FACINGS, WALK_CYCLE_UNITS, WALK_SPEED, type BodyType, type CharacterAppearance, type Facing } from '@shaman/shared';
 import { preloadV3, v3Assets, V3Puppet, V3_SIZE_RATIO } from './V3Puppet';
 
@@ -172,7 +173,8 @@ export class CharacterSprite extends Phaser.GameObjects.Sprite {
   }
 
   syncLayers() {
-    if (this.v3) { this.layers.sync(this, this.look, this.facing, undefined, 128); this.v3.sync(this, this.facing); return; }
+    // V3: weapons ride the hand anchors (v3-weapon.ts); headgear stays off (the SSR head has no crown point yet).
+    if (this.v3) { this.layers.sync(this, { weapon: this.look.weapon }, this.facing, v3WeaponFrame(this.scene, this.texture.key), 128); this.v3.sync(this, this.facing); return; }
     const action = this.castFrame !== null ? 'cast' : this.modularAction;
     const facing = this.castFrame !== null ? this.castFacing : this.facing;
     const frame = this.previewFrame ?? this.castFrame ?? Math.max(0, (this.anims.currentFrame?.index ?? 1) - 1);

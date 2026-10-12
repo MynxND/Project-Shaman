@@ -1,0 +1,26 @@
+﻿status: completed
+id: c9cc4dcf-db4f-4636-912c-bb9d0be01967
+name: a single heavy two-handed Siberian battle axe with
+state_name: base
+directions: 8
+size: 96x96px
+view: low top-down
+group: ae948530-8419-42ba-9f46-3d3cc79e3e53
+
+rotations:
+  east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/c9cc4dcf-db4f-4636-912c-bb9d0be01967/rotations/east.png
+  west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/c9cc4dcf-db4f-4636-912c-bb9d0be01967/rotations/west.png
+  north: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/c9cc4dcf-db4f-4636-912c-bb9d0be01967/rotations/north.png
+  south: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/c9cc4dcf-db4f-4636-912c-bb9d0be01967/rotations/south.png
+  north-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/c9cc4dcf-db4f-4636-912c-bb9d0be01967/rotations/north-east.png
+  north-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/c9cc4dcf-db4f-4636-912c-bb9d0be01967/rotations/north-west.png
+  south-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/c9cc4dcf-db4f-4636-912c-bb9d0be01967/rotations/south-east.png
+  south-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/c9cc4dcf-db4f-4636-912c-bb9d0be01967/rotations/south-west.png
+
+animations: none
+
+download: https://api.pixellab.ai/mcp/objects/c9cc4dcf-db4f-4636-912c-bb9d0be01967/download
+spritesheet: https://api.pixellab.ai/mcp/objects/c9cc4dcf-db4f-4636-912c-bb9d0be01967/spritesheet (one uniform-grid sheet PNG + layout JSON, zipped)
+
+actions: animate_object(object_id="c9cc4dcf-db4f-4636-912c-bb9d0be01967", ...) | create_object_state(object_id="c9cc4dcf-db4f-4636-912c-bb9d0be01967", ...) | delete_object(object_id="c9cc4dcf-db4f-4636-912c-bb9d0be01967")
+hint: animate_object(object_id="c9cc4dcf-db4f-4636-912c-bb9d0be01967", animation_description="...")
