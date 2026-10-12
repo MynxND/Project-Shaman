@@ -18,8 +18,10 @@ export type EquipmentVisual =
   /** Main-hand weapon; `grip` is where the hand holds it, as a fraction of the image height from the top. `offhand`
    *  names extra art held in the other hand (Juggernaut's shield, the Keris branch's second keris), with its own grip.
    *  `southOnly`: the generated views are not all upright, so every facing rotates the upright south view instead.
-   *  `upright`: never leans with the arm (a bow held out to shoot, a shield). */
-  | { slot: 'weapon'; kind: 'weapon'; grip: number; scale?: number; offhand?: { art: string; grip: number; scale?: number; upright?: boolean }; southOnly?: boolean; upright?: boolean }
+   *  `upright`: never leans with the arm (a bow held out to shoot, a shield). On the V3 body every weapon stands
+   *  upright (RO-style fixed poses, no arm-following rotation); `swing` weapons (axes, blades) tilt to a fixed strike
+   *  angle toward the facing while the arm is out in the attack. */
+  | { slot: 'weapon'; kind: 'weapon'; grip: number; scale?: number; offhand?: { art: string; grip: number; scale?: number; upright?: boolean }; southOnly?: boolean; upright?: boolean; swing?: boolean }
   /** Headgear on the crown; `lift` moves it along the head axis (rig pixels, + = down onto the head). */
   | { slot: 'head'; kind: 'headgear'; lift: number; scale?: number };
 
@@ -30,19 +32,19 @@ export const BASE_OUTFIT = 'base';
 export const EQUIPMENT_VISUALS: Readonly<Record<string, EquipmentVisual>> = {
   // bronze-ward was rejected: full-body generation changed face/hair/proportions.
   // Do not expose an outfit until identity-preserving garment art is reviewed.
-  'staff-bell': { slot: 'weapon', kind: 'weapon', grip: 0.62 },
-  'staff-bone': { slot: 'weapon', kind: 'weapon', grip: 0.62 },
+  'staff-bell': { slot: 'weapon', kind: 'weapon', grip: 0.62, scale: 0.8 },
+  'staff-bone': { slot: 'weapon', kind: 'weapon', grip: 0.62, scale: 0.8 },
   // Job weapons (user-approved list 2026-10-12, PixelLab create_object_pro_flash 8 views, docs/design/equipment/items.json).
-  'axe-taiga': { slot: 'weapon', kind: 'weapon', grip: 0.72, scale: 0.7 },
-  'knife-mor': { slot: 'weapon', kind: 'weapon', grip: 0.75, scale: 0.6 },
-  'keris': { slot: 'weapon', kind: 'weapon', grip: 0.85, scale: 0.6, offhand: { art: 'keris', grip: 0.85, scale: 0.6 }, southOnly: true },
-  'axe-juggernaut': { slot: 'weapon', kind: 'weapon', grip: 0.8, scale: 0.7, offhand: { art: 'shield-juggernaut', grip: 0.5, scale: 0.65, upright: true } },
+  'axe-taiga': { slot: 'weapon', kind: 'weapon', grip: 0.72, scale: 0.7, swing: true },
+  'knife-mor': { slot: 'weapon', kind: 'weapon', grip: 0.75, scale: 0.6, swing: true },
+  'keris': { slot: 'weapon', kind: 'weapon', grip: 0.85, scale: 0.6, offhand: { art: 'keris', grip: 0.85, scale: 0.6 }, southOnly: true, swing: true },
+  'axe-juggernaut': { slot: 'weapon', kind: 'weapon', grip: 0.8, scale: 0.7, swing: true, offhand: { art: 'shield-juggernaut', grip: 0.5, scale: 0.65, upright: true } },
   'gohei-miko': { slot: 'weapon', kind: 'weapon', grip: 0.8, scale: 0.7 },
   'bow-ullr': { slot: 'weapon', kind: 'weapon', grip: 0.5, scale: 0.8, upright: true },
-  'staff-achan': { slot: 'weapon', kind: 'weapon', grip: 0.62 },
+  'staff-achan': { slot: 'weapon', kind: 'weapon', grip: 0.62, scale: 0.75 },
   'wand-santet': { slot: 'weapon', kind: 'weapon', grip: 0.75, scale: 0.75 },
   'fan-onmyoji': { slot: 'weapon', kind: 'weapon', grip: 0.8, scale: 0.5 },
-  'staff-rune-seer': { slot: 'weapon', kind: 'weapon', grip: 0.62 },
+  'staff-rune-seer': { slot: 'weapon', kind: 'weapon', grip: 0.62, scale: 0.75 },
   'hat-ngob': { slot: 'head', kind: 'headgear', lift: 18, scale: 0.9 },
   'hat-ritual': { slot: 'head', kind: 'headgear', lift: 34, scale: 0.75 },
 };

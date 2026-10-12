@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import { decodeHead, decodeLook, isExpression, outfitOf, type Look } from '@shaman/shared';
+import { decodeHead, decodeLook, EQUIPMENT_VISUALS, isExpression, outfitOf, type Look } from '@shaman/shared';
 import { EquipmentLayers, MODULAR_KEY, preloadModularRig, rigKey, type ModularManifest, type RigAction } from './ModularRig';
 import { v3WeaponFrame } from './v3-weapon';
 import { FACINGS, WALK_CYCLE_UNITS, WALK_SPEED, type BodyType, type CharacterAppearance, type Facing } from '@shaman/shared';
@@ -172,9 +172,11 @@ export class CharacterSprite extends Phaser.GameObjects.Sprite {
     return true;
   }
 
+  private swingWeapon() { const v = this.look.weapon ? EQUIPMENT_VISUALS[this.look.weapon] : undefined; return v?.kind === 'weapon' && !!v.swing; }
+
   syncLayers() {
     // V3: weapons ride the hand anchors (v3-weapon.ts); headgear stays off (the SSR head has no crown point yet).
-    if (this.v3) { this.layers.sync(this, { weapon: this.look.weapon }, this.facing, v3WeaponFrame(this.scene, this.texture.key), 128); this.v3.sync(this, this.facing); return; }
+    if (this.v3) { this.layers.sync(this, { weapon: this.look.weapon }, this.facing, v3WeaponFrame(this.scene, this.texture.key, this.swingWeapon()), 128); this.v3.sync(this, this.facing); return; }
     const action = this.castFrame !== null ? 'cast' : this.modularAction;
     const facing = this.castFrame !== null ? this.castFacing : this.facing;
     const frame = this.previewFrame ?? this.castFrame ?? Math.max(0, (this.anims.currentFrame?.index ?? 1) - 1);

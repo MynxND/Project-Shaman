@@ -145,6 +145,30 @@ for (const action of Object.keys(anchors)) for (const dir of DIRS) for (const [i
 }
 // Each entry carries its frame's neck pivot (the client leans the weapon along shoulder -> hand).
 for (const action of Object.keys(anchors)) for (const dir of DIRS) for (const [i, e] of (anchors[action][dir] ?? []).entries()) e.neck = neckOf[action][dir][i];
+// Hand overlays ("fist over the weapon", like the gripping hand that RO paints over its weapon layer): for every frame,
+// the skin pixels within HAND_R of both hand anchors, copied from the body frame onto a transparent 128 px frame. The
+// client draws this above the weapon so the fingers close over the shaft. One strip per action and direction.
+const HAND_R = 5;
+const { mkdir } = await import('node:fs/promises');
+await mkdir(new URL('apps/client/public/assets/character-v3/hand-overlay/', ROOT), { recursive: true });
+for (const [action, dirs] of sets) for (const { dir, frames } of dirs) {
+  const strip = Buffer.alloc(128 * frames.length * 128 * 4);
+  for (const [i, f] of frames.entries()) {
+    const d = await raw(f.url), e = anchors[action][dir][i];
+    for (const h of [e.main, e.off]) {
+      if (!h) continue;
+      for (let y = Math.floor(h.y - HAND_R); y <= Math.ceil(h.y + HAND_R); y++) for (let x = Math.floor(h.x - HAND_R); x <= Math.ceil(h.x + HAND_R); x++) {
+        if (x < 0 || y < 0 || x > 127 || y > 127 || Math.hypot(x - h.x, y - h.y) > HAND_R) continue;
+        const k = (y * 128 + x) * 4;
+        if (d[k + 3] < 200 || !skin.has(hex(d, k))) continue;
+        const o = (y * 128 * frames.length + i * 128 + x) * 4;
+        d.copy(strip, o, k, k + 4);
+      }
+    }
+  }
+  await sharp(strip, { raw: { width: 128 * frames.length, height: 128, channels: 4 } }).png()
+    .toFile(fileURLToPath(new URL(`apps/client/public/assets/character-v3/hand-overlay/${action}-${dir}.png`, ROOT)));
+}
 // Review entries follow the final anchors.
 for (const r of review) { const [action, dir, i] = r.key.split('/'); r.entry = anchors[action][dir][+i]; r.weapon = weaponHand[dir]; }
 
