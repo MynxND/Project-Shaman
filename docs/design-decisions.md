@@ -410,3 +410,5 @@ Norway designed and catalogued (`skills-norway.ts`, docs/design/skills/norway-v1
 
 ## Norway rune exception + Hunter v2 — 2026-10-11
 User: focus Norway on the Ullr Hunter as an RO-Hunter-like bow class (best bow class, unique skills) and allow real runes. Hunter v2: Twin Shot (two arrows, marks prey), Falcon Strike + Falcon Bond (falcon also dives on its own from LUK), Rune Trap Kit (Naudiz snare, Isa freeze, Thurisaz thorn blast, Dagaz flash) + Trapper's Craft, Charged Rune Arrow (Uruz), longest bow range, shoot while moving. Rune Seer queue: Isa, Hagalaz, Perthro, Kenaz. Runes are drawn in code from the Unicode Runic block; extremist-associated runes excluded.
+
+2026-10-12: Skill reset costs Silver (user approved): every learned level returns to skill points except the free starting Spirit Bolt Lv 1; price = max(500, 100 Silver per refunded point) (economy.ts SKILL_RESET); refused while in combat (5 s lock), with nothing to refund or too little Silver.

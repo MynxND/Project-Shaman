@@ -232,7 +232,7 @@ export function learnSkill(profile: PlayerProfile, skillId: string): ServiceResu
   p.skillPoints -= 1;
   return ok(p, `${skill.thaiName === skill.name ? skill.name : `${skill.thaiName} · ${skill.name}`} เลเวล ${level + 1}`);
 }
-/** Skill reset for Silver (user request 2026-10-12; price PROVISIONAL): every learned level goes back to the skill-point
+/** Skill reset for Silver (user request 2026-10-12; price approved by the user 2026-10-12): every learned level goes back to the skill-point
  *  pool except the free starting Spirit Bolt Lv 1 (newProfile). Cost = silverPerPoint × refunded points, at least minSilver. */
 export const SKILL_RESET = { silverPerPoint: 100, minSilver: 500, free: { 'spirit-bolt': 1 } as Readonly<Record<string, number>> };
 /** Points a reset would refund and its Silver price. */
