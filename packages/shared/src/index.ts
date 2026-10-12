@@ -70,3 +70,4 @@ export * from './hunter-combat.js';
 export * from './rune-seer-combat.js';
 export * from './japan-combat.js';
 export * from './nations-combat.js';
+export * from './skill-text.js';

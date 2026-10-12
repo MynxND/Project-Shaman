@@ -1,14 +1,15 @@
 import { EQUIP_SLOTS, ITEMS, type EquipSlot, type StatId } from '@shaman/shared';
 import { Button, IconButton, ItemSlot } from '@/components/ui-kit';
 import { useProfileStore } from '@/stores/profile-store';
-import { useSessionStore } from '@/stores/session-store';
-import { EquipmentPortrait } from './EquipmentPortrait';
+import { PlayerPortrait } from './PlayerPortrait';
 import { EQUIP_SLOT_LABEL } from '@/game-data/sample-character';
 import { itemIcon } from '@/game-data/sample-inventory';
 import { previewFacing, useCharacterStore } from '@/stores/character-store';
 
 const LEFT: readonly EquipSlot[] = ['head', 'cloak', 'body', 'waist', 'shoes'];
 const RIGHT: readonly EquipSlot[] = EQUIP_SLOTS.filter((s) => !LEFT.includes(s));
+/** Slots the server profile can hold (economy.ts PlayerProfile.equipment); the rest are not open yet. */
+const SERVER_SLOTS: readonly EquipSlot[] = ['head', 'body', 'weapon'];
 const STAT_NAME: Record<StatId, string> = { atk: 'ATK', matk: 'MATK', def: 'DEF', mdef: 'MDEF', str: 'STR', agi: 'AGI', vit: 'VIT', int: 'INT', dex: 'DEX', luk: 'LUK' };
 
 function Slot({ slot }: { slot: EquipSlot }) {
@@ -19,11 +20,12 @@ function Slot({ slot }: { slot: EquipSlot }) {
   const worn = profile ? profile.equipment[slot as keyof typeof profile.equipment] : itemId;
   const item = worn ? ITEMS[worn] : undefined;
   const label = EQUIP_SLOT_LABEL[slot];
+  const closed = !!profile && !SERVER_SLOTS.includes(slot);
   return (
-    <div className="ch-equip">
+    <div className="ch-equip" data-closed={closed}>
       {item
         ? <ItemSlot icon={itemIcon(item.id)} name={`${label.th}: ${item.name.th}`} rarity={item.rarity} selected={selected} onSelect={() => selectSlot(slot)} />
-        : <div className="sk-frame-10 sk-slot ch-equip-empty" title={`${label.th} — ว่าง`}><span aria-hidden>{label.glyph}</span></div>}
+        : <div className="sk-frame-10 sk-slot ch-equip-empty" title={closed ? `${label.th} — ยังไม่เปิดใช้` : `${label.th} — ว่าง`}><span aria-hidden>{label.glyph}</span></div>}
       <small>{label.th}</small>
     </div>
   );
@@ -38,14 +40,13 @@ export function CharacterPreview() {
   const profile = useProfileStore((s) => s.profile);
   const busy = useProfileStore((s) => s.busy);
   const equip = useProfileStore((s) => s.equip);
-  const body = useSessionStore((s) => s.bodyType);
   const itemId = slot ? (profile ? profile.equipment[slot as keyof typeof profile.equipment] : sheet.equipment[slot]) : undefined;
   const item = itemId ? ITEMS[itemId] : undefined;
   return (
     <section className="sk-frame-10 sk-panel ch-preview" aria-label="ตัวละครและอุปกรณ์ที่สวมใส่">
       <div className="ch-equip-col">{LEFT.map((s) => <Slot key={s} slot={s} />)}</div>
       <figure className="ch-figure">
-        {profile ? <EquipmentPortrait body={body} facing={facing} look={profile.equipment} /> : <img className="sk-pixel" src={`/assets/pixellab/main-${sheet.bodyType}-v1/${facing}.png`} alt={`ภาพตัวละคร หันทิศ ${facing}`} width={128} height={128} />}
+        <PlayerPortrait facing={facing} className="ch-model" />
         <figcaption>
           <IconButton label="หมุนตัวละครไปทางซ้าย" onClick={() => rotate(-1)}>↺</IconButton>
           <span className="sk-muted">หมุนดู</span>

@@ -5,7 +5,7 @@ import { Button, IconButton, Window } from '@/components/ui-kit';
 import { parseHeadLayers, type HeadLayersManifest } from '@/game/characters/head-layers-model';
 import { parseBodyEight, type BodyEightManifest } from '@/game/characters/body-eight-model';
 import { drawSsrIdle, loadSsrCanvasAssets, type SsrCanvasAssets } from '@/game/characters/ssr-canvas';
-import { SSR_FACES, SSR_HAIR, SSR_HAIRSTYLES, ssrEnabled } from '@/game/characters/ssr-head-config';
+import { SSR_FACES, SSR_HAIR, ssrEnabled } from '@/game/characters/ssr-head-config';
 import { useHeadStore } from '@/stores/head-store';
 import { useSessionStore } from '@/stores/session-store';
 import './appearance.css';
@@ -14,7 +14,7 @@ import './appearance.css';
 // hair; hairstyles without an SSR part (and the legacy switch) use the head-layers-01 PNG layers on the idle body.
 const FACINGS = ['south', 'south-west', 'west', 'north-west', 'north', 'north-east', 'east', 'south-east'] as const;
 const FACING_TH: Record<string, string> = { south: 'หน้า', 'south-west': 'เฉียงซ้าย', west: 'ซ้าย', 'north-west': 'หลังเฉียงซ้าย', north: 'หลัง', 'north-east': 'หลังเฉียงขวา', east: 'ขวา', 'south-east': 'เฉียงขวา' };
-type Assets = { layers: HeadLayersManifest; body: BodyEightManifest; images: Map<string, HTMLImageElement>; ssr: SsrCanvasAssets | null };
+export type AppearanceAssets = { layers: HeadLayersManifest; body: BodyEightManifest; images: Map<string, HTMLImageElement>; ssr: SsrCanvasAssets | null };
 
 function loadImage(url: string) { return new Promise<HTMLImageElement>((ok, fail) => { const i = new Image(); i.onload = () => ok(i); i.onerror = () => fail(Error(url)); i.src = url; }); }
 
@@ -27,7 +27,7 @@ function tinted(img: HTMLImageElement, tint: number) {
   return c;
 }
 
-function Preview({ assets, head, facing }: { assets: Assets; head: HeadAppearance; facing: string }) {
+export function AppearancePreview({ assets, head, facing }: { assets: AppearanceAssets; head: HeadAppearance; facing: string }) {
   const ref = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
     const g = ref.current?.getContext('2d'); if (!g) return;
@@ -37,30 +37,36 @@ function Preview({ assets, head, facing }: { assets: Assets; head: HeadAppearanc
     const img = (url: string) => assets.images.get(url)!;
     g.drawImage(img(still.url), 0, 0);
     const dx = still.neckPivot.x - layer.pivot.x, dy = still.neckPivot.y - layer.pivot.y;
-    g.drawImage(img(layer.bases[head.hair].url), dx, dy);
+    const hair = layer.bases[head.hair] ? head.hair : 'natural-short';
+    g.drawImage(img(layer.bases[hair].url), dx, dy);
     const face = head.face !== 'neutral' ? layer.faces[head.face] : undefined;
     if (face) g.drawImage(img(face.url), dx, dy);
-    g.drawImage(tinted(img(layer.hair[head.hair].url), hairTint(head.hairColor)), dx, dy);
-    const accent = layer.accents?.[head.hair];
+    g.drawImage(tinted(img(layer.hair[hair].url), hairTint(head.hairColor)), dx, dy);
+    const accent = layer.accents?.[hair];
     if (accent) g.drawImage(img(accent.url), dx, dy);
   }, [assets, head, facing]);
   return <canvas ref={ref} className="ap-canvas sk-pixel" width={128} height={128} role="img" aria-label={`ตัวอย่างตัวละคร หัน${FACING_TH[facing]}`} />;
 }
 
-export function AppearanceWindow() {
-  const head = useHeadStore((s) => s.head), setHead = useHeadStore((s) => s.setHead), emote = useHeadStore((s) => s.emote);
-  const close = useHeadStore((s) => s.close), online = useHeadStore((s) => !!s.send), body = useSessionStore((s) => s.bodyType);
-  const [assets, setAssets] = useState<Assets | null>(null), [error, setError] = useState(''), [turn, setTurn] = useState(0);
-  const facing = FACINGS[((turn % 8) + 8) % 8]!;
-  useEffect(() => {
-    let live = true;
-    void (async () => {
+export async function loadAppearanceAssets(): Promise<AppearanceAssets> {
       const [l, b] = await Promise.all(['/assets/character-v3/head-layers-01/manifest.json', '/assets/character-v3/body-eight-02/manifest.json'].map((u) => fetch(u).then((r) => { if (!r.ok) throw Error(u); return r.json(); })));
       const layers = parseHeadLayers(l), bodySet = parseBodyEight(b, 'body-eight-02');
       const urls = [...bodySet.frames.map((f) => f.url), ...layers.directions.flatMap((d) => [...Object.values(d.bases).map((b) => b.url), ...Object.values(d.faces).map((f) => f!.url), ...Object.values(d.hair).map((h) => h.url), ...Object.values(d.accents ?? {}).map((a) => a!.url)])];
       const images = new Map(await Promise.all(urls.map(async (u) => [u, await loadImage(u)] as const)));
       const ssr = ssrEnabled() ? await loadSsrCanvasAssets().catch(() => null) : null;
-      if (live) setAssets({ layers, body: bodySet, images, ssr });
+  return { layers, body: bodySet, images, ssr };
+}
+
+export function AppearanceWindow() {
+  const head = useHeadStore((s) => s.head), setHead = useHeadStore((s) => s.setHead), emote = useHeadStore((s) => s.emote);
+  const close = useHeadStore((s) => s.close), online = useHeadStore((s) => !!s.send), body = useSessionStore((s) => s.bodyType);
+  const [assets, setAssets] = useState<AppearanceAssets | null>(null), [error, setError] = useState(''), [turn, setTurn] = useState(0);
+  const facing = FACINGS[((turn % 8) + 8) % 8]!;
+  useEffect(() => {
+    let live = true;
+    void (async () => {
+      const loaded = await loadAppearanceAssets();
+      if (live) setAssets(loaded);
     })().catch((e) => { if (live) setError(e instanceof Error ? e.message : 'โหลดไม่ได้'); });
     return () => { live = false; };
   }, []);
@@ -69,10 +75,10 @@ export function AppearanceWindow() {
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [close]);
-  // With SSR heads the menus offer what the SSR parts provide (approved: 2 styles; neutral/cold/sad + closed for blinking).
+  // Published SSR styles plus the two existing layered styles. Face parts require SSR hair.
   const ssrOn = !!assets?.ssr;
-  const styles = ssrOn ? HAIRSTYLES.filter((h) => SSR_HAIRSTYLES.includes(h.id)) : HAIRSTYLES;
-  const faces = ssrOn ? EXPRESSIONS.filter((e) => SSR_FACES.includes(e.id)) : EXPRESSIONS.filter((e) => e.id !== 'cold');
+  const styles = ssrOn ? HAIRSTYLES : HAIRSTYLES.filter(h => h.id === 'natural-short');
+  const faces = ssrOn && SSR_HAIR[head.hair] ? EXPRESSIONS.filter((e) => SSR_FACES.includes(e.id)) : EXPRESSIONS.filter((e) => e.id !== 'cold');
   const swatch = (c: (typeof HAIR_COLORS)[number]) => assets?.ssr?.palettes[c.id]?.[5] ?? `#${c.tint.toString(16).padStart(6, '0')}`;
   const pick = <T extends { id: string; th: string }>(label: string, list: readonly T[], value: string, onPick: (id: T['id']) => void, swatch?: (item: T) => string) => (
     <fieldset className="ap-group"><legend>{label}</legend>
@@ -84,7 +90,7 @@ export function AppearanceWindow() {
       actions={<span className="sk-sample-badge">{online ? 'บันทึกและผู้เล่นอื่นเห็นทันที' : 'ออฟไลน์ · จะใช้ตอนเข้าเกมครั้งถัดไป'}</span>}>
       <div className="ap-body">
         <div className="ap-preview">
-          {error ? <p role="alert">{error}</p> : !assets ? <p role="status">กำลังโหลดภาพตัวละคร</p> : <Preview assets={assets} head={head} facing={facing} />}
+          {error ? <p role="alert">{error}</p> : !assets ? <p role="status">กำลังโหลดภาพตัวละคร</p> : <AppearancePreview assets={assets} head={head} facing={facing} />}
           <div className="ap-turn">
             <IconButton label="หมุนซ้าย" onClick={() => setTurn((t) => t - 1)}>⟲</IconButton>
             <span aria-live="polite">{FACING_TH[facing]}</span>
@@ -93,6 +99,7 @@ export function AppearanceWindow() {
           {body !== 'male' && <p className="ap-note">ตัวละครหญิงยังใช้ภาพแบบเดิม · ทรงผมและหน้านี้มีผลกับตัวละครชาย V3</p>}
         </div>
         <div className="ap-controls">
+          <a href="/characters/create">เปิดหน้าสร้างตัวละคร</a>
           {pick('ทรงผม', styles, head.hair, (hair) => setHead({ hair }))}
           {pick('สีผม', HAIR_COLORS, head.hairColor, (hairColor) => setHead({ hairColor }), swatch)}
           {pick('หน้าเริ่มต้น', ssrOn ? faces.filter((e) => e.id !== 'closed') : faces, head.face, (face) => setHead({ face }))}

@@ -30,8 +30,10 @@ export function ItemDetail({ stack }: { stack: InventoryStack | null }) {
   if (!stack) return <div className="sk-frame-10 sk-panel inv-detail inv-detail-empty">เลือกไอเทมเพื่อดูรายละเอียด</div>;
   const item = ITEMS[stack.itemId];
   if (!item) return null;
-  const slot = SAMPLE_EQUIP_SLOT[item.id];
-  const equipped = slot ? SAMPLE_ITEMS[SAMPLE_EQUIPPED[slot] ?? ''] : undefined;
+  // Online: compare with what the server profile wears in that slot; offline: the sample loadout.
+  const slot = profile ? item.equipSlot : SAMPLE_EQUIP_SLOT[item.id];
+  const wornId = slot ? (profile ? profile.equipment[slot as keyof typeof profile.equipment] : SAMPLE_EQUIPPED[slot]) : undefined;
+  const equipped = wornId ? (profile ? ITEMS[wornId] : SAMPLE_ITEMS[wornId]) : undefined;
   const isEquippedItem = equipped?.id === item.id;
   return (
     <div className="inv-detail-col">
@@ -42,7 +44,7 @@ export function ItemDetail({ stack }: { stack: InventoryStack | null }) {
         {profile && item.equipSlot && ['head', 'body', 'weapon'].includes(item.equipSlot) && (
           <div><Button disabled={busy || !EQUIPMENT_VISUALS[item.id]} onClick={() => equip(item.equipSlot!, profile.equipment[item.equipSlot as keyof typeof profile.equipment] === item.id ? null : item.id)}>
             {profile.equipment[item.equipSlot as keyof typeof profile.equipment] === item.id ? 'ถอดอุปกรณ์' : 'สวมใส่'}
-          </Button><p className="sk-muted">{!EQUIPMENT_VISUALS[item.id] ? 'พักชุดทดลอง · ต้องแก้ให้ใบหน้า ผม และสัดส่วนเป็นตัวละครเดิมก่อน' : 'เปลี่ยนรูปลักษณ์ · โบนัสอุปกรณ์ยังไม่รวมในสูตรต่อสู้ต้นแบบ'}</p></div>
+          </Button><p className="sk-muted">{!EQUIPMENT_VISUALS[item.id] ? 'พักชุดทดลอง · ต้องแก้ให้ใบหน้า ผม และสัดส่วนเป็นตัวละครเดิมก่อน' : 'เปลี่ยนรูปลักษณ์ · โบนัส ATK / MATK / DEX / INT / LUK ใช้ในการต่อสู้'}</p></div>
         )}
         {item.stats && Object.entries(item.stats).map(([k, v]) => (
           <div className="sk-stat-row" key={k}><span>{STAT_LABEL[k as StatId]}</span><span>+{v}</span></div>
@@ -51,7 +53,7 @@ export function ItemDetail({ stack }: { stack: InventoryStack | null }) {
         <div className="sk-stat-row"><span>น้ำหนัก</span><span>{item.weight} × {stack.quantity} = {Math.round(item.weight * stack.quantity * 10) / 10}</span></div>
         <div className="sk-stat-row"><span>ราคาขาย</span><span>{item.sellPrice.toLocaleString()} Silver</span></div>
       </div>
-      {item.category === 'equipment' && !isEquippedItem && !profile && (
+      {item.category === 'equipment' && !isEquippedItem && (!profile || !!slot) && (
         <div className="sk-frame-10 sk-panel inv-detail inv-compare" aria-label="เปรียบเทียบกับที่สวมอยู่">
           <div className="sk-muted">เทียบกับที่สวมอยู่ {equipped ? `· ${equipped.name.th}` : '· ไม่ได้สวม'}</div>
           {compareStats(equipped, item).map((c) => (

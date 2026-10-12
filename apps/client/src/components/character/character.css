@@ -96,3 +96,8 @@
   .ch-figure img { width: 100%; max-width: 128px; }
   .ch-figure figcaption .sk-muted { display: none; }
 }
+/* Online combat stats (server combatStats) and equipment slots the server does not have yet. */
+.ch-stats .ch-combat li { grid-template-columns: 44px minmax(0, 1fr) 90px; min-height: 34px; }
+.ch-equip[data-closed="true"] { opacity: .5; }
+.ch-model canvas { display: block; width: 192px; height: 192px; image-rendering: pixelated; }
+@media (max-width: 700px) { .ch-model canvas { width: 128px; height: 128px; } }

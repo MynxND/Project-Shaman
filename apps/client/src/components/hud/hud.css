@@ -388,3 +388,5 @@ button.hud-menu-item:focus-visible { outline: 2px solid var(--sk-jade); }
 .hud-gauge-bar { height: 6px; border-radius: 3px; background: #0d1a17; overflow: hidden; }
 .hud-gauge-bar span { display: block; height: 100%; transition: width .2s; }
 .hud-root[data-touch="true"] .hud-gauge { left: auto; right: var(--hud-right); transform: none; bottom: calc(var(--hud-bottom) + 260px); }
+/* Current Character V3 model in the portrait arch (PlayerPortrait canvas, 128 px frame). */
+.hud-portrait-window .player-portrait canvas { position: absolute; width: 128px; height: 128px; left: -47px; top: -14px; image-rendering: pixelated; }

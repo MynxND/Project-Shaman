@@ -28,7 +28,7 @@ const SORTS: readonly { value: InventorySort; label: string }[] = [
   { value: 'weight', label: 'น้ำหนัก' }, { value: 'rarity', label: 'ความหายาก' },
 ];
 
-/** Inventory reference screen. Runs on sample data until the server owns inventories. */
+/** Inventory: the server-owned bag while connected, labelled sample data offline. */
 export function InventoryWindow() {
   const s = useInventoryStore();
   const close = useInventoryStore((st) => st.close);
@@ -79,7 +79,7 @@ export function InventoryWindow() {
             <span className="inv-page" aria-live="polite">{page.page} / {page.pages}</span>
             <IconButton label="หน้าถัดไป" disabled={page.page >= page.pages} onClick={() => s.setPage(page.page + 1)}>›</IconButton>
             <span className="sk-head-spacer" />
-            <span className="sk-sample-badge">{profile ? 'กระเป๋าจากเซิร์ฟเวอร์ · ข้อมูลเฉพาะรอบเล่นนี้' : 'ข้อมูลตัวอย่าง · ยังไม่เชื่อมเซิร์ฟเวอร์'}</span>
+            <span className="sk-sample-badge">{profile ? 'กระเป๋าจากเซิร์ฟเวอร์' : 'ข้อมูลตัวอย่าง · ยังไม่เชื่อมเซิร์ฟเวอร์'}</span>
             <Button variant="secondary" onClick={() => { s.setSearch(''); s.setCategory('all'); s.setSort('newest'); }}>ล้างตัวกรอง</Button>
           </div>
         </div>

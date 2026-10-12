@@ -79,3 +79,6 @@ export const useAccountStore = create<AccountState>((set, get) => {
     replaced: () => set({ status: 'replaced' }),
   };
 });
+
+/** Name shown on the status panel and character window: the signed-in account, else "guest". */
+export const usePlayerName = (): string => useAccountStore((s) => s.username ?? (s.status === 'guest' ? 'ผู้เล่นรับเชิญ' : 'ผู้เดินทาง'));

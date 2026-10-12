@@ -10,7 +10,9 @@ const MEDIUM_BASE = '/assets/skills/medium-v1/';
 const NATION_BASE: Readonly<Record<string, string>> = {
   th: '/assets/skills/thailand-v1/', id: '/assets/skills/indonesia-v1/', ru: '/assets/skills/russia-v1/', jp: '/assets/skills/japan-v1/', no: '/assets/skills/norway-v1/',
 };
-export interface SkillText { icon: string | null; thai: string; formula: string }
+/** Release VFX strip (one row of frames) used as the skill book preview. */
+export interface SkillEffect { url: string; width: number; height: number; frames: number }
+export interface SkillText { icon: string | null; thai: string; formula: string; effect: SkillEffect | null }
 type Texts = Record<string, SkillText>;
 
 let loading: Promise<Texts> | null = null;
@@ -18,13 +20,16 @@ let loading: Promise<Texts> | null = null;
 function loadTexts(): Promise<Texts> {
   loading ??= (async () => {
     const out: Texts = {};
-    const medium = await fetch(`${MEDIUM_BASE}manifest.json`).then((r) => r.ok ? r.json() : { skills: [] }).catch(() => ({ skills: [] })) as { skills: { id: string; thai: string; formula: string; icon?: string }[] };
-    for (const k of medium.skills) out[k.id] = { icon: `${MEDIUM_BASE}${k.id}-icon.png`, thai: k.thai, formula: k.formula };
+    const medium = await fetch(`${MEDIUM_BASE}manifest.json`).then((r) => r.ok ? r.json() : { skills: [] }).catch(() => ({ skills: [] })) as { skills: { id: string; thai: string; formula: string; icon?: string; effect?: { image: string; width: number; height: number; frames: number } }[] };
+    for (const k of medium.skills) out[k.id] = { icon: `${MEDIUM_BASE}${k.id}-icon.png`, thai: k.thai, formula: k.formula,
+      effect: k.effect ? { url: `${MEDIUM_BASE}${k.effect.image}`, width: k.effect.width, height: k.effect.height, frames: k.effect.frames } : null };
     for (const [nation, base] of Object.entries(NATION_BASE)) {
-      const m = await fetch(`${base}manifest.json`).then((r) => r.ok ? r.json() : {}).catch(() => ({})) as { icons?: Record<string, { image: string; packedAt?: number }> };
+      const m = await fetch(`${base}manifest.json`).then((r) => r.ok ? r.json() : {}).catch(() => ({})) as { icons?: Record<string, { image: string; packedAt?: number }>; effects?: Record<string, { image: string; width: number; height: number; frames: number; packedAt?: number }> };
       for (const k of Object.values(NATION_SKILL_INDEX).filter((x) => x.nation === nation)) {
         const ic = m.icons?.[k.id];
-        out[k.id] = { icon: ic ? `${base}${ic.image}?v=${ic.packedAt ?? 0}` : null, thai: k.thai, formula: k.formula };
+        const fx = m.effects?.[k.id];
+        out[k.id] = { icon: ic ? `${base}${ic.image}?v=${ic.packedAt ?? 0}` : null, thai: k.thai, formula: k.formula,
+          effect: fx ? { url: `${base}${fx.image}?v=${fx.packedAt ?? 0}`, width: fx.width, height: fx.height, frames: fx.frames } : null };
       }
     }
     return out;
@@ -62,3 +67,6 @@ export function jobTitle(p: Pick<PlayerProfile, 'jobTier' | 'branch'>): { th: st
   if (!b || p.jobTier === 1) return { th: 'ร่างทรงฝึกหัด', en: 'Apprentice Shaman' };
   return p.jobTier === 3 ? { th: b.info.tier3, en: `${b.info.name} · ขั้น ๓` } : { th: b.info.thai, en: b.info.name };
 }
+
+/** Nation names in Thai (skill registry nation codes). */
+export const NATION_TH: Readonly<Record<string, string>> = { th: 'ไทย', id: 'อินโดนีเซีย', ru: 'รัสเซีย', jp: 'ญี่ปุ่น', no: 'นอร์เวย์' };
