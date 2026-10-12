@@ -3,7 +3,9 @@ export type WalkFrame={url:string;sha256:string;neckPivot:NativePoint;bodyOrigin
 export type WalkDirection={direction:string;headUrl:string;headSha256:string;headPivot:NativePoint;frames:WalkFrame[]};
 export type WalkEightManifest={version:'walk-eight/1';name:string;bodySet:string;fps:number;loop:true;directions:WalkDirection[];credits:{spent:number;cap:number};sheet:{url:string;sha256:string;frameWidth:128;frameHeight:128}};
 /** One-shot V3 action (attack, cast) in the same per-frame neck-pivot format as the walk. */
-export type ActionEightManifest={version:'action-eight/1';action:'attack'|'cast';name:string;bodySet:string;fps:number;loop:false;directions:WalkDirection[];credits:{spent:number;cap:number};sheet:{url:string;sha256:string;frameWidth:128;frameHeight:128}};
+/** Weapon-class attacks (tools/rig/publish_weapon_action.mjs): keris stabs, magic-weapon point-and-cast. */
+export type WeaponActionId='attack-dagger'|'attack-cast';
+export type ActionEightManifest={version:'action-eight/1';action:'attack'|'cast'|WeaponActionId;hits?:number[];name:string;bodySet:string;fps:number;loop:false;directions:WalkDirection[];credits:{spent:number;cap:number};sheet:{url:string;sha256:string;frameWidth:128;frameHeight:128}};
 const point=(p:NativePoint)=>p&&Number.isInteger(p.x)&&Number.isInteger(p.y)&&p.x>=0&&p.x<128&&p.y>=0&&p.y<128;
 const sha=(h:string)=>/^[a-f0-9]{64}$/.test(h);
 function checkDirections(directions:WalkDirection[],prefix:string){
@@ -19,7 +21,7 @@ export function parseWalkEight(value:unknown):WalkEightManifest{
  checkDirections(m.directions,'/assets/character-v3/walk-eight-02/');
  return m;
 }
-export function parseActionEight(value:unknown,action:'attack'|'cast'):ActionEightManifest{
+export function parseActionEight(value:unknown,action:'attack'|'cast'|WeaponActionId):ActionEightManifest{
  const m=value as ActionEightManifest;
  if(!m||m.version!=='action-eight/1'||m.action!==action||m.directions?.length!==8||m.loop!==false||!(m.fps>0&&m.fps<=24)||!sha(m.sheet?.sha256))throw Error('ท่าแปดทิศไม่ตรงสเปก');
  checkDirections(m.directions,`/assets/character-v3/actions-eight-02/${action}/`);

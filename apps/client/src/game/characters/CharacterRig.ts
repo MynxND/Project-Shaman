@@ -1,9 +1,9 @@
 import Phaser from 'phaser';
 import { decodeHead, decodeLook, EQUIPMENT_VISUALS, isExpression, outfitOf, type Look } from '@shaman/shared';
 import { EquipmentLayers, MODULAR_KEY, preloadModularRig, rigKey, type ModularManifest, type RigAction } from './ModularRig';
-import { v3WeaponFrame } from './v3-weapon';
+import { v3WeaponFrame, type WeaponMode } from './v3-weapon';
 import { FACINGS, WALK_CYCLE_UNITS, WALK_SPEED, type BodyType, type CharacterAppearance, type Facing } from '@shaman/shared';
-import { preloadV3, v3Assets, V3Puppet, V3_SIZE_RATIO } from './V3Puppet';
+import { preloadV3, v3Assets, V3Puppet, V3_SIZE_RATIO, type AttackStyle } from './V3Puppet';
 
 // PixelLab main characters (main-v1); manifest built by tools/sprites/build_main_v1.py.
 const BASE = '/assets/pixellab';
@@ -172,12 +172,14 @@ export class CharacterSprite extends Phaser.GameObjects.Sprite {
     return true;
   }
 
-  /** Swing weapons and magic weapons ride the striking hand, so the blow (or the cast) is made with the weapon in view. */
-  private swingWeapon() { const v = this.look.weapon ? EQUIPMENT_VISUALS[this.look.weapon] : undefined; return v?.kind === 'weapon' && !!(v.swing || v.bolt); }
+  /** Swing weapons ride the striking hand, magic weapons the casting hand (both in view when they attack). */
+  private weaponMode(): WeaponMode { const v = this.look.weapon ? EQUIPMENT_VISUALS[this.look.weapon] : undefined; return v?.kind !== 'weapon' ? 'rest' : v.bolt ? 'bolt' : v.swing ? 'swing' : 'rest'; }
+  /** Basic-attack animation for the weapon class: keris stabs, magic weapons cast, everything else the palm strike. */
+  private attackStyle(): AttackStyle { const w = this.look.weapon; const v = w ? EQUIPMENT_VISUALS[w] : undefined; return w === 'keris' ? 'dagger' : v?.kind === 'weapon' && v.bolt ? 'cast' : 'palm'; }
 
   syncLayers() {
     // V3: weapons ride the hand anchors (v3-weapon.ts); headgear stays off (the SSR head has no crown point yet).
-    if (this.v3) { this.layers.sync(this, { weapon: this.look.weapon }, this.facing, v3WeaponFrame(this.scene, this.texture.key, this.swingWeapon()), 128); this.v3.sync(this, this.facing); return; }
+    if (this.v3) { this.layers.sync(this, { weapon: this.look.weapon }, this.facing, v3WeaponFrame(this.scene, this.texture.key, this.weaponMode()), 128); this.v3.sync(this, this.facing); return; }
     const action = this.castFrame !== null ? 'cast' : this.modularAction;
     const facing = this.castFrame !== null ? this.castFacing : this.facing;
     const frame = this.previewFrame ?? this.castFrame ?? Math.max(0, (this.anims.currentFrame?.index ?? 1) - 1);
@@ -228,7 +230,7 @@ export class CharacterSprite extends Phaser.GameObjects.Sprite {
 
   private redraw() {
     this.previewFrame = null;
-    if (this.v3) { this.castFrame = null; this.v3.show(this, this.facing, this.animation === 'walk' || this.animation === 'attack' ? this.animation : null); this.syncLayers(); return this; }
+    if (this.v3) { this.castFrame = null; this.v3.setAttackStyle(this.attackStyle()); this.v3.show(this, this.facing, this.animation === 'walk' || this.animation === 'attack' ? this.animation : null); this.syncLayers(); return this; }
     const body = this.appearance.bodyType;
     const action = this.animation ?? 'idle';
     const outfit = outfitOf(this.look);

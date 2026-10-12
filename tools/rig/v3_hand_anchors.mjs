@@ -10,6 +10,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { sharp } from './body-eight-lib.mjs';
+import { FACE as POSE_FACE } from './v3_pose_lib.mjs';
 
 const ROOT = new URL('../../', import.meta.url);
 const PUB = new URL('apps/client/public', ROOT);
@@ -24,7 +25,9 @@ const hex = (d, i) => (d[i] << 16) | (d[i + 1] << 8) | d[i + 2];
 // Frame lists: { action, dir, index, url, neck, origin }.
 const body = await json(at('/assets/character-v3/body-eight-02/manifest.json'));
 const sets = [['idle', body.frames.map((f) => ({ dir: f.direction, frames: [{ url: f.url, neckPivot: f.neckPivot, bodyOrigin: f.bodyOrigin }] }))]];
-for (const [action, path] of [['walk', '/assets/character-v3/walk-eight-02/manifest.json'], ['attack', '/assets/character-v3/actions-eight-02/attack/manifest.json'], ['cast', '/assets/character-v3/actions-eight-02/cast/manifest.json']]) {
+for (const [action, path] of [['walk', '/assets/character-v3/walk-eight-02/manifest.json'], ['attack', '/assets/character-v3/actions-eight-02/attack/manifest.json'], ['cast', '/assets/character-v3/actions-eight-02/cast/manifest.json'],
+  // Weapon-class attacks (publish_weapon_action.mjs): keris stabs and the magic-weapon point-and-cast.
+  ['attack-dagger', '/assets/character-v3/actions-eight-02/attack-dagger/manifest.json'], ['attack-cast', '/assets/character-v3/actions-eight-02/attack-cast/manifest.json']]) {
   const m = await json(at(path));
   sets.push([action, m.directions.map((d) => ({ dir: d.direction, frames: d.frames }))]);
 }
@@ -131,6 +134,21 @@ for (const dir of DIRS) {
     return { main: fix.main ?? pt('RIGHT ARM'), off: fix.off ?? pt('LEFT ARM'), detected: false, skeleton: true };
   });
 }
+// Weapon-class attacks were generated from our own skeleton poses: their hands are the pose RIGHT/LEFT ARM points moved
+// by the same offset as the published neck pivot (ground lock), which is more reliable than skin detection there.
+const POSE_SOURCES = {
+  'attack-cast': () => 'docs/design/character-v3/weapon-class/cast-point/',
+  'attack-dagger': (d) => (['north', 'north-east', 'north-west'].includes(d) ? 'docs/design/character-v3/weapon-class/dagger-v2b/' : 'docs/design/character-v3/weapon-class/dagger-v2/'),
+};
+for (const [action, src] of Object.entries(POSE_SOURCES)) for (const dir of DIRS) {
+  if (!anchors[action]?.[dir]) continue;
+  const poses = await json(new URL(`${src(dir)}${dir}-poses.json`, ROOT));
+  anchors[action][dir] = poses.map((pose, i) => {
+    const fix = overrides[`${action}/${dir}/${i}`] ?? {}, n = neckOf[action][dir][i], from = { x: pose.NECK[0], y: pose.NECK[1] };
+    const pt = (k) => shift({ x: pose[k][0], y: pose[k][1] }, from, n);
+    return { main: fix.main ?? pt('RIGHT ARM'), off: fix.off ?? pt('LEFT ARM'), detected: false, skeleton: true };
+  });
+}
 // Weapon hand per direction: the hand that travels furthest in the attack (the generated strikes do not always use the
 // right hand), so the weapon swings with the blow.
 const weaponHand = {};
@@ -176,6 +194,9 @@ await writeFile(new URL('apps/client/public/assets/character-v3/hand-anchors.jso
   version: 'hand-anchors/1', source: 'tools/rig/v3_hand_anchors.mjs (skin islands per frame + overrides)', frameSize: 128,
   note: 'main = character right hand (weapon), off = left hand (shield / second keris). Native 128 px frame pixels.',
   weaponHand,
+  // Magic weapons: the casting hand of attack-cast (the camera-side arm the poses were authored with), used in every
+  // action so the staff never changes hands.
+  castHand: Object.fromEntries(Object.entries(POSE_FACE).map(([d, f]) => [d, f.near === 'RIGHT' ? 'main' : 'off'])),
   actions: anchors,
 }, null, 1));
 

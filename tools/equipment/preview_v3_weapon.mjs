@@ -20,7 +20,7 @@ if (!line) throw Error(`no EQUIPMENT_VISUALS weapon entry for ${id}`);
 const offText = /offhand: \{([^}]*)\}/.exec(line)?.[1] ?? null, mainText = line.replace(/offhand: \{[^}]*\}/, '');
 const num = (text, key, fallback) => { const v = new RegExp(`${key}: ([\\d.]+)`).exec(text); return v ? +v[1] : fallback; };
 const visual = {
-  grip: num(mainText, 'grip', 0.5), scale: num(mainText, 'scale', 1), upright: /upright: true/.test(mainText), southOnly: /southOnly: true/.test(mainText), swing: /swing: true|bolt: true/.test(mainText),
+  grip: num(mainText, 'grip', 0.5), scale: num(mainText, 'scale', 1), upright: /upright: true/.test(mainText), southOnly: /southOnly: true/.test(mainText), swing: /swing: true/.test(mainText), bolt: /bolt: true/.test(mainText),
   off: offText ? { art: /art: '([a-z-]+)'/.exec(offText)[1], grip: num(offText, 'grip', 0.5), scale: num(offText, 'scale', 1) } : null,
   offUpright: !!offText && /upright: true/.test(offText),
 };
@@ -29,6 +29,8 @@ const frameUrl = {
   idle: (dir) => body.frames.find((f) => f.direction === dir).url,
   walk: (dir, i) => `/assets/character-v3/walk-eight-02/${dir}-${i}.png`,
   attack: (dir, i) => `/assets/character-v3/actions-eight-02/attack/${dir}-${i}.png`,
+  'attack-cast': (dir, i) => `/assets/character-v3/actions-eight-02/attack-cast/${dir}-${i}.png`,
+  'attack-dagger': (dir, i) => `/assets/character-v3/actions-eight-02/attack-dagger/${dir}-${i}.png`,
 };
 const tipFor = (hand, neck) => {
   const sx = neck.x, sy = neck.y + 7, dx = hand.x - sx, dy = hand.y - sy, len = Math.hypot(dx, dy) || 1;
@@ -51,16 +53,19 @@ async function placed(art, dir, hand, neck, grip, scale, strike = false) {
   const gx = rotated.info.width / 2 + (vx * c - vy * s), gy = rotated.info.height / 2 + (vx * s + vy * c);
   return { input: rotated.data, left: Math.round(hand.x * SCALE - gx), top: Math.round(hand.y * SCALE - gy) };
 }
-const columns = [['idle', 0], ['walk', 0], ['walk', 4], ...Array.from({ length: 8 }, (_, i) => ['attack', i])];
+// The attack column uses the weapon class's own animation, like the client (CharacterRig.attackStyle).
+const attackSet = visual.bolt ? 'attack-cast' : id === 'keris' ? 'attack-dagger' : 'attack';
+const columns = [['idle', 0], ['walk', 0], ['walk', 4], ...Array.from({ length: 8 }, (_, i) => [attackSet, i])];
 const cell = 128 * SCALE, comps = [];
 for (const [row, dir] of DIRS.entries()) for (const [col, [action, i]] of columns.entries()) {
-  const entry = anchors.actions[action][dir][i], hand = visual.swing ? anchors.weaponHand[dir] : 'main', other = hand === 'main' ? 'off' : 'main';
+  const entry = anchors.actions[action][dir][i], hand = visual.bolt ? anchors.castHand[dir] : visual.swing ? anchors.weaponHand[dir] : 'main', other = hand === 'main' ? 'off' : 'main';
+  const hideWeapon = action === 'attack-dagger';
   const layers = [];
   const fx = { south: 0, 'south-east': 1, east: 1, 'north-east': 1, north: 0, 'north-west': -1, west: -1, 'south-west': -1 }[dir];
   const front = (hand === 'main' ? fx : -fx) >= 0, offFront = (hand === 'main' ? -fx : fx) >= 0, g = entry[hand];
-  const strike = visual.swing && action === 'attack' && !!g && g.y - entry.neck.y < 20;
-  const weapon = g && await placed(id, dir, g, entry.neck, visual.grip, visual.scale, strike);
-  const offhand = visual.off && entry[other] && await placed(visual.off.art, dir, entry[other], entry.neck, visual.off.grip, visual.off.scale, strike && !visual.offUpright);
+  const strike = (visual.swing || visual.bolt) && (action === 'attack' || action === 'attack-cast') && !!g && g.y - entry.neck.y < 20;
+  const weapon = !hideWeapon && g && await placed(id, dir, g, entry.neck, visual.grip, visual.scale, strike);
+  const offhand = !hideWeapon && visual.off && entry[other] && await placed(visual.off.art, dir, entry[other], entry.neck, visual.off.grip, visual.off.scale, strike && !visual.offUpright);
   const hands = { input: await sharp(await readFile(p(`apps/client/public/assets/character-v3/hand-overlay/${action}-${dir}.png`))).extract({ left: i * 128, top: 0, width: 128, height: 128 }).resize(cell, cell, { kernel: 'nearest' }).png().toBuffer(), left: 0, top: 0 };
   const bodyImg = { input: await sharp(await readFile(p(`apps/client/public${frameUrl[action](dir, i)}`))).resize(cell, cell, { kernel: 'nearest' }).png().toBuffer(), left: 0, top: 0 };
   if (weapon && !front) layers.push(weapon);

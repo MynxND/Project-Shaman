@@ -49,7 +49,9 @@ export class SsrHead {
   supports(hair: HairstyleId) { const id = SSR_HAIR[hair]; return !!id && !!this.assets.parts[id]; }
 
   /** Places the head for the body's current action frame; the sprite origin is the body's feet (origin anchor). */
-  draw(sprite: Phaser.GameObjects.Sprite, action: SsrAction, facing: SsrDirection, frame: number, hair: HairstyleId, color: HairColorId, expression: ExpressionId) {
+  /** `neckShift` (native px) moves the head for body frames outside the SSR clip table (V3 weapon-class attacks: the
+   *  idle clip is drawn, shifted by that frame's neck pivot minus the idle neck). */
+  draw(sprite: Phaser.GameObjects.Sprite, action: SsrAction, facing: SsrDirection, frame: number, hair: HairstyleId, color: HairColorId, expression: ExpressionId, neckShift = { x: 0, y: 0 }) {
     const { parts } = this.assets, attached = [parts[SKIN_ID]!];
     const face = expression !== 'neutral' ? parts[`face.${expression}`] : undefined;
     if (face) attached.push(face);
@@ -65,7 +67,7 @@ export class SsrHead {
       const it = items[i];
       if (!it) { img.setVisible(false); return; }
       img.setTexture(this.texture(it, color)).setOrigin(0, 0)
-        .setPosition(sprite.x + (it.x - ox - 0.5) * sx, sprite.y + (it.y - oy - 1) * sy).setScale(sx, sy)
+        .setPosition(sprite.x + (it.x + neckShift.x - ox - 0.5) * sx, sprite.y + (it.y + neckShift.y - oy - 1) * sy).setScale(sx, sy)
         .setDepth(sprite.depth + 0.01 + it.order * 0.0002).setAlpha(sprite.alpha).setTint(tint).setVisible(sprite.visible);
     });
   }

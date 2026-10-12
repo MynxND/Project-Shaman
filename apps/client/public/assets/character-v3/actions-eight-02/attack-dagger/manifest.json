@@ -1,0 +1,877 @@
+{
+  "version": "action-eight/1",
+  "action": "attack-dagger",
+  "name": "Keris · แทงสลับย่อตัว",
+  "bodySet": "body-eight-02",
+  "fps": 16,
+  "loop": false,
+  "hits": [
+    2,
+    5
+  ],
+  "directions": [
+    {
+      "direction": "south",
+      "headUrl": "/assets/character-v3/head-eight-01/south.png",
+      "headSha256": "1ac5ca0956848a2886484a8955e3d4d5f4206bc513c96581b55ade60bf6a4215",
+      "headPivot": {
+        "x": 62,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-0.png",
+          "sha256": "09571fd58716b4dc37ca35746e3b775fc4e72873bef952466bc587ccddff3941",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-1.png",
+          "sha256": "e9e95293528d60add87913b849c97d7d73840f9f0e0e3b9009446b16da8f27a3",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-2.png",
+          "sha256": "05f3ac750633dadf0089ccb58d23121331eee55400995fb68141c711863f2976",
+          "neckPivot": {
+            "x": 62,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-3.png",
+          "sha256": "d19c2303a7eb8664b9eda30e671414edde4dba4e2261681b65d6244b7995044d",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-4.png",
+          "sha256": "2bfa5bf899e1bd2ed84ff8c4c2a7f21af640c2463c35d97f2fb75ebc633c24f9",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-5.png",
+          "sha256": "8d013b1653be2dd46560279d32bd0eda87004334539944793c04abc7b95f0dc6",
+          "neckPivot": {
+            "x": 62,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-6.png",
+          "sha256": "4275529502053c8cc99df5de6aea88177c73048e283d9690e511de6a4b21432b",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-7.png",
+          "sha256": "9376979e03b574894bc70d03a2a7eb7027f6210491153d5562f489a034ee2b61",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "south-east",
+      "headUrl": "/assets/character-v3/head-eight-01/south-east.png",
+      "headSha256": "3cd756ea681a3571bf619505373ec6f78e200c0b3d6088936b26ad587c08b0b5",
+      "headPivot": {
+        "x": 65,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-east-0.png",
+          "sha256": "977358b6a7594825dbe22347ebe73dac41ce87004eabd2242e7c3517dfcca973",
+          "neckPivot": {
+            "x": 64,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-east-1.png",
+          "sha256": "18b4c4c115e8ea2487c9b0fe890b320f2eb5fce327fb003956f4f6a334278612",
+          "neckPivot": {
+            "x": 64,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-east-2.png",
+          "sha256": "b4063dba69e8da092fc3e5b67968fe42a93be203d7d781da42dc71ed1749d1c5",
+          "neckPivot": {
+            "x": 66,
+            "y": 56
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-east-3.png",
+          "sha256": "e298c53bca64c0241ad8920ec88a9b932dc37e65408207d464b8fcc86f9eca2e",
+          "neckPivot": {
+            "x": 64,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-east-4.png",
+          "sha256": "389d94811eaedc47cb2c0f86b47bb91e239530c6892d1ee3697f4fa772f1da92",
+          "neckPivot": {
+            "x": 64,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-east-5.png",
+          "sha256": "97a001326480367636f74834df25a35bffef1b8bf5bfe11df4143e3d8d9a92a9",
+          "neckPivot": {
+            "x": 66,
+            "y": 56
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-east-6.png",
+          "sha256": "14b2e0ae5988484e14d53ba11bf01d0b29dda535ad0457e28c45cef5131b090b",
+          "neckPivot": {
+            "x": 64,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-east-7.png",
+          "sha256": "d42d3590ff487ed5baae89599a7c4f5d991e1ac72f744dabb8e1f6b47ec42607",
+          "neckPivot": {
+            "x": 64,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        }
+      ]
+    },
+    {
+      "direction": "east",
+      "headUrl": "/assets/character-v3/head-eight-01/east.png",
+      "headSha256": "e0ff194091acadf4042ffd76627c88f444830239d59a7dc8dcd62e84d4952ec8",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/east-0.png",
+          "sha256": "a3f539b97139bf9e39a67c9ef6e78cef5e8fb9c326b11c7675870ae60e5bcd49",
+          "neckPivot": {
+            "x": 61,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/east-1.png",
+          "sha256": "d026c9d9f5d51d54907df6dcc5681a443978e0426ef3684a33398e474d8d0b47",
+          "neckPivot": {
+            "x": 61,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/east-2.png",
+          "sha256": "91de259056e2ffba2be1a4ce0c45462032567e2849b289b6d19f3ce2d6ea30e5",
+          "neckPivot": {
+            "x": 64,
+            "y": 55
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/east-3.png",
+          "sha256": "a5623a8cd8c4177f149950454c4a94af48dcd096f62c7d6244eb5bda6e7996bd",
+          "neckPivot": {
+            "x": 62,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/east-4.png",
+          "sha256": "e5fc46c91f995d17f6095d7487c6b167a2ed6fb17b037f505b09a7ca4bb1f301",
+          "neckPivot": {
+            "x": 61,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/east-5.png",
+          "sha256": "7bc60f33ba5f4051f905e833582f2bfefafbcd8768c5ee78a9c055581c6c6149",
+          "neckPivot": {
+            "x": 64,
+            "y": 55
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/east-6.png",
+          "sha256": "b6ca5fdee706d49786dda24925cb7bea7dbb063c73f71472d6c67b76e098b558",
+          "neckPivot": {
+            "x": 62,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/east-7.png",
+          "sha256": "389175851fa25028a43158d8e76806c0f6db68e04eb4528c55034d4024ef72c6",
+          "neckPivot": {
+            "x": 61,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north-east",
+      "headUrl": "/assets/character-v3/head-eight-01/north-east.png",
+      "headSha256": "22f5b66ce480a0c2eecc4ebd361aaa57ccfa6b4d78fd8ba89a332f9750dbf9bb",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-east-0.png",
+          "sha256": "55403d24231f4eba0902bfa04be68993a8a0051a1d486f3a66bc10a6496e08e8",
+          "neckPivot": {
+            "x": 64,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-east-1.png",
+          "sha256": "0434d581e292dde552f2787f6ad7cae686e7e6eb91a972aabd25fb29ae3a1d27",
+          "neckPivot": {
+            "x": 64,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-east-2.png",
+          "sha256": "387c34d2cc36d20832ec580fe768f1d1fa0e72cb819401848e1e952f1597a761",
+          "neckPivot": {
+            "x": 66,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-east-3.png",
+          "sha256": "8e57b87bb0cb47f24c7a900687f36de0ba93f61da71d8dee303bd0646425979d",
+          "neckPivot": {
+            "x": 64,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-east-4.png",
+          "sha256": "3c2f1d8edd782a149664a53f9bdcc04eec1e66b5dd6011048520ffa6bae25b06",
+          "neckPivot": {
+            "x": 64,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-east-5.png",
+          "sha256": "52688d7ff6a91833500673fe77e97dca771e0b98c165a912f39a95af213304aa",
+          "neckPivot": {
+            "x": 66,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-east-6.png",
+          "sha256": "8a08d2955ed569a6ece1bfccb35dde7d96bafae0a78ad95187789fbdcd35abfb",
+          "neckPivot": {
+            "x": 64,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-east-7.png",
+          "sha256": "c2e3e0280caf6272d68d4fd5370b38c991874534069157f41892da0ecb7ed02c",
+          "neckPivot": {
+            "x": 64,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north",
+      "headUrl": "/assets/character-v3/head-eight-01/north.png",
+      "headSha256": "954eb387ddec4a48dcb63c037705753d1a524a6396ee03ac1d353ca624dd98d1",
+      "headPivot": {
+        "x": 64,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-0.png",
+          "sha256": "11ed492d2b81f68c0d666f53256181a531b06e3ff6fd51033540f69f9953d991",
+          "neckPivot": {
+            "x": 62,
+            "y": 49
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-1.png",
+          "sha256": "c39a8eb46670830f6bb8cdfda279bcc97c8fc8a22404dd834df9c2d340baffb5",
+          "neckPivot": {
+            "x": 62,
+            "y": 49
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-2.png",
+          "sha256": "a2903a73be3200b2c0d7467924a3f94ef08e2f93c8f42f0ef33606767a08a384",
+          "neckPivot": {
+            "x": 62,
+            "y": 48
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-3.png",
+          "sha256": "9064633361a4c9bc9d8ca9895e116bd192a9d68c462a2762b2acb708487a6c31",
+          "neckPivot": {
+            "x": 62,
+            "y": 48
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-4.png",
+          "sha256": "fd0246c4be1663a9fd9ea55a738d00dea1b3f1127a1d3c6d0b3f9124306fe811",
+          "neckPivot": {
+            "x": 62,
+            "y": 49
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-5.png",
+          "sha256": "fa6b3e2d800cbfdd7943a795b74ec5ca8c1935fcb957c6b3575855366a9221f7",
+          "neckPivot": {
+            "x": 62,
+            "y": 48
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-6.png",
+          "sha256": "626a7933f363d11b84791b07dada255b1e71f9fab711865c0c68469a1ce2edbe",
+          "neckPivot": {
+            "x": 62,
+            "y": 48
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-7.png",
+          "sha256": "032c8f939425e30c8f2cdcfa3dae4db8948a80b9cad92f51184cbebe907b690c",
+          "neckPivot": {
+            "x": 62,
+            "y": 49
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north-west",
+      "headUrl": "/assets/character-v3/head-eight-01/north-west.png",
+      "headSha256": "f7cfab464653ebb612bffee7c196ba547d7590e953a5a9c5ac725d36767e4172",
+      "headPivot": {
+        "x": 64,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-west-0.png",
+          "sha256": "565633c66fb57c1f4d6414d4eb34d0565d523b72cd7eda808e9fe70114a8b12b",
+          "neckPivot": {
+            "x": 61,
+            "y": 55
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-west-1.png",
+          "sha256": "6687878bb97af82b9e3dd1c84bc432a39bfc8ab75d714557a715f7254ccccd87",
+          "neckPivot": {
+            "x": 61,
+            "y": 56
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-west-2.png",
+          "sha256": "98a1a6ce281039f6ba75a37bf58d02c5c83d7ce59ded13f95152e812017ed000",
+          "neckPivot": {
+            "x": 58,
+            "y": 55
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-west-3.png",
+          "sha256": "1bad19ffa5e226f434b2ddf7500e5aaf1bb58ed2afd63fc28e9c98ba471f312e",
+          "neckPivot": {
+            "x": 60,
+            "y": 55
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-west-4.png",
+          "sha256": "1966c55216637633325f8f02184b3d682c8d27a0ba3a8c7f52b11b3f98860ee5",
+          "neckPivot": {
+            "x": 61,
+            "y": 55
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-west-5.png",
+          "sha256": "57fa482ffb35e40c192afcbe4de84d09b863bf8f1a3359402e4072fd168a1d98",
+          "neckPivot": {
+            "x": 58,
+            "y": 55
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-west-6.png",
+          "sha256": "fd042d80ed9cc0ddb4cc2389227351258eedfb45f48c5f0d55534325d0d0199d",
+          "neckPivot": {
+            "x": 60,
+            "y": 55
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/north-west-7.png",
+          "sha256": "d44fa8840de0232065426a9d375d095198981301522fceb1769504035ebc4768",
+          "neckPivot": {
+            "x": 61,
+            "y": 55
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "west",
+      "headUrl": "/assets/character-v3/head-eight-01/west.png",
+      "headSha256": "f72b693fd621fc79b1cd76ef6cf4828ef98d9d65f883e2abfb9d888985a808b8",
+      "headPivot": {
+        "x": 65,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/west-0.png",
+          "sha256": "1111c1419444489f7018ba8d2afca3c12ecef5546b76c86122f0849dfc363b25",
+          "neckPivot": {
+            "x": 63,
+            "y": 56
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/west-1.png",
+          "sha256": "2e2068a4a511fd0797a60c02fcfcd94109568740db66ea3c268dddd1c66485d9",
+          "neckPivot": {
+            "x": 63,
+            "y": 56
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/west-2.png",
+          "sha256": "1d08e003f8236ff88c7baddad99325f7af32a561dbb81af30b355603432f281a",
+          "neckPivot": {
+            "x": 60,
+            "y": 57
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/west-3.png",
+          "sha256": "84fb234fe2609764b834b01b4a32bb8bdb322f565418527925add93ea663b3a2",
+          "neckPivot": {
+            "x": 62,
+            "y": 56
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/west-4.png",
+          "sha256": "d4c32541f3720950265b8868f69e96d0241daa74b989369739005d1a1d4e51f3",
+          "neckPivot": {
+            "x": 63,
+            "y": 56
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/west-5.png",
+          "sha256": "8f04b347f92e3eb6351cec33dd108ccbb836bbad05b8921690eac96046868644",
+          "neckPivot": {
+            "x": 60,
+            "y": 57
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/west-6.png",
+          "sha256": "67d6410bc9de77f239799a877ad81590a23a0633ca708e6879d35e87465c856c",
+          "neckPivot": {
+            "x": 62,
+            "y": 56
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/west-7.png",
+          "sha256": "293bcd45e1b88a0dbe355b3ef397b9142a37491d68a690173d4e2bff3d5666e3",
+          "neckPivot": {
+            "x": 63,
+            "y": 56
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        }
+      ]
+    },
+    {
+      "direction": "south-west",
+      "headUrl": "/assets/character-v3/head-eight-01/south-west.png",
+      "headSha256": "72bd0701ea25e028f807a707c33600aeb0f3dc6a6656a29ee645ec87c2d273e9",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-west-0.png",
+          "sha256": "8d9e4323e25d1a2d13aa1b665081383487d0628b3bdb7eb0ded1ee7fde3f6e2d",
+          "neckPivot": {
+            "x": 61,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-west-1.png",
+          "sha256": "ad54b5c4c68156cbb75fc7d47cb22ce8db7b48ae54fb48b2e888cb69b31dbefb",
+          "neckPivot": {
+            "x": 61,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-west-2.png",
+          "sha256": "b6a38bbf73d41ac1e853af00947ebe35d02577ad1aedf07f9fd7cf7596400b0c",
+          "neckPivot": {
+            "x": 58,
+            "y": 56
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-west-3.png",
+          "sha256": "c21f50a81b610ec40c7ef6d87ffc36ecdc34c424a50543f0ec3516db8179881c",
+          "neckPivot": {
+            "x": 60,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-west-4.png",
+          "sha256": "26f9ff86290ffe2512807a66f7d5cc83e5af259f5da40e8ea4a776f73b97442a",
+          "neckPivot": {
+            "x": 61,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-west-5.png",
+          "sha256": "37467bd12404c6834b5541e499cf88d404990068218dd43f7090cc768ff8e245",
+          "neckPivot": {
+            "x": 58,
+            "y": 56
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-west-6.png",
+          "sha256": "9d7840780d5cd32dcdb64d867e6d57f9bfbe4f9b1091a1d7e6d4d09550a1e067",
+          "neckPivot": {
+            "x": 60,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-dagger/south-west-7.png",
+          "sha256": "2d5c8ce066442ee95adbf0f1f748179281f5d91450081240f4967675df22f087",
+          "neckPivot": {
+            "x": 61,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        }
+      ]
+    }
+  ],
+  "sheet": {
+    "url": "/assets/character-v3/actions-eight-02/attack-dagger/sheet.png",
+    "sha256": "7a83a963b7b03586fcfc3645df760766227e2914815f07f43cb30e650f06c867",
+    "frameWidth": 128,
+    "frameHeight": 128
+  },
+  "visualApproved": false
+}
