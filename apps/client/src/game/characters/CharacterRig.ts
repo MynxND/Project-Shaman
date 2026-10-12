@@ -172,7 +172,8 @@ export class CharacterSprite extends Phaser.GameObjects.Sprite {
     return true;
   }
 
-  private swingWeapon() { const v = this.look.weapon ? EQUIPMENT_VISUALS[this.look.weapon] : undefined; return v?.kind === 'weapon' && !!v.swing; }
+  /** Swing weapons and magic weapons ride the striking hand, so the blow (or the cast) is made with the weapon in view. */
+  private swingWeapon() { const v = this.look.weapon ? EQUIPMENT_VISUALS[this.look.weapon] : undefined; return v?.kind === 'weapon' && !!(v.swing || v.bolt); }
 
   syncLayers() {
     // V3: weapons ride the hand anchors (v3-weapon.ts); headgear stays off (the SSR head has no crown point yet).

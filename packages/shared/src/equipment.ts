@@ -21,7 +21,8 @@ export type EquipmentVisual =
    *  `upright`: never leans with the arm (a bow held out to shoot, a shield). On the V3 body every weapon stands
    *  upright (RO-style fixed poses, no arm-following rotation); `swing` weapons (axes, blades) tilt to a fixed strike
    *  angle toward the facing while the arm is out in the attack. `bolt`: a magic weapon (staff, wand, fan, gohei) whose
-   *  basic attack is a short-range spirit bolt using MATK (MAGIC_BOLT) instead of a melee blow. */
+   *  basic attack is a short-range spirit bolt using MATK (MAGIC_BOLT) instead of a melee blow; like swing weapons it rides
+   *  the striking hand and points toward the target on the cast, so the staff is seen thrust forward. */
   | { slot: 'weapon'; kind: 'weapon'; grip: number; scale?: number; offhand?: { art: string; grip: number; scale?: number; upright?: boolean }; southOnly?: boolean; upright?: boolean; swing?: boolean; bolt?: boolean }
   /** Headgear on the crown; `lift` moves it along the head axis (rig pixels, + = down onto the head). */
   | { slot: 'head'; kind: 'headgear'; lift: number; scale?: number };

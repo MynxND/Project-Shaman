@@ -41,7 +41,8 @@ export function v3WeaponFrame(scene: Phaser.Scene, textureKey: string, swing = f
   const neck = entry.neck;
   return {
     grip: [grip.x, grip.y], tip: tipFor(grip, neck), front: inFront(dir, hand), crown: [0, 0], tilt: 0, view: dir, offFront: inFront(dir, hand === 'main' ? 'off' : 'main'),
-    strike: action === 'attack' && Math.hypot(grip.x - neck.x, grip.y - neck.y - 7) > 22 && grip.y - neck.y < 30,
+    // Strike frames: the hand rises above mid-torso (a hanging hand sits ~25-30 px below the neck).
+    strike: action === 'attack' && grip.y - neck.y < 20,
     hands: { key: handsKey(action, dir), frame: Number(index ?? 0) },
     ...(other ? { off: { grip: [other.x, other.y] as [number, number], tip: tipFor(other, neck) } } : {}),
   };

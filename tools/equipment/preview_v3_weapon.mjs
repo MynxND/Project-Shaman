@@ -20,7 +20,7 @@ if (!line) throw Error(`no EQUIPMENT_VISUALS weapon entry for ${id}`);
 const offText = /offhand: \{([^}]*)\}/.exec(line)?.[1] ?? null, mainText = line.replace(/offhand: \{[^}]*\}/, '');
 const num = (text, key, fallback) => { const v = new RegExp(`${key}: ([\\d.]+)`).exec(text); return v ? +v[1] : fallback; };
 const visual = {
-  grip: num(mainText, 'grip', 0.5), scale: num(mainText, 'scale', 1), upright: /upright: true/.test(mainText), southOnly: /southOnly: true/.test(mainText), swing: /swing: true/.test(mainText),
+  grip: num(mainText, 'grip', 0.5), scale: num(mainText, 'scale', 1), upright: /upright: true/.test(mainText), southOnly: /southOnly: true/.test(mainText), swing: /swing: true|bolt: true/.test(mainText),
   off: offText ? { art: /art: '([a-z-]+)'/.exec(offText)[1], grip: num(offText, 'grip', 0.5), scale: num(offText, 'scale', 1) } : null,
   offUpright: !!offText && /upright: true/.test(offText),
 };
@@ -58,7 +58,7 @@ for (const [row, dir] of DIRS.entries()) for (const [col, [action, i]] of column
   const layers = [];
   const fx = { south: 0, 'south-east': 1, east: 1, 'north-east': 1, north: 0, 'north-west': -1, west: -1, 'south-west': -1 }[dir];
   const front = (hand === 'main' ? fx : -fx) >= 0, offFront = (hand === 'main' ? -fx : fx) >= 0, g = entry[hand];
-  const strike = visual.swing && action === 'attack' && !!g && Math.hypot(g.x - entry.neck.x, g.y - entry.neck.y - 7) > 22 && g.y - entry.neck.y < 30;
+  const strike = visual.swing && action === 'attack' && !!g && g.y - entry.neck.y < 20;
   const weapon = g && await placed(id, dir, g, entry.neck, visual.grip, visual.scale, strike);
   const offhand = visual.off && entry[other] && await placed(visual.off.art, dir, entry[other], entry.neck, visual.off.grip, visual.off.scale, strike && !visual.offUpright);
   const hands = { input: await sharp(await readFile(p(`apps/client/public/assets/character-v3/hand-overlay/${action}-${dir}.png`))).extract({ left: i * 128, top: 0, width: 128, height: 128 }).resize(cell, cell, { kernel: 'nearest' }).png().toBuffer(), left: 0, top: 0 };

@@ -81,7 +81,7 @@ export class EquipmentLayers {
     if (weapon?.kind === 'weapon' && look.weapon && actor.scene.textures.exists(gearKey(look.weapon, view))) {
       this.weapon.setTexture(gearKey(look.weapon, view)).setOrigin(frame.view ? gripX(actor.scene, look.weapon, view) : .5, weapon.grip)
         .setPosition(x + frame.grip[0] * sx, y + frame.grip[1] * sy)
-        .setRotation(frame.view ? (weapon.swing && frame.strike ? STRIKE[frame.view] ?? 0 : 0) : weapon.upright ? 0 : Math.atan2((frame.tip[1] - frame.grip[1]) * sy, (frame.tip[0] - frame.grip[0]) * sx) + Math.PI / 2)
+        .setRotation(frame.view ? ((weapon.swing || weapon.bolt) && frame.strike ? STRIKE[frame.view] ?? 0 : 0) : weapon.upright ? 0 : Math.atan2((frame.tip[1] - frame.grip[1]) * sy, (frame.tip[0] - frame.grip[0]) * sx) + Math.PI / 2)
         .setScale(sx * (weapon.scale ?? 1), sy * (weapon.scale ?? 1)).setDepth(actor.depth + (frame.front ? .04 : -.04))
         .setAlpha(actor.alpha).setTint(actor.tintTopLeft).setVisible(true);
       this.weapon.texture.setFilter(Phaser.Textures.FilterMode.NEAREST);
