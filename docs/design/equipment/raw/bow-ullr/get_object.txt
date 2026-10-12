@@ -1,0 +1,26 @@
+﻿status: completed
+id: 22520953-9050-4633-9a29-287d12191c46
+name: a single tall Norse hunting longbow of pale yew wo
+state_name: base
+directions: 8
+size: 96x96px
+view: low top-down
+group: c20503cc-9dbb-4a93-b11a-380debede414
+
+rotations:
+  east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/22520953-9050-4633-9a29-287d12191c46/rotations/east.png
+  west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/22520953-9050-4633-9a29-287d12191c46/rotations/west.png
+  north: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/22520953-9050-4633-9a29-287d12191c46/rotations/north.png
+  south: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/22520953-9050-4633-9a29-287d12191c46/rotations/south.png
+  north-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/22520953-9050-4633-9a29-287d12191c46/rotations/north-east.png
+  north-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/22520953-9050-4633-9a29-287d12191c46/rotations/north-west.png
+  south-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/22520953-9050-4633-9a29-287d12191c46/rotations/south-east.png
+  south-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/22520953-9050-4633-9a29-287d12191c46/rotations/south-west.png
+
+animations: none
+
+download: https://api.pixellab.ai/mcp/objects/22520953-9050-4633-9a29-287d12191c46/download
+spritesheet: https://api.pixellab.ai/mcp/objects/22520953-9050-4633-9a29-287d12191c46/spritesheet (one uniform-grid sheet PNG + layout JSON, zipped)
+
+actions: animate_object(object_id="22520953-9050-4633-9a29-287d12191c46", ...) | create_object_state(object_id="22520953-9050-4633-9a29-287d12191c46", ...) | delete_object(object_id="22520953-9050-4633-9a29-287d12191c46")
+hint: animate_object(object_id="22520953-9050-4633-9a29-287d12191c46", animation_description="...")

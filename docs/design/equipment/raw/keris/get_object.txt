@@ -1,0 +1,26 @@
+﻿status: completed
+id: b6cf95a3-a97d-4a24-8bff-baab110814ae
+name: a single Javanese keris dagger with a wavy (luk) d
+state_name: base
+directions: 8
+size: 64x64px
+view: low top-down
+group: b5d4fd9d-d2f3-4205-9f23-c28f92909842
+
+rotations:
+  east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b6cf95a3-a97d-4a24-8bff-baab110814ae/rotations/east.png
+  west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b6cf95a3-a97d-4a24-8bff-baab110814ae/rotations/west.png
+  north: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b6cf95a3-a97d-4a24-8bff-baab110814ae/rotations/north.png
+  south: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b6cf95a3-a97d-4a24-8bff-baab110814ae/rotations/south.png
+  north-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b6cf95a3-a97d-4a24-8bff-baab110814ae/rotations/north-east.png
+  north-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b6cf95a3-a97d-4a24-8bff-baab110814ae/rotations/north-west.png
+  south-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b6cf95a3-a97d-4a24-8bff-baab110814ae/rotations/south-east.png
+  south-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b6cf95a3-a97d-4a24-8bff-baab110814ae/rotations/south-west.png
+
+animations: none
+
+download: https://api.pixellab.ai/mcp/objects/b6cf95a3-a97d-4a24-8bff-baab110814ae/download
+spritesheet: https://api.pixellab.ai/mcp/objects/b6cf95a3-a97d-4a24-8bff-baab110814ae/spritesheet (one uniform-grid sheet PNG + layout JSON, zipped)
+
+actions: animate_object(object_id="b6cf95a3-a97d-4a24-8bff-baab110814ae", ...) | create_object_state(object_id="b6cf95a3-a97d-4a24-8bff-baab110814ae", ...) | delete_object(object_id="b6cf95a3-a97d-4a24-8bff-baab110814ae")
+hint: animate_object(object_id="b6cf95a3-a97d-4a24-8bff-baab110814ae", animation_description="...")

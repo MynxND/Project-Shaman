@@ -16,8 +16,10 @@ export type EquipmentVisual =
   /** Swaps the body sprite set (docs/design/rig/raw/<body>/<outfit>/...). */
   | { slot: 'body'; kind: 'outfit'; outfit: string }
   /** Main-hand weapon; `grip` is where the hand holds it, as a fraction of the image height from the top. `offhand`
-   *  names extra art held in the other hand (Juggernaut's shield, the Keris branch's second keris), with its own grip. */
-  | { slot: 'weapon'; kind: 'weapon'; grip: number; scale?: number; offhand?: { art: string; grip: number; scale?: number } }
+   *  names extra art held in the other hand (Juggernaut's shield, the Keris branch's second keris), with its own grip.
+   *  `southOnly`: the generated views are not all upright, so every facing rotates the upright south view instead.
+   *  `upright`: never leans with the arm (a bow held out to shoot, a shield). */
+  | { slot: 'weapon'; kind: 'weapon'; grip: number; scale?: number; offhand?: { art: string; grip: number; scale?: number; upright?: boolean }; southOnly?: boolean; upright?: boolean }
   /** Headgear on the crown; `lift` moves it along the head axis (rig pixels, + = down onto the head). */
   | { slot: 'head'; kind: 'headgear'; lift: number; scale?: number };
 
@@ -32,6 +34,15 @@ export const EQUIPMENT_VISUALS: Readonly<Record<string, EquipmentVisual>> = {
   'staff-bone': { slot: 'weapon', kind: 'weapon', grip: 0.62 },
   // Job weapons (user-approved list 2026-10-12, PixelLab create_object_pro_flash 8 views, docs/design/equipment/items.json).
   'axe-taiga': { slot: 'weapon', kind: 'weapon', grip: 0.72, scale: 0.7 },
+  'knife-mor': { slot: 'weapon', kind: 'weapon', grip: 0.75, scale: 0.6 },
+  'keris': { slot: 'weapon', kind: 'weapon', grip: 0.85, scale: 0.6, offhand: { art: 'keris', grip: 0.85, scale: 0.6 }, southOnly: true },
+  'axe-juggernaut': { slot: 'weapon', kind: 'weapon', grip: 0.8, scale: 0.7, offhand: { art: 'shield-juggernaut', grip: 0.5, scale: 0.65, upright: true } },
+  'gohei-miko': { slot: 'weapon', kind: 'weapon', grip: 0.8, scale: 0.7 },
+  'bow-ullr': { slot: 'weapon', kind: 'weapon', grip: 0.5, scale: 0.8, upright: true },
+  'staff-achan': { slot: 'weapon', kind: 'weapon', grip: 0.62 },
+  'wand-santet': { slot: 'weapon', kind: 'weapon', grip: 0.75, scale: 0.75 },
+  'fan-onmyoji': { slot: 'weapon', kind: 'weapon', grip: 0.8, scale: 0.5 },
+  'staff-rune-seer': { slot: 'weapon', kind: 'weapon', grip: 0.62 },
   'hat-ngob': { slot: 'head', kind: 'headgear', lift: 18, scale: 0.9 },
   'hat-ritual': { slot: 'head', kind: 'headgear', lift: 34, scale: 0.75 },
 };
@@ -39,7 +50,8 @@ export const EQUIPMENT_VISUALS: Readonly<Record<string, EquipmentVisual>> = {
 /** Each branch's job weapon, given by the trainer at the job change (and to characters that changed job before the
  *  weapon existed). Only branches whose art is packaged are listed; the rest are added as their art is approved. */
 export const BRANCH_WEAPONS: Readonly<Record<string, string>> = {
-  taiga: 'axe-taiga',
+  taiga: 'axe-taiga', 'mor-phhee': 'knife-mor', keris: 'keris', juggernaut: 'axe-juggernaut', miko: 'gohei-miko', 'ullr-hunter': 'bow-ullr',
+  'achan-saiyasat': 'staff-achan', santet: 'wand-santet', onmyoji: 'fan-onmyoji', 'rune-seer': 'staff-rune-seer',
 };
 
 /** What a player wears, as synced in PlayerState.look: "slot:itemId" pairs joined by commas. */

@@ -1,0 +1,26 @@
+﻿status: completed
+id: 8d89dccc-e526-4186-9b81-09d73cd99e8e
+name: a single large round Slavic war shield of dark oak
+state_name: base
+directions: 8
+size: 64x64px
+view: low top-down
+group: e19f6647-c940-4ac7-a60e-5f42a6002848
+
+rotations:
+  east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/8d89dccc-e526-4186-9b81-09d73cd99e8e/rotations/east.png
+  west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/8d89dccc-e526-4186-9b81-09d73cd99e8e/rotations/west.png
+  north: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/8d89dccc-e526-4186-9b81-09d73cd99e8e/rotations/north.png
+  south: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/8d89dccc-e526-4186-9b81-09d73cd99e8e/rotations/south.png
+  north-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/8d89dccc-e526-4186-9b81-09d73cd99e8e/rotations/north-east.png
+  north-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/8d89dccc-e526-4186-9b81-09d73cd99e8e/rotations/north-west.png
+  south-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/8d89dccc-e526-4186-9b81-09d73cd99e8e/rotations/south-east.png
+  south-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/8d89dccc-e526-4186-9b81-09d73cd99e8e/rotations/south-west.png
+
+animations: none
+
+download: https://api.pixellab.ai/mcp/objects/8d89dccc-e526-4186-9b81-09d73cd99e8e/download
+spritesheet: https://api.pixellab.ai/mcp/objects/8d89dccc-e526-4186-9b81-09d73cd99e8e/spritesheet (one uniform-grid sheet PNG + layout JSON, zipped)
+
+actions: animate_object(object_id="8d89dccc-e526-4186-9b81-09d73cd99e8e", ...) | create_object_state(object_id="8d89dccc-e526-4186-9b81-09d73cd99e8e", ...) | delete_object(object_id="8d89dccc-e526-4186-9b81-09d73cd99e8e")
+hint: animate_object(object_id="8d89dccc-e526-4186-9b81-09d73cd99e8e", animation_description="...")

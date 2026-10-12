@@ -15,9 +15,16 @@ const DIRS = ['south', 'south-east', 'east', 'north-east', 'north', 'north-west'
 const FRONT = new Set(['south', 'south-east', 'south-west']);
 const anchors = JSON.parse(await readFile(p('apps/client/public/assets/character-v3/hand-anchors.json'), 'utf8'));
 const src = await readFile(p('packages/shared/src/equipment.ts'), 'utf8');
-const m = new RegExp(`'${id}': \\{ slot: 'weapon', kind: 'weapon', grip: ([\\d.]+)(?:, scale: ([\\d.]+))?(?:, offhand: \\{ art: '([a-z-]+)', grip: ([\\d.]+)(?:, scale: ([\\d.]+))? \\})? \\}`).exec(src);
-if (!m) throw Error(`no EQUIPMENT_VISUALS weapon entry for ${id}`);
-const visual = { grip: +m[1], scale: +(m[2] ?? 1), off: m[3] ? { art: m[3], grip: +m[4], scale: +(m[5] ?? 1) } : null };
+// The item's one-line EQUIPMENT_VISUALS entry: main fields, then the optional offhand object.
+const line = src.split(/\r?\n/).find((l) => l.trim().startsWith(`'${id}': { slot: 'weapon'`));
+if (!line) throw Error(`no EQUIPMENT_VISUALS weapon entry for ${id}`);
+const offText = /offhand: \{([^}]*)\}/.exec(line)?.[1] ?? null, mainText = line.replace(/offhand: \{[^}]*\}/, '');
+const num = (text, key, fallback) => { const v = new RegExp(`${key}: ([\\d.]+)`).exec(text); return v ? +v[1] : fallback; };
+const visual = {
+  grip: num(mainText, 'grip', 0.5), scale: num(mainText, 'scale', 1), upright: /upright: true/.test(mainText), southOnly: /southOnly: true/.test(mainText),
+  off: offText ? { art: /art: '([a-z-]+)'/.exec(offText)[1], grip: num(offText, 'grip', 0.5), scale: num(offText, 'scale', 1) } : null,
+  offUpright: !!offText && /upright: true/.test(offText),
+};
 const body = JSON.parse(await readFile(p('apps/client/public/assets/character-v3/body-eight-02/manifest.json'), 'utf8'));
 const frameUrl = {
   idle: (dir) => body.frames.find((f) => f.direction === dir).url,
@@ -31,11 +38,11 @@ const tipFor = (hand, neck) => {
   return { x: hand.x + (ux / n) * 12, y: hand.y + (uy / n) * 12 };
 };
 const SCALE = 2;
-async function placed(art, dir, hand, neck, grip, scale) {
-  const img = sharp(await readFile(p(`apps/client/public/assets/equipment/${art}/${dir}.png`)));
+async function placed(art, dir, hand, neck, grip, scale, upright = false) {
+  const img = sharp(await readFile(p(`apps/client/public/assets/equipment/${art}/${visual.southOnly ? 'south' : dir}.png`)));
   const meta = await img.metadata();
   const w = Math.max(1, Math.round(meta.width * scale * SCALE)), h = Math.max(1, Math.round(meta.height * scale * SCALE));
-  const tip = tipFor(hand, neck), angle = Math.atan2(tip.y - hand.y, tip.x - hand.x) + Math.PI / 2;
+  const tip = tipFor(hand, neck), angle = upright ? 0 : Math.atan2(tip.y - hand.y, tip.x - hand.x) + Math.PI / 2;
   const rotated = await sharp(await img.resize(w, h, { kernel: 'nearest' }).png().toBuffer())
     .rotate(angle * 180 / Math.PI, { background: { r: 0, g: 0, b: 0, alpha: 0 } }).png().toBuffer({ resolveWithObject: true });
   const vx = 0, vy = grip * h - h / 2, c = Math.cos(angle), s = Math.sin(angle);
@@ -48,8 +55,8 @@ for (const [row, dir] of DIRS.entries()) for (const [col, [action, i]] of column
   const entry = anchors.actions[action][dir][i], hand = anchors.weaponHand[dir], other = hand === 'main' ? 'off' : 'main';
   const layers = [];
   const front = FRONT.has(dir);
-  const weapon = entry[hand] && await placed(id, dir, entry[hand], entry.neck, visual.grip, visual.scale);
-  const offhand = visual.off && entry[other] && await placed(visual.off.art, dir, entry[other], entry.neck, visual.off.grip, visual.off.scale);
+  const weapon = entry[hand] && await placed(id, dir, entry[hand], entry.neck, visual.grip, visual.scale, visual.upright);
+  const offhand = visual.off && entry[other] && await placed(visual.off.art, dir, entry[other], entry.neck, visual.off.grip, visual.off.scale, visual.offUpright);
   const bodyImg = { input: await sharp(await readFile(p(`apps/client/public${frameUrl[action](dir, i)}`))).resize(cell, cell, { kernel: 'nearest' }).png().toBuffer(), left: 0, top: 0 };
   if (front) { if (offhand) layers.push(offhand); layers.push(bodyImg); if (weapon) layers.push(weapon); }
   else { if (weapon) layers.push(weapon); layers.push(bodyImg); if (offhand) layers.push(offhand); }

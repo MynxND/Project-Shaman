@@ -385,6 +385,776 @@
           }
         }
       }
+    },
+    "knife-mor": {
+      "slot": "weapon",
+      "views": {
+        "south": {
+          "image": "knife-mor/south.png",
+          "width": 15,
+          "height": 62,
+          "pivot": {
+            "x": 7.5,
+            "y": 31
+          }
+        },
+        "south-east": {
+          "image": "knife-mor/south-east.png",
+          "width": 15,
+          "height": 62,
+          "pivot": {
+            "x": 7.5,
+            "y": 31
+          }
+        },
+        "east": {
+          "image": "knife-mor/east.png",
+          "width": 13,
+          "height": 62,
+          "pivot": {
+            "x": 6.5,
+            "y": 31
+          }
+        },
+        "north-east": {
+          "image": "knife-mor/north-east.png",
+          "width": 13,
+          "height": 61,
+          "pivot": {
+            "x": 6.5,
+            "y": 30.5
+          }
+        },
+        "north": {
+          "image": "knife-mor/north.png",
+          "width": 15,
+          "height": 62,
+          "pivot": {
+            "x": 7.5,
+            "y": 31
+          }
+        },
+        "north-west": {
+          "image": "knife-mor/north-west.png",
+          "width": 15,
+          "height": 62,
+          "pivot": {
+            "x": 7.5,
+            "y": 31
+          }
+        },
+        "west": {
+          "image": "knife-mor/west.png",
+          "width": 14,
+          "height": 61,
+          "pivot": {
+            "x": 7,
+            "y": 30.5
+          }
+        },
+        "south-west": {
+          "image": "knife-mor/south-west.png",
+          "width": 13,
+          "height": 62,
+          "pivot": {
+            "x": 6.5,
+            "y": 31
+          }
+        }
+      }
+    },
+    "keris": {
+      "slot": "weapon",
+      "views": {
+        "south": {
+          "image": "keris/south.png",
+          "width": 19,
+          "height": 64,
+          "pivot": {
+            "x": 9.5,
+            "y": 32
+          }
+        },
+        "south-east": {
+          "image": "keris/south-east.png",
+          "width": 47,
+          "height": 53,
+          "pivot": {
+            "x": 23.5,
+            "y": 26.5
+          }
+        },
+        "east": {
+          "image": "keris/east.png",
+          "width": 61,
+          "height": 32,
+          "pivot": {
+            "x": 30.5,
+            "y": 16
+          }
+        },
+        "north-east": {
+          "image": "keris/north-east.png",
+          "width": 41,
+          "height": 20,
+          "pivot": {
+            "x": 20.5,
+            "y": 10
+          }
+        },
+        "north": {
+          "image": "keris/north.png",
+          "width": 17,
+          "height": 37,
+          "pivot": {
+            "x": 8.5,
+            "y": 18.5
+          }
+        },
+        "north-west": {
+          "image": "keris/north-west.png",
+          "width": 52,
+          "height": 19,
+          "pivot": {
+            "x": 26,
+            "y": 9.5
+          }
+        },
+        "west": {
+          "image": "keris/west.png",
+          "width": 61,
+          "height": 40,
+          "pivot": {
+            "x": 30.5,
+            "y": 20
+          }
+        },
+        "south-west": {
+          "image": "keris/south-west.png",
+          "width": 42,
+          "height": 59,
+          "pivot": {
+            "x": 21,
+            "y": 29.5
+          }
+        }
+      }
+    },
+    "axe-juggernaut": {
+      "slot": "weapon",
+      "views": {
+        "south": {
+          "image": "axe-juggernaut/south.png",
+          "width": 35,
+          "height": 62,
+          "pivot": {
+            "x": 17.5,
+            "y": 31
+          }
+        },
+        "south-east": {
+          "image": "axe-juggernaut/south-east.png",
+          "width": 25,
+          "height": 63,
+          "pivot": {
+            "x": 12.5,
+            "y": 31.5
+          }
+        },
+        "east": {
+          "image": "axe-juggernaut/east.png",
+          "width": 12,
+          "height": 63,
+          "pivot": {
+            "x": 6,
+            "y": 31.5
+          }
+        },
+        "north-east": {
+          "image": "axe-juggernaut/north-east.png",
+          "width": 28,
+          "height": 63,
+          "pivot": {
+            "x": 14,
+            "y": 31.5
+          }
+        },
+        "north": {
+          "image": "axe-juggernaut/north.png",
+          "width": 36,
+          "height": 62,
+          "pivot": {
+            "x": 18,
+            "y": 31
+          }
+        },
+        "north-west": {
+          "image": "axe-juggernaut/north-west.png",
+          "width": 26,
+          "height": 61,
+          "pivot": {
+            "x": 13,
+            "y": 30.5
+          }
+        },
+        "west": {
+          "image": "axe-juggernaut/west.png",
+          "width": 12,
+          "height": 62,
+          "pivot": {
+            "x": 6,
+            "y": 31
+          }
+        },
+        "south-west": {
+          "image": "axe-juggernaut/south-west.png",
+          "width": 31,
+          "height": 61,
+          "pivot": {
+            "x": 15.5,
+            "y": 30.5
+          }
+        }
+      }
+    },
+    "shield-juggernaut": {
+      "slot": "offhand",
+      "views": {
+        "south": {
+          "image": "shield-juggernaut/south.png",
+          "width": 55,
+          "height": 58,
+          "pivot": {
+            "x": 27.5,
+            "y": 29
+          }
+        },
+        "south-east": {
+          "image": "shield-juggernaut/south-east.png",
+          "width": 45,
+          "height": 60,
+          "pivot": {
+            "x": 22.5,
+            "y": 30
+          }
+        },
+        "east": {
+          "image": "shield-juggernaut/east.png",
+          "width": 17,
+          "height": 60,
+          "pivot": {
+            "x": 8.5,
+            "y": 30
+          }
+        },
+        "north-east": {
+          "image": "shield-juggernaut/north-east.png",
+          "width": 47,
+          "height": 59,
+          "pivot": {
+            "x": 23.5,
+            "y": 29.5
+          }
+        },
+        "north": {
+          "image": "shield-juggernaut/north.png",
+          "width": 55,
+          "height": 58,
+          "pivot": {
+            "x": 27.5,
+            "y": 29
+          }
+        },
+        "north-west": {
+          "image": "shield-juggernaut/north-west.png",
+          "width": 47,
+          "height": 59,
+          "pivot": {
+            "x": 23.5,
+            "y": 29.5
+          }
+        },
+        "west": {
+          "image": "shield-juggernaut/west.png",
+          "width": 18,
+          "height": 60,
+          "pivot": {
+            "x": 9,
+            "y": 30
+          }
+        },
+        "south-west": {
+          "image": "shield-juggernaut/south-west.png",
+          "width": 48,
+          "height": 60,
+          "pivot": {
+            "x": 24,
+            "y": 30
+          }
+        }
+      }
+    },
+    "gohei-miko": {
+      "slot": "weapon",
+      "views": {
+        "south": {
+          "image": "gohei-miko/south.png",
+          "width": 29,
+          "height": 71,
+          "pivot": {
+            "x": 14.5,
+            "y": 35.5
+          }
+        },
+        "south-east": {
+          "image": "gohei-miko/south-east.png",
+          "width": 26,
+          "height": 71,
+          "pivot": {
+            "x": 13,
+            "y": 35.5
+          }
+        },
+        "east": {
+          "image": "gohei-miko/east.png",
+          "width": 25,
+          "height": 70,
+          "pivot": {
+            "x": 12.5,
+            "y": 35
+          }
+        },
+        "north-east": {
+          "image": "gohei-miko/north-east.png",
+          "width": 27,
+          "height": 69,
+          "pivot": {
+            "x": 13.5,
+            "y": 34.5
+          }
+        },
+        "north": {
+          "image": "gohei-miko/north.png",
+          "width": 31,
+          "height": 69,
+          "pivot": {
+            "x": 15.5,
+            "y": 34.5
+          }
+        },
+        "north-west": {
+          "image": "gohei-miko/north-west.png",
+          "width": 28,
+          "height": 69,
+          "pivot": {
+            "x": 14,
+            "y": 34.5
+          }
+        },
+        "west": {
+          "image": "gohei-miko/west.png",
+          "width": 25,
+          "height": 70,
+          "pivot": {
+            "x": 12.5,
+            "y": 35
+          }
+        },
+        "south-west": {
+          "image": "gohei-miko/south-west.png",
+          "width": 27,
+          "height": 71,
+          "pivot": {
+            "x": 13.5,
+            "y": 35.5
+          }
+        }
+      }
+    },
+    "bow-ullr": {
+      "slot": "weapon",
+      "views": {
+        "south": {
+          "image": "bow-ullr/south.png",
+          "width": 26,
+          "height": 96,
+          "pivot": {
+            "x": 13,
+            "y": 48
+          }
+        },
+        "south-east": {
+          "image": "bow-ullr/south-east.png",
+          "width": 30,
+          "height": 96,
+          "pivot": {
+            "x": 15,
+            "y": 48
+          }
+        },
+        "east": {
+          "image": "bow-ullr/east.png",
+          "width": 28,
+          "height": 96,
+          "pivot": {
+            "x": 14,
+            "y": 48
+          }
+        },
+        "north-east": {
+          "image": "bow-ullr/north-east.png",
+          "width": 16,
+          "height": 96,
+          "pivot": {
+            "x": 8,
+            "y": 48
+          }
+        },
+        "north": {
+          "image": "bow-ullr/north.png",
+          "width": 28,
+          "height": 96,
+          "pivot": {
+            "x": 14,
+            "y": 48
+          }
+        },
+        "north-west": {
+          "image": "bow-ullr/north-west.png",
+          "width": 27,
+          "height": 96,
+          "pivot": {
+            "x": 13.5,
+            "y": 48
+          }
+        },
+        "west": {
+          "image": "bow-ullr/west.png",
+          "width": 18,
+          "height": 96,
+          "pivot": {
+            "x": 9,
+            "y": 48
+          }
+        },
+        "south-west": {
+          "image": "bow-ullr/south-west.png",
+          "width": 18,
+          "height": 96,
+          "pivot": {
+            "x": 9,
+            "y": 48
+          }
+        }
+      }
+    },
+    "staff-achan": {
+      "slot": "weapon",
+      "views": {
+        "south": {
+          "image": "staff-achan/south.png",
+          "width": 24,
+          "height": 96,
+          "pivot": {
+            "x": 12,
+            "y": 48
+          }
+        },
+        "south-east": {
+          "image": "staff-achan/south-east.png",
+          "width": 16,
+          "height": 96,
+          "pivot": {
+            "x": 8,
+            "y": 48
+          }
+        },
+        "east": {
+          "image": "staff-achan/east.png",
+          "width": 21,
+          "height": 96,
+          "pivot": {
+            "x": 10.5,
+            "y": 48
+          }
+        },
+        "north-east": {
+          "image": "staff-achan/north-east.png",
+          "width": 25,
+          "height": 96,
+          "pivot": {
+            "x": 12.5,
+            "y": 48
+          }
+        },
+        "north": {
+          "image": "staff-achan/north.png",
+          "width": 22,
+          "height": 96,
+          "pivot": {
+            "x": 11,
+            "y": 48
+          }
+        },
+        "north-west": {
+          "image": "staff-achan/north-west.png",
+          "width": 15,
+          "height": 95,
+          "pivot": {
+            "x": 7.5,
+            "y": 47.5
+          }
+        },
+        "west": {
+          "image": "staff-achan/west.png",
+          "width": 23,
+          "height": 96,
+          "pivot": {
+            "x": 11.5,
+            "y": 48
+          }
+        },
+        "south-west": {
+          "image": "staff-achan/south-west.png",
+          "width": 26,
+          "height": 96,
+          "pivot": {
+            "x": 13,
+            "y": 48
+          }
+        }
+      }
+    },
+    "wand-santet": {
+      "slot": "weapon",
+      "views": {
+        "south": {
+          "image": "wand-santet/south.png",
+          "width": 32,
+          "height": 94,
+          "pivot": {
+            "x": 16,
+            "y": 47
+          }
+        },
+        "south-east": {
+          "image": "wand-santet/south-east.png",
+          "width": 27,
+          "height": 95,
+          "pivot": {
+            "x": 13.5,
+            "y": 47.5
+          }
+        },
+        "east": {
+          "image": "wand-santet/east.png",
+          "width": 39,
+          "height": 92,
+          "pivot": {
+            "x": 19.5,
+            "y": 46
+          }
+        },
+        "north-east": {
+          "image": "wand-santet/north-east.png",
+          "width": 41,
+          "height": 89,
+          "pivot": {
+            "x": 20.5,
+            "y": 44.5
+          }
+        },
+        "north": {
+          "image": "wand-santet/north.png",
+          "width": 34,
+          "height": 85,
+          "pivot": {
+            "x": 17,
+            "y": 42.5
+          }
+        },
+        "north-west": {
+          "image": "wand-santet/north-west.png",
+          "width": 26,
+          "height": 85,
+          "pivot": {
+            "x": 13,
+            "y": 42.5
+          }
+        },
+        "west": {
+          "image": "wand-santet/west.png",
+          "width": 39,
+          "height": 91,
+          "pivot": {
+            "x": 19.5,
+            "y": 45.5
+          }
+        },
+        "south-west": {
+          "image": "wand-santet/south-west.png",
+          "width": 39,
+          "height": 93,
+          "pivot": {
+            "x": 19.5,
+            "y": 46.5
+          }
+        }
+      }
+    },
+    "fan-onmyoji": {
+      "slot": "weapon",
+      "views": {
+        "south": {
+          "image": "fan-onmyoji/south.png",
+          "width": 52,
+          "height": 51,
+          "pivot": {
+            "x": 26,
+            "y": 25.5
+          }
+        },
+        "south-east": {
+          "image": "fan-onmyoji/south-east.png",
+          "width": 36,
+          "height": 52,
+          "pivot": {
+            "x": 18,
+            "y": 26
+          }
+        },
+        "east": {
+          "image": "fan-onmyoji/east.png",
+          "width": 21,
+          "height": 51,
+          "pivot": {
+            "x": 10.5,
+            "y": 25.5
+          }
+        },
+        "north-east": {
+          "image": "fan-onmyoji/north-east.png",
+          "width": 45,
+          "height": 42,
+          "pivot": {
+            "x": 22.5,
+            "y": 21
+          }
+        },
+        "north": {
+          "image": "fan-onmyoji/north.png",
+          "width": 52,
+          "height": 41,
+          "pivot": {
+            "x": 26,
+            "y": 20.5
+          }
+        },
+        "north-west": {
+          "image": "fan-onmyoji/north-west.png",
+          "width": 41,
+          "height": 42,
+          "pivot": {
+            "x": 20.5,
+            "y": 21
+          }
+        },
+        "west": {
+          "image": "fan-onmyoji/west.png",
+          "width": 21,
+          "height": 51,
+          "pivot": {
+            "x": 10.5,
+            "y": 25.5
+          }
+        },
+        "south-west": {
+          "image": "fan-onmyoji/south-west.png",
+          "width": 44,
+          "height": 51,
+          "pivot": {
+            "x": 22,
+            "y": 25.5
+          }
+        }
+      }
+    },
+    "staff-rune-seer": {
+      "slot": "weapon",
+      "views": {
+        "south": {
+          "image": "staff-rune-seer/south.png",
+          "width": 26,
+          "height": 95,
+          "pivot": {
+            "x": 13,
+            "y": 47.5
+          }
+        },
+        "south-east": {
+          "image": "staff-rune-seer/south-east.png",
+          "width": 22,
+          "height": 95,
+          "pivot": {
+            "x": 11,
+            "y": 47.5
+          }
+        },
+        "east": {
+          "image": "staff-rune-seer/east.png",
+          "width": 20,
+          "height": 95,
+          "pivot": {
+            "x": 10,
+            "y": 47.5
+          }
+        },
+        "north-east": {
+          "image": "staff-rune-seer/north-east.png",
+          "width": 29,
+          "height": 95,
+          "pivot": {
+            "x": 14.5,
+            "y": 47.5
+          }
+        },
+        "north": {
+          "image": "staff-rune-seer/north.png",
+          "width": 28,
+          "height": 95,
+          "pivot": {
+            "x": 14,
+            "y": 47.5
+          }
+        },
+        "north-west": {
+          "image": "staff-rune-seer/north-west.png",
+          "width": 22,
+          "height": 95,
+          "pivot": {
+            "x": 11,
+            "y": 47.5
+          }
+        },
+        "west": {
+          "image": "staff-rune-seer/west.png",
+          "width": 19,
+          "height": 95,
+          "pivot": {
+            "x": 9.5,
+            "y": 47.5
+          }
+        },
+        "south-west": {
+          "image": "staff-rune-seer/south-west.png",
+          "width": 27,
+          "height": 95,
+          "pivot": {
+            "x": 13.5,
+            "y": 47.5
+          }
+        }
+      }
     }
   }
 }

@@ -1,0 +1,26 @@
+﻿status: completed
+id: b4eb5c30-094d-455c-8a2c-34aa5a608a45
+name: a single one-handed Russian war axe with a short d
+state_name: base
+directions: 8
+size: 64x64px
+view: low top-down
+group: e3029bc9-ecd3-40f6-b965-fcd843998b11
+
+rotations:
+  east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b4eb5c30-094d-455c-8a2c-34aa5a608a45/rotations/east.png
+  west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b4eb5c30-094d-455c-8a2c-34aa5a608a45/rotations/west.png
+  north: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b4eb5c30-094d-455c-8a2c-34aa5a608a45/rotations/north.png
+  south: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b4eb5c30-094d-455c-8a2c-34aa5a608a45/rotations/south.png
+  north-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b4eb5c30-094d-455c-8a2c-34aa5a608a45/rotations/north-east.png
+  north-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b4eb5c30-094d-455c-8a2c-34aa5a608a45/rotations/north-west.png
+  south-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b4eb5c30-094d-455c-8a2c-34aa5a608a45/rotations/south-east.png
+  south-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b4eb5c30-094d-455c-8a2c-34aa5a608a45/rotations/south-west.png
+
+animations: none
+
+download: https://api.pixellab.ai/mcp/objects/b4eb5c30-094d-455c-8a2c-34aa5a608a45/download
+spritesheet: https://api.pixellab.ai/mcp/objects/b4eb5c30-094d-455c-8a2c-34aa5a608a45/spritesheet (one uniform-grid sheet PNG + layout JSON, zipped)
+
+actions: animate_object(object_id="b4eb5c30-094d-455c-8a2c-34aa5a608a45", ...) | create_object_state(object_id="b4eb5c30-094d-455c-8a2c-34aa5a608a45", ...) | delete_object(object_id="b4eb5c30-094d-455c-8a2c-34aa5a608a45")
+hint: animate_object(object_id="b4eb5c30-094d-455c-8a2c-34aa5a608a45", animation_description="...")

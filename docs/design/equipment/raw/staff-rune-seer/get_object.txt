@@ -1,0 +1,26 @@
+﻿status: completed
+id: 960da455-168e-47b4-b806-f75bc254e030
+name: a single Norse rune seer staff of twisted pale ash
+state_name: base
+directions: 8
+size: 96x96px
+view: low top-down
+group: 69d82004-dc9d-4231-bebf-35eb10b9fcd9
+
+rotations:
+  east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/960da455-168e-47b4-b806-f75bc254e030/rotations/east.png
+  west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/960da455-168e-47b4-b806-f75bc254e030/rotations/west.png
+  north: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/960da455-168e-47b4-b806-f75bc254e030/rotations/north.png
+  south: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/960da455-168e-47b4-b806-f75bc254e030/rotations/south.png
+  north-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/960da455-168e-47b4-b806-f75bc254e030/rotations/north-east.png
+  north-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/960da455-168e-47b4-b806-f75bc254e030/rotations/north-west.png
+  south-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/960da455-168e-47b4-b806-f75bc254e030/rotations/south-east.png
+  south-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/960da455-168e-47b4-b806-f75bc254e030/rotations/south-west.png
+
+animations: none
+
+download: https://api.pixellab.ai/mcp/objects/960da455-168e-47b4-b806-f75bc254e030/download
+spritesheet: https://api.pixellab.ai/mcp/objects/960da455-168e-47b4-b806-f75bc254e030/spritesheet (one uniform-grid sheet PNG + layout JSON, zipped)
+
+actions: animate_object(object_id="960da455-168e-47b4-b806-f75bc254e030", ...) | create_object_state(object_id="960da455-168e-47b4-b806-f75bc254e030", ...) | delete_object(object_id="960da455-168e-47b4-b806-f75bc254e030")
+hint: animate_object(object_id="960da455-168e-47b4-b806-f75bc254e030", animation_description="...")

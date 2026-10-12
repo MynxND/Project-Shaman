@@ -61,11 +61,11 @@ export class EquipmentLayers {
     const sx = actor.scaleX, sy = actor.scaleY;
     const x = actor.x - actor.originX * size * sx, y = actor.y - actor.originY * size * sy;
     const weapon = look.weapon ? EQUIPMENT_VISUALS[look.weapon] : undefined;
-    const view = frame.view ?? 'south';
+    const view = weapon?.kind === 'weapon' && weapon.southOnly ? 'south' : frame.view ?? 'south';
     if (weapon?.kind === 'weapon' && look.weapon && actor.scene.textures.exists(gearKey(look.weapon, view))) {
       this.weapon.setTexture(gearKey(look.weapon, view)).setOrigin(.5, weapon.grip)
         .setPosition(x + frame.grip[0] * sx, y + frame.grip[1] * sy)
-        .setRotation(Math.atan2((frame.tip[1] - frame.grip[1]) * sy, (frame.tip[0] - frame.grip[0]) * sx) + Math.PI / 2)
+        .setRotation(weapon.upright ? 0 : Math.atan2((frame.tip[1] - frame.grip[1]) * sy, (frame.tip[0] - frame.grip[0]) * sx) + Math.PI / 2)
         .setScale(sx * (weapon.scale ?? 1), sy * (weapon.scale ?? 1)).setDepth(actor.depth + (frame.front ? .04 : -.04))
         .setAlpha(actor.alpha).setTint(actor.tintTopLeft).setVisible(true);
       this.weapon.texture.setFilter(Phaser.Textures.FilterMode.NEAREST);
@@ -73,7 +73,7 @@ export class EquipmentLayers {
       if (off && hand && actor.scene.textures.exists(gearKey(off.art, view))) {
         this.offhand.setTexture(gearKey(off.art, view)).setOrigin(.5, off.grip)
           .setPosition(x + hand.grip[0] * sx, y + hand.grip[1] * sy)
-          .setRotation(Math.atan2((hand.tip[1] - hand.grip[1]) * sy, (hand.tip[0] - hand.grip[0]) * sx) + Math.PI / 2)
+          .setRotation(off.upright ? 0 : Math.atan2((hand.tip[1] - hand.grip[1]) * sy, (hand.tip[0] - hand.grip[0]) * sx) + Math.PI / 2)
           .setScale(sx * (off.scale ?? 1), sy * (off.scale ?? 1)).setDepth(actor.depth + (frame.front ? -.04 : .04))
           .setAlpha(actor.alpha).setTint(actor.tintTopLeft).setVisible(true);
         this.offhand.texture.setFilter(Phaser.Textures.FilterMode.NEAREST);

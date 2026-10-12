@@ -1,0 +1,26 @@
+﻿status: completed
+id: ad151b95-0122-4a6c-a309-8b928d7eed9f
+name: a single Thai shaman ritual knife (mor phi knife) 
+state_name: base
+directions: 8
+size: 64x64px
+view: low top-down
+group: 5a87a8ae-f3f2-4643-9f4f-241a3ae53b8e
+
+rotations:
+  east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/ad151b95-0122-4a6c-a309-8b928d7eed9f/rotations/east.png
+  west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/ad151b95-0122-4a6c-a309-8b928d7eed9f/rotations/west.png
+  north: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/ad151b95-0122-4a6c-a309-8b928d7eed9f/rotations/north.png
+  south: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/ad151b95-0122-4a6c-a309-8b928d7eed9f/rotations/south.png
+  north-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/ad151b95-0122-4a6c-a309-8b928d7eed9f/rotations/north-east.png
+  north-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/ad151b95-0122-4a6c-a309-8b928d7eed9f/rotations/north-west.png
+  south-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/ad151b95-0122-4a6c-a309-8b928d7eed9f/rotations/south-east.png
+  south-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/ad151b95-0122-4a6c-a309-8b928d7eed9f/rotations/south-west.png
+
+animations: none
+
+download: https://api.pixellab.ai/mcp/objects/ad151b95-0122-4a6c-a309-8b928d7eed9f/download
+spritesheet: https://api.pixellab.ai/mcp/objects/ad151b95-0122-4a6c-a309-8b928d7eed9f/spritesheet (one uniform-grid sheet PNG + layout JSON, zipped)
+
+actions: animate_object(object_id="ad151b95-0122-4a6c-a309-8b928d7eed9f", ...) | create_object_state(object_id="ad151b95-0122-4a6c-a309-8b928d7eed9f", ...) | delete_object(object_id="ad151b95-0122-4a6c-a309-8b928d7eed9f")
+hint: animate_object(object_id="ad151b95-0122-4a6c-a309-8b928d7eed9f", animation_description="...")

@@ -1,0 +1,26 @@
+﻿status: completed
+id: f2936a55-7fda-4379-a51b-bafb7e0817e6
+name: a single Japanese Shinto gohei wand: a slim pale w
+state_name: base
+directions: 8
+size: 96x96px
+view: low top-down
+group: 7d323bae-d999-4c9a-abc2-8f8c68223725
+
+rotations:
+  east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/f2936a55-7fda-4379-a51b-bafb7e0817e6/rotations/east.png
+  west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/f2936a55-7fda-4379-a51b-bafb7e0817e6/rotations/west.png
+  north: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/f2936a55-7fda-4379-a51b-bafb7e0817e6/rotations/north.png
+  south: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/f2936a55-7fda-4379-a51b-bafb7e0817e6/rotations/south.png
+  north-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/f2936a55-7fda-4379-a51b-bafb7e0817e6/rotations/north-east.png
+  north-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/f2936a55-7fda-4379-a51b-bafb7e0817e6/rotations/north-west.png
+  south-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/f2936a55-7fda-4379-a51b-bafb7e0817e6/rotations/south-east.png
+  south-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/f2936a55-7fda-4379-a51b-bafb7e0817e6/rotations/south-west.png
+
+animations: none
+
+download: https://api.pixellab.ai/mcp/objects/f2936a55-7fda-4379-a51b-bafb7e0817e6/download
+spritesheet: https://api.pixellab.ai/mcp/objects/f2936a55-7fda-4379-a51b-bafb7e0817e6/spritesheet (one uniform-grid sheet PNG + layout JSON, zipped)
+
+actions: animate_object(object_id="f2936a55-7fda-4379-a51b-bafb7e0817e6", ...) | create_object_state(object_id="f2936a55-7fda-4379-a51b-bafb7e0817e6", ...) | delete_object(object_id="f2936a55-7fda-4379-a51b-bafb7e0817e6")
+hint: animate_object(object_id="f2936a55-7fda-4379-a51b-bafb7e0817e6", animation_description="...")

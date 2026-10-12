@@ -32,3 +32,13 @@ The `/characters` inspector uses the exact world renderer without changing any p
 ## Pending scope
 
 Generation and visual review are still in progress. Independent hair, top and pants are not delivered. The original bag items removed by Claude's outfit revision remain archived art; they are not interchangeable clothing layers. Session persistence and durable item ownership remain outside this task.
+
+## Job weapons on Character V3 (2026-10-12)
+
+User-approved list: Medium bell staff (existing), Mor Phhee ritual knife, Keris twin keris, Juggernaut one-hand axe + large shield, Taiga two-hand war axe, Miko gohei, Ullr Hunter longbow, Achan sai-sin staff, Santet bone needle wand, Onmyoji ritual fan, Rune Seer runestone staff. PixelLab `create_object_pro_flash`, 8 views (`items.json`); spend 7 (axe-taiga test) + 65 (the other ten) = 72 generations.
+
+- Weapons are items: `BRANCH_WEAPONS` (shared/equipment.ts) gives and wears the branch weapon at the job change (`advanceJobWithWeapon`) and on load for characters that advanced earlier (`migrateProfile`).
+- V3 has no hand joints: `tools/rig/v3_hand_anchors.mjs` builds `assets/character-v3/hand-anchors.json` (skin-palette hand detection, attack skeleton poses for S/SW/W/NW, idle hand + body bob for walk/cast, `docs/design/character-v3/hand-anchors-overrides.json`). The weapon rides the hand that strikes in each direction.
+- Rendering (`v3-weapon.ts`, `EquipmentLayers`): the facing's own view, upright at rest and leaning along the arm as it reaches out; `upright` keeps the bow and shield vertical, `southOnly` rotates the upright south view (keris views were not all upright), `offhand` draws the shield / second keris in the other hand.
+- Packaging `tools/equipment/build_weapons.mjs`; review sheets `tools/equipment/preview_v3_weapon.mjs` → `reviews/<id>-v3.png` (rows: facings; columns: idle, walk, attack 0–7).
+- Not yet: weapon-specific attack animations (the attack is still the palm strike with the weapon following the hand); the character window portrait shows the body without the weapon.

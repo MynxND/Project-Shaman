@@ -1,0 +1,26 @@
+﻿status: completed
+id: b60ca766-41bf-40f1-9586-daf335b5c11a
+name: a single Japanese onmyoji ritual folding fan held 
+state_name: base
+directions: 8
+size: 64x64px
+view: low top-down
+group: 1c2a62ad-b045-4a23-b63d-c81703439d9e
+
+rotations:
+  east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b60ca766-41bf-40f1-9586-daf335b5c11a/rotations/east.png
+  west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b60ca766-41bf-40f1-9586-daf335b5c11a/rotations/west.png
+  north: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b60ca766-41bf-40f1-9586-daf335b5c11a/rotations/north.png
+  south: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b60ca766-41bf-40f1-9586-daf335b5c11a/rotations/south.png
+  north-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b60ca766-41bf-40f1-9586-daf335b5c11a/rotations/north-east.png
+  north-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b60ca766-41bf-40f1-9586-daf335b5c11a/rotations/north-west.png
+  south-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b60ca766-41bf-40f1-9586-daf335b5c11a/rotations/south-east.png
+  south-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/b60ca766-41bf-40f1-9586-daf335b5c11a/rotations/south-west.png
+
+animations: none
+
+download: https://api.pixellab.ai/mcp/objects/b60ca766-41bf-40f1-9586-daf335b5c11a/download
+spritesheet: https://api.pixellab.ai/mcp/objects/b60ca766-41bf-40f1-9586-daf335b5c11a/spritesheet (one uniform-grid sheet PNG + layout JSON, zipped)
+
+actions: animate_object(object_id="b60ca766-41bf-40f1-9586-daf335b5c11a", ...) | create_object_state(object_id="b60ca766-41bf-40f1-9586-daf335b5c11a", ...) | delete_object(object_id="b60ca766-41bf-40f1-9586-daf335b5c11a")
+hint: animate_object(object_id="b60ca766-41bf-40f1-9586-daf335b5c11a", animation_description="...")

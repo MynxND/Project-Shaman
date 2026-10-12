@@ -1,0 +1,26 @@
+﻿status: completed
+id: fbe5ed65-cefa-4b97-8dad-4753a79103c7
+name: a single Indonesian black-magic wand made of a pal
+state_name: base
+directions: 8
+size: 96x96px
+view: low top-down
+group: e675671d-7398-484b-8091-168edfd22aa0
+
+rotations:
+  east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/fbe5ed65-cefa-4b97-8dad-4753a79103c7/rotations/east.png
+  west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/fbe5ed65-cefa-4b97-8dad-4753a79103c7/rotations/west.png
+  north: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/fbe5ed65-cefa-4b97-8dad-4753a79103c7/rotations/north.png
+  south: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/fbe5ed65-cefa-4b97-8dad-4753a79103c7/rotations/south.png
+  north-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/fbe5ed65-cefa-4b97-8dad-4753a79103c7/rotations/north-east.png
+  north-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/fbe5ed65-cefa-4b97-8dad-4753a79103c7/rotations/north-west.png
+  south-east: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/fbe5ed65-cefa-4b97-8dad-4753a79103c7/rotations/south-east.png
+  south-west: https://backblaze.pixellab.ai/file/pixellab-characters/objects/2d12c52f-2de5-459d-8665-38af36c30b1f/fbe5ed65-cefa-4b97-8dad-4753a79103c7/rotations/south-west.png
+
+animations: none
+
+download: https://api.pixellab.ai/mcp/objects/fbe5ed65-cefa-4b97-8dad-4753a79103c7/download
+spritesheet: https://api.pixellab.ai/mcp/objects/fbe5ed65-cefa-4b97-8dad-4753a79103c7/spritesheet (one uniform-grid sheet PNG + layout JSON, zipped)
+
+actions: animate_object(object_id="fbe5ed65-cefa-4b97-8dad-4753a79103c7", ...) | create_object_state(object_id="fbe5ed65-cefa-4b97-8dad-4753a79103c7", ...) | delete_object(object_id="fbe5ed65-cefa-4b97-8dad-4753a79103c7")
+hint: animate_object(object_id="fbe5ed65-cefa-4b97-8dad-4753a79103c7", animation_description="...")
