@@ -265,8 +265,9 @@ button.hud-menu-item:focus-visible { outline: 2px solid var(--sk-jade); }
 /* A folded panel is just its round button, at the panel's anchor. */
 .hud-root .hud-fold { position: absolute; width: 64px; height: 64px; padding: 0; }
 
-/* Right column: on desktop the minimap and quest keep their own corners; on touch and phones they stack under the menu. */
-.hud-right { display: contents; }
+/* Right column: the minimap and quests stack under the menu on every layout (the bottom-right corner is the attack button). */
+.hud-right { position: absolute; top: calc(var(--hud-menu-bottom, 64px) + 6px); right: var(--hud-right); display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+.hud-root .hud-right > * { position: relative; top: auto; right: auto; bottom: auto; }
 @media (max-width: 700px) {
   .hud-right { position: absolute; top: calc(var(--hud-menu-bottom, 64px) + 6px); right: var(--hud-right); display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
   .hud-root .hud-right > * { position: relative; top: auto; right: auto; bottom: auto; }
@@ -317,7 +318,7 @@ button.hud-menu-item:focus-visible { outline: 2px solid var(--sk-jade); }
 
 /* Narrow non-touch windows: the ring hotbar is too wide for a row, so it becomes a 3-column block bottom-right. */
 @media (max-width: 700px) {
-  .hud-root:not([data-touch="true"]) .hud-hotbar { left: auto; right: var(--hud-right); transform: none; }
+  .hud-root:not([data-touch="true"]) .hud-hotbar { left: auto; right: calc(var(--hud-right) + 104px); transform: none; }
   .hud-root:not([data-touch="true"]) .hud-hotbar-row { display: grid; grid-template-columns: repeat(3, 64px); }
 }
 /* Short touch screens: the folded minimap and quest buttons line up under the menu instead of stacking, so they stay
@@ -390,15 +391,28 @@ button.hud-menu-item:focus-visible { outline: 2px solid var(--sk-jade); }
 .hud-root[data-touch="true"] .hud-gauge { left: auto; right: var(--hud-right); transform: none; bottom: calc(var(--hud-bottom) + 260px); }
 /* Current Character V3 model in the portrait arch (PlayerPortrait canvas, 128 px frame). */
 .hud-portrait-window .player-portrait canvas { position: absolute; width: 128px; height: 128px; left: -47px; top: -14px; image-rendering: pixelated; }
-/* Basic attack button (Q / touch corner): crimson disc behind the PixelLab crossed-blades icon. */
-.hud-attack .hud-round-icon { background: radial-gradient(circle, #7a2418, #2a0c08 70%); }
-.hud-attack.hud-skill-main::after { box-shadow: 0 0 12px 3px #d9533f88; }
+/* Basic attack (AttackButton): one big carved ring in the bottom-right corner, apart from the skills. The kit ring (64 px,
+   36 px opening) is drawn at 1.5x on desktop and on touch; the PixelLab crossed-blades icon sits on a crimson disc. */
+.hud-attack-big { --size: 128px; position: absolute; right: var(--hud-right); bottom: var(--hud-bottom); width: var(--size); height: var(--size); padding: 0; border: 0;
+  border-radius: 50%; background: none; cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; filter: drop-shadow(0 6px 8px #000b); }
+.hud-attack-big::before { content: ''; position: absolute; inset: 14%; border-radius: 50%; background: radial-gradient(circle at 50% 40%, #a8392c, #4a120b 70%); box-shadow: 0 0 16px 4px #d9533f66; }
+.hud-attack-icon { position: absolute; left: 50%; top: 47%; width: 50%; height: 50%; transform: translate(-50%, -50%); image-rendering: pixelated; }
+.hud-attack-ring { position: absolute; inset: 0; width: 100%; height: 100%; image-rendering: pixelated; }
+.hud-attack-label { position: absolute; left: 50%; bottom: 13%; transform: translateX(-50%); font: 700 15px/1 var(--sk-font); color: #fbe9c4; text-shadow: 0 1px 0 #000, 0 0 4px #000; white-space: nowrap; }
+.hud-attack-key { position: absolute; right: 6%; top: 6%; min-width: 22px; padding: 2px 5px; border-radius: 6px; font: 700 13px/1 var(--sk-font); color: #f2d27a; background: #120a05; box-shadow: 0 0 0 1px #c9a24e; }
+.hud-attack-big:hover::before { filter: brightness(1.15); }
+.hud-attack-big:active { transform: scale(.94); }
+.hud-attack-big[data-disabled="true"] { filter: grayscale(.6) brightness(.8); }
+/* Touch: the corner of the right-thumb skill arc. */
+.hud-attack-big[data-touch="true"] { --size: 96px; right: calc(var(--hud-right) - 4px); bottom: calc(var(--hud-bottom) - 4px); z-index: 1; }
 /* Non-touch windows: the hotbar (attack + skills) sits centred in the free space between chat (330 px) and the minimap
-   (236 px) and wraps to a second row instead of sliding under either panel. */
+   (now the attack button) and wraps to a second row instead of sliding under either panel. */
 @media (min-width: 701px) {
-  .hud-root:not([data-touch="true"]) .hud-hotbar { --hud-free-l: calc(var(--hud-left) + 340px); --hud-free-r: calc(var(--hud-right) + 246px);
+  .hud-root:not([data-touch="true"]) .hud-hotbar { --hud-free-l: calc(var(--hud-left) + 340px); --hud-free-r: calc(var(--hud-right) + 144px);
     left: calc((var(--hud-free-l) + 100vw - var(--hud-free-r)) / 2); max-width: calc(100vw - var(--hud-free-l) - var(--hud-free-r)); }
   .hud-root:not([data-touch="true"]) .hud-hotbar-row { flex-wrap: wrap; justify-content: center; }
 }
 /* Job panels follow the published hotbar edge (SkillHotbar) on non-touch windows, so a two-row hotbar never covers them. */
 .hud-root:not([data-touch="true"]) :is(.hud-runes, .hud-gogyo, .hud-gauge) { left: var(--hud-hotbar-cx, 50%); bottom: calc(var(--hud-hotbar-up, 100px) + 6px); }
+/* Short screens (phone landscape, small windows): a smaller attack ring so the folded right column stays clear. */
+@media (max-height: 520px) { .hud-attack-big { --size: 96px; } .hud-attack-label { font-size: 13px; } }

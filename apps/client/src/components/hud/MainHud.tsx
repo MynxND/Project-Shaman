@@ -9,6 +9,7 @@ import { MenuBar } from './MenuBar';
 import { MiniMap } from './MiniMap';
 import { QuestTracker } from './QuestTracker';
 import { SkillHotbar } from './SkillHotbar';
+import { AttackButton } from './AttackButton';
 import { RuneQueue } from './RuneQueue';
 import { GogyoRing } from './GogyoRing';
 import { BuffBar } from './BuffBar';
@@ -50,26 +51,27 @@ export function MainHud() {
     notify(msg[0] + how, msg[1]);
   }, [status, notify]);
   // Phones start with the chat and quest folded to icons so the world stays visible; short touch screens also fold
-  // the minimap, which would otherwise meet the skill arc.
+  // the minimap, which would otherwise meet the attack button and skill arc.
   useEffect(() => {
     const s = useHudStore.getState();
     if (window.matchMedia('(max-width: 700px), (max-height: 520px)').matches) {
       if (s.chatOpen) s.toggleChat();
       if (s.questOpen) s.toggleQuest();
     }
-    if (window.matchMedia('(any-pointer: coarse) and (max-height: 520px)').matches && s.minimapOpen) s.toggleMinimap();
+    if (window.matchMedia('(max-height: 520px)').matches && s.minimapOpen) s.toggleMinimap();
   }, []);
   return (
     <div className="hud-root" data-touch={touch}>
       <MenuBar />
       <StatusPanel />
       <TargetFrame />
-      {/* Right column: separate corners on desktop, stacked under the menu on touch and phones (hud.css). */}
+      {/* Right column under the menu: minimap, then quests (the bottom-right corner belongs to the attack button). */}
       <div className="hud-right">
         <MiniMap />
         <QuestTracker />
       </div>
       <SkillHotbar touch={touch} />
+      <AttackButton touch={touch} />
       <RuneQueue />
       <GogyoRing />
       <BuffBar />
