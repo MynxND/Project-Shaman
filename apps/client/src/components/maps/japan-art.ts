@@ -22,10 +22,14 @@ export function renderJapan(scene:Phaser.Scene,map:MapDefinition,plan:(typeof ja
  const soil=rasterNativeTerrain({...map,terrain:{base:map.terrain?.base==='dirt'?'road':'grass',paint:(map.terrain?.paint??[]).map(p=>({...p,terrain:p.terrain==='dirt'?'road':p.terrain==='road'?'grass':p.terrain}))}},U);
  const groundMaterials=new Uint8Array(raster.materials.length);for(let i=0;i<groundMaterials.length;i++)groundMaterials[i]=raster.water[i]?3:raster.materials[i]===1?2:soil.materials[i]===1?1:0;
  // Broken material lips are visual only; authoritative terrain and native water coverage remain exact.
- const worn=weatherGroundEdges(groundMaterials,w,h);
+ const worn=weatherGroundEdges(weatherGroundEdges(groundMaterials,w,h),w,h,true);
  for(const[name,size,seed]of[['moss',256,711],['soil',256,712],['road',128,713]]as const){const source=scene.textures.get(frame(scene,name,size,true,snow)).getSourceImage()as HTMLCanvasElement,pixels=quiltPaint(source.getContext('2d')!.getImageData(0,0,size,size).data,size,w,h,seed,2);for(let cell=0;cell<raster.materials.length;cell++){const material=worn[cell]===2?'road':worn[cell]===1?'soil':'moss';if(material!==name)continue;const i=cell*4;out.data[i]=pixels[i]!;out.data[i+1]=pixels[i+1]!;out.data[i+2]=pixels[i+2]!;out.data[i+3]=255;}}
  canvas.context.putImageData(out,0,0);canvas.refresh();canvas.setFilter(Phaser.Textures.FilterMode.NEAREST);scene.add.image(0,0,key).setOrigin(0).setDepth(-1.8);scene.events.once(Phaser.Scenes.Events.SHUTDOWN,()=>scene.textures.remove(key));
- const water=new WaterLayer(scene,{...map,objects:[]});water.setNativeCoverage(rasterNativeTerrain(map,U/MAP_ASSET_SCALE).water);water.finish();
+ const water=new WaterLayer(scene,{...map,objects:[]}),coverage=rasterNativeTerrain(map,U/MAP_ASSET_SCALE).water,nativeWidth=w/MAP_ASSET_SCALE;
+ // Copy the decorative bank toe into the water mask at exactly the same native samples.
+ // Logical wet blockers remain unchanged; the narrow painted lip is non-walkable bank, not new land.
+ for(let i=0;i<coverage.length;i++){const x=i%nativeWidth,y=Math.floor(i/nativeWidth);if(worn[(y*MAP_ASSET_SCALE+Math.floor(MAP_ASSET_SCALE/2))*w+x*MAP_ASSET_SCALE+Math.floor(MAP_ASSET_SCALE/2)]!==3)coverage[i]=0;}
+ water.setNativeCoverage(coverage);water.finish();
  for(const o of map.objects as(MapDefinition['objects'][number]&{width:number})[]){const image=scene.add.image(o.x*U,o.y*U,frame(scene,o.asset as Frame,o.width,false,snow)).setOrigin(.5,1).setScale(MAP_ASSET_SCALE).setName(o.id).setDepth(o.asset==='bridge'?-1.3:o.y*U);if(o.flip)image.setFlipX(true);if(o.asset!=='bridge')addContactShadow(scene,o.x*U,o.y*U,o.footprint?o.footprint.w*U:o.width*.65);}
  addSpiritwoodAtmosphere(scene,map,plan);
  for(const child of scene.children.list)if(child instanceof Phaser.GameObjects.Image&&plan.fog.some(f=>f.id===child.name))child.setScale(3,2).setTint(0xb2c6d0);
