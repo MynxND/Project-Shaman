@@ -14,7 +14,7 @@ export function createTeaReview(parent:HTMLElement,controls:TeaControls,report:(
   preload(){preloadMapAssets(this,map);for(const kind of ['leaf-wisp','shadow-macaque','clay-guardian'])this.load.spritesheet('tea:'+kind,'/assets/monsters/'+kind+'.png',{frameWidth:128,frameHeight:128});}
   create(){const result=renderMap(this,map);this.water=result.water?.coveragePixels??0;
    // Independent local profile; no gameplay or live-map presentation changes.
-   addSpiritwoodAtmosphere(this,map,plan);
+   // Live MapRenderer owns this same reviewed profile; do not duplicate its mist here.
    for(const camp of plan.camps){for(const [i,[x,y]]of camp.positions.entries()){const key='tea:'+camp.art,anim=key+':idle';if(!this.anims.exists(anim))this.anims.create({key:anim,frames:this.anims.generateFrameNumbers(key,{start:0,end:4}),frameRate:6,repeat:-1});this.add.sprite(x!*U,y!*U,key).setOrigin(.5,114/128).setScale(.5).setDepth(y!*U).play(anim);}}
    this.actor=this.add.container(0,0,[this.add.ellipse(0,0,24,10,0x0a1712,.5),this.add.circle(0,-12,8,0xd6b46c),this.add.rectangle(0,-5,10,12,0x77b99b)]);
    this.labels=this.add.container(0,0);for(const camp of plan.camps){const a=camp.area;this.labels.add(this.add.rectangle((a.x+a.w/2)*U,(a.y+a.h/2)*U,a.w*U,a.h*U,0x9e5549,.1).setStrokeStyle(2,0xd8ac70,.75));}for(const l of plan.locations){this.labels.add(this.add.text(l.x*U,projectedY(map,l.x,l.y)-16,l.name,{fontFamily:'Tahoma',fontSize:'16px',color:'#ffe8ac',backgroundColor:'#102b27'}).setOrigin(.5,1));}

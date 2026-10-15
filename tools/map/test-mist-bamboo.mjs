@@ -3,14 +3,15 @@ import{readFile,writeFile}from'node:fs/promises';
 import{isBlocked,stepMovement,elevationPassage,MAPS,MONSTERS}from'../../packages/shared/dist/index.js';
 import{materialAt}from'./leveling-preview-model.mjs';
 const root='docs/design/maps/mist-bamboo/',m=JSON.parse(await readFile(root+'map.json')),p=JSON.parse(await readFile(root+'plan.json')),assets=JSON.parse(await readFile('apps/client/public/assets/umbral/manifest.json'));
-assert.deepEqual(MAPS[m.id],m,'canonical live registration');assert.equal(m.portals.length,1);assert.equal(m.spawnRegions.length,3);
+assert.deepEqual(MAPS[m.id],m,'canonical live registration');assert.equal(m.portals.length,2);assert.equal(m.spawnRegions.length,3);
 assert.deepEqual(m.spawnRegions.flatMap(r=>r.monsters.map(s=>MONSTERS[s.kind].level)),[20,28,35]);
 assert.deepEqual(JSON.parse(await readFile('apps/client/src/game/world/bamboo-presentation.json')),{fog:p.fog,graph:p.graph},'live atmosphere equals preview');
 const mountain=MAPS['mountain-spirit-sanctuary'],gate=mountain.portals.find(p=>p.id==='bamboo-gate');assert(gate.area.x>=mountain.width-2);assert.equal(m.portals[0].to.portalId,gate.id);assert.equal(gate.to.portalId,m.portals[0].id);
 const original=JSON.parse(await readFile('docs/design/maps/mountain-spirit-sanctuary/revision01/pre-bamboo-live.json'));
 for(const key of ['width','height','spawn','elevation','npcs','spawnRegions'])assert.deepEqual(mountain[key],original[key],'preserve sanctuary '+key);
 assert.deepEqual(mountain.portals.find(p=>p.id==='marsh-gate'),original.portals[0],'existing marsh portal unchanged');
-const originalValley=JSON.parse(await readFile(root+'revision01/pre-bamboo-live.json'));for(const key of ['terrain','objects','blockers','safeZones','width','height'])assert.deepEqual(m[key],originalValley[key],'preserve preview '+key);
+const originalValley=JSON.parse(await readFile(root+'revision01/pre-bamboo-live.json'));for(const key of ['objects','blockers','safeZones','width','height'])assert.deepEqual(m[key],originalValley[key],'preserve preview '+key);
+assert.deepEqual(m.terrain.paint.slice(0,originalValley.terrain.paint.length),originalValley.terrain.paint,'original valley terrain');
 let approach={x:51,y:53};for(const target of [[55,48],[61,45],[66,43],[70,43],[73,43]]){let ticks=0;while(Math.hypot(approach.x-target[0],approach.y-target[1])>.14&&ticks++<1200){const dx=target[0]-approach.x,dy=target[1]-approach.y,next=stepMovement(approach,{x:Math.abs(dx)>.07?Math.sign(dx):0,y:Math.abs(dy)>.07?Math.sign(dy):0,sequence:ticks},1/60,mountain).position;assert(elevationPassage(mountain,approach,next));approach=next;}assert(ticks<1200,'mountain approach '+target);}
 for(const paint of m.terrain.paint)assert(['grass','dirt','road','water'].includes(paint.terrain),'unsupported terrain '+paint.terrain);
 const ids=new Set(m.objects.map(o=>o.id));assert.equal(ids.size,m.objects.length);for(const id of p.requiredObjects)assert(ids.has(id),id);

@@ -1,4 +1,5 @@
 // User-authorized canonical live map; layout and provenance remain in docs/design/maps/mist-bamboo.
+// Tea adoption retains original geometry and snapshots in revision02.
 import type{MapDefinition}from'../world.js';
 export const MIST_BAMBOO:MapDefinition={
   "id": "mist-bamboo",
@@ -210,6 +211,21 @@ export const MIST_BAMBOO:MapDefinition={
         "x": 52,
         "y": 34,
         "r": 3.4
+      },
+      {
+        "terrain": "dirt",
+        "shape": "path",
+        "points": [
+          [
+            78,
+            17
+          ],
+          [
+            81,
+            17
+          ]
+        ],
+        "r": 1.8
       }
     ]
   },
@@ -2285,6 +2301,27 @@ export const MIST_BAMBOO:MapDefinition={
       "label": {
         "th": "กลับสำนักผนึกบนภูเขา · ตะวันตก",
         "en": "Mountain sanctuary"
+      }
+    },
+    {
+      "id": "tea-gate",
+      "area": {
+        "x": 80,
+        "y": 16.4,
+        "w": 2,
+        "h": 1.2
+      },
+      "arrival": {
+        "x": 78,
+        "y": 17
+      },
+      "to": {
+        "mapId": "cloud-tea-slopes",
+        "portalId": "bamboo-gate"
+      },
+      "label": {
+        "th": "ไปไร่ชาสันเมฆ · ตะวันออก",
+        "en": "Cloud Tea Slopes"
       }
     }
   ],

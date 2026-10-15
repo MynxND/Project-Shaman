@@ -8,6 +8,8 @@ import {preloadTerrainQuality,qualitySets,qualityFrame,renderQualityDecoration} 
 import {WaterLayer,preloadWater} from './WaterLayer';
 import {addSpiritwoodAtmosphere} from './SpiritwoodAtmosphere';
 import bambooPresentation from './bamboo-presentation.json';
+import teaPresentation from './tea-presentation.json';
+import{preloadChina,renderChinaGround,renderChinaObject,isChinaMap}from'./ChinaRegion';
 import {preloadForestDressing,renderForestDressing} from './ForestDressing';
 
 // Map sprites and ground tiles built by tools/sprites/build_umbral_assets.py.
@@ -34,6 +36,7 @@ const TERRAIN_KEY = 'umbral:terrain';
 const TILE_PX = 16;
 
 export function preloadMapAssets(scene: Phaser.Scene, map?: MapDefinition) {
+  preloadChina(scene,map);
   if(map?.id==='mountain-spirit-sanctuary'){
     scene.load.image('sanctuary:kit','/assets/umbral/sanctuary-02/kit.png');
   }
@@ -63,11 +66,13 @@ export function renderMap(scene: Phaser.Scene, map: MapDefinition) {
   ground(map.ground.base, 0, 0, map.width, map.height);
   for (const r of map.ground.regions) ground(r.material, r.x, r.y, r.w, r.h);
   const water=renderTerrain(scene, map, manifest);
-  renderQualityDecoration(scene,map);
+  renderChinaGround(scene,map);
+  if(!isChinaMap(map))renderQualityDecoration(scene,map);
   addSpiritwoodAtmosphere(scene,map,map.id==='mountain-spirit-sanctuary'?{fog:[{id:'spring-mist',x:58,y:50,w:10,h:10,alpha:.1},{id:'low-hollow-mist',x:6,y:55,w:10,h:6,alpha:.08}],graph:{edges:map.terrain?.paint.filter(p=>p.shape==='path'&&p.terrain!=='water').map(p=>({points:p.shape==='path'?p.points:[],width:p.shape==='path'?p.r*2:0}))??[]}}:undefined);
   renderForestDressing(scene,map);
   // The adopted valley uses the exact localized review atmosphere, only once per scene.
   if(map.id==='mist-bamboo')addSpiritwoodAtmosphere(scene,map,bambooPresentation);
+  if(map.id==='cloud-tea-slopes')addSpiritwoodAtmosphere(scene,map,teaPresentation);
   for (const d of map.decals ?? []) {
     const decal = manifest.decals?.[d.asset];
     if (!decal) throw new Error(`Decal ${d.asset} is missing from the manifest`);
@@ -76,6 +81,7 @@ export function renderMap(scene: Phaser.Scene, map: MapDefinition) {
   }
 
   for (const object of map.objects) {
+    if(renderChinaObject(scene,map,object))continue;
     const regional=['whispering-spiritwood','lantern-paddy','moon-mangrove','monsoon-marsh'].includes(map.id);
     const foliage=regional&&['jungle-tree','shade-tree'].includes(object.asset);
     const visualAsset=foliage?'village-tropical-tree':object.asset;

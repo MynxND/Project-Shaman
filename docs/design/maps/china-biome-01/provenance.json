@@ -1,0 +1,70 @@
+{
+  "source": "source.png",
+  "dimensions": [
+    1774,
+    887
+  ],
+  "frames": {
+    "grass": {
+      "x": 94,
+      "y": 94,
+      "w": 256,
+      "h": 256
+    },
+    "dirt": {
+      "x": 537,
+      "y": 94,
+      "w": 256,
+      "h": 256
+    },
+    "road": {
+      "x": 980,
+      "y": 94,
+      "w": 256,
+      "h": 256
+    },
+    "pine": {
+      "x": 1349,
+      "y": 17,
+      "w": 403,
+      "h": 415
+    },
+    "bamboo": {
+      "x": 62,
+      "y": 454,
+      "w": 344,
+      "h": 415
+    },
+    "tea": {
+      "x": 466,
+      "y": 531,
+      "w": 392,
+      "h": 313
+    },
+    "stele": {
+      "x": 968,
+      "y": 453,
+      "w": 275,
+      "h": 409
+    },
+    "rock": {
+      "x": 1361,
+      "y": 478,
+      "w": 381,
+      "h": 385
+    }
+  },
+  "sourceSha256": "7cd20bf5c8a9badd1949faee54479a37b522b1b1a5c0231cd7f458ec6674e00f",
+  "nativeGroundSize": 128,
+  "filter": "nearest",
+  "provider": "imagegen",
+  "generatedImages": 1,
+  "alpha": "original preserved",
+  "cropPolicy": "runtime frame selection only; source pixels unchanged",
+  "nativeGroundSizes": {
+    "grass": 128,
+    "dirt": 128,
+    "road": 64
+  },
+  "groundAssembly": "Seeded minimum-error source-pixel quilting; original painted colors, no mirror repeats/no noise/no gradients"
+}

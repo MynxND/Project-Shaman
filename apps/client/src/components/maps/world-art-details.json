@@ -206,7 +206,7 @@
     "connections": [
       {
         "id": "cloud-tea-slopes",
-        "status": "planned"
+        "status": "live"
       },
       {
         "id": "mountain-spirit-sanctuary",
@@ -218,21 +218,21 @@
   "cloud-tea-slopes": {
     "climate": "ที่สูงเย็นชื้น",
     "landmark": "ศาลากังหันบนสันเขา",
-    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
-    "residents": [],
-    "proposedResidents": [
-      "ภูตใบชาขม",
-      "หมูป่ามอส",
-      "นกหมอกอาคม"
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตยอดชาคราม",
+      "เงาพรายร่องชา",
+      "ผู้เฝ้าผนึกสันเมฆ"
     ],
+    "proposedResidents": [],
     "npcs": [],
     "connections": [
       {
         "id": "mist-bamboo",
-        "status": "planned"
+        "status": "live"
       }
     ],
-    "source": "leveling-20-proposal + world-30 proposal"
+    "source": "authoritative MAPS / existing MONSTERS"
   },
   "spirit-waterfall": {
     "climate": "หุบเขาฝนจัด",

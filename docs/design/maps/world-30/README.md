@@ -1,6 +1,6 @@
 # World atlas — 30 maps / 12 nations
 
-User target30 supersedes earlier20-map count. Seven content maps playable;23 are planning nodes, not registered gameplay. Geography, names, level ranges and routes proposed; confirmed nation/source branches remain traceable. Norway original source Seidr is historical; current approved gameplay uses Ullr Hunter. Existing map registry lab maps excluded. No skill/lore formula changes.
+User target30 supersedes earlier20-map count. Eight content maps playable;22 are planning nodes, not registered gameplay. Geography, names, level ranges and routes proposed; confirmed nation/source branches remain traceable. Norway original source Seidr is historical; current approved gameplay uses Ullr Hunter. Existing map registry lab maps excluded. No skill/lore formula changes.
 
 ## Roadmap
 Phase1 existing hub+four regions; Phase2 China/Philippines plus mountain gateway; Phase3 Japan/Korea/Indonesia/Ireland/USA; Phase4 Norway/Russia/Haiti/Mexico; Phase5 two shared endgame maps. Per-map layout briefs, artwork, animation, collision and network review required before playable adoption. No fake travel to planned nodes.

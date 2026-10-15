@@ -25,3 +25,6 @@ Checks: pnpm typecheck and pnpm build pass. Shared behavioral suite, original zo
 Actual root game browser/native keyboard evidence in live-screens: arrival.png, causeway.png, monsters.png, return-sanctuary.png and atlas.png. Guest walked from sanctuary spawn to east gate, arrived4,45, crossed causeway, was blocked at the wet bank, walked back, returned70,43 without bounce and entered again. Actual Lv20 residents rendered/moved in their camp. Browser390×844 portrait and844×390 landscape inspected with no horizontal document overflow, live position retained and viewport reset; screenshots portrait.png/landscape.png. Physical-device touch/performance and human artwork approval are not certified.
 
 Rebuild canonical review with build-mist-bamboo.mjs; once the live source exists it also invokes adopt-bamboo-live.mjs to restore authorized fields idempotently. Existing scripts and comments remain; historical preview records are retained.
+
+## Tea connection /2026-10-15
+The formerly inactive eastern tea exit is now live at80,16.4/2×1.2, returning to78,17. Existing sanctuary portal and all148 object footprints/wet blockers retained. build-mist-bamboo now reapplies tea adoption after bamboo adoption. Both Chinese maps use the independent China visual kit; see ../cloud-tea-slopes/README.md for current evidence and limits.

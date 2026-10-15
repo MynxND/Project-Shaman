@@ -208,6 +208,21 @@
         "x": 52,
         "y": 34,
         "r": 3.4
+      },
+      {
+        "terrain": "dirt",
+        "shape": "path",
+        "points": [
+          [
+            78,
+            17
+          ],
+          [
+            81,
+            17
+          ]
+        ],
+        "r": 1.8
       }
     ]
   },
@@ -2283,6 +2298,27 @@
       "label": {
         "th": "กลับสำนักผนึกบนภูเขา · ตะวันตก",
         "en": "Mountain sanctuary"
+      }
+    },
+    {
+      "id": "tea-gate",
+      "area": {
+        "x": 80,
+        "y": 16.4,
+        "w": 2,
+        "h": 1.2
+      },
+      "arrival": {
+        "x": 78,
+        "y": 17
+      },
+      "to": {
+        "mapId": "cloud-tea-slopes",
+        "portalId": "bamboo-gate"
+      },
+      "label": {
+        "th": "ไปไร่ชาสันเมฆ · ตะวันออก",
+        "en": "Cloud Tea Slopes"
       }
     }
   ],

@@ -24,3 +24,6 @@ console.log('Independent bamboo review built; no MAPS/server/atlas registration.
 
 // After authorized adoption, rebuilding source must also restore the live fields.
 try{await import('node:fs/promises').then(fs=>fs.access('packages/shared/src/maps/mist-bamboo.ts'));await import('./adopt-bamboo-live.mjs');}catch(error){if(error.code!=='ENOENT')throw error;}
+
+// Rebuilding after authorized tea adoption must retain live fields and reciprocal edge travel.
+try{await import('node:fs/promises').then(fs=>fs.access('packages/shared/src/maps/cloud-tea-slopes.ts'));await import('./adopt-tea-live.mjs');}catch(error){if(error.code!=='ENOENT')throw error;}

@@ -82,6 +82,10 @@ export interface MonsterDefinition {
 }
 
 export const MONSTERS: Readonly<Record<string, MonsterDefinition>> = {
+  // Independent provisional tea-country residents30–45; original species balance is preserved.
+  'tea-wisp': {kind:'tea-wisp',name:{th:'ภูตยอดชาคราม',en:'Indigo Tea Wisp'},level:30,race:'plant',behavior:'passive',hp:1100,atk:95,def:25,mdef:28,speed:1.2,aggroRange:0,leash:5,attackRange:1.3,attackDelayMs:1700,attackWindupMs:450,exp:520,drops:[{itemId:'herb-bundle',chance:.5},{itemId:'spirit-flower',chance:.12}],wander:{pauseMs:[1500,4000],radius:2}},
+  'tea-shadow': {kind:'tea-shadow',name:{th:'เงาพรายร่องชา',en:'Tea Grove Shadow'},level:38,race:'brute',behavior:'aggressive',hp:1850,atk:128,def:35,mdef:27,speed:2.2,aggroRange:4,leash:5,attackRange:1.3,attackDelayMs:1500,attackWindupMs:350,exp:1100,drops:[{itemId:'raw-meat',chance:.4},{itemId:'bone',chance:.3}],wander:{pauseMs:[1500,3500],radius:2}},
+  'tea-guardian': {kind:'tea-guardian',name:{th:'ผู้เฝ้าผนึกสันเมฆ',en:'Cloud Seal Guardian'},level:45,race:'formless',behavior:'aggressive',hp:2650,atk:150,def:56,mdef:42,speed:.9,aggroRange:3.5,leash:5,attackRange:1.6,attackDelayMs:2600,attackWindupMs:900,exp:1600,drops:[{itemId:'dark-ore',chance:.4},{itemId:'bone',chance:.25}],wander:{pauseMs:[3000,6000],radius:1.5}},
   // Independent bamboo-valley balance; existing species and other maps stay unchanged.
   // Provisional levels20/28/35; animation art is explicitly reused from the reviewed silhouettes.
   'bamboo-wisp': {kind:'bamboo-wisp',name:{th:'ภูตไผ่คราม',en:'Indigo Bamboo Wisp'},level:20,race:'plant',behavior:'passive',hp:580,atk:65,def:16,mdef:18,speed:1.2,aggroRange:0,leash:5,attackRange:1.3,attackDelayMs:1700,attackWindupMs:450,exp:260,drops:[{itemId:'herb-bundle',chance:.5},{itemId:'spirit-flower',chance:.1}],wander:{pauseMs:[1500,4000],radius:2}},

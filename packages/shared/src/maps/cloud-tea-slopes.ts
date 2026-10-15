@@ -1,0 +1,1585 @@
+// User-authorized canonical live map; original geometry and snapshots retained in docs/design/maps/cloud-tea-slopes.
+import type{MapDefinition}from'../world.js';
+export const CLOUD_TEA_SLOPES:MapDefinition={
+  "id": "cloud-tea-slopes",
+  "name": "ไร่ชาสันเมฆ",
+  "nameEn": "Cloud Tea Slopes",
+  "width": 86,
+  "height": 64,
+  "spawn": {
+    "x": 4,
+    "y": 47
+  },
+  "ground": {
+    "base": "dark-grass",
+    "regions": []
+  },
+  "terrain": {
+    "base": "grass",
+    "paint": [
+      {
+        "terrain": "water",
+        "shape": "circle",
+        "x": 69,
+        "y": 11,
+        "r": 5
+      },
+      {
+        "terrain": "water",
+        "shape": "path",
+        "points": [
+          [
+            69,
+            15
+          ],
+          [
+            62,
+            23
+          ],
+          [
+            52,
+            30
+          ],
+          [
+            47,
+            36
+          ],
+          [
+            51,
+            49
+          ],
+          [
+            58,
+            64
+          ]
+        ],
+        "r": 1.8
+      },
+      {
+        "terrain": "dirt",
+        "shape": "path",
+        "points": [
+          [
+            4,
+            47
+          ],
+          [
+            12,
+            46
+          ],
+          [
+            21,
+            43
+          ],
+          [
+            34,
+            43
+          ],
+          [
+            40,
+            39
+          ],
+          [
+            47,
+            36
+          ],
+          [
+            56,
+            34
+          ],
+          [
+            64,
+            27
+          ],
+          [
+            77,
+            23
+          ],
+          [
+            83,
+            23
+          ]
+        ],
+        "r": 1.7
+      },
+      {
+        "terrain": "dirt",
+        "shape": "path",
+        "points": [
+          [
+            21,
+            43
+          ],
+          [
+            24,
+            31
+          ],
+          [
+            36,
+            20
+          ]
+        ],
+        "r": 1.7
+      },
+      {
+        "terrain": "dirt",
+        "shape": "path",
+        "points": [
+          [
+            21,
+            43
+          ],
+          [
+            28,
+            48
+          ],
+          [
+            36,
+            54
+          ]
+        ],
+        "r": 1.7
+      },
+      {
+        "terrain": "dirt",
+        "shape": "path",
+        "points": [
+          [
+            64,
+            27
+          ],
+          [
+            69,
+            34
+          ]
+        ],
+        "r": 1.7
+      },
+      {
+        "terrain": "dirt",
+        "shape": "path",
+        "points": [
+          [
+            77,
+            23
+          ],
+          [
+            77,
+            18
+          ],
+          [
+            74,
+            15
+          ]
+        ],
+        "r": 1.7
+      },
+      {
+        "terrain": "road",
+        "shape": "circle",
+        "x": 22,
+        "y": 43,
+        "r": 4
+      },
+      {
+        "terrain": "grass",
+        "shape": "path",
+        "points": [
+          [
+            42,
+            36
+          ],
+          [
+            52,
+            36
+          ]
+        ],
+        "r": 3
+      },
+      {
+        "terrain": "road",
+        "shape": "path",
+        "points": [
+          [
+            43,
+            36
+          ],
+          [
+            51,
+            36
+          ]
+        ],
+        "r": 2.3
+      },
+      {
+        "terrain": "dirt",
+        "shape": "path",
+        "points": [
+          [
+            1,
+            47
+          ],
+          [
+            4,
+            47
+          ]
+        ],
+        "r": 1.7
+      }
+    ]
+  },
+  "objects": [
+    {
+      "id": "tea-hall",
+      "asset": "cloud-tea-hall",
+      "x": 23,
+      "y": 38,
+      "footprint": {
+        "w": 6,
+        "h": 3
+      }
+    },
+    {
+      "id": "drying-store",
+      "asset": "garden-understory",
+      "x": 17,
+      "y": 39,
+      "footprint": null
+    },
+    {
+      "id": "spring-marker",
+      "asset": "mossy-rock",
+      "x": 75,
+      "y": 13,
+      "footprint": {
+        "w": 1,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "east-lantern",
+      "asset": "talisman-lantern",
+      "x": 82,
+      "y": 21,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-1-1",
+      "asset": "garden-understory",
+      "x": 12,
+      "y": 12,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-1-2",
+      "asset": "garden-understory",
+      "x": 20,
+      "y": 13,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-1-3",
+      "asset": "garden-understory",
+      "x": 27,
+      "y": 14,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-2-1",
+      "asset": "garden-understory",
+      "x": 10,
+      "y": 18,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-2-2",
+      "asset": "garden-understory",
+      "x": 18,
+      "y": 20,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-2-3",
+      "asset": "garden-understory",
+      "x": 25,
+      "y": 22,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-3-1",
+      "asset": "garden-understory",
+      "x": 9,
+      "y": 25,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-3-2",
+      "asset": "garden-understory",
+      "x": 16,
+      "y": 27,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-4-1",
+      "asset": "garden-understory",
+      "x": 45,
+      "y": 11,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-4-2",
+      "asset": "garden-understory",
+      "x": 53,
+      "y": 13,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-4-3",
+      "asset": "garden-understory",
+      "x": 60,
+      "y": 16,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-5-1",
+      "asset": "garden-understory",
+      "x": 47,
+      "y": 17,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-5-2",
+      "asset": "garden-understory",
+      "x": 55,
+      "y": 19,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-6-1",
+      "asset": "garden-understory",
+      "x": 46,
+      "y": 23,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-6-2",
+      "asset": "garden-understory",
+      "x": 51,
+      "y": 25,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-7-1",
+      "asset": "garden-understory",
+      "x": 13,
+      "y": 54,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-7-2",
+      "asset": "garden-understory",
+      "x": 21,
+      "y": 55,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-7-3",
+      "asset": "garden-understory",
+      "x": 28,
+      "y": 58,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-8-1",
+      "asset": "garden-understory",
+      "x": 12,
+      "y": 60,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-8-2",
+      "asset": "garden-understory",
+      "x": 20,
+      "y": 61,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-9-1",
+      "asset": "garden-understory",
+      "x": 67,
+      "y": 48,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-9-2",
+      "asset": "garden-understory",
+      "x": 75,
+      "y": 47,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-10-1",
+      "asset": "garden-understory",
+      "x": 69,
+      "y": 54,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-10-2",
+      "asset": "garden-understory",
+      "x": 77,
+      "y": 53,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-11-1",
+      "asset": "garden-understory",
+      "x": 73,
+      "y": 60,
+      "footprint": null
+    },
+    {
+      "id": "tea-band-11-2",
+      "asset": "garden-understory",
+      "x": 81,
+      "y": 58,
+      "footprint": null
+    },
+    {
+      "id": "windbreak-1",
+      "asset": "bamboo",
+      "x": 3,
+      "y": 12,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-2",
+      "asset": "bamboo",
+      "x": 5,
+      "y": 20,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-3",
+      "asset": "bamboo",
+      "x": 4,
+      "y": 30,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-4",
+      "asset": "bamboo",
+      "x": 8,
+      "y": 35,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-5",
+      "asset": "bamboo",
+      "x": 30,
+      "y": 7,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-6",
+      "asset": "bamboo",
+      "x": 37,
+      "y": 5,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-7",
+      "asset": "bamboo",
+      "x": 44,
+      "y": 5,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-8",
+      "asset": "bamboo",
+      "x": 55,
+      "y": 7,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-9",
+      "asset": "bamboo",
+      "x": 62,
+      "y": 5,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-10",
+      "asset": "bamboo",
+      "x": 79,
+      "y": 8,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-11",
+      "asset": "bamboo",
+      "x": 82,
+      "y": 13,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-12",
+      "asset": "bamboo",
+      "x": 83,
+      "y": 30,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-13",
+      "asset": "bamboo",
+      "x": 79,
+      "y": 35,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-14",
+      "asset": "bamboo",
+      "x": 82,
+      "y": 43,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-15",
+      "asset": "bamboo",
+      "x": 80,
+      "y": 62,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-16",
+      "asset": "bamboo",
+      "x": 7,
+      "y": 60,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-17",
+      "asset": "bamboo",
+      "x": 5,
+      "y": 55,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-18",
+      "asset": "bamboo",
+      "x": 30,
+      "y": 61,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-19",
+      "asset": "bamboo",
+      "x": 42,
+      "y": 59,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "windbreak-20",
+      "asset": "bamboo",
+      "x": 65,
+      "y": 61,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.65
+      }
+    },
+    {
+      "id": "ridge-rock-1",
+      "asset": "mossy-rock",
+      "x": 5,
+      "y": 10,
+      "footprint": {
+        "w": 1.4,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "ridge-rock-2",
+      "asset": "mossy-rock",
+      "x": 13,
+      "y": 6,
+      "footprint": {
+        "w": 1.4,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "ridge-rock-3",
+      "asset": "mossy-rock",
+      "x": 21,
+      "y": 7,
+      "footprint": {
+        "w": 1.4,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "ridge-rock-4",
+      "asset": "mossy-rock",
+      "x": 28,
+      "y": 10,
+      "footprint": {
+        "w": 1.4,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "ridge-rock-5",
+      "asset": "mossy-rock",
+      "x": 39,
+      "y": 8,
+      "footprint": {
+        "w": 1.4,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "ridge-rock-6",
+      "asset": "mossy-rock",
+      "x": 58,
+      "y": 9,
+      "footprint": {
+        "w": 1.4,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "ridge-rock-7",
+      "asset": "mossy-rock",
+      "x": 62,
+      "y": 15,
+      "footprint": {
+        "w": 1.4,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "ridge-rock-8",
+      "asset": "mossy-rock",
+      "x": 75,
+      "y": 9,
+      "footprint": {
+        "w": 1.4,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "ridge-rock-9",
+      "asset": "mossy-rock",
+      "x": 81,
+      "y": 17,
+      "footprint": {
+        "w": 1.4,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "ridge-rock-10",
+      "asset": "mossy-rock",
+      "x": 82,
+      "y": 36,
+      "footprint": {
+        "w": 1.4,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "ridge-rock-11",
+      "asset": "mossy-rock",
+      "x": 78,
+      "y": 41,
+      "footprint": {
+        "w": 1.4,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "ridge-rock-12",
+      "asset": "mossy-rock",
+      "x": 63,
+      "y": 56,
+      "footprint": {
+        "w": 1.4,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "ridge-rock-13",
+      "asset": "mossy-rock",
+      "x": 65,
+      "y": 52,
+      "footprint": {
+        "w": 1.4,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "ridge-rock-14",
+      "asset": "mossy-rock",
+      "x": 5,
+      "y": 58,
+      "footprint": {
+        "w": 1.4,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "ridge-rock-15",
+      "asset": "mossy-rock",
+      "x": 8,
+      "y": 50,
+      "footprint": {
+        "w": 1.4,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "ridge-rock-16",
+      "asset": "mossy-rock",
+      "x": 44,
+      "y": 56,
+      "footprint": {
+        "w": 1.4,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "trail-lamp-1",
+      "asset": "talisman-lantern",
+      "x": 4,
+      "y": 43,
+      "footprint": null
+    },
+    {
+      "id": "trail-lamp-2",
+      "asset": "talisman-lantern",
+      "x": 4,
+      "y": 51,
+      "footprint": null
+    },
+    {
+      "id": "trail-lamp-3",
+      "asset": "talisman-lantern",
+      "x": 19,
+      "y": 41,
+      "footprint": null
+    },
+    {
+      "id": "trail-lamp-4",
+      "asset": "talisman-lantern",
+      "x": 27,
+      "y": 41,
+      "footprint": null
+    },
+    {
+      "id": "trail-lamp-5",
+      "asset": "talisman-lantern",
+      "x": 43,
+      "y": 33,
+      "footprint": null
+    },
+    {
+      "id": "trail-lamp-6",
+      "asset": "talisman-lantern",
+      "x": 52,
+      "y": 33,
+      "footprint": null
+    },
+    {
+      "id": "trail-lamp-7",
+      "asset": "talisman-lantern",
+      "x": 74,
+      "y": 21,
+      "footprint": null
+    },
+    {
+      "id": "trail-lamp-8",
+      "asset": "talisman-lantern",
+      "x": 83,
+      "y": 26,
+      "footprint": null
+    }
+  ],
+  "blockers": [
+    {
+      "x": 67.499,
+      "y": 5.999,
+      "w": 3.002,
+      "h": 0.502
+    },
+    {
+      "x": 66.499,
+      "y": 6.499,
+      "w": 5.002,
+      "h": 0.502
+    },
+    {
+      "x": 65.499,
+      "y": 6.999,
+      "w": 7.002,
+      "h": 0.502
+    },
+    {
+      "x": 64.999,
+      "y": 7.499,
+      "w": 8.002,
+      "h": 0.502
+    },
+    {
+      "x": 64.999,
+      "y": 7.999,
+      "w": 8.002,
+      "h": 0.502
+    },
+    {
+      "x": 64.499,
+      "y": 8.499,
+      "w": 9.002,
+      "h": 0.502
+    },
+    {
+      "x": 64.499,
+      "y": 8.999,
+      "w": 9.002,
+      "h": 0.502
+    },
+    {
+      "x": 63.999,
+      "y": 9.499,
+      "w": 10.002,
+      "h": 0.502
+    },
+    {
+      "x": 63.999,
+      "y": 9.999,
+      "w": 10.002,
+      "h": 0.502
+    },
+    {
+      "x": 63.999,
+      "y": 10.499,
+      "w": 10.002,
+      "h": 0.502
+    },
+    {
+      "x": 63.999,
+      "y": 10.999,
+      "w": 10.002,
+      "h": 0.502
+    },
+    {
+      "x": 63.999,
+      "y": 11.499,
+      "w": 10.002,
+      "h": 0.502
+    },
+    {
+      "x": 63.999,
+      "y": 11.999,
+      "w": 10.002,
+      "h": 0.502
+    },
+    {
+      "x": 64.499,
+      "y": 12.499,
+      "w": 9.002,
+      "h": 0.502
+    },
+    {
+      "x": 64.499,
+      "y": 12.999,
+      "w": 9.002,
+      "h": 0.502
+    },
+    {
+      "x": 64.999,
+      "y": 13.499,
+      "w": 8.002,
+      "h": 0.502
+    },
+    {
+      "x": 64.999,
+      "y": 13.999,
+      "w": 7.502,
+      "h": 0.502
+    },
+    {
+      "x": 65.499,
+      "y": 14.499,
+      "w": 7.002,
+      "h": 0.502
+    },
+    {
+      "x": 66.499,
+      "y": 14.999,
+      "w": 5.002,
+      "h": 0.502
+    },
+    {
+      "x": 65.999,
+      "y": 15.499,
+      "w": 4.502,
+      "h": 0.502
+    },
+    {
+      "x": 65.499,
+      "y": 15.999,
+      "w": 5.002,
+      "h": 0.502
+    },
+    {
+      "x": 64.999,
+      "y": 16.499,
+      "w": 5.002,
+      "h": 0.502
+    },
+    {
+      "x": 64.499,
+      "y": 16.999,
+      "w": 5.002,
+      "h": 0.502
+    },
+    {
+      "x": 63.999,
+      "y": 17.499,
+      "w": 5.002,
+      "h": 0.502
+    },
+    {
+      "x": 63.999,
+      "y": 17.999,
+      "w": 4.502,
+      "h": 0.502
+    },
+    {
+      "x": 63.499,
+      "y": 18.499,
+      "w": 4.502,
+      "h": 0.502
+    },
+    {
+      "x": 62.999,
+      "y": 18.999,
+      "w": 4.502,
+      "h": 0.502
+    },
+    {
+      "x": 62.499,
+      "y": 19.499,
+      "w": 4.502,
+      "h": 0.502
+    },
+    {
+      "x": 61.999,
+      "y": 19.999,
+      "w": 5.002,
+      "h": 0.502
+    },
+    {
+      "x": 61.499,
+      "y": 20.499,
+      "w": 5.002,
+      "h": 0.502
+    },
+    {
+      "x": 60.999,
+      "y": 20.999,
+      "w": 5.002,
+      "h": 0.502
+    },
+    {
+      "x": 60.499,
+      "y": 21.499,
+      "w": 5.002,
+      "h": 0.502
+    },
+    {
+      "x": 59.999,
+      "y": 21.999,
+      "w": 5.002,
+      "h": 0.502
+    },
+    {
+      "x": 58.999,
+      "y": 22.499,
+      "w": 5.502,
+      "h": 0.502
+    },
+    {
+      "x": 58.499,
+      "y": 22.999,
+      "w": 5.502,
+      "h": 0.502
+    },
+    {
+      "x": 57.999,
+      "y": 23.499,
+      "w": 5.502,
+      "h": 0.502
+    },
+    {
+      "x": 56.999,
+      "y": 23.999,
+      "w": 6.502,
+      "h": 0.502
+    },
+    {
+      "x": 56.499,
+      "y": 24.499,
+      "w": 6.002,
+      "h": 0.502
+    },
+    {
+      "x": 55.499,
+      "y": 24.999,
+      "w": 6.502,
+      "h": 0.502
+    },
+    {
+      "x": 54.999,
+      "y": 25.499,
+      "w": 6.002,
+      "h": 0.502
+    },
+    {
+      "x": 53.999,
+      "y": 25.999,
+      "w": 6.502,
+      "h": 0.502
+    },
+    {
+      "x": 53.499,
+      "y": 26.499,
+      "w": 6.502,
+      "h": 0.502
+    },
+    {
+      "x": 52.999,
+      "y": 26.999,
+      "w": 6.002,
+      "h": 0.502
+    },
+    {
+      "x": 51.999,
+      "y": 27.499,
+      "w": 6.502,
+      "h": 0.502
+    },
+    {
+      "x": 51.499,
+      "y": 27.999,
+      "w": 6.002,
+      "h": 0.502
+    },
+    {
+      "x": 50.499,
+      "y": 28.499,
+      "w": 6.502,
+      "h": 0.502
+    },
+    {
+      "x": 50.499,
+      "y": 28.999,
+      "w": 5.502,
+      "h": 0.502
+    },
+    {
+      "x": 49.999,
+      "y": 29.499,
+      "w": 5.502,
+      "h": 0.502
+    },
+    {
+      "x": 49.499,
+      "y": 29.999,
+      "w": 5.502,
+      "h": 0.502
+    },
+    {
+      "x": 48.999,
+      "y": 30.499,
+      "w": 5.002,
+      "h": 0.502
+    },
+    {
+      "x": 48.499,
+      "y": 30.999,
+      "w": 5.002,
+      "h": 0.502
+    },
+    {
+      "x": 47.999,
+      "y": 31.499,
+      "w": 5.002,
+      "h": 0.502
+    },
+    {
+      "x": 47.999,
+      "y": 31.999,
+      "w": 4.502,
+      "h": 0.502
+    },
+    {
+      "x": 47.499,
+      "y": 32.499,
+      "w": 4.502,
+      "h": 0.502
+    },
+    {
+      "x": 45.999,
+      "y": 38.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 46.499,
+      "y": 39.499,
+      "w": 3.502,
+      "h": 0.502
+    },
+    {
+      "x": 46.499,
+      "y": 39.999,
+      "w": 3.502,
+      "h": 0.502
+    },
+    {
+      "x": 46.499,
+      "y": 40.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 46.499,
+      "y": 40.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 46.999,
+      "y": 41.499,
+      "w": 3.502,
+      "h": 0.502
+    },
+    {
+      "x": 46.999,
+      "y": 41.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 46.999,
+      "y": 42.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 47.499,
+      "y": 42.999,
+      "w": 3.502,
+      "h": 0.502
+    },
+    {
+      "x": 47.499,
+      "y": 43.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 47.499,
+      "y": 43.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 47.999,
+      "y": 44.499,
+      "w": 3.502,
+      "h": 0.502
+    },
+    {
+      "x": 47.999,
+      "y": 44.999,
+      "w": 3.502,
+      "h": 0.502
+    },
+    {
+      "x": 47.999,
+      "y": 45.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 48.499,
+      "y": 45.999,
+      "w": 3.502,
+      "h": 0.502
+    },
+    {
+      "x": 48.499,
+      "y": 46.499,
+      "w": 3.502,
+      "h": 0.502
+    },
+    {
+      "x": 48.499,
+      "y": 46.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 48.499,
+      "y": 47.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 48.999,
+      "y": 47.999,
+      "w": 3.502,
+      "h": 0.502
+    },
+    {
+      "x": 48.999,
+      "y": 48.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 48.999,
+      "y": 48.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 49.499,
+      "y": 49.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 49.499,
+      "y": 49.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 49.999,
+      "y": 50.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 49.999,
+      "y": 50.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 50.499,
+      "y": 51.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 50.499,
+      "y": 51.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 50.999,
+      "y": 52.499,
+      "w": 3.502,
+      "h": 0.502
+    },
+    {
+      "x": 50.999,
+      "y": 52.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 50.999,
+      "y": 53.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 51.499,
+      "y": 53.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 51.499,
+      "y": 54.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 51.999,
+      "y": 54.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 51.999,
+      "y": 55.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 52.499,
+      "y": 55.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 52.499,
+      "y": 56.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 52.999,
+      "y": 56.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 52.999,
+      "y": 57.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 53.499,
+      "y": 57.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 53.499,
+      "y": 58.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 53.999,
+      "y": 58.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 53.999,
+      "y": 59.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 54.499,
+      "y": 59.999,
+      "w": 3.502,
+      "h": 0.502
+    },
+    {
+      "x": 54.499,
+      "y": 60.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 54.499,
+      "y": 60.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 54.999,
+      "y": 61.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 54.999,
+      "y": 61.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 55.499,
+      "y": 62.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 55.499,
+      "y": 62.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 55.999,
+      "y": 63.499,
+      "w": 4.002,
+      "h": 0.502
+    }
+  ],
+  "npcs": [],
+  "portals": [
+    {
+      "id": "bamboo-gate",
+      "area": {
+        "x": 0,
+        "y": 46.4,
+        "w": 2,
+        "h": 1.2
+      },
+      "arrival": {
+        "x": 4,
+        "y": 47
+      },
+      "to": {
+        "mapId": "mist-bamboo",
+        "portalId": "tea-gate"
+      },
+      "label": {
+        "th": "กลับหุบไผ่หมอกคราม · ตะวันตก",
+        "en": "Mist Bamboo Valley"
+      }
+    }
+  ],
+  "safeZones": [
+    {
+      "x": 0,
+      "y": 41,
+      "w": 13,
+      "h": 12
+    },
+    {
+      "x": 16,
+      "y": 39,
+      "w": 13,
+      "h": 9
+    },
+    {
+      "x": 78,
+      "y": 19,
+      "w": 8,
+      "h": 9
+    }
+  ],
+  "spawnRegions": [
+    {
+      "id": "north-leaves",
+      "area": {
+        "x": 30,
+        "y": 13,
+        "w": 13,
+        "h": 11
+      },
+      "respawnMs": 21000,
+      "monsters": [
+        {
+          "kind": "tea-wisp",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "south-grove",
+      "area": {
+        "x": 30,
+        "y": 49,
+        "w": 13,
+        "h": 10
+      },
+      "respawnMs": 24000,
+      "monsters": [
+        {
+          "kind": "tea-shadow",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "east-ward",
+      "area": {
+        "x": 64,
+        "y": 29,
+        "w": 11,
+        "h": 11
+      },
+      "respawnMs": 27000,
+      "monsters": [
+        {
+          "kind": "tea-guardian",
+          "count": 3
+        }
+      ]
+    }
+  ]
+};

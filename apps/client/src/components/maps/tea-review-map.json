@@ -208,6 +208,21 @@
           ]
         ],
         "r": 2.3
+      },
+      {
+        "terrain": "dirt",
+        "shape": "path",
+        "points": [
+          [
+            1,
+            47
+          ],
+          [
+            4,
+            47
+          ]
+        ],
+        "r": 1.7
       }
     ]
   },
@@ -1472,7 +1487,29 @@
     }
   ],
   "npcs": [],
-  "portals": [],
+  "portals": [
+    {
+      "id": "bamboo-gate",
+      "area": {
+        "x": 0,
+        "y": 46.4,
+        "w": 2,
+        "h": 1.2
+      },
+      "arrival": {
+        "x": 4,
+        "y": 47
+      },
+      "to": {
+        "mapId": "mist-bamboo",
+        "portalId": "tea-gate"
+      },
+      "label": {
+        "th": "กลับหุบไผ่หมอกคราม · ตะวันตก",
+        "en": "Mist Bamboo Valley"
+      }
+    }
+  ],
   "safeZones": [
     {
       "x": 0,
@@ -1493,5 +1530,54 @@
       "h": 9
     }
   ],
-  "spawnRegions": []
+  "spawnRegions": [
+    {
+      "id": "north-leaves",
+      "area": {
+        "x": 30,
+        "y": 13,
+        "w": 13,
+        "h": 11
+      },
+      "respawnMs": 21000,
+      "monsters": [
+        {
+          "kind": "tea-wisp",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "south-grove",
+      "area": {
+        "x": 30,
+        "y": 49,
+        "w": 13,
+        "h": 10
+      },
+      "respawnMs": 24000,
+      "monsters": [
+        {
+          "kind": "tea-shadow",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "east-ward",
+      "area": {
+        "x": 64,
+        "y": 29,
+        "w": 11,
+        "h": 11
+      },
+      "respawnMs": 27000,
+      "monsters": [
+        {
+          "kind": "tea-guardian",
+          "count": 3
+        }
+      ]
+    }
+  ]
 }
