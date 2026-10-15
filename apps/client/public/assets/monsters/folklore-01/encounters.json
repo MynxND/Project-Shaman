@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "note": "Game encounter design; numerical roles provisional. Ireland grouping reconfirmed by user. Korean locations planned, not live.",
+  "version": 5,
+  "note": "Species-specific ranged basic attacks: folklore-inspired game adaptations, provisional world-unit ranges. Ireland game grouping retained; Korea planned.",
   "mapNations": {
     "umbral-capital": "global",
     "whispering-spiritwood": "thailand",
@@ -77,7 +77,7 @@
     "phi-krasue": {
       "nation": "thailand",
       "role": "ranged",
-      "range": 4.2,
+      "range": 2.6,
       "locations": [
         {
           "mapId": "moon-mangrove",
@@ -91,8 +91,15 @@
         }
       ],
       "projectile": {
-        "speed": 7,
-        "family": "spirit"
+        "speed": 5,
+        "family": "spirit",
+        "motif": "krasue-embers",
+        "originHeight": 0.48
+      },
+      "attack": {
+        "nameTh": "สะเก็ดไฟกระสือ",
+        "basisTh": "แสงเรืองของหัวลอยและการหาอาหารยามค่ำ ดัดแปลงเป็นสะเก็ดไฟหิวโหยระยะสั้น ไม่ใช่การพ่นไฟตามตำนานโดยตรง",
+        "adaptation": true
       }
     },
     "phi-krahang": {
@@ -132,7 +139,7 @@
     "yuki-onna": {
       "nation": "japan",
       "role": "ranged",
-      "range": 4.2,
+      "range": 5.2,
       "locations": [
         {
           "mapId": "snowbound-torii",
@@ -141,8 +148,15 @@
         }
       ],
       "projectile": {
-        "speed": 7,
-        "family": "spirit"
+        "speed": 6,
+        "family": "spirit",
+        "motif": "frost-breath",
+        "originHeight": 0.54
+      },
+      "attack": {
+        "nameTh": "ลมหายใจเหมันต์",
+        "basisTh": "อิงลมหายใจเย็นของหญิงหิมะ ใช้ละอองน้ำแข็งเป็นแนวพัดที่เดินทางสู่จุดเล็ง",
+        "adaptation": true
       }
     },
     "kuchisake-onna": {
@@ -177,7 +191,7 @@
     "ubume": {
       "nation": "japan",
       "role": "ranged",
-      "range": 4.2,
+      "range": 3.1,
       "locations": [
         {
           "mapId": "spirit-waterfall",
@@ -186,8 +200,15 @@
         }
       ],
       "projectile": {
-        "speed": 7,
-        "family": "spirit"
+        "speed": 4.5,
+        "family": "spirit",
+        "motif": "shroud-leaves",
+        "originHeight": 0.38
+      },
+      "attack": {
+        "nameTh": "ห่อผ้ามายาใบไม้",
+        "basisTh": "อิงห่อทารกที่กลายเป็นใบไม้หรือหิน ดัดแปลงเป็นผ้าพร้อมใบไม้พุ่งออกจากแขน ไม่แสดงร่างเด็ก",
+        "adaptation": true
       }
     },
     "gashadokuro": {
@@ -205,7 +226,7 @@
     "cheonyeo-gwishin": {
       "nation": "korea",
       "role": "ranged",
-      "range": 4.2,
+      "range": 3.4,
       "locations": [
         {
           "mapId": "moon-ritual-ridge",
@@ -213,14 +234,21 @@
         }
       ],
       "projectile": {
-        "speed": 7,
-        "family": "binding"
+        "speed": 6.5,
+        "family": "binding",
+        "motif": "mourning-hair",
+        "originHeight": 0.38
+      },
+      "attack": {
+        "nameTh": "เส้นผมอาลัย",
+        "basisTh": "ความอาลัยและเส้นผมยาวในภาพเดิม ดัดแปลงเป็นปอยผมวิญญาณเอื้อมระยะกลาง",
+        "adaptation": true
       }
     },
     "mulgwishin": {
       "nation": "korea",
       "role": "ranged",
-      "range": 4.2,
+      "range": 3.8,
       "locations": [
         {
           "mapId": "spirit-funeral-road",
@@ -228,8 +256,15 @@
         }
       ],
       "projectile": {
-        "speed": 7,
-        "family": "spirit"
+        "speed": 5.5,
+        "family": "spirit",
+        "motif": "drowned-hand",
+        "originHeight": 0.38
+      },
+      "attack": {
+        "nameTh": "มือผีน้ำ",
+        "basisTh": "อิงผีน้ำคว้าคนจมน้ำ ดัดแปลงเป็นเงามือเปียกพร้อมสาหร่ายที่พุ่งไปยังจุดเล็ง",
+        "adaptation": true
       }
     },
     "dalgyal-gwishin": {
@@ -257,7 +292,7 @@
     "gumiho": {
       "nation": "korea",
       "role": "ranged",
-      "range": 4.2,
+      "range": 6.1,
       "locations": [
         {
           "mapId": "moon-ritual-ridge",
@@ -265,14 +300,21 @@
         }
       ],
       "projectile": {
-        "speed": 7,
-        "family": "yantra"
+        "speed": 8,
+        "family": "yantra",
+        "motif": "nine-fox-flames",
+        "originHeight": 0.38
+      },
+      "attack": {
+        "nameTh": "เปลววิญญาณเก้าหาง",
+        "basisTh": "อิงจิ้งจอกเก้าหางและอำนาจลวงตา ดัดแปลงเป็นเปลวเล็กเก้าสาย ไม่มีลูกแก้วพลังทั่วไป",
+        "adaptation": true
       }
     },
     "chonggak-gwishin": {
       "nation": "korea",
       "role": "ranged",
-      "range": 4.2,
+      "range": 3.2,
       "locations": [
         {
           "mapId": "spirit-funeral-road",
@@ -280,14 +322,21 @@
         }
       ],
       "projectile": {
-        "speed": 7,
-        "family": "binding"
+        "speed": 6,
+        "family": "binding",
+        "motif": "sleeve-knot",
+        "originHeight": 0.38
+      },
+      "attack": {
+        "nameTh": "ชายแขนเสื้ออาลัย",
+        "basisTh": "อิงผีหนุ่มผู้ยังมีห่วง ดัดแปลงจากฝ่ามือและแขนเสื้อเดิมเป็นปมผ้าอาลัยพุ่งสั้น",
+        "adaptation": true
       }
     },
     "rusalka": {
       "nation": "russia",
       "role": "ranged",
-      "range": 4.2,
+      "range": 4.4,
       "locations": [
         {
           "mapId": "frost-pine",
@@ -301,8 +350,15 @@
         }
       ],
       "projectile": {
-        "speed": 7,
-        "family": "spirit"
+        "speed": 5.8,
+        "family": "spirit",
+        "motif": "river-tresses",
+        "originHeight": 0.38
+      },
+      "attack": {
+        "nameTh": "ปอยผมธารา",
+        "basisTh": "อิงวิญญาณหญิงแห่งน้ำและผมสาหร่ายในแบบเดิม ดัดแปลงเป็นปอยผมเปียกคดเคี้ยว",
+        "adaptation": true
       }
     },
     "leshy": {
@@ -354,7 +410,7 @@
     "vodyanoy": {
       "nation": "russia",
       "role": "ranged",
-      "range": 4.2,
+      "range": 4.8,
       "locations": [
         {
           "mapId": "taiga-blood-trail",
@@ -368,8 +424,15 @@
         }
       ],
       "projectile": {
-        "speed": 7,
-        "family": "spirit"
+        "speed": 4.8,
+        "family": "spirit",
+        "motif": "river-surge",
+        "originHeight": 0.38
+      },
+      "attack": {
+        "nameTh": "คลื่นน้ำขุ่น",
+        "basisTh": "อิงเจ้าผีน้ำ ดัดแปลงท่าตบมือเดิมเป็นหน้าคลื่นหนักพร้อมฟองน้ำ",
+        "adaptation": true
       }
     },
     "bannik": {
@@ -411,7 +474,7 @@
     "utburdur": {
       "nation": "ireland",
       "role": "ranged",
-      "range": 4.2,
+      "range": 4.1,
       "locations": [
         {
           "mapId": "willow-wake-village",
@@ -420,8 +483,15 @@
         }
       ],
       "projectile": {
-        "speed": 7,
-        "family": "spirit"
+        "speed": 6.2,
+        "family": "spirit",
+        "motif": "shroud-wail",
+        "originHeight": 0.3
+      },
+      "attack": {
+        "nameTh": "เสียงครวญผ้าห่อ",
+        "basisTh": "อิงวิญญาณในห่อผ้าตาม lore เกม ดัดแปลงเสียงครวญเป็นระลอกขาดช่วงและเส้นใยผ้า ไม่มีร่างเด็ก",
+        "adaptation": true
       }
     },
     "uppvakningur": {
@@ -439,7 +509,7 @@
     "sending": {
       "nation": "ireland",
       "role": "ranged",
-      "range": 4.2,
+      "range": 6.4,
       "locations": [
         {
           "mapId": "golden-spiritwood",
@@ -448,8 +518,15 @@
         }
       ],
       "projectile": {
-        "speed": 7,
-        "family": "binding"
+        "speed": 8.5,
+        "family": "binding",
+        "motif": "sent-curse",
+        "originHeight": 0.38
+      },
+      "attack": {
+        "nameTh": "เส้นคำสาปส่งวิญญาณ",
+        "basisTh": "อิงผีที่ถูกส่งด้วยอาคม ใช้สายคำสาปเป็นข้อปมพุ่งรวดเร็วจากแขนเงาเดิม",
+        "adaptation": true
       }
     },
     "tilberi": {
@@ -493,8 +570,15 @@
         }
       ],
       "projectile": {
-        "speed": 7,
-        "family": "binding"
+        "speed": 6.4,
+        "family": "binding",
+        "motif": "crimson-silk",
+        "originHeight": 0.38
+      },
+      "attack": {
+        "nameTh": "แพรอาฆาต",
+        "basisTh": "อิงผีหญิงอาฆาตและชุดจีนเดิม ดัดแปลงชายแขนเสื้อเป็นแพรแดงสองสาย",
+        "adaptation": true
       }
     },
     "e-gui": {
@@ -512,7 +596,7 @@
     "shui-gui": {
       "nation": "china",
       "role": "ranged",
-      "range": 4.2,
+      "range": 3.9,
       "locations": [
         {
           "mapId": "mist-bamboo",
@@ -526,8 +610,15 @@
         }
       ],
       "projectile": {
-        "speed": 7,
-        "family": "spirit"
+        "speed": 5.4,
+        "family": "spirit",
+        "motif": "drowning-grasp",
+        "originHeight": 0.38
+      },
+      "attack": {
+        "nameTh": "กรงเล็บสายน้ำ",
+        "basisTh": "อิงผีน้ำที่ดึงคนจม ดัดแปลงเป็นสามนิ้วน้ำงอพร้อมหยดน้ำจากแขนเสื้อเปียก",
+        "adaptation": true
       }
     },
     "wutou-gui": {
@@ -545,7 +636,7 @@
     "huli-jing": {
       "nation": "china",
       "role": "ranged",
-      "range": 4.2,
+      "range": 5.7,
       "locations": [
         {
           "mapId": "mist-bamboo",
@@ -559,8 +650,15 @@
         }
       ],
       "projectile": {
-        "speed": 7,
-        "family": "yantra"
+        "speed": 7.8,
+        "family": "yantra",
+        "motif": "fox-mirage",
+        "originHeight": 0.38
+      },
+      "attack": {
+        "nameTh": "เงาลวงจิ้งจอก",
+        "basisTh": "อิงวิญญาณจิ้งจอกแปลงกาย ดัดแปลงเป็นเงาหัวจิ้งจอกและแพรหางสามสายตามแบบตัวนี้ แยกจากเก้าหางเกาหลี",
+        "adaptation": true
       }
     },
     "draugen": {
@@ -600,7 +698,7 @@
     "nokken": {
       "nation": "norway",
       "role": "ranged",
-      "range": 4.2,
+      "range": 5.4,
       "locations": [
         {
           "mapId": "storm-fjord",
@@ -614,14 +712,21 @@
         }
       ],
       "projectile": {
-        "speed": 7,
-        "family": "spirit"
+        "speed": 5.2,
+        "family": "spirit",
+        "motif": "reed-lure",
+        "originHeight": 0.38
+      },
+      "attack": {
+        "nameTh": "สายกกลวงน้ำ",
+        "basisTh": "อิงภูตน้ำล่อลวงสู่ทะเลสาบ ดัดแปลงเป็นสายกกเกี่ยวพร้อมระลอกน้ำ",
+        "adaptation": true
       }
     },
     "fossegrim": {
       "nation": "norway",
       "role": "ranged",
-      "range": 4.2,
+      "range": 6.8,
       "locations": [
         {
           "mapId": "storm-fjord",
@@ -630,8 +735,15 @@
         }
       ],
       "projectile": {
-        "speed": 7,
-        "family": "spirit"
+        "speed": 9,
+        "family": "spirit",
+        "motif": "fiddle-wave",
+        "originHeight": 0.34
+      },
+      "attack": {
+        "nameTh": "คลื่นซอแห่งน้ำตก",
+        "basisTh": "อิงภูตน้ำตกผู้เล่นซอ ใช้คลื่นเสียงโค้งซ้อนกับสายละอองน้ำจากคันชักเดิม",
+        "adaptation": true
       }
     },
     "nisse": {
@@ -649,7 +761,7 @@
     "mare": {
       "nation": "norway",
       "role": "ranged",
-      "range": 4.2,
+      "range": 4.6,
       "locations": [
         {
           "mapId": "aurora-pass",
@@ -658,8 +770,15 @@
         }
       ],
       "projectile": {
-        "speed": 7,
-        "family": "binding"
+        "speed": 6.8,
+        "family": "binding",
+        "motif": "nightmare-claw",
+        "originHeight": 0.38
+      },
+      "attack": {
+        "nameTh": "เงากดทับฝันร้าย",
+        "basisTh": "อิงวิญญาณกดทับผู้หลับ ดัดแปลงเป็นเงาฝ่ามือสามรอยที่คืบสู่จุดเล็ง ไม่เพิ่มสถานะหลับโดยพลการ",
+        "adaptation": true
       }
     }
   },

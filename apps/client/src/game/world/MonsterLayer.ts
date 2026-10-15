@@ -214,7 +214,7 @@ export class MonsterLayer {
       const family=MONSTERS[e.kind]?.projectile?.family,view=this.views.get(e.from);
       if(family&&view){
         const target=e.aim?{x:e.aim.x*WORLD_UNIT_PX,y:this.y(e.aim.x,e.aim.y)}:this.hooks.playerAt(e.to);
-        if(target)this.orbs.launch({x:view.sprite.x,y:view.sprite.y-view.height*.5},{x:target.x,y:target.y-26},e.flightMs,family);
+        if(target)this.orbs.launch({x:view.sprite.x,y:view.sprite.y-view.height*(MONSTERS[e.kind]?.projectile?.originHeight??.5)/.82},{x:target.x,y:target.y-26},e.flightMs,family,MONSTERS[e.kind]?.projectile?.motif);
       }else this.projectile(e.from, e.to, e.flightMs);
     } else if (e.type === 'bolt') {
       this.bolt(e.from, e.to, e.flightMs);

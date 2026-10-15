@@ -680,3 +680,8 @@ User authorized all audit02 repairs with ImageGen. Adopt22 replacement walk cycl
 ## Folklore encounters04 — 2026-10-15
 
 17 ranged/23 melee roles reuse repair03 directional poses; existing impact deadlines launch server-authoritative fixed-aim pixel orbs with arrival/dodge semantics. Shared VFX family palettes, bounded48-flight Phaser lifecycle and Thai preview role/habitat labels. Canonical encounter-04.json validates game nation and emits habitat guards.34 species retain50 correct bindings across20 live maps; Korea6 explicitly planned/unspawned. User reconfirmed Ireland game lore. No sprite generation, layout/NPC/portal change. Typecheck/build, combat/shared/network/habitat/timing/lifecycle tests and desktop/mobile review pass; actual-game orb visual inspection remains unverified. Evidence: design/monsters/folklore-01/encounter-04/README.md.
+
+
+## Folklore ranged attacks05 — user2026-10-15
+
+Replace uniform orbs with17 species-specific folklore-inspired pixel motifs, distinct base ranges2.6–6.8 and speeds4.5–9 world units/s. Mouth/hand/fiddle/bundle origins, existing pose-impact timing, shared world/preview silhouette renderer and Thai rationale/comparison table. Explicit adaptations and provisional balance; no additional status/AoE or player-skill change. Existing attack hysteresis and authoritative fixed-aim dodge retained;48-flight cleanup budget. No generation, sprite/layout/NPC/portal/resident changes,34live/Korea6planned and Ireland game lore retained. Tests/typecheck/build and sampled desktop/mobile preview inspected; actual-game new-effect visual review unverified. Sources/profiles/evidence: design/monsters/folklore-01/encounter-05/README.md.

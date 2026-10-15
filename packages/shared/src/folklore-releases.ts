@@ -94,9 +94,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 15,
     "mdef": 13,
     "speed": 2.1,
-    "aggroRange": 5.5,
-    "leash": 7.5,
-    "attackRange": 4.2,
+    "aggroRange": 3.9000000000000004,
+    "leash": 5.9,
+    "attackRange": 2.6,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 480,
@@ -118,8 +118,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "radius": 1.3
     },
     "projectile": {
-      "speed": 7,
-      "family": "spirit"
+      "speed": 5,
+      "family": "spirit",
+      "motif": "krasue-embers",
+      "originHeight": 0.48
     }
   },
   "phi-krahang": {
@@ -215,9 +217,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 37,
     "mdef": 30,
     "speed": 1.6,
-    "aggroRange": 5.5,
-    "leash": 7.5,
-    "attackRange": 4.2,
+    "aggroRange": 6.5,
+    "leash": 8.5,
+    "attackRange": 5.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1536,
@@ -239,8 +241,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "radius": 1.3
     },
     "projectile": {
-      "speed": 7,
-      "family": "spirit"
+      "speed": 6,
+      "family": "spirit",
+      "motif": "frost-breath",
+      "originHeight": 0.54
     }
   },
   "kuchisake-onna": {
@@ -336,9 +340,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 28,
     "mdef": 23,
     "speed": 1.6,
-    "aggroRange": 5.5,
-    "leash": 7.5,
-    "attackRange": 4.2,
+    "aggroRange": 4.4,
+    "leash": 6.4,
+    "attackRange": 3.1,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1104,
@@ -360,8 +364,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "radius": 1.3
     },
     "projectile": {
-      "speed": 7,
-      "family": "spirit"
+      "speed": 4.5,
+      "family": "spirit",
+      "motif": "shroud-leaves",
+      "originHeight": 0.38
     }
   },
   "gashadokuro": {
@@ -418,9 +424,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 25,
     "mdef": 21,
     "speed": 1.6,
-    "aggroRange": 5.5,
-    "leash": 7.5,
-    "attackRange": 4.2,
+    "aggroRange": 4.7,
+    "leash": 6.699999999999999,
+    "attackRange": 3.4,
     "attackDelayMs": 1800,
     "attackWindupMs": 125,
     "exp": 960,
@@ -442,8 +448,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "radius": 1.3
     },
     "projectile": {
-      "speed": 7,
-      "family": "binding"
+      "speed": 6.5,
+      "family": "binding",
+      "motif": "mourning-hair",
+      "originHeight": 0.38
     }
   },
   "mulgwishin": {
@@ -461,9 +469,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 29,
     "mdef": 24,
     "speed": 1.6,
-    "aggroRange": 5.5,
-    "leash": 7.5,
-    "attackRange": 4.2,
+    "aggroRange": 5.1,
+    "leash": 7.1,
+    "attackRange": 3.8,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1152,
@@ -485,8 +493,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "radius": 1.3
     },
     "projectile": {
-      "speed": 7,
-      "family": "spirit"
+      "speed": 5.5,
+      "family": "spirit",
+      "motif": "drowned-hand",
+      "originHeight": 0.38
     }
   },
   "dalgyal-gwishin": {
@@ -582,9 +592,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 32,
     "mdef": 27,
     "speed": 1.6,
-    "aggroRange": 5.5,
-    "leash": 7.5,
-    "attackRange": 4.2,
+    "aggroRange": 7.3999999999999995,
+    "leash": 9.399999999999999,
+    "attackRange": 6.1,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1320,
@@ -606,8 +616,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "radius": 1.3
     },
     "projectile": {
-      "speed": 7,
-      "family": "yantra"
+      "speed": 8,
+      "family": "yantra",
+      "motif": "nine-fox-flames",
+      "originHeight": 0.38
     }
   },
   "chonggak-gwishin": {
@@ -625,9 +637,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 27,
     "mdef": 22,
     "speed": 1.6,
-    "aggroRange": 5.5,
-    "leash": 7.5,
-    "attackRange": 4.2,
+    "aggroRange": 4.5,
+    "leash": 6.5,
+    "attackRange": 3.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1056,
@@ -649,8 +661,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "radius": 1.3
     },
     "projectile": {
-      "speed": 7,
-      "family": "binding"
+      "speed": 6,
+      "family": "binding",
+      "motif": "sleeve-knot",
+      "originHeight": 0.38
     }
   },
   "rusalka": {
@@ -668,9 +682,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 38,
     "mdef": 31,
     "speed": 1.6,
-    "aggroRange": 5.5,
-    "leash": 7.5,
-    "attackRange": 4.2,
+    "aggroRange": 5.7,
+    "leash": 7.7,
+    "attackRange": 4.4,
     "attackDelayMs": 1800,
     "attackWindupMs": 125,
     "exp": 1584,
@@ -692,8 +706,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "radius": 1.3
     },
     "projectile": {
-      "speed": 7,
-      "family": "spirit"
+      "speed": 5.8,
+      "family": "spirit",
+      "motif": "river-tresses",
+      "originHeight": 0.38
     }
   },
   "leshy": {
@@ -828,9 +844,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 47,
     "mdef": 39,
     "speed": 1.6,
-    "aggroRange": 5.5,
-    "leash": 7.5,
-    "attackRange": 4.2,
+    "aggroRange": 6.1,
+    "leash": 8.1,
+    "attackRange": 4.8,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 2040,
@@ -852,8 +868,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "radius": 1.3
     },
     "projectile": {
-      "speed": 7,
-      "family": "spirit"
+      "speed": 4.8,
+      "family": "spirit",
+      "motif": "river-surge",
+      "originHeight": 0.38
     }
   },
   "bannik": {
@@ -988,9 +1006,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 35,
     "mdef": 29,
     "speed": 1.6,
-    "aggroRange": 5.5,
-    "leash": 7.5,
-    "attackRange": 4.2,
+    "aggroRange": 5.3999999999999995,
+    "leash": 7.3999999999999995,
+    "attackRange": 4.1,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1440,
@@ -1012,8 +1030,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "radius": 1.3
     },
     "projectile": {
-      "speed": 7,
-      "family": "spirit"
+      "speed": 6.2,
+      "family": "spirit",
+      "motif": "shroud-wail",
+      "originHeight": 0.3
     }
   },
   "uppvakningur": {
@@ -1070,9 +1090,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 40,
     "mdef": 33,
     "speed": 1.6,
-    "aggroRange": 5.5,
-    "leash": 7.5,
-    "attackRange": 4.2,
+    "aggroRange": 7.7,
+    "leash": 9.7,
+    "attackRange": 6.4,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1680,
@@ -1094,8 +1114,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "radius": 1.3
     },
     "projectile": {
-      "speed": 7,
-      "family": "binding"
+      "speed": 8.5,
+      "family": "binding",
+      "motif": "sent-curse",
+      "originHeight": 0.38
     }
   },
   "tilberi": {
@@ -1215,8 +1237,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "radius": 1.3
     },
     "projectile": {
-      "speed": 7,
-      "family": "binding"
+      "speed": 6.4,
+      "family": "binding",
+      "motif": "crimson-silk",
+      "originHeight": 0.38
     }
   },
   "e-gui": {
@@ -1273,9 +1297,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 23,
     "mdef": 19,
     "speed": 1.6,
-    "aggroRange": 5.5,
-    "leash": 7.5,
-    "attackRange": 4.2,
+    "aggroRange": 5.2,
+    "leash": 7.199999999999999,
+    "attackRange": 3.9,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 864,
@@ -1297,8 +1321,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "radius": 1.3
     },
     "projectile": {
-      "speed": 7,
-      "family": "spirit"
+      "speed": 5.4,
+      "family": "spirit",
+      "motif": "drowning-grasp",
+      "originHeight": 0.38
     }
   },
   "wutou-gui": {
@@ -1355,9 +1381,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 27,
     "mdef": 23,
     "speed": 1.6,
-    "aggroRange": 5.5,
-    "leash": 7.5,
-    "attackRange": 4.2,
+    "aggroRange": 7,
+    "leash": 9,
+    "attackRange": 5.7,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1080,
@@ -1379,8 +1405,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "radius": 1.3
     },
     "projectile": {
-      "speed": 7,
-      "family": "yantra"
+      "speed": 7.8,
+      "family": "yantra",
+      "motif": "fox-mirage",
+      "originHeight": 0.38
     }
   },
   "draugen": {
@@ -1476,9 +1504,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 40,
     "mdef": 33,
     "speed": 1.6,
-    "aggroRange": 5.5,
-    "leash": 7.5,
-    "attackRange": 4.2,
+    "aggroRange": 6.7,
+    "leash": 8.7,
+    "attackRange": 5.4,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1680,
@@ -1500,8 +1528,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "radius": 1.3
     },
     "projectile": {
-      "speed": 7,
-      "family": "spirit"
+      "speed": 5.2,
+      "family": "spirit",
+      "motif": "reed-lure",
+      "originHeight": 0.38
     }
   },
   "fossegrim": {
@@ -1519,9 +1549,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 39,
     "mdef": 32,
     "speed": 1.6,
-    "aggroRange": 5.5,
-    "leash": 7.5,
-    "attackRange": 4.2,
+    "aggroRange": 8.1,
+    "leash": 10.1,
+    "attackRange": 6.8,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1632,
@@ -1543,8 +1573,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "radius": 1.3
     },
     "projectile": {
-      "speed": 7,
-      "family": "spirit"
+      "speed": 9,
+      "family": "spirit",
+      "motif": "fiddle-wave",
+      "originHeight": 0.34
     }
   },
   "nisse": {
@@ -1601,9 +1633,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 43,
     "mdef": 35,
     "speed": 1.6,
-    "aggroRange": 5.5,
-    "leash": 7.5,
-    "attackRange": 4.2,
+    "aggroRange": 5.8999999999999995,
+    "leash": 7.8999999999999995,
+    "attackRange": 4.6,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1824,
@@ -1625,8 +1657,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "radius": 1.3
     },
     "projectile": {
-      "speed": 7,
-      "family": "binding"
+      "speed": 6.8,
+      "family": "binding",
+      "motif": "nightmare-claw",
+      "originHeight": 0.38
     }
   }
 };

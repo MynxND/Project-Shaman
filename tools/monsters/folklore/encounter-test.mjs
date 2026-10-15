@@ -14,20 +14,21 @@ for(const[id,e]of Object.entries(config.monsters)){
  if(e.locations.some(l=>l.status==='live'))live++;else planned++;
  const def=MONSTERS[id];assert.equal(def.attackRange,e.range);
  if(e.role==='melee'){assert(!def.projectile);assert(e.range<=1.8);continue;}
- ranged++;assert(def.projectile.speed>0);assert.equal(def.projectile.family,e.projectile.family);assert(e.range>3);assert(def.aggroRange>=def.attackRange);
- for(const dodge of [false,true]){
+ ranged++;assert(def.projectile.speed>0);assert.equal(def.projectile.motif,e.projectile.motif);assert(e.attack.nameTh&&e.attack.basisTh&&e.attack.adaptation);assert(def.projectile.originHeight>0&&def.projectile.originHeight<1);assert.equal(def.projectile.family,e.projectile.family);assert(e.range>2);assert(def.aggroRange>=def.attackRange);
+ for(const outcome of ['hit','dodge','out-of-range']){const dodge=outcome==='dodge';
   let now=10000;const events=[],map={id:'orb-qa',width:30,height:30,spawn:{x:2,y:2},ground:{base:'grass',regions:[]},objects:[],blockers:[],spawnRegions:[{id:'fixture',area:{x:7,y:7,w:6,h:6},monsters:[{kind:id,count:1}]}]};
-  const state=new GameState(),player=new PlayerState();player.x=14;player.y=10;state.players.set('target',player);let profile=newProfile(map.spawn);Object.assign(profile,{hp:100000,hpMax:100000,level:99});
+  const state=new GameState(),player=new PlayerState();const distance=outcome==='out-of-range'?e.range*1.25+.2:e.range;player.x=10+distance;player.y=10;state.players.set('target',player);let profile=newProfile(map.spawn);Object.assign(profile,{hp:100000,hpMax:100000,level:99});
   const combat=new CombatSystem({map,state,now:()=>now,rng:()=>.5,profile:()=>profile,setProfile:(_id,p)=>{profile=p;},vitals:()=>{},broadcast:e=>events.push({...e,time:now})});
   const m=[...combat.monsters.values()][0];Object.assign(m,{x:10,y:10,home:{x:10,y:10},state:'attack',targetId:'target',lastAttackAt:0,swingAt:0});
-  combat.step(1);assert(events.some(e=>e.type==='swing'));assert(!events.some(e=>e.type==='projectile'));
+  combat.step(1);if(outcome==='out-of-range'){assert(!events.some(e=>e.type==='swing'||e.type==='projectile'||e.type==='damage'),'range limit '+id);continue;}assert(events.some(e=>e.type==='swing'));assert(!events.some(e=>e.type==='projectile'));
   now+=def.attackWindupMs-1;combat.step(1);assert(!events.some(e=>e.type==='projectile'),'no early release '+id);
-  now++;combat.step(1);const shot=events.find(e=>e.type==='projectile');assert(shot,'ranged launch '+id);assert.deepEqual(shot.origin,{x:10,y:10});assert.deepEqual(shot.aim,{x:14,y:10});assert.equal(shot.flightMs,Math.round(4/def.projectile.speed*1000));assert(!events.some(e=>e.type==='damage'));
+  now++;combat.step(1);const shot=events.find(e=>e.type==='projectile');assert(shot,'ranged launch '+id);assert.deepEqual(shot.origin,{x:10,y:10});assert.deepEqual(shot.aim,{x:10+distance,y:10});assert.equal(shot.flightMs,Math.round(distance/def.projectile.speed*1000));assert(!events.some(e=>e.type==='damage'));
   if(dodge)player.x+=2;
   now=shot.time+shot.flightMs-1;combat.step(1);assert(!events.some(e=>e.type==='damage'),'no early impact '+id);
-  now++;combat.step(1);assert.equal(events.some(e=>e.type==='damage'&&e.source===m.id),!dodge,'arrival/dodge '+id);assert.deepEqual(shot.aim,{x:14,y:10},'snapshot never follows dodger');
+  now++;combat.step(1);assert.equal(events.some(e=>e.type==='damage'&&e.source===m.id),!dodge,'arrival/dodge '+id);assert.deepEqual(shot.aim,{x:10+distance,y:10},'snapshot never follows dodger');
  }
 }
+assert.equal(new Set(Object.values(config.monsters).filter(e=>e.role==='ranged').map(e=>e.range)).size,17,'distinct authored ranges');
 assert.equal(live,34);assert.equal(planned,6);assert.equal(ranged,17);
 const guards=FOLKLORE_BINDINGS['lantern-paddy'];guards.push({kind:'gumiho',campIndex:0,count:1});try{assert.throws(()=>withFolkloreResidents(MAPS['lantern-paddy']),/Cross-nation/);}finally{guards.pop();}
 console.log('PASS40 country habitats;34 live /6 honestly planned;17 ranged release/arrival/dodge contracts and23 melee roles');
