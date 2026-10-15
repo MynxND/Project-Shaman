@@ -605,3 +605,8 @@ Advance next eligible sprite nation to Norway with3 local previews before live a
 ## Norway live adoption — 2026-10-15
 
 USER authorizes Norway3 live adoption with reciprocal edge travel: Snowbound north55→Fjord west→Timber Harbor west→Aurora Pass west, returning through paired gates. Clear arrival4units in/safe6×6; old paths/portals/entities preserved.3NPC+9residents per Norway map, owned sprite reuse; levels55–65/60–70/65–80 provisional. Add harbor atlas node without removing original33;18live/16planned. Evidence: design/maps/norway-three/live01/.
+
+
+## Ireland three-map preview — 2026-10-15
+
+Completed existing-outfit priority countries; USER now asks next roadmap nation. Ireland environment-only batch uses2 existing planned IDs plus provisional willow-wake-village, without claiming Irish player outfits.69/35/47 authored objects,22 destinations,10 required IDs; explicit waylight/approach/camera corrections recorded. No live adoption/atlas expansion. See design/maps/ireland-three/README.md.

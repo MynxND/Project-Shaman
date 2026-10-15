@@ -284,3 +284,8 @@ Original Norway kit: tall-gabled timber hall, crooked coastal lighthouse, spruce
 ## Norway live adoption — 2026-10-15
 
 USER adopts Norway3 reviewed regional artwork/water/local mist into real game. No new generation or source-image edits. Service NPCs and monster animation sheets reused explicitly; local names/stat variants are provisional. World objects, native water/shore and source crop/nearest rules preserved; no new highland elevation/aurora claim. Actual game desktop/mobile, six native boundary trips and healer UI inspected. Evidence: design/maps/norway-three/live01/.
+
+
+## Ireland three-map preview — 2026-10-15
+
+USER requests next roadmap nation3 previews before live adoption: Ireland follows Norway. One original regional atlas: copper oak/willow, thatched whitewashed cottages, drystone gardens, pale limestone and original giant dolmen. Primary architecture/heritage text sources retained without external pixels/site replicas/sacred writing. PixelLab0/Comfy8188 offline→imagegen1, original alpha/prompt/hash committed. Desktop/mobile label-off art reviewed, user acceptance pending. See design/maps/ireland-three/.

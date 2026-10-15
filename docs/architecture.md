@@ -559,3 +559,8 @@ Norway three-map local preview at /maps/norway uses independent authored JSON/Ph
 ## Norway live adoption — 2026-10-15
 
 Norway3 now register in authoritative MAPS via norway.ts; snow-norway-link adds a north exit to existing Snowbound Torii without rewriting prior Japanese data. Same reviewed Norway renderer drives real game/local review; full gameplay map retained for bank exclusions. Existing Colyseus ticket travel/NPC services/monster sync/combat unchanged. Atlas34/12nations/18live/16planned. Evidence: design/maps/norway-three/live01/README.md.
+
+
+## Ireland three-map preview — 2026-10-15
+
+Ireland local gallery /maps/ireland adds independent authored JSON/Phaser review scenes with shared native terrain/water/mist/movement and scoped regional ecology crops. No MAPS/rooms/atlas or gameplay mutations;18live/34atlas retained.10 required IDs/22 local destinations and all main+side walks pass. See design/maps/ireland-three/README.md.

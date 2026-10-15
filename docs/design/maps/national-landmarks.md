@@ -10,3 +10,6 @@ Natural boundaries: author broad coves, peninsulas, variable-width river bends a
 
 
 Norway2026-10-15: three local previews now use an original tall-gabled timber shaman hall, coastal lighthouse, spruce/birch/heather and cold-slate materials. See norway-three/README.md. User visual acceptance and live adoption pending; northern pass is shore-level with climbable highlands/aurora still deferred. Prior future-proposal text remains historical.
+
+
+Ireland preview2026-10-15: original oversized limestone dolmen anchors stone-oath-moor, with low thatched/whitewashed cottages, dry-stone garden walls, copper oak and willow. General material/silhouette readings: Heritage Ireland Poulnabrone Portal Tomb and National Museum of Ireland architecture FAQ (links in ireland-01 manifest); no real-site replica, copied symbols or downloaded reference pixels. All3 local previews, no live adoption or final user visual approval.

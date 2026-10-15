@@ -635,3 +635,8 @@ Norway3 local previews available: storm-fjord, spirit-timber-harbor, aurora-pass
 ## Norway live adoption — 2026-10-15
 
 Norway3 are now live with9NPCs/27residents and reciprocal boundary chain from Snowbound Torii. Build/typecheck/shared/layout/native-water/ecology/Japan/Indonesia/atlas checks pass; actual game and server travel/heal/combat/EXP/profile/observer checks pass. Atlas34nodes/12nations/18live/16planned. Northern climbable highlands/aurora remain outside current art. See design/maps/norway-three/live01/README.md.
+
+
+## Ireland three-map preview — 2026-10-15
+
+Ireland3 local previews delivered: golden-spiritwood, stone-oath-moor, willow-wake-village. Regional grounds/trees/buildings, iconic dolmen, animated river/ponds and localized mist. Build/typecheck/shared/new-layout/wet-blocking/ecology/source and Norway/Japan/Indonesia/atlas regressions pass; desktop1280×900 and mobile390×844/844×390 inspected. Existing18live/34atlas unchanged; NPC/monster/portal adoption separate. See design/maps/ireland-three/README.md.
