@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "targetMaps": 35,
+  "targetMaps": 36,
   "geographyStatus": "proposed fictional spirit-route network; not approved lore or real Earth geography",
   "sources": [
     "docs/design/skill-system/classification.json",
@@ -159,7 +159,8 @@
       ],
       "maps": [
         "frost-pine",
-        "taiga-blood-trail"
+        "taiga-blood-trail",
+        "winter-seal-kremlin"
       ]
     },
     {
@@ -551,6 +552,19 @@
       "phase": 4
     },
     {
+      "id": "winter-seal-kremlin",
+      "name": "ป้อมไม้ผนึกเหมันต์",
+      "nation": "russia",
+      "levels": [
+        75,
+        90
+      ],
+      "x": 745,
+      "y": 172,
+      "biome": "สนหิมะ / ไทกา",
+      "phase": 4
+    },
+    {
       "id": "amber-grassland",
       "name": "ทุ่งหญ้าอำพัน",
       "nation": "usa",
@@ -757,7 +771,12 @@
     {
       "from": "frost-pine",
       "to": "taiga-blood-trail",
-      "status": "planned"
+      "status": "live"
+    },
+    {
+      "from": "taiga-blood-trail",
+      "to": "winter-seal-kremlin",
+      "status": "live"
     },
     {
       "from": "amber-grassland",
@@ -801,11 +820,6 @@
     },
     {
       "from": "mountain-spirit-sanctuary",
-      "to": "frost-pine",
-      "status": "planned"
-    },
-    {
-      "from": "mountain-spirit-sanctuary",
       "to": "amber-grassland",
       "status": "planned"
     },
@@ -830,7 +844,12 @@
       "status": "live"
     },
     {
-      "from": "taiga-blood-trail",
+      "from": "willow-wake-village",
+      "to": "frost-pine",
+      "status": "live"
+    },
+    {
+      "from": "winter-seal-kremlin",
       "to": "storm-seal-plateau",
       "status": "planned"
     },

@@ -1,0 +1,67 @@
+{
+  "travel": [
+    {
+      "from": "willow-wake-village",
+      "to": "frost-pine",
+      "arrival": {
+        "x": 4,
+        "y": 63
+      },
+      "noBounce": true
+    },
+    {
+      "from": "frost-pine",
+      "to": "taiga-blood-trail",
+      "arrival": {
+        "x": 4,
+        "y": 60
+      },
+      "noBounce": true
+    },
+    {
+      "from": "taiga-blood-trail",
+      "to": "winter-seal-kremlin",
+      "arrival": {
+        "x": 4,
+        "y": 63
+      },
+      "noBounce": true
+    },
+    {
+      "from": "winter-seal-kremlin",
+      "to": "taiga-blood-trail",
+      "arrival": {
+        "x": 90,
+        "y": 20
+      },
+      "noBounce": true
+    },
+    {
+      "from": "taiga-blood-trail",
+      "to": "frost-pine",
+      "arrival": {
+        "x": 88,
+        "y": 23
+      },
+      "noBounce": true
+    },
+    {
+      "from": "frost-pine",
+      "to": "willow-wake-village",
+      "arrival": {
+        "x": 84,
+        "y": 20
+      },
+      "noBounce": true
+    }
+  ],
+  "allSixBoundaryTrips": true,
+  "npcsTalkAndHeal": true,
+  "residentsPerMap": 9,
+  "observerSync": true,
+  "reviewedRoutes": true,
+  "skillDamage": true,
+  "basicKill": true,
+  "exp": true,
+  "profilePreserved": true
+}

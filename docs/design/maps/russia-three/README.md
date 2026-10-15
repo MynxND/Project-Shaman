@@ -25,3 +25,8 @@ Required10 landmarks,20 destinations,189 objects; independent quarter-unit footp
 Isolated staged snapshot pnpm build/typecheck, shared suite, test-russia-three, Ireland/Norway/Japan/Indonesia live geometry, world atlas/details, weathered-ground and edge-ecology regressions passed. These are technical evidence, not user art approval.
 
 Browser inspected label-off desktop1280×900 overviews and landmark/player cameras for all3, water/bank detail, native Down movement48,33→48,37.1. Portrait390×844 and landscape844×390 retain actor position, one canvas, no horizontal overflow. Small-screen nation selector wraps names clear of compass. Frost native runtime route tour completed3one-way passes including a full roundtrip. Full-basin inspection cameras expose the drifting mist for review. Captured console errors absent; water164868/200380/158026 samples. Evidence screens/ and browser.json. Physical devices untested; final user visual review and live adoption pending.
+
+
+## Live adoption update - 2026-10-15
+
+User subsequently authorizes all three maps into real gameplay. Prior preview-only scope/counts above are historical. Current adoption and verification: [live01/README.md](live01/README.md). Atlas36nodes/24live/12planned; no existing node removed.

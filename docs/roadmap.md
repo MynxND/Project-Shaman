@@ -650,3 +650,8 @@ Ireland3 now live, linked from Aurora Pass with reciprocal boundary travel,9NPCs
 ## Russia three-map preview — 2026-10-15
 
 Russia3 local previews delivered: frost-pine, taiga-blood-trail and iconic winter-seal-kremlin. Dedicated ground/tree/building kit, animated water/mist and snow on2maps; level proposals60–75/70–85/75–90. Build/typecheck/shared/geometry/old-country/atlas checks pass, desktop/mobile inspected. No live adoption; atlas35/21live unchanged. See design/maps/russia-three/README.md.
+
+
+## Russia live adoption — 2026-10-15
+
+Russia3 now live: frost-pine, taiga-blood-trail, winter-seal-kremlin;9NPCs/27residents and reciprocal edge chain from Ireland. Water/mist and2snow maps match preview. Build/typecheck/shared/layout/old-country/atlas/network checks pass; actual game desktop/mobile inspected. Atlas36/12nations/24live/12planned. See design/maps/russia-three/live01/README.md.

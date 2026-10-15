@@ -1,3 +1,5 @@
+import{RUSSIA_MAPS}from'./russia.js';
+import{WILLOW_RUSSIA_LINK}from'./willow-russia-link.js';
 import{IRELAND_MAPS}from'./ireland.js';
 import{AURORA_IRELAND_LINK}from'./aurora-ireland-link.js';
 import{NORWAY_MAPS}from'./norway.js';
@@ -35,6 +37,8 @@ export const MAPS: Readonly<Record<string, MapDefinition>> = {
   ...Object.fromEntries(NORWAY_MAPS.map(map=>[map.id,map])),
   [AURORA_IRELAND_LINK.id]:AURORA_IRELAND_LINK,
   ...Object.fromEntries(IRELAND_MAPS.map(map=>[map.id,map])),
+  [WILLOW_RUSSIA_LINK.id]:WILLOW_RUSSIA_LINK,
+  ...Object.fromEntries(RUSSIA_MAPS.map(map=>[map.id,map])),
 };
 export const DEFAULT_MAP_ID = UMBRAL_CAPITAL.id;
 /** The map for an id, or the default (Umbral Capital) for an unknown id. */

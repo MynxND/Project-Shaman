@@ -4,6 +4,8 @@ import {MONSTERS} from '../../packages/shared/dist/combat.js';
 const atlas=JSON.parse(await readFile('docs/design/maps/world-30/atlas.json'));
 const proposed=JSON.parse(await readFile('docs/design/maps/leveling-20-proposal.json')).maps;
 const extra={
+ 'frost-pine':{climate:'ป่าสนหิมะ / แอ่งน้ำเย็น',landmark:'ลานระฆังไม้และเรือนท่อนซุง'},
+ 'winter-seal-kremlin':{climate:'ป้อมไม้กลางหิมะ / บึงหมอก',landmark:'ป้อมไม้ผนึกเหมันต์หลังคาซ้อนและรั้วท่อนซุง'},
  'golden-spiritwood':{climate:'ป่าใบผลัด / ลำธารหมอก',landmark:'ลานหินรากไม้และสะพานหิน'},
  'stone-oath-moor':{climate:'ทุ่งหินปูน / เฮเทอร์',landmark:'ดอลเมนคำสัตย์หิน'},
  'willow-wake-village':{climate:'หมู่บ้านป่าใบผลัด / บึงวิลโลว์',landmark:'บ้านมุงหลังคาและสวนกำแพงหิน'},

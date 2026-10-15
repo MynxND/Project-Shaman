@@ -299,3 +299,8 @@ Ireland3 live maps reuse their approved-for-adoption preview source atlas, indep
 ## Russia three-map preview — 2026-10-15
 
 Russia3 preview identity uses original snow spruce/white birch/peat taiga, log izba, palisades and iconic tiered timber shaman fortress. Source alpha/prompt/hash retained, imagegen fallback after PixelLab0/Comfy unavailable. Original regional composite, no site replica/sacred script. Desktop/mobile inspected; final user art approval pending. See design/maps/russia-three/README.md.
+
+
+## Russia live adoption — 2026-10-15
+
+Russia3 reviewed regional kit now adopted into actual game without new generation/source edits. Exact snow/taiga terrain, timber architecture, water and localized mist retained; bounded cosmetic snowfall on frost/fortress only. NPC/monster art explicitly reused from owned sheets, numerical variants provisional. Actual-game desktop/mobile evidence in design/maps/russia-three/live01; tests are not final user art approval.

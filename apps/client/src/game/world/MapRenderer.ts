@@ -1,3 +1,4 @@
+import{isRussiaMap,preloadRussiaRegion,renderRussiaRegion}from'./RussiaRegion';
 import{isIrelandMap,preloadIrelandRegion,renderIrelandRegion}from'./IrelandRegion';
 import{isNorwayMap,preloadNorwayRegion,renderNorwayRegion}from'./NorwayRegion';
 import{renderLegacyPathWear}from'./LegacyPathWear';
@@ -43,6 +44,7 @@ const TILE_PX = 16;
 export function preloadMapAssets(scene: Phaser.Scene, map?: MapDefinition) {
   preloadChina(scene,map);
   if(isIrelandMap(map))preloadIrelandRegion(scene);
+  if(isRussiaMap(map))preloadRussiaRegion(scene);
   if(isNorwayMap(map))preloadNorwayRegion(scene);
   if(isJapanMap(map))preloadJapanRegion(scene);
   if(isIndonesiaMap(map))preloadIndonesia(scene);
@@ -64,6 +66,7 @@ export function preloadMapAssets(scene: Phaser.Scene, map?: MapDefinition) {
 
 /** Draws ground regions and objects for a map. Objects depth-sort by their base y, like characters. */
 export function renderMap(scene: Phaser.Scene, map: MapDefinition) {
+  if(isRussiaMap(map)){const {water}=renderRussiaRegion(scene,map);return{widthPx:map.width*WORLD_UNIT_PX,heightPx:map.height*WORLD_UNIT_PX,water};}
   if(isIrelandMap(map)){const {water}=renderIrelandRegion(scene,map);return{widthPx:map.width*WORLD_UNIT_PX,heightPx:map.height*WORLD_UNIT_PX,water};}
   if(isNorwayMap(map)){const {water}=renderNorwayRegion(scene,map);return{widthPx:map.width*WORLD_UNIT_PX,heightPx:map.height*WORLD_UNIT_PX,water};}
   if(isJapanMap(map)){const {water}=renderJapanRegion(scene,map);return{widthPx:map.width*WORLD_UNIT_PX,heightPx:map.height*WORLD_UNIT_PX,water};}

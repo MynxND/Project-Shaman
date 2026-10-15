@@ -574,3 +574,8 @@ Ireland live adoption uses additive Aurora boundary wrapper, shared IRELAND_MAPS
 ## Russia three-map preview — 2026-10-15
 
 Russia3 isolated JSON/Phaser/React previews reuse native water, immutable edge ecology and shared movement; scoped regional profile adds snow/peat and snow/unsnowed pine crops. No authoritative MAPS/protocol/store changes. See design/maps/russia-three/README.md.
+
+
+## Russia live adoption — 2026-10-15
+
+Russia live adoption registers RUSSIA_MAPS/residents through shared data; additive WILLOW_RUSSIA_LINK preserves Ireland while extending reciprocal boundary chain. Scoped RussiaRegion reuses exact review water/mist/snow renderer. Existing Colyseus movement/travel/combat/services unchanged. Atlas36nodes/24live. Evidence: design/maps/russia-three/live01/README.md.

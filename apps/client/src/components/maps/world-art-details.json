@@ -166,10 +166,6 @@
         "status": "planned"
       },
       {
-        "id": "frost-pine",
-        "status": "planned"
-      },
-      {
         "id": "amber-grassland",
         "status": "planned"
       },
@@ -626,54 +622,94 @@
       {
         "id": "stone-oath-moor",
         "status": "live"
+      },
+      {
+        "id": "frost-pine",
+        "status": "live"
       }
     ],
     "source": "authoritative MAPS / existing MONSTERS"
   },
   "frost-pine": {
-    "climate": "ป่าสนหนาวแห้ง",
-    "landmark": "ระฆังน้ำแข็งใต้สนยักษ์",
-    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
-    "residents": [],
-    "proposedResidents": [
-      "วิญญาณกวางหิมะ",
-      "ภูตตะเกียงเย็น",
-      "ทวารบาลหินเยือก"
+    "climate": "ป่าสนหิมะ / แอ่งน้ำเย็น",
+    "landmark": "ลานระฆังไม้และเรือนท่อนซุง",
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตสนหนาว",
+      "พยนต์เงาหิมะ",
+      "ผู้เฝ้าบึงเหมันต์"
     ],
-    "npcs": [],
+    "proposedResidents": [],
+    "npcs": [
+      "หมอยาป่าสน",
+      "ผู้ดูแลระฆังหนาว",
+      "ยามทางหิมะ"
+    ],
     "connections": [
       {
         "id": "taiga-blood-trail",
-        "status": "planned"
+        "status": "live"
       },
       {
-        "id": "mountain-spirit-sanctuary",
-        "status": "planned"
+        "id": "willow-wake-village",
+        "status": "live"
       }
     ],
-    "source": "leveling-20-proposal + world-30 proposal"
+    "source": "authoritative MAPS / existing MONSTERS"
   },
   "taiga-blood-trail": {
     "climate": "ไทกาหนาว / ป่าสนดำ",
     "landmark": "ค่ายพรานตามแนวรอยล่า",
-    "activities": "ข้อเสนอ: ติดตามรอยล่า · เผชิญฝูงมอนสเตอร์",
-    "residents": [],
-    "proposedResidents": [
-      "หมาป่าเงา",
-      "ภูตหิมะ"
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตรอยล่า",
+      "พยนต์พรานหลงทาง",
+      "ผู้เฝ้ารากไทกา"
     ],
-    "npcs": [],
+    "proposedResidents": [],
+    "npcs": [
+      "หมอยาพรานไทกา",
+      "ผู้ดูแลค่ายรอยล่า",
+      "ยามไทกา"
+    ],
     "connections": [
       {
         "id": "frost-pine",
-        "status": "planned"
+        "status": "live"
+      },
+      {
+        "id": "winter-seal-kremlin",
+        "status": "live"
+      }
+    ],
+    "source": "authoritative MAPS / existing MONSTERS"
+  },
+  "winter-seal-kremlin": {
+    "climate": "ป้อมไม้กลางหิมะ / บึงหมอก",
+    "landmark": "ป้อมไม้ผนึกเหมันต์หลังคาซ้อนและรั้วท่อนซุง",
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตโคมเหมันต์",
+      "พยนต์เฝ้าป้อม",
+      "ผู้พิทักษ์ผนึกหนาว"
+    ],
+    "proposedResidents": [],
+    "npcs": [
+      "หมอยาหน้าป้อม",
+      "ผู้รักษาผนึกเหมันต์",
+      "ยามป้อมไม้"
+    ],
+    "connections": [
+      {
+        "id": "taiga-blood-trail",
+        "status": "live"
       },
       {
         "id": "storm-seal-plateau",
         "status": "planned"
       }
     ],
-    "source": "world-atlas-art-01 new proposal; no approved gameplay layout"
+    "source": "authoritative MAPS / existing MONSTERS"
   },
   "amber-grassland": {
     "climate": "ทุ่งกึ่งแห้งแล้ง",
@@ -820,7 +856,7 @@
     "npcs": [],
     "connections": [
       {
-        "id": "taiga-blood-trail",
+        "id": "winter-seal-kremlin",
         "status": "planned"
       },
       {

@@ -61,3 +61,9 @@ Roof bounds/anchors come from ireland-01/manifest.json at scale2; independent ba
 
 ## Live adoption brief /2026-10-15
 USER authorizes Ireland3 into real game before Russia previews. Additive chain: Aurora Pass east(90,19) ↔ Golden Spiritwood west(0,57); Forest east(88,20) ↔ Stone Oath Moor west(0,59); Moor east(94,21) ↔ Willow Village west(0,47). Arrivals4units inside,6×6safe areas,2×2triggers. Keep all reviewed objects/blockers/water and original Norwegian gates/NPCs/camps. Only short dry edge roads added. Each Irish map3 NPCs/3 camps×3residents with explicit original IDs/provisional40–55,50–65,45–60balance; owned sprites reused. No new art/combat/VFX. All main/side paths and service fronts must remain reachable; water membership unchanged. Validate real signed-ticket travel both directions, no bounce, NPC heal/talk, observer synchronization, combat/EXP/profile, desktop/mobile. Prior preview status historical; no Russia live adoption yet.
+
+
+## Live adoption brief — user2026-10-15
+
+User explicitly authorizes Russia3 into actual game, reciprocal boundary walking, NPCs/residents and exact reviewed water/mist/snow. Existing world objects, blockers, material masks, required IDs, source alpha, art scale and prior gates stay intact. No new asset generation or layout scaling. New features are additive dry boundary stubs, safe arrivals,3services/3encounter areas per Russian map. Levels60–75/70–85/75–90 are provisional balance.
+Add east russia-gate at86,19 size2×2, arrival84,20 outside trigger; road84,20→87,20 on existing dry route end. Connect to frost-pine ireland-gate. Existing west gate, all NPCs/camps and original layout preserved by wrapper.

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-15",
+  "desktop": [
+    1280,
+    900
+  ],
+  "maps": [
+    "frost-pine",
+    "taiga-blood-trail",
+    "winter-seal-kremlin"
+  ],
+  "realServer": true,
+  "nativeBoundaryTrips": 6,
+  "npcDialog": "frost-watch opened via F",
+  "worldMap": {
+    "total": 36,
+    "playable": 24,
+    "planned": 12,
+    "russiaDetails": true
+  },
+  "normalCameraWalk": {
+    "map": "winter-seal-kremlin",
+    "key": "Right",
+    "from": [
+      4,
+      63
+    ],
+    "to": [
+      10,
+      63
+    ]
+  },
+  "resize": {
+    "portrait": [
+      390,
+      844
+    ],
+    "landscape": [
+      844,
+      390
+    ],
+    "onlineSessionRetained": true,
+    "horizontalDocumentOverflow": false
+  },
+  "waterMistSnow": "same renderer and exact local preview plans; snow on frost/fortress only",
+  "consoleErrors": [],
+  "physicalDevicesTested": false,
+  "finalArtApproval": false
+}

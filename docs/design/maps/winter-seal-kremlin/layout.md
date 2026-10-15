@@ -58,3 +58,25 @@ Roof/source bounds are original atlas manual crops; anchors bottom-center, world
 Failed candidate: winter-lamp-2 at55,36 blocked reverse main route. Moved to56,38, same ID retained; rerun passes. No unresolved failed placements.
 
 Generation resolved the originally missing peat and unsnowed pine with dedicated atlas crops. Full source alpha remains unchanged; no recolor of Nordic or Japanese assets. Overviews/landmark/player screenshots and mobile evidence are in ../russia-three/screens/. Provisional encounters/services remain empty, not hidden live functionality. Final user visual review pending.
+
+
+## Live adoption brief — user2026-10-15
+
+User explicitly authorizes Russia3 into actual game, reciprocal boundary walking, NPCs/residents and exact reviewed water/mist/snow. Existing world objects, blockers, material masks, required IDs, source alpha, art scale and prior gates stay intact. No new asset generation or layout scaling. New features are additive dry boundary stubs, safe arrivals,3services/3encounter areas per Russian map. Levels60–75/70–85/75–90 are provisional balance.
+West entrance0,62 size2×2; arrival4,63; back to previous Russian next-gate. Retain all required landmark IDs and all south building approaches. Services placed beside existing courts/entry lane, never on main/side centerlines. Camps occupy authored northern glades and southern encounter clearing; safe service/gate buffers excluded by authoritative spawning. Every new destination/service front, all original route roundtrips and wet blocking must pass before delivery. Failed candidates recorded explicitly; no silent removal.
+
+### Live placement audit
+
+| Service ID | Position | South service front |
+| --- | --- | --- |
+| winter-healer | 19,47 | 19,48.5 |
+| winter-keeper | 52,32 | 52,33.5 |
+| winter-watch | 11,61 | 11,62.5 |
+
+| Encounter ID | Authored area x,y,w,h | Resident kind × count |
+| --- | --- | --- |
+| winter-camp-1 | 13,8,12,10 | winter-wisp ×3 |
+| winter-camp-2 | 64,8,12,10 | winter-shadow ×3 |
+| winter-camp-3 | 43,64,12,10 | winter-guardian ×3 |
+
+Every service front/gate reaches spawn; main and all side roundtrips remain clear. Three six-unit service safe buffers and each arrival buffer are independent from cosmetic bank plants. No failed service/gate/encounter candidates in live adoption; earlier preview lamp repair remains recorded. Owned herbalist/elder/guard and wisp/strawling/guardian animations reused explicitly; this adoption does not supply new Russian character/monster artwork.

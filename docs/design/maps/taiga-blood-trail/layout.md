@@ -57,3 +57,25 @@ Roof/source bounds are original atlas manual crops; anchors bottom-center, world
 No failed required location candidates and no unresolved failed placements.
 
 Generation resolved the originally missing peat and unsnowed pine with dedicated atlas crops. Full source alpha remains unchanged; no recolor of Nordic or Japanese assets. Overviews/landmark/player screenshots and mobile evidence are in ../russia-three/screens/. Provisional encounters/services remain empty, not hidden live functionality. Final user visual review pending.
+
+
+## Live adoption brief — user2026-10-15
+
+User explicitly authorizes Russia3 into actual game, reciprocal boundary walking, NPCs/residents and exact reviewed water/mist/snow. Existing world objects, blockers, material masks, required IDs, source alpha, art scale and prior gates stay intact. No new asset generation or layout scaling. New features are additive dry boundary stubs, safe arrivals,3services/3encounter areas per Russian map. Levels60–75/70–85/75–90 are provisional balance.
+West entrance0,59 size2×2; arrival4,60; back to previous Russian next-gate. East entrance92,19 size2×2; arrival90,20 outside trigger; next Russian previous-gate. Retain all required landmark IDs and all south building approaches. Services placed beside existing courts/entry lane, never on main/side centerlines. Camps occupy authored northern glades and southern encounter clearing; safe service/gate buffers excluded by authoritative spawning. Every new destination/service front, all original route roundtrips and wet blocking must pass before delivery. Failed candidates recorded explicitly; no silent removal.
+
+### Live placement audit
+
+| Service ID | Position | South service front |
+| --- | --- | --- |
+| taiga-healer | 19,47 | 19,48.5 |
+| taiga-keeper | 47,34 | 47,35.5 |
+| taiga-watch | 10,58 | 10,59.5 |
+
+| Encounter ID | Authored area x,y,w,h | Resident kind × count |
+| --- | --- | --- |
+| taiga-camp-1 | 13,9,12,10 | taiga-wisp ×3 |
+| taiga-camp-2 | 54,7,12,10 | taiga-shadow ×3 |
+| taiga-camp-3 | 52,58,12,10 | taiga-guardian ×3 |
+
+Every service front/gate reaches spawn; main and all side roundtrips remain clear. Three six-unit service safe buffers and each arrival buffer are independent from cosmetic bank plants. No failed service/gate/encounter candidates in live adoption; earlier preview lamp repair remains recorded. Owned herbalist/elder/guard and wisp/strawling/guardian animations reused explicitly; this adoption does not supply new Russian character/monster artwork.

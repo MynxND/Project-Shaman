@@ -2340,6 +2340,393 @@
           "loop": false
         }
       }
+    },
+    "frost-wisp": {
+      "image": "leaf-wisp.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 64,
+        "y": 114
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "frost-shadow": {
+      "image": "cursed-strawling.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 54,
+        "y": 123
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "frost-guardian": {
+      "image": "clay-guardian.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 58,
+        "y": 125
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "taiga-wisp": {
+      "image": "leaf-wisp.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 64,
+        "y": 114
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "taiga-shadow": {
+      "image": "cursed-strawling.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 54,
+        "y": 123
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "taiga-guardian": {
+      "image": "clay-guardian.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 58,
+        "y": 125
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "winter-wisp": {
+      "image": "leaf-wisp.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 64,
+        "y": 114
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "winter-shadow": {
+      "image": "cursed-strawling.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 54,
+        "y": 123
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "winter-guardian": {
+      "image": "clay-guardian.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 58,
+        "y": 125
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
     }
   }
 }

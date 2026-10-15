@@ -620,3 +620,8 @@ User authorized Ireland3 live adoption. Connect Aurora→Golden Spiritwood→Sto
 ## Russia three-map preview — 2026-10-15
 
 User selected Russia next. Deliver frost-pine, taiga-blood-trail, winter-seal-kremlin as local previews; first2plannedIDs reused, third geography/levels provisional. Keep21live/35atlas intact until adoption. Dedicated regional kit, irregular dry/wet contours, bounded cosmetic snow and localized water mist. Tests/build/browser evidence in design/maps/russia-three/README.md.
+
+
+## Russia live adoption — 2026-10-15
+
+User explicitly adopts Russia3 with reciprocal edge travel from Willow→Frost→Taiga→Winter Fortress. Add3NPCs/9residents per map and safe arrivals, preserve original world geometry and earlier systems. Server six-trip/heal/combat/EXP/persistence/observer and native-browser boundary/dialog/M checks pass. Levels60–75/70–85/75–90 provisional. Evidence: design/maps/russia-three/live01/README.md.
