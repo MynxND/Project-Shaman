@@ -279,3 +279,8 @@ Read-only edge-ecology model follows authored water contours, four cluster shape
 ## Norway three-map preview — 2026-10-15
 
 Original Norway kit: tall-gabled timber hall, crooked coastal lighthouse, spruce/birch/heather, slate/gravel. Three local previews visually inspected desktop/portrait/landscape with labels off. PixelLab0/Comfy8188 offline → imagegen1 original atlas; alpha/prompt/hash kept. Flat shore-level layouts; climbable highlands/aurora deferred, user art acceptance pending. See design/maps/norway-three/README.md.
+
+
+## Norway live adoption — 2026-10-15
+
+USER adopts Norway3 reviewed regional artwork/water/local mist into real game. No new generation or source-image edits. Service NPCs and monster animation sheets reused explicitly; local names/stat variants are provisional. World objects, native water/shore and source crop/nearest rules preserved; no new highland elevation/aurora claim. Actual game desktop/mobile, six native boundary trips and healer UI inspected. Evidence: design/maps/norway-three/live01/.

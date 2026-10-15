@@ -23,3 +23,8 @@ Browser: desktop1280×900 all3 maps overview and landmark-camera views visually 
 ## Limits / review status
 
 These are local layout/art previews, awaiting USER visual review before live adoption. No new room, working edge portal, NPC service or monster instance. Marked encounter/service locations are proposals. All terrain is Z0: the current northern pass is a shore-level first layout, not completed climbable mountains. Exposed rock props are boulders, not continuous cliff geometry. Aurora sky, snow weather, true stepped highland elevations, interiors and extra regional modules remain future work. Boats and jetty decorative-only. Do not call this final premium art approval or complete Norway gameplay.
+
+
+## Current status / live adoption authorized 2026-10-15
+
+The preview-only status above is historical. USER now authorizes all3 live maps with reciprocal boundary travel from Snowbound Torii, NPCs and residents. See [live adoption evidence](live01/README.md). Local /maps/norway remains a separate layout review; real play is in the main game. Existing art/elevation limitations still apply.

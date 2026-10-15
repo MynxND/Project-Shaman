@@ -16,7 +16,7 @@ const ecologyCode=stripTypeScriptTypes((await readFile('apps/client/src/game/wor
 const{planEdgeEcology}=await import('data:text/javascript;base64,'+Buffer.from(ecologyCode).toString('base64'));
 const results=[];
 for(const[id,{map:m,plan:p}]of Object.entries(data)){
- assert.equal(MAPS[id],undefined);assert.deepEqual(m,JSON.parse(await readFile(`docs/design/maps/${id}/map.json`)));assert.deepEqual(p,JSON.parse(await readFile(`docs/design/maps/${id}/plan.json`)));assert.equal(m.portals.length,0);assert.equal(m.spawnRegions.length,0);assert.equal(m.npcs.length,0);
+ assert(MAPS[id]);assert.deepEqual(m,JSON.parse(await readFile(`docs/design/maps/${id}/map.json`)));assert.deepEqual(p,JSON.parse(await readFile(`docs/design/maps/${id}/plan.json`)));assert.equal(m.portals.length,0);assert.equal(m.spawnRegions.length,0);assert.equal(m.npcs.length,0);
  assert(m.terrain.paint.some(p=>p.terrain==='water'&&p.shape==='polygon'&&p.points.length>20),'authored curved cove');
  const coverage=rasterNativeTerrain(m);for(let y=0;y<coverage.height;y+=23)for(let x=0;x<coverage.width;x+=23)assert.equal(coverage.water[y*coverage.width+x]>0,materialAt(m,(x+.5)/16,(y+.5)/16)==='water');
  const ids=new Set(m.objects.map(o=>o.id));assert.equal(ids.size,m.objects.length);for(const key of p.requiredObjects)assert(ids.has(key),key);
@@ -26,6 +26,6 @@ for(const[id,{map:m,plan:p}]of Object.entries(data)){
  const walk=(edge)=>{let pos={x:edge[0][0],y:edge[0][1]};for(const target of [...edge.slice(1),...edge.slice(0,-1).reverse()]){let ticks=0;while(Math.hypot(pos.x-target[0],pos.y-target[1])>.14&&ticks++<2000){const dx=target[0]-pos.x,dy=target[1]-pos.y;pos=stepMovement(pos,{x:Math.abs(dx)>.07?Math.sign(dx):0,y:Math.abs(dy)>.07?Math.sign(dy):0,sequence:ticks},1/60,m).position;}assert(ticks<2000,id+' stuck '+target+' at '+JSON.stringify(pos));}};
  walk(p.route);for(const edge of p.sideTours)walk(edge);
  const before=JSON.stringify(m),ecology=planEdgeEcology(m);assert.deepEqual(ecology,planEdgeEcology(m));assert.equal(JSON.stringify(m),before);assert(ecology.items.length>0&&ecology.items.length<=150);for(const d of ecology.items)assert(!isBlocked(m,d.x,d.y));
- const result={id,ecologyDecorations:ecology.items.length,liveRegistered:false,objects:m.objects.length,requiredObjects:p.requiredObjects.length,locations:p.locations.length,reachableSamples:q.length,mainAndSideRoundTrips:true,waterBlocked:true,failedPlacements:[]};results.push(result);await writeFile(`docs/design/maps/${id}/validation.json`,JSON.stringify(result,null,2));console.log('PASS',result);
+ const result={id,ecologyDecorations:ecology.items.length,liveRegistered:true,objects:m.objects.length,requiredObjects:p.requiredObjects.length,locations:p.locations.length,reachableSamples:q.length,mainAndSideRoundTrips:true,waterBlocked:true,failedPlacements:[]};results.push(result);await writeFile(`docs/design/maps/${id}/validation.json`,JSON.stringify(result,null,2));console.log('PASS',result);
 }
 await writeFile('docs/design/maps/norway-three/validation.json',JSON.stringify(results,null,2));

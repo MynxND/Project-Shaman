@@ -1566,6 +1566,393 @@
           "loop": false
         }
       }
+    },
+    "fjord-wisp": {
+      "image": "spirit-flame.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 61,
+        "y": 124
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 3,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 3,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "fjord-shadow": {
+      "image": "shadow-macaque.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 59,
+        "y": 122
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "fjord-guardian": {
+      "image": "clay-guardian.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 58,
+        "y": 125
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "timber-wisp": {
+      "image": "spirit-flame.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 61,
+        "y": 124
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 3,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 3,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "timber-shadow": {
+      "image": "shadow-macaque.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 59,
+        "y": 122
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "timber-guardian": {
+      "image": "clay-guardian.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 58,
+        "y": 125
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "aurora-wisp": {
+      "image": "spirit-flame.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 61,
+        "y": 124
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 3,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 3,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "aurora-shadow": {
+      "image": "shadow-macaque.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 59,
+        "y": 122
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "aurora-guardian": {
+      "image": "clay-guardian.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 58,
+        "y": 125
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      }
     }
   }
 }

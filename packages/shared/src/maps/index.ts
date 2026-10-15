@@ -1,3 +1,5 @@
+import{NORWAY_MAPS}from'./norway.js';
+import{SNOW_NORWAY_LINK}from'./snow-norway-link.js';
 import{JAPAN_MAPS}from'./japan.js';
 import{MOUNTAIN_JAPAN_LINK}from'./mountain-japan-link.js';
 import { UMBRAL_ELEVATION_BASELINE } from './umbral-elevation-baseline.js';
@@ -27,6 +29,8 @@ export const MAPS: Readonly<Record<string, MapDefinition>> = {
   [CLOUD_TEA_SLOPES.id]:CLOUD_TEA_SLOPES,
   ...Object.fromEntries(INDONESIA_MAPS.map(map=>[map.id,map])),
   ...Object.fromEntries(JAPAN_MAPS.map(map=>[map.id,map])),
+  [SNOW_NORWAY_LINK.id]:SNOW_NORWAY_LINK,
+  ...Object.fromEntries(NORWAY_MAPS.map(map=>[map.id,map])),
 };
 export const DEFAULT_MAP_ID = UMBRAL_CAPITAL.id;
 /** The map for an id, or the default (Umbral Capital) for an unknown id. */

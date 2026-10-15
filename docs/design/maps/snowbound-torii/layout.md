@@ -27,3 +27,9 @@ Correction02: main y54 crossed shelter blocking base21.5..26.5/y53..55. Keep she
 Correction03: north garden diagonal return met lantern45,25; approach now40,25→40,28→55,28→55,22, preserving both lanterns and full shrine court.
 
 Live placement correction04: guide43,28 blocked north garden side route with NPC collision; moved43,30. All main/side tours now pass with NPCs present. Existing three-map guide placements also offset from their entrance axes. Live01 screenshots cover actual desktop game and portrait/landscape resize; logical snow map has no climbable height.
+
+
+## Authorized live adoption brief / 2026-10-15
+USER authorizes Norway3 into the real game. Keep reviewed terrain, objects, footprints and fog; append short edge approach roads only. Chain: snowbound-torii north(55,0) ↔ storm-fjord west(0,65); storm-fjord east(94,24) ↔ spirit-timber-harbor west(0,51); harbor east(86,19) ↔ aurora-pass west(0,65). Arrival4units inside, clear2×2triggers and6×6safe arrivals. Snow north road follows existing north-garden branch(55,22) to(55,1); no existing gate/NPC/camp removal.
+Norway service fronts and 3 encounter fields per map use explicit authored coordinates, separate from travel lanes/water/arrival masks. NPC bases must not block main/side routes or doors; every interaction reachable. Nine residents/map reuse existing owned animation assets under original provisional local IDs; no new art/VFX generation. Proposed balance55–65/60–70/65–80 follows last preview; not approved endgame lore/formulas. No climbable highlands/aurora sky claimed.
+Required: canonical/shared equality except additive roads and gameplay, real server reciprocal travel tickets/no bounce/profile preservation, NPC talk/heal, residents/observer sync/combat and native browser desktop/mobile. Keep original layouts and comments as history. Record failed placements explicitly, repair before delivery.

@@ -4,6 +4,9 @@ import {MONSTERS} from '../../packages/shared/dist/combat.js';
 const atlas=JSON.parse(await readFile('docs/design/maps/world-30/atlas.json'));
 const proposed=JSON.parse(await readFile('docs/design/maps/leveling-20-proposal.json')).maps;
 const extra={
+ 'storm-fjord':{climate:'ชายฝั่งหนาวชื้น / ป่าสน',landmark:'ประภาคารร้าวเหนืออ่าวคราม'},
+ 'spirit-timber-harbor':{climate:'ท่าเรือหนาว / ป่าสนและเบิร์ช',landmark:'เรือนไม้พิธีหลังคาสูงเหนือท่าเรือ'},
+ 'aurora-pass':{climate:'ทุ่งเฮเทอร์หนาว / ทะเลสาบ',landmark:'ลานผนึกและเรือนไม้ช่องเขา (ยังไม่มีแสงเหนือหรือขั้นเขา)'},
  'cedar-torii-shrine':{climate:'ป่าซีดาร์เย็นชื้น',landmark:'โทริอิแดงและศาลเจ้าในป่าซีดาร์'},
  'snowbound-torii':{climate:'ป่าหิมะ / ธารน้ำอุ่น',landmark:'ศาลเจ้าหิมะและโทริอิแดง'},
  'obsidian-estuary':{climate:'ชายฝั่งภูเขาไฟชื้น / หมอกทะเล',landmark:'ประตูหินแยกและท่าหินดำ',monsters:[],activity:'สำรวจปากน้ำ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ'},
@@ -18,7 +21,7 @@ const extra={
  'veiled-spirit-harbor':{climate:'ท่าป่าชื้น / หมอกทะเล',landmark:'ท่าเรือม่านดำและศาลริมอ่าว',monsters:['เงาลูกเรือ','ภูตท่าเก่า'],activity:'ข้อเสนอ: สำรวจโกดังเก่า · เผชิญกลุ่มวิญญาณริมท่า'}
 };
 const details=Object.fromEntries(atlas.maps.map(m=>{
- const live=MAPS[m.id],plan=proposed.find(p=>p.id===m.id)??extra[m.id];
+ const live=MAPS[m.id],plan=extra[m.id]??proposed.find(p=>p.id===m.id);
  const residents=live?[...new Set((live.spawnRegions??[]).flatMap(r=>r.monsters.map(s=>MONSTERS[s.kind]?.name.th??s.kind)))]:[];
  const activities=live?m.id==='umbral-capital'?'ร้านค้า · รักษา · เปลี่ยนอาชีพ · ภารกิจ · จุดพัก':'สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ':plan?.activity??'ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก';
  return[m.id,{climate:plan?.climate??m.biome,landmark:m.id==='moon-mangrove'?'หอระฆังริมช่องน้ำ (ปัจจุบันใช้ภาพศาลร้างทดแทน)':plan?.landmark??(live?.landmarks?.[0]?.name.th??'จุดเด่นภูมิภาค — ยังรอ layout brief'),activities,residents,proposedResidents:live?[]:(plan?.monsters??[]),npcs:live?.npcs?.map(n=>n.name.th)??[],connections:atlas.links.filter(l=>l.from===m.id||l.to===m.id).map(l=>({id:l.from===m.id?l.to:l.from,status:l.status})),source:live?'authoritative MAPS / existing MONSTERS':extra[m.id]?'world-atlas-art-01 new proposal; no approved gameplay layout':'leveling-20-proposal + world-30 proposal'}];

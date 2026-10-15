@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "targetMaps": 33,
+  "targetMaps": 34,
   "geographyStatus": "proposed fictional spirit-route network; not approved lore or real Earth geography",
   "sources": [
     "docs/design/skill-system/classification.json",
@@ -125,6 +125,7 @@
       ],
       "maps": [
         "storm-fjord",
+        "spirit-timber-harbor",
         "aurora-pass"
       ]
     },
@@ -458,6 +459,19 @@
       "phase": 4
     },
     {
+      "id": "spirit-timber-harbor",
+      "name": "ท่าเรือนไม้เฝ้าวิญญาณ",
+      "nation": "norway",
+      "levels": [
+        60,
+        70
+      ],
+      "x": 620,
+      "y": 145,
+      "biome": "ฟยอร์ด / แสงเหนือ",
+      "phase": 4
+    },
+    {
       "id": "aurora-pass",
       "name": "ช่องเขาแสงเหนือ",
       "nation": "norway",
@@ -465,8 +479,8 @@
         65,
         80
       ],
-      "x": 620,
-      "y": 145,
+      "x": 525,
+      "y": 187,
       "biome": "ฟยอร์ด / แสงเหนือ",
       "phase": 4
     },
@@ -708,8 +722,13 @@
     },
     {
       "from": "storm-fjord",
+      "to": "spirit-timber-harbor",
+      "status": "live"
+    },
+    {
+      "from": "spirit-timber-harbor",
       "to": "aurora-pass",
-      "status": "planned"
+      "status": "live"
     },
     {
       "from": "golden-spiritwood",
@@ -763,11 +782,6 @@
     },
     {
       "from": "mountain-spirit-sanctuary",
-      "to": "storm-fjord",
-      "status": "planned"
-    },
-    {
-      "from": "mountain-spirit-sanctuary",
       "to": "golden-spiritwood",
       "status": "planned"
     },
@@ -790,6 +804,11 @@
       "from": "mountain-spirit-sanctuary",
       "to": "salt-mirror-basin",
       "status": "planned"
+    },
+    {
+      "from": "snowbound-torii",
+      "to": "storm-fjord",
+      "status": "live"
     },
     {
       "from": "taiga-blood-trail",

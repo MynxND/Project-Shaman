@@ -1,6 +1,6 @@
-# World atlas — 33 maps / 12 nations
+# World atlas — 34 maps / 12 nations
 
-Original30-node roadmap plus user-authorized Obsidian Estuary; no existing nodes removed. Eleven content maps playable;20 are planning nodes, not registered gameplay. Geography, names, level ranges and routes proposed; confirmed nation/source branches remain traceable. Norway original source Seidr is historical; current approved gameplay uses Ullr Hunter. Existing map registry lab maps excluded. No skill/lore formula changes.
+Original30-node roadmap plus user-authorized Obsidian Estuary, Japanese snow shrine and Norway timber harbor; no existing nodes removed. Eighteen content maps playable;16 are planning nodes, not registered gameplay. Geography, names, level ranges and routes proposed; confirmed nation/source branches remain traceable. Norway original source Seidr is historical; current approved gameplay uses Ullr Hunter. Existing map registry lab maps excluded. No skill/lore formula changes.
 
 ## Roadmap
 Phase1 existing hub+four regions; Phase2 China/Philippines plus mountain gateway; Phase3 Japan/Korea/Indonesia/Ireland/USA; Phase4 Norway/Russia/Haiti/Mexico; Phase5 two shared endgame maps. Per-map layout briefs, artwork, animation, collision and network review required before playable adoption. No fake travel to planned nodes.
@@ -26,6 +26,7 @@ Phase1 existing hub+four regions; Phase2 China/Philippines plus mountain gateway
 | storm-seal-coast — ฝั่งผนึกพายุ | philippines | 25–35 | 2 |
 | ancestral-lantern-isles — หมู่เกาะประทีปบรรพชน | philippines | 35–45 | 2 |
 | storm-fjord — ฟยอร์ดพายุคราม | norway | 55–65 | 4 |
+| spirit-timber-harbor — ท่าเรือนไม้เฝ้าวิญญาณ | norway | 60–70 | 4 |
 | aurora-pass — ช่องเขาแสงเหนือ | norway | 65–80 | 4 |
 | golden-spiritwood — ป่าใบผลัดอาคม | ireland | 40–55 | 3 |
 | stone-oath-moor — ทุ่งคำสัตย์หิน | ireland | 50–65 | 3 |

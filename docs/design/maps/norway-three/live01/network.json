@@ -1,0 +1,67 @@
+{
+  "travel": [
+    {
+      "from": "snowbound-torii",
+      "to": "storm-fjord",
+      "arrival": {
+        "x": 4,
+        "y": 65
+      },
+      "noBounce": true
+    },
+    {
+      "from": "storm-fjord",
+      "to": "spirit-timber-harbor",
+      "arrival": {
+        "x": 4,
+        "y": 51
+      },
+      "noBounce": true
+    },
+    {
+      "from": "spirit-timber-harbor",
+      "to": "aurora-pass",
+      "arrival": {
+        "x": 4,
+        "y": 65
+      },
+      "noBounce": true
+    },
+    {
+      "from": "aurora-pass",
+      "to": "spirit-timber-harbor",
+      "arrival": {
+        "x": 84,
+        "y": 19
+      },
+      "noBounce": true
+    },
+    {
+      "from": "spirit-timber-harbor",
+      "to": "storm-fjord",
+      "arrival": {
+        "x": 92,
+        "y": 24
+      },
+      "noBounce": true
+    },
+    {
+      "from": "storm-fjord",
+      "to": "snowbound-torii",
+      "arrival": {
+        "x": 55,
+        "y": 4
+      },
+      "noBounce": true
+    }
+  ],
+  "allSixBoundaryTrips": true,
+  "npcsTalkAndHeal": true,
+  "residentsPerMap": 9,
+  "observerSync": true,
+  "reviewedRoutes": true,
+  "skillDamage": true,
+  "basicKill": true,
+  "exp": true,
+  "profilePreserved": true
+}

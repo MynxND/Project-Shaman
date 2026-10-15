@@ -630,3 +630,8 @@ Read-only edge-ecology model follows authored water contours, four cluster shape
 ## Norway three-map preview — 2026-10-15
 
 Norway3 local previews available: storm-fjord, spirit-timber-harbor, aurora-pass. Build/typecheck/shared tests/new layout/water/footprint/routes/ecology and Japan/Indonesia/atlas regressions pass; desktop/mobile inspected. Preview/user review stage, no live gameplay adoption; northern elevation/aurora deferred. See design/maps/norway-three/README.md.
+
+
+## Norway live adoption — 2026-10-15
+
+Norway3 are now live with9NPCs/27residents and reciprocal boundary chain from Snowbound Torii. Build/typecheck/shared/layout/native-water/ecology/Japan/Indonesia/atlas checks pass; actual game and server travel/heal/combat/EXP/profile/observer checks pass. Atlas34nodes/12nations/18live/16planned. Northern climbable highlands/aurora remain outside current art. See design/maps/norway-three/live01/README.md.

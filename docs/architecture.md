@@ -554,3 +554,8 @@ Read-only edge-ecology model follows authored water contours, four cluster shape
 ## Norway three-map preview — 2026-10-15
 
 Norway three-map local preview at /maps/norway uses independent authored JSON/Phaser scenes, shared movement/native terrain/water/fog and regional EdgeEcology crops. Existing15 live maps/33atlas nodes unchanged; no rooms/NPCs/monsters/portals adopted. See design/maps/norway-three/README.md.
+
+
+## Norway live adoption — 2026-10-15
+
+Norway3 now register in authoritative MAPS via norway.ts; snow-norway-link adds a north exit to existing Snowbound Torii without rewriting prior Japanese data. Same reviewed Norway renderer drives real game/local review; full gameplay map retained for bank exclusions. Existing Colyseus ticket travel/NPC services/monster sync/combat unchanged. Atlas34/12nations/18live/16planned. Evidence: design/maps/norway-three/live01/README.md.

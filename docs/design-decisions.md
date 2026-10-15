@@ -600,3 +600,8 @@ Read-only edge-ecology model follows authored water contours, four cluster shape
 ## Norway three-map preview — 2026-10-15
 
 Advance next eligible sprite nation to Norway with3 local previews before live adoption. New harbor/name/geography/level ranges provisional (older20-map progression differs). Keep atlas/live counts and existing portals/entities unchanged. Shared edge ecology gains Norway art profile only. See design/maps/norway-three/README.md.
+
+
+## Norway live adoption — 2026-10-15
+
+USER authorizes Norway3 live adoption with reciprocal edge travel: Snowbound north55→Fjord west→Timber Harbor west→Aurora Pass west, returning through paired gates. Clear arrival4units in/safe6×6; old paths/portals/entities preserved.3NPC+9residents per Norway map, owned sprite reuse; levels55–65/60–70/65–80 provisional. Add harbor atlas node without removing original33;18live/16planned. Evidence: design/maps/norway-three/live01/.

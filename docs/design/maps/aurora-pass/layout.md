@@ -61,3 +61,24 @@ Schematic above shows connectivity only; exact scaled geometry/entrances follow 
 | trail-beacon | 33,25 Z0 | {'w': 0.7, 'h': 0.7} | lantern / 32px | plan.locations / sideTours |
 
 Shared native water mask uses rounded polygon boundaries; no bridge crossing/elevation transitions claimed. Roof source rectangles are in norway-01/manifest.json; bottom-center anchor and scale2. Entrances/courts are separate local nodes. Live NPC/monster/portal lists intentionally empty. Source generation1; no additional art calls. Visual inspection/evidence in ../norway-three/README.md; user acceptance pending.
+
+
+## Authorized live adoption brief / 2026-10-15
+USER authorizes Norway3 into the real game. Keep reviewed terrain, objects, footprints and fog; append short edge approach roads only. Chain: snowbound-torii north(55,0) ↔ storm-fjord west(0,65); storm-fjord east(94,24) ↔ spirit-timber-harbor west(0,51); harbor east(86,19) ↔ aurora-pass west(0,65). Arrival4units inside, clear2×2triggers and6×6safe arrivals. Snow north road follows existing north-garden branch(55,22) to(55,1); no existing gate/NPC/camp removal.
+Norway service fronts and 3 encounter fields per map use explicit authored coordinates, separate from travel lanes/water/arrival masks. NPC bases must not block main/side routes or doors; every interaction reachable. Nine residents/map reuse existing owned animation assets under original provisional local IDs; no new art/VFX generation. Proposed balance55–65/60–70/65–80 follows last preview; not approved endgame lore/formulas. No climbable highlands/aurora sky claimed.
+Required: canonical/shared equality except additive roads and gameplay, real server reciprocal travel tickets/no bounce/profile preservation, NPC talk/heal, residents/observer sync/combat and native browser desktop/mobile. Keep original layouts and comments as history. Record failed placements explicitly, repair before delivery.
+
+
+### Live placement record / explicit IDs
+
+| ID | Role | Ground coordinate | Access / status |
+| --- | --- | --- | --- |
+| aurora-healer | healer | (25,49) Z0 | front (25,50.5); shared route reachable / live |
+| aurora-keeper | guide | (53,27) Z0 | front (53,28.5); shared route reachable / live |
+| aurora-watch | guard | (10,62) Z0 | front (10,63.5); shared route reachable / live |
+| aurora-camp-1 | aurora-wisp ×3 | {'x': 7, 'y': 7, 'w': 11, 'h': 10} | authoritative spawn / safe zones excluded |
+| aurora-camp-2 | aurora-shadow ×3 | {'x': 68, 'y': 35, 'w': 10, 'h': 10} | authoritative spawn / safe zones excluded |
+| aurora-camp-3 | aurora-guardian ×3 | {'x': 23, 'y': 65, 'w': 10, 'h': 10} | authoritative spawn / safe zones excluded |
+| previous-gate | edge gate to spirit-timber-harbor | {'x': 0, 'y': 64, 'w': 2, 'h': 2} | arrival {'x': 4, 'y': 65}; reciprocal / live |
+
+Failed placements: none. Water material checked at every half-unit cell against original review; exact wet/dry membership retained. Trees/buildings/blockers unchanged, NPC and arrival safety added separately. See ../norway-three/live01/geometry.json and browser.json.

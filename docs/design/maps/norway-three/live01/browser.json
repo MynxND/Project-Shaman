@@ -1,0 +1,93 @@
+{
+  "mode": "actual localhost3000 guest multiplayer game; no hidden-state writes",
+  "desktop": [
+    1280,
+    900
+  ],
+  "responsive": [
+    [
+      390,
+      844
+    ],
+    [
+      844,
+      390
+    ]
+  ],
+  "nativeBoundaryTrips": [
+    {
+      "from": "storm-fjord",
+      "to": "snowbound-torii",
+      "arrival": [
+        55,
+        4
+      ]
+    },
+    {
+      "from": "snowbound-torii",
+      "to": "storm-fjord",
+      "arrival": [
+        4,
+        65
+      ]
+    },
+    {
+      "from": "spirit-timber-harbor",
+      "to": "storm-fjord",
+      "arrival": [
+        92,
+        24
+      ]
+    },
+    {
+      "from": "storm-fjord",
+      "to": "spirit-timber-harbor",
+      "arrival": [
+        4,
+        51
+      ]
+    },
+    {
+      "from": "aurora-pass",
+      "to": "spirit-timber-harbor",
+      "arrival": [
+        84,
+        19
+      ]
+    },
+    {
+      "from": "spirit-timber-harbor",
+      "to": "aurora-pass",
+      "arrival": [
+        4,
+        65
+      ]
+    }
+  ],
+  "noImmediateBounce": true,
+  "onlineMapPositionAcrossResize": "aurora-pass4,65 retained",
+  "horizontalOverflow": false,
+  "npc": {
+    "id": "fjord-healer",
+    "walkedFrom": [
+      4,
+      65
+    ],
+    "walkedTo": [
+      16,
+      55
+    ],
+    "openedWith": "F",
+    "healUiResult": "พลังชีวิตและพลังวิญญาณฟื้นฟูเต็มแล้ว"
+  },
+  "worldMap": {
+    "openedWith": "M",
+    "total": 34,
+    "live": 18,
+    "planned": 16,
+    "actualNorwayDetails": true
+  },
+  "capturedConsoleErrors": [],
+  "physicalDeviceTested": false,
+  "visualApproval": "user-owned; existing limitations retained"
+}

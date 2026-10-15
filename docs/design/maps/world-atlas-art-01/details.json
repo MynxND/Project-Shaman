@@ -166,10 +166,6 @@
         "status": "planned"
       },
       {
-        "id": "storm-fjord",
-        "status": "planned"
-      },
-      {
         "id": "golden-spiritwood",
         "status": "planned"
       },
@@ -334,6 +330,10 @@
       {
         "id": "monsoon-ruins",
         "status": "live"
+      },
+      {
+        "id": "storm-fjord",
+        "status": "live"
       }
     ],
     "source": "authoritative MAPS / existing MONSTERS"
@@ -477,46 +477,81 @@
     "source": "world-atlas-art-01 new proposal; no approved gameplay layout"
   },
   "storm-fjord": {
-    "climate": "ชายฝั่งหนาวชื้น",
-    "landmark": "ประภาคารร้าวริมน้ำลึก",
-    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
-    "residents": [],
-    "proposedResidents": [
-      "ปูเกราะน้ำแข็ง",
-      "ภูตเรือแตก",
-      "นกพายุ"
+    "climate": "ชายฝั่งหนาวชื้น / ป่าสน",
+    "landmark": "ประภาคารร้าวเหนืออ่าวคราม",
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตคลื่นคราม",
+      "เงาสัตว์พายุ",
+      "ผู้เฝ้าประภาคาร"
     ],
-    "npcs": [],
+    "proposedResidents": [],
+    "npcs": [
+      "ผู้รักษาชายฝั่ง",
+      "ผู้ดูแลประภาคาร",
+      "ยามฟยอร์ด"
+    ],
     "connections": [
       {
-        "id": "aurora-pass",
-        "status": "planned"
+        "id": "spirit-timber-harbor",
+        "status": "live"
       },
       {
-        "id": "mountain-spirit-sanctuary",
-        "status": "planned"
+        "id": "snowbound-torii",
+        "status": "live"
       }
     ],
-    "source": "leveling-20-proposal + world-30 proposal"
+    "source": "authoritative MAPS / existing MONSTERS"
   },
-  "aurora-pass": {
-    "climate": "อัลไพน์หิมะและลมแรง",
-    "landmark": "ซุ้มพิธีใต้ม่านแสงเหนือ",
-    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
-    "residents": [],
-    "proposedResidents": [
-      "ทวารบาลผลึก",
-      "ภูตแสงเหนือ",
-      "วิญญาณแพะผา"
+  "spirit-timber-harbor": {
+    "climate": "ท่าเรือหนาว / ป่าสนและเบิร์ช",
+    "landmark": "เรือนไม้พิธีหลังคาสูงเหนือท่าเรือ",
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตเรือแตก",
+      "เงาท่าไม้",
+      "ผู้เฝ้าเรือนวิญญาณ"
     ],
-    "npcs": [],
+    "proposedResidents": [],
+    "npcs": [
+      "หมอยาท่าเรือ",
+      "ผู้เฝ้าเรือนไม้",
+      "ยามท่าเรือ"
+    ],
     "connections": [
       {
         "id": "storm-fjord",
-        "status": "planned"
+        "status": "live"
+      },
+      {
+        "id": "aurora-pass",
+        "status": "live"
       }
     ],
-    "source": "leveling-20-proposal + world-30 proposal"
+    "source": "authoritative MAPS / existing MONSTERS"
+  },
+  "aurora-pass": {
+    "climate": "ทุ่งเฮเทอร์หนาว / ทะเลสาบ",
+    "landmark": "ลานผนึกและเรือนไม้ช่องเขา (ยังไม่มีแสงเหนือหรือขั้นเขา)",
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตทะเลสาบหนาว",
+      "เงาพรานช่องเขา",
+      "ผู้เฝ้าลานแสงเหนือ"
+    ],
+    "proposedResidents": [],
+    "npcs": [
+      "ผู้รักษาทางหนาว",
+      "ผู้ดูแลลานผนึก",
+      "ยามช่องเขา"
+    ],
+    "connections": [
+      {
+        "id": "spirit-timber-harbor",
+        "status": "live"
+      }
+    ],
+    "source": "authoritative MAPS / existing MONSTERS"
   },
   "golden-spiritwood": {
     "climate": "ป่าผลัดใบอบอุ่น",
