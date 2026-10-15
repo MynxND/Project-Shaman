@@ -1,3 +1,5 @@
+import{JAPAN_MAPS}from'./japan.js';
+import{MOUNTAIN_JAPAN_LINK}from'./mountain-japan-link.js';
 import { UMBRAL_ELEVATION_BASELINE } from './umbral-elevation-baseline.js';
 import type { MapDefinition } from '../world.js';
 import { UMBRAL_CAPITAL } from './umbral-capital.js';
@@ -20,10 +22,11 @@ export const MAPS: Readonly<Record<string, MapDefinition>> = {
   [WHISPERING_SPIRITWOOD.id]: SPIRITWOOD_LIVE,
   ...Object.fromEntries(LEVELING_LIVE.map(map=>[map.id,map])),
   [MARSH_MOUNTAIN_LINK.id]:MARSH_MOUNTAIN_LINK,
-  [MOUNTAIN_SPIRIT_SANCTUARY.id]:MOUNTAIN_SPIRIT_SANCTUARY,
+  [MOUNTAIN_SPIRIT_SANCTUARY.id]:MOUNTAIN_JAPAN_LINK,
   [MIST_BAMBOO.id]:MIST_BAMBOO,
   [CLOUD_TEA_SLOPES.id]:CLOUD_TEA_SLOPES,
   ...Object.fromEntries(INDONESIA_MAPS.map(map=>[map.id,map])),
+  ...Object.fromEntries(JAPAN_MAPS.map(map=>[map.id,map])),
 };
 export const DEFAULT_MAP_ID = UMBRAL_CAPITAL.id;
 /** The map for an id, or the default (Umbral Capital) for an unknown id. */

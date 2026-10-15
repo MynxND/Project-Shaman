@@ -1,7 +1,7 @@
 [
   {
     "id": "cedar-torii-shrine",
-    "previewOnly": true,
+    "liveRegistered": true,
     "objects": 49,
     "requiredObjects": 5,
     "locations": 7,
@@ -12,7 +12,7 @@
   },
   {
     "id": "spirit-waterfall",
-    "previewOnly": true,
+    "liveRegistered": true,
     "objects": 45,
     "requiredObjects": 5,
     "locations": 7,
@@ -23,11 +23,22 @@
   },
   {
     "id": "monsoon-ruins",
-    "previewOnly": true,
+    "liveRegistered": true,
     "objects": 44,
     "requiredObjects": 6,
     "locations": 8,
     "reachableSamples": 25188,
+    "mainAndSideRoundTrips": true,
+    "waterBlocked": true,
+    "failedPlacements": []
+  },
+  {
+    "id": "snowbound-torii",
+    "liveRegistered": true,
+    "objects": 30,
+    "requiredObjects": 4,
+    "locations": 6,
+    "reachableSamples": 20252,
     "mainAndSideRoundTrips": true,
     "waterBlocked": true,
     "failedPlacements": []

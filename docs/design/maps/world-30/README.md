@@ -1,4 +1,4 @@
-# World atlas — 31 maps / 12 nations
+# World atlas — 33 maps / 12 nations
 
 Original30-node roadmap plus user-authorized Obsidian Estuary; no existing nodes removed. Eleven content maps playable;20 are planning nodes, not registered gameplay. Geography, names, level ranges and routes proposed; confirmed nation/source branches remain traceable. Norway original source Seidr is historical; current approved gameplay uses Ullr Hunter. Existing map registry lab maps excluded. No skill/lore formula changes.
 
@@ -15,8 +15,10 @@ Phase1 existing hub+four regions; Phase2 China/Philippines plus mountain gateway
 | mountain-spirit-sanctuary — สำนักผนึกบนภูเขา | thailand | 25–35 | 2 |
 | mist-bamboo — หุบไผ่หมอกคราม | china | 20–35 | 2 |
 | cloud-tea-slopes — ไร่ชาสันเมฆ | china | 30–45 | 2 |
+| cedar-torii-shrine — ศาลเจ้าโทริอิป่าซีดาร์ | japan | 35–50 | 3 |
 | spirit-waterfall — น้ำตกม่านวิญญาณ | japan | 40–55 | 3 |
 | monsoon-ruins — นครร้างใต้พายุ | japan | 50–65 | 3 |
+| snowbound-torii — ศาลเจ้าหิมะผนึกเงา | japan | 55–70 | 3 |
 | moon-ritual-ridge — สันเขาพิธีจันทร์ | korea | 35–45 | 3 |
 | spirit-funeral-road — ทางส่งวิญญาณ | korea | 45–55 | 3 |
 | ashwind-volcano — ภูเขาไฟเถ้าลม | indonesia | 50–65 | 3 |

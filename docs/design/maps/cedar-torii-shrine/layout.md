@@ -49,3 +49,7 @@ Correction02: decorative bridge lantern62,54 blocked the crossing. Move paired l
 Visual correction03: a single attempt to frame the entire long avenue cropped the shrine roof under world-cover zoom. Landmark inspection now frames shrine/forecourt only (center48*32,650;1000×760); gate inspection remains a separate walking view. No whole-layout rescaling. Moss sampling uses a muted solid undercoat beneath source art to keep cedar silhouettes legible, original PNG untouched.
 
 Visual correction04: the ordinary close following camera cropped tall torii at its base. Gate inspection now has a dedicated950×650 framing center48,57, separate from the shrine inspection; manual walking resumes ordinary camera. Both required structures can be viewed intact without shrinking world layout.
+
+
+## Live adoption01 — 2026-10-15
+User authorizes live adoption with NPCs/monsters and reciprocal boundary walking. Existing required objects/blockers/terrain preserved; extend only gate paths to exact world edges. Chain mountain east-side lower apron branch (south42,63 already Indonesia; Japan new south30,63) ↔ shrine west0,64; shrine east94,34 ↔ waterfall west0,62; waterfall east86,18 ↔ ruins west0,56; ruins east94,25 ↔ snow shrine west0,54. Outside-trigger arrivals4units from edges. Three safe service NPCs and3 authored outer camps/map, provisional levels35–50 /40–55 /50–65, existing owned sprites reused. Japanese inhabitant artwork is not claimed new. No new combat skills. Failed placement corrections recorded by tests.

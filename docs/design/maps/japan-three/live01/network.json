@@ -1,0 +1,85 @@
+{
+  "travel": [
+    {
+      "from": "mountain-spirit-sanctuary",
+      "to": "cedar-torii-shrine",
+      "arrival": {
+        "x": 4,
+        "y": 64
+      },
+      "noBounce": true
+    },
+    {
+      "from": "cedar-torii-shrine",
+      "to": "spirit-waterfall",
+      "arrival": {
+        "x": 4,
+        "y": 62
+      },
+      "noBounce": true
+    },
+    {
+      "from": "spirit-waterfall",
+      "to": "monsoon-ruins",
+      "arrival": {
+        "x": 4,
+        "y": 56
+      },
+      "noBounce": true
+    },
+    {
+      "from": "monsoon-ruins",
+      "to": "snowbound-torii",
+      "arrival": {
+        "x": 4,
+        "y": 54
+      },
+      "noBounce": true
+    },
+    {
+      "from": "snowbound-torii",
+      "to": "monsoon-ruins",
+      "arrival": {
+        "x": 92,
+        "y": 25
+      },
+      "noBounce": true
+    },
+    {
+      "from": "monsoon-ruins",
+      "to": "spirit-waterfall",
+      "arrival": {
+        "x": 84,
+        "y": 18
+      },
+      "noBounce": true
+    },
+    {
+      "from": "spirit-waterfall",
+      "to": "cedar-torii-shrine",
+      "arrival": {
+        "x": 92,
+        "y": 34
+      },
+      "noBounce": true
+    },
+    {
+      "from": "cedar-torii-shrine",
+      "to": "mountain-spirit-sanctuary",
+      "arrival": {
+        "x": 30,
+        "y": 60
+      },
+      "noBounce": true
+    }
+  ],
+  "allEightBoundaryTrips": true,
+  "npcsTalkAndHeal": true,
+  "residentsPerMap": 9,
+  "observerSync": true,
+  "reviewedRoutes": true,
+  "skillDamage": true,
+  "basicKill": true,
+  "exp": true,
+  "profilePreserved": true
+}

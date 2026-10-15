@@ -1,0 +1,3 @@
+import{MOUNTAIN_SPIRIT_SANCTUARY}from'./mountain-spirit-sanctuary.js';
+import type{MapDefinition}from'../world.js';
+export const MOUNTAIN_JAPAN_LINK:MapDefinition={...MOUNTAIN_SPIRIT_SANCTUARY,terrain:{...MOUNTAIN_SPIRIT_SANCTUARY.terrain!,paint:[...MOUNTAIN_SPIRIT_SANCTUARY.terrain!.paint,{terrain:'road',shape:'path',points:[[40,56],[30,59],[30,63]],r:1.8}]},portals:[...(MOUNTAIN_SPIRIT_SANCTUARY.portals??[]),{"id":"japan-gate","area":{"x":29,"y":62,"w":2,"h":2},"arrival":{"x":30,"y":60},"to":{"mapId":"cedar-torii-shrine","portalId":"mountain-gate"},"label":{"th":"ไปศาลเจ้าโทริอิป่าซีดาร์ · ใต้","en":"cedar-torii-shrine"}}]};

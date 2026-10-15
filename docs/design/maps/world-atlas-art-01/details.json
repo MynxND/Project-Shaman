@@ -150,8 +150,8 @@
         "status": "live"
       },
       {
-        "id": "spirit-waterfall",
-        "status": "planned"
+        "id": "cedar-torii-shrine",
+        "status": "live"
       },
       {
         "id": "moon-ritual-ridge",
@@ -234,47 +234,109 @@
     ],
     "source": "authoritative MAPS / existing MONSTERS"
   },
-  "spirit-waterfall": {
-    "climate": "หุบเขาฝนจัด",
-    "landmark": "น้ำตกสองชั้นหลังศาลหิน",
-    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
-    "residents": [],
-    "proposedResidents": [
-      "ภูตฟองน้ำ",
-      "ปูหินตะไคร่",
-      "ทวารบาลดินเผา"
+  "cedar-torii-shrine": {
+    "climate": "ป่าซีดาร์เย็นชื้น",
+    "landmark": "โทริอิแดงและศาลเจ้าในป่าซีดาร์",
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตทางศาลเจ้าซีดาร์",
+      "เงาพิทักษ์ผนึกซีดาร์",
+      "ผู้เฝ้าลานพิธีซีดาร์"
     ],
-    "npcs": [],
+    "proposedResidents": [],
+    "npcs": [
+      "ผู้รักษาทางศาลเจ้า",
+      "ผู้ดูแลผนึก",
+      "ยามทางพิธี"
+    ],
     "connections": [
       {
-        "id": "monsoon-ruins",
-        "status": "planned"
+        "id": "spirit-waterfall",
+        "status": "live"
       },
       {
         "id": "mountain-spirit-sanctuary",
-        "status": "planned"
+        "status": "live"
       }
     ],
-    "source": "leveling-20-proposal + world-30 proposal"
+    "source": "authoritative MAPS / existing MONSTERS"
+  },
+  "spirit-waterfall": {
+    "climate": "หุบเขาฝนจัด",
+    "landmark": "น้ำตกสองชั้นหลังศาลหิน",
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตทางศาลเจ้าม่านธาร",
+      "เงาพิทักษ์ผนึกม่านธาร",
+      "ผู้เฝ้าลานพิธีม่านธาร"
+    ],
+    "proposedResidents": [],
+    "npcs": [
+      "ผู้รักษาทางศาลเจ้า",
+      "ผู้ดูแลผนึก",
+      "ยามทางพิธี"
+    ],
+    "connections": [
+      {
+        "id": "cedar-torii-shrine",
+        "status": "live"
+      },
+      {
+        "id": "monsoon-ruins",
+        "status": "live"
+      }
+    ],
+    "source": "authoritative MAPS / existing MONSTERS"
   },
   "monsoon-ruins": {
     "climate": "ซากเมืองเขตร้อนมรสุม",
     "landmark": "เจดีย์แตกกับรากไม้ขนาดใหญ่",
-    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
-    "residents": [],
-    "proposedResidents": [
-      "หน้ากากร้าว",
-      "ทวารบาลเถาวัลย์",
-      "ภูตประทีปดับ"
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตทางศาลเจ้าพายุ",
+      "เงาพิทักษ์ผนึกพายุ",
+      "ผู้เฝ้าลานพิธีพายุ"
     ],
-    "npcs": [],
+    "proposedResidents": [],
+    "npcs": [
+      "ผู้รักษาทางศาลเจ้า",
+      "ผู้ดูแลผนึก",
+      "ยามทางพิธี"
+    ],
     "connections": [
       {
         "id": "spirit-waterfall",
-        "status": "planned"
+        "status": "live"
+      },
+      {
+        "id": "snowbound-torii",
+        "status": "live"
       }
     ],
-    "source": "leveling-20-proposal + world-30 proposal"
+    "source": "authoritative MAPS / existing MONSTERS"
+  },
+  "snowbound-torii": {
+    "climate": "ป่าหิมะ / ธารน้ำอุ่น",
+    "landmark": "ศาลเจ้าหิมะและโทริอิแดง",
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตทางศาลเจ้าหิมะ",
+      "เงาพิทักษ์ผนึกหิมะ",
+      "ผู้เฝ้าลานพิธีหิมะ"
+    ],
+    "proposedResidents": [],
+    "npcs": [
+      "ผู้รักษาทางศาลเจ้า",
+      "ผู้ดูแลผนึก",
+      "ยามทางพิธี"
+    ],
+    "connections": [
+      {
+        "id": "monsoon-ruins",
+        "status": "live"
+      }
+    ],
+    "source": "authoritative MAPS / existing MONSTERS"
   },
   "moon-ritual-ridge": {
     "climate": "สันเขาลมหนาว / ป่าเมฆ",

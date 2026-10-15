@@ -4,6 +4,8 @@ import {MONSTERS} from '../../packages/shared/dist/combat.js';
 const atlas=JSON.parse(await readFile('docs/design/maps/world-30/atlas.json'));
 const proposed=JSON.parse(await readFile('docs/design/maps/leveling-20-proposal.json')).maps;
 const extra={
+ 'cedar-torii-shrine':{climate:'ป่าซีดาร์เย็นชื้น',landmark:'โทริอิแดงและศาลเจ้าในป่าซีดาร์'},
+ 'snowbound-torii':{climate:'ป่าหิมะ / ธารน้ำอุ่น',landmark:'ศาลเจ้าหิมะและโทริอิแดง'},
  'obsidian-estuary':{climate:'ชายฝั่งภูเขาไฟชื้น / หมอกทะเล',landmark:'ประตูหินแยกและท่าหินดำ',monsters:[],activity:'สำรวจปากน้ำ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ'},
  'mountain-spirit-sanctuary':{climate:'ป่าภูเขาชื้น / หมอกหุบเขา',landmark:'สำนักผนึกเหนือหน้าผา',monsters:['ภูตผ้าผนึก','เงาผู้เฝ้าบันได'],activity:'ข้อเสนอ: สำรวจสำนัก · เก็บวัตถุดิบอาคม · จุดต่อเส้นทางต่างภูมิภาค'},
  'moon-ritual-ridge':{climate:'สันเขาลมหนาว / ป่าเมฆ',landmark:'ลานพิธีใต้ระฆังสันเขา',monsters:['ภูตระฆัง','เงานักเดินเขา'],activity:'ข้อเสนอ: ล่าตามสันเขา · สำรวจลานพิธี'},

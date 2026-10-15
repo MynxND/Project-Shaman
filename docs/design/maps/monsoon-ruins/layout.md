@@ -42,3 +42,7 @@ All required IDs, full footprint land support, graph/BFS/local walking round tri
 
 ## 10. Deferred
 Live portals, inhabitants/combat balance, new shikigami/skill effects and real elevation wait for separate authorization. No existing Japan character art regenerated.
+
+
+## Live adoption01 — 2026-10-15
+User authorizes live adoption with NPCs/monsters and reciprocal boundary walking. Existing required objects/blockers/terrain preserved; extend only gate paths to exact world edges. Chain mountain east-side lower apron branch (south42,63 already Indonesia; Japan new south30,63) ↔ shrine west0,64; shrine east94,34 ↔ waterfall west0,62; waterfall east86,18 ↔ ruins west0,56; ruins east94,25 ↔ snow shrine west0,54. Outside-trigger arrivals4units from edges. Three safe service NPCs and3 authored outer camps/map, provisional levels35–50 /40–55 /50–65, existing owned sprites reused. Japanese inhabitant artwork is not claimed new. No new combat skills. Failed placement corrections recorded by tests.

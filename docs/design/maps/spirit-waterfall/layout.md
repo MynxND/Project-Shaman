@@ -49,3 +49,7 @@ Correction02: diagonal22,58→27,44 struck the torii left pier. Main approach no
 Correction03: lantern30,41 obstructed the north approach; move32,42. Anticipated bridge-side approach clash resolved by moving lantern60,40→62,39. Both stand beside, rather than on, the walking line.
 
 Visual correction04: tiling the existing32×96 waterfall icon repeated disconnected bars; replace with one intact source image plus subtle alpha shimmer. Main river water continues its shared flow animation. Scenic fall is an illustrated cascade with shimmer, not a newly generated multi-frame waterfall or climbable terrain.
+
+
+## Live adoption01 — 2026-10-15
+User authorizes live adoption with NPCs/monsters and reciprocal boundary walking. Existing required objects/blockers/terrain preserved; extend only gate paths to exact world edges. Chain mountain east-side lower apron branch (south42,63 already Indonesia; Japan new south30,63) ↔ shrine west0,64; shrine east94,34 ↔ waterfall west0,62; waterfall east86,18 ↔ ruins west0,56; ruins east94,25 ↔ snow shrine west0,54. Outside-trigger arrivals4units from edges. Three safe service NPCs and3 authored outer camps/map, provisional levels35–50 /40–55 /50–65, existing owned sprites reused. Japanese inhabitant artwork is not claimed new. No new combat skills. Failed placement corrections recorded by tests.
