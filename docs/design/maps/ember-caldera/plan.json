@@ -5,6 +5,7 @@
     "keris"
   ],
   "requiredObjects": [
+    "iconic-split-gate",
     "ember-sanctum",
     "west-gate",
     "west-shelter",
@@ -198,6 +199,19 @@
       {
         "points": [
           [
+            44,
+            22
+          ],
+          [
+            44,
+            30
+          ]
+        ],
+        "width": 4.2
+      },
+      {
+        "points": [
+          [
             24,
             38
           ],
@@ -314,9 +328,9 @@
   "inspection": {
     "index": 2,
     "x": 1408,
-    "y": 420,
-    "w": 650,
-    "h": 700
+    "y": 600,
+    "w": 800,
+    "h": 1060
   },
   "failedPlacements": [],
   "sideTours": [
@@ -358,6 +372,16 @@
       [
         44,
         21
+      ]
+    ],
+    [
+      [
+        44,
+        22
+      ],
+      [
+        44,
+        30
       ]
     ],
     [

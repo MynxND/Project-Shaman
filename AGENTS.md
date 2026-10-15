@@ -43,3 +43,7 @@ After major authorized changes pass relevant checks, commit and push to the conf
 
 ## Country map batch preference — user2026-10-15
 Complete each new eligible-country map batch to3 before moving to the next country. Preserve existing extra maps. Keep previews and live adoption distinct; current Indonesia batch is3 previews, not3 server rooms.
+
+
+## National landmarks and natural boundaries — user2026-10-15
+Every country requires at least one immediately recognizable regional landmark interpreted as original shaman fantasy; support it with regional architecture, terrain and vegetation, not flags or a generic recolor. Use docs/design/maps/national-landmarks.md and each map layout brief. Natural shores/river bends/path junctions should follow authored organic geometry at native pixel resolution; retain intentional engineered edges, nearest filtering and independent collision. Current implementation applies only to the three Indonesian previews, not all nations or live rooms.

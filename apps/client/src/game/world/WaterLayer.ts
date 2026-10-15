@@ -64,6 +64,13 @@ export class WaterLayer {
    this.pixels[i]=255;this.pixels[i+2]=(mode*4+flow)*16+(narrow?12:4);this.pixels[i+3]=255;
   }
  }
+ /** Opt-in coverage for flat, authored native-resolution maps; legacy tile callers are unchanged. */
+ setNativeCoverage(coverage:Uint8Array){
+  if(this.map.elevation||coverage.length!==this.width*this.height)throw new Error('Native water coverage requires a matching flat map');
+  if(coverage.some(value=>value>2))throw new Error('Unknown native water mode');
+  this.pixels.fill(0);
+  for(let cell=0;cell<coverage.length;cell++)if(coverage[cell]){const i=cell*4;this.pixels[i]=255;this.pixels[i+2]=(coverage[cell]!-1)*64+4;this.pixels[i+3]=255;}
+ }
  finish(){
   const p=this.pixels,w=this.width,h=this.height;
   for(let y=0;y<h;y++)for(let x=0;x<w;x++){const i=(y*w+x)*4;if(!p[i])continue;this.wet.push(i);

@@ -1,9 +1,10 @@
 import Phaser from 'phaser';
-import{WORLD_UNIT_PX as U,MAP_ASSET_SCALE,terrainVertices,cellCorners,type MapDefinition}from'@shaman/shared';
+import{WORLD_UNIT_PX as U,MAP_ASSET_SCALE,type MapDefinition}from'@shaman/shared';
 import{WaterLayer,preloadWater}from'../../game/world/WaterLayer';
 import{addContactShadow}from'../../game/world/Lighting';
 import{addSpiritwoodAtmosphere}from'../../game/world/SpiritwoodAtmosphere';
 import{quiltPaint}from'../../game/world/china-quilt';
+import{rasterNativeTerrain}from'../../game/world/native-terrain';
 import kit from '../../../public/assets/umbral/ashwind-01/manifest.json';
 import plan from './ashwind-review-plan.json';
 const N=U/MAP_ASSET_SCALE,KEY='ashwind:source';type Frame=keyof typeof kit.frames;
@@ -13,8 +14,9 @@ function frame(scene:Phaser.Scene,name:Frame,width:number){const key=`ashwind:${
 export function renderAshwind(scene:Phaser.Scene,map:MapDefinition,profile:Pick<typeof plan,'fog'|'graph'|'vents'|'wind'>=plan){
  const w=map.width*N,h=map.height*N,samples={}as Record<string,Uint8ClampedArray>;
  for(const[name,size,seed]of [['ash',128,301],['road',64,302]]as const){const key=frame(scene,name,size),source=scene.textures.get(key).getSourceImage()as HTMLCanvasElement;samples[name]=quiltPaint(source.getContext('2d')!.getImageData(0,0,size,size).data,size,w,h,seed);}
- const t=scene.textures.createCanvas('ashwind:ground',w,h)!,out=t.context.createImageData(w,h),vertices=terrainVertices(map),water=new WaterLayer(scene,{...map,objects:[]});
- for(let cy=0;cy<map.height;cy++)for(let cx=0;cx<map.width;cx++){const corners=cellCorners(vertices,map.width,cx,cy);water.addTile(cx,cy,corners);for(let py=0;py<N;py++)for(let px=0;px<N;px++){const u=(px+.5)/N,v=(py+.5)/N,weights=[(1-u)*(1-v),u*(1-v),(1-u)*v,u*v],road=corners.reduce((a,c,i)=>a+(c==='road'?weights[i]!:0),0),i=((cy*N+py)*w+cx*N+px)*4,s=samples[road>=.5?'road':'ash']!;out.data[i]=s[i]!;out.data[i+1]=s[i+1]!;out.data[i+2]=s[i+2]!;out.data[i+3]=255;}}
+ const t=scene.textures.createCanvas('ashwind:ground',w,h)!,out=t.context.createImageData(w,h),raster=rasterNativeTerrain(map,N),water=new WaterLayer(scene,{...map,objects:[]});
+ water.setNativeCoverage(raster.water);
+ for(let cell=0;cell<raster.materials.length;cell++){const i=cell*4,s=samples[raster.materials[cell]===1?'road':'ash']!;out.data[i]=s[i]!;out.data[i+1]=s[i+1]!;out.data[i+2]=s[i+2]!;out.data[i+3]=255;}
  t.context.putImageData(out,0,0);t.refresh();t.setFilter(Phaser.Textures.FilterMode.NEAREST);scene.add.image(0,0,'ashwind:ground').setOrigin(0).setScale(MAP_ASSET_SCALE).setDepth(-1.8);// This independent atlas has no legacy umbral object-reflection bindings.
  water.finish();
  for(const o of map.objects as (MapDefinition['objects'][number]&{width:number})[]){const key=frame(scene,o.asset as Frame,o.width);scene.add.image(o.x*U,o.y*U,key).setOrigin(.5,1).setScale(MAP_ASSET_SCALE).setDepth(o.y*U).setName(o.id);addContactShadow(scene,o.x*U,o.y*U,o.footprint?o.footprint.w*U:o.width*.8);}
