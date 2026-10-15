@@ -36,3 +36,7 @@ Python requires Pillow. QA checks40 source hashes, transparent atlas dimensions,
 ## User country correction
 
 User confirmed **Ireland**, not Iceland. Golden Spiritwood receives Afturganga/camp0 and Sending/camp2; Stone Oath Moor receives Draugur/camp1 and Uppvakningur/camp2; Willow Wake Village receives Utburdur/camp0 and Tilberi/camp1. One additional enemy each, retaining all original residents and geometry. Existing eight-direction artwork is reused without generation.
+
+## Detailed animation audit02
+
+The earlier coarse runtime review did not establish correct walking biomechanics. User requested a full chronology audit: see [all40 findings and remaining artwork](audit-02/README.md). Nine attack sequences repaired using original indices;22 walking clips still need art, two dissolve deaths lack transition poses. Three generated walk candidates held out of runtime. Apply `node tools/monsters/folklore/apply-audit.mjs` after packing and before publishing to retain the audited orders.

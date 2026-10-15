@@ -1,0 +1,1660 @@
+{
+  "scope": "40 species / 8 directions / 3 actions =960 clips; static chronological inspection, browser playback samples separate",
+  "monsters": {
+    "phi-pret": {
+      "id": "phi-pret",
+      "nation": "thailand",
+      "name": "ผีเปรต",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ขาเปลี่ยนน้อยและ contact ซ้าย–ขวาไม่ชัด ต้องภาพเดินใหม่",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 3
+      },
+      "userVisualApproval": "pending",
+      "candidateStatus": "generated; held out of runtime pending complete gait/identity validation"
+    },
+    "phi-pop": {
+      "id": "phi-pop",
+      "nation": "thailand",
+      "name": "ผีปอบ",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ใช้ passing pose ซ้ำ ไม่มี contact สองฝั่งครบ",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending",
+      "candidateStatus": "generated; held out of runtime pending complete gait/identity validation"
+    },
+    "phi-krasue": {
+      "id": "phi-krasue",
+      "nation": "thailand",
+      "name": "ผีกระสือ",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "เป็นท่าลอย ไม่ควรบังคับเดิน; โจมตีมุมหน้าหันด้านข้างแรงเกินไป",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 3
+      },
+      "userVisualApproval": "pending"
+    },
+    "phi-krahang": {
+      "id": "phi-krahang",
+      "nation": "thailand",
+      "name": "ผีกระหัง",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "เป็นท่าบิน ปีกขยับน้อย; ท่าตายบางทิศหมุนตัวขณะล้ม จัดเป็นปัญหาภาพ ไม่สลับทิศอัตโนมัติ",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "onryo": {
+      "id": "onryo",
+      "nation": "japan",
+      "name": "วิญญาณอาฆาต",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "yuki-onna": {
+      "id": "yuki-onna",
+      "nation": "japan",
+      "name": "หญิงหิมะ",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "kuchisake-onna": {
+      "id": "kuchisake-onna",
+      "nation": "japan",
+      "name": "หญิงปากฉีก",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "rokurokubi": {
+      "id": "rokurokubi",
+      "nation": "japan",
+      "name": "หญิงคอยาว",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "ubume": {
+      "id": "ubume",
+      "nation": "japan",
+      "name": "อุบุเมะ",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "gashadokuro": {
+      "id": "gashadokuro",
+      "nation": "japan",
+      "name": "โครงกระดูกยักษ์",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "sequence-fixed",
+          "finding": "เพิ่มท่าเตรียม/คืนท่าจากเฟรม neutral เดิม; ไม่วาด pose ใหม่"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending",
+      "candidateStatus": "generated; held out of runtime pending complete gait/identity validation"
+    },
+    "cheonyeo-gwishin": {
+      "id": "cheonyeo-gwishin",
+      "nation": "korea",
+      "name": "ผีสาวอาลัย",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "mulgwishin": {
+      "id": "mulgwishin",
+      "nation": "korea",
+      "name": "ผีน้ำเกาหลี",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "dalgyal-gwishin": {
+      "id": "dalgyal-gwishin",
+      "nation": "korea",
+      "name": "ผีหน้าเรียบ",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "sequence-fixed",
+          "finding": "เพิ่มท่าเตรียม/คืนท่าจากเฟรม neutral เดิม; ไม่วาด pose ใหม่"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "dokkaebi": {
+      "id": "dokkaebi",
+      "nation": "korea",
+      "name": "ทกแกบี",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "gumiho": {
+      "id": "gumiho",
+      "nation": "korea",
+      "name": "จิ้งจอกเก้าหาง",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "sequence-fixed",
+          "finding": "เพิ่มท่าเตรียม/คืนท่าจากเฟรม neutral เดิม; ไม่วาด pose ใหม่"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "chonggak-gwishin": {
+      "id": "chonggak-gwishin",
+      "nation": "korea",
+      "name": "ผีหนุ่มอาลัย",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "rusalka": {
+      "id": "rusalka",
+      "nation": "russia",
+      "name": "รูซัลกา",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "sequence-fixed",
+          "finding": "เพิ่มท่าเตรียม/คืนท่าจากเฟรม neutral เดิม; ไม่วาด pose ใหม่"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "leshy": {
+      "id": "leshy",
+      "nation": "russia",
+      "name": "เลชี",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "domovoi": {
+      "id": "domovoi",
+      "nation": "russia",
+      "name": "โดโมวอย",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "kikimora": {
+      "id": "kikimora",
+      "nation": "russia",
+      "name": "คิคิโมรา",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "vodyanoy": {
+      "id": "vodyanoy",
+      "nation": "russia",
+      "name": "โวดียานอย",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "bannik": {
+      "id": "bannik",
+      "nation": "russia",
+      "name": "บันนิก",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "draugur": {
+      "id": "draugur",
+      "nation": "ireland",
+      "name": "ดรอยกูร์",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "sequence-fixed",
+          "finding": "เพิ่มท่าเตรียม/คืนท่าจากเฟรม neutral เดิม; ไม่วาด pose ใหม่"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "afturganga": {
+      "id": "afturganga",
+      "nation": "ireland",
+      "name": "อัฟตูร์กังกา",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "utburdur": {
+      "id": "utburdur",
+      "nation": "ireland",
+      "name": "อูตบูร์ดูร์",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ตอนจบท่าตายยังเห็นเปลววิญญาณ ต้องภาพดับเพิ่มหากต้องการดับสนิท",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "uppvakningur": {
+      "id": "uppvakningur",
+      "nation": "ireland",
+      "name": "อุปป์วักนิงกูร์",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "sending": {
+      "id": "sending",
+      "nation": "ireland",
+      "name": "เซนดิง",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ท่าโจมตีใหม่มีขนาดตัวต่างจาก move ต้องตรวจ/ปรับสเกลทั้ง action ด้วยตัวคูณเดียว",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "tilberi": {
+      "id": "tilberi",
+      "nation": "ireland",
+      "name": "ทิลเบริ",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "sequence-fixed",
+          "finding": "เพิ่มท่าเตรียม/คืนท่าจากเฟรม neutral เดิม; ไม่วาด pose ใหม่"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "jiangshi": {
+      "id": "jiangshi",
+      "nation": "china",
+      "name": "ผีดิบเจียงซือ",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "คงการกระโดดขาคู่ ไม่เปลี่ยนเป็นก้าวซ้าย–ขวา แต่จังหวะยก/ลงยังอ่อน",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "nu-gui": {
+      "id": "nu-gui",
+      "nation": "china",
+      "name": "นฺหวี่กุ่ย",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "e-gui": {
+      "id": "e-gui",
+      "nation": "china",
+      "name": "ผีหิวโหยจีน",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "shui-gui": {
+      "id": "shui-gui",
+      "nation": "china",
+      "name": "สุ่ยกุ่ย",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "wutou-gui": {
+      "id": "wutou-gui",
+      "nation": "china",
+      "name": "ผีไร้หัวจีน",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "huli-jing": {
+      "id": "huli-jing",
+      "nation": "china",
+      "name": "หูหลีจิง",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "needs-art",
+          "finding": "มีเพียง2เฟรม ขาดภาพยุบ/สลาย; สลับลำดับไม่ช่วย"
+        }
+      },
+      "notes": "ท่าตายมีแค่สองเฟรม จากยืนไปควัน ขาดยุบ/สลายระหว่างกลาง",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 2
+      },
+      "userVisualApproval": "pending"
+    },
+    "draugen": {
+      "id": "draugen",
+      "nation": "norway",
+      "name": "ดรอยเกน",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "sequence-fixed",
+          "finding": "เพิ่มท่าเตรียม/คืนท่าจากเฟรม neutral เดิม; ไม่วาด pose ใหม่"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "มุมเหนือ/เฉียงหลังเห็นรายละเอียดหน้าคล้ายมุมหน้า ต้องแก้ภาพด้านหลัง ไม่ใช้การ mirror",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "huldra": {
+      "id": "huldra",
+      "nation": "norway",
+      "name": "ฮุลทรา",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "nokken": {
+      "id": "nokken",
+      "nation": "norway",
+      "name": "เนิกเคน",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "sequence-fixed",
+          "finding": "เพิ่มท่าเตรียม/คืนท่าจากเฟรม neutral เดิม; ไม่วาด pose ใหม่"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "fossegrim": {
+      "id": "fossegrim",
+      "nation": "norway",
+      "name": "ฟอสเซกริม",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 3
+      },
+      "userVisualApproval": "pending"
+    },
+    "nisse": {
+      "id": "nisse",
+      "nation": "norway",
+      "name": "นิสเซ",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "needs-art",
+          "finding": "ยังไม่เห็น left/right contact สลับครบ; สลับเฟรมเดิมไม่สร้างก้าวที่หาย"
+        },
+        "attack": {
+          "status": "sequence-fixed",
+          "finding": "เพิ่มท่าเตรียม/คืนท่าจากเฟรม neutral เดิม; ไม่วาด pose ใหม่"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "mare": {
+      "id": "mare",
+      "nation": "norway",
+      "name": "มาเร",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "limited-motion",
+          "finding": "เป็นการลอย/บิน/กระโดด/ขดตัว ใช้จังหวะเดิมได้ แต่การเคลื่อนไหวยังน้อย ไม่ถือว่าผ่านงานแอนิเมชันขั้นสุดท้าย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "needs-art",
+          "finding": "มีเพียง2เฟรม ขาดภาพยุบ/สลาย; สลับลำดับไม่ช่วย"
+        }
+      },
+      "notes": "ท่าตายมีแค่สองเฟรม กระโดดจากร่างไปควัน",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 2
+      },
+      "userVisualApproval": "pending"
+    }
+  },
+  "sequenceRepairs": {
+    "dalgyal-gwishin": "append-neutral",
+    "gumiho": "append-neutral",
+    "rusalka": "append-neutral",
+    "nokken": "append-neutral",
+    "nisse": "append-neutral",
+    "tilberi": "append-neutral",
+    "draugen": "append-neutral",
+    "draugur": "neutral-windup-strike-recover",
+    "gashadokuro": "neutral-windup-strike-recover"
+  },
+  "newArt": "Three walk-only ImageGen candidates generated and inspected. Not adopted: consistent four-phase bilateral support is not sufficiently established across every view; Pop also raises attacking arms in walk. Keep originals; explicit art backlog remains."
+}

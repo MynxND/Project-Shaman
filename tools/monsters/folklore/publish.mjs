@@ -8,8 +8,9 @@ for(const m of roster.monsters){
  if(!review.monsters[m.id]?.runtimeAccepted)continue;
  const sheet=drafts.monsters[m.id];if(!sheet?.directions)throw Error('No eight-view sheet '+m.id);
  for(const f of roster.directions)for(const a of ['idle','move','attack','hurt','death'])if(!sheet.directions[f]?.[a]?.indices?.length)throw Error('Missing '+m.id+':'+f+':'+a);
- const level=m.level,attack=sheet.directions.south.attack;
- definitions[m.id]={kind:m.id,name:m.name,level,race:'undead',behavior:'aggressive',facingMode:'eight',hp:120+level*30,atk:8+level*2,def:5+Math.floor(level*.5),mdef:5+Math.floor(level*.4),speed:['phi-krasue','phi-krahang'].includes(m.id)?2.1:1.6,aggroRange:3.5,leash:5,attackRange:['phi-pret','gashadokuro'].includes(m.id)?1.8:1.3,attackDelayMs:1800,attackWindupMs:(attack.frames>=4?2:1)*125,exp:level*24,drops:[{itemId:'bone',chance:.22},{itemId:'dark-ore',chance:.15}],wander:{pauseMs:[2200,4800],radius:1.3}};
+ const level=m.level,attack=sheet.directions.south.attack,impact=sheet.attackImpactFrame??(attack.frames>=4?2:1);
+ if(!Number.isInteger(impact)||impact<0||impact>=attack.frames)throw Error('Invalid attack impact pose '+m.id);
+ definitions[m.id]={kind:m.id,name:m.name,level,race:'undead',behavior:'aggressive',facingMode:'eight',hp:120+level*30,atk:8+level*2,def:5+Math.floor(level*.5),mdef:5+Math.floor(level*.4),speed:['phi-krasue','phi-krahang'].includes(m.id)?2.1:1.6,aggroRange:3.5,leash:5,attackRange:['phi-pret','gashadokuro'].includes(m.id)?1.8:1.3,attackDelayMs:1800,attackWindupMs:Math.round(impact*1000/attack.fps),exp:level*24,drops:[{itemId:'bone',chance:.22},{itemId:'dark-ore',chance:.15}],wander:{pauseMs:[2200,4800],radius:1.3}};
  manifest.monsters[m.id]=sheet;released[m.id]=sheet;
  m.mapIds.forEach((mapId,i)=>{(bindings[mapId]??=[]).push({kind:m.id,campIndex:camps[m.id]?.[i]??0,count:1});});
 }

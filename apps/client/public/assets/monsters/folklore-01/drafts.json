@@ -4306,14 +4306,16 @@
         },
         "attack": {
           "row": 8,
-          "frames": 3,
+          "frames": 4,
           "fps": 8,
           "loop": false,
           "indices": [
             64,
             72,
-            80
-          ]
+            80,
+            0
+          ],
+          "reusedFrom": "audited original attack + neutral recovery"
         },
         "hurt": {
           "row": 12,
@@ -4364,14 +4366,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               64,
               72,
-              80
-            ]
+              80,
+              0
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -4421,14 +4425,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               65,
               73,
-              81
-            ]
+              81,
+              1
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -4478,14 +4484,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               66,
               74,
-              82
-            ]
+              82,
+              2
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -4535,14 +4543,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               67,
               75,
-              83
-            ]
+              83,
+              3
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -4592,14 +4602,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               68,
               76,
-              84
-            ]
+              84,
+              4
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -4649,14 +4661,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               69,
               77,
-              85
-            ]
+              85,
+              5
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -4706,14 +4720,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               70,
               78,
-              86
-            ]
+              86,
+              6
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -4763,14 +4779,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               71,
               79,
-              87
-            ]
+              87,
+              7
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -4795,7 +4813,8 @@
             ]
           }
         }
-      }
+      },
+      "attackImpactFrame": 2
     },
     "dokkaebi": {
       "image": "folklore-01/dokkaebi.png",
@@ -5902,532 +5921,6 @@
         },
         "attack": {
           "row": 8,
-          "frames": 3,
-          "fps": 8,
-          "loop": false,
-          "indices": [
-            64,
-            72,
-            80
-          ]
-        },
-        "hurt": {
-          "row": 12,
-          "frames": 1,
-          "fps": 8,
-          "loop": false,
-          "indices": [
-            96
-          ],
-          "reusedFrom": "death reaction"
-        },
-        "death": {
-          "row": 16,
-          "frames": 4,
-          "fps": 6,
-          "loop": false,
-          "indices": [
-            128,
-            136,
-            144,
-            152
-          ]
-        }
-      },
-      "directions": {
-        "south": {
-          "idle": {
-            "row": 0,
-            "frames": 2,
-            "fps": 5,
-            "loop": true,
-            "indices": [
-              0,
-              8
-            ]
-          },
-          "move": {
-            "row": 4,
-            "frames": 4,
-            "fps": 8,
-            "loop": true,
-            "indices": [
-              32,
-              40,
-              48,
-              56
-            ]
-          },
-          "attack": {
-            "row": 8,
-            "frames": 3,
-            "fps": 8,
-            "loop": false,
-            "indices": [
-              64,
-              72,
-              80
-            ]
-          },
-          "hurt": {
-            "row": 12,
-            "frames": 1,
-            "fps": 8,
-            "loop": false,
-            "indices": [
-              96
-            ],
-            "reusedFrom": "death reaction"
-          },
-          "death": {
-            "row": 16,
-            "frames": 4,
-            "fps": 6,
-            "loop": false,
-            "indices": [
-              128,
-              136,
-              144,
-              152
-            ]
-          }
-        },
-        "south-west": {
-          "idle": {
-            "row": 0,
-            "frames": 2,
-            "fps": 5,
-            "loop": true,
-            "indices": [
-              1,
-              9
-            ]
-          },
-          "move": {
-            "row": 4,
-            "frames": 4,
-            "fps": 8,
-            "loop": true,
-            "indices": [
-              33,
-              41,
-              49,
-              57
-            ]
-          },
-          "attack": {
-            "row": 8,
-            "frames": 3,
-            "fps": 8,
-            "loop": false,
-            "indices": [
-              65,
-              73,
-              81
-            ]
-          },
-          "hurt": {
-            "row": 12,
-            "frames": 1,
-            "fps": 8,
-            "loop": false,
-            "indices": [
-              97
-            ],
-            "reusedFrom": "death reaction"
-          },
-          "death": {
-            "row": 16,
-            "frames": 4,
-            "fps": 6,
-            "loop": false,
-            "indices": [
-              129,
-              137,
-              145,
-              153
-            ]
-          }
-        },
-        "west": {
-          "idle": {
-            "row": 0,
-            "frames": 2,
-            "fps": 5,
-            "loop": true,
-            "indices": [
-              2,
-              10
-            ]
-          },
-          "move": {
-            "row": 4,
-            "frames": 4,
-            "fps": 8,
-            "loop": true,
-            "indices": [
-              34,
-              42,
-              50,
-              58
-            ]
-          },
-          "attack": {
-            "row": 8,
-            "frames": 3,
-            "fps": 8,
-            "loop": false,
-            "indices": [
-              66,
-              74,
-              82
-            ]
-          },
-          "hurt": {
-            "row": 12,
-            "frames": 1,
-            "fps": 8,
-            "loop": false,
-            "indices": [
-              98
-            ],
-            "reusedFrom": "death reaction"
-          },
-          "death": {
-            "row": 16,
-            "frames": 4,
-            "fps": 6,
-            "loop": false,
-            "indices": [
-              130,
-              138,
-              146,
-              154
-            ]
-          }
-        },
-        "north-west": {
-          "idle": {
-            "row": 0,
-            "frames": 2,
-            "fps": 5,
-            "loop": true,
-            "indices": [
-              3,
-              11
-            ]
-          },
-          "move": {
-            "row": 4,
-            "frames": 4,
-            "fps": 8,
-            "loop": true,
-            "indices": [
-              35,
-              43,
-              51,
-              59
-            ]
-          },
-          "attack": {
-            "row": 8,
-            "frames": 3,
-            "fps": 8,
-            "loop": false,
-            "indices": [
-              67,
-              75,
-              83
-            ]
-          },
-          "hurt": {
-            "row": 12,
-            "frames": 1,
-            "fps": 8,
-            "loop": false,
-            "indices": [
-              99
-            ],
-            "reusedFrom": "death reaction"
-          },
-          "death": {
-            "row": 16,
-            "frames": 4,
-            "fps": 6,
-            "loop": false,
-            "indices": [
-              131,
-              139,
-              147,
-              155
-            ]
-          }
-        },
-        "north": {
-          "idle": {
-            "row": 0,
-            "frames": 2,
-            "fps": 5,
-            "loop": true,
-            "indices": [
-              4,
-              12
-            ]
-          },
-          "move": {
-            "row": 4,
-            "frames": 4,
-            "fps": 8,
-            "loop": true,
-            "indices": [
-              36,
-              44,
-              52,
-              60
-            ]
-          },
-          "attack": {
-            "row": 8,
-            "frames": 3,
-            "fps": 8,
-            "loop": false,
-            "indices": [
-              68,
-              76,
-              84
-            ]
-          },
-          "hurt": {
-            "row": 12,
-            "frames": 1,
-            "fps": 8,
-            "loop": false,
-            "indices": [
-              100
-            ],
-            "reusedFrom": "death reaction"
-          },
-          "death": {
-            "row": 16,
-            "frames": 4,
-            "fps": 6,
-            "loop": false,
-            "indices": [
-              132,
-              140,
-              148,
-              156
-            ]
-          }
-        },
-        "north-east": {
-          "idle": {
-            "row": 0,
-            "frames": 2,
-            "fps": 5,
-            "loop": true,
-            "indices": [
-              5,
-              13
-            ]
-          },
-          "move": {
-            "row": 4,
-            "frames": 4,
-            "fps": 8,
-            "loop": true,
-            "indices": [
-              37,
-              45,
-              53,
-              61
-            ]
-          },
-          "attack": {
-            "row": 8,
-            "frames": 3,
-            "fps": 8,
-            "loop": false,
-            "indices": [
-              69,
-              77,
-              85
-            ]
-          },
-          "hurt": {
-            "row": 12,
-            "frames": 1,
-            "fps": 8,
-            "loop": false,
-            "indices": [
-              101
-            ],
-            "reusedFrom": "death reaction"
-          },
-          "death": {
-            "row": 16,
-            "frames": 4,
-            "fps": 6,
-            "loop": false,
-            "indices": [
-              133,
-              141,
-              149,
-              157
-            ]
-          }
-        },
-        "east": {
-          "idle": {
-            "row": 0,
-            "frames": 2,
-            "fps": 5,
-            "loop": true,
-            "indices": [
-              6,
-              14
-            ]
-          },
-          "move": {
-            "row": 4,
-            "frames": 4,
-            "fps": 8,
-            "loop": true,
-            "indices": [
-              38,
-              46,
-              54,
-              62
-            ]
-          },
-          "attack": {
-            "row": 8,
-            "frames": 3,
-            "fps": 8,
-            "loop": false,
-            "indices": [
-              70,
-              78,
-              86
-            ]
-          },
-          "hurt": {
-            "row": 12,
-            "frames": 1,
-            "fps": 8,
-            "loop": false,
-            "indices": [
-              102
-            ],
-            "reusedFrom": "death reaction"
-          },
-          "death": {
-            "row": 16,
-            "frames": 4,
-            "fps": 6,
-            "loop": false,
-            "indices": [
-              134,
-              142,
-              150,
-              158
-            ]
-          }
-        },
-        "south-east": {
-          "idle": {
-            "row": 0,
-            "frames": 2,
-            "fps": 5,
-            "loop": true,
-            "indices": [
-              7,
-              15
-            ]
-          },
-          "move": {
-            "row": 4,
-            "frames": 4,
-            "fps": 8,
-            "loop": true,
-            "indices": [
-              39,
-              47,
-              55,
-              63
-            ]
-          },
-          "attack": {
-            "row": 8,
-            "frames": 3,
-            "fps": 8,
-            "loop": false,
-            "indices": [
-              71,
-              79,
-              87
-            ]
-          },
-          "hurt": {
-            "row": 12,
-            "frames": 1,
-            "fps": 8,
-            "loop": false,
-            "indices": [
-              103
-            ],
-            "reusedFrom": "death reaction"
-          },
-          "death": {
-            "row": 16,
-            "frames": 4,
-            "fps": 6,
-            "loop": false,
-            "indices": [
-              135,
-              143,
-              151,
-              159
-            ]
-          }
-        }
-      }
-    },
-    "draugur": {
-      "image": "folklore-01/draugur.png",
-      "frameWidth": 192,
-      "frameHeight": 192,
-      "columns": 8,
-      "anchor": {
-        "x": 96,
-        "y": 176
-      },
-      "scale": 0.5,
-      "animations": {
-        "idle": {
-          "row": 0,
-          "frames": 2,
-          "fps": 5,
-          "loop": true,
-          "indices": [
-            0,
-            8
-          ]
-        },
-        "move": {
-          "row": 4,
-          "frames": 4,
-          "fps": 8,
-          "loop": true,
-          "indices": [
-            32,
-            40,
-            48,
-            56
-          ]
-        },
-        "attack": {
-          "row": 8,
           "frames": 4,
           "fps": 8,
           "loop": false,
@@ -6435,8 +5928,9 @@
             64,
             72,
             80,
-            88
-          ]
+            0
+          ],
+          "reusedFrom": "audited original attack + neutral recovery"
         },
         "hurt": {
           "row": 12,
@@ -6494,8 +5988,9 @@
               64,
               72,
               80,
-              88
-            ]
+              0
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -6552,8 +6047,9 @@
               65,
               73,
               81,
-              89
-            ]
+              1
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -6610,8 +6106,9 @@
               66,
               74,
               82,
-              90
-            ]
+              2
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -6668,8 +6165,9 @@
               67,
               75,
               83,
-              91
-            ]
+              3
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -6726,8 +6224,9 @@
               68,
               76,
               84,
-              92
-            ]
+              4
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -6784,8 +6283,9 @@
               69,
               77,
               85,
-              93
-            ]
+              5
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -6842,8 +6342,9 @@
               70,
               78,
               86,
-              94
-            ]
+              6
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -6900,8 +6401,9 @@
               71,
               79,
               87,
-              95
-            ]
+              7
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -6926,7 +6428,553 @@
             ]
           }
         }
-      }
+      },
+      "attackImpactFrame": 2
+    },
+    "draugur": {
+      "image": "folklore-01/draugur.png",
+      "frameWidth": 192,
+      "frameHeight": 192,
+      "columns": 8,
+      "anchor": {
+        "x": 96,
+        "y": 176
+      },
+      "scale": 0.5,
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 2,
+          "fps": 5,
+          "loop": true,
+          "indices": [
+            0,
+            8
+          ]
+        },
+        "move": {
+          "row": 4,
+          "frames": 4,
+          "fps": 8,
+          "loop": true,
+          "indices": [
+            32,
+            40,
+            48,
+            56
+          ]
+        },
+        "attack": {
+          "row": 8,
+          "frames": 4,
+          "fps": 8,
+          "loop": false,
+          "indices": [
+            0,
+            64,
+            72,
+            0
+          ],
+          "reusedFrom": "audited original attack + neutral recovery"
+        },
+        "hurt": {
+          "row": 12,
+          "frames": 1,
+          "fps": 8,
+          "loop": false,
+          "indices": [
+            96
+          ],
+          "reusedFrom": "death reaction"
+        },
+        "death": {
+          "row": 16,
+          "frames": 4,
+          "fps": 6,
+          "loop": false,
+          "indices": [
+            128,
+            136,
+            144,
+            152
+          ]
+        }
+      },
+      "directions": {
+        "south": {
+          "idle": {
+            "row": 0,
+            "frames": 2,
+            "fps": 5,
+            "loop": true,
+            "indices": [
+              0,
+              8
+            ]
+          },
+          "move": {
+            "row": 4,
+            "frames": 4,
+            "fps": 8,
+            "loop": true,
+            "indices": [
+              32,
+              40,
+              48,
+              56
+            ]
+          },
+          "attack": {
+            "row": 8,
+            "frames": 4,
+            "fps": 8,
+            "loop": false,
+            "indices": [
+              0,
+              64,
+              72,
+              0
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
+          },
+          "hurt": {
+            "row": 12,
+            "frames": 1,
+            "fps": 8,
+            "loop": false,
+            "indices": [
+              96
+            ],
+            "reusedFrom": "death reaction"
+          },
+          "death": {
+            "row": 16,
+            "frames": 4,
+            "fps": 6,
+            "loop": false,
+            "indices": [
+              128,
+              136,
+              144,
+              152
+            ]
+          }
+        },
+        "south-west": {
+          "idle": {
+            "row": 0,
+            "frames": 2,
+            "fps": 5,
+            "loop": true,
+            "indices": [
+              1,
+              9
+            ]
+          },
+          "move": {
+            "row": 4,
+            "frames": 4,
+            "fps": 8,
+            "loop": true,
+            "indices": [
+              33,
+              41,
+              49,
+              57
+            ]
+          },
+          "attack": {
+            "row": 8,
+            "frames": 4,
+            "fps": 8,
+            "loop": false,
+            "indices": [
+              1,
+              65,
+              73,
+              1
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
+          },
+          "hurt": {
+            "row": 12,
+            "frames": 1,
+            "fps": 8,
+            "loop": false,
+            "indices": [
+              97
+            ],
+            "reusedFrom": "death reaction"
+          },
+          "death": {
+            "row": 16,
+            "frames": 4,
+            "fps": 6,
+            "loop": false,
+            "indices": [
+              129,
+              137,
+              145,
+              153
+            ]
+          }
+        },
+        "west": {
+          "idle": {
+            "row": 0,
+            "frames": 2,
+            "fps": 5,
+            "loop": true,
+            "indices": [
+              2,
+              10
+            ]
+          },
+          "move": {
+            "row": 4,
+            "frames": 4,
+            "fps": 8,
+            "loop": true,
+            "indices": [
+              34,
+              42,
+              50,
+              58
+            ]
+          },
+          "attack": {
+            "row": 8,
+            "frames": 4,
+            "fps": 8,
+            "loop": false,
+            "indices": [
+              2,
+              66,
+              74,
+              2
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
+          },
+          "hurt": {
+            "row": 12,
+            "frames": 1,
+            "fps": 8,
+            "loop": false,
+            "indices": [
+              98
+            ],
+            "reusedFrom": "death reaction"
+          },
+          "death": {
+            "row": 16,
+            "frames": 4,
+            "fps": 6,
+            "loop": false,
+            "indices": [
+              130,
+              138,
+              146,
+              154
+            ]
+          }
+        },
+        "north-west": {
+          "idle": {
+            "row": 0,
+            "frames": 2,
+            "fps": 5,
+            "loop": true,
+            "indices": [
+              3,
+              11
+            ]
+          },
+          "move": {
+            "row": 4,
+            "frames": 4,
+            "fps": 8,
+            "loop": true,
+            "indices": [
+              35,
+              43,
+              51,
+              59
+            ]
+          },
+          "attack": {
+            "row": 8,
+            "frames": 4,
+            "fps": 8,
+            "loop": false,
+            "indices": [
+              3,
+              67,
+              75,
+              3
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
+          },
+          "hurt": {
+            "row": 12,
+            "frames": 1,
+            "fps": 8,
+            "loop": false,
+            "indices": [
+              99
+            ],
+            "reusedFrom": "death reaction"
+          },
+          "death": {
+            "row": 16,
+            "frames": 4,
+            "fps": 6,
+            "loop": false,
+            "indices": [
+              131,
+              139,
+              147,
+              155
+            ]
+          }
+        },
+        "north": {
+          "idle": {
+            "row": 0,
+            "frames": 2,
+            "fps": 5,
+            "loop": true,
+            "indices": [
+              4,
+              12
+            ]
+          },
+          "move": {
+            "row": 4,
+            "frames": 4,
+            "fps": 8,
+            "loop": true,
+            "indices": [
+              36,
+              44,
+              52,
+              60
+            ]
+          },
+          "attack": {
+            "row": 8,
+            "frames": 4,
+            "fps": 8,
+            "loop": false,
+            "indices": [
+              4,
+              68,
+              76,
+              4
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
+          },
+          "hurt": {
+            "row": 12,
+            "frames": 1,
+            "fps": 8,
+            "loop": false,
+            "indices": [
+              100
+            ],
+            "reusedFrom": "death reaction"
+          },
+          "death": {
+            "row": 16,
+            "frames": 4,
+            "fps": 6,
+            "loop": false,
+            "indices": [
+              132,
+              140,
+              148,
+              156
+            ]
+          }
+        },
+        "north-east": {
+          "idle": {
+            "row": 0,
+            "frames": 2,
+            "fps": 5,
+            "loop": true,
+            "indices": [
+              5,
+              13
+            ]
+          },
+          "move": {
+            "row": 4,
+            "frames": 4,
+            "fps": 8,
+            "loop": true,
+            "indices": [
+              37,
+              45,
+              53,
+              61
+            ]
+          },
+          "attack": {
+            "row": 8,
+            "frames": 4,
+            "fps": 8,
+            "loop": false,
+            "indices": [
+              5,
+              69,
+              77,
+              5
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
+          },
+          "hurt": {
+            "row": 12,
+            "frames": 1,
+            "fps": 8,
+            "loop": false,
+            "indices": [
+              101
+            ],
+            "reusedFrom": "death reaction"
+          },
+          "death": {
+            "row": 16,
+            "frames": 4,
+            "fps": 6,
+            "loop": false,
+            "indices": [
+              133,
+              141,
+              149,
+              157
+            ]
+          }
+        },
+        "east": {
+          "idle": {
+            "row": 0,
+            "frames": 2,
+            "fps": 5,
+            "loop": true,
+            "indices": [
+              6,
+              14
+            ]
+          },
+          "move": {
+            "row": 4,
+            "frames": 4,
+            "fps": 8,
+            "loop": true,
+            "indices": [
+              38,
+              46,
+              54,
+              62
+            ]
+          },
+          "attack": {
+            "row": 8,
+            "frames": 4,
+            "fps": 8,
+            "loop": false,
+            "indices": [
+              6,
+              70,
+              78,
+              6
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
+          },
+          "hurt": {
+            "row": 12,
+            "frames": 1,
+            "fps": 8,
+            "loop": false,
+            "indices": [
+              102
+            ],
+            "reusedFrom": "death reaction"
+          },
+          "death": {
+            "row": 16,
+            "frames": 4,
+            "fps": 6,
+            "loop": false,
+            "indices": [
+              134,
+              142,
+              150,
+              158
+            ]
+          }
+        },
+        "south-east": {
+          "idle": {
+            "row": 0,
+            "frames": 2,
+            "fps": 5,
+            "loop": true,
+            "indices": [
+              7,
+              15
+            ]
+          },
+          "move": {
+            "row": 4,
+            "frames": 4,
+            "fps": 8,
+            "loop": true,
+            "indices": [
+              39,
+              47,
+              55,
+              63
+            ]
+          },
+          "attack": {
+            "row": 8,
+            "frames": 4,
+            "fps": 8,
+            "loop": false,
+            "indices": [
+              7,
+              71,
+              79,
+              7
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
+          },
+          "hurt": {
+            "row": 12,
+            "frames": 1,
+            "fps": 8,
+            "loop": false,
+            "indices": [
+              103
+            ],
+            "reusedFrom": "death reaction"
+          },
+          "death": {
+            "row": 16,
+            "frames": 4,
+            "fps": 6,
+            "loop": false,
+            "indices": [
+              135,
+              143,
+              151,
+              159
+            ]
+          }
+        }
+      },
+      "attackImpactFrame": 2
     },
     "e-gui": {
       "image": "folklore-01/e-gui.png",
@@ -8024,14 +8072,16 @@
         },
         "attack": {
           "row": 8,
-          "frames": 3,
+          "frames": 4,
           "fps": 8,
           "loop": false,
           "indices": [
+            0,
             64,
             72,
-            80
-          ]
+            0
+          ],
+          "reusedFrom": "audited original attack + neutral recovery"
         },
         "hurt": {
           "row": 12,
@@ -8082,14 +8132,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
+              0,
               64,
               72,
-              80
-            ]
+              0
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -8139,14 +8191,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
+              1,
               65,
               73,
-              81
-            ]
+              1
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -8196,14 +8250,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
+              2,
               66,
               74,
-              82
-            ]
+              2
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -8253,14 +8309,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
+              3,
               67,
               75,
-              83
-            ]
+              3
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -8310,14 +8368,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
+              4,
               68,
               76,
-              84
-            ]
+              4
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -8367,14 +8427,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
+              5,
               69,
               77,
-              85
-            ]
+              5
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -8424,14 +8486,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
+              6,
               70,
               78,
-              86
-            ]
+              6
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -8481,14 +8545,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
+              7,
               71,
               79,
-              87
-            ]
+              7
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -8513,7 +8579,8 @@
             ]
           }
         }
-      }
+      },
+      "attackImpactFrame": 2
     },
     "gumiho": {
       "image": "folklore-01/gumiho.png",
@@ -8550,14 +8617,16 @@
         },
         "attack": {
           "row": 8,
-          "frames": 3,
+          "frames": 4,
           "fps": 8,
           "loop": false,
           "indices": [
             64,
             72,
-            80
-          ]
+            80,
+            0
+          ],
+          "reusedFrom": "audited original attack + neutral recovery"
         },
         "hurt": {
           "row": 12,
@@ -8608,14 +8677,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               64,
               72,
-              80
-            ]
+              80,
+              0
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -8665,14 +8736,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               65,
               73,
-              81
-            ]
+              81,
+              1
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -8722,14 +8795,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               66,
               74,
-              82
-            ]
+              82,
+              2
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -8779,14 +8854,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               67,
               75,
-              83
-            ]
+              83,
+              3
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -8836,14 +8913,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               68,
               76,
-              84
-            ]
+              84,
+              4
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -8893,14 +8972,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               69,
               77,
-              85
-            ]
+              85,
+              5
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -8950,14 +9031,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               70,
               78,
-              86
-            ]
+              86,
+              6
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -9007,14 +9090,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               71,
               79,
-              87
-            ]
+              87,
+              7
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -9039,7 +9124,8 @@
             ]
           }
         }
-      }
+      },
+      "attackImpactFrame": 2
     },
     "huldra": {
       "image": "folklore-01/huldra.png",
@@ -13302,14 +13388,16 @@
         },
         "attack": {
           "row": 8,
-          "frames": 3,
+          "frames": 4,
           "fps": 8,
           "loop": false,
           "indices": [
             64,
             72,
-            80
-          ]
+            80,
+            0
+          ],
+          "reusedFrom": "audited original attack + neutral recovery"
         },
         "hurt": {
           "row": 12,
@@ -13360,14 +13448,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               64,
               72,
-              80
-            ]
+              80,
+              0
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -13417,14 +13507,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               65,
               73,
-              81
-            ]
+              81,
+              1
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -13474,14 +13566,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               66,
               74,
-              82
-            ]
+              82,
+              2
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -13531,14 +13625,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               67,
               75,
-              83
-            ]
+              83,
+              3
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -13588,14 +13684,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               68,
               76,
-              84
-            ]
+              84,
+              4
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -13645,14 +13743,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               69,
               77,
-              85
-            ]
+              85,
+              5
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -13702,14 +13802,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               70,
               78,
-              86
-            ]
+              86,
+              6
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -13759,14 +13861,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               71,
               79,
-              87
-            ]
+              87,
+              7
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -13791,7 +13895,8 @@
             ]
           }
         }
-      }
+      },
+      "attackImpactFrame": 2
     },
     "nokken": {
       "image": "folklore-01/nokken.png",
@@ -13828,14 +13933,16 @@
         },
         "attack": {
           "row": 8,
-          "frames": 3,
+          "frames": 4,
           "fps": 8,
           "loop": false,
           "indices": [
             64,
             72,
-            80
-          ]
+            80,
+            0
+          ],
+          "reusedFrom": "audited original attack + neutral recovery"
         },
         "hurt": {
           "row": 12,
@@ -13886,14 +13993,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               64,
               72,
-              80
-            ]
+              80,
+              0
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -13943,14 +14052,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               65,
               73,
-              81
-            ]
+              81,
+              1
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -14000,14 +14111,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               66,
               74,
-              82
-            ]
+              82,
+              2
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -14057,14 +14170,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               67,
               75,
-              83
-            ]
+              83,
+              3
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -14114,14 +14229,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               68,
               76,
-              84
-            ]
+              84,
+              4
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -14171,14 +14288,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               69,
               77,
-              85
-            ]
+              85,
+              5
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -14228,14 +14347,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               70,
               78,
-              86
-            ]
+              86,
+              6
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -14285,14 +14406,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               71,
               79,
-              87
-            ]
+              87,
+              7
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -14317,7 +14440,8 @@
             ]
           }
         }
-      }
+      },
+      "attackImpactFrame": 2
     },
     "nu-gui": {
       "image": "folklore-01/nu-gui.png",
@@ -15950,14 +16074,16 @@
         },
         "attack": {
           "row": 8,
-          "frames": 3,
+          "frames": 4,
           "fps": 8,
           "loop": false,
           "indices": [
             64,
             72,
-            80
-          ]
+            80,
+            0
+          ],
+          "reusedFrom": "audited original attack + neutral recovery"
         },
         "hurt": {
           "row": 12,
@@ -16008,14 +16134,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               64,
               72,
-              80
-            ]
+              80,
+              0
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -16065,14 +16193,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               65,
               73,
-              81
-            ]
+              81,
+              1
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -16122,14 +16252,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               66,
               74,
-              82
-            ]
+              82,
+              2
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -16179,14 +16311,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               67,
               75,
-              83
-            ]
+              83,
+              3
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -16236,14 +16370,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               68,
               76,
-              84
-            ]
+              84,
+              4
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -16293,14 +16429,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               69,
               77,
-              85
-            ]
+              85,
+              5
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -16350,14 +16488,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               70,
               78,
-              86
-            ]
+              86,
+              6
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -16407,14 +16547,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               71,
               79,
-              87
-            ]
+              87,
+              7
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -16439,7 +16581,8 @@
             ]
           }
         }
-      }
+      },
+      "attackImpactFrame": 1
     },
     "sending": {
       "image": "folklore-01/sending.png",
@@ -17546,14 +17689,16 @@
         },
         "attack": {
           "row": 8,
-          "frames": 3,
+          "frames": 4,
           "fps": 8,
           "loop": false,
           "indices": [
             64,
             72,
-            80
-          ]
+            80,
+            0
+          ],
+          "reusedFrom": "audited original attack + neutral recovery"
         },
         "hurt": {
           "row": 12,
@@ -17604,14 +17749,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               64,
               72,
-              80
-            ]
+              80,
+              0
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -17661,14 +17808,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               65,
               73,
-              81
-            ]
+              81,
+              1
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -17718,14 +17867,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               66,
               74,
-              82
-            ]
+              82,
+              2
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -17775,14 +17926,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               67,
               75,
-              83
-            ]
+              83,
+              3
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -17832,14 +17985,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               68,
               76,
-              84
-            ]
+              84,
+              4
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -17889,14 +18044,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               69,
               77,
-              85
-            ]
+              85,
+              5
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -17946,14 +18103,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               70,
               78,
-              86
-            ]
+              86,
+              6
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -18003,14 +18162,16 @@
           },
           "attack": {
             "row": 8,
-            "frames": 3,
+            "frames": 4,
             "fps": 8,
             "loop": false,
             "indices": [
               71,
               79,
-              87
-            ]
+              87,
+              7
+            ],
+            "reusedFrom": "audited original attack + neutral recovery"
           },
           "hurt": {
             "row": 12,
@@ -18035,7 +18196,8 @@
             ]
           }
         }
-      }
+      },
+      "attackImpactFrame": 2
     },
     "ubume": {
       "image": "folklore-01/ubume.png",

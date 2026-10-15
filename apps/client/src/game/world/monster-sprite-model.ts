@@ -7,6 +7,8 @@ export interface MonsterSheet {
  animations:Record<MonsterAction,MonsterClip>;
  directions?:Record<Facing,Record<MonsterAction,MonsterClip>>;
  scale?:number;
+ /** Zero-based visual impact pose, independent of recovery length. */
+ attackImpactFrame?:number;
 }
 export const monsterFacing=(value:string):Facing=>(FACINGS as readonly string[]).includes(value)?value as Facing:'east';
 export const legacyMonsterFlip=(value:string)=>value==='west'||value==='south-west'||value==='north-west';

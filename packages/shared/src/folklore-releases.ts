@@ -371,7 +371,7 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "leash": 5,
     "attackRange": 1.8,
     "attackDelayMs": 1800,
-    "attackWindupMs": 125,
+    "attackWindupMs": 250,
     "exp": 1560,
     "drops": [
       {
@@ -488,7 +488,7 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "leash": 5,
     "attackRange": 1.3,
     "attackDelayMs": 1800,
-    "attackWindupMs": 125,
+    "attackWindupMs": 250,
     "exp": 1080,
     "drops": [
       {
@@ -566,7 +566,7 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "leash": 5,
     "attackRange": 1.3,
     "attackDelayMs": 1800,
-    "attackWindupMs": 125,
+    "attackWindupMs": 250,
     "exp": 1320,
     "drops": [
       {
@@ -1073,7 +1073,7 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "leash": 5,
     "attackRange": 1.3,
     "attackDelayMs": 1800,
-    "attackWindupMs": 125,
+    "attackWindupMs": 250,
     "exp": 1536,
     "drops": [
       {
@@ -1346,7 +1346,7 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "leash": 5,
     "attackRange": 1.3,
     "attackDelayMs": 1800,
-    "attackWindupMs": 125,
+    "attackWindupMs": 250,
     "exp": 1560,
     "drops": [
       {
@@ -1424,7 +1424,7 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "leash": 5,
     "attackRange": 1.3,
     "attackDelayMs": 1800,
-    "attackWindupMs": 125,
+    "attackWindupMs": 250,
     "exp": 1680,
     "drops": [
       {
@@ -1502,7 +1502,7 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "leash": 5,
     "attackRange": 1.3,
     "attackDelayMs": 1800,
-    "attackWindupMs": 125,
+    "attackWindupMs": 250,
     "exp": 1488,
     "drops": [
       {

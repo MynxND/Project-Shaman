@@ -635,3 +635,8 @@ User authorized ImageGen for40 folklore enemy species after PixelLab0. Eight aut
 ## Ireland enemy country correction — user2026-10-15
 
 User confirmed Iceland was a typo for Ireland. Reassign the same six requested enemy IDs/art to Ireland and reuse existing authored camps: Golden Spiritwood Afturganga/Sending, Stone Oath Moor Draugur/Uppvakningur, Willow Wake Village Utburdur/Tilberi. Two additional enemies per map, retain every original resident/NPC/portal/geometry. Current total34 live species across20 maps; only Korea6 unbound. No image generation or new country/map. This is user-selected fictional game placement, not a folkloric-origin assertion. Supersedes earlier Iceland-unbound status; exact original generation prompts remain provenance. See design/monsters/folklore-01/README.md.
+
+
+## Folklore animation audit02 — 2026-10-15
+
+Detailed chronology inspection covers40 species ×8 views ×move/attack/death (960clips). Earlier coarse visual review did not establish correct gait:22 terrestrial cycles still need leg/support art; Huli Jing/Mare need death transition art. Nine attack sequences now use existing neutral/windup/strike/recovery indices; explicit impact pose drives server windup rather than clip length. Preview adds report40, before/after, slow motion, correct pause/replay and readable mobile2-column views. Three ImageGen walk candidates inspected but held out of runtime; no production PNG changed. Existing map/entity/portal layout stays unchanged. Tests/typecheck/build and desktop/mobile preview checks passed; no final artistic approval claimed. Full evidence and remaining art: design/monsters/folklore-01/audit-02/README.md.
