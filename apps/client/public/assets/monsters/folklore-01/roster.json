@@ -1,7 +1,7 @@
 {
   "version": 1,
   "scope": "user-requested40 enemy species; not playable character classes",
-  "countryNote": "Iceland supplied by user, kept distinct from Ireland; Korea/Iceland map binding remains unassigned until an eligible map exists or user chooses binding. No country is silently renamed.",
+  "countryNote": "User correction2026-10-15: Iceland was a typo; this enemy batch belongs to existing Ireland maps. Names/art retained as user-selected fictional enemies, not an assertion of Irish folklore provenance. Only Korea remains unbound.",
   "provider": "ImageGen user-authorized exception2026-10-15, PixelLab0",
   "directions": [
     "south",
@@ -438,104 +438,116 @@
     },
     {
       "id": "draugur",
-      "nation": "iceland",
+      "nation": "ireland",
       "name": {
         "th": "ดรอยกูร์",
         "en": "Draugur"
       },
       "level": 62,
-      "mapIds": [],
+      "mapIds": [
+        "stone-oath-moor"
+      ],
       "design": "bulky adult revenant with frost-gray skin, worn wool tunic, old rusted iron armor fragments, seaweed-dark hair, no gore or real runes",
       "attack": "heavy fist slam",
       "death": "stiff knees buckle and revenant collapses into cold dust",
       "artStatus": "queued",
-      "live": false,
-      "mapStatus": "unbound: no playable map for supplied country",
+      "live": true,
+      "mapStatus": "bound to existing Ireland authored camp",
       "scale": 0.5
     },
     {
       "id": "afturganga",
-      "nation": "iceland",
+      "nation": "ireland",
       "name": {
         "th": "อัฟตูร์กังกา",
         "en": "Afturganga"
       },
       "level": 58,
-      "mapIds": [],
+      "mapIds": [
+        "golden-spiritwood"
+      ],
       "design": "adult returning spectral wanderer, worn fully covering charcoal wool cloak, pale gaunt face, weathered rope belt",
       "attack": "ghostly reaching swipe",
       "death": "cloak drops and spirit evaporates",
       "artStatus": "queued",
-      "live": false,
-      "mapStatus": "unbound: no playable map for supplied country",
+      "live": true,
+      "mapStatus": "bound to existing Ireland authored camp",
       "scale": 0.5
     },
     {
       "id": "utburdur",
-      "nation": "iceland",
+      "nation": "ireland",
       "name": {
         "th": "อูตบูร์ดูร์",
         "en": "Útburður"
       },
       "level": 60,
-      "mapIds": [],
+      "mapIds": [
+        "willow-wake-village"
+      ],
       "design": "small empty bundled wool shroud animated by an ivory spirit wisp, NO child body or injured infant, eerie folklore apparition",
       "attack": "shroud flutters forward as a pale gust",
       "death": "empty cloth settles and wisp extinguishes",
       "artStatus": "queued",
-      "live": false,
-      "mapStatus": "unbound: no playable map for supplied country",
+      "live": true,
+      "mapStatus": "bound to existing Ireland authored camp",
       "scale": 0.5
     },
     {
       "id": "uppvakningur",
-      "nation": "iceland",
+      "nation": "ireland",
       "name": {
         "th": "อุปป์วักนิงกูร์",
         "en": "Uppvakningur"
       },
       "level": 68,
-      "mapIds": [],
+      "mapIds": [
+        "stone-oath-moor"
+      ],
       "design": "adult magically awakened revenant, gray leathery skin, tattered fully covering dark burial coat, weathered binding cords with no letters",
       "attack": "jerky double-arm thrust",
       "death": "bindings slacken, body sinks into dust",
       "artStatus": "queued",
-      "live": false,
-      "mapStatus": "unbound: no playable map for supplied country",
+      "live": true,
+      "mapStatus": "bound to existing Ireland authored camp",
       "scale": 0.5
     },
     {
       "id": "sending",
-      "nation": "iceland",
+      "nation": "ireland",
       "name": {
         "th": "เซนดิง",
         "en": "Sending"
       },
       "level": 70,
-      "mapIds": [],
+      "mapIds": [
+        "golden-spiritwood"
+      ],
       "design": "sent curse spirit shaped as an adult shadow humanoid in ragged black wool, knotted dark crimson cords, ivory empty mask without writing",
       "attack": "thin shadow-arm stab",
       "death": "cords loosen and shadow breaks into wisps",
       "artStatus": "queued",
-      "live": false,
-      "mapStatus": "unbound: no playable map for supplied country",
+      "live": true,
+      "mapStatus": "bound to existing Ireland authored camp",
       "scale": 0.5
     },
     {
       "id": "tilberi",
-      "nation": "iceland",
+      "nation": "ireland",
       "name": {
         "th": "ทิลเบริ",
         "en": "Tilberi"
       },
       "level": 64,
-      "mapIds": [],
+      "mapIds": [
+        "willow-wake-village"
+      ],
       "design": "small uncanny gray wool-and-bone spindle-shaped witch familiar, coiled grub-like body and blunt ribbed segments, two dim jade eyes, no gore",
       "attack": "compact coiling spring lunge",
       "death": "coil relaxes and crumbles into wool dust",
       "artStatus": "queued",
-      "live": false,
-      "mapStatus": "unbound: no playable map for supplied country",
+      "live": true,
+      "mapStatus": "bound to existing Ireland authored camp",
       "scale": 0.5
     },
     {

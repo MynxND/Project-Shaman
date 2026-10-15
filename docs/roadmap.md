@@ -660,3 +660,8 @@ Russia3 now live: frost-pine, taiga-blood-trail, winter-seal-kremlin;9NPCs/27res
 ## Folklore enemy batch — 2026-10-15
 
 User authorized ImageGen for40 folklore enemy species after PixelLab0. Eight authored views with measured move/attack/death clips;40 registered,28 bound through44 additions to17 existing authored camps/maps, Korea6/Iceland6 unbound (no live national maps; Iceland not Ireland). Preserve original residents/NPCs/portals/collision. Map-scoped texture lifecycle, phase-preserving directional playback, server octant facing and full death playback; legacy art/behavior retained. Actual frame counts and provisional stats/lore remain explicit. Desktop/mobile preview and live Paddy inspected;17 authoritative rooms plus Phi Pop damage/death, shared regressions, typecheck/build pass. User visual approval pending. Evidence: docs/design/monsters/folklore-01/README.md.
+
+
+## Ireland enemy country correction — user2026-10-15
+
+User confirmed Iceland was a typo for Ireland. Reassign the same six requested enemy IDs/art to Ireland and reuse existing authored camps: Golden Spiritwood Afturganga/Sending, Stone Oath Moor Draugur/Uppvakningur, Willow Wake Village Utburdur/Tilberi. Two additional enemies per map, retain every original resident/NPC/portal/geometry. Current total34 live species across20 maps; only Korea6 unbound. No image generation or new country/map. This is user-selected fictional game placement, not a folkloric-origin assertion. Supersedes earlier Iceland-unbound status; exact original generation prompts remain provenance. See design/monsters/folklore-01/README.md.

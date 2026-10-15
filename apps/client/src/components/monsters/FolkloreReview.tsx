@@ -4,7 +4,7 @@ import roster from'../../../public/assets/monsters/folklore-01/roster.json';
 import {monsterClip,monsterFrames,type MonsterSheet,type MonsterAction}from'../../game/world/monster-sprite-model';
 import type{Facing}from'@shaman/shared';
 import './folklore-review.css';
-const names:Record<string,string>={thailand:'ไทย',japan:'ญี่ปุ่น',korea:'เกาหลี',russia:'รัสเซีย',iceland:'ไอซ์แลนด์',china:'จีน',norway:'นอร์เวย์'};
+const names:Record<string,string>={thailand:'ไทย',japan:'ญี่ปุ่น',korea:'เกาหลี',russia:'รัสเซีย',ireland:'ไอร์แลนด์',china:'จีน',norway:'นอร์เวย์'};
 const actions:Record<MonsterAction,string>={idle:'ยืน',move:'เคลื่อนที่',attack:'โจมตี',hurt:'ถูกโจมตี',death:'ตาย'};
 function Sheet({id,sheet,action}:{id:string;sheet:MonsterSheet;action:MonsterAction}){
  const ref=useRef<HTMLCanvasElement>(null),[playing,setPlaying]=useState(true),[manual,setManual]=useState(0),[run,setRun]=useState(0),[ready,setReady]=useState(false);

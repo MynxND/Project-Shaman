@@ -1717,6 +1717,42 @@ export const FOLKLORE_BINDINGS:Readonly<Record<string,{kind:string;campIndex:num
       "count": 1
     }
   ],
+  "stone-oath-moor": [
+    {
+      "kind": "draugur",
+      "campIndex": 1,
+      "count": 1
+    },
+    {
+      "kind": "uppvakningur",
+      "campIndex": 2,
+      "count": 1
+    }
+  ],
+  "golden-spiritwood": [
+    {
+      "kind": "afturganga",
+      "campIndex": 0,
+      "count": 1
+    },
+    {
+      "kind": "sending",
+      "campIndex": 2,
+      "count": 1
+    }
+  ],
+  "willow-wake-village": [
+    {
+      "kind": "utburdur",
+      "campIndex": 0,
+      "count": 1
+    },
+    {
+      "kind": "tilberi",
+      "campIndex": 1,
+      "count": 1
+    }
+  ],
   "mist-bamboo": [
     {
       "kind": "jiangshi",

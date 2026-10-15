@@ -4,7 +4,7 @@ User authorized ImageGen for this40-species batch after PixelLab reported0 gener
 
 ## Runtime and placement
 
-40 native transparent atlases have eight authored views and explicit idle/move/attack/hurt/death clips.28 species populate44 additions across17 existing live maps (Thailand, Japan, Russia, China, Norway). All original camp entries, terrain, NPCs, collision and portals remain. Korea6 and Iceland6 are registered and previewable but unbound: neither has a live map in this registry. Iceland is not silently renamed Ireland. Country/map lore, levels and formula-based statistics are provisional gameplay proposals.
+40 native transparent atlases have eight authored views and explicit idle/move/attack/hurt/death clips.34 species populate50 additions across20 existing live maps (Thailand, Japan, Russia, China, Norway, Ireland). All original camp entries, terrain, NPCs, collision and portals remain. Korea6 remain registered/previewable but unbound because no live Korean map exists. User corrected Iceland to Ireland: the six selected enemies now occupy the existing three Irish maps, two per map. Original names/art/prompts remain generation provenance; this fictional game placement does not claim Irish folkloric origin. Country/map lore, levels and formula-based statistics are provisional gameplay proposals.
 
 `folklore-releases.ts` is generated from the separately recorded maintainer runtime review. `review.json` does **not** grant user visual approval. Existing monsters keep their original east/west art and behavior; only new definitions opt into eight-way facing. Server movement and attacks own facing; the client preserves movement phase when switching views, holds one-shot actions and waits for the complete death clip before fading. Textures load per map and are removed on scene shutdown.
 
@@ -31,4 +31,8 @@ node tools/monsters/folklore/test.mjs
 node tools/monsters/folklore/network.mjs
 ```
 
-Python requires Pillow. QA checks40 source hashes, transparent atlas dimensions, every action/view index and source-edge warnings. Tests cover unchanged legacy artwork, valid/walkable authored camps, all eight short-arrival/attack directions and rear hit geometry. The isolated local server test joins all17 rooms, checks actual residents and walkable spawns, then attacks/kills Phi Pop through authoritative gameplay. Shared regression suite, workspace typecheck and production build are required. Browser preview inspection is separate from server tests; no claim of physical-device performance or final user approval.
+Python requires Pillow. QA checks40 source hashes, transparent atlas dimensions, every action/view index and source-edge warnings. Tests cover unchanged legacy artwork, valid/walkable authored camps, all eight short-arrival/attack directions and rear hit geometry. The isolated local server test joins all20 rooms, checks actual residents and walkable spawns, then attacks/kills Phi Pop through authoritative gameplay. Shared regression suite, workspace typecheck and production build are required. Browser preview inspection is separate from server tests; no claim of physical-device performance or final user approval.
+
+## User country correction
+
+User confirmed **Ireland**, not Iceland. Golden Spiritwood receives Afturganga/camp0 and Sending/camp2; Stone Oath Moor receives Draugur/camp1 and Uppvakningur/camp2; Willow Wake Village receives Utburdur/camp0 and Tilberi/camp1. One additional enemy each, retaining all original residents and geometry. Existing eight-direction artwork is reused without generation.

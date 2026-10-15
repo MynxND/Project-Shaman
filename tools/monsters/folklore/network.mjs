@@ -24,5 +24,5 @@ try{
  await wait(()=>t.s.combat.some(e=>e.type==='death'&&e.target?.id===targetId),'folklore death',30000);t.room.send('attack:stop',{});
  assert(t.s.combat.some(e=>e.type==='damage'&&e.target?.id===targetId));
  await writeFile('docs/design/monsters/folklore-01/network.json',JSON.stringify({maps:results,serverDeathAndDamage:true},null,2));
- console.log('PASS folklore damage/death and all17 authoritative rooms');
+ console.log('PASS folklore damage/death and all bound authoritative rooms');
 }finally{await Promise.all(rooms.map(r=>r.leave().catch(()=>{})));server.kill();}
