@@ -1,0 +1,74 @@
+{
+  "source": "Actual local Phaser preview, browser tab /maps/indonesia",
+  "viewports": [
+    [
+      1280,
+      720
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      844,
+      390
+    ]
+  ],
+  "horizontalDocumentOverflow": false,
+  "canvasCountAfterGallerySelection": 1,
+  "returnedOriginalAshwind": {
+    "ready": true,
+    "position": [
+      4,
+      54
+    ],
+    "wetPixels": 24665
+  },
+  "maps": {
+    "ember-caldera": {
+      "ready": true,
+      "tourOneWayPasses": 3,
+      "wetPixels": 171359,
+      "portraitLandscapePosition": [
+        44,
+        22
+      ],
+      "screens": [
+        "overview.png",
+        "sanctum.png",
+        "portrait.png",
+        "landscape.png"
+      ]
+    },
+    "obsidian-estuary": {
+      "ready": true,
+      "tourOneWayPasses": 3,
+      "wetPixels": 569962,
+      "manualWalk": {
+        "from": [
+          54,
+          62
+        ],
+        "to": [
+          51.9,
+          62
+        ]
+      },
+      "portraitLandscapePosition": [
+        51.9,
+        62
+      ],
+      "screens": [
+        "overview.png",
+        "harbour.png",
+        "portrait.png",
+        "landscape.png"
+      ]
+    }
+  },
+  "limitations": [
+    "Local review selection is not gameplay travel",
+    "Physical-device touch/performance not certified",
+    "Human visual approval remains open"
+  ]
+}

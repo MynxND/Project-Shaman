@@ -24,3 +24,5 @@ Current implementation: China kit01 replaces ground/trees/low shrubs/rock/seal m
 China third-map variant2026-10-15: violet-war-city uses original ruined Chinese palace/gate/houses/walls, ash/limestone and purple mutation grove. User-approved theme; specific name/history provisional. Preview only, existing two live China maps retained.
 
 2026-10-15 priority per user: choose nations with actual character outfits before other planned regions. Audit in character-nation-priority.json. Indonesia ashwind-volcano first (one isolated volcanic foothill preview); Japan/Norway next eligible. Do not treat a skill catalogue alone or a detailed draft as blanket character art approval.
+
+User2026-10-15 country batches:3 maps before moving to the next eligible nation, with different authored compositions inside one coherent regional art kit. Indonesia now3 local previews. Preserve existing extra maps; no automatic live adoption or deletion to match the count.

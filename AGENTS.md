@@ -40,3 +40,6 @@ Before any skill, icon, combat presentation or VFX task also read SHAMAN_WORLD_A
 
 ## Git delivery preference — user2026-10-15
 After major authorized changes pass relevant checks, commit and push to the configured remote. Inspect and separate unrelated pending work; do not blanket-stage the workspace or force-push. Report the commit and actual push outcome.
+
+## Country map batch preference — user2026-10-15
+Complete each new eligible-country map batch to3 before moving to the next country. Preserve existing extra maps. Keep previews and live adoption distinct; current Indonesia batch is3 previews, not3 server rooms.

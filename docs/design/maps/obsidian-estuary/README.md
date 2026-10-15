@@ -1,0 +1,3 @@
+# obsidian-estuary — Indonesian preview
+
+Open http://localhost:3000/maps/obsidian-estuary or select this map in /maps/indonesia. One of3 local Indonesian maps; see ../indonesia-three/README.md for scope, shared art/provenance, checks and limitations. layout.md was written before placement and records required IDs, water/terrain, entrance connectivity and corrected failed candidates. map.json/plan.json canonical; validation.json technical results; screens/ actual browser evidence. No live room/portal/NPC/monster integration, true crater elevation or enterable interiors. Original regional art reused with0 new generations; source PNG/alpha unchanged.

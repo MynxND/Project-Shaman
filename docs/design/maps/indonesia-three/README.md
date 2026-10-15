@@ -1,0 +1,15 @@
+# Indonesia — three-map review /2026-10-15
+
+User requests3 maps per eligible country. Gallery http://localhost:3000/maps/indonesia includes original ashwind-volcano and two additional independent authored layouts. Direct /maps/ember-caldera and /maps/obsidian-estuary initialize the corresponding gallery selection. Explicit selection resets a local review actor and destroys old runtime; it is not a gameplay portal. Resize preserves current position/map.
+
+1. ภูเขาไฟเถ้าลม: existing90×74 foothill/ash landscape,50 objects,6 required/9 destinations,4 fumaroles; original geometry retained.
+2. ปล่องพิธีอัคคี:96×76,35 objects,6 required/9 destinations; mineral lake circuit, ritual north shore, west threshold and southeast spring. Main110.912units/27.728seconds one way.
+3. ปากน้ำออบซิเดียน:90×80,52 objects,6 required/9 destinations; broad eastern sea, river/stone ford, western workshop grove, southern harbour/quay. Main131.417units/32.854seconds one way includes the deliberate ford overlook spur.
+
+Source briefs, explicit failed candidates/corrections, canonical/client map+plan and validation.json live in each map directory.0 new artwork/generation/GPU jobs; original ashwind-01 atlas/prompt/PNG/alpha retained unchanged. Indigenous-looking architecture is fictional game art, not verified real-world sacred sites. No new skills or character sprites. Nearest native crops and painted-pixel quilting reused; WaterLayer shoreline/animation and localized fog separate from wet/footprint collision. Ember has4 vent sources/ash corridors; coastal estuary has0 vents/ash sites. Flat logical shore/court worlds: no crater descent/elevation/interior/ship claim.
+
+Scope: all3 local previews, no new MAPS/room/portal/NPC/monsters/rewards. Old8 live maps and30-node planning atlas retained. Third estuary is additional proposed geography outside original WORLD-30, pending future atlas/live adoption decision. Per-country3 preference supersedes earlier two-map allocations for new batches, while existing extra maps are preserved. Japan/Norway remain future batches.
+
+Checks: node tools/map/build-indonesia-three.mjs; node tools/map/test-indonesia-three.mjs; node tools/map/test-ashwind-volcano.mjs. New main and every side graph edge shared-movement round trips, full blocking-footprint wet support, all18 destinations BFS,12 required IDs/native art bindings and client/canonical equality pass. Technical tests are not human art approval. Actual desktop/portrait/landscape screenshots are stored per map; physical touch/performance not certified. Typecheck/build plus old map/atlas regressions run before commit.
+
+Actual gallery QA: both new maps complete3 one-way passes each (at least one full round trip); original Ashwind returns ready at4,54/24,665 wet pixels. Exactly one canvas after explicit map switches; desktop and both phone sizes inspected with no horizontal document overflow and frozen review position retained on resize. Evidence browser-review.json and per-map screens. No new generation, paid assets, GPU job, character publication or gameplay grants.
