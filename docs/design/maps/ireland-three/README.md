@@ -29,3 +29,7 @@ Desktop1280×900 label-off overviews and landmark/player cameras inspected for a
 ## Scope remaining
 
 USER visual review pending before live adoption. Local focus selection is not a working warp. Encounter/service clearings are proposals; no NPC/monster instance, combat reward or server room. No rain simulation despite provisional village name, no playable interiors/elevation/climbable dolmen. Cosmetic bridge rails currently share the flat deck model rather than separate elevated collision. This is a review candidate, not final art approval.
+
+## Live adoption update — 2026-10-15
+
+User subsequently authorized adoption. All three maps are live; earlier preview-only counts/scope above are historical. See [live verification](live01/README.md). Atlas35/21live/14planned.

@@ -82,3 +82,7 @@ Required: canonical/shared equality except additive roads and gameplay, real ser
 | previous-gate | edge gate to spirit-timber-harbor | {'x': 0, 'y': 64, 'w': 2, 'h': 2} | arrival {'x': 4, 'y': 65}; reciprocal / live |
 
 Failed placements: none. Water material checked at every half-unit cell against original review; exact wet/dry membership retained. Trees/buildings/blockers unchanged, NPC and arrival safety added separately. See ../norway-three/live01/geometry.json and browser.json.
+
+
+## Live adoption brief /2026-10-15
+USER authorizes Ireland3 into real game before Russia previews. Additive chain: Aurora Pass east(90,19) ↔ Golden Spiritwood west(0,57); Forest east(88,20) ↔ Stone Oath Moor west(0,59); Moor east(94,21) ↔ Willow Village west(0,47). Arrivals4units inside,6×6safe areas,2×2triggers. Keep all reviewed objects/blockers/water and original Norwegian gates/NPCs/camps. Only short dry edge roads added. Each Irish map3 NPCs/3 camps×3residents with explicit original IDs/provisional40–55,50–65,45–60balance; owned sprites reused. No new art/combat/VFX. All main/side paths and service fronts must remain reachable; water membership unchanged. Validate real signed-ticket travel both directions, no bounce, NPC heal/talk, observer synchronization, combat/EXP/profile, desktop/mobile. Prior preview status historical; no Russia live adoption yet.

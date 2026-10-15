@@ -564,3 +564,8 @@ Norway3 now register in authoritative MAPS via norway.ts; snow-norway-link adds 
 ## Ireland three-map preview — 2026-10-15
 
 Ireland local gallery /maps/ireland adds independent authored JSON/Phaser review scenes with shared native terrain/water/mist/movement and scoped regional ecology crops. No MAPS/rooms/atlas or gameplay mutations;18live/34atlas retained.10 required IDs/22 local destinations and all main+side walks pass. See design/maps/ireland-three/README.md.
+
+
+## Ireland live adoption — 2026-10-15
+
+Ireland live adoption uses additive Aurora boundary wrapper, shared IRELAND_MAPS/resident definitions and scoped IrelandRegion renderer; world atlas35nodes/21live. Existing authoritative travel/combat/service protocols are reused. Evidence: design/maps/ireland-three/live01/README.md.

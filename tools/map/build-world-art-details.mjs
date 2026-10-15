@@ -4,6 +4,9 @@ import {MONSTERS} from '../../packages/shared/dist/combat.js';
 const atlas=JSON.parse(await readFile('docs/design/maps/world-30/atlas.json'));
 const proposed=JSON.parse(await readFile('docs/design/maps/leveling-20-proposal.json')).maps;
 const extra={
+ 'golden-spiritwood':{climate:'ป่าใบผลัด / ลำธารหมอก',landmark:'ลานหินรากไม้และสะพานหิน'},
+ 'stone-oath-moor':{climate:'ทุ่งหินปูน / เฮเทอร์',landmark:'ดอลเมนคำสัตย์หิน'},
+ 'willow-wake-village':{climate:'หมู่บ้านป่าใบผลัด / บึงวิลโลว์',landmark:'บ้านมุงหลังคาและสวนกำแพงหิน'},
  'storm-fjord':{climate:'ชายฝั่งหนาวชื้น / ป่าสน',landmark:'ประภาคารร้าวเหนืออ่าวคราม'},
  'spirit-timber-harbor':{climate:'ท่าเรือหนาว / ป่าสนและเบิร์ช',landmark:'เรือนไม้พิธีหลังคาสูงเหนือท่าเรือ'},
  'aurora-pass':{climate:'ทุ่งเฮเทอร์หนาว / ทะเลสาบ',landmark:'ลานผนึกและเรือนไม้ช่องเขา (ยังไม่มีแสงเหนือหรือขั้นเขา)'},

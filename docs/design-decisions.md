@@ -610,3 +610,8 @@ USER authorizes Norway3 live adoption with reciprocal edge travel: Snowbound nor
 ## Ireland three-map preview — 2026-10-15
 
 Completed existing-outfit priority countries; USER now asks next roadmap nation. Ireland environment-only batch uses2 existing planned IDs plus provisional willow-wake-village, without claiming Irish player outfits.69/35/47 authored objects,22 destinations,10 required IDs; explicit waylight/approach/camera corrections recorded. No live adoption/atlas expansion. See design/maps/ireland-three/README.md.
+
+
+## Ireland live adoption — 2026-10-15
+
+User authorized Ireland3 live adoption. Connect Aurora→Golden Spiritwood→Stone Oath Moor→Willow Wake Village through reciprocal edge gates with dry safe arrivals,3NPCs/9residents each. Preserve old systems. Server six-trip/services/combat/EXP/persistence/observer QA and actual browser boundary input passed. See design/maps/ireland-three/live01/README.md.

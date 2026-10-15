@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "targetMaps": 34,
+  "targetMaps": 35,
   "geographyStatus": "proposed fictional spirit-route network; not approved lore or real Earth geography",
   "sources": [
     "docs/design/skill-system/classification.json",
@@ -142,7 +142,8 @@
       ],
       "maps": [
         "golden-spiritwood",
-        "stone-oath-moor"
+        "stone-oath-moor",
+        "willow-wake-village"
       ]
     },
     {
@@ -511,6 +512,19 @@
       "phase": 3
     },
     {
+      "id": "willow-wake-village",
+      "name": "หมู่บ้านวิลโลว์ม่านฝน",
+      "nation": "ireland",
+      "levels": [
+        45,
+        60
+      ],
+      "x": 330,
+      "y": 292,
+      "biome": "ป่าผลัดใบ / ทุ่งหิน",
+      "phase": 3
+    },
+    {
       "id": "frost-pine",
       "name": "ป่าสนขาว",
       "nation": "russia",
@@ -733,7 +747,12 @@
     {
       "from": "golden-spiritwood",
       "to": "stone-oath-moor",
-      "status": "planned"
+      "status": "live"
+    },
+    {
+      "from": "stone-oath-moor",
+      "to": "willow-wake-village",
+      "status": "live"
     },
     {
       "from": "frost-pine",
@@ -782,11 +801,6 @@
     },
     {
       "from": "mountain-spirit-sanctuary",
-      "to": "golden-spiritwood",
-      "status": "planned"
-    },
-    {
-      "from": "mountain-spirit-sanctuary",
       "to": "frost-pine",
       "status": "planned"
     },
@@ -808,6 +822,11 @@
     {
       "from": "snowbound-torii",
       "to": "storm-fjord",
+      "status": "live"
+    },
+    {
+      "from": "aurora-pass",
+      "to": "golden-spiritwood",
       "status": "live"
     },
     {

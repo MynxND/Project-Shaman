@@ -1,0 +1,67 @@
+{
+  "travel": [
+    {
+      "from": "aurora-pass",
+      "to": "golden-spiritwood",
+      "arrival": {
+        "x": 4,
+        "y": 58
+      },
+      "noBounce": true
+    },
+    {
+      "from": "golden-spiritwood",
+      "to": "stone-oath-moor",
+      "arrival": {
+        "x": 4,
+        "y": 60
+      },
+      "noBounce": true
+    },
+    {
+      "from": "stone-oath-moor",
+      "to": "willow-wake-village",
+      "arrival": {
+        "x": 4,
+        "y": 48
+      },
+      "noBounce": true
+    },
+    {
+      "from": "willow-wake-village",
+      "to": "stone-oath-moor",
+      "arrival": {
+        "x": 92,
+        "y": 22
+      },
+      "noBounce": true
+    },
+    {
+      "from": "stone-oath-moor",
+      "to": "golden-spiritwood",
+      "arrival": {
+        "x": 86,
+        "y": 21
+      },
+      "noBounce": true
+    },
+    {
+      "from": "golden-spiritwood",
+      "to": "aurora-pass",
+      "arrival": {
+        "x": 88,
+        "y": 20
+      },
+      "noBounce": true
+    }
+  ],
+  "allSixBoundaryTrips": true,
+  "npcsTalkAndHeal": true,
+  "residentsPerMap": 9,
+  "observerSync": true,
+  "reviewedRoutes": true,
+  "skillDamage": true,
+  "basicKill": true,
+  "exp": true,
+  "profilePreserved": true
+}

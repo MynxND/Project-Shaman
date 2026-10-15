@@ -640,3 +640,8 @@ Norway3 are now live with9NPCs/27residents and reciprocal boundary chain from Sn
 ## Ireland three-map preview — 2026-10-15
 
 Ireland3 local previews delivered: golden-spiritwood, stone-oath-moor, willow-wake-village. Regional grounds/trees/buildings, iconic dolmen, animated river/ponds and localized mist. Build/typecheck/shared/new-layout/wet-blocking/ecology/source and Norway/Japan/Indonesia/atlas regressions pass; desktop1280×900 and mobile390×844/844×390 inspected. Existing18live/34atlas unchanged; NPC/monster/portal adoption separate. See design/maps/ireland-three/README.md.
+
+
+## Ireland live adoption — 2026-10-15
+
+Ireland3 now live, linked from Aurora Pass with reciprocal boundary travel,9NPCs/27residents and original preview water/mist. Build/typecheck/shared/layout/atlas and network/game-browser checks pass. Atlas35/12nations/21live/14planned. Evidence: design/maps/ireland-three/live01/README.md.

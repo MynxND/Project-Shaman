@@ -57,3 +57,7 @@ North ↑. All coordinates world units; exact scaled polygons in map.json. Every
 - E6: (18,48) ↔ (12,53) ↔ (4,53) ↔ (4,64) ↔ (8,64)
 
 Roof bounds/anchors come from ireland-01/manifest.json at scale2; independent base footprints above. Entrances and foreground courts remain separate from roofs. Decorative-only interiors, no active portals/NPCs/monsters. Ground sampling/native bridge support and all main+side shared-movement roundtrips pass. Visual review evidence is in ../ireland-three/.
+
+
+## Live adoption brief /2026-10-15
+USER authorizes Ireland3 into real game before Russia previews. Additive chain: Aurora Pass east(90,19) ↔ Golden Spiritwood west(0,57); Forest east(88,20) ↔ Stone Oath Moor west(0,59); Moor east(94,21) ↔ Willow Village west(0,47). Arrivals4units inside,6×6safe areas,2×2triggers. Keep all reviewed objects/blockers/water and original Norwegian gates/NPCs/camps. Only short dry edge roads added. Each Irish map3 NPCs/3 camps×3residents with explicit original IDs/provisional40–55,50–65,45–60balance; owned sprites reused. No new art/combat/VFX. All main/side paths and service fronts must remain reachable; water membership unchanged. Validate real signed-ticket travel both directions, no bounce, NPC heal/talk, observer synchronization, combat/EXP/profile, desktop/mobile. Prior preview status historical; no Russia live adoption yet.

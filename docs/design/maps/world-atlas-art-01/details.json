@@ -166,10 +166,6 @@
         "status": "planned"
       },
       {
-        "id": "golden-spiritwood",
-        "status": "planned"
-      },
-      {
         "id": "frost-pine",
         "status": "planned"
       },
@@ -549,50 +545,90 @@
       {
         "id": "spirit-timber-harbor",
         "status": "live"
+      },
+      {
+        "id": "golden-spiritwood",
+        "status": "live"
       }
     ],
     "source": "authoritative MAPS / existing MONSTERS"
   },
   "golden-spiritwood": {
-    "climate": "ป่าผลัดใบอบอุ่น",
-    "landmark": "ต้นทองกลางวงหิน",
-    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
-    "residents": [],
-    "proposedResidents": [
-      "ภูตใบแดง",
-      "หมูป่ารากไม้",
-      "หน้ากากเปลือกไม้"
+    "climate": "ป่าใบผลัด / ลำธารหมอก",
+    "landmark": "ลานหินรากไม้และสะพานหิน",
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตใบผลัด",
+      "พยนต์รวงใบไม้",
+      "ผู้เฝ้ารากไม้"
     ],
-    "npcs": [],
+    "proposedResidents": [],
+    "npcs": [
+      "หมอยาป่าใบผลัด",
+      "ผู้ดูแลลานรากไม้",
+      "ยามทางป่า"
+    ],
     "connections": [
       {
         "id": "stone-oath-moor",
-        "status": "planned"
+        "status": "live"
       },
       {
-        "id": "mountain-spirit-sanctuary",
-        "status": "planned"
+        "id": "aurora-pass",
+        "status": "live"
       }
     ],
-    "source": "leveling-20-proposal + world-30 proposal"
+    "source": "authoritative MAPS / existing MONSTERS"
   },
   "stone-oath-moor": {
     "climate": "ทุ่งชื้นลมหนาว / ป่าโอ๊ก",
     "landmark": "วงหินคำสัตย์กลางทุ่ง",
-    "activities": "ข้อเสนอ: สำรวจวงหิน · ล่ารอบขอบป่า",
-    "residents": [],
-    "proposedResidents": [
-      "ผู้เฝ้าวงหิน",
-      "เงาสัตว์ป่า"
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตหินหม่น",
+      "พยนต์คำสัตย์",
+      "ผู้เฝ้าหินโบราณ"
     ],
-    "npcs": [],
+    "proposedResidents": [],
+    "npcs": [
+      "ผู้รักษาชายทุ่ง",
+      "ผู้เฝ้าคำสัตย์หิน",
+      "ยามทุ่งหิน"
+    ],
     "connections": [
       {
         "id": "golden-spiritwood",
-        "status": "planned"
+        "status": "live"
+      },
+      {
+        "id": "willow-wake-village",
+        "status": "live"
       }
     ],
-    "source": "world-atlas-art-01 new proposal; no approved gameplay layout"
+    "source": "authoritative MAPS / existing MONSTERS"
+  },
+  "willow-wake-village": {
+    "climate": "หมู่บ้านป่าใบผลัด / บึงวิลโลว์",
+    "landmark": "บ้านมุงหลังคาและสวนกำแพงหิน",
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตวิลโลว์",
+      "พยนต์ม่านฝน",
+      "ผู้เฝ้าชายบึง"
+    ],
+    "proposedResidents": [],
+    "npcs": [
+      "หมอยาวิลโลว์",
+      "ผู้ดูแลหมู่บ้าน",
+      "ยามม่านฝน"
+    ],
+    "connections": [
+      {
+        "id": "stone-oath-moor",
+        "status": "live"
+      }
+    ],
+    "source": "authoritative MAPS / existing MONSTERS"
   },
   "frost-pine": {
     "climate": "ป่าสนหนาวแห้ง",

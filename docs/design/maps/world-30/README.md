@@ -1,6 +1,6 @@
-# World atlas — 34 maps / 12 nations
+# World atlas — 35 maps / 12 nations
 
-Original30-node roadmap plus user-authorized Obsidian Estuary, Japanese snow shrine and Norway timber harbor; no existing nodes removed. Eighteen content maps playable;16 are planning nodes, not registered gameplay. Geography, names, level ranges and routes proposed; confirmed nation/source branches remain traceable. Norway original source Seidr is historical; current approved gameplay uses Ullr Hunter. Existing map registry lab maps excluded. No skill/lore formula changes.
+Original30-node roadmap plus user-authorized Obsidian Estuary, Japanese snow shrine Norway timber harbor and Ireland willow village; no existing nodes removed. Twenty-one content maps playable;14 are planning nodes, not registered gameplay. Geography, names, level ranges and routes proposed; confirmed nation/source branches remain traceable. Norway original source Seidr is historical; current approved gameplay uses Ullr Hunter. Existing map registry lab maps excluded. No skill/lore formula changes.
 
 ## Roadmap
 Phase1 existing hub+four regions; Phase2 China/Philippines plus mountain gateway; Phase3 Japan/Korea/Indonesia/Ireland/USA; Phase4 Norway/Russia/Haiti/Mexico; Phase5 two shared endgame maps. Per-map layout briefs, artwork, animation, collision and network review required before playable adoption. No fake travel to planned nodes.
@@ -30,6 +30,7 @@ Phase1 existing hub+four regions; Phase2 China/Philippines plus mountain gateway
 | aurora-pass — ช่องเขาแสงเหนือ | norway | 65–80 | 4 |
 | golden-spiritwood — ป่าใบผลัดอาคม | ireland | 40–55 | 3 |
 | stone-oath-moor — ทุ่งคำสัตย์หิน | ireland | 50–65 | 3 |
+| willow-wake-village — หมู่บ้านวิลโลว์ม่านฝน | ireland | 45–60 | 3 |
 | frost-pine — ป่าสนขาว | russia | 60–75 | 4 |
 | taiga-blood-trail — รอยล่าแห่งไทกา | russia | 70–85 | 4 |
 | amber-grassland — ทุ่งหญ้าอำพัน | usa | 30–40 | 3 |
