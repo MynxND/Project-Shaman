@@ -1,0 +1,69 @@
+{
+  "provider": "imagegen",
+  "generations": 1,
+  "source": "source.png",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "frames": {
+    "sanctum": {
+      "x": 11,
+      "y": 8,
+      "w": 414,
+      "h": 424
+    },
+    "gate": {
+      "x": 432,
+      "y": 28,
+      "w": 403,
+      "h": 398
+    },
+    "pavilion": {
+      "x": 835,
+      "y": 24,
+      "w": 411,
+      "h": 404
+    },
+    "rock": {
+      "x": 12,
+      "y": 457,
+      "w": 414,
+      "h": 358
+    },
+    "tree": {
+      "x": 469,
+      "y": 444,
+      "w": 366,
+      "h": 364
+    },
+    "fern": {
+      "x": 835,
+      "y": 512,
+      "w": 401,
+      "h": 284
+    },
+    "vent": {
+      "x": 13,
+      "y": 838,
+      "w": 398,
+      "h": 367
+    },
+    "road": {
+      "x": 451,
+      "y": 832,
+      "w": 352,
+      "h": 352
+    },
+    "ash": {
+      "x": 861,
+      "y": 832,
+      "w": 352,
+      "h": 352
+    }
+  },
+  "sourceSha256": "9583bdf51b0fbf891a081fd012a918ba409add4dfded9618f13e58f41f9f0cfe",
+  "alpha": "original preserved",
+  "sampling": "runtime native nearest; original PNG unchanged",
+  "fallback": "PixelLab balance0; ComfyUI8188 unavailable"
+}

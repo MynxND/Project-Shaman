@@ -1,0 +1,956 @@
+{
+  "id": "ashwind-volcano",
+  "name": "ภูเขาไฟเถ้าลม",
+  "nameEn": "Ashwind Volcano",
+  "width": 90,
+  "height": 74,
+  "spawn": {
+    "x": 4,
+    "y": 54
+  },
+  "ground": {
+    "base": "dark-grass",
+    "regions": []
+  },
+  "terrain": {
+    "base": "dirt",
+    "paint": [
+      {
+        "terrain": "water",
+        "shape": "circle",
+        "x": 71,
+        "y": 56,
+        "r": 4.2
+      },
+      {
+        "terrain": "water",
+        "shape": "path",
+        "points": [
+          [
+            71,
+            59
+          ],
+          [
+            68,
+            63
+          ],
+          [
+            64,
+            68
+          ],
+          [
+            64,
+            74
+          ]
+        ],
+        "r": 1.8
+      },
+      {
+        "terrain": "road",
+        "shape": "path",
+        "points": [
+          [
+            4,
+            54
+          ],
+          [
+            18,
+            52
+          ],
+          [
+            30,
+            49
+          ],
+          [
+            30,
+            40
+          ],
+          [
+            43,
+            40
+          ],
+          [
+            55,
+            33
+          ],
+          [
+            67,
+            23
+          ],
+          [
+            84,
+            16
+          ]
+        ],
+        "r": 2
+      },
+      {
+        "terrain": "road",
+        "shape": "path",
+        "points": [
+          [
+            30,
+            49
+          ],
+          [
+            18,
+            49
+          ]
+        ],
+        "r": 2
+      },
+      {
+        "terrain": "road",
+        "shape": "path",
+        "points": [
+          [
+            43,
+            40
+          ],
+          [
+            43,
+            33
+          ],
+          [
+            35,
+            33
+          ]
+        ],
+        "r": 2
+      },
+      {
+        "terrain": "road",
+        "shape": "path",
+        "points": [
+          [
+            55,
+            33
+          ],
+          [
+            55,
+            28
+          ]
+        ],
+        "r": 2
+      },
+      {
+        "terrain": "road",
+        "shape": "path",
+        "points": [
+          [
+            55,
+            33
+          ],
+          [
+            60,
+            42
+          ],
+          [
+            60,
+            53
+          ],
+          [
+            65,
+            55
+          ]
+        ],
+        "r": 2
+      },
+      {
+        "terrain": "road",
+        "shape": "path",
+        "points": [
+          [
+            30,
+            49
+          ],
+          [
+            39,
+            54
+          ],
+          [
+            39,
+            65
+          ],
+          [
+            60,
+            65
+          ],
+          [
+            70,
+            65
+          ],
+          [
+            76,
+            64
+          ]
+        ],
+        "r": 2
+      },
+      {
+        "terrain": "road",
+        "shape": "circle",
+        "x": 55,
+        "y": 33,
+        "r": 5
+      },
+      {
+        "terrain": "road",
+        "shape": "path",
+        "points": [
+          [
+            59,
+            65
+          ],
+          [
+            72,
+            65
+          ]
+        ],
+        "r": 2.3
+      }
+    ]
+  },
+  "objects": [
+    {
+      "id": "basalt-sanctum",
+      "asset": "sanctum",
+      "x": 55,
+      "y": 24,
+      "width": 246,
+      "footprint": {
+        "w": 12,
+        "h": 6
+      }
+    },
+    {
+      "id": "split-gate",
+      "asset": "gate",
+      "x": 30,
+      "y": 46,
+      "width": 160,
+      "footprint": null
+    },
+    {
+      "id": "ash-shelter",
+      "asset": "pavilion",
+      "x": 18,
+      "y": 45,
+      "width": 124,
+      "footprint": {
+        "w": 7,
+        "h": 3.5
+      }
+    },
+    {
+      "id": "keris-forge",
+      "asset": "pavilion",
+      "x": 35,
+      "y": 29,
+      "width": 128,
+      "footprint": {
+        "w": 7,
+        "h": 3.5
+      }
+    },
+    {
+      "id": "north-vent",
+      "asset": "vent",
+      "x": 76,
+      "y": 12,
+      "width": 136,
+      "footprint": {
+        "w": 6,
+        "h": 3
+      }
+    },
+    {
+      "id": "spring-marker",
+      "asset": "rock",
+      "x": 77,
+      "y": 56,
+      "width": 58,
+      "footprint": {
+        "w": 2,
+        "h": 1
+      }
+    },
+    {
+      "id": "western-ridge-a",
+      "asset": "rock",
+      "x": 10,
+      "y": 16,
+      "width": 118,
+      "footprint": {
+        "w": 3.2,
+        "h": 1.7
+      }
+    },
+    {
+      "id": "western-ridge-b",
+      "asset": "rock",
+      "x": 13,
+      "y": 24,
+      "width": 100,
+      "footprint": {
+        "w": 3.2,
+        "h": 1.7
+      }
+    },
+    {
+      "id": "western-ridge-c",
+      "asset": "rock",
+      "x": 8,
+      "y": 33,
+      "width": 130,
+      "footprint": {
+        "w": 3.2,
+        "h": 1.7
+      }
+    },
+    {
+      "id": "western-ridge-d",
+      "asset": "rock",
+      "x": 17,
+      "y": 33,
+      "width": 94,
+      "footprint": {
+        "w": 3.2,
+        "h": 1.7
+      }
+    },
+    {
+      "id": "north-shoulder-a",
+      "asset": "rock",
+      "x": 43,
+      "y": 8,
+      "width": 132,
+      "footprint": {
+        "w": 3.2,
+        "h": 1.7
+      }
+    },
+    {
+      "id": "north-shoulder-b",
+      "asset": "rock",
+      "x": 53,
+      "y": 7,
+      "width": 116,
+      "footprint": {
+        "w": 3.2,
+        "h": 1.7
+      }
+    },
+    {
+      "id": "north-shoulder-c",
+      "asset": "rock",
+      "x": 64,
+      "y": 8,
+      "width": 105,
+      "footprint": {
+        "w": 3.2,
+        "h": 1.7
+      }
+    },
+    {
+      "id": "caldera-rim-a",
+      "asset": "rock",
+      "x": 86,
+      "y": 8,
+      "width": 122,
+      "footprint": {
+        "w": 3.2,
+        "h": 1.7
+      }
+    },
+    {
+      "id": "caldera-rim-b",
+      "asset": "rock",
+      "x": 88,
+      "y": 27,
+      "width": 112,
+      "footprint": {
+        "w": 3.2,
+        "h": 1.7
+      }
+    },
+    {
+      "id": "south-bank",
+      "asset": "rock",
+      "x": 59,
+      "y": 71,
+      "width": 85,
+      "footprint": {
+        "w": 3.2,
+        "h": 1.7
+      }
+    },
+    {
+      "id": "east-scar",
+      "asset": "rock",
+      "x": 82,
+      "y": 38,
+      "width": 105,
+      "footprint": {
+        "w": 3.2,
+        "h": 1.7
+      }
+    },
+    {
+      "id": "outer-east-bank",
+      "asset": "rock",
+      "x": 87,
+      "y": 50,
+      "width": 110,
+      "footprint": {
+        "w": 3.2,
+        "h": 1.7
+      }
+    },
+    {
+      "id": "small-vent-west",
+      "asset": "vent",
+      "x": 22,
+      "y": 20,
+      "width": 74,
+      "footprint": {
+        "w": 3,
+        "h": 1.6
+      }
+    },
+    {
+      "id": "small-vent-center",
+      "asset": "vent",
+      "x": 46,
+      "y": 16,
+      "width": 74,
+      "footprint": {
+        "w": 3,
+        "h": 1.6
+      }
+    },
+    {
+      "id": "small-vent-east",
+      "asset": "vent",
+      "x": 82,
+      "y": 28,
+      "width": 74,
+      "footprint": {
+        "w": 3,
+        "h": 1.6
+      }
+    },
+    {
+      "id": "shelter-store",
+      "asset": "pavilion",
+      "x": 9,
+      "y": 44,
+      "width": 90,
+      "footprint": {
+        "w": 5,
+        "h": 2.5
+      }
+    },
+    {
+      "id": "spring-rest",
+      "asset": "pavilion",
+      "x": 80,
+      "y": 45,
+      "width": 90,
+      "footprint": {
+        "w": 5,
+        "h": 2.5
+      }
+    },
+    {
+      "id": "lookout-shelter",
+      "asset": "pavilion",
+      "x": 62,
+      "y": 19,
+      "width": 90,
+      "footprint": {
+        "w": 5,
+        "h": 2.5
+      }
+    },
+    {
+      "id": "tree-foothill-1",
+      "asset": "tree",
+      "x": 6,
+      "y": 62,
+      "width": 86,
+      "footprint": {
+        "w": 1.3,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "tree-foothill-2",
+      "asset": "tree",
+      "x": 13,
+      "y": 65,
+      "width": 94,
+      "footprint": {
+        "w": 1.3,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "tree-foothill-3",
+      "asset": "tree",
+      "x": 20,
+      "y": 62,
+      "width": 86,
+      "footprint": {
+        "w": 1.3,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "tree-foothill-4",
+      "asset": "tree",
+      "x": 25,
+      "y": 68,
+      "width": 94,
+      "footprint": {
+        "w": 1.3,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "tree-humid-1",
+      "asset": "tree",
+      "x": 75,
+      "y": 49,
+      "width": 86,
+      "footprint": {
+        "w": 1.3,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "tree-humid-2",
+      "asset": "tree",
+      "x": 82,
+      "y": 53,
+      "width": 94,
+      "footprint": {
+        "w": 1.3,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "tree-humid-3",
+      "asset": "tree",
+      "x": 85,
+      "y": 62,
+      "width": 86,
+      "footprint": {
+        "w": 1.3,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "tree-humid-4",
+      "asset": "tree",
+      "x": 79,
+      "y": 69,
+      "width": 94,
+      "footprint": {
+        "w": 1.3,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "tree-southern-1",
+      "asset": "tree",
+      "x": 34,
+      "y": 69,
+      "width": 86,
+      "footprint": {
+        "w": 1.3,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "tree-southern-2",
+      "asset": "tree",
+      "x": 44,
+      "y": 71,
+      "width": 94,
+      "footprint": {
+        "w": 1.3,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "tree-southern-3",
+      "asset": "tree",
+      "x": 50,
+      "y": 68,
+      "width": 86,
+      "footprint": {
+        "w": 1.3,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "tree-windward-1",
+      "asset": "tree",
+      "x": 6,
+      "y": 8,
+      "width": 86,
+      "footprint": {
+        "w": 1.3,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "tree-windward-2",
+      "asset": "tree",
+      "x": 24,
+      "y": 8,
+      "width": 94,
+      "footprint": {
+        "w": 1.3,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "tree-windward-3",
+      "asset": "tree",
+      "x": 31,
+      "y": 13,
+      "width": 86,
+      "footprint": {
+        "w": 1.3,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "fern-1",
+      "asset": "fern",
+      "x": 7,
+      "y": 65,
+      "width": 32,
+      "footprint": null
+    },
+    {
+      "id": "fern-2",
+      "asset": "fern",
+      "x": 17,
+      "y": 61,
+      "width": 36,
+      "footprint": null
+    },
+    {
+      "id": "fern-3",
+      "asset": "fern",
+      "x": 23,
+      "y": 66,
+      "width": 40,
+      "footprint": null
+    },
+    {
+      "id": "fern-4",
+      "asset": "fern",
+      "x": 36,
+      "y": 68,
+      "width": 32,
+      "footprint": null
+    },
+    {
+      "id": "fern-5",
+      "asset": "fern",
+      "x": 46,
+      "y": 69,
+      "width": 36,
+      "footprint": null
+    },
+    {
+      "id": "fern-6",
+      "asset": "fern",
+      "x": 52,
+      "y": 71,
+      "width": 40,
+      "footprint": null
+    },
+    {
+      "id": "fern-7",
+      "asset": "fern",
+      "x": 77,
+      "y": 50,
+      "width": 32,
+      "footprint": null
+    },
+    {
+      "id": "fern-8",
+      "asset": "fern",
+      "x": 82,
+      "y": 58,
+      "width": 36,
+      "footprint": null
+    },
+    {
+      "id": "fern-9",
+      "asset": "fern",
+      "x": 79,
+      "y": 63,
+      "width": 40,
+      "footprint": null
+    },
+    {
+      "id": "fern-10",
+      "asset": "fern",
+      "x": 84,
+      "y": 67,
+      "width": 32,
+      "footprint": null
+    },
+    {
+      "id": "fern-11",
+      "asset": "fern",
+      "x": 73,
+      "y": 70,
+      "width": 36,
+      "footprint": null
+    },
+    {
+      "id": "fern-12",
+      "asset": "fern",
+      "x": 82,
+      "y": 70,
+      "width": 40,
+      "footprint": null
+    }
+  ],
+  "blockers": [
+    {
+      "x": 24,
+      "y": 42,
+      "w": 3,
+      "h": 4
+    },
+    {
+      "x": 33,
+      "y": 42,
+      "w": 3,
+      "h": 4
+    },
+    {
+      "x": 68.999,
+      "y": 51.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 68.499,
+      "y": 52.499,
+      "w": 5.002,
+      "h": 0.502
+    },
+    {
+      "x": 67.999,
+      "y": 52.999,
+      "w": 6.002,
+      "h": 0.502
+    },
+    {
+      "x": 67.499,
+      "y": 53.499,
+      "w": 7.002,
+      "h": 0.502
+    },
+    {
+      "x": 66.999,
+      "y": 53.999,
+      "w": 8.002,
+      "h": 0.502
+    },
+    {
+      "x": 66.999,
+      "y": 54.499,
+      "w": 8.002,
+      "h": 0.502
+    },
+    {
+      "x": 66.999,
+      "y": 54.999,
+      "w": 8.002,
+      "h": 0.502
+    },
+    {
+      "x": 66.999,
+      "y": 55.499,
+      "w": 8.002,
+      "h": 0.502
+    },
+    {
+      "x": 66.999,
+      "y": 55.999,
+      "w": 8.002,
+      "h": 0.502
+    },
+    {
+      "x": 66.999,
+      "y": 56.499,
+      "w": 8.002,
+      "h": 0.502
+    },
+    {
+      "x": 66.999,
+      "y": 56.999,
+      "w": 8.002,
+      "h": 0.502
+    },
+    {
+      "x": 66.999,
+      "y": 57.499,
+      "w": 8.002,
+      "h": 0.502
+    },
+    {
+      "x": 67.499,
+      "y": 57.999,
+      "w": 7.002,
+      "h": 0.502
+    },
+    {
+      "x": 67.999,
+      "y": 58.499,
+      "w": 6.002,
+      "h": 0.502
+    },
+    {
+      "x": 68.499,
+      "y": 58.999,
+      "w": 5.002,
+      "h": 0.502
+    },
+    {
+      "x": 67.999,
+      "y": 59.499,
+      "w": 5.002,
+      "h": 0.502
+    },
+    {
+      "x": 67.999,
+      "y": 59.999,
+      "w": 4.502,
+      "h": 0.502
+    },
+    {
+      "x": 67.499,
+      "y": 60.499,
+      "w": 4.502,
+      "h": 0.502
+    },
+    {
+      "x": 66.999,
+      "y": 60.999,
+      "w": 4.502,
+      "h": 0.502
+    },
+    {
+      "x": 66.499,
+      "y": 61.499,
+      "w": 4.502,
+      "h": 0.502
+    },
+    {
+      "x": 66.499,
+      "y": 61.999,
+      "w": 4.502,
+      "h": 0.502
+    },
+    {
+      "x": 61.999,
+      "y": 67.499,
+      "w": 4.502,
+      "h": 0.502
+    },
+    {
+      "x": 61.999,
+      "y": 67.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 61.999,
+      "y": 68.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 61.999,
+      "y": 68.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 61.999,
+      "y": 69.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 61.999,
+      "y": 69.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 61.999,
+      "y": 70.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 61.999,
+      "y": 70.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 61.999,
+      "y": 71.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 61.999,
+      "y": 71.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 61.999,
+      "y": 72.499,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 61.999,
+      "y": 72.999,
+      "w": 4.002,
+      "h": 0.502
+    },
+    {
+      "x": 61.999,
+      "y": 73.499,
+      "w": 4.002,
+      "h": 0.502
+    }
+  ],
+  "npcs": [],
+  "portals": [],
+  "safeZones": [
+    {
+      "x": 0,
+      "y": 49,
+      "w": 10,
+      "h": 10
+    }
+  ],
+  "spawnRegions": []
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-15",
+  "request": "Prioritize maps for nations with existing character assets",
+  "evidence": [
+    "apps/client/public/assets/character-v3/class-outfits/manifest.json",
+    "apps/client/public/assets/character-v3/class-outfits/manifest-imagegen-detail-draft.json",
+    "packages/shared/src/skill-registry.ts"
+  ],
+  "nations": [
+    {
+      "id": "thailand",
+      "branches": [
+        "achan-saiyasat",
+        "juggernaut"
+      ],
+      "artStatus": "production outfit manifest"
+    },
+    {
+      "id": "indonesia",
+      "branches": [
+        "santet",
+        "keris"
+      ],
+      "artStatus": "detailed draft outfits, not blanket motion approval",
+      "nextMap": "ashwind-volcano"
+    },
+    {
+      "id": "japan",
+      "branches": [
+        "onmyoji",
+        "miko"
+      ],
+      "artStatus": "detailed draft outfits",
+      "nextMap": "spirit-waterfall"
+    },
+    {
+      "id": "norway",
+      "branches": [
+        "rune-seer",
+        "ullr-hunter"
+      ],
+      "artStatus": "detailed draft outfits",
+      "nextMap": "storm-fjord"
+    }
+  ],
+  "russia": "Skill catalog exists; no outfit found in inspected manifests. Not prioritized as existing sprite nation.",
+  "china": "Existing2 live maps +1 war-city preview preserved; no claim of Chinese player outfits.",
+  "scope": "One Indonesian map preview now, other nations queued as proposals; no character publication or registry changes"
+}
