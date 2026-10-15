@@ -1,0 +1,2029 @@
+{
+  "repository": "https://github.com/mapeditor/tiled",
+  "commit": "221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd",
+  "accessed": "2026-10-11",
+  "method": "GitHub API commit and raw pinned source; XML parsed; original assets not imported into project",
+  "files": [
+    {
+      "file": "desert.tmx",
+      "sha256": "704616f981378edd51765ef98a22050145fb93833e8a58147ad37775c817d537",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/desert.tmx",
+      "attributes": {
+        "version": "1.0",
+        "tiledversion": "1.1.5",
+        "orientation": "orthogonal",
+        "renderorder": "right-down",
+        "width": "40",
+        "height": "40",
+        "tilewidth": "32",
+        "tileheight": "32",
+        "infinite": "0",
+        "nextlayerid": "2",
+        "nextobjectid": "1"
+      },
+      "layers": [
+        {
+          "tag": "layer",
+          "id": "1",
+          "name": "Ground",
+          "width": "40",
+          "height": "40",
+          "objects": 0
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "source": "desert.tsx"
+        }
+      ],
+      "properties": [],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": []
+    },
+    {
+      "file": "desert.tsx",
+      "sha256": "7d765b9da4e1e0a34e2f8209f64d2d270c4b4d884c6fb85e5fee3d97db6958c2",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/desert.tsx",
+      "attributes": {
+        "version": "1.4",
+        "tiledversion": "1.4.3",
+        "name": "Desert",
+        "tilewidth": "32",
+        "tileheight": "32",
+        "spacing": "1",
+        "margin": "1",
+        "tilecount": "48",
+        "columns": "8"
+      },
+      "layers": [],
+      "tilesets": [],
+      "properties": [],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [
+        {
+          "name": "Desert",
+          "type": "corner",
+          "tile": "5"
+        }
+      ],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": []
+    },
+    {
+      "file": "orthogonal-outside.tmx",
+      "sha256": "17e5060daf78973c903be0b2c1f8abae69dbf36956be851aa72b0d896f3c5858",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/orthogonal-outside.tmx",
+      "attributes": {
+        "version": "1.8",
+        "tiledversion": "1.8.5",
+        "orientation": "orthogonal",
+        "renderorder": "right-down",
+        "width": "45",
+        "height": "31",
+        "tilewidth": "16",
+        "tileheight": "16",
+        "infinite": "0",
+        "nextlayerid": "4",
+        "nextobjectid": "38"
+      },
+      "layers": [
+        {
+          "tag": "layer",
+          "id": "1",
+          "name": "Ground",
+          "width": "45",
+          "height": "31",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "id": "2",
+          "name": "Fringe",
+          "width": "45",
+          "height": "31",
+          "objects": 0
+        },
+        {
+          "tag": "objectgroup",
+          "id": "3",
+          "name": "Objects",
+          "objects": 29
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "name": "outdoor",
+          "tilewidth": "16",
+          "tileheight": "16",
+          "tilecount": "288",
+          "columns": "24"
+        }
+      ],
+      "properties": [
+        {
+          "name": "enemyTint",
+          "type": "color",
+          "value": "#ffa33636"
+        },
+        {
+          "name": "spawncount",
+          "type": "int",
+          "value": "5"
+        },
+        {
+          "name": "spawntype",
+          "value": "maggot"
+        },
+        {
+          "name": "script",
+          "type": "file",
+          "value": "chest-discovered.lua"
+        },
+        {
+          "name": "static",
+          "type": "bool",
+          "value": "true"
+        },
+        {
+          "name": "text",
+          "value": "East West"
+        }
+      ],
+      "object_shapes": {
+        "polygon": 1,
+        "polyline": 2,
+        "ellipse": 1,
+        "point": 1,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [
+        {
+          "name": "Terrains",
+          "type": "corner",
+          "tile": "25"
+        }
+      ],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": [
+        {
+          "id": "1",
+          "name": "maggots",
+          "type": "Location",
+          "x": "435",
+          "y": "74",
+          "width": "155",
+          "height": "99"
+        },
+        {
+          "id": "2",
+          "name": "discover chest",
+          "type": "Trigger",
+          "x": "201",
+          "y": "200",
+          "width": "127",
+          "height": "127"
+        },
+        {
+          "id": "3",
+          "name": "unreachable",
+          "type": "Fixture",
+          "x": "2",
+          "y": "158"
+        },
+        {
+          "id": "5",
+          "name": "guard",
+          "type": "NPC",
+          "x": "22",
+          "y": "361"
+        },
+        {
+          "id": "6",
+          "name": "guard",
+          "type": "NPC",
+          "x": "277",
+          "y": "18"
+        },
+        {
+          "id": "10",
+          "gid": "282",
+          "x": "413.333",
+          "y": "225.333",
+          "width": "16",
+          "height": "16"
+        },
+        {
+          "id": "11",
+          "gid": "282",
+          "x": "421.667",
+          "y": "218",
+          "width": "16",
+          "height": "16"
+        },
+        {
+          "id": "12",
+          "gid": "2147483930",
+          "x": "423",
+          "y": "235.333",
+          "width": "16",
+          "height": "16"
+        },
+        {
+          "id": "13",
+          "gid": "282",
+          "x": "5",
+          "y": "70",
+          "width": "16",
+          "height": "16"
+        },
+        {
+          "id": "14",
+          "gid": "282",
+          "x": "-3.66667",
+          "y": "80.3333",
+          "width": "16",
+          "height": "16"
+        },
+        {
+          "id": "16",
+          "gid": "283",
+          "x": "538",
+          "y": "418.333",
+          "width": "16",
+          "height": "16"
+        },
+        {
+          "id": "17",
+          "gid": "283",
+          "x": "407.667",
+          "y": "462",
+          "width": "16",
+          "height": "16"
+        },
+        {
+          "id": "18",
+          "gid": "283",
+          "x": "417",
+          "y": "473.667",
+          "width": "16",
+          "height": "16"
+        },
+        {
+          "id": "19",
+          "gid": "283",
+          "x": "402.667",
+          "y": "469",
+          "width": "16",
+          "height": "16"
+        },
+        {
+          "id": "21",
+          "gid": "2147483930",
+          "x": "683.333",
+          "y": "260.5",
+          "width": "16",
+          "height": "16"
+        }
+      ]
+    },
+    {
+      "file": "perspective_walls.tmx",
+      "sha256": "9019d2b44870a90ea9c30f9baa756f57b1db01e056e3972adab835a4a4079091",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/perspective_walls.tmx",
+      "attributes": {
+        "version": "1.0",
+        "orientation": "orthogonal",
+        "width": "32",
+        "height": "32",
+        "tilewidth": "31",
+        "tileheight": "31"
+      },
+      "layers": [
+        {
+          "tag": "layer",
+          "name": "Walls",
+          "width": "32",
+          "height": "32",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Walls level 2",
+          "width": "32",
+          "height": "32",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Walls level 3",
+          "width": "32",
+          "height": "32",
+          "objects": 0
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "source": "perspective_walls.tsx"
+        }
+      ],
+      "properties": [],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": []
+    },
+    {
+      "file": "perspective_walls.tsx",
+      "sha256": "3426b0d06eb51f423439b423b32281dc78abf9e395058be514d1ba323c445b14",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/perspective_walls.tsx",
+      "attributes": {
+        "name": "perspective_walls",
+        "tilewidth": "64",
+        "tileheight": "64"
+      },
+      "layers": [],
+      "tilesets": [],
+      "properties": [
+        {
+          "name": "door",
+          "value": "true"
+        },
+        {
+          "name": "door",
+          "value": "true"
+        },
+        {
+          "name": "pickup",
+          "value": "true"
+        }
+      ],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": []
+    },
+    {
+      "file": "sewers.tmx",
+      "sha256": "5180634b25993789dc56a767a39ac1cc2ee2c1ec1744130e1c4a88f2577c0162",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/sewers.tmx",
+      "attributes": {
+        "version": "1.0",
+        "orientation": "orthogonal",
+        "width": "50",
+        "height": "50",
+        "tilewidth": "24",
+        "tileheight": "24"
+      },
+      "layers": [
+        {
+          "tag": "layer",
+          "name": "Bottom",
+          "width": "50",
+          "height": "50",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Top",
+          "width": "50",
+          "height": "50",
+          "opacity": "0.49",
+          "objects": 0
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "name": "sewer_tileset",
+          "tilewidth": "24",
+          "tileheight": "24"
+        }
+      ],
+      "properties": [],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": []
+    },
+    {
+      "file": "forest/forest.tmx",
+      "sha256": "289224ce67af0577e77e3006cbf6c744a090539f3ca0ad3e16a34383e5087876",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/forest/forest.tmx",
+      "attributes": {
+        "version": "1.8",
+        "tiledversion": "1.8.4",
+        "orientation": "orthogonal",
+        "renderorder": "right-down",
+        "width": "40",
+        "height": "16",
+        "tilewidth": "16",
+        "tileheight": "16",
+        "infinite": "0",
+        "parallaxoriginx": "320",
+        "parallaxoriginy": "128",
+        "nextlayerid": "11",
+        "nextobjectid": "42"
+      },
+      "layers": [
+        {
+          "tag": "objectgroup",
+          "id": "7",
+          "name": "bg0",
+          "parallaxx": "0.12",
+          "parallaxy": "0.12",
+          "objects": 4
+        },
+        {
+          "tag": "objectgroup",
+          "id": "9",
+          "name": "bg1",
+          "parallaxx": "0.25",
+          "parallaxy": "0.25",
+          "objects": 4
+        },
+        {
+          "tag": "objectgroup",
+          "id": "8",
+          "name": "bg2",
+          "parallaxx": "0.5",
+          "parallaxy": "0.5",
+          "objects": 4
+        },
+        {
+          "tag": "layer",
+          "id": "1",
+          "name": "platforms",
+          "width": "40",
+          "height": "16",
+          "objects": 0
+        },
+        {
+          "tag": "objectgroup",
+          "id": "10",
+          "name": "characters",
+          "objects": 1
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "source": "forest.tsx"
+        }
+      ],
+      "properties": [],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": [
+        {
+          "id": "35",
+          "gid": "7",
+          "x": "0",
+          "y": "176",
+          "width": "160",
+          "height": "208"
+        },
+        {
+          "id": "36",
+          "gid": "7",
+          "x": "160",
+          "y": "176",
+          "width": "160",
+          "height": "208"
+        },
+        {
+          "id": "37",
+          "gid": "7",
+          "x": "320",
+          "y": "176",
+          "width": "160",
+          "height": "208"
+        },
+        {
+          "id": "38",
+          "gid": "7",
+          "x": "480",
+          "y": "176",
+          "width": "160",
+          "height": "208"
+        },
+        {
+          "id": "27",
+          "gid": "9",
+          "x": "0",
+          "y": "192",
+          "width": "160",
+          "height": "112"
+        },
+        {
+          "id": "28",
+          "gid": "9",
+          "x": "160",
+          "y": "192",
+          "width": "160",
+          "height": "112"
+        },
+        {
+          "id": "29",
+          "gid": "9",
+          "x": "320",
+          "y": "192",
+          "width": "160",
+          "height": "112"
+        },
+        {
+          "id": "30",
+          "gid": "9",
+          "x": "480",
+          "y": "192",
+          "width": "160",
+          "height": "112"
+        },
+        {
+          "id": "21",
+          "gid": "10",
+          "x": "0",
+          "y": "256",
+          "width": "160",
+          "height": "112"
+        },
+        {
+          "id": "22",
+          "gid": "10",
+          "x": "160",
+          "y": "256",
+          "width": "160",
+          "height": "112"
+        },
+        {
+          "id": "23",
+          "gid": "10",
+          "x": "320",
+          "y": "256",
+          "width": "160",
+          "height": "112"
+        },
+        {
+          "id": "24",
+          "gid": "10",
+          "x": "480",
+          "y": "256",
+          "width": "160",
+          "height": "112"
+        },
+        {
+          "id": "39",
+          "gid": "14",
+          "x": "192",
+          "y": "160",
+          "width": "25",
+          "height": "25"
+        }
+      ]
+    },
+    {
+      "file": "forest/forest.tsx",
+      "sha256": "df4afb4a5beb936d73a8d8b50a01c94bec4fcbf4b3a4f99e2dfe7146436d7b1f",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/forest/forest.tsx",
+      "attributes": {
+        "version": "1.8",
+        "tiledversion": "1.8.4",
+        "name": "forest",
+        "tilewidth": "160",
+        "tileheight": "208",
+        "tilecount": "7",
+        "columns": "0"
+      },
+      "layers": [],
+      "tilesets": [],
+      "properties": [],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 1,
+      "object_details": []
+    },
+    {
+      "file": "forest/squirrel.license",
+      "sha256": "a88705829e1cfdaf63cd9f29db33d0a02718e408ab0ebf17e859e70e9221c67f",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/forest/squirrel.license"
+    },
+    {
+      "file": "rpg/island.tmx",
+      "sha256": "a110e4d6ddacc8f63044e169f74d8568a4e63e0c5490d5920a88e8a0c41798e2",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/rpg/island.tmx",
+      "attributes": {
+        "version": "1.8",
+        "tiledversion": "1.8.2",
+        "orientation": "orthogonal",
+        "renderorder": "right-down",
+        "width": "58",
+        "height": "47",
+        "tilewidth": "16",
+        "tileheight": "16",
+        "infinite": "0",
+        "nextlayerid": "5",
+        "nextobjectid": "8"
+      },
+      "layers": [
+        {
+          "tag": "layer",
+          "id": "1",
+          "name": "Ground",
+          "width": "58",
+          "height": "47",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "id": "2",
+          "name": "Fringe",
+          "width": "58",
+          "height": "47",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "id": "3",
+          "name": "Over",
+          "width": "58",
+          "height": "47",
+          "objects": 0
+        },
+        {
+          "tag": "objectgroup",
+          "id": "4",
+          "name": "Objects",
+          "objects": 3
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "source": "beach_tileset.tsx"
+        }
+      ],
+      "properties": [],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 1,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": [
+        {
+          "id": "1",
+          "name": "Starting Point",
+          "type": "start",
+          "x": "794.667",
+          "y": "471.667"
+        },
+        {
+          "id": "5",
+          "name": "Exit",
+          "type": "exit",
+          "x": "336",
+          "y": "208",
+          "width": "48",
+          "height": "48"
+        },
+        {
+          "id": "7",
+          "name": "Resting Spot",
+          "type": "rest",
+          "x": "528",
+          "y": "416",
+          "width": "48",
+          "height": "16"
+        }
+      ]
+    },
+    {
+      "file": "rpg/beach_tileset.tsx",
+      "sha256": "392eb76c6b8b4d2fbcf2aa37ad4ea2d5478a90abffd4a2ed97b03fd3b67e6a2d",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/rpg/beach_tileset.tsx",
+      "attributes": {
+        "version": "1.8",
+        "tiledversion": "1.8.2",
+        "name": "beach_tileset",
+        "tilewidth": "16",
+        "tileheight": "16",
+        "tilecount": "936",
+        "columns": "36"
+      },
+      "layers": [],
+      "tilesets": [],
+      "properties": [],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 33,
+      "object_details": []
+    },
+    {
+      "file": "rpg/readme.txt",
+      "sha256": "f76767153cb05f0a2872ef42056de45e9a6bb29c349e27c20a36cae8503d0128",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/rpg/readme.txt"
+    },
+    {
+      "file": "examples.tiled-project",
+      "sha256": "1cdc39cfd88b80ee02a123132db8acd34cad7d2587a26ea4422b34f0a9abea3f",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/examples.tiled-project"
+    },
+    {
+      "file": "objecttypes.xml",
+      "sha256": "1ac0e727bed026ca5b62277c6138a28ac47bfd343dd2cce0c6fa1793d52863f1",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/objecttypes.xml"
+    },
+    {
+      "file": "sewer_automap/rules.txt",
+      "sha256": "15e3ef479ca8b4c1a9b738e4cf358288d245b40bcc0805d0f1119877fb02e4f4",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/sewer_automap/rules.txt"
+    },
+    {
+      "file": "sewer_automap/sewers.tmx",
+      "sha256": "3d81cdeff7e014da58ccdabb25b6bae458fa6dab144740c3eda043d7eec144ea",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/sewer_automap/sewers.tmx",
+      "attributes": {
+        "version": "1.0",
+        "orientation": "orthogonal",
+        "width": "31",
+        "height": "31",
+        "tilewidth": "24",
+        "tileheight": "24"
+      },
+      "layers": [
+        {
+          "tag": "layer",
+          "name": "set",
+          "width": "31",
+          "height": "31",
+          "objects": 0
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "name": "rules_sewers",
+          "tilewidth": "24",
+          "tileheight": "24"
+        },
+        {
+          "firstgid": "7",
+          "name": "sewer_tileset",
+          "tilewidth": "24",
+          "tileheight": "24"
+        }
+      ],
+      "properties": [],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": []
+    },
+    {
+      "file": "sewer_automap/rule_001.tmx",
+      "sha256": "428fa57502a7e245fa15d6f4677361b9add82fb4435201b84699bdf88a238465",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/sewer_automap/rule_001.tmx",
+      "attributes": {
+        "version": "1.0",
+        "orientation": "orthogonal",
+        "width": "7",
+        "height": "3",
+        "tilewidth": "24",
+        "tileheight": "24"
+      },
+      "layers": [
+        {
+          "tag": "layer",
+          "name": "Regions",
+          "width": "7",
+          "height": "3",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Input_set",
+          "width": "7",
+          "height": "3",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Output_Ground",
+          "width": "7",
+          "height": "3",
+          "objects": 0
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "name": "sewer_tileset",
+          "tilewidth": "24",
+          "tileheight": "24"
+        },
+        {
+          "firstgid": "73",
+          "name": "rules_sewers",
+          "tilewidth": "24",
+          "tileheight": "24"
+        }
+      ],
+      "properties": [
+        {
+          "name": "AutomappingRadius",
+          "value": "3"
+        },
+        {
+          "name": "DeleteTiles",
+          "value": "yes"
+        }
+      ],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": []
+    },
+    {
+      "file": "sewer_automap/rule_002.tmx",
+      "sha256": "4e4c4ca782daf3ff78facd6257fc871bcaa76785946e42c1adc5773fd28dce2f",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/sewer_automap/rule_002.tmx",
+      "attributes": {
+        "version": "1.0",
+        "orientation": "orthogonal",
+        "width": "8",
+        "height": "5",
+        "tilewidth": "24",
+        "tileheight": "24"
+      },
+      "layers": [
+        {
+          "tag": "layer",
+          "name": "Regions",
+          "width": "8",
+          "height": "5",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Input_set",
+          "width": "8",
+          "height": "5",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Output_Ground",
+          "width": "8",
+          "height": "5",
+          "visible": "0",
+          "objects": 0
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "name": "sewer_tileset",
+          "tilewidth": "24",
+          "tileheight": "24"
+        },
+        {
+          "firstgid": "73",
+          "name": "rules_sewers",
+          "tilewidth": "24",
+          "tileheight": "24"
+        }
+      ],
+      "properties": [],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": []
+    },
+    {
+      "file": "sewer_automap/rule_003.tmx",
+      "sha256": "cf1724ad8cd992303e2826e5e76ff0e86c3c3d824d7ff4e9f5b4031c564163ac",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/sewer_automap/rule_003.tmx",
+      "attributes": {
+        "version": "1.0",
+        "orientation": "orthogonal",
+        "width": "8",
+        "height": "6",
+        "tilewidth": "24",
+        "tileheight": "24"
+      },
+      "layers": [
+        {
+          "tag": "layer",
+          "name": "Regions",
+          "width": "8",
+          "height": "6",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Input_set",
+          "width": "8",
+          "height": "6",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Output_Ground",
+          "width": "8",
+          "height": "6",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Output_Over",
+          "width": "8",
+          "height": "6",
+          "objects": 0
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "name": "sewer_tileset",
+          "tilewidth": "24",
+          "tileheight": "24"
+        },
+        {
+          "firstgid": "73",
+          "name": "rules_sewers",
+          "tilewidth": "24",
+          "tileheight": "24"
+        }
+      ],
+      "properties": [],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": []
+    },
+    {
+      "file": "sewer_automap/rule_004.tmx",
+      "sha256": "eb38e5abda3829cdfbab90a0f4f0bf6521190c7583deb9b1343ea50447d1dab0",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/sewer_automap/rule_004.tmx",
+      "attributes": {
+        "version": "1.0",
+        "orientation": "orthogonal",
+        "width": "7",
+        "height": "6",
+        "tilewidth": "24",
+        "tileheight": "24"
+      },
+      "layers": [
+        {
+          "tag": "layer",
+          "name": "Regions",
+          "width": "7",
+          "height": "6",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Input_set",
+          "width": "7",
+          "height": "6",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Output_Ground",
+          "width": "7",
+          "height": "6",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Output_Over",
+          "width": "7",
+          "height": "6",
+          "objects": 0
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "name": "sewer_tileset",
+          "tilewidth": "24",
+          "tileheight": "24"
+        },
+        {
+          "firstgid": "73",
+          "name": "rules_sewers",
+          "tilewidth": "24",
+          "tileheight": "24"
+        }
+      ],
+      "properties": [],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": []
+    },
+    {
+      "file": "sewer_automap/rule_005.tmx",
+      "sha256": "38345b4e185bc53c60e191eedf496041a4d7dc65f8762435a9a8e0058cee98b2",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/sewer_automap/rule_005.tmx",
+      "attributes": {
+        "version": "1.0",
+        "orientation": "orthogonal",
+        "width": "13",
+        "height": "6",
+        "tilewidth": "24",
+        "tileheight": "24"
+      },
+      "layers": [
+        {
+          "tag": "layer",
+          "name": "Regions",
+          "width": "13",
+          "height": "6",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Input_set",
+          "width": "13",
+          "height": "6",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Output_Ground",
+          "width": "13",
+          "height": "6",
+          "visible": "0",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Output_Over",
+          "width": "13",
+          "height": "6",
+          "visible": "0",
+          "objects": 0
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "name": "sewer_tileset",
+          "tilewidth": "24",
+          "tileheight": "24"
+        },
+        {
+          "firstgid": "73",
+          "name": "rules_sewers",
+          "tilewidth": "24",
+          "tileheight": "24"
+        }
+      ],
+      "properties": [],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": []
+    },
+    {
+      "file": "sewer_automap/rule_006.tmx",
+      "sha256": "6cdc717cea4cc69eb445c86f2262229f8eafba497d91992b0cd384feef2e4ad1",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/sewer_automap/rule_006.tmx",
+      "attributes": {
+        "version": "1.0",
+        "orientation": "orthogonal",
+        "width": "7",
+        "height": "5",
+        "tilewidth": "24",
+        "tileheight": "24"
+      },
+      "layers": [
+        {
+          "tag": "layer",
+          "name": "Regions",
+          "width": "7",
+          "height": "5",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Input_set",
+          "width": "7",
+          "height": "5",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "InputNot_set",
+          "width": "7",
+          "height": "5",
+          "opacity": "0.44",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Output_Ground",
+          "width": "7",
+          "height": "5",
+          "visible": "0",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Output_Over",
+          "width": "7",
+          "height": "5",
+          "visible": "0",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Output_Over2",
+          "width": "7",
+          "height": "5",
+          "visible": "0",
+          "objects": 0
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "name": "sewer_tileset",
+          "tilewidth": "24",
+          "tileheight": "24"
+        },
+        {
+          "firstgid": "73",
+          "name": "rules_sewers",
+          "tilewidth": "24",
+          "tileheight": "24"
+        }
+      ],
+      "properties": [],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": []
+    },
+    {
+      "file": "sewer_automap/rule_007.tmx",
+      "sha256": "814361232e02e150e64827ea2a6e8970737a6e67070770e3edd97dca14426251",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/sewer_automap/rule_007.tmx",
+      "attributes": {
+        "version": "1.0",
+        "orientation": "orthogonal",
+        "width": "7",
+        "height": "7",
+        "tilewidth": "24",
+        "tileheight": "24"
+      },
+      "layers": [
+        {
+          "tag": "layer",
+          "name": "Regions",
+          "width": "7",
+          "height": "7",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Input_set",
+          "width": "7",
+          "height": "7",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "InputNot_set",
+          "width": "7",
+          "height": "7",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "InputNot_set",
+          "width": "7",
+          "height": "7",
+          "visible": "0",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "Output_Ground",
+          "width": "7",
+          "height": "7",
+          "visible": "0",
+          "objects": 0
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "name": "sewer_tileset",
+          "tilewidth": "24",
+          "tileheight": "24"
+        },
+        {
+          "firstgid": "73",
+          "name": "rules_sewers",
+          "tilewidth": "24",
+          "tileheight": "24"
+        }
+      ],
+      "properties": [],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": []
+    },
+    {
+      "file": "sewer_automap/rule_008.tmx",
+      "sha256": "34e59343f34e14be654e786663a63514089baa219623bd1231d5e9ae74da4e19",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/sewer_automap/rule_008.tmx",
+      "attributes": {
+        "version": "1.0",
+        "orientation": "orthogonal",
+        "width": "4",
+        "height": "4",
+        "tilewidth": "24",
+        "tileheight": "24"
+      },
+      "layers": [
+        {
+          "tag": "layer",
+          "name": "regions_input",
+          "width": "4",
+          "height": "4",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "regions_output",
+          "width": "4",
+          "height": "4",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "input_Over",
+          "width": "4",
+          "height": "4",
+          "objects": 0
+        },
+        {
+          "tag": "objectgroup",
+          "name": "output_GroundEffects",
+          "width": "4",
+          "height": "4",
+          "objects": 1
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "name": "sewer_tileset",
+          "tilewidth": "24",
+          "tileheight": "24"
+        },
+        {
+          "firstgid": "73",
+          "name": "rules_sewers",
+          "tilewidth": "24",
+          "tileheight": "24"
+        }
+      ],
+      "properties": [
+        {
+          "name": "NoOverlappingRules",
+          "value": "1"
+        },
+        {
+          "name": "predefined Value",
+          "value": ""
+        }
+      ],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": [
+        {
+          "name": "1",
+          "type": "Effect",
+          "x": "24",
+          "y": "24",
+          "width": "24",
+          "height": "24"
+        }
+      ]
+    },
+    {
+      "file": "sewer_automap/rule_009.tmx",
+      "sha256": "a3532d3f6aea6953daaa32074dd085677186e020a31d10ed64371485d32aded3",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/sewer_automap/rule_009.tmx",
+      "attributes": {
+        "version": "1.0",
+        "orientation": "orthogonal",
+        "width": "4",
+        "height": "3",
+        "tilewidth": "24",
+        "tileheight": "24"
+      },
+      "layers": [
+        {
+          "tag": "layer",
+          "name": "regions",
+          "width": "4",
+          "height": "3",
+          "objects": 0
+        },
+        {
+          "tag": "layer",
+          "name": "input_Ground",
+          "width": "4",
+          "height": "3",
+          "objects": 0
+        },
+        {
+          "tag": "objectgroup",
+          "name": "output_GroundEffects",
+          "width": "4",
+          "height": "3",
+          "objects": 1
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "name": "sewer_tileset",
+          "tilewidth": "24",
+          "tileheight": "24"
+        },
+        {
+          "firstgid": "73",
+          "name": "rules_sewers",
+          "tilewidth": "24",
+          "tileheight": "24"
+        }
+      ],
+      "properties": [
+        {
+          "name": "NoOverlappingRules",
+          "value": "1"
+        },
+        {
+          "name": "triggering",
+          "value": "trigger42"
+        }
+      ],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": [
+        {
+          "name": "2",
+          "type": "Trigger",
+          "x": "48",
+          "y": "24",
+          "width": "24",
+          "height": "24"
+        }
+      ]
+    },
+    {
+      "file": "sticker-knight/map/sandbox.tmx",
+      "sha256": "0f9de90191f8618caceb9bfacf50d9625ff73ba2eb8a1285aff698252c00aae7",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/sticker-knight/map/sandbox.tmx",
+      "attributes": {
+        "version": "1.8",
+        "tiledversion": "1.8.2",
+        "orientation": "orthogonal",
+        "renderorder": "right-down",
+        "width": "79",
+        "height": "45",
+        "tilewidth": "32",
+        "tileheight": "32",
+        "infinite": "0",
+        "parallaxoriginx": "1264",
+        "parallaxoriginy": "720",
+        "backgroundcolor": "#27b99a",
+        "nextlayerid": "12",
+        "nextobjectid": "203"
+      },
+      "layers": [
+        {
+          "tag": "objectgroup",
+          "id": "11",
+          "name": "static",
+          "parallaxx": "0",
+          "parallaxy": "0",
+          "objects": 1
+        },
+        {
+          "tag": "objectgroup",
+          "id": "10",
+          "name": "parallax clouds",
+          "parallaxx": "0.5",
+          "parallaxy": "0.5",
+          "objects": 5
+        },
+        {
+          "tag": "objectgroup",
+          "id": "1",
+          "name": "parallax background",
+          "parallaxx": "0.8",
+          "parallaxy": "0.8",
+          "objects": 7
+        },
+        {
+          "tag": "objectgroup",
+          "id": "2",
+          "name": "background",
+          "objects": 5
+        },
+        {
+          "tag": "objectgroup",
+          "id": "3",
+          "name": "ground",
+          "objects": 35
+        },
+        {
+          "tag": "objectgroup",
+          "id": "4",
+          "name": "castle",
+          "objects": 29
+        },
+        {
+          "tag": "objectgroup",
+          "id": "5",
+          "name": "castledeco",
+          "objects": 3
+        },
+        {
+          "tag": "objectgroup",
+          "id": "6",
+          "name": "shading",
+          "opacity": "0.36",
+          "objects": 17
+        },
+        {
+          "tag": "objectgroup",
+          "id": "7",
+          "name": "game",
+          "objects": 9
+        },
+        {
+          "tag": "objectgroup",
+          "id": "8",
+          "name": "above",
+          "objects": 1
+        },
+        {
+          "tag": "objectgroup",
+          "id": "9",
+          "name": "bounds",
+          "visible": "0",
+          "objects": 2
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "source": "objs.tsx"
+        }
+      ],
+      "properties": [
+        {
+          "name": "bodyType",
+          "value": "static"
+        },
+        {
+          "name": "friction",
+          "type": "float",
+          "value": "1"
+        },
+        {
+          "name": "bodyType",
+          "value": "static"
+        },
+        {
+          "name": "friction",
+          "type": "float",
+          "value": "1"
+        },
+        {
+          "name": "bodyType",
+          "value": "static"
+        },
+        {
+          "name": "floating",
+          "type": "bool",
+          "value": "true"
+        },
+        {
+          "name": "friction",
+          "type": "float",
+          "value": "1"
+        },
+        {
+          "name": "bodyType",
+          "value": "static"
+        },
+        {
+          "name": "friction",
+          "type": "float",
+          "value": "1"
+        },
+        {
+          "name": "bodyType",
+          "value": "static"
+        },
+        {
+          "name": "friction",
+          "type": "float",
+          "value": "1"
+        },
+        {
+          "name": "bodyType",
+          "value": "static"
+        },
+        {
+          "name": "friction",
+          "type": "float",
+          "value": "1"
+        },
+        {
+          "name": "bodyType",
+          "value": "static"
+        },
+        {
+          "name": "friction",
+          "type": "float",
+          "value": "1"
+        },
+        {
+          "name": "bodyType",
+          "value": "static"
+        },
+        {
+          "name": "floating",
+          "type": "bool",
+          "value": "true"
+        },
+        {
+          "name": "friction",
+          "type": "float",
+          "value": "1"
+        },
+        {
+          "name": "bodyType",
+          "value": "static"
+        },
+        {
+          "name": "floating",
+          "type": "bool",
+          "value": "true"
+        },
+        {
+          "name": "friction",
+          "type": "float",
+          "value": "1"
+        },
+        {
+          "name": "bodyType",
+          "value": "static"
+        },
+        {
+          "name": "friction",
+          "type": "float",
+          "value": "1"
+        },
+        {
+          "name": "bodyType",
+          "value": "static"
+        },
+        {
+          "name": "friction",
+          "type": "float",
+          "value": "1"
+        },
+        {
+          "name": "bodyType",
+          "value": "static"
+        },
+        {
+          "name": "floating",
+          "type": "bool",
+          "value": "true"
+        },
+        {
+          "name": "friction",
+          "type": "float",
+          "value": "1"
+        },
+        {
+          "name": "bodyType",
+          "value": "static"
+        },
+        {
+          "name": "floating",
+          "type": "bool",
+          "value": "true"
+        },
+        {
+          "name": "friction",
+          "type": "float",
+          "value": "1"
+        },
+        {
+          "name": "bodyType",
+          "value": "static"
+        },
+        {
+          "name": "floating",
+          "type": "bool",
+          "value": "true"
+        },
+        {
+          "name": "friction",
+          "type": "float",
+          "value": "1"
+        },
+        {
+          "name": "bodyType",
+          "value": "static"
+        },
+        {
+          "name": "friction",
+          "type": "float",
+          "value": "1"
+        },
+        {
+          "name": "bodyType",
+          "value": "static"
+        },
+        {
+          "name": "friction",
+          "type": "float",
+          "value": "1"
+        },
+        {
+          "name": "map",
+          "value": "scene/game/map/sandbox2.json"
+        },
+        {
+          "name": "bodyType",
+          "value": "static"
+        },
+        {
+          "name": "bodyType",
+          "value": "static"
+        }
+      ],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": [
+        {
+          "id": "90",
+          "gid": "16",
+          "x": "146.97",
+          "y": "693.727",
+          "width": "192",
+          "height": "192"
+        },
+        {
+          "id": "95",
+          "gid": "7",
+          "x": "-16.2424",
+          "y": "452.394",
+          "width": "384",
+          "height": "128"
+        },
+        {
+          "id": "91",
+          "gid": "2147483655",
+          "x": "373.939",
+          "y": "627.121",
+          "width": "384",
+          "height": "128"
+        },
+        {
+          "id": "93",
+          "gid": "2147483655",
+          "x": "2105.85",
+          "y": "510.818",
+          "width": "384",
+          "height": "128"
+        },
+        {
+          "id": "92",
+          "gid": "7",
+          "x": "1453.52",
+          "y": "651.909",
+          "width": "384",
+          "height": "128"
+        },
+        {
+          "id": "94",
+          "gid": "7",
+          "x": "946.606",
+          "y": "420.455",
+          "width": "384",
+          "height": "128"
+        },
+        {
+          "id": "105",
+          "gid": "59",
+          "x": "66.6667",
+          "y": "1079",
+          "width": "837.333",
+          "height": "320"
+        },
+        {
+          "id": "106",
+          "gid": "59",
+          "x": "592",
+          "y": "1055",
+          "width": "920",
+          "height": "448"
+        },
+        {
+          "id": "107",
+          "gid": "59",
+          "x": "1173.54",
+          "y": "1179.49",
+          "width": "920",
+          "height": "352",
+          "rotation": "-10.4469"
+        },
+        {
+          "id": "108",
+          "gid": "59",
+          "x": "1824.67",
+          "y": "1141",
+          "width": "656.364",
+          "height": "448"
+        },
+        {
+          "id": "109",
+          "gid": "60",
+          "x": "2145.33",
+          "y": "817",
+          "width": "129",
+          "height": "332"
+        },
+        {
+          "id": "110",
+          "gid": "60",
+          "x": "1771.52",
+          "y": "976.697",
+          "width": "129",
+          "height": "332"
+        },
+        {
+          "id": "113",
+          "gid": "60",
+          "x": "847.515",
+          "y": "823.788",
+          "width": "129",
+          "height": "332"
+        },
+        {
+          "id": "1",
+          "gid": "14",
+          "x": "0",
+          "y": "1440",
+          "width": "2528",
+          "height": "385"
+        },
+        {
+          "id": "79",
+          "gid": "14",
+          "x": "448",
+          "y": "1087",
+          "width": "512",
+          "height": "320"
+        }
+      ]
+    },
+    {
+      "file": "sticker-knight/map/templates/block.tx",
+      "sha256": "47c2d655ce7c96776c84e5c6eaa2be38db6febf425b1354ef1648b5a1702419c",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/sticker-knight/map/templates/block.tx",
+      "attributes": {},
+      "layers": [],
+      "tilesets": [
+        {
+          "firstgid": "1",
+          "source": "../objs.tsx"
+        }
+      ],
+      "properties": [
+        {
+          "name": "bodyType",
+          "value": "dynamic"
+        },
+        {
+          "name": "density",
+          "type": "float",
+          "value": "2"
+        },
+        {
+          "name": "friction",
+          "type": "float",
+          "value": "0.45"
+        }
+      ],
+      "object_shapes": {
+        "polygon": 0,
+        "polyline": 0,
+        "ellipse": 0,
+        "point": 0,
+        "text": 0
+      },
+      "terrain_names": [],
+      "wangsets": [],
+      "tile_collision_groups": 0,
+      "animations": 0,
+      "object_details": [
+        {
+          "name": "block",
+          "gid": "44",
+          "width": "96",
+          "height": "96"
+        }
+      ]
+    },
+    {
+      "file": "sticker-knight/README.md",
+      "sha256": "d9dadaadb5dd133b1f860b04ed12298c5f82566d1a656f1da14093c0dbe8e829",
+      "url": "https://github.com/mapeditor/tiled/blob/221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd/examples/sticker-knight/README.md"
+    }
+  ]
+}

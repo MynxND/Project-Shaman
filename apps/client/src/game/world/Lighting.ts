@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import { WORLD_UNIT_PX, type MapDefinition } from '@shaman/shared';
+import { projectedY, WORLD_UNIT_PX, type MapDefinition } from '@shaman/shared';
 
 // Visual-only night lighting for the map. Rules never depend on it.
 
@@ -16,6 +16,10 @@ const DARKNESS = { color: 0x0b0718, alpha: 0.5 };
  * lanterns), 4 houses (faint windows), 5 spirit garden (low jade). Radii stay small so glows never wash out the art.
  */
 const LIGHTS: Record<string, { color: number; radius: number; height: number; strength: number; flicker: number }> = {
+  'village-sacred-totem': { color: 0xffaa55, radius: 3.0, height: 1.6, strength: 0.55, flicker: 0.1 },
+  'village-thatched-hut': { color: 0xffa050, radius: 1.8, height: 2.6, strength: 0.3, flicker: 0.08 },
+  'village-thatched-lodge': { color: 0xffa050, radius: 2.4, height: 2.6, strength: 0.35, flicker: 0.08 },
+  'village-ritual-gate': { color: 0xffa050, radius: 2.0, height: 2.8, strength: 0.25, flicker: 0.08 },
   // v1 assets still on the map.
   cauldron: { color: 0x6cff70, radius: 1.4, height: 0.9, strength: 0.45, flicker: 0.12 },
   // 1. Plaza.
@@ -78,10 +82,13 @@ export function addContactShadow(scene: Phaser.Scene, x: number, y: number, widt
 export function addMapLighting(scene: Phaser.Scene, map: MapDefinition) {
   ensureGlowTexture(scene);
   const U = WORLD_UNIT_PX;
-  scene.add.rectangle(0, 0, map.width * U, map.height * U, DARKNESS.color, DARKNESS.alpha).setOrigin(0).setDepth(DARKNESS_DEPTH);
+  const village = map.objects.some(o=>o.asset==='village-sacred-totem');
+  const spiritwood = ['whispering-spiritwood','lantern-paddy','moon-mangrove','monsoon-marsh','cloud-tea-slopes'].includes(map.id);
+  scene.add.rectangle(0, 0, map.width * U, map.height * U, spiritwood ? 0x071c20 : village ? 0x081817 : DARKNESS.color, spiritwood ? .20 : village ? .28 : map.elevation?.artPass ? .42 : DARKNESS.alpha).setOrigin(0).setDepth(DARKNESS_DEPTH);
   for (const object of map.objects) {
     const light = LIGHTS[object.asset];
-    if (light) addGlow(scene, object.x * U, (object.y - (object.lift ?? 0) - light.height) * U, light.color, light.radius, light.flicker, light.strength);
+    const hierarchy = village ? .65 : !map.elevation?.artPass ? 1 : object.asset==='thai-temple' ? 1.2 : object.asset==='spirit-pillar' ? .65 : object.y>24 ? .75 : 1;
+    if (light) addGlow(scene, object.x * U, projectedY(map,object.x,object.y) - ((object.lift ?? 0) + light.height) * U, light.color, light.radius, light.flicker, light.strength*hierarchy);
   }
 }
 

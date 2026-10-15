@@ -1,0 +1,116 @@
+You are a senior 2D pixel-art environment artist and game level designer specializing in dark fantasy RPG environments.
+
+## Objective
+
+Redesign the mountain elevation, stone staircases, retaining walls, and pathways in the attached game screenshot.
+
+The current environment looks too flat, artificial, and grid-based. The stairs appear like straight brown rectangular strips, while the stone walls look like repetitive horizontal barriers.
+
+Transform this area into an ancient sacred mountain shrine approach inspired by Southeast Asian shamanism and Thai animist folklore.
+
+## 1. Mountain elevation redesign
+
+- Create a natural multi-level mountain slope instead of a flat forest floor.
+- Introduce visible elevation changes using layered rocky cliffs, soil embankments, moss-covered stone formations, and natural terrain transitions.
+- The shrine at the northern end must clearly appear on higher ground.
+- Use irregular cliff edges instead of straight rectangular boundaries.
+- Blend cliffs naturally into the surrounding forest.
+- Add exposed roots, ferns, vines, rocks, and moss around the slopes.
+- Use shadows and cliff faces to communicate elevation in the existing top-down camera perspective.
+
+## 2. Staircase redesign — HIGH PRIORITY
+
+Completely replace the existing unnatural staircase appearance.
+
+Create ancient, weathered stone stairways carved into the mountainside.
+
+Requirements:
+- Individual stone steps must be visually recognizable.
+- Each step should have a readable front edge and subtle depth shading.
+- Use irregular stone widths and slight variations in shape.
+- Add moss, cracks, chipped edges, and weathering.
+- Introduce natural landings between staircase sections.
+- Use short staircase segments instead of one continuous straight staircase.
+- Follow the terrain elevation logically.
+- Blend the stairs into the rocky hillside.
+- Use natural rock retaining walls beside the stairs where necessary.
+- Avoid perfectly repeated staircase tiles.
+- Avoid long straight brown paths pretending to be stairs.
+- Keep the staircase width consistent enough for player movement.
+- Make the stairs readable at the game's actual zoom level.
+
+The result should feel like a centuries-old mountain pilgrimage route.
+
+## 3. Pathway redesign
+
+Replace the rigid straight dirt paths with natural forest trails.
+
+- Use irregular path boundaries.
+- Mix compacted soil, embedded stones, exposed roots, and fallen leaves.
+- Create gentle curves where appropriate.
+- Make pathways connect logically with stairs and landings.
+- Avoid obvious tile repetition.
+- Preserve the original gameplay connections.
+
+## 4. Retaining walls and cliffs
+
+Replace long, perfectly horizontal stone walls with believable terrain structures.
+
+- Use uneven rock formations and partially collapsed ancient stone retaining walls.
+- Create natural breaks where stairs connect different elevations.
+- Add moss, vegetation, cracks, and exposed roots.
+- Ensure walls visually represent elevation differences.
+- Do not create decorative walls that appear to block valid walking paths.
+
+## 5. Shrine atmosphere
+
+Preserve the dark Southeast Asian shaman forest theme.
+
+- Ancient sacred mountain atmosphere.
+- Dense tropical vegetation.
+- Old stonework partially reclaimed by nature.
+- Subtle spiritual lighting from ritual torches.
+- Mysterious, abandoned, sacred environment.
+- Avoid Japanese shrine architecture and torii gates.
+- Maintain the existing detailed pixel-art style.
+
+## 6. Gameplay and technical constraints
+
+IMPORTANT:
+- Preserve the existing 2D camera perspective.
+- Preserve existing map dimensions and major landmarks.
+- Keep the shrine, houses, river, and major forest areas in their current general locations.
+- Do not modify character scale.
+- Do not block existing player routes.
+- Update collision boundaries when cliffs, walls, or stairs change.
+- Ensure stair entrances and exits remain walkable.
+- Maintain correct player depth sorting.
+- Ensure characters do not appear to walk through cliff faces.
+- Avoid visually implying height differences that the movement/collision system cannot support.
+
+## 7. Implementation requirements
+
+Inspect the current map rendering system, tilesets, terrain data, and collision logic before making changes.
+
+Do not solve this by adding random CSS decorations or overlaying a static screenshot.
+
+Modify the actual environment assets and map geometry.
+
+If new pixel-art tiles are needed, specify or generate the necessary:
+- Ancient stone staircase tiles
+- Staircase transition tiles
+- Rocky cliff-edge tiles
+- Moss-covered retaining wall tiles
+- Natural dirt path transition tiles
+- Stone landing tiles
+- Cliff vegetation overlays
+
+Preserve existing code comments and gameplay functionality.
+
+## Expected result
+
+The player should immediately recognize that they are ascending a real ancient mountain toward a sacred shaman shrine.
+
+The terrain should feel organic, layered, atmospheric, and professionally designed, rather than a flat grid with rectangular staircases.
+
+Implement the changes in the existing project, verify walkability and collisions, and report any missing art assets that prevent completion.

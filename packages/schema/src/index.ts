@@ -3,6 +3,7 @@ import { schema, t } from '@colyseus/schema';
 export const PlayerState = schema({
   x: t.float32().default(0),
   y: t.float32().default(0),
+  elevation: t.float32().default(0),
   facing: t.string().default('south'),
   moving: t.boolean().default(false),
   bodyType: t.string().default('male'),

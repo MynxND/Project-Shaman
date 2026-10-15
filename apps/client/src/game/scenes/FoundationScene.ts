@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 import type { Room } from '@colyseus/sdk';
 import type { GameState } from '@shaman/schema';
-import { BASIC_ATTACK, basicAttackFor, DEFAULT_APPEARANCE, DEFAULT_MAP_ID, FACINGS, FacingTracker, facingFromVector, getMap, parseBodyType, stepMovement, UMBRAL_CAPITAL, WORLD_UNIT_PX, type BodyType, type Facing, type MapDefinition, type Position, withBlockers } from '@shaman/shared';
+import { projectedY, terrainHeight, BASIC_ATTACK, basicAttackFor, DEFAULT_APPEARANCE, DEFAULT_MAP_ID, FACINGS, FacingTracker, facingFromVector, getMap, parseBodyType, stepMovement, UMBRAL_CAPITAL, WORLD_UNIT_PX, type BodyType, type Facing, type MapDefinition, type Position, withBlockers } from '@shaman/shared';
 import { CharacterSprite, preloadCharacterRig } from '../characters/CharacterRig';
 import { useHeadStore } from '../../stores/head-store';
 
@@ -76,6 +76,11 @@ export class FoundationScene extends Phaser.Scene {
   private rejoinTimer: number | undefined;
   /** Dev-only deterministic framing for landscape review; never changes player/server position. */
   private gardenReview: string | null = null;
+  private mountainReview: string | null = null;
+  /** Village overview changes only camera framing, never the room/player coordinates. */
+  private villageOverview = false;
+  private villageOverviewFramed = false;
+  private mountainPerf = { start: 0, last: 0, frames: [] as number[], enabled: false };
 
   constructor() { super('foundation'); }
   /** Runs before preload on every start, including a portal restart with { mapId, ticket }. */
@@ -84,6 +89,11 @@ export class FoundationScene extends Phaser.Scene {
     // A signed-in character resumes on the map it was saved on.
     this.map = getMap(data?.mapId ?? devMap ?? useAccountStore.getState().character?.mapId ?? DEFAULT_MAP_ID);
     this.ticket = data?.ticket;
+    this.gardenReview = null;
+    this.villageOverview = process.env.NODE_ENV === 'development' && new URLSearchParams(window.location.search).get('villageReview') === 'overview';
+    this.villageOverviewFramed = false;
+    this.mountainReview = process.env.NODE_ENV === 'development' ? new URLSearchParams(window.location.search).get('mountainReview') : null;
+    this.mountainPerf = { start: 0, last: 0, frames: [], enabled: process.env.NODE_ENV === 'development' && new URLSearchParams(window.location.search).has('mountainMetrics') };
     this.disposed = false;
     this.players = new Map();
     this.predicted = null;
@@ -94,7 +104,8 @@ export class FoundationScene extends Phaser.Scene {
     useTargetStore.getState().select(null);
   }
   preload() {
-    preloadMapAssets(this);
+    if(this.mountainPerf.enabled){console.info('[mountain-load] preload',this.map.id);this.load.on('loaderror',(file: {key:string})=>console.error('[mountain-load] failed',file.key));this.load.once('complete',()=>console.info('[mountain-load] complete',this.map.id));}
+    preloadMapAssets(this,this.map);
     preloadCharacterRig(this);
     preloadCitizens(this);
     preloadSkillCasts(this);
@@ -102,7 +113,9 @@ export class FoundationScene extends Phaser.Scene {
     preloadMonsters(this);
   }
   create() {
+    if(this.mountainPerf.enabled)console.info('[mountain-load] create',this.map.id);
     const { widthPx, heightPx } = renderMap(this, this.map);
+    if(this.mountainPerf.enabled)console.info('[mountain-load] rendered',this.children.length);
     const camera = this.cameras.main;
     camera.setBounds(0, 0, widthPx, heightPx).setRoundPixels(true);
     camera.centerOn(this.map.spawn.x * WORLD_UNIT_PX, this.map.spawn.y * WORLD_UNIT_PX);
@@ -119,9 +132,28 @@ export class FoundationScene extends Phaser.Scene {
     const resize = (size: Phaser.Structs.Size) => {
       camera.setSize(size.width, size.height);
       zoom.setBase(Math.max(size.width / VIEW_W, size.height / VIEW_H));
+      if(this.villageOverview&&!this.villageOverviewFramed){zoom.set(.01);this.villageOverviewFramed=true;}
       if (this.gardenReview) zoom.set(this.gardenReview === 'wide' ? 0.01 : this.gardenReview === 'close' ? 1.5 : 1);
     };
     resize(this.scale.gameSize);
+    this.frameMountainReview(widthPx,heightPx);
+    if(this.mountainPerf.enabled){
+      const stopped=()=>{
+        const p=this.predicted,view=this.room?this.players.get(this.room.sessionId):undefined;
+        const actor=view?.sprite;
+        if(!p||!actor)return;
+        const a=actor.getBounds();
+        const overlaps=this.map.objects.filter(o=>/tree/.test(o.asset)).flatMap(o=>{
+          const item=this.children.getByName(o.id) as Phaser.GameObjects.Image|null;
+          if(!item||!Phaser.Geom.Intersects.RectangleToRectangle(a,item.getBounds()))return[];
+          return[{id:o.id,depth:item.depth,actorBehind:actor.depth<item.depth}];
+        });
+        console.info('[mountain-walk]',JSON.stringify({world:p,elevation:terrainHeight(this.map,p.x,p.y),actorDepth:actor.depth,overlaps}));
+      };
+      this.input.keyboard?.on('keyup',stopped);
+      this.events.once(Phaser.Scenes.Events.SHUTDOWN,()=>this.input.keyboard?.off('keyup',stopped));
+    }
+
     this.scale.on(Phaser.Scale.Events.RESIZE, resize);
     const cleanup = () => {
       this.disposed = true;
@@ -165,7 +197,7 @@ export class FoundationScene extends Phaser.Scene {
       talking: () => useNpcStore.getState().talking,
       onWalkAway: () => useNpcStore.getState().close(),
     });
-    if (this.map.id === UMBRAL_CAPITAL.id) this.citizens = new CitizenLayer(this);
+    if (this.map.id === UMBRAL_CAPITAL.id || (this.map.elevation&&this.map.id!=='mountain-spirit-sanctuary')) this.citizens = new CitizenLayer(this);
     this.casts = new SkillCastLayer(this, CHARACTER_SCALE);
     this.nationVfx = new NationVfxLayer(this, CHARACTER_SCALE);
     this.portals = new PortalLayer(this, this.map);
@@ -181,7 +213,7 @@ export class FoundationScene extends Phaser.Scene {
         if (facing) { view.facing.set(facing); view.sprite.setFacing(facing); }
         view.sprite.playOnce('attack');
       },
-    });
+    },this.map);
     // World units, for the minimap: drawn sprite positions, so the map matches what the player sees.
     setPlayersProbe(() => {
       const U = WORLD_UNIT_PX;
@@ -380,10 +412,36 @@ export class FoundationScene extends Phaser.Scene {
     useSkillStore.getState().reset();
   }
 
+  /** Fixed camera for repeatable real-game screenshots; never teleports players. */
+  private frameMountainReview(width: number,height: number) {
+    if(this.villageOverview){const c=this.cameras.main;c.stopFollow();c.setBounds(0,0,width,height);c.centerOn(width/2,height/2);return;}
+    if (!this.mountainReview) return;
+    const c=this.cameras.main;
+    c.stopFollow();
+    if(this.mountainReview==='wide'){c.setZoom(Math.max(c.width/width,c.height/height));c.centerOn(width/2,height/2);}
+    else {c.setZoom(.9);c.centerOn(40*32,(this.mountainReview==='lower'?43:19)*32);}
+  }
+
+  /** Opt-in development telemetry from actual rendered frames, excluding the first 3 s. */
+  private measureMountainFrame() {
+    const p=this.mountainPerf;if(!p.enabled)return;
+    const now=performance.now();
+    if(document.hidden){p.start=0;p.last=0;p.frames=[];return;}
+    if(!p.start)p.start=now;
+    if(now-p.start<3000){p.last=now;return;}
+    if(p.last)p.frames.push(now-p.last);p.last=now;
+    if(p.frames.reduce((a,b)=>a+b,0)<10000)return;
+    const frames=[...p.frames].sort((a,b)=>a-b),total=frames.reduce((a,b)=>a+b,0),c=this.cameras.main;
+    console.info('[mountain-metrics]',JSON.stringify({map:this.map.id,seconds:total/1000,frames:frames.length,fps:frames.length*1000/total,p95Ms:frames[Math.floor(frames.length*.95)],maxMs:frames.at(-1),over50Ms:frames.filter(v=>v>50).length,viewport:[c.width,c.height],zoom:c.zoom,camera:[c.midPoint.x,c.midPoint.y],objects:this.children.length,player:this.predicted}));
+    p.frames=[];
+  }
+
   update(time: number, delta: number) {
+    this.measureMountainFrame();
+    if (this.mountainReview || this.villageOverview) this.frameMountainReview(this.map.width*WORLD_UNIT_PX,this.map.height*WORLD_UNIT_PX);
     this.citizens?.update(this.room?.state ?? null, delta);
     // Zoom works offline too (e.g. while reconnecting).
-    this.zoom?.update(delta);
+    if(!this.mountainReview)this.zoom?.update(delta);
     this.npcs?.update();
     if (this.gardenReview) {
       this.cameras.main.stopFollow();
@@ -412,7 +470,7 @@ export class FoundationScene extends Phaser.Scene {
           // The local sprite already moves smoothly every frame, so the camera tracks it exactly.
           // Slight north bias (player just below centre): more of what lies ahead is visible, and the plaza's
           // spirit pillar clears the HUD menu at spawn.
-          if (!this.gardenReview) this.cameras.main.startFollow(sprite, true, 1, 1, 0, CAMERA_LOOK_AHEAD_UNITS * WORLD_UNIT_PX);
+          if (!this.gardenReview && !this.mountainReview && !this.villageOverview) this.cameras.main.startFollow(sprite, true, 1, 1, 0, CAMERA_LOOK_AHEAD_UNITS * WORLD_UNIT_PX);
           view.light = addPlayerLight(this);
           view.hpBar = this.add.graphics();
         }
@@ -437,17 +495,17 @@ export class FoundationScene extends Phaser.Scene {
         if (error > SNAP_DISTANCE) next = { x: player.x, y: player.y };
         else if (settling) next = { x: next.x + (player.x - next.x) * IDLE_SETTLE * follow, y: next.y + (player.y - next.y) * IDLE_SETTLE * follow };
         this.predicted = next;
-        sprite.setPosition(next.x * WORLD_UNIT_PX, next.y * WORLD_UNIT_PX);
+        sprite.setPosition(next.x * WORLD_UNIT_PX, projectedY(this.map,next.x,next.y));
         sprite.setFacing(view.facing.update(facingFromVector(input.x, input.y), time));
         sprite.setAnimation(this.restingAnimation(view, !idle, time));
       } else {
         sprite.x += (target.x - sprite.x) * follow;
-        sprite.y += (target.y - sprite.y) * follow;
+        sprite.y += (projectedY(this.map,player.x,player.y) - sprite.y) * follow;
         const serverFacing = (FACINGS as readonly string[]).includes(player.facing) ? player.facing as Facing : null;
         sprite.setFacing(view.facing.update(player.moving ? serverFacing : null, time));
         sprite.setAnimation(this.restingAnimation(view, player.moving, time));
       }
-      sprite.setDepth(sprite.y);
+      sprite.setDepth(this.map.elevation ? (id===room.sessionId ? this.predicted?.y??player.y : player.y)*WORLD_UNIT_PX : sprite.y);
       shadow.setPosition(sprite.x, sprite.y - 1);
       light?.setPosition(sprite.x, sprite.y - WORLD_UNIT_PX);
       // Name labels stay readable above the night darkness.

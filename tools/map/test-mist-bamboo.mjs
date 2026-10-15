@@ -1,0 +1,25 @@
+import assert from'node:assert/strict';
+import{readFile,writeFile}from'node:fs/promises';
+import{isBlocked,stepMovement,elevationPassage,MAPS,MONSTERS}from'../../packages/shared/dist/index.js';
+import{materialAt}from'./leveling-preview-model.mjs';
+const root='docs/design/maps/mist-bamboo/',m=JSON.parse(await readFile(root+'map.json')),p=JSON.parse(await readFile(root+'plan.json')),assets=JSON.parse(await readFile('apps/client/public/assets/umbral/manifest.json'));
+assert.deepEqual(MAPS[m.id],m,'canonical live registration');assert.equal(m.portals.length,1);assert.equal(m.spawnRegions.length,3);
+assert.deepEqual(m.spawnRegions.flatMap(r=>r.monsters.map(s=>MONSTERS[s.kind].level)),[20,28,35]);
+assert.deepEqual(JSON.parse(await readFile('apps/client/src/game/world/bamboo-presentation.json')),{fog:p.fog,graph:p.graph},'live atmosphere equals preview');
+const mountain=MAPS['mountain-spirit-sanctuary'],gate=mountain.portals.find(p=>p.id==='bamboo-gate');assert(gate.area.x>=mountain.width-2);assert.equal(m.portals[0].to.portalId,gate.id);assert.equal(gate.to.portalId,m.portals[0].id);
+const original=JSON.parse(await readFile('docs/design/maps/mountain-spirit-sanctuary/revision01/pre-bamboo-live.json'));
+for(const key of ['width','height','spawn','elevation','npcs','spawnRegions'])assert.deepEqual(mountain[key],original[key],'preserve sanctuary '+key);
+assert.deepEqual(mountain.portals.find(p=>p.id==='marsh-gate'),original.portals[0],'existing marsh portal unchanged');
+const originalValley=JSON.parse(await readFile(root+'revision01/pre-bamboo-live.json'));for(const key of ['terrain','objects','blockers','safeZones','width','height'])assert.deepEqual(m[key],originalValley[key],'preserve preview '+key);
+let approach={x:51,y:53};for(const target of [[55,48],[61,45],[66,43],[70,43],[73,43]]){let ticks=0;while(Math.hypot(approach.x-target[0],approach.y-target[1])>.14&&ticks++<1200){const dx=target[0]-approach.x,dy=target[1]-approach.y,next=stepMovement(approach,{x:Math.abs(dx)>.07?Math.sign(dx):0,y:Math.abs(dy)>.07?Math.sign(dy):0,sequence:ticks},1/60,mountain).position;assert(elevationPassage(mountain,approach,next));approach=next;}assert(ticks<1200,'mountain approach '+target);}
+for(const paint of m.terrain.paint)assert(['grass','dirt','road','water'].includes(paint.terrain),'unsupported terrain '+paint.terrain);
+const ids=new Set(m.objects.map(o=>o.id));assert.equal(ids.size,m.objects.length);for(const id of p.requiredObjects)assert(ids.has(id),id);
+const failures=[];for(const o of m.objects){assert(assets.objects[o.asset],o.asset);if(!o.footprint)continue;for(let y=o.y-o.footprint.h;y<=o.y;y+=.25)for(let x=o.x-o.footprint.w/2;x<=o.x+o.footprint.w/2;x+=.25)if(materialAt(m,x,y)==='water')failures.push(o.id);}
+assert.equal(failures.length,0,'wet footprints '+[...new Set(failures)]);
+const W=m.width*2+1,H=m.height*2+1,seen=new Uint8Array(W*H),q=[m.spawn.y*2*W+m.spawn.x*2];seen[q[0]]=1;for(let i=0;i<q.length;i++){const k=q[i];for(const[dx,dy]of[[1,0],[-1,0],[0,1],[0,-1]]){const x=k%W+dx,y=Math.floor(k/W)+dy,n=y*W+x;if(x<0||y<0||x>=W||y>=H||seen[n]||isBlocked(m,x/2,y/2))continue;seen[n]=1;q.push(n);}}
+for(const l of p.locations)assert(seen[Math.round(l.y*2)*W+Math.round(l.x*2)],'unreachable '+l.id);
+for(const camp of p.camps)for(const[x,y]of camp.positions){assert(!isBlocked(m,x,y),camp.id);assert.equal(materialAt(m,x,y)!=='water',true);assert(!m.safeZones.some(r=>x>=r.x&&x<=r.x+r.w&&y>=r.y&&y<=r.y+r.h),'safe zone '+camp.id);assert(x>=camp.area.x&&x<=camp.area.x+camp.area.w&&y>=camp.area.y&&y<=camp.area.y+camp.area.h);}
+let pos={...m.spawn};for(const target of [...p.route.slice(1),...p.route.slice(0,-1).reverse()]){let ticks=0;while(Math.hypot(pos.x-target[0],pos.y-target[1])>.14&&ticks++<2400){const dx=target[0]-pos.x,dy=target[1]-pos.y;pos=stepMovement(pos,{x:Math.abs(dx)>.07?Math.sign(dx):0,y:Math.abs(dy)>.07?Math.sign(dy):0,sequence:ticks},1/60,m).position;}assert(ticks<2400,'stuck '+target);}
+for(const name of['map','plan'])assert.deepEqual(JSON.parse(await readFile(`apps/client/src/components/maps/bamboo-review-${name}.json`)),JSON.parse(await readFile(root+name+'.json')));
+const routeLength=p.route.slice(1).reduce((n,b,i)=>n+Math.hypot(b[0]-p.route[i][0],b[1]-p.route[i][1]),0);
+const result={registered:true,reciprocalEdgePortals:true,mountainApproach:true,monsterLevels:[20,28,35],requiredObjects:p.requiredObjects.length,objects:m.objects.length,locations:p.locations.length,camps:p.camps.length,residents:p.camps.reduce((n,c)=>n+c.positions.length,0),failedPlacements:[...new Set(failures)],reachableSamples:q.length,routeRoundTrip:true,routeLength,walkSeconds:routeLength/4};await writeFile(root+'validation.json',JSON.stringify(result,null,2));console.log('PASS',result);

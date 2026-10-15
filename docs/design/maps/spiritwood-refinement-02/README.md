@@ -1,0 +1,21 @@
+# Spiritwood composition revision 2 and three-map travel
+
+User authorized on 2026-10-14: refine playable forest ground/trails/canopy and adopt the three existing reviewed leveling maps with real portals. No AI generation or core dependency changes. Original source comments/assets retained.
+
+## Layout brief before placement
+Same Spiritwood 80×64 world, 16px native/32px world unit, speed4. Preserve original NPCs, monster regions, objects/footprints, existing water blockers and village return portal. Existing authored approaches: arrival40,58 → village40,50 → junction40,35 → training15,34 / cursed63,32 / shrine40,19. Add travel junction40,23, entrance at40,21.5 to paddy; arrival40,25. No original location is removed.
+
+Compose canopy masses outside the route/clearing silhouettes: west outer grove (4–10,24–49), north-west crescent (5–25,7–22), east outer grove (72–78,20–49), shrine flanks (28–33 and48–52,5–15). New vegetation is cosmetic understory/canopy, no new collision. Avoid NPC approach radius3, portal approaches and hunting clearings. Existing tree bases stay fixed; upgrade their foliage using owned tropical-tree art where suitable, retain dead trees in cursed woods. Ground patches follow these authored groves and the two pond banks; localized 64px artist texture patches break up the existing seeded grass atlas while preserving its continuous phase. Trails retain footprints but add muted mossy stone fragments and leaf/pebble borders using existing artist assets. No grid/hash scatter as final canopy composition.
+
+## Travel plan
+Spiritwood ↔ lantern-paddy ↔ moon-mangrove ↔ monsoon-marsh, reciprocal stable portal IDs. Adopt existing authored graph/locations/terrain from leveling-first-four/maps.json, not whole-map scaling. Paddy: south arrival38,55, north exit38,6. Mangrove: west arrival15,51, east exit69,51. Marsh: south arrival44,57. Trigger rectangles separated from safe arrival points by3–4 units. Preserve bridges and causeways: visual modular decking and shared water blocking must agree. Required locations and route graph remain those in each existing layout brief. Failed placements and reachable route measurements recorded by integration validation; do not silently skip.
+
+## Gameplay policy
+New-map monster regions use existing animated combat species as temporary residents; seven static concept seeds are not complete animated combat assets. Existing monster definitions/stats/EXP/loot remain unchanged. Proposed map level bands are not validated progression balance. NPCs/quests in Spiritwood unchanged; no invented NPC services in new maps. Server room/ticket/profile persistence remains authoritative.
+
+## Verification
+Capture before/after in actual online game at1280×720, same forest map/overview camera. Inspect each new map/bridge/water/fog, desktop/portrait/landscape. Run typecheck/build, navigation/portal reciprocity and live ticket travel for all links, existing combat/NPC regressions. Technical checks do not imply human visual approval.
+
+Results: typecheck/build PASS; `test-leveling-live.mjs` checks all required entrances/nodes, reciprocal gates, arrival separation, wet blockers and spawn capacity; `test-leveling-network.mjs` walks all three pairs through an isolated live server in both directions with preserved profile/single-use ticket flow/no bounce. Existing Spiritwood combat/EXP/respawn/return and NPC heal/save/buy/sell/two-client tests PASS. Water/terrain asset checks PASS. Browser actually walked Spiritwood→Paddy→Mangrove→Marsh through the public game server. Each actual map screenshot is in `screens/`; forest before/after share map/camera1280×720, live actors/time differ. Browser390×844 and844×390 checked, physical phone unverified. No browser errors observed.
+
+Comparison: http://localhost:3000/map-review/spiritwood-02/index.html · original art/comments retained. No generated artwork/paid credits in this revision. Forest loam/canopy and trail fragments reuse owned artist assets; bespoke seamless shoreline, polished wooden bridge modules, seven complete monster animation sets and final level balancing remain open. The three maps retain their reviewed composition; they have not been re-authored as the separate sacred-forest/swamp/ruins reference panels.

@@ -67,6 +67,10 @@ export * from './skill-registry.js';
 export * from './job-progression.js';
 export * from './hunter-combat.js';
 
+export * from './elevation.js';
+export { MOUNTAIN_SANCTUARY_PROTOTYPE, MOUNTAIN_PROTOTYPE_ROUTE, MOUNTAIN_PROTOTYPE_SIDE_ROUTES, MOUNTAIN_PROTOTYPE_STREAMS } from './maps/mountain-sanctuary-prototype.js';
+
+export { MOUNTAIN_SANCTUARY_DRAFT, MOUNTAIN_DRAFT_ROUTE, MOUNTAIN_DRAFT_SIDE_ROUTES, MOUNTAIN_DRAFT_STREAMS, MOUNTAIN_DRAFT_FOCUS } from './maps/mountain-sanctuary-draft.js';
 export * from './rune-seer-combat.js';
 export * from './japan-combat.js';
 export * from './nations-combat.js';

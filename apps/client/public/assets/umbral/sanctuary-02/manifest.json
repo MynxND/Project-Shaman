@@ -1,0 +1,74 @@
+{
+  "image": "kit.png",
+  "frames": {
+    "cliff-a": {
+      "x": 19,
+      "y": 94,
+      "w": 407,
+      "h": 302
+    },
+    "cliff-b": {
+      "x": 460,
+      "y": 95,
+      "w": 407,
+      "h": 304
+    },
+    "cap": {
+      "x": 898,
+      "y": 148,
+      "w": 421,
+      "h": 194
+    },
+    "landing": {
+      "x": 1375,
+      "y": 59,
+      "w": 357,
+      "h": 343
+    },
+    "step-a": {
+      "x": 20,
+      "y": 579,
+      "w": 407,
+      "h": 155
+    },
+    "step-a-tread": {
+      "x": 20,
+      "y": 625,
+      "w": 407,
+      "h": 53
+    },
+    "step-b": {
+      "x": 458,
+      "y": 580,
+      "w": 416,
+      "h": 151
+    },
+    "step-b-tread": {
+      "x": 458,
+      "y": 625,
+      "w": 416,
+      "h": 51
+    },
+    "step-c": {
+      "x": 899,
+      "y": 570,
+      "w": 421,
+      "h": 175
+    },
+    "step-c-tread": {
+      "x": 899,
+      "y": 622,
+      "w": 421,
+      "h": 60
+    },
+    "abutment": {
+      "x": 1371,
+      "y": 511,
+      "w": 360,
+      "h": 292
+    }
+  },
+  "sourceSha256": "4b7579eb2dae798eb2c4883e3bce28b15e48a96666171c4cfd14d73ee138dd04",
+  "source": "built-in imagegen, user stair/cliff replacement, owned screenshot style reference",
+  "pixelPolicy": "source frame crops/nearest sampling; no painted source pixel edits"
+}

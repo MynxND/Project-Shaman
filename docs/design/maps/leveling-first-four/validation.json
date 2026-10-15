@@ -1,0 +1,995 @@
+{
+  "sourceFile": "packages/shared/src/maps/whispering-spiritwood.ts",
+  "sourceSha256": "cb4f188c62e1a89c8ac95f932b3d93a37036847fc8609da408a79b92d763df45",
+  "resolvedFindings": [
+    {
+      "id": "forest-review-cursed-node",
+      "problem": "Review node64,30 intersected existing tree footprint",
+      "resolution": "Moved only review node to63,32; original source unchanged"
+    }
+  ],
+  "checks": [
+    {
+      "id": "whispering-spiritwood",
+      "requiredIds": [
+        "shrine"
+      ],
+      "failedPlacements": [],
+      "routes": [
+        {
+          "id": "arrival",
+          "points": [
+            [
+              40,
+              59
+            ]
+          ],
+          "length": 0,
+          "seconds": 0
+        },
+        {
+          "id": "rest",
+          "points": [
+            [
+              40,
+              59
+            ],
+            [
+              40,
+              50
+            ]
+          ],
+          "length": 9,
+          "seconds": 2.25
+        },
+        {
+          "id": "junction",
+          "points": [
+            [
+              40,
+              59
+            ],
+            [
+              40,
+              35
+            ]
+          ],
+          "length": 24,
+          "seconds": 6
+        },
+        {
+          "id": "training",
+          "points": [
+            [
+              40,
+              59
+            ],
+            [
+              35,
+              59
+            ],
+            [
+              35,
+              58
+            ],
+            [
+              15,
+              58
+            ],
+            [
+              15,
+              34
+            ]
+          ],
+          "length": 50,
+          "seconds": 12.5
+        },
+        {
+          "id": "cursed",
+          "points": [
+            [
+              40,
+              59
+            ],
+            [
+              63,
+              59
+            ],
+            [
+              63,
+              32
+            ]
+          ],
+          "length": 50,
+          "seconds": 12.5
+        },
+        {
+          "id": "shrine",
+          "points": [
+            [
+              40,
+              59
+            ],
+            [
+              40,
+              19
+            ]
+          ],
+          "length": 40,
+          "seconds": 10
+        },
+        {
+          "id": "shrine",
+          "points": [
+            [
+              40,
+              59
+            ],
+            [
+              40,
+              19
+            ]
+          ],
+          "length": 40,
+          "seconds": 10
+        }
+      ]
+    },
+    {
+      "id": "lantern-paddy",
+      "requiredIds": [
+        "paddy-rest-house",
+        "paddy-mill",
+        "paddy-seal",
+        "paddy-north-marker"
+      ],
+      "failedPlacements": [],
+      "routes": [
+        {
+          "id": "arrival",
+          "points": [
+            [
+              38,
+              55
+            ]
+          ],
+          "length": 0,
+          "seconds": 0
+        },
+        {
+          "id": "rest",
+          "points": [
+            [
+              38,
+              55
+            ],
+            [
+              38,
+              48
+            ]
+          ],
+          "length": 7,
+          "seconds": 1.75
+        },
+        {
+          "id": "junction",
+          "points": [
+            [
+              38,
+              55
+            ],
+            [
+              38,
+              34
+            ]
+          ],
+          "length": 21,
+          "seconds": 5.25
+        },
+        {
+          "id": "west",
+          "points": [
+            [
+              38,
+              55
+            ],
+            [
+              26.5,
+              55
+            ],
+            [
+              26.5,
+              42.5
+            ],
+            [
+              18,
+              42.5
+            ],
+            [
+              18,
+              38
+            ]
+          ],
+          "length": 37,
+          "seconds": 9.25
+        },
+        {
+          "id": "mill",
+          "points": [
+            [
+              38,
+              55
+            ],
+            [
+              26.5,
+              55
+            ],
+            [
+              26.5,
+              42.5
+            ],
+            [
+              18,
+              42.5
+            ],
+            [
+              18,
+              22
+            ]
+          ],
+          "length": 53,
+          "seconds": 13.25
+        },
+        {
+          "id": "north",
+          "points": [
+            [
+              38,
+              55
+            ],
+            [
+              38,
+              19
+            ]
+          ],
+          "length": 36,
+          "seconds": 9
+        },
+        {
+          "id": "seal",
+          "points": [
+            [
+              38,
+              55
+            ],
+            [
+              48.5,
+              55
+            ],
+            [
+              48.5,
+              42.5
+            ],
+            [
+              57,
+              42.5
+            ],
+            [
+              57,
+              22
+            ]
+          ],
+          "length": 52,
+          "seconds": 13
+        },
+        {
+          "id": "east",
+          "points": [
+            [
+              38,
+              55
+            ],
+            [
+              48.5,
+              55
+            ],
+            [
+              48.5,
+              42.5
+            ],
+            [
+              58,
+              42.5
+            ],
+            [
+              58,
+              38
+            ]
+          ],
+          "length": 37,
+          "seconds": 9.25
+        },
+        {
+          "id": "exit",
+          "points": [
+            [
+              38,
+              55
+            ],
+            [
+              38,
+              6
+            ]
+          ],
+          "length": 49,
+          "seconds": 12.25
+        },
+        {
+          "id": "paddy-rest-house",
+          "points": [
+            [
+              38,
+              55
+            ],
+            [
+              40,
+              55
+            ],
+            [
+              40,
+              49
+            ]
+          ],
+          "length": 8,
+          "seconds": 2
+        },
+        {
+          "id": "paddy-mill",
+          "points": [
+            [
+              38,
+              55
+            ],
+            [
+              26.5,
+              55
+            ],
+            [
+              26.5,
+              42.5
+            ],
+            [
+              18,
+              42.5
+            ],
+            [
+              18,
+              22
+            ]
+          ],
+          "length": 53,
+          "seconds": 13.25
+        },
+        {
+          "id": "paddy-seal",
+          "points": [
+            [
+              38,
+              55
+            ],
+            [
+              48.5,
+              55
+            ],
+            [
+              48.5,
+              42.5
+            ],
+            [
+              57,
+              42.5
+            ],
+            [
+              57,
+              22
+            ]
+          ],
+          "length": 52,
+          "seconds": 13
+        },
+        {
+          "id": "paddy-north-marker",
+          "points": [
+            [
+              38,
+              55
+            ],
+            [
+              38,
+              6
+            ]
+          ],
+          "length": 49,
+          "seconds": 12.25
+        }
+      ]
+    },
+    {
+      "id": "moon-mangrove",
+      "requiredIds": [
+        "mangrove-rest",
+        "mangrove-bell",
+        "mangrove-exit-house"
+      ],
+      "failedPlacements": [],
+      "routes": [
+        {
+          "id": "arrival",
+          "points": [
+            [
+              15,
+              51
+            ]
+          ],
+          "length": 0,
+          "seconds": 0
+        },
+        {
+          "id": "rest",
+          "points": [
+            [
+              15,
+              51
+            ],
+            [
+              16,
+              51
+            ],
+            [
+              16,
+              44
+            ]
+          ],
+          "length": 8,
+          "seconds": 2
+        },
+        {
+          "id": "west-bank",
+          "points": [
+            [
+              15,
+              51
+            ],
+            [
+              23,
+              51
+            ],
+            [
+              23,
+              47
+            ],
+            [
+              24,
+              47
+            ],
+            [
+              24,
+              40
+            ]
+          ],
+          "length": 20,
+          "seconds": 5
+        },
+        {
+          "id": "hub",
+          "points": [
+            [
+              15,
+              51
+            ],
+            [
+              25.5,
+              51
+            ],
+            [
+              25.5,
+              49.5
+            ],
+            [
+              26,
+              49.5
+            ],
+            [
+              26,
+              47.5
+            ],
+            [
+              26.5,
+              47.5
+            ],
+            [
+              26.5,
+              42.5
+            ],
+            [
+              40,
+              42.5
+            ],
+            [
+              40,
+              40
+            ]
+          ],
+          "length": 36,
+          "seconds": 9
+        },
+        {
+          "id": "shrine",
+          "points": [
+            [
+              15,
+              51
+            ],
+            [
+              25.5,
+              51
+            ],
+            [
+              25.5,
+              49.5
+            ],
+            [
+              26,
+              49.5
+            ],
+            [
+              26,
+              47.5
+            ],
+            [
+              26.5,
+              47.5
+            ],
+            [
+              26.5,
+              42.5
+            ],
+            [
+              40,
+              42.5
+            ],
+            [
+              40,
+              16
+            ]
+          ],
+          "length": 60,
+          "seconds": 15
+        },
+        {
+          "id": "east-bank",
+          "points": [
+            [
+              15,
+              51
+            ],
+            [
+              25.5,
+              51
+            ],
+            [
+              25.5,
+              49.5
+            ],
+            [
+              26,
+              49.5
+            ],
+            [
+              26,
+              47.5
+            ],
+            [
+              26.5,
+              47.5
+            ],
+            [
+              26.5,
+              42.5
+            ],
+            [
+              59,
+              42.5
+            ],
+            [
+              59,
+              40
+            ]
+          ],
+          "length": 55,
+          "seconds": 13.75
+        },
+        {
+          "id": "grove",
+          "points": [
+            [
+              15,
+              51
+            ],
+            [
+              25.5,
+              51
+            ],
+            [
+              25.5,
+              49.5
+            ],
+            [
+              26,
+              49.5
+            ],
+            [
+              26,
+              47.5
+            ],
+            [
+              26.5,
+              47.5
+            ],
+            [
+              26.5,
+              42.5
+            ],
+            [
+              66,
+              42.5
+            ],
+            [
+              66,
+              32
+            ]
+          ],
+          "length": 70,
+          "seconds": 17.5
+        },
+        {
+          "id": "exit",
+          "points": [
+            [
+              15,
+              51
+            ],
+            [
+              25.5,
+              51
+            ],
+            [
+              25.5,
+              49.5
+            ],
+            [
+              26,
+              49.5
+            ],
+            [
+              26,
+              47.5
+            ],
+            [
+              26.5,
+              47.5
+            ],
+            [
+              26.5,
+              42.5
+            ],
+            [
+              69,
+              42.5
+            ],
+            [
+              69,
+              51
+            ]
+          ],
+          "length": 71,
+          "seconds": 17.75
+        },
+        {
+          "id": "mangrove-rest",
+          "points": [
+            [
+              15,
+              51
+            ],
+            [
+              16,
+              51
+            ],
+            [
+              16,
+              44
+            ]
+          ],
+          "length": 8,
+          "seconds": 2
+        },
+        {
+          "id": "mangrove-bell",
+          "points": [
+            [
+              15,
+              51
+            ],
+            [
+              25.5,
+              51
+            ],
+            [
+              25.5,
+              49.5
+            ],
+            [
+              26,
+              49.5
+            ],
+            [
+              26,
+              47.5
+            ],
+            [
+              26.5,
+              47.5
+            ],
+            [
+              26.5,
+              42.5
+            ],
+            [
+              40,
+              42.5
+            ],
+            [
+              40,
+              16
+            ]
+          ],
+          "length": 60,
+          "seconds": 15
+        },
+        {
+          "id": "mangrove-exit-house",
+          "points": [
+            [
+              15,
+              51
+            ],
+            [
+              25.5,
+              51
+            ],
+            [
+              25.5,
+              49.5
+            ],
+            [
+              26,
+              49.5
+            ],
+            [
+              26,
+              47.5
+            ],
+            [
+              26.5,
+              47.5
+            ],
+            [
+              26.5,
+              42.5
+            ],
+            [
+              69,
+              42.5
+            ],
+            [
+              69,
+              51
+            ]
+          ],
+          "length": 71,
+          "seconds": 17.75
+        }
+      ]
+    },
+    {
+      "id": "monsoon-marsh",
+      "requiredIds": [
+        "marsh-rest",
+        "marsh-spirit-post",
+        "marsh-islet-shrine"
+      ],
+      "failedPlacements": [],
+      "routes": [
+        {
+          "id": "arrival",
+          "points": [
+            [
+              44,
+              57
+            ]
+          ],
+          "length": 0,
+          "seconds": 0
+        },
+        {
+          "id": "rest",
+          "points": [
+            [
+              44,
+              57
+            ],
+            [
+              44,
+              49
+            ]
+          ],
+          "length": 8,
+          "seconds": 2
+        },
+        {
+          "id": "west",
+          "points": [
+            [
+              44,
+              57
+            ],
+            [
+              20,
+              57
+            ],
+            [
+              20,
+              42
+            ]
+          ],
+          "length": 39,
+          "seconds": 9.75
+        },
+        {
+          "id": "west-north",
+          "points": [
+            [
+              44,
+              57
+            ],
+            [
+              24,
+              57
+            ],
+            [
+              24,
+              20
+            ]
+          ],
+          "length": 57,
+          "seconds": 14.25
+        },
+        {
+          "id": "shrine",
+          "points": [
+            [
+              44,
+              57
+            ],
+            [
+              44,
+              15
+            ]
+          ],
+          "length": 42,
+          "seconds": 10.5
+        },
+        {
+          "id": "east-north",
+          "points": [
+            [
+              44,
+              57
+            ],
+            [
+              66,
+              57
+            ],
+            [
+              66,
+              20
+            ]
+          ],
+          "length": 59,
+          "seconds": 14.75
+        },
+        {
+          "id": "east",
+          "points": [
+            [
+              44,
+              57
+            ],
+            [
+              68,
+              57
+            ],
+            [
+              68,
+              42
+            ]
+          ],
+          "length": 39,
+          "seconds": 9.75
+        },
+        {
+          "id": "islet",
+          "points": [
+            [
+              44,
+              57
+            ],
+            [
+              44,
+              32
+            ]
+          ],
+          "length": 25,
+          "seconds": 6.25
+        },
+        {
+          "id": "marsh-rest",
+          "points": [
+            [
+              44,
+              57
+            ],
+            [
+              44,
+              49
+            ]
+          ],
+          "length": 8,
+          "seconds": 2
+        },
+        {
+          "id": "marsh-spirit-post",
+          "points": [
+            [
+              44,
+              57
+            ],
+            [
+              44,
+              15
+            ]
+          ],
+          "length": 42,
+          "seconds": 10.5
+        },
+        {
+          "id": "marsh-islet-shrine",
+          "points": [
+            [
+              44,
+              57
+            ],
+            [
+              44,
+              32
+            ]
+          ],
+          "length": 25,
+          "seconds": 6.25
+        }
+      ]
+    }
+  ],
+  "visualApproved": false
+}

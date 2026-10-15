@@ -258,6 +258,276 @@
           "loop": false
         }
       }
+    },
+    "highland-wisp": {
+      "image": "leaf-wisp.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 64,
+        "y": 114
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      },
+      "sourceKind": "leaf-wisp",
+      "artStatus": "existing animated art reused for mountain resident; no new species art generated"
+    },
+    "ridge-shadow": {
+      "image": "shadow-macaque.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 59,
+        "y": 122
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      },
+      "sourceKind": "shadow-macaque",
+      "artStatus": "existing animated art reused for mountain resident; no new species art generated"
+    },
+    "seal-guardian": {
+      "image": "clay-guardian.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 58,
+        "y": 125
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      },
+      "sourceKind": "clay-guardian",
+      "artStatus": "existing animated art reused for mountain resident; no new species art generated"
+    },
+    "bamboo-wisp": {
+      "image": "leaf-wisp.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 64,
+        "y": 114
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      },
+      "sourceKind": "leaf-wisp",
+      "artStatus": "existing animation reused for user-authorized live bamboo valley"
+    },
+    "bamboo-shadow": {
+      "image": "shadow-macaque.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 59,
+        "y": 122
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      },
+      "sourceKind": "shadow-macaque",
+      "artStatus": "existing animation reused for user-authorized live bamboo valley"
+    },
+    "bamboo-guardian": {
+      "image": "clay-guardian.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 9,
+      "anchor": {
+        "x": 58,
+        "y": 125
+      },
+      "faces": "east",
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 5,
+          "fps": 6,
+          "loop": true
+        },
+        "move": {
+          "row": 1,
+          "frames": 8,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 9,
+          "fps": 14,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "death": {
+          "row": 4,
+          "frames": 9,
+          "fps": 10,
+          "loop": false
+        }
+      },
+      "sourceKind": "clay-guardian",
+      "artStatus": "existing animation reused for user-authorized live bamboo valley"
     }
   }
 }

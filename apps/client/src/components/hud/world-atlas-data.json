@@ -1,0 +1,763 @@
+{
+  "version": 1,
+  "targetMaps": 30,
+  "geographyStatus": "proposed fictional spirit-route network; not approved lore or real Earth geography",
+  "sources": [
+    "docs/design/skill-system/classification.json",
+    "docs/design/skills/SKILL_TREE_UNIQUENESS_AUDIT.md",
+    "packages/shared/src/skills-norway.ts",
+    "docs/design/maps/leveling-20-proposal.json"
+  ],
+  "sourceSha256": "8078dc123ed240f7d6e93cfa53287fd19f0cf43a16e80f9be947089e953e3548",
+  "nations": [
+    {
+      "id": "thailand",
+      "name": "ไทย",
+      "theme": "พราย · สายสิญจน์ · พยนต์",
+      "x": 680,
+      "y": 490,
+      "sourceNation": "1. 🇹🇭 ประเทศไทย (Thailand)",
+      "sourceBranches": [
+        "🟢 สาย A: Achan Saiyasat (อาจารย์ไสยเวท)",
+        "🔴 สาย B: Mor Phhee (หมอผีสายพราย)"
+      ],
+      "maps": [
+        "whispering-spiritwood",
+        "lantern-paddy",
+        "moon-mangrove",
+        "monsoon-marsh",
+        "mountain-spirit-sanctuary"
+      ]
+    },
+    {
+      "id": "china",
+      "name": "จีน",
+      "theme": "เหมาซาน · เซียนเต๋า",
+      "x": 830,
+      "y": 310,
+      "sourceNation": "2. 🇨🇳 ประเทศจีน (China)",
+      "sourceBranches": [
+        "🟢 สาย A: Maoshan Exorcist (นักพรตเหมาซาน)",
+        "🔴 สาย B: Daoist Immortal (เซียนเต๋า)"
+      ],
+      "maps": [
+        "mist-bamboo",
+        "cloud-tea-slopes"
+      ]
+    },
+    {
+      "id": "japan",
+      "name": "ญี่ปุ่น",
+      "theme": "อองเมียวจิ · มิโกะ",
+      "x": 1040,
+      "y": 350,
+      "sourceNation": "3. 🇯🇵 ประเทศญี่ปุ่น (Japan)",
+      "sourceBranches": [
+        "🟢 สาย A: Onmyoji Master (อองเมียวจิ)",
+        "🔴 สาย B: Miko / Shinto Priest (มิโกะ / นักบวชชินโต)"
+      ],
+      "maps": [
+        "spirit-waterfall",
+        "monsoon-ruins"
+      ]
+    },
+    {
+      "id": "korea",
+      "name": "เกาหลีใต้",
+      "theme": "มูดัง · ยมทูต",
+      "x": 1020,
+      "y": 175,
+      "sourceNation": "4. 🇰🇷 เกาหลีใต้ (South Korea)",
+      "sourceBranches": [
+        "🟢 สาย A: Gut Shaman (มูดัง - คนทรงเจ้า)",
+        "🔴 สาย B: Jeoseung Saja (ยมทูต)"
+      ],
+      "maps": [
+        "moon-ritual-ridge",
+        "spirit-funeral-road"
+      ]
+    },
+    {
+      "id": "indonesia",
+      "name": "อินโดนีเซีย",
+      "theme": "ซันเตท · กริช",
+      "x": 900,
+      "y": 640,
+      "sourceNation": "5. 🇮🇩 ประเทศอินโดนีเซีย (Indonesia)",
+      "sourceBranches": [
+        "🟢 สาย A: Santet Master (จอมมนต์ดำซันเตท)",
+        "🔴 สาย B: Keris Master (นักรบกริช)"
+      ],
+      "maps": [
+        "ashwind-volcano",
+        "ember-caldera"
+      ]
+    },
+    {
+      "id": "philippines",
+      "name": "ฟิลิปปินส์",
+      "theme": "บาบายลัน · มังกูกูลัม",
+      "x": 1070,
+      "y": 560,
+      "sourceNation": "6. 🇵🇭 ประเทศฟิลิปปินส์ (Philippines)",
+      "sourceBranches": [
+        "🟢 สาย A: Mystic Merchant (บาบายลัน - สายการค้าและสนับสนุน)",
+        "🔴 สาย B: Mangkukulam (มังกูกูลัม)"
+      ],
+      "maps": [
+        "storm-seal-coast",
+        "ancestral-lantern-isles"
+      ]
+    },
+    {
+      "id": "norway",
+      "name": "นอร์เวย์",
+      "theme": "Rune Seer · Ullr Hunter (ระบบปัจจุบัน)",
+      "x": 565,
+      "y": 130,
+      "sourceNation": "7. 🇳🇴 นอร์เวย์ / สแกนดิเนเวีย (Norway)",
+      "sourceBranches": [
+        "🟢 สาย A: Rune Seer (แม่มดรูน)",
+        "🔴 สาย B: Seidr Witch (แม่มดเซดร์)"
+      ],
+      "maps": [
+        "storm-fjord",
+        "aurora-pass"
+      ]
+    },
+    {
+      "id": "ireland",
+      "name": "ไอร์แลนด์",
+      "theme": "ดรูอิด · ผู้พิทักษ์แปลงร่าง",
+      "x": 370,
+      "y": 235,
+      "sourceNation": "8. 🇮🇪 ไอร์แลนด์ (Ireland)",
+      "sourceBranches": [
+        "🟢 สาย A: Arch Druid (อาร์ชดรูอิด)",
+        "🔴 สาย B: Wild Shape Warden (ดรูอิดแปลงร่าง)"
+      ],
+      "maps": [
+        "golden-spiritwood",
+        "stone-oath-moor"
+      ]
+    },
+    {
+      "id": "russia",
+      "name": "รัสเซีย / ไซบีเรีย",
+      "theme": "โวล์ฟ · ชาแมนไทกา",
+      "x": 785,
+      "y": 115,
+      "sourceNation": "9. 🇷🇺 รัสเซีย / ไซบีเรีย (Russia)",
+      "sourceBranches": [
+        "🟢 สาย A: Juggernaut Volkhv (โวล์ฟ - นักเวทสลาฟสายประจันบาน)",
+        "🔴 สาย B: Taiga Shaman (ชาแมนแห่งไทกา)"
+      ],
+      "maps": [
+        "frost-pine",
+        "taiga-blood-trail"
+      ]
+    },
+    {
+      "id": "usa",
+      "name": "สหรัฐฯ / ชนเผ่าพื้นเมือง",
+      "theme": "ผู้พิทักษ์โทเท็ม · นักธนูวิญญาณ",
+      "x": 130,
+      "y": 230,
+      "sourceNation": "10. 🇺🇸 สหรัฐอเมริกา / ชนเผ่าพื้นเมือง (USA - Native American)",
+      "sourceBranches": [
+        "🟢 สาย A: Totem Guardian (โทเท็มชาแมน - ผู้พิทักษ์เสาอาคม)",
+        "🔴 สาย B: Spirit Archer (นักธนูวิญญาณ)"
+      ],
+      "maps": [
+        "amber-grassland",
+        "red-wind-canyon"
+      ]
+    },
+    {
+      "id": "haiti",
+      "name": "เฮติ",
+      "theme": "วูดู · คืนชีพ",
+      "x": 270,
+      "y": 560,
+      "sourceNation": "11. 🇭🇹 เฮติ (Haiti)",
+      "sourceBranches": [
+        "🟢 สาย A: Voodoo Master (นักบวชวูดู)",
+        "🔴 สาย B: Necromancer Shaman (หมอผีคืนชีพ)"
+      ],
+      "maps": [
+        "ancestral-grave-garden",
+        "veiled-spirit-harbor"
+      ]
+    },
+    {
+      "id": "mexico",
+      "name": "เม็กซิโก",
+      "theme": "นาฮัวล · เวทโลหิต",
+      "x": 125,
+      "y": 425,
+      "sourceNation": "12. 🇲🇽 เม็กซิโก (Mexico)",
+      "sourceBranches": [
+        "🟢 สาย A: Jaguar Berserker (นาฮัวล - หมอผีแปลงร่างแอซเท็ก)",
+        "🔴 สาย B: Blood Mage (จอมเวทโลหิต)"
+      ],
+      "maps": [
+        "salt-mirror-basin",
+        "sunken-oasis"
+      ]
+    }
+  ],
+  "maps": [
+    {
+      "id": "umbral-capital",
+      "name": "นครมนตร์ทมิฬ",
+      "nation": "global",
+      "levels": [
+        1,
+        99
+      ],
+      "x": 565,
+      "y": 430,
+      "biome": "ศูนย์รวมสำนักทั้ง12ประเทศ",
+      "phase": 1
+    },
+    {
+      "id": "whispering-spiritwood",
+      "name": "ชายป่าวิญญาณ",
+      "nation": "thailand",
+      "levels": [
+        1,
+        10
+      ],
+      "x": 640,
+      "y": 505,
+      "biome": "มรสุม / ป่าชื้น",
+      "phase": 1
+    },
+    {
+      "id": "lantern-paddy",
+      "name": "ทุ่งนาประทีป",
+      "nation": "thailand",
+      "levels": [
+        7,
+        15
+      ],
+      "x": 735,
+      "y": 505,
+      "biome": "มรสุม / ป่าชื้น",
+      "phase": 1
+    },
+    {
+      "id": "moon-mangrove",
+      "name": "ป่าชายเลนจันทร์ดับ",
+      "nation": "thailand",
+      "levels": [
+        12,
+        20
+      ],
+      "x": 640,
+      "y": 547,
+      "biome": "มรสุม / ป่าชื้น",
+      "phase": 1
+    },
+    {
+      "id": "monsoon-marsh",
+      "name": "บึงฝนลืมวิญญาณ",
+      "nation": "thailand",
+      "levels": [
+        17,
+        25
+      ],
+      "x": 735,
+      "y": 547,
+      "biome": "มรสุม / ป่าชื้น",
+      "phase": 1
+    },
+    {
+      "id": "mountain-spirit-sanctuary",
+      "name": "สำนักผนึกบนภูเขา",
+      "nation": "thailand",
+      "levels": [
+        25,
+        35
+      ],
+      "x": 640,
+      "y": 589,
+      "biome": "มรสุม / ป่าชื้น",
+      "phase": 2
+    },
+    {
+      "id": "mist-bamboo",
+      "name": "หุบไผ่หมอกคราม",
+      "nation": "china",
+      "levels": [
+        20,
+        35
+      ],
+      "x": 790,
+      "y": 325,
+      "biome": "ไผ่ / สันเขาหมอก",
+      "phase": 2
+    },
+    {
+      "id": "cloud-tea-slopes",
+      "name": "ไร่ชาสันเมฆ",
+      "nation": "china",
+      "levels": [
+        30,
+        45
+      ],
+      "x": 885,
+      "y": 325,
+      "biome": "ไผ่ / สันเขาหมอก",
+      "phase": 2
+    },
+    {
+      "id": "spirit-waterfall",
+      "name": "น้ำตกม่านวิญญาณ",
+      "nation": "japan",
+      "levels": [
+        40,
+        55
+      ],
+      "x": 1000,
+      "y": 365,
+      "biome": "ศาลป่า / น้ำตก",
+      "phase": 3
+    },
+    {
+      "id": "monsoon-ruins",
+      "name": "นครร้างใต้พายุ",
+      "nation": "japan",
+      "levels": [
+        50,
+        65
+      ],
+      "x": 1095,
+      "y": 365,
+      "biome": "ศาลป่า / น้ำตก",
+      "phase": 3
+    },
+    {
+      "id": "moon-ritual-ridge",
+      "name": "สันเขาพิธีจันทร์",
+      "nation": "korea",
+      "levels": [
+        35,
+        45
+      ],
+      "x": 980,
+      "y": 190,
+      "biome": "สันเขา / ทางวิญญาณ",
+      "phase": 3
+    },
+    {
+      "id": "spirit-funeral-road",
+      "name": "ทางส่งวิญญาณ",
+      "nation": "korea",
+      "levels": [
+        45,
+        55
+      ],
+      "x": 1075,
+      "y": 190,
+      "biome": "สันเขา / ทางวิญญาณ",
+      "phase": 3
+    },
+    {
+      "id": "ashwind-volcano",
+      "name": "ภูเขาไฟเถ้าลม",
+      "nation": "indonesia",
+      "levels": [
+        50,
+        65
+      ],
+      "x": 860,
+      "y": 655,
+      "biome": "เถ้า / ภูเขาไฟ",
+      "phase": 3
+    },
+    {
+      "id": "ember-caldera",
+      "name": "ปล่องพิธีอัคคี",
+      "nation": "indonesia",
+      "levels": [
+        60,
+        75
+      ],
+      "x": 955,
+      "y": 655,
+      "biome": "เถ้า / ภูเขาไฟ",
+      "phase": 3
+    },
+    {
+      "id": "storm-seal-coast",
+      "name": "ฝั่งผนึกพายุ",
+      "nation": "philippines",
+      "levels": [
+        25,
+        35
+      ],
+      "x": 1030,
+      "y": 575,
+      "biome": "ทะเล / เกาะพายุ",
+      "phase": 2
+    },
+    {
+      "id": "ancestral-lantern-isles",
+      "name": "หมู่เกาะประทีปบรรพชน",
+      "nation": "philippines",
+      "levels": [
+        35,
+        45
+      ],
+      "x": 1125,
+      "y": 575,
+      "biome": "ทะเล / เกาะพายุ",
+      "phase": 2
+    },
+    {
+      "id": "storm-fjord",
+      "name": "ฟยอร์ดพายุคราม",
+      "nation": "norway",
+      "levels": [
+        55,
+        65
+      ],
+      "x": 525,
+      "y": 145,
+      "biome": "ฟยอร์ด / แสงเหนือ",
+      "phase": 4
+    },
+    {
+      "id": "aurora-pass",
+      "name": "ช่องเขาแสงเหนือ",
+      "nation": "norway",
+      "levels": [
+        65,
+        80
+      ],
+      "x": 620,
+      "y": 145,
+      "biome": "ฟยอร์ด / แสงเหนือ",
+      "phase": 4
+    },
+    {
+      "id": "golden-spiritwood",
+      "name": "ป่าใบผลัดอาคม",
+      "nation": "ireland",
+      "levels": [
+        40,
+        55
+      ],
+      "x": 330,
+      "y": 250,
+      "biome": "ป่าผลัดใบ / ทุ่งหิน",
+      "phase": 3
+    },
+    {
+      "id": "stone-oath-moor",
+      "name": "ทุ่งคำสัตย์หิน",
+      "nation": "ireland",
+      "levels": [
+        50,
+        65
+      ],
+      "x": 425,
+      "y": 250,
+      "biome": "ป่าผลัดใบ / ทุ่งหิน",
+      "phase": 3
+    },
+    {
+      "id": "frost-pine",
+      "name": "ป่าสนขาว",
+      "nation": "russia",
+      "levels": [
+        60,
+        75
+      ],
+      "x": 745,
+      "y": 130,
+      "biome": "สนหิมะ / ไทกา",
+      "phase": 4
+    },
+    {
+      "id": "taiga-blood-trail",
+      "name": "รอยล่าแห่งไทกา",
+      "nation": "russia",
+      "levels": [
+        70,
+        85
+      ],
+      "x": 840,
+      "y": 130,
+      "biome": "สนหิมะ / ไทกา",
+      "phase": 4
+    },
+    {
+      "id": "amber-grassland",
+      "name": "ทุ่งหญ้าอำพัน",
+      "nation": "usa",
+      "levels": [
+        30,
+        40
+      ],
+      "x": 90,
+      "y": 245,
+      "biome": "ทุ่งหญ้า / หุบผา",
+      "phase": 3
+    },
+    {
+      "id": "red-wind-canyon",
+      "name": "หุบผาลมแดง",
+      "nation": "usa",
+      "levels": [
+        40,
+        55
+      ],
+      "x": 185,
+      "y": 245,
+      "biome": "ทุ่งหญ้า / หุบผา",
+      "phase": 3
+    },
+    {
+      "id": "ancestral-grave-garden",
+      "name": "สวนสุสานบรรพชน",
+      "nation": "haiti",
+      "levels": [
+        65,
+        75
+      ],
+      "x": 230,
+      "y": 575,
+      "biome": "สุสาน / ท่าชื้น",
+      "phase": 4
+    },
+    {
+      "id": "veiled-spirit-harbor",
+      "name": "ท่าวิญญาณม่านดำ",
+      "nation": "haiti",
+      "levels": [
+        75,
+        90
+      ],
+      "x": 325,
+      "y": 575,
+      "biome": "สุสาน / ท่าชื้น",
+      "phase": 4
+    },
+    {
+      "id": "salt-mirror-basin",
+      "name": "ทะเลเกลือกระจก",
+      "nation": "mexico",
+      "levels": [
+        75,
+        85
+      ],
+      "x": 85,
+      "y": 440,
+      "biome": "แอ่งเกลือ / ทะเลทราย",
+      "phase": 4
+    },
+    {
+      "id": "sunken-oasis",
+      "name": "โอเอซิสศาลจมทราย",
+      "nation": "mexico",
+      "levels": [
+        85,
+        95
+      ],
+      "x": 180,
+      "y": 440,
+      "biome": "แอ่งเกลือ / ทะเลทราย",
+      "phase": 4
+    },
+    {
+      "id": "storm-seal-plateau",
+      "name": "ที่ราบสูงตราพายุ",
+      "nation": "global",
+      "levels": [
+        85,
+        95
+      ],
+      "x": 440,
+      "y": 640,
+      "biome": "แนวรอยต่อแดนวิญญาณ",
+      "phase": 5
+    },
+    {
+      "id": "broken-seal-sanctum",
+      "name": "วิหารผนึกแตก",
+      "nation": "global",
+      "levels": [
+        90,
+        99
+      ],
+      "x": 565,
+      "y": 695,
+      "biome": "วิหารปลายทางร่วม",
+      "phase": 5
+    }
+  ],
+  "links": [
+    {
+      "from": "umbral-capital",
+      "to": "whispering-spiritwood",
+      "status": "live"
+    },
+    {
+      "from": "whispering-spiritwood",
+      "to": "lantern-paddy",
+      "status": "live"
+    },
+    {
+      "from": "lantern-paddy",
+      "to": "moon-mangrove",
+      "status": "live"
+    },
+    {
+      "from": "moon-mangrove",
+      "to": "monsoon-marsh",
+      "status": "live"
+    },
+    {
+      "from": "monsoon-marsh",
+      "to": "mountain-spirit-sanctuary",
+      "status": "live"
+    },
+    {
+      "from": "mist-bamboo",
+      "to": "cloud-tea-slopes",
+      "status": "planned"
+    },
+    {
+      "from": "spirit-waterfall",
+      "to": "monsoon-ruins",
+      "status": "planned"
+    },
+    {
+      "from": "moon-ritual-ridge",
+      "to": "spirit-funeral-road",
+      "status": "planned"
+    },
+    {
+      "from": "ashwind-volcano",
+      "to": "ember-caldera",
+      "status": "planned"
+    },
+    {
+      "from": "storm-seal-coast",
+      "to": "ancestral-lantern-isles",
+      "status": "planned"
+    },
+    {
+      "from": "storm-fjord",
+      "to": "aurora-pass",
+      "status": "planned"
+    },
+    {
+      "from": "golden-spiritwood",
+      "to": "stone-oath-moor",
+      "status": "planned"
+    },
+    {
+      "from": "frost-pine",
+      "to": "taiga-blood-trail",
+      "status": "planned"
+    },
+    {
+      "from": "amber-grassland",
+      "to": "red-wind-canyon",
+      "status": "planned"
+    },
+    {
+      "from": "ancestral-grave-garden",
+      "to": "veiled-spirit-harbor",
+      "status": "planned"
+    },
+    {
+      "from": "salt-mirror-basin",
+      "to": "sunken-oasis",
+      "status": "planned"
+    },
+    {
+      "from": "mountain-spirit-sanctuary",
+      "to": "mist-bamboo",
+      "status": "live"
+    },
+    {
+      "from": "mountain-spirit-sanctuary",
+      "to": "spirit-waterfall",
+      "status": "planned"
+    },
+    {
+      "from": "mountain-spirit-sanctuary",
+      "to": "moon-ritual-ridge",
+      "status": "planned"
+    },
+    {
+      "from": "mountain-spirit-sanctuary",
+      "to": "ashwind-volcano",
+      "status": "planned"
+    },
+    {
+      "from": "mountain-spirit-sanctuary",
+      "to": "storm-seal-coast",
+      "status": "planned"
+    },
+    {
+      "from": "mountain-spirit-sanctuary",
+      "to": "storm-fjord",
+      "status": "planned"
+    },
+    {
+      "from": "mountain-spirit-sanctuary",
+      "to": "golden-spiritwood",
+      "status": "planned"
+    },
+    {
+      "from": "mountain-spirit-sanctuary",
+      "to": "frost-pine",
+      "status": "planned"
+    },
+    {
+      "from": "mountain-spirit-sanctuary",
+      "to": "amber-grassland",
+      "status": "planned"
+    },
+    {
+      "from": "mountain-spirit-sanctuary",
+      "to": "ancestral-grave-garden",
+      "status": "planned"
+    },
+    {
+      "from": "mountain-spirit-sanctuary",
+      "to": "salt-mirror-basin",
+      "status": "planned"
+    },
+    {
+      "from": "taiga-blood-trail",
+      "to": "storm-seal-plateau",
+      "status": "planned"
+    },
+    {
+      "from": "veiled-spirit-harbor",
+      "to": "storm-seal-plateau",
+      "status": "planned"
+    },
+    {
+      "from": "sunken-oasis",
+      "to": "storm-seal-plateau",
+      "status": "planned"
+    },
+    {
+      "from": "ember-caldera",
+      "to": "storm-seal-plateau",
+      "status": "planned"
+    },
+    {
+      "from": "storm-seal-plateau",
+      "to": "broken-seal-sanctum",
+      "status": "planned"
+    }
+  ]
+}

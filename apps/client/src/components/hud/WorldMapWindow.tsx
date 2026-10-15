@@ -6,6 +6,7 @@ import { useHudStore } from '@/stores/hud-store';
 import { drawMapView } from './map-canvas';
 import { MapFooter } from './MapFooter';
 import { useMapData } from './use-map-data';
+import {IllustratedWorldAtlas} from '../maps/IllustratedWorldAtlas';
 
 const MAX_ZOOM = MAP_ZOOMS[MAP_ZOOMS.length - 1] ?? 4;
 /** Fill the view on open when showing the whole map would leave more than about a third of it empty. */
@@ -16,6 +17,7 @@ const COVER_THRESHOLD = 1.5;
  * Drag to pan, wheel / pinch / buttons to zoom; it follows the player until panned, "ตำแหน่งฉัน" re-centres.
  */
 export function WorldMapWindow() {
+  const [atlasOpen,setAtlasOpen]=useState(true);
   const MAP = useActiveMap();
   const close = useHudStore((s) => s.toggleMap);
   const canvas = useRef<HTMLCanvasElement>(null);
@@ -51,7 +53,7 @@ export function WorldMapWindow() {
     });
     ro.observe(el);
     return () => ro.disconnect();
-  }, []);
+  }, [atlasOpen]);
 
   useEffect(() => {
     const el = canvas.current;
@@ -109,27 +111,29 @@ export function WorldMapWindow() {
   };
 
   return (
-    <section className="hud-panel hud-worldmap sk-center-window pointer-events-auto" role="dialog" aria-label={`แผนที่ ${MAP.name}`}>
+    <section className={`hud-panel hud-worldmap sk-center-window pointer-events-auto${atlasOpen?' hud-worldmap-atlas':''}`} role="dialog" aria-label={`แผนที่ ${MAP.name}`}>
       <header className="hud-map-head">
-        <div className="hud-map-zoom" role="group" aria-label="ซูมแผนที่">
-          <button type="button" className="hud-mini-btn" onClick={() => zoomAt(stepZoom(zoom, -1), size.w / 2, size.h / 2)} disabled={zoom <= 1} aria-label="ซูมออก">−</button>
+        <button type="button" className="hud-map-btn" onClick={()=>setAtlasOpen(v=>!v)} aria-pressed={atlasOpen}>{atlasOpen?'แผนที่พื้นที่':'โลก 30 แมพ'}</button>
+        <div className="hud-map-zoom" role="group" aria-label="ซูมแผนที่" style={atlasOpen?{display:'none'}:undefined}>
+          <button type="button" className="hud-mini-btn" onClick={() => zoomAt(stepZoom(zoom, -1), size.w / 2, size.h / 2)} disabled={atlasOpen||zoom <= 1} aria-label="ซูมออก">−</button>
           <span className="hud-map-zoom-label">{Math.round(zoom * 100)}%</span>
-          <button type="button" className="hud-mini-btn" onClick={() => zoomAt(stepZoom(zoom, 1), size.w / 2, size.h / 2)} disabled={zoom >= MAX_ZOOM} aria-label="ซูมเข้า">+</button>
+          <button type="button" className="hud-mini-btn" onClick={() => zoomAt(stepZoom(zoom, 1), size.w / 2, size.h / 2)} disabled={atlasOpen||zoom >= MAX_ZOOM} aria-label="ซูมเข้า">+</button>
         </div>
         <img className="hud-map-compass sk-pixel" src="/assets/ui/hud/fold/map.png" alt="" width={32} height={32} />
         <div className="hud-map-zoom">
-          <button type="button" className="hud-map-btn" onClick={() => setCenter(null)} aria-pressed={center === null} title="กลับไปที่ตำแหน่งของคุณ">⌖ ตำแหน่งฉัน</button>
-          <button type="button" className="hud-mini-btn" onClick={close} aria-label="ปิดแผนที่">✕</button>
+          <button type="button" className="hud-map-btn" onClick={() => setCenter(null)} disabled={atlasOpen} style={atlasOpen?{display:'none'}:undefined} aria-pressed={center === null} title="กลับไปที่ตำแหน่งของคุณ">⌖ ตำแหน่งฉัน</button>
+          <button type="button" className="hud-mini-btn" onClick={close} style={atlasOpen?{marginRight:36,minWidth:44,minHeight:36}:undefined} aria-label="ปิดแผนที่">✕</button>
         </div>
       </header>
-      <canvas ref={canvas} className="hud-worldmap-canvas" role="img" aria-label="แผนที่เมือง ลากเพื่อเลื่อน ใช้ล้อเมาส์หรือสองนิ้วเพื่อซูม"
+      {atlasOpen&&<div className="hud-atlas-body"><IllustratedWorldAtlas current={MAP.id} embedded/></div>}
+      <canvas ref={canvas} hidden={atlasOpen} style={atlasOpen?{display:'none'}:undefined} className="hud-worldmap-canvas" role="img" aria-label="แผนที่เมือง ลากเพื่อเลื่อน ใช้ล้อเมาส์หรือสองนิ้วเพื่อซูม"
         onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerEnd} onPointerCancel={onPointerEnd} />
-      <div className="hud-map-legend" aria-hidden>
+      <div className="hud-map-legend" aria-hidden style={atlasOpen?{display:'none'}:undefined}>
         <span><i className="hud-lg-self" />คุณ</span><span><i className="hud-lg-other" />ผู้เล่นอื่น</span>
         <span><i className="hud-lg-place" />สถานที่</span><span><i className="hud-lg-shop" />ร้านค้า</span>
         <span className="hud-map-hint">ลากเพื่อเลื่อน · ล้อเมาส์/สองนิ้วเพื่อซูม</span>
       </div>
-      <MapFooter map={MAP} players={players} />
+      {!atlasOpen&&<MapFooter map={MAP} players={players} />}
     </section>
   );
 }

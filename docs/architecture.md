@@ -394,3 +394,86 @@ Added third FRONT face candidate to V3 Inspector: half-lidded deadpan eyes and f
 ## Three V3 faces extended to eight static directions — 2026-10-11
 User approved exact FRONTs and new cap18 /3 attempts/no retry. One128 face-only SE/E inpaint per style, actual6+6+6=18. FRONT exact file reuse; SW/W mirror right with native anchors; back views retain head with no face overlay. V3 Inspector adds three-face eight-direction native/4x head/body comparisons. No gameplay publication, hair/body changes or animation. New-angle visual approval pending. See docs/design/ssr/face-eight-01/README.md.
 
+
+## Optional terrain quality adapter — 2026-10-14
+
+Existing Phaser MapRenderer supports development-only `terrainQuality=1`
+native art variants and a cached decorative/shadow ground layer. Pure seeded
+weighted selection is shared with8793 before/after preview through transpiled
+`terrain-variation.ts`. Terrain vertices/collision/game RNG stay unchanged;
+The later reference village slice opts in by default; other maps retain old assets unless
+explicitly reviewed. [Artwork and verification](design/maps/terrain-quality-01/README.md).
+
+## Four leveling-map review — 2026-10-14
+
+Local Phaser review8793 loads independent JSON placement data for the existing
+Spiritwood and three new maps. `tools/map/leveling-preview-model.mjs` shares
+world-unit terrain/collision/route/fog rules with the authoring checks; scene
+objects own camera, presentation and teardown. No new MAPS registry entries,
+combat/economy state or Colyseus rooms. Seven new static monster seeds are
+review assets only. [Design, scope and commands](design/maps/leveling-first-four/README.md).
+
+## Mountain Sanctuary Phase D — 2026-10-11
+User advances isolated full96x112 terrain/building draft at `/maps/mountain-sanctuary`.
+Shared polygon elevations, shortened stairs, lateral circuits and river crossings;
+existing Thai buildings/vegetation plus candidate Phase C materials. Production
+map/manifest and gameplay registration unchanged; added credits0. Local tests and
+browser evidence documented in design/mountain-sanctuary-phase-d/README.md.
+Visual review pending; NPCs, quests, warps and multiplayer remain Phase E.
+
+## Shaman village reference slice — 2026-10-14
+The authoritative umbral-capital registry now uses a separately authored village layout while preserving the original source/comments, stable ID, spawn, eleven NPC service definitions, safe zone and reciprocal forest portal. Shared footprints remain client/server authority; Phaser uses five new isolated village sprite families, illustrated seeded terrain and Y-depth anchors. Other maps retain their old terrain unless explicitly reviewed. The development villageReview=overview changes camera only. See design/maps/shaman-village-01/README.md for evidence and remaining natural-shore/asset-fidelity gaps. No visual approval or four-map completion is implied.
+
+## Animated water and bounded overview — 2026-10-14
+MapRenderer now supplies its resolved Wang water cells to WaterLayer: immutable native masks, one WebGL draw with a shared per-game clock, illustrated texture motion, seeded ripples, shore contacts and clipped faint reflections. Canvas has an8fps source-art fallback. /maps/water-preview runs the same renderer against registered map data and exposes visual controls without a gameplay room. No shared gameplay/collision/map definitions changed. Village overview retains bounds and uses CameraZoom cover minimum, so mismatched aspect ratios crop rather than expose empty world space. Evidence and limits: design/maps/water-animation-01/README.md.
+
+## Spiritwood playable presentation — 2026-10-14
+Existing review terrain/decorations, object tint and authored two-zone ground mist now load by whispering-spiritwood ID in production MapRenderer. Animated WaterLayer remains active. Shared map geometry/gameplay contracts unchanged. See design/maps/whispering-spiritwood/layout.md.
+
+
+## Four-map playable travel — 2026-10-14
+Authoritative MAPS now registers the three existing authored leveling layouts through generated leveling-live.ts. Spiritwood source stays intact; spiritwood-live.ts adds one north approach portal and safety pocket. Reciprocal gates use existing server ticket/profile travel and room filtering. Authored polygon terrain is now supported by shared vertex sampling. New-map wet half-unit rows bake to shared blockers; bridge/causeway land paint stays walkable. Existing animated combat species temporarily occupy new regions without stat changes. Client scene owns forest dressing/decking and authored localized fog; collision remains shared. Before/after uses actual game screenshots at identical overview framing. See design/maps/spiritwood-refinement-02/README.md.
+
+
+## Regional edge travel / world atlas — 2026-10-14
+Existing portal IDs now occupy east/west map boundaries; shared authored paths/aprons and wet blockers match arrivals. Original NPCs/monster regions/stats remain. WorldAtlas is a React SVG planning view inside existing M window and standalone /maps/world-atlas. Lore source binds12 nations,30 content nodes; readiness derives actual MAPS (5 live,25 planned), excluding labs. Atlas never teleports. Regional ground/canopy/mist remains Phaser-owned cosmetic dressing. Source/data, phases and before-after evidence: design/maps/leveling-refinement-03 and design/maps/world-30.
+
+
+## Illustrated atlas preview — 2026-10-14
+Sibling /maps/world-atlas-art renders one new original landscape bitmap with real SVG12-region/30-node/32-route overlays and React detail controls. Existing M atlas and all gameplay unchanged. Art-specific cartographic anchors are UI coordinates. Live NPC/resident details derive shared definitions; nine additional design briefs remain explicit proposals. Reference/prompt/PNG/provenance and browser evidence: design/maps/world-atlas-art-01/. No collision or gameplay maps generated from illustration.
+
+
+
+## Illustrated atlas adopted in game — 2026-10-14
+User authorizes M-window adoption and simpler/readable presentation. M/menu/minimap now open IllustratedWorldAtlas by default, initialized to the active map. Existing local-map canvas remains available via the area/world toggle; its ResizeObserver reconnects when the canvas becomes visible. All30 detail entries and live status still derive from existing atlas/MAPS; no portal, collision, NPC, monster, movement, room or gameplay data changed. Existing landscape PNG is retained unchanged and visually subdued with reduced opacity/saturation/contrast; opaque14px location labels use alternating offsets, gold solid live markers versus dashed planned markers. This is presentation simplification, not newly generated simplified terrain artwork. Five live/25 planned; names/geography/level proposals retain their caveats.
+
+
+## World atlas fit overview / phone UI — 2026-10-14
+User requests complete12-country artwork on opening M before zoom, phone usability and MAX somsin. A cleaned-up ResizeObserver measures the atlas viewport and uses contain-fit width/height, zero initial scroll,1× relative fit zoom through4× and an explicit overview reset. No1200px minimum: aspect ratio is preserved. At small scale only nation labels/markers remain; map names appear upon zoom and the selected map always has a readable DOM name, native44px select controls and detail button. Region selection centers/zooms for readable names. Small-scale nation label positions are UI-only; no geographic/map/portal data moves. The embedded atlas is a bounded flex view; detail panel opens on selection and closes independently, without scrolling the atlas out of view. Existing local-map footer remains for local mode, hidden in atlas mode to give image space. MAX somsin original font is local/scoped to atlas headings/countries, Noto Sans Thai retained for body/controls. Original font/source/terms: design/fonts/max-somsin/. No imagery or gameplay/server changes.
+
+
+2026-10-14 user restores existing fonts: atlas headings use existing Torsilp ThaiMai, country labels/body/controls Noto Sans Thai. MAX somsin CSS binding removed; downloaded source remains archived. Fit overview/zoom/phone/details/gameplay unchanged.
+
+
+## Next WORLD-30 map / fresh mountain layout — 2026-10-14
+After accepting atlas UI/font restoration, user authorizes the next roadmap map. Phase2 mountain-spirit-sanctuary receives a fresh74×64 authored polygon/route/building/canopy layout, separate from rejected Phase D, with local walking review at /maps/mountain-spirit-sanctuary. Five required structures,13 reachable entrances/landings and74 authored objects; two6-unit stairs link levels0/1/2. Current owned village/terrain/cliff/stair assets reused; generated artwork0. Existing MapRenderer reuses height projection/WaterLayer/weighted terrain; new ID-only SanctuaryCliffs draws polygon exposed edges and stairs. Existing fog renderer accepts an optional independent review profile, original defaults unchanged. React controls/dynamic no-SSR entry own preview; no Colyseus room or MAPS registration. Existing maps/portal profiles/NPCs/monsters retained; atlas remains5live25planned. Footprint/wet support, all13 entrances BFS and shared movement main climb+return pass. Art/layout remain visual-review pending; live marsh reciprocal portal, inhabitants/quests/balance and mountain-specific final art deferred.
+
+
+## Mountain sanctuary live / art revision02 — 2026-10-14
+User explicitly authorizes live marsh boundary travel, NPCs, monsters25–35 and replacement mountain/stair art. New MOUNTAIN_SPIRIT_SANCTUARY plus additive MARSH_MOUNTAIN_LINK register the sixth content map; original LEVELING_LIVE/source comments and old west portal/resident regions retained. New exact ground path/wet blockers reach marsh east mountain-gate → mountain west marsh-gate; tickets preserve profile and safe outside-trigger arrivals.3 server NPC services (healer/guide/guard),11 monsters in3 authored camps using separateLv25/30/35 definitions and explicitly reused existing animation art; old monster stats unchanged. Monster AI uses elevationPassage, MonsterLayer projects height with logical targeting on elevated maps, ordinary flat-map smoothing stays unchanged. Old prototype skill lock exempts this production map; experimental labs still guarded.
+
+New original imagegen terrain kit (one generation) replaces prototype brown stairs/walls with mossy cliff variants, three native tread frames, flat landing and rock/root abutments. Shared middleLanding=.25 creates two short flights per stair. Irregular polygon shoulders and lightly curved path use same elevation geometry/collision; dimensions/major structures/pool preserved. Entry foreground canopy/one lamp adjusted after real-player occlusion inspection; no required IDs lost. Assets/reference/brief/prompt/provenance and actual evidence: design/maps/mountain-spirit-sanctuary/. Current atlas6live/24planned, other nation exits closed. Balance/unique monster art and wider combat visual matrix remain provisional.
+
+Isolated actual-server tests: reciprocal travel/profile/no bounce; real movement from0 through landings.5/1.5 to2 and back; observer sees height2; NPC talk/heal;11 residents at25/30/35; normal Spirit Bolt/basic kill/EXP pass. Old shared gameplay suites and city↔Spiritwood/combat/respawn regression pass. First test harness used nonexistent schema value IDs instead of map keys; corrected harness and reran to pass, not a gameplay workaround. Build/typecheck pass. Human art acceptance and physical touch remain separate.
+
+
+## Mist Bamboo next-map preview — 2026-10-14
+User authorizes the next WORLD-30 Phase2 map as preview before live adoption. Independent mist-bamboo82×62 authored valley at /maps/mist-bamboo reuses owned bamboo/terrain/ritual assets, water and localized mist. Three planned monster camps use11 existing idle sprites for sizing, not authoritative inhabitants/rewards. Main west sanctuary approach→stone causeway→seal clearing→east tea-road proposal, plus side branches and nine reachable locations. React/Phaser local review uses shared movement; no MAPS, portals, gameplay server or atlas status changes (six live/24 planned). Required IDs/wet footprints/BFS/camp exclusions/round-trip tests, typecheck/build and desktop/phone browser review pass. Detailed layout, explicit corrections, asset limits and evidence: design/maps/mist-bamboo/README.md. Human visual approval and any live connection remain separate.
+
+
+## Mist Bamboo adopted in game — 2026-10-15
+User authorizes sanctuary east-edge ↔ mist-bamboo west-edge travel. Canonical82×62 valley/148 objects and reviewed water/mist retained. New low foothill branch reaches sanctuary73,43 without crossing terrace cliffs; reciprocal ticket arrivals bamboo4,45/sanctuary70,43 stay outside triggers. Mountain marsh portal/NPCs/stairs/regions preserved by snapshot comparisons. Three independent provisionalLv20/28/35 definitions/11 real monsters reuse existing animation files; no original species balance changed. Exact review fog/graph now owned once by MapRenderer. Atlas7 live/23 planned, tea exit inactive; no new art/GPU work. Typecheck/build/shared and old-zone regression, geometry/atlas/details tests pass; actual isolated two-client movement/warps/profile/combat/EXP and native-browser outbound/causeway/wet collision/return pass. Desktop and browser phone sizes inspected. Evidence/design/limitations: design/maps/mist-bamboo/README.md. Physical touch and final art/balance remain open.
+
+
+## Cloud Tea Slopes China preview — 2026-10-15
+User asks to leave the Thai-looking sequence and requests commit/push after major verified changes. Current seven live content maps are global hub1/Thailand5/China1 (mist-bamboo). Next WORLD-30 Phase2 cloud-tea-slopes has independent86×64 authored valley/tea contour layout, original96×64 Chinese tile-roof hall (PixelLab5 daily generations/no retry) and existing crop proxy/ground/water/localized mist. Local review /maps/cloud-tea-slopes, three proposed camps30–45, nine reachable points and route return. Flat logical terrain; elevation/special tea art/NPC services/live portal remain deferred. No changes to seven live map registrations. Geometry/typecheck/build and desktop/phone browser review pass. Evidence/limits: design/maps/cloud-tea-slopes/README.md.

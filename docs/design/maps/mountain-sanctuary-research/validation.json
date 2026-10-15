@@ -1,0 +1,225 @@
+{
+  "blueprintId": "mountain-sanctuary-composition-01",
+  "blueprintSha256": "116c483976975422b24007c5d3a61fd0b84bdd0ae088ac387286683aa4caefd9",
+  "status": "design-checks-pass-not-runtime-certified",
+  "nodeCount": 30,
+  "edgeCount": 31,
+  "requiredBuildingCount": 13,
+  "districtCount": 9,
+  "assetEvidence": [
+    {
+      "id": "thai-temple",
+      "path": "apps/client/public/assets/umbral/objects/thai-temple.png",
+      "nativeSize": [
+        168,
+        173
+      ],
+      "sha256": "b2a0b09075f7dbc914efcb392fc3fc134307ed27788265eae8dddc2ce0414ea5"
+    },
+    {
+      "id": "training-hall",
+      "path": "apps/client/public/assets/umbral/objects/training-hall.png",
+      "nativeSize": [
+        138,
+        147
+      ],
+      "sha256": "0dc99e7b989fa65420d3b35e015828c7377b937cc2be0ad64e2a23790fe8e3ba"
+    },
+    {
+      "id": "teak-house",
+      "path": "apps/client/public/assets/umbral/objects/teak-house.png",
+      "nativeSize": [
+        133,
+        144
+      ],
+      "sha256": "c76032af99758c5b649d6e00dc2046856ecba7c20040d9a2b63a65f2395ed66e"
+    },
+    {
+      "id": "stilt-house",
+      "path": "apps/client/public/assets/umbral/objects/stilt-house.png",
+      "nativeSize": [
+        91,
+        111
+      ],
+      "sha256": "ba86a6d5f4306a11b832b0fb983c60d2440adacffa8dbe9e29c22b8d339dc34d"
+    },
+    {
+      "id": "row-house",
+      "path": "apps/client/public/assets/umbral/objects/row-house.png",
+      "nativeSize": [
+        150,
+        98
+      ],
+      "sha256": "d7fc026182f05b021f629fe0a2483e511025e58e7da8ea0d7402dcd19120a14f"
+    },
+    {
+      "id": "market-stall",
+      "path": "apps/client/public/assets/umbral/objects/market-stall.png",
+      "nativeSize": [
+        53,
+        48
+      ],
+      "sha256": "adb1ea6ebc1cfdc0e145060468b289da3d5b691ead5fbaba862e2906f7f31b8f"
+    },
+    {
+      "id": "thai-gate",
+      "path": "apps/client/public/assets/umbral/objects/thai-gate.png",
+      "nativeSize": [
+        134,
+        150
+      ],
+      "sha256": "ef1dd1c4bc15747682d2ca4548241a92c68b05187e16218f0752d257a84914bc"
+    },
+    {
+      "id": "spirit-house",
+      "path": "apps/client/public/assets/umbral/objects/spirit-house.png",
+      "nativeSize": [
+        26,
+        45
+      ],
+      "sha256": "3235fbff3d8e433299936e4010c218ac4b719354c28498f31c25dfb617996883"
+    },
+    {
+      "id": "sacred-tree",
+      "path": "apps/client/public/assets/umbral/objects/sacred-tree.png",
+      "nativeSize": [
+        115,
+        153
+      ],
+      "sha256": "5205bb9245b7c7fbab31aeb39d781ab576696cce888714a9d6fe8d23a728fa6a"
+    },
+    {
+      "id": "jungle-tree",
+      "path": "apps/client/public/assets/umbral/objects/jungle-tree.png",
+      "nativeSize": [
+        93,
+        110
+      ],
+      "sha256": "91f081e2d5672deed47ea43168803dba700e0f70ae8433791f4b0640d458e676"
+    },
+    {
+      "id": "bamboo",
+      "path": "apps/client/public/assets/umbral/objects/bamboo.png",
+      "nativeSize": [
+        47,
+        78
+      ],
+      "sha256": "b261a5b625e29c455cc479e45c582920097da71aff8ead9c8987dc331beb91ad"
+    },
+    {
+      "id": "blossom-tree",
+      "path": "apps/client/public/assets/umbral/objects/blossom-tree.png",
+      "nativeSize": [
+        77,
+        88
+      ],
+      "sha256": "b0545916e020f404944efe8399648d9c0a7d3e30b138253b523eca350eb5c4cd"
+    },
+    {
+      "id": "bridge-h",
+      "path": "apps/client/public/assets/umbral/objects/bridge-h.png",
+      "nativeSize": [
+        61,
+        41
+      ],
+      "sha256": "12e326c133ee7064fcd4aab2b5aa38de470ee856eabec5645a86f837c89158a3"
+    },
+    {
+      "id": "cliff-front",
+      "path": "apps/client/public/assets/umbral/candidates/mountain-sanctuary-phase-c/front-module-01.png",
+      "nativeSize": [
+        64,
+        96
+      ],
+      "sha256": "3efc0158cbeade901a2619e61b26b8e0d423e44039422fe4d8354810fa673418"
+    },
+    {
+      "id": "stairs",
+      "path": "apps/client/public/assets/umbral/candidates/mountain-sanctuary-phase-c/stairs-01.png",
+      "nativeSize": [
+        48,
+        64
+      ],
+      "sha256": "bed606c8c29ad7395009040b0ba70970b98369b00686d84d7830941796b481f7"
+    },
+    {
+      "id": "waterfall",
+      "path": "apps/client/public/assets/umbral/candidates/mountain-sanctuary-phase-c/waterfall-01.png",
+      "nativeSize": [
+        32,
+        96
+      ],
+      "sha256": "8b2e4013fc5f4582d7116fba559db1c8ef84387b832ff9b4420bbbbf44912a93"
+    }
+  ],
+  "routes": [
+    {
+      "id": "pilgrim-main",
+      "start": "spawn",
+      "end": "temple-door",
+      "lengthWorldUnits": 133.63,
+      "idealWalkingSeconds": 33.41
+    },
+    {
+      "id": "east-return-loop",
+      "start": "market",
+      "end": "market",
+      "lengthWorldUnits": 173.29,
+      "idealWalkingSeconds": 43.32
+    },
+    {
+      "id": "west-contemplation-loop",
+      "start": "lower-top",
+      "end": "lower-top",
+      "lengthWorldUnits": 89.8,
+      "idealWalkingSeconds": 22.45
+    },
+    {
+      "id": "grove-detour",
+      "start": "upper-east-bank",
+      "end": "grove",
+      "lengthWorldUnits": 9.47,
+      "idealWalkingSeconds": 2.37
+    }
+  ],
+  "checks": [
+    "approval gates false",
+    "collection IDs unique",
+    "polygon vertices in world bounds",
+    "node terrain levels",
+    "bidirectional spawn graph connectivity",
+    "edge endpoint equality",
+    "continuous traversal routes and loop closure",
+    "non-stair terrace corridors sampled at 0.25 units / 16 rim directions",
+    "exact segment-to-building rectangle corridor clearance",
+    "two-unit building separation",
+    "one-unit building support rim sampled at 0.25 units",
+    "building corners outside reserved floor polygons",
+    "building channel setbacks",
+    "landmark district and level membership",
+    "downhill fall endpoints and connected basins",
+    "same-level bridge endpoints and crossing alignment",
+    "PNG paths dimensions hashes"
+  ],
+  "notCertified": [
+    "polygon self-intersections and full district partition",
+    "stair-flight/landing surfaces and support",
+    "continuous river-bed geometry and bank slopes",
+    "all road/water overlaps outside bridge deck",
+    "exact polygon-vs-rectangle clearing overlap",
+    "final door pixels and roof/canopy envelopes",
+    "physical collision and player radius",
+    "game-camera visibility",
+    "multiplayer"
+  ],
+  "runtimeSources": [
+    {
+      "path": "packages/shared/src/maps/mountain-sanctuary-draft.ts",
+      "sha256": "99623f2b5edaa41b20c54d1214aecae568f43730c834db1bf67c7051fa3f3c16"
+    },
+    {
+      "path": "packages/shared/src/maps/mountain-sanctuary-prototype.ts",
+      "sha256": "80fbbd8e5f543fb81ff74bd830b9d40e538e431b7dad7fe9e55ebf0a5052accc"
+    }
+  ]
+}

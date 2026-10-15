@@ -1,0 +1,5078 @@
+{
+  "version": 1,
+  "maps": [
+    {
+      "id": "whispering-spiritwood",
+      "name": "ชายป่าวิญญาณ",
+      "nameEn": "Whispering Spiritwood",
+      "width": 80,
+      "height": 64,
+      "spawn": {
+        "x": 40,
+        "y": 59
+      },
+      "ground": {
+        "base": "dark-grass",
+        "regions": []
+      },
+      "terrain": {
+        "base": "grass",
+        "paint": [
+          {
+            "terrain": "water",
+            "shape": "circle",
+            "x": 19,
+            "y": 54,
+            "r": 3.2
+          },
+          {
+            "terrain": "water",
+            "shape": "circle",
+            "x": 58,
+            "y": 14,
+            "r": 2.6
+          },
+          {
+            "terrain": "dirt",
+            "shape": "rect",
+            "x": 34,
+            "y": 49,
+            "w": 12,
+            "h": 9
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                40,
+                63
+              ],
+              [
+                40,
+                52
+              ],
+              [
+                41,
+                44
+              ],
+              [
+                39,
+                36
+              ],
+              [
+                40,
+                28
+              ],
+              [
+                41,
+                21
+              ],
+              [
+                40,
+                16
+              ]
+            ],
+            "r": 1.3
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                40.6,
+                44
+              ],
+              [
+                33,
+                42.4
+              ],
+              [
+                26,
+                40.2
+              ],
+              [
+                19,
+                37.6
+              ],
+              [
+                13,
+                37
+              ]
+            ],
+            "r": 1.1
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                40,
+                39
+              ],
+              [
+                47,
+                37.6
+              ],
+              [
+                55,
+                36.4
+              ],
+              [
+                63,
+                34.4
+              ],
+              [
+                70,
+                33.6
+              ]
+            ],
+            "r": 1.1
+          },
+          {
+            "terrain": "road",
+            "shape": "circle",
+            "x": 40,
+            "y": 13.6,
+            "r": 3.6
+          }
+        ]
+      },
+      "npcs": [
+        {
+          "id": "sw-hunter",
+          "sprite": "npc-guard",
+          "role": "quest",
+          "x": 37.4,
+          "y": 53.6,
+          "name": {
+            "th": "พรานเดช",
+            "en": "Hunter Det"
+          },
+          "title": "พรานนำทางชายป่า",
+          "greeting": "ป่าแถบนี้มีภูตใบไม้ลอยวนอยู่ทางตะวันตก ถ้ายังใหม่ เริ่มฝึกล่าที่นั่นก่อน ระวังป่าทางตะวันออกให้ดี"
+        },
+        {
+          "id": "sw-healer",
+          "sprite": "npc-herbalist",
+          "role": "healer",
+          "x": 43.8,
+          "y": 53.4,
+          "name": {
+            "th": "ยายบัว",
+            "en": "Grandma Bua"
+          },
+          "title": "หมอยาประจำหมู่บ้าน",
+          "greeting": "บาดเจ็บมาหรือหลาน มาให้ยายเป่ามนต์ให้ เดี๋ยวก็หาย"
+        },
+        {
+          "id": "sw-merchant",
+          "sprite": "npc-trader",
+          "role": "shop-consumable",
+          "x": 33.4,
+          "y": 57.6,
+          "name": {
+            "th": "นายเพิ่ม",
+            "en": "Mr. Perm"
+          },
+          "title": "แผงเสบียงชายป่า",
+          "greeting": "ยาสมุนไพรกับน้ำมนต์ครบ ก่อนเข้าป่าแวะซื้อติดตัวไว้หน่อย"
+        }
+      ],
+      "objects": [
+        {
+          "id": "portal-pillar-w",
+          "asset": "ritual-pillar",
+          "x": 37.6,
+          "y": 61.8,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "portal-pillar-e",
+          "asset": "ritual-pillar",
+          "x": 42.4,
+          "y": 61.8,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "portal-stone-w",
+          "asset": "spirit-lantern",
+          "x": 36,
+          "y": 60.6,
+          "footprint": {
+            "w": 0.9,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "portal-stone-e",
+          "asset": "spirit-lantern",
+          "x": 44,
+          "y": 60.6,
+          "footprint": {
+            "w": 0.9,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "village-house-w",
+          "asset": "stilt-house",
+          "x": 31.5,
+          "y": 52,
+          "footprint": {
+            "w": 4.8,
+            "h": 2
+          }
+        },
+        {
+          "id": "village-house-e",
+          "asset": "stilt-house",
+          "x": 48.5,
+          "y": 52,
+          "footprint": {
+            "w": 4.8,
+            "h": 2
+          },
+          "flip": true
+        },
+        {
+          "id": "village-board",
+          "asset": "noticeboard",
+          "x": 36.4,
+          "y": 56.2,
+          "footprint": {
+            "w": 1.6,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "village-well",
+          "asset": "well",
+          "x": 46.8,
+          "y": 55.6,
+          "footprint": {
+            "w": 1.1,
+            "h": 0.8
+          }
+        },
+        {
+          "id": "village-stall",
+          "asset": "market-stall",
+          "x": 33.4,
+          "y": 59.4,
+          "footprint": {
+            "w": 3,
+            "h": 1.2
+          }
+        },
+        {
+          "id": "village-spirit-house",
+          "asset": "spirit-house",
+          "x": 34.6,
+          "y": 48.6,
+          "footprint": {
+            "w": 0.6,
+            "h": 0.4
+          }
+        },
+        {
+          "id": "village-lantern-w",
+          "asset": "talisman-lantern",
+          "x": 38,
+          "y": 46.8,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "village-lantern-e",
+          "asset": "talisman-lantern",
+          "x": 42.2,
+          "y": 46.8,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "village-fence-e1",
+          "asset": "teak-fence",
+          "x": 48,
+          "y": 58.6,
+          "footprint": {
+            "w": 2.6,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "village-fence-e2",
+          "asset": "teak-fence",
+          "x": 50.6,
+          "y": 58.6,
+          "footprint": {
+            "w": 2.6,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "village-pots-w",
+          "asset": "clay-pots",
+          "x": 29.4,
+          "y": 54.8,
+          "footprint": null
+        },
+        {
+          "id": "village-pots-e",
+          "asset": "clay-pots",
+          "x": 51.2,
+          "y": 54.6,
+          "footprint": null,
+          "flip": true
+        },
+        {
+          "id": "village-tree-w",
+          "asset": "shade-tree",
+          "x": 28.6,
+          "y": 48.2,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "village-tree-e",
+          "asset": "shade-tree",
+          "x": 51.6,
+          "y": 48.6,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          },
+          "flip": true
+        },
+        {
+          "id": "village-flowers",
+          "asset": "flower-bush",
+          "x": 44.6,
+          "y": 49.6,
+          "footprint": null
+        },
+        {
+          "id": "west-dummy-a",
+          "asset": "training-dummy",
+          "x": 14,
+          "y": 33.4,
+          "footprint": {
+            "w": 0.7,
+            "h": 0.4
+          }
+        },
+        {
+          "id": "west-dummy-b",
+          "asset": "training-dummy",
+          "x": 17.6,
+          "y": 32.6,
+          "footprint": {
+            "w": 0.7,
+            "h": 0.4
+          }
+        },
+        {
+          "id": "west-spirit-house",
+          "asset": "spirit-house",
+          "x": 17,
+          "y": 28.4,
+          "footprint": {
+            "w": 0.6,
+            "h": 0.4
+          }
+        },
+        {
+          "id": "west-rock-a",
+          "asset": "mossy-rock",
+          "x": 22.6,
+          "y": 35,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "west-rock-b",
+          "asset": "mossy-rock",
+          "x": 10.2,
+          "y": 41.6,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.7
+          },
+          "flip": true
+        },
+        {
+          "id": "west-fern-a",
+          "asset": "fern",
+          "x": 11,
+          "y": 34.2,
+          "footprint": null
+        },
+        {
+          "id": "west-fern-b",
+          "asset": "fern",
+          "x": 20.4,
+          "y": 40.2,
+          "footprint": null,
+          "flip": true
+        },
+        {
+          "id": "west-fern-c",
+          "asset": "fern",
+          "x": 15.2,
+          "y": 41.2,
+          "footprint": null
+        },
+        {
+          "id": "west-big-a",
+          "asset": "jungle-tree",
+          "x": 6,
+          "y": 27.2,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "west-big-b",
+          "asset": "jungle-tree",
+          "x": 24.4,
+          "y": 27.6,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          },
+          "flip": true
+        },
+        {
+          "id": "west-big-c",
+          "asset": "jungle-tree",
+          "x": 5.2,
+          "y": 45.4,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "west-tree-a",
+          "asset": "shade-tree",
+          "x": 9.4,
+          "y": 26.4,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "west-tree-b",
+          "asset": "shade-tree",
+          "x": 21.2,
+          "y": 25.8,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          },
+          "flip": true
+        },
+        {
+          "id": "west-tree-c",
+          "asset": "shade-tree",
+          "x": 26.6,
+          "y": 31.4,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "west-tree-d",
+          "asset": "shade-tree",
+          "x": 26.2,
+          "y": 44.2,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          },
+          "flip": true
+        },
+        {
+          "id": "west-tree-e",
+          "asset": "shade-tree",
+          "x": 12.4,
+          "y": 46.2,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "west-tree-f",
+          "asset": "shade-tree",
+          "x": 7.6,
+          "y": 36.6,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          },
+          "flip": true
+        },
+        {
+          "id": "west-bamboo-a",
+          "asset": "bamboo",
+          "x": 3.4,
+          "y": 31.2,
+          "footprint": {
+            "w": 1.4,
+            "h": 0.6
+          }
+        },
+        {
+          "id": "west-bamboo-b",
+          "asset": "bamboo",
+          "x": 3.8,
+          "y": 33.4,
+          "footprint": {
+            "w": 1.4,
+            "h": 0.6
+          },
+          "flip": true
+        },
+        {
+          "id": "west-bamboo-c",
+          "asset": "bamboo",
+          "x": 27.6,
+          "y": 37.2,
+          "footprint": {
+            "w": 1.4,
+            "h": 0.6
+          }
+        },
+        {
+          "id": "west-bamboo-d",
+          "asset": "bamboo",
+          "x": 28.4,
+          "y": 39.2,
+          "footprint": {
+            "w": 1.4,
+            "h": 0.6
+          },
+          "flip": true
+        },
+        {
+          "id": "pond-lotus-a",
+          "asset": "lotus-pads",
+          "x": 18,
+          "y": 53.4,
+          "footprint": null
+        },
+        {
+          "id": "pond-lotus-b",
+          "asset": "lotus-pads",
+          "x": 20.4,
+          "y": 55.2,
+          "footprint": null,
+          "flip": true
+        },
+        {
+          "id": "pond-reeds-a",
+          "asset": "reed-planter",
+          "x": 15.6,
+          "y": 52.6,
+          "footprint": null
+        },
+        {
+          "id": "pond-reeds-b",
+          "asset": "reed-planter",
+          "x": 22.4,
+          "y": 56.6,
+          "footprint": null,
+          "flip": true
+        },
+        {
+          "id": "pond-tree",
+          "asset": "shade-tree",
+          "x": 23.4,
+          "y": 51,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "nw-big-a",
+          "asset": "jungle-tree",
+          "x": 9.6,
+          "y": 11.4,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "nw-big-b",
+          "asset": "jungle-tree",
+          "x": 22.4,
+          "y": 10.6,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          },
+          "flip": true
+        },
+        {
+          "id": "nw-dead-a",
+          "asset": "dead-tree",
+          "x": 15.8,
+          "y": 12.4,
+          "footprint": {
+            "w": 1,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "nw-dead-b",
+          "asset": "dead-tree",
+          "x": 23.6,
+          "y": 19.6,
+          "footprint": {
+            "w": 1,
+            "h": 0.5
+          },
+          "flip": true
+        },
+        {
+          "id": "nw-tree-a",
+          "asset": "shade-tree",
+          "x": 13.2,
+          "y": 20.6,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          },
+          "flip": true
+        },
+        {
+          "id": "nw-bamboo",
+          "asset": "bamboo",
+          "x": 7.6,
+          "y": 17,
+          "footprint": {
+            "w": 1.4,
+            "h": 0.6
+          }
+        },
+        {
+          "id": "nw-rock-a",
+          "asset": "mossy-rock",
+          "x": 18.8,
+          "y": 16.2,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "nw-totem",
+          "asset": "bone-totem",
+          "x": 11.6,
+          "y": 15.6,
+          "footprint": {
+            "w": 0.6,
+            "h": 0.4
+          }
+        },
+        {
+          "id": "nw-skull",
+          "asset": "skull-lantern",
+          "x": 20.6,
+          "y": 13.8,
+          "footprint": {
+            "w": 0.6,
+            "h": 0.4
+          }
+        },
+        {
+          "id": "nw-fern-a",
+          "asset": "fern",
+          "x": 12.8,
+          "y": 13.4,
+          "footprint": null
+        },
+        {
+          "id": "nw-fern-b",
+          "asset": "fern",
+          "x": 17.2,
+          "y": 20.2,
+          "footprint": null,
+          "flip": true
+        },
+        {
+          "id": "nw-fern-c",
+          "asset": "fern",
+          "x": 21.8,
+          "y": 16.4,
+          "footprint": null
+        },
+        {
+          "id": "east-cursed-a",
+          "asset": "cursed-tree",
+          "x": 58,
+          "y": 25,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.6
+          }
+        },
+        {
+          "id": "east-cursed-b",
+          "asset": "cursed-tree",
+          "x": 70.2,
+          "y": 27,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.6
+          },
+          "flip": true
+        },
+        {
+          "id": "east-cursed-c",
+          "asset": "cursed-tree",
+          "x": 74,
+          "y": 40.2,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.6
+          }
+        },
+        {
+          "id": "east-cursed-d",
+          "asset": "cursed-tree",
+          "x": 60.4,
+          "y": 44.2,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.6
+          },
+          "flip": true
+        },
+        {
+          "id": "east-dead-a",
+          "asset": "dead-tree",
+          "x": 63.2,
+          "y": 23.2,
+          "footprint": {
+            "w": 1,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "east-dead-b",
+          "asset": "dead-tree",
+          "x": 67,
+          "y": 44.6,
+          "footprint": {
+            "w": 1,
+            "h": 0.5
+          },
+          "flip": true
+        },
+        {
+          "id": "east-dead-c",
+          "asset": "dead-tree",
+          "x": 55.8,
+          "y": 31.2,
+          "footprint": {
+            "w": 1,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "east-dead-d",
+          "asset": "dead-tree",
+          "x": 76.4,
+          "y": 31.4,
+          "footprint": {
+            "w": 1,
+            "h": 0.5
+          },
+          "flip": true
+        },
+        {
+          "id": "east-dead-e",
+          "asset": "dead-tree",
+          "x": 72,
+          "y": 35.6,
+          "footprint": {
+            "w": 1,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "east-big-a",
+          "asset": "jungle-tree",
+          "x": 53.6,
+          "y": 22.2,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "east-big-b",
+          "asset": "jungle-tree",
+          "x": 77,
+          "y": 46.6,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          },
+          "flip": true
+        },
+        {
+          "id": "east-totem-a",
+          "asset": "bone-totem",
+          "x": 64,
+          "y": 30,
+          "footprint": {
+            "w": 0.6,
+            "h": 0.4
+          }
+        },
+        {
+          "id": "east-totem-b",
+          "asset": "bone-totem",
+          "x": 68.2,
+          "y": 38.4,
+          "footprint": {
+            "w": 0.6,
+            "h": 0.4
+          }
+        },
+        {
+          "id": "east-skull-a",
+          "asset": "skull-lantern",
+          "x": 59.2,
+          "y": 36.2,
+          "footprint": {
+            "w": 0.6,
+            "h": 0.4
+          }
+        },
+        {
+          "id": "east-skull-b",
+          "asset": "skull-lantern",
+          "x": 70.4,
+          "y": 32.6,
+          "footprint": {
+            "w": 0.6,
+            "h": 0.4
+          }
+        },
+        {
+          "id": "east-rock-a",
+          "asset": "mossy-rock",
+          "x": 61.2,
+          "y": 40,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "east-rock-b",
+          "asset": "mossy-rock",
+          "x": 73,
+          "y": 25.2,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.7
+          },
+          "flip": true
+        },
+        {
+          "id": "east-fern-a",
+          "asset": "fern",
+          "x": 57,
+          "y": 40.4,
+          "footprint": null
+        },
+        {
+          "id": "east-fern-b",
+          "asset": "fern",
+          "x": 65.2,
+          "y": 26.2,
+          "footprint": null,
+          "flip": true
+        },
+        {
+          "id": "east-fern-c",
+          "asset": "fern",
+          "x": 74.2,
+          "y": 36.2,
+          "footprint": null
+        },
+        {
+          "id": "shrine",
+          "asset": "ruined-shrine",
+          "x": 40,
+          "y": 9.4,
+          "footprint": {
+            "w": 5,
+            "h": 2.2
+          }
+        },
+        {
+          "id": "shrine-stele-w",
+          "asset": "stele",
+          "x": 35.6,
+          "y": 14,
+          "footprint": {
+            "w": 0.5,
+            "h": 0.3
+          }
+        },
+        {
+          "id": "shrine-stele-e",
+          "asset": "stele",
+          "x": 44.4,
+          "y": 14,
+          "footprint": {
+            "w": 0.5,
+            "h": 0.3
+          }
+        },
+        {
+          "id": "shrine-stone-w",
+          "asset": "spirit-lantern",
+          "x": 36.8,
+          "y": 16.6,
+          "footprint": {
+            "w": 0.9,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "shrine-stone-e",
+          "asset": "spirit-lantern",
+          "x": 43.2,
+          "y": 16.6,
+          "footprint": {
+            "w": 0.9,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "shrine-urn",
+          "asset": "incense-urn",
+          "x": 37.4,
+          "y": 12.4,
+          "footprint": {
+            "w": 0.7,
+            "h": 0.4
+          }
+        },
+        {
+          "id": "shrine-cursed",
+          "asset": "cursed-tree",
+          "x": 33.8,
+          "y": 18.6,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.6
+          }
+        },
+        {
+          "id": "shrine-big-a",
+          "asset": "jungle-tree",
+          "x": 30,
+          "y": 6,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "shrine-big-b",
+          "asset": "jungle-tree",
+          "x": 50.2,
+          "y": 7,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          },
+          "flip": true
+        },
+        {
+          "id": "shrine-big-c",
+          "asset": "jungle-tree",
+          "x": 28.2,
+          "y": 15.2,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          },
+          "flip": true
+        },
+        {
+          "id": "shrine-big-d",
+          "asset": "jungle-tree",
+          "x": 52,
+          "y": 16.4,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "shrine-sacred",
+          "asset": "sacred-tree",
+          "x": 46.6,
+          "y": 4.4,
+          "footprint": {
+            "w": 2.4,
+            "h": 1.2
+          },
+          "flip": true
+        },
+        {
+          "id": "shrine-bamboo-a",
+          "asset": "bamboo",
+          "x": 31,
+          "y": 10.2,
+          "footprint": {
+            "w": 1.4,
+            "h": 0.6
+          }
+        },
+        {
+          "id": "shrine-bamboo-b",
+          "asset": "bamboo",
+          "x": 49.4,
+          "y": 11.2,
+          "footprint": {
+            "w": 1.4,
+            "h": 0.6
+          },
+          "flip": true
+        },
+        {
+          "id": "north-pond-lotus",
+          "asset": "lotus-pads",
+          "x": 57.6,
+          "y": 13.6,
+          "footprint": null
+        },
+        {
+          "id": "north-pond-reeds",
+          "asset": "reed-planter",
+          "x": 60.6,
+          "y": 15.6,
+          "footprint": null,
+          "flip": true
+        },
+        {
+          "id": "north-rock",
+          "asset": "mossy-rock",
+          "x": 54.4,
+          "y": 18.2,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "edge-n-w0",
+          "asset": "jungle-tree",
+          "x": 3,
+          "y": 1.8,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "edge-n-w1",
+          "asset": "bamboo",
+          "x": 9.4,
+          "y": 2.4,
+          "footprint": {
+            "w": 1.4,
+            "h": 0.6
+          },
+          "flip": true
+        },
+        {
+          "id": "edge-n-w2",
+          "asset": "jungle-tree",
+          "x": 15.2,
+          "y": 3,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "edge-n-w3",
+          "asset": "bamboo",
+          "x": 21.6,
+          "y": 1.8,
+          "footprint": {
+            "w": 1.4,
+            "h": 0.6
+          },
+          "flip": true
+        },
+        {
+          "id": "edge-n-w4",
+          "asset": "jungle-tree",
+          "x": 27,
+          "y": 2.4,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "edge-n-e0",
+          "asset": "bamboo",
+          "x": 55,
+          "y": 1.6,
+          "footprint": {
+            "w": 1.4,
+            "h": 0.6
+          },
+          "flip": true
+        },
+        {
+          "id": "edge-n-e1",
+          "asset": "jungle-tree",
+          "x": 61,
+          "y": 2.4000000000000004,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "edge-n-e2",
+          "asset": "bamboo",
+          "x": 66.8,
+          "y": 1.6,
+          "footprint": {
+            "w": 1.4,
+            "h": 0.6
+          },
+          "flip": true
+        },
+        {
+          "id": "edge-n-e3",
+          "asset": "jungle-tree",
+          "x": 72.4,
+          "y": 2.4000000000000004,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "edge-n-e4",
+          "asset": "bamboo",
+          "x": 77.6,
+          "y": 1.6,
+          "footprint": {
+            "w": 1.4,
+            "h": 0.6
+          },
+          "flip": true
+        },
+        {
+          "id": "edge-w0",
+          "asset": "jungle-tree",
+          "x": 1.6,
+          "y": 7,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "edge-w1",
+          "asset": "shade-tree",
+          "x": 2.2,
+          "y": 12.6,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "edge-w2",
+          "asset": "jungle-tree",
+          "x": 1.6,
+          "y": 18.4,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          },
+          "flip": true
+        },
+        {
+          "id": "edge-w3",
+          "asset": "shade-tree",
+          "x": 2.2,
+          "y": 23.2,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          }
+        },
+        {
+          "id": "edge-sw0",
+          "asset": "jungle-tree",
+          "x": 2,
+          "y": 49.6,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "edge-sw1",
+          "asset": "bamboo",
+          "x": 2.4,
+          "y": 58.4,
+          "footprint": {
+            "w": 1.4,
+            "h": 0.6
+          },
+          "flip": true
+        },
+        {
+          "id": "edge-sw2",
+          "asset": "jungle-tree",
+          "x": 2.8,
+          "y": 62.6,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "edge-e0",
+          "asset": "shade-tree",
+          "x": 78.2,
+          "y": 6.4,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          },
+          "flip": true
+        },
+        {
+          "id": "edge-e1",
+          "asset": "jungle-tree",
+          "x": 77.7,
+          "y": 12,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "edge-e2",
+          "asset": "shade-tree",
+          "x": 77.2,
+          "y": 18.2,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          },
+          "flip": true
+        },
+        {
+          "id": "edge-e3",
+          "asset": "jungle-tree",
+          "x": 78.2,
+          "y": 52,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "edge-e4",
+          "asset": "shade-tree",
+          "x": 77.7,
+          "y": 57.2,
+          "footprint": {
+            "w": 0.8,
+            "h": 0.5
+          },
+          "flip": true
+        },
+        {
+          "id": "edge-e5",
+          "asset": "jungle-tree",
+          "x": 77.2,
+          "y": 62.4,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "edge-s-w0",
+          "asset": "jungle-tree",
+          "x": 5,
+          "y": 62.8,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          }
+        },
+        {
+          "id": "edge-s-w1",
+          "asset": "bamboo",
+          "x": 10.8,
+          "y": 62.8,
+          "footprint": {
+            "w": 1.4,
+            "h": 0.6
+          }
+        },
+        {
+          "id": "edge-s-w2",
+          "asset": "jungle-tree",
+          "x": 25.8,
+          "y": 62.8,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          },
+          "flip": true
+        },
+        {
+          "id": "edge-s-e0",
+          "asset": "bamboo",
+          "x": 55.6,
+          "y": 62.6,
+          "footprint": {
+            "w": 1.4,
+            "h": 0.6
+          }
+        },
+        {
+          "id": "edge-s-e1",
+          "asset": "jungle-tree",
+          "x": 62,
+          "y": 63,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          },
+          "flip": true
+        },
+        {
+          "id": "edge-s-e2",
+          "asset": "bamboo",
+          "x": 68.4,
+          "y": 62.6,
+          "footprint": {
+            "w": 1.4,
+            "h": 0.6
+          }
+        },
+        {
+          "id": "edge-s-e3",
+          "asset": "jungle-tree",
+          "x": 74,
+          "y": 63,
+          "footprint": {
+            "w": 1.8,
+            "h": 0.9
+          },
+          "flip": true
+        }
+      ],
+      "blockers": [
+        {
+          "x": 16.8,
+          "y": 51.8,
+          "w": 4.4,
+          "h": 4.4
+        },
+        {
+          "x": 56.2,
+          "y": 12.2,
+          "w": 3.6,
+          "h": 3.6
+        }
+      ],
+      "landmarks": [
+        {
+          "id": "sw-village",
+          "name": {
+            "th": "หมู่บ้านชายป่า",
+            "en": "Edge Village"
+          },
+          "x": 40,
+          "y": 50,
+          "kind": "village"
+        },
+        {
+          "id": "sw-training",
+          "name": {
+            "th": "ป่าฝึกล่า",
+            "en": "Training Forest"
+          },
+          "x": 15,
+          "y": 30,
+          "kind": "forest"
+        },
+        {
+          "id": "sw-cursed",
+          "name": {
+            "th": "ป่าต้องสาป",
+            "en": "Cursed Forest"
+          },
+          "x": 66,
+          "y": 29,
+          "kind": "forest"
+        },
+        {
+          "id": "sw-shrine",
+          "name": {
+            "th": "ศาลวิญญาณร้าง",
+            "en": "Abandoned Spirit Shrine"
+          },
+          "x": 40,
+          "y": 5,
+          "kind": "shrine"
+        },
+        {
+          "id": "sw-portal",
+          "name": {
+            "th": "ประตูสู่นครมนตร์ทมิฬ",
+            "en": "To Umbral Capital"
+          },
+          "x": 40,
+          "y": 60.6,
+          "kind": "gate"
+        }
+      ],
+      "portals": [
+        {
+          "id": "village-gate",
+          "area": {
+            "x": 38.6,
+            "y": 62.2,
+            "w": 2.8,
+            "h": 1.3
+          },
+          "to": {
+            "mapId": "umbral-capital",
+            "portalId": "south-gate"
+          },
+          "arrival": {
+            "x": 40,
+            "y": 58.6
+          },
+          "label": {
+            "th": "กลับนครมนตร์ทมิฬ",
+            "en": "Back to Umbral Capital"
+          }
+        }
+      ],
+      "safeZones": [
+        {
+          "x": 28,
+          "y": 46,
+          "w": 24,
+          "h": 18
+        }
+      ],
+      "spawnRegions": [
+        {
+          "id": "west-wisps",
+          "area": {
+            "x": 8,
+            "y": 29,
+            "w": 17,
+            "h": 13
+          },
+          "monsters": [
+            {
+              "kind": "leaf-wisp",
+              "count": 7
+            }
+          ],
+          "respawnMs": 9000
+        },
+        {
+          "id": "west-strawlings",
+          "area": {
+            "x": 6,
+            "y": 43,
+            "w": 15,
+            "h": 6
+          },
+          "monsters": [
+            {
+              "kind": "cursed-strawling",
+              "count": 4
+            }
+          ],
+          "respawnMs": 12000
+        },
+        {
+          "id": "nw-flames",
+          "area": {
+            "x": 8,
+            "y": 10,
+            "w": 16,
+            "h": 11
+          },
+          "monsters": [
+            {
+              "kind": "spirit-flame",
+              "count": 4
+            }
+          ],
+          "respawnMs": 15000
+        },
+        {
+          "id": "east-macaques",
+          "area": {
+            "x": 56,
+            "y": 24,
+            "w": 18,
+            "h": 9
+          },
+          "monsters": [
+            {
+              "kind": "shadow-macaque",
+              "count": 4
+            }
+          ],
+          "respawnMs": 14000
+        },
+        {
+          "id": "east-guardians",
+          "area": {
+            "x": 57,
+            "y": 36,
+            "w": 16,
+            "h": 8
+          },
+          "monsters": [
+            {
+              "kind": "clay-guardian",
+              "count": 3
+            }
+          ],
+          "respawnMs": 20000
+        },
+        {
+          "id": "shrine-boss",
+          "area": {
+            "x": 37.5,
+            "y": 16,
+            "w": 5,
+            "h": 2.5
+          },
+          "monsters": [
+            {
+              "kind": "cursed-rootkeeper",
+              "count": 1
+            }
+          ],
+          "respawnMs": 120000
+        }
+      ],
+      "sourcePreserved": true,
+      "graph": {
+        "nodes": [
+          {
+            "id": "arrival",
+            "name": "ทางเข้าหมู่บ้าน",
+            "x": 40,
+            "y": 59,
+            "level": 0
+          },
+          {
+            "id": "rest",
+            "name": "หมู่บ้านชายป่า",
+            "x": 40,
+            "y": 50,
+            "level": 0
+          },
+          {
+            "id": "junction",
+            "name": "แยกชายป่า",
+            "x": 40,
+            "y": 35,
+            "level": 0
+          },
+          {
+            "id": "training",
+            "name": "ป่าฝึก",
+            "x": 15,
+            "y": 34,
+            "level": 0
+          },
+          {
+            "id": "cursed",
+            "name": "ป่าต้องสาป",
+            "x": 63,
+            "y": 32,
+            "level": 0
+          },
+          {
+            "id": "shrine",
+            "name": "ลานศาล",
+            "x": 40,
+            "y": 19,
+            "level": 0
+          }
+        ],
+        "edges": [
+          {
+            "id": "arrival--rest",
+            "from": "arrival",
+            "to": "rest",
+            "points": [
+              [
+                40,
+                59
+              ],
+              [
+                40,
+                50
+              ]
+            ],
+            "width": 3,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  40,
+                  59
+                ],
+                [
+                  40,
+                  50
+                ]
+              ],
+              "length": 9,
+              "seconds": 2.25
+            }
+          },
+          {
+            "id": "rest--junction",
+            "from": "rest",
+            "to": "junction",
+            "points": [
+              [
+                40,
+                50
+              ],
+              [
+                40,
+                35
+              ]
+            ],
+            "width": 3,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  40,
+                  50
+                ],
+                [
+                  40,
+                  35
+                ]
+              ],
+              "length": 15,
+              "seconds": 3.75
+            }
+          },
+          {
+            "id": "junction--training",
+            "from": "junction",
+            "to": "training",
+            "points": [
+              [
+                40,
+                35
+              ],
+              [
+                15,
+                34
+              ]
+            ],
+            "width": 3,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  40,
+                  35
+                ],
+                [
+                  24,
+                  35
+                ],
+                [
+                  24,
+                  34
+                ],
+                [
+                  15,
+                  34
+                ]
+              ],
+              "length": 26,
+              "seconds": 6.5
+            }
+          },
+          {
+            "id": "junction--cursed",
+            "from": "junction",
+            "to": "cursed",
+            "points": [
+              [
+                40,
+                35
+              ],
+              [
+                63,
+                32
+              ]
+            ],
+            "width": 3,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  40,
+                  35
+                ],
+                [
+                  63,
+                  35
+                ],
+                [
+                  63,
+                  32
+                ]
+              ],
+              "length": 26,
+              "seconds": 6.5
+            }
+          },
+          {
+            "id": "junction--shrine",
+            "from": "junction",
+            "to": "shrine",
+            "points": [
+              [
+                40,
+                35
+              ],
+              [
+                40,
+                19
+              ]
+            ],
+            "width": 3,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  40,
+                  35
+                ],
+                [
+                  40,
+                  19
+                ]
+              ],
+              "length": 16,
+              "seconds": 4
+            }
+          }
+        ]
+      },
+      "locations": [
+        {
+          "id": "shrine",
+          "name": "ศาลวิญญาณเดิม",
+          "asset": "ruined-shrine",
+          "x": 40,
+          "y": 9.4,
+          "entrance": {
+            "x": 40,
+            "y": 19
+          },
+          "nodeId": "shrine",
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          },
+          "role": "exterior landmark; no interior gameplay"
+        }
+      ],
+      "fog": [
+        {
+          "id": "cursed-fog",
+          "x": 57,
+          "y": 20,
+          "w": 17,
+          "h": 21,
+          "alpha": 0.075
+        },
+        {
+          "id": "shrine-fog",
+          "x": 30,
+          "y": 4,
+          "w": 20,
+          "h": 13,
+          "alpha": 0.08
+        }
+      ],
+      "levels": [
+        1,
+        10
+      ],
+      "description": "หมู่บ้านอุ่น → ป่าฝึกตะวันตก / ป่าคำสาปตะวันออก → ศาลเหนือ",
+      "atmosphere": {
+        "light": "ฟ้าปิด เงาป่าเขียวหม่น โคมหมู่บ้านทองเก่า",
+        "fog": "บางเฉพาะป่าต้องสาปและศาล ไม่คลุมลานฝึก",
+        "profile": "localized-light",
+        "details": "ผ้ายันต์ขาดกับรากไม้พันศาล"
+      }
+    },
+    {
+      "id": "lantern-paddy",
+      "name": "ทุ่งนาประทีป",
+      "width": 76,
+      "height": 60,
+      "spawn": {
+        "x": 38,
+        "y": 55
+      },
+      "terrain": {
+        "base": "grass",
+        "paint": [
+          {
+            "terrain": "water",
+            "shape": "rect",
+            "x": 7,
+            "y": 43,
+            "w": 19,
+            "h": 7
+          },
+          {
+            "terrain": "water",
+            "shape": "rect",
+            "x": 7,
+            "y": 7,
+            "w": 19,
+            "h": 10
+          },
+          {
+            "terrain": "water",
+            "shape": "rect",
+            "x": 49,
+            "y": 43,
+            "w": 19,
+            "h": 7
+          },
+          {
+            "terrain": "water",
+            "shape": "rect",
+            "x": 49,
+            "y": 7,
+            "w": 19,
+            "h": 10
+          },
+          {
+            "terrain": "dirt",
+            "shape": "rect",
+            "x": 8,
+            "y": 24,
+            "w": 19,
+            "h": 16
+          },
+          {
+            "terrain": "dirt",
+            "shape": "rect",
+            "x": 49,
+            "y": 24,
+            "w": 18,
+            "h": 16
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                38,
+                55
+              ],
+              [
+                38,
+                48
+              ]
+            ],
+            "r": 2
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                38,
+                48
+              ],
+              [
+                38,
+                34
+              ]
+            ],
+            "r": 2
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                38,
+                34
+              ],
+              [
+                38,
+                19
+              ]
+            ],
+            "r": 2
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                38,
+                19
+              ],
+              [
+                38,
+                6
+              ]
+            ],
+            "r": 2
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                38,
+                48
+              ],
+              [
+                28,
+                40
+              ],
+              [
+                18,
+                38
+              ]
+            ],
+            "r": 1.5
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                18,
+                38
+              ],
+              [
+                18,
+                22
+              ]
+            ],
+            "r": 1.5
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                18,
+                22
+              ],
+              [
+                28,
+                19
+              ],
+              [
+                38,
+                19
+              ]
+            ],
+            "r": 1.5
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                38,
+                19
+              ],
+              [
+                48,
+                19
+              ],
+              [
+                57,
+                22
+              ]
+            ],
+            "r": 1.5
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                57,
+                22
+              ],
+              [
+                58,
+                38
+              ]
+            ],
+            "r": 1.5
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                58,
+                38
+              ],
+              [
+                48,
+                40
+              ],
+              [
+                38,
+                48
+              ]
+            ],
+            "r": 1.5
+          }
+        ]
+      },
+      "ground": {
+        "base": "dark-grass",
+        "regions": []
+      },
+      "objects": [
+        {
+          "id": "paddy-rest-house",
+          "asset": "stilt-house",
+          "x": 43,
+          "y": 49,
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          }
+        },
+        {
+          "id": "paddy-mill",
+          "asset": "teak-house",
+          "x": 14,
+          "y": 22,
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          }
+        },
+        {
+          "id": "paddy-seal",
+          "asset": "spirit-house",
+          "x": 61,
+          "y": 21,
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          }
+        },
+        {
+          "id": "paddy-north-marker",
+          "asset": "ritual-pillar",
+          "x": 42,
+          "y": 7,
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          }
+        },
+        {
+          "id": "west-edge-0",
+          "asset": "shade-tree",
+          "x": 3,
+          "y": 17,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "west-edge-1",
+          "asset": "shade-tree",
+          "x": 4,
+          "y": 23,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "west-edge-2",
+          "asset": "shade-tree",
+          "x": 3,
+          "y": 32,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "west-edge-3",
+          "asset": "shade-tree",
+          "x": 4,
+          "y": 39,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "east-edge-0",
+          "asset": "dead-tree",
+          "x": 73,
+          "y": 18,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "east-edge-1",
+          "asset": "dead-tree",
+          "x": 72,
+          "y": 27,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "east-edge-2",
+          "asset": "dead-tree",
+          "x": 73,
+          "y": 37,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "southern-grove-0",
+          "asset": "bamboo",
+          "x": 23,
+          "y": 56,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "southern-grove-1",
+          "asset": "bamboo",
+          "x": 27,
+          "y": 57,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "southern-grove-2",
+          "asset": "bamboo",
+          "x": 50,
+          "y": 56,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "southern-grove-3",
+          "asset": "bamboo",
+          "x": 54,
+          "y": 57,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "lantern-paddy-prop-0",
+          "asset": "reed-planter",
+          "x": 12,
+          "y": 45,
+          "footprint": null
+        },
+        {
+          "id": "lantern-paddy-prop-1",
+          "asset": "reed-planter",
+          "x": 19,
+          "y": 47,
+          "footprint": null
+        },
+        {
+          "id": "lantern-paddy-prop-2",
+          "asset": "reed-planter",
+          "x": 53,
+          "y": 45,
+          "footprint": null
+        },
+        {
+          "id": "lantern-paddy-prop-3",
+          "asset": "reed-planter",
+          "x": 60,
+          "y": 48,
+          "footprint": null
+        },
+        {
+          "id": "lantern-paddy-prop-4",
+          "asset": "noticeboard",
+          "x": 34,
+          "y": 51,
+          "footprint": null
+        },
+        {
+          "id": "lantern-paddy-prop-5",
+          "asset": "ritual-lantern",
+          "x": 42,
+          "y": 46,
+          "footprint": null
+        },
+        {
+          "id": "lantern-paddy-prop-6",
+          "asset": "clay-pots",
+          "x": 45,
+          "y": 50,
+          "footprint": null
+        }
+      ],
+      "blockers": [],
+      "waterCollision": true,
+      "safeZones": [
+        {
+          "x": 31,
+          "y": 47,
+          "w": 15,
+          "h": 11
+        }
+      ],
+      "spawnRegions": [
+        {
+          "id": "paddy-straw",
+          "name": "หุ่นฟาง",
+          "area": {
+            "x": 9,
+            "y": 27,
+            "w": 14,
+            "h": 11
+          },
+          "monsters": [
+            {
+              "kind": "cursed-strawling",
+              "count": 6
+            }
+          ],
+          "respawnMs": 15000
+        },
+        {
+          "id": "paddy-flame",
+          "name": "ผีไฟ",
+          "area": {
+            "x": 50,
+            "y": 26,
+            "w": 15,
+            "h": 10
+          },
+          "monsters": [
+            {
+              "kind": "spirit-flame",
+              "count": 4
+            }
+          ],
+          "respawnMs": 15000
+        },
+        {
+          "id": "paddy-buffalo",
+          "name": "ควายดิน",
+          "area": {
+            "x": 29,
+            "y": 23,
+            "w": 6,
+            "h": 9
+          },
+          "monsters": [
+            {
+              "kind": "spirit-buffalo",
+              "count": 3
+            }
+          ],
+          "respawnMs": 15000
+        }
+      ],
+      "graph": {
+        "nodes": [
+          {
+            "id": "arrival",
+            "name": "ทางเข้าทุ่ง",
+            "x": 38,
+            "y": 55,
+            "level": 0
+          },
+          {
+            "id": "rest",
+            "name": "ลานเสบียง",
+            "x": 38,
+            "y": 48,
+            "level": 0
+          },
+          {
+            "id": "junction",
+            "name": "แยกคันนา",
+            "x": 38,
+            "y": 34,
+            "level": 0
+          },
+          {
+            "id": "west",
+            "name": "ลานหุ่นฟาง",
+            "x": 18,
+            "y": 38,
+            "level": 0
+          },
+          {
+            "id": "mill",
+            "name": "โรงสีร้าง",
+            "x": 18,
+            "y": 22,
+            "level": 0
+          },
+          {
+            "id": "north",
+            "name": "คันนาเหนือ",
+            "x": 38,
+            "y": 19,
+            "level": 0
+          },
+          {
+            "id": "seal",
+            "name": "ศาลทุ่ง",
+            "x": 57,
+            "y": 22,
+            "level": 0
+          },
+          {
+            "id": "east",
+            "name": "ลานควายดิน",
+            "x": 58,
+            "y": 38,
+            "level": 0
+          },
+          {
+            "id": "exit",
+            "name": "ทางออกเหนือ",
+            "x": 38,
+            "y": 6,
+            "level": 0
+          }
+        ],
+        "edges": [
+          {
+            "id": "arrival--rest",
+            "from": "arrival",
+            "to": "rest",
+            "points": [
+              [
+                38,
+                55
+              ],
+              [
+                38,
+                48
+              ]
+            ],
+            "width": 4,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  38,
+                  55
+                ],
+                [
+                  38,
+                  48
+                ]
+              ],
+              "length": 7,
+              "seconds": 1.75
+            }
+          },
+          {
+            "id": "rest--junction",
+            "from": "rest",
+            "to": "junction",
+            "points": [
+              [
+                38,
+                48
+              ],
+              [
+                38,
+                34
+              ]
+            ],
+            "width": 4,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  38,
+                  48
+                ],
+                [
+                  38,
+                  34
+                ]
+              ],
+              "length": 14,
+              "seconds": 3.5
+            }
+          },
+          {
+            "id": "junction--north",
+            "from": "junction",
+            "to": "north",
+            "points": [
+              [
+                38,
+                34
+              ],
+              [
+                38,
+                19
+              ]
+            ],
+            "width": 4,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  38,
+                  34
+                ],
+                [
+                  38,
+                  19
+                ]
+              ],
+              "length": 15,
+              "seconds": 3.75
+            }
+          },
+          {
+            "id": "north--exit",
+            "from": "north",
+            "to": "exit",
+            "points": [
+              [
+                38,
+                19
+              ],
+              [
+                38,
+                6
+              ]
+            ],
+            "width": 4,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  38,
+                  19
+                ],
+                [
+                  38,
+                  6
+                ]
+              ],
+              "length": 13,
+              "seconds": 3.25
+            }
+          },
+          {
+            "id": "rest--west",
+            "from": "rest",
+            "to": "west",
+            "points": [
+              [
+                38,
+                48
+              ],
+              [
+                28,
+                40
+              ],
+              [
+                18,
+                38
+              ]
+            ],
+            "width": 3,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  38,
+                  48
+                ],
+                [
+                  26.5,
+                  48
+                ],
+                [
+                  26.5,
+                  42.5
+                ],
+                [
+                  18,
+                  42.5
+                ],
+                [
+                  18,
+                  38
+                ]
+              ],
+              "length": 30,
+              "seconds": 7.5
+            }
+          },
+          {
+            "id": "west--mill",
+            "from": "west",
+            "to": "mill",
+            "points": [
+              [
+                18,
+                38
+              ],
+              [
+                18,
+                22
+              ]
+            ],
+            "width": 3,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  18,
+                  38
+                ],
+                [
+                  18,
+                  22
+                ]
+              ],
+              "length": 16,
+              "seconds": 4
+            }
+          },
+          {
+            "id": "mill--north",
+            "from": "mill",
+            "to": "north",
+            "points": [
+              [
+                18,
+                22
+              ],
+              [
+                28,
+                19
+              ],
+              [
+                38,
+                19
+              ]
+            ],
+            "width": 3,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  18,
+                  22
+                ],
+                [
+                  38,
+                  22
+                ],
+                [
+                  38,
+                  19
+                ]
+              ],
+              "length": 23,
+              "seconds": 5.75
+            }
+          },
+          {
+            "id": "north--seal",
+            "from": "north",
+            "to": "seal",
+            "points": [
+              [
+                38,
+                19
+              ],
+              [
+                48,
+                19
+              ],
+              [
+                57,
+                22
+              ]
+            ],
+            "width": 3,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  38,
+                  19
+                ],
+                [
+                  57,
+                  19
+                ],
+                [
+                  57,
+                  22
+                ]
+              ],
+              "length": 22,
+              "seconds": 5.5
+            }
+          },
+          {
+            "id": "seal--east",
+            "from": "seal",
+            "to": "east",
+            "points": [
+              [
+                57,
+                22
+              ],
+              [
+                58,
+                38
+              ]
+            ],
+            "width": 3,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  57,
+                  22
+                ],
+                [
+                  58,
+                  22
+                ],
+                [
+                  58,
+                  38
+                ]
+              ],
+              "length": 17,
+              "seconds": 4.25
+            }
+          },
+          {
+            "id": "east--rest",
+            "from": "east",
+            "to": "rest",
+            "points": [
+              [
+                58,
+                38
+              ],
+              [
+                48,
+                40
+              ],
+              [
+                38,
+                48
+              ]
+            ],
+            "width": 3,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  58,
+                  38
+                ],
+                [
+                  38,
+                  38
+                ],
+                [
+                  38,
+                  48
+                ]
+              ],
+              "length": 30,
+              "seconds": 7.5
+            }
+          }
+        ]
+      },
+      "locations": [
+        {
+          "id": "paddy-rest-house",
+          "name": "เรือนเสบียง",
+          "asset": "stilt-house",
+          "x": 43,
+          "y": 49,
+          "entrance": {
+            "x": 40,
+            "y": 49
+          },
+          "nodeId": "rest",
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          },
+          "role": "exterior landmark; no interior gameplay"
+        },
+        {
+          "id": "paddy-mill",
+          "name": "โรงสีร้าง: ใช้เรือนเก่าทดแทน",
+          "asset": "teak-house",
+          "x": 14,
+          "y": 22,
+          "entrance": {
+            "x": 18,
+            "y": 22
+          },
+          "nodeId": "mill",
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          },
+          "role": "exterior landmark; no interior gameplay"
+        },
+        {
+          "id": "paddy-seal",
+          "name": "ศาลประทีป",
+          "asset": "spirit-house",
+          "x": 61,
+          "y": 21,
+          "entrance": {
+            "x": 57,
+            "y": 22
+          },
+          "nodeId": "seal",
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          },
+          "role": "exterior landmark; no interior gameplay"
+        },
+        {
+          "id": "paddy-north-marker",
+          "name": "เสาพิธีปลายทาง",
+          "asset": "ritual-pillar",
+          "x": 42,
+          "y": 7,
+          "entrance": {
+            "x": 38,
+            "y": 6
+          },
+          "nodeId": "exit",
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          },
+          "role": "exterior landmark; no interior gameplay"
+        }
+      ],
+      "fog": [],
+      "levels": [
+        7,
+        15
+      ],
+      "description": "โรงสีฝั่งตะวันตกกับศาลฝั่งตะวันออกล้อมวงคันนา ถนนกลางมองเห็นเสาพิธีเป็นปลายทาง",
+      "atmosphere": {
+        "light": "พลบค่ำคราม น้ำขังสะท้อนโคมอุ่น",
+        "fog": "ไม่มีหมอกหลัก",
+        "profile": "none",
+        "details": "หุ่นฟางห้อยปมเชือก โรงสีมีเถ้าธูป"
+      }
+    },
+    {
+      "id": "moon-mangrove",
+      "name": "ป่าชายเลนจันทร์ดับ",
+      "width": 80,
+      "height": 64,
+      "spawn": {
+        "x": 15,
+        "y": 51
+      },
+      "terrain": {
+        "base": "water",
+        "paint": [
+          {
+            "terrain": "grass",
+            "shape": "polygon",
+            "points": [
+              [
+                5,
+                33
+              ],
+              [
+                11,
+                28
+              ],
+              [
+                22,
+                29
+              ],
+              [
+                27,
+                34
+              ],
+              [
+                27,
+                46
+              ],
+              [
+                24,
+                57
+              ],
+              [
+                8,
+                57
+              ],
+              [
+                5,
+                49
+              ]
+            ]
+          },
+          {
+            "terrain": "grass",
+            "shape": "polygon",
+            "points": [
+              [
+                31,
+                8
+              ],
+              [
+                40,
+                5
+              ],
+              [
+                51,
+                10
+              ],
+              [
+                51,
+                24
+              ],
+              [
+                44,
+                29
+              ],
+              [
+                44,
+                44
+              ],
+              [
+                36,
+                44
+              ],
+              [
+                36,
+                28
+              ],
+              [
+                31,
+                23
+              ]
+            ]
+          },
+          {
+            "terrain": "grass",
+            "shape": "polygon",
+            "points": [
+              [
+                56,
+                31
+              ],
+              [
+                65,
+                25
+              ],
+              [
+                76,
+                31
+              ],
+              [
+                77,
+                49
+              ],
+              [
+                71,
+                58
+              ],
+              [
+                57,
+                55
+              ],
+              [
+                55,
+                44
+              ]
+            ]
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                15,
+                51
+              ],
+              [
+                16,
+                44
+              ]
+            ],
+            "r": 1.5
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                16,
+                44
+              ],
+              [
+                24,
+                40
+              ]
+            ],
+            "r": 1.5
+          },
+          {
+            "terrain": "grass",
+            "shape": "path",
+            "points": [
+              [
+                24,
+                40
+              ],
+              [
+                40,
+                40
+              ]
+            ],
+            "r": 2.5
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                24,
+                40
+              ],
+              [
+                40,
+                40
+              ]
+            ],
+            "r": 1.5
+          },
+          {
+            "terrain": "grass",
+            "shape": "path",
+            "points": [
+              [
+                40,
+                40
+              ],
+              [
+                59,
+                40
+              ]
+            ],
+            "r": 2.5
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                40,
+                40
+              ],
+              [
+                59,
+                40
+              ]
+            ],
+            "r": 1.5
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                40,
+                40
+              ],
+              [
+                40,
+                16
+              ]
+            ],
+            "r": 2
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                59,
+                40
+              ],
+              [
+                66,
+                32
+              ]
+            ],
+            "r": 2
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                66,
+                32
+              ],
+              [
+                69,
+                51
+              ]
+            ],
+            "r": 2
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                69,
+                51
+              ],
+              [
+                59,
+                40
+              ]
+            ],
+            "r": 1.5
+          }
+        ]
+      },
+      "ground": {
+        "base": "dark-grass",
+        "regions": []
+      },
+      "objects": [
+        {
+          "id": "mangrove-rest",
+          "asset": "stilt-house",
+          "x": 11,
+          "y": 43,
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          }
+        },
+        {
+          "id": "mangrove-bell",
+          "asset": "ruined-shrine",
+          "x": 40,
+          "y": 12,
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          }
+        },
+        {
+          "id": "mangrove-exit-house",
+          "asset": "spirit-house",
+          "x": 73,
+          "y": 52,
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          }
+        },
+        {
+          "id": "western-canopy-0",
+          "asset": "cursed-tree",
+          "x": 9,
+          "y": 32,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "western-canopy-1",
+          "asset": "cursed-tree",
+          "x": 22,
+          "y": 33,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "western-canopy-2",
+          "asset": "cursed-tree",
+          "x": 7,
+          "y": 39,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "western-canopy-3",
+          "asset": "cursed-tree",
+          "x": 24,
+          "y": 48,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "shrine-grove-0",
+          "asset": "jungle-tree",
+          "x": 33,
+          "y": 12,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "shrine-grove-1",
+          "asset": "jungle-tree",
+          "x": 47,
+          "y": 13,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "shrine-grove-2",
+          "asset": "jungle-tree",
+          "x": 48,
+          "y": 22,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "east-roots-0",
+          "asset": "cursed-tree",
+          "x": 61,
+          "y": 31,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "east-roots-1",
+          "asset": "cursed-tree",
+          "x": 72,
+          "y": 31,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "east-roots-2",
+          "asset": "cursed-tree",
+          "x": 74,
+          "y": 39,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "east-roots-3",
+          "asset": "cursed-tree",
+          "x": 58,
+          "y": 49,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "moon-mangrove-prop-0",
+          "asset": "lotus-pads",
+          "x": 27,
+          "y": 20,
+          "footprint": null
+        },
+        {
+          "id": "moon-mangrove-prop-1",
+          "asset": "lotus-pads",
+          "x": 53,
+          "y": 52,
+          "footprint": null
+        },
+        {
+          "id": "moon-mangrove-prop-2",
+          "asset": "reed-planter",
+          "x": 8,
+          "y": 53,
+          "footprint": null
+        },
+        {
+          "id": "moon-mangrove-prop-3",
+          "asset": "reed-planter",
+          "x": 72,
+          "y": 54,
+          "footprint": null
+        },
+        {
+          "id": "moon-mangrove-prop-4",
+          "asset": "talisman-lantern",
+          "x": 19,
+          "y": 46,
+          "footprint": null
+        },
+        {
+          "id": "moon-mangrove-prop-5",
+          "asset": "clay-pots",
+          "x": 11,
+          "y": 46,
+          "footprint": null
+        }
+      ],
+      "blockers": [],
+      "waterCollision": true,
+      "safeZones": [
+        {
+          "x": 8,
+          "y": 43,
+          "w": 13,
+          "h": 12
+        }
+      ],
+      "spawnRegions": [
+        {
+          "id": "mangrove-crabs",
+          "name": "ปูอาคม",
+          "area": {
+            "x": 9,
+            "y": 32,
+            "w": 11,
+            "h": 8
+          },
+          "monsters": [
+            {
+              "kind": "ritual-crab",
+              "count": 5
+            }
+          ],
+          "respawnMs": 15000
+        },
+        {
+          "id": "mangrove-lanterns",
+          "name": "ตะเกียงน้ำ",
+          "area": {
+            "x": 34,
+            "y": 17,
+            "w": 12,
+            "h": 8
+          },
+          "monsters": [
+            {
+              "kind": "water-lantern",
+              "count": 4
+            }
+          ],
+          "respawnMs": 15000
+        },
+        {
+          "id": "mangrove-roots",
+          "name": "รากโกงกาง",
+          "area": {
+            "x": 59,
+            "y": 32,
+            "w": 12,
+            "h": 10
+          },
+          "monsters": [
+            {
+              "kind": "mangrove-root",
+              "count": 4
+            }
+          ],
+          "respawnMs": 15000
+        }
+      ],
+      "graph": {
+        "nodes": [
+          {
+            "id": "arrival",
+            "name": "ท่ารับผู้เล่น",
+            "x": 15,
+            "y": 51,
+            "level": 0
+          },
+          {
+            "id": "rest",
+            "name": "ลานท่าไม้",
+            "x": 16,
+            "y": 44,
+            "level": 0
+          },
+          {
+            "id": "west-bank",
+            "name": "หัวสะพานตะวันตก",
+            "x": 24,
+            "y": 40,
+            "level": 0
+          },
+          {
+            "id": "hub",
+            "name": "แยกเกาะศาล",
+            "x": 40,
+            "y": 40,
+            "level": 0
+          },
+          {
+            "id": "shrine",
+            "name": "ลานหอระฆัง",
+            "x": 40,
+            "y": 16,
+            "level": 0
+          },
+          {
+            "id": "east-bank",
+            "name": "หัวสะพานตะวันออก",
+            "x": 59,
+            "y": 40,
+            "level": 0
+          },
+          {
+            "id": "grove",
+            "name": "ลานรากโกงกาง",
+            "x": 66,
+            "y": 32,
+            "level": 0
+          },
+          {
+            "id": "exit",
+            "name": "ท่าออกตะวันออก",
+            "x": 69,
+            "y": 51,
+            "level": 0
+          }
+        ],
+        "edges": [
+          {
+            "id": "arrival--rest",
+            "from": "arrival",
+            "to": "rest",
+            "points": [
+              [
+                15,
+                51
+              ],
+              [
+                16,
+                44
+              ]
+            ],
+            "width": 3,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  15,
+                  51
+                ],
+                [
+                  16,
+                  51
+                ],
+                [
+                  16,
+                  44
+                ]
+              ],
+              "length": 8,
+              "seconds": 2
+            }
+          },
+          {
+            "id": "rest--west-bank",
+            "from": "rest",
+            "to": "west-bank",
+            "points": [
+              [
+                16,
+                44
+              ],
+              [
+                24,
+                40
+              ]
+            ],
+            "width": 3,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  16,
+                  44
+                ],
+                [
+                  24,
+                  44
+                ],
+                [
+                  24,
+                  40
+                ]
+              ],
+              "length": 12,
+              "seconds": 3
+            }
+          },
+          {
+            "id": "west-bank--hub",
+            "from": "west-bank",
+            "to": "hub",
+            "points": [
+              [
+                24,
+                40
+              ],
+              [
+                40,
+                40
+              ]
+            ],
+            "width": 3,
+            "kind": "bridge",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  24,
+                  40
+                ],
+                [
+                  40,
+                  40
+                ]
+              ],
+              "length": 16,
+              "seconds": 4
+            }
+          },
+          {
+            "id": "hub--east-bank",
+            "from": "hub",
+            "to": "east-bank",
+            "points": [
+              [
+                40,
+                40
+              ],
+              [
+                59,
+                40
+              ]
+            ],
+            "width": 3,
+            "kind": "bridge",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  40,
+                  40
+                ],
+                [
+                  59,
+                  40
+                ]
+              ],
+              "length": 19,
+              "seconds": 4.75
+            }
+          },
+          {
+            "id": "hub--shrine",
+            "from": "hub",
+            "to": "shrine",
+            "points": [
+              [
+                40,
+                40
+              ],
+              [
+                40,
+                16
+              ]
+            ],
+            "width": 4,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  40,
+                  40
+                ],
+                [
+                  40,
+                  16
+                ]
+              ],
+              "length": 24,
+              "seconds": 6
+            }
+          },
+          {
+            "id": "east-bank--grove",
+            "from": "east-bank",
+            "to": "grove",
+            "points": [
+              [
+                59,
+                40
+              ],
+              [
+                66,
+                32
+              ]
+            ],
+            "width": 4,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  59,
+                  40
+                ],
+                [
+                  66,
+                  40
+                ],
+                [
+                  66,
+                  32
+                ]
+              ],
+              "length": 15,
+              "seconds": 3.75
+            }
+          },
+          {
+            "id": "grove--exit",
+            "from": "grove",
+            "to": "exit",
+            "points": [
+              [
+                66,
+                32
+              ],
+              [
+                69,
+                51
+              ]
+            ],
+            "width": 4,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  66,
+                  32
+                ],
+                [
+                  69,
+                  32
+                ],
+                [
+                  69,
+                  51
+                ]
+              ],
+              "length": 22,
+              "seconds": 5.5
+            }
+          },
+          {
+            "id": "exit--east-bank",
+            "from": "exit",
+            "to": "east-bank",
+            "points": [
+              [
+                69,
+                51
+              ],
+              [
+                59,
+                40
+              ]
+            ],
+            "width": 3,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  69,
+                  51
+                ],
+                [
+                  59,
+                  51
+                ],
+                [
+                  59,
+                  40
+                ]
+              ],
+              "length": 21,
+              "seconds": 5.25
+            }
+          }
+        ]
+      },
+      "locations": [
+        {
+          "id": "mangrove-rest",
+          "name": "เรือนท่าไม้",
+          "asset": "stilt-house",
+          "x": 11,
+          "y": 43,
+          "entrance": {
+            "x": 16,
+            "y": 44
+          },
+          "nodeId": "rest",
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          },
+          "role": "exterior landmark; no interior gameplay"
+        },
+        {
+          "id": "mangrove-bell",
+          "name": "หอระฆัง: ศาลไม้ทดแทน",
+          "asset": "ruined-shrine",
+          "x": 40,
+          "y": 12,
+          "entrance": {
+            "x": 40,
+            "y": 16
+          },
+          "nodeId": "shrine",
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          },
+          "role": "exterior landmark; no interior gameplay"
+        },
+        {
+          "id": "mangrove-exit-house",
+          "name": "เรือนท่าฝั่งตะวันออก",
+          "asset": "spirit-house",
+          "x": 73,
+          "y": 52,
+          "entrance": {
+            "x": 69,
+            "y": 51
+          },
+          "nodeId": "exit",
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          },
+          "role": "exterior landmark; no interior gameplay"
+        }
+      ],
+      "fog": [
+        {
+          "id": "west-water",
+          "x": 3,
+          "y": 17,
+          "w": 25,
+          "h": 10,
+          "alpha": 0.1
+        },
+        {
+          "id": "north-channel",
+          "x": 17,
+          "y": 7,
+          "w": 11,
+          "h": 22,
+          "alpha": 0.12
+        },
+        {
+          "id": "east-channel",
+          "x": 48,
+          "y": 46,
+          "w": 7,
+          "h": 13,
+          "alpha": 0.12
+        }
+      ],
+      "levels": [
+        12,
+        20
+      ],
+      "description": "เกาะท่าไม้ตะวันตก → สะพานคู่ผ่านคอเกาะศาลเหนือ → ดงรากตะวันออก น้ำเป็นช่องว่างใหญ่ขององค์ประกอบ",
+      "atmosphere": {
+        "light": "จันทร์ถูกเมฆบัง น้ำดำเขียวเทา",
+        "fog": "หมอกต่ำเหนือแอ่งน้ำและรากไม้ เว้นพื้นสะพาน",
+        "profile": "water-low",
+        "details": "โคมเครื่องรางเก่าข้างท่าไม้"
+      }
+    },
+    {
+      "id": "monsoon-marsh",
+      "name": "บึงฝนลืมวิญญาณ",
+      "width": 88,
+      "height": 64,
+      "spawn": {
+        "x": 44,
+        "y": 57
+      },
+      "terrain": {
+        "base": "grass",
+        "paint": [
+          {
+            "terrain": "water",
+            "shape": "polygon",
+            "points": [
+              [
+                28,
+                24
+              ],
+              [
+                38,
+                20
+              ],
+              [
+                55,
+                22
+              ],
+              [
+                63,
+                29
+              ],
+              [
+                61,
+                41
+              ],
+              [
+                53,
+                46
+              ],
+              [
+                34,
+                44
+              ],
+              [
+                27,
+                36
+              ]
+            ]
+          },
+          {
+            "terrain": "water",
+            "shape": "polygon",
+            "points": [
+              [
+                3,
+                15
+              ],
+              [
+                10,
+                10
+              ],
+              [
+                17,
+                14
+              ],
+              [
+                15,
+                30
+              ],
+              [
+                9,
+                35
+              ],
+              [
+                3,
+                30
+              ]
+            ]
+          },
+          {
+            "terrain": "water",
+            "shape": "polygon",
+            "points": [
+              [
+                76,
+                21
+              ],
+              [
+                83,
+                17
+              ],
+              [
+                85,
+                27
+              ],
+              [
+                82,
+                44
+              ],
+              [
+                77,
+                47
+              ],
+              [
+                73,
+                38
+              ]
+            ]
+          },
+          {
+            "terrain": "grass",
+            "shape": "polygon",
+            "points": [
+              [
+                40,
+                29
+              ],
+              [
+                47,
+                27
+              ],
+              [
+                52,
+                29
+              ],
+              [
+                52,
+                34
+              ],
+              [
+                48,
+                36
+              ],
+              [
+                40,
+                35
+              ]
+            ]
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                44,
+                57
+              ],
+              [
+                44,
+                49
+              ]
+            ],
+            "r": 2
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                44,
+                49
+              ],
+              [
+                30,
+                49
+              ],
+              [
+                20,
+                42
+              ]
+            ],
+            "r": 2
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                20,
+                42
+              ],
+              [
+                18,
+                30
+              ],
+              [
+                24,
+                20
+              ]
+            ],
+            "r": 2
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                24,
+                20
+              ],
+              [
+                34,
+                15
+              ],
+              [
+                44,
+                15
+              ]
+            ],
+            "r": 2
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                44,
+                15
+              ],
+              [
+                55,
+                15
+              ],
+              [
+                66,
+                20
+              ]
+            ],
+            "r": 2
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                66,
+                20
+              ],
+              [
+                70,
+                30
+              ],
+              [
+                68,
+                42
+              ]
+            ],
+            "r": 2
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                68,
+                42
+              ],
+              [
+                58,
+                49
+              ],
+              [
+                44,
+                49
+              ]
+            ],
+            "r": 2
+          },
+          {
+            "terrain": "grass",
+            "shape": "path",
+            "points": [
+              [
+                44,
+                49
+              ],
+              [
+                44,
+                32
+              ]
+            ],
+            "r": 2.5
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                44,
+                49
+              ],
+              [
+                44,
+                32
+              ]
+            ],
+            "r": 1.5
+          },
+          {
+            "terrain": "grass",
+            "shape": "path",
+            "points": [
+              [
+                44,
+                32
+              ],
+              [
+                44,
+                15
+              ]
+            ],
+            "r": 2.5
+          },
+          {
+            "terrain": "dirt",
+            "shape": "path",
+            "points": [
+              [
+                44,
+                32
+              ],
+              [
+                44,
+                15
+              ]
+            ],
+            "r": 1.5
+          }
+        ]
+      },
+      "ground": {
+        "base": "dark-grass",
+        "regions": []
+      },
+      "objects": [
+        {
+          "id": "marsh-rest",
+          "asset": "stilt-house",
+          "x": 49,
+          "y": 51,
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          }
+        },
+        {
+          "id": "marsh-spirit-post",
+          "asset": "stele",
+          "x": 49,
+          "y": 14,
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          }
+        },
+        {
+          "id": "marsh-islet-shrine",
+          "asset": "spirit-house",
+          "x": 48,
+          "y": 32,
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          }
+        },
+        {
+          "id": "western-wall-0",
+          "asset": "cursed-tree",
+          "x": 5,
+          "y": 42,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "western-wall-1",
+          "asset": "cursed-tree",
+          "x": 8,
+          "y": 49,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "western-wall-2",
+          "asset": "cursed-tree",
+          "x": 14,
+          "y": 54,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "western-wall-3",
+          "asset": "cursed-tree",
+          "x": 25,
+          "y": 58,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "eastern-wall-0",
+          "asset": "dead-tree",
+          "x": 79,
+          "y": 48,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "eastern-wall-1",
+          "asset": "dead-tree",
+          "x": 78,
+          "y": 55,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "eastern-wall-2",
+          "asset": "dead-tree",
+          "x": 69,
+          "y": 57,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "north-copse-0",
+          "asset": "jungle-tree",
+          "x": 20,
+          "y": 9,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "north-copse-1",
+          "asset": "jungle-tree",
+          "x": 26,
+          "y": 8,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "north-copse-2",
+          "asset": "jungle-tree",
+          "x": 58,
+          "y": 7,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "north-copse-3",
+          "asset": "jungle-tree",
+          "x": 65,
+          "y": 10,
+          "footprint": {
+            "w": 1.2,
+            "h": 0.7
+          }
+        },
+        {
+          "id": "monsoon-marsh-prop-0",
+          "asset": "reed-planter",
+          "x": 31,
+          "y": 26,
+          "footprint": null
+        },
+        {
+          "id": "monsoon-marsh-prop-1",
+          "asset": "reed-planter",
+          "x": 58,
+          "y": 31,
+          "footprint": null
+        },
+        {
+          "id": "monsoon-marsh-prop-2",
+          "asset": "lotus-pads",
+          "x": 36,
+          "y": 35,
+          "footprint": null
+        },
+        {
+          "id": "monsoon-marsh-prop-3",
+          "asset": "lotus-pads",
+          "x": 55,
+          "y": 39,
+          "footprint": null
+        },
+        {
+          "id": "monsoon-marsh-prop-4",
+          "asset": "incense-urn",
+          "x": 50,
+          "y": 15,
+          "footprint": null
+        },
+        {
+          "id": "monsoon-marsh-prop-5",
+          "asset": "ritual-lantern",
+          "x": 40,
+          "y": 51,
+          "footprint": null
+        },
+        {
+          "id": "monsoon-marsh-prop-6",
+          "asset": "bone-totem",
+          "x": 25,
+          "y": 25,
+          "footprint": null
+        }
+      ],
+      "blockers": [],
+      "waterCollision": true,
+      "safeZones": [
+        {
+          "x": 36,
+          "y": 49,
+          "w": 18,
+          "h": 12
+        }
+      ],
+      "spawnRegions": [
+        {
+          "id": "marsh-toads",
+          "name": "คางคกอาคม",
+          "area": {
+            "x": 11,
+            "y": 37,
+            "w": 14,
+            "h": 10
+          },
+          "monsters": [
+            {
+              "kind": "ritual-toad",
+              "count": 5
+            }
+          ],
+          "respawnMs": 15000
+        },
+        {
+          "id": "marsh-leeches",
+          "name": "ปลิงหมอก",
+          "area": {
+            "x": 65,
+            "y": 34,
+            "w": 8,
+            "h": 11
+          },
+          "monsters": [
+            {
+              "kind": "mist-leech",
+              "count": 5
+            }
+          ],
+          "respawnMs": 15000
+        },
+        {
+          "id": "marsh-wisps",
+          "name": "ภูตหนองน้ำ",
+          "area": {
+            "x": 30,
+            "y": 11,
+            "w": 12,
+            "h": 8
+          },
+          "monsters": [
+            {
+              "kind": "marsh-wisp",
+              "count": 4
+            }
+          ],
+          "respawnMs": 15000
+        }
+      ],
+      "graph": {
+        "nodes": [
+          {
+            "id": "arrival",
+            "name": "ทางเข้าบึง",
+            "x": 44,
+            "y": 57,
+            "level": 0
+          },
+          {
+            "id": "rest",
+            "name": "ลานพักสันดิน",
+            "x": 44,
+            "y": 49,
+            "level": 0
+          },
+          {
+            "id": "west",
+            "name": "ลานคางคก",
+            "x": 20,
+            "y": 42,
+            "level": 0
+          },
+          {
+            "id": "west-north",
+            "name": "คันดินเหนือซ้าย",
+            "x": 24,
+            "y": 20,
+            "level": 0
+          },
+          {
+            "id": "shrine",
+            "name": "เสาวิญญาณ",
+            "x": 44,
+            "y": 15,
+            "level": 0
+          },
+          {
+            "id": "east-north",
+            "name": "คันดินเหนือขวา",
+            "x": 66,
+            "y": 20,
+            "level": 0
+          },
+          {
+            "id": "east",
+            "name": "ลานปลิงหมอก",
+            "x": 68,
+            "y": 42,
+            "level": 0
+          },
+          {
+            "id": "islet",
+            "name": "ศาลกลางบึง",
+            "x": 44,
+            "y": 32,
+            "level": 0
+          }
+        ],
+        "edges": [
+          {
+            "id": "arrival--rest",
+            "from": "arrival",
+            "to": "rest",
+            "points": [
+              [
+                44,
+                57
+              ],
+              [
+                44,
+                49
+              ]
+            ],
+            "width": 4,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  44,
+                  57
+                ],
+                [
+                  44,
+                  49
+                ]
+              ],
+              "length": 8,
+              "seconds": 2
+            }
+          },
+          {
+            "id": "rest--west",
+            "from": "rest",
+            "to": "west",
+            "points": [
+              [
+                44,
+                49
+              ],
+              [
+                30,
+                49
+              ],
+              [
+                20,
+                42
+              ]
+            ],
+            "width": 4,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  44,
+                  49
+                ],
+                [
+                  20,
+                  49
+                ],
+                [
+                  20,
+                  42
+                ]
+              ],
+              "length": 31,
+              "seconds": 7.75
+            }
+          },
+          {
+            "id": "west--west-north",
+            "from": "west",
+            "to": "west-north",
+            "points": [
+              [
+                20,
+                42
+              ],
+              [
+                18,
+                30
+              ],
+              [
+                24,
+                20
+              ]
+            ],
+            "width": 4,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  20,
+                  42
+                ],
+                [
+                  24,
+                  42
+                ],
+                [
+                  24,
+                  20
+                ]
+              ],
+              "length": 26,
+              "seconds": 6.5
+            }
+          },
+          {
+            "id": "west-north--shrine",
+            "from": "west-north",
+            "to": "shrine",
+            "points": [
+              [
+                24,
+                20
+              ],
+              [
+                34,
+                15
+              ],
+              [
+                44,
+                15
+              ]
+            ],
+            "width": 4,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  24,
+                  20
+                ],
+                [
+                  44,
+                  20
+                ],
+                [
+                  44,
+                  15
+                ]
+              ],
+              "length": 25,
+              "seconds": 6.25
+            }
+          },
+          {
+            "id": "shrine--east-north",
+            "from": "shrine",
+            "to": "east-north",
+            "points": [
+              [
+                44,
+                15
+              ],
+              [
+                55,
+                15
+              ],
+              [
+                66,
+                20
+              ]
+            ],
+            "width": 4,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  44,
+                  15
+                ],
+                [
+                  66,
+                  15
+                ],
+                [
+                  66,
+                  20
+                ]
+              ],
+              "length": 27,
+              "seconds": 6.75
+            }
+          },
+          {
+            "id": "east-north--east",
+            "from": "east-north",
+            "to": "east",
+            "points": [
+              [
+                66,
+                20
+              ],
+              [
+                70,
+                30
+              ],
+              [
+                68,
+                42
+              ]
+            ],
+            "width": 4,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  66,
+                  20
+                ],
+                [
+                  68,
+                  20
+                ],
+                [
+                  68,
+                  42
+                ]
+              ],
+              "length": 24,
+              "seconds": 6
+            }
+          },
+          {
+            "id": "east--rest",
+            "from": "east",
+            "to": "rest",
+            "points": [
+              [
+                68,
+                42
+              ],
+              [
+                58,
+                49
+              ],
+              [
+                44,
+                49
+              ]
+            ],
+            "width": 4,
+            "kind": "path",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  68,
+                  42
+                ],
+                [
+                  59.5,
+                  42
+                ],
+                [
+                  59.5,
+                  42.5
+                ],
+                [
+                  59,
+                  42.5
+                ],
+                [
+                  59,
+                  43
+                ],
+                [
+                  58,
+                  43
+                ],
+                [
+                  58,
+                  43.5
+                ],
+                [
+                  57,
+                  43.5
+                ],
+                [
+                  57,
+                  44
+                ],
+                [
+                  56.5,
+                  44
+                ],
+                [
+                  56.5,
+                  44.5
+                ],
+                [
+                  55.5,
+                  44.5
+                ],
+                [
+                  55.5,
+                  45
+                ],
+                [
+                  55,
+                  45
+                ],
+                [
+                  55,
+                  45.5
+                ],
+                [
+                  54,
+                  45.5
+                ],
+                [
+                  54,
+                  46
+                ],
+                [
+                  44,
+                  46
+                ],
+                [
+                  44,
+                  49
+                ]
+              ],
+              "length": 31,
+              "seconds": 7.75
+            }
+          },
+          {
+            "id": "rest--islet",
+            "from": "rest",
+            "to": "islet",
+            "points": [
+              [
+                44,
+                49
+              ],
+              [
+                44,
+                32
+              ]
+            ],
+            "width": 3,
+            "kind": "causeway",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  44,
+                  49
+                ],
+                [
+                  44,
+                  32
+                ]
+              ],
+              "length": 17,
+              "seconds": 4.25
+            }
+          },
+          {
+            "id": "islet--shrine",
+            "from": "islet",
+            "to": "shrine",
+            "points": [
+              [
+                44,
+                32
+              ],
+              [
+                44,
+                15
+              ]
+            ],
+            "width": 3,
+            "kind": "causeway",
+            "direction": "two-way",
+            "measured": {
+              "points": [
+                [
+                  44,
+                  32
+                ],
+                [
+                  44,
+                  15
+                ]
+              ],
+              "length": 17,
+              "seconds": 4.25
+            }
+          }
+        ]
+      },
+      "locations": [
+        {
+          "id": "marsh-rest",
+          "name": "เรือนหมอยาร้าง",
+          "asset": "stilt-house",
+          "x": 49,
+          "y": 51,
+          "entrance": {
+            "x": 44,
+            "y": 49
+          },
+          "nodeId": "rest",
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          },
+          "role": "exterior landmark; no interior gameplay"
+        },
+        {
+          "id": "marsh-spirit-post",
+          "name": "เสาวิญญาณเอียง: เสาหินทดแทน",
+          "asset": "stele",
+          "x": 49,
+          "y": 14,
+          "entrance": {
+            "x": 44,
+            "y": 15
+          },
+          "nodeId": "shrine",
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          },
+          "role": "exterior landmark; no interior gameplay"
+        },
+        {
+          "id": "marsh-islet-shrine",
+          "name": "ศาลกลางบึง",
+          "asset": "spirit-house",
+          "x": 48,
+          "y": 32,
+          "entrance": {
+            "x": 44,
+            "y": 32
+          },
+          "nodeId": "islet",
+          "footprint": {
+            "w": 2.5,
+            "h": 1.4
+          },
+          "role": "exterior landmark; no interior gameplay"
+        }
+      ],
+      "fog": [
+        {
+          "id": "basin-left",
+          "x": 29,
+          "y": 25,
+          "w": 10,
+          "h": 15,
+          "alpha": 0.12
+        },
+        {
+          "id": "basin-right",
+          "x": 50,
+          "y": 24,
+          "w": 10,
+          "h": 18,
+          "alpha": 0.12
+        },
+        {
+          "id": "west-pool",
+          "x": 3,
+          "y": 16,
+          "w": 11,
+          "h": 13,
+          "alpha": 0.09
+        }
+      ],
+      "levels": [
+        17,
+        25
+      ],
+      "description": "ลานพักใต้ → วงสันดินสองแขนโอบบึงกลาง → เสาวิญญาณเหนือ ทางตรงและทางอ้อมเลือกความเสี่ยงได้",
+      "atmosphere": {
+        "light": "ฟ้าฝนเทาเขียว แสงไกลจากเสาวิญญาณ",
+        "fog": "ปานกลางเฉพาะผิวน้ำ หมอกบางในวงล่า",
+        "profile": "water-low",
+        "details": "เสาพิธีเอียง คราบน้ำสูงบนศาล"
+      }
+    }
+  ],
+  "monsters": {
+    "spirit-buffalo": {
+      "name": "วิญญาณควายดิน",
+      "role": "slow heavy melee",
+      "image": "/new-monsters/spirit-buffalo.png",
+      "anchor": {
+        "x": 63.5,
+        "y": 118
+      },
+      "sha256": "4ea531bd728004dde4325063289c0f48f1d38555a06238af96d66bbae3352431",
+      "animation": "static seed only",
+      "visualApproved": false
+    },
+    "ritual-crab": {
+      "name": "ปูเปลือกอาคม",
+      "role": "armored melee",
+      "image": "/new-monsters/ritual-crab.png",
+      "anchor": {
+        "x": 63,
+        "y": 111
+      },
+      "sha256": "f44a9717f09292a5b24d26ed52e3f2512615e5860cdad66bbfe8c8acac5725b1",
+      "animation": "static seed only",
+      "visualApproved": false
+    },
+    "water-lantern": {
+      "name": "ภูตตะเกียงน้ำ",
+      "role": "ranged",
+      "image": "/new-monsters/water-lantern.png",
+      "anchor": {
+        "x": 64,
+        "y": 119
+      },
+      "sha256": "40d195929846d30ae82268cba7cb561bdf4257981a55621af136f5b9c1c69ed2",
+      "animation": "static seed only",
+      "visualApproved": false
+    },
+    "mangrove-root": {
+      "name": "เงารากโกงกาง",
+      "role": "slow control",
+      "image": "/new-monsters/mangrove-root.png",
+      "anchor": {
+        "x": 66,
+        "y": 120
+      },
+      "sha256": "87fe734cc7ce764ac05ba2251a7d48a3ee91f7a1a022b1328c4abba997566774",
+      "animation": "static seed only",
+      "visualApproved": false
+    },
+    "ritual-toad": {
+      "name": "คางคกอาคม",
+      "role": "melee",
+      "image": "/new-monsters/ritual-toad.png",
+      "anchor": {
+        "x": 62,
+        "y": 121
+      },
+      "sha256": "659350a09f55b0a01c90d6c9734af2b2492a57ee12b2c95f213432f9b8775cf6",
+      "animation": "static seed only",
+      "visualApproved": false
+    },
+    "mist-leech": {
+      "name": "ปลิงหมอก",
+      "role": "fast melee",
+      "image": "/new-monsters/mist-leech.png",
+      "anchor": {
+        "x": 63.5,
+        "y": 115
+      },
+      "sha256": "a2928ea140fd6ed409d176eae8a7aa4f1dc3f606a8f8cd3441248de75bb683eb",
+      "animation": "static seed only",
+      "visualApproved": false
+    },
+    "marsh-wisp": {
+      "name": "ภูตหนองน้ำ",
+      "role": "ranged",
+      "image": "/new-monsters/marsh-wisp.png",
+      "anchor": {
+        "x": 64,
+        "y": 121
+      },
+      "sha256": "8635d624d2bed9856dd66df583f79425dab0303777345f77be1ff9d6ba356e8b",
+      "animation": "static seed only",
+      "visualApproved": false
+    }
+  },
+  "visualApproved": false,
+  "runtimePublished": false
+}

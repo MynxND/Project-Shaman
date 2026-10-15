@@ -1,4 +1,6 @@
 // World coordinates, map data and movement rules shared by the authoritative server and the client renderer.
+import {elevationPassage} from './elevation.js';
+import type {ElevationDefinition} from './elevation.js';
 import { facingFromVector, type Facing } from './character.js';
 import { NPC_FOOTPRINT, type NpcDefinition } from './npc.js';
 import type { MovementInput } from './index.js';
@@ -24,6 +26,7 @@ export interface MapObject { id: string; asset: string; x: number; y: number; fo
 
 /** One stroke of terrain paint on the vertex grid: every map vertex inside the shape gets `terrain`. */
 export type TerrainPaint =
+  | { terrain: string; shape: 'polygon'; points: [number, number][] }
   | { terrain: string; shape: 'rect'; x: number; y: number; w: number; h: number }
   | { terrain: string; shape: 'circle'; x: number; y: number; r: number }
   /** A winding path: every vertex within `r` of the polyline through `points` ([x, y] pairs). */
@@ -65,6 +68,7 @@ export interface MapDefinition {
   /** Full map size in world units. */
   width: number;
   height: number;
+  elevation?: ElevationDefinition;
   spawn: { x: number; y: number };
   ground: { base: string; regions: GroundRegion[] };
   objects: MapObject[];
@@ -132,7 +136,7 @@ export function acceptStopAt(server: Position, stopAt: Position | undefined, map
   const here = { x: server.x, y: server.y };
   if (!stopAt) return here;
   if (Math.hypot(stopAt.x - here.x, stopAt.y - here.y) > MAX_STOP_CORRECTION) return here;
-  return isBlocked(map, stopAt.x, stopAt.y) ? here : { x: stopAt.x, y: stopAt.y };
+  return isBlocked(map, stopAt.x, stopAt.y) || !elevationPassage(map,here,stopAt) ? here : { x: stopAt.x, y: stopAt.y };
 }
 
 /**
@@ -153,7 +157,7 @@ export function stepMovement(position: Position, input: MovementInput, dtSeconds
     { x: here.x + dx, y: here.y },
     { x: here.x, y: here.y + dy },
   ];
-  const next = candidates.find((c) => (c.x !== here.x || c.y !== here.y) && !isBlocked(map, c.x, c.y)) ?? here;
+  const next = candidates.find((c) => (c.x !== here.x || c.y !== here.y) && !isBlocked(map, c.x, c.y) && elevationPassage(map,here,c)) ?? here;
   return { position: next, facing: facingFromVector(input.x, input.y) };
 }
 
@@ -166,6 +170,8 @@ export function terrainVertices(map: Pick<MapDefinition, 'width' | 'height' | 't
       for (let x = 0; x < w; x++) {
         const inside = p.shape === 'rect'
           ? x >= p.x && x <= p.x + p.w && y >= p.y && y <= p.y + p.h
+          : p.shape === 'polygon'
+            ? pointInPolygon(x,y,p.points)
           : p.shape === 'circle'
             ? (x - p.x) ** 2 + (y - p.y) ** 2 <= p.r * p.r
             : p.points.some((a, i) => { const b = p.points[i + 1] ?? a; return segmentDistance(x, y, a[0], a[1], b[0], b[1]) <= p.r; });
@@ -174,6 +180,16 @@ export function terrainVertices(map: Pick<MapDefinition, 'width' | 'height' | 't
     }
   }
   return out;
+}
+
+/** Authored polygon regions used by irregular island and basin maps. */
+export function pointInPolygon(x:number,y:number,points:readonly (readonly [number,number])[]) {
+  let inside=false;
+  for(let i=0,j=points.length-1;i<points.length;j=i++) {
+    const a=points[i]!,b=points[j]!;
+    if((a[1]>y)!==(b[1]>y)&&x<(b[0]-a[0])*(y-a[1])/(b[1]-a[1])+a[0]) inside=!inside;
+  }
+  return inside;
 }
 
 /** The four corner terrains [NW, NE, SW, SE] of cell (cx, cy). */

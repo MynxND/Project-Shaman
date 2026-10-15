@@ -1,6 +1,6 @@
 import Phaser from 'phaser';
 import type { MonsterState } from '@shaman/schema';
-import { MONSTER_STATUS_TH, MONSTERS, WORLD_UNIT_PX } from '@shaman/shared';
+import { projectedY, type MapDefinition, MONSTER_STATUS_TH, MONSTERS, WORLD_UNIT_PX } from '@shaman/shared';
 import { addContactShadow, DARKNESS_DEPTH } from './Lighting';
 
 // Monsters drawn from the synced room state (positions/HP/state come from the server) plus the combat feedback the
@@ -49,14 +49,14 @@ export interface MonsterLayerHooks {
   playerAt: (id: string) => { x: number; y: number } | null;
   playerSprite: (id: string) => Phaser.GameObjects.Sprite | null;
   /** Play a player's basic-attack animation toward a point (px). */
-  playerAttack: (id: string, at: { x: number; y: number }) => void;
+  playerAttack: (id: string, at: { x: number; y: number }, attackDelayMs?: number) => void;
 }
 
 export class MonsterLayer {
   private readonly manifest: Manifest | undefined;
   private readonly views = new Map<string, View>();
 
-  constructor(private readonly scene: Phaser.Scene, private readonly hooks: MonsterLayerHooks) {
+  constructor(private readonly scene: Phaser.Scene, private readonly hooks: MonsterLayerHooks, private readonly map?:MapDefinition) {
     this.manifest = scene.cache.json.get(MANIFEST_KEY) as Manifest | undefined;
     for (const [kind, s] of Object.entries(this.manifest?.monsters ?? {})) {
       if (!scene.textures.exists(sheetKey(kind))) continue;
@@ -70,10 +70,13 @@ export class MonsterLayer {
     }
   }
 
+  private readonly logicalPositions=new Map<string,{x:number;y:number}>();
+  private y(x:number,y:number){return this.map?projectedY(this.map,x,y):y*WORLD_UNIT_PX;}
+
   private create(id: string, m: MonsterState): View | null {
     const info = this.manifest?.monsters[m.kind];
     if (!info || !this.scene.textures.exists(sheetKey(m.kind))) return null;
-    const U = WORLD_UNIT_PX, x = m.x * U, y = m.y * U;
+    const U = WORLD_UNIT_PX, x = m.x * U, y = this.y(m.x,m.y);
     const def = MONSTERS[m.kind];
     const sprite = this.scene.add.sprite(x, y, sheetKey(m.kind), 0).setScale(MONSTER_SCALE)
       .setOrigin(info.anchor.x / info.frameWidth, info.anchor.y / info.frameHeight);
@@ -122,19 +125,20 @@ export class MonsterLayer {
         // Respawned elsewhere: jump there and fade in.
         view.dead = false; view.oneShot = false;
         s.setInteractive();
-        s.setPosition(m.x * U, m.y * U).setAlpha(0);
+        s.setPosition(m.x * U, this.y(m.x,m.y)).setAlpha(0);
         view.shadow.setAlpha(0);
         this.scene.tweens.add({ targets: [s, view.shadow], alpha: 1, duration: 400 });
         this.play(view, 'idle');
       }
       if (!dead) {
         s.x += (m.x * U - s.x) * follow;
-        s.y += (m.y * U - s.y) * follow;
+        s.y += (this.y(m.x,m.y) - s.y) * follow;
         s.setFlipX(m.facing === 'west');
         this.play(view, m.state === 'wander' || m.state === 'chase' || m.state === 'return' ? 'move' : 'idle');
         if (time - view.lastHurt > 140) s.clearTint();
       }
-      s.setDepth(s.y);
+      this.logicalPositions.set(id,{x:m.x,y:m.y});
+      s.setDepth(this.map?.elevation?m.y*U:s.y);
       view.shadow.setPosition(s.x, s.y - 1);
       const isTarget = selected === id && !dead;
       view.ring.setPosition(s.x, s.y).setVisible(isTarget);
@@ -150,7 +154,7 @@ export class MonsterLayer {
     for (const [id, view] of this.views) {
       if (seen.has(id)) continue;
       this.destroyView(view);
-      this.views.delete(id);
+      this.views.delete(id);this.logicalPositions.delete(id);
     }
   }
 
@@ -158,7 +162,7 @@ export class MonsterLayer {
   onEvent(e: CombatEventLike) {
     if (e.type === 'swing') {
       if (e.attacker.kind === 'monster') { const v = this.views.get(e.attacker.id); if (v && !v.dead) this.play(v, 'attack', true); }
-      else this.lunge(e.attacker.id, e.target.id);
+      else this.lunge(e.attacker.id, e.target.id, e.attackDelayMs);
     } else if (e.type === 'damage') {
       const at = e.target.kind === 'monster' ? this.monsterAt(e.target.id) : this.hooks.playerAt(e.target.id);
       if (!at) return;
@@ -240,10 +244,10 @@ export class MonsterLayer {
   private monsterAt(id: string) { const v = this.views.get(id); return v ? { x: v.sprite.x, y: v.sprite.y } : null; }
 
   /** The player's spirit palm strike (PixelLab attack animation), with a small hit spark as the palm lands. */
-  private lunge(playerId: string, monsterId: string) {
+  private lunge(playerId: string, monsterId: string, attackDelayMs?: number) {
     const target = this.monsterAt(monsterId);
     if (!target) return;
-    this.hooks.playerAttack(playerId, target);
+    this.hooks.playerAttack(playerId, target, attackDelayMs);
     this.scene.time.delayedCall(230, () => {
       const at = this.monsterAt(monsterId) ?? target;
       const spark = this.scene.add.ellipse(at.x, at.y - 22, 10, 10, 0xfff1c0, 0.9).setDepth(DARKNESS_DEPTH + 1);
@@ -260,7 +264,7 @@ export class MonsterLayer {
   /** World position (units) of a living monster, for walking toward a clicked target. */
   position(id: string): { x: number; y: number } | null {
     const v = this.views.get(id);
-    return v && !v.dead ? { x: v.sprite.x / WORLD_UNIT_PX, y: v.sprite.y / WORLD_UNIT_PX } : null;
+    return v && !v.dead ? (this.map?.elevation?this.logicalPositions.get(id)??null:{x:v.sprite.x/WORLD_UNIT_PX,y:v.sprite.y/WORLD_UNIT_PX}) : null;
   }
 
   /** Nearest living monster within `maxDist` world units of `from` (attack button with no target). */
@@ -268,19 +272,19 @@ export class MonsterLayer {
     let best: string | null = null, bestD = maxDist;
     for (const [id, v] of this.views) {
       if (v.dead) continue;
-      const d = Math.hypot(v.sprite.x / WORLD_UNIT_PX - from.x, v.sprite.y / WORLD_UNIT_PX - from.y);
+      const p=this.map?.elevation?this.logicalPositions.get(id):{x:v.sprite.x/WORLD_UNIT_PX,y:v.sprite.y/WORLD_UNIT_PX};if(!p)continue;const d = Math.hypot(p.x-from.x,p.y-from.y);
       if (d <= bestD) { best = id; bestD = d; }
     }
     return best;
   }
 
   private destroyView(v: View) { v.sprite.destroy(); v.shadow.destroy(); v.ring.destroy(); v.label.destroy(); v.bar.destroy(); }
-  destroy() { for (const v of this.views.values()) this.destroyView(v); this.views.clear(); }
+  destroy() { for (const v of this.views.values()) this.destroyView(v); this.views.clear();this.logicalPositions.clear(); }
 }
 
 /** The subset of the server's combat events this layer draws (see apps/server/src/rooms/combat-system.ts). */
 export type CombatEventLike =
-  | { type: 'swing'; attacker: { kind: 'player' | 'monster'; id: string }; target: { kind: 'player' | 'monster'; id: string } }
+  | { type: 'swing'; attacker: { kind: 'player' | 'monster'; id: string }; target: { kind: 'player' | 'monster'; id: string }; attackDelayMs?: number }
   | { type: 'damage'; target: { kind: 'player' | 'monster'; id: string }; amount: number; source: string; skill?: string }
   | { type: 'heal'; target: { kind: 'player'; id: string }; amount: number }
   | { type: 'death'; target: { kind: 'player' | 'monster'; id: string }; killer?: string }

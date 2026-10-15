@@ -37,7 +37,7 @@ export class CameraZoom {
   /** Normal play zoom for the current screen size (set on resize). */
   setBase(base: number) {
     this.base = base;
-    this.level = Math.min(MAX_LEVEL, Math.max(this.minLevel(), this.level));
+    this.level = Math.min(Math.max(MAX_LEVEL,this.minLevel()), Math.max(this.minLevel(), this.level));
     this.shown = this.level;
     this.apply();
   }
@@ -48,10 +48,10 @@ export class CameraZoom {
   minLevel() {
     const cam = this.scene.cameras.main;
     const cover = Math.max(cam.width / this.mapWidthPx, cam.height / this.mapHeightPx) / this.base;
-    return Math.min(1, cover);
+    return cover;
   }
 
-  set(level: number) { this.level = Math.min(MAX_LEVEL, Math.max(this.minLevel(), level)); }
+  set(level: number) { this.level = Math.min(Math.max(MAX_LEVEL,this.minLevel()), Math.max(this.minLevel(), level)); }
   step(dir: 1 | -1) { this.set(dir > 0 ? this.level * STEP : this.level / STEP); }
 
   update(deltaMs: number) {

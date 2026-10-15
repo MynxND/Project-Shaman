@@ -1,7 +1,7 @@
 import { Room, type Client } from '@colyseus/core';
 import { CitizenState, GameState, PlayerState } from '@shaman/schema';
 import { createCitizenMotion, stepCitizen, UMBRAL_CAPITAL, UMBRAL_CITIZENS, type CitizenMotion } from '@shaman/shared';
-import { acceptStopAt, getMap, isBlocked, isMovementInput, MAPS, migrateProfile, newProfile, parseBodyType, pointInRect, questEvent, stepMovement, type BodyType, type MapDefinition, type MovementInput, type PlayerProfile } from '@shaman/shared';
+import { terrainHeight, acceptStopAt, getMap, isBlocked, isMovementInput, MAPS, migrateProfile, newProfile, parseBodyType, pointInRect, questEvent, stepMovement, type BodyType, type MapDefinition, type MovementInput, type PlayerProfile } from '@shaman/shared';
 import { advanceJobWithWeapon, castRule, castsWhileMoving, maxHpFor, maxSpFor, combatSpec, companionFor, FACINGS, JOB_PROGRESSION, advancementQuest, learnSkill, resetSkills, parseSkillCastRequest, skillAimPoint, skillCastError, type Facing, type SkillCastEvent } from '@shaman/shared';
 import { parseNpcRequest, runNpcRequest } from './npc-services.js';
 import { CombatSystem } from './combat-system.js';
@@ -99,9 +99,10 @@ export class GameRoom extends Room<{ state: GameState }> {
     ROOMS.add(this);
     this.clock.setInterval(() => this.saveAll(), AUTOSAVE_MS);
     this.map = getMap((options as { mapId?: unknown } | undefined)?.mapId);
+    if (process.env.NODE_ENV === 'production' && this.map.elevation && !['mountain-sanctuary','mountain-spirit-sanctuary'].includes(this.map.id)) throw new Error('Elevation prototype is development-only');
     this.state.mapId = this.map.id;
     this.patchRate = 50;
-    if (this.map.id === UMBRAL_CAPITAL.id) {
+    if ([UMBRAL_CAPITAL.id, 'umbral-elevation-baseline', 'umbral-elevation-lab'].includes(this.map.id)) {
       for (const def of UMBRAL_CITIZENS) {
         const motion = createCitizenMotion(def);
         this.citizenMotions.set(def.id, motion);
@@ -278,6 +279,8 @@ export class GameRoom extends Room<{ state: GameState }> {
     // Skills: the server decides whether a cast starts, when it releases and when it is ready again; on release the
     // combat system applies the (provisional) effect to the validated target.
     this.onMessage('skill', (client, message: unknown) => {
+      // Prototype labs stay non-combat; the authorized mountain map uses the normal skill pipeline.
+      if(this.map.elevation&&this.map.id!=='mountain-spirit-sanctuary')return;
       let req = parseSkillCastRequest(message);
       const player = this.state.players.get(client.sessionId);
       const profile = this.profiles.get(client.sessionId);
@@ -349,6 +352,7 @@ export class GameRoom extends Room<{ state: GameState }> {
         player.y = position.y;
         if (facing) player.facing = facing;
       }
+      for (const p of this.state.players.values()) p.elevation = terrainHeight(this.map, p.x, p.y);
       this.combat.step(Math.min(deltaMs, 100));
       this.checkPortals();
       // "Visit" quest steps, checked a few times a second rather than every tick.
@@ -458,4 +462,6 @@ export class GameRoom extends Room<{ state: GameState }> {
     this.portalArmed.delete(id); this.travelling.delete(id); this.bodyTypes.delete(id); this.state.players.delete(id);
   }
 }
+
+
 

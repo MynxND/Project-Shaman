@@ -1,6 +1,6 @@
 import Phaser from 'phaser';
 import type { CitizenState, GameState } from '@shaman/schema';
-import { UMBRAL_CITIZENS, WORLD_UNIT_PX } from '@shaman/shared';
+import { getMap, projectedY, UMBRAL_CITIZENS, WORLD_UNIT_PX } from '@shaman/shared';
 import { addContactShadow } from './Lighting';
 
 interface FrameLayout { image: string; width: number; height: number; anchor: { x: number; y: number }; frames: number }
@@ -44,7 +44,7 @@ export class CitizenLayer {
       seen.add(def.id);
       const texture = key(def.appearance, facing, action);
       let view = this.views.get(def.id);
-      const x = citizen.x * WORLD_UNIT_PX, y = citizen.y * WORLD_UNIT_PX;
+      const x = citizen.x * WORLD_UNIT_PX, y = projectedY(getMap(state.mapId), citizen.x, citizen.y);
       if (!view) {
         const sprite = this.scene.add.sprite(x, y, texture).setScale(art.scale);
         view = { sprite, shadow: addContactShadow(this.scene, x, y - 1, def.appearance === 'child' ? 18 : 23) };
@@ -53,7 +53,7 @@ export class CitizenLayer {
       const { sprite, shadow } = view;
       sprite.texture.setFilter(Phaser.Textures.FilterMode.NEAREST);
       sprite.x += (x - sprite.x) * follow; sprite.y += (y - sprite.y) * follow;
-      sprite.setOrigin(layout.anchor.x / layout.width, layout.anchor.y / layout.height).setDepth(sprite.y);
+      sprite.setOrigin(layout.anchor.x / layout.width, layout.anchor.y / layout.height).setDepth(getMap(state.mapId).elevation ? citizen.y * WORLD_UNIT_PX : sprite.y);
       if (action === 'walk' && layout.frames > 1) {
         const animation = `${texture}:${def.id}`;
         if (!this.scene.anims.exists(animation)) this.scene.anims.create({
@@ -76,3 +76,4 @@ export class CitizenLayer {
   }
   destroy() { this.clear(); }
 }
+

@@ -1,3 +1,4 @@
+import { elevationPassage } from './elevation.js';
 import { isBlocked, type MapDefinition, type Position } from './world.js';
 
 /** Ambient townspeople are visual citizens, not service NPCs or collision obstacles. */
@@ -49,8 +50,9 @@ export function stepCitizen(def: CitizenDefinition, motion: CitizenMotion, delta
     }
     const travel = Math.min(distance, def.speed * dt);
     const x = next.x + dx / distance * travel, y = next.y + dy / distance * travel;
-    if (isBlocked(map, x, y)) { next.wait = def.pause; break; }
+    if (isBlocked(map, x, y) || !elevationPassage(map, next, { x, y })) { next.wait = def.pause; break; }
     next.x = x; next.y = y; next.facing = dx >= 0 ? 'east' : 'west'; next.moving = true;
   }
   return next;
 }
+

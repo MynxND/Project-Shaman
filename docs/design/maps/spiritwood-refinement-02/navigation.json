@@ -1,0 +1,269 @@
+[
+  {
+    "id": "whispering-spiritwood",
+    "requiredTargets": [
+      {
+        "id": "village-gate",
+        "length": 5
+      },
+      {
+        "id": "village-gate-arrival",
+        "length": 1
+      },
+      {
+        "id": "paddy-gate",
+        "length": 62
+      },
+      {
+        "id": "paddy-gate-arrival",
+        "length": 59
+      },
+      {
+        "id": "arrival",
+        "length": 1
+      },
+      {
+        "id": "rest",
+        "length": 7
+      },
+      {
+        "id": "junction",
+        "length": 22
+      },
+      {
+        "id": "training",
+        "length": 48
+      },
+      {
+        "id": "cursed",
+        "length": 48
+      },
+      {
+        "id": "shrine",
+        "length": 38
+      },
+      {
+        "id": "shrine",
+        "length": 38
+      }
+    ],
+    "failedPlacements": [],
+    "waterBlocked": false,
+    "portals": [
+      "village-gate",
+      "paddy-gate"
+    ]
+  },
+  {
+    "id": "lantern-paddy",
+    "requiredTargets": [
+      {
+        "id": "south-gate",
+        "length": 36.5
+      },
+      {
+        "id": "south-gate-arrival",
+        "length": 33.5
+      },
+      {
+        "id": "north-gate",
+        "length": 72.5
+      },
+      {
+        "id": "north-gate-arrival",
+        "length": 69.5
+      },
+      {
+        "id": "arrival",
+        "length": 0
+      },
+      {
+        "id": "rest",
+        "length": 6.5
+      },
+      {
+        "id": "junction",
+        "length": 20.5
+      },
+      {
+        "id": "west",
+        "length": 36.5
+      },
+      {
+        "id": "mill",
+        "length": 52.5
+      },
+      {
+        "id": "north",
+        "length": 35.5
+      },
+      {
+        "id": "seal",
+        "length": 51.5
+      },
+      {
+        "id": "east",
+        "length": 36.5
+      },
+      {
+        "id": "exit",
+        "length": 48.5
+      },
+      {
+        "id": "paddy-rest-house",
+        "length": 7.5
+      },
+      {
+        "id": "paddy-mill",
+        "length": 52.5
+      },
+      {
+        "id": "paddy-seal",
+        "length": 51.5
+      },
+      {
+        "id": "paddy-north-marker",
+        "length": 48.5
+      }
+    ],
+    "failedPlacements": [],
+    "waterBlocked": true,
+    "portals": [
+      "south-gate",
+      "north-gate"
+    ]
+  },
+  {
+    "id": "moon-mangrove",
+    "requiredTargets": [
+      {
+        "id": "west-gate",
+        "length": 13.5
+      },
+      {
+        "id": "west-gate-arrival",
+        "length": 9.5
+      },
+      {
+        "id": "east-gate",
+        "length": 81.5
+      },
+      {
+        "id": "east-gate-arrival",
+        "length": 77.5
+      },
+      {
+        "id": "arrival",
+        "length": 0
+      },
+      {
+        "id": "rest",
+        "length": 7.5
+      },
+      {
+        "id": "west-bank",
+        "length": 19.5
+      },
+      {
+        "id": "hub",
+        "length": 35.5
+      },
+      {
+        "id": "shrine",
+        "length": 59.5
+      },
+      {
+        "id": "east-bank",
+        "length": 54.5
+      },
+      {
+        "id": "grove",
+        "length": 69.5
+      },
+      {
+        "id": "exit",
+        "length": 71.5
+      },
+      {
+        "id": "mangrove-rest",
+        "length": 7.5
+      },
+      {
+        "id": "mangrove-bell",
+        "length": 59.5
+      },
+      {
+        "id": "mangrove-exit-house",
+        "length": 71.5
+      }
+    ],
+    "failedPlacements": [],
+    "waterBlocked": true,
+    "portals": [
+      "west-gate",
+      "east-gate"
+    ]
+  },
+  {
+    "id": "monsoon-marsh",
+    "requiredTargets": [
+      {
+        "id": "south-gate",
+        "length": 42.5
+      },
+      {
+        "id": "south-gate-arrival",
+        "length": 38.5
+      },
+      {
+        "id": "arrival",
+        "length": 0
+      },
+      {
+        "id": "rest",
+        "length": 7.5
+      },
+      {
+        "id": "west",
+        "length": 38.5
+      },
+      {
+        "id": "west-north",
+        "length": 56.5
+      },
+      {
+        "id": "shrine",
+        "length": 41.5
+      },
+      {
+        "id": "east-north",
+        "length": 58.5
+      },
+      {
+        "id": "east",
+        "length": 38.5
+      },
+      {
+        "id": "islet",
+        "length": 24.5
+      },
+      {
+        "id": "marsh-rest",
+        "length": 7.5
+      },
+      {
+        "id": "marsh-spirit-post",
+        "length": 41.5
+      },
+      {
+        "id": "marsh-islet-shrine",
+        "length": 24.5
+      }
+    ],
+    "failedPlacements": [],
+    "waterBlocked": true,
+    "portals": [
+      "south-gate"
+    ]
+  }
+]

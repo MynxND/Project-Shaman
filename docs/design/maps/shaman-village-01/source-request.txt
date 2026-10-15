@@ -1,0 +1,249 @@
+# TASK: Rebuild the Visual Design of My 2D Shaman MMORPG Maps to Match the Attached Reference Image
+
+You are a senior 2D MMORPG environment artist, pixel-art technical artist, level designer, and game engine programmer.
+
+I have attached a visual reference showing four detailed Shaman-themed environments:
+
+1. Shaman Village (หมู่บ้านหมอผี)
+2. Sacred Forest (ป่าศักดิ์สิทธิ์)
+3. Cursed Swamp (หนองคำสาป)
+4. Ancient Ruins (โบราณสถาน)
+
+**Your primary objective is to recreate the visual appearance, atmosphere, environmental detail, terrain quality, and map composition of the attached reference as closely as possible inside my existing playable game.**
+
+This is NOT a request for a generic fantasy map.
+
+The attached image is the visual source of truth. Study it carefully before implementing anything.
+
+## 1. Inspect the Existing Project
+
+Before making changes:
+
+- Identify the current rendering engine and map system.
+- Inspect all map data, tilesets, environmental assets, collision layers, entity placement, and camera logic.
+- Identify the tile size, world scale, sprite resolution, and rendering order.
+- Locate the existing four maps and their transitions.
+- Determine which assets can be reused and which must be replaced.
+- Preserve existing gameplay systems, monsters, NPCs, quests, interactions, and comments.
+
+Do not rewrite the entire game unnecessarily.
+
+## 2. Visual Style — Match the Reference
+
+Target art direction:
+
+- Premium 2D pixel-art dark fantasy MMORPG.
+- Southeast Asian shamanic folklore atmosphere.
+- Dense, mysterious forests and ancient ritual sites.
+- Highly detailed hand-painted pixel-art textures.
+- Rich natural materials, aged wood, mossy stone, mud, roots, and weathered ritual objects.
+- Warm orange torchlight contrasting with dark green and blue environments.
+- Subtle fog, atmospheric depth, and carefully controlled shadows.
+- Cohesive pixel density, camera angle, character scale, and environmental lighting.
+
+Avoid:
+- Japanese temples, torii gates, pagodas, or Japanese shrine architecture.
+- Generic medieval European fantasy architecture.
+- Flat green grass with repetitive dot patterns.
+- Uniform brown rectangular dirt paths.
+- Large empty spaces with randomly scattered objects.
+- Oversized decorations that obstruct player movement.
+- Blurry upscaling or inconsistent pixel-art styles.
+
+## 3. Map 1 — Shaman Village
+
+Recreate the village environment from the upper-left reference panel.
+
+Required elements:
+
+- Organic village layout with winding dirt and stone paths.
+- Traditional wooden huts with thatched roofs.
+- Central ritual gathering area with a prominent sacred totem.
+- Ritual altars, candles, incense, skull ornaments, talismans, and hanging red cloth.
+- Wooden fences, baskets, jars, fire pits, and market stalls.
+- Dense trees, tropical plants, exposed roots, and moss-covered rocks.
+- Wooden walkways and a waterside pier.
+- Clear NPC interaction areas and navigable routes.
+
+The village must feel inhabited, mysterious, and visually rich rather than randomly decorated.
+
+## 4. Map 2 — Sacred Forest
+
+Recreate the sacred forest from the upper-right reference panel.
+
+Required elements:
+
+- Dense tropical forest canopy.
+- Massive ancient trees with twisted roots.
+- Narrow, irregular forest trails.
+- Small wooden bridges over streams.
+- Spirit shrines and ritual stones.
+- Hanging talismans and ceremonial cloth.
+- Moss-covered rocks, flowers, mushrooms, vines, and fallen branches.
+- Shallow water and natural terrain transitions.
+- Distinct clearings for exploration, encounters, and rituals.
+
+Maintain readable walking paths despite the dense environment.
+
+## 5. Map 3 — Cursed Swamp
+
+Recreate the cursed swamp from the lower-left reference panel.
+
+Required elements:
+
+- Dark teal and muddy green swamp water.
+- Partially submerged trees and twisted dead branches.
+- Wooden walkways, docks, and broken bridges.
+- A weathered shaman hut above the water.
+- Ritual poles, hanging ornaments, skulls, and candles.
+- Thick reeds, lily pads, wet rocks, and floating debris.
+- Low-lying fog and eerie atmospheric lighting.
+- Small dry-ground areas for monsters and encounters.
+
+Separate walkable terrain from dangerous or blocked swamp water.
+
+## 6. Map 4 — Ancient Ruins
+
+Recreate the ancient ruins from the lower-right reference panel.
+
+Required elements:
+
+- Ancient stone structures with Southeast Asian-inspired ornamentation.
+- A central ritual altar and imposing shamanic totem.
+- Weathered stone staircases and fragmented walls.
+- Moss, vines, cracked stone floors, and collapsed pillars.
+- Ceremonial torches and hanging cloth.
+- Waterfalls, dark pools, and overgrown terrain.
+- Distinct central combat or boss arena.
+- Multiple approaches with clear navigation.
+
+The ruins should feel sacred, abandoned, and dangerous.
+
+## 7. Terrain and Tileset Quality
+
+Replace primitive terrain with a reusable high-quality tileset system.
+
+Implement:
+
+- Multiple seamless grass variations.
+- Organic dirt paths with irregular edges.
+- Moss-covered cobblestone variations.
+- Grass-to-dirt, grass-to-stone, dirt-to-stone transitions.
+- Swamp shorelines and shallow-water transitions.
+- Natural cliffs, roots, rocks, and ground vegetation.
+- Autotiling where appropriate.
+- Weighted terrain variation using deterministic seeded randomness.
+- Separate decorative and collision layers.
+
+Do not generate fake detail using random pixels, procedural noise, or CSS gradients as a substitute for actual illustrated assets.
+
+## 8. Environment Assets
+
+Build or integrate a cohesive environmental asset library matching the reference.
+
+Asset categories:
+
+- Tropical trees and ancient trees.
+- Dead trees and twisted roots.
+- Bushes, flowers, grass, vines, and mushrooms.
+- Shamanic totems and ritual poles.
+- Talismans, ceremonial cloth, skulls, candles, and incense.
+- Wooden huts, watchtowers, fences, and bridges.
+- Stone altars, ruins, stairs, and pillars.
+- Water, mud, rocks, and terrain decorations.
+
+All assets must match the same perspective, pixel density, palette, and lighting direction.
+
+Generate or source missing artwork explicitly. Do not substitute generic shapes for finished pixel art.
+
+## 9. Lighting and Atmosphere
+
+Implement:
+
+- Warm local lighting around torches and candles.
+- Subtle ambient shadows beneath trees and structures.
+- Atmospheric fog in forests and swamps.
+- Controlled contrast so player sprites remain visible.
+- Optional subtle water and flame animations.
+- Consistent visual depth without excessive blur.
+
+Lighting must complement the original pixel artwork rather than obscure it.
+
+## 10. Map Layout and Gameplay
+
+Redesign the existing map layouts to resemble the reference compositions.
+
+However, preserve:
+
+- Existing map identities and gameplay purposes.
+- Important NPCs and monster types.
+- Quest and interaction points.
+- Map transitions and spawn points.
+- Collision and navigation functionality.
+
+Use organic path layouts, landmarks, secondary routes, and purposeful environmental storytelling.
+
+Do not simply scatter decorations over the current rectangular maps.
+
+## 11. Implementation Requirements
+
+- Reuse the existing game engine and project architecture.
+- Keep rendering performance suitable for a browser-based MMORPG.
+- Use texture atlases and asset caching where appropriate.
+- Maintain deterministic map generation where randomness is used.
+- Support appropriate sprite depth sorting.
+- Avoid texture bleeding and broken tile seams.
+- Preserve existing comments and unrelated code.
+- Do not silently remove gameplay features.
+
+## 12. Visual Verification
+
+Create a visual comparison workflow.
+
+For each of the four maps:
+
+1. Capture the existing map before changes.
+2. Analyze the matching region of the reference image.
+3. Implement the redesigned environment.
+4. Render the updated map.
+5. Capture an after screenshot at a comparable scale.
+6. Compare layout, terrain detail, object density, lighting, and atmosphere.
+7. Identify mismatches and improve them.
+8. Verify that the map remains playable.
+
+Do not claim the result matches the reference without inspecting actual rendered screenshots.
+
+## 13. Development Order
+
+Work in stages:
+
+Phase 1: Inspect project and analyze the reference image.
+
+Phase 2: Produce a concrete map redesign plan and asset inventory.
+
+Phase 3: Build the terrain tileset and visual foundations.
+
+Phase 4: Fully redesign Shaman Village as the first playable vertical slice.
+
+Phase 5: Verify visual quality, performance, collision, and gameplay.
+
+Phase 6: Apply the approved art direction to Sacred Forest, Cursed Swamp, and Ancient Ruins.
+
+Phase 7: Perform final consistency checks across all four maps.
+
+## Final Quality Standard
+
+The result should resemble the attached reference image as closely as practical, not merely share the same theme.
+
+Prioritize:
+
+1. Visual fidelity to the reference.
+2. Cohesive professional pixel-art quality.
+3. Organic and memorable map layouts.
+4. Dense but purposeful environmental detail.
+5. Functional gameplay and clear navigation.
+6. Reusable, maintainable map and asset systems.
+
+If required art assets are unavailable, identify the missing assets and create an actionable production plan rather than replacing them with low-quality placeholders.
+
+Start by inspecting the current project and the attached image. Then implement one high-quality playable Shaman Village map before proceeding to the other three.

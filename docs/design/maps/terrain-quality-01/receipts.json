@@ -1,0 +1,26 @@
+{
+  "tool": "built-in imagegen",
+  "calls": 3,
+  "pixellabCalls": 0,
+  "initial": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "key": "terrain-atlas",
+        "source": "C:\\Users\\nikza\\.codex\\generated_images\\01a138b6-d091-7bc1-9986-5d8b3b40a765\\exec-fced845d-a8a3-4306-8cc8-1ac5b804abf6.png"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "key": "decoration-atlas",
+        "source": "C:\\Users\\nikza\\.codex\\generated_images\\01a138b6-d091-7bc1-9986-5d8b3b40a765\\exec-7800ec3d-545e-48b0-be07-27d6ae532340.png"
+      }
+    }
+  ],
+  "selectedTerrainSource": "C:\\Users\\nikza\\.codex\\generated_images\\01a138b6-d091-7bc1-9986-5d8b3b40a765\\exec-9ea35420-9992-483c-9e17-ead2fd3f6e00.png",
+  "selectedPromptFile": "raw/terrain-atlas-v2-prompt.txt",
+  "decorationPromptFile": "raw/decoration-atlas-prompt.txt",
+  "initialTerrainRejectedReason": "Too much high-frequency grain at normal gameplay zoom",
+  "visualApproved": false
+}

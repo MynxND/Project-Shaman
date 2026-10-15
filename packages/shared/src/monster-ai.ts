@@ -1,6 +1,7 @@
 // Monster behaviour as a pure step function run by the authoritative server (and by tests). States:
 // idle -> wander -> idle, chase -> attack (aggro), return (leash / target lost), dead -> respawn. Passive monsters
 // only chase after being hit (provokeMonster). Monsters never act inside safe zones and never cross blocked ground.
+import {elevationPassage} from './elevation.js';
 import { MONSTERS, type MonsterDefinition } from './combat.js';
 import { isBlocked, pointInRect, type MapDefinition, type Position, type SpawnRegion } from './world.js';
 import type { MonsterStatus } from './hunter-combat.js';
@@ -68,12 +69,12 @@ export function createMonster(id: string, kind: string, region: SpawnRegion, at:
 function moveToward(m: MonsterMotion, to: Position, step: number, map: MapDefinition): boolean {
   const d = dist(m, to);
   if (d <= step) {
-    if (!isBlocked(map, to.x, to.y)) { m.x = to.x; m.y = to.y; }
+    if (!isBlocked(map, to.x, to.y) && elevationPassage(map,m,to)) { m.x = to.x; m.y = to.y; }
     return true;
   }
   const dx = (to.x - m.x) / d * step, dy = (to.y - m.y) / d * step;
   const options = [{ x: m.x + dx, y: m.y + dy }, { x: m.x + dx, y: m.y }, { x: m.x, y: m.y + dy }];
-  const next = options.find((p) => !isBlocked(map, p.x, p.y));
+  const next = options.find((p) => !isBlocked(map, p.x, p.y) && elevationPassage(map,m,p));
   if (Math.abs(dx) > 0.001) m.facing = dx > 0 ? 'east' : 'west';
   if (!next) return true; // Stuck: treat as arrived so the AI picks something else.
   m.x = next.x; m.y = next.y;

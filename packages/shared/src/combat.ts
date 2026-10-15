@@ -82,6 +82,17 @@ export interface MonsterDefinition {
 }
 
 export const MONSTERS: Readonly<Record<string, MonsterDefinition>> = {
+  // Independent bamboo-valley balance; existing species and other maps stay unchanged.
+  // Provisional levels20/28/35; animation art is explicitly reused from the reviewed silhouettes.
+  'bamboo-wisp': {kind:'bamboo-wisp',name:{th:'ภูตไผ่คราม',en:'Indigo Bamboo Wisp'},level:20,race:'plant',behavior:'passive',hp:580,atk:65,def:16,mdef:18,speed:1.2,aggroRange:0,leash:5,attackRange:1.3,attackDelayMs:1700,attackWindupMs:450,exp:260,drops:[{itemId:'herb-bundle',chance:.5},{itemId:'spirit-flower',chance:.1}],wander:{pauseMs:[1500,4000],radius:2}},
+  'bamboo-shadow': {kind:'bamboo-shadow',name:{th:'เงาดงไผ่',en:'Bamboo Grove Shadow'},level:28,race:'brute',behavior:'aggressive',hp:1050,atk:94,def:25,mdef:19,speed:2.2,aggroRange:4,leash:5,attackRange:1.3,attackDelayMs:1500,attackWindupMs:350,exp:480,drops:[{itemId:'raw-meat',chance:.4},{itemId:'bone',chance:.3}],wander:{pauseMs:[1500,3500],radius:2}},
+  'bamboo-guardian': {kind:'bamboo-guardian',name:{th:'ผู้เฝ้าผนึกไผ่',en:'Bamboo Seal Guardian'},level:35,race:'formless',behavior:'aggressive',hp:1680,atk:115,def:42,mdef:34,speed:.9,aggroRange:3.5,leash:5,attackRange:1.6,attackDelayMs:2600,attackWindupMs:900,exp:820,drops:[{itemId:'dark-ore',chance:.4},{itemId:'bone',chance:.25}],wander:{pauseMs:[3000,6000],radius:1.5}},
+  // New mountain-only residents; original starter species/stats below stay unchanged.
+  // Provisional level25–35 balance, using the existing animated species silhouettes.
+  'highland-wisp': {kind:'highland-wisp',name:{th:'ภูตดอย',en:'Highland Wisp'},level:25,race:'plant',behavior:'passive',hp:820,atk:82,def:22,mdef:22,speed:1.2,aggroRange:0,leash:6,attackRange:1.3,attackDelayMs:1700,attackWindupMs:450,exp:380,drops:[{itemId:'herb-bundle',chance:.5},{itemId:'spirit-flower',chance:.1}],wander:{pauseMs:[1500,4000],radius:2}},
+  'ridge-shadow': {kind:'ridge-shadow',name:{th:'เงาสันเขา',en:'Ridge Shadow'},level:30,race:'brute',behavior:'aggressive',hp:1150,atk:100,def:28,mdef:20,speed:2.2,aggroRange:4,leash:6,attackRange:1.3,attackDelayMs:1500,attackWindupMs:350,exp:550,drops:[{itemId:'raw-meat',chance:.4},{itemId:'bone',chance:.3}],wander:{pauseMs:[1500,3500],radius:2}},
+  'seal-guardian': {kind:'seal-guardian',name:{th:'ทวารบาลผนึกหิน',en:'Stone Seal Guardian'},level:35,race:'formless',behavior:'aggressive',hp:1680,atk:115,def:42,mdef:34,speed:.9,aggroRange:3.5,leash:5,attackRange:1.6,attackDelayMs:2600,attackWindupMs:900,exp:820,drops:[{itemId:'dark-ore',chance:.4},{itemId:'bone',chance:.25}],wander:{pauseMs:[3000,6000],radius:1.5}},
+
   'leaf-wisp': {
     kind: 'leaf-wisp', name: { th: 'ภูตใบไม้', en: 'Leaf Wisp' }, level: 1, race: 'plant', behavior: 'passive',
     hp: 40, atk: 6, def: 0, mdef: 0, speed: 1.2, aggroRange: 0, leash: 8, attackRange: 1.3, attackDelayMs: 1700, attackWindupMs: 450,

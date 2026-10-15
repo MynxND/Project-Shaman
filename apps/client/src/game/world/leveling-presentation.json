@@ -1,0 +1,1903 @@
+{
+  "whispering-spiritwood": {
+    "fog": [
+      {
+        "id": "cursed-fog",
+        "x": 57,
+        "y": 20,
+        "w": 17,
+        "h": 21,
+        "alpha": 0.075
+      },
+      {
+        "id": "shrine-fog",
+        "x": 30,
+        "y": 4,
+        "w": 20,
+        "h": 13,
+        "alpha": 0.08
+      }
+    ],
+    "graph": {
+      "nodes": [
+        {
+          "id": "arrival",
+          "name": "ทางเข้าหมู่บ้าน",
+          "x": 40,
+          "y": 59,
+          "level": 0
+        },
+        {
+          "id": "rest",
+          "name": "หมู่บ้านชายป่า",
+          "x": 40,
+          "y": 50,
+          "level": 0
+        },
+        {
+          "id": "junction",
+          "name": "แยกชายป่า",
+          "x": 40,
+          "y": 35,
+          "level": 0
+        },
+        {
+          "id": "training",
+          "name": "ป่าฝึก",
+          "x": 15,
+          "y": 34,
+          "level": 0
+        },
+        {
+          "id": "cursed",
+          "name": "ป่าต้องสาป",
+          "x": 63,
+          "y": 32,
+          "level": 0
+        },
+        {
+          "id": "shrine",
+          "name": "ลานศาล",
+          "x": 40,
+          "y": 19,
+          "level": 0
+        }
+      ],
+      "edges": [
+        {
+          "id": "arrival--rest",
+          "from": "arrival",
+          "to": "rest",
+          "points": [
+            [
+              40,
+              59
+            ],
+            [
+              40,
+              50
+            ]
+          ],
+          "width": 3,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                40,
+                59
+              ],
+              [
+                40,
+                50
+              ]
+            ],
+            "length": 9,
+            "seconds": 2.25
+          }
+        },
+        {
+          "id": "rest--junction",
+          "from": "rest",
+          "to": "junction",
+          "points": [
+            [
+              40,
+              50
+            ],
+            [
+              40,
+              35
+            ]
+          ],
+          "width": 3,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                40,
+                50
+              ],
+              [
+                40,
+                35
+              ]
+            ],
+            "length": 15,
+            "seconds": 3.75
+          }
+        },
+        {
+          "id": "junction--training",
+          "from": "junction",
+          "to": "training",
+          "points": [
+            [
+              40,
+              35
+            ],
+            [
+              15,
+              34
+            ]
+          ],
+          "width": 3,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                40,
+                35
+              ],
+              [
+                24,
+                35
+              ],
+              [
+                24,
+                34
+              ],
+              [
+                15,
+                34
+              ]
+            ],
+            "length": 26,
+            "seconds": 6.5
+          }
+        },
+        {
+          "id": "junction--cursed",
+          "from": "junction",
+          "to": "cursed",
+          "points": [
+            [
+              40,
+              35
+            ],
+            [
+              63,
+              32
+            ]
+          ],
+          "width": 3,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                40,
+                35
+              ],
+              [
+                63,
+                35
+              ],
+              [
+                63,
+                32
+              ]
+            ],
+            "length": 26,
+            "seconds": 6.5
+          }
+        },
+        {
+          "id": "junction--shrine",
+          "from": "junction",
+          "to": "shrine",
+          "points": [
+            [
+              40,
+              35
+            ],
+            [
+              40,
+              19
+            ]
+          ],
+          "width": 3,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                40,
+                35
+              ],
+              [
+                40,
+                19
+              ]
+            ],
+            "length": 16,
+            "seconds": 4
+          }
+        },
+        {
+          "id": "east-approach",
+          "points": [
+            [
+              70,
+              33.6
+            ],
+            [
+              79,
+              34
+            ]
+          ],
+          "width": 2.4
+        }
+      ]
+    },
+    "locations": [
+      {
+        "id": "shrine",
+        "name": "ศาลวิญญาณเดิม",
+        "asset": "ruined-shrine",
+        "x": 40,
+        "y": 9.4,
+        "entrance": {
+          "x": 40,
+          "y": 19
+        },
+        "nodeId": "shrine",
+        "footprint": {
+          "w": 2.5,
+          "h": 1.4
+        },
+        "role": "exterior landmark; no interior gameplay"
+      }
+    ],
+    "bridges": []
+  },
+  "lantern-paddy": {
+    "fog": [
+      {
+        "id": "north-irrigation-west",
+        "x": 8,
+        "y": 7,
+        "w": 15,
+        "h": 8,
+        "alpha": 0.06
+      },
+      {
+        "id": "north-irrigation-east",
+        "x": 51,
+        "y": 7,
+        "w": 14,
+        "h": 8,
+        "alpha": 0.06
+      }
+    ],
+    "graph": {
+      "nodes": [
+        {
+          "id": "arrival",
+          "name": "ทางเข้าทุ่ง",
+          "x": 38,
+          "y": 55,
+          "level": 0
+        },
+        {
+          "id": "rest",
+          "name": "ลานเสบียง",
+          "x": 38,
+          "y": 48,
+          "level": 0
+        },
+        {
+          "id": "junction",
+          "name": "แยกคันนา",
+          "x": 38,
+          "y": 34,
+          "level": 0
+        },
+        {
+          "id": "west",
+          "name": "ลานหุ่นฟาง",
+          "x": 18,
+          "y": 38,
+          "level": 0
+        },
+        {
+          "id": "mill",
+          "name": "โรงสีร้าง",
+          "x": 18,
+          "y": 22,
+          "level": 0
+        },
+        {
+          "id": "north",
+          "name": "คันนาเหนือ",
+          "x": 38,
+          "y": 19,
+          "level": 0
+        },
+        {
+          "id": "seal",
+          "name": "ศาลทุ่ง",
+          "x": 57,
+          "y": 22,
+          "level": 0
+        },
+        {
+          "id": "east",
+          "name": "ลานควายดิน",
+          "x": 58,
+          "y": 38,
+          "level": 0
+        },
+        {
+          "id": "exit",
+          "name": "ทางออกเหนือ",
+          "x": 38,
+          "y": 6,
+          "level": 0
+        }
+      ],
+      "edges": [
+        {
+          "id": "arrival--rest",
+          "from": "arrival",
+          "to": "rest",
+          "points": [
+            [
+              38,
+              55
+            ],
+            [
+              38,
+              48
+            ]
+          ],
+          "width": 4,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                38,
+                55
+              ],
+              [
+                38,
+                48
+              ]
+            ],
+            "length": 7,
+            "seconds": 1.75
+          }
+        },
+        {
+          "id": "rest--junction",
+          "from": "rest",
+          "to": "junction",
+          "points": [
+            [
+              38,
+              48
+            ],
+            [
+              38,
+              34
+            ]
+          ],
+          "width": 4,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                38,
+                48
+              ],
+              [
+                38,
+                34
+              ]
+            ],
+            "length": 14,
+            "seconds": 3.5
+          }
+        },
+        {
+          "id": "junction--north",
+          "from": "junction",
+          "to": "north",
+          "points": [
+            [
+              38,
+              34
+            ],
+            [
+              38,
+              19
+            ]
+          ],
+          "width": 4,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                38,
+                34
+              ],
+              [
+                38,
+                19
+              ]
+            ],
+            "length": 15,
+            "seconds": 3.75
+          }
+        },
+        {
+          "id": "north--exit",
+          "from": "north",
+          "to": "exit",
+          "points": [
+            [
+              38,
+              19
+            ],
+            [
+              38,
+              6
+            ]
+          ],
+          "width": 4,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                38,
+                19
+              ],
+              [
+                38,
+                6
+              ]
+            ],
+            "length": 13,
+            "seconds": 3.25
+          }
+        },
+        {
+          "id": "rest--west",
+          "from": "rest",
+          "to": "west",
+          "points": [
+            [
+              38,
+              48
+            ],
+            [
+              28,
+              40
+            ],
+            [
+              18,
+              38
+            ]
+          ],
+          "width": 3,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                38,
+                48
+              ],
+              [
+                26.5,
+                48
+              ],
+              [
+                26.5,
+                42.5
+              ],
+              [
+                18,
+                42.5
+              ],
+              [
+                18,
+                38
+              ]
+            ],
+            "length": 30,
+            "seconds": 7.5
+          }
+        },
+        {
+          "id": "west--mill",
+          "from": "west",
+          "to": "mill",
+          "points": [
+            [
+              18,
+              38
+            ],
+            [
+              18,
+              22
+            ]
+          ],
+          "width": 3,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                18,
+                38
+              ],
+              [
+                18,
+                22
+              ]
+            ],
+            "length": 16,
+            "seconds": 4
+          }
+        },
+        {
+          "id": "mill--north",
+          "from": "mill",
+          "to": "north",
+          "points": [
+            [
+              18,
+              22
+            ],
+            [
+              28,
+              19
+            ],
+            [
+              38,
+              19
+            ]
+          ],
+          "width": 3,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                18,
+                22
+              ],
+              [
+                38,
+                22
+              ],
+              [
+                38,
+                19
+              ]
+            ],
+            "length": 23,
+            "seconds": 5.75
+          }
+        },
+        {
+          "id": "north--seal",
+          "from": "north",
+          "to": "seal",
+          "points": [
+            [
+              38,
+              19
+            ],
+            [
+              48,
+              19
+            ],
+            [
+              57,
+              22
+            ]
+          ],
+          "width": 3,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                38,
+                19
+              ],
+              [
+                57,
+                19
+              ],
+              [
+                57,
+                22
+              ]
+            ],
+            "length": 22,
+            "seconds": 5.5
+          }
+        },
+        {
+          "id": "seal--east",
+          "from": "seal",
+          "to": "east",
+          "points": [
+            [
+              57,
+              22
+            ],
+            [
+              58,
+              38
+            ]
+          ],
+          "width": 3,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                57,
+                22
+              ],
+              [
+                58,
+                22
+              ],
+              [
+                58,
+                38
+              ]
+            ],
+            "length": 17,
+            "seconds": 4.25
+          }
+        },
+        {
+          "id": "east--rest",
+          "from": "east",
+          "to": "rest",
+          "points": [
+            [
+              58,
+              38
+            ],
+            [
+              48,
+              40
+            ],
+            [
+              38,
+              48
+            ]
+          ],
+          "width": 3,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                58,
+                38
+              ],
+              [
+                38,
+                38
+              ],
+              [
+                38,
+                48
+              ]
+            ],
+            "length": 30,
+            "seconds": 7.5
+          }
+        },
+        {
+          "id": "edge-approach-0",
+          "points": [
+            [
+              1,
+              55
+            ],
+            [
+              28,
+              55
+            ],
+            [
+              38,
+              48
+            ]
+          ],
+          "width": 2.6
+        },
+        {
+          "id": "edge-approach-1",
+          "points": [
+            [
+              38,
+              19
+            ],
+            [
+              75,
+              19
+            ]
+          ],
+          "width": 2.6
+        }
+      ]
+    },
+    "locations": [
+      {
+        "id": "paddy-rest-house",
+        "name": "เรือนเสบียง",
+        "asset": "stilt-house",
+        "x": 43,
+        "y": 49,
+        "entrance": {
+          "x": 40,
+          "y": 49
+        },
+        "nodeId": "rest",
+        "footprint": {
+          "w": 2.5,
+          "h": 1.4
+        },
+        "role": "exterior landmark; no interior gameplay"
+      },
+      {
+        "id": "paddy-mill",
+        "name": "โรงสีร้าง: ใช้เรือนเก่าทดแทน",
+        "asset": "teak-house",
+        "x": 14,
+        "y": 22,
+        "entrance": {
+          "x": 18,
+          "y": 22
+        },
+        "nodeId": "mill",
+        "footprint": {
+          "w": 2.5,
+          "h": 1.4
+        },
+        "role": "exterior landmark; no interior gameplay"
+      },
+      {
+        "id": "paddy-seal",
+        "name": "ศาลประทีป",
+        "asset": "spirit-house",
+        "x": 61,
+        "y": 21,
+        "entrance": {
+          "x": 57,
+          "y": 22
+        },
+        "nodeId": "seal",
+        "footprint": {
+          "w": 2.5,
+          "h": 1.4
+        },
+        "role": "exterior landmark; no interior gameplay"
+      },
+      {
+        "id": "paddy-north-marker",
+        "name": "เสาพิธีปลายทาง",
+        "asset": "ritual-pillar",
+        "x": 42,
+        "y": 7,
+        "entrance": {
+          "x": 38,
+          "y": 6
+        },
+        "nodeId": "exit",
+        "footprint": {
+          "w": 2.5,
+          "h": 1.4
+        },
+        "role": "exterior landmark; no interior gameplay"
+      }
+    ],
+    "bridges": []
+  },
+  "moon-mangrove": {
+    "fog": [
+      {
+        "id": "west-water",
+        "x": 3,
+        "y": 17,
+        "w": 25,
+        "h": 10,
+        "alpha": 0.1
+      },
+      {
+        "id": "north-channel",
+        "x": 17,
+        "y": 7,
+        "w": 11,
+        "h": 22,
+        "alpha": 0.12
+      },
+      {
+        "id": "east-channel",
+        "x": 48,
+        "y": 46,
+        "w": 7,
+        "h": 13,
+        "alpha": 0.12
+      }
+    ],
+    "graph": {
+      "nodes": [
+        {
+          "id": "arrival",
+          "name": "ท่ารับผู้เล่น",
+          "x": 15,
+          "y": 51,
+          "level": 0
+        },
+        {
+          "id": "rest",
+          "name": "ลานท่าไม้",
+          "x": 16,
+          "y": 44,
+          "level": 0
+        },
+        {
+          "id": "west-bank",
+          "name": "หัวสะพานตะวันตก",
+          "x": 24,
+          "y": 40,
+          "level": 0
+        },
+        {
+          "id": "hub",
+          "name": "แยกเกาะศาล",
+          "x": 40,
+          "y": 40,
+          "level": 0
+        },
+        {
+          "id": "shrine",
+          "name": "ลานหอระฆัง",
+          "x": 40,
+          "y": 16,
+          "level": 0
+        },
+        {
+          "id": "east-bank",
+          "name": "หัวสะพานตะวันออก",
+          "x": 59,
+          "y": 40,
+          "level": 0
+        },
+        {
+          "id": "grove",
+          "name": "ลานรากโกงกาง",
+          "x": 66,
+          "y": 32,
+          "level": 0
+        },
+        {
+          "id": "exit",
+          "name": "ท่าออกตะวันออก",
+          "x": 69,
+          "y": 51,
+          "level": 0
+        }
+      ],
+      "edges": [
+        {
+          "id": "arrival--rest",
+          "from": "arrival",
+          "to": "rest",
+          "points": [
+            [
+              15,
+              51
+            ],
+            [
+              16,
+              44
+            ]
+          ],
+          "width": 3,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                15,
+                51
+              ],
+              [
+                16,
+                51
+              ],
+              [
+                16,
+                44
+              ]
+            ],
+            "length": 8,
+            "seconds": 2
+          }
+        },
+        {
+          "id": "rest--west-bank",
+          "from": "rest",
+          "to": "west-bank",
+          "points": [
+            [
+              16,
+              44
+            ],
+            [
+              24,
+              40
+            ]
+          ],
+          "width": 3,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                16,
+                44
+              ],
+              [
+                24,
+                44
+              ],
+              [
+                24,
+                40
+              ]
+            ],
+            "length": 12,
+            "seconds": 3
+          }
+        },
+        {
+          "id": "west-bank--hub",
+          "from": "west-bank",
+          "to": "hub",
+          "points": [
+            [
+              24,
+              40
+            ],
+            [
+              40,
+              40
+            ]
+          ],
+          "width": 3,
+          "kind": "bridge",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                24,
+                40
+              ],
+              [
+                40,
+                40
+              ]
+            ],
+            "length": 16,
+            "seconds": 4
+          }
+        },
+        {
+          "id": "hub--east-bank",
+          "from": "hub",
+          "to": "east-bank",
+          "points": [
+            [
+              40,
+              40
+            ],
+            [
+              59,
+              40
+            ]
+          ],
+          "width": 3,
+          "kind": "bridge",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                40,
+                40
+              ],
+              [
+                59,
+                40
+              ]
+            ],
+            "length": 19,
+            "seconds": 4.75
+          }
+        },
+        {
+          "id": "hub--shrine",
+          "from": "hub",
+          "to": "shrine",
+          "points": [
+            [
+              40,
+              40
+            ],
+            [
+              40,
+              16
+            ]
+          ],
+          "width": 4,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                40,
+                40
+              ],
+              [
+                40,
+                16
+              ]
+            ],
+            "length": 24,
+            "seconds": 6
+          }
+        },
+        {
+          "id": "east-bank--grove",
+          "from": "east-bank",
+          "to": "grove",
+          "points": [
+            [
+              59,
+              40
+            ],
+            [
+              66,
+              32
+            ]
+          ],
+          "width": 4,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                59,
+                40
+              ],
+              [
+                66,
+                40
+              ],
+              [
+                66,
+                32
+              ]
+            ],
+            "length": 15,
+            "seconds": 3.75
+          }
+        },
+        {
+          "id": "grove--exit",
+          "from": "grove",
+          "to": "exit",
+          "points": [
+            [
+              66,
+              32
+            ],
+            [
+              69,
+              51
+            ]
+          ],
+          "width": 4,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                66,
+                32
+              ],
+              [
+                69,
+                32
+              ],
+              [
+                69,
+                51
+              ]
+            ],
+            "length": 22,
+            "seconds": 5.5
+          }
+        },
+        {
+          "id": "exit--east-bank",
+          "from": "exit",
+          "to": "east-bank",
+          "points": [
+            [
+              69,
+              51
+            ],
+            [
+              59,
+              40
+            ]
+          ],
+          "width": 3,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                69,
+                51
+              ],
+              [
+                59,
+                51
+              ],
+              [
+                59,
+                40
+              ]
+            ],
+            "length": 21,
+            "seconds": 5.25
+          }
+        },
+        {
+          "id": "edge-approach-0",
+          "points": [
+            [
+              1,
+              51
+            ],
+            [
+              15,
+              51
+            ]
+          ],
+          "width": 2.6
+        },
+        {
+          "id": "edge-approach-1",
+          "points": [
+            [
+              69,
+              51
+            ],
+            [
+              79,
+              51
+            ]
+          ],
+          "width": 2.6
+        }
+      ]
+    },
+    "locations": [
+      {
+        "id": "mangrove-rest",
+        "name": "เรือนท่าไม้",
+        "asset": "stilt-house",
+        "x": 11,
+        "y": 43,
+        "entrance": {
+          "x": 16,
+          "y": 44
+        },
+        "nodeId": "rest",
+        "footprint": {
+          "w": 2.5,
+          "h": 1.4
+        },
+        "role": "exterior landmark; no interior gameplay"
+      },
+      {
+        "id": "mangrove-bell",
+        "name": "หอระฆัง: ศาลไม้ทดแทน",
+        "asset": "ruined-shrine",
+        "x": 40,
+        "y": 12,
+        "entrance": {
+          "x": 40,
+          "y": 16
+        },
+        "nodeId": "shrine",
+        "footprint": {
+          "w": 2.5,
+          "h": 1.4
+        },
+        "role": "exterior landmark; no interior gameplay"
+      },
+      {
+        "id": "mangrove-exit-house",
+        "name": "เรือนท่าฝั่งตะวันออก",
+        "asset": "spirit-house",
+        "x": 73,
+        "y": 52,
+        "entrance": {
+          "x": 69,
+          "y": 51
+        },
+        "nodeId": "exit",
+        "footprint": {
+          "w": 2.5,
+          "h": 1.4
+        },
+        "role": "exterior landmark; no interior gameplay"
+      }
+    ],
+    "bridges": [
+      {
+        "id": "west-bank--hub",
+        "from": "west-bank",
+        "to": "hub",
+        "points": [
+          [
+            24,
+            40
+          ],
+          [
+            40,
+            40
+          ]
+        ],
+        "width": 3,
+        "kind": "bridge",
+        "direction": "two-way",
+        "measured": {
+          "points": [
+            [
+              24,
+              40
+            ],
+            [
+              40,
+              40
+            ]
+          ],
+          "length": 16,
+          "seconds": 4
+        }
+      },
+      {
+        "id": "hub--east-bank",
+        "from": "hub",
+        "to": "east-bank",
+        "points": [
+          [
+            40,
+            40
+          ],
+          [
+            59,
+            40
+          ]
+        ],
+        "width": 3,
+        "kind": "bridge",
+        "direction": "two-way",
+        "measured": {
+          "points": [
+            [
+              40,
+              40
+            ],
+            [
+              59,
+              40
+            ]
+          ],
+          "length": 19,
+          "seconds": 4.75
+        }
+      }
+    ]
+  },
+  "monsoon-marsh": {
+    "fog": [
+      {
+        "id": "basin-left",
+        "x": 29,
+        "y": 25,
+        "w": 10,
+        "h": 15,
+        "alpha": 0.12
+      },
+      {
+        "id": "basin-right",
+        "x": 50,
+        "y": 24,
+        "w": 10,
+        "h": 18,
+        "alpha": 0.12
+      },
+      {
+        "id": "west-pool",
+        "x": 3,
+        "y": 16,
+        "w": 11,
+        "h": 13,
+        "alpha": 0.09
+      }
+    ],
+    "graph": {
+      "nodes": [
+        {
+          "id": "arrival",
+          "name": "ทางเข้าบึง",
+          "x": 44,
+          "y": 57,
+          "level": 0
+        },
+        {
+          "id": "rest",
+          "name": "ลานพักสันดิน",
+          "x": 44,
+          "y": 49,
+          "level": 0
+        },
+        {
+          "id": "west",
+          "name": "ลานคางคก",
+          "x": 20,
+          "y": 42,
+          "level": 0
+        },
+        {
+          "id": "west-north",
+          "name": "คันดินเหนือซ้าย",
+          "x": 24,
+          "y": 20,
+          "level": 0
+        },
+        {
+          "id": "shrine",
+          "name": "เสาวิญญาณ",
+          "x": 44,
+          "y": 15,
+          "level": 0
+        },
+        {
+          "id": "east-north",
+          "name": "คันดินเหนือขวา",
+          "x": 66,
+          "y": 20,
+          "level": 0
+        },
+        {
+          "id": "east",
+          "name": "ลานปลิงหมอก",
+          "x": 68,
+          "y": 42,
+          "level": 0
+        },
+        {
+          "id": "islet",
+          "name": "ศาลกลางบึง",
+          "x": 44,
+          "y": 32,
+          "level": 0
+        }
+      ],
+      "edges": [
+        {
+          "id": "arrival--rest",
+          "from": "arrival",
+          "to": "rest",
+          "points": [
+            [
+              44,
+              57
+            ],
+            [
+              44,
+              49
+            ]
+          ],
+          "width": 4,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                44,
+                57
+              ],
+              [
+                44,
+                49
+              ]
+            ],
+            "length": 8,
+            "seconds": 2
+          }
+        },
+        {
+          "id": "rest--west",
+          "from": "rest",
+          "to": "west",
+          "points": [
+            [
+              44,
+              49
+            ],
+            [
+              30,
+              49
+            ],
+            [
+              20,
+              42
+            ]
+          ],
+          "width": 4,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                44,
+                49
+              ],
+              [
+                20,
+                49
+              ],
+              [
+                20,
+                42
+              ]
+            ],
+            "length": 31,
+            "seconds": 7.75
+          }
+        },
+        {
+          "id": "west--west-north",
+          "from": "west",
+          "to": "west-north",
+          "points": [
+            [
+              20,
+              42
+            ],
+            [
+              18,
+              30
+            ],
+            [
+              24,
+              20
+            ]
+          ],
+          "width": 4,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                20,
+                42
+              ],
+              [
+                24,
+                42
+              ],
+              [
+                24,
+                20
+              ]
+            ],
+            "length": 26,
+            "seconds": 6.5
+          }
+        },
+        {
+          "id": "west-north--shrine",
+          "from": "west-north",
+          "to": "shrine",
+          "points": [
+            [
+              24,
+              20
+            ],
+            [
+              34,
+              15
+            ],
+            [
+              44,
+              15
+            ]
+          ],
+          "width": 4,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                24,
+                20
+              ],
+              [
+                44,
+                20
+              ],
+              [
+                44,
+                15
+              ]
+            ],
+            "length": 25,
+            "seconds": 6.25
+          }
+        },
+        {
+          "id": "shrine--east-north",
+          "from": "shrine",
+          "to": "east-north",
+          "points": [
+            [
+              44,
+              15
+            ],
+            [
+              55,
+              15
+            ],
+            [
+              66,
+              20
+            ]
+          ],
+          "width": 4,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                44,
+                15
+              ],
+              [
+                66,
+                15
+              ],
+              [
+                66,
+                20
+              ]
+            ],
+            "length": 27,
+            "seconds": 6.75
+          }
+        },
+        {
+          "id": "east-north--east",
+          "from": "east-north",
+          "to": "east",
+          "points": [
+            [
+              66,
+              20
+            ],
+            [
+              70,
+              30
+            ],
+            [
+              68,
+              42
+            ]
+          ],
+          "width": 4,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                66,
+                20
+              ],
+              [
+                68,
+                20
+              ],
+              [
+                68,
+                42
+              ]
+            ],
+            "length": 24,
+            "seconds": 6
+          }
+        },
+        {
+          "id": "east--rest",
+          "from": "east",
+          "to": "rest",
+          "points": [
+            [
+              68,
+              42
+            ],
+            [
+              58,
+              49
+            ],
+            [
+              44,
+              49
+            ]
+          ],
+          "width": 4,
+          "kind": "path",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                68,
+                42
+              ],
+              [
+                59.5,
+                42
+              ],
+              [
+                59.5,
+                42.5
+              ],
+              [
+                59,
+                42.5
+              ],
+              [
+                59,
+                43
+              ],
+              [
+                58,
+                43
+              ],
+              [
+                58,
+                43.5
+              ],
+              [
+                57,
+                43.5
+              ],
+              [
+                57,
+                44
+              ],
+              [
+                56.5,
+                44
+              ],
+              [
+                56.5,
+                44.5
+              ],
+              [
+                55.5,
+                44.5
+              ],
+              [
+                55.5,
+                45
+              ],
+              [
+                55,
+                45
+              ],
+              [
+                55,
+                45.5
+              ],
+              [
+                54,
+                45.5
+              ],
+              [
+                54,
+                46
+              ],
+              [
+                44,
+                46
+              ],
+              [
+                44,
+                49
+              ]
+            ],
+            "length": 31,
+            "seconds": 7.75
+          }
+        },
+        {
+          "id": "rest--islet",
+          "from": "rest",
+          "to": "islet",
+          "points": [
+            [
+              44,
+              49
+            ],
+            [
+              44,
+              32
+            ]
+          ],
+          "width": 3,
+          "kind": "causeway",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                44,
+                49
+              ],
+              [
+                44,
+                32
+              ]
+            ],
+            "length": 17,
+            "seconds": 4.25
+          }
+        },
+        {
+          "id": "islet--shrine",
+          "from": "islet",
+          "to": "shrine",
+          "points": [
+            [
+              44,
+              32
+            ],
+            [
+              44,
+              15
+            ]
+          ],
+          "width": 3,
+          "kind": "causeway",
+          "direction": "two-way",
+          "measured": {
+            "points": [
+              [
+                44,
+                32
+              ],
+              [
+                44,
+                15
+              ]
+            ],
+            "length": 17,
+            "seconds": 4.25
+          }
+        },
+        {
+          "id": "edge-approach-0",
+          "points": [
+            [
+              1,
+              57
+            ],
+            [
+              44,
+              57
+            ]
+          ],
+          "width": 2.6
+        }
+      ]
+    },
+    "locations": [
+      {
+        "id": "marsh-rest",
+        "name": "เรือนหมอยาร้าง",
+        "asset": "stilt-house",
+        "x": 49,
+        "y": 51,
+        "entrance": {
+          "x": 44,
+          "y": 49
+        },
+        "nodeId": "rest",
+        "footprint": {
+          "w": 2.5,
+          "h": 1.4
+        },
+        "role": "exterior landmark; no interior gameplay"
+      },
+      {
+        "id": "marsh-spirit-post",
+        "name": "เสาวิญญาณเอียง: เสาหินทดแทน",
+        "asset": "stele",
+        "x": 49,
+        "y": 14,
+        "entrance": {
+          "x": 44,
+          "y": 15
+        },
+        "nodeId": "shrine",
+        "footprint": {
+          "w": 2.5,
+          "h": 1.4
+        },
+        "role": "exterior landmark; no interior gameplay"
+      },
+      {
+        "id": "marsh-islet-shrine",
+        "name": "ศาลกลางบึง",
+        "asset": "spirit-house",
+        "x": 48,
+        "y": 32,
+        "entrance": {
+          "x": 44,
+          "y": 32
+        },
+        "nodeId": "islet",
+        "footprint": {
+          "w": 2.5,
+          "h": 1.4
+        },
+        "role": "exterior landmark; no interior gameplay"
+      }
+    ],
+    "bridges": []
+  }
+}

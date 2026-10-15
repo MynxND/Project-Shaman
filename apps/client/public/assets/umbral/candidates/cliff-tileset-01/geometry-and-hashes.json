@@ -1,0 +1,1739 @@
+{
+  "tilesetId": "998854ff-c48e-4d59-ba6b-7521fee1fa10",
+  "status": "completed",
+  "productionIntegrated": false,
+  "userVisualApproved": false,
+  "sheet": {
+    "filename": "spritesheet.png",
+    "width": 128,
+    "height": 256,
+    "bytes": 17752,
+    "sha256": "5e80efa03169e25d8770b0035ebf82b0106ba33cca2ce67ae9d4a20d68278a01",
+    "rawProviderBytesPreserved": true
+  },
+  "metadata": {
+    "filename": "metadata.json",
+    "bytes": 12542,
+    "sha256": "b8b7f149917665456957267f37e06e28b1274dbbc626f08f51f6c478c43f0717",
+    "rawProviderBytesPreserved": true
+  },
+  "layout": {
+    "type": "tileset15_t1",
+    "description": "4x8 grid of transition (cliff) tiles. Tiles are one cell high; a cliff face occupies the map cell BELOW the terrain boundary (wall tiles carry corners with 'transition'). Use pattern_4x4 (row_0 = terrain above, row_3 = terrain below) to pick tiles.",
+    "grid_size": {
+      "width": 4,
+      "height": 8
+    },
+    "tile_count": 25
+  },
+  "patternSystem": {
+    "type": "4x4_wildcard",
+    "description": "4×4 patterns with wildcards for flexible tile matching",
+    "wildcard_value": 255,
+    "pattern_layout": {
+      "description": "4×4 grid where center 2×2 matches tile corners, outer ring uses wildcards",
+      "example": {
+        "row_0": "All wildcards (*)",
+        "row_1": "Wildcard + NW corner + NE corner + Wildcard",
+        "row_2": "Wildcard + SW corner + SE corner + Wildcard",
+        "row_3": "All wildcards (*)"
+      }
+    },
+    "terrain_encoding": {
+      "lower": 0,
+      "upper": 1,
+      "transition": 2,
+      "wildcard": 255
+    },
+    "usage": {
+      "description": "Sample 4×4 terrain around tile position, encode as pattern key, lookup in cache",
+      "benefits": [
+        "O(1) lookup performance",
+        "Flexible edge matching",
+        "Unified pattern system"
+      ]
+    }
+  },
+  "extraction": {
+    "resize": false,
+    "source": "bounding_box only; not name or original_position",
+    "decodedPixelValidation": "All 25 crops equal the exact RGBA source rectangles"
+  },
+  "continuationPairs": [
+    {
+      "continuationId": "4",
+      "twinId": "10",
+      "reason": "Straight right boundary: row_0 is wildcard rather than the twin lower/lower constraint.",
+      "continuation": {
+        "id": "4",
+        "name": "t1_4_r4_c1",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 128,
+          "width": 32,
+          "height": 32
+        }
+      },
+      "twin": {
+        "id": "10",
+        "name": "t1_10_r3_c1",
+        "corners": {
+          "NE": "upper",
+          "NW": "lower",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "row_1": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 1,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 96,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      }
+    },
+    {
+      "continuationId": "14",
+      "twinId": "6",
+      "reason": "Straight left boundary: row_0 is wildcard rather than the twin upper/upper constraint.",
+      "continuation": {
+        "id": "14",
+        "name": "t1_14_r4_c6",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 4
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      },
+      "twin": {
+        "id": "6",
+        "name": "t1_6_r3_c6",
+        "corners": {
+          "NE": "lower",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            1,
+            1,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 6,
+          "row": 3
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 0,
+          "width": 32,
+          "height": 32
+        }
+      }
+    },
+    {
+      "continuationId": "27",
+      "twinId": "26",
+      "reason": "Wall variant: row_0 center is upper/lower, rather than wildcard/upper.",
+      "continuation": {
+        "id": "27",
+        "name": "t1_27_r9_c4",
+        "corners": {
+          "NE": "upper",
+          "NW": "transition",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_1": [
+            255,
+            2,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 9
+        },
+        "bounding_box": {
+          "x": 64,
+          "y": 224,
+          "width": 32,
+          "height": 32
+        }
+      },
+      "twin": {
+        "id": "26",
+        "name": "t1_26_r9_c2",
+        "corners": {
+          "NE": "upper",
+          "NW": "transition",
+          "SE": "upper",
+          "SW": "lower"
+        },
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            255,
+            1,
+            255
+          ],
+          "row_1": [
+            255,
+            2,
+            1,
+            255
+          ],
+          "row_2": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 9
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 32,
+          "width": 32,
+          "height": 32
+        }
+      }
+    },
+    {
+      "continuationId": "30",
+      "twinId": "19",
+      "reason": "Wall variant: row_0 center is lower/upper, rather than upper/wildcard.",
+      "continuation": {
+        "id": "30",
+        "name": "t1_30_r11_c2",
+        "corners": {
+          "NE": "transition",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            0,
+            1,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            2,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 2,
+          "row": 11
+        },
+        "bounding_box": {
+          "x": 0,
+          "y": 96,
+          "width": 32,
+          "height": 32
+        }
+      },
+      "twin": {
+        "id": "19",
+        "name": "t1_19_r7_c4",
+        "corners": {
+          "NE": "transition",
+          "NW": "upper",
+          "SE": "lower",
+          "SW": "upper"
+        },
+        "pattern_4x4": {
+          "row_0": [
+            255,
+            1,
+            255,
+            255
+          ],
+          "row_1": [
+            255,
+            1,
+            2,
+            255
+          ],
+          "row_2": [
+            255,
+            1,
+            0,
+            255
+          ],
+          "row_3": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "original_position": {
+          "col": 4,
+          "row": 7
+        },
+        "bounding_box": {
+          "x": 32,
+          "y": 224,
+          "width": 32,
+          "height": 32
+        }
+      }
+    }
+  ],
+  "continuationClassification": "Pattern-based local classification of the four extra variants; provider does not supply a named continuation flag. Preserve both members and select by full pattern, never corners alone.",
+  "billing": {
+    "evidence": "balance delta only; no explicit job billing in completion response",
+    "beforeRemaining": 773,
+    "afterRemaining": 769,
+    "beforeUsed": 4033,
+    "afterUsed": 4037,
+    "observedGenerationsDelta": 4,
+    "creditsUsdBefore": 0,
+    "creditsUsdAfter": 0,
+    "caveat": "Other account activity can affect a balance delta.",
+    "completionSource": "status-20261011-125524014.json"
+  },
+  "diagnostics": {
+    "continuationComparison": {
+      "filename": "continuation-twins-nearest-4x.png",
+      "rowsLeftTwinRightContinuation": [
+        "10",
+        "4",
+        "6",
+        "14",
+        "26",
+        "27",
+        "19",
+        "30"
+      ]
+    },
+    "straightWall": {
+      "filename": "straight-wall-17-20-nearest-4x.png",
+      "topId": "17",
+      "bottomId": "20",
+      "repeats": 6,
+      "placement": "row_3 of 17 matches row_1 of 20 (0,0); row_2 of 17 matches row_0 of 20 (1,1)"
+    }
+  },
+  "tiles": [
+    {
+      "id": "453fe82e-e63d-46a3-8da5-b0cd421d2241",
+      "name": "t1_0_r1_c0",
+      "corners": {
+        "NE": "lower",
+        "NW": "lower",
+        "SE": "lower",
+        "SW": "lower"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          0,
+          0,
+          255
+        ],
+        "row_2": [
+          255,
+          0,
+          0,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 0,
+        "row": 1
+      },
+      "bounding_box": {
+        "x": 64,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_0_r1_c0.png",
+      "bytes": 453,
+      "sha256": "ed8d64ec3b6a5c05f2e98a04b161f81a9d228bda69ce01e7cc81985c6322840b",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "1",
+      "name": "t1_1_r2_c1",
+      "corners": {
+        "NE": "lower",
+        "NW": "lower",
+        "SE": "upper",
+        "SW": "lower"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          0,
+          0,
+          255
+        ],
+        "row_2": [
+          255,
+          0,
+          1,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 1,
+        "row": 2
+      },
+      "bounding_box": {
+        "x": 96,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_1_r2_c1.png",
+      "bytes": 680,
+      "sha256": "f531a3ad575819c3e7a036f3be1aa41d5bfad3e6e654cdce2788ccfef3f0984b",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "2",
+      "name": "t1_2_r2_c2",
+      "corners": {
+        "NE": "lower",
+        "NW": "lower",
+        "SE": "upper",
+        "SW": "upper"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          0,
+          0,
+          255
+        ],
+        "row_2": [
+          255,
+          1,
+          1,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 2,
+        "row": 2
+      },
+      "bounding_box": {
+        "x": 32,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_2_r2_c2.png",
+      "bytes": 635,
+      "sha256": "76923bf3079490fe2e6782aaabc4b4ddb7a651388c83f82cc24b92bca84937c6",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "3",
+      "name": "t1_3_r2_c3",
+      "corners": {
+        "NE": "lower",
+        "NW": "lower",
+        "SE": "lower",
+        "SW": "upper"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          0,
+          0,
+          255
+        ],
+        "row_2": [
+          255,
+          1,
+          0,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 3,
+        "row": 2
+      },
+      "bounding_box": {
+        "x": 64,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_3_r2_c3.png",
+      "bytes": 683,
+      "sha256": "1b231314001dbf3f9601f52c8c31593d8eb5d9fb7fe2ec289d3a45df3d5e8e47",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "10",
+      "name": "t1_10_r3_c1",
+      "corners": {
+        "NE": "upper",
+        "NW": "lower",
+        "SE": "upper",
+        "SW": "lower"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          0,
+          0,
+          255
+        ],
+        "row_1": [
+          255,
+          0,
+          1,
+          255
+        ],
+        "row_2": [
+          255,
+          0,
+          1,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 1,
+        "row": 3
+      },
+      "bounding_box": {
+        "x": 96,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_10_r3_c1.png",
+      "bytes": 660,
+      "sha256": "6399f26d9b999c27c706461f4eae227767ae4616f43a81cc6892efd7f142d1a9",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "4",
+      "name": "t1_4_r4_c1",
+      "corners": {
+        "NE": "upper",
+        "NW": "lower",
+        "SE": "upper",
+        "SW": "lower"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          0,
+          1,
+          255
+        ],
+        "row_2": [
+          255,
+          0,
+          1,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 1,
+        "row": 4
+      },
+      "bounding_box": {
+        "x": 96,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_4_r4_c1.png",
+      "bytes": 679,
+      "sha256": "3fcacd2bc7362ec6d7011dc21ac5054b9a49a7f8a9450ec2b35cde767507a049",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "73cc5ae9-234f-4825-9e70-a66c50274950",
+      "name": "t1_5_r5_c2",
+      "corners": {
+        "NE": "upper",
+        "NW": "upper",
+        "SE": "upper",
+        "SW": "upper"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          1,
+          1,
+          255
+        ],
+        "row_2": [
+          255,
+          1,
+          1,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 2,
+        "row": 5
+      },
+      "bounding_box": {
+        "x": 0,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_5_r5_c2.png",
+      "bytes": 508,
+      "sha256": "7fe454b6eb328132745602b024b1fffbfd10982c9ecbe460d6123cf4c9785c9e",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "6",
+      "name": "t1_6_r3_c6",
+      "corners": {
+        "NE": "lower",
+        "NW": "upper",
+        "SE": "lower",
+        "SW": "upper"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          1,
+          1,
+          255
+        ],
+        "row_1": [
+          255,
+          1,
+          0,
+          255
+        ],
+        "row_2": [
+          255,
+          1,
+          0,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 6,
+        "row": 3
+      },
+      "bounding_box": {
+        "x": 32,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_6_r3_c6.png",
+      "bytes": 651,
+      "sha256": "528c15c1b813cbfc6a4c65905aa865d761d8b2fed332bc88354111054ad541ed",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "14",
+      "name": "t1_14_r4_c6",
+      "corners": {
+        "NE": "lower",
+        "NW": "upper",
+        "SE": "lower",
+        "SW": "upper"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          1,
+          0,
+          255
+        ],
+        "row_2": [
+          255,
+          1,
+          0,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 6,
+        "row": 4
+      },
+      "bounding_box": {
+        "x": 32,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_14_r4_c6.png",
+      "bytes": 690,
+      "sha256": "a74ba15a162280762b789e49d04e9f3422b6c590076c158efb1091fb8c866d2f",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "8",
+      "name": "t1_8_r4_c3",
+      "corners": {
+        "NE": "lower",
+        "NW": "upper",
+        "SE": "upper",
+        "SW": "upper"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          1,
+          0,
+          255
+        ],
+        "row_2": [
+          255,
+          1,
+          1,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 3,
+        "row": 4
+      },
+      "bounding_box": {
+        "x": 0,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_8_r4_c3.png",
+      "bytes": 736,
+      "sha256": "9ad5c8badfa3be51606a9458ca5d3e0c4d1d92d7df8d88014fa46b61d757bdaf",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "9",
+      "name": "t1_9_r4_c4",
+      "corners": {
+        "NE": "upper",
+        "NW": "lower",
+        "SE": "upper",
+        "SW": "upper"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          0,
+          1,
+          255
+        ],
+        "row_2": [
+          255,
+          1,
+          1,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 4,
+        "row": 4
+      },
+      "bounding_box": {
+        "x": 96,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_9_r4_c4.png",
+      "bytes": 776,
+      "sha256": "a12e148baad33d877c842ace1bdab86434753e4df72d6ae9fce57f0deca37470",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "16",
+      "name": "t1_16_r6_c4",
+      "corners": {
+        "NE": "upper",
+        "NW": "upper",
+        "SE": "transition",
+        "SW": "upper"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          1,
+          1,
+          255
+        ],
+        "row_2": [
+          255,
+          1,
+          2,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          0,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 4,
+        "row": 6
+      },
+      "bounding_box": {
+        "x": 32,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_16_r6_c4.png",
+      "bytes": 675,
+      "sha256": "e632ded6f902dccc2d2a9771a7a40657acdb8f6a57a7c0bfb89e392b316032a7",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "17",
+      "name": "t1_17_r6_c5",
+      "corners": {
+        "NE": "upper",
+        "NW": "upper",
+        "SE": "transition",
+        "SW": "transition"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          1,
+          1,
+          255
+        ],
+        "row_2": [
+          255,
+          2,
+          2,
+          255
+        ],
+        "row_3": [
+          255,
+          0,
+          0,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 5,
+        "row": 6
+      },
+      "bounding_box": {
+        "x": 96,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_17_r6_c5.png",
+      "bytes": 503,
+      "sha256": "68020fa30248c2f9465b3d13711d103da1147e972490649f771c477540dc9d9d",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "18",
+      "name": "t1_18_r6_c6",
+      "corners": {
+        "NE": "lower",
+        "NW": "upper",
+        "SE": "lower",
+        "SW": "transition"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          1,
+          0,
+          255
+        ],
+        "row_2": [
+          255,
+          2,
+          0,
+          255
+        ],
+        "row_3": [
+          255,
+          0,
+          0,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 6,
+        "row": 6
+      },
+      "bounding_box": {
+        "x": 32,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_18_r6_c6.png",
+      "bytes": 713,
+      "sha256": "86a1d46b509c46cff2242c946e5309e45df919ad625395026003f0c1fb27e1b4",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "19",
+      "name": "t1_19_r7_c4",
+      "corners": {
+        "NE": "transition",
+        "NW": "upper",
+        "SE": "lower",
+        "SW": "upper"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          1,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          1,
+          2,
+          255
+        ],
+        "row_2": [
+          255,
+          1,
+          0,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 4,
+        "row": 7
+      },
+      "bounding_box": {
+        "x": 32,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_19_r7_c4.png",
+      "bytes": 633,
+      "sha256": "c284cf6e9589412367edc0d4d043071768cba3584ddee4e2362f3bdbe5f0863e",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "20",
+      "name": "t1_20_r7_c5",
+      "corners": {
+        "NE": "transition",
+        "NW": "transition",
+        "SE": "lower",
+        "SW": "lower"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          1,
+          1,
+          255
+        ],
+        "row_1": [
+          255,
+          2,
+          2,
+          255
+        ],
+        "row_2": [
+          255,
+          0,
+          0,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 5,
+        "row": 7
+      },
+      "bounding_box": {
+        "x": 96,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_20_r7_c5.png",
+      "bytes": 506,
+      "sha256": "15c06dcb7119838e35998c7e9e6a8c76d8b6aa7271819c8438634d01cc60c7f7",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "21",
+      "name": "t1_21_r7_c6",
+      "corners": {
+        "NE": "lower",
+        "NW": "transition",
+        "SE": "lower",
+        "SW": "lower"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          2,
+          0,
+          255
+        ],
+        "row_2": [
+          255,
+          0,
+          0,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 6,
+        "row": 7
+      },
+      "bounding_box": {
+        "x": 32,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_21_r7_c6.png",
+      "bytes": 607,
+      "sha256": "07eb3870de357e4c141a8f7a0314b4cd69d47dda4ee9a90d3a2750157eb0e6cd",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "22",
+      "name": "t1_22_r8_c1",
+      "corners": {
+        "NE": "upper",
+        "NW": "lower",
+        "SE": "transition",
+        "SW": "lower"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          0,
+          1,
+          255
+        ],
+        "row_2": [
+          255,
+          0,
+          2,
+          255
+        ],
+        "row_3": [
+          255,
+          0,
+          0,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 1,
+        "row": 8
+      },
+      "bounding_box": {
+        "x": 64,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_22_r8_c1.png",
+      "bytes": 715,
+      "sha256": "3dc22d74fa70d9d9d329ed6649781203e21008bb6a46f7091e36ddd888d6cbca",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "23",
+      "name": "t1_23_r8_c2",
+      "corners": {
+        "NE": "upper",
+        "NW": "upper",
+        "SE": "upper",
+        "SW": "transition"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          1,
+          1,
+          255
+        ],
+        "row_2": [
+          255,
+          2,
+          1,
+          255
+        ],
+        "row_3": [
+          255,
+          0,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 2,
+        "row": 8
+      },
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_23_r8_c2.png",
+      "bytes": 668,
+      "sha256": "6b266302ea5ecda3108d3ee4a5c9996959a59eb0d1ae4800892cdc6dadc0a749",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "24",
+      "name": "t1_24_r8_c4",
+      "corners": {
+        "NE": "lower",
+        "NW": "upper",
+        "SE": "upper",
+        "SW": "transition"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          1,
+          0,
+          255
+        ],
+        "row_2": [
+          255,
+          2,
+          1,
+          255
+        ],
+        "row_3": [
+          255,
+          0,
+          1,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 4,
+        "row": 8
+      },
+      "bounding_box": {
+        "x": 64,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_24_r8_c4.png",
+      "bytes": 811,
+      "sha256": "2dca48bcefd50a63fe91597d9d1ac783438c42cca420972b884f6a21674e26b0",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "25",
+      "name": "t1_25_r9_c1",
+      "corners": {
+        "NE": "transition",
+        "NW": "lower",
+        "SE": "lower",
+        "SW": "lower"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          0,
+          2,
+          255
+        ],
+        "row_2": [
+          255,
+          0,
+          0,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 1,
+        "row": 9
+      },
+      "bounding_box": {
+        "x": 64,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_25_r9_c1.png",
+      "bytes": 606,
+      "sha256": "c668dd82a82f84970499a6be08b3381ee3ec8ac579824a8b91dc10e36c8b6d03",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "26",
+      "name": "t1_26_r9_c2",
+      "corners": {
+        "NE": "upper",
+        "NW": "transition",
+        "SE": "upper",
+        "SW": "lower"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          1,
+          255
+        ],
+        "row_1": [
+          255,
+          2,
+          1,
+          255
+        ],
+        "row_2": [
+          255,
+          0,
+          1,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 2,
+        "row": 9
+      },
+      "bounding_box": {
+        "x": 0,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_26_r9_c2.png",
+      "bytes": 714,
+      "sha256": "d0500f970c2626189b73b46a2cca011b782b4a552ab4772872b68e6d64288d8c",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "27",
+      "name": "t1_27_r9_c4",
+      "corners": {
+        "NE": "upper",
+        "NW": "transition",
+        "SE": "upper",
+        "SW": "lower"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          1,
+          0,
+          255
+        ],
+        "row_1": [
+          255,
+          2,
+          1,
+          255
+        ],
+        "row_2": [
+          255,
+          0,
+          1,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 4,
+        "row": 9
+      },
+      "bounding_box": {
+        "x": 64,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_27_r9_c4.png",
+      "bytes": 714,
+      "sha256": "1d35d3267693e052cd32bda721a192d45b45e8419f5c12dbf14af8ebcd6dbf78",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "28",
+      "name": "t1_28_r10_c2",
+      "corners": {
+        "NE": "upper",
+        "NW": "lower",
+        "SE": "transition",
+        "SW": "upper"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "row_1": [
+          255,
+          0,
+          1,
+          255
+        ],
+        "row_2": [
+          255,
+          1,
+          2,
+          255
+        ],
+        "row_3": [
+          255,
+          1,
+          0,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 2,
+        "row": 10
+      },
+      "bounding_box": {
+        "x": 0,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_28_r10_c2.png",
+      "bytes": 801,
+      "sha256": "168222f440d26865751c43b0b80428bf7f38e9c5a89227524e032880cf2580a2",
+      "sourcePixelsExact": true
+    },
+    {
+      "id": "30",
+      "name": "t1_30_r11_c2",
+      "corners": {
+        "NE": "transition",
+        "NW": "upper",
+        "SE": "lower",
+        "SW": "upper"
+      },
+      "pattern_4x4": {
+        "row_0": [
+          255,
+          0,
+          1,
+          255
+        ],
+        "row_1": [
+          255,
+          1,
+          2,
+          255
+        ],
+        "row_2": [
+          255,
+          1,
+          0,
+          255
+        ],
+        "row_3": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "original_position": {
+        "col": 2,
+        "row": 11
+      },
+      "bounding_box": {
+        "x": 0,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "filename": "tiles/t1_30_r11_c2.png",
+      "bytes": 687,
+      "sha256": "eb6b74cfff164d044b3730600d2a80cec2bb9398effce376ba07bf399932ca92",
+      "sourcePixelsExact": true
+    }
+  ]
+}

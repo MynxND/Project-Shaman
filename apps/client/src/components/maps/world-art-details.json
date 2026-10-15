@@ -1,0 +1,719 @@
+{
+  "umbral-capital": {
+    "climate": "ศูนย์รวมสำนักทั้ง12ประเทศ",
+    "landmark": "วิหารวิญญาณดำ",
+    "activities": "ร้านค้า · รักษา · เปลี่ยนอาชีพ · ภารกิจ · จุดพัก",
+    "residents": [],
+    "proposedResidents": [],
+    "npcs": [
+      "นวลจันทร์",
+      "แม่ศรีเรือน",
+      "หลวงตาธรรม",
+      "อาจารย์คง",
+      "ป้าบุญมี",
+      "ช่างเพียร",
+      "เถ้าแก่ทอง",
+      "ลุงมั่น",
+      "ช่างเหล็กอินทร์",
+      "แม่มดเรไร",
+      "พลทหารเสือ"
+    ],
+    "connections": [
+      {
+        "id": "whispering-spiritwood",
+        "status": "live"
+      }
+    ],
+    "source": "authoritative MAPS / existing MONSTERS"
+  },
+  "whispering-spiritwood": {
+    "climate": "ป่าเขตร้อนชื้น",
+    "landmark": "ศาลรากไม้ร้าง",
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตใบไม้",
+      "หุ่นฟางต้องคำสาป",
+      "ผีไฟพเนจร",
+      "ลิงเงา",
+      "ทวารบาลดินเผา",
+      "เจ้าที่รากไม้ต้องสาป"
+    ],
+    "proposedResidents": [],
+    "npcs": [
+      "พรานเดช",
+      "ยายบัว",
+      "นายเพิ่ม"
+    ],
+    "connections": [
+      {
+        "id": "umbral-capital",
+        "status": "live"
+      },
+      {
+        "id": "lantern-paddy",
+        "status": "live"
+      }
+    ],
+    "source": "authoritative MAPS / existing MONSTERS"
+  },
+  "lantern-paddy": {
+    "climate": "ที่ราบมรสุม",
+    "landmark": "โรงสีร้างกลางคันนา",
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "หุ่นฟางต้องคำสาป",
+      "ผีไฟพเนจร",
+      "ทวารบาลดินเผา"
+    ],
+    "proposedResidents": [],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "whispering-spiritwood",
+        "status": "live"
+      },
+      {
+        "id": "moon-mangrove",
+        "status": "live"
+      }
+    ],
+    "source": "authoritative MAPS / existing MONSTERS"
+  },
+  "moon-mangrove": {
+    "climate": "ชายฝั่งน้ำกร่อย",
+    "landmark": "หอระฆังริมช่องน้ำ (ปัจจุบันใช้ภาพศาลร้างทดแทน)",
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ทวารบาลดินเผา",
+      "ผีไฟพเนจร",
+      "หุ่นฟางต้องคำสาป"
+    ],
+    "proposedResidents": [],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "lantern-paddy",
+        "status": "live"
+      },
+      {
+        "id": "monsoon-marsh",
+        "status": "live"
+      }
+    ],
+    "source": "authoritative MAPS / existing MONSTERS"
+  },
+  "monsoon-marsh": {
+    "climate": "พื้นที่ชุ่มน้ำฝนหนัก",
+    "landmark": "เสาวิญญาณเอียงในบึง",
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ลิงเงา",
+      "ภูตใบไม้",
+      "ผีไฟพเนจร"
+    ],
+    "proposedResidents": [],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "moon-mangrove",
+        "status": "live"
+      },
+      {
+        "id": "mountain-spirit-sanctuary",
+        "status": "live"
+      }
+    ],
+    "source": "authoritative MAPS / existing MONSTERS"
+  },
+  "mountain-spirit-sanctuary": {
+    "climate": "ป่าภูเขาชื้น / หมอกหุบเขา",
+    "landmark": "สำนักผนึกเหนือหน้าผา",
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตดอย",
+      "เงาสันเขา",
+      "ทวารบาลผนึกหิน"
+    ],
+    "proposedResidents": [],
+    "npcs": [
+      "แม่เฒ่าสายหมอก",
+      "ครูเฒ่าผนึกหิน",
+      "พรานยอดดอย"
+    ],
+    "connections": [
+      {
+        "id": "monsoon-marsh",
+        "status": "live"
+      },
+      {
+        "id": "mist-bamboo",
+        "status": "live"
+      },
+      {
+        "id": "spirit-waterfall",
+        "status": "planned"
+      },
+      {
+        "id": "moon-ritual-ridge",
+        "status": "planned"
+      },
+      {
+        "id": "ashwind-volcano",
+        "status": "planned"
+      },
+      {
+        "id": "storm-seal-coast",
+        "status": "planned"
+      },
+      {
+        "id": "storm-fjord",
+        "status": "planned"
+      },
+      {
+        "id": "golden-spiritwood",
+        "status": "planned"
+      },
+      {
+        "id": "frost-pine",
+        "status": "planned"
+      },
+      {
+        "id": "amber-grassland",
+        "status": "planned"
+      },
+      {
+        "id": "ancestral-grave-garden",
+        "status": "planned"
+      },
+      {
+        "id": "salt-mirror-basin",
+        "status": "planned"
+      }
+    ],
+    "source": "authoritative MAPS / existing MONSTERS"
+  },
+  "mist-bamboo": {
+    "climate": "ป่าไผ่เชิงเขามีหมอก",
+    "landmark": "ซุ้มไผ่หักรูปวงแหวน",
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตไผ่คราม",
+      "เงาดงไผ่",
+      "ผู้เฝ้าผนึกไผ่"
+    ],
+    "proposedResidents": [],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "cloud-tea-slopes",
+        "status": "planned"
+      },
+      {
+        "id": "mountain-spirit-sanctuary",
+        "status": "live"
+      }
+    ],
+    "source": "authoritative MAPS / existing MONSTERS"
+  },
+  "cloud-tea-slopes": {
+    "climate": "ที่สูงเย็นชื้น",
+    "landmark": "ศาลากังหันบนสันเขา",
+    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
+    "residents": [],
+    "proposedResidents": [
+      "ภูตใบชาขม",
+      "หมูป่ามอส",
+      "นกหมอกอาคม"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "mist-bamboo",
+        "status": "planned"
+      }
+    ],
+    "source": "leveling-20-proposal + world-30 proposal"
+  },
+  "spirit-waterfall": {
+    "climate": "หุบเขาฝนจัด",
+    "landmark": "น้ำตกสองชั้นหลังศาลหิน",
+    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
+    "residents": [],
+    "proposedResidents": [
+      "ภูตฟองน้ำ",
+      "ปูหินตะไคร่",
+      "ทวารบาลดินเผา"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "monsoon-ruins",
+        "status": "planned"
+      },
+      {
+        "id": "mountain-spirit-sanctuary",
+        "status": "planned"
+      }
+    ],
+    "source": "leveling-20-proposal + world-30 proposal"
+  },
+  "monsoon-ruins": {
+    "climate": "ซากเมืองเขตร้อนมรสุม",
+    "landmark": "เจดีย์แตกกับรากไม้ขนาดใหญ่",
+    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
+    "residents": [],
+    "proposedResidents": [
+      "หน้ากากร้าว",
+      "ทวารบาลเถาวัลย์",
+      "ภูตประทีปดับ"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "spirit-waterfall",
+        "status": "planned"
+      }
+    ],
+    "source": "leveling-20-proposal + world-30 proposal"
+  },
+  "moon-ritual-ridge": {
+    "climate": "สันเขาลมหนาว / ป่าเมฆ",
+    "landmark": "ลานพิธีใต้ระฆังสันเขา",
+    "activities": "ข้อเสนอ: ล่าตามสันเขา · สำรวจลานพิธี",
+    "residents": [],
+    "proposedResidents": [
+      "ภูตระฆัง",
+      "เงานักเดินเขา"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "spirit-funeral-road",
+        "status": "planned"
+      },
+      {
+        "id": "mountain-spirit-sanctuary",
+        "status": "planned"
+      }
+    ],
+    "source": "world-atlas-art-01 new proposal; no approved gameplay layout"
+  },
+  "spirit-funeral-road": {
+    "climate": "ป่าหมอกเย็น / ทางหินเก่า",
+    "landmark": "ศาลประตูส่งวิญญาณ",
+    "activities": "ข้อเสนอ: สำรวจทางวิญญาณ · เผชิญกลุ่มผู้เฝ้าทาง",
+    "residents": [],
+    "proposedResidents": [
+      "วิญญาณหลงทาง",
+      "เงาผู้เฝ้าประตู"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "moon-ritual-ridge",
+        "status": "planned"
+      }
+    ],
+    "source": "world-atlas-art-01 new proposal; no approved gameplay layout"
+  },
+  "ashwind-volcano": {
+    "climate": "ภูเขาไฟร้อนแห้ง",
+    "landmark": "ปล่องแตกกับศาลหินดำ",
+    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
+    "residents": [],
+    "proposedResidents": [
+      "ภูตถ่าน",
+      "ทวารบาลหินดำ",
+      "แมงป่องเถ้า"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "ember-caldera",
+        "status": "planned"
+      },
+      {
+        "id": "mountain-spirit-sanctuary",
+        "status": "planned"
+      }
+    ],
+    "source": "leveling-20-proposal + world-30 proposal"
+  },
+  "ember-caldera": {
+    "climate": "แอ่งภูเขาไฟไอน้ำร้อน",
+    "landmark": "วงพิธีบนเกาะหินกลางปล่อง",
+    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
+    "residents": [],
+    "proposedResidents": [
+      "ผู้เฝ้าถ่านอาคม",
+      "ภูตควันแดง",
+      "ด้วงเปลือกหินร้อน"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "ashwind-volcano",
+        "status": "planned"
+      },
+      {
+        "id": "storm-seal-plateau",
+        "status": "planned"
+      }
+    ],
+    "source": "leveling-20-proposal + world-30 proposal"
+  },
+  "storm-seal-coast": {
+    "climate": "ชายฝั่งมรสุม / ลมทะเล",
+    "landmark": "หอผนึกพายุริมฝั่ง",
+    "activities": "ข้อเสนอ: เก็บวัตถุดิบชายฝั่ง · สำรวจเส้นทางเสบียง",
+    "residents": [],
+    "proposedResidents": [
+      "ภูตคลื่น",
+      "เงาเรือต้องสาป"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "ancestral-lantern-isles",
+        "status": "planned"
+      },
+      {
+        "id": "mountain-spirit-sanctuary",
+        "status": "planned"
+      }
+    ],
+    "source": "world-atlas-art-01 new proposal; no approved gameplay layout"
+  },
+  "ancestral-lantern-isles": {
+    "climate": "หมู่เกาะชื้น / ป่าปาล์ม",
+    "landmark": "ท่าประทีปบรรพชน",
+    "activities": "ข้อเสนอ: สำรวจเกาะ · แลกเปลี่ยนวัตถุดิบระหว่างท่า",
+    "residents": [],
+    "proposedResidents": [
+      "ภูตตะเกียงทะเล",
+      "เงาป่าปาล์ม"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "storm-seal-coast",
+        "status": "planned"
+      }
+    ],
+    "source": "world-atlas-art-01 new proposal; no approved gameplay layout"
+  },
+  "storm-fjord": {
+    "climate": "ชายฝั่งหนาวชื้น",
+    "landmark": "ประภาคารร้าวริมน้ำลึก",
+    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
+    "residents": [],
+    "proposedResidents": [
+      "ปูเกราะน้ำแข็ง",
+      "ภูตเรือแตก",
+      "นกพายุ"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "aurora-pass",
+        "status": "planned"
+      },
+      {
+        "id": "mountain-spirit-sanctuary",
+        "status": "planned"
+      }
+    ],
+    "source": "leveling-20-proposal + world-30 proposal"
+  },
+  "aurora-pass": {
+    "climate": "อัลไพน์หิมะและลมแรง",
+    "landmark": "ซุ้มพิธีใต้ม่านแสงเหนือ",
+    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
+    "residents": [],
+    "proposedResidents": [
+      "ทวารบาลผลึก",
+      "ภูตแสงเหนือ",
+      "วิญญาณแพะผา"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "storm-fjord",
+        "status": "planned"
+      }
+    ],
+    "source": "leveling-20-proposal + world-30 proposal"
+  },
+  "golden-spiritwood": {
+    "climate": "ป่าผลัดใบอบอุ่น",
+    "landmark": "ต้นทองกลางวงหิน",
+    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
+    "residents": [],
+    "proposedResidents": [
+      "ภูตใบแดง",
+      "หมูป่ารากไม้",
+      "หน้ากากเปลือกไม้"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "stone-oath-moor",
+        "status": "planned"
+      },
+      {
+        "id": "mountain-spirit-sanctuary",
+        "status": "planned"
+      }
+    ],
+    "source": "leveling-20-proposal + world-30 proposal"
+  },
+  "stone-oath-moor": {
+    "climate": "ทุ่งชื้นลมหนาว / ป่าโอ๊ก",
+    "landmark": "วงหินคำสัตย์กลางทุ่ง",
+    "activities": "ข้อเสนอ: สำรวจวงหิน · ล่ารอบขอบป่า",
+    "residents": [],
+    "proposedResidents": [
+      "ผู้เฝ้าวงหิน",
+      "เงาสัตว์ป่า"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "golden-spiritwood",
+        "status": "planned"
+      }
+    ],
+    "source": "world-atlas-art-01 new proposal; no approved gameplay layout"
+  },
+  "frost-pine": {
+    "climate": "ป่าสนหนาวแห้ง",
+    "landmark": "ระฆังน้ำแข็งใต้สนยักษ์",
+    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
+    "residents": [],
+    "proposedResidents": [
+      "วิญญาณกวางหิมะ",
+      "ภูตตะเกียงเย็น",
+      "ทวารบาลหินเยือก"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "taiga-blood-trail",
+        "status": "planned"
+      },
+      {
+        "id": "mountain-spirit-sanctuary",
+        "status": "planned"
+      }
+    ],
+    "source": "leveling-20-proposal + world-30 proposal"
+  },
+  "taiga-blood-trail": {
+    "climate": "ไทกาหนาว / ป่าสนดำ",
+    "landmark": "ค่ายพรานตามแนวรอยล่า",
+    "activities": "ข้อเสนอ: ติดตามรอยล่า · เผชิญฝูงมอนสเตอร์",
+    "residents": [],
+    "proposedResidents": [
+      "หมาป่าเงา",
+      "ภูตหิมะ"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "frost-pine",
+        "status": "planned"
+      },
+      {
+        "id": "storm-seal-plateau",
+        "status": "planned"
+      }
+    ],
+    "source": "world-atlas-art-01 new proposal; no approved gameplay layout"
+  },
+  "amber-grassland": {
+    "climate": "ทุ่งกึ่งแห้งแล้ง",
+    "landmark": "ต้นไม้เดี่ยวกับหินพิธี",
+    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
+    "residents": [],
+    "proposedResidents": [
+      "หมูป่าหนาม",
+      "นกเถ้าทุ่ง",
+      "หุ่นฟางลมแล้ง"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "red-wind-canyon",
+        "status": "planned"
+      },
+      {
+        "id": "mountain-spirit-sanctuary",
+        "status": "planned"
+      }
+    ],
+    "source": "leveling-20-proposal + world-30 proposal"
+  },
+  "red-wind-canyon": {
+    "climate": "หุบเขาแห้งลมแรง",
+    "landmark": "เสาหินแดงโอบประตูเก่า",
+    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
+    "residents": [],
+    "proposedResidents": [
+      "แมงป่องอาคม",
+      "ภูตฝุ่นแดง",
+      "ทวารบาลหินทราย"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "amber-grassland",
+        "status": "planned"
+      }
+    ],
+    "source": "leveling-20-proposal + world-30 proposal"
+  },
+  "ancestral-grave-garden": {
+    "climate": "ป่าชื้น / สวนสุสาน",
+    "landmark": "สวนหินบรรพชนใต้ไม้ใหญ่",
+    "activities": "ข้อเสนอ: สำรวจสวนสุสาน · ล่ารอบลานบรรพชน",
+    "residents": [],
+    "proposedResidents": [
+      "เงาสุสาน",
+      "ภูตไม้ฝังราก"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "veiled-spirit-harbor",
+        "status": "planned"
+      },
+      {
+        "id": "mountain-spirit-sanctuary",
+        "status": "planned"
+      }
+    ],
+    "source": "world-atlas-art-01 new proposal; no approved gameplay layout"
+  },
+  "veiled-spirit-harbor": {
+    "climate": "ท่าป่าชื้น / หมอกทะเล",
+    "landmark": "ท่าเรือม่านดำและศาลริมอ่าว",
+    "activities": "ข้อเสนอ: สำรวจโกดังเก่า · เผชิญกลุ่มวิญญาณริมท่า",
+    "residents": [],
+    "proposedResidents": [
+      "เงาลูกเรือ",
+      "ภูตท่าเก่า"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "ancestral-grave-garden",
+        "status": "planned"
+      },
+      {
+        "id": "storm-seal-plateau",
+        "status": "planned"
+      }
+    ],
+    "source": "world-atlas-art-01 new proposal; no approved gameplay layout"
+  },
+  "salt-mirror-basin": {
+    "climate": "แอ่งเกลือแห้งจัด",
+    "landmark": "ศาลกระจกเหนือแอ่งน้ำเค็ม",
+    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
+    "residents": [],
+    "proposedResidents": [
+      "ปูเกลือ",
+      "ภูตกระจกเกลือ",
+      "แมงป่องผลึก"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "sunken-oasis",
+        "status": "planned"
+      },
+      {
+        "id": "mountain-spirit-sanctuary",
+        "status": "planned"
+      }
+    ],
+    "source": "leveling-20-proposal + world-30 proposal"
+  },
+  "sunken-oasis": {
+    "climate": "ทะเลทรายกับโอเอซิส",
+    "landmark": "ศาลครึ่งจมใต้เนินทราย",
+    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
+    "residents": [],
+    "proposedResidents": [
+      "ด้วงอาคมทราย",
+      "ผู้เฝ้าบ่อน้ำ",
+      "ภูตโคมทราย"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "salt-mirror-basin",
+        "status": "planned"
+      },
+      {
+        "id": "storm-seal-plateau",
+        "status": "planned"
+      }
+    ],
+    "source": "leveling-20-proposal + world-30 proposal"
+  },
+  "storm-seal-plateau": {
+    "climate": "ที่สูงพายุฝนเย็น",
+    "landmark": "เสาผนึกขนาดใหญ่เรียงตามสันเขา",
+    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
+    "residents": [],
+    "proposedResidents": [
+      "ทวารบาลตราพายุ",
+      "ภูตเมฆดำ",
+      "หน้ากากพิธีร้าว"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "taiga-blood-trail",
+        "status": "planned"
+      },
+      {
+        "id": "veiled-spirit-harbor",
+        "status": "planned"
+      },
+      {
+        "id": "sunken-oasis",
+        "status": "planned"
+      },
+      {
+        "id": "ember-caldera",
+        "status": "planned"
+      },
+      {
+        "id": "broken-seal-sanctum",
+        "status": "planned"
+      }
+    ],
+    "source": "leveling-20-proposal + world-30 proposal"
+  },
+  "broken-seal-sanctum": {
+    "climate": "ภายนอกพายุเย็น ภายในถ้ำแห้ง",
+    "landmark": "ห้องผนึกเปิดสู่รอยแยกบนภูเขา",
+    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
+    "residents": [],
+    "proposedResidents": [
+      "ทวารบาลผนึกแตก",
+      "ภูตประทีปดำ",
+      "หน้ากากผู้เฝ้าพิธี"
+    ],
+    "npcs": [],
+    "connections": [
+      {
+        "id": "storm-seal-plateau",
+        "status": "planned"
+      }
+    ],
+    "source": "leveling-20-proposal + world-30 proposal"
+  }
+}

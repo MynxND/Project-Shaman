@@ -10,6 +10,7 @@ import { SERVICE_PANELS } from './NpcServices';
 import './npc.css';
 
 const TOUR = 'ทางเหนือคือวิหารวิญญาณดำ ตะวันตกคือสำนักฝึกคาถา ตะวันออกคือตลาดเครื่องรางกับโรงต้มสมุนไพร ข้ามสะพานทางใต้ไปเป็นเรือนหมอผีและชุมชนชาวเมือง ส่วนประตูเมืองอยู่สุดถนนทางใต้';
+const MOUNTAIN_TOUR = 'ทางเชิงเขาตะวันตกเชื่อมกลับบึงฝนลืมวิญญาณ บันไดหินสองช่วงผ่านลานพิธีขึ้นมาถึงสำนัก แต่ละช่วงมีชานพัก ตาน้ำอยู่ตะวันออกเฉียงใต้ ทางเชิงเขาตะวันออกเชื่อมไปหุบไผ่หมอกคราม';
 
 /** Shortcuts to existing windows, per role. */
 const LINKS: Partial<Record<NpcDefinition['role'], { label: string; open: () => void }[]>> = {
@@ -41,10 +42,10 @@ export function NpcDialog({ npcId }: { npcId: string }) {
         <div className="sk-frame-10 sk-panel npc-portrait"><img className="sk-pixel" src={`/assets/umbral/npcs/${npc.sprite}.png`} alt="" /></div>
         <div className="npc-talk">
           <p className="npc-line">“{npc.greeting}”</p>
-          {npc.role === 'guide' && <p className="npc-line sk-muted">{TOUR}</p>}
+          {npc.role === 'guide' && <p className="npc-line sk-muted">{npc.id==='mountain-keeper'?MOUNTAIN_TOUR:TOUR}</p>}
           {Panel && (profile ? <Panel npc={npc} profile={profile} /> : <p className="sk-muted">ยังไม่ได้เชื่อมต่อเซิร์ฟเวอร์ บริการของ NPC ใช้ได้เมื่อออนไลน์</p>)}
           <div className="npc-options">
-            {(LINKS[npc.role] ?? []).map((l) => <Button key={l.label} onClick={() => { close(); l.open(); }}>{l.label}</Button>)}
+            {(LINKS[npc.role] ?? []).map((l) => <Button key={l.label} onClick={() => { close(); l.open(); }}>{npc.id==='mountain-keeper'&&l.open===openWorldMap?'เปิดแผนที่โลก':l.label}</Button>)}
             <Button onClick={close}>ลาก่อน</Button>
           </div>
         </div>

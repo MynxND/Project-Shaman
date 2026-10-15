@@ -1,0 +1,214 @@
+# TASK: Implement Premium Animated Water for My 2D Shaman MMORPG
+
+You are a senior 2D game graphics engineer, pixel-art technical artist, and environmental animation specialist.
+
+Upgrade the existing water rendering system in my 2D browser-based MMORPG.
+
+The game has a dark Southeast Asian Shaman / Spirit Fantasy theme with detailed pixel-art environments.
+
+**Main objective: Make all water surfaces feel alive and continuously animated, with natural flow, ripples, reflections, and shoreline interactions.**
+
+The water must visually match the existing high-quality pixel-art environment.
+
+## 1. Inspect Existing Water System
+
+Before modifying code:
+
+- Identify the current game renderer (Canvas 2D, PixiJS, Phaser, Three.js, or another engine).
+- Inspect existing water textures, tilesets, tilemap layers, shaders, and rendering logic.
+- Identify tile dimensions, texture filtering, camera zoom, and rendering resolution.
+- Locate every water type currently used in the maps.
+- Inspect water collision and terrain transitions.
+
+Preserve all existing functionality and comments.
+
+Do not rewrite unrelated systems.
+
+## 2. Continuous Water Animation
+
+Implement seamless, continuously looping water animation.
+
+Requirements:
+
+- Water must visibly move at all times.
+- Avoid static water textures.
+- Avoid obvious repeated scrolling patterns.
+- Use a continuous animation clock.
+- Ensure animation loops seamlessly without visible jumps.
+- Keep neighboring water tiles synchronized.
+- Prevent seams between adjacent water tiles.
+- Use world-space coordinates so animation does not reset or slide when the camera moves.
+
+Prefer animated sprite textures or pixel-art-compatible shaders based on the existing renderer.
+
+Do not apply excessive smooth distortion that destroys the pixel-art style.
+
+## 3. Water Flow Direction
+
+Support different water behaviors.
+
+### Rivers and Streams
+
+- Water should visibly flow downstream.
+- Support configurable flow directions.
+- Animate subtle directional ripples.
+- Add occasional small foam streaks.
+- Increase movement speed in narrow channels.
+- Add subtle turbulence near rocks and obstacles.
+
+### Lakes and Ponds
+
+- Use slower, mostly stationary water motion.
+- Add gentle surface ripples.
+- Create subtle light and dark variations.
+- Animate occasional circular ripples.
+- Avoid strong directional scrolling.
+
+### Swamps and Cursed Water
+
+- Use dark teal, deep green, and muddy blue tones.
+- Add very slow, irregular surface movement.
+- Introduce subtle supernatural shimmer.
+- Add occasional eerie ripple effects.
+- Keep the atmosphere mysterious rather than cartoonish.
+
+### Waterfalls
+
+- Animate downward-flowing water.
+- Add foam and splashes at the base.
+- Support looping waterfall textures.
+- Add subtle mist particles where appropriate.
+
+## 4. Pixel-Art Water Rendering
+
+Maintain crisp pixel-art visuals.
+
+Requirements:
+
+- Nearest-neighbor texture filtering where appropriate.
+- No blurry texture interpolation.
+- No excessive bloom or modern glossy water effects.
+- Keep pixel density consistent with existing terrain.
+- Use a restrained color palette matching the Shaman world.
+- Preserve sharp silhouettes of shorelines and obstacles.
+- Avoid random noise that resembles television static.
+
+Use actual animated water artwork where available.
+
+If new textures are required, identify and generate an asset specification instead of substituting low-quality procedural noise.
+
+## 5. Animated Shorelines
+
+Improve water interaction with terrain.
+
+Implement:
+
+- Gentle water movement along grass and muddy shores.
+- Animated foam near rocks and hard edges.
+- Subtle wet-edge transitions.
+- Ripples near wooden docks and bridge supports.
+- Small movement around reeds and floating vegetation.
+- Correct water-to-land autotile transitions.
+
+Shoreline animation must not alter collision geometry.
+
+## 6. Layered Water Rendering
+
+Where supported, organize water rendering into layers:
+
+Layer 1: Base water color and texture.
+
+Layer 2: Continuous flow animation.
+
+Layer 3: Surface ripples and subtle highlights.
+
+Layer 4: Shoreline foam and interaction effects.
+
+Layer 5: Optional environmental reflections and particles.
+
+Use a performant approach. Do not add unnecessary draw calls for every tile.
+
+## 7. Animation Timing
+
+Use configurable animation settings with these initial values:
+
+- River flow: moderate, clearly visible movement.
+- Lake ripples: slow and gentle.
+- Swamp movement: very slow and irregular.
+- Waterfall flow: fast and continuous.
+- Shoreline foam: slow looping animation.
+- Ripple effects: randomized intervals using deterministic seeded randomness.
+
+Do not hardcode one speed for every water type.
+
+## 8. Performance Optimization
+
+The game must remain suitable for a browser-based MMORPG.
+
+Implement:
+
+- Shared animation clocks.
+- Reusable texture atlases.
+- Chunk-based or visible-region rendering where appropriate.
+- Minimal texture switching.
+- No per-tile animation timers.
+- No unnecessary allocation inside the render loop.
+- Proper resource cleanup.
+- Frame-rate-independent animation timing.
+
+Target smooth rendering at 60 FPS on supported hardware.
+
+## 9. Water Preview and Debug Controls
+
+Create a water animation preview that allows me to:
+
+- Switch between river, pond, swamp, and waterfall.
+- Adjust flow speed.
+- Adjust ripple intensity.
+- Adjust water color.
+- Toggle shoreline effects.
+- Pause and resume animation.
+- Compare before and after.
+
+The preview must use the actual game rendering system, not a separate fake demonstration.
+
+## 10. Preserve Gameplay
+
+Do not modify:
+
+- Player movement.
+- Water collision rules.
+- Monster navigation.
+- Map boundaries.
+- Existing quests.
+- NPC behavior.
+- Map transition logic.
+- Existing comments.
+
+Only improve the visual water rendering system and necessary integration points.
+
+## 11. Verification
+
+After implementation:
+
+1. Test water animation on all existing maps.
+2. Verify that water moves continuously.
+3. Check for visible seams between tiles.
+4. Verify that camera movement does not cause texture sliding.
+5. Confirm that animation speed is independent of FPS.
+6. Test water edges, bridges, rocks, and vegetation.
+7. Measure performance before and after.
+8. Capture screenshots and a short animation preview.
+9. Report remaining limitations and missing assets.
+
+Do not claim the water is animated correctly based only on static screenshots.
+
+## Final Visual Target
+
+Premium, atmospheric, continuously animated pixel-art water suitable for a dark Shaman MMORPG.
+
+The water should feel naturally alive, with different motion patterns for rivers, ponds, swamps, and waterfalls.
+
+Prioritize seamless animation, visual quality, pixel-art consistency, and performance.
+
+Start by inspecting the current renderer and water assets. Implement one working animated-water prototype before applying it to every map.

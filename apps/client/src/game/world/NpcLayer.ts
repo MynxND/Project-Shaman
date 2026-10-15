@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import { nearestNpc, NPC_TALK_RANGE, WORLD_UNIT_PX, type MapDefinition, type NpcDefinition, type Position } from '@shaman/shared';
+import { projectedY, nearestNpc, NPC_TALK_RANGE, WORLD_UNIT_PX, type MapDefinition, type NpcDefinition, type Position } from '@shaman/shared';
 import { addContactShadow, DARKNESS_DEPTH } from './Lighting';
 
 // Town NPCs: front-facing PixelLab sprites drawn like the player (128 px frame at half scale), a name plate and a
@@ -50,10 +50,10 @@ export class NpcLayer {
     for (const npc of map.npcs ?? []) {
       const entry = manifest?.npcs?.[npc.sprite];
       if (!entry) continue;
-      const x = npc.x * U, y = npc.y * U;
+      const x = npc.x * U, y = projectedY(map,npc.x,npc.y);
       scene.textures.get(npcKey(npc.sprite)).setFilter(Phaser.Textures.FilterMode.NEAREST);
       const sprite = scene.add.image(x, y, npcKey(npc.sprite))
-        .setOrigin(entry.anchor.x / entry.width, entry.anchor.y / entry.height).setScale(NPC_SCALE).setDepth(y)
+        .setOrigin(entry.anchor.x / entry.width, entry.anchor.y / entry.height).setScale(NPC_SCALE).setDepth(npc.y*U)
         .setInteractive({ useHandCursor: true, pixelPerfect: true });
       sprite.on(Phaser.Input.Events.GAMEOBJECT_POINTER_DOWN, () => this.request(npc));
       addContactShadow(scene, x, y - 1, 26);
