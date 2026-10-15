@@ -1,0 +1,90 @@
+{
+  "provider": "imagegen",
+  "generations": 1,
+  "source": "source.png",
+  "dimensions": [
+    1086,
+    1448
+  ],
+  "sourceSha256": "006e03d32363d0b979f23e06d87c760cf7e1ca9035e5dbca8005ea194c560d63",
+  "alpha": "original preserved",
+  "frames": {
+    "torii": {
+      "x": 12,
+      "y": 40,
+      "w": 346,
+      "h": 344
+    },
+    "shrine": {
+      "x": 356,
+      "y": 14,
+      "w": 385,
+      "h": 368
+    },
+    "pavilion": {
+      "x": 758,
+      "y": 70,
+      "w": 322,
+      "h": 317
+    },
+    "cedar": {
+      "x": 25,
+      "y": 377,
+      "w": 324,
+      "h": 446
+    },
+    "sakura": {
+      "x": 353,
+      "y": 400,
+      "w": 434,
+      "h": 418
+    },
+    "lantern": {
+      "x": 817,
+      "y": 407,
+      "w": 225,
+      "h": 398
+    },
+    "bridge": {
+      "x": 16,
+      "y": 893,
+      "w": 344,
+      "h": 179
+    },
+    "rock": {
+      "x": 369,
+      "y": 831,
+      "w": 344,
+      "h": 272
+    },
+    "house": {
+      "x": 712,
+      "y": 816,
+      "w": 369,
+      "h": 288
+    },
+    "moss": {
+      "x": 24,
+      "y": 1124,
+      "w": 328,
+      "h": 306
+    },
+    "soil": {
+      "x": 386,
+      "y": 1124,
+      "w": 321,
+      "h": 306
+    },
+    "road": {
+      "x": 742,
+      "y": 1124,
+      "w": 327,
+      "h": 306
+    }
+  },
+  "fallback": "PixelLab balance0; ComfyUI8188 unavailable",
+  "references": [
+    "https://www.japan.travel/en/guide/shrine-and-temple-traditions/",
+    "https://www.japan.travel/en/spot/630/"
+  ]
+}
