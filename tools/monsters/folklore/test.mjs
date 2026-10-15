@@ -21,9 +21,11 @@ for(const s of Object.values(manifest.monsters)){
  for(const a of ['attack','hurt','death'])for(let k=0;k<4;k++)assert.equal(model.monsterMotionOffset(s,a,k,4),0);
  if(s.motionProfile){for(let k=0;k<4;k++){assert(Number.isInteger(model.monsterMotionOffset(s,'move',k,4)));assert.equal(model.monsterMotionOffset(s,'move',k,4),model.monsterMotionOffset(s,'move',k+4,4));}}
 }
+for(const[id,s]of Object.entries(manifest.monsters).filter(([id])=>FOLKLORE_RESIDENTS[id]))assert.equal(Math.round(model.monsterImpactFrame(s,s.animations.attack)*1000/s.animations.attack.fps),MONSTERS[id].attackWindupMs,'review/server launch timing '+id);
 const layerSource=await readFile('apps/client/src/game/world/MonsterLayer.ts','utf8');
 const layerJs=transpileModule(layerSource,{compilerOptions:{module:ModuleKind.ESNext,target:ScriptTarget.ES2022}}).outputText
  .replace(/import Phaser from 'phaser';/, 'const Phaser={};')
+ .replace(/import \{ MonsterOrbLayer \} from '\.\/MonsterOrbLayer';/, 'class MonsterOrbLayer{update(){}destroy(){}}')
  .replace(/from '\.\/monster-sprite-model'/, 'from '+JSON.stringify('data:text/javascript;base64,'+Buffer.from(js).toString('base64')))
  .replace(/from '@shaman\/shared'/g,'from '+JSON.stringify(new URL('../../../packages/shared/dist/index.js',import.meta.url).href))
  .replace(/import \{ addContactShadow, DARKNESS_DEPTH \} from '\.\/Lighting';/, 'const DARKNESS_DEPTH=0;');

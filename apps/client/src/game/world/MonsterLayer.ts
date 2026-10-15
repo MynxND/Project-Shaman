@@ -4,6 +4,7 @@ import type {Facing} from '@shaman/shared';
 import type { MonsterState } from '@shaman/schema';
 import { projectedY, type MapDefinition, MONSTER_STATUS_TH, MONSTERS, WORLD_UNIT_PX } from '@shaman/shared';
 import { addContactShadow, DARKNESS_DEPTH } from './Lighting';
+import { MonsterOrbLayer } from './MonsterOrbLayer';
 
 // Monsters drawn from the synced room state (positions/HP/state come from the server) plus the combat feedback the
 // server broadcasts: swings, hurt flashes, damage numbers, deaths and level-ups. Sprites are PixelLab sheets built by
@@ -70,10 +71,12 @@ export interface MonsterLayerHooks {
 }
 
 export class MonsterLayer {
+  private readonly orbs:MonsterOrbLayer;
   private readonly manifest: Manifest | undefined;
   private readonly views = new Map<string, View>();
 
   constructor(private readonly scene: Phaser.Scene, private readonly hooks: MonsterLayerHooks, private readonly map?:MapDefinition) {
+    this.orbs=new MonsterOrbLayer(scene);
     this.manifest = scene.cache.json.get(MANIFEST_KEY) as Manifest | undefined;
     for (const [kind, s] of Object.entries(this.manifest?.monsters ?? {})) {
       if (!scene.textures.exists(sheetKey(kind))) continue;
@@ -129,6 +132,7 @@ export class MonsterLayer {
   }
 
   update(monsters: Map<string, MonsterState> | undefined, time: number, delta: number) {
+    this.orbs.update();
     const U = WORLD_UNIT_PX;
     const follow = 1 - Math.pow(1 - FOLLOW, delta / (1000 / 60));
     const seen = new Set<string>();
@@ -207,7 +211,11 @@ export class MonsterLayer {
       const at = this.hooks.playerAt(e.target.id);
       if (at) this.floatText(at.x, at.y - 52, `+${e.amount}`, '#8dffb0', 13);
     } else if (e.type === 'projectile') {
-      this.projectile(e.from, e.to, e.flightMs);
+      const family=MONSTERS[e.kind]?.projectile?.family,view=this.views.get(e.from);
+      if(family&&view){
+        const target=e.aim?{x:e.aim.x*WORLD_UNIT_PX,y:this.y(e.aim.x,e.aim.y)}:this.hooks.playerAt(e.to);
+        if(target)this.orbs.launch({x:view.sprite.x,y:view.sprite.y-view.height*.5},{x:target.x,y:target.y-26},e.flightMs,family);
+      }else this.projectile(e.from, e.to, e.flightMs);
     } else if (e.type === 'bolt') {
       this.bolt(e.from, e.to, e.flightMs);
     } else if (e.type === 'telegraph') {
@@ -307,7 +315,7 @@ export class MonsterLayer {
   }
 
   private destroyView(v: View) { v.sprite.destroy(); v.shadow.destroy(); v.ring.destroy(); v.label.destroy(); v.bar.destroy(); }
-  destroy() { for (const v of this.views.values()) this.destroyView(v); this.views.clear();this.logicalPositions.clear(); }
+  destroy() { this.orbs.destroy();for (const v of this.views.values()) this.destroyView(v); this.views.clear();this.logicalPositions.clear(); }
 }
 
 /** The subset of the server's combat events this layer draws (see apps/server/src/rooms/combat-system.ts). */
@@ -318,7 +326,7 @@ export type CombatEventLike =
   | { type: 'death'; target: { kind: 'player' | 'monster'; id: string }; killer?: string }
   | { type: 'levelup'; player: string; level: number }
   | { type: 'loot'; player: string; items: { itemId: string; qty: number }[] }
-  | { type: 'projectile'; from: string; to: string; kind: string; flightMs: number }
+  | { type: 'projectile'; from: string; to: string; kind: string; flightMs: number; origin?:{x:number;y:number}; aim?:{x:number;y:number} }
   | { type: 'telegraph'; source: string; x: number; y: number; radius: number; ms: number }
   | { type: 'summon'; source: string; ids: string[] }
   | { type: 'arrow'; from: string; to: string; flightMs: number }

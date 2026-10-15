@@ -94,9 +94,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 15,
     "mdef": 13,
     "speed": 2.1,
-    "aggroRange": 3.5,
-    "leash": 5,
-    "attackRange": 1.3,
+    "aggroRange": 5.5,
+    "leash": 7.5,
+    "attackRange": 4.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 480,
@@ -116,6 +116,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         4800
       ],
       "radius": 1.3
+    },
+    "projectile": {
+      "speed": 7,
+      "family": "spirit"
     }
   },
   "phi-krahang": {
@@ -211,9 +215,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 37,
     "mdef": 30,
     "speed": 1.6,
-    "aggroRange": 3.5,
-    "leash": 5,
-    "attackRange": 1.3,
+    "aggroRange": 5.5,
+    "leash": 7.5,
+    "attackRange": 4.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1536,
@@ -233,6 +237,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         4800
       ],
       "radius": 1.3
+    },
+    "projectile": {
+      "speed": 7,
+      "family": "spirit"
     }
   },
   "kuchisake-onna": {
@@ -328,9 +336,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 28,
     "mdef": 23,
     "speed": 1.6,
-    "aggroRange": 3.5,
-    "leash": 5,
-    "attackRange": 1.3,
+    "aggroRange": 5.5,
+    "leash": 7.5,
+    "attackRange": 4.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1104,
@@ -350,6 +358,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         4800
       ],
       "radius": 1.3
+    },
+    "projectile": {
+      "speed": 7,
+      "family": "spirit"
     }
   },
   "gashadokuro": {
@@ -406,9 +418,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 25,
     "mdef": 21,
     "speed": 1.6,
-    "aggroRange": 3.5,
-    "leash": 5,
-    "attackRange": 1.3,
+    "aggroRange": 5.5,
+    "leash": 7.5,
+    "attackRange": 4.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 125,
     "exp": 960,
@@ -428,6 +440,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         4800
       ],
       "radius": 1.3
+    },
+    "projectile": {
+      "speed": 7,
+      "family": "binding"
     }
   },
   "mulgwishin": {
@@ -445,9 +461,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 29,
     "mdef": 24,
     "speed": 1.6,
-    "aggroRange": 3.5,
-    "leash": 5,
-    "attackRange": 1.3,
+    "aggroRange": 5.5,
+    "leash": 7.5,
+    "attackRange": 4.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1152,
@@ -467,6 +483,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         4800
       ],
       "radius": 1.3
+    },
+    "projectile": {
+      "speed": 7,
+      "family": "spirit"
     }
   },
   "dalgyal-gwishin": {
@@ -562,9 +582,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 32,
     "mdef": 27,
     "speed": 1.6,
-    "aggroRange": 3.5,
-    "leash": 5,
-    "attackRange": 1.3,
+    "aggroRange": 5.5,
+    "leash": 7.5,
+    "attackRange": 4.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1320,
@@ -584,6 +604,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         4800
       ],
       "radius": 1.3
+    },
+    "projectile": {
+      "speed": 7,
+      "family": "yantra"
     }
   },
   "chonggak-gwishin": {
@@ -601,9 +625,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 27,
     "mdef": 22,
     "speed": 1.6,
-    "aggroRange": 3.5,
-    "leash": 5,
-    "attackRange": 1.3,
+    "aggroRange": 5.5,
+    "leash": 7.5,
+    "attackRange": 4.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1056,
@@ -623,6 +647,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         4800
       ],
       "radius": 1.3
+    },
+    "projectile": {
+      "speed": 7,
+      "family": "binding"
     }
   },
   "rusalka": {
@@ -640,9 +668,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 38,
     "mdef": 31,
     "speed": 1.6,
-    "aggroRange": 3.5,
-    "leash": 5,
-    "attackRange": 1.3,
+    "aggroRange": 5.5,
+    "leash": 7.5,
+    "attackRange": 4.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 125,
     "exp": 1584,
@@ -662,6 +690,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         4800
       ],
       "radius": 1.3
+    },
+    "projectile": {
+      "speed": 7,
+      "family": "spirit"
     }
   },
   "leshy": {
@@ -796,9 +828,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 47,
     "mdef": 39,
     "speed": 1.6,
-    "aggroRange": 3.5,
-    "leash": 5,
-    "attackRange": 1.3,
+    "aggroRange": 5.5,
+    "leash": 7.5,
+    "attackRange": 4.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 2040,
@@ -818,6 +850,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         4800
       ],
       "radius": 1.3
+    },
+    "projectile": {
+      "speed": 7,
+      "family": "spirit"
     }
   },
   "bannik": {
@@ -952,9 +988,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 35,
     "mdef": 29,
     "speed": 1.6,
-    "aggroRange": 3.5,
-    "leash": 5,
-    "attackRange": 1.3,
+    "aggroRange": 5.5,
+    "leash": 7.5,
+    "attackRange": 4.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1440,
@@ -974,6 +1010,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         4800
       ],
       "radius": 1.3
+    },
+    "projectile": {
+      "speed": 7,
+      "family": "spirit"
     }
   },
   "uppvakningur": {
@@ -1030,9 +1070,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 40,
     "mdef": 33,
     "speed": 1.6,
-    "aggroRange": 3.5,
-    "leash": 5,
-    "attackRange": 1.3,
+    "aggroRange": 5.5,
+    "leash": 7.5,
+    "attackRange": 4.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1680,
@@ -1052,6 +1092,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         4800
       ],
       "radius": 1.3
+    },
+    "projectile": {
+      "speed": 7,
+      "family": "binding"
     }
   },
   "tilberi": {
@@ -1147,9 +1191,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 24,
     "mdef": 20,
     "speed": 1.6,
-    "aggroRange": 3.5,
-    "leash": 5,
-    "attackRange": 1.3,
+    "aggroRange": 5.5,
+    "leash": 7.5,
+    "attackRange": 4.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 912,
@@ -1169,6 +1213,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         4800
       ],
       "radius": 1.3
+    },
+    "projectile": {
+      "speed": 7,
+      "family": "binding"
     }
   },
   "e-gui": {
@@ -1225,9 +1273,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 23,
     "mdef": 19,
     "speed": 1.6,
-    "aggroRange": 3.5,
-    "leash": 5,
-    "attackRange": 1.3,
+    "aggroRange": 5.5,
+    "leash": 7.5,
+    "attackRange": 4.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 864,
@@ -1247,6 +1295,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         4800
       ],
       "radius": 1.3
+    },
+    "projectile": {
+      "speed": 7,
+      "family": "spirit"
     }
   },
   "wutou-gui": {
@@ -1303,9 +1355,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 27,
     "mdef": 23,
     "speed": 1.6,
-    "aggroRange": 3.5,
-    "leash": 5,
-    "attackRange": 1.3,
+    "aggroRange": 5.5,
+    "leash": 7.5,
+    "attackRange": 4.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1080,
@@ -1325,6 +1377,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         4800
       ],
       "radius": 1.3
+    },
+    "projectile": {
+      "speed": 7,
+      "family": "yantra"
     }
   },
   "draugen": {
@@ -1420,9 +1476,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 40,
     "mdef": 33,
     "speed": 1.6,
-    "aggroRange": 3.5,
-    "leash": 5,
-    "attackRange": 1.3,
+    "aggroRange": 5.5,
+    "leash": 7.5,
+    "attackRange": 4.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1680,
@@ -1442,6 +1498,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         4800
       ],
       "radius": 1.3
+    },
+    "projectile": {
+      "speed": 7,
+      "family": "spirit"
     }
   },
   "fossegrim": {
@@ -1459,9 +1519,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 39,
     "mdef": 32,
     "speed": 1.6,
-    "aggroRange": 3.5,
-    "leash": 5,
-    "attackRange": 1.3,
+    "aggroRange": 5.5,
+    "leash": 7.5,
+    "attackRange": 4.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1632,
@@ -1481,6 +1541,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         4800
       ],
       "radius": 1.3
+    },
+    "projectile": {
+      "speed": 7,
+      "family": "spirit"
     }
   },
   "nisse": {
@@ -1537,9 +1601,9 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
     "def": 43,
     "mdef": 35,
     "speed": 1.6,
-    "aggroRange": 3.5,
-    "leash": 5,
-    "attackRange": 1.3,
+    "aggroRange": 5.5,
+    "leash": 7.5,
+    "attackRange": 4.2,
     "attackDelayMs": 1800,
     "attackWindupMs": 250,
     "exp": 1824,
@@ -1559,6 +1623,10 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         4800
       ],
       "radius": 1.3
+    },
+    "projectile": {
+      "speed": 7,
+      "family": "binding"
     }
   }
 };

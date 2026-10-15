@@ -16,6 +16,7 @@ export const monsterFacing=(value:string):Facing=>(FACINGS as readonly string[])
 export const legacyMonsterFlip=(value:string)=>value==='west'||value==='south-west'||value==='north-west';
 export function monsterClip(sheet:MonsterSheet,action:MonsterAction,facing:Facing){return sheet.directions?.[facing]?.[action]??sheet.animations[action];}
 export function monsterFrames(sheet:MonsterSheet,clip:MonsterClip){return clip.indices??Array.from({length:clip.frames},(_,i)=>clip.row*sheet.columns+i);}
+export function monsterImpactFrame(sheet:MonsterSheet,clip:MonsterClip){return sheet.attackImpactFrame??(clip.frames>=4?2:1);}
 export function monsterAnimationKey(kind:string,action:MonsterAction,sheet:MonsterSheet,facing:Facing){return `monster:${kind}:${action}${sheet.directions?':'+facing:''}`;}
 export function monsterMotionOffset(sheet:MonsterSheet,action:MonsterAction,frame:number,frames:number):number{
  if(!sheet.motionProfile||(action!=='move'&&action!=='idle'))return 0;

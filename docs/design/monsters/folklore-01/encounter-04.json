@@ -1,0 +1,704 @@
+{
+  "version": 4,
+  "note": "Game encounter design; numerical roles provisional. Ireland grouping reconfirmed by user. Korean locations planned, not live.",
+  "mapNations": {
+    "umbral-capital": "global",
+    "whispering-spiritwood": "thailand",
+    "lantern-paddy": "thailand",
+    "moon-mangrove": "thailand",
+    "monsoon-marsh": "thailand",
+    "mountain-spirit-sanctuary": "thailand",
+    "mist-bamboo": "china",
+    "cloud-tea-slopes": "china",
+    "cedar-torii-shrine": "japan",
+    "spirit-waterfall": "japan",
+    "monsoon-ruins": "japan",
+    "snowbound-torii": "japan",
+    "moon-ritual-ridge": "korea",
+    "spirit-funeral-road": "korea",
+    "ashwind-volcano": "indonesia",
+    "ember-caldera": "indonesia",
+    "storm-seal-coast": "philippines",
+    "ancestral-lantern-isles": "philippines",
+    "storm-fjord": "norway",
+    "spirit-timber-harbor": "norway",
+    "aurora-pass": "norway",
+    "golden-spiritwood": "ireland",
+    "stone-oath-moor": "ireland",
+    "willow-wake-village": "ireland",
+    "frost-pine": "russia",
+    "taiga-blood-trail": "russia",
+    "winter-seal-kremlin": "russia",
+    "amber-grassland": "usa",
+    "red-wind-canyon": "usa",
+    "ancestral-grave-garden": "haiti",
+    "veiled-spirit-harbor": "haiti",
+    "salt-mirror-basin": "mexico",
+    "sunken-oasis": "mexico",
+    "storm-seal-plateau": "global",
+    "broken-seal-sanctum": "global",
+    "obsidian-estuary": "indonesia"
+  },
+  "monsters": {
+    "phi-pret": {
+      "nation": "thailand",
+      "role": "melee",
+      "range": 1.8,
+      "locations": [
+        {
+          "mapId": "lantern-paddy",
+          "campIndex": 1,
+          "status": "live"
+        },
+        {
+          "mapId": "monsoon-marsh",
+          "campIndex": 2,
+          "status": "live"
+        }
+      ]
+    },
+    "phi-pop": {
+      "nation": "thailand",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "whispering-spiritwood",
+          "campIndex": 0,
+          "status": "live"
+        },
+        {
+          "mapId": "lantern-paddy",
+          "campIndex": 0,
+          "status": "live"
+        }
+      ]
+    },
+    "phi-krasue": {
+      "nation": "thailand",
+      "role": "ranged",
+      "range": 4.2,
+      "locations": [
+        {
+          "mapId": "moon-mangrove",
+          "campIndex": 1,
+          "status": "live"
+        },
+        {
+          "mapId": "monsoon-marsh",
+          "campIndex": 1,
+          "status": "live"
+        }
+      ],
+      "projectile": {
+        "speed": 7,
+        "family": "spirit"
+      }
+    },
+    "phi-krahang": {
+      "nation": "thailand",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "lantern-paddy",
+          "campIndex": 2,
+          "status": "live"
+        },
+        {
+          "mapId": "mountain-spirit-sanctuary",
+          "campIndex": 1,
+          "status": "live"
+        }
+      ]
+    },
+    "onryo": {
+      "nation": "japan",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "cedar-torii-shrine",
+          "campIndex": 0,
+          "status": "live"
+        },
+        {
+          "mapId": "monsoon-ruins",
+          "campIndex": 0,
+          "status": "live"
+        }
+      ]
+    },
+    "yuki-onna": {
+      "nation": "japan",
+      "role": "ranged",
+      "range": 4.2,
+      "locations": [
+        {
+          "mapId": "snowbound-torii",
+          "campIndex": 1,
+          "status": "live"
+        }
+      ],
+      "projectile": {
+        "speed": 7,
+        "family": "spirit"
+      }
+    },
+    "kuchisake-onna": {
+      "nation": "japan",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "monsoon-ruins",
+          "campIndex": 1,
+          "status": "live"
+        }
+      ]
+    },
+    "rokurokubi": {
+      "nation": "japan",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "cedar-torii-shrine",
+          "campIndex": 2,
+          "status": "live"
+        },
+        {
+          "mapId": "spirit-waterfall",
+          "campIndex": 0,
+          "status": "live"
+        }
+      ]
+    },
+    "ubume": {
+      "nation": "japan",
+      "role": "ranged",
+      "range": 4.2,
+      "locations": [
+        {
+          "mapId": "spirit-waterfall",
+          "campIndex": 1,
+          "status": "live"
+        }
+      ],
+      "projectile": {
+        "speed": 7,
+        "family": "spirit"
+      }
+    },
+    "gashadokuro": {
+      "nation": "japan",
+      "role": "melee",
+      "range": 1.8,
+      "locations": [
+        {
+          "mapId": "monsoon-ruins",
+          "campIndex": 2,
+          "status": "live"
+        }
+      ]
+    },
+    "cheonyeo-gwishin": {
+      "nation": "korea",
+      "role": "ranged",
+      "range": 4.2,
+      "locations": [
+        {
+          "mapId": "moon-ritual-ridge",
+          "status": "planned"
+        }
+      ],
+      "projectile": {
+        "speed": 7,
+        "family": "binding"
+      }
+    },
+    "mulgwishin": {
+      "nation": "korea",
+      "role": "ranged",
+      "range": 4.2,
+      "locations": [
+        {
+          "mapId": "spirit-funeral-road",
+          "status": "planned"
+        }
+      ],
+      "projectile": {
+        "speed": 7,
+        "family": "spirit"
+      }
+    },
+    "dalgyal-gwishin": {
+      "nation": "korea",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "spirit-funeral-road",
+          "status": "planned"
+        }
+      ]
+    },
+    "dokkaebi": {
+      "nation": "korea",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "moon-ritual-ridge",
+          "status": "planned"
+        }
+      ]
+    },
+    "gumiho": {
+      "nation": "korea",
+      "role": "ranged",
+      "range": 4.2,
+      "locations": [
+        {
+          "mapId": "moon-ritual-ridge",
+          "status": "planned"
+        }
+      ],
+      "projectile": {
+        "speed": 7,
+        "family": "yantra"
+      }
+    },
+    "chonggak-gwishin": {
+      "nation": "korea",
+      "role": "ranged",
+      "range": 4.2,
+      "locations": [
+        {
+          "mapId": "spirit-funeral-road",
+          "status": "planned"
+        }
+      ],
+      "projectile": {
+        "speed": 7,
+        "family": "binding"
+      }
+    },
+    "rusalka": {
+      "nation": "russia",
+      "role": "ranged",
+      "range": 4.2,
+      "locations": [
+        {
+          "mapId": "frost-pine",
+          "campIndex": 1,
+          "status": "live"
+        },
+        {
+          "mapId": "taiga-blood-trail",
+          "campIndex": 1,
+          "status": "live"
+        }
+      ],
+      "projectile": {
+        "speed": 7,
+        "family": "spirit"
+      }
+    },
+    "leshy": {
+      "nation": "russia",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "taiga-blood-trail",
+          "campIndex": 2,
+          "status": "live"
+        }
+      ]
+    },
+    "domovoi": {
+      "nation": "russia",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "frost-pine",
+          "campIndex": 0,
+          "status": "live"
+        },
+        {
+          "mapId": "winter-seal-kremlin",
+          "campIndex": 0,
+          "status": "live"
+        }
+      ]
+    },
+    "kikimora": {
+      "nation": "russia",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "taiga-blood-trail",
+          "campIndex": 0,
+          "status": "live"
+        },
+        {
+          "mapId": "winter-seal-kremlin",
+          "campIndex": 1,
+          "status": "live"
+        }
+      ]
+    },
+    "vodyanoy": {
+      "nation": "russia",
+      "role": "ranged",
+      "range": 4.2,
+      "locations": [
+        {
+          "mapId": "taiga-blood-trail",
+          "campIndex": 1,
+          "status": "live"
+        },
+        {
+          "mapId": "winter-seal-kremlin",
+          "campIndex": 2,
+          "status": "live"
+        }
+      ],
+      "projectile": {
+        "speed": 7,
+        "family": "spirit"
+      }
+    },
+    "bannik": {
+      "nation": "russia",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "winter-seal-kremlin",
+          "campIndex": 0,
+          "status": "live"
+        }
+      ]
+    },
+    "draugur": {
+      "nation": "ireland",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "stone-oath-moor",
+          "campIndex": 1,
+          "status": "live"
+        }
+      ]
+    },
+    "afturganga": {
+      "nation": "ireland",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "golden-spiritwood",
+          "campIndex": 0,
+          "status": "live"
+        }
+      ]
+    },
+    "utburdur": {
+      "nation": "ireland",
+      "role": "ranged",
+      "range": 4.2,
+      "locations": [
+        {
+          "mapId": "willow-wake-village",
+          "campIndex": 0,
+          "status": "live"
+        }
+      ],
+      "projectile": {
+        "speed": 7,
+        "family": "spirit"
+      }
+    },
+    "uppvakningur": {
+      "nation": "ireland",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "stone-oath-moor",
+          "campIndex": 2,
+          "status": "live"
+        }
+      ]
+    },
+    "sending": {
+      "nation": "ireland",
+      "role": "ranged",
+      "range": 4.2,
+      "locations": [
+        {
+          "mapId": "golden-spiritwood",
+          "campIndex": 2,
+          "status": "live"
+        }
+      ],
+      "projectile": {
+        "speed": 7,
+        "family": "binding"
+      }
+    },
+    "tilberi": {
+      "nation": "ireland",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "willow-wake-village",
+          "campIndex": 1,
+          "status": "live"
+        }
+      ]
+    },
+    "jiangshi": {
+      "nation": "china",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "mist-bamboo",
+          "campIndex": 0,
+          "status": "live"
+        },
+        {
+          "mapId": "cloud-tea-slopes",
+          "campIndex": 0,
+          "status": "live"
+        }
+      ]
+    },
+    "nu-gui": {
+      "nation": "china",
+      "role": "ranged",
+      "range": 4.2,
+      "locations": [
+        {
+          "mapId": "mist-bamboo",
+          "campIndex": 1,
+          "status": "live"
+        }
+      ],
+      "projectile": {
+        "speed": 7,
+        "family": "binding"
+      }
+    },
+    "e-gui": {
+      "nation": "china",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "cloud-tea-slopes",
+          "campIndex": 1,
+          "status": "live"
+        }
+      ]
+    },
+    "shui-gui": {
+      "nation": "china",
+      "role": "ranged",
+      "range": 4.2,
+      "locations": [
+        {
+          "mapId": "mist-bamboo",
+          "campIndex": 2,
+          "status": "live"
+        },
+        {
+          "mapId": "cloud-tea-slopes",
+          "campIndex": 2,
+          "status": "live"
+        }
+      ],
+      "projectile": {
+        "speed": 7,
+        "family": "spirit"
+      }
+    },
+    "wutou-gui": {
+      "nation": "china",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "cloud-tea-slopes",
+          "campIndex": 1,
+          "status": "live"
+        }
+      ]
+    },
+    "huli-jing": {
+      "nation": "china",
+      "role": "ranged",
+      "range": 4.2,
+      "locations": [
+        {
+          "mapId": "mist-bamboo",
+          "campIndex": 1,
+          "status": "live"
+        },
+        {
+          "mapId": "cloud-tea-slopes",
+          "campIndex": 0,
+          "status": "live"
+        }
+      ],
+      "projectile": {
+        "speed": 7,
+        "family": "yantra"
+      }
+    },
+    "draugen": {
+      "nation": "norway",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "storm-fjord",
+          "campIndex": 0,
+          "status": "live"
+        },
+        {
+          "mapId": "spirit-timber-harbor",
+          "campIndex": 1,
+          "status": "live"
+        }
+      ]
+    },
+    "huldra": {
+      "nation": "norway",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "storm-fjord",
+          "campIndex": 2,
+          "status": "live"
+        },
+        {
+          "mapId": "aurora-pass",
+          "campIndex": 0,
+          "status": "live"
+        }
+      ]
+    },
+    "nokken": {
+      "nation": "norway",
+      "role": "ranged",
+      "range": 4.2,
+      "locations": [
+        {
+          "mapId": "storm-fjord",
+          "campIndex": 1,
+          "status": "live"
+        },
+        {
+          "mapId": "aurora-pass",
+          "campIndex": 1,
+          "status": "live"
+        }
+      ],
+      "projectile": {
+        "speed": 7,
+        "family": "spirit"
+      }
+    },
+    "fossegrim": {
+      "nation": "norway",
+      "role": "ranged",
+      "range": 4.2,
+      "locations": [
+        {
+          "mapId": "storm-fjord",
+          "campIndex": 1,
+          "status": "live"
+        }
+      ],
+      "projectile": {
+        "speed": 7,
+        "family": "spirit"
+      }
+    },
+    "nisse": {
+      "nation": "norway",
+      "role": "melee",
+      "range": 1.3,
+      "locations": [
+        {
+          "mapId": "spirit-timber-harbor",
+          "campIndex": 0,
+          "status": "live"
+        }
+      ]
+    },
+    "mare": {
+      "nation": "norway",
+      "role": "ranged",
+      "range": 4.2,
+      "locations": [
+        {
+          "mapId": "aurora-pass",
+          "campIndex": 2,
+          "status": "live"
+        }
+      ],
+      "projectile": {
+        "speed": 7,
+        "family": "binding"
+      }
+    }
+  },
+  "mapNames": {
+    "umbral-capital": "นครมนตร์ทมิฬ",
+    "whispering-spiritwood": "ชายป่าวิญญาณ",
+    "lantern-paddy": "ทุ่งนาประทีป",
+    "moon-mangrove": "ป่าชายเลนจันทร์ดับ",
+    "monsoon-marsh": "บึงฝนลืมวิญญาณ",
+    "mountain-spirit-sanctuary": "สำนักผนึกบนภูเขา",
+    "mist-bamboo": "หุบไผ่หมอกคราม",
+    "cloud-tea-slopes": "ไร่ชาสันเมฆ",
+    "cedar-torii-shrine": "ศาลเจ้าโทริอิป่าซีดาร์",
+    "spirit-waterfall": "น้ำตกม่านวิญญาณ",
+    "monsoon-ruins": "นครร้างใต้พายุ",
+    "snowbound-torii": "ศาลเจ้าหิมะผนึกเงา",
+    "moon-ritual-ridge": "สันเขาพิธีจันทร์",
+    "spirit-funeral-road": "ทางส่งวิญญาณ",
+    "ashwind-volcano": "ภูเขาไฟเถ้าลม",
+    "ember-caldera": "ปล่องพิธีอัคคี",
+    "storm-seal-coast": "ฝั่งผนึกพายุ",
+    "ancestral-lantern-isles": "หมู่เกาะประทีปบรรพชน",
+    "storm-fjord": "ฟยอร์ดพายุคราม",
+    "spirit-timber-harbor": "ท่าเรือนไม้เฝ้าวิญญาณ",
+    "aurora-pass": "ช่องเขาแสงเหนือ",
+    "golden-spiritwood": "ป่าใบผลัดอาคม",
+    "stone-oath-moor": "ทุ่งคำสัตย์หิน",
+    "willow-wake-village": "หมู่บ้านวิลโลว์ม่านฝน",
+    "frost-pine": "ป่าสนขาว",
+    "taiga-blood-trail": "รอยล่าแห่งไทกา",
+    "winter-seal-kremlin": "ป้อมไม้ผนึกเหมันต์",
+    "amber-grassland": "ทุ่งหญ้าอำพัน",
+    "red-wind-canyon": "หุบผาลมแดง",
+    "ancestral-grave-garden": "สวนสุสานบรรพชน",
+    "veiled-spirit-harbor": "ท่าวิญญาณม่านดำ",
+    "salt-mirror-basin": "ทะเลเกลือกระจก",
+    "sunken-oasis": "โอเอซิสศาลจมทราย",
+    "storm-seal-plateau": "ที่ราบสูงตราพายุ",
+    "broken-seal-sanctum": "วิหารผนึกแตก",
+    "obsidian-estuary": "ปากน้ำออบซิเดียน"
+  }
+}

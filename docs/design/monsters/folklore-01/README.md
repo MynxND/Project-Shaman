@@ -44,3 +44,8 @@ The earlier coarse runtime review did not establish correct walking biomechanics
 ## Current animation repair03
 
 The user subsequently authorized all audit02 repairs. The current runtime adopts22 replacement walk cycles, hop/flight/hover/coil presentation, five death transitions, targeted attack views and uniform Sending attack scaling. See [repair03 sources, exceptions, evidence and reproduction commands](repair-03/README.md).28 versioned atlases preserve all40 originals; user visual approval remains pending. The original `pack.py` workflow above reconstructs the historical baseline only: use the repair03 pipeline afterward to retain current repairs. Do not equate technical validation or four timing beats with four new drawings or final gait approval.
+
+
+## Current ranged encounters04
+
+Reuse repair03 poses with17 ranged pixel-orb attacks and23 melee roles. Current34 species retain country-correct live placements; Korea6 have explicit planned habitats only. User reconfirmed Ireland grouping under game lore. Canonical encounter-04.json drives publishing, habitat guards and preview labels. See [implementation, validation and all40 placements](encounter-04/README.md). No new image generation.

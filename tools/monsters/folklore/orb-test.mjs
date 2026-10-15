@@ -1,0 +1,12 @@
+import assert from'node:assert/strict';import{readFile}from'node:fs/promises';import{transpileModule,ModuleKind,ScriptTarget}from'typescript';
+const transpile=s=>transpileModule(s,{compilerOptions:{module:ModuleKind.ESNext,target:ScriptTarget.ES2022}}).outputText;
+const uri=s=>'data:text/javascript;base64,'+Buffer.from(s).toString('base64');
+const shared=new URL('../../../packages/shared/dist/index.js',import.meta.url).href;
+const modelSource=transpile(await readFile('apps/client/src/game/world/monster-orb-model.ts','utf8')).replace("'@shaman/shared'",JSON.stringify(shared));
+const model=await import(uri(modelSource));assert.equal(model.orbTravel({x:0,y:0},{x:100,y:100},250,500).x,50);assert(!model.orbTravel({x:0,y:0},{x:100,y:100},500,500).visible);
+let src=transpile(await readFile('apps/client/src/game/world/MonsterOrbLayer.ts','utf8')).replace(/import \{ DARKNESS_DEPTH \} from '\.\/Lighting';/,'const DARKNESS_DEPTH=1000000;').replace("'./monster-orb-model'",JSON.stringify(uri(modelSource)));
+const{MonsterOrbLayer}=await import(uri(src));let handler;const nodes=[];
+const scene={time:{now:0},events:{once:(_event,fn)=>handler=fn},add:{graphics:()=>{const n={destroyed:false,x:0,y:0,setDepth(){return this;},fillStyle(){return this;},fillRect(x,y,w,h){assert([x,y,w,h].every(Number.isInteger));return this;},setPosition(x,y){this.x=x;this.y=y;return this;},setAlpha(){return this;},destroy(){assert(!this.destroyed,'double disposal');this.destroyed=true;}};nodes.push(n);return n;}}};
+const layer=new MonsterOrbLayer(scene),aim={x:100,y:80};layer.launch({x:0,y:0},aim,500,'spirit');aim.x=900;scene.time.now=250;layer.update();assert.equal(nodes[0].x,50,'immutable aim');assert.equal(nodes[0].y,40);scene.time.now=500;layer.update();assert(nodes.every(n=>n.destroyed),'arrival disposes');
+for(let i=0;i<60;i++)layer.launch({x:0,y:0},{x:50,y:40},1000,'binding');assert.equal(nodes.filter(n=>!n.destroyed).length,48*3,'bounded effect nodes');handler();assert(nodes.every(n=>n.destroyed),'scene shutdown disposes every flight');layer.destroy();
+console.log('PASS shared pixel palette/linear travel, immutable aim, integer pixels,48-flight budget, arrival and shutdown cleanup');

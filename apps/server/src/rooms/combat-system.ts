@@ -21,7 +21,7 @@ export type CombatEvent =
   | { type: 'levelup'; player: string; level: number }
   | { type: 'loot'; player: string; items: { itemId: string; qty: number }[] }
   /** A ranged monster's shot: flies from the monster to the player in `flightMs`; damage follows on arrival. */
-  | { type: 'projectile'; from: string; to: string; kind: string; flightMs: number }
+  | { type: 'projectile'; from: string; to: string; kind: string; flightMs: number; origin?: Position; aim?: Position }
   /** A boss area attack warning on the ground (world units), landing after `ms`. */
   | { type: 'telegraph'; source: string; x: number; y: number; radius: number; ms: number }
   | { type: 'summon'; source: string; ids: string[] }
@@ -306,7 +306,7 @@ export class CombatSystem {
     if (!player) return;
     const at = { x: player.x, y: player.y };
     const flightMs = Math.round(dist(m, at) / speed * 1000);
-    this.host.broadcast({ type: 'projectile', from: m.id, to: playerId, kind: m.kind, flightMs });
+    this.host.broadcast({ type: 'projectile', from: m.id, to: playerId, kind: m.kind, flightMs, origin: { x: m.x, y: m.y }, aim: at });
     this.pending.push({ at: this.host.now() + flightMs, run: () => {
       const p = this.host.state.players.get(playerId);
       // Dodgeable: walking more than a unit away from the aimed spot makes it miss.
