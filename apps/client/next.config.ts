@@ -1,3 +1,8 @@
 import type { NextConfig } from 'next';
-const config: NextConfig = { transpilePackages: ['@shaman/shared', '@shaman/schema'] };
+// Opt-in worker cap for visual-asset sessions with limited free RAM; normal builds keep Next's default.
+const buildWorkers = Number(process.env.SHAMAN_BUILD_WORKERS);
+const config: NextConfig = {
+  transpilePackages: ['@shaman/shared', '@shaman/schema'],
+  ...(Number.isInteger(buildWorkers) && buildWorkers > 0 ? { experimental: { cpus: buildWorkers } } : {}),
+};
 export default config;

@@ -40,3 +40,7 @@ User confirmed **Ireland**, not Iceland. Golden Spiritwood receives Afturganga/c
 ## Detailed animation audit02
 
 The earlier coarse runtime review did not establish correct walking biomechanics. User requested a full chronology audit: see [all40 findings and remaining artwork](audit-02/README.md). Nine attack sequences repaired using original indices;22 walking clips still need art, two dissolve deaths lack transition poses. Three generated walk candidates held out of runtime. Apply `node tools/monsters/folklore/apply-audit.mjs` after packing and before publishing to retain the audited orders.
+
+## Current animation repair03
+
+The user subsequently authorized all audit02 repairs. The current runtime adopts22 replacement walk cycles, hop/flight/hover/coil presentation, five death transitions, targeted attack views and uniform Sending attack scaling. See [repair03 sources, exceptions, evidence and reproduction commands](repair-03/README.md).28 versioned atlases preserve all40 originals; user visual approval remains pending. The original `pack.py` workflow above reconstructs the historical baseline only: use the repair03 pipeline afterward to retain current repairs. Do not equate technical validation or four timing beats with four new drawings or final gait approval.

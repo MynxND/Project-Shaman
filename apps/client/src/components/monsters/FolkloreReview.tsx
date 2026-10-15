@@ -2,18 +2,18 @@
 import {useEffect,useRef,useState}from'react';
 import roster from'../../../public/assets/monsters/folklore-01/roster.json';
 import audit from'../../../public/assets/monsters/folklore-01/audit.json';
-import {monsterClip,monsterFrames,type MonsterSheet,type MonsterAction}from'../../game/world/monster-sprite-model';
+import {monsterClip,monsterFrames,monsterMotionOffset,type MonsterSheet,type MonsterAction}from'../../game/world/monster-sprite-model';
 import type{Facing}from'@shaman/shared';
 import './folklore-review.css';
 const names:Record<string,string>={thailand:'ไทย',japan:'ญี่ปุ่น',korea:'เกาหลี',russia:'รัสเซีย',ireland:'ไอร์แลนด์',china:'จีน',norway:'นอร์เวย์'};
-const auditStatuses:Record<string,string>={'needs-art':'ต้องแก้ภาพ','limited-motion':'เคลื่อนไหวน้อย','sequence-fixed':'แก้ลำดับแล้ว','no-obvious-order-error':'ไม่พบลำดับผิดชัดเจน'};
+const auditStatuses:Record<string,string>={'needs-art':'ต้องแก้ภาพ','limited-motion':'เคลื่อนไหวน้อย','sequence-fixed':'แก้ลำดับแล้ว','no-obvious-order-error':'ไม่พบลำดับผิดชัดเจน','repaired-art':'แก้ภาพแล้ว · รอตรวจ','motion-updated':'ปรับการเคลื่อนที่แล้ว','scale-fixed':'แก้สเกลแล้ว'};
 const actions:Record<MonsterAction,string>={idle:'ยืน',move:'เคลื่อนที่',attack:'โจมตี',hurt:'ถูกโจมตี',death:'ตาย'};
 function Sheet({id,sheet,action}:{id:string;sheet:MonsterSheet;action:MonsterAction}){
  const ref=useRef<HTMLCanvasElement>(null),currentFrame=useRef(0),[playing,setPlaying]=useState(true),[manual,setManual]=useState(0),[run,setRun]=useState(0),[ready,setReady]=useState(false),[speed,setSpeed]=useState(1);
  useEffect(()=>{const canvas=ref.current!,ctx=canvas.getContext('2d')!,image=new Image();let tick=0,stopped=false;let start=performance.now();setReady(false);image.onload=()=>{if(!stopped){start=performance.now();setReady(true);}};image.src='/assets/monsters/'+sheet.image+'?audit=02';
   const draw=(now:number)=>{if(stopped)return;const cols=window.matchMedia('(max-width:600px)').matches?2:4,w=canvas.clientWidth,unit=w/cols,h=unit*Math.ceil(roster.directions.length/cols);if(canvas.width!==Math.round(w*devicePixelRatio)||canvas.height!==Math.round(h*devicePixelRatio)){canvas.width=Math.round(w*devicePixelRatio);canvas.height=Math.round(h*devicePixelRatio);}ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);ctx.imageSmoothingEnabled=false;ctx.fillStyle='#10201f';ctx.fillRect(0,0,w,h);
    roster.directions.forEach((name,i)=>{const face=name as Facing,clip=monsterClip(sheet,action,face),frames=monsterFrames(sheet,clip),clock=manual+Math.floor((now-start)*clip.fps*speed/1000),k=playing?(clip.loop?clock%frames.length:Math.min(clock,frames.length-1)):Math.min(manual,frames.length-1),frame=frames[k]!,x=(i%cols)*unit,y=Math.floor(i/cols)*unit;
-    if(i===0)currentFrame.current=k;ctx.strokeStyle='#59716a';ctx.beginPath();ctx.moveTo(x+8,y+unit-25);ctx.lineTo(x+unit-8,y+unit-25);ctx.stroke();const size=Math.floor(Math.min(unit-12,196)),px=Math.round(x+(unit-size)/2),py=Math.round(y+unit-25-size*sheet.anchor.y/sheet.frameWidth);
+    if(i===0)currentFrame.current=k;ctx.strokeStyle='#59716a';ctx.beginPath();ctx.moveTo(x+8,y+unit-25);ctx.lineTo(x+unit-8,y+unit-25);ctx.stroke();const size=Math.floor(Math.min(unit-12,196)),px=Math.round(x+(unit-size)/2),py=Math.round(y+unit-25-size*sheet.anchor.y/sheet.frameWidth+monsterMotionOffset(sheet,action,k,frames.length)*size/sheet.frameWidth);
     if(image.complete&&image.naturalWidth)ctx.drawImage(image,(frame%sheet.columns)*sheet.frameWidth,Math.floor(frame/sheet.columns)*sheet.frameHeight,sheet.frameWidth,sheet.frameHeight,px,py,size,size*sheet.frameHeight/sheet.frameWidth);
     ctx.fillStyle='#e1d3ac';ctx.font='12px Tahoma';ctx.textAlign='center';ctx.fillText(name+' · '+(k+1)+'/'+frames.length,x+unit/2,y+unit-7);
    });tick=requestAnimationFrame(draw);};tick=requestAnimationFrame(draw);return()=>{stopped=true;cancelAnimationFrame(tick);};

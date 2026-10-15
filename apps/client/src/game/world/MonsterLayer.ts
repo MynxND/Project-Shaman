@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import {monsterFacing,legacyMonsterFlip,monsterClip,monsterFrames,monsterAnimationKey,validateMonsterSheet,type MonsterSheet,type MonsterAction} from './monster-sprite-model';
+import {monsterFacing,legacyMonsterFlip,monsterClip,monsterFrames,monsterAnimationKey,monsterMotionOffset,validateMonsterSheet,type MonsterSheet,type MonsterAction} from './monster-sprite-model';
 import type {Facing} from '@shaman/shared';
 import type { MonsterState } from '@shaman/schema';
 import { projectedY, type MapDefinition, MONSTER_STATUS_TH, MONSTERS, WORLD_UNIT_PX } from '@shaman/shared';
@@ -55,6 +55,8 @@ interface View {
   boss: boolean;
   facing: Facing;
   action: AnimName;
+  /** Interpolated ground origin; visual hovering never changes movement/range queries. */
+  groundY:number;
 }
 
 export interface MonsterLayerHooks {
@@ -109,7 +111,7 @@ export class MonsterLayer {
     const bar = this.scene.add.graphics().setDepth(DARKNESS_DEPTH + 2);
     const facing=monsterFacing(m.facing);
     sprite.play(monsterAnimationKey(m.kind,'idle',info,facing));
-    const view: View = { kind: m.kind, sprite, shadow, ring, label, bar, oneShot: false, dead: false, lastHurt: 0, height, boss, facing, action:'idle' };
+    const view: View = { kind: m.kind, sprite, shadow, ring, label, bar, oneShot: false, dead: false, lastHurt: 0, height, boss, facing, action:'idle',groundY:y };
     sprite.on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => { view.oneShot = false; });
     return view;
   }
@@ -139,6 +141,7 @@ export class MonsterLayer {
       if(!view.oneShot)view.facing=monsterFacing(m.facing);
       const dead = m.state === 'dead';
       if (dead && !view.dead) {
+        s.y=view.groundY;
         view.dead = true;
         s.disableInteractive();
         this.play(view, 'death', true);
@@ -148,22 +151,25 @@ export class MonsterLayer {
         view.dead = false; view.oneShot = false;
         s.setInteractive();
         s.setPosition(m.x * U, this.y(m.x,m.y)).setAlpha(0);
+        view.groundY=s.y;
         view.shadow.setAlpha(0);
         this.scene.tweens.add({ targets: [s, view.shadow], alpha: 1, duration: 400 });
         this.play(view, 'idle');
       }
       if (!dead) {
         s.x += (m.x * U - s.x) * follow;
-        s.y += (this.y(m.x,m.y) - s.y) * follow;
+        view.groundY += (this.y(m.x,m.y) - view.groundY) * follow;
         s.setFlipX(this.manifest!.monsters[view.kind]!.directions?false:legacyMonsterFlip(m.facing));
         this.play(view, m.state === 'wander' || m.state === 'chase' || m.state === 'return' ? 'move' : 'idle');
+        const info=this.manifest!.monsters[view.kind]!,clip=monsterClip(info,view.action,view.facing);
+        s.y=view.groundY+monsterMotionOffset(info,view.action,(s.anims.currentFrame?.index??1)-1,clip.frames)*(info.scale??MONSTER_SCALE);
         if (time - view.lastHurt > 140) s.clearTint();
       }
       this.logicalPositions.set(id,{x:m.x,y:m.y});
-      s.setDepth(this.map?.elevation?m.y*U:s.y);
-      view.shadow.setPosition(s.x, s.y - 1);
+      s.setDepth(this.map?.elevation?m.y*U:view.groundY);
+      view.shadow.setPosition(s.x, view.groundY - 1);
       const isTarget = selected === id && !dead;
-      view.ring.setPosition(s.x, s.y).setVisible(isTarget);
+      view.ring.setPosition(s.x, view.groundY).setVisible(isTarget);
       const top = s.y - view.height - 6;
       view.label.setPosition(s.x, top).setVisible(!dead).setColor(isTarget ? '#ffe08a' : view.boss ? '#ffb38a' : '#f1e3b4');
       view.bar.clear();
@@ -286,7 +292,7 @@ export class MonsterLayer {
   /** World position (units) of a living monster, for walking toward a clicked target. */
   position(id: string): { x: number; y: number } | null {
     const v = this.views.get(id);
-    return v && !v.dead ? (this.map?.elevation?this.logicalPositions.get(id)??null:{x:v.sprite.x/WORLD_UNIT_PX,y:v.sprite.y/WORLD_UNIT_PX}) : null;
+    return v && !v.dead ? (this.map?.elevation?this.logicalPositions.get(id)??null:{x:v.sprite.x/WORLD_UNIT_PX,y:v.groundY/WORLD_UNIT_PX}) : null;
   }
 
   /** Nearest living monster within `maxDist` world units of `from` (attack button with no target). */
@@ -294,7 +300,7 @@ export class MonsterLayer {
     let best: string | null = null, bestD = maxDist;
     for (const [id, v] of this.views) {
       if (v.dead) continue;
-      const p=this.map?.elevation?this.logicalPositions.get(id):{x:v.sprite.x/WORLD_UNIT_PX,y:v.sprite.y/WORLD_UNIT_PX};if(!p)continue;const d = Math.hypot(p.x-from.x,p.y-from.y);
+      const p=this.map?.elevation?this.logicalPositions.get(id):{x:v.sprite.x/WORLD_UNIT_PX,y:v.groundY/WORLD_UNIT_PX};if(!p)continue;const d = Math.hypot(p.x-from.x,p.y-from.y);
       if (d <= bestD) { best = id; bestD = d; }
     }
     return best;

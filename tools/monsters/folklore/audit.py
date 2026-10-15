@@ -9,6 +9,8 @@ if '--after' not in sys.argv and (OUT/'before-drafts.json').exists():
 if '--after' in sys.argv:
  OUT=OUT/'after';OUT.mkdir(exist_ok=True)
  selected=json.loads((OUT.parent/'report.json').read_text(encoding='utf8'))['sequenceRepairs'];sheets={k:v for k,v in sheets.items() if k in selected}
+if '--repair03' in sys.argv:
+ OUT=OUT.parent/'repair-03/after';OUT.mkdir(exist_ok=True);sheets=json.loads((ASSETS/'folklore-01/drafts.json').read_text(encoding='utf8'))['monsters']
 for ident,s in sheets.items():
  im=Image.open(ASSETS/s['image']);page=Image.new('RGB',(1536,1240),'#19302e');d=ImageDraw.Draw(page)
  d.text((8,4),ident+' | MOVE 1-4 | ATTACK 1-4 | DEATH 1-4',fill='white')

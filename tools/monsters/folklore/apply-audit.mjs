@@ -3,7 +3,7 @@ import{readFile,writeFile}from'node:fs/promises';
 const path='apps/client/public/assets/monsters/folklore-01/drafts.json';
 const data=JSON.parse(await readFile(path)),before=JSON.parse(await readFile('docs/design/monsters/folklore-01/audit-02/before-drafts.json')),audit=JSON.parse(await readFile('docs/design/monsters/folklore-01/audit-02/report.json'));
 for(const[id,repair]of Object.entries(audit.sequenceRepairs)){
- const sheet=data.monsters[id];for(const[face,clips]of Object.entries(sheet.directions)){
+ const sheet=data.monsters[id];if(sheet.repairedActions?.includes('attack'))continue;for(const[face,clips]of Object.entries(sheet.directions)){
   const old=before.monsters[id].directions[face].attack,neutral=before.monsters[id].directions[face].idle.indices[0];
   // Impact remains on the visually identified striking pose, independent of clip length.
   const indices=repair==='append-neutral'?[...old.indices,neutral]:[neutral,old.indices[0],old.indices[1],neutral];

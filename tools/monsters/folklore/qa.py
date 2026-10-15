@@ -10,7 +10,7 @@ for r in reports:
 for start in range(0,40,8):
  page=Image.new('RGB',(1024,1200),'#142725');draw=ImageDraw.Draw(page)
  for row,m in enumerate(roster['monsters'][start:start+8]):
-  ident=m['id'];s=drafts[ident];im=Image.open(OUT/(ident+'.png'));assert max(im.size)<=4096
+  ident=m['id'];s=drafts[ident];im=Image.open(OUT.parent/s['image']);assert max(im.size)<=4096
   assert im.size==(s['frameWidth']*8,3840);assert im.getchannel('A').getextrema()[0]==0
   for face in roster['directions']:
    for action in ['idle','move','attack','hurt','death']:

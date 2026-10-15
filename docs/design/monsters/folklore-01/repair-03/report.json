@@ -1,0 +1,1965 @@
+{
+  "scope": "Repair03:40 species /8 directions /move attack death; chronological atlas inspection plus browser playback samples, not960 live playback approvals",
+  "monsters": {
+    "phi-pret": {
+      "id": "phi-pret",
+      "nation": "thailand",
+      "name": "ผีเปรต",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 3
+      },
+      "userVisualApproval": "pending"
+    },
+    "phi-pop": {
+      "id": "phi-pop",
+      "nation": "thailand",
+      "name": "ผีปอบ",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "phi-krasue": {
+      "id": "phi-krasue",
+      "nation": "thailand",
+      "name": "ผีกระสือ",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "ใช้เฟรมผ้า/ร่างเดิมพร้อมจังหวะลอย4ช่วง ไม่อ้างเป็นท่าเดินหรือภาพวาดใหม่4ภาพ"
+        },
+        "attack": {
+          "status": "repaired-art",
+          "finding": "แก้ภาพมุมSและNEที่หันผิด; อีก6มุมใช้ neutral → windup → strike → neutral จากภาพเดิม จังหวะโดนอยู่เฟรม2"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 3
+      },
+      "userVisualApproval": "pending"
+    },
+    "phi-krahang": {
+      "id": "phi-krahang",
+      "nation": "thailand",
+      "name": "ผีกระหัง",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "เพิ่มท่ากระพือปีก6มุม อีก2มุมคงภาพเดิมที่หันถูก พร้อมจังหวะลอย"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "onryo": {
+      "id": "onryo",
+      "nation": "japan",
+      "name": "วิญญาณอาฆาต",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "ใช้เฟรมผ้า/ร่างเดิมพร้อมจังหวะลอย4ช่วง ไม่อ้างเป็นท่าเดินหรือภาพวาดใหม่4ภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "yuki-onna": {
+      "id": "yuki-onna",
+      "nation": "japan",
+      "name": "หญิงหิมะ",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "ใช้เฟรมผ้า/ร่างเดิมพร้อมจังหวะลอย4ช่วง ไม่อ้างเป็นท่าเดินหรือภาพวาดใหม่4ภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "kuchisake-onna": {
+      "id": "kuchisake-onna",
+      "nation": "japan",
+      "name": "หญิงปากฉีก",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "rokurokubi": {
+      "id": "rokurokubi",
+      "nation": "japan",
+      "name": "หญิงคอยาว",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "ubume": {
+      "id": "ubume",
+      "nation": "japan",
+      "name": "อุบุเมะ",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "ใช้เฟรมผ้า/ร่างเดิมพร้อมจังหวะลอย4ช่วง ไม่อ้างเป็นท่าเดินหรือภาพวาดใหม่4ภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "gashadokuro": {
+      "id": "gashadokuro",
+      "nation": "japan",
+      "name": "โครงกระดูกยักษ์",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "sequence-fixed",
+          "finding": "เพิ่มท่าเตรียม/คืนท่าจากเฟรม neutral เดิม; ไม่วาด pose ใหม่"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "cheonyeo-gwishin": {
+      "id": "cheonyeo-gwishin",
+      "nation": "korea",
+      "name": "ผีสาวอาลัย",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "ใช้เฟรมผ้า/ร่างเดิมพร้อมจังหวะลอย4ช่วง ไม่อ้างเป็นท่าเดินหรือภาพวาดใหม่4ภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "mulgwishin": {
+      "id": "mulgwishin",
+      "nation": "korea",
+      "name": "ผีน้ำเกาหลี",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "ใช้เฟรมผ้า/ร่างเดิมพร้อมจังหวะลอย4ช่วง ไม่อ้างเป็นท่าเดินหรือภาพวาดใหม่4ภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "dalgyal-gwishin": {
+      "id": "dalgyal-gwishin",
+      "nation": "korea",
+      "name": "ผีหน้าเรียบ",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "ใช้เฟรมผ้า/ร่างเดิมพร้อมจังหวะลอย4ช่วง ไม่อ้างเป็นท่าเดินหรือภาพวาดใหม่4ภาพ"
+        },
+        "attack": {
+          "status": "sequence-fixed",
+          "finding": "เพิ่มท่าเตรียม/คืนท่าจากเฟรม neutral เดิม; ไม่วาด pose ใหม่"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "dokkaebi": {
+      "id": "dokkaebi",
+      "nation": "korea",
+      "name": "ทกแกบี",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "gumiho": {
+      "id": "gumiho",
+      "nation": "korea",
+      "name": "จิ้งจอกเก้าหาง",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "sequence-fixed",
+          "finding": "เพิ่มท่าเตรียม/คืนท่าจากเฟรม neutral เดิม; ไม่วาด pose ใหม่"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "chonggak-gwishin": {
+      "id": "chonggak-gwishin",
+      "nation": "korea",
+      "name": "ผีหนุ่มอาลัย",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "ใช้เฟรมผ้า/ร่างเดิมพร้อมจังหวะลอย4ช่วง ไม่อ้างเป็นท่าเดินหรือภาพวาดใหม่4ภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "rusalka": {
+      "id": "rusalka",
+      "nation": "russia",
+      "name": "รูซัลกา",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "ใช้เฟรมผ้า/ร่างเดิมพร้อมจังหวะลอย4ช่วง ไม่อ้างเป็นท่าเดินหรือภาพวาดใหม่4ภาพ"
+        },
+        "attack": {
+          "status": "sequence-fixed",
+          "finding": "เพิ่มท่าเตรียม/คืนท่าจากเฟรม neutral เดิม; ไม่วาด pose ใหม่"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "leshy": {
+      "id": "leshy",
+      "nation": "russia",
+      "name": "เลชี",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "domovoi": {
+      "id": "domovoi",
+      "nation": "russia",
+      "name": "โดโมวอย",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "kikimora": {
+      "id": "kikimora",
+      "nation": "russia",
+      "name": "คิคิโมรา",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "vodyanoy": {
+      "id": "vodyanoy",
+      "nation": "russia",
+      "name": "โวดียานอย",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "bannik": {
+      "id": "bannik",
+      "nation": "russia",
+      "name": "บันนิก",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "draugur": {
+      "id": "draugur",
+      "nation": "ireland",
+      "name": "ดรอยกูร์",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "sequence-fixed",
+          "finding": "เพิ่มท่าเตรียม/คืนท่าจากเฟรม neutral เดิม; ไม่วาด pose ใหม่"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "afturganga": {
+      "id": "afturganga",
+      "nation": "ireland",
+      "name": "อัฟตูร์กังกา",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "utburdur": {
+      "id": "utburdur",
+      "nation": "ireland",
+      "name": "อูตบูร์ดูร์",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "ใช้เฟรมผ้า/ร่างเดิมพร้อมจังหวะลอย4ช่วง ไม่อ้างเป็นท่าเดินหรือภาพวาดใหม่4ภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "uppvakningur": {
+      "id": "uppvakningur",
+      "nation": "ireland",
+      "name": "อุปป์วักนิงกูร์",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "sending": {
+      "id": "sending",
+      "nation": "ireland",
+      "name": "เซนดิง",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "ใช้เฟรมผ้า/ร่างเดิมพร้อมจังหวะลอย4ช่วง ไม่อ้างเป็นท่าเดินหรือภาพวาดใหม่4ภาพ"
+        },
+        "attack": {
+          "status": "scale-fixed",
+          "finding": "ลดสเกลทั้งท่าเป็น0.85เท่าด้วย nearest-neighbor รอบ anchor เดิม ครบ8ทิศ ไม่ยืดสัดส่วนรายเฟรม"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "tilberi": {
+      "id": "tilberi",
+      "nation": "ireland",
+      "name": "ทิลเบริ",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "ใช้ neutral/เตรียมขด/ยกขด/เตรียมขดจากภาพเดิม ไม่ใช้ pose กระแทกเป็นท่าเดิน"
+        },
+        "attack": {
+          "status": "sequence-fixed",
+          "finding": "เพิ่มท่าเตรียม/คืนท่าจากเฟรม neutral เดิม; ไม่วาด pose ใหม่"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "jiangshi": {
+      "id": "jiangshi",
+      "nation": "china",
+      "name": "ผีดิบเจียงซือ",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "ท่ากระโดดสองเท้า: สัมผัสพื้น → ย่อ → ลอย → ลงพื้น; แก้มุมหลังและข้างด้วยภาพรายทิศ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 3,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "nu-gui": {
+      "id": "nu-gui",
+      "nation": "china",
+      "name": "นฺหวี่กุ่ย",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "ใช้เฟรมผ้า/ร่างเดิมพร้อมจังหวะลอย4ช่วง ไม่อ้างเป็นท่าเดินหรือภาพวาดใหม่4ภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "e-gui": {
+      "id": "e-gui",
+      "nation": "china",
+      "name": "ผีหิวโหยจีน",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "shui-gui": {
+      "id": "shui-gui",
+      "nation": "china",
+      "name": "สุ่ยกุ่ย",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "ใช้เฟรมผ้า/ร่างเดิมพร้อมจังหวะลอย4ช่วง ไม่อ้างเป็นท่าเดินหรือภาพวาดใหม่4ภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "wutou-gui": {
+      "id": "wutou-gui",
+      "nation": "china",
+      "name": "ผีไร้หัวจีน",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "huli-jing": {
+      "id": "huli-jing",
+      "nation": "china",
+      "name": "หูหลีจิง",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "draugen": {
+      "id": "draugen",
+      "nation": "norway",
+      "name": "ดรอยเกน",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "repaired-art",
+          "finding": "แก้ภาพ7มุม โดยเฉพาะมุมหลัง และคืน pose neutral มุมเดียวกัน; มุมEคงภาพเดิมที่ถูกต้อง จังหวะโดนเฟรม2"
+        },
+        "death": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "huldra": {
+      "id": "huldra",
+      "nation": "norway",
+      "name": "ฮุลทรา",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "nokken": {
+      "id": "nokken",
+      "nation": "norway",
+      "name": "เนิกเคน",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "ใช้เฟรมผ้า/ร่างเดิมพร้อมจังหวะลอย4ช่วง ไม่อ้างเป็นท่าเดินหรือภาพวาดใหม่4ภาพ"
+        },
+        "attack": {
+          "status": "sequence-fixed",
+          "finding": "เพิ่มท่าเตรียม/คืนท่าจากเฟรม neutral เดิม; ไม่วาด pose ใหม่"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "fossegrim": {
+      "id": "fossegrim",
+      "nation": "norway",
+      "name": "ฟอสเซกริม",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 3
+      },
+      "userVisualApproval": "pending"
+    },
+    "nisse": {
+      "id": "nisse",
+      "nation": "norway",
+      "name": "นิสเซ",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        },
+        "attack": {
+          "status": "sequence-fixed",
+          "finding": "เพิ่มท่าเตรียม/คืนท่าจากเฟรม neutral เดิม; ไม่วาด pose ใหม่"
+        },
+        "death": {
+          "status": "no-obvious-order-error",
+          "finding": "เรียงร่าง/เสียสมดุล/ยุบหรือสลาย ไม่พบการย้อนกลับไปยืน; จำนวน pose ยังจำกัด"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    },
+    "mare": {
+      "id": "mare",
+      "nation": "norway",
+      "name": "มาเร",
+      "inspectedDirections": [
+        "south",
+        "south-west",
+        "west",
+        "north-west",
+        "north",
+        "north-east",
+        "east",
+        "south-east"
+      ],
+      "inspectedActions": [
+        "move",
+        "attack",
+        "death"
+      ],
+      "actions": {
+        "move": {
+          "status": "motion-updated",
+          "finding": "ใช้เฟรมผ้า/ร่างเดิมพร้อมจังหวะลอย4ช่วง ไม่อ้างเป็นท่าเดินหรือภาพวาดใหม่4ภาพ"
+        },
+        "attack": {
+          "status": "no-obvious-order-error",
+          "finding": "ลำดับยก/ออกท่า/คืนท่าอ่านต่อเนื่องในแผ่นภาพ; ความลื่นไหลและมุมตีเป็นงานตรวจภาพต่อ"
+        },
+        "death": {
+          "status": "repaired-art",
+          "finding": "แทนภาพท่าที่มีปัญหาและตรวจภาพเรียงเวลาครบ8ทิศ · ใช้เฟรมเดิมในมุมที่ยังถูกต้องตามรายการ sourceProfiles · รอผู้ใช้ตรวจภาพ"
+        }
+      },
+      "notes": "ปรับแก้ตาม audit02 · ภาพเดิมเก็บให้เทียบก่อน–หลัง · รอผู้ใช้ตรวจความลื่นไหล",
+      "sourceFrameCounts": {
+        "move": 4,
+        "attack": 4,
+        "death": 4
+      },
+      "userVisualApproval": "pending"
+    }
+  },
+  "sequenceRepairs": {
+    "dalgyal-gwishin": "append-neutral",
+    "gumiho": "append-neutral",
+    "rusalka": "append-neutral",
+    "nokken": "append-neutral",
+    "nisse": "append-neutral",
+    "tilberi": "append-neutral",
+    "draugen": "append-neutral",
+    "draugur": "neutral-windup-strike-recover",
+    "gashadokuro": "neutral-windup-strike-recover"
+  },
+  "newArt": "Three walk-only ImageGen candidates generated and inspected. Not adopted: consistent four-phase bilateral support is not sufficiently established across every view; Pop also raises attacking arms in walk. Keep originals; explicit art backlog remains.",
+  "userVisualApproval": "pending",
+  "sourceProfiles": {
+    "phi-pop": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/phi-pop-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "gashadokuro": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/gashadokuro-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "dokkaebi": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/dokkaebi-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "nisse": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/nisse-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending.",
+        "directionRows": [
+          0,
+          1,
+          2,
+          5,
+          4,
+          3,
+          6,
+          7
+        ]
+      }
+    },
+    "phi-pret": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/audit-02/phi-pret-walk-candidate.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "kuchisake-onna": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/kuchisake-onna-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "rokurokubi": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/rokurokubi-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "leshy": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/leshy-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "domovoi": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/domovoi-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "kikimora": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/kikimora-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "vodyanoy": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/vodyanoy-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "bannik": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/bannik-move-source.png",
+        "accepted": true,
+        "directionOverrides": {
+          "north-west": {
+            "source": "docs/design/monsters/folklore-01/repair-03/bannik-move-north-west-source.png",
+            "frames": [
+              0,
+              2
+            ]
+          }
+        },
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "draugur": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/draugur-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "gumiho": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/gumiho-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "afturganga": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/afturganga-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "uppvakningur": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/uppvakningur-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "e-gui": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/e-gui-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "wutou-gui": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/wutou-gui-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "huli-jing": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/huli-jing-move-source.png",
+        "accepted": true,
+        "columnEdges": [
+          0,
+          290,
+          520,
+          750,
+          1024
+        ],
+        "directionOverrides": {
+          "north-west": {
+            "source": "docs/design/monsters/folklore-01/repair-03/huli-jing-move-north-west-source.png"
+          }
+        },
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      },
+      "death": {
+        "source": "docs/design/monsters/folklore-01/repair-03/huli-jing-death-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "draugen": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/draugen-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      },
+      "attack": {
+        "accepted": true,
+        "source": "docs/design/monsters/folklore-01/repair-03/draugen-attack-source.png",
+        "sourceRows": 7,
+        "directionRows": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          6
+        ],
+        "preserveDirections": [
+          "east"
+        ],
+        "recoverNeutral": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      },
+      "death": {
+        "accepted": true,
+        "source": "docs/design/monsters/folklore-01/repair-03/draugen-death-source.png",
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "huldra": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/huldra-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "fossegrim": {
+      "move": {
+        "source": "docs/design/monsters/folklore-01/repair-03/fossegrim-move-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "mare": {
+      "death": {
+        "source": "docs/design/monsters/folklore-01/repair-03/mare-death-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "utburdur": {
+      "death": {
+        "source": "docs/design/monsters/folklore-01/repair-03/utburdur-death-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "phi-krahang": {
+      "death": {
+        "source": "docs/design/monsters/folklore-01/repair-03/phi-krahang-death-source.png",
+        "accepted": true,
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      },
+      "move": {
+        "accepted": true,
+        "source": "docs/design/monsters/folklore-01/repair-03/phi-krahang-move-source.png",
+        "perRowColumns": true,
+        "preserveDirections": [
+          "north-west",
+          "east"
+        ],
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "phi-krasue": {
+      "attack": {
+        "sourceRows": 1,
+        "directionRows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "directionOverrides": {
+          "north-east": {
+            "source": "docs/design/monsters/folklore-01/repair-03/phi-krasue-attack-north-east-source.png"
+          }
+        },
+        "bands": [
+          [
+            0,
+            184
+          ]
+        ],
+        "preserveDirections": [
+          "south-west",
+          "west",
+          "north-west",
+          "north",
+          "east",
+          "south-east"
+        ],
+        "prependNeutral": true,
+        "accepted": true,
+        "source": "docs/design/monsters/folklore-01/repair-03/phi-krasue-attack-front-source.png",
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    },
+    "jiangshi": {
+      "move": {
+        "accepted": true,
+        "source": "docs/design/monsters/folklore-01/repair-03/jiangshi-move-source.png",
+        "directionOverrides": {
+          "east": {
+            "source": "docs/design/monsters/folklore-01/repair-03/jiangshi-move-east-source.png"
+          },
+          "north-west": {
+            "source": "docs/design/monsters/folklore-01/repair-03/jiangshi-move-north-west-source.png"
+          },
+          "north-east": {
+            "source": "docs/design/monsters/folklore-01/repair-03/jiangshi-move-north-east-source.png"
+          },
+          "north": {
+            "source": "docs/design/monsters/folklore-01/repair-03/jiangshi-move-north-source.png"
+          }
+        },
+        "review": "Packed8 directions inspected; targeted view fixes and existing-frame recoveries explicit. User art approval pending."
+      }
+    }
+  }
+}
