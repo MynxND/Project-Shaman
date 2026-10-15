@@ -1,0 +1,7642 @@
+{
+  "date": "2026-10-15T17:07:30.104Z",
+  "scope": "isolated dev room, real FoundationScene / CombatSystem / stepMovement",
+  "results": [
+    {
+      "caseId": "ranged-1",
+      "kind": "phi-krasue",
+      "facing": "south",
+      "outcome": "hit",
+      "range": 2.6,
+      "flightMs": 520,
+      "serverAt": 1792084448928,
+      "player": {
+        "x": 36,
+        "y": 16.6
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 16.6
+      },
+      "start": 71955.90000000596,
+      "launch": 72233.70000000298,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 278.20000000298023,
+      "image": "frames/phi-krasue-south.png",
+      "arrival": 72752.5,
+      "damage": 72798,
+      "impactImage": "frames/phi-krasue-south-impact.png",
+      "travelled": 3.8146972514141453e-7,
+      "damageDelay": 564.2999999970198,
+      "arrivalDelta": 45.5
+    },
+    {
+      "caseId": "ranged-2",
+      "kind": "phi-krasue",
+      "facing": "south",
+      "outcome": "dodge",
+      "range": 2.6,
+      "flightMs": 520,
+      "serverAt": 1792083653762,
+      "player": {
+        "x": 36,
+        "y": 16.6
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 16.6
+      },
+      "start": 176231.29999999702,
+      "launch": 176509.70000000298,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 278.70000000298023,
+      "arrival": 177027.5,
+      "travelled": 2.675998687744168
+    },
+    {
+      "caseId": "ranged-3",
+      "kind": "phi-krasue",
+      "facing": "south-east",
+      "outcome": "hit",
+      "range": 2.6,
+      "flightMs": 520,
+      "serverAt": 1792083655255,
+      "player": {
+        "x": 37.83847763108503,
+        "y": 15.838477631085023
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 37.83847763108503,
+        "y": 15.838477631085023
+      },
+      "start": 177723.5,
+      "launch": 178003.10000000894,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 279.90000000596046,
+      "image": "frames/phi-krasue-south-east.png",
+      "arrival": 178520,
+      "damage": 178567.5,
+      "impactImage": "frames/phi-krasue-south-east-impact.png",
+      "travelled": 6.467112084783189e-7,
+      "damageDelay": 564.3999999910593,
+      "arrivalDelta": 47.5
+    },
+    {
+      "caseId": "ranged-4",
+      "kind": "phi-krasue",
+      "facing": "south-east",
+      "outcome": "dodge",
+      "range": 2.6,
+      "flightMs": 520,
+      "serverAt": 1792083656748,
+      "player": {
+        "x": 37.83847763108503,
+        "y": 15.838477631085023
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 37.83847763108503,
+        "y": 15.838477631085023
+      },
+      "start": 179216.70000000298,
+      "launch": 179496.20000000298,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 279.70000000298023,
+      "arrival": 180013.40000000596,
+      "travelled": 2.6760011926453022
+    },
+    {
+      "caseId": "ranged-5",
+      "kind": "phi-krasue",
+      "facing": "east",
+      "outcome": "hit",
+      "range": 2.6,
+      "flightMs": 520,
+      "serverAt": 1792083658242,
+      "player": {
+        "x": 38.6,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.6,
+        "y": 14
+      },
+      "start": 180709.70000000298,
+      "launch": 180989.79999999702,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 280.20000000298023,
+      "image": "frames/phi-krasue-east.png",
+      "arrival": 181506,
+      "damage": 181552.40000000596,
+      "impactImage": "frames/phi-krasue-east-impact.png",
+      "travelled": 0.0000015258789076710855,
+      "damageDelay": 562.6000000089407,
+      "arrivalDelta": 46.400000005960464
+    },
+    {
+      "caseId": "ranged-6",
+      "kind": "phi-krasue",
+      "facing": "east",
+      "outcome": "dodge",
+      "range": 2.6,
+      "flightMs": 520,
+      "serverAt": 1792083659735,
+      "player": {
+        "x": 38.6,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.6,
+        "y": 14
+      },
+      "start": 182203.10000000894,
+      "launch": 182483.10000000894,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 280.29999999701977,
+      "arrival": 182998.90000000596,
+      "travelled": 2.676000595093208
+    },
+    {
+      "caseId": "ranged-7",
+      "kind": "phi-krasue",
+      "facing": "north-east",
+      "outcome": "hit",
+      "range": 2.6,
+      "flightMs": 520,
+      "serverAt": 1792083661228,
+      "player": {
+        "x": 37.83847763108503,
+        "y": 12.161522368914977
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 37.83847763108503,
+        "y": 12.161522368914977
+      },
+      "start": 183696.29999999702,
+      "launch": 183976.29999999702,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 280.20000000298023,
+      "image": "frames/phi-krasue-north-east.png",
+      "arrival": 184492,
+      "damage": 184538.20000000298,
+      "impactImage": "frames/phi-krasue-north-east-impact.png",
+      "travelled": 6.467112084783189e-7,
+      "damageDelay": 561.9000000059605,
+      "arrivalDelta": 46.20000000298023
+    },
+    {
+      "caseId": "ranged-8",
+      "kind": "phi-krasue",
+      "facing": "north-east",
+      "outcome": "dodge",
+      "range": 2.6,
+      "flightMs": 520,
+      "serverAt": 1792083662723,
+      "player": {
+        "x": 37.83847763108503,
+        "y": 12.161522368914977
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 37.83847763108503,
+        "y": 12.161522368914977
+      },
+      "start": 185190.40000000596,
+      "launch": 185470.60000000894,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 280.5,
+      "arrival": 185985.10000000894,
+      "travelled": 2.6759991695968304
+    },
+    {
+      "caseId": "ranged-2",
+      "kind": "phi-krasue",
+      "facing": "north",
+      "outcome": "hit",
+      "range": 2.6,
+      "flightMs": 520,
+      "serverAt": 1792084450420,
+      "player": {
+        "x": 36,
+        "y": 11.4
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 11.4
+      },
+      "start": 73445.29999999702,
+      "launch": 73725.79999999702,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 280.6000000089407,
+      "image": "frames/phi-krasue-north.png",
+      "arrival": 74245.29999999702,
+      "damage": 74289.20000000298,
+      "impactImage": "frames/phi-krasue-north-impact.png",
+      "travelled": 3.8146972691777137e-7,
+      "damageDelay": 563.4000000059605,
+      "arrivalDelta": 43.900000005960464
+    },
+    {
+      "caseId": "ranged-10",
+      "kind": "phi-krasue",
+      "facing": "north",
+      "outcome": "dodge",
+      "range": 2.6,
+      "flightMs": 520,
+      "serverAt": 1792083665712,
+      "player": {
+        "x": 36,
+        "y": 11.4
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 11.4
+      },
+      "start": 188180.70000000298,
+      "launch": 188459.70000000298,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 279,
+      "arrival": 188977.79999999702,
+      "travelled": 2.675998687744168
+    },
+    {
+      "caseId": "ranged-11",
+      "kind": "phi-krasue",
+      "facing": "north-west",
+      "outcome": "hit",
+      "range": 2.6,
+      "flightMs": 520,
+      "serverAt": 1792083667205,
+      "player": {
+        "x": 34.16152236891497,
+        "y": 12.161522368914977
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 34.16152236891497,
+        "y": 12.161522368914977
+      },
+      "start": 189673.70000000298,
+      "launch": 189953.40000000596,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 279.90000000596046,
+      "image": "frames/phi-krasue-north-west.png",
+      "arrival": 190471,
+      "damage": 190516.29999999702,
+      "impactImage": "frames/phi-krasue-north-west-impact.png",
+      "travelled": 6.467112084783189e-7,
+      "damageDelay": 562.8999999910593,
+      "arrivalDelta": 45.29999999701977
+    },
+    {
+      "caseId": "ranged-12",
+      "kind": "phi-krasue",
+      "facing": "north-west",
+      "outcome": "dodge",
+      "range": 2.6,
+      "flightMs": 520,
+      "serverAt": 1792083668700,
+      "player": {
+        "x": 34.16152236891497,
+        "y": 12.161522368914977
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 34.16152236891497,
+        "y": 12.161522368914977
+      },
+      "start": 191167.29999999702,
+      "launch": 191446.90000000596,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 279.80000001192093,
+      "arrival": 191964.10000000894,
+      "travelled": 2.6799994112823478
+    },
+    {
+      "caseId": "ranged-13",
+      "kind": "phi-krasue",
+      "facing": "west",
+      "outcome": "hit",
+      "range": 2.6,
+      "flightMs": 520,
+      "serverAt": 1792083670193,
+      "player": {
+        "x": 33.4,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.4,
+        "y": 14
+      },
+      "start": 192660.5,
+      "launch": 192940.70000000298,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 280.20000000298023,
+      "image": "frames/phi-krasue-west.png",
+      "arrival": 193457.10000000894,
+      "damage": 193504.29999999702,
+      "impactImage": "frames/phi-krasue-west-impact.png",
+      "travelled": 0.0000015258789076710855,
+      "damageDelay": 563.5999999940395,
+      "arrivalDelta": 47.19999998807907
+    },
+    {
+      "caseId": "ranged-14",
+      "kind": "phi-krasue",
+      "facing": "west",
+      "outcome": "dodge",
+      "range": 2.6,
+      "flightMs": 520,
+      "serverAt": 1792083671686,
+      "player": {
+        "x": 33.4,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.4,
+        "y": 14
+      },
+      "start": 194153.90000000596,
+      "launch": 194433.79999999702,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 280.09999999403954,
+      "arrival": 194950.40000000596,
+      "travelled": 2.675999641418892
+    },
+    {
+      "caseId": "ranged-15",
+      "kind": "phi-krasue",
+      "facing": "south-west",
+      "outcome": "hit",
+      "range": 2.6,
+      "flightMs": 520,
+      "serverAt": 1792083673180,
+      "player": {
+        "x": 34.16152236891497,
+        "y": 15.838477631085023
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 34.16152236891497,
+        "y": 15.838477631085023
+      },
+      "start": 195647.10000000894,
+      "launch": 195927.5,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 280.5,
+      "image": "frames/phi-krasue-south-west.png",
+      "arrival": 196443.29999999702,
+      "damage": 196489.90000000596,
+      "impactImage": "frames/phi-krasue-south-west-impact.png",
+      "travelled": 6.467112084783189e-7,
+      "damageDelay": 562.4000000059605,
+      "arrivalDelta": 46.6000000089407
+    },
+    {
+      "caseId": "ranged-16",
+      "kind": "phi-krasue",
+      "facing": "south-west",
+      "outcome": "dodge",
+      "range": 2.6,
+      "flightMs": 520,
+      "serverAt": 1792083674673,
+      "player": {
+        "x": 34.16152236891497,
+        "y": 15.838477631085023
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 34.16152236891497,
+        "y": 15.838477631085023
+      },
+      "start": 197140.70000000298,
+      "launch": 197420.20000000298,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 279.59999999403954,
+      "arrival": 197936.40000000596,
+      "travelled": 2.6759991695968304
+    },
+    {
+      "caseId": "ranged-17",
+      "kind": "phi-krasue",
+      "facing": "south",
+      "outcome": "outside",
+      "range": 2.6,
+      "flightMs": 750,
+      "serverAt": 1792083676167,
+      "player": {
+        "x": 36,
+        "y": 17.75
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 17.75
+      },
+      "travelled": 0
+    },
+    {
+      "caseId": "ranged-3",
+      "kind": "ubume",
+      "facing": "south",
+      "outcome": "hit",
+      "range": 3.1,
+      "flightMs": 689,
+      "serverAt": 1792084451913,
+      "player": {
+        "x": 36,
+        "y": 17.1
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 17.1
+      },
+      "start": 74941.40000000596,
+      "launch": 75220.29999999702,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 279.09999999403954,
+      "image": "frames/ubume-south.png",
+      "arrival": 75911.90000000596,
+      "damage": 75923.10000000894,
+      "impactImage": "frames/ubume-south-impact.png",
+      "travelled": 3.8146972514141453e-7,
+      "damageDelay": 702.8000000119209,
+      "arrivalDelta": 11.200000002980232
+    },
+    {
+      "caseId": "ranged-19",
+      "kind": "ubume",
+      "facing": "south",
+      "outcome": "dodge",
+      "range": 3.1,
+      "flightMs": 689,
+      "serverAt": 1792083678811,
+      "player": {
+        "x": 36,
+        "y": 17.1
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 17.1
+      },
+      "start": 201278.40000000596,
+      "launch": 201559,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 280.8999999910593,
+      "arrival": 202248.40000000596,
+      "travelled": 3.419998168945334
+    },
+    {
+      "caseId": "ranged-20",
+      "kind": "ubume",
+      "facing": "south-east",
+      "outcome": "hit",
+      "range": 3.1,
+      "flightMs": 689,
+      "serverAt": 1792083680460,
+      "player": {
+        "x": 38.1920310216783,
+        "y": 16.192031021678297
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.1920310216783,
+        "y": 16.192031021678297
+      },
+      "start": 202927.20000000298,
+      "launch": 203206.40000000596,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 281.09999999403954,
+      "image": "frames/ubume-south-east.png",
+      "arrival": 203894.79999999702,
+      "damage": 203912.90000000596,
+      "impactImage": "frames/ubume-south-east-impact.png",
+      "travelled": 0.0000011860631071005702,
+      "damageDelay": 706.5,
+      "arrivalDelta": 18.100000008940697
+    },
+    {
+      "caseId": "ranged-21",
+      "kind": "ubume",
+      "facing": "south-east",
+      "outcome": "dodge",
+      "range": 3.1,
+      "flightMs": 689,
+      "serverAt": 1792083682092,
+      "player": {
+        "x": 38.1920310216783,
+        "y": 16.192031021678297
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.1920310216783,
+        "y": 16.192031021678297
+      },
+      "start": 204544.5,
+      "launch": 204824.5,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 281.20000000298023,
+      "arrival": 205512.40000000596,
+      "travelled": 3.372000087613016
+    },
+    {
+      "caseId": "ranged-22",
+      "kind": "ubume",
+      "facing": "east",
+      "outcome": "hit",
+      "range": 3.1,
+      "flightMs": 689,
+      "serverAt": 1792083683741,
+      "player": {
+        "x": 39.1,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.1,
+        "y": 14
+      },
+      "start": 206208.40000000596,
+      "launch": 206488.10000000894,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 279.79999999701977,
+      "image": "frames/ubume-east.png",
+      "arrival": 207179,
+      "damage": 207191.20000000298,
+      "impactImage": "frames/ubume-east-impact.png",
+      "travelled": 0.0000015258789076710855,
+      "damageDelay": 703.0999999940395,
+      "arrivalDelta": 12.200000002980232
+    },
+    {
+      "caseId": "ranged-23",
+      "kind": "ubume",
+      "facing": "east",
+      "outcome": "dodge",
+      "range": 3.1,
+      "flightMs": 689,
+      "serverAt": 1792083685374,
+      "player": {
+        "x": 39.1,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.1,
+        "y": 14
+      },
+      "start": 207825.90000000596,
+      "launch": 208106.60000000894,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 280.79999999701977,
+      "arrival": 208796.90000000596,
+      "travelled": 3.239999771118523
+    },
+    {
+      "caseId": "ranged-24",
+      "kind": "ubume",
+      "facing": "north-east",
+      "outcome": "hit",
+      "range": 3.1,
+      "flightMs": 689,
+      "serverAt": 1792083687008,
+      "player": {
+        "x": 38.1920310216783,
+        "y": 11.807968978321703
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.1920310216783,
+        "y": 11.807968978321703
+      },
+      "start": 209476.60000000894,
+      "launch": 209756.70000000298,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 280.29999999701977,
+      "image": "frames/ubume-north-east.png",
+      "arrival": 210449.60000000894,
+      "damage": 210462.70000000298,
+      "impactImage": "frames/ubume-north-east-impact.png",
+      "travelled": 8.465211684414574e-7,
+      "damageDelay": 706,
+      "arrivalDelta": 13.099999994039536
+    },
+    {
+      "caseId": "ranged-25",
+      "kind": "ubume",
+      "facing": "north-east",
+      "outcome": "dodge",
+      "range": 3.1,
+      "flightMs": 689,
+      "serverAt": 1792083688643,
+      "player": {
+        "x": 38.1920310216783,
+        "y": 11.807968978321703
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.1920310216783,
+        "y": 11.807968978321703
+      },
+      "start": 211096.79999999702,
+      "launch": 211375.90000000596,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 279.30000001192093,
+      "arrival": 212067.70000000298,
+      "travelled": 3.239998855475549
+    },
+    {
+      "caseId": "ranged-4",
+      "kind": "ubume",
+      "facing": "north",
+      "outcome": "hit",
+      "range": 3.1,
+      "flightMs": 689,
+      "serverAt": 1792084453547,
+      "player": {
+        "x": 36,
+        "y": 10.9
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 10.9
+      },
+      "start": 76557.10000000894,
+      "launch": 76836.90000000596,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 279.8999999910593,
+      "image": "frames/ubume-north.png",
+      "arrival": 77529.79999999702,
+      "damage": 77538.10000000894,
+      "impactImage": "frames/ubume-north-impact.png",
+      "travelled": 3.8146972691777137e-7,
+      "damageDelay": 701.2000000029802,
+      "arrivalDelta": 8.300000011920929
+    },
+    {
+      "caseId": "ranged-27",
+      "kind": "ubume",
+      "facing": "north",
+      "outcome": "dodge",
+      "range": 3.1,
+      "flightMs": 689,
+      "serverAt": 1792083691911,
+      "player": {
+        "x": 36,
+        "y": 10.9
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 10.9
+      },
+      "start": 214363.40000000596,
+      "launch": 214642.90000000596,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 279.70000000298023,
+      "arrival": 215332.10000000894,
+      "travelled": 3.2360000610351785
+    },
+    {
+      "caseId": "ranged-28",
+      "kind": "ubume",
+      "facing": "north-west",
+      "outcome": "hit",
+      "range": 3.1,
+      "flightMs": 689,
+      "serverAt": 1792083693544,
+      "player": {
+        "x": 33.8079689783217,
+        "y": 11.807968978321703
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.8079689783217,
+        "y": 11.807968978321703
+      },
+      "start": 216011.29999999702,
+      "launch": 216291.70000000298,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 280.5,
+      "image": "frames/ubume-north-west.png",
+      "arrival": 216984.10000000894,
+      "damage": 216998.79999999702,
+      "impactImage": "frames/ubume-north-west-impact.png",
+      "travelled": 8.465211684414574e-7,
+      "damageDelay": 707.0999999940395,
+      "arrivalDelta": 14.699999988079071
+    },
+    {
+      "caseId": "ranged-29",
+      "kind": "ubume",
+      "facing": "north-west",
+      "outcome": "dodge",
+      "range": 3.1,
+      "flightMs": 689,
+      "serverAt": 1792083695178,
+      "player": {
+        "x": 33.8079689783217,
+        "y": 11.807968978321703
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.8079689783217,
+        "y": 11.807968978321703
+      },
+      "start": 217629.20000000298,
+      "launch": 217909.5,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 280.40000000596046,
+      "arrival": 218602.60000000894,
+      "travelled": 3.3000004577145634
+    },
+    {
+      "caseId": "ranged-30",
+      "kind": "ubume",
+      "facing": "west",
+      "outcome": "hit",
+      "range": 3.1,
+      "flightMs": 689,
+      "serverAt": 1792083696827,
+      "player": {
+        "x": 32.9,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.9,
+        "y": 14
+      },
+      "start": 219294.60000000894,
+      "launch": 219575.5,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 281,
+      "image": "frames/ubume-west.png",
+      "arrival": 220268.79999999702,
+      "damage": 220278.79999999702,
+      "impactImage": "frames/ubume-west-impact.png",
+      "travelled": 0.0000015258789076710855,
+      "damageDelay": 703.2999999970198,
+      "arrivalDelta": 10
+    },
+    {
+      "caseId": "ranged-31",
+      "kind": "ubume",
+      "facing": "west",
+      "outcome": "dodge",
+      "range": 3.1,
+      "flightMs": 689,
+      "serverAt": 1792083698462,
+      "player": {
+        "x": 32.9,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.9,
+        "y": 14
+      },
+      "start": 220914,
+      "launch": 221193.90000000596,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 280,
+      "arrival": 221886.90000000596,
+      "travelled": 3.4280004501346166
+    },
+    {
+      "caseId": "ranged-32",
+      "kind": "ubume",
+      "facing": "south-west",
+      "outcome": "hit",
+      "range": 3.1,
+      "flightMs": 689,
+      "serverAt": 1792083700096,
+      "player": {
+        "x": 33.8079689783217,
+        "y": 16.192031021678297
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.8079689783217,
+        "y": 16.192031021678297
+      },
+      "start": 222565.10000000894,
+      "launch": 222844.90000000596,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 281.19999998807907,
+      "image": "frames/ubume-south-west.png",
+      "arrival": 223532.5,
+      "damage": 223549.10000000894,
+      "impactImage": "frames/ubume-south-west-impact.png",
+      "travelled": 0.0000011860631071005702,
+      "damageDelay": 704.2000000029802,
+      "arrivalDelta": 16.600000008940697
+    },
+    {
+      "caseId": "ranged-33",
+      "kind": "ubume",
+      "facing": "south-west",
+      "outcome": "dodge",
+      "range": 3.1,
+      "flightMs": 689,
+      "serverAt": 1792083701733,
+      "player": {
+        "x": 33.8079689783217,
+        "y": 16.192031021678297
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.8079689783217,
+        "y": 16.192031021678297
+      },
+      "start": 224186.60000000894,
+      "launch": 224465.20000000298,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 278.69999998807907,
+      "arrival": 225157.60000000894,
+      "travelled": 3.4200002904451026
+    },
+    {
+      "caseId": "ranged-34",
+      "kind": "ubume",
+      "facing": "south",
+      "outcome": "outside",
+      "range": 3.1,
+      "flightMs": 972,
+      "serverAt": 1792083703366,
+      "player": {
+        "x": 36,
+        "y": 18.375
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 18.375
+      },
+      "travelled": 0
+    },
+    {
+      "caseId": "ranged-5",
+      "kind": "cheonyeo-gwishin",
+      "facing": "south",
+      "outcome": "hit",
+      "range": 3.4,
+      "flightMs": 523,
+      "serverAt": 1792084455162,
+      "player": {
+        "x": 36,
+        "y": 17.4
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 17.4
+      },
+      "start": 78171.79999999702,
+      "launch": 78311.5,
+      "facingSeen": "south",
+      "frame": 2,
+      "launchDelay": 139.90000000596046,
+      "image": "frames/cheonyeo-gwishin-south.png",
+      "arrival": 78835.40000000596,
+      "damage": 78874.79999999702,
+      "impactImage": "frames/cheonyeo-gwishin-south-impact.png",
+      "travelled": 3.8146972514141453e-7,
+      "damageDelay": 563.2999999970198,
+      "arrivalDelta": 39.3999999910593
+    },
+    {
+      "caseId": "ranged-36",
+      "kind": "cheonyeo-gwishin",
+      "facing": "south",
+      "outcome": "dodge",
+      "range": 3.4,
+      "flightMs": 523,
+      "serverAt": 1792083705700,
+      "player": {
+        "x": 36,
+        "y": 17.4
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 17.4
+      },
+      "start": 228167,
+      "launch": 228306.90000000596,
+      "facingSeen": "south",
+      "frame": 2,
+      "launchDelay": 139.90000000596046,
+      "arrival": 228831.40000000596,
+      "travelled": 2.675998687744168
+    },
+    {
+      "caseId": "ranged-37",
+      "kind": "cheonyeo-gwishin",
+      "facing": "south-east",
+      "outcome": "hit",
+      "range": 3.4,
+      "flightMs": 523,
+      "serverAt": 1792083707053,
+      "player": {
+        "x": 38.404163056034264,
+        "y": 16.40416305603426
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.404163056034264,
+        "y": 16.40416305603426
+      },
+      "start": 229520.90000000596,
+      "launch": 229660.40000000596,
+      "facingSeen": "south-east",
+      "frame": 2,
+      "launchDelay": 139.59999999403954,
+      "image": "frames/cheonyeo-gwishin-south-east.png",
+      "arrival": 230185.40000000596,
+      "damage": 230224.20000000298,
+      "impactImage": "frames/cheonyeo-gwishin-south-east-impact.png",
+      "travelled": 4.3071492037559683e-7,
+      "damageDelay": 563.7999999970198,
+      "arrivalDelta": 38.79999999701977
+    },
+    {
+      "caseId": "ranged-38",
+      "kind": "cheonyeo-gwishin",
+      "facing": "south-east",
+      "outcome": "dodge",
+      "range": 3.4,
+      "flightMs": 523,
+      "serverAt": 1792083708406,
+      "player": {
+        "x": 38.404163056034264,
+        "y": 16.40416305603426
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.404163056034264,
+        "y": 16.40416305603426
+      },
+      "start": 230874.29999999702,
+      "launch": 231014.29999999702,
+      "facingSeen": "south-east",
+      "frame": 2,
+      "launchDelay": 140.1000000089407,
+      "arrival": 231539.5,
+      "travelled": 2.6719996022602266
+    },
+    {
+      "caseId": "ranged-39",
+      "kind": "cheonyeo-gwishin",
+      "facing": "east",
+      "outcome": "hit",
+      "range": 3.4,
+      "flightMs": 523,
+      "serverAt": 1792083709759,
+      "player": {
+        "x": 39.4,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.4,
+        "y": 14
+      },
+      "start": 232227.60000000894,
+      "launch": 232366.90000000596,
+      "facingSeen": "east",
+      "frame": 2,
+      "launchDelay": 139.3999999910593,
+      "image": "frames/cheonyeo-gwishin-east.png",
+      "arrival": 232893.70000000298,
+      "damage": 232930.70000000298,
+      "impactImage": "frames/cheonyeo-gwishin-east-impact.png",
+      "travelled": 0.0000015258789076710855,
+      "damageDelay": 563.7999999970198,
+      "arrivalDelta": 37
+    },
+    {
+      "caseId": "ranged-40",
+      "kind": "cheonyeo-gwishin",
+      "facing": "east",
+      "outcome": "dodge",
+      "range": 3.4,
+      "flightMs": 523,
+      "serverAt": 1792083711113,
+      "player": {
+        "x": 39.4,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.4,
+        "y": 14
+      },
+      "start": 233580.20000000298,
+      "launch": 233720.70000000298,
+      "facingSeen": "east",
+      "frame": 2,
+      "launchDelay": 140.70000000298023,
+      "arrival": 234247.79999999702,
+      "travelled": 2.676000595093208
+    },
+    {
+      "caseId": "ranged-41",
+      "kind": "cheonyeo-gwishin",
+      "facing": "north-east",
+      "outcome": "hit",
+      "range": 3.4,
+      "flightMs": 523,
+      "serverAt": 1792083712467,
+      "player": {
+        "x": 38.404163056034264,
+        "y": 11.59583694396574
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.404163056034264,
+        "y": 11.59583694396574
+      },
+      "start": 234934.29999999702,
+      "launch": 235074,
+      "facingSeen": "north-east",
+      "frame": 2,
+      "launchDelay": 141.1000000089407,
+      "image": "frames/cheonyeo-gwishin-north-east.png",
+      "arrival": 235594.70000000298,
+      "damage": 235635.70000000298,
+      "impactImage": "frames/cheonyeo-gwishin-north-east-impact.png",
+      "travelled": 4.3071492037559683e-7,
+      "damageDelay": 561.7000000029802,
+      "arrivalDelta": 41
+    },
+    {
+      "caseId": "ranged-42",
+      "kind": "cheonyeo-gwishin",
+      "facing": "north-east",
+      "outcome": "dodge",
+      "range": 3.4,
+      "flightMs": 523,
+      "serverAt": 1792083713820,
+      "player": {
+        "x": 38.404163056034264,
+        "y": 11.59583694396574
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.404163056034264,
+        "y": 11.59583694396574
+      },
+      "start": 236287,
+      "launch": 236426.70000000298,
+      "facingSeen": "north-east",
+      "frame": 2,
+      "launchDelay": 139.90000000596046,
+      "arrival": 236949.40000000596,
+      "travelled": 2.6800000856319532
+    },
+    {
+      "caseId": "ranged-6",
+      "kind": "cheonyeo-gwishin",
+      "facing": "north",
+      "outcome": "hit",
+      "range": 3.4,
+      "flightMs": 523,
+      "serverAt": 1792084456499,
+      "player": {
+        "x": 36,
+        "y": 10.6
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 10.6
+      },
+      "start": 79524.10000000894,
+      "launch": 79663,
+      "facingSeen": "north",
+      "frame": 2,
+      "launchDelay": 139,
+      "image": "frames/cheonyeo-gwishin-north.png",
+      "arrival": 80189.5,
+      "damage": 80226,
+      "impactImage": "frames/cheonyeo-gwishin-north-impact.png",
+      "travelled": 3.8146972691777137e-7,
+      "damageDelay": 563,
+      "arrivalDelta": 36.5
+    },
+    {
+      "caseId": "ranged-44",
+      "kind": "cheonyeo-gwishin",
+      "facing": "north",
+      "outcome": "dodge",
+      "range": 3.4,
+      "flightMs": 523,
+      "serverAt": 1792083716527,
+      "player": {
+        "x": 36,
+        "y": 10.6
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 10.6
+      },
+      "start": 238994.10000000894,
+      "launch": 239133.90000000596,
+      "facingSeen": "north",
+      "frame": 2,
+      "launchDelay": 139.8999999910593,
+      "arrival": 239657.20000000298,
+      "travelled": 2.675998687744168
+    },
+    {
+      "caseId": "ranged-45",
+      "kind": "cheonyeo-gwishin",
+      "facing": "north-west",
+      "outcome": "hit",
+      "range": 3.4,
+      "flightMs": 523,
+      "serverAt": 1792083717880,
+      "player": {
+        "x": 33.595836943965736,
+        "y": 11.595836943965738
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.595836943965736,
+        "y": 11.595836943965738
+      },
+      "start": 240347.10000000894,
+      "launch": 240487.29999999702,
+      "facingSeen": "north-west",
+      "frame": 2,
+      "launchDelay": 140.3999999910593,
+      "image": "frames/cheonyeo-gwishin-north-west.png",
+      "arrival": 241011.60000000894,
+      "damage": 241049.20000000298,
+      "impactImage": "frames/cheonyeo-gwishin-north-west-impact.png",
+      "travelled": 4.3071491911952283e-7,
+      "damageDelay": 561.9000000059605,
+      "arrivalDelta": 37.599999994039536
+    },
+    {
+      "caseId": "ranged-46",
+      "kind": "cheonyeo-gwishin",
+      "facing": "north-west",
+      "outcome": "dodge",
+      "range": 3.4,
+      "flightMs": 523,
+      "serverAt": 1792083719233,
+      "player": {
+        "x": 33.595836943965736,
+        "y": 11.595836943965738
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.595836943965736,
+        "y": 11.595836943965738
+      },
+      "start": 241700.29999999702,
+      "launch": 241840.70000000298,
+      "facingSeen": "north-west",
+      "frame": 2,
+      "launchDelay": 140.6000000089407,
+      "arrival": 242365.60000000894,
+      "travelled": 2.6760011926453657
+    },
+    {
+      "caseId": "ranged-47",
+      "kind": "cheonyeo-gwishin",
+      "facing": "west",
+      "outcome": "hit",
+      "range": 3.4,
+      "flightMs": 523,
+      "serverAt": 1792083720587,
+      "player": {
+        "x": 32.6,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.6,
+        "y": 14
+      },
+      "start": 243054.10000000894,
+      "launch": 243194.29999999702,
+      "facingSeen": "west",
+      "frame": 2,
+      "launchDelay": 140.3999999910593,
+      "image": "frames/cheonyeo-gwishin-west.png",
+      "arrival": 243719.60000000894,
+      "damage": 243757.29999999702,
+      "impactImage": "frames/cheonyeo-gwishin-west-impact.png",
+      "travelled": 0.0000015258789076710855,
+      "damageDelay": 563,
+      "arrivalDelta": 37.69999998807907
+    },
+    {
+      "caseId": "ranged-48",
+      "kind": "cheonyeo-gwishin",
+      "facing": "west",
+      "outcome": "dodge",
+      "range": 3.4,
+      "flightMs": 523,
+      "serverAt": 1792083721940,
+      "player": {
+        "x": 32.6,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.6,
+        "y": 14
+      },
+      "start": 244406.90000000596,
+      "launch": 244547.90000000596,
+      "facingSeen": "west",
+      "frame": 2,
+      "launchDelay": 141.09999999403954,
+      "arrival": 245073.70000000298,
+      "travelled": 2.671999931335885
+    },
+    {
+      "caseId": "ranged-49",
+      "kind": "cheonyeo-gwishin",
+      "facing": "south-west",
+      "outcome": "hit",
+      "range": 3.4,
+      "flightMs": 523,
+      "serverAt": 1792083723293,
+      "player": {
+        "x": 33.595836943965736,
+        "y": 16.40416305603426
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.595836943965736,
+        "y": 16.40416305603426
+      },
+      "start": 245761,
+      "launch": 245901.10000000894,
+      "facingSeen": "south-west",
+      "frame": 2,
+      "launchDelay": 140.20000000298023,
+      "image": "frames/cheonyeo-gwishin-south-west.png",
+      "arrival": 246427.79999999702,
+      "damage": 246462.79999999702,
+      "impactImage": "frames/cheonyeo-gwishin-south-west-impact.png",
+      "travelled": 4.3071492037559683e-7,
+      "damageDelay": 561.6999999880791,
+      "arrivalDelta": 35
+    },
+    {
+      "caseId": "ranged-50",
+      "kind": "cheonyeo-gwishin",
+      "facing": "south-west",
+      "outcome": "dodge",
+      "range": 3.4,
+      "flightMs": 523,
+      "serverAt": 1792083724646,
+      "player": {
+        "x": 33.595836943965736,
+        "y": 16.40416305603426
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.595836943965736,
+        "y": 16.40416305603426
+      },
+      "start": 247114.20000000298,
+      "launch": 247253.90000000596,
+      "facingSeen": "south-west",
+      "frame": 2,
+      "launchDelay": 139.90000000596046,
+      "arrival": 247775.20000000298,
+      "travelled": 2.6800000856319532
+    },
+    {
+      "caseId": "ranged-51",
+      "kind": "cheonyeo-gwishin",
+      "facing": "south",
+      "outcome": "outside",
+      "range": 3.4,
+      "flightMs": 731,
+      "serverAt": 1792083726001,
+      "player": {
+        "x": 36,
+        "y": 18.75
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 18.75
+      },
+      "travelled": 0
+    },
+    {
+      "caseId": "ranged-7",
+      "kind": "mulgwishin",
+      "facing": "south",
+      "outcome": "hit",
+      "range": 3.8,
+      "flightMs": 691,
+      "serverAt": 1792084457851,
+      "player": {
+        "x": 36,
+        "y": 17.8
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 17.8
+      },
+      "start": 80875.29999999702,
+      "launch": 81154.5,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 279.30000001192093,
+      "image": "frames/mulgwishin-south.png",
+      "arrival": 81842.29999999702,
+      "damage": 81853.90000000596,
+      "impactImage": "frames/mulgwishin-south-impact.png",
+      "travelled": 7.629394538355427e-7,
+      "damageDelay": 699.4000000059605,
+      "arrivalDelta": 11.600000008940697
+    },
+    {
+      "caseId": "ranged-53",
+      "kind": "mulgwishin",
+      "facing": "south",
+      "outcome": "dodge",
+      "range": 3.8,
+      "flightMs": 691,
+      "serverAt": 1792083728600,
+      "player": {
+        "x": 36,
+        "y": 17.8
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 17.8
+      },
+      "start": 251051.10000000894,
+      "launch": 251332.90000000596,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 282,
+      "arrival": 252025,
+      "travelled": 3.4239997863770384
+    },
+    {
+      "caseId": "ranged-54",
+      "kind": "mulgwishin",
+      "facing": "south-east",
+      "outcome": "hit",
+      "range": 3.8,
+      "flightMs": 691,
+      "serverAt": 1792083730234,
+      "player": {
+        "x": 38.68700576850888,
+        "y": 16.68700576850888
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.68700576850888,
+        "y": 16.68700576850888
+      },
+      "start": 252701.40000000596,
+      "launch": 252981.90000000596,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.70000000298023,
+      "image": "frames/mulgwishin-south-east.png",
+      "arrival": 253670.70000000298,
+      "damage": 253684.10000000894,
+      "impactImage": "frames/mulgwishin-south-east-impact.png",
+      "travelled": 0.00000169458822320785,
+      "damageDelay": 702.2000000029802,
+      "arrivalDelta": 13.400000005960464
+    },
+    {
+      "caseId": "ranged-55",
+      "kind": "mulgwishin",
+      "facing": "south-east",
+      "outcome": "dodge",
+      "range": 3.8,
+      "flightMs": 691,
+      "serverAt": 1792083731868,
+      "player": {
+        "x": 38.68700576850888,
+        "y": 16.68700576850888
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.68700576850888,
+        "y": 16.68700576850888
+      },
+      "start": 254319.29999999702,
+      "launch": 254599.79999999702,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.6000000089407,
+      "arrival": 255289.20000000298,
+      "travelled": 3.42399918343183
+    },
+    {
+      "caseId": "ranged-56",
+      "kind": "mulgwishin",
+      "facing": "east",
+      "outcome": "hit",
+      "range": 3.8,
+      "flightMs": 691,
+      "serverAt": 1792083733502,
+      "player": {
+        "x": 39.8,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.8,
+        "y": 14
+      },
+      "start": 255970.60000000894,
+      "launch": 256249.29999999702,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 278.79999999701977,
+      "image": "frames/mulgwishin-east.png",
+      "arrival": 256941.40000000596,
+      "damage": 256952.5,
+      "impactImage": "frames/mulgwishin-east-impact.png",
+      "travelled": 7.629394502828291e-7,
+      "damageDelay": 703.2000000029802,
+      "arrivalDelta": 11.099999994039536
+    },
+    {
+      "caseId": "ranged-57",
+      "kind": "mulgwishin",
+      "facing": "east",
+      "outcome": "dodge",
+      "range": 3.8,
+      "flightMs": 691,
+      "serverAt": 1792083735135,
+      "player": {
+        "x": 39.8,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.8,
+        "y": 14
+      },
+      "start": 257588.10000000894,
+      "launch": 257866.60000000894,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 278.69999998807907,
+      "arrival": 258559.5,
+      "travelled": 3.4239997863770384
+    },
+    {
+      "caseId": "ranged-58",
+      "kind": "mulgwishin",
+      "facing": "north-east",
+      "outcome": "hit",
+      "range": 3.8,
+      "flightMs": 691,
+      "serverAt": 1792083736768,
+      "player": {
+        "x": 38.68700576850888,
+        "y": 11.31299423149112
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.68700576850888,
+        "y": 11.31299423149112
+      },
+      "start": 259236.20000000298,
+      "launch": 259515.70000000298,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 279.59999999403954,
+      "image": "frames/mulgwishin-north-east.png",
+      "arrival": 260205.29999999702,
+      "damage": 260218,
+      "impactImage": "frames/mulgwishin-north-east-impact.png",
+      "travelled": 0.0000016945882229686437,
+      "damageDelay": 702.2999999970198,
+      "arrivalDelta": 12.700000002980232
+    },
+    {
+      "caseId": "ranged-59",
+      "kind": "mulgwishin",
+      "facing": "north-east",
+      "outcome": "dodge",
+      "range": 3.8,
+      "flightMs": 691,
+      "serverAt": 1792083738402,
+      "player": {
+        "x": 38.68700576850888,
+        "y": 11.31299423149112
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.68700576850888,
+        "y": 11.31299423149112
+      },
+      "start": 260854.10000000894,
+      "launch": 261134.10000000894,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 280.09999999403954,
+      "arrival": 261823.40000000596,
+      "travelled": 3.4200009647948186
+    },
+    {
+      "caseId": "ranged-8",
+      "kind": "mulgwishin",
+      "facing": "north",
+      "outcome": "hit",
+      "range": 3.8,
+      "flightMs": 691,
+      "serverAt": 1792084459481,
+      "player": {
+        "x": 36,
+        "y": 10.2
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 10.2
+      },
+      "start": 82490.60000000894,
+      "launch": 82769,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 278.5,
+      "image": "frames/mulgwishin-north.png",
+      "arrival": 83460.29999999702,
+      "damage": 83471,
+      "impactImage": "frames/mulgwishin-north-impact.png",
+      "travelled": 1.9073486257070726e-7,
+      "damageDelay": 702,
+      "arrivalDelta": 10.700000002980232
+    },
+    {
+      "caseId": "ranged-61",
+      "kind": "mulgwishin",
+      "facing": "north",
+      "outcome": "dodge",
+      "range": 3.8,
+      "flightMs": 691,
+      "serverAt": 1792083741669,
+      "player": {
+        "x": 36,
+        "y": 10.2
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 10.2
+      },
+      "start": 264120.700000003,
+      "launch": 264400.700000003,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 280.29999999701977,
+      "arrival": 265094.299999997,
+      "travelled": 3.4239997863769585
+    },
+    {
+      "caseId": "ranged-62",
+      "kind": "mulgwishin",
+      "facing": "north-west",
+      "outcome": "hit",
+      "range": 3.8,
+      "flightMs": 691,
+      "serverAt": 1792083743302,
+      "player": {
+        "x": 33.31299423149112,
+        "y": 11.31299423149112
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.31299423149112,
+        "y": 11.31299423149112
+      },
+      "start": 265769.200000003,
+      "launch": 266049.200000003,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 280.20000000298023,
+      "image": "frames/mulgwishin-north-west.png",
+      "arrival": 266739.799999997,
+      "damage": 266753.799999997,
+      "impactImage": "frames/mulgwishin-north-west-impact.png",
+      "travelled": 0.0000016945882229686437,
+      "damageDelay": 704.5999999940395,
+      "arrivalDelta": 14
+    },
+    {
+      "caseId": "ranged-63",
+      "kind": "mulgwishin",
+      "facing": "north-west",
+      "outcome": "dodge",
+      "range": 3.8,
+      "flightMs": 691,
+      "serverAt": 1792083744935,
+      "player": {
+        "x": 33.31299423149112,
+        "y": 11.31299423149112
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.31299423149112,
+        "y": 11.31299423149112
+      },
+      "start": 267387.40000000596,
+      "launch": 267667.10000000894,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 279.8999999910593,
+      "arrival": 268358,
+      "travelled": 3.423999183431829
+    },
+    {
+      "caseId": "ranged-64",
+      "kind": "mulgwishin",
+      "facing": "west",
+      "outcome": "hit",
+      "range": 3.8,
+      "flightMs": 691,
+      "serverAt": 1792083746569,
+      "player": {
+        "x": 32.2,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.2,
+        "y": 14
+      },
+      "start": 269036,
+      "launch": 269317,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 281.1000000089407,
+      "image": "frames/mulgwishin-west.png",
+      "arrival": 270010.60000000894,
+      "damage": 270020.40000000596,
+      "impactImage": "frames/mulgwishin-west-impact.png",
+      "travelled": 7.629394502828291e-7,
+      "damageDelay": 703.4000000059605,
+      "arrivalDelta": 9.799999997019768
+    },
+    {
+      "caseId": "ranged-65",
+      "kind": "mulgwishin",
+      "facing": "west",
+      "outcome": "dodge",
+      "range": 3.8,
+      "flightMs": 691,
+      "serverAt": 1792083748202,
+      "player": {
+        "x": 32.2,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.2,
+        "y": 14
+      },
+      "start": 270654,
+      "launch": 270933.90000000596,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 280,
+      "arrival": 271621.90000000596,
+      "travelled": 3.4239997863770384
+    },
+    {
+      "caseId": "ranged-66",
+      "kind": "mulgwishin",
+      "facing": "south-west",
+      "outcome": "hit",
+      "range": 3.8,
+      "flightMs": 691,
+      "serverAt": 1792083749835,
+      "player": {
+        "x": 33.31299423149112,
+        "y": 16.68700576850888
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.31299423149112,
+        "y": 16.68700576850888
+      },
+      "start": 272303.10000000894,
+      "launch": 272582.799999997,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 279.8999999910593,
+      "image": "frames/mulgwishin-south-west.png",
+      "arrival": 273274.40000000596,
+      "damage": 273284.90000000596,
+      "impactImage": "frames/mulgwishin-south-west-impact.png",
+      "travelled": 0.00000169458822320785,
+      "damageDelay": 702.1000000089407,
+      "arrivalDelta": 10.5
+    },
+    {
+      "caseId": "ranged-67",
+      "kind": "mulgwishin",
+      "facing": "south-west",
+      "outcome": "dodge",
+      "range": 3.8,
+      "flightMs": 691,
+      "serverAt": 1792083751469,
+      "player": {
+        "x": 33.31299423149112,
+        "y": 16.68700576850888
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.31299423149112,
+        "y": 16.68700576850888
+      },
+      "start": 273921.200000003,
+      "launch": 274200.40000000596,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 279.29999999701977,
+      "arrival": 274892.90000000596,
+      "travelled": 3.239999529824789
+    },
+    {
+      "caseId": "ranged-68",
+      "kind": "mulgwishin",
+      "facing": "south",
+      "outcome": "outside",
+      "range": 3.8,
+      "flightMs": 955,
+      "serverAt": 1792083753103,
+      "player": {
+        "x": 36,
+        "y": 19.25
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 19.25
+      },
+      "travelled": 0
+    },
+    {
+      "caseId": "ranged-9",
+      "kind": "gumiho",
+      "facing": "south",
+      "outcome": "hit",
+      "range": 6.1,
+      "flightMs": 763,
+      "serverAt": 1792084461097,
+      "player": {
+        "x": 36,
+        "y": 20.1
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 20.1
+      },
+      "start": 84107.40000000596,
+      "launch": 84387.29999999702,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 280,
+      "image": "frames/gumiho-south.png",
+      "arrival": 85147.90000000596,
+      "damage": 85182.5,
+      "impactImage": "frames/gumiho-south-impact.png",
+      "travelled": 3.8146972514141453e-7,
+      "damageDelay": 795.2000000029802,
+      "arrivalDelta": 34.599999994039536
+    },
+    {
+      "caseId": "ranged-70",
+      "kind": "gumiho",
+      "facing": "south",
+      "outcome": "dodge",
+      "range": 6.1,
+      "flightMs": 763,
+      "serverAt": 1792083755856,
+      "player": {
+        "x": 36,
+        "y": 20.1
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 20.1
+      },
+      "start": 278324.10000000894,
+      "launch": 278604,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 280.09999999403954,
+      "arrival": 279364.60000000894,
+      "travelled": 3.608001708984395
+    },
+    {
+      "caseId": "ranged-71",
+      "kind": "gumiho",
+      "facing": "south-east",
+      "outcome": "hit",
+      "range": 6.1,
+      "flightMs": 763,
+      "serverAt": 1792083757583,
+      "player": {
+        "x": 40.31335136523794,
+        "y": 18.31335136523794
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.31335136523794,
+        "y": 18.31335136523794
+      },
+      "start": 280050.799999997,
+      "launch": 280330.799999997,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 281.70000000298023,
+      "image": "frames/gumiho-south-east.png",
+      "arrival": 281087.700000003,
+      "damage": 281125.40000000596,
+      "impactImage": "frames/gumiho-south-east-impact.png",
+      "travelled": 9.7262213316969e-7,
+      "damageDelay": 794.6000000089407,
+      "arrivalDelta": 37.70000000298023
+    },
+    {
+      "caseId": "ranged-72",
+      "kind": "gumiho",
+      "facing": "south-east",
+      "outcome": "dodge",
+      "range": 6.1,
+      "flightMs": 763,
+      "serverAt": 1792083759308,
+      "player": {
+        "x": 40.31335136523794,
+        "y": 18.31335136523794
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.31335136523794,
+        "y": 18.31335136523794
+      },
+      "start": 281775.799999997,
+      "launch": 282056.299999997,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.70000000298023,
+      "arrival": 282816.10000000894,
+      "travelled": 3.6079995113888432
+    },
+    {
+      "caseId": "ranged-73",
+      "kind": "gumiho",
+      "facing": "east",
+      "outcome": "hit",
+      "range": 6.1,
+      "flightMs": 763,
+      "serverAt": 1792083761035,
+      "player": {
+        "x": 42.1,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 42.1,
+        "y": 14
+      },
+      "start": 283502.700000003,
+      "launch": 283782.90000000596,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 280.40000000596046,
+      "image": "frames/gumiho-east.png",
+      "arrival": 284548,
+      "damage": 284578.10000000894,
+      "impactImage": "frames/gumiho-east-impact.png",
+      "travelled": 0.0000015258789076710855,
+      "damageDelay": 795.2000000029802,
+      "arrivalDelta": 30.100000008940697
+    },
+    {
+      "caseId": "ranged-74",
+      "kind": "gumiho",
+      "facing": "east",
+      "outcome": "dodge",
+      "range": 6.1,
+      "flightMs": 763,
+      "serverAt": 1792083762762,
+      "player": {
+        "x": 42.1,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 42.1,
+        "y": 14
+      },
+      "start": 285229.700000003,
+      "launch": 285509.10000000894,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 279.5,
+      "arrival": 286267.799999997,
+      "travelled": 3.607999801636065
+    },
+    {
+      "caseId": "ranged-75",
+      "kind": "gumiho",
+      "facing": "north-east",
+      "outcome": "hit",
+      "range": 6.1,
+      "flightMs": 763,
+      "serverAt": 1792083764489,
+      "player": {
+        "x": 40.31335136523794,
+        "y": 9.686648634762062
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.31335136523794,
+        "y": 9.686648634762062
+      },
+      "start": 286956.5,
+      "launch": 287235.40000000596,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 279,
+      "image": "frames/gumiho-north-east.png",
+      "arrival": 287996.799999997,
+      "damage": 288031.299999997,
+      "impactImage": "frames/gumiho-north-east-impact.png",
+      "travelled": 7.373695630626216e-7,
+      "damageDelay": 795.8999999910593,
+      "arrivalDelta": 34.5
+    },
+    {
+      "caseId": "ranged-76",
+      "kind": "gumiho",
+      "facing": "north-east",
+      "outcome": "dodge",
+      "range": 6.1,
+      "flightMs": 763,
+      "serverAt": 1792083766215,
+      "player": {
+        "x": 40.31335136523794,
+        "y": 9.686648634762062
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.31335136523794,
+        "y": 9.686648634762062
+      },
+      "start": 288682.799999997,
+      "launch": 288962.799999997,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 280.20000000298023,
+      "arrival": 289725.5,
+      "travelled": 3.608000860087598
+    },
+    {
+      "caseId": "ranged-10",
+      "kind": "gumiho",
+      "facing": "north",
+      "outcome": "hit",
+      "range": 6.1,
+      "flightMs": 763,
+      "serverAt": 1792084462809,
+      "player": {
+        "x": 36,
+        "y": 7.9
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 7.9
+      },
+      "start": 85832.60000000894,
+      "launch": 86113,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 280.3999999910593,
+      "image": "frames/gumiho-north.png",
+      "arrival": 86870.10000000894,
+      "damage": 86908,
+      "impactImage": "frames/gumiho-north-impact.png",
+      "travelled": 9.536743128535363e-8,
+      "damageDelay": 795,
+      "arrivalDelta": 37.8999999910593
+    },
+    {
+      "caseId": "ranged-78",
+      "kind": "gumiho",
+      "facing": "north",
+      "outcome": "dodge",
+      "range": 6.1,
+      "flightMs": 763,
+      "serverAt": 1792083769669,
+      "player": {
+        "x": 36,
+        "y": 7.9
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 7.9
+      },
+      "start": 292136,
+      "launch": 292415.700000003,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 279.79999999701977,
+      "arrival": 293176.700000003,
+      "travelled": 3.611999511718751
+    },
+    {
+      "caseId": "ranged-79",
+      "kind": "gumiho",
+      "facing": "north-west",
+      "outcome": "hit",
+      "range": 6.1,
+      "flightMs": 763,
+      "serverAt": 1792083771396,
+      "player": {
+        "x": 31.68664863476206,
+        "y": 9.68664863476206
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.68664863476206,
+        "y": 9.68664863476206
+      },
+      "start": 293862.90000000596,
+      "launch": 294143.299999997,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 280.59999999403954,
+      "image": "frames/gumiho-north-west.png",
+      "arrival": 294905.799999997,
+      "damage": 294938.5,
+      "impactImage": "frames/gumiho-north-west-impact.png",
+      "travelled": 7.373695591083613e-7,
+      "damageDelay": 795.2000000029802,
+      "arrivalDelta": 32.70000000298023
+    },
+    {
+      "caseId": "ranged-80",
+      "kind": "gumiho",
+      "facing": "north-west",
+      "outcome": "dodge",
+      "range": 6.1,
+      "flightMs": 763,
+      "serverAt": 1792083773122,
+      "player": {
+        "x": 31.68664863476206,
+        "y": 9.68664863476206
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.68664863476206,
+        "y": 9.68664863476206
+      },
+      "start": 295589.40000000596,
+      "launch": 295869.40000000596,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 280.20000000298023,
+      "arrival": 296628.40000000596,
+      "travelled": 3.6079988370390037
+    },
+    {
+      "caseId": "ranged-81",
+      "kind": "gumiho",
+      "facing": "west",
+      "outcome": "hit",
+      "range": 6.1,
+      "flightMs": 763,
+      "serverAt": 1792083774849,
+      "player": {
+        "x": 29.9,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 29.9,
+        "y": 14
+      },
+      "start": 297317.299999997,
+      "launch": 297597.10000000894,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 279.80000001192093,
+      "image": "frames/gumiho-west.png",
+      "arrival": 298357.10000000894,
+      "damage": 298395.40000000596,
+      "impactImage": "frames/gumiho-west-impact.png",
+      "travelled": 3.8146972514141453e-7,
+      "damageDelay": 798.2999999970198,
+      "arrivalDelta": 38.29999999701977
+    },
+    {
+      "caseId": "ranged-82",
+      "kind": "gumiho",
+      "facing": "west",
+      "outcome": "dodge",
+      "range": 6.1,
+      "flightMs": 763,
+      "serverAt": 1792083776577,
+      "player": {
+        "x": 29.9,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 29.9,
+        "y": 14
+      },
+      "start": 299043.90000000596,
+      "launch": 299323.90000000596,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 280.20000000298023,
+      "arrival": 300086.5,
+      "travelled": 3.616000175476094
+    },
+    {
+      "caseId": "ranged-83",
+      "kind": "gumiho",
+      "facing": "south-west",
+      "outcome": "hit",
+      "range": 6.1,
+      "flightMs": 763,
+      "serverAt": 1792083778304,
+      "player": {
+        "x": 31.686648634762058,
+        "y": 18.31335136523794
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.686648634762058,
+        "y": 18.31335136523794
+      },
+      "start": 300771.40000000596,
+      "launch": 301052.799999997,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 281.5,
+      "image": "frames/gumiho-south-west.png",
+      "arrival": 301815.299999997,
+      "damage": 301846.799999997,
+      "impactImage": "frames/gumiho-south-west-impact.png",
+      "travelled": 9.7262213316969e-7,
+      "damageDelay": 794,
+      "arrivalDelta": 31.5
+    },
+    {
+      "caseId": "ranged-84",
+      "kind": "gumiho",
+      "facing": "south-west",
+      "outcome": "dodge",
+      "range": 6.1,
+      "flightMs": 763,
+      "serverAt": 1792083780031,
+      "player": {
+        "x": 31.686648634762058,
+        "y": 18.31335136523794
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.686648634762058,
+        "y": 18.31335136523794
+      },
+      "start": 302498.40000000596,
+      "launch": 302778.5,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 280.20000000298023,
+      "arrival": 303537.5,
+      "travelled": 3.608000860087598
+    },
+    {
+      "caseId": "ranged-85",
+      "kind": "gumiho",
+      "facing": "south",
+      "outcome": "outside",
+      "range": 6.1,
+      "flightMs": 1016,
+      "serverAt": 1792083781758,
+      "player": {
+        "x": 36,
+        "y": 22.125
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 22.125
+      },
+      "travelled": 0
+    },
+    {
+      "caseId": "ranged-11",
+      "kind": "chonggak-gwishin",
+      "facing": "south",
+      "outcome": "hit",
+      "range": 3.2,
+      "flightMs": 533,
+      "serverAt": 1792084464534,
+      "player": {
+        "x": 36,
+        "y": 17.2
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 17.2
+      },
+      "start": 87559.20000000298,
+      "launch": 87838.40000000596,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 279.20000000298023,
+      "image": "frames/chonggak-gwishin-south.png",
+      "arrival": 88371.90000000596,
+      "damage": 88402.79999999702,
+      "impactImage": "frames/chonggak-gwishin-south-impact.png",
+      "travelled": 7.629394538355427e-7,
+      "damageDelay": 564.3999999910593,
+      "arrivalDelta": 30.899999991059303
+    },
+    {
+      "caseId": "ranged-87",
+      "kind": "chonggak-gwishin",
+      "facing": "south",
+      "outcome": "dodge",
+      "range": 3.2,
+      "flightMs": 533,
+      "serverAt": 1792083784215,
+      "player": {
+        "x": 36,
+        "y": 17.2
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 17.2
+      },
+      "start": 306682.60000000894,
+      "launch": 306962.60000000894,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 280.09999999403954,
+      "arrival": 307495.799999997,
+      "travelled": 2.6800003051758896
+    },
+    {
+      "caseId": "ranged-88",
+      "kind": "chonggak-gwishin",
+      "facing": "south-east",
+      "outcome": "hit",
+      "range": 3.2,
+      "flightMs": 533,
+      "serverAt": 1792083785725,
+      "player": {
+        "x": 38.262741699796955,
+        "y": 16.26274169979695
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.262741699796955,
+        "y": 16.26274169979695
+      },
+      "start": 308193,
+      "launch": 308472.60000000894,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 279.70000000298023,
+      "image": "frames/chonggak-gwishin-south-east.png",
+      "arrival": 309002.799999997,
+      "damage": 309035.799999997,
+      "impactImage": "frames/chonggak-gwishin-south-east-impact.png",
+      "travelled": 8.639851599473317e-7,
+      "damageDelay": 563.1999999880791,
+      "arrivalDelta": 33
+    },
+    {
+      "caseId": "ranged-89",
+      "kind": "chonggak-gwishin",
+      "facing": "south-east",
+      "outcome": "dodge",
+      "range": 3.2,
+      "flightMs": 533,
+      "serverAt": 1792083787219,
+      "player": {
+        "x": 38.262741699796955,
+        "y": 16.26274169979695
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.262741699796955,
+        "y": 16.26274169979695
+      },
+      "start": 309685.90000000596,
+      "launch": 309966.60000000894,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.70000000298023,
+      "arrival": 310496,
+      "travelled": 2.680000085632063
+    },
+    {
+      "caseId": "ranged-90",
+      "kind": "chonggak-gwishin",
+      "facing": "east",
+      "outcome": "hit",
+      "range": 3.2,
+      "flightMs": 533,
+      "serverAt": 1792083788730,
+      "player": {
+        "x": 39.2,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.2,
+        "y": 14
+      },
+      "start": 311197.799999997,
+      "launch": 311476.700000003,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 279,
+      "image": "frames/chonggak-gwishin-east.png",
+      "arrival": 312009.799999997,
+      "damage": 312041.299999997,
+      "impactImage": "frames/chonggak-gwishin-east-impact.png",
+      "travelled": 7.629394502828291e-7,
+      "damageDelay": 564.5999999940395,
+      "arrivalDelta": 31.5
+    },
+    {
+      "caseId": "ranged-91",
+      "kind": "chonggak-gwishin",
+      "facing": "east",
+      "outcome": "dodge",
+      "range": 3.2,
+      "flightMs": 533,
+      "serverAt": 1792083790223,
+      "player": {
+        "x": 39.2,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.2,
+        "y": 14
+      },
+      "start": 312691.200000003,
+      "launch": 312970.700000003,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 279.59999999403954,
+      "arrival": 313502.90000000596,
+      "travelled": 2.6760005950928822
+    },
+    {
+      "caseId": "ranged-92",
+      "kind": "chonggak-gwishin",
+      "facing": "north-east",
+      "outcome": "hit",
+      "range": 3.2,
+      "flightMs": 533,
+      "serverAt": 1792083791732,
+      "player": {
+        "x": 38.262741699796955,
+        "y": 11.737258300203049
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.262741699796955,
+        "y": 11.737258300203049
+      },
+      "start": 314199.10000000894,
+      "launch": 314479.299999997,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 280.3999999910593,
+      "image": "frames/chonggak-gwishin-north-east.png",
+      "arrival": 315009.5,
+      "damage": 315041.299999997,
+      "impactImage": "frames/chonggak-gwishin-north-east-impact.png",
+      "travelled": 7.005062518689841e-7,
+      "damageDelay": 562,
+      "arrivalDelta": 31.799999997019768
+    },
+    {
+      "caseId": "ranged-93",
+      "kind": "chonggak-gwishin",
+      "facing": "north-east",
+      "outcome": "dodge",
+      "range": 3.2,
+      "flightMs": 533,
+      "serverAt": 1792083793225,
+      "player": {
+        "x": 38.262741699796955,
+        "y": 11.737258300203049
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.262741699796955,
+        "y": 11.737258300203049
+      },
+      "start": 315692.90000000596,
+      "launch": 315972.5,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 279.70000000298023,
+      "arrival": 316502.60000000894,
+      "travelled": 2.6760005182958797
+    },
+    {
+      "caseId": "ranged-12",
+      "kind": "chonggak-gwishin",
+      "facing": "north",
+      "outcome": "hit",
+      "range": 3.2,
+      "flightMs": 533,
+      "serverAt": 1792084466026,
+      "player": {
+        "x": 36,
+        "y": 10.8
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 10.8
+      },
+      "start": 89052.60000000894,
+      "launch": 89331.90000000596,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 279.3999999910593,
+      "image": "frames/chonggak-gwishin-north.png",
+      "arrival": 89863.29999999702,
+      "damage": 89896.10000000894,
+      "impactImage": "frames/chonggak-gwishin-north-impact.png",
+      "travelled": 1.9073486257070726e-7,
+      "damageDelay": 564.2000000029802,
+      "arrivalDelta": 32.80000001192093
+    },
+    {
+      "caseId": "ranged-95",
+      "kind": "chonggak-gwishin",
+      "facing": "north",
+      "outcome": "dodge",
+      "range": 3.2,
+      "flightMs": 533,
+      "serverAt": 1792083796228,
+      "player": {
+        "x": 36,
+        "y": 10.8
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 10.8
+      },
+      "start": 318694.700000003,
+      "launch": 318975.200000003,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 280.70000000298023,
+      "arrival": 319509.299999997,
+      "travelled": 2.6759986877441473
+    },
+    {
+      "caseId": "ranged-96",
+      "kind": "chonggak-gwishin",
+      "facing": "north-west",
+      "outcome": "hit",
+      "range": 3.2,
+      "flightMs": 533,
+      "serverAt": 1792083797736,
+      "player": {
+        "x": 33.737258300203045,
+        "y": 11.737258300203047
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.737258300203045,
+        "y": 11.737258300203047
+      },
+      "start": 320205.60000000894,
+      "launch": 320483.90000000596,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 278.3999999910593,
+      "image": "frames/chonggak-gwishin-north-west.png",
+      "arrival": 321016.299999997,
+      "damage": 321047,
+      "impactImage": "frames/chonggak-gwishin-north-west-impact.png",
+      "travelled": 7.005062509998462e-7,
+      "damageDelay": 563.0999999940395,
+      "arrivalDelta": 30.700000002980232
+    },
+    {
+      "caseId": "ranged-97",
+      "kind": "chonggak-gwishin",
+      "facing": "north-west",
+      "outcome": "dodge",
+      "range": 3.2,
+      "flightMs": 533,
+      "serverAt": 1792083799230,
+      "player": {
+        "x": 33.737258300203045,
+        "y": 11.737258300203047
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.737258300203045,
+        "y": 11.737258300203047
+      },
+      "start": 321697.799999997,
+      "launch": 321977.10000000894,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 279.40000000596046,
+      "arrival": 322509.200000003,
+      "travelled": 2.6759991695967313
+    },
+    {
+      "caseId": "ranged-98",
+      "kind": "chonggak-gwishin",
+      "facing": "west",
+      "outcome": "hit",
+      "range": 3.2,
+      "flightMs": 533,
+      "serverAt": 1792083800740,
+      "player": {
+        "x": 32.8,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.8,
+        "y": 14
+      },
+      "start": 323208,
+      "launch": 323489.799999997,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 282.1000000089407,
+      "image": "frames/chonggak-gwishin-west.png",
+      "arrival": 324023.299999997,
+      "damage": 324051.10000000894,
+      "impactImage": "frames/chonggak-gwishin-west-impact.png",
+      "travelled": 7.629394502828291e-7,
+      "damageDelay": 561.3000000119209,
+      "arrivalDelta": 27.80000001192093
+    },
+    {
+      "caseId": "ranged-99",
+      "kind": "chonggak-gwishin",
+      "facing": "west",
+      "outcome": "dodge",
+      "range": 3.2,
+      "flightMs": 533,
+      "serverAt": 1792083802234,
+      "player": {
+        "x": 32.8,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.8,
+        "y": 14
+      },
+      "start": 324701.40000000596,
+      "launch": 324982.40000000596,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 281.09999999403954,
+      "arrival": 325516.200000003,
+      "travelled": 2.675999641418566
+    },
+    {
+      "caseId": "ranged-100",
+      "kind": "chonggak-gwishin",
+      "facing": "south-west",
+      "outcome": "hit",
+      "range": 3.2,
+      "flightMs": 533,
+      "serverAt": 1792083803743,
+      "player": {
+        "x": 33.737258300203045,
+        "y": 16.26274169979695
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.737258300203045,
+        "y": 16.26274169979695
+      },
+      "start": 326211.799999997,
+      "launch": 326490.5,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 278.90000000596046,
+      "image": "frames/chonggak-gwishin-south-west.png",
+      "arrival": 327024,
+      "damage": 327056.10000000894,
+      "impactImage": "frames/chonggak-gwishin-south-west-impact.png",
+      "travelled": 8.639851599473317e-7,
+      "damageDelay": 565.6000000089407,
+      "arrivalDelta": 32.1000000089407
+    },
+    {
+      "caseId": "ranged-101",
+      "kind": "chonggak-gwishin",
+      "facing": "south-west",
+      "outcome": "dodge",
+      "range": 3.2,
+      "flightMs": 533,
+      "serverAt": 1792083805236,
+      "player": {
+        "x": 33.737258300203045,
+        "y": 16.26274169979695
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.737258300203045,
+        "y": 16.26274169979695
+      },
+      "start": 327705.5,
+      "launch": 327984.10000000894,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 278.70000000298023,
+      "arrival": 328516.10000000894,
+      "travelled": 2.6759991695964827
+    },
+    {
+      "caseId": "ranged-102",
+      "kind": "chonggak-gwishin",
+      "facing": "south",
+      "outcome": "outside",
+      "range": 3.2,
+      "flightMs": 750,
+      "serverAt": 1792083806745,
+      "player": {
+        "x": 36,
+        "y": 18.5
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 18.5
+      },
+      "travelled": 0
+    },
+    {
+      "caseId": "ranged-13",
+      "kind": "rusalka",
+      "facing": "south",
+      "outcome": "hit",
+      "range": 4.4,
+      "flightMs": 759,
+      "serverAt": 1792084467520,
+      "player": {
+        "x": 36,
+        "y": 18.4
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 18.4
+      },
+      "start": 90545.5,
+      "launch": 90685,
+      "facingSeen": "south",
+      "frame": 2,
+      "launchDelay": 139.70000000298023,
+      "image": "frames/rusalka-south.png",
+      "arrival": 91446.40000000596,
+      "damage": 91482,
+      "impactImage": "frames/rusalka-south-impact.png",
+      "travelled": 3.8146972514141453e-7,
+      "damageDelay": 797,
+      "arrivalDelta": 35.599999994039536
+    },
+    {
+      "caseId": "ranged-104",
+      "kind": "rusalka",
+      "facing": "south",
+      "outcome": "dodge",
+      "range": 4.4,
+      "flightMs": 759,
+      "serverAt": 1792083809297,
+      "player": {
+        "x": 36,
+        "y": 18.4
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 18.4
+      },
+      "start": 331764.299999997,
+      "launch": 331903.90000000596,
+      "facingSeen": "south",
+      "frame": 2,
+      "launchDelay": 139.6000000089407,
+      "arrival": 332661.799999997,
+      "travelled": 3.608001708984395
+    },
+    {
+      "caseId": "ranged-105",
+      "kind": "rusalka",
+      "facing": "south-east",
+      "outcome": "hit",
+      "range": 4.4,
+      "flightMs": 759,
+      "serverAt": 1792083810883,
+      "player": {
+        "x": 39.11126983722081,
+        "y": 17.11126983722081
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.11126983722081,
+        "y": 17.11126983722081
+      },
+      "start": 333351.10000000894,
+      "launch": 333491.10000000894,
+      "facingSeen": "south-east",
+      "frame": 2,
+      "launchDelay": 140.09999999403954,
+      "image": "frames/rusalka-south-east.png",
+      "arrival": 334252.299999997,
+      "damage": 334289.60000000894,
+      "impactImage": "frames/rusalka-south-east-impact.png",
+      "travelled": 0.0000013582415763715987,
+      "damageDelay": 798.5,
+      "arrivalDelta": 37.30000001192093
+    },
+    {
+      "caseId": "ranged-106",
+      "kind": "rusalka",
+      "facing": "south-east",
+      "outcome": "dodge",
+      "range": 4.4,
+      "flightMs": 759,
+      "serverAt": 1792083812472,
+      "player": {
+        "x": 39.11126983722081,
+        "y": 17.11126983722081
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.11126983722081,
+        "y": 17.11126983722081
+      },
+      "start": 334940.40000000596,
+      "launch": 335079.60000000894,
+      "facingSeen": "south-east",
+      "frame": 2,
+      "launchDelay": 139.20000000298023,
+      "arrival": 335842.299999997,
+      "travelled": 3.6080008600875844
+    },
+    {
+      "caseId": "ranged-107",
+      "kind": "rusalka",
+      "facing": "east",
+      "outcome": "hit",
+      "range": 4.4,
+      "flightMs": 759,
+      "serverAt": 1792083814058,
+      "player": {
+        "x": 40.4,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.4,
+        "y": 14
+      },
+      "start": 336526.5,
+      "launch": 336667,
+      "facingSeen": "east",
+      "frame": 2,
+      "launchDelay": 140.6000000089407,
+      "image": "frames/rusalka-east.png",
+      "arrival": 337425.90000000596,
+      "damage": 337463.5,
+      "impactImage": "frames/rusalka-east-impact.png",
+      "travelled": 0.0000015258789076710855,
+      "damageDelay": 796.5,
+      "arrivalDelta": 37.599999994039536
+    },
+    {
+      "caseId": "ranged-108",
+      "kind": "rusalka",
+      "facing": "east",
+      "outcome": "dodge",
+      "range": 4.4,
+      "flightMs": 759,
+      "serverAt": 1792083815646,
+      "player": {
+        "x": 40.4,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.4,
+        "y": 14
+      },
+      "start": 338114.40000000596,
+      "launch": 338254.200000003,
+      "facingSeen": "east",
+      "frame": 2,
+      "launchDelay": 140,
+      "arrival": 339016.10000000894,
+      "travelled": 3.607999801636065
+    },
+    {
+      "caseId": "ranged-109",
+      "kind": "rusalka",
+      "facing": "north-east",
+      "outcome": "hit",
+      "range": 4.4,
+      "flightMs": 759,
+      "serverAt": 1792083817233,
+      "player": {
+        "x": 39.11126983722081,
+        "y": 10.88873016277919
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.11126983722081,
+        "y": 10.88873016277919
+      },
+      "start": 339700.5,
+      "launch": 339841,
+      "facingSeen": "north-east",
+      "frame": 2,
+      "launchDelay": 140.79999999701977,
+      "image": "frames/rusalka-north-east.png",
+      "arrival": 340599.200000003,
+      "damage": 340637.5,
+      "impactImage": "frames/rusalka-north-east-impact.png",
+      "travelled": 0.00000107335353416038,
+      "damageDelay": 796.5,
+      "arrivalDelta": 38.29999999701977
+    },
+    {
+      "caseId": "ranged-110",
+      "kind": "rusalka",
+      "facing": "north-east",
+      "outcome": "dodge",
+      "range": 4.4,
+      "flightMs": 759,
+      "serverAt": 1792083818821,
+      "player": {
+        "x": 39.11126983722081,
+        "y": 10.88873016277919
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.11126983722081,
+        "y": 10.88873016277919
+      },
+      "start": 341288.10000000894,
+      "launch": 341428.10000000894,
+      "facingSeen": "north-east",
+      "frame": 2,
+      "launchDelay": 140.09999999403954,
+      "arrival": 342189.5,
+      "travelled": 3.607998837038889
+    },
+    {
+      "caseId": "ranged-14",
+      "kind": "rusalka",
+      "facing": "north",
+      "outcome": "hit",
+      "range": 4.4,
+      "flightMs": 759,
+      "serverAt": 1792084469105,
+      "player": {
+        "x": 36,
+        "y": 9.6
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 9.6
+      },
+      "start": 92130.70000000298,
+      "launch": 92269.40000000596,
+      "facingSeen": "north",
+      "frame": 2,
+      "launchDelay": 138.79999999701977,
+      "image": "frames/rusalka-north.png",
+      "arrival": 93029.90000000596,
+      "damage": 93067.60000000894,
+      "impactImage": "frames/rusalka-north-impact.png",
+      "travelled": 3.8146972691777137e-7,
+      "damageDelay": 798.2000000029802,
+      "arrivalDelta": 37.70000000298023
+    },
+    {
+      "caseId": "ranged-112",
+      "kind": "rusalka",
+      "facing": "north",
+      "outcome": "dodge",
+      "range": 4.4,
+      "flightMs": 759,
+      "serverAt": 1792083821995,
+      "player": {
+        "x": 36,
+        "y": 9.6
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 9.6
+      },
+      "start": 344463,
+      "launch": 344602.700000003,
+      "facingSeen": "north",
+      "frame": 2,
+      "launchDelay": 139.79999999701977,
+      "arrival": 345363.299999997,
+      "travelled": 3.608001708984395
+    },
+    {
+      "caseId": "ranged-113",
+      "kind": "rusalka",
+      "facing": "north-west",
+      "outcome": "hit",
+      "range": 4.4,
+      "flightMs": 759,
+      "serverAt": 1792083823582,
+      "player": {
+        "x": 32.88873016277919,
+        "y": 10.88873016277919
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.88873016277919,
+        "y": 10.88873016277919
+      },
+      "start": 346049.799999997,
+      "launch": 346190.5,
+      "facingSeen": "north-west",
+      "frame": 2,
+      "launchDelay": 140.80000001192093,
+      "image": "frames/rusalka-north-west.png",
+      "arrival": 346953.40000000596,
+      "damage": 346984.90000000596,
+      "impactImage": "frames/rusalka-north-west-impact.png",
+      "travelled": 0.00000107335353416038,
+      "damageDelay": 794.4000000059605,
+      "arrivalDelta": 31.5
+    },
+    {
+      "caseId": "ranged-114",
+      "kind": "rusalka",
+      "facing": "north-west",
+      "outcome": "dodge",
+      "range": 4.4,
+      "flightMs": 759,
+      "serverAt": 1792083825168,
+      "player": {
+        "x": 32.88873016277919,
+        "y": 10.88873016277919
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.88873016277919,
+        "y": 10.88873016277919
+      },
+      "start": 347636,
+      "launch": 347776.299999997,
+      "facingSeen": "north-west",
+      "frame": 2,
+      "launchDelay": 140.5,
+      "arrival": 348536.40000000596,
+      "travelled": 3.6080001857380415
+    },
+    {
+      "caseId": "ranged-115",
+      "kind": "rusalka",
+      "facing": "west",
+      "outcome": "hit",
+      "range": 4.4,
+      "flightMs": 759,
+      "serverAt": 1792083826755,
+      "player": {
+        "x": 31.6,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.6,
+        "y": 14
+      },
+      "start": 349223,
+      "launch": 349362.700000003,
+      "facingSeen": "west",
+      "frame": 2,
+      "launchDelay": 140.6000000089407,
+      "image": "frames/rusalka-west.png",
+      "arrival": 350119.700000003,
+      "damage": 350158.299999997,
+      "impactImage": "frames/rusalka-west-impact.png",
+      "travelled": 3.8146972514141453e-7,
+      "damageDelay": 795.5999999940395,
+      "arrivalDelta": 38.599999994039536
+    },
+    {
+      "caseId": "ranged-116",
+      "kind": "rusalka",
+      "facing": "west",
+      "outcome": "dodge",
+      "range": 4.4,
+      "flightMs": 759,
+      "serverAt": 1792083828342,
+      "player": {
+        "x": 31.6,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.6,
+        "y": 14
+      },
+      "start": 350809.700000003,
+      "launch": 350949.5,
+      "facingSeen": "west",
+      "frame": 2,
+      "launchDelay": 140,
+      "arrival": 351710,
+      "travelled": 3.607999801635762
+    },
+    {
+      "caseId": "ranged-117",
+      "kind": "rusalka",
+      "facing": "south-west",
+      "outcome": "hit",
+      "range": 4.4,
+      "flightMs": 759,
+      "serverAt": 1792083829929,
+      "player": {
+        "x": 32.88873016277919,
+        "y": 17.11126983722081
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.88873016277919,
+        "y": 17.11126983722081
+      },
+      "start": 352398.5,
+      "launch": 352537,
+      "facingSeen": "south-west",
+      "frame": 2,
+      "launchDelay": 138.6000000089407,
+      "image": "frames/rusalka-south-west.png",
+      "arrival": 353300.10000000894,
+      "damage": 353333.299999997,
+      "impactImage": "frames/rusalka-south-west-impact.png",
+      "travelled": 0.0000013582415763715987,
+      "damageDelay": 796.2999999970198,
+      "arrivalDelta": 33.19999998807907
+    },
+    {
+      "caseId": "ranged-118",
+      "kind": "rusalka",
+      "facing": "south-west",
+      "outcome": "dodge",
+      "range": 4.4,
+      "flightMs": 759,
+      "serverAt": 1792083831516,
+      "player": {
+        "x": 32.88873016277919,
+        "y": 17.11126983722081
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.88873016277919,
+        "y": 17.11126983722081
+      },
+      "start": 353984.40000000596,
+      "launch": 354123.90000000596,
+      "facingSeen": "south-west",
+      "frame": 2,
+      "launchDelay": 139.5,
+      "arrival": 354883.5,
+      "travelled": 3.6080001857381014
+    },
+    {
+      "caseId": "ranged-119",
+      "kind": "rusalka",
+      "facing": "south",
+      "outcome": "outside",
+      "range": 4.4,
+      "flightMs": 1034,
+      "serverAt": 1792083833103,
+      "player": {
+        "x": 36,
+        "y": 20
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 20
+      },
+      "travelled": 0
+    },
+    {
+      "caseId": "ranged-15",
+      "kind": "utburdur",
+      "facing": "south",
+      "outcome": "hit",
+      "range": 4.1,
+      "flightMs": 661,
+      "serverAt": 1792084470691,
+      "player": {
+        "x": 36,
+        "y": 18.1
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 18.1
+      },
+      "start": 93716.20000000298,
+      "launch": 93996.70000000298,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 280.59999999403954,
+      "image": "frames/utburdur-south.png",
+      "arrival": 94661.79999999702,
+      "damage": 94700.79999999702,
+      "impactImage": "frames/utburdur-south-impact.png",
+      "travelled": 3.8146972514141453e-7,
+      "damageDelay": 704.0999999940395,
+      "arrivalDelta": 39
+    },
+    {
+      "caseId": "ranged-121",
+      "kind": "utburdur",
+      "facing": "south",
+      "outcome": "dodge",
+      "range": 4.1,
+      "flightMs": 661,
+      "serverAt": 1792083835701,
+      "player": {
+        "x": 36,
+        "y": 18.1
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 18.1
+      },
+      "start": 358168.90000000596,
+      "launch": 358448.200000003,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 279.29999999701977,
+      "arrival": 359112.60000000894,
+      "travelled": 3.2360000610351785
+    },
+    {
+      "caseId": "ranged-122",
+      "kind": "utburdur",
+      "facing": "south-east",
+      "outcome": "hit",
+      "range": 4.1,
+      "flightMs": 661,
+      "serverAt": 1792083837334,
+      "player": {
+        "x": 38.89913780286484,
+        "y": 16.899137802864843
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.89913780286484,
+        "y": 16.899137802864843
+      },
+      "start": 359801.200000003,
+      "launch": 360081.700000003,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.79999999701977,
+      "image": "frames/utburdur-south-east.png",
+      "arrival": 360744.5,
+      "damage": 360783.799999997,
+      "impactImage": "frames/utburdur-south-east-impact.png",
+      "travelled": 0.000001630389376985915,
+      "damageDelay": 702.0999999940395,
+      "arrivalDelta": 39.29999999701977
+    },
+    {
+      "caseId": "ranged-123",
+      "kind": "utburdur",
+      "facing": "south-east",
+      "outcome": "dodge",
+      "range": 4.1,
+      "flightMs": 661,
+      "serverAt": 1792083838967,
+      "player": {
+        "x": 38.89913780286484,
+        "y": 16.899137802864843
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.89913780286484,
+        "y": 16.899137802864843
+      },
+      "start": 361435,
+      "launch": 361715.40000000596,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.5,
+      "arrival": 362376.40000000596,
+      "travelled": 3.2319997208027464
+    },
+    {
+      "caseId": "ranged-124",
+      "kind": "utburdur",
+      "facing": "east",
+      "outcome": "hit",
+      "range": 4.1,
+      "flightMs": 661,
+      "serverAt": 1792083840601,
+      "player": {
+        "x": 40.1,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.1,
+        "y": 14
+      },
+      "start": 363068.200000003,
+      "launch": 363348.10000000894,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 280,
+      "image": "frames/utburdur-east.png",
+      "arrival": 364008.200000003,
+      "damage": 364051.90000000596,
+      "impactImage": "frames/utburdur-east-impact.png",
+      "travelled": 0.0000015258789076710855,
+      "damageDelay": 703.7999999970198,
+      "arrivalDelta": 43.70000000298023
+    },
+    {
+      "caseId": "ranged-125",
+      "kind": "utburdur",
+      "facing": "east",
+      "outcome": "dodge",
+      "range": 4.1,
+      "flightMs": 661,
+      "serverAt": 1792083842234,
+      "player": {
+        "x": 40.1,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.1,
+        "y": 14
+      },
+      "start": 364702,
+      "launch": 364981.60000000894,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 279.70000000298023,
+      "arrival": 365647.299999997,
+      "travelled": 3.2360000610355155
+    },
+    {
+      "caseId": "ranged-126",
+      "kind": "utburdur",
+      "facing": "north-east",
+      "outcome": "hit",
+      "range": 4.1,
+      "flightMs": 661,
+      "serverAt": 1792083843867,
+      "player": {
+        "x": 38.89913780286484,
+        "y": 11.100862197135156
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.89913780286484,
+        "y": 11.100862197135156
+      },
+      "start": 366335.90000000596,
+      "launch": 366614.90000000596,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 279.09999999403954,
+      "image": "frames/utburdur-north-east.png",
+      "arrival": 367279,
+      "damage": 367317.40000000596,
+      "impactImage": "frames/utburdur-north-east-impact.png",
+      "travelled": 0.00000163038937731922,
+      "damageDelay": 702.5,
+      "arrivalDelta": 38.400000005960464
+    },
+    {
+      "caseId": "ranged-127",
+      "kind": "utburdur",
+      "facing": "north-east",
+      "outcome": "dodge",
+      "range": 4.1,
+      "flightMs": 661,
+      "serverAt": 1792083845501,
+      "player": {
+        "x": 38.89913780286484,
+        "y": 11.100862197135156
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.89913780286484,
+        "y": 11.100862197135156
+      },
+      "start": 367968.40000000596,
+      "launch": 368248.90000000596,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 280.59999999403954,
+      "arrival": 368910.799999997,
+      "travelled": 3.239999529824963
+    },
+    {
+      "caseId": "ranged-16",
+      "kind": "utburdur",
+      "facing": "north",
+      "outcome": "hit",
+      "range": 4.1,
+      "flightMs": 661,
+      "serverAt": 1792084472324,
+      "player": {
+        "x": 36,
+        "y": 9.9
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 9.9
+      },
+      "start": 95350.40000000596,
+      "launch": 95629.20000000298,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 279,
+      "image": "frames/utburdur-north.png",
+      "arrival": 96293.60000000894,
+      "damage": 96333,
+      "impactImage": "frames/utburdur-north-impact.png",
+      "travelled": 3.8146972691777137e-7,
+      "damageDelay": 703.7999999970198,
+      "arrivalDelta": 39.3999999910593
+    },
+    {
+      "caseId": "ranged-129",
+      "kind": "utburdur",
+      "facing": "north",
+      "outcome": "dodge",
+      "range": 4.1,
+      "flightMs": 661,
+      "serverAt": 1792083848769,
+      "player": {
+        "x": 36,
+        "y": 9.9
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 9.9
+      },
+      "start": 371236.90000000596,
+      "launch": 371517,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 280.29999999701977,
+      "arrival": 372181.60000000894,
+      "travelled": 3.231998443603538
+    },
+    {
+      "caseId": "ranged-130",
+      "kind": "utburdur",
+      "facing": "north-west",
+      "outcome": "hit",
+      "range": 4.1,
+      "flightMs": 661,
+      "serverAt": 1792083850403,
+      "player": {
+        "x": 33.10086219713516,
+        "y": 11.100862197135156
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.10086219713516,
+        "y": 11.100862197135156
+      },
+      "start": 372870.60000000894,
+      "launch": 373150.5,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 280,
+      "image": "frames/utburdur-north-west.png",
+      "arrival": 373813.700000003,
+      "damage": 373853.299999997,
+      "impactImage": "frames/utburdur-north-west-impact.png",
+      "travelled": 0.00000163038937731922,
+      "damageDelay": 702.7999999970198,
+      "arrivalDelta": 39.599999994039536
+    },
+    {
+      "caseId": "ranged-131",
+      "kind": "utburdur",
+      "facing": "north-west",
+      "outcome": "dodge",
+      "range": 4.1,
+      "flightMs": 661,
+      "serverAt": 1792083852036,
+      "player": {
+        "x": 33.10086219713516,
+        "y": 11.100862197135156
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.10086219713516,
+        "y": 11.100862197135156
+      },
+      "start": 374504,
+      "launch": 374783.700000003,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 279.90000000596046,
+      "arrival": 375445.5,
+      "travelled": 3.236000636838247
+    },
+    {
+      "caseId": "ranged-132",
+      "kind": "utburdur",
+      "facing": "west",
+      "outcome": "hit",
+      "range": 4.1,
+      "flightMs": 661,
+      "serverAt": 1792083853669,
+      "player": {
+        "x": 31.9,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.9,
+        "y": 14
+      },
+      "start": 376136.60000000894,
+      "launch": 376416.90000000596,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 280.3999999910593,
+      "image": "frames/utburdur-west.png",
+      "arrival": 377077.299999997,
+      "damage": 377119.10000000894,
+      "impactImage": "frames/utburdur-west-impact.png",
+      "travelled": 3.8146972514141453e-7,
+      "damageDelay": 702.2000000029802,
+      "arrivalDelta": 41.80000001192093
+    },
+    {
+      "caseId": "ranged-133",
+      "kind": "utburdur",
+      "facing": "west",
+      "outcome": "dodge",
+      "range": 4.1,
+      "flightMs": 661,
+      "serverAt": 1792083855303,
+      "player": {
+        "x": 31.9,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.9,
+        "y": 14
+      },
+      "start": 377770.200000003,
+      "launch": 378050.299999997,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 280.09999999403954,
+      "arrival": 378716.200000003,
+      "travelled": 3.2360000610351785
+    },
+    {
+      "caseId": "ranged-134",
+      "kind": "utburdur",
+      "facing": "south-west",
+      "outcome": "hit",
+      "range": 4.1,
+      "flightMs": 661,
+      "serverAt": 1792083856937,
+      "player": {
+        "x": 33.10086219713516,
+        "y": 16.899137802864843
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.10086219713516,
+        "y": 16.899137802864843
+      },
+      "start": 379404.90000000596,
+      "launch": 379684,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 279.20000000298023,
+      "image": "frames/utburdur-south-west.png",
+      "arrival": 380348.5,
+      "damage": 380387.10000000894,
+      "impactImage": "frames/utburdur-south-west-impact.png",
+      "travelled": 0.000001630389376985915,
+      "damageDelay": 703.1000000089407,
+      "arrivalDelta": 38.6000000089407
+    },
+    {
+      "caseId": "ranged-135",
+      "kind": "utburdur",
+      "facing": "south-west",
+      "outcome": "dodge",
+      "range": 4.1,
+      "flightMs": 661,
+      "serverAt": 1792083858570,
+      "player": {
+        "x": 33.10086219713516,
+        "y": 16.899137802864843
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.10086219713516,
+        "y": 16.899137802864843
+      },
+      "start": 381037.10000000894,
+      "launch": 381318,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 281,
+      "arrival": 381980.200000003,
+      "travelled": 3.236000636838068
+    },
+    {
+      "caseId": "ranged-136",
+      "kind": "utburdur",
+      "facing": "south",
+      "outcome": "outside",
+      "range": 4.1,
+      "flightMs": 907,
+      "serverAt": 1792083860204,
+      "player": {
+        "x": 36,
+        "y": 19.625
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 19.625
+      },
+      "travelled": 0
+    },
+    {
+      "caseId": "ranged-17",
+      "kind": "nu-gui",
+      "facing": "south",
+      "outcome": "hit",
+      "range": 4.2,
+      "flightMs": 656,
+      "serverAt": 1792084473956,
+      "player": {
+        "x": 36,
+        "y": 18.2
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 18.2
+      },
+      "start": 96983.60000000894,
+      "launch": 97261.5,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 278.09999999403954,
+      "image": "frames/nu-gui-south.png",
+      "arrival": 97918.40000000596,
+      "damage": 97965.60000000894,
+      "impactImage": "frames/nu-gui-south-impact.png",
+      "travelled": 7.629394538355427e-7,
+      "damageDelay": 704.1000000089407,
+      "arrivalDelta": 47.20000000298023
+    },
+    {
+      "caseId": "ranged-138",
+      "kind": "nu-gui",
+      "facing": "south",
+      "outcome": "dodge",
+      "range": 4.2,
+      "flightMs": 656,
+      "serverAt": 1792083862802,
+      "player": {
+        "x": 36,
+        "y": 18.2
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 18.2
+      },
+      "start": 385269,
+      "launch": 385550.799999997,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 282.1000000089407,
+      "arrival": 386209.10000000894,
+      "travelled": 3.236000061035246
+    },
+    {
+      "caseId": "ranged-139",
+      "kind": "nu-gui",
+      "facing": "south-east",
+      "outcome": "hit",
+      "range": 4.2,
+      "flightMs": 656,
+      "serverAt": 1792083864404,
+      "player": {
+        "x": 38.9698484809835,
+        "y": 16.9698484809835
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.9698484809835,
+        "y": 16.9698484809835
+      },
+      "start": 386856,
+      "launch": 387136.200000003,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.29999999701977,
+      "image": "frames/nu-gui-south-east.png",
+      "arrival": 387792.5,
+      "damage": 387837.799999997,
+      "impactImage": "frames/nu-gui-south-east-impact.png",
+      "travelled": 2.1471862976072694e-7,
+      "damageDelay": 701.5999999940395,
+      "arrivalDelta": 45.29999999701977
+    },
+    {
+      "caseId": "ranged-140",
+      "kind": "nu-gui",
+      "facing": "south-east",
+      "outcome": "dodge",
+      "range": 4.2,
+      "flightMs": 656,
+      "serverAt": 1792083866023,
+      "player": {
+        "x": 38.9698484809835,
+        "y": 16.9698484809835
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.9698484809835,
+        "y": 16.9698484809835
+      },
+      "start": 388490.60000000894,
+      "launch": 388770.60000000894,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.19999998807907,
+      "arrival": 389424.700000003,
+      "travelled": 3.2359986137893375
+    },
+    {
+      "caseId": "ranged-141",
+      "kind": "nu-gui",
+      "facing": "east",
+      "outcome": "hit",
+      "range": 4.2,
+      "flightMs": 656,
+      "serverAt": 1792083867656,
+      "player": {
+        "x": 40.2,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.2,
+        "y": 14
+      },
+      "start": 390123.799999997,
+      "launch": 390404.200000003,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 280.40000000596046,
+      "image": "frames/nu-gui-east.png",
+      "arrival": 391063.299999997,
+      "damage": 391107.299999997,
+      "impactImage": "frames/nu-gui-east-impact.png",
+      "travelled": 7.629394502828291e-7,
+      "damageDelay": 703.0999999940395,
+      "arrivalDelta": 44
+    },
+    {
+      "caseId": "ranged-142",
+      "kind": "nu-gui",
+      "facing": "east",
+      "outcome": "dodge",
+      "range": 4.2,
+      "flightMs": 656,
+      "serverAt": 1792083869290,
+      "player": {
+        "x": 40.2,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.2,
+        "y": 14
+      },
+      "start": 391756.799999997,
+      "launch": 392036.90000000596,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 280.20000000298023,
+      "arrival": 392695,
+      "travelled": 3.232000350952238
+    },
+    {
+      "caseId": "ranged-143",
+      "kind": "nu-gui",
+      "facing": "north-east",
+      "outcome": "hit",
+      "range": 4.2,
+      "flightMs": 656,
+      "serverAt": 1792083870892,
+      "player": {
+        "x": 38.9698484809835,
+        "y": 11.030151519016501
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.9698484809835,
+        "y": 11.030151519016501
+      },
+      "start": 393344.299999997,
+      "launch": 393624.10000000894,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 280.1000000089407,
+      "image": "frames/nu-gui-north-east.png",
+      "arrival": 394278.299999997,
+      "damage": 394325.60000000894,
+      "impactImage": "frames/nu-gui-north-east-impact.png",
+      "travelled": 2.147186310168009e-7,
+      "damageDelay": 701.5,
+      "arrivalDelta": 47.30000001192093
+    },
+    {
+      "caseId": "ranged-144",
+      "kind": "nu-gui",
+      "facing": "north-east",
+      "outcome": "dodge",
+      "range": 4.2,
+      "flightMs": 656,
+      "serverAt": 1792083872510,
+      "player": {
+        "x": 38.9698484809835,
+        "y": 11.030151519016501
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.9698484809835,
+        "y": 11.030151519016501
+      },
+      "start": 394976.90000000596,
+      "launch": 395257.200000003,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 280.3999999910593,
+      "arrival": 395910.299999997,
+      "travelled": 3.235999288138938
+    },
+    {
+      "caseId": "ranged-18",
+      "kind": "nu-gui",
+      "facing": "north",
+      "outcome": "hit",
+      "range": 4.2,
+      "flightMs": 656,
+      "serverAt": 1792084475589,
+      "player": {
+        "x": 36,
+        "y": 9.8
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 9.8
+      },
+      "start": 98615.29999999702,
+      "launch": 98895,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 279.90000000596046,
+      "image": "frames/nu-gui-north.png",
+      "arrival": 99550.40000000596,
+      "damage": 99598.10000000894,
+      "impactImage": "frames/nu-gui-north-impact.png",
+      "travelled": 1.9073486257070726e-7,
+      "damageDelay": 703.1000000089407,
+      "arrivalDelta": 47.70000000298023
+    },
+    {
+      "caseId": "ranged-146",
+      "kind": "nu-gui",
+      "facing": "north",
+      "outcome": "dodge",
+      "range": 4.2,
+      "flightMs": 656,
+      "serverAt": 1792083875729,
+      "player": {
+        "x": 36,
+        "y": 9.8
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 9.8
+      },
+      "start": 398196.60000000894,
+      "launch": 398477.200000003,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 280.69999998807907,
+      "arrival": 399132.700000003,
+      "travelled": 3.2319984436035214
+    },
+    {
+      "caseId": "ranged-147",
+      "kind": "nu-gui",
+      "facing": "north-west",
+      "outcome": "hit",
+      "range": 4.2,
+      "flightMs": 656,
+      "serverAt": 1792083877363,
+      "player": {
+        "x": 33.0301515190165,
+        "y": 11.0301515190165
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.0301515190165,
+        "y": 11.0301515190165
+      },
+      "start": 399830.700000003,
+      "launch": 400110.200000003,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 279.5,
+      "image": "frames/nu-gui-north-west.png",
+      "arrival": 400764.299999997,
+      "damage": 400812.10000000894,
+      "impactImage": "frames/nu-gui-north-west-impact.png",
+      "travelled": 2.1471862976072694e-7,
+      "damageDelay": 701.9000000059605,
+      "arrivalDelta": 47.80000001192093
+    },
+    {
+      "caseId": "ranged-148",
+      "kind": "nu-gui",
+      "facing": "north-west",
+      "outcome": "dodge",
+      "range": 4.2,
+      "flightMs": 656,
+      "serverAt": 1792083878996,
+      "player": {
+        "x": 33.0301515190165,
+        "y": 11.0301515190165
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.0301515190165,
+        "y": 11.0301515190165
+      },
+      "start": 401463.799999997,
+      "launch": 401744.5,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 280.80000001192093,
+      "arrival": 402403.60000000894,
+      "travelled": 3.2359992881390287
+    },
+    {
+      "caseId": "ranged-149",
+      "kind": "nu-gui",
+      "facing": "west",
+      "outcome": "hit",
+      "range": 4.2,
+      "flightMs": 656,
+      "serverAt": 1792083880598,
+      "player": {
+        "x": 31.8,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.8,
+        "y": 14
+      },
+      "start": 403050.60000000894,
+      "launch": 403330.299999997,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 279.79999999701977,
+      "image": "frames/nu-gui-west.png",
+      "arrival": 403986.60000000894,
+      "damage": 404032.40000000596,
+      "impactImage": "frames/nu-gui-west-impact.png",
+      "travelled": 7.629394538355427e-7,
+      "damageDelay": 702.1000000089407,
+      "arrivalDelta": 45.79999999701977
+    },
+    {
+      "caseId": "ranged-150",
+      "kind": "nu-gui",
+      "facing": "west",
+      "outcome": "dodge",
+      "range": 4.2,
+      "flightMs": 656,
+      "serverAt": 1792083882216,
+      "player": {
+        "x": 31.8,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.8,
+        "y": 14
+      },
+      "start": 404683.90000000596,
+      "launch": 404963.700000003,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 279.8999999910593,
+      "arrival": 405618.299999997,
+      "travelled": 3.236000061035246
+    },
+    {
+      "caseId": "ranged-151",
+      "kind": "nu-gui",
+      "facing": "south-west",
+      "outcome": "hit",
+      "range": 4.2,
+      "flightMs": 656,
+      "serverAt": 1792083883850,
+      "player": {
+        "x": 33.0301515190165,
+        "y": 16.9698484809835
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.0301515190165,
+        "y": 16.9698484809835
+      },
+      "start": 406317.10000000894,
+      "launch": 406597,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 280.09999999403954,
+      "image": "frames/nu-gui-south-west.png",
+      "arrival": 407250.10000000894,
+      "damage": 407298.700000003,
+      "impactImage": "frames/nu-gui-south-west-impact.png",
+      "travelled": 2.1471862976072694e-7,
+      "damageDelay": 701.7000000029802,
+      "arrivalDelta": 48.599999994039536
+    },
+    {
+      "caseId": "ranged-152",
+      "kind": "nu-gui",
+      "facing": "south-west",
+      "outcome": "dodge",
+      "range": 4.2,
+      "flightMs": 656,
+      "serverAt": 1792083885483,
+      "player": {
+        "x": 33.0301515190165,
+        "y": 16.9698484809835
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.0301515190165,
+        "y": 16.9698484809835
+      },
+      "start": 407950.10000000894,
+      "launch": 408230.799999997,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 280.79999999701977,
+      "arrival": 408889.10000000894,
+      "travelled": 3.235999288138939
+    },
+    {
+      "caseId": "ranged-153",
+      "kind": "nu-gui",
+      "facing": "south",
+      "outcome": "outside",
+      "range": 4.2,
+      "flightMs": 898,
+      "serverAt": 1792083887085,
+      "player": {
+        "x": 36,
+        "y": 19.75
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 19.75
+      },
+      "travelled": 0
+    },
+    {
+      "caseId": "ranged-19",
+      "kind": "shui-gui",
+      "facing": "south",
+      "outcome": "hit",
+      "range": 3.9,
+      "flightMs": 722,
+      "serverAt": 1792084477223,
+      "player": {
+        "x": 36,
+        "y": 17.9
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 17.9
+      },
+      "start": 100248.10000000894,
+      "launch": 100527.79999999702,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 279.8999999910593,
+      "image": "frames/shui-gui-south.png",
+      "arrival": 101245.60000000894,
+      "damage": 101278.60000000894,
+      "impactImage": "frames/shui-gui-south-impact.png",
+      "travelled": 3.8146972514141453e-7,
+      "damageDelay": 750.8000000119209,
+      "arrivalDelta": 33
+    },
+    {
+      "caseId": "ranged-155",
+      "kind": "shui-gui",
+      "facing": "south",
+      "outcome": "dodge",
+      "range": 3.9,
+      "flightMs": 722,
+      "serverAt": 1792083889777,
+      "player": {
+        "x": 36,
+        "y": 17.9
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 17.9
+      },
+      "start": 412244.10000000894,
+      "launch": 412523.799999997,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 279.8999999910593,
+      "arrival": 413243.60000000894,
+      "travelled": 3.608001708984395
+    },
+    {
+      "caseId": "ranged-156",
+      "kind": "shui-gui",
+      "facing": "south-east",
+      "outcome": "hit",
+      "range": 3.9,
+      "flightMs": 722,
+      "serverAt": 1792083891471,
+      "player": {
+        "x": 38.75771644662753,
+        "y": 16.757716446627533
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.75771644662753,
+        "y": 16.757716446627533
+      },
+      "start": 413938.700000003,
+      "launch": 414219,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.40000000596046,
+      "image": "frames/shui-gui-south-east.png",
+      "arrival": 414937.5,
+      "damage": 414968,
+      "impactImage": "frames/shui-gui-south-east-impact.png",
+      "travelled": 9.700668189978482e-7,
+      "damageDelay": 749,
+      "arrivalDelta": 30.5
+    },
+    {
+      "caseId": "ranged-157",
+      "kind": "shui-gui",
+      "facing": "south-east",
+      "outcome": "dodge",
+      "range": 3.9,
+      "flightMs": 722,
+      "serverAt": 1792083893152,
+      "player": {
+        "x": 38.75771644662753,
+        "y": 16.757716446627533
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.75771644662753,
+        "y": 16.757716446627533
+      },
+      "start": 415619.5,
+      "launch": 415899.200000003,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 279.79999999701977,
+      "arrival": 416618.200000003,
+      "travelled": 3.424000532130986
+    },
+    {
+      "caseId": "ranged-158",
+      "kind": "shui-gui",
+      "facing": "east",
+      "outcome": "hit",
+      "range": 3.9,
+      "flightMs": 722,
+      "serverAt": 1792083894849,
+      "player": {
+        "x": 39.9,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.9,
+        "y": 14
+      },
+      "start": 417316.200000003,
+      "launch": 417596.299999997,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 280.20000000298023,
+      "image": "frames/shui-gui-east.png",
+      "arrival": 418312.700000003,
+      "damage": 418345.90000000596,
+      "impactImage": "frames/shui-gui-east-impact.png",
+      "travelled": 0.0000015258789076710855,
+      "damageDelay": 749.6000000089407,
+      "arrivalDelta": 33.20000000298023
+    },
+    {
+      "caseId": "ranged-159",
+      "kind": "shui-gui",
+      "facing": "east",
+      "outcome": "dodge",
+      "range": 3.9,
+      "flightMs": 722,
+      "serverAt": 1792083896528,
+      "player": {
+        "x": 39.9,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.9,
+        "y": 14
+      },
+      "start": 418996.299999997,
+      "launch": 419276.10000000894,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 280,
+      "arrival": 419993.299999997,
+      "travelled": 3.607999801636065
+    },
+    {
+      "caseId": "ranged-160",
+      "kind": "shui-gui",
+      "facing": "north-east",
+      "outcome": "hit",
+      "range": 3.9,
+      "flightMs": 722,
+      "serverAt": 1792083898224,
+      "player": {
+        "x": 38.75771644662753,
+        "y": 11.242283553372465
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.75771644662753,
+        "y": 11.242283553372465
+      },
+      "start": 420691.299999997,
+      "launch": 420971.90000000596,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 281.90000000596046,
+      "image": "frames/shui-gui-north-east.png",
+      "arrival": 421687.5,
+      "damage": 421720.5,
+      "impactImage": "frames/shui-gui-north-east-impact.png",
+      "travelled": 7.363396224167236e-7,
+      "damageDelay": 748.5999999940395,
+      "arrivalDelta": 33
+    },
+    {
+      "caseId": "ranged-161",
+      "kind": "shui-gui",
+      "facing": "north-east",
+      "outcome": "dodge",
+      "range": 3.9,
+      "flightMs": 722,
+      "serverAt": 1792083899904,
+      "player": {
+        "x": 38.75771644662753,
+        "y": 11.242283553372465
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 38.75771644662753,
+        "y": 11.242283553372465
+      },
+      "start": 422371.60000000894,
+      "launch": 422651.200000003,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 279.79999999701977,
+      "arrival": 423368.200000003,
+      "travelled": 3.4280000994672686
+    },
+    {
+      "caseId": "ranged-20",
+      "kind": "shui-gui",
+      "facing": "north",
+      "outcome": "hit",
+      "range": 3.9,
+      "flightMs": 722,
+      "serverAt": 1792084478903,
+      "player": {
+        "x": 36,
+        "y": 10.1
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 10.1
+      },
+      "start": 101928.29999999702,
+      "launch": 102208.10000000894,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 280,
+      "image": "frames/shui-gui-north.png",
+      "arrival": 102926,
+      "damage": 102945.60000000894,
+      "impactImage": "frames/shui-gui-north-impact.png",
+      "travelled": 3.8146972691777137e-7,
+      "damageDelay": 737.5,
+      "arrivalDelta": 19.600000008940697
+    },
+    {
+      "caseId": "ranged-163",
+      "kind": "shui-gui",
+      "facing": "north",
+      "outcome": "dodge",
+      "range": 3.9,
+      "flightMs": 722,
+      "serverAt": 1792083903281,
+      "player": {
+        "x": 36,
+        "y": 10.1
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 10.1
+      },
+      "start": 425748.200000003,
+      "launch": 426028.799999997,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 280.79999999701977,
+      "arrival": 426749.90000000596,
+      "travelled": 3.608001708984395
+    },
+    {
+      "caseId": "ranged-164",
+      "kind": "shui-gui",
+      "facing": "north-west",
+      "outcome": "hit",
+      "range": 3.9,
+      "flightMs": 722,
+      "serverAt": 1792083904976,
+      "player": {
+        "x": 33.24228355337247,
+        "y": 11.242283553372465
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.24228355337247,
+        "y": 11.242283553372465
+      },
+      "start": 427446,
+      "launch": 427723.799999997,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 277.79999999701977,
+      "image": "frames/shui-gui-north-west.png",
+      "arrival": 428444.200000003,
+      "damage": 428473.60000000894,
+      "impactImage": "frames/shui-gui-north-west-impact.png",
+      "travelled": 7.363396224167236e-7,
+      "damageDelay": 749.8000000119209,
+      "arrivalDelta": 29.400000005960464
+    },
+    {
+      "caseId": "ranged-165",
+      "kind": "shui-gui",
+      "facing": "north-west",
+      "outcome": "dodge",
+      "range": 3.9,
+      "flightMs": 722,
+      "serverAt": 1792083906657,
+      "player": {
+        "x": 33.24228355337247,
+        "y": 11.242283553372465
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.24228355337247,
+        "y": 11.242283553372465
+      },
+      "start": 429125.40000000596,
+      "launch": 429404.5,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 279.29999999701977,
+      "arrival": 430125,
+      "travelled": 3.4240005321309845
+    },
+    {
+      "caseId": "ranged-166",
+      "kind": "shui-gui",
+      "facing": "west",
+      "outcome": "hit",
+      "range": 3.9,
+      "flightMs": 722,
+      "serverAt": 1792083908353,
+      "player": {
+        "x": 32.1,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.1,
+        "y": 14
+      },
+      "start": 430820.5,
+      "launch": 431100,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 279.6000000089407,
+      "image": "frames/shui-gui-west.png",
+      "arrival": 431819.200000003,
+      "damage": 431850.5,
+      "impactImage": "frames/shui-gui-west-impact.png",
+      "travelled": 0.0000015258789076710855,
+      "damageDelay": 750.5,
+      "arrivalDelta": 31.299999997019768
+    },
+    {
+      "caseId": "ranged-167",
+      "kind": "shui-gui",
+      "facing": "west",
+      "outcome": "dodge",
+      "range": 3.9,
+      "flightMs": 722,
+      "serverAt": 1792083910033,
+      "player": {
+        "x": 32.1,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.1,
+        "y": 14
+      },
+      "start": 432500.5,
+      "launch": 432780.200000003,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 279.79999999701977,
+      "arrival": 433499.90000000596,
+      "travelled": 3.607999801636065
+    },
+    {
+      "caseId": "ranged-168",
+      "kind": "shui-gui",
+      "facing": "south-west",
+      "outcome": "hit",
+      "range": 3.9,
+      "flightMs": 722,
+      "serverAt": 1792083911728,
+      "player": {
+        "x": 33.24228355337247,
+        "y": 16.757716446627533
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.24228355337247,
+        "y": 16.757716446627533
+      },
+      "start": 434196.10000000894,
+      "launch": 434476,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 280.09999999403954,
+      "image": "frames/shui-gui-south-west.png",
+      "arrival": 435194,
+      "damage": 435225.299999997,
+      "impactImage": "frames/shui-gui-south-west-impact.png",
+      "travelled": 9.700668189978482e-7,
+      "damageDelay": 749.2999999970198,
+      "arrivalDelta": 31.299999997019768
+    },
+    {
+      "caseId": "ranged-169",
+      "kind": "shui-gui",
+      "facing": "south-west",
+      "outcome": "dodge",
+      "range": 3.9,
+      "flightMs": 722,
+      "serverAt": 1792083913408,
+      "player": {
+        "x": 33.24228355337247,
+        "y": 16.757716446627533
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 33.24228355337247,
+        "y": 16.757716446627533
+      },
+      "start": 435875.700000003,
+      "launch": 436156.799999997,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 281.20000000298023,
+      "arrival": 436874.5,
+      "travelled": 3.4280000994672672
+    },
+    {
+      "caseId": "ranged-170",
+      "kind": "shui-gui",
+      "facing": "south",
+      "outcome": "outside",
+      "range": 3.9,
+      "flightMs": 995,
+      "serverAt": 1792083915106,
+      "player": {
+        "x": 36,
+        "y": 19.375
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 19.375
+      },
+      "travelled": 0
+    },
+    {
+      "caseId": "ranged-21",
+      "kind": "huli-jing",
+      "facing": "south",
+      "outcome": "hit",
+      "range": 5.7,
+      "flightMs": 731,
+      "serverAt": 1792084480614,
+      "player": {
+        "x": 36,
+        "y": 19.7
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 19.7
+      },
+      "start": 103639.79999999702,
+      "launch": 103918.70000000298,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 279.90000000596046,
+      "image": "frames/huli-jing-south.png",
+      "arrival": 104647.5,
+      "damage": 104667.10000000894,
+      "impactImage": "frames/huli-jing-south-impact.png",
+      "travelled": 7.629394538355427e-7,
+      "damageDelay": 748.4000000059605,
+      "arrivalDelta": 19.600000008940697
+    },
+    {
+      "caseId": "ranged-172",
+      "kind": "huli-jing",
+      "facing": "south",
+      "outcome": "dodge",
+      "range": 5.7,
+      "flightMs": 731,
+      "serverAt": 1792083917766,
+      "player": {
+        "x": 36,
+        "y": 19.7
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 19.7
+      },
+      "start": 440218.200000003,
+      "launch": 440498.10000000894,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 279.90000000596046,
+      "arrival": 441228.90000000596,
+      "travelled": 3.608001708984455
+    },
+    {
+      "caseId": "ranged-173",
+      "kind": "huli-jing",
+      "facing": "south-east",
+      "outcome": "hit",
+      "range": 5.7,
+      "flightMs": 731,
+      "serverAt": 1792083919447,
+      "player": {
+        "x": 40.030508652763324,
+        "y": 18.03050865276332
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.030508652763324,
+        "y": 18.03050865276332
+      },
+      "start": 441914.799999997,
+      "launch": 442195.5,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.80000001192093,
+      "image": "frames/huli-jing-south-east.png",
+      "arrival": 442929.799999997,
+      "damage": 442945.90000000596,
+      "impactImage": "frames/huli-jing-south-east-impact.png",
+      "travelled": 0.0000014329403896973575,
+      "damageDelay": 750.4000000059605,
+      "arrivalDelta": 16.100000008940697
+    },
+    {
+      "caseId": "ranged-174",
+      "kind": "huli-jing",
+      "facing": "south-east",
+      "outcome": "dodge",
+      "range": 5.7,
+      "flightMs": 731,
+      "serverAt": 1792083921129,
+      "player": {
+        "x": 40.030508652763324,
+        "y": 18.03050865276332
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.030508652763324,
+        "y": 18.03050865276332
+      },
+      "start": 443595.60000000894,
+      "launch": 443876.10000000894,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.59999999403954,
+      "arrival": 444610.40000000596,
+      "travelled": 3.420001639144363
+    },
+    {
+      "caseId": "ranged-175",
+      "kind": "huli-jing",
+      "facing": "east",
+      "outcome": "hit",
+      "range": 5.7,
+      "flightMs": 731,
+      "serverAt": 1792083922824,
+      "player": {
+        "x": 41.7,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 41.7,
+        "y": 14
+      },
+      "start": 445292.299999997,
+      "launch": 445572.90000000596,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 280.80000001192093,
+      "image": "frames/huli-jing-east.png",
+      "arrival": 446304.90000000596,
+      "damage": 446321.40000000596,
+      "impactImage": "frames/huli-jing-east-impact.png",
+      "travelled": 7.629394502828291e-7,
+      "damageDelay": 748.5,
+      "arrivalDelta": 16.5
+    },
+    {
+      "caseId": "ranged-176",
+      "kind": "huli-jing",
+      "facing": "east",
+      "outcome": "dodge",
+      "range": 5.7,
+      "flightMs": 731,
+      "serverAt": 1792083924506,
+      "player": {
+        "x": 41.7,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 41.7,
+        "y": 14
+      },
+      "start": 447044.90000000596,
+      "launch": 447237.10000000894,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 192.29999999701977,
+      "arrival": 447971.5,
+      "travelled": 3.4200000762940306
+    },
+    {
+      "caseId": "ranged-177",
+      "kind": "huli-jing",
+      "facing": "north-east",
+      "outcome": "hit",
+      "range": 5.7,
+      "flightMs": 731,
+      "serverAt": 1792083926185,
+      "player": {
+        "x": 40.030508652763324,
+        "y": 9.96949134723668
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.030508652763324,
+        "y": 9.96949134723668
+      },
+      "start": 448653,
+      "launch": 448933.200000003,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 280.29999999701977,
+      "image": "frames/huli-jing-north-east.png",
+      "arrival": 449665.90000000596,
+      "damage": 449683.700000003,
+      "impactImage": "frames/huli-jing-north-east-impact.png",
+      "travelled": 0.0000013404086035097327,
+      "damageDelay": 750.5,
+      "arrivalDelta": 17.799999997019768
+    },
+    {
+      "caseId": "ranged-178",
+      "kind": "huli-jing",
+      "facing": "north-east",
+      "outcome": "dodge",
+      "range": 5.7,
+      "flightMs": 731,
+      "serverAt": 1792083927865,
+      "player": {
+        "x": 40.030508652763324,
+        "y": 9.96949134723668
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.030508652763324,
+        "y": 9.96949134723668
+      },
+      "start": 450316.90000000596,
+      "launch": 450597.60000000894,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 280.79999999701977,
+      "arrival": 451332.5,
+      "travelled": 3.423999183431919
+    },
+    {
+      "caseId": "ranged-22",
+      "kind": "huli-jing",
+      "facing": "north",
+      "outcome": "hit",
+      "range": 5.7,
+      "flightMs": 731,
+      "serverAt": 1792084482292,
+      "player": {
+        "x": 36,
+        "y": 8.3
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 8.3
+      },
+      "start": 105303.40000000596,
+      "launch": 105582.79999999702,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 279.3999999910593,
+      "image": "frames/huli-jing-north.png",
+      "arrival": 106315.40000000596,
+      "damage": 106333.29999999702,
+      "impactImage": "frames/huli-jing-north-impact.png",
+      "travelled": 1.9073486257070726e-7,
+      "damageDelay": 750.5,
+      "arrivalDelta": 17.899999991059303
+    },
+    {
+      "caseId": "ranged-180",
+      "kind": "huli-jing",
+      "facing": "north",
+      "outcome": "dodge",
+      "range": 5.7,
+      "flightMs": 731,
+      "serverAt": 1792083931226,
+      "player": {
+        "x": 36,
+        "y": 8.3
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 8.3
+      },
+      "start": 453677.90000000596,
+      "launch": 453958.40000000596,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 280.59999999403954,
+      "arrival": 454693.700000003,
+      "travelled": 3.419998168945318
+    },
+    {
+      "caseId": "ranged-181",
+      "kind": "huli-jing",
+      "facing": "north-west",
+      "outcome": "hit",
+      "range": 5.7,
+      "flightMs": 731,
+      "serverAt": 1792083932907,
+      "player": {
+        "x": 31.96949134723668,
+        "y": 9.96949134723668
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.96949134723668,
+        "y": 9.96949134723668
+      },
+      "start": 455373.90000000596,
+      "launch": 455654,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 280.29999999701977,
+      "image": "frames/huli-jing-north-west.png",
+      "arrival": 456387.799999997,
+      "damage": 456403.700000003,
+      "impactImage": "frames/huli-jing-north-west-impact.png",
+      "travelled": 7.006794574922704e-7,
+      "damageDelay": 749.7000000029802,
+      "arrivalDelta": 15.900000005960464
+    },
+    {
+      "caseId": "ranged-182",
+      "kind": "huli-jing",
+      "facing": "north-west",
+      "outcome": "dodge",
+      "range": 5.7,
+      "flightMs": 731,
+      "serverAt": 1792083934587,
+      "player": {
+        "x": 31.96949134723668,
+        "y": 9.96949134723668
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.96949134723668,
+        "y": 9.96949134723668
+      },
+      "start": 457038,
+      "launch": 457318,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 280.1000000089407,
+      "arrival": 458047.700000003,
+      "travelled": 3.4200013019696742
+    },
+    {
+      "caseId": "ranged-183",
+      "kind": "huli-jing",
+      "facing": "west",
+      "outcome": "hit",
+      "range": 5.7,
+      "flightMs": 731,
+      "serverAt": 1792083936266,
+      "player": {
+        "x": 30.3,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 30.3,
+        "y": 14
+      },
+      "start": 458733.799999997,
+      "launch": 459014,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 280.20000000298023,
+      "image": "frames/huli-jing-west.png",
+      "arrival": 459748.90000000596,
+      "damage": 459762.5,
+      "impactImage": "frames/huli-jing-west-impact.png",
+      "travelled": 7.629394538355427e-7,
+      "damageDelay": 748.5,
+      "arrivalDelta": 13.599999994039536
+    },
+    {
+      "caseId": "ranged-184",
+      "kind": "huli-jing",
+      "facing": "west",
+      "outcome": "dodge",
+      "range": 5.7,
+      "flightMs": 731,
+      "serverAt": 1792083937947,
+      "player": {
+        "x": 30.3,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 30.3,
+        "y": 14
+      },
+      "start": 460398.200000003,
+      "launch": 460678.10000000894,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 280,
+      "arrival": 461408.90000000596,
+      "travelled": 3.4200000762940306
+    },
+    {
+      "caseId": "ranged-185",
+      "kind": "huli-jing",
+      "facing": "south-west",
+      "outcome": "hit",
+      "range": 5.7,
+      "flightMs": 731,
+      "serverAt": 1792083939627,
+      "player": {
+        "x": 31.969491347236676,
+        "y": 18.03050865276332
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.969491347236676,
+        "y": 18.03050865276332
+      },
+      "start": 462094,
+      "launch": 462373.60000000894,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 281.1000000089407,
+      "image": "frames/huli-jing-south-west.png",
+      "arrival": 463103.200000003,
+      "damage": 463122,
+      "impactImage": "frames/huli-jing-south-west-impact.png",
+      "travelled": 8.646239891183293e-7,
+      "damageDelay": 748.3999999910593,
+      "arrivalDelta": 18.799999997019768
+    },
+    {
+      "caseId": "ranged-186",
+      "kind": "huli-jing",
+      "facing": "south-west",
+      "outcome": "dodge",
+      "range": 5.7,
+      "flightMs": 731,
+      "serverAt": 1792083941306,
+      "player": {
+        "x": 31.969491347236676,
+        "y": 18.03050865276332
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.969491347236676,
+        "y": 18.03050865276332
+      },
+      "start": 463758.200000003,
+      "launch": 464038.40000000596,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 280.29999999701977,
+      "arrival": 464769.700000003,
+      "travelled": 3.4200002904451305
+    },
+    {
+      "caseId": "ranged-187",
+      "kind": "huli-jing",
+      "facing": "south",
+      "outcome": "outside",
+      "range": 5.7,
+      "flightMs": 978,
+      "serverAt": 1792083942986,
+      "player": {
+        "x": 36,
+        "y": 21.625
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 21.625
+      },
+      "travelled": 0
+    },
+    {
+      "caseId": "ranged-23",
+      "kind": "nokken",
+      "facing": "south",
+      "outcome": "hit",
+      "range": 5.4,
+      "flightMs": 1038,
+      "serverAt": 1792084483957,
+      "player": {
+        "x": 36,
+        "y": 19.4
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 19.4
+      },
+      "start": 106966.79999999702,
+      "launch": 107246.60000000894,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 280,
+      "image": "frames/nokken-south.png",
+      "arrival": 108286.60000000894,
+      "damage": 108328.5,
+      "impactImage": "frames/nokken-south-impact.png",
+      "travelled": 3.8146972514141453e-7,
+      "damageDelay": 1081.8999999910593,
+      "arrivalDelta": 41.8999999910593
+    },
+    {
+      "caseId": "ranged-189",
+      "kind": "nokken",
+      "facing": "south",
+      "outcome": "dodge",
+      "range": 5.4,
+      "flightMs": 1038,
+      "serverAt": 1792083945960,
+      "player": {
+        "x": 36,
+        "y": 19.4
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 19.4
+      },
+      "start": 468426.90000000596,
+      "launch": 468708.5,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 281.70000000298023,
+      "arrival": 469748.90000000596,
+      "travelled": 4.7880001068115385
+    },
+    {
+      "caseId": "ranged-190",
+      "kind": "nokken",
+      "facing": "south-east",
+      "outcome": "hit",
+      "range": 5.4,
+      "flightMs": 1038,
+      "serverAt": 1792083947951,
+      "player": {
+        "x": 39.818376618407356,
+        "y": 17.818376618407356
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.818376618407356,
+        "y": 17.818376618407356
+      },
+      "start": 470418.60000000894,
+      "launch": 470698,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 279.5,
+      "image": "frames/nokken-south-east.png",
+      "arrival": 471734.700000003,
+      "damage": 471774.40000000596,
+      "impactImage": "frames/nokken-south-east-impact.png",
+      "travelled": 0.000001831709486780084,
+      "damageDelay": 1076.4000000059605,
+      "arrivalDelta": 39.70000000298023
+    },
+    {
+      "caseId": "ranged-191",
+      "kind": "nokken",
+      "facing": "south-east",
+      "outcome": "dodge",
+      "range": 5.4,
+      "flightMs": 1038,
+      "serverAt": 1792083949957,
+      "player": {
+        "x": 39.818376618407356,
+        "y": 17.818376618407356
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.818376618407356,
+        "y": 17.818376618407356
+      },
+      "start": 472424.700000003,
+      "launch": 472704.90000000596,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.20000000298023,
+      "arrival": 473741.799999997,
+      "travelled": 4.852000497239586
+    },
+    {
+      "caseId": "ranged-192",
+      "kind": "nokken",
+      "facing": "east",
+      "outcome": "hit",
+      "range": 5.4,
+      "flightMs": 1038,
+      "serverAt": 1792083951964,
+      "player": {
+        "x": 41.4,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 41.4,
+        "y": 14
+      },
+      "start": 474431.90000000596,
+      "launch": 474711.700000003,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 279.8999999910593,
+      "image": "frames/nokken-east.png",
+      "arrival": 475748.5,
+      "damage": 475786.60000000894,
+      "impactImage": "frames/nokken-east-impact.png",
+      "travelled": 0.0000015258789076710855,
+      "damageDelay": 1074.9000000059605,
+      "arrivalDelta": 38.1000000089407
+    },
+    {
+      "caseId": "ranged-193",
+      "kind": "nokken",
+      "facing": "east",
+      "outcome": "dodge",
+      "range": 5.4,
+      "flightMs": 1038,
+      "serverAt": 1792083953971,
+      "player": {
+        "x": 41.4,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 41.4,
+        "y": 14
+      },
+      "start": 476438.200000003,
+      "launch": 476718.10000000894,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 280,
+      "arrival": 477755.700000003,
+      "travelled": 4.851999282837153
+    },
+    {
+      "caseId": "ranged-194",
+      "kind": "nokken",
+      "facing": "north-east",
+      "outcome": "hit",
+      "range": 5.4,
+      "flightMs": 1038,
+      "serverAt": 1792083955977,
+      "player": {
+        "x": 39.818376618407356,
+        "y": 10.181623381592644
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.818376618407356,
+        "y": 10.181623381592644
+      },
+      "start": 478445.299999997,
+      "launch": 478725,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 279.80000001192093,
+      "image": "frames/nokken-north-east.png",
+      "arrival": 479762.299999997,
+      "damage": 479800.10000000894,
+      "impactImage": "frames/nokken-north-east-impact.png",
+      "travelled": 0.000001831709486780084,
+      "damageDelay": 1075.1000000089407,
+      "arrivalDelta": 37.80000001192093
+    },
+    {
+      "caseId": "ranged-195",
+      "kind": "nokken",
+      "facing": "north-east",
+      "outcome": "dodge",
+      "range": 5.4,
+      "flightMs": 1038,
+      "serverAt": 1792083957984,
+      "player": {
+        "x": 39.818376618407356,
+        "y": 10.181623381592644
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.818376618407356,
+        "y": 10.181623381592644
+      },
+      "start": 480451.40000000596,
+      "launch": 480732,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 280.79999999701977,
+      "arrival": 481769.10000000894,
+      "travelled": 4.671999736619107
+    },
+    {
+      "caseId": "ranged-24",
+      "kind": "nokken",
+      "facing": "north",
+      "outcome": "hit",
+      "range": 5.4,
+      "flightMs": 1038,
+      "serverAt": 1792084485947,
+      "player": {
+        "x": 36,
+        "y": 8.6
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 8.6
+      },
+      "start": 108973,
+      "launch": 109253.20000000298,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 280.29999999701977,
+      "image": "frames/nokken-north.png",
+      "arrival": 110294,
+      "damage": 110332.20000000298,
+      "impactImage": "frames/nokken-north-impact.png",
+      "travelled": 3.8146972691777137e-7,
+      "damageDelay": 1079,
+      "arrivalDelta": 38.20000000298023
+    },
+    {
+      "caseId": "ranged-197",
+      "kind": "nokken",
+      "facing": "north",
+      "outcome": "dodge",
+      "range": 5.4,
+      "flightMs": 1038,
+      "serverAt": 1792083962001,
+      "player": {
+        "x": 36,
+        "y": 8.6
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 8.6
+      },
+      "start": 484469.10000000894,
+      "launch": 484749.90000000596,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 280.79999999701977,
+      "arrival": 485789.90000000596,
+      "travelled": 4.787998199462906
+    },
+    {
+      "caseId": "ranged-198",
+      "kind": "nokken",
+      "facing": "north-west",
+      "outcome": "hit",
+      "range": 5.4,
+      "flightMs": 1038,
+      "serverAt": 1792083963993,
+      "player": {
+        "x": 32.181623381592644,
+        "y": 10.181623381592644
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.181623381592644,
+        "y": 10.181623381592644
+      },
+      "start": 486460.5,
+      "launch": 486740.700000003,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 280.20000000298023,
+      "image": "frames/nokken-north-west.png",
+      "arrival": 487776,
+      "damage": 487816,
+      "impactImage": "frames/nokken-north-west-impact.png",
+      "travelled": 0.000001831709486780084,
+      "damageDelay": 1075.2999999970198,
+      "arrivalDelta": 40
+    },
+    {
+      "caseId": "ranged-199",
+      "kind": "nokken",
+      "facing": "north-west",
+      "outcome": "dodge",
+      "range": 5.4,
+      "flightMs": 1038,
+      "serverAt": 1792083966000,
+      "player": {
+        "x": 32.181623381592644,
+        "y": 10.181623381592644
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.181623381592644,
+        "y": 10.181623381592644
+      },
+      "start": 488467.10000000894,
+      "launch": 488747.200000003,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 280.29999999701977,
+      "arrival": 489783,
+      "travelled": 4.852000834414285
+    },
+    {
+      "caseId": "ranged-200",
+      "kind": "nokken",
+      "facing": "west",
+      "outcome": "hit",
+      "range": 5.4,
+      "flightMs": 1038,
+      "serverAt": 1792083968006,
+      "player": {
+        "x": 30.6,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 30.6,
+        "y": 14
+      },
+      "start": 490473.700000003,
+      "launch": 490754.60000000894,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 281,
+      "image": "frames/nokken-west.png",
+      "arrival": 491790.10000000894,
+      "damage": 491830.700000003,
+      "impactImage": "frames/nokken-west-impact.png",
+      "travelled": 3.8146972514141453e-7,
+      "damageDelay": 1076.0999999940395,
+      "arrivalDelta": 40.599999994039536
+    },
+    {
+      "caseId": "ranged-201",
+      "kind": "nokken",
+      "facing": "west",
+      "outcome": "dodge",
+      "range": 5.4,
+      "flightMs": 1038,
+      "serverAt": 1792083970013,
+      "player": {
+        "x": 30.6,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 30.6,
+        "y": 14
+      },
+      "start": 492481.799999997,
+      "launch": 492761.5,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 279.90000000596046,
+      "arrival": 493796.700000003,
+      "travelled": 4.852000236511246
+    },
+    {
+      "caseId": "ranged-202",
+      "kind": "nokken",
+      "facing": "south-west",
+      "outcome": "hit",
+      "range": 5.4,
+      "flightMs": 1038,
+      "serverAt": 1792083972020,
+      "player": {
+        "x": 32.181623381592644,
+        "y": 17.818376618407356
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.181623381592644,
+        "y": 17.818376618407356
+      },
+      "start": 494486.799999997,
+      "launch": 494766.799999997,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 280.1000000089407,
+      "image": "frames/nokken-south-west.png",
+      "arrival": 495803.700000003,
+      "damage": 495843.90000000596,
+      "impactImage": "frames/nokken-south-west-impact.png",
+      "travelled": 0.000001831709486780084,
+      "damageDelay": 1077.1000000089407,
+      "arrivalDelta": 40.20000000298023
+    },
+    {
+      "caseId": "ranged-203",
+      "kind": "nokken",
+      "facing": "south-west",
+      "outcome": "dodge",
+      "range": 5.4,
+      "flightMs": 1038,
+      "serverAt": 1792083974028,
+      "player": {
+        "x": 32.181623381592644,
+        "y": 17.818376618407356
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.181623381592644,
+        "y": 17.818376618407356
+      },
+      "start": 496494.799999997,
+      "launch": 496775.10000000894,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 280.30000001192093,
+      "arrival": 497810.60000000894,
+      "travelled": 4.851999822889854
+    },
+    {
+      "caseId": "ranged-204",
+      "kind": "nokken",
+      "facing": "south",
+      "outcome": "outside",
+      "range": 5.4,
+      "flightMs": 1394,
+      "serverAt": 1792083976034,
+      "player": {
+        "x": 36,
+        "y": 21.25
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 21.25
+      },
+      "travelled": 0
+    },
+    {
+      "caseId": "ranged-25",
+      "kind": "fossegrim",
+      "facing": "south",
+      "outcome": "hit",
+      "range": 6.8,
+      "flightMs": 756,
+      "serverAt": 1792084487954,
+      "player": {
+        "x": 36,
+        "y": 20.8
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 20.8
+      },
+      "start": 110979.40000000596,
+      "launch": 111259.60000000894,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 280.29999999701977,
+      "image": "frames/fossegrim-south.png",
+      "arrival": 112015.5,
+      "damage": 112055.79999999702,
+      "impactImage": "frames/fossegrim-south-impact.png",
+      "travelled": 7.629394538355427e-7,
+      "damageDelay": 796.1999999880791,
+      "arrivalDelta": 40.29999999701977
+    },
+    {
+      "caseId": "ranged-206",
+      "kind": "fossegrim",
+      "facing": "south",
+      "outcome": "dodge",
+      "range": 6.8,
+      "flightMs": 756,
+      "serverAt": 1792083978727,
+      "player": {
+        "x": 36,
+        "y": 20.8
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 20.8
+      },
+      "start": 501194.10000000894,
+      "launch": 501473.90000000596,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 280,
+      "arrival": 502227,
+      "travelled": 3.608001708984455
+    },
+    {
+      "caseId": "ranged-207",
+      "kind": "fossegrim",
+      "facing": "south-east",
+      "outcome": "hit",
+      "range": 6.8,
+      "flightMs": 756,
+      "serverAt": 1792083980453,
+      "player": {
+        "x": 40.80832611206852,
+        "y": 18.80832611206852
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.80832611206852,
+        "y": 18.80832611206852
+      },
+      "start": 502920.700000003,
+      "launch": 503200.299999997,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 279.70000000298023,
+      "image": "frames/fossegrim-south-east.png",
+      "arrival": 503956,
+      "damage": 503995.799999997,
+      "impactImage": "frames/fossegrim-south-east-impact.png",
+      "travelled": 8.614298457754896e-7,
+      "damageDelay": 795.5,
+      "arrivalDelta": 39.79999999701977
+    },
+    {
+      "caseId": "ranged-208",
+      "kind": "fossegrim",
+      "facing": "south-east",
+      "outcome": "dodge",
+      "range": 6.8,
+      "flightMs": 756,
+      "serverAt": 1792083982180,
+      "player": {
+        "x": 40.80832611206852,
+        "y": 18.80832611206852
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.80832611206852,
+        "y": 18.80832611206852
+      },
+      "start": 504647,
+      "launch": 504927.10000000894,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.20000000298023,
+      "arrival": 505678.200000003,
+      "travelled": 3.611999753074397
+    },
+    {
+      "caseId": "ranged-209",
+      "kind": "fossegrim",
+      "facing": "east",
+      "outcome": "hit",
+      "range": 6.8,
+      "flightMs": 756,
+      "serverAt": 1792083983906,
+      "player": {
+        "x": 42.8,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 42.8,
+        "y": 14
+      },
+      "start": 506374.299999997,
+      "launch": 506654,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 279.80000001192093,
+      "image": "frames/fossegrim-east.png",
+      "arrival": 507407.299999997,
+      "damage": 507450.40000000596,
+      "impactImage": "frames/fossegrim-east-impact.png",
+      "travelled": 7.629394502828291e-7,
+      "damageDelay": 796.4000000059605,
+      "arrivalDelta": 43.1000000089407
+    },
+    {
+      "caseId": "ranged-210",
+      "kind": "fossegrim",
+      "facing": "east",
+      "outcome": "dodge",
+      "range": 6.8,
+      "flightMs": 756,
+      "serverAt": 1792083985634,
+      "player": {
+        "x": 42.8,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 42.8,
+        "y": 14
+      },
+      "start": 508101.10000000894,
+      "launch": 508381.799999997,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 280.79999999701977,
+      "arrival": 509136.5,
+      "travelled": 3.6119995117188304
+    },
+    {
+      "caseId": "ranged-211",
+      "kind": "fossegrim",
+      "facing": "north-east",
+      "outcome": "hit",
+      "range": 6.8,
+      "flightMs": 756,
+      "serverAt": 1792083987361,
+      "player": {
+        "x": 40.80832611206852,
+        "y": 9.191673887931477
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.80832611206852,
+        "y": 9.191673887931477
+      },
+      "start": 509828.10000000894,
+      "launch": 510108.5,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 280.69999998807907,
+      "image": "frames/fossegrim-north-east.png",
+      "arrival": 510858.700000003,
+      "damage": 510903.799999997,
+      "impactImage": "frames/fossegrim-north-east-impact.png",
+      "travelled": 6.998188189700308e-7,
+      "damageDelay": 795.2999999970198,
+      "arrivalDelta": 45.099999994039536
+    },
+    {
+      "caseId": "ranged-212",
+      "kind": "fossegrim",
+      "facing": "north-east",
+      "outcome": "dodge",
+      "range": 6.8,
+      "flightMs": 756,
+      "serverAt": 1792083989087,
+      "player": {
+        "x": 40.80832611206852,
+        "y": 9.191673887931477
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.80832611206852,
+        "y": 9.191673887931477
+      },
+      "start": 511555.200000003,
+      "launch": 511834.90000000596,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 279.79999999701977,
+      "arrival": 512587.90000000596,
+      "travelled": 3.6079988370390406
+    },
+    {
+      "caseId": "ranged-26",
+      "kind": "fossegrim",
+      "facing": "north",
+      "outcome": "hit",
+      "range": 6.8,
+      "flightMs": 756,
+      "serverAt": 1792084489681,
+      "player": {
+        "x": 36,
+        "y": 7.2
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 7.2
+      },
+      "start": 112706.40000000596,
+      "launch": 112986,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 279.70000000298023,
+      "image": "frames/fossegrim-north.png",
+      "arrival": 113737.79999999702,
+      "damage": 113784.5,
+      "impactImage": "frames/fossegrim-north-impact.png",
+      "travelled": 1.9073486345888568e-7,
+      "damageDelay": 798.5,
+      "arrivalDelta": 46.70000000298023
+    },
+    {
+      "caseId": "ranged-214",
+      "kind": "fossegrim",
+      "facing": "north",
+      "outcome": "dodge",
+      "range": 6.8,
+      "flightMs": 756,
+      "serverAt": 1792083992541,
+      "player": {
+        "x": 36,
+        "y": 7.2
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 7.2
+      },
+      "start": 515008.60000000894,
+      "launch": 515288.700000003,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 280.29999999701977,
+      "arrival": 516039.299999997,
+      "travelled": 3.60800170898438
+    },
+    {
+      "caseId": "ranged-215",
+      "kind": "fossegrim",
+      "facing": "north-west",
+      "outcome": "hit",
+      "range": 6.8,
+      "flightMs": 756,
+      "serverAt": 1792083994268,
+      "player": {
+        "x": 31.19167388793148,
+        "y": 9.191673887931476
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.19167388793148,
+        "y": 9.191673887931476
+      },
+      "start": 516734.799999997,
+      "launch": 517014.90000000596,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 280.20000000298023,
+      "image": "frames/fossegrim-north-west.png",
+      "arrival": 517768.299999997,
+      "damage": 517809.90000000596,
+      "impactImage": "frames/fossegrim-north-west-impact.png",
+      "travelled": 6.99818819844609e-7,
+      "damageDelay": 795,
+      "arrivalDelta": 41.6000000089407
+    },
+    {
+      "caseId": "ranged-216",
+      "kind": "fossegrim",
+      "facing": "north-west",
+      "outcome": "dodge",
+      "range": 6.8,
+      "flightMs": 756,
+      "serverAt": 1792083995994,
+      "player": {
+        "x": 31.19167388793148,
+        "y": 9.191673887931476
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.19167388793148,
+        "y": 9.191673887931476
+      },
+      "start": 518461.40000000596,
+      "launch": 518742.10000000894,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 280.8999999910593,
+      "arrival": 519497.60000000894,
+      "travelled": 3.608000522912884
+    },
+    {
+      "caseId": "ranged-217",
+      "kind": "fossegrim",
+      "facing": "west",
+      "outcome": "hit",
+      "range": 6.8,
+      "flightMs": 756,
+      "serverAt": 1792083997720,
+      "player": {
+        "x": 29.2,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 29.2,
+        "y": 14
+      },
+      "start": 520186.90000000596,
+      "launch": 520468,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 281.20000000298023,
+      "image": "frames/fossegrim-west.png",
+      "arrival": 521219.90000000596,
+      "damage": 521267.299999997,
+      "impactImage": "frames/fossegrim-west-impact.png",
+      "travelled": 7.629394538355427e-7,
+      "damageDelay": 799.2999999970198,
+      "arrivalDelta": 47.3999999910593
+    },
+    {
+      "caseId": "ranged-218",
+      "kind": "fossegrim",
+      "facing": "west",
+      "outcome": "dodge",
+      "range": 6.8,
+      "flightMs": 756,
+      "serverAt": 1792083999448,
+      "player": {
+        "x": 29.2,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 29.2,
+        "y": 14
+      },
+      "start": 521915.200000003,
+      "launch": 522195,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 279.90000000596046,
+      "arrival": 522948.799999997,
+      "travelled": 3.607999801635822
+    },
+    {
+      "caseId": "ranged-219",
+      "kind": "fossegrim",
+      "facing": "south-west",
+      "outcome": "hit",
+      "range": 6.8,
+      "flightMs": 756,
+      "serverAt": 1792084001174,
+      "player": {
+        "x": 31.191673887931476,
+        "y": 18.80832611206852
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.191673887931476,
+        "y": 18.80832611206852
+      },
+      "start": 523641.5,
+      "launch": 523922.299999997,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 280.90000000596046,
+      "image": "frames/fossegrim-south-west.png",
+      "arrival": 524677.700000003,
+      "damage": 524716.200000003,
+      "impactImage": "frames/fossegrim-south-west-impact.png",
+      "travelled": 8.614298432633416e-7,
+      "damageDelay": 793.9000000059605,
+      "arrivalDelta": 38.5
+    },
+    {
+      "caseId": "ranged-220",
+      "kind": "fossegrim",
+      "facing": "south-west",
+      "outcome": "dodge",
+      "range": 6.8,
+      "flightMs": 756,
+      "serverAt": 1792084002901,
+      "player": {
+        "x": 31.191673887931476,
+        "y": 18.80832611206852
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.191673887931476,
+        "y": 18.80832611206852
+      },
+      "start": 525368.400000006,
+      "launch": 525648.400000006,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 280.09999999403954,
+      "arrival": 526400.1000000089,
+      "travelled": 3.6080008600876114
+    },
+    {
+      "caseId": "ranged-221",
+      "kind": "fossegrim",
+      "facing": "south",
+      "outcome": "outside",
+      "range": 6.8,
+      "flightMs": 1000,
+      "serverAt": 1792084004628,
+      "player": {
+        "x": 36,
+        "y": 23
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 23
+      },
+      "travelled": 0
+    },
+    {
+      "caseId": "ranged-27",
+      "kind": "mare",
+      "facing": "south",
+      "outcome": "hit",
+      "range": 4.6,
+      "flightMs": 676,
+      "serverAt": 1792084491409,
+      "player": {
+        "x": 36,
+        "y": 18.6
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 18.6
+      },
+      "start": 114434.20000000298,
+      "launch": 114713.79999999702,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 279.70000000298023,
+      "image": "frames/mare-south.png",
+      "arrival": 115390.20000000298,
+      "damage": 115416.90000000596,
+      "impactImage": "frames/mare-south-impact.png",
+      "travelled": 3.8146972514141453e-7,
+      "damageDelay": 703.1000000089407,
+      "arrivalDelta": 26.700000002980232
+    },
+    {
+      "caseId": "ranged-223",
+      "kind": "mare",
+      "facing": "south",
+      "outcome": "dodge",
+      "range": 4.6,
+      "flightMs": 676,
+      "serverAt": 1792084007227,
+      "player": {
+        "x": 36,
+        "y": 18.6
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 18.6
+      },
+      "start": 529693.900000006,
+      "launch": 529974.200000003,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 280.3999999910593,
+      "arrival": 530649.900000006,
+      "travelled": 3.231998443603538
+    },
+    {
+      "caseId": "ranged-224",
+      "kind": "mare",
+      "facing": "south-east",
+      "outcome": "hit",
+      "range": 4.6,
+      "flightMs": 676,
+      "serverAt": 1792084008875,
+      "player": {
+        "x": 39.25269119345812,
+        "y": 17.25269119345812
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.25269119345812,
+        "y": 17.25269119345812
+      },
+      "start": 531342.6000000089,
+      "launch": 531623,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.59999999403954,
+      "image": "frames/mare-south-east.png",
+      "arrival": 532302.6000000089,
+      "damage": 532326.6000000089,
+      "impactImage": "frames/mare-south-east-impact.png",
+      "travelled": 0.0000018334395032105226,
+      "damageDelay": 703.6000000089407,
+      "arrivalDelta": 24
+    },
+    {
+      "caseId": "ranged-225",
+      "kind": "mare",
+      "facing": "south-east",
+      "outcome": "dodge",
+      "range": 4.6,
+      "flightMs": 676,
+      "serverAt": 1792084010510,
+      "player": {
+        "x": 39.25269119345812,
+        "y": 17.25269119345812
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.25269119345812,
+        "y": 17.25269119345812
+      },
+      "start": 532977.900000006,
+      "launch": 533258.1000000089,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.20000000298023,
+      "arrival": 533934.6000000089,
+      "travelled": 3.423999183431814
+    },
+    {
+      "caseId": "ranged-226",
+      "kind": "mare",
+      "facing": "east",
+      "outcome": "hit",
+      "range": 4.6,
+      "flightMs": 676,
+      "serverAt": 1792084012160,
+      "player": {
+        "x": 40.6,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.6,
+        "y": 14
+      },
+      "start": 534627.400000006,
+      "launch": 534907.5,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 280.09999999403954,
+      "image": "frames/mare-east.png",
+      "arrival": 535580.5,
+      "damage": 535610.1000000089,
+      "impactImage": "frames/mare-east-impact.png",
+      "travelled": 0.0000015258789076710855,
+      "damageDelay": 702.6000000089407,
+      "arrivalDelta": 29.600000008940697
+    },
+    {
+      "caseId": "ranged-227",
+      "kind": "mare",
+      "facing": "east",
+      "outcome": "dodge",
+      "range": 4.6,
+      "flightMs": 676,
+      "serverAt": 1792084013793,
+      "player": {
+        "x": 40.6,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.6,
+        "y": 14
+      },
+      "start": 536261.6000000089,
+      "launch": 536541.5,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 280,
+      "arrival": 537219.1000000089,
+      "travelled": 3.2360000610355155
+    },
+    {
+      "caseId": "ranged-228",
+      "kind": "mare",
+      "facing": "north-east",
+      "outcome": "hit",
+      "range": 4.6,
+      "flightMs": 676,
+      "serverAt": 1792084015444,
+      "player": {
+        "x": 39.25269119345812,
+        "y": 10.747308806541882
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.25269119345812,
+        "y": 10.747308806541882
+      },
+      "start": 537911.200000003,
+      "launch": 538191.400000006,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 281.29999999701977,
+      "image": "frames/mare-north-east.png",
+      "arrival": 538865.1000000089,
+      "damage": 538895.1000000089,
+      "impactImage": "frames/mare-north-east-impact.png",
+      "travelled": 0.0000018334395032836361,
+      "damageDelay": 703.7000000029802,
+      "arrivalDelta": 30
+    },
+    {
+      "caseId": "ranged-229",
+      "kind": "mare",
+      "facing": "north-east",
+      "outcome": "dodge",
+      "range": 4.6,
+      "flightMs": 676,
+      "serverAt": 1792084017078,
+      "player": {
+        "x": 39.25269119345812,
+        "y": 10.747308806541882
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.25269119345812,
+        "y": 10.747308806541882
+      },
+      "start": 539544.6000000089,
+      "launch": 539824.6000000089,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 280.19999998807907,
+      "arrival": 540503.900000006,
+      "travelled": 3.423999857781434
+    },
+    {
+      "caseId": "ranged-28",
+      "kind": "mare",
+      "facing": "north",
+      "outcome": "hit",
+      "range": 4.6,
+      "flightMs": 676,
+      "serverAt": 1792084493042,
+      "player": {
+        "x": 36,
+        "y": 9.4
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 9.4
+      },
+      "start": 116067.29999999702,
+      "launch": 116347.70000000298,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 280.6000000089407,
+      "image": "frames/mare-north.png",
+      "arrival": 117022.5,
+      "damage": 117050.40000000596,
+      "impactImage": "frames/mare-north-impact.png",
+      "travelled": 3.8146972691777137e-7,
+      "damageDelay": 702.7000000029802,
+      "arrivalDelta": 27.900000005960464
+    },
+    {
+      "caseId": "ranged-231",
+      "kind": "mare",
+      "facing": "north",
+      "outcome": "dodge",
+      "range": 4.6,
+      "flightMs": 676,
+      "serverAt": 1792084020361,
+      "player": {
+        "x": 36,
+        "y": 9.4
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 9.4
+      },
+      "start": 542828.299999997,
+      "launch": 543109,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 280.90000000596046,
+      "arrival": 543788.6000000089,
+      "travelled": 3.2360000610351785
+    },
+    {
+      "caseId": "ranged-232",
+      "kind": "mare",
+      "facing": "north-west",
+      "outcome": "hit",
+      "range": 4.6,
+      "flightMs": 676,
+      "serverAt": 1792084021994,
+      "player": {
+        "x": 32.74730880654188,
+        "y": 10.74730880654188
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.74730880654188,
+        "y": 10.74730880654188
+      },
+      "start": 544461.200000003,
+      "launch": 544741.700000003,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 280.59999999403954,
+      "image": "frames/mare-north-west.png",
+      "arrival": 545420.299999997,
+      "damage": 545445.6000000089,
+      "impactImage": "frames/mare-north-west-impact.png",
+      "travelled": 0.0000018334395032105226,
+      "damageDelay": 703.9000000059605,
+      "arrivalDelta": 25.30000001192093
+    },
+    {
+      "caseId": "ranged-233",
+      "kind": "mare",
+      "facing": "north-west",
+      "outcome": "dodge",
+      "range": 4.6,
+      "flightMs": 676,
+      "serverAt": 1792084023628,
+      "player": {
+        "x": 32.74730880654188,
+        "y": 10.74730880654188
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.74730880654188,
+        "y": 10.74730880654188
+      },
+      "start": 546095.200000003,
+      "launch": 546374.900000006,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 279.79999999701977,
+      "arrival": 547052.299999997,
+      "travelled": 3.2360006368381087
+    },
+    {
+      "caseId": "ranged-234",
+      "kind": "mare",
+      "facing": "west",
+      "outcome": "hit",
+      "range": 4.6,
+      "flightMs": 676,
+      "serverAt": 1792084025276,
+      "player": {
+        "x": 31.4,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.4,
+        "y": 14
+      },
+      "start": 547743.900000006,
+      "launch": 548023.900000006,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 280.29999999701977,
+      "image": "frames/mare-west.png",
+      "arrival": 548698,
+      "damage": 548726.200000003,
+      "impactImage": "frames/mare-west-impact.png",
+      "travelled": 3.8146972514141453e-7,
+      "damageDelay": 702.2999999970198,
+      "arrivalDelta": 28.200000002980232
+    },
+    {
+      "caseId": "ranged-235",
+      "kind": "mare",
+      "facing": "west",
+      "outcome": "dodge",
+      "range": 4.6,
+      "flightMs": 676,
+      "serverAt": 1792084026909,
+      "player": {
+        "x": 31.4,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.4,
+        "y": 14
+      },
+      "start": 549377.299999997,
+      "launch": 549657.900000006,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 280.80000001192093,
+      "arrival": 550336.799999997,
+      "travelled": 3.2320003509521706
+    },
+    {
+      "caseId": "ranged-236",
+      "kind": "mare",
+      "facing": "south-west",
+      "outcome": "hit",
+      "range": 4.6,
+      "flightMs": 676,
+      "serverAt": 1792084028559,
+      "player": {
+        "x": 32.74730880654188,
+        "y": 17.25269119345812
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.74730880654188,
+        "y": 17.25269119345812
+      },
+      "start": 551026,
+      "launch": 551306.299999997,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 280.29999999701977,
+      "image": "frames/mare-south-west.png",
+      "arrival": 551982.900000006,
+      "damage": 552007.799999997,
+      "impactImage": "frames/mare-south-west-impact.png",
+      "travelled": 0.0000018334395032105226,
+      "damageDelay": 701.5,
+      "arrivalDelta": 24.899999991059303
+    },
+    {
+      "caseId": "ranged-237",
+      "kind": "mare",
+      "facing": "south-west",
+      "outcome": "dodge",
+      "range": 4.6,
+      "flightMs": 676,
+      "serverAt": 1792084030192,
+      "player": {
+        "x": 32.74730880654188,
+        "y": 17.25269119345812
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.74730880654188,
+        "y": 17.25269119345812
+      },
+      "start": 552659.5,
+      "launch": 552939.200000003,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 279.70000000298023,
+      "arrival": 553614.900000006,
+      "travelled": 3.4239998577814355
+    },
+    {
+      "caseId": "ranged-238",
+      "kind": "mare",
+      "facing": "south",
+      "outcome": "outside",
+      "range": 4.6,
+      "flightMs": 919,
+      "serverAt": 1792084031841,
+      "player": {
+        "x": 36,
+        "y": 20.25
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 20.25
+      },
+      "travelled": 0
+    }
+  ],
+  "framingReview": {
+    "initialDate": "2026-10-15T17:07:30.104Z",
+    "initialCases": 238,
+    "initialPassed": 238,
+    "framingDate": "2026-10-15T17:15:37.644Z",
+    "framingCases": 28,
+    "framingPassed": 28,
+    "reason": "Initial360px-high scene crop cut long-range vertical caster/effect tips. Replayed all14 north/south hits with520px crop; gameplay and art unchanged."
+  },
+  "summary": {
+    "cases": 238,
+    "hit": 112,
+    "dodge": 112,
+    "outside": 14,
+    "allPassed": true,
+    "maxArrivalDifferenceMs": 48.599999994039536,
+    "minDodgeDistance": 2.6719996022602266,
+    "minDamageDelay": 561.3000000119209,
+    "maxDamageDelay": 1081.8999999910593
+  }
+}

@@ -659,3 +659,7 @@ Replace uniform orbs with17 species-specific folklore-inspired pixel motifs, dis
 
 ### 2026-10-15 — real-game ranged VFX review and source study
 Use a guest-only development room for repeatable real-renderer combat evidence, not production spawn changes. Measure native emission ports and retain manual anatomical overrides. Separate authored flying material from server-confirmed hit and missed-shot dissipation. Apply the existing user-authorized ImageGen folklore exception after verifying zero PixelLab credits. The Godot library is a read-only architectural/art reference; no engine port. Three prototypes do not approve or complete all seventeen effects.
+
+
+### Ranged art08 — species identity with shared lifecycle
+Keep one bounded authoritative-hit presentation layer, but give each ranged folklore species its own material atlas rather than recoloring a shared ball. Reuse the established encounter lore and provisional range/speed; no extra status/AoE. Four Korean ranged species are isolated review fixtures and remain unspawned in planned national maps. Capture both flight and impact with the real Phaser renderer. Correct visible anatomical emission points without modifying original character PNGs.

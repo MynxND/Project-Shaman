@@ -689,3 +689,7 @@ Replace uniform orbs with17 species-specific folklore-inspired pixel motifs, dis
 
 ### 2026-10-15 — ranged VFX art07 review scope
 Three new prototypes (Yuki-onna, Vodyanoy, Sending) have authored eight-direction material atlases and an isolated actual-game review workflow. Final measurements and screenshots live in docs/design/monsters/folklore-01/vfx-07 and /monster-review/ranged-vfx-07/index.html. Fourteen older ranged effects still need art work; the previous all-seventeen run was halted at230 technical cases after visual rejection. User art approval remains open.
+
+
+### Ranged art08 — fourteen-effect implementation batch
+The fourteen effects remaining after art07 now have original distinct eight-direction material atlases and the actual-game238-case review workflow with flight/impact evidence. Together with the three prior prototypes, all seventeen select authored art. Existing national spawns and Korea-planned status remain. Review evidence and measured limits: docs/design/monsters/folklore-01/vfx-08/README.md and /monster-review/ranged-vfx-08/index.html. User art approval remains open.

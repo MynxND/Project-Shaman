@@ -59,3 +59,7 @@ Supersedes encounter04 uniform orbs/range:17 species-specific silhouettes and17 
 ## Live audit06 and revised VFX art07
 
 User rejected thin procedural VFX during a230-case partial live audit; no full17 visual approval or completed289-case claim. Retain technical facing/impact/attachment fixes and add a guest-only isolated real-game review workflow. Three substantial ImageGen VFX prototypes (frost/water/curse) use lessons from the user-specified Godot library: material core, afterimages and server-confirmed impact.14 effects remain pending. See [source study, assets and real-game evidence](vfx-07/README.md).
+
+
+## Ranged art08 continuation
+The fourteen remaining ranged species now have distinct authored material atlases, preserving the three art07 prototypes. Real-game review adds flight and server-confirmed impact evidence; see [art08 workflow and results](vfx-08/README.md). Existing camps, national placement, stats and character frames remain; Korea is still planned.

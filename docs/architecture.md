@@ -613,3 +613,7 @@ Replace uniform orbs with17 species-specific folklore-inspired pixel motifs, dis
 
 ### 2026-10-15 — ranged art07 review
 Development-only ranged-review Colyseus room isolates unsaved guests while reusing Lantern Paddy geometry, authoritative combat and stepMovement. FoundationScene records real release/arrival/damage and actual renderer snapshots through a local review bus. Three authored VFX atlases use bounded Phaser objects and server-confirmed impact; no Godot runtime dependency. See docs/design/monsters/folklore-01/vfx-07/README.md.
+
+
+### Ranged art08 — all seventeen authored materials
+Extend the existing map-scoped MonsterArtVfxLayer with fourteen additional species-specific RGBA atlases. The actual-game recorder saves flight and server-confirmed impact screenshots; remaining-batch review covers fourteen species in the existing isolated development room. No authoritative formula, spawn, portal, map geometry, account or protocol migration. See docs/design/monsters/folklore-01/vfx-08/README.md.

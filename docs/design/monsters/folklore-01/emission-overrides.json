@@ -1,5 +1,5 @@
 {
-  "note": "Manual visual review of native release poses. Yuki diagonal sleeves were mistaken for the mouth; Sending front poses release from the raised palm. Override candidates snap within5 native pixels to opaque art.",
+  "note": "Manual visual review of native release poses. Yuki diagonal sleeves were mistaken for the mouth; Sending front poses release from the raised palm. Override candidates snap within5 native pixels to opaque art. Art08 visual corrections: Krasue mouth/head edge, Cheonyeo hairline, Fossegrim bow/fiddle rather than lower water arc. Hidden rear mouths use visible head edge; these are attachment-design choices.",
   "monsters": {
     "yuki-onna": {
       "south-east": {
@@ -43,6 +43,108 @@
       "south-west": {
         "x": 94,
         "y": 87
+      }
+    },
+    "phi-krasue": {
+      "south": {
+        "x": 96,
+        "y": 110
+      },
+      "south-east": {
+        "x": 110,
+        "y": 122
+      },
+      "east": {
+        "x": 108,
+        "y": 123
+      },
+      "north-east": {
+        "x": 142,
+        "y": 108
+      },
+      "north": {
+        "x": 96,
+        "y": 104
+      },
+      "north-west": {
+        "x": 73,
+        "y": 122
+      },
+      "west": {
+        "x": 74,
+        "y": 123
+      },
+      "south-west": {
+        "x": 81,
+        "y": 122
+      }
+    },
+    "cheonyeo-gwishin": {
+      "south": {
+        "x": 96,
+        "y": 85
+      },
+      "south-east": {
+        "x": 116,
+        "y": 88
+      },
+      "east": {
+        "x": 117,
+        "y": 88
+      },
+      "north-east": {
+        "x": 113,
+        "y": 87
+      },
+      "north": {
+        "x": 96,
+        "y": 86
+      },
+      "north-west": {
+        "x": 75,
+        "y": 88
+      },
+      "west": {
+        "x": 76,
+        "y": 88
+      },
+      "south-west": {
+        "x": 81,
+        "y": 88
+      }
+    },
+    "fossegrim": {
+      "south": {
+        "x": 105,
+        "y": 83
+      },
+      "south-east": {
+        "x": 110,
+        "y": 90
+      },
+      "east": {
+        "x": 102,
+        "y": 99
+      },
+      "north-east": {
+        "x": 113,
+        "y": 82
+      },
+      "north": {
+        "x": 100,
+        "y": 100
+      },
+      "north-west": {
+        "x": 62,
+        "y": 91
+      },
+      "west": {
+        "x": 60,
+        "y": 95
+      },
+      "south-west": {
+        "x": 98,
+        "y": 85
       }
     }
   }

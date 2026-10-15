@@ -125,19 +125,19 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "origins": {
         "south": {
           "x": 96,
-          "y": 84
+          "y": 110
         },
         "south-west": {
-          "x": 67,
-          "y": 101
+          "x": 81,
+          "y": 122
         },
         "west": {
-          "x": 66,
-          "y": 102
+          "x": 74,
+          "y": 123
         },
         "north-west": {
-          "x": 65,
-          "y": 102
+          "x": 73,
+          "y": 122
         },
         "north": {
           "x": 96,
@@ -145,15 +145,15 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
         },
         "north-east": {
           "x": 142,
-          "y": 90
+          "y": 107
         },
         "east": {
-          "x": 124,
-          "y": 101
+          "x": 108,
+          "y": 123
         },
         "south-east": {
-          "x": 118,
-          "y": 101
+          "x": 110,
+          "y": 122
         }
       }
     }
@@ -557,35 +557,35 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "origins": {
         "south": {
           "x": 96,
-          "y": 112
+          "y": 85
         },
         "south-west": {
-          "x": 63,
-          "y": 111
+          "x": 81,
+          "y": 88
         },
         "west": {
-          "x": 58,
-          "y": 110
+          "x": 76,
+          "y": 88
         },
         "north-west": {
-          "x": 54,
-          "y": 110
+          "x": 75,
+          "y": 88
         },
         "north": {
           "x": 96,
-          "y": 109
+          "y": 86
         },
         "north-east": {
-          "x": 130,
-          "y": 109
+          "x": 113,
+          "y": 87
         },
         "east": {
-          "x": 126,
-          "y": 111
+          "x": 117,
+          "y": 90
         },
         "south-east": {
-          "x": 121,
-          "y": 111
+          "x": 116,
+          "y": 90
         }
       }
     }
@@ -2089,36 +2089,36 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "originHeight": 0.34,
       "origins": {
         "south": {
-          "x": 96,
-          "y": 105
+          "x": 105,
+          "y": 83
         },
         "south-west": {
-          "x": 47,
-          "y": 108
+          "x": 98,
+          "y": 85
         },
         "west": {
-          "x": 57,
-          "y": 103
+          "x": 60,
+          "y": 95
         },
         "north-west": {
-          "x": 46,
-          "y": 103
+          "x": 62,
+          "y": 90
         },
         "north": {
-          "x": 96,
-          "y": 103
+          "x": 100,
+          "y": 100
         },
         "north-east": {
-          "x": 141,
-          "y": 103
+          "x": 113,
+          "y": 82
         },
         "east": {
-          "x": 119,
-          "y": 106
+          "x": 102,
+          "y": 99
         },
         "south-east": {
-          "x": 142,
-          "y": 104
+          "x": 110,
+          "y": 90
         }
       }
     }

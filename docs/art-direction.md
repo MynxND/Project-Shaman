@@ -338,3 +338,7 @@ Replace uniform orbs with17 species-specific folklore-inspired pixel motifs, dis
 
 ### 2026-10-15 — ranged VFX art07 prototypes
 User rejected thin procedural ranged effects. Study of haowg/GODOT-VFX-LIBRARY informs release/core/trail/impact separation; original frost, water and wraith artwork is retained with prompts and MIT reference notice. Three prototypes remain open for visual review; fourteen older effects remain pending. Technical results are not visual approval. See docs/design/monsters/folklore-01/vfx-07/README.md.
+
+
+### Ranged art08 — remaining fourteen materials
+All seventeen ranged folklore species now select unique authored materials: flame, mourning hair, empty cloth, water hand/talons, nine-tail fan, wet tresses, wail crescents, crimson silk, fox mirage, reed hook, waterfall sound and shadow palms alongside art07. Original alpha/prompts retained;112px padding preserves diagonal tips. This completes implementation of the requested batch, not final user visual approval. See docs/design/monsters/folklore-01/vfx-08/README.md.
