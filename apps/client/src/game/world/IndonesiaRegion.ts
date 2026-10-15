@@ -14,15 +14,20 @@ export function preloadIndonesia(scene:Phaser.Scene){scene.load.image(KEY,'/asse
 function frame(scene:Phaser.Scene,name:Frame,width:number){const key=`ashwind:${name}:${width}`;if(scene.textures.exists(key))return key;const f=kit.frames[name],h=Math.round(width*f.h/f.w),t=scene.textures.createCanvas(key,width,h)!;t.context.imageSmoothingEnabled=false;t.context.drawImage(scene.textures.get(KEY).getSourceImage()as HTMLImageElement,f.x,f.y,f.w,f.h,0,0,width,h);t.refresh();t.setFilter(Phaser.Textures.FilterMode.NEAREST);return key;}
 /** Shared regional binding: gameplay and preview render the same owned atlas and atmosphere. */
 export function renderIndonesia(scene:Phaser.Scene,map:MapDefinition,profile:Pick<typeof plan,'fog'|'graph'|'vents'|'wind'>=(profiles as Record<string,Pick<typeof plan,'fog'|'graph'|'vents'|'wind'>>)[map.id]??plan){
- const w=map.width*N,h=map.height*N,samples={}as Record<string,Uint8ClampedArray>;
- for(const[name,size,seed]of [['ash',128,301],['road',64,302]]as const){const key=frame(scene,name,size),source=scene.textures.get(key).getSourceImage()as HTMLCanvasElement;samples[name]=quiltPaint(source.getContext('2d')!.getImageData(0,0,size,size).data,size,w,h,seed);}
+ // Ground retains one painted pixel per world pixel. Props/water keep their original asset scale.
+ // Double the samples AND quilt dimensions so stones retain their physical size, with finer cracks/grain.
+ const w=map.width*U,h=map.height*U;
  const groundKey=`indonesia:ground:${map.id}`;
  // Canvas textures outlive Phaser scene restarts unless explicitly released.
  if(scene.textures.exists(groundKey))scene.textures.remove(groundKey);
- const t=scene.textures.createCanvas(groundKey,w,h)!,out=t.context.createImageData(w,h),raster=rasterNativeTerrain(map,N),water=new WaterLayer(scene,{...map,objects:[]});
- water.setNativeCoverage(raster.water);
- for(let cell=0;cell<raster.materials.length;cell++){const i=cell*4,s=samples[raster.materials[cell]===1?'road':'ash']!;out.data[i]=s[i]!;out.data[i+1]=s[i+1]!;out.data[i+2]=s[i+2]!;out.data[i+3]=255;}
- t.context.putImageData(out,0,0);t.refresh();t.setFilter(Phaser.Textures.FilterMode.NEAREST);scene.add.image(0,0,groundKey).setOrigin(0).setScale(MAP_ASSET_SCALE).setDepth(-1.8);// This independent atlas has no legacy umbral object-reflection bindings.
+ const t=scene.textures.createCanvas(groundKey,w,h)!,out=t.context.createImageData(w,h),raster=rasterNativeTerrain(map,U),water=new WaterLayer(scene,{...map,objects:[]});
+ water.setNativeCoverage(rasterNativeTerrain(map,N).water);
+ // Composite one material at a time instead of retaining two full-size painted planes.
+ for(const[name,size,seed]of [['ash',256,301],['road',128,302]]as const){
+  const key=frame(scene,name,size),source=scene.textures.get(key).getSourceImage()as HTMLCanvasElement,s=quiltPaint(source.getContext('2d')!.getImageData(0,0,size,size).data,size,w,h,seed,2);
+  for(let cell=0;cell<raster.materials.length;cell++)if((raster.materials[cell]===1)===(name==='road')){const i=cell*4;out.data[i]=s[i]!;out.data[i+1]=s[i+1]!;out.data[i+2]=s[i+2]!;out.data[i+3]=255;}
+ }
+ t.context.putImageData(out,0,0);t.refresh();t.setFilter(Phaser.Textures.FilterMode.NEAREST);scene.add.image(0,0,groundKey).setOrigin(0).setDepth(-1.8);// This independent atlas has no legacy umbral object-reflection bindings.
  scene.events.once(Phaser.Scenes.Events.SHUTDOWN,()=>scene.textures.remove(groundKey));
  water.finish();
  for(const o of map.objects as (MapDefinition['objects'][number]&{width:number})[]){const key=frame(scene,o.asset as Frame,o.width);scene.add.image(o.x*U,o.y*U,key).setOrigin(.5,1).setScale(MAP_ASSET_SCALE).setDepth(o.y*U).setName(o.id);addContactShadow(scene,o.x*U,o.y*U,o.footprint?o.footprint.w*U:o.width*.8);}

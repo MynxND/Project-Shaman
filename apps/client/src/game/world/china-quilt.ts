@@ -1,6 +1,8 @@
 /** Seeded quilting copies painted source pixels along minimum-error overlap cuts; no noise/gradient texture. */
-export function quiltPaint(source:Uint8ClampedArray,size:number,width:number,height:number,seed:number){
- const out=new Uint8ClampedArray(width*height*4),patch=Math.min(48,Math.floor(size/2)),overlap=8,step=patch-overlap;
+// pixelScale increases overlap/patch resolution together; the default preserves existing regional output.
+export function quiltPaint(source:Uint8ClampedArray,size:number,width:number,height:number,seed:number,pixelScale=1){
+ const out=new Uint8ClampedArray(width*height*4),patch=Math.min(48*pixelScale,Math.floor(size/2)),overlap=8*pixelScale,step=patch-overlap;
+ if(!Number.isInteger(pixelScale)||pixelScale<1||step<=0)throw new Error('Invalid painted quilt density');
  const random=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed;};
  const error=(a:number,b:number)=>Math.abs(out[a]!-source[b]!)+Math.abs(out[a+1]!-source[b+1]!)+Math.abs(out[a+2]!-source[b+2]!);
  const cut=(length:number,thickness:number,cost:(i:number,j:number)=>number)=>{
