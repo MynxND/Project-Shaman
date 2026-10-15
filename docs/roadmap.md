@@ -655,3 +655,8 @@ Russia3 local previews delivered: frost-pine, taiga-blood-trail and iconic winte
 ## Russia live adoption — 2026-10-15
 
 Russia3 now live: frost-pine, taiga-blood-trail, winter-seal-kremlin;9NPCs/27residents and reciprocal edge chain from Ireland. Water/mist and2snow maps match preview. Build/typecheck/shared/layout/old-country/atlas/network checks pass; actual game desktop/mobile inspected. Atlas36/12nations/24live/12planned. See design/maps/russia-three/live01/README.md.
+
+
+## Folklore enemy batch — 2026-10-15
+
+User authorized ImageGen for40 folklore enemy species after PixelLab0. Eight authored views with measured move/attack/death clips;40 registered,28 bound through44 additions to17 existing authored camps/maps, Korea6/Iceland6 unbound (no live national maps; Iceland not Ireland). Preserve original residents/NPCs/portals/collision. Map-scoped texture lifecycle, phase-preserving directional playback, server octant facing and full death playback; legacy art/behavior retained. Actual frame counts and provisional stats/lore remain explicit. Desktop/mobile preview and live Paddy inspected;17 authoritative rooms plus Phi Pop damage/death, shared regressions, typecheck/build pass. User visual approval pending. Evidence: docs/design/monsters/folklore-01/README.md.

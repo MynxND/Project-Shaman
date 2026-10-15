@@ -304,3 +304,8 @@ Russia3 preview identity uses original snow spruce/white birch/peat taiga, log i
 ## Russia live adoption — 2026-10-15
 
 Russia3 reviewed regional kit now adopted into actual game without new generation/source edits. Exact snow/taiga terrain, timber architecture, water and localized mist retained; bounded cosmetic snowfall on frost/fortress only. NPC/monster art explicitly reused from owned sheets, numerical variants provisional. Actual-game desktop/mobile evidence in design/maps/russia-three/live01; tests are not final user art approval.
+
+
+## Folklore enemy batch — 2026-10-15
+
+User authorized ImageGen for40 folklore enemy species after PixelLab0. Eight authored views with measured move/attack/death clips;40 registered,28 bound through44 additions to17 existing authored camps/maps, Korea6/Iceland6 unbound (no live national maps; Iceland not Ireland). Preserve original residents/NPCs/portals/collision. Map-scoped texture lifecycle, phase-preserving directional playback, server octant facing and full death playback; legacy art/behavior retained. Actual frame counts and provisional stats/lore remain explicit. Desktop/mobile preview and live Paddy inspected;17 authoritative rooms plus Phi Pop damage/death, shared regressions, typecheck/build pass. User visual approval pending. Evidence: docs/design/monsters/folklore-01/README.md.

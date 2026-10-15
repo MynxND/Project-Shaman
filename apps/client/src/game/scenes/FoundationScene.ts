@@ -110,7 +110,7 @@ export class FoundationScene extends Phaser.Scene {
     preloadCitizens(this);
     preloadSkillCasts(this);
     preloadNationVfx(this);
-    preloadMonsters(this);
+    preloadMonsters(this,this.map);
   }
   create() {
     if(this.mountainPerf.enabled)console.info('[mountain-load] create',this.map.id);

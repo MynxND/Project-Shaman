@@ -1,0 +1,1820 @@
+// User-requested folklore enemies. ImageGen exception2026-10-15; stats/lore/map bindings provisional.
+import type{MonsterDefinition}from'./combat.js';
+export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
+  "phi-pret": {
+    "kind": "phi-pret",
+    "name": {
+      "th": "ผีเปรต",
+      "en": "Phi Pret"
+    },
+    "level": 18,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 660,
+    "atk": 44,
+    "def": 14,
+    "mdef": 12,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.8,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 125,
+    "exp": 432,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "phi-pop": {
+    "kind": "phi-pop",
+    "name": {
+      "th": "ผีปอบ",
+      "en": "Phi Pop"
+    },
+    "level": 12,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 480,
+    "atk": 32,
+    "def": 11,
+    "mdef": 9,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 125,
+    "exp": 288,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "phi-krasue": {
+    "kind": "phi-krasue",
+    "name": {
+      "th": "ผีกระสือ",
+      "en": "Phi Krasue"
+    },
+    "level": 20,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 720,
+    "atk": 48,
+    "def": 15,
+    "mdef": 13,
+    "speed": 2.1,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 480,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "phi-krahang": {
+    "kind": "phi-krahang",
+    "name": {
+      "th": "ผีกระหัง",
+      "en": "Phi Krahang"
+    },
+    "level": 24,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 840,
+    "atk": 56,
+    "def": 17,
+    "mdef": 14,
+    "speed": 2.1,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 576,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "onryo": {
+    "kind": "onryo",
+    "name": {
+      "th": "วิญญาณอาฆาต",
+      "en": "Onryō"
+    },
+    "level": 42,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1380,
+    "atk": 92,
+    "def": 26,
+    "mdef": 21,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 125,
+    "exp": 1008,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "yuki-onna": {
+    "kind": "yuki-onna",
+    "name": {
+      "th": "หญิงหิมะ",
+      "en": "Yuki-onna"
+    },
+    "level": 64,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 2040,
+    "atk": 136,
+    "def": 37,
+    "mdef": 30,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1536,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "kuchisake-onna": {
+    "kind": "kuchisake-onna",
+    "name": {
+      "th": "หญิงปากฉีก",
+      "en": "Kuchisake-onna"
+    },
+    "level": 55,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1770,
+    "atk": 118,
+    "def": 32,
+    "mdef": 27,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 125,
+    "exp": 1320,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "rokurokubi": {
+    "kind": "rokurokubi",
+    "name": {
+      "th": "หญิงคอยาว",
+      "en": "Rokurokubi"
+    },
+    "level": 48,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1560,
+    "atk": 104,
+    "def": 29,
+    "mdef": 24,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1152,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "ubume": {
+    "kind": "ubume",
+    "name": {
+      "th": "อุบุเมะ",
+      "en": "Ubume"
+    },
+    "level": 46,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1500,
+    "atk": 100,
+    "def": 28,
+    "mdef": 23,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1104,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "gashadokuro": {
+    "kind": "gashadokuro",
+    "name": {
+      "th": "โครงกระดูกยักษ์",
+      "en": "Gashadokuro"
+    },
+    "level": 65,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 2070,
+    "atk": 138,
+    "def": 37,
+    "mdef": 31,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.8,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 125,
+    "exp": 1560,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "cheonyeo-gwishin": {
+    "kind": "cheonyeo-gwishin",
+    "name": {
+      "th": "ผีสาวอาลัย",
+      "en": "Cheonyeo Gwishin"
+    },
+    "level": 40,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1320,
+    "atk": 88,
+    "def": 25,
+    "mdef": 21,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 125,
+    "exp": 960,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "mulgwishin": {
+    "kind": "mulgwishin",
+    "name": {
+      "th": "ผีน้ำเกาหลี",
+      "en": "Mulgwishin"
+    },
+    "level": 48,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1560,
+    "atk": 104,
+    "def": 29,
+    "mdef": 24,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1152,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "dalgyal-gwishin": {
+    "kind": "dalgyal-gwishin",
+    "name": {
+      "th": "ผีหน้าเรียบ",
+      "en": "Dalgyal Gwishin"
+    },
+    "level": 45,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1470,
+    "atk": 98,
+    "def": 27,
+    "mdef": 23,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 125,
+    "exp": 1080,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "dokkaebi": {
+    "kind": "dokkaebi",
+    "name": {
+      "th": "ทกแกบี",
+      "en": "Dokkaebi"
+    },
+    "level": 52,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1680,
+    "atk": 112,
+    "def": 31,
+    "mdef": 25,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1248,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "gumiho": {
+    "kind": "gumiho",
+    "name": {
+      "th": "จิ้งจอกเก้าหาง",
+      "en": "Gumiho"
+    },
+    "level": 55,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1770,
+    "atk": 118,
+    "def": 32,
+    "mdef": 27,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 125,
+    "exp": 1320,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "chonggak-gwishin": {
+    "kind": "chonggak-gwishin",
+    "name": {
+      "th": "ผีหนุ่มอาลัย",
+      "en": "Chonggak Gwishin"
+    },
+    "level": 44,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1440,
+    "atk": 96,
+    "def": 27,
+    "mdef": 22,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1056,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "rusalka": {
+    "kind": "rusalka",
+    "name": {
+      "th": "รูซัลกา",
+      "en": "Rusalka"
+    },
+    "level": 66,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 2100,
+    "atk": 140,
+    "def": 38,
+    "mdef": 31,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 125,
+    "exp": 1584,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "leshy": {
+    "kind": "leshy",
+    "name": {
+      "th": "เลชี",
+      "en": "Leshy"
+    },
+    "level": 78,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 2460,
+    "atk": 164,
+    "def": 44,
+    "mdef": 36,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1872,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "domovoi": {
+    "kind": "domovoi",
+    "name": {
+      "th": "โดโมวอย",
+      "en": "Domovoi"
+    },
+    "level": 60,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1920,
+    "atk": 128,
+    "def": 35,
+    "mdef": 29,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1440,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "kikimora": {
+    "kind": "kikimora",
+    "name": {
+      "th": "คิคิโมรา",
+      "en": "Kikimora"
+    },
+    "level": 80,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 2520,
+    "atk": 168,
+    "def": 45,
+    "mdef": 37,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1920,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "vodyanoy": {
+    "kind": "vodyanoy",
+    "name": {
+      "th": "โวดียานอย",
+      "en": "Vodyanoy"
+    },
+    "level": 85,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 2670,
+    "atk": 178,
+    "def": 47,
+    "mdef": 39,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 2040,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "bannik": {
+    "kind": "bannik",
+    "name": {
+      "th": "บันนิก",
+      "en": "Bannik"
+    },
+    "level": 88,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 2760,
+    "atk": 184,
+    "def": 49,
+    "mdef": 40,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 125,
+    "exp": 2112,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "draugur": {
+    "kind": "draugur",
+    "name": {
+      "th": "ดรอยกูร์",
+      "en": "Draugur"
+    },
+    "level": 62,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1980,
+    "atk": 132,
+    "def": 36,
+    "mdef": 29,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1488,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "afturganga": {
+    "kind": "afturganga",
+    "name": {
+      "th": "อัฟตูร์กังกา",
+      "en": "Afturganga"
+    },
+    "level": 58,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1860,
+    "atk": 124,
+    "def": 34,
+    "mdef": 28,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 125,
+    "exp": 1392,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "utburdur": {
+    "kind": "utburdur",
+    "name": {
+      "th": "อูตบูร์ดูร์",
+      "en": "Útburður"
+    },
+    "level": 60,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1920,
+    "atk": 128,
+    "def": 35,
+    "mdef": 29,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1440,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "uppvakningur": {
+    "kind": "uppvakningur",
+    "name": {
+      "th": "อุปป์วักนิงกูร์",
+      "en": "Uppvakningur"
+    },
+    "level": 68,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 2160,
+    "atk": 144,
+    "def": 39,
+    "mdef": 32,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1632,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "sending": {
+    "kind": "sending",
+    "name": {
+      "th": "เซนดิง",
+      "en": "Sending"
+    },
+    "level": 70,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 2220,
+    "atk": 148,
+    "def": 40,
+    "mdef": 33,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1680,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "tilberi": {
+    "kind": "tilberi",
+    "name": {
+      "th": "ทิลเบริ",
+      "en": "Tilberi"
+    },
+    "level": 64,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 2040,
+    "atk": 136,
+    "def": 37,
+    "mdef": 30,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 125,
+    "exp": 1536,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "jiangshi": {
+    "kind": "jiangshi",
+    "name": {
+      "th": "ผีดิบเจียงซือ",
+      "en": "Jiangshi"
+    },
+    "level": 35,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1170,
+    "atk": 78,
+    "def": 22,
+    "mdef": 19,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 125,
+    "exp": 840,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "nu-gui": {
+    "kind": "nu-gui",
+    "name": {
+      "th": "นฺหวี่กุ่ย",
+      "en": "Nü Gui"
+    },
+    "level": 38,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1260,
+    "atk": 84,
+    "def": 24,
+    "mdef": 20,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 912,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "e-gui": {
+    "kind": "e-gui",
+    "name": {
+      "th": "ผีหิวโหยจีน",
+      "en": "E Gui"
+    },
+    "level": 42,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1380,
+    "atk": 92,
+    "def": 26,
+    "mdef": 21,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1008,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "shui-gui": {
+    "kind": "shui-gui",
+    "name": {
+      "th": "สุ่ยกุ่ย",
+      "en": "Shui Gui"
+    },
+    "level": 36,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1200,
+    "atk": 80,
+    "def": 23,
+    "mdef": 19,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 864,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "wutou-gui": {
+    "kind": "wutou-gui",
+    "name": {
+      "th": "ผีไร้หัวจีน",
+      "en": "Wutou Gui"
+    },
+    "level": 44,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1440,
+    "atk": 96,
+    "def": 27,
+    "mdef": 22,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1056,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "huli-jing": {
+    "kind": "huli-jing",
+    "name": {
+      "th": "หูหลีจิง",
+      "en": "Huli Jing"
+    },
+    "level": 45,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1470,
+    "atk": 98,
+    "def": 27,
+    "mdef": 23,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1080,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "draugen": {
+    "kind": "draugen",
+    "name": {
+      "th": "ดรอยเกน",
+      "en": "Draugen"
+    },
+    "level": 65,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 2070,
+    "atk": 138,
+    "def": 37,
+    "mdef": 31,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 125,
+    "exp": 1560,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "huldra": {
+    "kind": "huldra",
+    "name": {
+      "th": "ฮุลทรา",
+      "en": "Huldra"
+    },
+    "level": 64,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 2040,
+    "atk": 136,
+    "def": 37,
+    "mdef": 30,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1536,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "nokken": {
+    "kind": "nokken",
+    "name": {
+      "th": "เนิกเคน",
+      "en": "Nøkken"
+    },
+    "level": 70,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 2220,
+    "atk": 148,
+    "def": 40,
+    "mdef": 33,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 125,
+    "exp": 1680,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "fossegrim": {
+    "kind": "fossegrim",
+    "name": {
+      "th": "ฟอสเซกริม",
+      "en": "Fossegrim"
+    },
+    "level": 68,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 2160,
+    "atk": 144,
+    "def": 39,
+    "mdef": 32,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1632,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "nisse": {
+    "kind": "nisse",
+    "name": {
+      "th": "นิสเซ",
+      "en": "Nisse"
+    },
+    "level": 62,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 1980,
+    "atk": 132,
+    "def": 36,
+    "mdef": 29,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 125,
+    "exp": 1488,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  },
+  "mare": {
+    "kind": "mare",
+    "name": {
+      "th": "มาเร",
+      "en": "Mare"
+    },
+    "level": 76,
+    "race": "undead",
+    "behavior": "aggressive",
+    "facingMode": "eight",
+    "hp": 2400,
+    "atk": 160,
+    "def": 43,
+    "mdef": 35,
+    "speed": 1.6,
+    "aggroRange": 3.5,
+    "leash": 5,
+    "attackRange": 1.3,
+    "attackDelayMs": 1800,
+    "attackWindupMs": 250,
+    "exp": 1824,
+    "drops": [
+      {
+        "itemId": "bone",
+        "chance": 0.22
+      },
+      {
+        "itemId": "dark-ore",
+        "chance": 0.15
+      }
+    ],
+    "wander": {
+      "pauseMs": [
+        2200,
+        4800
+      ],
+      "radius": 1.3
+    }
+  }
+};
+export const FOLKLORE_BINDINGS:Readonly<Record<string,{kind:string;campIndex:number;count:number}[]>>={
+  "lantern-paddy": [
+    {
+      "kind": "phi-pret",
+      "campIndex": 1,
+      "count": 1
+    },
+    {
+      "kind": "phi-pop",
+      "campIndex": 0,
+      "count": 1
+    },
+    {
+      "kind": "phi-krahang",
+      "campIndex": 2,
+      "count": 1
+    }
+  ],
+  "monsoon-marsh": [
+    {
+      "kind": "phi-pret",
+      "campIndex": 2,
+      "count": 1
+    },
+    {
+      "kind": "phi-krasue",
+      "campIndex": 1,
+      "count": 1
+    }
+  ],
+  "whispering-spiritwood": [
+    {
+      "kind": "phi-pop",
+      "campIndex": 0,
+      "count": 1
+    }
+  ],
+  "moon-mangrove": [
+    {
+      "kind": "phi-krasue",
+      "campIndex": 1,
+      "count": 1
+    }
+  ],
+  "mountain-spirit-sanctuary": [
+    {
+      "kind": "phi-krahang",
+      "campIndex": 1,
+      "count": 1
+    }
+  ],
+  "cedar-torii-shrine": [
+    {
+      "kind": "onryo",
+      "campIndex": 0,
+      "count": 1
+    },
+    {
+      "kind": "rokurokubi",
+      "campIndex": 2,
+      "count": 1
+    }
+  ],
+  "monsoon-ruins": [
+    {
+      "kind": "onryo",
+      "campIndex": 0,
+      "count": 1
+    },
+    {
+      "kind": "kuchisake-onna",
+      "campIndex": 1,
+      "count": 1
+    },
+    {
+      "kind": "gashadokuro",
+      "campIndex": 2,
+      "count": 1
+    }
+  ],
+  "snowbound-torii": [
+    {
+      "kind": "yuki-onna",
+      "campIndex": 1,
+      "count": 1
+    }
+  ],
+  "spirit-waterfall": [
+    {
+      "kind": "rokurokubi",
+      "campIndex": 0,
+      "count": 1
+    },
+    {
+      "kind": "ubume",
+      "campIndex": 1,
+      "count": 1
+    }
+  ],
+  "frost-pine": [
+    {
+      "kind": "rusalka",
+      "campIndex": 1,
+      "count": 1
+    },
+    {
+      "kind": "domovoi",
+      "campIndex": 0,
+      "count": 1
+    }
+  ],
+  "taiga-blood-trail": [
+    {
+      "kind": "rusalka",
+      "campIndex": 1,
+      "count": 1
+    },
+    {
+      "kind": "leshy",
+      "campIndex": 2,
+      "count": 1
+    },
+    {
+      "kind": "kikimora",
+      "campIndex": 0,
+      "count": 1
+    },
+    {
+      "kind": "vodyanoy",
+      "campIndex": 1,
+      "count": 1
+    }
+  ],
+  "winter-seal-kremlin": [
+    {
+      "kind": "domovoi",
+      "campIndex": 0,
+      "count": 1
+    },
+    {
+      "kind": "kikimora",
+      "campIndex": 1,
+      "count": 1
+    },
+    {
+      "kind": "vodyanoy",
+      "campIndex": 2,
+      "count": 1
+    },
+    {
+      "kind": "bannik",
+      "campIndex": 0,
+      "count": 1
+    }
+  ],
+  "mist-bamboo": [
+    {
+      "kind": "jiangshi",
+      "campIndex": 0,
+      "count": 1
+    },
+    {
+      "kind": "nu-gui",
+      "campIndex": 1,
+      "count": 1
+    },
+    {
+      "kind": "shui-gui",
+      "campIndex": 2,
+      "count": 1
+    },
+    {
+      "kind": "huli-jing",
+      "campIndex": 1,
+      "count": 1
+    }
+  ],
+  "cloud-tea-slopes": [
+    {
+      "kind": "jiangshi",
+      "campIndex": 0,
+      "count": 1
+    },
+    {
+      "kind": "e-gui",
+      "campIndex": 1,
+      "count": 1
+    },
+    {
+      "kind": "shui-gui",
+      "campIndex": 2,
+      "count": 1
+    },
+    {
+      "kind": "wutou-gui",
+      "campIndex": 1,
+      "count": 1
+    },
+    {
+      "kind": "huli-jing",
+      "campIndex": 0,
+      "count": 1
+    }
+  ],
+  "storm-fjord": [
+    {
+      "kind": "draugen",
+      "campIndex": 0,
+      "count": 1
+    },
+    {
+      "kind": "huldra",
+      "campIndex": 2,
+      "count": 1
+    },
+    {
+      "kind": "nokken",
+      "campIndex": 1,
+      "count": 1
+    },
+    {
+      "kind": "fossegrim",
+      "campIndex": 1,
+      "count": 1
+    }
+  ],
+  "spirit-timber-harbor": [
+    {
+      "kind": "draugen",
+      "campIndex": 1,
+      "count": 1
+    },
+    {
+      "kind": "nisse",
+      "campIndex": 0,
+      "count": 1
+    }
+  ],
+  "aurora-pass": [
+    {
+      "kind": "huldra",
+      "campIndex": 0,
+      "count": 1
+    },
+    {
+      "kind": "nokken",
+      "campIndex": 1,
+      "count": 1
+    },
+    {
+      "kind": "mare",
+      "campIndex": 2,
+      "count": 1
+    }
+  ]
+};

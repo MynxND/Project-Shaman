@@ -1,3 +1,4 @@
+import{withFolkloreResidents}from'./folklore-live.js';
 import{RUSSIA_MAPS}from'./russia.js';
 import{WILLOW_RUSSIA_LINK}from'./willow-russia-link.js';
 import{IRELAND_MAPS}from'./ireland.js';
@@ -21,7 +22,7 @@ import {MARSH_MOUNTAIN_LINK} from './marsh-mountain-link.js';
 import {LEVELING_LIVE} from './leveling-live.js';
 
 /** Every playable map by id. Each map runs in its own server room (filtered by mapId). */
-export const MAPS: Readonly<Record<string, MapDefinition>> = {
+const BASE_MAPS: Readonly<Record<string, MapDefinition>> = {
   [UMBRAL_CAPITAL.id]: UMBRAL_VILLAGE,
   [UMBRAL_ELEVATION_LAB.id]: UMBRAL_ELEVATION_LAB,
   [UMBRAL_ELEVATION_BASELINE.id]: UMBRAL_ELEVATION_BASELINE,
@@ -40,6 +41,8 @@ export const MAPS: Readonly<Record<string, MapDefinition>> = {
   [WILLOW_RUSSIA_LINK.id]:WILLOW_RUSSIA_LINK,
   ...Object.fromEntries(RUSSIA_MAPS.map(map=>[map.id,map])),
 };
+/** Derived camp bindings retain every original map field and resident. */
+export const MAPS:Readonly<Record<string,MapDefinition>>=Object.fromEntries(Object.entries(BASE_MAPS).map(([id,map])=>[id,withFolkloreResidents(map)]));
 export const DEFAULT_MAP_ID = UMBRAL_CAPITAL.id;
 /** The map for an id, or the default (Umbral Capital) for an unknown id. */
 export function getMap(id: unknown): MapDefinition { return (typeof id === 'string' && MAPS[id]) || UMBRAL_VILLAGE; }

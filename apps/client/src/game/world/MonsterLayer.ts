@@ -1,4 +1,6 @@
 import Phaser from 'phaser';
+import {monsterFacing,legacyMonsterFlip,monsterClip,monsterFrames,monsterAnimationKey,validateMonsterSheet,type MonsterSheet,type MonsterAction} from './monster-sprite-model';
+import type {Facing} from '@shaman/shared';
 import type { MonsterState } from '@shaman/schema';
 import { projectedY, type MapDefinition, MONSTER_STATUS_TH, MONSTERS, WORLD_UNIT_PX } from '@shaman/shared';
 import { addContactShadow, DARKNESS_DEPTH } from './Lighting';
@@ -6,6 +8,7 @@ import { addContactShadow, DARKNESS_DEPTH } from './Lighting';
 // Monsters drawn from the synced room state (positions/HP/state come from the server) plus the combat feedback the
 // server broadcasts: swings, hurt flashes, damage numbers, deaths and level-ups. Sprites are PixelLab sheets built by
 // tools/monsters/build_monsters.py; they face east and are mirrored for west.
+// That legacy contract stays intact. User-authorized ImageGen folklore sheets instead own eight real directional clips.
 
 const BASE = '/assets/monsters';
 const MANIFEST_KEY = 'monsters-manifest';
@@ -14,16 +17,26 @@ const MONSTER_SCALE = 0.5;
 const FOLLOW = 0.3;
 const sheetKey = (kind: string) => `monster:${kind}`;
 const animKey = (kind: string, anim: string) => `monster:${kind}:${anim}`;
-type AnimName = 'idle' | 'move' | 'attack' | 'hurt' | 'death';
+type AnimName = MonsterAction;
 
-interface SheetInfo { image: string; frameWidth: number; frameHeight: number; columns: number; anchor: { x: number; y: number }; animations: Record<AnimName, { row: number; frames: number; fps: number; loop: boolean }> }
+type SheetInfo=MonsterSheet;
 interface Manifest { monsters: Record<string, SheetInfo> }
 
-export function preloadMonsters(scene: Phaser.Scene) {
-  scene.load.once(`filecomplete-json-${MANIFEST_KEY}`, (_k: string, _t: string, manifest: Manifest) => {
-    for (const [kind, s] of Object.entries(manifest.monsters)) scene.load.spritesheet(sheetKey(kind), `${BASE}/${s.image}`, { frameWidth: s.frameWidth, frameHeight: s.frameHeight });
+/** Map-scoped textures avoid loading every nation's large directional atlases at once. */
+export function preloadMonsters(scene: Phaser.Scene,map?:MapDefinition) {
+  const loaded:string[]=[];
+  const queue=(manifest:Manifest)=>{
+    const needed=map?new Set((map.spawnRegions??[]).flatMap(r=>r.monsters.map(m=>m.kind))):new Set(Object.keys(manifest.monsters));
+    for(const kind of needed){const summon=MONSTERS[kind]?.boss?.summon.kind;if(summon)needed.add(summon);}
+    for(const kind of needed){const s=manifest.monsters[kind];if(!s)continue;loaded.push(kind);if(!scene.textures.exists(sheetKey(kind)))scene.load.spritesheet(sheetKey(kind),`${BASE}/${s.image}`,{frameWidth:s.frameWidth,frameHeight:s.frameHeight});}
+  };
+  const cached=scene.cache.json.get(MANIFEST_KEY) as Manifest|undefined;
+  if(cached)queue(cached);
+  else{scene.load.once(`filecomplete-json-${MANIFEST_KEY}`,(_k:string,_t:string,manifest:Manifest)=>queue(manifest));scene.load.json(MANIFEST_KEY,`${BASE}/manifest.json`);}
+  scene.events.once(Phaser.Scenes.Events.SHUTDOWN,()=>{
+    const manifest=scene.cache.json.get(MANIFEST_KEY) as Manifest|undefined;
+    for(const kind of loaded){const s=manifest?.monsters[kind];if(!s)continue;for(const face of s.directions?Object.keys(s.directions):['east'])for(const action of Object.keys(s.animations) as AnimName[])scene.anims.remove(monsterAnimationKey(kind,action,s,face as Facing));if(scene.textures.exists(sheetKey(kind)))scene.textures.remove(sheetKey(kind));}
   });
-  scene.load.json(MANIFEST_KEY, `${BASE}/manifest.json`);
 }
 
 interface View {
@@ -40,6 +53,8 @@ interface View {
   /** Drawn height (px) above the ground point, for labels and bars. */
   height: number;
   boss: boolean;
+  facing: Facing;
+  action: AnimName;
 }
 
 export interface MonsterLayerHooks {
@@ -61,11 +76,12 @@ export class MonsterLayer {
     for (const [kind, s] of Object.entries(this.manifest?.monsters ?? {})) {
       if (!scene.textures.exists(sheetKey(kind))) continue;
       scene.textures.get(sheetKey(kind)).setFilter(Phaser.Textures.FilterMode.NEAREST);
-      for (const [name, a] of Object.entries(s.animations)) {
-        const key = animKey(kind, name);
-        if (scene.anims.exists(key)) continue;
-        const start = a.row * s.columns;
-        scene.anims.create({ key, frames: scene.anims.generateFrameNumbers(sheetKey(kind), { start, end: start + a.frames - 1 }), frameRate: a.fps, repeat: a.loop ? -1 : 0 });
+      validateMonsterSheet(s);
+      const views=s.directions?Object.entries(s.directions):[['east',s.animations] as const];
+      for(const [direction,clips]of views)for(const name of Object.keys(clips) as AnimName[]){
+        const a=clips[name],key=monsterAnimationKey(kind,name,s,direction as Facing);
+        if(scene.anims.exists(key))continue;
+        scene.anims.create({key,frames:monsterFrames(s,a).map(frame=>({key:sheetKey(kind),frame})),frameRate:a.fps,repeat:a.loop?-1:0});
       }
     }
   }
@@ -78,31 +94,36 @@ export class MonsterLayer {
     if (!info || !this.scene.textures.exists(sheetKey(m.kind))) return null;
     const U = WORLD_UNIT_PX, x = m.x * U, y = this.y(m.x,m.y);
     const def = MONSTERS[m.kind];
-    const sprite = this.scene.add.sprite(x, y, sheetKey(m.kind), 0).setScale(MONSTER_SCALE)
+    const sprite = this.scene.add.sprite(x, y, sheetKey(m.kind), 0).setScale(info.scale??MONSTER_SCALE)
       .setOrigin(info.anchor.x / info.frameWidth, info.anchor.y / info.frameHeight);
     // Generous hit box around the body so small monsters are easy to tap on phones.
     sprite.setInteractive(new Phaser.Geom.Rectangle(info.frameWidth * 0.18, info.frameHeight * 0.18, info.frameWidth * 0.64, info.frameHeight * 0.74), Phaser.Geom.Rectangle.Contains);
     sprite.input!.cursor = 'pointer';
     sprite.on(Phaser.Input.Events.GAMEOBJECT_POINTER_DOWN, () => this.hooks.onSelect(id));
     const boss = def?.size === 'boss';
-    const height = info.anchor.y * MONSTER_SCALE * 0.82;
+    const height = info.anchor.y * (info.scale??MONSTER_SCALE) * 0.82;
     const shadow = addContactShadow(this.scene, x, y, boss ? 54 : 22);
     const ring = this.scene.add.ellipse(x, y, boss ? 70 : 34, boss ? 22 : 12).setStrokeStyle(2, 0xe8c977, 0.9).setFillStyle(0xe8c977, 0.12).setDepth(-0.5).setVisible(false);
     const label = this.scene.add.text(x, y, `${boss ? 'บอส · ' : ''}${def?.name.th ?? m.kind} Lv.${def?.level ?? '?'}`, { fontFamily: 'Tahoma', fontSize: boss ? '11px' : '9px', color: boss ? '#ffb38a' : '#f1e3b4', stroke: '#14100d', strokeThickness: 3, resolution: 3 })
       .setOrigin(0.5, 1).setDepth(DARKNESS_DEPTH + 2);
     const bar = this.scene.add.graphics().setDepth(DARKNESS_DEPTH + 2);
-    sprite.play(animKey(m.kind, 'idle'));
-    const view: View = { kind: m.kind, sprite, shadow, ring, label, bar, oneShot: false, dead: false, lastHurt: 0, height, boss };
+    const facing=monsterFacing(m.facing);
+    sprite.play(monsterAnimationKey(m.kind,'idle',info,facing));
+    const view: View = { kind: m.kind, sprite, shadow, ring, label, bar, oneShot: false, dead: false, lastHurt: 0, height, boss, facing, action:'idle' };
     sprite.on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => { view.oneShot = false; });
     return view;
   }
 
   private play(view: View, anim: AnimName, oneShot = false) {
     if (view.oneShot && !oneShot) return;
-    const key = animKey(view.kind, anim);
+    const info=this.manifest!.monsters[view.kind]!,key=monsterAnimationKey(view.kind,anim,info,view.facing);
+    const keepPhase=!!info.directions&&view.action===anim&&(anim==='idle'||anim==='move');
+    const phase=keepPhase?view.sprite.anims.getProgress():0;
     if (!oneShot && view.sprite.anims.currentAnim?.key === key && view.sprite.anims.isPlaying) return;
     view.oneShot = oneShot;
     view.sprite.play(key);
+    if(keepPhase)view.sprite.anims.setProgress(phase);
+    view.action=anim;
   }
 
   update(monsters: Map<string, MonsterState> | undefined, time: number, delta: number) {
@@ -115,12 +136,13 @@ export class MonsterLayer {
       let view = this.views.get(id);
       if (!view) { const created = this.create(id, m); if (!created) return; view = created; this.views.set(id, view); }
       const s = view.sprite;
+      if(!view.oneShot)view.facing=monsterFacing(m.facing);
       const dead = m.state === 'dead';
       if (dead && !view.dead) {
         view.dead = true;
         s.disableInteractive();
         this.play(view, 'death', true);
-        this.scene.tweens.add({ targets: [s, view.shadow], alpha: 0, delay: 500, duration: 500 });
+        this.scene.tweens.add({ targets: [s, view.shadow], alpha: 0, delay: Math.max(500,monsterClip(this.manifest!.monsters[view.kind]!,'death',view.facing).frames/monsterClip(this.manifest!.monsters[view.kind]!,'death',view.facing).fps*1000), duration: 500 });
       } else if (!dead && view.dead) {
         // Respawned elsewhere: jump there and fade in.
         view.dead = false; view.oneShot = false;
@@ -133,7 +155,7 @@ export class MonsterLayer {
       if (!dead) {
         s.x += (m.x * U - s.x) * follow;
         s.y += (this.y(m.x,m.y) - s.y) * follow;
-        s.setFlipX(m.facing === 'west');
+        s.setFlipX(this.manifest!.monsters[view.kind]!.directions?false:legacyMonsterFlip(m.facing));
         this.play(view, m.state === 'wander' || m.state === 'chase' || m.state === 'return' ? 'move' : 'idle');
         if (time - view.lastHurt > 140) s.clearTint();
       }

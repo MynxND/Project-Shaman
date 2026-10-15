@@ -579,3 +579,8 @@ Russia3 isolated JSON/Phaser/React previews reuse native water, immutable edge e
 ## Russia live adoption — 2026-10-15
 
 Russia live adoption registers RUSSIA_MAPS/residents through shared data; additive WILLOW_RUSSIA_LINK preserves Ireland while extending reciprocal boundary chain. Scoped RussiaRegion reuses exact review water/mist/snow renderer. Existing Colyseus movement/travel/combat/services unchanged. Atlas36nodes/24live. Evidence: design/maps/russia-three/live01/README.md.
+
+
+## Folklore enemy batch — 2026-10-15
+
+User authorized ImageGen for40 folklore enemy species after PixelLab0. Eight authored views with measured move/attack/death clips;40 registered,28 bound through44 additions to17 existing authored camps/maps, Korea6/Iceland6 unbound (no live national maps; Iceland not Ireland). Preserve original residents/NPCs/portals/collision. Map-scoped texture lifecycle, phase-preserving directional playback, server octant facing and full death playback; legacy art/behavior retained. Actual frame counts and provisional stats/lore remain explicit. Desktop/mobile preview and live Paddy inspected;17 authoritative rooms plus Phi Pop damage/death, shared regressions, typecheck/build pass. User visual approval pending. Evidence: docs/design/monsters/folklore-01/README.md.

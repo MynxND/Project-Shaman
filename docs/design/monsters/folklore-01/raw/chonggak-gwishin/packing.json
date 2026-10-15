@@ -1,0 +1,2897 @@
+{
+  "id": "chonggak-gwishin",
+  "sourceSha256": "e6b91be857b2bd6538f09067c1f60c505746ee8d878b7bc5ffbb27a632306e52",
+  "sourceSize": [
+    1024,
+    1536
+  ],
+  "packedSha256": "98ee93c2e7b2e3208d154cba27d06c7a8fac29b23f8d48374efeefe5b94bbb61",
+  "scale": 0.8695652173913043,
+  "frames": [
+    {
+      "action": "idle",
+      "direction": "south",
+      "frame": 0,
+      "sourceRect": [
+        0,
+        5,
+        156,
+        132
+      ],
+      "coreRect": [
+        0,
+        8,
+        128,
+        126
+      ],
+      "bbox": [
+        62,
+        66,
+        134,
+        171
+      ],
+      "sha256": "5edd481b26afb9f24be75f894f3548b7afc4ebbc08e6483d1d4a154c0449e90c"
+    },
+    {
+      "action": "idle",
+      "direction": "south",
+      "frame": 1,
+      "sourceRect": [
+        0,
+        260,
+        156,
+        133
+      ],
+      "coreRect": [
+        0,
+        263,
+        128,
+        127
+      ],
+      "bbox": [
+        64,
+        64,
+        134,
+        171
+      ],
+      "sha256": "cb9a2129d9e0a7d60d26f9b421fc819a142e7d5fb7b019b16dc8b1854f76b238"
+    },
+    {
+      "action": "move",
+      "direction": "south",
+      "frame": 0,
+      "sourceRect": [
+        0,
+        5,
+        156,
+        132
+      ],
+      "coreRect": [
+        0,
+        8,
+        128,
+        126
+      ],
+      "bbox": [
+        62,
+        66,
+        134,
+        171
+      ],
+      "sha256": "5edd481b26afb9f24be75f894f3548b7afc4ebbc08e6483d1d4a154c0449e90c"
+    },
+    {
+      "action": "move",
+      "direction": "south",
+      "frame": 1,
+      "sourceRect": [
+        0,
+        132,
+        156,
+        133
+      ],
+      "coreRect": [
+        0,
+        135,
+        128,
+        127
+      ],
+      "bbox": [
+        63,
+        65,
+        132,
+        171
+      ],
+      "sha256": "d17321d98e357096c2c01c78d18f64bccea71b309f9ccd09043d543be8a54586"
+    },
+    {
+      "action": "move",
+      "direction": "south",
+      "frame": 2,
+      "sourceRect": [
+        0,
+        260,
+        156,
+        133
+      ],
+      "coreRect": [
+        0,
+        263,
+        128,
+        127
+      ],
+      "bbox": [
+        64,
+        64,
+        134,
+        171
+      ],
+      "sha256": "cb9a2129d9e0a7d60d26f9b421fc819a142e7d5fb7b019b16dc8b1854f76b238"
+    },
+    {
+      "action": "move",
+      "direction": "south",
+      "frame": 3,
+      "sourceRect": [
+        0,
+        388,
+        156,
+        133
+      ],
+      "coreRect": [
+        0,
+        391,
+        128,
+        127
+      ],
+      "bbox": [
+        63,
+        65,
+        132,
+        171
+      ],
+      "sha256": "d044dabdf2273af2f22870873ba6555798696c423887531a7a851e3ea0d29f46"
+    },
+    {
+      "action": "attack",
+      "direction": "south",
+      "frame": 0,
+      "sourceRect": [
+        0,
+        515,
+        156,
+        133
+      ],
+      "coreRect": [
+        0,
+        518,
+        128,
+        127
+      ],
+      "bbox": [
+        54,
+        65,
+        139,
+        171
+      ],
+      "sha256": "0ec7cc00bb585df7b7381428301695b1f0e9c267ab7c2ca8ae4c5657a86477ce"
+    },
+    {
+      "action": "attack",
+      "direction": "south",
+      "frame": 1,
+      "sourceRect": [
+        0,
+        643,
+        156,
+        133
+      ],
+      "coreRect": [
+        0,
+        646,
+        128,
+        127
+      ],
+      "bbox": [
+        55,
+        65,
+        138,
+        170
+      ],
+      "sha256": "e94056f7ddfea57efcc6d456c63db7e7c27afdebefc1e8c6f1c32841503ebdd4"
+    },
+    {
+      "action": "attack",
+      "direction": "south",
+      "frame": 2,
+      "sourceRect": [
+        0,
+        770,
+        156,
+        133
+      ],
+      "coreRect": [
+        0,
+        773,
+        128,
+        127
+      ],
+      "bbox": [
+        53,
+        65,
+        140,
+        171
+      ],
+      "sha256": "f93787e515fdbe8f6690c63268b75ab6a16c770c8f8a9eba9ee5eaffbab2f534"
+    },
+    {
+      "action": "attack",
+      "direction": "south",
+      "frame": 3,
+      "sourceRect": [
+        0,
+        901,
+        156,
+        131
+      ],
+      "coreRect": [
+        0,
+        904,
+        128,
+        125
+      ],
+      "bbox": [
+        57,
+        67,
+        135,
+        170
+      ],
+      "sha256": "cb7a442f2dd34a819cbc3d5c132d2720dfdbe659c1d18ca20d64ecd171e41859"
+    },
+    {
+      "action": "hurt",
+      "direction": "south",
+      "frame": 0,
+      "sourceRect": [
+        0,
+        1030,
+        156,
+        129
+      ],
+      "coreRect": [
+        0,
+        1033,
+        128,
+        123
+      ],
+      "bbox": [
+        64,
+        68,
+        137,
+        170
+      ],
+      "sha256": "9ab5fe6bc0d11e67f237c0faa57ad4e6781b503723bdf5fe3aba7514c7291984"
+    },
+    {
+      "action": "death",
+      "direction": "south",
+      "frame": 0,
+      "sourceRect": [
+        0,
+        1030,
+        156,
+        129
+      ],
+      "coreRect": [
+        0,
+        1033,
+        128,
+        123
+      ],
+      "bbox": [
+        64,
+        68,
+        137,
+        170
+      ],
+      "sha256": "9ab5fe6bc0d11e67f237c0faa57ad4e6781b503723bdf5fe3aba7514c7291984"
+    },
+    {
+      "action": "death",
+      "direction": "south",
+      "frame": 1,
+      "sourceRect": [
+        0,
+        1161,
+        156,
+        126
+      ],
+      "coreRect": [
+        0,
+        1164,
+        128,
+        120
+      ],
+      "bbox": [
+        61,
+        71,
+        142,
+        169
+      ],
+      "sha256": "de02a2f929ea8895f365f12212c217fb184a4d40f614bc18aadec96291ce770e"
+    },
+    {
+      "action": "death",
+      "direction": "south",
+      "frame": 2,
+      "sourceRect": [
+        0,
+        1290,
+        156,
+        112
+      ],
+      "coreRect": [
+        0,
+        1293,
+        128,
+        106
+      ],
+      "bbox": [
+        64,
+        84,
+        144,
+        170
+      ],
+      "sha256": "cf5d46e4fe1c41e3534d5ec6cb93e0b433b08db927ec1bf8f90cbb1d48a71736"
+    },
+    {
+      "action": "death",
+      "direction": "south",
+      "frame": 3,
+      "sourceRect": [
+        0,
+        1400,
+        156,
+        128
+      ],
+      "coreRect": [
+        0,
+        1403,
+        128,
+        122
+      ],
+      "bbox": [
+        63,
+        70,
+        139,
+        166
+      ],
+      "sha256": "3eb084dbbbbde536273a332eeeb4b9bf27e9ca763ec1f139424600ee19416f81"
+    },
+    {
+      "action": "idle",
+      "direction": "south-west",
+      "frame": 0,
+      "sourceRect": [
+        100,
+        5,
+        184,
+        132
+      ],
+      "coreRect": [
+        128,
+        8,
+        128,
+        126
+      ],
+      "bbox": [
+        60,
+        66,
+        137,
+        170
+      ],
+      "sha256": "9e4e2fe004abc8ff8897250bfafae71bbd3c0226223b39921ccb3dd3cbc9e761"
+    },
+    {
+      "action": "idle",
+      "direction": "south-west",
+      "frame": 1,
+      "sourceRect": [
+        100,
+        260,
+        184,
+        133
+      ],
+      "coreRect": [
+        128,
+        263,
+        128,
+        127
+      ],
+      "bbox": [
+        65,
+        65,
+        138,
+        169
+      ],
+      "sha256": "2808fa46a412922140ddb36adf31c9787d83612e5e42852c6bf2346238809b77"
+    },
+    {
+      "action": "move",
+      "direction": "south-west",
+      "frame": 0,
+      "sourceRect": [
+        100,
+        5,
+        184,
+        132
+      ],
+      "coreRect": [
+        128,
+        8,
+        128,
+        126
+      ],
+      "bbox": [
+        60,
+        66,
+        137,
+        170
+      ],
+      "sha256": "9e4e2fe004abc8ff8897250bfafae71bbd3c0226223b39921ccb3dd3cbc9e761"
+    },
+    {
+      "action": "move",
+      "direction": "south-west",
+      "frame": 1,
+      "sourceRect": [
+        100,
+        132,
+        184,
+        133
+      ],
+      "coreRect": [
+        128,
+        135,
+        128,
+        127
+      ],
+      "bbox": [
+        62,
+        66,
+        138,
+        169
+      ],
+      "sha256": "2b3b69e4b2e86f2c7075aaab349a3835748558b44206ade48debe3fe249895d4"
+    },
+    {
+      "action": "move",
+      "direction": "south-west",
+      "frame": 2,
+      "sourceRect": [
+        100,
+        260,
+        184,
+        133
+      ],
+      "coreRect": [
+        128,
+        263,
+        128,
+        127
+      ],
+      "bbox": [
+        65,
+        65,
+        138,
+        169
+      ],
+      "sha256": "2808fa46a412922140ddb36adf31c9787d83612e5e42852c6bf2346238809b77"
+    },
+    {
+      "action": "move",
+      "direction": "south-west",
+      "frame": 3,
+      "sourceRect": [
+        100,
+        388,
+        184,
+        133
+      ],
+      "coreRect": [
+        128,
+        391,
+        128,
+        127
+      ],
+      "bbox": [
+        63,
+        65,
+        139,
+        170
+      ],
+      "sha256": "b827b8b4d658d763e689b4a3f5ddd544f457fca4ecefb2b69d03d1e7a251149b"
+    },
+    {
+      "action": "attack",
+      "direction": "south-west",
+      "frame": 0,
+      "sourceRect": [
+        100,
+        515,
+        184,
+        133
+      ],
+      "coreRect": [
+        128,
+        518,
+        128,
+        127
+      ],
+      "bbox": [
+        48,
+        66,
+        139,
+        169
+      ],
+      "sha256": "bca5fdfaa28296c0d3df30b7420aa25e269dc6d8a7432fae40907355f2740faa"
+    },
+    {
+      "action": "attack",
+      "direction": "south-west",
+      "frame": 1,
+      "sourceRect": [
+        100,
+        643,
+        184,
+        133
+      ],
+      "coreRect": [
+        128,
+        646,
+        128,
+        127
+      ],
+      "bbox": [
+        37,
+        65,
+        146,
+        170
+      ],
+      "sha256": "bbe68c97e6c2b1623b04d15adfd499c31f953d4e3247f34e24279704ade372d2"
+    },
+    {
+      "action": "attack",
+      "direction": "south-west",
+      "frame": 2,
+      "sourceRect": [
+        100,
+        770,
+        184,
+        133
+      ],
+      "coreRect": [
+        128,
+        773,
+        128,
+        127
+      ],
+      "bbox": [
+        48,
+        65,
+        143,
+        170
+      ],
+      "sha256": "3b8bc9b0b95122b677348058ca0ea52452b7d2f2f92352f7b7143cbfe3251974"
+    },
+    {
+      "action": "attack",
+      "direction": "south-west",
+      "frame": 3,
+      "sourceRect": [
+        100,
+        901,
+        184,
+        131
+      ],
+      "coreRect": [
+        128,
+        904,
+        128,
+        125
+      ],
+      "bbox": [
+        53,
+        67,
+        139,
+        170
+      ],
+      "sha256": "845c9093d41b6e2793b7f140abf35228e0137d7a8c30e2f661dd600903572bf7"
+    },
+    {
+      "action": "hurt",
+      "direction": "south-west",
+      "frame": 0,
+      "sourceRect": [
+        100,
+        1030,
+        184,
+        129
+      ],
+      "coreRect": [
+        128,
+        1033,
+        128,
+        123
+      ],
+      "bbox": [
+        65,
+        69,
+        140,
+        169
+      ],
+      "sha256": "83df5ce95b3007f807e2c556443b3775b66c03efc5febdea02dd4c1671ae3859"
+    },
+    {
+      "action": "death",
+      "direction": "south-west",
+      "frame": 0,
+      "sourceRect": [
+        100,
+        1030,
+        184,
+        129
+      ],
+      "coreRect": [
+        128,
+        1033,
+        128,
+        123
+      ],
+      "bbox": [
+        65,
+        69,
+        140,
+        169
+      ],
+      "sha256": "83df5ce95b3007f807e2c556443b3775b66c03efc5febdea02dd4c1671ae3859"
+    },
+    {
+      "action": "death",
+      "direction": "south-west",
+      "frame": 1,
+      "sourceRect": [
+        100,
+        1161,
+        184,
+        126
+      ],
+      "coreRect": [
+        128,
+        1164,
+        128,
+        120
+      ],
+      "bbox": [
+        66,
+        72,
+        142,
+        168
+      ],
+      "sha256": "bd8985710fe92295c37ff0eb927fc704422ba385999eaa2052996750716b6090"
+    },
+    {
+      "action": "death",
+      "direction": "south-west",
+      "frame": 2,
+      "sourceRect": [
+        100,
+        1290,
+        184,
+        112
+      ],
+      "coreRect": [
+        128,
+        1293,
+        128,
+        106
+      ],
+      "bbox": [
+        66,
+        89,
+        146,
+        169
+      ],
+      "sha256": "7ce24cf28c639622f3f9ff5e3917435c28bdee0d3afa7746f79e521b2364b3c9"
+    },
+    {
+      "action": "death",
+      "direction": "south-west",
+      "frame": 3,
+      "sourceRect": [
+        100,
+        1400,
+        184,
+        128
+      ],
+      "coreRect": [
+        128,
+        1403,
+        128,
+        122
+      ],
+      "bbox": [
+        66,
+        72,
+        143,
+        166
+      ],
+      "sha256": "989c0d7fa32303d2167f44ac60de9d5810d9f181df6e5b2c1af025280dac21d9"
+    },
+    {
+      "action": "idle",
+      "direction": "west",
+      "frame": 0,
+      "sourceRect": [
+        228,
+        5,
+        184,
+        132
+      ],
+      "coreRect": [
+        256,
+        8,
+        128,
+        126
+      ],
+      "bbox": [
+        65,
+        66,
+        129,
+        171
+      ],
+      "sha256": "edb6b84c8f529753237c3b555bdcc06e92691c36871bc5f3c33730b859c287cd"
+    },
+    {
+      "action": "idle",
+      "direction": "west",
+      "frame": 1,
+      "sourceRect": [
+        228,
+        260,
+        184,
+        133
+      ],
+      "coreRect": [
+        256,
+        263,
+        128,
+        127
+      ],
+      "bbox": [
+        66,
+        65,
+        131,
+        170
+      ],
+      "sha256": "5d4a42ed7c3b041d7b25b53373cb77bd2abe207f6bd462e46ce2bc005d8a7b06"
+    },
+    {
+      "action": "move",
+      "direction": "west",
+      "frame": 0,
+      "sourceRect": [
+        228,
+        5,
+        184,
+        132
+      ],
+      "coreRect": [
+        256,
+        8,
+        128,
+        126
+      ],
+      "bbox": [
+        65,
+        66,
+        129,
+        171
+      ],
+      "sha256": "edb6b84c8f529753237c3b555bdcc06e92691c36871bc5f3c33730b859c287cd"
+    },
+    {
+      "action": "move",
+      "direction": "west",
+      "frame": 1,
+      "sourceRect": [
+        228,
+        132,
+        184,
+        133
+      ],
+      "coreRect": [
+        256,
+        135,
+        128,
+        127
+      ],
+      "bbox": [
+        66,
+        66,
+        131,
+        171
+      ],
+      "sha256": "9b30b93e1ee61bd6f9aba473eda27817f2544e38199b665d44c7c7db98ef401d"
+    },
+    {
+      "action": "move",
+      "direction": "west",
+      "frame": 2,
+      "sourceRect": [
+        228,
+        260,
+        184,
+        133
+      ],
+      "coreRect": [
+        256,
+        263,
+        128,
+        127
+      ],
+      "bbox": [
+        66,
+        65,
+        131,
+        170
+      ],
+      "sha256": "5d4a42ed7c3b041d7b25b53373cb77bd2abe207f6bd462e46ce2bc005d8a7b06"
+    },
+    {
+      "action": "move",
+      "direction": "west",
+      "frame": 3,
+      "sourceRect": [
+        228,
+        388,
+        184,
+        133
+      ],
+      "coreRect": [
+        256,
+        391,
+        128,
+        127
+      ],
+      "bbox": [
+        66,
+        66,
+        128,
+        170
+      ],
+      "sha256": "8a0980a689f9f7b359961f5ae2c588b17900765d8d028955fc496e6eb8cf8ef2"
+    },
+    {
+      "action": "attack",
+      "direction": "west",
+      "frame": 0,
+      "sourceRect": [
+        228,
+        515,
+        184,
+        133
+      ],
+      "coreRect": [
+        256,
+        518,
+        128,
+        127
+      ],
+      "bbox": [
+        47,
+        68,
+        133,
+        169
+      ],
+      "sha256": "2f21d44444797a552a3a0d522fced660616fb4acd25e2afa33492a0ba25ab440"
+    },
+    {
+      "action": "attack",
+      "direction": "west",
+      "frame": 1,
+      "sourceRect": [
+        228,
+        643,
+        184,
+        133
+      ],
+      "coreRect": [
+        256,
+        646,
+        128,
+        127
+      ],
+      "bbox": [
+        49,
+        66,
+        142,
+        170
+      ],
+      "sha256": "d02fa937e0e7f0533a1bad017ce9e41c7e4351a13e6c5a9efa20598aff02566f"
+    },
+    {
+      "action": "attack",
+      "direction": "west",
+      "frame": 2,
+      "sourceRect": [
+        228,
+        770,
+        184,
+        133
+      ],
+      "coreRect": [
+        256,
+        773,
+        128,
+        127
+      ],
+      "bbox": [
+        40,
+        66,
+        142,
+        170
+      ],
+      "sha256": "7a23ada20474d22dbdb5160707bf197d0e58ebc7a2915ccf2b78704be6eff9b0"
+    },
+    {
+      "action": "attack",
+      "direction": "west",
+      "frame": 3,
+      "sourceRect": [
+        228,
+        901,
+        184,
+        131
+      ],
+      "coreRect": [
+        256,
+        904,
+        128,
+        125
+      ],
+      "bbox": [
+        62,
+        67,
+        135,
+        170
+      ],
+      "sha256": "cc522ea7da87918a20a184e51e103105230bc7d9c4baab6b877ba6875768a318"
+    },
+    {
+      "action": "hurt",
+      "direction": "west",
+      "frame": 0,
+      "sourceRect": [
+        228,
+        1030,
+        184,
+        129
+      ],
+      "coreRect": [
+        256,
+        1033,
+        128,
+        123
+      ],
+      "bbox": [
+        69,
+        74,
+        140,
+        169
+      ],
+      "sha256": "ea5b8b127e9a05a198a77a5e471d86323d29676d785f1301bee61f43524c61f8"
+    },
+    {
+      "action": "death",
+      "direction": "west",
+      "frame": 0,
+      "sourceRect": [
+        228,
+        1030,
+        184,
+        129
+      ],
+      "coreRect": [
+        256,
+        1033,
+        128,
+        123
+      ],
+      "bbox": [
+        69,
+        74,
+        140,
+        169
+      ],
+      "sha256": "ea5b8b127e9a05a198a77a5e471d86323d29676d785f1301bee61f43524c61f8"
+    },
+    {
+      "action": "death",
+      "direction": "west",
+      "frame": 1,
+      "sourceRect": [
+        228,
+        1161,
+        184,
+        126
+      ],
+      "coreRect": [
+        256,
+        1164,
+        128,
+        120
+      ],
+      "bbox": [
+        69,
+        78,
+        142,
+        167
+      ],
+      "sha256": "cfd7740146818d893539beabcc6aa359969509dd30cf66c0426b3c3629929517"
+    },
+    {
+      "action": "death",
+      "direction": "west",
+      "frame": 2,
+      "sourceRect": [
+        228,
+        1290,
+        184,
+        112
+      ],
+      "coreRect": [
+        256,
+        1293,
+        128,
+        106
+      ],
+      "bbox": [
+        68,
+        96,
+        144,
+        169
+      ],
+      "sha256": "45a58022d76350e594c7162058a66b3b156c7561360c64a2daeaa66e1b2d30d9"
+    },
+    {
+      "action": "death",
+      "direction": "west",
+      "frame": 3,
+      "sourceRect": [
+        228,
+        1400,
+        184,
+        128
+      ],
+      "coreRect": [
+        256,
+        1403,
+        128,
+        122
+      ],
+      "bbox": [
+        67,
+        78,
+        141,
+        168
+      ],
+      "sha256": "744c1fe7cb2dd8a7aeecc1cc7ae36d9e23321ec007f4b092ef63e8e56db82799"
+    },
+    {
+      "action": "idle",
+      "direction": "north-west",
+      "frame": 0,
+      "sourceRect": [
+        356,
+        5,
+        184,
+        132
+      ],
+      "coreRect": [
+        384,
+        8,
+        128,
+        126
+      ],
+      "bbox": [
+        59,
+        66,
+        136,
+        171
+      ],
+      "sha256": "160edf6d4f4fd629862940b69eccb41d760d8dc063c181066d9483d669452b77"
+    },
+    {
+      "action": "idle",
+      "direction": "north-west",
+      "frame": 1,
+      "sourceRect": [
+        356,
+        260,
+        184,
+        133
+      ],
+      "coreRect": [
+        384,
+        263,
+        128,
+        127
+      ],
+      "bbox": [
+        58,
+        65,
+        136,
+        170
+      ],
+      "sha256": "fe78a55e149e2142b1189337e8b069b77cf96316245d42ddb62cf4974c0969d7"
+    },
+    {
+      "action": "move",
+      "direction": "north-west",
+      "frame": 0,
+      "sourceRect": [
+        356,
+        5,
+        184,
+        132
+      ],
+      "coreRect": [
+        384,
+        8,
+        128,
+        126
+      ],
+      "bbox": [
+        59,
+        66,
+        136,
+        171
+      ],
+      "sha256": "160edf6d4f4fd629862940b69eccb41d760d8dc063c181066d9483d669452b77"
+    },
+    {
+      "action": "move",
+      "direction": "north-west",
+      "frame": 1,
+      "sourceRect": [
+        356,
+        132,
+        184,
+        133
+      ],
+      "coreRect": [
+        384,
+        135,
+        128,
+        127
+      ],
+      "bbox": [
+        59,
+        66,
+        137,
+        171
+      ],
+      "sha256": "520ab3ec19a132a0d4d719b679fac84846c52f3943ee74285d419206d7505139"
+    },
+    {
+      "action": "move",
+      "direction": "north-west",
+      "frame": 2,
+      "sourceRect": [
+        356,
+        260,
+        184,
+        133
+      ],
+      "coreRect": [
+        384,
+        263,
+        128,
+        127
+      ],
+      "bbox": [
+        58,
+        65,
+        136,
+        170
+      ],
+      "sha256": "fe78a55e149e2142b1189337e8b069b77cf96316245d42ddb62cf4974c0969d7"
+    },
+    {
+      "action": "move",
+      "direction": "north-west",
+      "frame": 3,
+      "sourceRect": [
+        356,
+        388,
+        184,
+        133
+      ],
+      "coreRect": [
+        384,
+        391,
+        128,
+        127
+      ],
+      "bbox": [
+        59,
+        66,
+        137,
+        170
+      ],
+      "sha256": "ddd5b14f1ca8e5b82d3be814d389b2183f7676507788895a1952734f8b675f9c"
+    },
+    {
+      "action": "attack",
+      "direction": "north-west",
+      "frame": 0,
+      "sourceRect": [
+        356,
+        515,
+        184,
+        133
+      ],
+      "coreRect": [
+        384,
+        518,
+        128,
+        127
+      ],
+      "bbox": [
+        47,
+        68,
+        133,
+        171
+      ],
+      "sha256": "c06ed3004a813b177996d2317ac89d97744ac832451886a26da80c6efd795bb5"
+    },
+    {
+      "action": "attack",
+      "direction": "north-west",
+      "frame": 1,
+      "sourceRect": [
+        356,
+        643,
+        184,
+        133
+      ],
+      "coreRect": [
+        384,
+        646,
+        128,
+        127
+      ],
+      "bbox": [
+        37,
+        65,
+        139,
+        171
+      ],
+      "sha256": "8215d38f3192a687283b9e3b80fb1c2338143763e0f7d603581535c542494923"
+    },
+    {
+      "action": "attack",
+      "direction": "north-west",
+      "frame": 2,
+      "sourceRect": [
+        356,
+        770,
+        184,
+        133
+      ],
+      "coreRect": [
+        384,
+        773,
+        128,
+        127
+      ],
+      "bbox": [
+        47,
+        67,
+        138,
+        171
+      ],
+      "sha256": "da7400db84a431650add4520b291112c5279f444b0f6a580e724b3d9c7387b46"
+    },
+    {
+      "action": "attack",
+      "direction": "north-west",
+      "frame": 3,
+      "sourceRect": [
+        356,
+        901,
+        184,
+        131
+      ],
+      "coreRect": [
+        384,
+        904,
+        128,
+        125
+      ],
+      "bbox": [
+        58,
+        68,
+        138,
+        171
+      ],
+      "sha256": "fbb4501035337403c13297cccf2bb4a8f89f84525b6ad14264d48e26b7d9979c"
+    },
+    {
+      "action": "hurt",
+      "direction": "north-west",
+      "frame": 0,
+      "sourceRect": [
+        356,
+        1030,
+        184,
+        129
+      ],
+      "coreRect": [
+        384,
+        1033,
+        128,
+        123
+      ],
+      "bbox": [
+        66,
+        75,
+        140,
+        170
+      ],
+      "sha256": "ac6f984baba14a786f193a7bafbf22868fbcb9d087b8fdffe2400e0e8c286ed4"
+    },
+    {
+      "action": "death",
+      "direction": "north-west",
+      "frame": 0,
+      "sourceRect": [
+        356,
+        1030,
+        184,
+        129
+      ],
+      "coreRect": [
+        384,
+        1033,
+        128,
+        123
+      ],
+      "bbox": [
+        66,
+        75,
+        140,
+        170
+      ],
+      "sha256": "ac6f984baba14a786f193a7bafbf22868fbcb9d087b8fdffe2400e0e8c286ed4"
+    },
+    {
+      "action": "death",
+      "direction": "north-west",
+      "frame": 1,
+      "sourceRect": [
+        356,
+        1161,
+        184,
+        126
+      ],
+      "coreRect": [
+        384,
+        1164,
+        128,
+        120
+      ],
+      "bbox": [
+        66,
+        81,
+        139,
+        168
+      ],
+      "sha256": "b90a94470246dadbe9db6615bfeb56d1c30fd4a9da537b27928aad69e7e150ce"
+    },
+    {
+      "action": "death",
+      "direction": "north-west",
+      "frame": 2,
+      "sourceRect": [
+        356,
+        1290,
+        184,
+        112
+      ],
+      "coreRect": [
+        384,
+        1293,
+        128,
+        106
+      ],
+      "bbox": [
+        66,
+        97,
+        141,
+        170
+      ],
+      "sha256": "70e8a7c116a9581712015131da9978ac94962594021cc487dce74b5afecc065f"
+    },
+    {
+      "action": "death",
+      "direction": "north-west",
+      "frame": 3,
+      "sourceRect": [
+        356,
+        1400,
+        184,
+        128
+      ],
+      "coreRect": [
+        384,
+        1403,
+        128,
+        122
+      ],
+      "bbox": [
+        65,
+        87,
+        140,
+        169
+      ],
+      "sha256": "ff92c38dd1426a26103ddbd6346c4c66ba720443494d778584cb28fa2688dbd6"
+    },
+    {
+      "action": "idle",
+      "direction": "north",
+      "frame": 0,
+      "sourceRect": [
+        484,
+        5,
+        184,
+        132
+      ],
+      "coreRect": [
+        512,
+        8,
+        128,
+        126
+      ],
+      "bbox": [
+        59,
+        67,
+        135,
+        171
+      ],
+      "sha256": "d07a6e8fce174f8c9c1ef34df565b9d8e796bd1a37e9e319b24eefe82d5839e0"
+    },
+    {
+      "action": "idle",
+      "direction": "north",
+      "frame": 1,
+      "sourceRect": [
+        484,
+        260,
+        184,
+        133
+      ],
+      "coreRect": [
+        512,
+        263,
+        128,
+        127
+      ],
+      "bbox": [
+        59,
+        65,
+        136,
+        171
+      ],
+      "sha256": "56fd2840e23b0e02cd957cebd09ff385361d1c6ec28ce160170d2fc2db876180"
+    },
+    {
+      "action": "move",
+      "direction": "north",
+      "frame": 0,
+      "sourceRect": [
+        484,
+        5,
+        184,
+        132
+      ],
+      "coreRect": [
+        512,
+        8,
+        128,
+        126
+      ],
+      "bbox": [
+        59,
+        67,
+        135,
+        171
+      ],
+      "sha256": "d07a6e8fce174f8c9c1ef34df565b9d8e796bd1a37e9e319b24eefe82d5839e0"
+    },
+    {
+      "action": "move",
+      "direction": "north",
+      "frame": 1,
+      "sourceRect": [
+        484,
+        132,
+        184,
+        133
+      ],
+      "coreRect": [
+        512,
+        135,
+        128,
+        127
+      ],
+      "bbox": [
+        59,
+        66,
+        136,
+        171
+      ],
+      "sha256": "83b0c61a084f40a9c21a5694ef9b7e9c41c840a4e83b249e4bbfa078c1f61feb"
+    },
+    {
+      "action": "move",
+      "direction": "north",
+      "frame": 2,
+      "sourceRect": [
+        484,
+        260,
+        184,
+        133
+      ],
+      "coreRect": [
+        512,
+        263,
+        128,
+        127
+      ],
+      "bbox": [
+        59,
+        65,
+        136,
+        171
+      ],
+      "sha256": "56fd2840e23b0e02cd957cebd09ff385361d1c6ec28ce160170d2fc2db876180"
+    },
+    {
+      "action": "move",
+      "direction": "north",
+      "frame": 3,
+      "sourceRect": [
+        484,
+        388,
+        184,
+        133
+      ],
+      "coreRect": [
+        512,
+        391,
+        128,
+        127
+      ],
+      "bbox": [
+        59,
+        66,
+        135,
+        171
+      ],
+      "sha256": "b94e3b2a6a917023e528d0ac782f89e4f10194dc28462d3d0f31a86e0b86ee1c"
+    },
+    {
+      "action": "attack",
+      "direction": "north",
+      "frame": 0,
+      "sourceRect": [
+        484,
+        515,
+        184,
+        133
+      ],
+      "coreRect": [
+        512,
+        518,
+        128,
+        127
+      ],
+      "bbox": [
+        53,
+        66,
+        142,
+        171
+      ],
+      "sha256": "c3930d61b74d7fee77e74c7868a25147c4c6b954e9782974ddbe75ca51a4a2d1"
+    },
+    {
+      "action": "attack",
+      "direction": "north",
+      "frame": 1,
+      "sourceRect": [
+        484,
+        643,
+        184,
+        133
+      ],
+      "coreRect": [
+        512,
+        646,
+        128,
+        127
+      ],
+      "bbox": [
+        48,
+        66,
+        151,
+        171
+      ],
+      "sha256": "b30516f918d6e76e237a262aea347413f38e93e0a9cf38a7f4f397fe07eb529e"
+    },
+    {
+      "action": "attack",
+      "direction": "north",
+      "frame": 2,
+      "sourceRect": [
+        484,
+        770,
+        184,
+        133
+      ],
+      "coreRect": [
+        512,
+        773,
+        128,
+        127
+      ],
+      "bbox": [
+        53,
+        65,
+        143,
+        171
+      ],
+      "sha256": "be384182970bd22fd5ad7d90eb1495cceb41672a31e50e9485a9adff4c7f13e9"
+    },
+    {
+      "action": "attack",
+      "direction": "north",
+      "frame": 3,
+      "sourceRect": [
+        484,
+        901,
+        184,
+        131
+      ],
+      "coreRect": [
+        512,
+        904,
+        128,
+        125
+      ],
+      "bbox": [
+        58,
+        67,
+        137,
+        171
+      ],
+      "sha256": "1090164771010f890210f522e46eb0344147e6ccfc2a5ef85be4d228f222a13d"
+    },
+    {
+      "action": "hurt",
+      "direction": "north",
+      "frame": 0,
+      "sourceRect": [
+        484,
+        1030,
+        184,
+        129
+      ],
+      "coreRect": [
+        512,
+        1033,
+        128,
+        123
+      ],
+      "bbox": [
+        59,
+        69,
+        134,
+        171
+      ],
+      "sha256": "a2b83302333ea865d2bb516e3d25b21bef7f10cbd637e438589ae82fa0bebda1"
+    },
+    {
+      "action": "death",
+      "direction": "north",
+      "frame": 0,
+      "sourceRect": [
+        484,
+        1030,
+        184,
+        129
+      ],
+      "coreRect": [
+        512,
+        1033,
+        128,
+        123
+      ],
+      "bbox": [
+        59,
+        69,
+        134,
+        171
+      ],
+      "sha256": "a2b83302333ea865d2bb516e3d25b21bef7f10cbd637e438589ae82fa0bebda1"
+    },
+    {
+      "action": "death",
+      "direction": "north",
+      "frame": 1,
+      "sourceRect": [
+        484,
+        1161,
+        184,
+        126
+      ],
+      "coreRect": [
+        512,
+        1164,
+        128,
+        120
+      ],
+      "bbox": [
+        62,
+        72,
+        132,
+        171
+      ],
+      "sha256": "fb937e080a16abeefa415aec443404ef8ed77eb8e06b9b7d98da18457510e37b"
+    },
+    {
+      "action": "death",
+      "direction": "north",
+      "frame": 2,
+      "sourceRect": [
+        484,
+        1290,
+        184,
+        112
+      ],
+      "coreRect": [
+        512,
+        1293,
+        128,
+        106
+      ],
+      "bbox": [
+        60,
+        90,
+        134,
+        171
+      ],
+      "sha256": "b8bd0b7204f89309a836623c3fb05774cd143867157a33e8aff2f8227d2a1bab"
+    },
+    {
+      "action": "death",
+      "direction": "north",
+      "frame": 3,
+      "sourceRect": [
+        484,
+        1400,
+        184,
+        128
+      ],
+      "coreRect": [
+        512,
+        1403,
+        128,
+        122
+      ],
+      "bbox": [
+        62,
+        82,
+        133,
+        170
+      ],
+      "sha256": "414ed6ae11e64ebd5129fc4c22b55a87a89ffb59b4fd2c5c0d83c0ee676f274a"
+    },
+    {
+      "action": "idle",
+      "direction": "north-east",
+      "frame": 0,
+      "sourceRect": [
+        612,
+        5,
+        184,
+        132
+      ],
+      "coreRect": [
+        640,
+        8,
+        128,
+        126
+      ],
+      "bbox": [
+        57,
+        66,
+        134,
+        171
+      ],
+      "sha256": "f4f3f0f77167c73b7f84e7b9be280fb8e7c76328abbe9c4054f9770fe5eeebcc"
+    },
+    {
+      "action": "idle",
+      "direction": "north-east",
+      "frame": 1,
+      "sourceRect": [
+        612,
+        260,
+        184,
+        133
+      ],
+      "coreRect": [
+        640,
+        263,
+        128,
+        127
+      ],
+      "bbox": [
+        59,
+        65,
+        135,
+        171
+      ],
+      "sha256": "408727f0d7a12134a8c14ca3c1f8b4767e9c3ec8a46bf9d4c8d2f198e7a475b2"
+    },
+    {
+      "action": "move",
+      "direction": "north-east",
+      "frame": 0,
+      "sourceRect": [
+        612,
+        5,
+        184,
+        132
+      ],
+      "coreRect": [
+        640,
+        8,
+        128,
+        126
+      ],
+      "bbox": [
+        57,
+        66,
+        134,
+        171
+      ],
+      "sha256": "f4f3f0f77167c73b7f84e7b9be280fb8e7c76328abbe9c4054f9770fe5eeebcc"
+    },
+    {
+      "action": "move",
+      "direction": "north-east",
+      "frame": 1,
+      "sourceRect": [
+        612,
+        132,
+        184,
+        133
+      ],
+      "coreRect": [
+        640,
+        135,
+        128,
+        127
+      ],
+      "bbox": [
+        55,
+        66,
+        133,
+        171
+      ],
+      "sha256": "c72992b43288d11bbe31dbe7d28ac3acf9fafafe5328abd189f3ec499c34c024"
+    },
+    {
+      "action": "move",
+      "direction": "north-east",
+      "frame": 2,
+      "sourceRect": [
+        612,
+        260,
+        184,
+        133
+      ],
+      "coreRect": [
+        640,
+        263,
+        128,
+        127
+      ],
+      "bbox": [
+        59,
+        65,
+        135,
+        171
+      ],
+      "sha256": "408727f0d7a12134a8c14ca3c1f8b4767e9c3ec8a46bf9d4c8d2f198e7a475b2"
+    },
+    {
+      "action": "move",
+      "direction": "north-east",
+      "frame": 3,
+      "sourceRect": [
+        612,
+        388,
+        184,
+        133
+      ],
+      "coreRect": [
+        640,
+        391,
+        128,
+        127
+      ],
+      "bbox": [
+        55,
+        66,
+        134,
+        171
+      ],
+      "sha256": "4db3ca6f0a32ccc812c9f3f0c705697a773b6a2f812f1fedcaae00bae4d463f9"
+    },
+    {
+      "action": "attack",
+      "direction": "north-east",
+      "frame": 0,
+      "sourceRect": [
+        612,
+        515,
+        184,
+        133
+      ],
+      "coreRect": [
+        640,
+        518,
+        128,
+        127
+      ],
+      "bbox": [
+        59,
+        69,
+        146,
+        171
+      ],
+      "sha256": "0f720cf528fdc391ceb983252ef3e183f02fb8035b2f785442121c23871c097e"
+    },
+    {
+      "action": "attack",
+      "direction": "north-east",
+      "frame": 1,
+      "sourceRect": [
+        612,
+        643,
+        184,
+        133
+      ],
+      "coreRect": [
+        640,
+        646,
+        128,
+        127
+      ],
+      "bbox": [
+        54,
+        65,
+        156,
+        170
+      ],
+      "sha256": "001eb58c7f87cb074fe3d4395f90cfaabbc4ce2a2b463dbaa73bf2213312cecb"
+    },
+    {
+      "action": "attack",
+      "direction": "north-east",
+      "frame": 2,
+      "sourceRect": [
+        612,
+        770,
+        184,
+        133
+      ],
+      "coreRect": [
+        640,
+        773,
+        128,
+        127
+      ],
+      "bbox": [
+        54,
+        67,
+        146,
+        171
+      ],
+      "sha256": "cd6632822adb937b090510cb8f7d3f8fd12bbb424caf1c1478ae324bdcd5dc0c"
+    },
+    {
+      "action": "attack",
+      "direction": "north-east",
+      "frame": 3,
+      "sourceRect": [
+        612,
+        901,
+        184,
+        131
+      ],
+      "coreRect": [
+        640,
+        904,
+        128,
+        125
+      ],
+      "bbox": [
+        54,
+        68,
+        136,
+        171
+      ],
+      "sha256": "f3c7cd4afdc5729e4eebd2c34c04d7ac6f17790c95bfeebe5d1613075bc1e877"
+    },
+    {
+      "action": "hurt",
+      "direction": "north-east",
+      "frame": 0,
+      "sourceRect": [
+        612,
+        1030,
+        184,
+        129
+      ],
+      "coreRect": [
+        640,
+        1033,
+        128,
+        123
+      ],
+      "bbox": [
+        53,
+        75,
+        127,
+        170
+      ],
+      "sha256": "88e548407026d8c9b7e85a2c2dc23d6ef6378d5d6ab6e8abd43bf081c04576d2"
+    },
+    {
+      "action": "death",
+      "direction": "north-east",
+      "frame": 0,
+      "sourceRect": [
+        612,
+        1030,
+        184,
+        129
+      ],
+      "coreRect": [
+        640,
+        1033,
+        128,
+        123
+      ],
+      "bbox": [
+        53,
+        75,
+        127,
+        170
+      ],
+      "sha256": "88e548407026d8c9b7e85a2c2dc23d6ef6378d5d6ab6e8abd43bf081c04576d2"
+    },
+    {
+      "action": "death",
+      "direction": "north-east",
+      "frame": 1,
+      "sourceRect": [
+        612,
+        1161,
+        184,
+        126
+      ],
+      "coreRect": [
+        640,
+        1164,
+        128,
+        120
+      ],
+      "bbox": [
+        54,
+        81,
+        126,
+        168
+      ],
+      "sha256": "3ec0c5b3386dcb873ebd608ade38ac3afd858b73e35f921fc1dc3caf6b782937"
+    },
+    {
+      "action": "death",
+      "direction": "north-east",
+      "frame": 2,
+      "sourceRect": [
+        612,
+        1290,
+        184,
+        112
+      ],
+      "coreRect": [
+        640,
+        1293,
+        128,
+        106
+      ],
+      "bbox": [
+        51,
+        98,
+        126,
+        170
+      ],
+      "sha256": "df4149730eada31534fd5c90ea179e56ad2fc99f91472c9b88843fb2769d6ff3"
+    },
+    {
+      "action": "death",
+      "direction": "north-east",
+      "frame": 3,
+      "sourceRect": [
+        612,
+        1400,
+        184,
+        128
+      ],
+      "coreRect": [
+        640,
+        1403,
+        128,
+        122
+      ],
+      "bbox": [
+        53,
+        86,
+        128,
+        169
+      ],
+      "sha256": "a95ad500fe4a925d6eb2a84e7358d3194ba8e5fefa8b716603db4b982a1173db"
+    },
+    {
+      "action": "idle",
+      "direction": "east",
+      "frame": 0,
+      "sourceRect": [
+        740,
+        5,
+        184,
+        132
+      ],
+      "coreRect": [
+        768,
+        8,
+        128,
+        126
+      ],
+      "bbox": [
+        64,
+        66,
+        128,
+        171
+      ],
+      "sha256": "3b748681c448cd32810d258bbbbdb60608c490e25764cd116a8e0941df2f65d0"
+    },
+    {
+      "action": "idle",
+      "direction": "east",
+      "frame": 1,
+      "sourceRect": [
+        740,
+        260,
+        184,
+        133
+      ],
+      "coreRect": [
+        768,
+        263,
+        128,
+        127
+      ],
+      "bbox": [
+        62,
+        65,
+        127,
+        170
+      ],
+      "sha256": "9642bf0e8d0c9edec9c418357b3d8d26b8f652a67f353b84ea6fc24353c7a5eb"
+    },
+    {
+      "action": "move",
+      "direction": "east",
+      "frame": 0,
+      "sourceRect": [
+        740,
+        5,
+        184,
+        132
+      ],
+      "coreRect": [
+        768,
+        8,
+        128,
+        126
+      ],
+      "bbox": [
+        64,
+        66,
+        128,
+        171
+      ],
+      "sha256": "3b748681c448cd32810d258bbbbdb60608c490e25764cd116a8e0941df2f65d0"
+    },
+    {
+      "action": "move",
+      "direction": "east",
+      "frame": 1,
+      "sourceRect": [
+        740,
+        132,
+        184,
+        133
+      ],
+      "coreRect": [
+        768,
+        135,
+        128,
+        127
+      ],
+      "bbox": [
+        62,
+        66,
+        126,
+        170
+      ],
+      "sha256": "ba9a4c330fb729b285ede9abfecc6a172d2bee09a0c72e5267bbcd4e515b8c1d"
+    },
+    {
+      "action": "move",
+      "direction": "east",
+      "frame": 2,
+      "sourceRect": [
+        740,
+        260,
+        184,
+        133
+      ],
+      "coreRect": [
+        768,
+        263,
+        128,
+        127
+      ],
+      "bbox": [
+        62,
+        65,
+        127,
+        170
+      ],
+      "sha256": "9642bf0e8d0c9edec9c418357b3d8d26b8f652a67f353b84ea6fc24353c7a5eb"
+    },
+    {
+      "action": "move",
+      "direction": "east",
+      "frame": 3,
+      "sourceRect": [
+        740,
+        388,
+        184,
+        133
+      ],
+      "coreRect": [
+        768,
+        391,
+        128,
+        127
+      ],
+      "bbox": [
+        63,
+        65,
+        126,
+        170
+      ],
+      "sha256": "7eeb4e8bb140cb4c8d0b676efdc3b13d327ad4ddf21fd75ede99f27b8264f42a"
+    },
+    {
+      "action": "attack",
+      "direction": "east",
+      "frame": 0,
+      "sourceRect": [
+        740,
+        515,
+        184,
+        133
+      ],
+      "coreRect": [
+        768,
+        518,
+        128,
+        127
+      ],
+      "bbox": [
+        59,
+        68,
+        146,
+        170
+      ],
+      "sha256": "3aba9c6c4e68f7fba2dbb02c416d66bc479cddac25a0ea5f46a61838046a25d5"
+    },
+    {
+      "action": "attack",
+      "direction": "east",
+      "frame": 1,
+      "sourceRect": [
+        740,
+        643,
+        184,
+        133
+      ],
+      "coreRect": [
+        768,
+        646,
+        128,
+        127
+      ],
+      "bbox": [
+        50,
+        65,
+        144,
+        170
+      ],
+      "sha256": "bab2f5b64703fb2f619881a43593b8486c34170bed420a59f09dc2178c0d124b"
+    },
+    {
+      "action": "attack",
+      "direction": "east",
+      "frame": 2,
+      "sourceRect": [
+        740,
+        770,
+        184,
+        133
+      ],
+      "coreRect": [
+        768,
+        773,
+        128,
+        127
+      ],
+      "bbox": [
+        51,
+        66,
+        153,
+        171
+      ],
+      "sha256": "a3496514deb5a9c30ddd83d70850697ac34e3901d5964179e62106f19e6577cf"
+    },
+    {
+      "action": "attack",
+      "direction": "east",
+      "frame": 3,
+      "sourceRect": [
+        740,
+        901,
+        184,
+        131
+      ],
+      "coreRect": [
+        768,
+        904,
+        128,
+        125
+      ],
+      "bbox": [
+        57,
+        67,
+        130,
+        171
+      ],
+      "sha256": "78b85b3404aae4f7313e4fb2a21683369d6c47c2540f45b022c28a053579250f"
+    },
+    {
+      "action": "hurt",
+      "direction": "east",
+      "frame": 0,
+      "sourceRect": [
+        740,
+        1030,
+        184,
+        129
+      ],
+      "coreRect": [
+        768,
+        1033,
+        128,
+        123
+      ],
+      "bbox": [
+        52,
+        70,
+        123,
+        170
+      ],
+      "sha256": "97aaf2dd068e1d3d920987ea46078d87a86044c848075050c1d9ee848a1bca2f"
+    },
+    {
+      "action": "death",
+      "direction": "east",
+      "frame": 0,
+      "sourceRect": [
+        740,
+        1030,
+        184,
+        129
+      ],
+      "coreRect": [
+        768,
+        1033,
+        128,
+        123
+      ],
+      "bbox": [
+        52,
+        70,
+        123,
+        170
+      ],
+      "sha256": "97aaf2dd068e1d3d920987ea46078d87a86044c848075050c1d9ee848a1bca2f"
+    },
+    {
+      "action": "death",
+      "direction": "east",
+      "frame": 1,
+      "sourceRect": [
+        740,
+        1161,
+        184,
+        126
+      ],
+      "coreRect": [
+        768,
+        1164,
+        128,
+        120
+      ],
+      "bbox": [
+        50,
+        78,
+        124,
+        167
+      ],
+      "sha256": "cc1c43a4974db3218f5738f98fa5de5d372445c886559867710b9048133bc598"
+    },
+    {
+      "action": "death",
+      "direction": "east",
+      "frame": 2,
+      "sourceRect": [
+        740,
+        1290,
+        184,
+        112
+      ],
+      "coreRect": [
+        768,
+        1293,
+        128,
+        106
+      ],
+      "bbox": [
+        48,
+        96,
+        125,
+        169
+      ],
+      "sha256": "ee1804656c652f70b48ba3fb4887e174da017b4641e1539c78d9c024de250aef"
+    },
+    {
+      "action": "death",
+      "direction": "east",
+      "frame": 3,
+      "sourceRect": [
+        740,
+        1400,
+        184,
+        128
+      ],
+      "coreRect": [
+        768,
+        1403,
+        128,
+        122
+      ],
+      "bbox": [
+        52,
+        78,
+        126,
+        167
+      ],
+      "sha256": "656bc4bb78a24b0157af7881feb8c2d85632d7ad061373f84fd55eeccaeff0b3"
+    },
+    {
+      "action": "idle",
+      "direction": "south-east",
+      "frame": 0,
+      "sourceRect": [
+        868,
+        5,
+        156,
+        132
+      ],
+      "coreRect": [
+        896,
+        8,
+        128,
+        126
+      ],
+      "bbox": [
+        55,
+        66,
+        131,
+        170
+      ],
+      "sha256": "4eaf1a59f8aeb887e7687c314ded3b6250a84724631a14bbee27fb7595e8fbed"
+    },
+    {
+      "action": "idle",
+      "direction": "south-east",
+      "frame": 1,
+      "sourceRect": [
+        868,
+        260,
+        156,
+        133
+      ],
+      "coreRect": [
+        896,
+        263,
+        128,
+        127
+      ],
+      "bbox": [
+        54,
+        65,
+        128,
+        169
+      ],
+      "sha256": "5cd1569fd2449e82ade15b09ff02acfd122e8584a46e62411f420109f8faa4b7"
+    },
+    {
+      "action": "move",
+      "direction": "south-east",
+      "frame": 0,
+      "sourceRect": [
+        868,
+        5,
+        156,
+        132
+      ],
+      "coreRect": [
+        896,
+        8,
+        128,
+        126
+      ],
+      "bbox": [
+        55,
+        66,
+        131,
+        170
+      ],
+      "sha256": "4eaf1a59f8aeb887e7687c314ded3b6250a84724631a14bbee27fb7595e8fbed"
+    },
+    {
+      "action": "move",
+      "direction": "south-east",
+      "frame": 1,
+      "sourceRect": [
+        868,
+        132,
+        156,
+        133
+      ],
+      "coreRect": [
+        896,
+        135,
+        128,
+        127
+      ],
+      "bbox": [
+        55,
+        66,
+        129,
+        170
+      ],
+      "sha256": "62f5691b198d127ff82821b0b551d8cee203489b5e210888d27889110b4a2bcf"
+    },
+    {
+      "action": "move",
+      "direction": "south-east",
+      "frame": 2,
+      "sourceRect": [
+        868,
+        260,
+        156,
+        133
+      ],
+      "coreRect": [
+        896,
+        263,
+        128,
+        127
+      ],
+      "bbox": [
+        54,
+        65,
+        128,
+        169
+      ],
+      "sha256": "5cd1569fd2449e82ade15b09ff02acfd122e8584a46e62411f420109f8faa4b7"
+    },
+    {
+      "action": "move",
+      "direction": "south-east",
+      "frame": 3,
+      "sourceRect": [
+        868,
+        388,
+        156,
+        133
+      ],
+      "coreRect": [
+        896,
+        391,
+        128,
+        127
+      ],
+      "bbox": [
+        53,
+        65,
+        130,
+        170
+      ],
+      "sha256": "ea36321f5ea84ebe62bc3e343a5a3cbfa3566fdfcfdac44e0bb9971a43b0da01"
+    },
+    {
+      "action": "attack",
+      "direction": "south-east",
+      "frame": 0,
+      "sourceRect": [
+        868,
+        515,
+        156,
+        133
+      ],
+      "coreRect": [
+        896,
+        518,
+        128,
+        127
+      ],
+      "bbox": [
+        53,
+        66,
+        140,
+        169
+      ],
+      "sha256": "045cc6fca6549601d08fb5f1762f6fd74a870f87d7f9ffc815afcfefffad6913"
+    },
+    {
+      "action": "attack",
+      "direction": "south-east",
+      "frame": 1,
+      "sourceRect": [
+        868,
+        643,
+        156,
+        133
+      ],
+      "coreRect": [
+        896,
+        646,
+        128,
+        127
+      ],
+      "bbox": [
+        47,
+        67,
+        149,
+        170
+      ],
+      "sha256": "74232f02414d9f20bfa06ee662dc7ba5e639d081ae70dc6398b60c6a5f142218"
+    },
+    {
+      "action": "attack",
+      "direction": "south-east",
+      "frame": 2,
+      "sourceRect": [
+        868,
+        770,
+        156,
+        133
+      ],
+      "coreRect": [
+        896,
+        773,
+        128,
+        127
+      ],
+      "bbox": [
+        49,
+        66,
+        142,
+        171
+      ],
+      "sha256": "90acc6e8312b00da71a187c239040e83b5167416eeb0283902d5a993d7ce4680"
+    },
+    {
+      "action": "attack",
+      "direction": "south-east",
+      "frame": 3,
+      "sourceRect": [
+        868,
+        901,
+        156,
+        131
+      ],
+      "coreRect": [
+        896,
+        904,
+        128,
+        125
+      ],
+      "bbox": [
+        53,
+        67,
+        137,
+        170
+      ],
+      "sha256": "927689c3c9b2ee1641325c9c423a6492eec5a2f330c58cc6d1825c431d208068"
+    },
+    {
+      "action": "hurt",
+      "direction": "south-east",
+      "frame": 0,
+      "sourceRect": [
+        868,
+        1030,
+        156,
+        129
+      ],
+      "coreRect": [
+        896,
+        1033,
+        128,
+        123
+      ],
+      "bbox": [
+        53,
+        70,
+        128,
+        170
+      ],
+      "sha256": "ae1849b370b5b3b6d7c7a464235420463f69a59e0d54cbda80348c3caf2df61a"
+    },
+    {
+      "action": "death",
+      "direction": "south-east",
+      "frame": 0,
+      "sourceRect": [
+        868,
+        1030,
+        156,
+        129
+      ],
+      "coreRect": [
+        896,
+        1033,
+        128,
+        123
+      ],
+      "bbox": [
+        53,
+        70,
+        128,
+        170
+      ],
+      "sha256": "ae1849b370b5b3b6d7c7a464235420463f69a59e0d54cbda80348c3caf2df61a"
+    },
+    {
+      "action": "death",
+      "direction": "south-east",
+      "frame": 1,
+      "sourceRect": [
+        868,
+        1161,
+        156,
+        126
+      ],
+      "coreRect": [
+        896,
+        1164,
+        128,
+        120
+      ],
+      "bbox": [
+        51,
+        71,
+        130,
+        168
+      ],
+      "sha256": "c18b8466295d228a10d1934c4a75b8337a5a388ccd12dd3078a282e1a830df6b"
+    },
+    {
+      "action": "death",
+      "direction": "south-east",
+      "frame": 2,
+      "sourceRect": [
+        868,
+        1290,
+        156,
+        112
+      ],
+      "coreRect": [
+        896,
+        1293,
+        128,
+        106
+      ],
+      "bbox": [
+        49,
+        89,
+        128,
+        168
+      ],
+      "sha256": "9dd35a2811fc6e781c6ab8635f5296eebd913f93d54b4a5e84c99a7b934753ee"
+    },
+    {
+      "action": "death",
+      "direction": "south-east",
+      "frame": 3,
+      "sourceRect": [
+        868,
+        1400,
+        156,
+        128
+      ],
+      "coreRect": [
+        896,
+        1403,
+        128,
+        122
+      ],
+      "bbox": [
+        53,
+        70,
+        128,
+        166
+      ],
+      "sha256": "9f08a353910139458e8dbff341059e6b54a0153b12068df732f4bd933655b0a5"
+    }
+  ],
+  "sourceBorderWarnings": [],
+  "notes": [
+    "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+  ],
+  "visualStatus": "review candidate; not automatically approved"
+}

@@ -1,6 +1,6 @@
 import { SummonState, ZoneState, type GameState } from '@shaman/schema';
 import {
-  ACHAN, combatStats, FLAT_ATK_SCALE, HUNTER, isBlocked, JUGGERNAUT, KERIS, magicDamage, MONSTERS, MOR_PHHEE, physicalDamage, provokeMonster, SANTET, TAIGA,
+  isBehindMonster, ACHAN, combatStats, FLAT_ATK_SCALE, HUNTER, isBlocked, JUGGERNAUT, KERIS, magicDamage, MONSTERS, MOR_PHHEE, physicalDamage, provokeMonster, SANTET, TAIGA,
   type MapDefinition, type MonsterMotion, type MonsterStatus, type PlayerProfile, type Position,
 } from '@shaman/shared';
 
@@ -66,7 +66,7 @@ export class NationsEffects {
   private near(at: Position, radius: number) { return [...this.ctx.monsters.values()].filter((m) => m.state !== 'dead' && dist(m, at) <= radius); }
   private allies(at: Position, radius: number) { return [...this.ctx.state.players.entries()].filter(([pid, p]) => !this.ctx.isDown(pid) && dist(p, at) <= radius).map(([pid]) => pid); }
   private bleeding(m: MonsterMotion) { return this.has(m, 'bleed'); }
-  private behind(player: Position, m: MonsterMotion) { return (m.facing === 'east' && player.x < m.x) || (m.facing === 'west' && player.x > m.x); }
+  private behind(player: Position, m: MonsterMotion) { return isBehindMonster(player,m); }
   private slow(m: MonsterMotion, factor: number, ms: number) { const now = this.ctx.now(); m.slowFactor = Math.min(m.slowUntil > now ? m.slowFactor : 1, factor); m.slowUntil = Math.max(m.slowUntil, now + ms); m.statuses.slow = m.slowUntil; }
   private move(m: MonsterMotion, to: Position, units: number) {
     const d = dist(m, to) || 1, ux = (to.x - m.x) / d, uy = (to.y - m.y) / d;

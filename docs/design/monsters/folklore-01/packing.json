@@ -1,0 +1,605 @@
+[
+  {
+    "id": "phi-pret",
+    "sourceSha256": "6953d7adfc2d745058e6a39e6feac18f736229e71e450f2b67fd10ab4bc7676e",
+    "sourceSize": [
+      887,
+      1774
+    ],
+    "packedSha256": "be755f15d2619446ae211ff653c0774087d12c8e2d31c22fea085126e5df581b",
+    "scale": 0.9588014981273408,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured13source rows, not requested16; no fabricated missing poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "phi-pop",
+    "sourceSha256": "186e2f91b74bb4e9107ccfae3b4619bdb54c99d8174a0829629f2b08b6dcda22",
+    "sourceSize": [
+      887,
+      1774
+    ],
+    "packedSha256": "ada9f4d44e9c06f6c741f52ac920b27077550f6f71084a8e91c12feb6e20e8e7",
+    "scale": 0.9588014981273408,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured13source rows. Move has3unique source poses and reuses passing pose4 at both half-cycles; visual gait review remains explicit."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "phi-krasue",
+    "sourceSha256": "b2085914b4696ccacd8a422bd3ad6c933f37506f23c2b05d36e82d058141aace",
+    "sourceSize": [
+      887,
+      1774
+    ],
+    "packedSha256": "a0f3963e50f683026a080ef710df6326f7c13f1a91e5caa729fb3bc11f3f4d3e",
+    "scale": 0.9588014981273408,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured14source rows; floating motion, not a planted-foot walk. Hurt reuses the first death reaction."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "phi-krahang",
+    "sourceSha256": "ba2d65f0449ee7bad5d0c99ebf602c268272666860148812fc5afb871244fd50",
+    "sourceSize": [
+      887,
+      1774
+    ],
+    "packedSha256": "8b73b441d7a92a96f26798cbca7815e41df304f247be67ac5e63f8d388c6ce18",
+    "scale": 1,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured9source columns, duplicate north-facing column5 excluded; preserve8distinct view assignments. Floating basket-wing propulsion."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "afturganga",
+    "sourceSha256": "b9903078e36a7ba57b6586a62ac82e92d4af8f8ef3d3419502e9a748a120009a",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "7a6f639acb8c2279fec52af05b79f8d535afcc09239cb8ff57cffb7ff6081cf3",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "bannik",
+    "sourceSha256": "8c5347d676154f9f950ffd957d28f66241d049cdd3b0051d1c7885b67aab241a",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "5c13488b8053ae6b7bdbfba7cb5035bb3fb464b0f10ebb4a40daaabbdfc6a240",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "cheonyeo-gwishin",
+    "sourceSha256": "bd65960896a26dd2d370c272349b092d72428c829cee3130a32b271d9845b98e",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "5998848e2d40622a69f2fbd4201ebf1baa854f274327656bf362e798af998d12",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "chonggak-gwishin",
+    "sourceSha256": "e6b91be857b2bd6538f09067c1f60c505746ee8d878b7bc5ffbb27a632306e52",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "98ee93c2e7b2e3208d154cba27d06c7a8fac29b23f8d48374efeefe5b94bbb61",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "dalgyal-gwishin",
+    "sourceSha256": "8dd8de490135aedbdc38aa531354d902c091f52c290f0f34409777421ca7b6bf",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "1bb9107cc785379ce3e0547668c5281098fdfe230bb0d5d7f67b8fa502c04af4",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "dokkaebi",
+    "sourceSha256": "134f0b5ffc95328ce4744ed27380e37023e77ab3e959cb3ea5a0d15de106abcd",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "fa10f288c9634b0f37b58938cc2d48bf33c3cec8d02a60d9e760c2d588b4da0d",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "domovoi",
+    "sourceSha256": "fbe01da89151affd7a6527ec12a4086cd63f59850c204757e6c120b85c751874",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "3e042519dc5b5f661d7a4a89b9d9fbb58560f8da41d70b3064ca2954c88c0490",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "draugen",
+    "sourceSha256": "00a48b6912d317bea9bbf3d96cb0553e85d3a31bd1706b7b1f1d526d20d0f24a",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "800adc7c667cc4529f12a53eb64be2d1280721a9ff2b0164fa1769ed7bc2c88b",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "draugur",
+    "sourceSha256": "f046cd9a2c6ac78257143ae3cfe57d00eacb78be8b5d9b84cd8a42c3f5fd47e5",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "b09bd0205dae9966d81319c9924ee5468ad5542787ad86a478b6eb13399fb247",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "e-gui",
+    "sourceSha256": "f147634673e8c5753555e217b5d43bcc02010db9705fa3e25b76fe1629b0362d",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "97526129ac36abd65705c2f0de5e56b09957dab47991e017135b71a0a1438cc2",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "fossegrim",
+    "sourceSha256": "960c3c27ca67fd25a6db44783caa89c8f7694bdaf45066608bb255277a268436",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "7388bff024361ad35accd6db501a09d17f9411460db1d6bccc402e4f9a0283dd",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured10source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "gashadokuro",
+    "sourceSha256": "49852513ba7ced65acaa2bc54d85d45c1565aaa8d6fc9ddf3f4b548a4fd2eda1",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "2e70205bf40237995bdacfb8867e6a7696f41ca66f6848f323f1de9027fa3cbb",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "gumiho",
+    "sourceSha256": "52408cbec54d9f8635094e20faf39bf1f7968327d0a57ab642bf931776222bf8",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "d54c73eb554a0dae6387fdf0c417ca4c21f3322c93b578f7db900cac7d571fcd",
+    "scale": 0.8247422680412371,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "huldra",
+    "sourceSha256": "31dbd7c12012caf26dc9be6a3ab713afa16d879f719a0c62f92085e3bc39565d",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "39a27cc3cd41481c5b498b1399a1cfd279fedafe3baabcf0090d4831827d9fd3",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "huli-jing",
+    "sourceSha256": "e12d02e4171c923448f2fe916567ef6ce8e1bd94ed4b47a74663fa760a046cb5",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "1df0c1b01d018e3b2822acbf5361896c8e9a1af3bb26054e22145505706d0710",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured10source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "jiangshi",
+    "sourceSha256": "857218046591ce064fe0bf5ea4af7fa5a99a4fee052b898ddfc121341e8e9526",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "7e05e7fca4b8a57e5647b9ff77b1332f053edf40519446f11f8e309aaeaabb7b",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "kikimora",
+    "sourceSha256": "21dcaaa1e6e5d7facaa5efb980ca2f26f0c6934dcca69460854b8b33629d227d",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "2dd2ab1f47980b76183f5231629738a699a8a7e87d7d24d984f942451f41fce4",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "kuchisake-onna",
+    "sourceSha256": "633f57ca1b93e7346614f18346b3b04e375fb4996ac36bc450763696e8f2ca4c",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "2843a4f9a09d5a5e0c1c420c5115ad6f52fb6ba8e32f5c7fb38cce8d41d9a2c3",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "leshy",
+    "sourceSha256": "09ad2f2dc20df487782a55dc31e6bc19f06f931d11716ddb107582954168de47",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "0566e33693ddf7d958e8a965f733e5955f1752e1009bb77b6714e5bab9fc2b60",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "mare",
+    "sourceSha256": "5dafc978e4ac297786bb023bc0af825d6e696cab47c3ded1f810557d33494a75",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "f8d39f85fc2518487cfecf972a67f5ae840b6ada890514e0c1dcfbb7a33b7639",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured10source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "mulgwishin",
+    "sourceSha256": "626d47fa59b1bc204a427cc5010de72025d585e8b8e24ad9334e1ba092fb4f5b",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "af0b07c7a39af8eedddb114dd0b9b8d6da075117fcc7e8091f6af5b52482e413",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "nisse",
+    "sourceSha256": "56b722f926408003489bd2b2c1df13ee29e1258642fa2a69bb4472e55192f63c",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "229d958d57c885a9bf908fd1aa5bbfb7cad3c5c48ce3a6359780b1af28101018",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "nokken",
+    "sourceSha256": "1e270d79031238c59e74a5000a141610c91e70691ba64e865ce03fd54f1514ca",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "423a721a362d085460358c1e9e2d7fb9c7103f027b51ada53ea3e27ad3810293",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "nu-gui",
+    "sourceSha256": "127e33821d7650f2d9659f43f4b02b37e4240006f1a9d6b38e550d064ad2be95",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "af0cdbcc29c5d0cc92871759fb663e9159f879c52837e215beed8992573450f1",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "onryo",
+    "sourceSha256": "e5cc321bb434d94c2e560727396aa683118b9e0eb9edc70a8b3b2ad628d67dfa",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "16daee45327c8260182dd08525bdec7149a3b49bd3aae675b5f853db594e6f2a",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "rokurokubi",
+    "sourceSha256": "6c89d35953ed7383d529b510177880012442e47f82ddc1acb58dfbf9aa02e7d3",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "3d81410ee44ea093a6ad8beb74ff78756189a95a717296ad3636d118167ad9ef",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "shui-gui",
+    "sourceSha256": "5a9139525139b72a79062045a33ee2d55f0c39e35a29e8c1978b96c09708b14f",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "5844049f1c7d25eb8634318de009f47fe4f8c948c14f9f48b0f5da9bd036c116",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "tilberi",
+    "sourceSha256": "766f8c1cf774ac90f20e22ed385c08a988045c75b0f6a504fc15017a53b2de8b",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "982ece09e3156b492b3b6e48eca6d606f1cc77b7376d76f6734064f43b545835",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "ubume",
+    "sourceSha256": "cfe662cb9ba42d70d6e7baaf165d222bbea5b19b0c3ef868a3c133c181f383ee",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "66edd1509036d51eed65738d868fb6ee916dcb1604d7fd1c04f36ccba0465c62",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "uppvakningur",
+    "sourceSha256": "75fc42de2e83db2e98b8b5d74214f7dd95659f79d991728f90baf96ee1005926",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "03c0104d22cd166f242954204f5da668d5f74e9284ec8735dc642424f11d12a2",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "utburdur",
+    "sourceSha256": "9607184b7198cd05befb37151c61361ccc723647c8f08ef93ce2a56014a29bed",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "8c6c89a6e9bb1c4085cc1514744c010f20f5163e661b54a48b196c7f45f036ca",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "vodyanoy",
+    "sourceSha256": "7deda3b86ea7aca91e2123f2d899db9b298cca0b3ae3d93ecf4127ff1de544f3",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "6d046c531947741bcb1f70705059a6c5772f76d849d4182509540f9d66b733cf",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "wutou-gui",
+    "sourceSha256": "0e1970c841c19b356abb0d00558a123cc99ed377b8355325fad480a95287d0d2",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "ea21784de7bddf639b59e6cad870d704d6429c4a65111249cbd7b16dc1d9cbb9",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "yuki-onna",
+    "sourceSha256": "f194af59b633e27618bff7c8fd8b10b0e7dba26a2b4bd2f8e65297b2cf1745ad",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "8c4f547d1076f6a77a66a447885f4033ab924c51a0e84de99386d275400e319f",
+    "scale": 0.8695652173913043,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "rusalka",
+    "sourceSha256": "aba9f302ff05e9ce1464cf00af0b402e0de8d20e3b482a34271cf708e8ee5c8a",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "3867734fa1e30e1f35b991b70109646fd59a7deeb2ef500d2e1b53af6965a368",
+    "scale": 0.8888888888888888,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses.",
+      "Wider224px export cell retains complete horizontal strike silhouette, with the same native body scale."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  },
+  {
+    "id": "sending",
+    "sourceSha256": "98d544d85be095c6da513e094d676be7f86d0aab88e5df7bc5b4201f4bc4d2d7",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "packedSha256": "1a2562e72eb8b26faae0bdccaf5a94239b53345a30b609a4c10e2099aaccead6",
+    "scale": 0.9515418502202644,
+    "sourceBorderWarnings": [],
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses.",
+      "Source has9nonuniform columns; final repeated south omitted, pivots explicitly measured.",
+      "Wider224px export cell retains complete horizontal strike silhouette, with the same native body scale."
+    ],
+    "visualStatus": "review candidate; not automatically approved"
+  }
+]

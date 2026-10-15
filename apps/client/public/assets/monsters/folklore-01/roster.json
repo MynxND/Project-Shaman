@@ -1,0 +1,778 @@
+{
+  "version": 1,
+  "scope": "user-requested40 enemy species; not playable character classes",
+  "countryNote": "Iceland supplied by user, kept distinct from Ireland; Korea/Iceland map binding remains unassigned until an eligible map exists or user chooses binding. No country is silently renamed.",
+  "provider": "ImageGen user-authorized exception2026-10-15, PixelLab0",
+  "directions": [
+    "south",
+    "south-west",
+    "west",
+    "north-west",
+    "north",
+    "north-east",
+    "east",
+    "south-east"
+  ],
+  "actions": [
+    "idle",
+    "move",
+    "attack",
+    "death"
+  ],
+  "monsters": [
+    {
+      "id": "phi-pret",
+      "nation": "thailand",
+      "name": {
+        "th": "ผีเปรต",
+        "en": "Phi Pret"
+      },
+      "level": 18,
+      "mapIds": [
+        "lantern-paddy",
+        "monsoon-marsh"
+      ],
+      "design": "towering gaunt long-limbed hungry spirit, tiny mouth, ochre waist cloth",
+      "attack": "long palm swipe",
+      "death": "knees buckle and body crumbles into ash",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.85
+    },
+    {
+      "id": "phi-pop",
+      "nation": "thailand",
+      "name": {
+        "th": "ผีปอบ",
+        "en": "Phi Pop"
+      },
+      "level": 12,
+      "mapIds": [
+        "whispering-spiritwood",
+        "lantern-paddy"
+      ],
+      "design": "hunched adult rural woman, indigo blouse, crimson pha-sin, claw hands",
+      "attack": "two-hand lunge",
+      "death": "kneel and dissipate",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "phi-krasue",
+      "nation": "thailand",
+      "name": {
+        "th": "ผีกระสือ",
+        "en": "Phi Krasue"
+      },
+      "level": 20,
+      "mapIds": [
+        "moon-mangrove",
+        "monsoon-marsh"
+      ],
+      "design": "floating adult female head, long black hair, spectral dark-crimson root ribbons instead of graphic organs",
+      "attack": "forward spectral bite",
+      "death": "hair droops, head sinks and dissipates",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "phi-krahang",
+      "nation": "thailand",
+      "name": {
+        "th": "ผีกระหัง",
+        "en": "Phi Krahang"
+      },
+      "level": 24,
+      "mapIds": [
+        "lantern-paddy",
+        "mountain-spirit-sanctuary"
+      ],
+      "design": "adult male farmer ghost, indigo shorts, woven bamboo rice-winnowing baskets as wings, wooden pestle between ankles",
+      "attack": "basket-wing swoop",
+      "death": "flight fails, wings fold and spirit dissolves",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "onryo",
+      "nation": "japan",
+      "name": {
+        "th": "วิญญาณอาฆาต",
+        "en": "Onryō"
+      },
+      "level": 42,
+      "mapIds": [
+        "cedar-torii-shrine",
+        "monsoon-ruins"
+      ],
+      "design": "adult long-haired female vengeful spirit, fully covering ragged ivory kimono, bare feet, pale blue-gray skin",
+      "attack": "claw-handed forward rush",
+      "death": "falls to knees then unravels into gray wisps",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "yuki-onna",
+      "nation": "japan",
+      "name": {
+        "th": "หญิงหิมะ",
+        "en": "Yuki-onna"
+      },
+      "level": 64,
+      "mapIds": [
+        "snowbound-torii"
+      ],
+      "design": "adult snow woman, elegant fully covering pale-blue kimono, straight dark hair with icy tips, ice-blue eyes",
+      "attack": "sweeping sleeve sends a small ice breath forward",
+      "death": "kneels and melts into snow motes",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "kuchisake-onna",
+      "nation": "japan",
+      "name": {
+        "th": "หญิงปากฉีก",
+        "en": "Kuchisake-onna"
+      },
+      "level": 55,
+      "mapIds": [
+        "monsoon-ruins"
+      ],
+      "design": "adult woman in worn charcoal traveling cloak, long black hair, ivory face mask slipping to show a non-graphic dark supernatural mouth seam, large iron scissors",
+      "attack": "clearly telegraphed scissors slash",
+      "death": "scissors drop and cloaked form collapses",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "rokurokubi",
+      "nation": "japan",
+      "name": {
+        "th": "หญิงคอยาว",
+        "en": "Rokurokubi"
+      },
+      "level": 48,
+      "mapIds": [
+        "cedar-torii-shrine",
+        "spirit-waterfall"
+      ],
+      "design": "adult woman in muted plum fully covering kimono, elongated curved spectral neck staying within cell bounds, pinned dark hair",
+      "attack": "neck extends toward target then retracts",
+      "death": "long neck coils downward and spirit vanishes",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "ubume",
+      "nation": "japan",
+      "name": {
+        "th": "อุบุเมะ",
+        "en": "Ubume"
+      },
+      "level": 46,
+      "mapIds": [
+        "spirit-waterfall"
+      ],
+      "design": "adult female spirit in fully covering worn white robe carrying a tightly wrapped EMPTY cloth bundle, damp dark hair, sorrowful face, NO visible child or corpse",
+      "attack": "protective sleeve thrust with pale spirit mist",
+      "death": "kneels holding bundle then dissolves gently",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "gashadokuro",
+      "nation": "japan",
+      "name": {
+        "th": "โครงกระดูกยักษ์",
+        "en": "Gashadokuro"
+      },
+      "level": 65,
+      "mapIds": [
+        "monsoon-ruins"
+      ],
+      "design": "oversized weathered ivory skeleton, heavy broad skull and ribcage, dark shadow in eye sockets, ragged charcoal waist cloth, no blood",
+      "attack": "large downward bony arm slam",
+      "death": "stumbles, kneels then bones settle into a compact pile",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.85
+    },
+    {
+      "id": "cheonyeo-gwishin",
+      "nation": "korea",
+      "name": {
+        "th": "ผีสาวอาลัย",
+        "en": "Cheonyeo Gwishin"
+      },
+      "level": 40,
+      "mapIds": [],
+      "design": "adult female ghost, long loose black hair, fully covering worn white hanbok jeogori and chima, pale gray face",
+      "attack": "wide sleeve claw lunge",
+      "death": "kneels and fades into cloth-like mist",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "unbound: no playable map for supplied country",
+      "scale": 0.5
+    },
+    {
+      "id": "mulgwishin",
+      "nation": "korea",
+      "name": {
+        "th": "ผีน้ำเกาหลี",
+        "en": "Mulgwishin"
+      },
+      "level": 48,
+      "mapIds": [],
+      "design": "adult drowned river spirit, soaked fully covering gray-blue hanbok, trailing waterweed hair and dark teal water drops",
+      "attack": "reaching pull with wet arms",
+      "death": "slumps into a small spectral puddle",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "unbound: no playable map for supplied country",
+      "scale": 0.5
+    },
+    {
+      "id": "dalgyal-gwishin",
+      "nation": "korea",
+      "name": {
+        "th": "ผีหน้าเรียบ",
+        "en": "Dalgyal Gwishin"
+      },
+      "level": 45,
+      "mapIds": [],
+      "design": "adult faceless humanoid spirit with perfectly smooth egg-like face NO eyes nose or mouth, old fully covering ivory hanbok",
+      "attack": "silent double-arm shove",
+      "death": "body folds and faceless head lowers into mist",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "unbound: no playable map for supplied country",
+      "scale": 0.5
+    },
+    {
+      "id": "dokkaebi",
+      "nation": "korea",
+      "name": {
+        "th": "ทกแกบี",
+        "en": "Dokkaebi"
+      },
+      "level": 52,
+      "mapIds": [],
+      "design": "stocky Korean goblin fantasy spirit, broad rough amber-brown face, small horn, ragged teal hanbok trousers and vest, knotted wooden club",
+      "attack": "two-handed wooden club swing",
+      "death": "club drops and squat body falls backward",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "unbound: no playable map for supplied country",
+      "scale": 0.5
+    },
+    {
+      "id": "gumiho",
+      "nation": "korea",
+      "name": {
+        "th": "จิ้งจอกเก้าหาง",
+        "en": "Gumiho"
+      },
+      "level": 55,
+      "mapIds": [],
+      "design": "adult fox spirit woman in fully covering dark-crimson hanbok, white fox ears and clearly nine flowing ivory tails, modest costume",
+      "attack": "fox-claw slash with tails sweeping behind",
+      "death": "tails fold and spirit curls into a fading ivory fox-shaped silhouette",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "unbound: no playable map for supplied country",
+      "scale": 0.5
+    },
+    {
+      "id": "chonggak-gwishin",
+      "nation": "korea",
+      "name": {
+        "th": "ผีหนุ่มอาลัย",
+        "en": "Chonggak Gwishin"
+      },
+      "level": 44,
+      "mapIds": [],
+      "design": "adult young-man ghost in fully covering old white Korean durumagi coat, dark topknot and sorrowful gray face",
+      "attack": "long-sleeved palm strike",
+      "death": "kneels, head bows and form dissolves",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "unbound: no playable map for supplied country",
+      "scale": 0.5
+    },
+    {
+      "id": "rusalka",
+      "nation": "russia",
+      "name": {
+        "th": "รูซัลกา",
+        "en": "Rusalka"
+      },
+      "level": 66,
+      "mapIds": [
+        "frost-pine",
+        "taiga-blood-trail"
+      ],
+      "design": "adult river spirit woman, fully covering pale moss-green linen dress, very long wet green-black hair, waterweed crown, no nudity",
+      "attack": "water-laden arm sweep",
+      "death": "hair settles and spirit sinks into a translucent puddle",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "leshy",
+      "nation": "russia",
+      "name": {
+        "th": "เลชี",
+        "en": "Leshy"
+      },
+      "level": 78,
+      "mapIds": [
+        "taiga-blood-trail"
+      ],
+      "design": "tall forest spirit with bark-textured humanoid body, pine bough beard, moss and twisted wooden fingers, dark teal foliage",
+      "attack": "heavy branch-arm swipe",
+      "death": "wooden knees buckle and body returns to moss",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "domovoi",
+      "nation": "russia",
+      "name": {
+        "th": "โดโมวอย",
+        "en": "Domovoi"
+      },
+      "level": 60,
+      "mapIds": [
+        "frost-pine",
+        "winter-seal-kremlin"
+      ],
+      "design": "small squat shaggy house spirit, gray-brown beard, simple fully covering linen tunic and rope belt, small wooden hearth ladle",
+      "attack": "stout ladle thump",
+      "death": "sits down and fades into hearth dust",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "kikimora",
+      "nation": "russia",
+      "name": {
+        "th": "คิคิโมรา",
+        "en": "Kikimora"
+      },
+      "level": 80,
+      "mapIds": [
+        "taiga-blood-trail",
+        "winter-seal-kremlin"
+      ],
+      "design": "thin hunched adult feminine household spirit, tangled reeds and dark ragged fully covering linen dress, spindle-like fingers, crooked headscarf",
+      "attack": "long-fingered scratching lunge",
+      "death": "crumples into dry reeds and dark mist",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "vodyanoy",
+      "nation": "russia",
+      "name": {
+        "th": "โวดียานอย",
+        "en": "Vodyanoy"
+      },
+      "level": 85,
+      "mapIds": [
+        "taiga-blood-trail",
+        "winter-seal-kremlin"
+      ],
+      "design": "bulky amphibious river spirit, moss-green wrinkled skin, heavy fishlike cheeks, algae beard, fully covered pelvis with reed skirt, webbed hands",
+      "attack": "wide webbed-hand water slam",
+      "death": "sags and dissolves into dark water",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "bannik",
+      "nation": "russia",
+      "name": {
+        "th": "บันนิก",
+        "en": "Bannik"
+      },
+      "level": 88,
+      "mapIds": [
+        "winter-seal-kremlin"
+      ],
+      "design": "small stocky bathhouse spirit, soot-gray shaggy beard, fully covering faded linen wrap and vest, bundle of birch bath twigs",
+      "attack": "birch-bundle lash",
+      "death": "crouches and disappears into pale steam",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "draugur",
+      "nation": "iceland",
+      "name": {
+        "th": "ดรอยกูร์",
+        "en": "Draugur"
+      },
+      "level": 62,
+      "mapIds": [],
+      "design": "bulky adult revenant with frost-gray skin, worn wool tunic, old rusted iron armor fragments, seaweed-dark hair, no gore or real runes",
+      "attack": "heavy fist slam",
+      "death": "stiff knees buckle and revenant collapses into cold dust",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "unbound: no playable map for supplied country",
+      "scale": 0.5
+    },
+    {
+      "id": "afturganga",
+      "nation": "iceland",
+      "name": {
+        "th": "อัฟตูร์กังกา",
+        "en": "Afturganga"
+      },
+      "level": 58,
+      "mapIds": [],
+      "design": "adult returning spectral wanderer, worn fully covering charcoal wool cloak, pale gaunt face, weathered rope belt",
+      "attack": "ghostly reaching swipe",
+      "death": "cloak drops and spirit evaporates",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "unbound: no playable map for supplied country",
+      "scale": 0.5
+    },
+    {
+      "id": "utburdur",
+      "nation": "iceland",
+      "name": {
+        "th": "อูตบูร์ดูร์",
+        "en": "Útburður"
+      },
+      "level": 60,
+      "mapIds": [],
+      "design": "small empty bundled wool shroud animated by an ivory spirit wisp, NO child body or injured infant, eerie folklore apparition",
+      "attack": "shroud flutters forward as a pale gust",
+      "death": "empty cloth settles and wisp extinguishes",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "unbound: no playable map for supplied country",
+      "scale": 0.5
+    },
+    {
+      "id": "uppvakningur",
+      "nation": "iceland",
+      "name": {
+        "th": "อุปป์วักนิงกูร์",
+        "en": "Uppvakningur"
+      },
+      "level": 68,
+      "mapIds": [],
+      "design": "adult magically awakened revenant, gray leathery skin, tattered fully covering dark burial coat, weathered binding cords with no letters",
+      "attack": "jerky double-arm thrust",
+      "death": "bindings slacken, body sinks into dust",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "unbound: no playable map for supplied country",
+      "scale": 0.5
+    },
+    {
+      "id": "sending",
+      "nation": "iceland",
+      "name": {
+        "th": "เซนดิง",
+        "en": "Sending"
+      },
+      "level": 70,
+      "mapIds": [],
+      "design": "sent curse spirit shaped as an adult shadow humanoid in ragged black wool, knotted dark crimson cords, ivory empty mask without writing",
+      "attack": "thin shadow-arm stab",
+      "death": "cords loosen and shadow breaks into wisps",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "unbound: no playable map for supplied country",
+      "scale": 0.5
+    },
+    {
+      "id": "tilberi",
+      "nation": "iceland",
+      "name": {
+        "th": "ทิลเบริ",
+        "en": "Tilberi"
+      },
+      "level": 64,
+      "mapIds": [],
+      "design": "small uncanny gray wool-and-bone spindle-shaped witch familiar, coiled grub-like body and blunt ribbed segments, two dim jade eyes, no gore",
+      "attack": "compact coiling spring lunge",
+      "death": "coil relaxes and crumbles into wool dust",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "unbound: no playable map for supplied country",
+      "scale": 0.5
+    },
+    {
+      "id": "jiangshi",
+      "nation": "china",
+      "name": {
+        "th": "ผีดิบเจียงซือ",
+        "en": "Jiangshi"
+      },
+      "level": 35,
+      "mapIds": [
+        "mist-bamboo",
+        "cloud-tea-slopes"
+      ],
+      "design": "stiff adult hopping corpse in worn dark teal Qing-inspired official robe and round black hat, pale blue-gray face, blank aged paper strip with NO writing",
+      "attack": "both straight arms thrust, MOVE uses coherent hopping cycle",
+      "death": "stiff body tips backward and dissolves",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "nu-gui",
+      "nation": "china",
+      "name": {
+        "th": "นฺหวี่กุ่ย",
+        "en": "Nü Gui"
+      },
+      "level": 38,
+      "mapIds": [
+        "mist-bamboo"
+      ],
+      "design": "adult female ghost in fully covering faded crimson Chinese hanfu, long black hair, pale sorrowful face, flowing sleeves",
+      "attack": "sweeping sleeve claw strike",
+      "death": "kneels and robe dissolves into muted crimson wisps",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "e-gui",
+      "nation": "china",
+      "name": {
+        "th": "ผีหิวโหยจีน",
+        "en": "E Gui"
+      },
+      "level": 42,
+      "mapIds": [
+        "cloud-tea-slopes"
+      ],
+      "design": "gaunt adult hungry spirit, long narrow neck, distended but fully covered belly in ragged brown robe, tiny mouth, gray ochre skin",
+      "attack": "desperate long-handed grabbing strike",
+      "death": "hunched body drops to knees and fades into dust",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "shui-gui",
+      "nation": "china",
+      "name": {
+        "th": "สุ่ยกุ่ย",
+        "en": "Shui Gui"
+      },
+      "level": 36,
+      "mapIds": [
+        "mist-bamboo",
+        "cloud-tea-slopes"
+      ],
+      "design": "adult river ghost in fully covering soaked blue-gray Chinese robe, black waterweed hair, muted jade eyes",
+      "attack": "wet sleeve reaches forward to pull",
+      "death": "body droops and sinks into spectral water",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "wutou-gui",
+      "nation": "china",
+      "name": {
+        "th": "ผีไร้หัวจีน",
+        "en": "Wutou Gui"
+      },
+      "level": 44,
+      "mapIds": [
+        "cloud-tea-slopes"
+      ],
+      "design": "headless adult revenant in fully covering weathered dark Chinese lamellar coat and robe, collar closed with dark spectral smoke, NO blood or exposed wound, no carried head",
+      "attack": "blind sweeping arm strike",
+      "death": "torso kneels and dark coat folds into ash",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "huli-jing",
+      "nation": "china",
+      "name": {
+        "th": "หูหลีจิง",
+        "en": "Huli Jing"
+      },
+      "level": 45,
+      "mapIds": [
+        "mist-bamboo",
+        "cloud-tea-slopes"
+      ],
+      "design": "adult fox spirit in fully covering old jade Chinese hanfu, russet fox ears and three broad copper fox tails, gold eye accents, original design distinct from Korean nine-tail gumiho",
+      "attack": "fox-claw sleeve slash",
+      "death": "tails curl and figure dissolves into copper wisps",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "draugen",
+      "nation": "norway",
+      "name": {
+        "th": "ดรอยเกน",
+        "en": "Draugen"
+      },
+      "level": 65,
+      "mapIds": [
+        "storm-fjord",
+        "spirit-timber-harbor"
+      ],
+      "design": "adult drowned fisher revenant in dark tarred wool seacoat, battered brimmed hat, rope and seaweed, pale gray face, no gore",
+      "attack": "heavy waterlogged oar swipe",
+      "death": "coat slumps and breaks into sea mist",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "huldra",
+      "nation": "norway",
+      "name": {
+        "th": "ฮุลทรา",
+        "en": "Huldra"
+      },
+      "level": 64,
+      "mapIds": [
+        "storm-fjord",
+        "aurora-pass"
+      ],
+      "design": "adult forest spirit woman in fully covering aged moss-green Nordic wool dress and apron, long copper braid, clearly visible cow tail, no nudity",
+      "attack": "wooden-hand slash with tail counterbalance",
+      "death": "kneels and fades into forest leaves",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "nokken",
+      "nation": "norway",
+      "name": {
+        "th": "เนิกเคน",
+        "en": "Nøkken"
+      },
+      "level": 70,
+      "mapIds": [
+        "storm-fjord",
+        "aurora-pass"
+      ],
+      "design": "adult lake spirit with gray-green skin, fully covering kelp-dark tunic, flowing reed hair and long webbed fingers, no nudity",
+      "attack": "webbed-arm pulling sweep",
+      "death": "sags and dissolves into lake water",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "fossegrim",
+      "nation": "norway",
+      "name": {
+        "th": "ฟอสเซกริม",
+        "en": "Fossegrim"
+      },
+      "level": 68,
+      "mapIds": [
+        "storm-fjord"
+      ],
+      "design": "adult waterfall spirit fiddler, long ivory beard, fully covering weathered blue wool coat, small dark wood fiddle and bow, pale river-blue eyes",
+      "attack": "forceful bow sweep with narrow water arc",
+      "death": "kneels with fiddle and fades into water mist",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "nisse",
+      "nation": "norway",
+      "name": {
+        "th": "นิสเซ",
+        "en": "Nisse"
+      },
+      "level": 62,
+      "mapIds": [
+        "spirit-timber-harbor"
+      ],
+      "design": "small bearded farm spirit in weathered charcoal wool coat, muted rust-red knitted cap, stout boots, small wooden farm rake, no Christmas motifs",
+      "attack": "short rake jab",
+      "death": "sits down, cap lowers and spirit fades into chaff",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    },
+    {
+      "id": "mare",
+      "nation": "norway",
+      "name": {
+        "th": "มาเร",
+        "en": "Mare"
+      },
+      "level": 76,
+      "mapIds": [
+        "aurora-pass"
+      ],
+      "design": "adult nightmare shadow spirit, fully covering ragged charcoal night cloak, long pale fingers, obscured face with two dim jade points, no Western witch hat",
+      "attack": "pressing double-hand lunge",
+      "death": "body folds low and dissolves into smoky threads",
+      "artStatus": "queued",
+      "live": false,
+      "mapStatus": "existing maps",
+      "scale": 0.5
+    }
+  ],
+  "requestedFramesPerAction": 4,
+  "actualFrames": "Measured from each source, see cuts.json and drafts.json; never claim requested rows were all returned."
+}

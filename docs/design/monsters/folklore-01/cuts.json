@@ -1,0 +1,3330 @@
+{
+  "phi-pret": {
+    "columns": 8,
+    "bands": [
+      [
+        4,
+        134
+      ],
+      [
+        142,
+        272
+      ],
+      [
+        279,
+        408
+      ],
+      [
+        416,
+        544
+      ],
+      [
+        553,
+        680
+      ],
+      [
+        689,
+        818
+      ],
+      [
+        826,
+        954
+      ],
+      [
+        963,
+        1086
+      ],
+      [
+        1094,
+        1215
+      ],
+      [
+        1230,
+        1354
+      ],
+      [
+        1368,
+        1489
+      ],
+      [
+        1510,
+        1622
+      ],
+      [
+        1666,
+        1758
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        1,
+        2
+      ],
+      "move": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "attack": [
+        7,
+        8,
+        9
+      ],
+      "hurt": [
+        10
+      ],
+      "death": [
+        10,
+        11,
+        12
+      ]
+    },
+    "notes": [
+      "Measured13source rows, not requested16; no fabricated missing poses."
+    ]
+  },
+  "phi-pop": {
+    "columns": 8,
+    "bands": [
+      [
+        21,
+        142
+      ],
+      [
+        165,
+        286
+      ],
+      [
+        311,
+        431
+      ],
+      [
+        455,
+        575
+      ],
+      [
+        594,
+        717
+      ],
+      [
+        739,
+        862
+      ],
+      [
+        885,
+        1007
+      ],
+      [
+        1026,
+        1149
+      ],
+      [
+        1172,
+        1292
+      ],
+      [
+        1316,
+        1429
+      ],
+      [
+        1449,
+        1536
+      ],
+      [
+        1548,
+        1649
+      ],
+      [
+        1660,
+        1758
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        1,
+        2
+      ],
+      "move": [
+        3,
+        4,
+        5,
+        4
+      ],
+      "attack": [
+        6,
+        7,
+        8
+      ],
+      "hurt": [
+        9
+      ],
+      "death": [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "notes": [
+      "Measured13source rows. Move has3unique source poses and reuses passing pose4 at both half-cycles; visual gait review remains explicit."
+    ]
+  },
+  "phi-krasue": {
+    "columns": 8,
+    "bands": [
+      [
+        16,
+        134
+      ],
+      [
+        148,
+        261
+      ],
+      [
+        276,
+        388
+      ],
+      [
+        406,
+        518
+      ],
+      [
+        536,
+        646
+      ],
+      [
+        664,
+        776
+      ],
+      [
+        795,
+        902
+      ],
+      [
+        922,
+        1020
+      ],
+      [
+        1035,
+        1125
+      ],
+      [
+        1139,
+        1235
+      ],
+      [
+        1250,
+        1355
+      ],
+      [
+        1368,
+        1474
+      ],
+      [
+        1488,
+        1610
+      ],
+      [
+        1626,
+        1752
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "move": [
+        4,
+        5,
+        6,
+        5
+      ],
+      "attack": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "hurt": [
+        11
+      ],
+      "death": [
+        11,
+        12,
+        13
+      ]
+    },
+    "notes": [
+      "Measured14source rows; floating motion, not a planted-foot walk. Hurt reuses the first death reaction."
+    ]
+  },
+  "phi-krahang": {
+    "columns": 9,
+    "columnMap": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8
+    ],
+    "bands": [
+      [
+        5,
+        109
+      ],
+      [
+        117,
+        220
+      ],
+      [
+        228,
+        331
+      ],
+      [
+        339,
+        442
+      ],
+      [
+        450,
+        552
+      ],
+      [
+        562,
+        665
+      ],
+      [
+        675,
+        777
+      ],
+      [
+        784,
+        886
+      ],
+      [
+        894,
+        997
+      ],
+      [
+        1005,
+        1108
+      ],
+      [
+        1116,
+        1219
+      ],
+      [
+        1228,
+        1330
+      ],
+      [
+        1339,
+        1441
+      ],
+      [
+        1453,
+        1551
+      ],
+      [
+        1564,
+        1660
+      ],
+      [
+        1687,
+        1761
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "move": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "attack": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "hurt": [
+        12
+      ],
+      "death": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "notes": [
+      "Measured9source columns, duplicate north-facing column5 excluded; preserve8distinct view assignments. Floating basket-wing propulsion.",
+      "Repair01 generation kept as source-v2.png but rejected: only one collapsed death pose. Original complete death sequence retained; connected sprite ownership extraction resolved neighbour clipping without inventing pixels."
+    ]
+  },
+  "afturganga": {
+    "columns": 8,
+    "bands": [
+      [
+        8,
+        150
+      ],
+      [
+        156,
+        297
+      ],
+      [
+        303,
+        444
+      ],
+      [
+        450,
+        590
+      ],
+      [
+        598,
+        731
+      ],
+      [
+        738,
+        870
+      ],
+      [
+        878,
+        1016
+      ],
+      [
+        1029,
+        1152
+      ],
+      [
+        1166,
+        1287
+      ],
+      [
+        1294,
+        1400
+      ],
+      [
+        1407,
+        1528
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6
+      ],
+      "hurt": [
+        7
+      ],
+      "death": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "bannik": {
+    "columns": 8,
+    "bands": [
+      [
+        15,
+        132
+      ],
+      [
+        149,
+        266
+      ],
+      [
+        287,
+        405
+      ],
+      [
+        423,
+        540
+      ],
+      [
+        549,
+        702
+      ],
+      [
+        708,
+        874
+      ],
+      [
+        897,
+        1015
+      ],
+      [
+        1036,
+        1154
+      ],
+      [
+        1182,
+        1288
+      ],
+      [
+        1307,
+        1403
+      ],
+      [
+        1424,
+        1525
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6
+      ],
+      "hurt": [
+        7
+      ],
+      "death": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "cheonyeo-gwishin": {
+    "columns": 8,
+    "bands": [
+      [
+        14,
+        134
+      ],
+      [
+        146,
+        266
+      ],
+      [
+        279,
+        399
+      ],
+      [
+        412,
+        530
+      ],
+      [
+        547,
+        660
+      ],
+      [
+        671,
+        791
+      ],
+      [
+        806,
+        922
+      ],
+      [
+        939,
+        1052
+      ],
+      [
+        1072,
+        1183
+      ],
+      [
+        1207,
+        1320
+      ],
+      [
+        1329,
+        1450
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6
+      ],
+      "hurt": [
+        7
+      ],
+      "death": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "chonggak-gwishin": {
+    "columns": 8,
+    "bands": [
+      [
+        12,
+        130
+      ],
+      [
+        139,
+        258
+      ],
+      [
+        267,
+        386
+      ],
+      [
+        395,
+        514
+      ],
+      [
+        522,
+        641
+      ],
+      [
+        650,
+        769
+      ],
+      [
+        777,
+        896
+      ],
+      [
+        908,
+        1025
+      ],
+      [
+        1037,
+        1152
+      ],
+      [
+        1168,
+        1280
+      ],
+      [
+        1297,
+        1395
+      ],
+      [
+        1407,
+        1521
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "dalgyal-gwishin": {
+    "columns": 8,
+    "bands": [
+      [
+        9,
+        138
+      ],
+      [
+        146,
+        274
+      ],
+      [
+        282,
+        410
+      ],
+      [
+        418,
+        546
+      ],
+      [
+        554,
+        681
+      ],
+      [
+        691,
+        816
+      ],
+      [
+        824,
+        947
+      ],
+      [
+        956,
+        1082
+      ],
+      [
+        1093,
+        1212
+      ],
+      [
+        1222,
+        1346
+      ],
+      [
+        1357,
+        1494
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6
+      ],
+      "hurt": [
+        7
+      ],
+      "death": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "dokkaebi": {
+    "columns": 8,
+    "bands": [
+      [
+        12,
+        131
+      ],
+      [
+        139,
+        260
+      ],
+      [
+        269,
+        389
+      ],
+      [
+        396,
+        514
+      ],
+      [
+        518,
+        651
+      ],
+      [
+        651,
+        805
+      ],
+      [
+        814,
+        927
+      ],
+      [
+        941,
+        1060
+      ],
+      [
+        1070,
+        1200
+      ],
+      [
+        1200,
+        1327
+      ],
+      [
+        1338,
+        1444
+      ],
+      [
+        1448,
+        1528
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "domovoi": {
+    "columns": 8,
+    "bands": [
+      [
+        8,
+        116
+      ],
+      [
+        131,
+        242
+      ],
+      [
+        257,
+        367
+      ],
+      [
+        385,
+        496
+      ],
+      [
+        527,
+        625
+      ],
+      [
+        634,
+        757
+      ],
+      [
+        780,
+        879
+      ],
+      [
+        909,
+        1008
+      ],
+      [
+        1048,
+        1145
+      ],
+      [
+        1184,
+        1274
+      ],
+      [
+        1305,
+        1387
+      ],
+      [
+        1425,
+        1512
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "draugen": {
+    "columns": 8,
+    "bands": [
+      [
+        11,
+        140
+      ],
+      [
+        154,
+        282
+      ],
+      [
+        300,
+        428
+      ],
+      [
+        445,
+        571
+      ],
+      [
+        582,
+        723
+      ],
+      [
+        734,
+        855
+      ],
+      [
+        874,
+        995
+      ],
+      [
+        1019,
+        1142
+      ],
+      [
+        1167,
+        1281
+      ],
+      [
+        1295,
+        1420
+      ],
+      [
+        1420,
+        1527
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6
+      ],
+      "hurt": [
+        7
+      ],
+      "death": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "draugur": {
+    "columns": 8,
+    "bands": [
+      [
+        6,
+        127
+      ],
+      [
+        135,
+        255
+      ],
+      [
+        263,
+        382
+      ],
+      [
+        389,
+        509
+      ],
+      [
+        516,
+        644
+      ],
+      [
+        648,
+        766
+      ],
+      [
+        774,
+        893
+      ],
+      [
+        901,
+        1020
+      ],
+      [
+        1035,
+        1153
+      ],
+      [
+        1171,
+        1279
+      ],
+      [
+        1314,
+        1403
+      ],
+      [
+        1440,
+        1523
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "e-gui": {
+    "columns": 8,
+    "bands": [
+      [
+        10,
+        132
+      ],
+      [
+        141,
+        266
+      ],
+      [
+        276,
+        400
+      ],
+      [
+        411,
+        536
+      ],
+      [
+        548,
+        667
+      ],
+      [
+        684,
+        795
+      ],
+      [
+        806,
+        920
+      ],
+      [
+        929,
+        1054
+      ],
+      [
+        1070,
+        1184
+      ],
+      [
+        1202,
+        1313
+      ],
+      [
+        1320,
+        1422
+      ],
+      [
+        1437,
+        1522
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "fossegrim": {
+    "columns": 8,
+    "bands": [
+      [
+        7,
+        149
+      ],
+      [
+        156,
+        297
+      ],
+      [
+        306,
+        451
+      ],
+      [
+        462,
+        611
+      ],
+      [
+        622,
+        771
+      ],
+      [
+        780,
+        927
+      ],
+      [
+        935,
+        1081
+      ],
+      [
+        1091,
+        1225
+      ],
+      [
+        1257,
+        1365
+      ],
+      [
+        1385,
+        1523
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "attack": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "hurt": [
+        7
+      ],
+      "death": [
+        7,
+        8,
+        9
+      ]
+    },
+    "notes": [
+      "Measured10source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "gashadokuro": {
+    "columns": 8,
+    "bands": [
+      [
+        10,
+        135
+      ],
+      [
+        145,
+        268
+      ],
+      [
+        278,
+        399
+      ],
+      [
+        409,
+        530
+      ],
+      [
+        539,
+        695
+      ],
+      [
+        708,
+        833
+      ],
+      [
+        842,
+        964
+      ],
+      [
+        973,
+        1095
+      ],
+      [
+        1109,
+        1238
+      ],
+      [
+        1263,
+        1377
+      ],
+      [
+        1414,
+        1500
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6
+      ],
+      "hurt": [
+        7
+      ],
+      "death": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "gumiho": {
+    "columns": 8,
+    "bands": [
+      [
+        14,
+        136
+      ],
+      [
+        150,
+        271
+      ],
+      [
+        283,
+        405
+      ],
+      [
+        418,
+        539
+      ],
+      [
+        562,
+        674
+      ],
+      [
+        689,
+        801
+      ],
+      [
+        808,
+        929
+      ],
+      [
+        945,
+        1060
+      ],
+      [
+        1081,
+        1193
+      ],
+      [
+        1217,
+        1313
+      ],
+      [
+        1339,
+        1521
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6
+      ],
+      "hurt": [
+        7
+      ],
+      "death": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "huldra": {
+    "columns": 8,
+    "bands": [
+      [
+        11,
+        128
+      ],
+      [
+        137,
+        256
+      ],
+      [
+        264,
+        383
+      ],
+      [
+        393,
+        511
+      ],
+      [
+        522,
+        638
+      ],
+      [
+        642,
+        773
+      ],
+      [
+        781,
+        895
+      ],
+      [
+        900,
+        1021
+      ],
+      [
+        1034,
+        1152
+      ],
+      [
+        1169,
+        1276
+      ],
+      [
+        1299,
+        1405
+      ],
+      [
+        1429,
+        1526
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "huli-jing": {
+    "columns": 8,
+    "bands": [
+      [
+        13,
+        155
+      ],
+      [
+        163,
+        305
+      ],
+      [
+        314,
+        457
+      ],
+      [
+        467,
+        606
+      ],
+      [
+        617,
+        760
+      ],
+      [
+        769,
+        912
+      ],
+      [
+        922,
+        1065
+      ],
+      [
+        1079,
+        1213
+      ],
+      [
+        1224,
+        1365
+      ],
+      [
+        1365,
+        1517
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9
+      ]
+    },
+    "notes": [
+      "Measured10source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "jiangshi": {
+    "columns": 8,
+    "bands": [
+      [
+        5,
+        153
+      ],
+      [
+        158,
+        302
+      ],
+      [
+        309,
+        456
+      ],
+      [
+        471,
+        608
+      ],
+      [
+        617,
+        751
+      ],
+      [
+        757,
+        894
+      ],
+      [
+        900,
+        1039
+      ],
+      [
+        1046,
+        1171
+      ],
+      [
+        1180,
+        1288
+      ],
+      [
+        1293,
+        1400
+      ],
+      [
+        1400,
+        1523
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6
+      ],
+      "hurt": [
+        7
+      ],
+      "death": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "kikimora": {
+    "columns": 8,
+    "bands": [
+      [
+        6,
+        131
+      ],
+      [
+        131,
+        257
+      ],
+      [
+        261,
+        385
+      ],
+      [
+        391,
+        513
+      ],
+      [
+        527,
+        639
+      ],
+      [
+        645,
+        769
+      ],
+      [
+        780,
+        896
+      ],
+      [
+        901,
+        1024
+      ],
+      [
+        1031,
+        1153
+      ],
+      [
+        1167,
+        1278
+      ],
+      [
+        1291,
+        1398
+      ],
+      [
+        1410,
+        1525
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "kuchisake-onna": {
+    "columns": 8,
+    "bands": [
+      [
+        6,
+        131
+      ],
+      [
+        143,
+        268
+      ],
+      [
+        280,
+        406
+      ],
+      [
+        418,
+        545
+      ],
+      [
+        549,
+        702
+      ],
+      [
+        702,
+        847
+      ],
+      [
+        860,
+        986
+      ],
+      [
+        1005,
+        1132
+      ],
+      [
+        1144,
+        1265
+      ],
+      [
+        1276,
+        1411
+      ],
+      [
+        1435,
+        1523
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6
+      ],
+      "hurt": [
+        7
+      ],
+      "death": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "leshy": {
+    "columns": 8,
+    "bands": [
+      [
+        7,
+        129
+      ],
+      [
+        137,
+        258
+      ],
+      [
+        262,
+        385
+      ],
+      [
+        391,
+        513
+      ],
+      [
+        521,
+        641
+      ],
+      [
+        649,
+        774
+      ],
+      [
+        774,
+        898
+      ],
+      [
+        907,
+        1027
+      ],
+      [
+        1033,
+        1156
+      ],
+      [
+        1179,
+        1292
+      ],
+      [
+        1306,
+        1408
+      ],
+      [
+        1433,
+        1525
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "mare": {
+    "columns": 8,
+    "bands": [
+      [
+        9,
+        145
+      ],
+      [
+        154,
+        286
+      ],
+      [
+        297,
+        431
+      ],
+      [
+        443,
+        574
+      ],
+      [
+        585,
+        713
+      ],
+      [
+        725,
+        852
+      ],
+      [
+        865,
+        996
+      ],
+      [
+        1018,
+        1146
+      ],
+      [
+        1162,
+        1285
+      ],
+      [
+        1296,
+        1425
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9
+      ]
+    },
+    "notes": [
+      "Measured10source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "mulgwishin": {
+    "columns": 8,
+    "bands": [
+      [
+        10,
+        132
+      ],
+      [
+        138,
+        257
+      ],
+      [
+        265,
+        386
+      ],
+      [
+        394,
+        514
+      ],
+      [
+        521,
+        640
+      ],
+      [
+        647,
+        766
+      ],
+      [
+        773,
+        891
+      ],
+      [
+        900,
+        1023
+      ],
+      [
+        1034,
+        1151
+      ],
+      [
+        1177,
+        1274
+      ],
+      [
+        1312,
+        1396
+      ],
+      [
+        1423,
+        1522
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "nisse": {
+    "columns": 8,
+    "bands": [
+      [
+        17,
+        131
+      ],
+      [
+        150,
+        265
+      ],
+      [
+        284,
+        400
+      ],
+      [
+        419,
+        536
+      ],
+      [
+        557,
+        669
+      ],
+      [
+        682,
+        807
+      ],
+      [
+        833,
+        941
+      ],
+      [
+        966,
+        1077
+      ],
+      [
+        1104,
+        1215
+      ],
+      [
+        1260,
+        1354
+      ],
+      [
+        1388,
+        1507
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6
+      ],
+      "hurt": [
+        7
+      ],
+      "death": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "nokken": {
+    "columns": 8,
+    "bands": [
+      [
+        11,
+        132
+      ],
+      [
+        142,
+        260
+      ],
+      [
+        270,
+        388
+      ],
+      [
+        398,
+        516
+      ],
+      [
+        525,
+        655
+      ],
+      [
+        662,
+        797
+      ],
+      [
+        814,
+        943
+      ],
+      [
+        955,
+        1076
+      ],
+      [
+        1095,
+        1204
+      ],
+      [
+        1239,
+        1351
+      ],
+      [
+        1392,
+        1517
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6
+      ],
+      "hurt": [
+        7
+      ],
+      "death": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "nu-gui": {
+    "columns": 8,
+    "bands": [
+      [
+        3,
+        125
+      ],
+      [
+        135,
+        257
+      ],
+      [
+        268,
+        390
+      ],
+      [
+        399,
+        522
+      ],
+      [
+        532,
+        655
+      ],
+      [
+        664,
+        782
+      ],
+      [
+        792,
+        912
+      ],
+      [
+        920,
+        1041
+      ],
+      [
+        1052,
+        1170
+      ],
+      [
+        1185,
+        1286
+      ],
+      [
+        1313,
+        1409
+      ],
+      [
+        1421,
+        1527
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "onryo": {
+    "columns": 8,
+    "bands": [
+      [
+        11,
+        137
+      ],
+      [
+        148,
+        274
+      ],
+      [
+        287,
+        413
+      ],
+      [
+        424,
+        552
+      ],
+      [
+        566,
+        687
+      ],
+      [
+        701,
+        822
+      ],
+      [
+        835,
+        959
+      ],
+      [
+        970,
+        1097
+      ],
+      [
+        1113,
+        1232
+      ],
+      [
+        1254,
+        1349
+      ],
+      [
+        1360,
+        1520
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6
+      ],
+      "hurt": [
+        7
+      ],
+      "death": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "rokurokubi": {
+    "columns": 8,
+    "bands": [
+      [
+        6,
+        131
+      ],
+      [
+        135,
+        260
+      ],
+      [
+        260,
+        389
+      ],
+      [
+        389,
+        516
+      ],
+      [
+        516,
+        643
+      ],
+      [
+        643,
+        770
+      ],
+      [
+        776,
+        898
+      ],
+      [
+        902,
+        1026
+      ],
+      [
+        1033,
+        1156
+      ],
+      [
+        1173,
+        1282
+      ],
+      [
+        1297,
+        1409
+      ],
+      [
+        1418,
+        1527
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "rusalka": {
+    "columns": 8,
+    "bands": [
+      [
+        13,
+        144
+      ],
+      [
+        155,
+        287
+      ],
+      [
+        293,
+        427
+      ],
+      [
+        434,
+        566
+      ],
+      [
+        577,
+        705
+      ],
+      [
+        718,
+        846
+      ],
+      [
+        858,
+        988
+      ],
+      [
+        999,
+        1127
+      ],
+      [
+        1148,
+        1265
+      ],
+      [
+        1285,
+        1399
+      ],
+      [
+        1430,
+        1525
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6
+      ],
+      "hurt": [
+        7
+      ],
+      "death": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses.",
+      "Wider224px export cell retains complete horizontal strike silhouette, with the same native body scale."
+    ],
+    "isolate": true,
+    "padX": 44
+  },
+  "sending": {
+    "columns": 9,
+    "bands": [
+      [
+        5,
+        125
+      ],
+      [
+        130,
+        250
+      ],
+      [
+        258,
+        380
+      ],
+      [
+        388,
+        508
+      ],
+      [
+        515,
+        636
+      ],
+      [
+        645,
+        766
+      ],
+      [
+        774,
+        889
+      ],
+      [
+        900,
+        1020
+      ],
+      [
+        1034,
+        1148
+      ],
+      [
+        1161,
+        1273
+      ],
+      [
+        1291,
+        1398
+      ],
+      [
+        1426,
+        1521
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses.",
+      "Source has9nonuniform columns; final repeated south omitted, pivots explicitly measured.",
+      "Wider224px export cell retains complete horizontal strike silhouette, with the same native body scale."
+    ],
+    "isolate": true,
+    "columnMap": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "columnCenters": [
+      60,
+      172,
+      282,
+      406,
+      535,
+      662,
+      780,
+      878,
+      972
+    ],
+    "padX": 44
+  },
+  "shui-gui": {
+    "columns": 8,
+    "bands": [
+      [
+        9,
+        131
+      ],
+      [
+        142,
+        264
+      ],
+      [
+        274,
+        396
+      ],
+      [
+        402,
+        524
+      ],
+      [
+        535,
+        656
+      ],
+      [
+        664,
+        783
+      ],
+      [
+        795,
+        915
+      ],
+      [
+        927,
+        1047
+      ],
+      [
+        1065,
+        1176
+      ],
+      [
+        1191,
+        1308
+      ],
+      [
+        1323,
+        1428
+      ],
+      [
+        1435,
+        1530
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "tilberi": {
+    "columns": 8,
+    "bands": [
+      [
+        17,
+        133
+      ],
+      [
+        149,
+        261
+      ],
+      [
+        277,
+        389
+      ],
+      [
+        404,
+        517
+      ],
+      [
+        536,
+        646
+      ],
+      [
+        661,
+        772
+      ],
+      [
+        791,
+        901
+      ],
+      [
+        920,
+        1030
+      ],
+      [
+        1057,
+        1164
+      ],
+      [
+        1180,
+        1286
+      ],
+      [
+        1314,
+        1419
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6
+      ],
+      "hurt": [
+        7
+      ],
+      "death": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "notes": [
+      "Measured11source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "ubume": {
+    "columns": 8,
+    "bands": [
+      [
+        9,
+        129
+      ],
+      [
+        141,
+        257
+      ],
+      [
+        268,
+        384
+      ],
+      [
+        396,
+        513
+      ],
+      [
+        523,
+        639
+      ],
+      [
+        650,
+        768
+      ],
+      [
+        777,
+        896
+      ],
+      [
+        907,
+        1024
+      ],
+      [
+        1034,
+        1152
+      ],
+      [
+        1174,
+        1279
+      ],
+      [
+        1303,
+        1407
+      ],
+      [
+        1413,
+        1527
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "uppvakningur": {
+    "columns": 8,
+    "bands": [
+      [
+        7,
+        125
+      ],
+      [
+        135,
+        255
+      ],
+      [
+        266,
+        384
+      ],
+      [
+        395,
+        514
+      ],
+      [
+        526,
+        641
+      ],
+      [
+        650,
+        768
+      ],
+      [
+        781,
+        895
+      ],
+      [
+        905,
+        1023
+      ],
+      [
+        1041,
+        1155
+      ],
+      [
+        1175,
+        1282
+      ],
+      [
+        1306,
+        1407
+      ],
+      [
+        1431,
+        1524
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "utburdur": {
+    "columns": 8,
+    "bands": [
+      [
+        12,
+        126
+      ],
+      [
+        141,
+        255
+      ],
+      [
+        274,
+        387
+      ],
+      [
+        403,
+        517
+      ],
+      [
+        536,
+        648
+      ],
+      [
+        668,
+        781
+      ],
+      [
+        801,
+        913
+      ],
+      [
+        934,
+        1047
+      ],
+      [
+        1070,
+        1183
+      ],
+      [
+        1205,
+        1306
+      ],
+      [
+        1329,
+        1427
+      ],
+      [
+        1433,
+        1522
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "vodyanoy": {
+    "columns": 8,
+    "bands": [
+      [
+        23,
+        134
+      ],
+      [
+        152,
+        262
+      ],
+      [
+        285,
+        394
+      ],
+      [
+        413,
+        521
+      ],
+      [
+        545,
+        650
+      ],
+      [
+        670,
+        778
+      ],
+      [
+        793,
+        903
+      ],
+      [
+        923,
+        1033
+      ],
+      [
+        1056,
+        1164
+      ],
+      [
+        1193,
+        1288
+      ],
+      [
+        1314,
+        1396
+      ],
+      [
+        1432,
+        1510
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "wutou-gui": {
+    "columns": 8,
+    "bands": [
+      [
+        8,
+        136
+      ],
+      [
+        136,
+        268
+      ],
+      [
+        273,
+        401
+      ],
+      [
+        407,
+        535
+      ],
+      [
+        541,
+        673
+      ],
+      [
+        678,
+        806
+      ],
+      [
+        811,
+        942
+      ],
+      [
+        947,
+        1078
+      ],
+      [
+        1085,
+        1212
+      ],
+      [
+        1217,
+        1324
+      ],
+      [
+        1331,
+        1415
+      ],
+      [
+        1419,
+        1527
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  },
+  "yuki-onna": {
+    "columns": 8,
+    "bands": [
+      [
+        9,
+        128
+      ],
+      [
+        135,
+        256
+      ],
+      [
+        264,
+        384
+      ],
+      [
+        393,
+        512
+      ],
+      [
+        520,
+        640
+      ],
+      [
+        647,
+        766
+      ],
+      [
+        772,
+        893
+      ],
+      [
+        902,
+        1023
+      ],
+      [
+        1034,
+        1151
+      ],
+      [
+        1161,
+        1272
+      ],
+      [
+        1298,
+        1393
+      ],
+      [
+        1406,
+        1522
+      ]
+    ],
+    "actions": {
+      "idle": [
+        0,
+        2
+      ],
+      "move": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hurt": [
+        8
+      ],
+      "death": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "notes": [
+      "Measured12source rows; explicit clip ranges, no invented missing animation poses. Idle reuses movement-neutral poses."
+    ],
+    "isolate": true
+  }
+}

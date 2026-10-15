@@ -1,6 +1,7 @@
 // Monster behaviour as a pure step function run by the authoritative server (and by tests). States:
 // idle -> wander -> idle, chase -> attack (aggro), return (leash / target lost), dead -> respawn. Passive monsters
 // only chase after being hit (provokeMonster). Monsters never act inside safe zones and never cross blocked ground.
+import {facingFromVector,type Facing} from './character.js';
 import {elevationPassage} from './elevation.js';
 import { MONSTERS, type MonsterDefinition } from './combat.js';
 import { isBlocked, pointInRect, type MapDefinition, type Position, type SpawnRegion } from './world.js';
@@ -14,7 +15,7 @@ export interface MonsterMotion {
   regionId: string;
   home: Position;
   x: number; y: number;
-  facing: 'east' | 'west';
+  facing: Facing;
   state: MonsterAiState;
   hp: number;
   targetId: string | null;
@@ -69,13 +70,14 @@ export function createMonster(id: string, kind: string, region: SpawnRegion, at:
 function moveToward(m: MonsterMotion, to: Position, step: number, map: MapDefinition): boolean {
   const d = dist(m, to);
   if (d <= step) {
-    if (!isBlocked(map, to.x, to.y) && elevationPassage(map,m,to)) { m.x = to.x; m.y = to.y; }
+    if (!isBlocked(map, to.x, to.y) && elevationPassage(map,m,to)) { if(MONSTERS[m.kind]?.facingMode==='eight')m.facing=facingFromVector(to.x-m.x,to.y-m.y)??m.facing; m.x = to.x; m.y = to.y; }
     return true;
   }
   const dx = (to.x - m.x) / d * step, dy = (to.y - m.y) / d * step;
   const options = [{ x: m.x + dx, y: m.y + dy }, { x: m.x + dx, y: m.y }, { x: m.x, y: m.y + dy }];
   const next = options.find((p) => !isBlocked(map, p.x, p.y) && elevationPassage(map,m,p));
-  if (Math.abs(dx) > 0.001) m.facing = dx > 0 ? 'east' : 'west';
+  if(MONSTERS[m.kind]?.facingMode==='eight'){if(next)m.facing=facingFromVector(next.x-m.x,next.y-m.y)??m.facing;}
+  else if (Math.abs(dx) > 0.001) m.facing = dx > 0 ? 'east' : 'west';
   if (!next) return true; // Stuck: treat as arrived so the AI picks something else.
   m.x = next.x; m.y = next.y;
   return false;
@@ -142,7 +144,7 @@ export function stepMonster(m: MonsterMotion, players: readonly MonsterTarget[],
     }
     case 'attack': {
       if (!target || inSafeZone(map, target)) { giveUp(); break; }
-      m.facing = target.x >= m.x ? 'east' : 'west';
+      m.facing = def.facingMode==='eight'?(facingFromVector(target.x-m.x,target.y-m.y)??m.facing):(target.x >= m.x ? 'east' : 'west');
       if (m.swingAt > 0) {
         if (now >= m.swingAt) {
           m.swingAt = 0;
@@ -166,4 +168,11 @@ export function stepMonster(m: MonsterMotion, players: readonly MonsterTarget[],
     }
   }
   return events;
+}
+
+/** World-space rear half-plane for new octant sprites; legacy east/west remains exact. */
+export function isBehindMonster(at:Position,m:Pick<MonsterMotion,'x'|'y'|'facing'>):boolean {
+ if(m.facing==='east')return at.x<m.x;if(m.facing==='west')return at.x>m.x;
+ const vectors:Record<string,[number,number]>={south:[0,1],'south-east':[1,1],'north-east':[1,-1],north:[0,-1],'north-west':[-1,-1],'south-west':[-1,1]};
+ const v=vectors[m.facing]!;return (at.x-m.x)*v[0]+(at.y-m.y)*v[1]<0;
 }
