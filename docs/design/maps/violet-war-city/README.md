@@ -1,0 +1,15 @@
+# นครเถ้าม่วง — Chinese war-city preview
+
+Open http://localhost:3000/maps/violet-war-city . Third designed China map: two existing Chinese maps remain live; this new city is isolated for visual review. No live warp/NPC/monsters, no level range fabricated, no replacement of WORLD-30 nodes. Name/history provisional.
+
+96×76 world,57 authored objects,6 required landmarks,9 inspection destinations. Breached city gate, ruined merchant quarter, war square, grand imperial archive, southern barracks and mutated eastern grove. Water follows authored west moat/causeway plus southeast basin. Three fog zones,11 violet fires anchored to rubble; user-requested environmental color, no skill effects or damage. One generated original3×3 atlas (actual1254×1254 RGBA) retained unchanged under public/assets/umbral/violet-war-01/source.png, with prompt.txt/provenance.json. PixelLab balance0/ComfyUI unavailable; imagegen fallback, one generation/no retry.
+
+Native nearest crops, original painted-pixel quilting and corner material masks. Original source alpha unedited. Procedural sprite flicker/33 tiny ember pixels, no invented multi-frame animation. Existing WaterLayer motion and shore masks; independent atlas intentionally omits legacy object reflections. No perspective change or isometric diamonds. Flat logical terrain, palace steps pictured in facade are decorative; no climbable floor/enterable interior claim.
+
+Review: overview starts label-free; walk with arrows/WASD/pad; automatic round-trip route; select9 local inspection locations. Palace selection fits facade and court; manual motion restores player camera. Review actor/focus is local, never represented as gameplay travel. Resize preserves world state; observer/listeners/game cleaned up on unmount.
+
+Tests: node tools/map/build-violet-war-city.mjs; node tools/map/test-violet-war-city.mjs. Required IDs/native source hash/frame bounds, all wet footprints,9 destination BFS, main route shared-movement round trip pass. Route73.803units/18.451seconds one way;25,588 reachable half-unit samples. Failed candidates corrected explicitly in layout.md (gate turn and one rubble pair), final failedPlacements empty. Build/typecheck and existing China/atlas regressions pass. Technical tests are not user visual approval.
+
+Browser desktop1280×720 plus390×844/844×390 inspected; actual screenshots in screens. Physical-device touch/performance not certified. New source/layout/preview are committed separately from unrelated pending character/equipment work.
+
+Actual browser evidence: automatic shared-movement tour4 one-way passes (two complete round trips), manual walking from76,31→74,31, water coverage110,402 native pixels; resize retained74,31. Palace full-facade framing, label-free overview and grove/court views inspected. First independent WaterLayer attempt expected legacy manifest reflections; fixed the preview binding to omit unsupported custom-object reflections, preserving original WaterLayer and all live behavior. Final runtime displays water/fire/mist/objects with ready=true and no current blocking errors.

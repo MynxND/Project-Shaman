@@ -20,3 +20,5 @@ Approved requirement: entering a new nation must visibly change terrain material
 Per-nation gate before the next map: record landform/terrain adjacency, native asset kit/anchors, silhouettes, palette/light, source/prompt/provenance and missing modules in layout.md. Show label-off overview and actual player camera at entrance, landmark and combat zone. Review desktop and phone. Technical tests never grant human art approval.
 
 Current implementation: China kit01 replaces ground/trees/low shrubs/rock/seal markers and Thai-looking huts in mist-bamboo and cloud-tea-slopes. Original Chinese tea hall retained. Layout/footprints/world dimensions are unchanged. One original imagegen atlas; source pixels/alpha preserved, runtime native nearest crops,3 new painted ground materials. Other nations are future work and have not been generated or adopted by this policy.
+
+China third-map variant2026-10-15: violet-war-city uses original ruined Chinese palace/gate/houses/walls, ash/limestone and purple mutation grove. User-approved theme; specific name/history provisional. Preview only, existing two live China maps retained.
