@@ -13,3 +13,5 @@ Norway2026-10-15: three local previews now use an original tall-gabled timber sh
 
 
 Ireland preview2026-10-15: original oversized limestone dolmen anchors stone-oath-moor, with low thatched/whitewashed cottages, dry-stone garden walls, copper oak and willow. General material/silhouette readings: Heritage Ireland Poulnabrone Portal Tomb and National Museum of Ireland architecture FAQ (links in ireland-01 manifest); no real-site replica, copied symbols or downloaded reference pixels. All3 local previews, no live adoption or final user visual approval.
+
+Russia2026-10-15: three local previews now use an original tiered timber fortress with shingle finials, log izba/stockades and spruce/birch snow/thaw terrain. General Kizhi/Vitoslavlitsy material reading linked in russia-three/README.md, no borrowed reference pixels/site replica/crosses. Preview only; user art acceptance and live adoption pending.

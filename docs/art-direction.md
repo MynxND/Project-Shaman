@@ -294,3 +294,8 @@ USER requests next roadmap nation3 previews before live adoption: Ireland follow
 ## Ireland live adoption — 2026-10-15
 
 Ireland3 live maps reuse their approved-for-adoption preview source atlas, independent layouts, water and localized mist. Existing owned monster aliases are provisional, not newly generated Irish species. Actual browser/screens evidence: design/maps/ireland-three/live01/README.md; technical checks do not imply final visual approval.
+
+
+## Russia three-map preview — 2026-10-15
+
+Russia3 preview identity uses original snow spruce/white birch/peat taiga, log izba, palisades and iconic tiered timber shaman fortress. Source alpha/prompt/hash retained, imagegen fallback after PixelLab0/Comfy unavailable. Original regional composite, no site replica/sacred script. Desktop/mobile inspected; final user art approval pending. See design/maps/russia-three/README.md.

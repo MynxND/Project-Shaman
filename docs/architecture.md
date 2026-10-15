@@ -569,3 +569,8 @@ Ireland local gallery /maps/ireland adds independent authored JSON/Phaser review
 ## Ireland live adoption — 2026-10-15
 
 Ireland live adoption uses additive Aurora boundary wrapper, shared IRELAND_MAPS/resident definitions and scoped IrelandRegion renderer; world atlas35nodes/21live. Existing authoritative travel/combat/service protocols are reused. Evidence: design/maps/ireland-three/live01/README.md.
+
+
+## Russia three-map preview — 2026-10-15
+
+Russia3 isolated JSON/Phaser/React previews reuse native water, immutable edge ecology and shared movement; scoped regional profile adds snow/peat and snow/unsnowed pine crops. No authoritative MAPS/protocol/store changes. See design/maps/russia-three/README.md.

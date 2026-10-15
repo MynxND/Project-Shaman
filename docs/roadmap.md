@@ -645,3 +645,8 @@ Ireland3 local previews delivered: golden-spiritwood, stone-oath-moor, willow-wa
 ## Ireland live adoption — 2026-10-15
 
 Ireland3 now live, linked from Aurora Pass with reciprocal boundary travel,9NPCs/27residents and original preview water/mist. Build/typecheck/shared/layout/atlas and network/game-browser checks pass. Atlas35/12nations/21live/14planned. Evidence: design/maps/ireland-three/live01/README.md.
+
+
+## Russia three-map preview — 2026-10-15
+
+Russia3 local previews delivered: frost-pine, taiga-blood-trail and iconic winter-seal-kremlin. Dedicated ground/tree/building kit, animated water/mist and snow on2maps; level proposals60–75/70–85/75–90. Build/typecheck/shared/geometry/old-country/atlas checks pass, desktop/mobile inspected. No live adoption; atlas35/21live unchanged. See design/maps/russia-three/README.md.

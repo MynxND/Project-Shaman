@@ -615,3 +615,8 @@ Completed existing-outfit priority countries; USER now asks next roadmap nation.
 ## Ireland live adoption — 2026-10-15
 
 User authorized Ireland3 live adoption. Connect Aurora→Golden Spiritwood→Stone Oath Moor→Willow Wake Village through reciprocal edge gates with dry safe arrivals,3NPCs/9residents each. Preserve old systems. Server six-trip/services/combat/EXP/persistence/observer QA and actual browser boundary input passed. See design/maps/ireland-three/live01/README.md.
+
+
+## Russia three-map preview — 2026-10-15
+
+User selected Russia next. Deliver frost-pine, taiga-blood-trail, winter-seal-kremlin as local previews; first2plannedIDs reused, third geography/levels provisional. Keep21live/35atlas intact until adoption. Dedicated regional kit, irregular dry/wet contours, bounded cosmetic snow and localized water mist. Tests/build/browser evidence in design/maps/russia-three/README.md.

@@ -1,0 +1,114 @@
+{
+  "provider": "imagegen",
+  "generations": 1,
+  "source": "source.png",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "sourceSha256": "06755af4b8f11ce736d36fc76a0f087829510ad0352f57fc278c13524edcf0c1",
+  "alpha": "original preserved; bright-blue edge RGB has alpha<=5/255, not opaque pixels",
+  "fallback": "PixelLab0/Comfy8188 unavailable",
+  "references": [
+    "https://site.kizhi.karelia.ru/architecture/pages/about.html",
+    "https://novgorodmuseum.ru/muzei/vitoslavlitsy"
+  ],
+  "frames": {
+    "hall": {
+      "x": 10,
+      "y": 0,
+      "w": 360,
+      "h": 390
+    },
+    "izba": {
+      "x": 382,
+      "y": 48,
+      "w": 302,
+      "h": 340
+    },
+    "bell": {
+      "x": 701,
+      "y": 0,
+      "w": 225,
+      "h": 390
+    },
+    "store": {
+      "x": 954,
+      "y": 110,
+      "w": 278,
+      "h": 281
+    },
+    "pine": {
+      "x": 28,
+      "y": 387,
+      "w": 294,
+      "h": 342
+    },
+    "birch": {
+      "x": 348,
+      "y": 385,
+      "w": 279,
+      "h": 348
+    },
+    "darkpine": {
+      "x": 659,
+      "y": 385,
+      "w": 291,
+      "h": 350
+    },
+    "lantern": {
+      "x": 1003,
+      "y": 451,
+      "w": 214,
+      "h": 266
+    },
+    "stockade": {
+      "x": 15,
+      "y": 765,
+      "w": 346,
+      "h": 195
+    },
+    "sidewall": {
+      "x": 424,
+      "y": 728,
+      "w": 120,
+      "h": 231
+    },
+    "rock": {
+      "x": 619,
+      "y": 740,
+      "w": 352,
+      "h": 225
+    },
+    "ward": {
+      "x": 985,
+      "y": 716,
+      "w": 253,
+      "h": 244
+    },
+    "moss": {
+      "x": 52,
+      "y": 977,
+      "w": 235,
+      "h": 220
+    },
+    "peat": {
+      "x": 365,
+      "y": 977,
+      "w": 226,
+      "h": 220
+    },
+    "soil": {
+      "x": 669,
+      "y": 977,
+      "w": 228,
+      "h": 220
+    },
+    "road": {
+      "x": 973,
+      "y": 981,
+      "w": 225,
+      "h": 214
+    }
+  }
+}
