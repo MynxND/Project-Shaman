@@ -3,6 +3,7 @@ import{WORLD_UNIT_PX as U,MAP_ASSET_SCALE,type MapDefinition}from'@shaman/shared
 import{WaterLayer,preloadWater}from'../../game/world/WaterLayer';
 import{rasterNativeTerrain}from'../../game/world/native-terrain';
 import{quiltPaint}from'../../game/world/china-quilt';
+import{weatherGroundEdges}from'../../game/world/weathered-ground';
 import{addContactShadow}from'../../game/world/Lighting';
 import{addSpiritwoodAtmosphere}from'../../game/world/SpiritwoodAtmosphere';
 import kit from'../../../public/assets/umbral/japan-01/manifest.json';
@@ -19,7 +20,10 @@ export function renderJapan(scene:Phaser.Scene,map:MapDefinition,plan:(typeof ja
  const canvas=scene.textures.createCanvas(key,w,h)!,out=canvas.context.createImageData(w,h),raster=rasterNativeTerrain(map,U);
  // A second semantic view identifies dirt without changing the authoritative material geometry.
  const soil=rasterNativeTerrain({...map,terrain:{base:map.terrain?.base==='dirt'?'road':'grass',paint:(map.terrain?.paint??[]).map(p=>({...p,terrain:p.terrain==='dirt'?'road':p.terrain==='road'?'grass':p.terrain}))}},U);
- for(const[name,size,seed]of[['moss',256,711],['soil',256,712],['road',128,713]]as const){const source=scene.textures.get(frame(scene,name,size,true,snow)).getSourceImage()as HTMLCanvasElement,pixels=quiltPaint(source.getContext('2d')!.getImageData(0,0,size,size).data,size,w,h,seed,2);for(let cell=0;cell<raster.materials.length;cell++){const material=raster.materials[cell]===1?'road':soil.materials[cell]===1?'soil':'moss';if(material!==name)continue;const i=cell*4;out.data[i]=pixels[i]!;out.data[i+1]=pixels[i+1]!;out.data[i+2]=pixels[i+2]!;out.data[i+3]=255;}}
+ const groundMaterials=new Uint8Array(raster.materials.length);for(let i=0;i<groundMaterials.length;i++)groundMaterials[i]=raster.water[i]?3:raster.materials[i]===1?2:soil.materials[i]===1?1:0;
+ // Broken material lips are visual only; authoritative terrain and native water coverage remain exact.
+ const worn=weatherGroundEdges(groundMaterials,w,h);
+ for(const[name,size,seed]of[['moss',256,711],['soil',256,712],['road',128,713]]as const){const source=scene.textures.get(frame(scene,name,size,true,snow)).getSourceImage()as HTMLCanvasElement,pixels=quiltPaint(source.getContext('2d')!.getImageData(0,0,size,size).data,size,w,h,seed,2);for(let cell=0;cell<raster.materials.length;cell++){const material=worn[cell]===2?'road':worn[cell]===1?'soil':'moss';if(material!==name)continue;const i=cell*4;out.data[i]=pixels[i]!;out.data[i+1]=pixels[i+1]!;out.data[i+2]=pixels[i+2]!;out.data[i+3]=255;}}
  canvas.context.putImageData(out,0,0);canvas.refresh();canvas.setFilter(Phaser.Textures.FilterMode.NEAREST);scene.add.image(0,0,key).setOrigin(0).setDepth(-1.8);scene.events.once(Phaser.Scenes.Events.SHUTDOWN,()=>scene.textures.remove(key));
  const water=new WaterLayer(scene,{...map,objects:[]});water.setNativeCoverage(rasterNativeTerrain(map,U/MAP_ASSET_SCALE).water);water.finish();
  for(const o of map.objects as(MapDefinition['objects'][number]&{width:number})[]){const image=scene.add.image(o.x*U,o.y*U,frame(scene,o.asset as Frame,o.width,false,snow)).setOrigin(.5,1).setScale(MAP_ASSET_SCALE).setName(o.id).setDepth(o.asset==='bridge'?-1.3:o.y*U);if(o.flip)image.setFlipX(true);if(o.asset!=='bridge')addContactShadow(scene,o.x*U,o.y*U,o.footprint?o.footprint.w*U:o.width*.65);}
