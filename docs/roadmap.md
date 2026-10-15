@@ -685,3 +685,7 @@ User authorized all audit02 repairs with ImageGen. Adopt22 replacement walk cycl
 ## Folklore ranged attacks05 — user2026-10-15
 
 Replace uniform orbs with17 species-specific folklore-inspired pixel motifs, distinct base ranges2.6–6.8 and speeds4.5–9 world units/s. Mouth/hand/fiddle/bundle origins, existing pose-impact timing, shared world/preview silhouette renderer and Thai rationale/comparison table. Explicit adaptations and provisional balance; no additional status/AoE or player-skill change. Existing attack hysteresis and authoritative fixed-aim dodge retained;48-flight cleanup budget. No generation, sprite/layout/NPC/portal/resident changes,34live/Korea6planned and Ireland game lore retained. Tests/typecheck/build and sampled desktop/mobile preview inspected; actual-game new-effect visual review unverified. Sources/profiles/evidence: design/monsters/folklore-01/encounter-05/README.md.
+
+
+### 2026-10-15 — ranged VFX art07 review scope
+Three new prototypes (Yuki-onna, Vodyanoy, Sending) have authored eight-direction material atlases and an isolated actual-game review workflow. Final measurements and screenshots live in docs/design/monsters/folklore-01/vfx-07 and /monster-review/ranged-vfx-07/index.html. Fourteen older ranged effects still need art work; the previous all-seventeen run was halted at230 technical cases after visual rejection. User art approval remains open.

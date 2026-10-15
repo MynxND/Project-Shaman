@@ -1,0 +1,101 @@
+{
+  "frost": {
+    "sourceDimensions": [
+      1774,
+      887
+    ],
+    "sourceSha256": "a14126377dbc66f73780ba5e75193660f6cb1b68122df4f39c80e91f9e8d5ce9",
+    "frameWidth": 160,
+    "frameHeight": 160,
+    "framesPerDirection": 8,
+    "directions": [
+      "south",
+      "south-east",
+      "east",
+      "north-east",
+      "north",
+      "north-west",
+      "west",
+      "south-west"
+    ],
+    "flightFrames": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "impactFrames": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "notes": "Packing only: preserve RGBA, nearest scaling, baked eight rotations, no recoloring. Directional emission anchors remain separately measured from monster art."
+  },
+  "water": {
+    "sourceDimensions": [
+      1774,
+      887
+    ],
+    "sourceSha256": "038e18ba04c1f36488fec4231bdba8bcb44c005a87c424e63ad3c755e709ff9b",
+    "frameWidth": 160,
+    "frameHeight": 160,
+    "framesPerDirection": 8,
+    "directions": [
+      "south",
+      "south-east",
+      "east",
+      "north-east",
+      "north",
+      "north-west",
+      "west",
+      "south-west"
+    ],
+    "flightFrames": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "impactFrames": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "notes": "Packing only: preserve RGBA, nearest scaling, baked eight rotations, no recoloring. Directional emission anchors remain separately measured from monster art."
+  },
+  "curse": {
+    "sourceDimensions": [
+      1774,
+      887
+    ],
+    "sourceSha256": "f1d1312be9160dd54ecb5cbe47315b0bfb95928710de0c2ed41c0e2283670404",
+    "frameWidth": 160,
+    "frameHeight": 160,
+    "framesPerDirection": 8,
+    "directions": [
+      "south",
+      "south-east",
+      "east",
+      "north-east",
+      "north",
+      "north-west",
+      "west",
+      "south-west"
+    ],
+    "flightFrames": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "impactFrames": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "notes": "Packing only: preserve RGBA, nearest scaling, baked eight rotations, no recoloring. Directional emission anchors remain separately measured from monster art."
+  }
+}

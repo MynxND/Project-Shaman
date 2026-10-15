@@ -1,5 +1,6 @@
+import{MonsterArtVfxLayer,preloadMonsterArtVfx}from'./MonsterArtVfxLayer';
 import Phaser from 'phaser';
-import {monsterFacing,legacyMonsterFlip,monsterClip,monsterFrames,monsterAnimationKey,monsterMotionOffset,validateMonsterSheet,type MonsterSheet,type MonsterAction} from './monster-sprite-model';
+import {monsterFacing,legacyMonsterFlip,monsterClip,monsterFrames,monsterAnimationKey,monsterMotionOffset,monsterImpactFrame,validateMonsterSheet,type MonsterSheet,type MonsterAction} from './monster-sprite-model';
 import type {Facing} from '@shaman/shared';
 import type { MonsterState } from '@shaman/schema';
 import { projectedY, type MapDefinition, MONSTER_STATUS_TH, MONSTERS, WORLD_UNIT_PX } from '@shaman/shared';
@@ -26,8 +27,11 @@ interface Manifest { monsters: Record<string, SheetInfo> }
 /** Map-scoped textures avoid loading every nation's large directional atlases at once. */
 export function preloadMonsters(scene: Phaser.Scene,map?:MapDefinition) {
   const loaded:string[]=[];
+  if(process.env.NODE_ENV==='development'&&new URLSearchParams(location.search).get('rangedReview')==='1'){scene.load.on('progress',(n:number)=>window.dispatchEvent(new CustomEvent('ranged:load',{detail:'โหลดฉากจริง '+Math.round(n*100)+'%'})));scene.load.on('loaderror',(f:{key:string})=>window.dispatchEvent(new CustomEvent('ranged:load',{detail:'โหลดไม่สำเร็จ '+f.key})));}
   const queue=(manifest:Manifest)=>{
-    const needed=map?new Set((map.spawnRegions??[]).flatMap(r=>r.monsters.map(m=>m.kind))):new Set(Object.keys(manifest.monsters));
+    const review=process.env.NODE_ENV==='development'&&new URLSearchParams(location.search).get('rangedReview')==='1';
+    const needed=review?new Set(new URLSearchParams(location.search).get('vfxPrototype')==='1'?['yuki-onna','vodyanoy','sending']:Object.keys(manifest.monsters).filter(k=>MONSTERS[k]?.projectile?.motif)):map?new Set((map.spawnRegions??[]).flatMap(r=>r.monsters.map(m=>m.kind))):new Set(Object.keys(manifest.monsters));
+    preloadMonsterArtVfx(scene,needed);
     for(const kind of needed){const summon=MONSTERS[kind]?.boss?.summon.kind;if(summon)needed.add(summon);}
     for(const kind of needed){const s=manifest.monsters[kind];if(!s)continue;loaded.push(kind);if(!scene.textures.exists(sheetKey(kind)))scene.load.spritesheet(sheetKey(kind),`${BASE}/${s.image}`,{frameWidth:s.frameWidth,frameHeight:s.frameHeight});}
   };
@@ -72,11 +76,12 @@ export interface MonsterLayerHooks {
 
 export class MonsterLayer {
   private readonly orbs:MonsterOrbLayer;
+  private readonly artVfx:MonsterArtVfxLayer;
   private readonly manifest: Manifest | undefined;
   private readonly views = new Map<string, View>();
 
   constructor(private readonly scene: Phaser.Scene, private readonly hooks: MonsterLayerHooks, private readonly map?:MapDefinition) {
-    this.orbs=new MonsterOrbLayer(scene);
+    this.orbs=new MonsterOrbLayer(scene);this.artVfx=new MonsterArtVfxLayer(scene);
     this.manifest = scene.cache.json.get(MANIFEST_KEY) as Manifest | undefined;
     for (const [kind, s] of Object.entries(this.manifest?.monsters ?? {})) {
       if (!scene.textures.exists(sheetKey(kind))) continue;
@@ -132,7 +137,7 @@ export class MonsterLayer {
   }
 
   update(monsters: Map<string, MonsterState> | undefined, time: number, delta: number) {
-    this.orbs.update();
+    this.orbs.update();this.artVfx.update();
     const U = WORLD_UNIT_PX;
     const follow = 1 - Math.pow(1 - FOLLOW, delta / (1000 / 60));
     const seen = new Set<string>();
@@ -193,9 +198,10 @@ export class MonsterLayer {
   /** A server 'combat' event. */
   onEvent(e: CombatEventLike) {
     if (e.type === 'swing') {
-      if (e.attacker.kind === 'monster') { const v = this.views.get(e.attacker.id); if (v && !v.dead) this.play(v, 'attack', true); }
+      if (e.attacker.kind === 'monster') { const v = this.views.get(e.attacker.id); if (v && !v.dead) {if(e.facing)v.facing=e.facing;this.play(v, 'attack', true);} }
       else this.lunge(e.attacker.id, e.target.id, e.attackDelayMs);
     } else if (e.type === 'damage') {
+      if(e.target.kind==='player'&&e.amount>0)this.artVfx.impact(e.source);
       const at = e.target.kind === 'monster' ? this.monsterAt(e.target.id) : this.hooks.playerAt(e.target.id);
       if (!at) return;
       const color = e.target.kind === 'player' ? '#ff6b5a' : e.skill === 'bleed' ? '#ff8a7a' : e.skill ? '#9ff0d0' : '#ffffff';
@@ -214,7 +220,7 @@ export class MonsterLayer {
       const family=MONSTERS[e.kind]?.projectile?.family,view=this.views.get(e.from);
       if(family&&view){
         const target=e.aim?{x:e.aim.x*WORLD_UNIT_PX,y:this.y(e.aim.x,e.aim.y)}:this.hooks.playerAt(e.to);
-        if(target)this.orbs.launch({x:view.sprite.x,y:view.sprite.y-view.height*(MONSTERS[e.kind]?.projectile?.originHeight??.5)/.82},{x:target.x,y:target.y-26},e.flightMs,family,MONSTERS[e.kind]?.projectile?.motif);
+        if(target){const info=this.manifest!.monsters[e.kind]!,clip=monsterClip(info,'attack',view.facing),impact=monsterImpactFrame(info,clip),anim=view.sprite.anims.currentAnim;if(anim&&view.action==='attack')view.sprite.anims.setCurrentFrame(anim.frames[Math.min(impact,anim.frames.length-1)]!);const port=MONSTERS[e.kind]?.projectile?.origins?.[view.facing],scale=info.scale??MONSTER_SCALE,from=port?{x:view.sprite.x+(port.x-info.anchor.x)*scale,y:view.sprite.y+(port.y-info.anchor.y)*scale}:{x:view.sprite.x,y:view.sprite.y-view.height*(MONSTERS[e.kind]?.projectile?.originHeight??.5)/.82};this.scene.events.emit('ranged:render',{kind:e.kind,facing:view.facing,frame:view.sprite.anims.currentFrame?.index,from,expectedFrame:impact+1,port,to:{x:target.x,y:target.y-26},flightMs:e.flightMs});if(!this.artVfx.launch(e.from,e.kind,view.facing,from,{x:target.x,y:target.y-26},e.flightMs))this.orbs.launch(from,{x:target.x,y:target.y-26},e.flightMs,family,MONSTERS[e.kind]?.projectile?.motif); }
       }else this.projectile(e.from, e.to, e.flightMs);
     } else if (e.type === 'bolt') {
       this.bolt(e.from, e.to, e.flightMs);
@@ -315,12 +321,12 @@ export class MonsterLayer {
   }
 
   private destroyView(v: View) { v.sprite.destroy(); v.shadow.destroy(); v.ring.destroy(); v.label.destroy(); v.bar.destroy(); }
-  destroy() { this.orbs.destroy();for (const v of this.views.values()) this.destroyView(v); this.views.clear();this.logicalPositions.clear(); }
+  destroy() { this.artVfx.destroy();this.orbs.destroy();for (const v of this.views.values()) this.destroyView(v); this.views.clear();this.logicalPositions.clear(); }
 }
 
 /** The subset of the server's combat events this layer draws (see apps/server/src/rooms/combat-system.ts). */
 export type CombatEventLike =
-  | { type: 'swing'; attacker: { kind: 'player' | 'monster'; id: string }; target: { kind: 'player' | 'monster'; id: string }; attackDelayMs?: number }
+  | { type: 'swing'; attacker: { kind: 'player' | 'monster'; id: string }; target: { kind: 'player' | 'monster'; id: string }; attackDelayMs?: number; facing?:Facing }
   | { type: 'damage'; target: { kind: 'player' | 'monster'; id: string }; amount: number; source: string; skill?: string }
   | { type: 'heal'; target: { kind: 'player'; id: string }; amount: number }
   | { type: 'death'; target: { kind: 'player' | 'monster'; id: string }; killer?: string }

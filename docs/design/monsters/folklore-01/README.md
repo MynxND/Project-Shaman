@@ -54,3 +54,8 @@ Reuse repair03 poses with17 ranged pixel-orb attacks and23 melee roles. Current3
 ## Current themed ranged attacks05
 
 Supersedes encounter04 uniform orbs/range:17 species-specific silhouettes and17 different base ranges/speeds reuse existing poses and world/preview geometry. Thai adaptation notes and comparison table distinguish folklore motifs from invented gameplay; no added statuses. See [profiles, sources, runtime and validation](encounter-05/README.md). Canonical encounter-04.json now has version5;34 live/Korea6 planned unchanged.
+
+
+## Live audit06 and revised VFX art07
+
+User rejected thin procedural VFX during a230-case partial live audit; no full17 visual approval or completed289-case claim. Retain technical facing/impact/attachment fixes and add a guest-only isolated real-game review workflow. Three substantial ImageGen VFX prototypes (frost/water/curse) use lessons from the user-specified Godot library: material core, afterimages and server-confirmed impact.14 effects remain pending. See [source study, assets and real-game evidence](vfx-07/README.md).

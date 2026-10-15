@@ -121,7 +121,41 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "speed": 5,
       "family": "spirit",
       "motif": "krasue-embers",
-      "originHeight": 0.48
+      "originHeight": 0.48,
+      "origins": {
+        "south": {
+          "x": 96,
+          "y": 84
+        },
+        "south-west": {
+          "x": 67,
+          "y": 101
+        },
+        "west": {
+          "x": 66,
+          "y": 102
+        },
+        "north-west": {
+          "x": 65,
+          "y": 102
+        },
+        "north": {
+          "x": 96,
+          "y": 104
+        },
+        "north-east": {
+          "x": 142,
+          "y": 90
+        },
+        "east": {
+          "x": 124,
+          "y": 101
+        },
+        "south-east": {
+          "x": 118,
+          "y": 101
+        }
+      }
     }
   },
   "phi-krahang": {
@@ -244,7 +278,41 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "speed": 6,
       "family": "spirit",
       "motif": "frost-breath",
-      "originHeight": 0.54
+      "originHeight": 0.54,
+      "origins": {
+        "south": {
+          "x": 96,
+          "y": 90
+        },
+        "south-west": {
+          "x": 84,
+          "y": 85
+        },
+        "west": {
+          "x": 84,
+          "y": 88
+        },
+        "north-west": {
+          "x": 82,
+          "y": 88
+        },
+        "north": {
+          "x": 96,
+          "y": 89
+        },
+        "north-east": {
+          "x": 109,
+          "y": 87
+        },
+        "east": {
+          "x": 107,
+          "y": 88
+        },
+        "south-east": {
+          "x": 108,
+          "y": 85
+        }
+      }
     }
   },
   "kuchisake-onna": {
@@ -367,7 +435,41 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "speed": 4.5,
       "family": "spirit",
       "motif": "shroud-leaves",
-      "originHeight": 0.38
+      "originHeight": 0.38,
+      "origins": {
+        "south": {
+          "x": 96,
+          "y": 112
+        },
+        "south-west": {
+          "x": 62,
+          "y": 111
+        },
+        "west": {
+          "x": 58,
+          "y": 110
+        },
+        "north-west": {
+          "x": 53,
+          "y": 108
+        },
+        "north": {
+          "x": 96,
+          "y": 112
+        },
+        "north-east": {
+          "x": 130,
+          "y": 107
+        },
+        "east": {
+          "x": 123,
+          "y": 110
+        },
+        "south-east": {
+          "x": 117,
+          "y": 112
+        }
+      }
     }
   },
   "gashadokuro": {
@@ -451,7 +553,41 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "speed": 6.5,
       "family": "binding",
       "motif": "mourning-hair",
-      "originHeight": 0.38
+      "originHeight": 0.38,
+      "origins": {
+        "south": {
+          "x": 96,
+          "y": 112
+        },
+        "south-west": {
+          "x": 63,
+          "y": 111
+        },
+        "west": {
+          "x": 58,
+          "y": 110
+        },
+        "north-west": {
+          "x": 54,
+          "y": 110
+        },
+        "north": {
+          "x": 96,
+          "y": 109
+        },
+        "north-east": {
+          "x": 130,
+          "y": 109
+        },
+        "east": {
+          "x": 126,
+          "y": 111
+        },
+        "south-east": {
+          "x": 121,
+          "y": 111
+        }
+      }
     }
   },
   "mulgwishin": {
@@ -496,7 +632,41 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "speed": 5.5,
       "family": "spirit",
       "motif": "drowned-hand",
-      "originHeight": 0.38
+      "originHeight": 0.38,
+      "origins": {
+        "south": {
+          "x": 96,
+          "y": 110
+        },
+        "south-west": {
+          "x": 71,
+          "y": 112
+        },
+        "west": {
+          "x": 73,
+          "y": 111
+        },
+        "north-west": {
+          "x": 65,
+          "y": 109
+        },
+        "north": {
+          "x": 96,
+          "y": 111
+        },
+        "north-east": {
+          "x": 126,
+          "y": 109
+        },
+        "east": {
+          "x": 117,
+          "y": 111
+        },
+        "south-east": {
+          "x": 123,
+          "y": 110
+        }
+      }
     }
   },
   "dalgyal-gwishin": {
@@ -619,7 +789,41 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "speed": 8,
       "family": "yantra",
       "motif": "nine-fox-flames",
-      "originHeight": 0.38
+      "originHeight": 0.38,
+      "origins": {
+        "south": {
+          "x": 96,
+          "y": 112
+        },
+        "south-west": {
+          "x": 55,
+          "y": 112
+        },
+        "west": {
+          "x": 54,
+          "y": 114
+        },
+        "north-west": {
+          "x": 53,
+          "y": 116
+        },
+        "north": {
+          "x": 96,
+          "y": 116
+        },
+        "north-east": {
+          "x": 142,
+          "y": 116
+        },
+        "east": {
+          "x": 137,
+          "y": 113
+        },
+        "south-east": {
+          "x": 140,
+          "y": 113
+        }
+      }
     }
   },
   "chonggak-gwishin": {
@@ -664,7 +868,41 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "speed": 6,
       "family": "binding",
       "motif": "sleeve-knot",
-      "originHeight": 0.38
+      "originHeight": 0.38,
+      "origins": {
+        "south": {
+          "x": 96,
+          "y": 110
+        },
+        "south-west": {
+          "x": 53,
+          "y": 109
+        },
+        "west": {
+          "x": 53,
+          "y": 110
+        },
+        "north-west": {
+          "x": 55,
+          "y": 111
+        },
+        "north": {
+          "x": 96,
+          "y": 110
+        },
+        "north-east": {
+          "x": 137,
+          "y": 111
+        },
+        "east": {
+          "x": 139,
+          "y": 110
+        },
+        "south-east": {
+          "x": 137,
+          "y": 110
+        }
+      }
     }
   },
   "rusalka": {
@@ -709,7 +947,41 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "speed": 5.8,
       "family": "spirit",
       "motif": "river-tresses",
-      "originHeight": 0.38
+      "originHeight": 0.38,
+      "origins": {
+        "south": {
+          "x": 112,
+          "y": 103
+        },
+        "south-west": {
+          "x": 68,
+          "y": 103
+        },
+        "west": {
+          "x": 88,
+          "y": 102
+        },
+        "north-west": {
+          "x": 72,
+          "y": 102
+        },
+        "north": {
+          "x": 112,
+          "y": 104
+        },
+        "north-east": {
+          "x": 146,
+          "y": 102
+        },
+        "east": {
+          "x": 123,
+          "y": 104
+        },
+        "south-east": {
+          "x": 150,
+          "y": 103
+        }
+      }
     }
   },
   "leshy": {
@@ -871,7 +1143,41 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "speed": 4.8,
       "family": "spirit",
       "motif": "river-surge",
-      "originHeight": 0.38
+      "originHeight": 0.38,
+      "origins": {
+        "south": {
+          "x": 96,
+          "y": 112
+        },
+        "south-west": {
+          "x": 69,
+          "y": 114
+        },
+        "west": {
+          "x": 71,
+          "y": 120
+        },
+        "north-west": {
+          "x": 68,
+          "y": 117
+        },
+        "north": {
+          "x": 96,
+          "y": 116
+        },
+        "north-east": {
+          "x": 116,
+          "y": 119
+        },
+        "east": {
+          "x": 113,
+          "y": 121
+        },
+        "south-east": {
+          "x": 131,
+          "y": 118
+        }
+      }
     }
   },
   "bannik": {
@@ -1033,7 +1339,41 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "speed": 6.2,
       "family": "spirit",
       "motif": "shroud-wail",
-      "originHeight": 0.3
+      "originHeight": 0.3,
+      "origins": {
+        "south": {
+          "x": 96,
+          "y": 119
+        },
+        "south-west": {
+          "x": 80,
+          "y": 118
+        },
+        "west": {
+          "x": 74,
+          "y": 119
+        },
+        "north-west": {
+          "x": 71,
+          "y": 118
+        },
+        "north": {
+          "x": 96,
+          "y": 119
+        },
+        "north-east": {
+          "x": 111,
+          "y": 118
+        },
+        "east": {
+          "x": 113,
+          "y": 119
+        },
+        "south-east": {
+          "x": 108,
+          "y": 118
+        }
+      }
     }
   },
   "uppvakningur": {
@@ -1117,7 +1457,41 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "speed": 8.5,
       "family": "binding",
       "motif": "sent-curse",
-      "originHeight": 0.38
+      "originHeight": 0.38,
+      "origins": {
+        "south": {
+          "x": 92,
+          "y": 87
+        },
+        "south-west": {
+          "x": 94,
+          "y": 87
+        },
+        "west": {
+          "x": 101,
+          "y": 111
+        },
+        "north-west": {
+          "x": 101,
+          "y": 111
+        },
+        "north": {
+          "x": 112,
+          "y": 104
+        },
+        "north-east": {
+          "x": 150,
+          "y": 109
+        },
+        "east": {
+          "x": 146,
+          "y": 110
+        },
+        "south-east": {
+          "x": 136,
+          "y": 88
+        }
+      }
     }
   },
   "tilberi": {
@@ -1240,7 +1614,41 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "speed": 6.4,
       "family": "binding",
       "motif": "crimson-silk",
-      "originHeight": 0.38
+      "originHeight": 0.38,
+      "origins": {
+        "south": {
+          "x": 96,
+          "y": 110
+        },
+        "south-west": {
+          "x": 59,
+          "y": 110
+        },
+        "west": {
+          "x": 65,
+          "y": 109
+        },
+        "north-west": {
+          "x": 62,
+          "y": 108
+        },
+        "north": {
+          "x": 96,
+          "y": 109
+        },
+        "north-east": {
+          "x": 116,
+          "y": 108
+        },
+        "east": {
+          "x": 111,
+          "y": 109
+        },
+        "south-east": {
+          "x": 131,
+          "y": 108
+        }
+      }
     }
   },
   "e-gui": {
@@ -1324,7 +1732,41 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "speed": 5.4,
       "family": "spirit",
       "motif": "drowning-grasp",
-      "originHeight": 0.38
+      "originHeight": 0.38,
+      "origins": {
+        "south": {
+          "x": 96,
+          "y": 109
+        },
+        "south-west": {
+          "x": 55,
+          "y": 108
+        },
+        "west": {
+          "x": 55,
+          "y": 107
+        },
+        "north-west": {
+          "x": 59,
+          "y": 107
+        },
+        "north": {
+          "x": 96,
+          "y": 109
+        },
+        "north-east": {
+          "x": 122,
+          "y": 108
+        },
+        "east": {
+          "x": 125,
+          "y": 107
+        },
+        "south-east": {
+          "x": 129,
+          "y": 108
+        }
+      }
     }
   },
   "wutou-gui": {
@@ -1408,7 +1850,41 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "speed": 7.8,
       "family": "yantra",
       "motif": "fox-mirage",
-      "originHeight": 0.38
+      "originHeight": 0.38,
+      "origins": {
+        "south": {
+          "x": 96,
+          "y": 98
+        },
+        "south-west": {
+          "x": 52,
+          "y": 98
+        },
+        "west": {
+          "x": 49,
+          "y": 96
+        },
+        "north-west": {
+          "x": 47,
+          "y": 95
+        },
+        "north": {
+          "x": 96,
+          "y": 95
+        },
+        "north-east": {
+          "x": 135,
+          "y": 96
+        },
+        "east": {
+          "x": 143,
+          "y": 96
+        },
+        "south-east": {
+          "x": 130,
+          "y": 98
+        }
+      }
     }
   },
   "draugen": {
@@ -1531,7 +2007,41 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "speed": 5.2,
       "family": "spirit",
       "motif": "reed-lure",
-      "originHeight": 0.38
+      "originHeight": 0.38,
+      "origins": {
+        "south": {
+          "x": 96,
+          "y": 109
+        },
+        "south-west": {
+          "x": 61,
+          "y": 103
+        },
+        "west": {
+          "x": 59,
+          "y": 103
+        },
+        "north-west": {
+          "x": 50,
+          "y": 106
+        },
+        "north": {
+          "x": 96,
+          "y": 110
+        },
+        "north-east": {
+          "x": 137,
+          "y": 105
+        },
+        "east": {
+          "x": 115,
+          "y": 103
+        },
+        "south-east": {
+          "x": 114,
+          "y": 107
+        }
+      }
     }
   },
   "fossegrim": {
@@ -1576,7 +2086,41 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "speed": 9,
       "family": "spirit",
       "motif": "fiddle-wave",
-      "originHeight": 0.34
+      "originHeight": 0.34,
+      "origins": {
+        "south": {
+          "x": 96,
+          "y": 105
+        },
+        "south-west": {
+          "x": 47,
+          "y": 108
+        },
+        "west": {
+          "x": 57,
+          "y": 103
+        },
+        "north-west": {
+          "x": 46,
+          "y": 103
+        },
+        "north": {
+          "x": 96,
+          "y": 103
+        },
+        "north-east": {
+          "x": 141,
+          "y": 103
+        },
+        "east": {
+          "x": 119,
+          "y": 106
+        },
+        "south-east": {
+          "x": 142,
+          "y": 104
+        }
+      }
     }
   },
   "nisse": {
@@ -1660,7 +2204,41 @@ export const FOLKLORE_RESIDENTS:Readonly<Record<string,MonsterDefinition>>={
       "speed": 6.8,
       "family": "binding",
       "motif": "nightmare-claw",
-      "originHeight": 0.38
+      "originHeight": 0.38,
+      "origins": {
+        "south": {
+          "x": 96,
+          "y": 103
+        },
+        "south-west": {
+          "x": 59,
+          "y": 104
+        },
+        "west": {
+          "x": 77,
+          "y": 104
+        },
+        "north-west": {
+          "x": 69,
+          "y": 103
+        },
+        "north": {
+          "x": 96,
+          "y": 103
+        },
+        "north-east": {
+          "x": 124,
+          "y": 104
+        },
+        "east": {
+          "x": 115,
+          "y": 104
+        },
+        "south-east": {
+          "x": 133,
+          "y": 104
+        }
+      }
     }
   }
 };

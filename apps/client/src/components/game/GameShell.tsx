@@ -23,6 +23,7 @@ import { NpcDialog } from '@/components/npc/NpcDialog';
 import { TalkPrompt } from '@/components/npc/TalkPrompt';
 import { useNpcStore } from '@/stores/npc-store';
 const PhaserHost = dynamic(() => import('./PhaserHost'), { ssr: false });
+const RangedReview = process.env.NODE_ENV === 'development' ? dynamic(() => import('./RangedReview'), { ssr: false }) : null;
 
 export function GameShell() {
   const account = useAccountStore();
@@ -58,6 +59,7 @@ export function GameShell() {
     <PhaserHost/><div className="world-vignette"/>
     <div className="hud pointer-events-none absolute inset-0">
       <MainHud />
+      {RangedReview && <RangedReview />}
       {inventoryOpen && <InventoryWindow />}
       {characterOpen && <CharacterWindow />}
       {marketOpen && <MarketWindow />}

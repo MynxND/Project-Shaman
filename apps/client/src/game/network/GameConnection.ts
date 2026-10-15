@@ -28,5 +28,5 @@ export function leaveRoom(room: Room<GameState> | null | undefined) {
 export function joinGame(bodyType: BodyType, mapId: string, ticket?: string, head?: HeadAppearance): Promise<Room<GameState>> {
   // Signed-in players send their session token; the server loads and saves that account's character.
   const authToken = useAccountStore.getState().status === 'signed-in' ? useAccountStore.getState().token : null;
-  return new Client(serverUrl()).joinOrCreate<GameState>(GAME_ROOM, { bodyType, mapId, ...(ticket ? { ticket } : {}), ...(head ? { head } : {}), ...(authToken ? { authToken } : {}) });
+  return new Client(serverUrl()).joinOrCreate<GameState>(process.env.NODE_ENV==='development'&&!authToken&&new URLSearchParams(location.search).get('rangedReview')==='1'?'ranged-review':GAME_ROOM, { bodyType, mapId, ...(ticket ? { ticket } : {}), ...(head ? { head } : {}), ...(authToken ? { authToken } : {}) });
 }

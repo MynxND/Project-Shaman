@@ -75,7 +75,7 @@ export interface MonsterDefinition {
   /** Wander: pause range (ms) and radius (units) around the spawn point. */
   wander: { pauseMs: [number, number]; radius: number };
   /** Ranged attackers: the blow is a projectile flying at `speed` units/s; damage lands on arrival. */
-  projectile?: { speed: number; family?: 'spirit' | 'binding' | 'yantra'; motif?: string; originHeight?: number };
+  projectile?: { speed: number; family?: 'spirit' | 'binding' | 'yantra'; motif?: string; originHeight?: number; origins?: Record<string,{x:number;y:number}> };
   /** Mini boss mechanics, run by the server's combat system. */
   boss?: {
     /** Telegraphed area slam at the target's position: a ground warning for `windupMs`, then damage in `radius`. */

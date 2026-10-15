@@ -11,6 +11,7 @@ for(const m of roster.monsters){
  const encounter=encounters.monsters[m.id];if(!encounter||encounter.nation!==m.nation)throw Error('Missing/mismatched home nation '+m.id);
  if(!['melee','ranged'].includes(encounter.role)||!Number.isFinite(encounter.range)||encounter.range<=0)throw Error('Invalid combat role/range '+m.id);
  if(encounter.role==='ranged'&&(!encounter.projectile||!['spirit','yantra','binding'].includes(encounter.projectile.family)||!Number.isFinite(encounter.projectile.speed)||!(encounter.projectile.speed>0)||!motifs.includes(encounter.projectile.motif)||!(encounter.projectile.originHeight>0&&encounter.projectile.originHeight<1)))throw Error('Invalid projectile '+m.id);
+ if(encounter.role==='ranged')for(const f of roster.directions){const p=encounter.projectile.origins?.[f];if(!p||![p.x,p.y].every(Number.isInteger)||p.x<0||p.y<0||p.x>=sheet.frameWidth||p.y>=sheet.frameHeight)throw Error('Invalid release-pose port '+m.id+':'+f);}
  for(const f of roster.directions)for(const a of ['idle','move','attack','hurt','death'])if(!sheet.directions[f]?.[a]?.indices?.length)throw Error('Missing '+m.id+':'+f+':'+a);
  const level=m.level,attack=sheet.directions.south.attack,impact=sheet.attackImpactFrame??(attack.frames>=4?2:1);
  if(!Number.isInteger(impact)||impact<0||impact>=attack.frames)throw Error('Invalid attack impact pose '+m.id);

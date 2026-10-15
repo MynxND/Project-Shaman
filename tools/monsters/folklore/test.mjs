@@ -25,6 +25,7 @@ for(const[id,s]of Object.entries(manifest.monsters).filter(([id])=>FOLKLORE_RESI
 const layerSource=await readFile('apps/client/src/game/world/MonsterLayer.ts','utf8');
 const layerJs=transpileModule(layerSource,{compilerOptions:{module:ModuleKind.ESNext,target:ScriptTarget.ES2022}}).outputText
  .replace(/import Phaser from 'phaser';/, 'const Phaser={};')
+ .replace(/import \{ MonsterArtVfxLayer, preloadMonsterArtVfx \} from '\.\/MonsterArtVfxLayer';/, 'class MonsterArtVfxLayer{update(){}destroy(){}}')
  .replace(/import \{ MonsterOrbLayer \} from '\.\/MonsterOrbLayer';/, 'class MonsterOrbLayer{update(){}destroy(){}}')
  .replace(/from '\.\/monster-sprite-model'/, 'from '+JSON.stringify('data:text/javascript;base64,'+Buffer.from(js).toString('base64')))
  .replace(/from '@shaman\/shared'/g,'from '+JSON.stringify(new URL('../../../packages/shared/dist/index.js',import.meta.url).href))

@@ -1,0 +1,1625 @@
+{
+  "date": "2026-10-15T16:41:51.215Z",
+  "scope": "isolated dev room, real FoundationScene / CombatSystem / stepMovement",
+  "results": [
+    {
+      "caseId": "ranged-1",
+      "kind": "yuki-onna",
+      "facing": "south",
+      "outcome": "hit",
+      "range": 5.2,
+      "flightMs": 867,
+      "serverAt": 1792082401503,
+      "player": {
+        "x": 36,
+        "y": 19.2
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 19.2
+      },
+      "start": 202552.29999999702,
+      "launch": 202827.29999999702,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 275.59999999403954,
+      "image": "frames/yuki-onna-south.png",
+      "arrival": 203690.19999998808,
+      "damage": 203723.09999999404,
+      "travelled": 7.629394538355427e-7,
+      "damageDelay": 895.7999999970198,
+      "arrivalDelta": 32.900000005960464
+    },
+    {
+      "caseId": "ranged-2",
+      "kind": "yuki-onna",
+      "facing": "south",
+      "outcome": "dodge",
+      "range": 5.2,
+      "flightMs": 867,
+      "serverAt": 1792082403324,
+      "player": {
+        "x": 36,
+        "y": 19.2
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 19.2
+      },
+      "start": 204351.5,
+      "launch": 204632.29999999702,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 281,
+      "arrival": 205495.89999999106,
+      "travelled": 4.107999801635812
+    },
+    {
+      "caseId": "ranged-3",
+      "kind": "yuki-onna",
+      "facing": "south-east",
+      "outcome": "hit",
+      "range": 5.2,
+      "flightMs": 867,
+      "serverAt": 1792082405160,
+      "player": {
+        "x": 39.67695526217005,
+        "y": 17.676955262170047
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.67695526217005,
+        "y": 17.676955262170047
+      },
+      "start": 206203.39999999106,
+      "launch": 206483.39999999106,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.29999999701977,
+      "image": "frames/yuki-onna-south-east.png",
+      "arrival": 207350.19999998808,
+      "damage": 207376.79999999702,
+      "travelled": 0.0000012934224219809335,
+      "damageDelay": 893.4000000059605,
+      "arrivalDelta": 26.600000008940697
+    },
+    {
+      "caseId": "ranged-4",
+      "kind": "yuki-onna",
+      "facing": "south-east",
+      "outcome": "dodge",
+      "range": 5.2,
+      "flightMs": 867,
+      "serverAt": 1792082406981,
+      "player": {
+        "x": 39.67695526217005,
+        "y": 17.676955262170047
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.67695526217005,
+        "y": 17.676955262170047
+      },
+      "start": 208025.09999999404,
+      "launch": 208303.5,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 278.70000000298023,
+      "arrival": 209169.59999999404,
+      "travelled": 4.108001399439476
+    },
+    {
+      "caseId": "ranged-5",
+      "kind": "yuki-onna",
+      "facing": "east",
+      "outcome": "hit",
+      "range": 5.2,
+      "flightMs": 867,
+      "serverAt": 1792082408800,
+      "player": {
+        "x": 41.2,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 41.2,
+        "y": 14
+      },
+      "start": 209827.69999998808,
+      "launch": 210108.39999999106,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 281,
+      "image": "frames/yuki-onna-east.png",
+      "arrival": 210975.29999999702,
+      "damage": 211004.39999999106,
+      "travelled": 7.629394502828291e-7,
+      "damageDelay": 896,
+      "arrivalDelta": 29.099999994039536
+    },
+    {
+      "caseId": "ranged-6",
+      "kind": "yuki-onna",
+      "facing": "east",
+      "outcome": "dodge",
+      "range": 5.2,
+      "flightMs": 867,
+      "serverAt": 1792082410605,
+      "player": {
+        "x": 41.2,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 41.2,
+        "y": 14
+      },
+      "start": 211647.69999998808,
+      "launch": 211928.09999999404,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 280.70000000298023,
+      "arrival": 212794.19999998808,
+      "travelled": 4.104000091552805
+    },
+    {
+      "caseId": "ranged-7",
+      "kind": "yuki-onna",
+      "facing": "north-east",
+      "outcome": "hit",
+      "range": 5.2,
+      "flightMs": 867,
+      "serverAt": 1792082412425,
+      "player": {
+        "x": 39.67695526217005,
+        "y": 10.323044737829953
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.67695526217005,
+        "y": 10.323044737829953
+      },
+      "start": 213452.5,
+      "launch": 213734,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 281.79999999701977,
+      "image": "frames/yuki-onna-north-east.png",
+      "arrival": 214600,
+      "damage": 214625.09999999404,
+      "travelled": 9.154226014806399e-7,
+      "damageDelay": 891.0999999940395,
+      "arrivalDelta": 25.099999994039536
+    },
+    {
+      "caseId": "ranged-8",
+      "kind": "yuki-onna",
+      "facing": "north-east",
+      "outcome": "dodge",
+      "range": 5.2,
+      "flightMs": 867,
+      "serverAt": 1792082414229,
+      "player": {
+        "x": 39.67695526217005,
+        "y": 10.323044737829953
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.67695526217005,
+        "y": 10.323044737829953
+      },
+      "start": 215272.29999999702,
+      "launch": 215552.89999999106,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 280.8999999910593,
+      "arrival": 216420.09999999404,
+      "travelled": 4.107999376390812
+    },
+    {
+      "caseId": "ranged-9",
+      "kind": "yuki-onna",
+      "facing": "north",
+      "outcome": "hit",
+      "range": 5.2,
+      "flightMs": 867,
+      "serverAt": 1792082416049,
+      "player": {
+        "x": 36,
+        "y": 8.8
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 8.8
+      },
+      "start": 217076.79999999702,
+      "launch": 217359.39999999106,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 282.8999999910593,
+      "image": "frames/yuki-onna-north.png",
+      "arrival": 218224.5,
+      "damage": 218249.89999999106,
+      "travelled": 1.9073486257070726e-7,
+      "damageDelay": 890.5,
+      "arrivalDelta": 25.399999991059303
+    },
+    {
+      "caseId": "ranged-10",
+      "kind": "yuki-onna",
+      "facing": "north",
+      "outcome": "dodge",
+      "range": 5.2,
+      "flightMs": 867,
+      "serverAt": 1792082417885,
+      "player": {
+        "x": 36,
+        "y": 8.8
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 8.8
+      },
+      "start": 218928,
+      "launch": 219209.29999999702,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 281.59999999403954,
+      "arrival": 220071.79999999702,
+      "travelled": 4.108001708984379
+    },
+    {
+      "caseId": "ranged-11",
+      "kind": "yuki-onna",
+      "facing": "north-west",
+      "outcome": "hit",
+      "range": 5.2,
+      "flightMs": 867,
+      "serverAt": 1792082419737,
+      "player": {
+        "x": 32.32304473782995,
+        "y": 10.323044737829953
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.32304473782995,
+        "y": 10.323044737829953
+      },
+      "start": 220781.59999999404,
+      "launch": 221060.5,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 279.09999999403954,
+      "image": "frames/yuki-onna-north-west.png",
+      "arrival": 221925.69999998808,
+      "damage": 221952.09999999404,
+      "travelled": 9.154226014806399e-7,
+      "damageDelay": 891.5999999940395,
+      "arrivalDelta": 26.400000005960464
+    },
+    {
+      "caseId": "ranged-12",
+      "kind": "yuki-onna",
+      "facing": "north-west",
+      "outcome": "dodge",
+      "range": 5.2,
+      "flightMs": 867,
+      "serverAt": 1792082421557,
+      "player": {
+        "x": 32.32304473782995,
+        "y": 10.323044737829953
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.32304473782995,
+        "y": 10.323044737829953
+      },
+      "start": 222583.29999999702,
+      "launch": 222865.09999999404,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 282,
+      "arrival": 223731.5,
+      "travelled": 4.108000725089965
+    },
+    {
+      "caseId": "ranged-13",
+      "kind": "yuki-onna",
+      "facing": "west",
+      "outcome": "hit",
+      "range": 5.2,
+      "flightMs": 867,
+      "serverAt": 1792082423360,
+      "player": {
+        "x": 30.8,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 30.8,
+        "y": 14
+      },
+      "start": 224387.59999999404,
+      "launch": 224667.39999999106,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 280,
+      "image": "frames/yuki-onna-west.png",
+      "arrival": 225530.19999998808,
+      "damage": 225559.79999999702,
+      "travelled": 7.629394538355427e-7,
+      "damageDelay": 892.4000000059605,
+      "arrivalDelta": 29.600000008940697
+    },
+    {
+      "caseId": "ranged-14",
+      "kind": "yuki-onna",
+      "facing": "west",
+      "outcome": "dodge",
+      "range": 5.2,
+      "flightMs": 867,
+      "serverAt": 1792082425165,
+      "player": {
+        "x": 30.8,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 30.8,
+        "y": 14
+      },
+      "start": 226192.5,
+      "launch": 226472,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 279.79999999701977,
+      "arrival": 227335.39999999106,
+      "travelled": 4.107999801635812
+    },
+    {
+      "caseId": "ranged-15",
+      "kind": "yuki-onna",
+      "facing": "south-west",
+      "outcome": "hit",
+      "range": 5.2,
+      "flightMs": 867,
+      "serverAt": 1792082426969,
+      "player": {
+        "x": 32.32304473782995,
+        "y": 17.676955262170047
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.32304473782995,
+        "y": 17.676955262170047
+      },
+      "start": 227996.89999999106,
+      "launch": 228276.39999999106,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 279.70000000298023,
+      "image": "frames/yuki-onna-south-west.png",
+      "arrival": 229145.5,
+      "damage": 229169.69999998808,
+      "travelled": 0.0000012934224219809335,
+      "damageDelay": 893.2999999970198,
+      "arrivalDelta": 24.19999998807907
+    },
+    {
+      "caseId": "ranged-16",
+      "kind": "yuki-onna",
+      "facing": "south-west",
+      "outcome": "dodge",
+      "range": 5.2,
+      "flightMs": 867,
+      "serverAt": 1792082428773,
+      "player": {
+        "x": 32.32304473782995,
+        "y": 17.676955262170047
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.32304473782995,
+        "y": 17.676955262170047
+      },
+      "start": 229802.39999999106,
+      "launch": 230081,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 278.79999999701977,
+      "arrival": 230946.89999999106,
+      "travelled": 4.108000725089946
+    },
+    {
+      "caseId": "ranged-17",
+      "kind": "yuki-onna",
+      "facing": "south",
+      "outcome": "outside",
+      "range": 5.2,
+      "flightMs": 1167,
+      "serverAt": 1792082430578,
+      "player": {
+        "x": 36,
+        "y": 21
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 21
+      },
+      "travelled": 0
+    },
+    {
+      "caseId": "ranged-18",
+      "kind": "vodyanoy",
+      "facing": "south",
+      "outcome": "hit",
+      "range": 4.8,
+      "flightMs": 1000,
+      "serverAt": 1792082431605,
+      "player": {
+        "x": 36,
+        "y": 18.8
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 18.8
+      },
+      "start": 232647.5,
+      "launch": 232927.29999999702,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 280.09999999403954,
+      "image": "frames/vodyanoy-south.png",
+      "arrival": 233925.5,
+      "damage": 233945.29999999702,
+      "travelled": 7.629394538355427e-7,
+      "damageDelay": 1018,
+      "arrivalDelta": 19.799999997019768
+    },
+    {
+      "caseId": "ranged-19",
+      "kind": "vodyanoy",
+      "facing": "south",
+      "outcome": "dodge",
+      "range": 4.8,
+      "flightMs": 1000,
+      "serverAt": 1792082433549,
+      "player": {
+        "x": 36,
+        "y": 18.8
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 18.8
+      },
+      "start": 234577,
+      "launch": 234857.29999999702,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 280.5,
+      "arrival": 235856.19999998808,
+      "travelled": 4.479999542236393
+    },
+    {
+      "caseId": "ranged-20",
+      "kind": "vodyanoy",
+      "facing": "south-east",
+      "outcome": "hit",
+      "range": 4.8,
+      "flightMs": 1000,
+      "serverAt": 1792082435509,
+      "player": {
+        "x": 39.39411254969543,
+        "y": 17.39411254969543
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.39411254969543,
+        "y": 17.39411254969543
+      },
+      "start": 236552.79999999702,
+      "launch": 236833.39999999106,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.79999999701977,
+      "image": "frames/vodyanoy-south-east.png",
+      "arrival": 237835.39999999106,
+      "damage": 237866.59999999404,
+      "travelled": 0.0000012959777386649237,
+      "damageDelay": 1033.2000000029802,
+      "arrivalDelta": 31.200000002980232
+    },
+    {
+      "caseId": "ranged-21",
+      "kind": "vodyanoy",
+      "facing": "south-east",
+      "outcome": "dodge",
+      "range": 4.8,
+      "flightMs": 1000,
+      "serverAt": 1792082437470,
+      "player": {
+        "x": 39.39411254969543,
+        "y": 17.39411254969543
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.39411254969543,
+        "y": 17.39411254969543
+      },
+      "start": 238513.59999999404,
+      "launch": 238793,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 279.59999999403954,
+      "arrival": 239787,
+      "travelled": 4.671999062269675
+    },
+    {
+      "caseId": "ranged-22",
+      "kind": "vodyanoy",
+      "facing": "east",
+      "outcome": "hit",
+      "range": 4.8,
+      "flightMs": 1000,
+      "serverAt": 1792082439431,
+      "player": {
+        "x": 40.8,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.8,
+        "y": 14
+      },
+      "start": 240475.29999999702,
+      "launch": 240754.5,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 279.29999999701977,
+      "image": "frames/vodyanoy-east.png",
+      "arrival": 241751.59999999404,
+      "damage": 241784.69999998808,
+      "travelled": 7.629394502828291e-7,
+      "damageDelay": 1030.199999988079,
+      "arrivalDelta": 33.099999994039536
+    },
+    {
+      "caseId": "ranged-23",
+      "kind": "vodyanoy",
+      "facing": "east",
+      "outcome": "dodge",
+      "range": 4.8,
+      "flightMs": 1000,
+      "serverAt": 1792082441392,
+      "player": {
+        "x": 40.8,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.8,
+        "y": 14
+      },
+      "start": 242434.79999999702,
+      "launch": 242714.69999998808,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 280.09999999403954,
+      "arrival": 243717,
+      "travelled": 4.6599998474121715
+    },
+    {
+      "caseId": "ranged-24",
+      "kind": "vodyanoy",
+      "facing": "north-east",
+      "outcome": "hit",
+      "range": 4.8,
+      "flightMs": 1000,
+      "serverAt": 1792082443351,
+      "player": {
+        "x": 39.39411254969543,
+        "y": 10.605887450304571
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.39411254969543,
+        "y": 10.605887450304571
+      },
+      "start": 244393.39999999106,
+      "launch": 244673,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 279.90000000596046,
+      "image": "frames/vodyanoy-north-east.png",
+      "arrival": 245668.39999999106,
+      "damage": 245707.79999999702,
+      "travelled": 9.171526172278678e-7,
+      "damageDelay": 1034.7999999970198,
+      "arrivalDelta": 39.400000005960464
+    },
+    {
+      "caseId": "ranged-25",
+      "kind": "vodyanoy",
+      "facing": "north-east",
+      "outcome": "dodge",
+      "range": 4.8,
+      "flightMs": 1000,
+      "serverAt": 1792082445310,
+      "player": {
+        "x": 39.39411254969543,
+        "y": 10.605887450304571
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 39.39411254969543,
+        "y": 10.605887450304571
+      },
+      "start": 246353.69999998808,
+      "launch": 246633.29999999702,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 279.80000001192093,
+      "arrival": 247633.69999998808,
+      "travelled": 4.479999599640269
+    },
+    {
+      "caseId": "ranged-26",
+      "kind": "vodyanoy",
+      "facing": "north",
+      "outcome": "hit",
+      "range": 4.8,
+      "flightMs": 1000,
+      "serverAt": 1792082447270,
+      "player": {
+        "x": 36,
+        "y": 9.2
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 9.2
+      },
+      "start": 248313.39999999106,
+      "launch": 248592.89999999106,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 279.70000000298023,
+      "image": "frames/vodyanoy-north.png",
+      "arrival": 249592.69999998808,
+      "damage": 249625.39999999106,
+      "travelled": 1.9073486257070726e-7,
+      "damageDelay": 1032.5,
+      "arrivalDelta": 32.70000000298023
+    },
+    {
+      "caseId": "ranged-27",
+      "kind": "vodyanoy",
+      "facing": "north",
+      "outcome": "dodge",
+      "range": 4.8,
+      "flightMs": 1000,
+      "serverAt": 1792082449230,
+      "player": {
+        "x": 36,
+        "y": 9.2
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 9.2
+      },
+      "start": 250272.89999999106,
+      "launch": 250553.5,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 280.90000000596046,
+      "arrival": 251550.5,
+      "travelled": 4.667999267578129
+    },
+    {
+      "caseId": "ranged-28",
+      "kind": "vodyanoy",
+      "facing": "north-west",
+      "outcome": "hit",
+      "range": 4.8,
+      "flightMs": 1000,
+      "serverAt": 1792082451190,
+      "player": {
+        "x": 32.60588745030457,
+        "y": 10.605887450304571
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.60588745030457,
+        "y": 10.605887450304571
+      },
+      "start": 252233.09999999404,
+      "launch": 252513,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 280.09999999403954,
+      "image": "frames/vodyanoy-north-west.png",
+      "arrival": 253508.79999999702,
+      "damage": 253549,
+      "travelled": 9.171526172278678e-7,
+      "damageDelay": 1036,
+      "arrivalDelta": 40.20000000298023
+    },
+    {
+      "caseId": "ranged-29",
+      "kind": "vodyanoy",
+      "facing": "north-west",
+      "outcome": "dodge",
+      "range": 4.8,
+      "flightMs": 1000,
+      "serverAt": 1792082453150,
+      "player": {
+        "x": 32.60588745030457,
+        "y": 10.605887450304571
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.60588745030457,
+        "y": 10.605887450304571
+      },
+      "start": 254193.09999999404,
+      "launch": 254473,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 280.09999999403954,
+      "arrival": 255473.69999998808,
+      "travelled": 4.480001285514311
+    },
+    {
+      "caseId": "ranged-30",
+      "kind": "vodyanoy",
+      "facing": "west",
+      "outcome": "hit",
+      "range": 4.8,
+      "flightMs": 1000,
+      "serverAt": 1792082455110,
+      "player": {
+        "x": 31.2,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.2,
+        "y": 14
+      },
+      "start": 256152.29999999702,
+      "launch": 256433.5,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 281.3999999910593,
+      "image": "frames/vodyanoy-west.png",
+      "arrival": 257432.69999998808,
+      "damage": 257465.89999999106,
+      "travelled": 7.629394538355427e-7,
+      "damageDelay": 1032.3999999910593,
+      "arrivalDelta": 33.20000000298023
+    },
+    {
+      "caseId": "ranged-31",
+      "kind": "vodyanoy",
+      "facing": "west",
+      "outcome": "dodge",
+      "range": 4.8,
+      "flightMs": 1000,
+      "serverAt": 1792082457069,
+      "player": {
+        "x": 31.2,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.2,
+        "y": 14
+      },
+      "start": 258111.79999999702,
+      "launch": 258392.39999999106,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 280.70000000298023,
+      "arrival": 259390.79999999702,
+      "travelled": 4.484000205993717
+    },
+    {
+      "caseId": "ranged-32",
+      "kind": "vodyanoy",
+      "facing": "south-west",
+      "outcome": "hit",
+      "range": 4.8,
+      "flightMs": 1000,
+      "serverAt": 1792082459030,
+      "player": {
+        "x": 32.60588745030457,
+        "y": 17.39411254969543
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.60588745030457,
+        "y": 17.39411254969543
+      },
+      "start": 260073.79999999702,
+      "launch": 260352.79999999702,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 279.09999999403954,
+      "image": "frames/vodyanoy-south-west.png",
+      "arrival": 261355.59999999404,
+      "damage": 261386.19999998808,
+      "travelled": 0.0000012959777386649237,
+      "damageDelay": 1033.3999999910593,
+      "arrivalDelta": 30.599999994039536
+    },
+    {
+      "caseId": "ranged-33",
+      "kind": "vodyanoy",
+      "facing": "south-west",
+      "outcome": "dodge",
+      "range": 4.8,
+      "flightMs": 1000,
+      "serverAt": 1792082460990,
+      "player": {
+        "x": 32.60588745030457,
+        "y": 17.39411254969543
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 32.60588745030457,
+        "y": 17.39411254969543
+      },
+      "start": 262033.59999999404,
+      "launch": 262313.1999999881,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 281.40000000596046,
+      "arrival": 263313.59999999404,
+      "travelled": 4.615999724764798
+    },
+    {
+      "caseId": "ranged-34",
+      "kind": "vodyanoy",
+      "facing": "south",
+      "outcome": "outside",
+      "range": 4.8,
+      "flightMs": 1354,
+      "serverAt": 1792082462966,
+      "player": {
+        "x": 36,
+        "y": 20.5
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 20.5
+      },
+      "travelled": 0
+    },
+    {
+      "caseId": "ranged-35",
+      "kind": "sending",
+      "facing": "south",
+      "outcome": "hit",
+      "range": 6.4,
+      "flightMs": 753,
+      "serverAt": 1792082463946,
+      "player": {
+        "x": 36,
+        "y": 20.4
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 20.4
+      },
+      "start": 264973.39999999106,
+      "launch": 265252.5,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 279.20000000298023,
+      "image": "frames/sending-south.png",
+      "arrival": 266008.5,
+      "damage": 266049.799999997,
+      "travelled": 3.8146972514141453e-7,
+      "damageDelay": 797.2999999970198,
+      "arrivalDelta": 41.29999999701977
+    },
+    {
+      "caseId": "ranged-36",
+      "kind": "sending",
+      "facing": "south",
+      "outcome": "dodge",
+      "range": 6.4,
+      "flightMs": 753,
+      "serverAt": 1792082465657,
+      "player": {
+        "x": 36,
+        "y": 20.4
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 20.4
+      },
+      "start": 266700,
+      "launch": 266979.6999999881,
+      "facingSeen": "south",
+      "frame": 3,
+      "launchDelay": 279.8999999910593,
+      "arrival": 267730.6999999881,
+      "travelled": 3.608001708984395
+    },
+    {
+      "caseId": "ranged-37",
+      "kind": "sending",
+      "facing": "south-east",
+      "outcome": "hit",
+      "range": 6.4,
+      "flightMs": 753,
+      "serverAt": 1792082467384,
+      "player": {
+        "x": 40.5254833995939,
+        "y": 18.525483399593902
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.5254833995939,
+        "y": 18.525483399593902
+      },
+      "start": 268426.799999997,
+      "launch": 268706.6999999881,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 280.09999999403954,
+      "image": "frames/sending-south-east.png",
+      "arrival": 269459.5,
+      "damage": 269506.59999999404,
+      "travelled": 0.00000140101249754114,
+      "damageDelay": 799.9000000059605,
+      "arrivalDelta": 47.099999994039536
+    },
+    {
+      "caseId": "ranged-38",
+      "kind": "sending",
+      "facing": "south-east",
+      "outcome": "dodge",
+      "range": 6.4,
+      "flightMs": 753,
+      "serverAt": 1792082469111,
+      "player": {
+        "x": 40.5254833995939,
+        "y": 18.525483399593902
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.5254833995939,
+        "y": 18.525483399593902
+      },
+      "start": 270155.6999999881,
+      "launch": 270434.1999999881,
+      "facingSeen": "south-east",
+      "frame": 3,
+      "launchDelay": 278.70000000298023,
+      "arrival": 271188.6999999881,
+      "travelled": 3.6120011017734663
+    },
+    {
+      "caseId": "ranged-39",
+      "kind": "sending",
+      "facing": "east",
+      "outcome": "hit",
+      "range": 6.4,
+      "flightMs": 753,
+      "serverAt": 1792082470839,
+      "player": {
+        "x": 42.4,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 42.4,
+        "y": 14
+      },
+      "start": 271881.59999999404,
+      "launch": 272175.09999999404,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 293.59999999403954,
+      "image": "frames/sending-east.png",
+      "arrival": 272924.6999999881,
+      "damage": 272965.1999999881,
+      "travelled": 0.0000015258789076710855,
+      "damageDelay": 790.0999999940395,
+      "arrivalDelta": 40.5
+    },
+    {
+      "caseId": "ranged-40",
+      "kind": "sending",
+      "facing": "east",
+      "outcome": "dodge",
+      "range": 6.4,
+      "flightMs": 753,
+      "serverAt": 1792082472567,
+      "player": {
+        "x": 42.4,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 42.4,
+        "y": 14
+      },
+      "start": 273624.89999999106,
+      "launch": 273905.5,
+      "facingSeen": "east",
+      "frame": 3,
+      "launchDelay": 280.79999999701977,
+      "arrival": 274663.799999997,
+      "travelled": 3.7399997711184754
+    },
+    {
+      "caseId": "ranged-41",
+      "kind": "sending",
+      "facing": "north-east",
+      "outcome": "hit",
+      "range": 6.4,
+      "flightMs": 753,
+      "serverAt": 1792082474309,
+      "player": {
+        "x": 40.5254833995939,
+        "y": 9.474516600406096
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.5254833995939,
+        "y": 9.474516600406096
+      },
+      "start": 275352.799999997,
+      "launch": 275632.1999999881,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 279.70000000298023,
+      "image": "frames/sending-north-east.png",
+      "arrival": 276383,
+      "damage": 276431.299999997,
+      "travelled": 0.0000012509452477425568,
+      "damageDelay": 799.1000000089407,
+      "arrivalDelta": 48.29999999701977
+    },
+    {
+      "caseId": "ranged-42",
+      "kind": "sending",
+      "facing": "north-east",
+      "outcome": "dodge",
+      "range": 6.4,
+      "flightMs": 753,
+      "serverAt": 1792082476036,
+      "player": {
+        "x": 40.5254833995939,
+        "y": 9.474516600406096
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 40.5254833995939,
+        "y": 9.474516600406096
+      },
+      "start": 277079.09999999404,
+      "launch": 277360,
+      "facingSeen": "north-east",
+      "frame": 3,
+      "launchDelay": 281,
+      "arrival": 278112.6999999881,
+      "travelled": 3.608000185738018
+    },
+    {
+      "caseId": "ranged-43",
+      "kind": "sending",
+      "facing": "north",
+      "outcome": "hit",
+      "range": 6.4,
+      "flightMs": 753,
+      "serverAt": 1792082477763,
+      "player": {
+        "x": 36,
+        "y": 7.6
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 7.6
+      },
+      "start": 278807.39999999106,
+      "launch": 279086.5,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 279.1000000089407,
+      "image": "frames/sending-north.png",
+      "arrival": 279842.09999999404,
+      "damage": 279886.6999999881,
+      "travelled": 9.536743128535363e-8,
+      "damageDelay": 800.1999999880791,
+      "arrivalDelta": 44.599999994039536
+    },
+    {
+      "caseId": "ranged-44",
+      "kind": "sending",
+      "facing": "north",
+      "outcome": "dodge",
+      "range": 6.4,
+      "flightMs": 753,
+      "serverAt": 1792082479491,
+      "player": {
+        "x": 36,
+        "y": 7.6
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 7.6
+      },
+      "start": 280533.89999999106,
+      "launch": 280813,
+      "facingSeen": "north",
+      "frame": 3,
+      "launchDelay": 279.29999999701977,
+      "arrival": 281563.299999997,
+      "travelled": 3.608001708984376
+    },
+    {
+      "caseId": "ranged-45",
+      "kind": "sending",
+      "facing": "north-west",
+      "outcome": "hit",
+      "range": 6.4,
+      "flightMs": 753,
+      "serverAt": 1792082481217,
+      "player": {
+        "x": 31.474516600406098,
+        "y": 9.474516600406094
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.474516600406098,
+        "y": 9.474516600406094
+      },
+      "start": 282259.799999997,
+      "launch": 282540,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 280.3999999910593,
+      "image": "frames/sending-north-west.png",
+      "arrival": 283292.39999999106,
+      "damage": 283339.5,
+      "travelled": 7.360832989517816e-7,
+      "damageDelay": 799.5,
+      "arrivalDelta": 47.1000000089407
+    },
+    {
+      "caseId": "ranged-46",
+      "kind": "sending",
+      "facing": "north-west",
+      "outcome": "dodge",
+      "range": 6.4,
+      "flightMs": 753,
+      "serverAt": 1792082482944,
+      "player": {
+        "x": 31.474516600406098,
+        "y": 9.474516600406094
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.474516600406098,
+        "y": 9.474516600406094
+      },
+      "start": 283988.89999999106,
+      "launch": 284266.1999999881,
+      "facingSeen": "north-west",
+      "frame": 3,
+      "launchDelay": 277.40000000596046,
+      "arrival": 285021.59999999404,
+      "travelled": 3.612000764598727
+    },
+    {
+      "caseId": "ranged-47",
+      "kind": "sending",
+      "facing": "west",
+      "outcome": "hit",
+      "range": 6.4,
+      "flightMs": 753,
+      "serverAt": 1792082484670,
+      "player": {
+        "x": 29.6,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 29.6,
+        "y": 14
+      },
+      "start": 285714.09999999404,
+      "launch": 285995.799999997,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 281.79999999701977,
+      "image": "frames/sending-west.png",
+      "arrival": 286750.89999999106,
+      "damage": 286790.39999999106,
+      "travelled": 3.8146972514141453e-7,
+      "damageDelay": 794.5999999940395,
+      "arrivalDelta": 39.5
+    },
+    {
+      "caseId": "ranged-48",
+      "kind": "sending",
+      "facing": "west",
+      "outcome": "dodge",
+      "range": 6.4,
+      "flightMs": 753,
+      "serverAt": 1792082486398,
+      "player": {
+        "x": 29.6,
+        "y": 14
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 29.6,
+        "y": 14
+      },
+      "start": 287441,
+      "launch": 287721.89999999106,
+      "facingSeen": "west",
+      "frame": 3,
+      "launchDelay": 281,
+      "arrival": 288472.89999999106,
+      "travelled": 3.607999801635762
+    },
+    {
+      "caseId": "ranged-49",
+      "kind": "sending",
+      "facing": "south-west",
+      "outcome": "hit",
+      "range": 6.4,
+      "flightMs": 753,
+      "serverAt": 1792082488125,
+      "player": {
+        "x": 31.474516600406094,
+        "y": 18.525483399593902
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.474516600406094,
+        "y": 18.525483399593902
+      },
+      "start": 289168.299999997,
+      "launch": 289447.799999997,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 279.59999999403954,
+      "image": "frames/sending-south-west.png",
+      "arrival": 290201.799999997,
+      "damage": 290246,
+      "travelled": 9.694279873147028e-7,
+      "damageDelay": 798.2000000029802,
+      "arrivalDelta": 44.20000000298023
+    },
+    {
+      "caseId": "ranged-50",
+      "kind": "sending",
+      "facing": "south-west",
+      "outcome": "dodge",
+      "range": 6.4,
+      "flightMs": 753,
+      "serverAt": 1792082489852,
+      "player": {
+        "x": 31.474516600406094,
+        "y": 18.525483399593902
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 31.474516600406094,
+        "y": 18.525483399593902
+      },
+      "start": 290894.799999997,
+      "launch": 291175,
+      "facingSeen": "south-west",
+      "frame": 3,
+      "launchDelay": 280.20000000298023,
+      "arrival": 291931.39999999106,
+      "travelled": 3.616000669109746
+    },
+    {
+      "caseId": "ranged-51",
+      "kind": "sending",
+      "facing": "south",
+      "outcome": "outside",
+      "range": 6.4,
+      "flightMs": 1000,
+      "serverAt": 1792082491579,
+      "player": {
+        "x": 36,
+        "y": 22.5
+      },
+      "origin": {
+        "x": 36,
+        "y": 14
+      },
+      "issues": [],
+      "ok": true,
+      "ready": {
+        "x": 36,
+        "y": 22.5
+      },
+      "travelled": 0
+    }
+  ],
+  "summary": {
+    "cases": 51,
+    "hit": 24,
+    "dodge": 24,
+    "outside": 3,
+    "allPassed": true,
+    "maxArrivalDifferenceMs": 48.29999999701977,
+    "minDodgeDistance": 3.607999801635762,
+    "minDamageDelay": 790.0999999940395,
+    "maxDamageDelay": 1036
+  }
+}

@@ -1,3 +1,4 @@
+import type{Facing}from'@shaman/shared';
 import { MonsterState, type GameState } from '@shaman/schema';
 import {
   addLoot, atkFor, expShares, MAGIC_BOLT, SHARED_EXP, basicAttackFor, combatSpec, combatStats, isBlocked, BASIC_ATTACK, bindingSlow, HUNTER, NATION_SKILL_COMBAT, skillRange, createMonster, gainExp, gainJobExp, JOB_PROGRESSION, ITEMS, magicDamage, matkFor, MONSTERS, physicalDamage,
@@ -14,7 +15,7 @@ import { NationsEffects } from './nations-effects.js';
 // (provisional). Clients only send intents ('attack', 'skill' with a target) and draw the 'combat' events.
 
 export type CombatEvent =
-  | { type: 'swing'; attacker: { kind: 'player' | 'monster'; id: string }; target: { kind: 'player' | 'monster'; id: string } }
+  | { type: 'swing'; attacker: { kind: 'player' | 'monster'; id: string }; target: { kind: 'player' | 'monster'; id: string }; facing?: Facing }
   | { type: 'damage'; target: { kind: 'player' | 'monster'; id: string }; amount: number; source: string; skill?: string }
   | { type: 'heal'; target: { kind: 'player'; id: string }; amount: number }
   | { type: 'death'; target: { kind: 'player' | 'monster'; id: string }; killer?: string }
@@ -406,7 +407,7 @@ export class CombatSystem {
       const events = stepMonster(m, targets, dtMs, now, this.walkMap, () => host.rng());
       const def = MONSTERS[m.kind]!;
       for (const e of events) {
-        if (e.type === 'swing') host.broadcast({ type: 'swing', attacker: { kind: 'monster', id: m.id }, target: { kind: 'player', id: e.targetId } });
+        if (e.type === 'swing') host.broadcast({ type: 'swing', attacker: { kind: 'monster', id: m.id }, target: { kind: 'player', id: e.targetId }, facing:m.facing });
         else if (def.projectile) this.shoot(m, e.targetId, def.projectile.speed);
         else this.hitPlayer(e.targetId, m);
       }

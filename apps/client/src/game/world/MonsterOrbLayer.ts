@@ -25,7 +25,7 @@ export class MonsterOrbLayer{
   }
   f.trails.forEach((trail,i)=>{const q=orbTravel(f.from,f.to,Math.max(0,elapsed-(i+1)*35),f.ms);trail.setPosition(q.x,q.y).setAlpha(Math.min(1,elapsed/70));});
  }
- update(){for(const f of this.flights){const elapsed=this.scene.time.now-f.start;if(elapsed>=f.ms)this.remove(f);else this.position(f,elapsed);}}
+ update(){for(const f of this.flights){const elapsed=this.scene.time.now-f.start;if(elapsed>=f.ms){this.scene.events.emit('ranged:arrival');this.remove(f);}else this.position(f,elapsed);}}
  private remove(f:Flight){f.core.destroy();for(const trail of f.trails)trail.destroy();this.flights.delete(f);}
  destroy(){for(const f of this.flights)this.remove(f);}
 }

@@ -1,3 +1,4 @@
+import{attachRangedReview}from'../world/attach-ranged-review';
 import Phaser from 'phaser';
 import type { Room } from '@colyseus/sdk';
 import type { GameState } from '@shaman/schema';
@@ -265,6 +266,7 @@ export class FoundationScene extends Phaser.Scene {
     joinGame(bodyType, this.map.id, ticket, useHeadStore.getState().head).then((room) => {
       if (stale()) { leaveRoom(room); return; }
       this.room = room;
+      attachRangedReview(this,room,v=>this.movement?.setAuto(v));
       useHeadStore.getState().bind((type, message) => room.send(type, message));
       setStatus('connected');
       // Server-owned player data (NPC services, bag, quests): receive it, and let the HUD send NPC requests.
