@@ -47,3 +47,7 @@ Complete each new eligible-country map batch to3 before moving to the next count
 
 ## National landmarks and natural boundaries — user2026-10-15
 Every country requires at least one immediately recognizable regional landmark interpreted as original shaman fantasy; support it with regional architecture, terrain and vegetation, not flags or a generic recolor. Use docs/design/maps/national-landmarks.md and each map layout brief. Natural shores/river bends/path junctions should follow authored organic geometry at native pixel resolution; retain intentional engineered edges, nearest filtering and independent collision. Current implementation applies only to the three Indonesian previews, not all nations or live rooms.
+
+
+## Indonesia live adoption — user2026-10-15
+Indonesia's three reviewed maps are now authorized live content, not preview-only rooms. Keep local review separate from authoritative travel but share regional presentation. Atlas now preserves original30 nodes plus Obsidian Estuary (31 total). Preserve earlier historical entries; current live contracts and evidence are in docs/design/maps/indonesia-three/.

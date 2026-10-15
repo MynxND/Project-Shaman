@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "targetMaps": 30,
+  "targetMaps": 31,
   "geographyStatus": "proposed fictional spirit-route network; not approved lore or real Earth geography",
   "sources": [
     "docs/design/skill-system/classification.json",
@@ -90,7 +90,8 @@
       ],
       "maps": [
         "ashwind-volcano",
-        "ember-caldera"
+        "ember-caldera",
+        "obsidian-estuary"
       ]
     },
     {
@@ -596,6 +597,19 @@
       "y": 695,
       "biome": "วิหารปลายทางร่วม",
       "phase": 5
+    },
+    {
+      "id": "obsidian-estuary",
+      "name": "ปากน้ำออบซิเดียน",
+      "nation": "indonesia",
+      "levels": [
+        55,
+        70
+      ],
+      "x": 1025,
+      "y": 690,
+      "biome": "ปากน้ำ / ชายฝั่งหินดำ",
+      "phase": 3
     }
   ],
   "links": [
@@ -642,7 +656,12 @@
     {
       "from": "ashwind-volcano",
       "to": "ember-caldera",
-      "status": "planned"
+      "status": "live"
+    },
+    {
+      "from": "ember-caldera",
+      "to": "obsidian-estuary",
+      "status": "live"
     },
     {
       "from": "storm-seal-coast",
@@ -697,7 +716,7 @@
     {
       "from": "mountain-spirit-sanctuary",
       "to": "ashwind-volcano",
-      "status": "planned"
+      "status": "live"
     },
     {
       "from": "mountain-spirit-sanctuary",

@@ -568,6 +568,36 @@
           ]
         ],
         "r": 2.3
+      },
+      {
+        "terrain": "road",
+        "shape": "path",
+        "points": [
+          [
+            1,
+            54
+          ],
+          [
+            4,
+            54
+          ]
+        ],
+        "r": 1.8
+      },
+      {
+        "terrain": "road",
+        "shape": "path",
+        "points": [
+          [
+            84,
+            16
+          ],
+          [
+            89,
+            16
+          ]
+        ],
+        "r": 1.8
       }
     ]
   },
@@ -1302,15 +1332,171 @@
       "h": 0.502
     }
   ],
-  "npcs": [],
-  "portals": [],
-  "safeZones": [
+  "npcs": [
     {
-      "x": 0,
-      "y": 49,
-      "w": 10,
-      "h": 10
+      "id": "ash-healer",
+      "sprite": "npc-herbalist",
+      "role": "healer",
+      "x": 16,
+      "y": 48,
+      "name": {
+        "th": "ผู้รักษาเถ้าลม",
+        "en": "ash-healer"
+      },
+      "title": "รักษา",
+      "greeting": "พักฟื้นที่เพิงก่อนผ่านประตูหินแยก"
+    },
+    {
+      "id": "ash-keeper",
+      "sprite": "npc-elder",
+      "role": "guide",
+      "x": 57,
+      "y": 29,
+      "name": {
+        "th": "ผู้เฝ้าสำนักหินดำ",
+        "en": "ash-keeper"
+      },
+      "title": "นำทาง",
+      "greeting": "ตะวันตกกลับสำนักบนภูเขา ตะวันออกไปปล่องพิธีอัคคี"
+    },
+    {
+      "id": "ash-watch",
+      "sprite": "npc-guard",
+      "role": "guard",
+      "x": 65,
+      "y": 26,
+      "name": {
+        "th": "พรานเถ้าลม",
+        "en": "ash-watch"
+      },
+      "title": "เฝ้าทาง",
+      "greeting": "ระวังวิญญาณเถ้าและผู้เฝ้าหินดำรอบปล่อง"
     }
   ],
-  "spawnRegions": []
+  "portals": [
+    {
+      "id": "sanctuary-gate",
+      "area": {
+        "x": 0,
+        "y": 53,
+        "w": 2,
+        "h": 2
+      },
+      "arrival": {
+        "x": 4,
+        "y": 54
+      },
+      "to": {
+        "mapId": "mountain-spirit-sanctuary",
+        "portalId": "ashwind-gate"
+      },
+      "label": {
+        "th": "กลับสำนักผนึกบนภูเขา · ตะวันตก",
+        "en": "mountain-spirit-sanctuary"
+      }
+    },
+    {
+      "id": "caldera-gate",
+      "area": {
+        "x": 88,
+        "y": 15,
+        "w": 2,
+        "h": 2
+      },
+      "arrival": {
+        "x": 86,
+        "y": 16
+      },
+      "to": {
+        "mapId": "ember-caldera",
+        "portalId": "ashwind-gate"
+      },
+      "label": {
+        "th": "ไปปล่องพิธีอัคคี · ตะวันออก",
+        "en": "ember-caldera"
+      }
+    }
+  ],
+  "safeZones": [
+    {
+      "x": 1,
+      "y": 51,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "x": 83,
+      "y": 13,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "x": 13,
+      "y": 45,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "x": 54,
+      "y": 26,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "x": 62,
+      "y": 23,
+      "w": 6,
+      "h": 6
+    }
+  ],
+  "spawnRegions": [
+    {
+      "id": "ash-camp-1",
+      "area": {
+        "x": 24,
+        "y": 14,
+        "w": 10,
+        "h": 9
+      },
+      "respawnMs": 24000,
+      "monsters": [
+        {
+          "kind": "ash-wisp",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "ash-camp-2",
+      "area": {
+        "x": 42,
+        "y": 47,
+        "w": 10,
+        "h": 8
+      },
+      "respawnMs": 27000,
+      "monsters": [
+        {
+          "kind": "ash-shadow",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "ash-camp-3",
+      "area": {
+        "x": 72,
+        "y": 30,
+        "w": 9,
+        "h": 8
+      },
+      "respawnMs": 30000,
+      "monsters": [
+        {
+          "kind": "ash-guardian",
+          "count": 3
+        }
+      ]
+    }
+  ]
 }

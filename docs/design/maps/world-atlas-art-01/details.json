@@ -159,7 +159,7 @@
       },
       {
         "id": "ashwind-volcano",
-        "status": "planned"
+        "status": "live"
       },
       {
         "id": "storm-seal-coast",
@@ -319,48 +319,60 @@
   "ashwind-volcano": {
     "climate": "ภูเขาไฟร้อนแห้ง",
     "landmark": "ปล่องแตกกับศาลหินดำ",
-    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
-    "residents": [],
-    "proposedResidents": [
-      "ภูตถ่าน",
-      "ทวารบาลหินดำ",
-      "แมงป่องเถ้า"
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตเถ้าลม",
+      "เงาลาดหินดำ",
+      "ผู้เฝ้าสำนักภูเขาไฟ"
     ],
-    "npcs": [],
+    "proposedResidents": [],
+    "npcs": [
+      "ผู้รักษาเถ้าลม",
+      "ผู้เฝ้าสำนักหินดำ",
+      "พรานเถ้าลม"
+    ],
     "connections": [
       {
         "id": "ember-caldera",
-        "status": "planned"
+        "status": "live"
       },
       {
         "id": "mountain-spirit-sanctuary",
-        "status": "planned"
+        "status": "live"
       }
     ],
-    "source": "leveling-20-proposal + world-30 proposal"
+    "source": "authoritative MAPS / existing MONSTERS"
   },
   "ember-caldera": {
     "climate": "แอ่งภูเขาไฟไอน้ำร้อน",
     "landmark": "วงพิธีบนเกาะหินกลางปล่อง",
-    "activities": "ข้อเสนอ: สำรวจภูมิภาค · ล่ามอนสเตอร์ · จุดเด่นตามสำนัก",
-    "residents": [],
-    "proposedResidents": [
-      "ผู้เฝ้าถ่านอาคม",
-      "ภูตควันแดง",
-      "ด้วงเปลือกหินร้อน"
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตไออัคคี",
+      "เงาริมปล่อง",
+      "ทวารบาลปล่องพิธี"
     ],
-    "npcs": [],
+    "proposedResidents": [],
+    "npcs": [
+      "ผู้รักษาแอ่งแร่",
+      "ผู้เฝ้าประตูอัคคี",
+      "ยามประตูปล่อง"
+    ],
     "connections": [
       {
         "id": "ashwind-volcano",
-        "status": "planned"
+        "status": "live"
+      },
+      {
+        "id": "obsidian-estuary",
+        "status": "live"
       },
       {
         "id": "storm-seal-plateau",
         "status": "planned"
       }
     ],
-    "source": "leveling-20-proposal + world-30 proposal"
+    "source": "authoritative MAPS / existing MONSTERS"
   },
   "storm-seal-coast": {
     "climate": "ชายฝั่งมรสุม / ลมทะเล",
@@ -715,5 +727,28 @@
       }
     ],
     "source": "leveling-20-proposal + world-30 proposal"
+  },
+  "obsidian-estuary": {
+    "climate": "ชายฝั่งภูเขาไฟชื้น / หมอกทะเล",
+    "landmark": "ประตูหินแยกและท่าหินดำ",
+    "activities": "สำรวจ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ",
+    "residents": [
+      "ภูตไอปากน้ำ",
+      "เงาท่าหินดำ",
+      "ผู้เฝ้าฝั่งออบซิเดียน"
+    ],
+    "proposedResidents": [],
+    "npcs": [
+      "ผู้รักษาปากน้ำ",
+      "ผู้ดูแลท่าหินดำ",
+      "ยามศาลปากน้ำ"
+    ],
+    "connections": [
+      {
+        "id": "ember-caldera",
+        "status": "live"
+      }
+    ],
+    "source": "authoritative MAPS / existing MONSTERS"
   }
 }

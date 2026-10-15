@@ -1,3 +1,4 @@
+import{preloadIndonesia,renderIndonesia,isIndonesiaMap}from'./IndonesiaRegion';
 import Phaser from 'phaser';
 import {renderSanctuaryCliffs} from './SanctuaryCliffs';
 import { projectedY, terrainHeight, cellCorners, MAP_ASSET_SCALE, terrainVertices, WORLD_UNIT_PX, type MapDefinition } from '@shaman/shared';
@@ -37,6 +38,7 @@ const TILE_PX = 16;
 
 export function preloadMapAssets(scene: Phaser.Scene, map?: MapDefinition) {
   preloadChina(scene,map);
+  if(isIndonesiaMap(map))preloadIndonesia(scene);
   if(map?.id==='mountain-spirit-sanctuary'){
     scene.load.image('sanctuary:kit','/assets/umbral/sanctuary-02/kit.png');
   }
@@ -55,6 +57,7 @@ export function preloadMapAssets(scene: Phaser.Scene, map?: MapDefinition) {
 
 /** Draws ground regions and objects for a map. Objects depth-sort by their base y, like characters. */
 export function renderMap(scene: Phaser.Scene, map: MapDefinition) {
+  if(isIndonesiaMap(map)){const {water}=renderIndonesia(scene,map);return{widthPx:map.width*WORLD_UNIT_PX,heightPx:map.height*WORLD_UNIT_PX,water};}
   const manifest = scene.cache.json.get(MANIFEST_KEY) as MapAssetManifest | undefined;
   if (!manifest) throw new Error('Map asset manifest not loaded; call preloadMapAssets in preload()');
   const U = WORLD_UNIT_PX;

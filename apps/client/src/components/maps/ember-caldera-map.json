@@ -1015,6 +1015,36 @@
           ]
         ],
         "r": 2.1
+      },
+      {
+        "terrain": "road",
+        "shape": "path",
+        "points": [
+          [
+            1,
+            64
+          ],
+          [
+            4,
+            64
+          ]
+        ],
+        "r": 1.8
+      },
+      {
+        "terrain": "road",
+        "shape": "path",
+        "points": [
+          [
+            91,
+            47
+          ],
+          [
+            95,
+            47
+          ]
+        ],
+        "r": 1.8
       }
     ]
   },
@@ -1799,8 +1829,171 @@
       "h": 0.502
     }
   ],
-  "npcs": [],
-  "portals": [],
-  "safeZones": [],
-  "spawnRegions": []
+  "npcs": [
+    {
+      "id": "ember-healer",
+      "sprite": "npc-herbalist",
+      "role": "healer",
+      "x": 74,
+      "y": 69,
+      "name": {
+        "th": "ผู้รักษาแอ่งแร่",
+        "en": "ember-healer"
+      },
+      "title": "รักษา",
+      "greeting": "พักที่เพิงริมแอ่งแร่ก่อนเดินทาง"
+    },
+    {
+      "id": "ember-keeper",
+      "sprite": "npc-elder",
+      "role": "guide",
+      "x": 46,
+      "y": 30,
+      "name": {
+        "th": "ผู้เฝ้าประตูอัคคี",
+        "en": "ember-keeper"
+      },
+      "title": "นำทาง",
+      "greeting": "ตะวันตกไปเถ้าลม ตะวันออกลงสู่ชุมชนปากน้ำ"
+    },
+    {
+      "id": "ember-watch",
+      "sprite": "npc-guard",
+      "role": "guard",
+      "x": 18,
+      "y": 61,
+      "name": {
+        "th": "ยามประตูปล่อง",
+        "en": "ember-watch"
+      },
+      "title": "เฝ้าทาง",
+      "greeting": "ลานเหนือทะเลสาบเป็นทางพิธี กลุ่มมอนสเตอร์อยู่รอบนอก"
+    }
+  ],
+  "portals": [
+    {
+      "id": "ashwind-gate",
+      "area": {
+        "x": 0,
+        "y": 63,
+        "w": 2,
+        "h": 2
+      },
+      "arrival": {
+        "x": 4,
+        "y": 64
+      },
+      "to": {
+        "mapId": "ashwind-volcano",
+        "portalId": "caldera-gate"
+      },
+      "label": {
+        "th": "กลับภูเขาไฟเถ้าลม · ตะวันตก",
+        "en": "ashwind-volcano"
+      }
+    },
+    {
+      "id": "estuary-gate",
+      "area": {
+        "x": 94,
+        "y": 46,
+        "w": 2,
+        "h": 2
+      },
+      "arrival": {
+        "x": 92,
+        "y": 47
+      },
+      "to": {
+        "mapId": "obsidian-estuary",
+        "portalId": "caldera-gate"
+      },
+      "label": {
+        "th": "ไปปากน้ำออบซิเดียน · ตะวันออก",
+        "en": "obsidian-estuary"
+      }
+    }
+  ],
+  "safeZones": [
+    {
+      "x": 1,
+      "y": 61,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "x": 89,
+      "y": 44,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "x": 71,
+      "y": 66,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "x": 43,
+      "y": 27,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "x": 15,
+      "y": 58,
+      "w": 6,
+      "h": 6
+    }
+  ],
+  "spawnRegions": [
+    {
+      "id": "ember-camp-1",
+      "area": {
+        "x": 7,
+        "y": 24,
+        "w": 10,
+        "h": 8
+      },
+      "respawnMs": 24000,
+      "monsters": [
+        {
+          "kind": "ember-wisp",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "ember-camp-2",
+      "area": {
+        "x": 47,
+        "y": 55,
+        "w": 10,
+        "h": 6
+      },
+      "respawnMs": 27000,
+      "monsters": [
+        {
+          "kind": "ember-shadow",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "ember-camp-3",
+      "area": {
+        "x": 77,
+        "y": 35,
+        "w": 10,
+        "h": 7
+      },
+      "respawnMs": 30000,
+      "monsters": [
+        {
+          "kind": "ember-guardian",
+          "count": 3
+        }
+      ]
+    }
+  ]
 }

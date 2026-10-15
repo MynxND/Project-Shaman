@@ -4,6 +4,7 @@ import {MONSTERS} from '../../packages/shared/dist/combat.js';
 const atlas=JSON.parse(await readFile('docs/design/maps/world-30/atlas.json'));
 const proposed=JSON.parse(await readFile('docs/design/maps/leveling-20-proposal.json')).maps;
 const extra={
+ 'obsidian-estuary':{climate:'ชายฝั่งภูเขาไฟชื้น / หมอกทะเล',landmark:'ประตูหินแยกและท่าหินดำ',monsters:[],activity:'สำรวจปากน้ำ · ล่ามอนสเตอร์ · เดินทางผ่านประตูแมพ'},
  'mountain-spirit-sanctuary':{climate:'ป่าภูเขาชื้น / หมอกหุบเขา',landmark:'สำนักผนึกเหนือหน้าผา',monsters:['ภูตผ้าผนึก','เงาผู้เฝ้าบันได'],activity:'ข้อเสนอ: สำรวจสำนัก · เก็บวัตถุดิบอาคม · จุดต่อเส้นทางต่างภูมิภาค'},
  'moon-ritual-ridge':{climate:'สันเขาลมหนาว / ป่าเมฆ',landmark:'ลานพิธีใต้ระฆังสันเขา',monsters:['ภูตระฆัง','เงานักเดินเขา'],activity:'ข้อเสนอ: ล่าตามสันเขา · สำรวจลานพิธี'},
  'spirit-funeral-road':{climate:'ป่าหมอกเย็น / ทางหินเก่า',landmark:'ศาลประตูส่งวิญญาณ',monsters:['วิญญาณหลงทาง','เงาผู้เฝ้าประตู'],activity:'ข้อเสนอ: สำรวจทางวิญญาณ · เผชิญกลุ่มผู้เฝ้าทาง'},
@@ -22,4 +23,4 @@ const details=Object.fromEntries(atlas.maps.map(m=>{
 }));
 await writeFile('apps/client/src/components/maps/world-art-details.json',JSON.stringify(details,null,2));
 await writeFile('docs/design/maps/world-atlas-art-01/details.json',JSON.stringify(details,null,2));
-console.log('30 details records; existing residents/NPCs source-bound; proposed features separated.');
+console.log(atlas.maps.length+' details records; residents/NPCs source-bound; proposed features separated.');

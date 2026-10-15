@@ -16,10 +16,10 @@ export function WorldAtlas({current='umbral-capital'}:{current?:string}){
     el.scrollTo({left:Math.max(0,x/1200*el.scrollWidth-el.clientWidth/2)});
   },[nation,selected]);
   return <div className="shaman-atlas">
-    <header><strong>โลกหมอผี · 12 ประเทศ · 30 แมพ</strong><span>{nodes.filter(m=>live(m.id)).length} แมพเล่นได้ · {nodes.filter(m=>!live(m.id)).length} อยู่ในแผน</span></header>
+    <header><strong>โลกหมอผี · 12 ประเทศ · {nodes.length} แมพ</strong><span>{nodes.filter(m=>live(m.id)).length} แมพเล่นได้ · {nodes.filter(m=>!live(m.id)).length} อยู่ในแผน</span></header>
     <p>ภูมิศาสตร์แดนวิญญาณ ชื่อใหม่ และช่วงเลเวลเป็นข้อเสนอ · เส้นทึบเชื่อมจริง เส้นประอยู่ในแผน</p>
     <label>ดูภูมิภาค <select value={nation} onChange={e=>setNation(e.target.value)}><option value="all">ทั้งโลก</option>{atlas.nations.map(n=><option key={n.id} value={n.id}>{n.name}</option>)}</select></label><p>มือถือเลื่อนแผนผังซ้าย–ขวาได้ · เลือกจุดเพื่อดูรายละเอียด</p>
-    <div className="atlas-scroll" ref={scroll}><svg viewBox="0 0 1200 780" aria-label="แผนที่เครือข่ายโลกหมอผี 30 แมพ" role="group">
+    <div className="atlas-scroll" ref={scroll}><svg viewBox="0 0 1200 780" aria-label={`แผนที่เครือข่ายโลกหมอผี ${nodes.length} แมพ`} role="group">
       <rect width="1200" height="780" fill="#0a2024"/>
       <path d="M48 160 Q120 85 210 110 L365 170 Q470 245 405 330 L300 400 Q260 510 350 600 L240 675 Q120 640 80 500 L35 300Z" fill="#233b35" stroke="#57705b"/>
       <path d="M450 110 Q600 10 840 75 L1140 145 Q1170 280 1080 400 L1160 530 Q1140 680 950 715 L775 600 Q650 690 500 570 L430 330Z" fill="#243c34" stroke="#57705b"/>
@@ -32,6 +32,6 @@ export function WorldAtlas({current='umbral-capital'}:{current?:string}){
       <text x="600" y="760" textAnchor="middle" fill="#a6b5ad" fontSize="13">เครือข่ายภูมิภาคสมมติ · ไม่ใช่แผนที่โลกจริง · เลือกจุดเพื่อดูรายละเอียด ไม่มีวาร์ปจากหน้าจอนี้</text>
     </svg></div>
     <aside aria-live="polite"><strong>{info.name}</strong><span>{atlas.nations.find(n=>n.id===info.nation)?.name??'ศูนย์กลางร่วม'} · Lv.{info.levels.join('–')} (เสนอ) · {live(info.id)?'เล่นได้ในเกม':'แผนพัฒนาระยะ '+info.phase}</span><p>{info.biome}</p><p>{atlas.nations.find(n=>n.id===info.nation)?.theme??'ศูนย์รวมเส้นทางหมอผี'}</p></aside>
-    <details><summary>รายชื่อครบ30แมพและลำดับพัฒนา</summary><ol>{nodes.map(m=><li key={m.id}><button type="button" onClick={()=>setSelected(m.id)}>{m.name}</button> · {live(m.id)?'เล่นได้':'ระยะ '+m.phase} · Lv.{m.levels.join('–')}</li>)}</ol></details>
+    <details><summary>รายชื่อครบ {nodes.length} แมพและลำดับพัฒนา</summary><ol>{nodes.map(m=><li key={m.id}><button type="button" onClick={()=>setSelected(m.id)}>{m.name}</button> · {live(m.id)?'เล่นได้':'ระยะ '+m.phase} · Lv.{m.levels.join('–')}</li>)}</ol></details>
   </div>;
 }

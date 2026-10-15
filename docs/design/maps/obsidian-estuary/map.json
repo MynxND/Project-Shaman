@@ -1017,6 +1017,21 @@
         "x": 58,
         "y": 69,
         "r": 2.3
+      },
+      {
+        "terrain": "road",
+        "shape": "path",
+        "points": [
+          [
+            1,
+            20
+          ],
+          [
+            4,
+            20
+          ]
+        ],
+        "r": 1.8
       }
     ]
   },
@@ -2934,8 +2949,144 @@
       "h": 0.502
     }
   ],
-  "npcs": [],
-  "portals": [],
-  "safeZones": [],
-  "spawnRegions": []
+  "npcs": [
+    {
+      "id": "estuary-healer",
+      "sprite": "npc-herbalist",
+      "role": "healer",
+      "x": 16,
+      "y": 56,
+      "name": {
+        "th": "ผู้รักษาปากน้ำ",
+        "en": "estuary-healer"
+      },
+      "title": "รักษา",
+      "greeting": "พักฟื้นที่ลานช่างก่อนข้ามทางหิน"
+    },
+    {
+      "id": "estuary-keeper",
+      "sprite": "npc-elder",
+      "role": "guide",
+      "x": 56,
+      "y": 62,
+      "name": {
+        "th": "ผู้ดูแลท่าหินดำ",
+        "en": "estuary-keeper"
+      },
+      "title": "นำทาง",
+      "greeting": "ทางตะวันตกกลับปล่องพิธีอัคคี ทางใต้ยังไม่เปิด"
+    },
+    {
+      "id": "estuary-watch",
+      "sprite": "npc-guard",
+      "role": "guard",
+      "x": 16,
+      "y": 18,
+      "name": {
+        "th": "ยามศาลปากน้ำ",
+        "en": "estuary-watch"
+      },
+      "title": "เฝ้าทาง",
+      "greeting": "ข้ามน้ำเฉพาะทางหิน ระวังวิญญาณชายฝั่ง"
+    }
+  ],
+  "portals": [
+    {
+      "id": "caldera-gate",
+      "area": {
+        "x": 0,
+        "y": 19,
+        "w": 2,
+        "h": 2
+      },
+      "arrival": {
+        "x": 4,
+        "y": 20
+      },
+      "to": {
+        "mapId": "ember-caldera",
+        "portalId": "estuary-gate"
+      },
+      "label": {
+        "th": "กลับปล่องพิธีอัคคี · ตะวันตก",
+        "en": "ember-caldera"
+      }
+    }
+  ],
+  "safeZones": [
+    {
+      "x": 1,
+      "y": 17,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "x": 13,
+      "y": 53,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "x": 53,
+      "y": 59,
+      "w": 6,
+      "h": 6
+    },
+    {
+      "x": 13,
+      "y": 15,
+      "w": 6,
+      "h": 6
+    }
+  ],
+  "spawnRegions": [
+    {
+      "id": "estuary-camp-1",
+      "area": {
+        "x": 8,
+        "y": 26,
+        "w": 10,
+        "h": 8
+      },
+      "respawnMs": 24000,
+      "monsters": [
+        {
+          "kind": "estuary-wisp",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "estuary-camp-2",
+      "area": {
+        "x": 8,
+        "y": 58,
+        "w": 9,
+        "h": 7
+      },
+      "respawnMs": 27000,
+      "monsters": [
+        {
+          "kind": "estuary-shadow",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "estuary-camp-3",
+      "area": {
+        "x": 44,
+        "y": 45,
+        "w": 9,
+        "h": 6
+      },
+      "respawnMs": 30000,
+      "monsters": [
+        {
+          "kind": "estuary-guardian",
+          "count": 3
+        }
+      ]
+    }
+  ]
 }

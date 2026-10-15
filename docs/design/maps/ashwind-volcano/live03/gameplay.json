@@ -1,0 +1,102 @@
+{
+  "npcIds": [
+    "ash-healer",
+    "ash-keeper",
+    "ash-watch"
+  ],
+  "camps": [
+    {
+      "id": "ash-camp-1",
+      "area": {
+        "x": 24,
+        "y": 14,
+        "w": 10,
+        "h": 9
+      },
+      "respawnMs": 24000,
+      "monsters": [
+        {
+          "kind": "ash-wisp",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "ash-camp-2",
+      "area": {
+        "x": 42,
+        "y": 47,
+        "w": 10,
+        "h": 8
+      },
+      "respawnMs": 27000,
+      "monsters": [
+        {
+          "kind": "ash-shadow",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "ash-camp-3",
+      "area": {
+        "x": 72,
+        "y": 30,
+        "w": 9,
+        "h": 8
+      },
+      "respawnMs": 30000,
+      "monsters": [
+        {
+          "kind": "ash-guardian",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "portals": [
+    {
+      "id": "sanctuary-gate",
+      "area": {
+        "x": 0,
+        "y": 53,
+        "w": 2,
+        "h": 2
+      },
+      "arrival": {
+        "x": 4,
+        "y": 54
+      },
+      "to": {
+        "mapId": "mountain-spirit-sanctuary",
+        "portalId": "ashwind-gate"
+      },
+      "label": {
+        "th": "กลับสำนักผนึกบนภูเขา · ตะวันตก",
+        "en": "mountain-spirit-sanctuary"
+      }
+    },
+    {
+      "id": "caldera-gate",
+      "area": {
+        "x": 88,
+        "y": 15,
+        "w": 2,
+        "h": 2
+      },
+      "arrival": {
+        "x": 86,
+        "y": 16
+      },
+      "to": {
+        "mapId": "ember-caldera",
+        "portalId": "ashwind-gate"
+      },
+      "label": {
+        "th": "ไปปล่องพิธีอัคคี · ตะวันออก",
+        "en": "ember-caldera"
+      }
+    }
+  ],
+  "failedPlacements": []
+}

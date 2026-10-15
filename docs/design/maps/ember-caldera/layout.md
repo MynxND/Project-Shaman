@@ -45,3 +45,11 @@ Revision02 visual correction: first gate at (44,20) merged into the sanctum silh
 
 
 Revision02 result: native16px/unit ground and water now follow ordered semantic shapes with nearest2x sampling. Half-unit water blockers regenerated; all required locations and authored route round trips pass, no wet building footprints. Fixed source atlas and live world registration unchanged. Visual screenshots in revision02; technical checks are not user visual approval.
+
+
+## Live adoption03 — authorized2026-10-15 (before placement)
+Adopt reviewed Indonesian geometry/art and natural native shores. Add reciprocal boundary chain: sanctuary south (8,63) ↔ Ashwind west(1,54); Ashwind east(89,16) ↔ Ember west(1,64); Ember east(95,47) ↔ Estuary west(1,20). Arrivals outside triggers: sanctuary8,60; Ashwind4,54/86,16; Ember4,64/92,47; Estuary4,20. Extend only short dry approaches; sanctuary lower branch4,54→6,55→6,60→8,63 avoids elevated terraces. Preserve every old portal/resident/required landmark.
+NPC IDs required: ash-healer/ash-keeper/ash-watch, ember-healer/ember-keeper/ember-watch, estuary-healer/estuary-keeper/estuary-watch. Existing owned service/monster sprites reused (regional outfit/unique monster art remains future work). Three explicitly bounded camps per new map,9 inhabitants each; provisional ranges Ashwind50–65,Ember60–75,Estuary55–70 (new proposal, no old species rebalance). Safe entrances, services and main routes excluded from spawn samples. No new generated assets.
+Required map object IDs remain those in plan.json. Native coast geometry/wet blockers/source atlas preserved. NPC approaches, camp samples, return paths, real server tickets/no bounce/profile/observer/combat and actual game desktop/mobile must be verified. Failed placements must be explicit and corrected before delivery. Atlas retains original30 nodes plus additional estuary (31 total), no nation/node deleted.
+
+Live03 failed placement: ember-healer at74,66 blocked the existing south-rest branch. Move to74,69 beside the approach, retaining clear route and talk point74,67.5. No landmark removed.

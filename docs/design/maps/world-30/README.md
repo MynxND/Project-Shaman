@@ -1,6 +1,6 @@
-# World atlas — 30 maps / 12 nations
+# World atlas — 31 maps / 12 nations
 
-User target30 supersedes earlier20-map count. Eight content maps playable;22 are planning nodes, not registered gameplay. Geography, names, level ranges and routes proposed; confirmed nation/source branches remain traceable. Norway original source Seidr is historical; current approved gameplay uses Ullr Hunter. Existing map registry lab maps excluded. No skill/lore formula changes.
+Original30-node roadmap plus user-authorized Obsidian Estuary; no existing nodes removed. Eleven content maps playable;20 are planning nodes, not registered gameplay. Geography, names, level ranges and routes proposed; confirmed nation/source branches remain traceable. Norway original source Seidr is historical; current approved gameplay uses Ullr Hunter. Existing map registry lab maps excluded. No skill/lore formula changes.
 
 ## Roadmap
 Phase1 existing hub+four regions; Phase2 China/Philippines plus mountain gateway; Phase3 Japan/Korea/Indonesia/Ireland/USA; Phase4 Norway/Russia/Haiti/Mexico; Phase5 two shared endgame maps. Per-map layout briefs, artwork, animation, collision and network review required before playable adoption. No fake travel to planned nodes.
@@ -37,9 +37,6 @@ Phase1 existing hub+four regions; Phase2 China/Philippines plus mountain gateway
 | sunken-oasis — โอเอซิสศาลจมทราย | mexico | 85–95 | 4 |
 | storm-seal-plateau — ที่ราบสูงตราพายุ | global | 85–95 | 5 |
 | broken-seal-sanctum — วิหารผนึกแตก | global | 90–99 | 5 |
+| obsidian-estuary — ปากน้ำออบซิเดียน | indonesia | 55–70 | 3 |
 
 Sources: docs/design/skill-system/classification.json, docs/design/skills/SKILL_TREE_UNIQUENESS_AUDIT.md, packages/shared/src/skills-norway.ts, docs/design/maps/leveling-20-proposal.json. Region themes summarize fictional class identities, not claims about real religious practice. Source branches preserved in atlas.json; no generated sacred scripts or new VFX.
-
-2026-10-14: mountain-spirit-sanctuary now live through marsh east/west return tickets; remaining inter-nation routes planned.
-
-2026-10-15: mist-bamboo live through sanctuary east-edge/valley west-edge return tickets; seven playable maps,23 planned. Tea continuation remains inactive.

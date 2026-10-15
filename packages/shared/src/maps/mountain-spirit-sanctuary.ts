@@ -220,6 +220,25 @@ export const MOUNTAIN_SPIRIT_SANCTUARY:MapDefinition={
           ]
         ],
         "r": 1.5
+      },
+      {
+        "terrain": "dirt",
+        "shape": "path",
+        "points": [
+          [
+            40,
+            56
+          ],
+          [
+            42,
+            59
+          ],
+          [
+            42,
+            63
+          ]
+        ],
+        "r": 1.8
       }
     ]
   },
@@ -1171,6 +1190,27 @@ export const MOUNTAIN_SPIRIT_SANCTUARY:MapDefinition={
       "label": {
         "th": "ไปหุบไผ่หมอกคราม · ตะวันออก",
         "en": "Mist bamboo valley"
+      }
+    },
+    {
+      "id": "ashwind-gate",
+      "area": {
+        "x": 41,
+        "y": 62,
+        "w": 2,
+        "h": 2
+      },
+      "arrival": {
+        "x": 42,
+        "y": 60
+      },
+      "to": {
+        "mapId": "ashwind-volcano",
+        "portalId": "sanctuary-gate"
+      },
+      "label": {
+        "th": "ไปภูเขาไฟเถ้าลม · ใต้",
+        "en": "ashwind-volcano"
       }
     }
   ],

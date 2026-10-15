@@ -7,6 +7,7 @@ import { WHISPERING_SPIRITWOOD } from './whispering-spiritwood.js';
 import {SPIRITWOOD_LIVE} from './spiritwood-live.js';
 import {MOUNTAIN_SPIRIT_SANCTUARY} from './mountain-spirit-sanctuary.js';
 import {MIST_BAMBOO} from './mist-bamboo.js';
+import {INDONESIA_MAPS} from './indonesia.js';
 import {CLOUD_TEA_SLOPES} from './cloud-tea-slopes.js';
 import {MARSH_MOUNTAIN_LINK} from './marsh-mountain-link.js';
 import {LEVELING_LIVE} from './leveling-live.js';
@@ -22,6 +23,7 @@ export const MAPS: Readonly<Record<string, MapDefinition>> = {
   [MOUNTAIN_SPIRIT_SANCTUARY.id]:MOUNTAIN_SPIRIT_SANCTUARY,
   [MIST_BAMBOO.id]:MIST_BAMBOO,
   [CLOUD_TEA_SLOPES.id]:CLOUD_TEA_SLOPES,
+  ...Object.fromEntries(INDONESIA_MAPS.map(map=>[map.id,map])),
 };
 export const DEFAULT_MAP_ID = UMBRAL_CAPITAL.id;
 /** The map for an id, or the default (Umbral Capital) for an unknown id. */

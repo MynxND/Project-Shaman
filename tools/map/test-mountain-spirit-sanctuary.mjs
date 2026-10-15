@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import{readFile,writeFile}from'node:fs/promises';
 import{isBlocked,terrainHeight,elevationPassage,stepMovement,MAPS}from'../../packages/shared/dist/index.js';
 const root='docs/design/maps/mountain-spirit-sanctuary/',map=JSON.parse(await readFile(root+'map.json')),review=JSON.parse(await readFile(root+'review.json')),manifest=JSON.parse(await readFile('apps/client/public/assets/umbral/manifest.json'));
-assert(MAPS[map.id],'authorized live registration');assert.equal(map.portals.length,2);assert.deepEqual(MAPS[map.id],map);
+assert(MAPS[map.id],'authorized live registration');assert.equal(map.portals.length,3);assert.deepEqual(MAPS[map.id],map);
 const ids=new Set(map.objects.map(o=>o.id));assert.equal(ids.size,map.objects.length);for(const id of review.requiredObjects)assert(ids.has(id),id);
 const failures=[];
 for(const o of map.objects){assert(manifest.objects[o.asset],o.asset);if(!o.footprint)continue;const expected=terrainHeight(map,o.x,o.y);for(let y=o.y-o.footprint.h;y<=o.y;y+=.25)for(let x=o.x-o.footprint.w/2;x<=o.x+o.footprint.w/2;x+=.25)if(terrainHeight(map,x,y)!==expected||map.blockers.some(b=>x>=b.x&&x<=b.x+b.w&&y>=b.y&&y<=b.y+b.h))failures.push(o.id);}

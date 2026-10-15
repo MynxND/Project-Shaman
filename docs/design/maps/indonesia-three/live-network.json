@@ -1,0 +1,67 @@
+{
+  "travel": [
+    {
+      "from": "mountain-spirit-sanctuary",
+      "to": "ashwind-volcano",
+      "arrival": {
+        "x": 4,
+        "y": 54
+      },
+      "noBounce": true
+    },
+    {
+      "from": "ashwind-volcano",
+      "to": "ember-caldera",
+      "arrival": {
+        "x": 4,
+        "y": 64
+      },
+      "noBounce": true
+    },
+    {
+      "from": "ember-caldera",
+      "to": "obsidian-estuary",
+      "arrival": {
+        "x": 4,
+        "y": 20
+      },
+      "noBounce": true
+    },
+    {
+      "from": "obsidian-estuary",
+      "to": "ember-caldera",
+      "arrival": {
+        "x": 92,
+        "y": 47
+      },
+      "noBounce": true
+    },
+    {
+      "from": "ember-caldera",
+      "to": "ashwind-volcano",
+      "arrival": {
+        "x": 86,
+        "y": 16
+      },
+      "noBounce": true
+    },
+    {
+      "from": "ashwind-volcano",
+      "to": "mountain-spirit-sanctuary",
+      "arrival": {
+        "x": 42,
+        "y": 60
+      },
+      "noBounce": true
+    }
+  ],
+  "allSixBoundaryTrips": true,
+  "npcsTalkAndHeal": true,
+  "residentsPerMap": 9,
+  "observerSync": true,
+  "reviewedRoutes": true,
+  "skillDamage": true,
+  "basicKill": true,
+  "exp": true,
+  "profilePreserved": true
+}

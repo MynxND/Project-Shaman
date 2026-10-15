@@ -1,0 +1,102 @@
+{
+  "npcIds": [
+    "ember-healer",
+    "ember-keeper",
+    "ember-watch"
+  ],
+  "camps": [
+    {
+      "id": "ember-camp-1",
+      "area": {
+        "x": 7,
+        "y": 24,
+        "w": 10,
+        "h": 8
+      },
+      "respawnMs": 24000,
+      "monsters": [
+        {
+          "kind": "ember-wisp",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "ember-camp-2",
+      "area": {
+        "x": 47,
+        "y": 55,
+        "w": 10,
+        "h": 6
+      },
+      "respawnMs": 27000,
+      "monsters": [
+        {
+          "kind": "ember-shadow",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "ember-camp-3",
+      "area": {
+        "x": 77,
+        "y": 35,
+        "w": 10,
+        "h": 7
+      },
+      "respawnMs": 30000,
+      "monsters": [
+        {
+          "kind": "ember-guardian",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "portals": [
+    {
+      "id": "ashwind-gate",
+      "area": {
+        "x": 0,
+        "y": 63,
+        "w": 2,
+        "h": 2
+      },
+      "arrival": {
+        "x": 4,
+        "y": 64
+      },
+      "to": {
+        "mapId": "ashwind-volcano",
+        "portalId": "caldera-gate"
+      },
+      "label": {
+        "th": "กลับภูเขาไฟเถ้าลม · ตะวันตก",
+        "en": "ashwind-volcano"
+      }
+    },
+    {
+      "id": "estuary-gate",
+      "area": {
+        "x": 94,
+        "y": 46,
+        "w": 2,
+        "h": 2
+      },
+      "arrival": {
+        "x": 92,
+        "y": 47
+      },
+      "to": {
+        "mapId": "obsidian-estuary",
+        "portalId": "caldera-gate"
+      },
+      "label": {
+        "th": "ไปปากน้ำออบซิเดียน · ตะวันออก",
+        "en": "obsidian-estuary"
+      }
+    }
+  ],
+  "failedPlacements": []
+}
