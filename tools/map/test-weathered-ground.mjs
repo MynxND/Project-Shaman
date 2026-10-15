@@ -11,3 +11,6 @@ for(let y=0;y<h;y++)for(let x=0;x<w;x++){const i=y*w+x;if(base[i]!==3)assert.equ
 // Original water mode survives every remaining wet sample; no dry cell becomes water.
 const pond=new Uint8Array(base.length);for(let i=0;i<pond.length;i++)if(base[i]===3)pond[i]=i%2?1:2;const displayed=pond.map((mode,i)=>shore[i]===3?mode:0);for(let i=0;i<pond.length;i++)assert(displayed[i]===0||displayed[i]===pond[i]);
 console.log('PASS shoreline toe: dry land/decks and water modes exact, bounded deterministic intrusions', {toes});
+
+// The common WaterLayer uses native16px/unit rather than the32px/unit regional paint mask.
+const native=weatherGroundEdges(base,w,h,true,1);assert.deepEqual(base,original);assert.deepEqual(native,weatherGroundEdges(base,w,h,true,1));let changed=0;for(let i=0;i<base.length;i++){if(base[i]!==3)assert.equal(native[i],base[i]);else if(native[i]!==3)changed++;}assert(changed>0);assert.throws(()=>weatherGroundEdges(base,w,h,false,0));console.log('PASS native bank stride: no new water on land, deterministic and immutable');

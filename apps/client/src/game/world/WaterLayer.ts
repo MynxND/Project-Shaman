@@ -1,3 +1,4 @@
+import{preloadEdgeEcology,finishBankEcology}from'./EdgeEcology';
 import Phaser from 'phaser';
 import {terrainHeight,type MapDefinition} from '@shaman/shared';
 import {advanceWater,waterDefaults,waterSeed,type WaterClock,type WaterControls} from './water-model';
@@ -9,7 +10,7 @@ const clocks=new WeakMap<Phaser.Game,WaterClock>();
 const MODES=['river','pond','swamp','waterfall'];
 const SWAMP_TINT=[.65,.8,.72];
 interface MaskManifest {waterBit:number;tiles:{x:number;y:number;size:number;corners:number[]}[]}
-export function preloadWater(scene:Phaser.Scene){scene.load.json('water:manifest',BASE+'/manifest.json');scene.load.image('water:mask',BASE+'/mask-tiles.png');scene.load.image('water:surface',BASE+'/surface.png');scene.load.image('water:fall',BASE+'/waterfall.png');}
+export function preloadWater(scene:Phaser.Scene){preloadEdgeEcology(scene);scene.load.json('water:manifest',BASE+'/manifest.json');scene.load.image('water:mask',BASE+'/mask-tiles.png');scene.load.image('water:surface',BASE+'/surface.png');scene.load.image('water:fall',BASE+'/waterfall.png');}
 
 /** One immutable native-pixel coverage mask and one water draw, irrespective of tile count. */
 export class WaterLayer {
@@ -38,7 +39,7 @@ export class WaterLayer {
  private canvasMode='';
  private canvasFlow?:number[];
  private readonly onUpdate=(_time:number,delta:number)=>this.update(delta);
- constructor(private scene:Phaser.Scene,private map:MapDefinition){
+ constructor(private scene:Phaser.Scene,private map:MapDefinition,private ecologyMap:MapDefinition=map){
   if(map.id==='monsoon-marsh'||map.id==='moon-mangrove')this.controls.mode='swamp';
   if(map.id==='lantern-paddy')this.controls.mode='pond';
   this.width=map.width*16;this.margin=map.elevation?48:0;this.height=map.height*16+this.margin;
@@ -72,6 +73,7 @@ export class WaterLayer {
   for(let cell=0;cell<coverage.length;cell++)if(coverage[cell]){const i=cell*4;this.pixels[i]=255;this.pixels[i+2]=(coverage[cell]!-1)*64+4;this.pixels[i+3]=255;}
  }
  finish(){
+  finishBankEcology(this.scene,this.ecologyMap,this.pixels,this.width,this.height,this.margin);
   const p=this.pixels,w=this.width,h=this.height;
   for(let y=0;y<h;y++)for(let x=0;x<w;x++){const i=(y*w+x)*4;if(!p[i])continue;this.wet.push(i);
    for(let d=1;d<=4;d++)if(x-d<0||x+d>=w||y-d<0||y+d>=h||!p[i-d*4]||!p[i+d*4]||!p[i-d*w*4]||!p[i+d*w*4]){p[i+1]=Math.round((5-d)/4*15);break;}

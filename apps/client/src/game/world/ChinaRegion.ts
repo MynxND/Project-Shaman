@@ -1,3 +1,4 @@
+import{weatherGroundEdges}from'./weathered-ground';
 import Phaser from 'phaser';
 import{terrainVertices,cellCorners,WORLD_UNIT_PX,type MapDefinition,type MapObject}from'@shaman/shared';
 import{addContactShadow}from'./Lighting';
@@ -14,15 +15,17 @@ export function renderChinaGround(scene:Phaser.Scene,map:MapDefinition){if(!isCh
  const texture=scene.textures.createCanvas(key,w,h)!;const samples={}as Record<string,Uint8ClampedArray>;
  const sizes={grass:128,dirt:128,road:64}as const;
  for(const[name,index]of (['grass','dirt','road']as const).map((name,index)=>[name,index]as const)){const size=sizes[name],k=nativeFrame(scene,name,size),source=scene.textures.get(k).getSourceImage()as HTMLCanvasElement;samples[name]=quiltPaint(source.getContext('2d')!.getImageData(0,0,size,size).data,size,w,h,31415+index*97+(map.id==='mist-bamboo'?11:23));}
- const vertices=terrainVertices(map),out=texture.context.createImageData(w,h);
+ const vertices=terrainVertices(map),out=texture.context.createImageData(w,h),labels=new Uint8Array(w*h);
  for(let cy=0;cy<map.height;cy++)for(let cx=0;cx<map.width;cx++){const corners=cellCorners(vertices,map.width,cx,cy);for(let py=0;py<16;py++)for(let px=0;px<16;px++){
   const u=(px+.5)/16,v=(py+.5)/16,weights=[(1-u)*(1-v),u*(1-v),(1-u)*v,u*v],totals:{[name:string]:number}={};
   corners.forEach((c,i)=>{const material=c==='water'?'grass':c;totals[material]=(totals[material]??0)+weights[i]!;});
   const material=Object.keys(totals).reduce((a,b)=>totals[a]!>=totals[b]!?a:b),x=cx*16+px,y=cy*16+py,s=samples[material]??samples.grass!,di=(y*w+x)*4,si=di;
-  out.data[di]=s[si]!;out.data[di+1]=s[si+1]!;out.data[di+2]=s[si+2]!;out.data[di+3]=255;
+  labels[y*w+x]=material==='road'?2:material==='dirt'?1:0;out.data[di]=s[si]!;out.data[di+1]=s[si+1]!;out.data[di+2]=s[si+2]!;out.data[di+3]=255;
  }}
+ const worn=weatherGroundEdges(labels,w,h,false,1);for(let i=0;i<labels.length;i++)if(worn[i]!==labels[i]){const s=samples[worn[i]===2?'road':worn[i]===1?'dirt':'grass']!,j=i*4;out.data.set(s.subarray(j,j+4),j);}
  texture.context.putImageData(out,0,0);texture.refresh();texture.setFilter(Phaser.Textures.FilterMode.NEAREST);
  // Existing WaterLayer(-1.7) retains its exact reviewed Wang mask over this ground.
+ // Shared ecology now chips the display-only bank margin; authoritative water geometry is retained.
  scene.add.image(0,0,key).setOrigin(0).setScale(2).setDepth(-1.75);
 }
 /** Original IDs, anchors and blocking footprints are retained; only regional visual prefabs change. */

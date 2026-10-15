@@ -1,3 +1,4 @@
+import{weatherGroundEdges}from'../../game/world/weathered-ground';
 import Phaser from 'phaser';
 import{WORLD_UNIT_PX as U,MAP_ASSET_SCALE,terrainVertices,cellCorners,type MapDefinition}from'@shaman/shared';
 import{WaterLayer,preloadWater}from'../../game/world/WaterLayer';
@@ -11,10 +12,11 @@ export function preloadRuins(scene:Phaser.Scene){preloadWater(scene);scene.load.
 function frame(scene:Phaser.Scene,name:Frame,width:number){const key=`ruins:${name}:${width}`;if(scene.textures.exists(key))return key;const f=kit.frames[name],h=Math.round(width*f.h/f.w),t=scene.textures.createCanvas(key,width,h)!;t.context.imageSmoothingEnabled=false;t.context.drawImage(scene.textures.get(KEY).getSourceImage()as HTMLImageElement,f.x,f.y,f.w,f.h,0,0,width,h);t.refresh();t.setFilter(Phaser.Textures.FilterMode.NEAREST);return key;}
 /** Independent preview binding: the original atlas and all live maps remain unchanged. */
 export function renderRuins(scene:Phaser.Scene,map:MapDefinition){
- const w=map.width*N,h=map.height*N,samples={}as Record<string,Uint8ClampedArray>;
+ const w=map.width*N,h=map.height*N,samples={}as Record<string,Uint8ClampedArray>,labels=new Uint8Array(w*h);
  for(const[name,size,seed]of [['ash',128,301],['road',64,302]]as const){const key=frame(scene,name,size),source=scene.textures.get(key).getSourceImage()as HTMLCanvasElement;samples[name]=quiltPaint(source.getContext('2d')!.getImageData(0,0,size,size).data,size,w,h,seed);}
- const t=scene.textures.createCanvas('ruins:ground',w,h)!,out=t.context.createImageData(w,h),vertices=terrainVertices(map),water=new WaterLayer(scene,{...map,objects:[]});
- for(let cy=0;cy<map.height;cy++)for(let cx=0;cx<map.width;cx++){const corners=cellCorners(vertices,map.width,cx,cy);water.addTile(cx,cy,corners);for(let py=0;py<N;py++)for(let px=0;px<N;px++){const u=(px+.5)/N,v=(py+.5)/N,weights=[(1-u)*(1-v),u*(1-v),(1-u)*v,u*v],road=corners.reduce((a,c,i)=>a+(c==='road'?weights[i]!:0),0),i=((cy*N+py)*w+cx*N+px)*4,s=samples[road>=.5?'road':'ash']!;out.data[i]=s[i]!;out.data[i+1]=s[i+1]!;out.data[i+2]=s[i+2]!;out.data[i+3]=255;}}
+ const t=scene.textures.createCanvas('ruins:ground',w,h)!,out=t.context.createImageData(w,h),vertices=terrainVertices(map),water=new WaterLayer(scene,{...map,objects:[]},map);
+ for(let cy=0;cy<map.height;cy++)for(let cx=0;cx<map.width;cx++){const corners=cellCorners(vertices,map.width,cx,cy);water.addTile(cx,cy,corners);for(let py=0;py<N;py++)for(let px=0;px<N;px++){const u=(px+.5)/N,v=(py+.5)/N,weights=[(1-u)*(1-v),u*(1-v),(1-u)*v,u*v],road=corners.reduce((a,c,i)=>a+(c==='road'?weights[i]!:0),0),i=((cy*N+py)*w+cx*N+px)*4,s=samples[road>=.5?'road':'ash']!;labels[i/4]=road>=.5?2:0;out.data[i]=s[i]!;out.data[i+1]=s[i+1]!;out.data[i+2]=s[i+2]!;out.data[i+3]=255;}}
+ const worn=weatherGroundEdges(labels,w,h,false,1);for(let i=0;i<labels.length;i++)if(worn[i]!==labels[i]){const s=samples[worn[i]===2?'road':'ash']!,j=i*4;out.data.set(s.subarray(j,j+4),j);}
  t.context.putImageData(out,0,0);t.refresh();t.setFilter(Phaser.Textures.FilterMode.NEAREST);scene.add.image(0,0,'ruins:ground').setOrigin(0).setScale(MAP_ASSET_SCALE).setDepth(-1.8);// This independent atlas has no legacy umbral object-reflection bindings.
  water.finish();
  for(const o of map.objects as (MapDefinition['objects'][number]&{width:number})[]){const key=frame(scene,o.asset as Frame,o.width);scene.add.image(o.x*U,o.y*U,key).setOrigin(.5,1).setScale(MAP_ASSET_SCALE).setDepth(o.y*U).setName(o.id);addContactShadow(scene,o.x*U,o.y*U,o.footprint?o.footprint.w*U:o.width*.8);}

@@ -1,3 +1,4 @@
+import{renderLegacyPathWear}from'./LegacyPathWear';
 import{isJapanMap,preloadJapanRegion,renderJapanRegion}from'./JapanRegion';
 import{preloadIndonesia,renderIndonesia,isIndonesiaMap}from'./IndonesiaRegion';
 import Phaser from 'phaser';
@@ -170,6 +171,7 @@ function renderTerrain(scene: Phaser.Scene, map: MapDefinition, manifest: MapAss
   }
   // PixelLab's grass is brighter than the buildings; a light tint keeps the ground behind the architecture.
   scene.add.image(0, map.elevation ? -96 : 0, TERRAIN_KEY).setOrigin(0).setScale(MAP_ASSET_SCALE).setDepth(-1.8).setTint(map.id === 'whispering-spiritwood' ? 0x9aa99f : 0xa9b39c);
+  renderLegacyPathWear(scene,map,solid);
   return water.finish();
 }
 

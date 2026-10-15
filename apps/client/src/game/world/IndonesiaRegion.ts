@@ -1,3 +1,4 @@
+import{weatherGroundEdges}from'./weathered-ground';
 import Phaser from 'phaser';
 import{WORLD_UNIT_PX as U,MAP_ASSET_SCALE,type MapDefinition}from'@shaman/shared';
 import{WaterLayer}from'./WaterLayer';
@@ -20,12 +21,13 @@ export function renderIndonesia(scene:Phaser.Scene,map:MapDefinition,profile:Pic
  const groundKey=`indonesia:ground:${map.id}`;
  // Canvas textures outlive Phaser scene restarts unless explicitly released.
  if(scene.textures.exists(groundKey))scene.textures.remove(groundKey);
- const t=scene.textures.createCanvas(groundKey,w,h)!,out=t.context.createImageData(w,h),raster=rasterNativeTerrain(map,U),water=new WaterLayer(scene,{...map,objects:[]});
+ const t=scene.textures.createCanvas(groundKey,w,h)!,out=t.context.createImageData(w,h),raster=rasterNativeTerrain(map,U),water=new WaterLayer(scene,{...map,objects:[]},map);
  water.setNativeCoverage(rasterNativeTerrain(map,N).water);
+ const labels=raster.materials.map(v=>v>=2?3:v===1?2:0),worn=weatherGroundEdges(labels,w,h);
  // Composite one material at a time instead of retaining two full-size painted planes.
  for(const[name,size,seed]of [['ash',256,301],['road',128,302]]as const){
   const key=frame(scene,name,size),source=scene.textures.get(key).getSourceImage()as HTMLCanvasElement,s=quiltPaint(source.getContext('2d')!.getImageData(0,0,size,size).data,size,w,h,seed,2);
-  for(let cell=0;cell<raster.materials.length;cell++)if((raster.materials[cell]===1)===(name==='road')){const i=cell*4;out.data[i]=s[i]!;out.data[i+1]=s[i+1]!;out.data[i+2]=s[i+2]!;out.data[i+3]=255;}
+  for(let cell=0;cell<raster.materials.length;cell++)if((worn[cell]===2)===(name==='road')){const i=cell*4;out.data[i]=s[i]!;out.data[i+1]=s[i+1]!;out.data[i+2]=s[i+2]!;out.data[i+3]=255;}
  }
  t.context.putImageData(out,0,0);t.refresh();t.setFilter(Phaser.Textures.FilterMode.NEAREST);scene.add.image(0,0,groundKey).setOrigin(0).setDepth(-1.8);// This independent atlas has no legacy umbral object-reflection bindings.
  scene.events.once(Phaser.Scenes.Events.SHUTDOWN,()=>scene.textures.remove(groundKey));
