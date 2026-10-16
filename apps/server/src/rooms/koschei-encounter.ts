@@ -98,7 +98,7 @@ export class KoscheiEncounter{
     else if(m.action==='skill'&&typeof m.skill==='string'&&m.skill in KOSCHEI_SKILLS){this.clear();this.state.mode='idle';this.state.endsAt=this.host.now();this.start(m.skill as KoscheiSkill,id,true);}
   }
   step(dt:number){
-    const now=this.host.now(),b=this.body,s=this.state;s.now=now;if(!b)return;
+    const now=this.host.now(),b=this.body,s=this.state;s.contactStep=Math.max(1,now-s.now||1000/30);s.now=now;if(!b)return;
     if(s.mode==='defeated'&&b.hp>0){this.reset();return;}s.hp=b.hp;
     if(b.hp<=0){if(s.mode!=='defeated'){this.clear();s.mode='defeated';s.actionAt=now;s.ultimateStage=0;s.needleExposed=false;const n=this.needle;if(n){n.hp=0;n.state='dead';this.hooks.sync(n);this.hooks.reset(n.id);}}return;}
     if(!this.players().length){if(!this.emptyAt)this.emptyAt=now;if(now-this.emptyAt>5000&&s.mode!=='dormant')this.reset();return;}this.emptyAt=0;

@@ -206,7 +206,7 @@ export class MaiyarapEncounter {
     }
   }
   step(dtMs: number) {
-    const now = this.host.now(), b = this.body; this.state.now = now; if (!b) return;
+    const now = this.host.now(), b = this.body; this.state.contactStep = Math.max(1, now-this.state.now || 1000/30); this.state.now = now; if (!b) return;
     if (this.state.mode === 'defeated' && b.hp > 0) { this.reset(); return; }
     this.state.hp = b.hp;
     for (const [id, d] of this.state.dreamers) {

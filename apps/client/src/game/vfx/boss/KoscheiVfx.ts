@@ -1,3 +1,4 @@
+import { sweptRingRadii } from './boss-contact-footprint';
 import { drawRitualWarning } from './ritual-telegraph';
 import Phaser from 'phaser';
 import { KOSCHEI_RING_START, KOSCHEI_SKILLS, KOSCHEI_CONTACT as P, WORLD_UNIT_PX as U, koscheiProgress } from '@shaman/shared';
@@ -36,7 +37,7 @@ export class KoscheiVfx {
     if (scene.game.renderer.type === Phaser.WEBGL) for (const v of this.views) v.contact.setBlendMode(Phaser.BlendModes.ADD);
   }
   get stats() { return { views: this.views.filter(v => !!v.id).length, cap: 24, peak: this.peak, particles: this.particles.filter(p => p.image.visible).length, peakParticles: this.peakParticles, cpuP95: [...this.samples].sort((a, b) => a - b)[Math.floor(this.samples.length * .95)] ?? 0 }; }
-  update(hazards: Iterable<Cue>, now: number, realm = 'awake') {
+  update(hazards: Iterable<Cue>, now: number, realm = 'awake', contactStep = 1000/30) {
     const started = performance.now(), cues = [...hazards].filter(h => now >= h.warnAt && now <= h.endsAt + 600 );
     if (cues.length > this.views.length) throw new Error('Koschei: critical tells exceed pool');
     const seen = new Set(cues.map(h => h.id));
@@ -64,14 +65,17 @@ export class KoscheiVfx {
         g.fillStyle(color, fill).lineStyle(2, color, edge);
         if (h.shape === 'capsule' || h.shape === 'charge') {
           // Show only the moving contact sweep for one nominal30Hz server step, never the passed full lane.
-          const q = h.shape === 'charge' && active ? koscheiProgress(h,now-1000/30) : 0;
+          // The published actual interval now supersedes that nominal step (50ms in recorded clips).
+          const q = h.shape === 'charge' && active ? koscheiProgress(h,now-contactStep) : 0;
           const sx = x + (h.toX * U - x) * q, sy = y + (h.toY * U - y) * q;
           const ex = h.shape === 'charge' && active ? x+(h.toX*U-x)*progress : h.toX * U, ey = h.shape === 'charge' && active ? y+(h.toY*U-y)*progress : h.toY * U;
           this.capsule(g, sx, sy, ex, ey, width);
         } else if (h.shape === 'ring' && active) {
-          const rad = (KOSCHEI_RING_START + (h.radius - KOSCHEI_RING_START) * progress) * U;
-          g.lineStyle(width * 2, color, .15).strokeCircle(x, y, rad).lineStyle(2, color, .95).strokeCircle(x, y, rad + width);
-          if (rad > width) g.strokeCircle(x, y, rad - width);
+          // Include the actual preceding authoritative tick, not only the instantaneous ring.
+          const band = sweptRingRadii(h, now, KOSCHEI_RING_START, P, contactStep);
+          const inner = band.inner*U, outer = band.outer*U;
+          g.lineStyle(outer-inner, color, .15).strokeCircle(x, y, (inner+outer)/2).lineStyle(2, color, .95).strokeCircle(x, y, outer);
+          if (inner > 0) g.strokeCircle(x, y, inner);
         } else if (h.shape === 'ring') {
           const outer = r + h.width * U, inner = Math.max(0, (KOSCHEI_RING_START - h.width - P) * U);
           // Wide translucent circle strokes expose WebGL tessellation seams.

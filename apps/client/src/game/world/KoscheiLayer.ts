@@ -17,7 +17,7 @@ export class KoscheiLayer{
     window.addEventListener('koschei:command',command);scene.input.keyboard?.on('keydown-E',interact);this.off=()=>{window.removeEventListener('koschei:command',command);scene.input.keyboard?.off('keydown-E',interact);};
   }
   update(time:number){const r=this.room(),s=r?.state.koschei.get('koschei');if(!r||!s){this.fx.update([],time);this.transformation.setVisible(false);return;}
-    if(this.clock!==s.now){this.clock=s.now;this.sampled=time;}const now=this.clock+Math.min(150,Math.max(0,time-this.sampled));this.fx.update(s.hazards.values(),now);
+    if(this.clock!==s.now){this.clock=s.now;this.sampled=time;}const now=this.clock+Math.min(150,Math.max(0,time-this.sampled));this.fx.update(s.hazards.values(),now,'awake',s.contactStep);
     const sound=(key:string,volume:number)=>{if(!this.scene.sound.locked&&this.scene.cache.audio.exists('kos:'+key))this.scene.sound.play('kos:'+key,{volume});};
     if(this.action!==s.actionAt){if(this.action>=0&&now-s.actionAt<180)sound('charge',.18);this.action=s.actionAt;}
     if(this.relicStage!==s.relicStage){if(this.relicStage>=0&&s.relicStage>this.relicStage)sound('relic',.18);this.relicStage=s.relicStage;}

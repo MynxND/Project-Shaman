@@ -1,0 +1,135 @@
+Browser tab: 3, Title: "Project Shaman", URL: "http://localhost:3000/?map=frozen-necropolis&koscheiReview=1".
+1 AXWebArea Project Shaman, URL: localhost:3000/?map=frozen-necropolis&koscheiReview=1
+	2 container
+		3 pop up button (collapsed) Description: Open Next.js Dev Tools, ID: next-logo, Secondary Actions: Expand
+			4 image
+		5 container
+			6 container เมนูหลัก
+				7 checkbox สถานะ Status, Help: สถานะ (C), Value: 0
+					8 text สถานะ
+					9 text Status
+				10 checkbox ทักษะ Skills, Help: ทักษะ (K), Value: 0
+					11 text ทักษะ
+					12 text Skills
+				13 checkbox อุปกรณ์ Equipment, Help: อุปกรณ์, Value: 0
+					14 text อุปกรณ์
+					15 text Equipment
+				16 checkbox เงินตรา Gold, Help: เงินตรา, Value: 0
+					17 text เงินตรา
+					18 text Gold
+				19 checkbox อาชีพ Class, Help: อาชีพ, Value: 0
+					20 text อาชีพ
+					21 text Class
+				22 checkbox แผนที่ Map, Help: แผนที่ (M), Value: 0
+					23 text แผนที่
+					24 text Map
+				25 checkbox กระเป๋า Bag, Help: กระเป๋า (I), Value: 0
+					26 text กระเป๋า
+					27 text Bag
+				28 container ผู้ช่วย — ยังไม่เปิด
+					29 text ผู้ช่วย
+					30 text ยังไม่เปิด
+				31 container พรีเมียม — ยังไม่เปิด
+					32 text พรีเมียม
+					33 text ยังไม่เปิด
+				34 checkbox เพิ่มเติม More, Help: เพิ่มเติม, Value: 0
+					35 text เพิ่มเติม
+					36 text More
+			37 container สถานะตัวละคร
+				38 button Description: เปิดข้อมูลตัวละคร, Help: เปิดบันทึกวิญญาณ (C)
+					39 image ตัวอย่างตัวละคร หันหน้า
+					40 text 1
+				41 heading ผู้เล่นรับเชิญ, Value: 2
+					42 text ผู้เล่นรับเชิญ
+				43 container
+					44 text Lv.  1 ร่างทรงฝึกหัด · Job 1
+				45 text HP
+				46 progress indicator Description: HP, Value: 4000
+				47 text SP
+				48 progress indicator Description: SP, Value: 40
+				49 progress indicator Description: Base EXP, Value: 0
+				50 container เงิน Silver
+					51 text ◉  3,000
+				52 text ออนไลน์
+			53 container
+				54 container แผนที่ย่อ
+					55 container
+						56 container ซูมแผนที่ย่อ
+							57 button ซูมออก
+							58 button ซูมเข้า
+						59 button Description: ขยายเป็นแผนที่ใหญ่ (M), Help: แผนที่ใหญ่ (M)
+						60 button (expanded) Description: ย่อแผนที่เป็นไอคอน, Secondary Actions: Collapse
+					61 image แผนที่ย่อ ซูม 2 เท่า ลูกศรสีทองคือคุณ จุดสีฟ้าคือผู้เล่นอื่น
+					62 container
+						63 text สุสานเยือกแข็งแห่งคอชเชย์ KOSCHEI FROZEN NECROPOLIS
+						64 text 1
+						65 text 24,35
+				66 container ติดตามเควสต์
+					67 container
+						68 heading เควสต์, Value: 2
+							69 text เควสต์
+						70 button (expanded) Description: ย่อเควสต์เป็นไอคอน, Secondary Actions: Collapse
+					71 text ไม่มีภารกิจ · คุยกับหลวงตาธรรมหน้าวิหาร (!)
+			72 container แถบสกิล
+				73 button Spirit Bolt Lv 1 · กด 1
+					74 text 1
+				75 text คลิกมอนสเตอร์เพื่อเลือกเป้าหมาย · K เปิดหน้าต่างสกิล
+			76 button Description: โจมตีปกติ (Q), Help: โจมตีปกติ · เป้าที่เลือก หรือมอนสเตอร์ที่ใกล้ที่สุด (Q)
+				77 text โจมตี
+				78 text Q
+			79 container ออกจากเกมแล้วข้อมูลจะหาย
+				80 text เล่นแบบไม่บันทึก
+				81 button เข้าสู่ระบบ
+			82 container แชท
+				83 tab group ช่องแชท
+					84 tab (selectable, settable, boolean) ทั่วไป, Value: 0
+					85 tab (selectable, settable, boolean) ปาร์ตี้, Value: 0
+					86 tab (selectable, settable, boolean) กิลด์, Value: 0
+					87 tab (selected, settable, boolean) ระบบ, Value: 1
+					88 button (expanded) Description: ย่อแชทเป็นไอคอน, Secondary Actions: Collapse
+				89 container
+					90 text 16:50
+					91 text กำลังเชื่อมต่อเซิร์ฟเวอร์…
+					92 text 16:50
+					93 text เชื่อมต่อเซิร์ฟเวอร์แล้ว · เดินด้วย WASD / ลูกศร · ซูมด้วยล้อเมาส์หรือ − / =
+				94 text field (disabled) พิมพ์ข้อความ (ยังใช้งานไม่ได้)
+			95 container Koschei boss
+				96 container
+					97 text คอชเชย์ · ระยะ  3
+				98 progress indicator Description: Koschei HP, Value: 7350
+				99 container
+					100 text 7,350  /  21,000  ·  เข็มสุดท้ายแห่งมรณะ
+			101 container
+				102 text ความตายถูกซ่อนอยู่ คลื่นมรณะผ่านไป · เข็มยังรอให้ทำลาย โอ๊ก → หีบ → กระต่าย → เป็ด → ไข่ เข็มสุดท้าย  5 /5 ·  ทำลายเข็ม หรือหลบเขตปลอดภัยด้านใต้
+				103 button (expanded) ทดสอบในเกมจริง · DEV guest, Secondary Actions: Collapse
+					104 text ทดสอบในเกมจริง · DEV guest
+				105 button เตรียมทดสอบ
+				106 button เริ่ม AI
+				107 container
+					108 button ระยะ 1
+						109 text ระยะ
+						110 text 1
+					111 button ระยะ 2
+						112 text ระยะ
+						113 text 2
+					114 button ระยะ 3
+						115 text ระยะ
+						116 text 3
+				117 pop up button (collapsed, settable) Description: สกิลทดสอบ Koschei, Value: เข็มสุดท้ายแห่งมรณะ, Secondary Actions: Expand
+					118 menu
+						119 หอกเหมันต์สุสาน
+						120 โซ่มรณะเยือกแข็ง
+						121 องครักษ์สุสาน
+						122 ทวนวิญญาณ
+						123 คืนชีพอมตะ
+						124 เข็มคำสาป
+						125 บัญชาราชันอสุภ
+						126 พายุมรณะ
+						127 บัลลังก์กระดูก
+						128 สะบั้นดวงวิญญาณ
+						129 (selected) เข็มสุดท้ายแห่งมรณะ
+				130 button ใช้สกิล
+				131 container
+					132 text VFX CPU p95  0.100 ms ·  0 / 24
+
+The focused UI element is 130 button ใช้สกิล

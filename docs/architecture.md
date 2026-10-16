@@ -659,3 +659,13 @@ death, bounded Rebirth healing and needle death gate through existing GameRoom/
 CombatSystem. Shared geometry and timestamped cues drive pooled world/lab VFX;
 React handles summaries/proximity intents.88 recorded clips, no client damage
 authority or new world travel adoption. See design/bosses/koschei/README.md.
+
+
+## Boss swept-contact presentation audit — 2026-10-16
+
+Koschei/Maiyarap encounter schemas append contactStep (actual preceding room-clock
+interval). Their render adapters use it for moving annulus inner edges and charge
+sweeps, matching authoritative interval geometry without changing hit policy.
+Recorded previews pass their50ms recording step. Boss-only desktop hotbars leave
+the southern ultimate refuge unobstructed. Full live-room skill matrix and limits:
+[telegraph combat audit](design/bosses/telegraph-combat-review/README.md).

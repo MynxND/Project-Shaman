@@ -152,3 +152,41 @@ replace the former tiny square/plain border. No new artwork, combat tuning or
 GameObject allocation; old organic source art and comments retained.
 User acceptance remains pending; physical phone/GPU and a fresh exhaustive
 real-room dodge sweep were not performed for this presentation-only revision.
+
+
+## Full new-telegraph combat audit — 2026-10-16 (planned verification)
+User requests every skill across all3 phases, positive damage, real walking
+avoidance and actor readability in actual GameRooms. Re-run each10-skill
+positive/dodge transport matrix, all ultimate branches and normal AI per phase.
+Inspect every skill in the live Phaser room, not only the recorded preview.
+Capture warning/contact/recovery evidence where applicable and record QA phase
+arrangement, network timing uncertainty and any gaps honestly. Before correcting
+a defect, preserve authority and document the exact presentation mismatch here.
+Current code audit flags active ring inner contour: it uses instantaneous radius,
+while server collision sweeps from the preceding simulation step. Verify and
+correct only rendering if confirmed; do not change damage to make tests pass.
+
+Confirmed rendering mismatch: active annulus used current radius for both edges,
+whereas authoritative collision includes the preceding tick's swept inner edge.
+Correction plan: append contactStep to only these two encounter schemas, publish
+actual room-clock step duration, and use it for both ring and charge footprints.
+No hit policy/timing/damage changes. Replay clips use their actual50ms simulation
+step, not an assumed30Hz step. Network snapshots/extrapolation still introduce
+observable timing uncertainty; do not promise latency-free pixel identity.
+
+Ultimate visual review found the desktop hotbar covering the lower half of the
+southern refuge while the player still stands north of it. Although following
+camera movement reveals it on approach, the warning should be readable earlier.
+Move only this boss room's non-touch desktop hotbar into the lower-right free
+space, wrap wide skill sets and retain touch layouts. Preserve camera/session,
+skill behavior and other rooms. Verify refuge approach after CSS correction.
+
+### Full audit result
+All10 normal skill stand/walk pairs, ultimate refuge/failure/counter branches and
+all3 normal AI phase samples PASS in actual GameRooms. Live browser captures now
+cover every skill and ultimate, including real-keyboard refuge controls. Fixed
+swept-ring/charge presentation using published contactStep and desktop hotbar
+refuge obstruction. Full matrix, evidence, timing tolerance and unverified work:
+[full live audit](../telegraph-combat-review/README.md). New-contact1273 checks,
+existing behavior/regressions, production gating, typecheck/build PASS. No new
+artwork or gameplay tuning; no continuous balanced victory/user approval claim.

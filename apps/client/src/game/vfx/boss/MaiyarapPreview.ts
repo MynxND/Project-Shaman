@@ -35,7 +35,7 @@ export function createMaiyarapPreview(parent: HTMLElement, read: () => MaiyarapP
       this.transformation.setVisible(sample.mode==='ultimate');
       if(this.transformation.visible)this.transformation.setPosition(body.x*32,body.y*32-85).setFrame(Math.min(7,Math.floor(sample.stage/5*8))).setAlpha(.35);
       const cues=clip.cues.map(h=>({...h,id:c.skill+':'+c.facing+':'+h.id,actor:'both'}));
-      this.fx.update(cues, this.age);
+      this.fx.update(cues, this.age, 'awake', 50);
       this.intervals.push(delta); if (this.intervals.length > 1800) this.intervals.shift();
       if (time - this.at > 250) { this.at = time; const sorted = [...this.intervals].sort((a, b) => a - b); report(`${this.game.renderer.type === Phaser.WEBGL ? 'WebGL' : 'Canvas'} · ${Math.round(this.age)}/${clip.duration}ms · stage${sample.stage}/5 · VFX CPU p95 ${this.fx.stats.cpuP95.toFixed(3)}ms · frame p95 ${(sorted[Math.floor(sorted.length * .95)] ?? 0).toFixed(2)}ms · ${this.fx.stats.views}/24 views · particles${this.fx.stats.particles}/64 peak${this.fx.stats.peakParticles} · ${this.intervals.length} samples`); }
     }

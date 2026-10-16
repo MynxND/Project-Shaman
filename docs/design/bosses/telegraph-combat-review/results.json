@@ -1,0 +1,283 @@
+{
+  "uncertaintyMs": 150,
+  "bosses": {
+    "koschei": {
+      "rows": [
+        {
+          "skill": "gravefrost-spear",
+          "phase": 1,
+          "positive": 65,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "deathly-chains",
+          "phase": 1,
+          "positive": 120,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "necropolis-guard",
+          "phase": 1,
+          "positive": 140,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "soul-lance",
+          "phase": 1,
+          "positive": 80,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "immortal-rebirth",
+          "phase": 2,
+          "positive": 65,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "cursed-needle",
+          "phase": 2,
+          "positive": 165,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "royal-necromancy",
+          "phase": 2,
+          "positive": 75,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "deathstorm",
+          "phase": 3,
+          "positive": 240,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "throne-of-bones",
+          "phase": 3,
+          "positive": 85,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "soul-severance",
+          "phase": 3,
+          "positive": 255,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        }
+      ],
+      "ultimate": [
+        {
+          "skill": "the-last-needle",
+          "mode": "outside-refuge",
+          "damage": 190
+        },
+        {
+          "skill": "the-last-needle",
+          "mode": "walk-to-refuge",
+          "damage": 0
+        }
+      ],
+      "counterplayMs": 14321,
+      "ai": [
+        {
+          "phase": 1,
+          "alive": true,
+          "skills": [
+            "gravefrost-spear",
+            "necropolis-guard",
+            "deathly-chains"
+          ]
+        },
+        {
+          "phase": 2,
+          "alive": true,
+          "skills": [
+            "immortal-rebirth",
+            "gravefrost-spear",
+            "necropolis-guard"
+          ]
+        },
+        {
+          "phase": 3,
+          "alive": true,
+          "skills": [
+            "throne-of-bones",
+            "gravefrost-spear",
+            "necropolis-guard",
+            "the-last-needle"
+          ]
+        }
+      ],
+      "extendedCases": 11
+    },
+    "maiyarap": {
+      "rows": [
+        {
+          "skill": "sleep-enchantment",
+          "phase": 1,
+          "positive": 55,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "underworld-chains",
+          "phase": 1,
+          "positive": 130,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "phantom-doppelganger",
+          "phase": 1,
+          "positive": 180,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "patal-gate",
+          "phase": 1,
+          "positive": 70,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "dream-theft",
+          "phase": 2,
+          "positive": 65,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "false-awakening",
+          "phase": 2,
+          "positive": 70,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "nightmare-passage",
+          "phase": 2,
+          "positive": 75,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "lucid-seal",
+          "phase": 3,
+          "positive": 150,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "underworld-court",
+          "phase": 3,
+          "positive": 85,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        },
+        {
+          "skill": "sleepwalker-hunt",
+          "phase": 3,
+          "positive": 240,
+          "dodge": 0,
+          "stayedInCourt": true,
+          "timing": "within server window ±150ms receipt uncertainty"
+        }
+      ],
+      "ultimate": [
+        {
+          "skill": "eternal-slumber",
+          "mode": "outside-refuge",
+          "damage": 180,
+          "at": 25012,
+          "x": 24,
+          "y": 30,
+          "hits": [
+            {
+              "at": 1792144179068,
+              "type": "damage",
+              "target": {
+                "kind": "player",
+                "id": "JPAwMlQOy"
+              },
+              "amount": 180,
+              "source": "dream-king-maiyarap-0"
+            }
+          ]
+        },
+        {
+          "skill": "eternal-slumber",
+          "mode": "walk-to-refuge",
+          "damage": 0,
+          "at": 25044,
+          "x": 24,
+          "y": 35.040000915527344,
+          "hits": []
+        }
+      ],
+      "counterplayMs": 17679,
+      "ai": [
+        {
+          "phase": 1,
+          "alive": true,
+          "skills": [
+            "sleep-enchantment",
+            "phantom-doppelganger",
+            "underworld-chains",
+            "patal-gate"
+          ]
+        },
+        {
+          "phase": 2,
+          "alive": true,
+          "skills": [
+            "dream-palace",
+            "sleep-enchantment",
+            "phantom-doppelganger",
+            "dream-theft"
+          ]
+        },
+        {
+          "phase": 3,
+          "alive": true,
+          "skills": [
+            "lucid-sovereign",
+            "sleep-enchantment",
+            "phantom-doppelganger",
+            "eternal-slumber"
+          ]
+        }
+      ],
+      "extendedCases": 12
+    }
+  },
+  "timedHits": 34
+}

@@ -11,3 +11,11 @@
 .kos-hp progress::-webkit-progress-bar{background:#243b32;border:1px solid #7c6b46}.kos-hp progress::-webkit-progress-value{background:#669a7f}
 
 @media(min-width:601px) and (max-width:1100px) and (min-height:501px){.kos-hp{left:12px;top:155px;width:220px}}
+
+/* Keep the southern ultimate refuge visible before the player walks into it. */
+@media(min-width:900px) and (min-height:501px){
+  .game-shell:has(.kos-hud) .hud-root:not([data-touch="true"]) .hud-hotbar{
+    left:auto;right:calc(var(--hud-right) + 144px);transform:none;width:max-content;max-width:260px;
+  }
+  .game-shell:has(.kos-hud) .hud-root:not([data-touch="true"]) .hud-hotbar-row{flex-wrap:wrap;justify-content:center}
+}

@@ -43,7 +43,7 @@ export class MaiyarapLayer {
     if (state.countered && !this.countered && !this.scene.sound.locked && this.scene.cache.audio.exists('mai:counter')) this.scene.sound.play('mai:counter',{volume:.2});
     this.countered=state.countered; this.mode=state.mode;
     const d = state.dreamers.get(room.sessionId), realm = d?.realm ?? 'awake';
-    this.fx.update(state.hazards.values(), now, realm);
+    this.fx.update(state.hazards.values(), now, realm, state.contactStep);
     this.veil.setVisible(realm === 'dream').setAlpha(.13 + Math.sin(now * .0005) * .025);
     const body = [...room.state.monsters.entries()].find(([, m]) => m.kind === 'maiyarap');
     if (body) {
