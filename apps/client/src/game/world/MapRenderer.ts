@@ -1,3 +1,4 @@
+import {preloadCalonTemple,decorateCalonTemple} from './CalonTemple';
 import {preloadKoscheiNecropolis,decorateKoscheiNecropolis} from './KoscheiNecropolis';
 import { preloadMaiyarapPalace, decorateMaiyarapPalace } from './MaiyarapPalace';
 import{preloadOe,renderOe}from'./OeRegion';
@@ -45,6 +46,7 @@ const TERRAIN_KEY = 'umbral:terrain';
 const TILE_PX = 16;
 
 export function preloadMapAssets(scene: Phaser.Scene, map?: MapDefinition) {
+  if(map?.id==='girah-ruined-temple'){preloadCalonTemple(scene);preloadIndonesia(scene);}
   if(map?.id==='mount-oe-fortress')preloadOe(scene);
   if(map?.id==='frozen-necropolis')preloadKoscheiNecropolis(scene);
   if (map?.id === 'maiyarap-palace') preloadMaiyarapPalace(scene);
@@ -77,6 +79,7 @@ export function renderMap(scene: Phaser.Scene, map: MapDefinition) {
   if(isIrelandMap(map)){const {water}=renderIrelandRegion(scene,map);return{widthPx:map.width*WORLD_UNIT_PX,heightPx:map.height*WORLD_UNIT_PX,water};}
   if(isNorwayMap(map)){const {water}=renderNorwayRegion(scene,map);return{widthPx:map.width*WORLD_UNIT_PX,heightPx:map.height*WORLD_UNIT_PX,water};}
   if(isJapanMap(map)){const {water}=renderJapanRegion(scene,map);return{widthPx:map.width*WORLD_UNIT_PX,heightPx:map.height*WORLD_UNIT_PX,water};}
+  if(map.id==='girah-ruined-temple'){const {water}=renderIndonesia(scene,map,{fog:[{id:'girah-west-mist',x:2,y:26,w:4,h:18,alpha:.12},{id:'girah-east-mist',x:44,y:25,w:4,h:18,alpha:.12}],graph:{edges:[]},vents:[],wind:[]});decorateCalonTemple(scene);return{widthPx:map.width*WORLD_UNIT_PX,heightPx:map.height*WORLD_UNIT_PX,water};}
   if(isIndonesiaMap(map)){const {water}=renderIndonesia(scene,map);return{widthPx:map.width*WORLD_UNIT_PX,heightPx:map.height*WORLD_UNIT_PX,water};}
   const manifest = scene.cache.json.get(MANIFEST_KEY) as MapAssetManifest | undefined;
   if (!manifest) throw new Error('Map asset manifest not loaded; call preloadMapAssets in preload()');

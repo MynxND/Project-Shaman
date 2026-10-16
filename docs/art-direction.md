@@ -402,3 +402,13 @@ retained).11 authored8-frame materials and8-direction idle/windup/release poses;
 measured staff ports and component-owned cuts prevent adjacent sprite fragments.
 Idle glide and shared south-east death collapse are explicit limits; user art
 approval pending. See design/bosses/koschei/vfx.md.
+
+
+## Calon Arang review artwork — 2026-10-16
+Owned ImageGen elderly Javanese witch, charcoal kebaya/batik, ivory flowers, bronze
+bowl, spectral moths and ash. Eight authored16-pose walk/cast directions, sharedSE
+8-pose collapse and11 distinct16-frame materials. No idle glide or mirrored motion
+substitution. Natural-aspect lane clusters and native-scale ultimate blossoms
+retain texture detail; elevated spirits are separate from ground contact. This
+is a reviewed implementation candidate, not user art approval. See
+design/bosses/calon-arang/README.md for sources, evidence and limits.

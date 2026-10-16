@@ -129,6 +129,8 @@ export class GameRoom extends Room<{ state: GameState }> {
       },
     });
     this.onMessage('koschei:relic',(client,message:unknown)=>{this.combat.koschei?.interact(client.sessionId,message);});
+    if(DEV_COMMANDS)this.onMessage('calon:review',(client,message:unknown)=>{if(this.map.id==='girah-ruined-temple'&&!this.accounts.has(client.sessionId)&&this.clients.length===1&&message&&typeof message==='object')this.combat.calon?.review(client.sessionId,message as Record<string,unknown>);});
+    this.onMessage('calon:interact',(client,action:unknown)=>{if(this.map.id==='girah-ruined-temple')this.combat.calon?.interact(client.sessionId,action);});
     if(DEV_COMMANDS)this.onMessage('koschei:review',(client,message:unknown)=>{if(this.map.id==='frozen-necropolis'&&!this.accounts.has(client.sessionId)&&this.clients.length===1&&message&&typeof message==='object')this.combat.koschei?.review(client.sessionId,message as Record<string,unknown>);});
     this.onMessage('maiyarap:symbol', (client, message: unknown) => { this.combat.maiyarap?.interact(client.sessionId, message); });
     if (DEV_COMMANDS) this.onMessage('maiyarap:review', (client, message: unknown) => { if (this.map.id === 'maiyarap-palace' && !this.accounts.has(client.sessionId) && this.clients.length === 1 && message && typeof message === 'object') this.combat.maiyarap?.review(client.sessionId, message as Record<string, unknown>); });

@@ -1,0 +1,133 @@
+{
+  "generator": "ImageGen built-in",
+  "nativeCell": 240,
+  "anchor": [
+    120,
+    232
+  ],
+  "faces": [
+    "south",
+    "south-west",
+    "west",
+    "north-west",
+    "north",
+    "north-east",
+    "east",
+    "south-east"
+  ],
+  "walkFrames": 16,
+  "castFrames": 16,
+  "releaseFrame": 10,
+  "deathFrames": 8,
+  "deathFacing": "south-east shared",
+  "temporaryMissingDirections": [],
+  "materials": {
+    "plague-bloom": {
+      "frames": 16,
+      "width": 256,
+      "height": 256,
+      "source": "plague-bloom-v2.png"
+    },
+    "cursed-effigy": {
+      "frames": 16,
+      "width": 256,
+      "height": 256,
+      "source": "cursed-effigy.png"
+    },
+    "spirit-swarm": {
+      "frames": 16,
+      "width": 256,
+      "height": 256,
+      "source": "spirit-swarm.png"
+    },
+    "black-ritual": {
+      "frames": 16,
+      "width": 256,
+      "height": 256,
+      "source": "black-ritual.png"
+    },
+    "graveyard-procession": {
+      "frames": 16,
+      "width": 256,
+      "height": 256,
+      "source": "graveyard-procession.png"
+    },
+    "soul-withering": {
+      "frames": 16,
+      "width": 256,
+      "height": 256,
+      "source": "soul-withering.png"
+    },
+    "cursed-altar": {
+      "frames": 16,
+      "width": 256,
+      "height": 256,
+      "source": "cursed-altar.png"
+    },
+    "thousand-cursed-hands": {
+      "frames": 16,
+      "width": 256,
+      "height": 256,
+      "source": "thousand-cursed-hands.png"
+    },
+    "plague-eclipse": {
+      "frames": 16,
+      "width": 256,
+      "height": 256,
+      "source": "plague-eclipse.png"
+    },
+    "soul-harvest": {
+      "frames": 16,
+      "width": 256,
+      "height": 256,
+      "source": "soul-harvest.png"
+    },
+    "night-of-a-thousand-curses": {
+      "frames": 16,
+      "width": 256,
+      "height": 256,
+      "source": "night-of-a-thousand-curses.png"
+    }
+  },
+  "sourceSha256": {
+    "black-ritual.png": "3833dd31e7980d6c55ab67911b2dc694e3c5faf51806797d5faa671f3acb0702",
+    "cast-east.png": "97ccc94fa60e69dcb1df08cde64202033f6ef19413522dfd170ae192cfc0ac8b",
+    "cast-north-east-v2.png": "31a41f3160c24e8c21601629d64b68497cc18c0abe7a2ff698fe36dcc7466387",
+    "cast-north-east.png": "5329f3a88ebefbcc59e5329e1157319a0b8c1e65e5eec92d2d1a6ffe51063fc0",
+    "cast-north-west-v2.png": "199bca8fa1b98c2379ce2459df9863b20939705f3c14d20ce5890975d4a8bb78",
+    "cast-north-west.png": "67913f86ae8835e05d899f25765faa7e18c1a2bfe35a008886e2e7d3dd8ed587",
+    "cast-north.png": "8852011abcc6cbaeb8889c99e2af953d02cc70f1b820655ed03fdf4ee9be1d8b",
+    "cast-south-east.png": "da815e67e3035ca695bd23267aca52ddea629d9eee20c37ec7ac20a5a4e4b921",
+    "cast-south-west.png": "a1be3fd0b9f5538f5dacfbb17b0d6f320f41e07de77949d5fbbf9c735558ddab",
+    "cast-south.png": "a75549e850321fcce41890e3d7f03cf1921524a35e9677ae35d00754cab46e99",
+    "cast-west.png": "b927168eb66fe32348765988a15f523e5c48f078cf290d19d80499bf28377480",
+    "cursed-altar.png": "4908b8993528a5b63ba112b2676caf0ea83d24d93753c53bd4db6639363a4c88",
+    "cursed-effigy.png": "2dbf86cd7451daa14aca4aa9c2d2eab0ef56092b46a3dcbf22a43a914204bbf9",
+    "death.png": "a93271ebbb8b6de2936b94e6a83d57a44bafffddc40cfa374a874e91f2ec65eb",
+    "graveyard-procession.png": "aa5f414992bc9b89390ee0c46ad9c89fb8515f8d2e151893ec8191fe62527f1a",
+    "idle-eight.png": "1fffd1b386225e16a03caf57401ab4d0df637fe76a2efbc4651579714a22d882",
+    "night-of-a-thousand-curses.png": "581d02565983db20c7a7f5ebc5bbcfd3d74e593171e1a9abfb7e50435d9131b7",
+    "plague-bloom-v2.png": "0218baac4563e6bbd0c779cf186ef9352a67019f3b2cf0318639c41f5a879bcd",
+    "plague-bloom.png": "8e25ce260b0f8d2389d6f834ec994f55aeab0423e09f2606fd3ca8b71937c66b",
+    "plague-eclipse.png": "f2b051230465ddc2e21c5a5fb9fdd1a287a8d715d5529a996d822329578be753",
+    "props.png": "cb4e819d64bc588b1df77b0f2e8d2892fff5b6807270383c7e29c4911eb73363",
+    "reference-north-east.png": "117983b2b8b92d68284b97fd032411c42b90615112f4619d69971c4d126873bf",
+    "reference-north-west.png": "f7d127bf2657fb655852af9961d5fd0c4a081193a485e1ac056499bbcc49d914",
+    "release-eight.png": "e1e05943b9b340048b4967304ae7f98a3419895cac54d77553aee6d1ec00576e",
+    "soul-harvest.png": "b09a79e1b7e33a204e5863786d55c9224d466380a2ef0f6a0beace54c6b0fa3e",
+    "soul-withering.png": "2f36f9d6e70bf0ddb31594d8a56f1d63842ad7e7e608c7bf6c0fa2a6b2cbbd60",
+    "spirit-swarm.png": "33c59437a79d1aef8501ee4811629b03cc5b9a8ffb37c8d04fc188bcd2d9161b",
+    "thousand-cursed-hands.png": "30e3bfc97ade221c9d02c6309e310deb7fe4cc240241ce1904b978ac2a14a064",
+    "walk-east.png": "d61ccb1a47c535551fdbd83f44cd73bb64ac3a768ded64ab4effe0051288fef9",
+    "walk-north-east-v2.png": "0c302f408c3f4132ef56fa128a6459c23250e24ae1e9f5ff3974aa6064ef3fd5",
+    "walk-north-east.png": "6d68eeb6df359996e520caa9a46049636af849f0f9d6cb9df885ff3539c56e2e",
+    "walk-north-west-v2.png": "fc3f377b4201835c2cad442b19328c3d25cd39ad45201b4f1ef82ed5e09e228b",
+    "walk-north-west.png": "eb81c752ff526f2e8404830650eee52b5d6a65b58cd2c72d2565c193b9505c19",
+    "walk-north.png": "27f4cb05fdda6e974408e295dadeb5e4a1ce78122683fbd2caf13783c7034ec1",
+    "walk-south-east.png": "3a4de1125bd64e3725d34dd7bcafa38d98355e7bd229743e084c114e4e26a088",
+    "walk-south-west.png": "8e01f7c373ee35bc2dd6008f54ab958e4d7ee71e1ebd781ad98082844e076160",
+    "walk-south.png": "0de76722a8d18af895a879fcba7e4ba7b9a542315892ff700107abbf7edfee67",
+    "walk-west.png": "6306703a2c8e25909ee37c9b34d404edd30977fc24eb51f5400415dd46b4c9c1",
+    "windup-eight.png": "5f106fbba21d31600f872628b71697c936fc26331ec1a2858ceff9d33aab575e"
+  }
+}

@@ -1,3 +1,4 @@
+import { GIRAH_TEMPLE } from './girah-ruined-temple.js';
 import { FROZEN_NECROPOLIS } from './frozen-necropolis.js';
 import { MAIYARAP_PALACE } from './maiyarap-palace.js';
 import{MOUNT_OE}from'./mount-oe-fortress.js';
@@ -26,6 +27,7 @@ import {LEVELING_LIVE} from './leveling-live.js';
 
 /** Every playable map by id. Each map runs in its own server room (filtered by mapId). */
 const BASE_MAPS: Readonly<Record<string, MapDefinition>> = {
+  [GIRAH_TEMPLE.id]:GIRAH_TEMPLE,
   [UMBRAL_CAPITAL.id]: UMBRAL_VILLAGE,
   [UMBRAL_ELEVATION_LAB.id]: UMBRAL_ELEVATION_LAB,
   [UMBRAL_ELEVATION_BASELINE.id]: UMBRAL_ELEVATION_BASELINE,

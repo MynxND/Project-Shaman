@@ -720,3 +720,14 @@ refuge prevents unavoidable failure. Solo basic-attack counter verified~14.3s;
 32s finale warning. Ray clipping preserves diagonal aim, never clamps axes into
 a different angle. All balance/geography provisional. Existing bosses unchanged.
 See design/bosses/koschei/README.md for QA arrangements and explicit limits.
+
+
+## Calon-first motion/VFX priority — 2026-10-16
+User chose to finish Indonesian Boss15 Calon Arang before upgrading existing boss
+motion. Only selected Word shared rules/Boss15 were implemented. The new encounter
+uses unordered destructible infection connections, quarantine wells and a2.4s
+interruptible source purification; ultimate counter and southern failure refuge
+are reachable solo. Numbers/geography remain provisional. Existing boss behavior
+and portals are preserved; motion defects of older bosses remain separate work.
+ImageGen creates the new actor/material artwork; generic owned audio cues are
+reused with original attribution. No physical GPU generation queue was used.

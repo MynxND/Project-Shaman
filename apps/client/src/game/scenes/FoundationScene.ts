@@ -1,3 +1,4 @@
+import {CalonLayer} from '../world/CalonLayer';
 import {KoscheiLayer} from '../world/KoscheiLayer';
 import { MaiyarapLayer } from '../world/MaiyarapLayer';
 import{ShutenLayer}from'../world/ShutenLayer';
@@ -66,6 +67,7 @@ export class FoundationScene extends Phaser.Scene {
   private nationVfx: NationVfxLayer | null = null;
   private monsters: MonsterLayer | null = null;
   private shuten:ShutenLayer|null=null;
+  private calon:CalonLayer|null=null;
   private koschei:KoscheiLayer|null=null;
   private maiyarap: MaiyarapLayer | null = null;
   private portals: PortalLayer | null = null;
@@ -148,7 +150,7 @@ export class FoundationScene extends Phaser.Scene {
       if (this.gardenReview) zoom.set(this.gardenReview === 'wide' ? 0.01 : this.gardenReview === 'close' ? 1.5 : 1);
     };
     resize(this.scale.gameSize);
-    if (this.map.id==='maiyarap-palace') zoom.set(.625);
+    if (this.map.id==='maiyarap-palace'||this.map.id==='girah-ruined-temple') zoom.set(.625);
     this.frameMountainReview(widthPx,heightPx);
     if(this.mountainPerf.enabled){
       const stopped=()=>{
@@ -186,6 +188,7 @@ export class FoundationScene extends Phaser.Scene {
       this.casts = null;
       this.nationVfx?.destroy();
       this.nationVfx = null;
+      this.calon?.destroy();this.calon=null;
       this.koschei?.destroy();this.koschei=null;
       this.maiyarap?.destroy(); this.maiyarap = null;
       this.shuten?.destroy();this.shuten=null;
@@ -230,6 +233,7 @@ export class FoundationScene extends Phaser.Scene {
         view.sprite.playOnce('attack');
       },
     },this.map);
+    if(this.map.id==='girah-ruined-temple')this.calon=new CalonLayer(this,this.monsters,()=>this.room);
     if(this.map.id==='frozen-necropolis')this.koschei=new KoscheiLayer(this,this.monsters,()=>this.room);
     if (this.map.id === 'maiyarap-palace') this.maiyarap = new MaiyarapLayer(this, this.monsters, () => this.room);
     if(this.map.id==='mount-oe-fortress')this.shuten=new ShutenLayer(this,this.map,this.monsters,()=>this.room,()=>{this.movement?.setAuto(null);useTargetStore.getState().select(null);this.room?.send('attack:stop');});
@@ -490,7 +494,7 @@ export class FoundationScene extends Phaser.Scene {
           // The local sprite already moves smoothly every frame, so the camera tracks it exactly.
           // Slight north bias (player just below centre): more of what lies ahead is visible, and the plaza's
           // spirit pillar clears the HUD menu at spawn.
-          if (!this.gardenReview && !this.mountainReview && !this.villageOverview) this.cameras.main.startFollow(sprite, true, 1, 1, 0, (this.map.id==='frozen-necropolis'?(this.scale.height<=500&&this.scale.width>this.scale.height?10:7):this.map.id==='maiyarap-palace'?4.5:CAMERA_LOOK_AHEAD_UNITS) * WORLD_UNIT_PX);
+          if (!this.gardenReview && !this.mountainReview && !this.villageOverview) this.cameras.main.startFollow(sprite, true, 1, 1, 0, (this.map.id==='girah-ruined-temple'?(this.scale.height<=500&&this.scale.width>this.scale.height?6:5):this.map.id==='frozen-necropolis'?(this.scale.height<=500&&this.scale.width>this.scale.height?10:7):this.map.id==='maiyarap-palace'?4.5:CAMERA_LOOK_AHEAD_UNITS) * WORLD_UNIT_PX);
           view.light = addPlayerLight(this);
           view.hpBar = this.add.graphics();
         }
@@ -552,6 +556,7 @@ export class FoundationScene extends Phaser.Scene {
     }
     this.casts?.update(time, (id) => { const v = this.players.get(id); return v ? { sprite: v.sprite, bodyType: v.bodyType } : null; });
     this.monsters?.update(room.state?.monsters, time, delta);
+    this.calon?.update(time);
     this.koschei?.update(time);
     this.maiyarap?.update(time);
     this.shuten?.update(time);

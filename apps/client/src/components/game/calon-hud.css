@@ -1,0 +1,23 @@
+.calon-hud{position:absolute;inset:0;pointer-events:none;color:#ead7ad;font:13px Tahoma,sans-serif;z-index:35}
+.calon-hp{position:absolute;top:calc(env(safe-area-inset-top) + 12px);left:332px;width:250px;background:#10231fef;border:1px solid #9a7e4f;padding:9px 13px;text-align:center;border-radius:5px}
+.calon-hp strong,.calon-hp small{display:block}.calon-hp progress{width:100%;height:12px;accent-color:#6da08b}
+.calon-help{position:absolute;left:calc(env(safe-area-inset-left) + 12px);top:calc(env(safe-area-inset-top) + 190px);width:230px;max-height:48dvh;overflow:auto;pointer-events:auto;background:#10231fec;border:1px solid #8b734c;padding:10px;border-radius:5px}
+.calon-help p{margin:7px 0;font-size:12px;line-height:1.5}.calon-help button,.calon-help select{font:inherit;min-height:40px;border:1px solid #89704b;background:#244338;color:#f0ddb5;margin:3px 2px;padding:5px;max-width:100%}.calon-help button:disabled{opacity:.4}.calon-help output{display:block;font-size:10px}.calon-help summary{cursor:pointer;min-height:32px}
+@media(max-width:600px){.calon-hp{top:auto;bottom:145px;left:auto;right:12px;width:52vw;padding:5px;font-size:10px}.calon-help{left:12px;right:auto;top:auto;bottom:calc(env(safe-area-inset-bottom) + 180px);width:155px;max-height:28dvh;font-size:11px}.calon-help p{font-size:11px}}
+/* Portrait: reserve the lower central floor for the player and southern refuge. */
+@media(max-width:600px) and (orientation:portrait){.calon-hp{top:calc(env(safe-area-inset-top) + 195px);bottom:auto;left:12px;right:auto;width:200px}.calon-help{top:calc(env(safe-area-inset-top) + 270px);bottom:auto;max-height:150px}}
+
+@media(max-height:500px){.calon-help{top:110px;bottom:auto;max-height:44dvh;width:190px}.calon-hp{top:auto;bottom:125px;left:auto;right:12px;transform:none;width:190px;font-size:11px}}
+@media(max-height:500px) and (orientation:landscape){.game-shell:has(.calon-hud) .acc-guest{left:200px;right:auto;transform:none}}
+
+.calon-hp progress::-webkit-progress-bar{background:#243b32;border:1px solid #7c6b46}.calon-hp progress::-webkit-progress-value{background:#669a7f}
+
+@media(min-width:601px) and (max-width:1100px) and (min-height:501px){.calon-hp{left:12px;top:155px;width:220px}}
+
+/* Keep the southern ultimate refuge visible before the player walks into it. */
+@media(min-width:900px) and (min-height:501px){
+  .game-shell:has(.calon-hud) .hud-root:not([data-touch="true"]) .hud-hotbar{
+    left:auto;right:calc(var(--hud-right) + 144px);transform:none;width:max-content;max-width:260px;
+  }
+  .game-shell:has(.calon-hud) .hud-root:not([data-touch="true"]) .hud-hotbar-row{flex-wrap:wrap;justify-content:center}
+}

@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 
 type Point = { x: number; y: number };
-type Ritual = 'koschei' | 'maiyarap';
+type Ritual = 'koschei' | 'maiyarap' | 'calon';
 export interface RitualFootprint {
   shape: string; x: number; y: number; ex: number; ey: number;
   radius: number; width: number; angle: number; arc: number;
@@ -42,7 +42,7 @@ export function ritualPerimeter(h: RitualFootprint): Point[] {
 export function drawRitualWarning(g: Phaser.GameObjects.Graphics, h: RitualFootprint, theme: Ritual, charge: number) {
   const p = ritualPerimeter(h), cold = theme === 'koschei';
   const ink = cold ? 0x111c29 : 0x102b27, metal = cold ? 0xb6c8ce : 0xd2b775;
-  const accent = cold ? 0x718da6 : 0x72a68e;
+  const accent = cold ? 0x718da6 : theme==='calon'?0x8a9b66:0x72a68e;
   const t = Math.max(0, Math.min(1, charge));
   const line = (a: Point, b: Point, color: number, alpha: number, width = 1.5) => {
     // Inset joins and motifs must not cross a sector's safe wedge or capsule end.
@@ -90,6 +90,9 @@ export function drawRitualWarning(g: Phaser.GameObjects.Graphics, h: RitualFootp
     line(pt(-size * 1.3, 0), pt(size * 1.3, 0), metal, .9, 2);
     line(pt(size * .95, -4), pt(size * 1.3, 0), accent, .9);
     line(pt(size * .95, 4), pt(size * 1.3, 0), accent, .9);
+  } else if(theme==='calon'){
+    // Original Javanese-inspired six-petal floral ward, not borrowed Thai lotus script.
+    for(let j=0;j<6;j++){const q=j*Math.PI/3,tip=pt(Math.cos(q)*size,Math.sin(q)*size);line(pt(0,0),tip,metal,.65);const left=pt(Math.cos(q-.25)*size*.65,Math.sin(q-.25)*size*.65),right=pt(Math.cos(q+.25)*size*.65,Math.sin(q+.25)*size*.65);motif([pt(0,0),left,tip,right],accent,.8);}
   } else {
     // Woven four-petal lotus seal, kept small enough to leave actor silhouettes readable.
     for (let j = 0; j < 4; j++) {

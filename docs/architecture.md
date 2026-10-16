@@ -669,3 +669,13 @@ sweeps, matching authoritative interval geometry without changing hit policy.
 Recorded previews pass their50ms recording step. Boss-only desktop hotbars leave
 the southern ultimate refuge unobstructed. Full live-room skill matrix and limits:
 [telegraph combat audit](design/bosses/telegraph-combat-review/README.md).
+
+
+## Calon Arang Boss15 review — 2026-10-16
+CalonEncounter owns3 phases, timestamped hazards, infection and unordered attackable
+connections plus a proximity/channel source counter. GameState appends calon;
+existing encounter fields retain order. Phaser CalonLayer/CalonVfx read the same
+authoritative geometry/contactStep as the recorded lab. CalonMotion advances by
+world travel and preserves facing phase. React holds summaries only. The isolated
+girah-ruined-temple room has no atlas/portal adoption. Details and actual-room
+evidence: design/bosses/calon-arang/README.md.

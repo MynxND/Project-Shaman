@@ -1,3 +1,4 @@
+import { CALON_MONSTERS } from './calon-residents.js';
 import { KOSCHEI_MONSTERS } from './koschei-residents.js';
 import { MAIYARAP_RESIDENTS } from './maiyarap-residents.js';
 import{SHUTEN_RESIDENTS}from'./shuten-residents.js';
@@ -96,7 +97,7 @@ export const MONSTERS: Readonly<Record<string, MonsterDefinition>> = {
   ...RUSSIA_RESIDENTS,
   ...FOLKLORE_RESIDENTS,
   ...SHUTEN_RESIDENTS,
-  ...MAIYARAP_RESIDENTS,...KOSCHEI_MONSTERS,
+  ...MAIYARAP_RESIDENTS,...KOSCHEI_MONSTERS,...CALON_MONSTERS,
   // Provisional Japanese residents; explicitly reused owned animation art, original species unchanged.
   "cedar-wisp": {"kind": "cedar-wisp", "name": {"th": "ภูตทางศาลเจ้าซีดาร์", "en": "cedar-wisp"}, "level": 35, "race": "formless", "behavior": "passive", "hp": 1200, "atk": 80, "def": 25, "mdef": 25, "speed": 1.2, "aggroRange": 0, "leash": 4, "attackRange": 1.3, "attackDelayMs": 1700, "attackWindupMs": 450, "exp": 600, "drops": [{"itemId": "bone", "chance": 0.25}, {"itemId": "dark-ore", "chance": 0.2}], "wander": {"pauseMs": [2000, 4500], "radius": 1.4}},
   "cedar-shadow": {"kind": "cedar-shadow", "name": {"th": "เงาพิทักษ์ผนึกซีดาร์", "en": "cedar-shadow"}, "level": 43, "race": "brute", "behavior": "aggressive", "hp": 1810, "atk": 108, "def": 35, "mdef": 33, "speed": 2.2, "aggroRange": 3.5, "leash": 4, "attackRange": 1.3, "attackDelayMs": 2000, "attackWindupMs": 600, "exp": 940, "drops": [{"itemId": "bone", "chance": 0.25}, {"itemId": "dark-ore", "chance": 0.2}], "wander": {"pauseMs": [2000, 4500], "radius": 1.4}},

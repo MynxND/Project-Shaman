@@ -81,3 +81,5 @@ export * from './shuten.js';
 export * from './maiyarap.js';
 
 export * from './koschei.js';
+
+export * from './calon-arang.js';

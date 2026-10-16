@@ -739,3 +739,15 @@ facings, solo counter, failure refuge, phase AI, late join and production gate
 verified. Typecheck/build/shared and prior-boss regressions pass. User art and
 final balance review pending; no continuous normal-character victory or atlas
 portal adoption claimed. See design/bosses/koschei/README.md. Stop for review.
+
+
+## Calon Arang Boss15 review delivery — 2026-10-16
+Indonesia boss3 phases/10 named skills/five-stage ultimate implemented in actual
+review GameRoom, with8-direction16-pose walk/cast and11 authored16-frame VFX.
+1028 behavior/905 art/52 motion checks,88 actual-room skill/facing timelines,20
+stationary/walking cases, solo normal-attack counter, fail/refuge, latejoin and
+production gates pass.41-route build/typecheck/shared and previous-boss regression
+checks pass. Desktop and emulated phone portrait/landscape inspected; physical
+phone performance, balance and human art approval remain pending. No new portal
+adoption or continuous balanced-character victory claimed. Stop for review;
+older boss motion is future work. See design/bosses/calon-arang/README.md.

@@ -22,6 +22,7 @@ import { useHudStore } from '@/stores/hud-store';
 import { NpcDialog } from '@/components/npc/NpcDialog';
 import { TalkPrompt } from '@/components/npc/TalkPrompt';
 import { useNpcStore } from '@/stores/npc-store';
+const CalonHud=dynamic(()=>import('./CalonHud'),{ssr:false});
 const KoscheiHud=dynamic(()=>import('./KoscheiHud'),{ssr:false});
 const MaiyarapHud = dynamic(() => import('./MaiyarapHud'), { ssr: false });
 const BossHud=dynamic(()=>import('./BossHud'),{ssr:false});
@@ -65,7 +66,7 @@ export function GameShell() {
       {RangedReview && <RangedReview />}
       <BossHud />
       <MaiyarapHud />
-      <KoscheiHud />
+      <CalonHud/><KoscheiHud />
       {inventoryOpen && <InventoryWindow />}
       {characterOpen && <CharacterWindow />}
       {marketOpen && <MarketWindow />}

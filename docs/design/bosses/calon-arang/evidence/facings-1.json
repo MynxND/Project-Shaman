@@ -1,0 +1,2750 @@
+{
+  "part": 1,
+  "step": "real30Hz simulation /50ms patches /50ms observations",
+  "cases": [
+    {
+      "skill": "cursed-effigy",
+      "face": "north-east",
+      "phase": 1,
+      "damage": 120,
+      "hits": [
+        {
+          "at": 1792149269981,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "XPdFvOwA4"
+          },
+          "amount": 60,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149269981,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "XPdFvOwA4"
+          },
+          "amount": 60,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-1",
+          "skill": "cursed-effigy",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "cursed-effigy",
+          "x": 23.24264144897461,
+          "y": 18.75735855102539,
+          "toX": 33.24264144897461,
+          "toY": 12.757359504699707,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.550000011920929,
+          "warnAt": 1792149268628,
+          "startsAt": 1792149270028,
+          "endsAt": 1792149270528
+        },
+        {
+          "id": "calon-2",
+          "skill": "cursed-effigy",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "cursed-effigy",
+          "x": 23.24264144897461,
+          "y": 12.757359504699707,
+          "toX": 33.24264144897461,
+          "toY": 18.75735855102539,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.550000011920929,
+          "warnAt": 1792149268628,
+          "startsAt": 1792149270028,
+          "endsAt": 1792149270528
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "cursed-effigy",
+      "face": "south-east",
+      "phase": 1,
+      "damage": 120,
+      "hits": [
+        {
+          "at": 1792149270030,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "o7SRAfa-w"
+          },
+          "amount": 60,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149270030,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "o7SRAfa-w"
+          },
+          "amount": 60,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-1",
+          "skill": "cursed-effigy",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "cursed-effigy",
+          "x": 23.24264144897461,
+          "y": 27.24264144897461,
+          "toX": 33.24264144897461,
+          "toY": 21.24264144897461,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.550000011920929,
+          "warnAt": 1792149268660,
+          "startsAt": 1792149270060,
+          "endsAt": 1792149270560
+        },
+        {
+          "id": "calon-2",
+          "skill": "cursed-effigy",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "cursed-effigy",
+          "x": 23.24264144897461,
+          "y": 21.24264144897461,
+          "toX": 33.24264144897461,
+          "toY": 27.24264144897461,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.550000011920929,
+          "warnAt": 1792149268660,
+          "startsAt": 1792149270060,
+          "endsAt": 1792149270560
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "cursed-effigy",
+      "face": "south",
+      "phase": 1,
+      "damage": 120,
+      "hits": [
+        {
+          "at": 1792149270030,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "jNZYtC3VU"
+          },
+          "amount": 60,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149270030,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "jNZYtC3VU"
+          },
+          "amount": 60,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-1",
+          "skill": "cursed-effigy",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "cursed-effigy",
+          "x": 19,
+          "y": 29,
+          "toX": 29,
+          "toY": 23,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.550000011920929,
+          "warnAt": 1792149268660,
+          "startsAt": 1792149270060,
+          "endsAt": 1792149270560
+        },
+        {
+          "id": "calon-2",
+          "skill": "cursed-effigy",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "cursed-effigy",
+          "x": 19,
+          "y": 23,
+          "toX": 29,
+          "toY": 29,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.550000011920929,
+          "warnAt": 1792149268660,
+          "startsAt": 1792149270060,
+          "endsAt": 1792149270560
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "cursed-effigy",
+      "face": "east",
+      "phase": 1,
+      "damage": 120,
+      "hits": [
+        {
+          "at": 1792149270030,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "7SIkj4DlL"
+          },
+          "amount": 60,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149270030,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "7SIkj4DlL"
+          },
+          "amount": 60,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-1",
+          "skill": "cursed-effigy",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "cursed-effigy",
+          "x": 25,
+          "y": 23,
+          "toX": 35,
+          "toY": 17,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.550000011920929,
+          "warnAt": 1792149268660,
+          "startsAt": 1792149270060,
+          "endsAt": 1792149270560
+        },
+        {
+          "id": "calon-2",
+          "skill": "cursed-effigy",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "cursed-effigy",
+          "x": 25,
+          "y": 17,
+          "toX": 35,
+          "toY": 23,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.550000011920929,
+          "warnAt": 1792149268660,
+          "startsAt": 1792149270060,
+          "endsAt": 1792149270560
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "cursed-effigy",
+      "face": "north",
+      "phase": 1,
+      "damage": 120,
+      "hits": [
+        {
+          "at": 1792149270029,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "tbTMhplJg"
+          },
+          "amount": 60,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149270029,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "tbTMhplJg"
+          },
+          "amount": 60,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-1",
+          "skill": "cursed-effigy",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "cursed-effigy",
+          "x": 19,
+          "y": 17,
+          "toX": 29,
+          "toY": 11,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.550000011920929,
+          "warnAt": 1792149268644,
+          "startsAt": 1792149270044,
+          "endsAt": 1792149270544
+        },
+        {
+          "id": "calon-2",
+          "skill": "cursed-effigy",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "cursed-effigy",
+          "x": 19,
+          "y": 11,
+          "toX": 29,
+          "toY": 17,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.550000011920929,
+          "warnAt": 1792149268644,
+          "startsAt": 1792149270044,
+          "endsAt": 1792149270544
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "cursed-effigy",
+      "face": "north-west",
+      "phase": 1,
+      "damage": 120,
+      "hits": [
+        {
+          "at": 1792149269997,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "8NMVVGRmG"
+          },
+          "amount": 60,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149269997,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "8NMVVGRmG"
+          },
+          "amount": 60,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-1",
+          "skill": "cursed-effigy",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "cursed-effigy",
+          "x": 14.757359504699707,
+          "y": 18.75735855102539,
+          "toX": 24.75735855102539,
+          "toY": 12.757359504699707,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.550000011920929,
+          "warnAt": 1792149268644,
+          "startsAt": 1792149270044,
+          "endsAt": 1792149270544
+        },
+        {
+          "id": "calon-2",
+          "skill": "cursed-effigy",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "cursed-effigy",
+          "x": 14.757359504699707,
+          "y": 12.757359504699707,
+          "toX": 24.75735855102539,
+          "toY": 18.75735855102539,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.550000011920929,
+          "warnAt": 1792149268644,
+          "startsAt": 1792149270044,
+          "endsAt": 1792149270544
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "cursed-effigy",
+      "face": "west",
+      "phase": 1,
+      "damage": 120,
+      "hits": [
+        {
+          "at": 1792149269997,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "8oSrIm-ZJ"
+          },
+          "amount": 60,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149269997,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "8oSrIm-ZJ"
+          },
+          "amount": 60,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-1",
+          "skill": "cursed-effigy",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "cursed-effigy",
+          "x": 13,
+          "y": 23,
+          "toX": 23,
+          "toY": 17,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.550000011920929,
+          "warnAt": 1792149268644,
+          "startsAt": 1792149270044,
+          "endsAt": 1792149270544
+        },
+        {
+          "id": "calon-2",
+          "skill": "cursed-effigy",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "cursed-effigy",
+          "x": 13,
+          "y": 17,
+          "toX": 23,
+          "toY": 23,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.550000011920929,
+          "warnAt": 1792149268644,
+          "startsAt": 1792149270044,
+          "endsAt": 1792149270544
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "cursed-effigy",
+      "face": "south-west",
+      "phase": 1,
+      "damage": 120,
+      "hits": [
+        {
+          "at": 1792149269997,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "-WROs867i"
+          },
+          "amount": 60,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149269997,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "-WROs867i"
+          },
+          "amount": 60,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-1",
+          "skill": "cursed-effigy",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "cursed-effigy",
+          "x": 14.757359504699707,
+          "y": 27.24264144897461,
+          "toX": 24.75735855102539,
+          "toY": 21.24264144897461,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.550000011920929,
+          "warnAt": 1792149268644,
+          "startsAt": 1792149270044,
+          "endsAt": 1792149270544
+        },
+        {
+          "id": "calon-2",
+          "skill": "cursed-effigy",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "cursed-effigy",
+          "x": 14.757359504699707,
+          "y": 21.24264144897461,
+          "toX": 24.75735855102539,
+          "toY": 27.24264144897461,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.550000011920929,
+          "warnAt": 1792149268644,
+          "startsAt": 1792149270044,
+          "endsAt": 1792149270544
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "black-ritual",
+      "face": "south-east",
+      "phase": 1,
+      "damage": 65,
+      "hits": [
+        {
+          "at": 1792149278297,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "o7SRAfa-w"
+          },
+          "amount": 65,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-3",
+          "skill": "black-ritual",
+          "actor": "body",
+          "shape": "ring",
+          "effect": "black-ritual",
+          "x": 24,
+          "y": 20,
+          "toX": 24,
+          "toY": 20,
+          "radius": 10,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149276337,
+          "startsAt": 1792149277937,
+          "endsAt": 1792149278837
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "black-ritual",
+      "face": "south",
+      "phase": 1,
+      "damage": 65,
+      "hits": [
+        {
+          "at": 1792149278297,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "jNZYtC3VU"
+          },
+          "amount": 65,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-3",
+          "skill": "black-ritual",
+          "actor": "body",
+          "shape": "ring",
+          "effect": "black-ritual",
+          "x": 24,
+          "y": 20,
+          "toX": 24,
+          "toY": 20,
+          "radius": 10,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149276337,
+          "startsAt": 1792149277937,
+          "endsAt": 1792149278837
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "black-ritual",
+      "face": "east",
+      "phase": 1,
+      "damage": 65,
+      "hits": [
+        {
+          "at": 1792149278297,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "7SIkj4DlL"
+          },
+          "amount": 65,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-3",
+          "skill": "black-ritual",
+          "actor": "body",
+          "shape": "ring",
+          "effect": "black-ritual",
+          "x": 24,
+          "y": 20,
+          "toX": 24,
+          "toY": 20,
+          "radius": 10,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149276337,
+          "startsAt": 1792149277937,
+          "endsAt": 1792149278837
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "black-ritual",
+      "face": "north",
+      "phase": 1,
+      "damage": 65,
+      "hits": [
+        {
+          "at": 1792149278297,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "tbTMhplJg"
+          },
+          "amount": 65,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-3",
+          "skill": "black-ritual",
+          "actor": "body",
+          "shape": "ring",
+          "effect": "black-ritual",
+          "x": 24,
+          "y": 20,
+          "toX": 24,
+          "toY": 20,
+          "radius": 10,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149276337,
+          "startsAt": 1792149277937,
+          "endsAt": 1792149278837
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "black-ritual",
+      "face": "north-east",
+      "phase": 1,
+      "damage": 65,
+      "hits": [
+        {
+          "at": 1792149278297,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "XPdFvOwA4"
+          },
+          "amount": 65,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-3",
+          "skill": "black-ritual",
+          "actor": "body",
+          "shape": "ring",
+          "effect": "black-ritual",
+          "x": 24,
+          "y": 20,
+          "toX": 24,
+          "toY": 20,
+          "radius": 10,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149276336,
+          "startsAt": 1792149277936,
+          "endsAt": 1792149278836
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "black-ritual",
+      "face": "north-west",
+      "phase": 1,
+      "damage": 65,
+      "hits": [
+        {
+          "at": 1792149278297,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "8NMVVGRmG"
+          },
+          "amount": 65,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-3",
+          "skill": "black-ritual",
+          "actor": "body",
+          "shape": "ring",
+          "effect": "black-ritual",
+          "x": 24,
+          "y": 20,
+          "toX": 24,
+          "toY": 20,
+          "radius": 10,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149276337,
+          "startsAt": 1792149277937,
+          "endsAt": 1792149278837
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "black-ritual",
+      "face": "west",
+      "phase": 1,
+      "damage": 65,
+      "hits": [
+        {
+          "at": 1792149278297,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "8oSrIm-ZJ"
+          },
+          "amount": 65,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-3",
+          "skill": "black-ritual",
+          "actor": "body",
+          "shape": "ring",
+          "effect": "black-ritual",
+          "x": 24,
+          "y": 20,
+          "toX": 24,
+          "toY": 20,
+          "radius": 10,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149276337,
+          "startsAt": 1792149277937,
+          "endsAt": 1792149278837
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "black-ritual",
+      "face": "south-west",
+      "phase": 1,
+      "damage": 65,
+      "hits": [
+        {
+          "at": 1792149278297,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "-WROs867i"
+          },
+          "amount": 65,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-3",
+          "skill": "black-ritual",
+          "actor": "body",
+          "shape": "ring",
+          "effect": "black-ritual",
+          "x": 24,
+          "y": 20,
+          "toX": 24,
+          "toY": 20,
+          "radius": 10,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149276337,
+          "startsAt": 1792149277937,
+          "endsAt": 1792149278837
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "soul-withering",
+      "face": "south-east",
+      "phase": 2,
+      "damage": 70,
+      "hits": [
+        {
+          "at": 1792149288245,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "o7SRAfa-w"
+          },
+          "amount": 70,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-4",
+          "skill": "soul-withering",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "soul-withering",
+          "x": 24,
+          "y": 20,
+          "toX": 28.24264144897461,
+          "toY": 24.24264144897461,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.75,
+          "warnAt": 1792149286752,
+          "startsAt": 1792149288252,
+          "endsAt": 1792149288852
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "soul-withering",
+      "face": "south",
+      "phase": 2,
+      "damage": 70,
+      "hits": [
+        {
+          "at": 1792149288245,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "jNZYtC3VU"
+          },
+          "amount": 70,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-4",
+          "skill": "soul-withering",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "soul-withering",
+          "x": 24,
+          "y": 20,
+          "toX": 24,
+          "toY": 26,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.75,
+          "warnAt": 1792149286752,
+          "startsAt": 1792149288252,
+          "endsAt": 1792149288852
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "soul-withering",
+      "face": "east",
+      "phase": 2,
+      "damage": 70,
+      "hits": [
+        {
+          "at": 1792149288245,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "7SIkj4DlL"
+          },
+          "amount": 70,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-4",
+          "skill": "soul-withering",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "soul-withering",
+          "x": 24,
+          "y": 20,
+          "toX": 30,
+          "toY": 20,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.75,
+          "warnAt": 1792149286752,
+          "startsAt": 1792149288252,
+          "endsAt": 1792149288852
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "soul-withering",
+      "face": "north",
+      "phase": 2,
+      "damage": 70,
+      "hits": [
+        {
+          "at": 1792149288245,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "tbTMhplJg"
+          },
+          "amount": 70,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-4",
+          "skill": "soul-withering",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "soul-withering",
+          "x": 24,
+          "y": 20,
+          "toX": 24,
+          "toY": 14,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.75,
+          "warnAt": 1792149286752,
+          "startsAt": 1792149288252,
+          "endsAt": 1792149288852
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "soul-withering",
+      "face": "north-east",
+      "phase": 2,
+      "damage": 70,
+      "hits": [
+        {
+          "at": 1792149288245,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "XPdFvOwA4"
+          },
+          "amount": 70,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-4",
+          "skill": "soul-withering",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "soul-withering",
+          "x": 24,
+          "y": 20,
+          "toX": 28.24264144897461,
+          "toY": 15.757359504699707,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.75,
+          "warnAt": 1792149286752,
+          "startsAt": 1792149288252,
+          "endsAt": 1792149288852
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "soul-withering",
+      "face": "north-west",
+      "phase": 2,
+      "damage": 70,
+      "hits": [
+        {
+          "at": 1792149288245,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "8NMVVGRmG"
+          },
+          "amount": 70,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-4",
+          "skill": "soul-withering",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "soul-withering",
+          "x": 24,
+          "y": 20,
+          "toX": 19.75735855102539,
+          "toY": 15.757359504699707,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.75,
+          "warnAt": 1792149286752,
+          "startsAt": 1792149288252,
+          "endsAt": 1792149288852
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "soul-withering",
+      "face": "west",
+      "phase": 2,
+      "damage": 70,
+      "hits": [
+        {
+          "at": 1792149288245,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "8oSrIm-ZJ"
+          },
+          "amount": 70,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-4",
+          "skill": "soul-withering",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "soul-withering",
+          "x": 24,
+          "y": 20,
+          "toX": 18,
+          "toY": 20,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.75,
+          "warnAt": 1792149286752,
+          "startsAt": 1792149288252,
+          "endsAt": 1792149288852
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "soul-withering",
+      "face": "south-west",
+      "phase": 2,
+      "damage": 70,
+      "hits": [
+        {
+          "at": 1792149288245,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "-WROs867i"
+          },
+          "amount": 70,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-4",
+          "skill": "soul-withering",
+          "actor": "body",
+          "shape": "capsule",
+          "effect": "soul-withering",
+          "x": 24,
+          "y": 20,
+          "toX": 19.75735855102539,
+          "toY": 24.24264144897461,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.75,
+          "warnAt": 1792149286752,
+          "startsAt": 1792149288252,
+          "endsAt": 1792149288852
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "thousand-cursed-hands",
+      "face": "south-east",
+      "phase": 3,
+      "damage": 80,
+      "hits": [
+        {
+          "at": 1792149298717,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "o7SRAfa-w"
+          },
+          "amount": 80,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-5",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149298731,
+          "endsAt": 1792149299231
+        },
+        {
+          "id": "calon-6",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 1.5707963705062866,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149299431,
+          "endsAt": 1792149299931
+        },
+        {
+          "id": "calon-7",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 3.1415927410125732,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149300131,
+          "endsAt": 1792149300631
+        },
+        {
+          "id": "calon-8",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 4.71238899230957,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149300831,
+          "endsAt": 1792149301331
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "thousand-cursed-hands",
+      "face": "south",
+      "phase": 3,
+      "damage": 80,
+      "hits": [
+        {
+          "at": 1792149299370,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "jNZYtC3VU"
+          },
+          "amount": 80,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-5",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149298731,
+          "endsAt": 1792149299231
+        },
+        {
+          "id": "calon-6",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 1.5707963705062866,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149299431,
+          "endsAt": 1792149299931
+        },
+        {
+          "id": "calon-7",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 3.1415927410125732,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149300131,
+          "endsAt": 1792149300631
+        },
+        {
+          "id": "calon-8",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 4.71238899230957,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149300831,
+          "endsAt": 1792149301331
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "thousand-cursed-hands",
+      "face": "east",
+      "phase": 3,
+      "damage": 80,
+      "hits": [
+        {
+          "at": 1792149298717,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "7SIkj4DlL"
+          },
+          "amount": 80,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-5",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149298731,
+          "endsAt": 1792149299231
+        },
+        {
+          "id": "calon-6",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 1.5707963705062866,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149299431,
+          "endsAt": 1792149299931
+        },
+        {
+          "id": "calon-7",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 3.1415927410125732,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149300131,
+          "endsAt": 1792149300631
+        },
+        {
+          "id": "calon-8",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 4.71238899230957,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149300831,
+          "endsAt": 1792149301331
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "thousand-cursed-hands",
+      "face": "north",
+      "phase": 3,
+      "damage": 80,
+      "hits": [
+        {
+          "at": 1792149300816,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "tbTMhplJg"
+          },
+          "amount": 80,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-5",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149298731,
+          "endsAt": 1792149299231
+        },
+        {
+          "id": "calon-6",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 1.5707963705062866,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149299431,
+          "endsAt": 1792149299931
+        },
+        {
+          "id": "calon-7",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 3.1415927410125732,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149300131,
+          "endsAt": 1792149300631
+        },
+        {
+          "id": "calon-8",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 4.71238899230957,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149300831,
+          "endsAt": 1792149301331
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "thousand-cursed-hands",
+      "face": "north-east",
+      "phase": 3,
+      "damage": 80,
+      "hits": [
+        {
+          "at": 1792149300816,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "XPdFvOwA4"
+          },
+          "amount": 80,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-5",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149298731,
+          "endsAt": 1792149299231
+        },
+        {
+          "id": "calon-6",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 1.5707963705062866,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149299431,
+          "endsAt": 1792149299931
+        },
+        {
+          "id": "calon-7",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 3.1415927410125732,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149300131,
+          "endsAt": 1792149300631
+        },
+        {
+          "id": "calon-8",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 4.71238899230957,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149300831,
+          "endsAt": 1792149301331
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "thousand-cursed-hands",
+      "face": "north-west",
+      "phase": 3,
+      "damage": 80,
+      "hits": [
+        {
+          "at": 1792149300816,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "8NMVVGRmG"
+          },
+          "amount": 80,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-5",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149298731,
+          "endsAt": 1792149299231
+        },
+        {
+          "id": "calon-6",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 1.5707963705062866,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149299431,
+          "endsAt": 1792149299931
+        },
+        {
+          "id": "calon-7",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 3.1415927410125732,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149300131,
+          "endsAt": 1792149300631
+        },
+        {
+          "id": "calon-8",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 4.71238899230957,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149300831,
+          "endsAt": 1792149301331
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "thousand-cursed-hands",
+      "face": "west",
+      "phase": 3,
+      "damage": 80,
+      "hits": [
+        {
+          "at": 1792149300117,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "8oSrIm-ZJ"
+          },
+          "amount": 80,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-5",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149298731,
+          "endsAt": 1792149299231
+        },
+        {
+          "id": "calon-6",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 1.5707963705062866,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149299431,
+          "endsAt": 1792149299931
+        },
+        {
+          "id": "calon-7",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 3.1415927410125732,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149300131,
+          "endsAt": 1792149300631
+        },
+        {
+          "id": "calon-8",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 4.71238899230957,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149300831,
+          "endsAt": 1792149301331
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "thousand-cursed-hands",
+      "face": "south-west",
+      "phase": 3,
+      "damage": 80,
+      "hits": [
+        {
+          "at": 1792149300117,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "-WROs867i"
+          },
+          "amount": 80,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-5",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149298731,
+          "endsAt": 1792149299231
+        },
+        {
+          "id": "calon-6",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 1.5707963705062866,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149299431,
+          "endsAt": 1792149299931
+        },
+        {
+          "id": "calon-7",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 3.1415927410125732,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149300131,
+          "endsAt": 1792149300631
+        },
+        {
+          "id": "calon-8",
+          "skill": "thousand-cursed-hands",
+          "actor": "body",
+          "shape": "sector",
+          "effect": "thousand-cursed-hands",
+          "x": 24,
+          "y": 24,
+          "toX": 24,
+          "toY": 24,
+          "radius": 16,
+          "angle": 4.71238899230957,
+          "arc": 1.5707963705062866,
+          "width": 0.6499999761581421,
+          "warnAt": 1792149297131,
+          "startsAt": 1792149300831,
+          "endsAt": 1792149301331
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "soul-harvest",
+      "face": "west",
+      "phase": 3,
+      "damage": 255,
+      "hits": [
+        {
+          "at": 1792149309386,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "8oSrIm-ZJ"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149311206,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "8oSrIm-ZJ"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149313396,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "8oSrIm-ZJ"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-9",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 24,
+          "y": 20,
+          "toX": 18,
+          "toY": 20,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149307519,
+          "startsAt": 1792149309019,
+          "endsAt": 1792149309519
+        },
+        {
+          "id": "calon-10",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 18,
+          "y": 20,
+          "toX": 18,
+          "toY": 20,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149309712,
+          "startsAt": 1792149311212,
+          "endsAt": 1792149311712
+        },
+        {
+          "id": "calon-11",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 18,
+          "y": 20,
+          "toX": 18,
+          "toY": 20,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149311905,
+          "startsAt": 1792149313405,
+          "endsAt": 1792149313905
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "soul-harvest",
+      "face": "south-west",
+      "phase": 3,
+      "damage": 255,
+      "hits": [
+        {
+          "at": 1792149309386,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "-WROs867i"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149311206,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "-WROs867i"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149313396,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "-WROs867i"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-9",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 24,
+          "y": 20,
+          "toX": 19.75735855102539,
+          "toY": 24.24264144897461,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149307519,
+          "startsAt": 1792149309019,
+          "endsAt": 1792149309519
+        },
+        {
+          "id": "calon-10",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 19.75735855102539,
+          "y": 24.24264144897461,
+          "toX": 19.75735855102539,
+          "toY": 24.24264144897461,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149309712,
+          "startsAt": 1792149311212,
+          "endsAt": 1792149311712
+        },
+        {
+          "id": "calon-11",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 19.75735855102539,
+          "y": 24.24264144897461,
+          "toX": 19.75735855102539,
+          "toY": 24.24264144897461,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149311905,
+          "startsAt": 1792149313405,
+          "endsAt": 1792149313905
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "soul-harvest",
+      "face": "south-east",
+      "phase": 3,
+      "damage": 255,
+      "hits": [
+        {
+          "at": 1792149309339,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "o7SRAfa-w"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149311159,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "o7SRAfa-w"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149313302,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "o7SRAfa-w"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-9",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 24,
+          "y": 20,
+          "toX": 28.24264144897461,
+          "toY": 24.24264144897461,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149307472,
+          "startsAt": 1792149308972,
+          "endsAt": 1792149309472
+        },
+        {
+          "id": "calon-10",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 28.24264144897461,
+          "y": 24.24264144897461,
+          "toX": 28.24264144897461,
+          "toY": 24.24264144897461,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149309666,
+          "startsAt": 1792149311166,
+          "endsAt": 1792149311666
+        },
+        {
+          "id": "calon-11",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 28.24264144897461,
+          "y": 24.24264144897461,
+          "toX": 28.24264144897461,
+          "toY": 24.24264144897461,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149311858,
+          "startsAt": 1792149313358,
+          "endsAt": 1792149313858
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "soul-harvest",
+      "face": "south",
+      "phase": 3,
+      "damage": 255,
+      "hits": [
+        {
+          "at": 1792149309339,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "jNZYtC3VU"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149311159,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "jNZYtC3VU"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149313302,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "jNZYtC3VU"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-9",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 24,
+          "y": 20,
+          "toX": 24,
+          "toY": 26,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149307472,
+          "startsAt": 1792149308972,
+          "endsAt": 1792149309472
+        },
+        {
+          "id": "calon-10",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 24,
+          "y": 26,
+          "toX": 24,
+          "toY": 26,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149309666,
+          "startsAt": 1792149311166,
+          "endsAt": 1792149311666
+        },
+        {
+          "id": "calon-11",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 24,
+          "y": 26,
+          "toX": 24,
+          "toY": 26,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149311858,
+          "startsAt": 1792149313358,
+          "endsAt": 1792149313858
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "soul-harvest",
+      "face": "east",
+      "phase": 3,
+      "damage": 255,
+      "hits": [
+        {
+          "at": 1792149309339,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "7SIkj4DlL"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149311159,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "7SIkj4DlL"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149313302,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "7SIkj4DlL"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-9",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 24,
+          "y": 20,
+          "toX": 30,
+          "toY": 20,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149307472,
+          "startsAt": 1792149308972,
+          "endsAt": 1792149309472
+        },
+        {
+          "id": "calon-10",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 30,
+          "y": 20,
+          "toX": 30,
+          "toY": 20,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149309666,
+          "startsAt": 1792149311166,
+          "endsAt": 1792149311666
+        },
+        {
+          "id": "calon-11",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 30,
+          "y": 20,
+          "toX": 30,
+          "toY": 20,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149311858,
+          "startsAt": 1792149313358,
+          "endsAt": 1792149313858
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "soul-harvest",
+      "face": "north",
+      "phase": 3,
+      "damage": 255,
+      "hits": [
+        {
+          "at": 1792149309464,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "tbTMhplJg"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149311190,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "tbTMhplJg"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149313426,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "tbTMhplJg"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-9",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 24,
+          "y": 20,
+          "toX": 24,
+          "toY": 14,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149307566,
+          "startsAt": 1792149309066,
+          "endsAt": 1792149309566
+        },
+        {
+          "id": "calon-10",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 24,
+          "y": 14,
+          "toX": 24,
+          "toY": 14,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149309744,
+          "startsAt": 1792149311244,
+          "endsAt": 1792149311744
+        },
+        {
+          "id": "calon-11",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 24,
+          "y": 14,
+          "toX": 24,
+          "toY": 14,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149311936,
+          "startsAt": 1792149313436,
+          "endsAt": 1792149313936
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "soul-harvest",
+      "face": "north-east",
+      "phase": 3,
+      "damage": 255,
+      "hits": [
+        {
+          "at": 1792149309417,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "XPdFvOwA4"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149311190,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "XPdFvOwA4"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149313426,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "XPdFvOwA4"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-9",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 24,
+          "y": 20,
+          "toX": 28.24264144897461,
+          "toY": 15.757359504699707,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149307550,
+          "startsAt": 1792149309050,
+          "endsAt": 1792149309550
+        },
+        {
+          "id": "calon-10",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 28.24264144897461,
+          "y": 15.757359504699707,
+          "toX": 28.24264144897461,
+          "toY": 15.757359504699707,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149309743,
+          "startsAt": 1792149311243,
+          "endsAt": 1792149311743
+        },
+        {
+          "id": "calon-11",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 28.24264144897461,
+          "y": 15.757359504699707,
+          "toX": 28.24264144897461,
+          "toY": 15.757359504699707,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149311936,
+          "startsAt": 1792149313436,
+          "endsAt": 1792149313936
+        }
+      ],
+      "stages": [
+        0
+      ]
+    },
+    {
+      "skill": "soul-harvest",
+      "face": "north-west",
+      "phase": 3,
+      "damage": 255,
+      "hits": [
+        {
+          "at": 1792149309386,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "8NMVVGRmG"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149311190,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "8NMVVGRmG"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        },
+        {
+          "at": 1792149313426,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "8NMVVGRmG"
+          },
+          "amount": 85,
+          "source": "plague-sorceress-calon-arang-0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "calon-9",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 24,
+          "y": 20,
+          "toX": 19.75735855102539,
+          "toY": 15.757359504699707,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149307566,
+          "startsAt": 1792149309066,
+          "endsAt": 1792149309566
+        },
+        {
+          "id": "calon-10",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 19.75735855102539,
+          "y": 15.757359504699707,
+          "toX": 19.75735855102539,
+          "toY": 15.757359504699707,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149309759,
+          "startsAt": 1792149311259,
+          "endsAt": 1792149311759
+        },
+        {
+          "id": "calon-11",
+          "skill": "soul-harvest",
+          "actor": "body",
+          "shape": "charge",
+          "effect": "soul-harvest",
+          "x": 19.75735855102539,
+          "y": 15.757359504699707,
+          "toX": 19.75735855102539,
+          "toY": 15.757359504699707,
+          "radius": 0,
+          "angle": 0,
+          "arc": 1.5707963705062866,
+          "width": 0.8500000238418579,
+          "warnAt": 1792149311936,
+          "startsAt": 1792149313436,
+          "endsAt": 1792149313936
+        }
+      ],
+      "stages": [
+        0
+      ]
+    }
+  ]
+}
