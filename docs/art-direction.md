@@ -392,3 +392,13 @@ measured32 cast poses. Organic ground layers remain below actors; shared exact
 danger geometry stays readable. Four cast poses/facing, idle-based glide and
 shared directional dissolve are explicit limits, not60-frame animation claims.
 User art approval pending. See design/bosses/maiyarap/vfx.md.
+
+
+## Koschei Boss5 — 2026-10-16
+
+Russian skeletal deathless king, dark fur, weathered silver crown, cold soul-fire,
+frozen chains and spectral oak use19 ImageGen sources (2 rejected candidates
+retained).11 authored8-frame materials and8-direction idle/windup/release poses;
+measured staff ports and component-owned cuts prevent adjacent sprite fragments.
+Idle glide and shared south-east death collapse are explicit limits; user art
+approval pending. See design/bosses/koschei/vfx.md.

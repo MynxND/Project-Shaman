@@ -1,3 +1,4 @@
+import {preloadKoscheiNecropolis,decorateKoscheiNecropolis} from './KoscheiNecropolis';
 import { preloadMaiyarapPalace, decorateMaiyarapPalace } from './MaiyarapPalace';
 import{preloadOe,renderOe}from'./OeRegion';
 import{isRussiaMap,preloadRussiaRegion,renderRussiaRegion}from'./RussiaRegion';
@@ -45,6 +46,7 @@ const TILE_PX = 16;
 
 export function preloadMapAssets(scene: Phaser.Scene, map?: MapDefinition) {
   if(map?.id==='mount-oe-fortress')preloadOe(scene);
+  if(map?.id==='frozen-necropolis')preloadKoscheiNecropolis(scene);
   if (map?.id === 'maiyarap-palace') preloadMaiyarapPalace(scene);
   preloadChina(scene,map);
   if(isIrelandMap(map))preloadIrelandRegion(scene);
@@ -87,6 +89,7 @@ export function renderMap(scene: Phaser.Scene, map: MapDefinition) {
   ground(map.ground.base, 0, 0, map.width, map.height);
   for (const r of map.ground.regions) ground(r.material, r.x, r.y, r.w, r.h);
   const water=renderTerrain(scene, map, manifest);
+  if(map.id==='frozen-necropolis')decorateKoscheiNecropolis(scene);
   if (map.id === 'maiyarap-palace') decorateMaiyarapPalace(scene);
   renderChinaGround(scene,map);
   if(!isChinaMap(map))renderQualityDecoration(scene,map);

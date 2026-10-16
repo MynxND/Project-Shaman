@@ -1,3 +1,4 @@
+import { FROZEN_NECROPOLIS } from './frozen-necropolis.js';
 import { MAIYARAP_PALACE } from './maiyarap-palace.js';
 import{MOUNT_OE}from'./mount-oe-fortress.js';
 import{withFolkloreResidents}from'./folklore-live.js';
@@ -38,6 +39,7 @@ const BASE_MAPS: Readonly<Record<string, MapDefinition>> = {
   ...Object.fromEntries(JAPAN_MAPS.map(map=>[map.id,map])),
   [MOUNT_OE.id]:MOUNT_OE,
   [MAIYARAP_PALACE.id]: MAIYARAP_PALACE,
+  [FROZEN_NECROPOLIS.id]: FROZEN_NECROPOLIS,
   [SNOW_NORWAY_LINK.id]:{...SNOW_NORWAY_LINK,portals:[...(SNOW_NORWAY_LINK.portals??[]),{id:'oe-gate',area:{x:78,y:35,w:2,h:2},arrival:{x:76,y:36},to:{mapId:MOUNT_OE.id,portalId:'snow-gate'},label:{th:'ป้อมราชันโอนิ · ตะวันออก',en:'Mount Ōe Fortress'}}]},
   ...Object.fromEntries(NORWAY_MAPS.map(map=>[map.id,map])),
   [AURORA_IRELAND_LINK.id]:AURORA_IRELAND_LINK,

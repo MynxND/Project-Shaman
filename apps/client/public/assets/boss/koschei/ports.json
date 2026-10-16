@@ -1,0 +1,170 @@
+{
+  "anchor": [
+    128,
+    248
+  ],
+  "actorScale": 0.9,
+  "method": "largest connected bright cyan flame in each authored idle/windup/release pose; relative pixels, not gameplay geometry",
+  "ports": {
+    "south": {
+      "idle": {
+        "x": -42.06,
+        "y": -200.36,
+        "pixels": 143,
+        "frame": 8
+      },
+      "windup": {
+        "x": 32.02,
+        "y": -183.11,
+        "pixels": 167,
+        "frame": 9
+      },
+      "release": {
+        "x": -1.77,
+        "y": -19.6,
+        "pixels": 192,
+        "frame": 10
+      }
+    },
+    "south-west": {
+      "idle": {
+        "x": -54.69,
+        "y": -198.03,
+        "pixels": 134,
+        "frame": 12
+      },
+      "windup": {
+        "x": 28.02,
+        "y": -180.94,
+        "pixels": 141,
+        "frame": 13
+      },
+      "release": {
+        "x": -80.07,
+        "y": -26.25,
+        "pixels": 178,
+        "frame": 14
+      }
+    },
+    "west": {
+      "idle": {
+        "x": -45.77,
+        "y": -197.73,
+        "pixels": 117,
+        "frame": 16
+      },
+      "windup": {
+        "x": 17.06,
+        "y": -184.53,
+        "pixels": 135,
+        "frame": 17
+      },
+      "release": {
+        "x": -89.26,
+        "y": -121.5,
+        "pixels": 193,
+        "frame": 18
+      }
+    },
+    "north-west": {
+      "idle": {
+        "x": 55.66,
+        "y": -200.45,
+        "pixels": 130,
+        "frame": 20
+      },
+      "windup": {
+        "x": -51.76,
+        "y": -185.5,
+        "pixels": 139,
+        "frame": 21
+      },
+      "release": {
+        "x": -68.75,
+        "y": -199.16,
+        "pixels": 155,
+        "frame": 22
+      }
+    },
+    "north": {
+      "idle": {
+        "x": 46.38,
+        "y": -197.45,
+        "pixels": 123,
+        "frame": 24
+      },
+      "windup": {
+        "x": -44.81,
+        "y": -192.84,
+        "pixels": 188,
+        "frame": 25
+      },
+      "release": {
+        "x": -1.98,
+        "y": -222.81,
+        "pixels": 126,
+        "frame": 26
+      }
+    },
+    "north-east": {
+      "idle": {
+        "x": 64.16,
+        "y": -201.98,
+        "pixels": 123,
+        "frame": 28
+      },
+      "windup": {
+        "x": -23.19,
+        "y": -180.26,
+        "pixels": 155,
+        "frame": 29
+      },
+      "release": {
+        "x": 66.24,
+        "y": -206.97,
+        "pixels": 157,
+        "frame": 30
+      }
+    },
+    "east": {
+      "idle": {
+        "x": 33.85,
+        "y": -197.79,
+        "pixels": 118,
+        "frame": 32
+      },
+      "windup": {
+        "x": 29.22,
+        "y": -169.64,
+        "pixels": 107,
+        "frame": 33
+      },
+      "release": {
+        "x": 85.67,
+        "y": -135.14,
+        "pixels": 203,
+        "frame": 34
+      }
+    },
+    "south-east": {
+      "idle": {
+        "x": 59.53,
+        "y": -199.33,
+        "pixels": 135,
+        "frame": 36
+      },
+      "windup": {
+        "x": 48.42,
+        "y": -185.52,
+        "pixels": 184,
+        "frame": 37
+      },
+      "release": {
+        "x": 77.02,
+        "y": -30.22,
+        "pixels": 186,
+        "frame": 38
+      }
+    }
+  }
+}

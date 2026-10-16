@@ -1,0 +1,64 @@
+{
+  "arrangement": "isolated actual GameRoom; unsaved guest, DEV pre-cast positions and phases; no post-cast teleport/invulnerability",
+  "uncertainty": "30Hz simulation,50ms schema patches,75ms observation; damage receipts ±125ms",
+  "cases": [
+    {
+      "skill": "soul-lance",
+      "facing": "south",
+      "damage": 80
+    },
+    {
+      "skill": "soul-lance",
+      "facing": "south-east",
+      "damage": 80
+    },
+    {
+      "skill": "soul-lance",
+      "facing": "east",
+      "damage": 80
+    },
+    {
+      "skill": "soul-lance",
+      "facing": "north-east",
+      "damage": 80
+    },
+    {
+      "skill": "soul-lance",
+      "facing": "north",
+      "damage": 80
+    },
+    {
+      "skill": "soul-lance",
+      "facing": "north-west",
+      "damage": 80
+    },
+    {
+      "skill": "soul-lance",
+      "facing": "west",
+      "damage": 80
+    },
+    {
+      "skill": "soul-lance",
+      "facing": "south-west",
+      "damage": 80
+    },
+    {
+      "skill": "the-last-needle",
+      "mode": "outside-refuge",
+      "damage": 190
+    },
+    {
+      "skill": "the-last-needle",
+      "mode": "walk-to-refuge",
+      "damage": 0
+    },
+    {
+      "kind": "latejoin-review-gate",
+      "phase": 1,
+      "relicStage": 1
+    }
+  ],
+  "ai": [],
+  "failures": [],
+  "counterplay": null
+}

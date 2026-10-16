@@ -79,3 +79,5 @@ export * from './skill-text.js';
 export * from './shuten.js';
 
 export * from './maiyarap.js';
+
+export * from './koschei.js';

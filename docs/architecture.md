@@ -650,3 +650,12 @@ reuse GameRoom/CombatSystem. Shared maiyarap.ts geometry drives both damage and
 Phaser tells; the world and88-clip lab share MaiyarapVfx and actor pose clocks.
 React owns summary HUD and proximity interactions. Palace is an actual review
 room without atlas/portal adoption. See design/bosses/maiyarap/README.md.
+
+
+## Koschei Boss5 — 2026-10-16
+
+Independent authoritative KoscheiEncounter and schema state add nested external
+death, bounded Rebirth healing and needle death gate through existing GameRoom/
+CombatSystem. Shared geometry and timestamped cues drive pooled world/lab VFX;
+React handles summaries/proximity intents.88 recorded clips, no client damage
+authority or new world travel adoption. See design/bosses/koschei/README.md.

@@ -128,6 +128,8 @@ export class GameRoom extends Room<{ state: GameState }> {
         if (ready?.[skillId]) { ready[skillId] = Math.max(this.clock.currentTime, ready[skillId]! - ms); this.client(id)?.send('cooldown', { skillId, readyInMs: ready[skillId]! - this.clock.currentTime }); }
       },
     });
+    this.onMessage('koschei:relic',(client,message:unknown)=>{this.combat.koschei?.interact(client.sessionId,message);});
+    if(DEV_COMMANDS)this.onMessage('koschei:review',(client,message:unknown)=>{if(this.map.id==='frozen-necropolis'&&!this.accounts.has(client.sessionId)&&this.clients.length===1&&message&&typeof message==='object')this.combat.koschei?.review(client.sessionId,message as Record<string,unknown>);});
     this.onMessage('maiyarap:symbol', (client, message: unknown) => { this.combat.maiyarap?.interact(client.sessionId, message); });
     if (DEV_COMMANDS) this.onMessage('maiyarap:review', (client, message: unknown) => { if (this.map.id === 'maiyarap-palace' && !this.accounts.has(client.sessionId) && this.clients.length === 1 && message && typeof message === 'object') this.combat.maiyarap?.review(client.sessionId, message as Record<string, unknown>); });
     this.onMessage('boss:seal',client=>{if(this.map.id==='mount-oe-fortress')this.combat.shuten?.seal(client.sessionId);});

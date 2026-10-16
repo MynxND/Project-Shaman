@@ -1,0 +1,456 @@
+{
+  "generator": "ImageGen built-in",
+  "faces": [
+    "south",
+    "south-west",
+    "west",
+    "north-west",
+    "north",
+    "north-east",
+    "east",
+    "south-east"
+  ],
+  "cryptCuts": {
+    "crypt": [
+      0,
+      0,
+      790,
+      750
+    ],
+    "tomb": [
+      790,
+      250,
+      1223,
+      790
+    ],
+    "stone": [
+      65,
+      775,
+      560,
+      1265
+    ],
+    "mist": [
+      590,
+      800,
+      1223,
+      1286
+    ]
+  },
+  "releaseBodyBoxes": [
+    [
+      17,
+      23,
+      338,
+      452
+    ],
+    [
+      350,
+      45,
+      752,
+      444
+    ],
+    [
+      702,
+      54,
+      1160,
+      455
+    ],
+    [
+      1169,
+      10,
+      1523,
+      482
+    ],
+    [
+      23,
+      468,
+      327,
+      993
+    ],
+    [
+      359,
+      479,
+      705,
+      979
+    ],
+    [
+      718,
+      551,
+      1165,
+      977
+    ],
+    [
+      1131,
+      556,
+      1522,
+      972
+    ]
+  ],
+  "casting": "idle, authored windup (if supplied), explicit directional release, idle recovery; no interpolated artwork",
+  "rejected": [
+    "idle-eight.png wrong rear view",
+    "cast-directions.png release faces wrong direction"
+  ],
+  "assets": [
+    {
+      "path": "apps/client/public/assets/boss/koschei/actor.png",
+      "sha256": "0bd3ee21515ffa797abee7d7088771c35656d75d3f6657ee63340f415b2b8958",
+      "size": [
+        2048,
+        1536
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/cast-directions.png",
+      "sha256": "37ef4bfcb4e38327c451b0bf319c2f0df0b25587ccc64967a2cd8526ffcc9ed8",
+      "size": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/chest.png",
+      "sha256": "cd3b7df2e30f5092a833d5bfda861f28286532844d68bdb0b7c32550d8526eb9",
+      "size": [
+        512,
+        503
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/crypt.png",
+      "sha256": "e487e1bf628ecd39eb65a7e6c3c019e0cf935ff5d1e176466e18c07b140b40e0",
+      "size": [
+        787,
+        720
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/cursed-needle.png",
+      "sha256": "98a14635e5b6f361e5d335e520cc2f02d8ab4091fddceb3bd8f7397edbdac672",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/death.png",
+      "sha256": "31ead4184ed30f616d99fc44931475b964693fb68dde99df2242201d69d0ee70",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/deathly-chains.png",
+      "sha256": "07bbf2478d268f67109a148d2777f134c33593252d60d167601083d673dbd385",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/deathstorm.png",
+      "sha256": "3179cd519151828e41f2c7e9ab893d2bcf7d37d0de238251dbe00fde8bc9f3fc",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/duck.png",
+      "sha256": "ab2103e812b5c1f94da3cd38be7988b99dcb7da98259840822d0add88c9726e5",
+      "size": [
+        482,
+        419
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/egg.png",
+      "sha256": "6d393eae2a3151319317a2db58c9e699badadbe5f30ab4047813f90c68d1af13",
+      "size": [
+        512,
+        490
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/gravefrost-spear.png",
+      "sha256": "da43772f75a6bac18cdf2c699b42fe682d9dfef733854d5c234655ab8bbdd2ab",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/hare.png",
+      "sha256": "db72e62792ffebf700699306a35c88bc5fe6800a3bab840680e1607543583cd9",
+      "size": [
+        499,
+        496
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/idle-eight.png",
+      "sha256": "1e82adddc55c942a935fa96270d61190a7e63added5f1cbaf6eb60db6faf13c2",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/immortal-rebirth.png",
+      "sha256": "3ebc4fa3d4d5118fa90956980b4ee6bfa88e7610edb91b9b477b11d908ad9411",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/mist.png",
+      "sha256": "ec8db05ad0c70dce6aadce2471671214d9394c5b56b5edbebea005509822f1d8",
+      "size": [
+        611,
+        343
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/necropolis-guard.png",
+      "sha256": "56be22874e6500007824eb9128f1d32306a0ffd0e7ebd1c7bd4e249586ee1df0",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/needle-actor.png",
+      "sha256": "bb7c3d25eacba89d355eafc33620cde98bf3b38c2b99b0eb5390489e07abf0d1",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/needle.png",
+      "sha256": "7fb6c78e94205c73f564c768ea3dd2bc3dbca7a40f0148811ec989e73442b9f9",
+      "size": [
+        458,
+        501
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/oak.png",
+      "sha256": "bc32456206d8b0dbcf8cc22c56e615951607cfe0525c4fb72d499f3c0ce6fadf",
+      "size": [
+        502,
+        494
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/royal-necromancy.png",
+      "sha256": "efd2bb2f5aa6dcfcdaf3ef4f69be55f4c03d69337706aaa45ec3ee054a82ec03",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/soul-lance.png",
+      "sha256": "d4e6e28baad4f3d4dd743e82f4edf607e9ee9fc302df1ad81940e52e87c64632",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/soul-severance.png",
+      "sha256": "e33c3d90098e5d2924a49a3b17f8d2da27d371b5bf0d73b59d5255b0dd5bc679",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/cast-directions.png",
+      "sha256": "72ca4d0e8678b10c9756c9ac51e99a683044f697e94a5df87f9831bfd01c7f32",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/crypt-kit.png",
+      "sha256": "53aa4fbf80558f94adad0049d91ebdf7ac9c9c368831740621b4d3e712a43898",
+      "size": [
+        1223,
+        1286
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/cursed-needle.png",
+      "sha256": "82da03e0268c21fe40d89faa597f496030e0be758c1114a52379896e768ce77c",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/death.png",
+      "sha256": "9440d34a6b415ec69d96fa5fa9ce3a63707fb05b78307e2d73196e91c6d3e878",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/deathly-chains.png",
+      "sha256": "47935e8269ff17e8387b30500a62bf7a98c6e96a6835e5cda8a9a23a958a6e09",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/deathstorm.png",
+      "sha256": "cfe8ff590e3f2d7fa7808aaff2bb0be42ec6955876394b87cf17d76b01a7ef36",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/gravefrost-spear.png",
+      "sha256": "65a7f372d0367ab0e7e30f72611bad304bb75fa609516c22cf43bf215ca7a061",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/idle-eight-v2.png",
+      "sha256": "16c07c44f383edf90fc3df25b5a206857b24739e1f56fa9828cb88c567c3d877",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/idle-eight.png",
+      "sha256": "9d9aac932b8e213bb4f7f909224ec4d7b300cc7ce1b1e45874200eba5d4b8ce4",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/immortal-rebirth.png",
+      "sha256": "600dc72e02967ad2400630515191aa748616b1e2fd6570ed92259f23120da8ea",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/necropolis-guard.png",
+      "sha256": "8c2014a3fb37a3ad2221069aed555f9454dc5e738181702e6b305037eff37e65",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/release-eight.png",
+      "sha256": "66599f547697814af5db5a9c19032fdfd842282c11d885bf3a6d6f1b348a4f58",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/relic-kit.png",
+      "sha256": "90c79659fb4cef46815a8179131ccd8ebb6718d19cce48a073b9a56808e8f6ac",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/royal-necromancy.png",
+      "sha256": "cd82d06fe83758eeb75f37f0a19081acd3fc873639645e22431424168c4bb553",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/soul-lance.png",
+      "sha256": "d716e3dedb5b853369a14fc4e51dff12afc64cada422d07f19890df9f51a05e2",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/soul-severance.png",
+      "sha256": "aca57e779cc2c3e5060a875ec8bb8fde95d2eb5c27a3dff5637078d25dca524c",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/the-last-needle.png",
+      "sha256": "87a13292597d19e57964e7ab0c296b4b7e85417610c2967d1c7c53b5a0a4be26",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/throne-of-bones.png",
+      "sha256": "32f6cb8cce99afe339112e62798eba981c4885fe0e86f80db58a66c4bdf3d893",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/source/windup-eight.png",
+      "sha256": "6c5975cebac777257e734f5e4b52553cbf7b22482c1c8533947897c34834fb50",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/stone.png",
+      "sha256": "b7715fabebfbc632302e27f055c4b823145f9be450a66f7e6b5ce64f77b8afd3",
+      "size": [
+        495,
+        490
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/the-last-needle.png",
+      "sha256": "fe84469f3be7f29cb8c386749e7971adbc3ebaad048a3177be05051b8a088bc1",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/throne-of-bones.png",
+      "sha256": "102636d0d6402c1a2e730c56fb281b0eb41ccb16ec55059123cf774eab1c7204",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/koschei/tomb.png",
+      "sha256": "d8dda7b80feb7a773e9e43ab5656836f595d51a17aaf0cc1315e803471085c0e",
+      "size": [
+        430,
+        490
+      ]
+    }
+  ]
+}

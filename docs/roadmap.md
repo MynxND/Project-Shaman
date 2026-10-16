@@ -728,3 +728,14 @@ normal AI by phase, production isolation, typecheck/build and desktop/emulated
 mobile inspection pass. Balance and user visual review remain pending; no
 continuous balanced victory or new world portal adoption claimed. See
 design/bosses/maiyarap/README.md. Stop this boss batch for user review.
+
+
+## Koschei Boss5 review implementation — 2026-10-16
+
+Russian boss3 phases/10 named abilities/5-stage Last Needle implemented in actual
+review GameRoom with ImageGen sprite/VFX,88-clip lab and nested death counter.
+876 behavior/248 art-port checks;20 positive/walk-dodge cases, eight actual lance
+facings, solo counter, failure refuge, phase AI, late join and production gate
+verified. Typecheck/build/shared and prior-boss regressions pass. User art and
+final balance review pending; no continuous normal-character victory or atlas
+portal adoption claimed. See design/bosses/koschei/README.md. Stop for review.

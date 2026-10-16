@@ -709,3 +709,14 @@ punish. All numerics/puzzle/geography are provisional game design. Critical
 tells have24 pooled views and cosmetics64 particles; overflow never silently
 hides a hit. Arena is review-only travel adoption; production blocks QA commands.
 See design/bosses/maiyarap/README.md for evidence and remaining art/audio polish.
+
+
+## Koschei Boss5 — 2026-10-16
+
+Only Russian Boss5 from Word. Nested oak/chest/hare/duck/egg reveals a destructible
+needle; validate current object/proximity/rate on server. Opening interrupts
+Rebirth; destroying ends deathless gate and interrupts ultimate. Gold southern
+refuge prevents unavoidable failure. Solo basic-attack counter verified~14.3s;
+32s finale warning. Ray clipping preserves diagonal aim, never clamps axes into
+a different angle. All balance/geography provisional. Existing bosses unchanged.
+See design/bosses/koschei/README.md for QA arrangements and explicit limits.
