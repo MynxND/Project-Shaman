@@ -621,3 +621,7 @@ Extend the existing map-scoped MonsterArtVfxLayer with fourteen additional speci
 ### 2026-10-16 — Shuten-dōji boss encounter
 
 Shuten-dōji uses the existing authoritative GameRoom: one encounter FSM, shared body/head HP, schema-timestamped persistent hazards, destructible combat objects and normal travel tickets. Phaser owns a64-slot VFX pool and the normal monster actors; React owns Thai boss/seal controls. Production rejects review commands. See docs/design/bosses/shuten-doji/README.md.
+
+## Boss asset VFX proof of concept — 2026-10-16
+
+Mountain Stomp alone now binds authoritative hazard timestamps to a fixed, asset-driven Phaser view/emitter pool. WaveArtProfile separates art clocks and assets from linear world-space radius; no damage, phase, protocol or server changes. Dedicated /boss-vfx/stomp preview owns no gameplay. Parent-driven positive-size resize preserves the preview scene. See [audit, architecture, performance and adoption](design/bosses/shuten-doji/vfx-stomp-v2/README.md).

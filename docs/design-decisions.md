@@ -667,3 +667,7 @@ Keep one bounded authoritative-hit presentation layer, but give each ranged folk
 ### 2026-10-16 — Shuten-dōji boss encounter
 
 Use one server coordinator for coordinated head/body attacks and reward attribution. Share telegraph geometry with damage checks, keep head flight lift cosmetic, and preserve a safe path to every altar/seal/exit under all16 collapse masks. Boss balance beyond the supplied phase gates/timings is provisional. Add the fortress through a reciprocal Snowbound Torii boundary portal without replacing earlier exits or residents. See docs/design/bosses/shuten-doji/README.md.
+
+## One-attack asset VFX migration — 2026-10-16
+
+User requests diagnosis and one complete attack before expansion. Upgrade Mountain Stomp only; preserve authority and keep a dev-only actual baseline renderer. Independent asset clocks, a four-view pool, reserved capped live particles, cancellation fade and cosmetic aftermath avoid local damage/tween drift. No custom shader or excessive bloom. [Evidence and limitations](design/bosses/shuten-doji/vfx-stomp-v2/README.md).

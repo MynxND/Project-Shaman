@@ -697,3 +697,7 @@ The fourteen effects remaining after art07 now have original distinct eight-dire
 ### 2026-10-16 — Shuten-dōji boss encounter
 
 The first Shuten-dōji encounter is implemented for review: three phases, ten skills and a five-stage ultimate, destructible sake altars/drums, shared head/body HP, seal channel and reciprocal fortress travel. Original art, real-game captures and desktop/portrait/landscape inspection are recorded in docs/design/bosses/shuten-doji; review gallery: /boss-review/shuten-doji/index.html. Difficulty/group balancing and physical-mobile performance remain playtest work; no final art approval is claimed.
+
+## Boss VFX asset proof of concept — 2026-10-16
+
+Mountain Stomp migrated and reviewed in the real room with before/after, walking dodge, dedicated responsive Phaser preview, measured frame intervals/CPU and automated timeline/pool checks. Other attacks are intentionally not migrated. Production coherent flipbooks and final user visual approval remain open; see [asset requirements](design/bosses/shuten-doji/vfx-stomp-v2/README.md).

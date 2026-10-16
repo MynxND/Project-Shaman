@@ -346,3 +346,7 @@ All seventeen ranged folklore species now select unique authored materials: flam
 ### 2026-10-16 — Shuten-dōji boss encounter
 
 Shuten-dōji adds original Japanese oni forms, eight directional ready/windup/strike poses, separate head, sake-fire/fist/breath material atlases and a ruined basalt fortress. Reuse the owned Japanese ground/cedar/lantern/rock kit. GDQuest shader principles inform layered emission and dissipation; no upstream artwork or Godot runtime is imported. Technical passing is not user visual approval. See docs/design/bosses/shuten-doji/README.md.
+
+## Shuten Stomp VFX review — 2026-10-16
+
+Asset-driven charcoal ash, cursed red spirit fire, basalt fragments and restrained textured flash replace the thick procedural ring for one attack. Generated four-pose material/smoke art is explicitly temporary POC artwork; crossfade does not replace authored in-between animation. Production gaps and before/after game screenshots are in [the review](design/bosses/shuten-doji/vfx-stomp-v2/README.md). Other boss attacks retain their prior presentation.

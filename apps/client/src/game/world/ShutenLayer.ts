@@ -3,9 +3,11 @@ import { FACINGS, SHUTEN_ID, SHUTEN_SKILLS, OE_SEAL, OE_COLLAPSE, WORLD_UNIT_PX 
 import type { GameState, BossHazardState } from '@shaman/schema';
 import type { Room } from '@colyseus/sdk';
 import type { MonsterLayer } from './MonsterLayer';
+import { StompVfx, preloadStomp } from '../vfx/boss/StompVfx';
 const BASE = '/assets/monsters/shuten/';
 const effects = ['impact', 'violet', 'sweep', 'breath', 'fist'] as const;
 export function preloadShuten(scene:Phaser.Scene){
+    preloadStomp(scene);
     for(const k of ['frenzy','headless','armored-windup','frenzy-windup','headless-windup','armored-strike','frenzy-strike','headless-strike',...effects,'props'])
         if(!scene.textures.exists('oe:'+k))scene.load.spritesheet('oe:'+k,BASE+k+'.png',{frameWidth:256,frameHeight:256});
 }
@@ -19,6 +21,8 @@ interface Slot {
 /** Fixed-capacity views read persistent server hazards, including warnings received on late join. */
 export class ShutenLayer {
     private slots: Slot[] = [];
+    private stomp: StompVfx;
+    private legacyStomp = process.env.NODE_ENV === 'development' && new URLSearchParams(location.search).get('bossVfx') === 'before';
     private off: () => void;
     private hudAt = 0;
     private syncAt = 0;
@@ -30,6 +34,7 @@ export class ShutenLayer {
     private rubble: Phaser.GameObjects.Graphics;
     private seal: Phaser.GameObjects.Graphics;
     constructor(private scene: Phaser.Scene, private map: MapDefinition, private actors: MonsterLayer, private room: () => Room<GameState> | null, private prepare:()=>void) {
+        this.stomp = new StompVfx(scene);
         for (let i = 0; i < 64; i++)
             this.slots.push({ id: '', ground: scene.add.graphics().setDepth(-.6), art: scene.add.sprite(0, 0, 'oe:impact').setVisible(false), light: scene.add.sprite(0, 0, 'oe:impact').setBlendMode(Phaser.BlendModes.ADD).setVisible(false), started: false });
         this.blade = scene.add.sprite(0, 0, 'oe:props', 7).setVisible(false);
@@ -94,7 +99,9 @@ export class ShutenLayer {
                 v.light.setVisible(false);
                 v.started = false;
             }
+        this.stomp.update(this.legacyStomp ? [] : b.hazards.values(), now);
         b.hazards.forEach(h => {
+            if (!this.legacyStomp && h.skill === 'mountain-stomp') return;
             let v = this.slots.find(v => v.id === h.id);
             if (!v) {
                 v = this.slots.find(v => !v.id);
@@ -189,7 +196,7 @@ export class ShutenLayer {
             window.dispatchEvent(new CustomEvent('boss:snapshot', { detail: { hp: b.hp, hpMax: b.hpMax, phase: b.phase, mode: b.mode, skill: b.skill, name: SHUTEN_SKILLS[b.skill as keyof typeof SHUTEN_SKILLS]?.name ?? b.skill, altars: b.altarRemaining, sealed: b.sealed, seal: b.sealProgress, stage: b.ultimateStage, stagger: b.stagger, head: b.headSkill, hazards: b.hazards.size, connected: true } }));
         }
     }
-    destroy() { this.off(); for (const v of this.slots) {
+    destroy() { this.stomp.destroy(); this.off(); for (const v of this.slots) {
         v.ground.destroy();
         v.art.destroy();
         v.light.destroy();
