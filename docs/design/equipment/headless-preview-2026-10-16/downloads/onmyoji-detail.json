@@ -1,0 +1,3607 @@
+{
+  "id": "onmyoji-detail",
+  "branch": "onmyoji",
+  "attackAction": "attack-cast-fan",
+  "directions": {
+    "south": {
+      "headOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 62,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/onmyoji-detail/idle/south.png",
+        "sha256": "2729034978039550e958995f9bebb6ff0ab0e3d85aa964ac967622a70bc1ceaf",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 40.5,
+          "y": 81.5
+        },
+        "off": {
+          "x": 81.5,
+          "y": 76.5
+        },
+        "bakedWeapon": "fan-onmyoji"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-0.png",
+          "sha256": "66a7d56d692364c51108e077af993a1514ccef772bd02fc5ee9c8f8ad29aea82",
+          "neck": {
+            "x": 69,
+            "y": 45
+          },
+          "main": {
+            "x": 42.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-1.png",
+          "sha256": "da373884c80ee7c1b73976ecc0a8a7b0cef3a2b9ebeb8bd183b59cc37ef2d402",
+          "neck": {
+            "x": 64,
+            "y": 45
+          },
+          "main": {
+            "x": 42.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-2.png",
+          "sha256": "3e85f72b6f23e2246150ea803e296d8278baf98c797d49ad36760f0b6baf25b1",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 42.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 81.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-3.png",
+          "sha256": "8dbb319997b3f7c9f9d1e42a8b788742454489f362f6d78d7a099baad0d5ea9e",
+          "neck": {
+            "x": 65,
+            "y": 46
+          },
+          "main": {
+            "x": 40.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-4.png",
+          "sha256": "d4cb94a5e60f396ff543fdaa6f2563dd9542b597ac98bbc36d3ef8ac897b8064",
+          "neck": {
+            "x": 66,
+            "y": 44
+          },
+          "main": {
+            "x": 41.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-5.png",
+          "sha256": "c6e5dfc8ac0715200a4fc0bdab9cdc2d23d44ba057837859ef10b0406476d4ce",
+          "neck": {
+            "x": 64,
+            "y": 46
+          },
+          "main": {
+            "x": 41.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-6.png",
+          "sha256": "387ac85b7516ede7c9e155d984ad96688493751e0174cb186ffb0ab50190d157",
+          "neck": {
+            "x": 62,
+            "y": 44
+          },
+          "main": {
+            "x": 41.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-7.png",
+          "sha256": "0a7fc5f8584170b418964e3d346711f7c7ad68e76b0aaa7d57f135d67ccce89f",
+          "neck": {
+            "x": 65,
+            "y": 45
+          },
+          "main": {
+            "x": 42.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-0.png",
+          "sha256": "ea67ce52b1861672fdce101bc412d4864946c73e9ad1a049db1c0427d0953611",
+          "neck": {
+            "x": 66,
+            "y": 46
+          },
+          "main": {
+            "x": 56.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-1.png",
+          "sha256": "48548982d3d9796f3d90bcd96d312b3675c9bf179da0e0c209b12f1df6960a1b",
+          "neck": {
+            "x": 64,
+            "y": 49
+          },
+          "main": {
+            "x": 72.5,
+            "y": 53.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 57.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-2.png",
+          "sha256": "89ee82104623737bb4c2616203a2f60b671a995d2a6735bce3e13e9a0981924a",
+          "neck": {
+            "x": 59,
+            "y": 47
+          },
+          "main": {
+            "x": 58.5,
+            "y": 61.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 52.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-3.png",
+          "sha256": "39ebcea45e3e2113990faf2d0e7bd8ed7082e10e1dcfc04b6a456a6fe45b0ae5",
+          "neck": {
+            "x": 61,
+            "y": 51
+          },
+          "main": {
+            "x": 45.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 52.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-4.png",
+          "sha256": "ccb26907674d0b57f46281c7ee8cbb19723fb632f5039563b1f105bf3c6e3c1e",
+          "neck": {
+            "x": 76,
+            "y": 41
+          },
+          "main": {
+            "x": 53.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 53.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-5.png",
+          "sha256": "29b4ad8905b412911ceb58f9e1bb868163b05094964732e05297e5d62a4b4aba",
+          "neck": {
+            "x": 62,
+            "y": 40
+          },
+          "main": {
+            "x": 53.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 56.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-6.png",
+          "sha256": "d0c22ec90313e998cbe4aabebe11b858651bfe3b7c3fcf77efff16b4b60de663",
+          "neck": {
+            "x": 60,
+            "y": 40
+          },
+          "main": {
+            "x": 55.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 60.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-7.png",
+          "sha256": "f064a0f581468ae1e98269dad199af3192ebc9c56584749fb0bf692cd14ae176",
+          "neck": {
+            "x": 62,
+            "y": 40
+          },
+          "main": {
+            "x": 57.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-0.png",
+          "sha256": "e7b2470f3d50d9c420981ac2de82d7163c575b0310377ecee0e5f626368ea52a",
+          "neck": {
+            "x": 61,
+            "y": 49
+          },
+          "main": {
+            "x": 41.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 76.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-1.png",
+          "sha256": "d069fe477ca0c24928be2dfe1c990d0eb63b1155cd53ab25cccdc6617809cd49",
+          "neck": {
+            "x": 61,
+            "y": 49
+          },
+          "main": {
+            "x": 41.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 81.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-2.png",
+          "sha256": "81026ace255277ff57f0ede4196ffe5cef0a3f4d3e624edafa653d7ff3096f7b",
+          "neck": {
+            "x": 61,
+            "y": 49
+          },
+          "main": {
+            "x": 41.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 81.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-3.png",
+          "sha256": "6528604420fb53c6935e14955a4760045f30b2e8353b6431e79636a858a64ce1",
+          "neck": {
+            "x": 62,
+            "y": 50
+          },
+          "main": {
+            "x": 41.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 81.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-4.png",
+          "sha256": "eab21c5ab7f9201f85b818798da7815cefcf60afc08c6f28b04b1a1a07b652f9",
+          "neck": {
+            "x": 63,
+            "y": 46
+          },
+          "main": {
+            "x": 41.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 81.5,
+            "y": 79.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-5.png",
+          "sha256": "fb8e950732906acfdf8f4f9ab632ccc275cad5ac3f067c4034d384225ff2377a",
+          "neck": {
+            "x": 61,
+            "y": 46
+          },
+          "main": {
+            "x": 41.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 81.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-6.png",
+          "sha256": "2368301bc48d664e05622f9a81ed8e8699f3ee9929eb4bcb383c0a896a53d03b",
+          "neck": {
+            "x": 61,
+            "y": 46
+          },
+          "main": {
+            "x": 41.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 81.5,
+            "y": 81.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-7.png",
+          "sha256": "304069c18794ffb2b421c17088a6967f84b6373e3b3dd5a5cf9fd9813c6749aa",
+          "neck": {
+            "x": 61,
+            "y": 47
+          },
+          "main": {
+            "x": 46.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 72.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ]
+    },
+    "south-east": {
+      "headOffset": {
+        "x": -3,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 64,
+        "y": 114
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/onmyoji-detail/idle/south-east.png",
+        "sha256": "9e2d2497730a7f26ae4cafc6f5a148760956904a807afe0709979a4459cea9a2",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 74.5,
+          "y": 66.5
+        },
+        "off": {
+          "x": 50.5,
+          "y": 80.5
+        },
+        "bakedWeapon": "fan-onmyoji"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-east-0.png",
+          "sha256": "4498bd14f29514f2178513297d3755de96a5a8223a36cac476d1c09e31345f00",
+          "neck": {
+            "x": 65,
+            "y": 47
+          },
+          "main": {
+            "x": 75.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-east-1.png",
+          "sha256": "73df39af4bb999dcd483f092af519d12b8e4b71f8ada6d37dca3d6ed38d84cbd",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 89.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-east-2.png",
+          "sha256": "e915001f56bb92571ae7f847770c99d210da48779f8c2bb0faf3cbfe5ff15b45",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-east-3.png",
+          "sha256": "d91a134486094f36b7bfe7c5c8fb3ad1d6a0897faa5c9c282bef75c12ea1c6bb",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-east-4.png",
+          "sha256": "fc2ed4cd60e6265e9e06160c381d3c65a0fc568d9c656c5ba4205467f8330dc5",
+          "neck": {
+            "x": 65,
+            "y": 47
+          },
+          "main": {
+            "x": 75.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-east-5.png",
+          "sha256": "ae9ce571ef41f2217d7e19525870b4ecd9e9d60261f14b4b09cfd1f1c18abb5a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 84.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-east-6.png",
+          "sha256": "a53aa41f5722ef75205553ef61f81b7ffed4dff7d4f4e17799625cd95b4f9fa8",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 84.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-east-7.png",
+          "sha256": "092a7dfa08a9974b0f9b7af3fcc19ed9d0d3736f67714dc2bb877a4dddc2d58e",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-east-0.png",
+          "sha256": "bec2650cd9f46f1d55ce476ffe87efa856a89fc98a7c9c67abced47d1241cdcf",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-east-1.png",
+          "sha256": "468b28045cf65e972dcbacb0366901bf3b196c527fc4bf4dc68f9639069f8ee6",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 54.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 57.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-east-2.png",
+          "sha256": "c4020a38cc6053f7e28d072ea7f563f01117e6a70adfaacfb302c77a9b6e4cb0",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 56.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 51.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-east-3.png",
+          "sha256": "585d355d150155bf2cc8d5aef7a8211f51072e62f5af3970e3584649ab8aba4f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 51.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-east-4.png",
+          "sha256": "bbdd3e9e1579a88bd25cb12b0a13b411351c98c29041ed710f92a07713a7d0cb",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 52.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-east-5.png",
+          "sha256": "cba5151850cb33939279b7910f9b47d1d62dfa9172e981faa3dfdb2564b5152d",
+          "neck": {
+            "x": 71,
+            "y": 47
+          },
+          "main": {
+            "x": 70.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 55.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-east-6.png",
+          "sha256": "a2c90d2f6229f5ab09184308c631f83b84b13d9d18378ea9266acf8cdcb56e54",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 60.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-east-7.png",
+          "sha256": "8a92da50990c352b0938ada919b026f2c9dda88fadc2f150e94e3658ad39d009",
+          "neck": {
+            "x": 68,
+            "y": 46
+          },
+          "main": {
+            "x": 67.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-east-0.png",
+          "sha256": "24290adc009ead1807dea35f0ac9ae542ec94c314010aff2b0799b01721fc087",
+          "neck": {
+            "x": 58,
+            "y": 51
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 82.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-east-1.png",
+          "sha256": "d0d36220f0be71ece5304c414711266148917459bed5960b66aa3a4741bb8c5f",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 84.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-east-2.png",
+          "sha256": "c293bb89f18560b1f7021445ef0a344ba017c48114302739f5d164131cd9e300",
+          "neck": {
+            "x": 65,
+            "y": 50
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 84.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-east-3.png",
+          "sha256": "d4ed7a3e162c022320db8dd52ccd638d30f98667b2fec9e06c9103dc00e6f903",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 84.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-east-4.png",
+          "sha256": "cdce9a810364a5265e708c1bccde1457b04f54d60a7a346ae7a40f730c501dfb",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 84.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-east-5.png",
+          "sha256": "dc8855a23202c4ea3d4b67c865a27108962cb52ea6d6598a5c7ddfc3a47d6567",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 84.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-east-6.png",
+          "sha256": "e982523c33000a5289650a85b63cb5c2f2c7417cf5f7fe67130f85cfed9d7e73",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 83.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-east-7.png",
+          "sha256": "d13cce1c63116cb05ed61aa91e6ff63627ff46c9af90634ebc1167e01660a7b7",
+          "neck": {
+            "x": 58,
+            "y": 51
+          },
+          "main": {
+            "x": 73.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 82.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ]
+    },
+    "east": {
+      "headOffset": {
+        "x": -4,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 113
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/onmyoji-detail/idle/east.png",
+        "sha256": "6a55f94452f720aa70e640ff31f9732403997990a08820b1c9437cd406bf6c12",
+        "neck": {
+          "x": 59,
+          "y": 48
+        },
+        "main": {
+          "x": 61.5,
+          "y": 81.5
+        },
+        "off": {
+          "x": 53.5,
+          "y": 66.5
+        },
+        "bakedWeapon": "fan-onmyoji"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/east-0.png",
+          "sha256": "8053e5fcd7e71745c9f970e0202f276be56d665c214ae50c928d6db6a0c1d499",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 60.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/east-1.png",
+          "sha256": "fba93b73434fe004f1d5222e78dcb37558b64f5479480077664309897031453a",
+          "neck": {
+            "x": 60,
+            "y": 41
+          },
+          "main": {
+            "x": 62.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/east-2.png",
+          "sha256": "63fd0c5ad8c885f2737b5e6e0d644e45242a32448d95627a79db6a1c34289eed",
+          "neck": {
+            "x": 57,
+            "y": 41
+          },
+          "main": {
+            "x": 60.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/east-3.png",
+          "sha256": "34afd7a25da21cb494e7b10889745026b6c19fb1ee028ebaf1af47e76a4e21ca",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/east-4.png",
+          "sha256": "4c0fd8ac5517b3fb365baa7e5d3d3669ba64ef764cc60ba5e5f148c2aab4113b",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 60.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/east-5.png",
+          "sha256": "be7870b2afd88453f0c0afc92147d4e98a5dbe06ee51ee0f564af6ea2f6fde57",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 60.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/east-6.png",
+          "sha256": "3d1d62d6239fe4f16fb79839913dc631787262db6a6af461f0a96d05c9cb8e61",
+          "neck": {
+            "x": 58,
+            "y": 41
+          },
+          "main": {
+            "x": 61.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/east-7.png",
+          "sha256": "b9dd6d9b97a03c958839109623eb49329f8fe054ad8993ea661a398a11a25ce2",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 71.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/east-0.png",
+          "sha256": "1611f2a1bddf3fd9a7b61004ac7bb940c49d671e5f73916cde4357942d92538c",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/east-1.png",
+          "sha256": "d0413b9caaaa686032b8ffa9d3910d2afec26f7d4a3b704c974c4b5a621681ad",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 53.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 58.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/east-2.png",
+          "sha256": "6a3f5c704ded1853db8a1d283b7e796e761e06368c76d84222bcc93216e44e89",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 55.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 52.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/east-3.png",
+          "sha256": "a395493db4b1d37200a91f14561a3e92dd37d17629ffef807a00b5394be4f695",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 80.5,
+            "y": 57.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 51.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/east-4.png",
+          "sha256": "44c0d926043eb11cbf712d1e3b8dedeca0be01b060b73415b7582200d0415acc",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 52.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/east-5.png",
+          "sha256": "04f999affe5b83b3b86dd4cb7a34a61e31880ee84ea10416d9022c4f3beba65e",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 71.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 54.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/east-6.png",
+          "sha256": "63c7cea81bfe14d1248075bcdc86ee1d39a7ad689d84baba0029923795944155",
+          "neck": {
+            "x": 66,
+            "y": 49
+          },
+          "main": {
+            "x": 67.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 61.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/east-7.png",
+          "sha256": "03c9914c31c0edce18c72c1a5af595bc20f8f33f7402cec5a18ffef095ec9bfe",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 65.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/east-0.png",
+          "sha256": "4e7961cb47abedf68630815b7d04b0446050051b8056d6b50ebbc9c189ffaf38",
+          "neck": {
+            "x": 60,
+            "y": 47
+          },
+          "main": {
+            "x": 63.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 66.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/east-1.png",
+          "sha256": "2286173e20431e2ebf88d67e958d900191fbe607ea8ae65090ea4cd1378cc514",
+          "neck": {
+            "x": 57,
+            "y": 46
+          },
+          "main": {
+            "x": 61.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 68.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/east-2.png",
+          "sha256": "173aaba440c46530fd8b12e2c5103d620a9351db5a5c2cfe092bf2bc47b28874",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/east-3.png",
+          "sha256": "2aaa7a08e731ac5d13b84189eb8c155336213349fda32f5fe6fc0ce4965d0568",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/east-4.png",
+          "sha256": "e2bdd9c1ac201567095d4fda33f2b3938c925a12801239b8df9c90d8df360338",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/east-5.png",
+          "sha256": "8e799807dcf5905dc2eb18def0b5a3fa8a80390657609448784ee684562f779b",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/east-6.png",
+          "sha256": "b35ede000b859207bfdcc4c519bb1953db7d4122db27cdd27b2e93a9738f5a91",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 68.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/east-7.png",
+          "sha256": "8da1bf97ccab05b071659eaa505f014fb235fe07c18348e6f882d73475984dd9",
+          "neck": {
+            "x": 66,
+            "y": 47
+          },
+          "main": {
+            "x": 63.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 65.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ]
+    },
+    "north-east": {
+      "headOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/onmyoji-detail/idle/north-east.png",
+        "sha256": "598b276aa997d2f0b2fdd0f7d608e6b8d00d969fe263b0e3e2c7279e9dcb7d45",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 74.5,
+          "y": 80.5
+        },
+        "off": {
+          "x": 47.5,
+          "y": 75.5
+        },
+        "bakedWeapon": "fan-onmyoji"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-east-0.png",
+          "sha256": "bfa750546b8a5164d10c718083d70fd704352dac4b2d561dec67e69794c62ae2",
+          "neck": {
+            "x": 58,
+            "y": 49
+          },
+          "main": {
+            "x": 76.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-east-1.png",
+          "sha256": "3cf69259f9e9e9e741ce266898277038df9d1b4e3c5a403f078f21305ae9467e",
+          "neck": {
+            "x": 60,
+            "y": 49
+          },
+          "main": {
+            "x": 75.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-east-2.png",
+          "sha256": "ce379a5655bff48e2249fc801df515713e438d6d606075181fc7f14f73849f0b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-east-3.png",
+          "sha256": "42ed209c9134fadce02d87aeee0260288ab1418efab8fb24df3d82ddf790fc43",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-east-4.png",
+          "sha256": "6fc6a76c218487caa3f44d8987172beb0bc018d88fd603564f8d5be3f5dfe56e",
+          "neck": {
+            "x": 58,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 72.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-east-5.png",
+          "sha256": "31c8bb855be09cce6c3036adb26e940ab169814506b36538a3e99ba88f3e565f",
+          "neck": {
+            "x": 60,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-east-6.png",
+          "sha256": "72d8a8f3d3f7074d5cdb9334c6a659b82c546832fe27f7060354a741d8c591bd",
+          "neck": {
+            "x": 59,
+            "y": 49
+          },
+          "main": {
+            "x": 73.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-east-7.png",
+          "sha256": "1a68b28c4f39b5f2bf5c3746b4c9e31f3f1c271978c2131315bf987081b88681",
+          "neck": {
+            "x": 60,
+            "y": 49
+          },
+          "main": {
+            "x": 73.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-east-0.png",
+          "sha256": "c8c199b552b031f9288377f93af9b7743671b5a374b5c7cc25f55d42c92da4d6",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 67.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-east-1.png",
+          "sha256": "245ba9d010e68e168b834df024b441cb587799ee60670d7f9e8a7029ecdc9c7f",
+          "neck": {
+            "x": 64,
+            "y": 49
+          },
+          "main": {
+            "x": 52.5,
+            "y": 56.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 57.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-east-2.png",
+          "sha256": "baed435e030f7f43d7cfeb1e943ed14b4d173c1c6c0ace28bf63aa0f6ff52925",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 67.5,
+            "y": 54.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 51.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-east-3.png",
+          "sha256": "91cc944dafbec29a45b3f29c5650e58914fac714f99abddd5e4377c2cbfa76f1",
+          "neck": {
+            "x": 62,
+            "y": 46
+          },
+          "main": {
+            "x": 78.5,
+            "y": 53.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 51.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-east-4.png",
+          "sha256": "6e78a92ef3d1020157c0935f0433f9704459046fc36513e3305773d4217e6c0a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 52.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-east-5.png",
+          "sha256": "d25a0f9c22b51f47a14c5fab0f4aa856c194f582f1f5ba46280422fe2f4a9035",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 71.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 53.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-east-6.png",
+          "sha256": "a4a5cde2a650f217788abf479554686254e800d6019d621de943b1065ecf3c0e",
+          "neck": {
+            "x": 43,
+            "y": 42
+          },
+          "main": {
+            "x": 70.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 59.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-east-7.png",
+          "sha256": "caea71805985822546a9a0d00a5baf5092348299aa008428531161bba9a012e9",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 67.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-east-0.png",
+          "sha256": "280165c227bfa594bb6f8ec2ec9b245a682c0e8483fbb86ce3e5782056d58e13",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 75.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-east-1.png",
+          "sha256": "00de3c79804b29759a194afa426ffc2970af237c0f9f438b398db599f0f2c438",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 73.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-east-2.png",
+          "sha256": "82ba5398c90f0771c1b2d17e2e3732cf149cb477af0054101e9193b31a789f2b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-east-3.png",
+          "sha256": "1772e5bdab3e1aae7c5ac988d2221c54cd0bad56776bd3f90b228b0821d254d3",
+          "neck": {
+            "x": 63,
+            "y": 45
+          },
+          "main": {
+            "x": 76.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-east-4.png",
+          "sha256": "b0c6f70b3a600730e7e72903193427532abcb0efa6a89bc1ea6375c3a3877e0d",
+          "neck": {
+            "x": 64,
+            "y": 46
+          },
+          "main": {
+            "x": 76.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-east-5.png",
+          "sha256": "1e225f28130ed9e7481443091c7e1ff3a46734d2fc0760cd19bed0189b3843e5",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 73.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-east-6.png",
+          "sha256": "24d09e004fa5eaccec8b1fae0fa1dbbfe135027d218106d4b56df63bb086bd46",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 72.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-east-7.png",
+          "sha256": "d421bff723b68b9fc31b748529b33c90b49997f6b525fdd7076aa35c9b82beae",
+          "neck": {
+            "x": 62,
+            "y": 47
+          },
+          "main": {
+            "x": 71.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 74.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ]
+    },
+    "north": {
+      "headOffset": {
+        "x": -2,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/onmyoji-detail/idle/north.png",
+        "sha256": "f6cd469ae05140f79fff37acdef486c0a033c4849f4f56e555b2fe7fe5940afe",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 81.5,
+          "y": 78.5
+        },
+        "off": {
+          "x": 46.5,
+          "y": 76.5
+        },
+        "bakedWeapon": "fan-onmyoji"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-0.png",
+          "sha256": "16ae41dd2ccf2a2cfd23130b1ee5337c28bd08bc3c2a6b36fd22fc4d3c9fafd1",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-1.png",
+          "sha256": "c71f0bf9dbbb7f9d0564f08a00d0124ff4932edac3a47bd7b3d19be1708ff2b9",
+          "neck": {
+            "x": 67,
+            "y": 48
+          },
+          "main": {
+            "x": 84.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-2.png",
+          "sha256": "1c6666fd76332601f9a5b9243a32ae1c1128436a01a43f947b3e7f8451bb449a",
+          "neck": {
+            "x": 66,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-3.png",
+          "sha256": "f8165c42946afed1986b419d991217e63086379e91108c45f110cee47e2eeef4",
+          "neck": {
+            "x": 67,
+            "y": 47
+          },
+          "main": {
+            "x": 83.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-4.png",
+          "sha256": "148a624cfd376b6bf425fc37893a59723a856effa37fd2adbd7c8cc5cb2a6ceb",
+          "neck": {
+            "x": 65,
+            "y": 49
+          },
+          "main": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-5.png",
+          "sha256": "18db8b01790f3c7a4d3a66b790532d70679e05776308b80a39a2bbcf04f0c76c",
+          "neck": {
+            "x": 67,
+            "y": 49
+          },
+          "main": {
+            "x": 84.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-6.png",
+          "sha256": "4b7a5564a848b78baa279d84b348d607c5cf54a6051bbdc885587dc8307b7714",
+          "neck": {
+            "x": 67,
+            "y": 49
+          },
+          "main": {
+            "x": 84.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-7.png",
+          "sha256": "a38305c0ed27b9d45d265b137718285878ee30afdf0d207f0870a6938abff215",
+          "neck": {
+            "x": 66,
+            "y": 49
+          },
+          "main": {
+            "x": 83.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 73.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-0.png",
+          "sha256": "2928000f5e6a80966d0328a30158cb54210b5e501442f73a72641e478ef63b73",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-1.png",
+          "sha256": "ec381f8643d11402b3febe5956cc82cddd869363df109229c7ac2ec3c8c55b56",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 53.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 57.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-2.png",
+          "sha256": "4ae60c174baf255c82faeb8715b8b666fc07aa4a85d65dd86aa6187127c44c63",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 65.5,
+            "y": 52.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 49.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-3.png",
+          "sha256": "1c8dede1564bdaa73ab78236c4b4eb2a30c64247f2a1f17816d6bf2cdb9f5b3a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 80.5,
+            "y": 51.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 52.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-4.png",
+          "sha256": "e1e58752642d4b9ee63e11af703d6df417a37b37f55fa5988494d3161f7153c2",
+          "neck": {
+            "x": 71,
+            "y": 40
+          },
+          "main": {
+            "x": 72.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 50.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-5.png",
+          "sha256": "8ef538f088ac4abfd570134091a0912b705be1aef46e1b7df2d1159faab5340f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 70.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 53.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-6.png",
+          "sha256": "47557beabdb5dc8d377f8a15d054f775ea0ad02adca002c2ed4985677712b2ec",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 67.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 60.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-7.png",
+          "sha256": "dd125ddf5f380ca665e7ab6a0453ea6a8f5bf10438a03f2c08d12a21acecfec8",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-0.png",
+          "sha256": "48eadf351c0f7d3641fb7fdee33ae10f5c233768ee5c7a48a1f7f168575fa4e2",
+          "neck": {
+            "x": 62,
+            "y": 49
+          },
+          "main": {
+            "x": 82.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 75.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-1.png",
+          "sha256": "47bc9c9cd791ab417fe0f1ff203910d2f9add2d68c01d4cd473d2884b0278510",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 76.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-2.png",
+          "sha256": "4b429abcea9d52cefa02ab435c84c7cd141fbd168faf16ef927a33c435a12c0c",
+          "neck": {
+            "x": 60,
+            "y": 42
+          },
+          "main": {
+            "x": 83.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-3.png",
+          "sha256": "80f2ca1b51f07db26c6e369369a9ce0cfbc12a0211662a6079c10e5257162d97",
+          "neck": {
+            "x": 60,
+            "y": 42
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 76.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-4.png",
+          "sha256": "2f63828100ef1c3db4bc65fea1487e1637db6bf0f8f2ce0c3c712bb62718921c",
+          "neck": {
+            "x": 59,
+            "y": 43
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 76.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-5.png",
+          "sha256": "343afe5edd82eb7c318bdbf7c828b2c8c3aa18bc3f7ad95a180a5b16a19f3af0",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 76.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-6.png",
+          "sha256": "89d6435a9b542087fb8516453d567c3ee6cb8e7faec28594505a0fa2b4c693ca",
+          "neck": {
+            "x": 61,
+            "y": 49
+          },
+          "main": {
+            "x": 84.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 76.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-7.png",
+          "sha256": "530d2b6ed54adaefd1881f2a7d514b9cc79b59283c56dcbeb35ae56edcfae771",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 76.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ]
+    },
+    "north-west": {
+      "headOffset": {
+        "x": -2,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 62,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/onmyoji-detail/idle/north-west.png",
+        "sha256": "912144a36fbd0ca8500c8343e5c1c2b03dd6f8a6c2ccf0e5cd77393f113e3532",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 48.5,
+          "y": 80.5
+        },
+        "off": {
+          "x": 77.5,
+          "y": 76.5
+        },
+        "bakedWeapon": "fan-onmyoji"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-west-0.png",
+          "sha256": "7c0737e8f980c4458cd9553da76b450c97b801fb3aed30c9622a5639ad0b44c8",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-west-1.png",
+          "sha256": "25dac3d4ca576c6c3d7afa49aa0916e40702f5a3f71b65e3cd2a4a172b2691ee",
+          "neck": {
+            "x": 64,
+            "y": 49
+          },
+          "main": {
+            "x": 47.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-west-2.png",
+          "sha256": "8947c5ce428c07baebf000f532f830f2659f8572df020544a283a576fa4fa6db",
+          "neck": {
+            "x": 66,
+            "y": 50
+          },
+          "main": {
+            "x": 46.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-west-3.png",
+          "sha256": "e6b97f58fd3b77fa63951e0597b57e25ddfdccf533784dfe240903849260117b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-west-4.png",
+          "sha256": "a062fd2bf8ea0606b8a844e785bef8d52a5115f1c3dac3e98247841679efd77d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 73.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-west-5.png",
+          "sha256": "85851ac47e5094ed5033beb93ccd7c25069bb6780b1ada0b99927b497cd27c3a",
+          "neck": {
+            "x": 66,
+            "y": 49
+          },
+          "main": {
+            "x": 50.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-west-6.png",
+          "sha256": "abf12d9f1f9c48492cbacfd6cef2b785e5ca33ab00242ac387a702fda2a4333b",
+          "neck": {
+            "x": 66,
+            "y": 49
+          },
+          "main": {
+            "x": 47.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/north-west-7.png",
+          "sha256": "b7fefb6416af7e10af0c64a05874cb8d6bc30d0394a0df42df9801a02a36cf7f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 47.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-west-0.png",
+          "sha256": "c7abdfd55a4bfe20ae00b0d40cebf9f645ddff9b60d694f31523835f0a913ffe",
+          "neck": {
+            "x": 65,
+            "y": 49
+          },
+          "main": {
+            "x": 60.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-west-1.png",
+          "sha256": "3e20ffdbe3df26360aba09d96dfb8b7554e3f9f456efc71f8edf1a6b1c0b8b47",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 70.5,
+            "y": 52.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 57.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-west-2.png",
+          "sha256": "7d55adbddca97bf7c2c0c9b41d1fe94e799353770f64211e797d351cd9000c71",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 54.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 53.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-west-3.png",
+          "sha256": "96a3238ad2f5542f91531ad49b7db173662c911060e927882dbd93503a09abd9",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 45.2,
+            "y": 54.7
+          },
+          "off": {
+            "x": 60.5,
+            "y": 51.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-west-4.png",
+          "sha256": "64b94aa0906f3f5f9e2dbceed6aa0b4aed67a47d607ee3ec9835b402c8ef9705",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 54.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 52.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-west-5.png",
+          "sha256": "2d3f17aabe7b01decc4c890a1dd7bb5cf8b4a5e42704d00ec82d8eef0bfb3cd4",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 54.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-west-6.png",
+          "sha256": "5d1086df22f4c28d941e878c2e611d088dd11e76649b9544bb4b6fb846469181",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 59.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/north-west-7.png",
+          "sha256": "8afbaa1e7cdf57609210181e54086f7581949760e34fc1c2499f2b658e8c4bf3",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-west-0.png",
+          "sha256": "4866e3e41a206651c8ba9ddb3d1b538fc9244af4724b9253a95f808bdd0ab168",
+          "neck": {
+            "x": 68,
+            "y": 45
+          },
+          "main": {
+            "x": 51.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 75.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-west-1.png",
+          "sha256": "5c498c992b736048c64a693fa4706b61172d406545a070c2694214e95d3fc531",
+          "neck": {
+            "x": 69,
+            "y": 45
+          },
+          "main": {
+            "x": 51.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-west-2.png",
+          "sha256": "e73539b5a13ff7ad8f81771e0a743fc6bb0536e1e4f8905b4b5f7b05fb7ebfc2",
+          "neck": {
+            "x": 64,
+            "y": 41
+          },
+          "main": {
+            "x": 50.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-west-3.png",
+          "sha256": "4306a11cd4f05dd1afde710354e3d474354f87ffb58b2dfbd0ad02aaf194d0b3",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 86.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 79.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-west-4.png",
+          "sha256": "e96ecd8601d53cfe0a55d81235079e844d451936476bac737d5640bfded358ed",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-west-5.png",
+          "sha256": "f25d7d2f566f2b5f968d68c85c34d926a185c2e14656ab30dc1bf0370ee21766",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 86.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 79.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-west-6.png",
+          "sha256": "69950714408467a8621a2fe54121278aaa3083fa3bfb1d356636fe7381584469",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 51.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 72.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/north-west-7.png",
+          "sha256": "69010a1e3ec96e8dbd5cddfc5e80a75a0c3b23d4caefefe6462c1e1170e9426c",
+          "neck": {
+            "x": 67,
+            "y": 41
+          },
+          "main": {
+            "x": 52.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 76.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ]
+    },
+    "west": {
+      "headOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 61,
+        "y": 113
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/onmyoji-detail/idle/west.png",
+        "sha256": "32ea8b9638ffd19f299754716816a4ca5e7fc6ea37aa416bfaa431c90939a8fc",
+        "neck": {
+          "x": 65,
+          "y": 48
+        },
+        "main": {
+          "x": 63.5,
+          "y": 81.5
+        },
+        "off": {
+          "x": 63.5,
+          "y": 62.5
+        },
+        "bakedWeapon": "fan-onmyoji"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/west-0.png",
+          "sha256": "b4e26dcf36c5030d6c57c3b462d512c8c3b2957ffb308764e97e4f5340812ada",
+          "neck": {
+            "x": 74,
+            "y": 42
+          },
+          "main": {
+            "x": 65.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/west-1.png",
+          "sha256": "a9bdf89195069a28cf2e8c2d282aa917a85bce9981f01ad0dc3d81df55e54697",
+          "neck": {
+            "x": 68,
+            "y": 42
+          },
+          "main": {
+            "x": 64.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/west-2.png",
+          "sha256": "2935b063365d12b503b424b1aa2aac0c2f5fc854065b67a2fb0473b35bd7ce92",
+          "neck": {
+            "x": 73,
+            "y": 43
+          },
+          "main": {
+            "x": 62.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/west-3.png",
+          "sha256": "3354057a9492e5ccd54ccc36b0e313cf7ac814098cd082618cafe22f24c029f6",
+          "neck": {
+            "x": 75,
+            "y": 43
+          },
+          "main": {
+            "x": 64.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/west-4.png",
+          "sha256": "88c8cd284489200e883c261b3a0d65ca5f2b4db554122e243b73b2aa59117dde",
+          "neck": {
+            "x": 72,
+            "y": 39
+          },
+          "main": {
+            "x": 63.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/west-5.png",
+          "sha256": "172c763d6a6f480ba0e4b7828fd35cff0d78f1195140bbf4fc61488a73e044cd",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/west-6.png",
+          "sha256": "bd88b83f080d8e7f301eedda7d8a50b7f6c98233bafe3e6d1151f3fe533fa9b4",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/west-7.png",
+          "sha256": "81619aff1a67072648044164aa0f7e11483777adf0a898703161aac7ec7eed1a",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 69.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/west-0.png",
+          "sha256": "24ae0081d562fa51b0e76f71bf0b73616ac0b2c379950f3c339e6853b892982b",
+          "neck": {
+            "x": 54,
+            "y": 41
+          },
+          "main": {
+            "x": 59.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/west-1.png",
+          "sha256": "269613dc14dbcabec955da04d068496f854e35ff067fb2945fdf9d27f894d5f9",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 54.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 56.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/west-2.png",
+          "sha256": "f29a6d1143f8b19c0d8928dc0689df0c769c97d6105b10ec170ac18c5f0d18e5",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 56.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 51.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/west-3.png",
+          "sha256": "8e30856acaccb52c705096cc4d557ad31f344b201ce8ae2e80602e72d001d847",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 42.5,
+            "y": 57.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 51.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/west-4.png",
+          "sha256": "7ddbcc0dbcabd5aa4d856469e4c105be79587f159f8116641a6bcdaa5d63e577",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 51.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/west-5.png",
+          "sha256": "40595ea820a28b101820455647ca8b7a7ea52e8a76521c0ce5cc217371552df0",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 55.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/west-6.png",
+          "sha256": "d7c4f132f8e1800dc11cfdd519238b289eedd10f7b37a296ac643663b6b06262",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 56.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 60.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/west-7.png",
+          "sha256": "8e7276cb4e0d6a278ee568483ea734866c989569f2581ad49794796d67e61782",
+          "neck": {
+            "x": 63,
+            "y": 48
+          },
+          "main": {
+            "x": 60.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/west-0.png",
+          "sha256": "b697e62f8ee5eec2a904fbf5248a5b812ae33b684a5c7114ac0e30db9d232f16",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 66.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/west-1.png",
+          "sha256": "02f89e4516da92be816e40c5c052207bd4b6f95d9efb30aa906dfb153d524663",
+          "neck": {
+            "x": 61,
+            "y": 44
+          },
+          "main": {
+            "x": 63.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 65.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/west-2.png",
+          "sha256": "6cd8596e312f4aaa9a598e852353e60701f2bd9816f9cd1bf13867dd156bcaa4",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 65.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/west-3.png",
+          "sha256": "b655d736356f2d42d5ea47240d787306c8cc1e265c750a458b5388f63d94ed84",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/west-4.png",
+          "sha256": "0751c8074334e28f0a90f43033f0ddc5540f202104fa8b8768c97a1b163ddca3",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 67.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/west-5.png",
+          "sha256": "f02c80eff123cf6b567ecb875d124d5caff39e8dc7bcc763e51f621a1774d59a",
+          "neck": {
+            "x": 66,
+            "y": 45
+          },
+          "main": {
+            "x": 64.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/west-6.png",
+          "sha256": "7c87552ce619540757b0ff115dd016265955dc38b021f6c1db5e4e2fbc906181",
+          "neck": {
+            "x": 70,
+            "y": 46
+          },
+          "main": {
+            "x": 65.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/west-7.png",
+          "sha256": "cfce94a7b8cd97a0e46f537f1bc4e5734b4a5ec1d01ebaec608d0fa20db01361",
+          "neck": {
+            "x": 69,
+            "y": 46
+          },
+          "main": {
+            "x": 64.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 65.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ]
+    },
+    "south-west": {
+      "headOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 61,
+        "y": 114
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/onmyoji-detail/idle/south-west.png",
+        "sha256": "8f062ce71989169ca7290e5cba62e8b7e2eeaf4436ad3f920c9bde610c7edc0b",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 50.5,
+          "y": 64.5
+        },
+        "off": {
+          "x": 73.5,
+          "y": 81.5
+        },
+        "bakedWeapon": "fan-onmyoji"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-west-0.png",
+          "sha256": "f197c8488f63cabf6b49a846c97ad7d4885da9646b1725c0d3286cc50839836d",
+          "neck": {
+            "x": 67,
+            "y": 45
+          },
+          "main": {
+            "x": 52.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-west-1.png",
+          "sha256": "fc1cc836d3f68636ad54a46c89277ac68f3be3154fa9bce67ac82069c11da312",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 86.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-west-2.png",
+          "sha256": "3fd222b6adcf5151757e0bd1533077dd3c66aa6d1a159fba76414868659dc0bd",
+          "neck": {
+            "x": 66,
+            "y": 45
+          },
+          "main": {
+            "x": 48.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-west-3.png",
+          "sha256": "0d11035a0f745483ce89e107410bde6fd208270e6c33b05eb8aa75c5de2fe543",
+          "neck": {
+            "x": 67,
+            "y": 46
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-west-4.png",
+          "sha256": "9466a343444e1d0c8453520884b127df78c0c7d92fced7ef69de57397d316f4b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 61.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-west-5.png",
+          "sha256": "47f798b4efd9efbf5ff36f7eaa7b3ec1dde0bf9d8eca64a847de16b7c0cb49d1",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 86.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-west-6.png",
+          "sha256": "55e5c9d384a92a7186dc2bfb522fc7bb6500e954df1efdb24334000f2dd8ca3f",
+          "neck": {
+            "x": 65,
+            "y": 45
+          },
+          "main": {
+            "x": 48.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/walk/south-west-7.png",
+          "sha256": "94648a747ae7c4f9d46d58561e3f6be0ad90a611ecf3ec1a2bced88855b8f931",
+          "neck": {
+            "x": 68,
+            "y": 44
+          },
+          "main": {
+            "x": 49.5,
+            "y": 61.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-west-0.png",
+          "sha256": "52451b8fd71030c71174f02a336792a7c8d7b6bad77c36ddf511985c620f2e2b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 57.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-west-1.png",
+          "sha256": "33b80a13632432225eaf83da9385560b8803ab15344478db2050a588a6fa7057",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 55.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 55.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-west-2.png",
+          "sha256": "34f157c1ee0a9ac234e1ade5e9ae72eda2e2c3efbdfd91cdaee12b1b340a0c10",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 57.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 51.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-west-3.png",
+          "sha256": "a796fe4c16890e02a240365752a8811abdf9959fdbc79c9102e56ea59b79ba23",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 51.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-west-4.png",
+          "sha256": "79e9f16681155b25bee93241d306c66aab94f02608f1b946fec44b73ab2765dd",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 52.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-west-5.png",
+          "sha256": "8b4db8fa577185430ff6beb3fd174c07457c1d1bae56153f1367f7255607508c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 52.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 54.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-west-6.png",
+          "sha256": "f80156a75df630244f1c21a1073d7506aee8a7eabfecae39142a31c1eb160495",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 55.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 60.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/attack/south-west-7.png",
+          "sha256": "ddf7ebe1a96ea6040faaceb117671b8663dcb4802bb75059d603a53a66deccc4",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 56.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-west-0.png",
+          "sha256": "8ff343893ae6ec30a7a3bff6d72f532d8720ab59ec639b53d46cace34148f0a6",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 81.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-west-1.png",
+          "sha256": "920fbec45e0505c1f2d42078ae706869f15e2a702061af9d8b3925f8def19942",
+          "neck": {
+            "x": 65,
+            "y": 46
+          },
+          "main": {
+            "x": 49.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 81.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-west-2.png",
+          "sha256": "e966d9779f77aa903bca290f24e11a0923a2addc2d978fa0478e2dea701bcaba",
+          "neck": {
+            "x": 64,
+            "y": 46
+          },
+          "main": {
+            "x": 49.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 81.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-west-3.png",
+          "sha256": "4456a1cf15cf186211698b60d276f5ac8c95fc36c34a451108d890fa047a78f5",
+          "neck": {
+            "x": 69,
+            "y": 46
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 81.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-west-4.png",
+          "sha256": "3e6b47a0b5b84f724e0b46c440a9aca755c426488ded09fe8c72e25e22d52374",
+          "neck": {
+            "x": 66,
+            "y": 47
+          },
+          "main": {
+            "x": 50.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 81.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-west-5.png",
+          "sha256": "117c213b511e60dead92d68b6f924fc7430b8bd2266ddcc5c77f74c1e239074a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 81.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-west-6.png",
+          "sha256": "beac26eb8caa70d6339325371c72f402f0f2b914c3e8d7601f1666d0d94ce611",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 51.5,
+            "y": 61.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "fan-onmyoji"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/onmyoji-detail/cast/south-west-7.png",
+          "sha256": "d3d7c5b910aa8fe5afe880bec66caaeab9e67b31a8e72083a78083588f531fcb",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 80.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "fan-onmyoji"
+        }
+      ]
+    }
+  }
+}

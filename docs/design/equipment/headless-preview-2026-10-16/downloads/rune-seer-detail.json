@@ -1,0 +1,3607 @@
+{
+  "id": "rune-seer-detail",
+  "branch": "rune-seer",
+  "attackAction": "attack-cast-rune",
+  "directions": {
+    "south": {
+      "headOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 62,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/rune-seer-detail/idle/south.png",
+        "sha256": "cad7b425131df04939add898979a123462d830e6b6a7d4591c683e60a4c3d089",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 42.5,
+          "y": 78.5
+        },
+        "off": {
+          "x": 82.5,
+          "y": 76.5
+        },
+        "bakedWeapon": "staff-rune-seer"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-0.png",
+          "sha256": "4e2709ded1f82bdd3d2a132e403d927a223bf53bff57c17fb0bd522c54322d23",
+          "neck": {
+            "x": 67,
+            "y": 46
+          },
+          "main": {
+            "x": 42.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-1.png",
+          "sha256": "e90967d51eda2897c0f93c6c9a0376327efe0b7c58701f3d3b05a8fc2b3d9cdb",
+          "neck": {
+            "x": 69,
+            "y": 44
+          },
+          "main": {
+            "x": 43.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-2.png",
+          "sha256": "96b2d2ef18bdf4563c11ae166f5b53263477fdc7b4f5cc885dddf59ecbeab3c9",
+          "neck": {
+            "x": 66,
+            "y": 48
+          },
+          "main": {
+            "x": 42.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-3.png",
+          "sha256": "00f5d906094ca8507479cb08c20d1984177e392b1da0d282e5dbfae8b8ba1189",
+          "neck": {
+            "x": 67,
+            "y": 44
+          },
+          "main": {
+            "x": 44.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 81.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-4.png",
+          "sha256": "1df86472514aae918bb7a7888440157c8d7dddff18120ddf55afba081c76de3a",
+          "neck": {
+            "x": 68,
+            "y": 43
+          },
+          "main": {
+            "x": 41.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 81.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-5.png",
+          "sha256": "cdf4275f88f3a01f65847eb6504f2b100d73edfa545214a05e34a35647b301d1",
+          "neck": {
+            "x": 67,
+            "y": 43
+          },
+          "main": {
+            "x": 41.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-6.png",
+          "sha256": "9399a5b900e5fb4552ddc865d18d2d3a15f1daa7acd48aa2ade1e79382b0857c",
+          "neck": {
+            "x": 66,
+            "y": 45
+          },
+          "main": {
+            "x": 41.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-7.png",
+          "sha256": "1aaba84de924eb84963f2c3f491fd34d70856b6d6b6f5508a5e509bf5d904ce7",
+          "neck": {
+            "x": 66,
+            "y": 45
+          },
+          "main": {
+            "x": 42.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-0.png",
+          "sha256": "340470981ac98c34ef92c1364e98eba11d902ca7252cd0f2d82f94083a455856",
+          "neck": {
+            "x": 63,
+            "y": 48
+          },
+          "main": {
+            "x": 47.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 69.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-1.png",
+          "sha256": "f413eb10b27d4fcacc3c11a75eb742e4f079ea9be9e1d978550a9cadd8d8b03e",
+          "neck": {
+            "x": 62,
+            "y": 49
+          },
+          "main": {
+            "x": 50.5,
+            "y": 53.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-2.png",
+          "sha256": "efa09466cdf6e0cbef9e096f6cea2416616443dbc0b660f29346306e133c8ed2",
+          "neck": {
+            "x": 69,
+            "y": 56
+          },
+          "main": {
+            "x": 51.5,
+            "y": 39.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-3.png",
+          "sha256": "15fdce41d31abf7f0ce7d2280d82912f00f7be7447c23926371f772eb4835864",
+          "neck": {
+            "x": 46,
+            "y": 54
+          },
+          "main": {
+            "x": 52.5,
+            "y": 61.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-4.png",
+          "sha256": "33b9213eaafae6c6f87aa47cdd35686d797fe68a23f6d5337e14b0c47baf7ffb",
+          "neck": {
+            "x": 57,
+            "y": 45
+          },
+          "main": {
+            "x": 52.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-5.png",
+          "sha256": "978fc07b035f7c98d2230b9dc98ed14333ebff3f94f4765951b140f5d25c01b4",
+          "neck": {
+            "x": 61,
+            "y": 44
+          },
+          "main": {
+            "x": 52.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-6.png",
+          "sha256": "e1c1da013d62333d378ab11890c33dd4cad9b598e124c5bc0348e62cb4816a21",
+          "neck": {
+            "x": 60,
+            "y": 44
+          },
+          "main": {
+            "x": 50.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-7.png",
+          "sha256": "05ed8ebc42821364c33085e486170e48241f10f8403e5c4371aa168d8eef3cf7",
+          "neck": {
+            "x": 63,
+            "y": 44
+          },
+          "main": {
+            "x": 47.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-0.png",
+          "sha256": "37b351364267bd860d94504d6ad412b3ea82bb556bca198ff6d1f3936ade165c",
+          "neck": {
+            "x": 64,
+            "y": 47
+          },
+          "main": {
+            "x": 43.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 73.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-1.png",
+          "sha256": "19ae2e6e8a93ec680093dbca91e6eef3fe06ba48ded37d3ceaf78c4a5c877a55",
+          "neck": {
+            "x": 60,
+            "y": 47
+          },
+          "main": {
+            "x": 47.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 76.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-2.png",
+          "sha256": "bfdde68a6c9a8176877b306a040d5a758d9cd6e383fe68e63a0167c1137c2daf",
+          "neck": {
+            "x": 64,
+            "y": 47
+          },
+          "main": {
+            "x": 46.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 87.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-3.png",
+          "sha256": "3b890d5e200331402c892a7f9f57b3419458296f2288a98b142c1946478252c4",
+          "neck": {
+            "x": 64,
+            "y": 47
+          },
+          "main": {
+            "x": 46.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 77.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-4.png",
+          "sha256": "7f8cf5ed58ab9d4cd01ff71c0925b3843ac8f974fe6c16d9a34e749b45f35d2c",
+          "neck": {
+            "x": 64,
+            "y": 47
+          },
+          "main": {
+            "x": 47.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 79.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-5.png",
+          "sha256": "1dbe82e672ec334c9bb68638bd1208cf05d397fa3b7e65db493cf978f23acd5a",
+          "neck": {
+            "x": 62,
+            "y": 47
+          },
+          "main": {
+            "x": 48.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 88.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-6.png",
+          "sha256": "27a5a2cf1b6c647fcb2a127de1aa703b0b9aed690d4df9836e14701148a0e7a9",
+          "neck": {
+            "x": 62,
+            "y": 47
+          },
+          "main": {
+            "x": 46.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-7.png",
+          "sha256": "a92d47ec41f2221b1c1d4fc8712013bf5f32da09687cf7bda8bcffa59274b1fb",
+          "neck": {
+            "x": 64,
+            "y": 47
+          },
+          "main": {
+            "x": 36.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 89.5,
+            "y": 70.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ]
+    },
+    "south-east": {
+      "headOffset": {
+        "x": -3,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 64,
+        "y": 114
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/rune-seer-detail/idle/south-east.png",
+        "sha256": "53bbfe101ab32653e6c9044387bac1eb1e13afe4af77e2b5af336e6ae7c1aac8",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 74.5,
+          "y": 66.5
+        },
+        "off": {
+          "x": 49.5,
+          "y": 82.5
+        },
+        "bakedWeapon": "staff-rune-seer"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-east-0.png",
+          "sha256": "020b2b13f07c9d140c3a619283a2a68851c5d5a112129190b5a739b2e7e9f928",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 70.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 85.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-east-1.png",
+          "sha256": "191752e904deeefc92ed42ed280eb10034be9e5e96d50b095ea1c9f726a0391e",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 87.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-east-2.png",
+          "sha256": "887c311994a2901f2867819b7cc9169834694292c2dd7d3a0a0ab88a7d964bfe",
+          "neck": {
+            "x": 60,
+            "y": 48
+          },
+          "main": {
+            "x": 71.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 86.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-east-3.png",
+          "sha256": "2b727daf093ed62707cfd6ff1ef0e1468b5876e4d345b15c7fe5f3270c7d7e85",
+          "neck": {
+            "x": 61,
+            "y": 49
+          },
+          "main": {
+            "x": 72.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-east-4.png",
+          "sha256": "a57d1c3b05e0696d53d8e14f84cc4524db797e6d5814776917caa04e573ca25d",
+          "neck": {
+            "x": 66,
+            "y": 47
+          },
+          "main": {
+            "x": 78.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-east-5.png",
+          "sha256": "f75a0ace654fef33433079c467b82d7230b576db4326ddff6ff04b8ead420940",
+          "neck": {
+            "x": 64,
+            "y": 46
+          },
+          "main": {
+            "x": 75.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-east-6.png",
+          "sha256": "8cb256f29314841c5ac2e9e7583e2e05af707be1bc9cb6bb4fa6e8e6b378634c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 77.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 85.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-east-7.png",
+          "sha256": "84121c295d8646bbcef5cd251879a863dc0fe4629310b6cb4816bc6cee9873d1",
+          "neck": {
+            "x": 58,
+            "y": 47
+          },
+          "main": {
+            "x": 70.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-east-0.png",
+          "sha256": "28d27124df25d0ea427d0444867918ba4dabe9ef0f445432061b9507641cf4fa",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-east-1.png",
+          "sha256": "f58b777de8053d9b0d6babde077e94c957855c5c6b4d717d505610350e218bab",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 53.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-east-2.png",
+          "sha256": "f5e8662156bf29d4b63f991fb946334b35a146978a95a2d3ff683133f982df9c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 38.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-east-3.png",
+          "sha256": "8ff09ef8e3ca9fa12b970785ea86d437298be7531f39cb295794d24fab4732bb",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-east-4.png",
+          "sha256": "8d0dee6d2d9ed56dd7d2f238db207936b6fc591e10aca38de11bc74c13a35a48",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-east-5.png",
+          "sha256": "0c85801d5423d265aefa0637e376d8bc51487da4ee3dff7bfbba0ffc283da9b6",
+          "neck": {
+            "x": 62,
+            "y": 47
+          },
+          "main": {
+            "x": 71.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 61.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-east-6.png",
+          "sha256": "381b77bddc3afd5388594eac619893463ecea5d8a56eba12db38d8f011ed6ac7",
+          "neck": {
+            "x": 63,
+            "y": 47
+          },
+          "main": {
+            "x": 74.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-east-7.png",
+          "sha256": "2851ed27a7350501815d55ada26becae0e702fad033350d819ae0f5d03ff9e1d",
+          "neck": {
+            "x": 65,
+            "y": 46
+          },
+          "main": {
+            "x": 76.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-east-0.png",
+          "sha256": "91e53d3df8f4cf3a5123279975eb1dd95317f597017cabc2efe834603253962b",
+          "neck": {
+            "x": 60,
+            "y": 50
+          },
+          "main": {
+            "x": 77.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 82.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-east-1.png",
+          "sha256": "703353c2a79be360419922d9c2db9b646ff13cf8317203f2c189677ba295ca57",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 71.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 89.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-east-2.png",
+          "sha256": "36ac7bade228d093604123acde2e251c567e7b2d0367ac6d96323e70c502f000",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 70.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 89.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-east-3.png",
+          "sha256": "b7d4e2da13eb13c151ce046ee89ab76f873f4095974d373b02a408a8bff84bc2",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 90.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-east-4.png",
+          "sha256": "2b71441eb5a682f790d2387349f5c3dc745d05f011b9ba9744e7799c229eb1a1",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 70.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 89.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-east-5.png",
+          "sha256": "a12c4679a64f90e9fae4fa8a19627c39ad6281b174c04dd478c4a0ad10ecdfbb",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 89.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-east-6.png",
+          "sha256": "061bec2872941ed9666928244b92a4f261f1195bfa50a51f2b67c9c4fc01c0b8",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 89.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-east-7.png",
+          "sha256": "3e73a695b98033b573d1bacb212a1a02077a4553c59f159be2559119343afa0f",
+          "neck": {
+            "x": 59,
+            "y": 44
+          },
+          "main": {
+            "x": 70.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 78.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ]
+    },
+    "east": {
+      "headOffset": {
+        "x": -4,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 113
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/rune-seer-detail/idle/east.png",
+        "sha256": "8038fdb7fbca1d96469515923b2bce772a4d077ce95f5497a50a23b983d11153",
+        "neck": {
+          "x": 59,
+          "y": 48
+        },
+        "main": {
+          "x": 60.5,
+          "y": 81.5
+        },
+        "off": {
+          "x": 53.5,
+          "y": 65.5
+        },
+        "bakedWeapon": "staff-rune-seer"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/east-0.png",
+          "sha256": "e79fb2e476a6aef339e52ec8fca1170e5db61d59a3d2c2a3498d1f52f32621f8",
+          "neck": {
+            "x": 56,
+            "y": 46
+          },
+          "main": {
+            "x": 58.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/east-1.png",
+          "sha256": "f6b288aa51e00429eb0cf52cca5297335e1238b7022a96e67af1545f01763d54",
+          "neck": {
+            "x": 56,
+            "y": 46
+          },
+          "main": {
+            "x": 60.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 61.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/east-2.png",
+          "sha256": "c8e389a555e643f0b29eb59fa87f8ee6e4fb22e1e7d2dbd65b549ce8742794d3",
+          "neck": {
+            "x": 54,
+            "y": 46
+          },
+          "main": {
+            "x": 58.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/east-3.png",
+          "sha256": "f63a20a0ecaf8c184b702689a850b6c8e0516eae75f74adbab462c85792832cc",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 71.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/east-4.png",
+          "sha256": "bbf3617eb21d69ad00b2986d9d164ad70e2516ec26291f915602bda9670ab5da",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 60.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/east-5.png",
+          "sha256": "d1786374d79fc7c5c614b70df9c7e481b4a81aee946250010fed7ccce51a6d6b",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 60.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/east-6.png",
+          "sha256": "c8a54afcc02ced6beca26a9feea591156b6a5ddf413f61b7f6a644404d228fc1",
+          "neck": {
+            "x": 55,
+            "y": 45
+          },
+          "main": {
+            "x": 64.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 69.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/east-7.png",
+          "sha256": "7e55a8711c6fac98d84a2247112eaaf61f39c1c0fd8929ddcee0fdab1413368d",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/east-0.png",
+          "sha256": "4d2419d1c20ca7cf357c2248adba53b31d7fda83c018eaed8f5a1a1e7fdbe4d5",
+          "neck": {
+            "x": 58,
+            "y": 46
+          },
+          "main": {
+            "x": 72.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/east-1.png",
+          "sha256": "baf3ea7927f5e26affbfdb1f4453544f5cb0c333d1940337f180bed9d550d8fc",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 71.5,
+            "y": 53.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/east-2.png",
+          "sha256": "5241e97904b1845f97df565027deb645e493095126a4c5fae36d183cdb53455b",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 38.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/east-3.png",
+          "sha256": "3cae4dc95d5933bb8a2623fdee698bdf0a96d71b5a530b2047303127e179350b",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 56.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 61.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/east-4.png",
+          "sha256": "c9d1a550907b4da3767ead90dc1c9b0e029c4cdb63ec6a2522c9f8c527fa7da2",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 59.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/east-5.png",
+          "sha256": "160a19c90c55cce71c4953275d5ca1107eb322d80a5649e0f93501bddf1d0195",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 71.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 59.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/east-6.png",
+          "sha256": "c6383f422e14f4a7d44fdd1ef255c41b943fa9e6e918d2510f2caf59510cfa2f",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/east-7.png",
+          "sha256": "a15834cbcf015b835ab133a1a0dae6148bdb3a6e020081cda0d4c5e62394bf93",
+          "neck": {
+            "x": 72,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/east-0.png",
+          "sha256": "dc831af0ad25890bcabc558db9573318258a008046886b5123f504acc68533a5",
+          "neck": {
+            "x": 62,
+            "y": 46
+          },
+          "main": {
+            "x": 61.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 69.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/east-1.png",
+          "sha256": "d020e8cb23cc6346c8a5b2683041ac6c9dac7409ea13b7b431bf3a0cba973303",
+          "neck": {
+            "x": 62,
+            "y": 45
+          },
+          "main": {
+            "x": 62.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 65.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/east-2.png",
+          "sha256": "6718f84e209372596212b4911a76ca1d4056322c5e0da38d25fc91e9ce72ece3",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 68.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/east-3.png",
+          "sha256": "8d941da8a636087cd360d54740f781609d3fa1dc9635cb3600f5f543005db792",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 88.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/east-4.png",
+          "sha256": "0fc037af1d1fb9cce8f5fa1c8c8b8aeecff02373fb6411bc4a6fbece6eeddabd",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 88.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/east-5.png",
+          "sha256": "b0347e384289bc543c4e85b771ef76fca9e1702e937563ffefeb5a76ad1fc170",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 88.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 65.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/east-6.png",
+          "sha256": "2aa38a4cd178119ba1e3c206ece1bba361febd9f17b975b8710d03063ebcc821",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 67.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/east-7.png",
+          "sha256": "d0b2c38976745f9988439fc681bd3d7987e4b6eaa9c342e5c87e6e8dfd1e6608",
+          "neck": {
+            "x": 67,
+            "y": 45
+          },
+          "main": {
+            "x": 64.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 68.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ]
+    },
+    "north-east": {
+      "headOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/rune-seer-detail/idle/north-east.png",
+        "sha256": "bdaf76152189c3fd80433d1088e95e213a37af4250ebad37c0a7aee57cbf84dd",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 74.5,
+          "y": 80.5
+        },
+        "off": {
+          "x": 46.5,
+          "y": 75.5
+        },
+        "bakedWeapon": "staff-rune-seer"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-east-0.png",
+          "sha256": "37a0262f70cb49c9c7981938491060580841a96aba82b2e5bf13af858f3c252a",
+          "neck": {
+            "x": 63,
+            "y": 47
+          },
+          "main": {
+            "x": 72.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-east-1.png",
+          "sha256": "cf9348c64ab713eb4b95f3e4dd96544c0b368953e56759c1291436328b280649",
+          "neck": {
+            "x": 59,
+            "y": 47
+          },
+          "main": {
+            "x": 74.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-east-2.png",
+          "sha256": "63becd73e2338f727c8bc5ee2bd89e240269cc32c69b445df61e5f9621fc3c9f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-east-3.png",
+          "sha256": "29db0983c65b3ba9c272e885dd3225889fcad0c2bc25cb427d44a865ad4b701a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-east-4.png",
+          "sha256": "972de08f7fe97e9aacec1a4e678a1ccbfb9b5def2e1d88aa811bd5102bf943a4",
+          "neck": {
+            "x": 63,
+            "y": 47
+          },
+          "main": {
+            "x": 72.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-east-5.png",
+          "sha256": "5250088f3abc6fa7ce8cfc24898908753850f937880a5aceedfc18d239682142",
+          "neck": {
+            "x": 59,
+            "y": 46
+          },
+          "main": {
+            "x": 76.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-east-6.png",
+          "sha256": "fc73e2f57b97f185ee115eba10da5df6c89149507c9ed181957469e2fb5d308b",
+          "neck": {
+            "x": 54,
+            "y": 46
+          },
+          "main": {
+            "x": 73.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-east-7.png",
+          "sha256": "ef8b0a0397444448d003fb703817697c102f2c92709f2c3045bb152c3c78e2d1",
+          "neck": {
+            "x": 50,
+            "y": 46
+          },
+          "main": {
+            "x": 73.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-east-0.png",
+          "sha256": "fa0fa8c79a2de741caf510b50a3b22de55d0b2f1e26883ee2ba9daa4a6c70dd2",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 77.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 61.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-east-1.png",
+          "sha256": "b9dc61dcec5d3a4b1caab35ca53954f65099950ade372932ce5552222ff519ed",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 51.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-east-2.png",
+          "sha256": "c4ac42c8ba7142d15182359de1837bd8477f2307364ab4fb527e79585a7ca014",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 38.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-east-3.png",
+          "sha256": "e2bd448b6026dedff8858a320249c1965c48fc806e244276985eb15543f87f76",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 70.5,
+            "y": 56.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 59.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-east-4.png",
+          "sha256": "53155aca78ae5d2b13785b1e6dc38acb23d1100c93c836a864e93f8169822b1d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 59.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-east-5.png",
+          "sha256": "7892b14518748903dacdbeaa59b76119609573a5fcee03a6fa0cd932aa67f2c0",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 57.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-east-6.png",
+          "sha256": "4cd42dfb2a557a909c7976ff5234900d1e340e9246d95846cf7891d84da599ba",
+          "neck": {
+            "x": 57,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-east-7.png",
+          "sha256": "e6e8f0a02e760dc293fc76ab457d44dc1ac586e5056e060e7bf57a5dd14e4038",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-east-0.png",
+          "sha256": "4fa036b1444f65adfe14f1baf37edc93cd493445fa47e50773d9ca465f0472d1",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 75.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-east-1.png",
+          "sha256": "dc6cc7e866dfcef60cf9f6be062ec3ced0e94228f2f4593e462d8ab502cff33d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 82.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-east-2.png",
+          "sha256": "18542e897c9df3f87e59f8536b89071919c0c429652b45bdb9308efbf92f4010",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-east-3.png",
+          "sha256": "5c283e5178ecc3d988c62bdf6ad0e896feba5b43e54e38c39026cb0706554756",
+          "neck": {
+            "x": 58,
+            "y": 47
+          },
+          "main": {
+            "x": 73.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-east-4.png",
+          "sha256": "2ebb0b2caacd43388dab98c7bcb2518e7328cb0042f9e91b87615b97fb53fb34",
+          "neck": {
+            "x": 62,
+            "y": 45
+          },
+          "main": {
+            "x": 74.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-east-5.png",
+          "sha256": "3244a8c2542616b2f8eb5f30d92e289cbf229278030b7b179ad1821ed9b17c21",
+          "neck": {
+            "x": 65,
+            "y": 42
+          },
+          "main": {
+            "x": 75.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-east-6.png",
+          "sha256": "2131cc5d3608d6313a0105596d6af0cd3c20d70851d461afca06d54042479a5c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-east-7.png",
+          "sha256": "34715abd58b42a7a84bfc6892bcf92f5bb86bd98a95c2b74199633fa8f6646c4",
+          "neck": {
+            "x": 68,
+            "y": 42
+          },
+          "main": {
+            "x": 72.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 74.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ]
+    },
+    "north": {
+      "headOffset": {
+        "x": -2,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/rune-seer-detail/idle/north.png",
+        "sha256": "a04f0ac1b7ce59fbdc36754f0943bda8d4effb8312af771b5917f02f1c279eac",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 83.5,
+          "y": 77.5
+        },
+        "off": {
+          "x": 44.5,
+          "y": 77.5
+        },
+        "bakedWeapon": "staff-rune-seer"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-0.png",
+          "sha256": "523241a053b4a49bed6d68fe99378917e463252b2cb16397fee5d0c7edf74774",
+          "neck": {
+            "x": 59,
+            "y": 50
+          },
+          "main": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-1.png",
+          "sha256": "1b9603dee3b10b0bf99ce6532d8c9ee001abb549a82539f07ab9482bc97497a6",
+          "neck": {
+            "x": 60,
+            "y": 51
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-2.png",
+          "sha256": "477c5220d8d9fb6abd0b3618fd5b4fb38ba3189635b3ca43f2ec51ebf090019c",
+          "neck": {
+            "x": 58,
+            "y": 50
+          },
+          "main": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-3.png",
+          "sha256": "df9299131678e76e5dceb9560486942e5068548c3d91f2199544e214b3ecc28c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-4.png",
+          "sha256": "ae2bfd0fdf3313a8adb8e6f963921a63e64508595697ba7352c38f247204cf3d",
+          "neck": {
+            "x": 60,
+            "y": 51
+          },
+          "main": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-5.png",
+          "sha256": "f6cd1be23a37840e4df7da90e974a0c08015ad3cff29ddca2f02b5e5415d014f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-6.png",
+          "sha256": "08642bd9adbfd89b27b6c3b55d121c4b6a0a20b748a00f464b60484e66d2a138",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-7.png",
+          "sha256": "1c51dae877e644f2e1141f7620947753ee65b43c72b806d198559bafbf46f43f",
+          "neck": {
+            "x": 60,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-0.png",
+          "sha256": "a5e2f3c375e528cc95a9aa0aada20c30a88125e733a7ddc1bcd21d104c887570",
+          "neck": {
+            "x": 59,
+            "y": 49
+          },
+          "main": {
+            "x": 76.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-1.png",
+          "sha256": "9458d5d4e1dda937141bb7a10fc4aa72a1d3a7f35c75d666e4b77c1c4433d818",
+          "neck": {
+            "x": 54,
+            "y": 44
+          },
+          "main": {
+            "x": 73.5,
+            "y": 50.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-2.png",
+          "sha256": "0cb263af4c7d03c1b98eebcc7efb7c080257cb8023b928da0a8b87a77b68abaf",
+          "neck": {
+            "x": 66,
+            "y": 45
+          },
+          "main": {
+            "x": 71.5,
+            "y": 37.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-3.png",
+          "sha256": "b9a88742de91f2f75bcc0b88c3753efa51a74fdbf22ee01c9ee38095ec3d0e8a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 57.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 57.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-4.png",
+          "sha256": "fd22bd89597f3d33f9b93c1f9f73a25ba2333d0fe6581256217c03d3e09ca3cf",
+          "neck": {
+            "x": 60,
+            "y": 40
+          },
+          "main": {
+            "x": 67.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 53.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-5.png",
+          "sha256": "4d55c5a8338979f899e15b0c477ecf10e00c730659ee3557b412e7fe13f5a6e0",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 71.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 54.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-6.png",
+          "sha256": "4af82cdd563cac21cd28b324bede01093c1faa778358754daf4a3c33f7205772",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 57.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-7.png",
+          "sha256": "fa186bfe49ed1cd1c23bd62f45f8669022502cf30b549ce41747be65c80ebe9f",
+          "neck": {
+            "x": 58,
+            "y": 47
+          },
+          "main": {
+            "x": 76.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 71.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-0.png",
+          "sha256": "0f0370506f0bce31817ed170013223bc91ee8dfb16bac80db05c5bf9cfbce09f",
+          "neck": {
+            "x": 61,
+            "y": 49
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 43.5,
+            "y": 78.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-1.png",
+          "sha256": "9a39b59deed156f46c60f7a5b2914c971133a59340ad2b94c33a6e5efe03ebb6",
+          "neck": {
+            "x": 61,
+            "y": 46
+          },
+          "main": {
+            "x": 79.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 81.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-2.png",
+          "sha256": "e920c597bbe012175ef9cff7d45391d40de5e00095123b6ce6d70f2878087f07",
+          "neck": {
+            "x": 62,
+            "y": 42
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 71.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-3.png",
+          "sha256": "daf4105cd33523632acfd6b6277bf27405b0b32a421704761ea4cbfa6acbc155",
+          "neck": {
+            "x": 61,
+            "y": 42
+          },
+          "main": {
+            "x": 82.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 43.5,
+            "y": 71.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-4.png",
+          "sha256": "a4fd6918cf13c02672a3014dc126290a1911b7501d461066a0d75d1e1e297c3e",
+          "neck": {
+            "x": 58,
+            "y": 40
+          },
+          "main": {
+            "x": 81.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 71.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-5.png",
+          "sha256": "3224f6ec7126f05bd02a2dfdb009a3a8df5ab72579188b47cf2f66eecee2a57d",
+          "neck": {
+            "x": 60,
+            "y": 43
+          },
+          "main": {
+            "x": 79.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 81.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-6.png",
+          "sha256": "174db16a953073808c465aa2073b7d8ad9a421661673f385fe03bae6b19ac8aa",
+          "neck": {
+            "x": 60,
+            "y": 46
+          },
+          "main": {
+            "x": 82.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 71.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-7.png",
+          "sha256": "a6c148ada025d9fe98d71acebf7a9dbc961d50c1f5ccb4ef6fcf9ae4cfa64e1f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 81.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ]
+    },
+    "north-west": {
+      "headOffset": {
+        "x": -2,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 62,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/rune-seer-detail/idle/north-west.png",
+        "sha256": "137dfdd3c49bf61d04f206127b39c4a36ffc82a59cd2b660b75e524180b043a3",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 45.5,
+          "y": 80.5
+        },
+        "off": {
+          "x": 77.5,
+          "y": 75.5
+        },
+        "bakedWeapon": "staff-rune-seer"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-west-0.png",
+          "sha256": "d45ca5aa079a224baf18dcf44360f47e93e6d5a1fe5b26f7648e8b11781ee154",
+          "neck": {
+            "x": 64,
+            "y": 50
+          },
+          "main": {
+            "x": 48.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 76.8
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-west-1.png",
+          "sha256": "662eb2d97fad16ab7409e201a82ca5a1a1dc5cae412f197cf83051a3e9c84dcd",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-west-2.png",
+          "sha256": "3760b8a1729a88c4f49edfd598262037cce44b87d4e4fe3e8e214d8a636fc2b1",
+          "neck": {
+            "x": 61,
+            "y": 51
+          },
+          "main": {
+            "x": 50.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-west-3.png",
+          "sha256": "6951d27ac4972bfd7b8c12195ed955276728157524ddc828ec4e5259615a6f42",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-west-4.png",
+          "sha256": "529571cded4321d2c4434f10eabb840ccaa68191ce63c2844aae2185e013dd7a",
+          "neck": {
+            "x": 60,
+            "y": 51
+          },
+          "main": {
+            "x": 48.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-west-5.png",
+          "sha256": "4a6b684cb911430c5ebb92d7b2570b1e7a86593349cf80a9b41b404c38c27ef1",
+          "neck": {
+            "x": 61,
+            "y": 51
+          },
+          "main": {
+            "x": 53.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-west-6.png",
+          "sha256": "aa02bfff6f30e8e931e339845bf7d2343b662f1986fa4da27e2e2fc19ec72729",
+          "neck": {
+            "x": 61,
+            "y": 50
+          },
+          "main": {
+            "x": 54.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/north-west-7.png",
+          "sha256": "981a8ed7495bddd73a68bf01f9c62b28ad0d33231d5ace63347a9f384cb64535",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-west-0.png",
+          "sha256": "d8dee3486fce63a195e15a420c73a8d7ecc815ce13849b79341397139fc42a8a",
+          "neck": {
+            "x": 55,
+            "y": 52
+          },
+          "main": {
+            "x": 48.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-west-1.png",
+          "sha256": "99eeb013049ecf383d4f3890b5d283cbb87b75cf493b448512f5528292f0381b",
+          "neck": {
+            "x": 55,
+            "y": 54
+          },
+          "main": {
+            "x": 50.5,
+            "y": 53.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-west-2.png",
+          "sha256": "cbf52bd7a8062934d95399a310818297899f44d4f57cbf54282d579d1fb3b805",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 38.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-west-3.png",
+          "sha256": "8ed8be93157492670bc0ac8aa9424203153af44a22fc809378608f006a40415b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 51.5,
+            "y": 57.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 59.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-west-4.png",
+          "sha256": "3d1ecce6901b1a1174cb96b275940f8968f262704b05effd757d2a0c2da17e97",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 52.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 58.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-west-5.png",
+          "sha256": "1a203e526bd97a0fc199c1bd9a6881e8bdef65b0bc8be7ae08ea388600a7db1c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 58.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-west-6.png",
+          "sha256": "c6ed958862b505330640db8216bd7db567d595b2a5b52c2a301226c19f7bd9ac",
+          "neck": {
+            "x": 54,
+            "y": 55
+          },
+          "main": {
+            "x": 50.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/north-west-7.png",
+          "sha256": "18b7fbcef99c0de7a1d0de7f1bc6d533aa8b56edcfe70d4c1f9d59f64b3f88a7",
+          "neck": {
+            "x": 54,
+            "y": 55
+          },
+          "main": {
+            "x": 47.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 71.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-west-0.png",
+          "sha256": "a2d92607b8c748a505d7d1c9bf5c300ae93da803c1322a6519e1197a43fcf9e6",
+          "neck": {
+            "x": 70,
+            "y": 46
+          },
+          "main": {
+            "x": 54.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 73.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-west-1.png",
+          "sha256": "b5e9a34042049bb40f124dd34c8b7394b8be539b1cb1537d1f3a24e589b9e457",
+          "neck": {
+            "x": 65,
+            "y": 46
+          },
+          "main": {
+            "x": 48.5,
+            "y": 88.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 70.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-west-2.png",
+          "sha256": "5e0737f4e22f583b6bf1a8d17acdce0fba988d7cd25df042f256965d596dfe19",
+          "neck": {
+            "x": 59,
+            "y": 43
+          },
+          "main": {
+            "x": 51.5,
+            "y": 86.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 84.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-west-3.png",
+          "sha256": "c1514b3be421806433114830a343cddc3f7b18a9a330712e1f05beff15b2ca08",
+          "neck": {
+            "x": 54,
+            "y": 41
+          },
+          "main": {
+            "x": 49.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-west-4.png",
+          "sha256": "038369d65d4a5df8af690b7199b0fdf5babe63142fb3e7e0d39fa65d4cf39fba",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 52.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 70.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-west-5.png",
+          "sha256": "41ae5325cc8f41b7e91434fa7f6a507a44f219bca0bd554a48b7c285111a4e1d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 88.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 70.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-west-6.png",
+          "sha256": "e676e08e8a9544dbf8822e77e25d5496d558919df4e7ed0787bfea44a88d405f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 52.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/north-west-7.png",
+          "sha256": "a3173dbe8947334fb4747176a50cbe4098f8666f01b30b8f29d6bdba5b9cfbed",
+          "neck": {
+            "x": 68,
+            "y": 47
+          },
+          "main": {
+            "x": 56.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 75.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ]
+    },
+    "west": {
+      "headOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 61,
+        "y": 113
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/rune-seer-detail/idle/west.png",
+        "sha256": "d122890e7dfb7bee073c6eb30b2ab7032b13cd9b0229df7476ae3ec2559f64e4",
+        "neck": {
+          "x": 65,
+          "y": 48
+        },
+        "main": {
+          "x": 64.5,
+          "y": 81.5
+        },
+        "off": {
+          "x": 67.5,
+          "y": 64.5
+        },
+        "bakedWeapon": "staff-rune-seer"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/west-0.png",
+          "sha256": "4b532bb4242748142fa839419dfdf222129ebb62f2fb17f8ab3f01bd9716a953",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 61.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/west-1.png",
+          "sha256": "8ebf5f34af74f58664a46888fbc4104fb9875af8a38ed9821bd082e9119e4688",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 60.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/west-2.png",
+          "sha256": "ffb86454fcb414709827c11dbb9f7c6939336d5974beec35052b6a15faf8ac70",
+          "neck": {
+            "x": 67,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/west-3.png",
+          "sha256": "504153c31bb051b319c5cf7fd0acb22e68cb2ce71b386e2aac33921c5b5ca6f1",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/west-4.png",
+          "sha256": "9d9052a1178327ae323d77cfda805601881f8f1aa5d6d0487e766de9c700cf27",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/west-5.png",
+          "sha256": "c30836755e2c223fb60fb159a9bf28d017591c56756a0b443d291493c79fc6dd",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/west-6.png",
+          "sha256": "f7faae4a2c7836d45cdeeafd0821421c36b60f8feffcd4116d9c0cea4ae3bc60",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/west-7.png",
+          "sha256": "47862f492f87f19cc723034b1ff994abfb0e68cbb1da8c6aa9798c54d3804ece",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 89.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 69.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/west-0.png",
+          "sha256": "1d63c3ee6be2d18177b0d79ccab29d3116a452342221781ec83e94358f2d687c",
+          "neck": {
+            "x": 46,
+            "y": 42
+          },
+          "main": {
+            "x": 51.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/west-1.png",
+          "sha256": "5b4852f43d4bedaa32313bf8607b2718c7e24257927b8237e5ecd8aced6ba678",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 52.5,
+            "y": 53.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/west-2.png",
+          "sha256": "f459d2e9d485654e54f582c6085c8c6fda16dc4ed1542bf96a338e31a8fdf059",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 38.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/west-3.png",
+          "sha256": "b040fb9efda952fe590f07be21a830ad0585342a6ea6de7fa3bdc1784f88dfef",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 51.5,
+            "y": 57.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 61.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/west-4.png",
+          "sha256": "5fb86fabdc852e034ea3190898e1bd71484da9cf397cbb88a175c9f31700e2ed",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 52.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 59.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/west-5.png",
+          "sha256": "50c9c5e12c7f35a59348347ec4f118e4cadafb2f50b103f83f7ba52a8b22e59d",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 51.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 59.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/west-6.png",
+          "sha256": "325a48c1c14a51685d8bdc054c2785f076e351f1841600ac5e41abf3d0f17177",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/west-7.png",
+          "sha256": "e5950ac7b40d3c43bcd9b0011c597cf6b432ae882bd5da94771eeec608e4fb19",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/west-0.png",
+          "sha256": "01af5afed67e1ee58ce179f801d8287645e4c713a459e48990f135105a077ffc",
+          "neck": {
+            "x": 59,
+            "y": 50
+          },
+          "main": {
+            "x": 61.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 66.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/west-1.png",
+          "sha256": "0e572287f35e7a75a33363c312dd2228b1b50e213cdae711a46c7d18d609eb38",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 61.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/west-2.png",
+          "sha256": "0804290b05a6e893286b539f8ca920fb5538e512beadc226fe6ca5ca41e40241",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 61.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/west-3.png",
+          "sha256": "51dbaa4c5d780ff7c987a6d441b64176403b62abfd07d43937310c9b525834ba",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/west-4.png",
+          "sha256": "2db2951c5f9c3887f5b8c7dfbd1a3c66206162e4c6eedf9e5f232bba1cef1978",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/west-5.png",
+          "sha256": "fc9a52d03a3a270351477f8b930d16b9f0e23968f11a39b7b0c5fa84b60438fc",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 65.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/west-6.png",
+          "sha256": "f73e657087e136a8d5dd0e17ec66002bf8c9c03506d6ec9ae7ed89a33ff778e8",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 62.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/west-7.png",
+          "sha256": "00ee6c98564d7244bbeddb7e26827780b4e3c651beebc11c8056327dbc24ed87",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 63.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ]
+    },
+    "south-west": {
+      "headOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 61,
+        "y": 114
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/rune-seer-detail/idle/south-west.png",
+        "sha256": "d6b97d4b48cbeedfcf97984109ac999acbb46efb5b69db0158d5f1b9b641e440",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 51.5,
+          "y": 62.5
+        },
+        "off": {
+          "x": 74.5,
+          "y": 81.5
+        },
+        "bakedWeapon": "staff-rune-seer"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-west-0.png",
+          "sha256": "d399248fb5eecd98d72466bd08ad7ade26cbcf0204cc90161449cae1b6faaeb8",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-west-1.png",
+          "sha256": "424fc84d46c89fe8941aa380f508eabd2844ba25ac1bb7d741c01e74fc5e2bf6",
+          "neck": {
+            "x": 66,
+            "y": 47
+          },
+          "main": {
+            "x": 48.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 86.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-west-2.png",
+          "sha256": "9c913a7f4b1dbdda0b8a8778ccf8314c2f049392c9286eea6b742d1a312ede4d",
+          "neck": {
+            "x": 65,
+            "y": 47
+          },
+          "main": {
+            "x": 48.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 87.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-west-3.png",
+          "sha256": "6cc4335d00984ed5e8a6c02a7d315ab9ad397b322d15215974e49c7510e51a9e",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-west-4.png",
+          "sha256": "85bc2163ff88b4840f02afe775b82f4f351e46440a06c9d4aff0e3723d6c2751",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-west-5.png",
+          "sha256": "ace29e72d4fea958a6557701e0069ce06242180e2dfde78fd2fd28e8788e4bdf",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 86.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-west-6.png",
+          "sha256": "697670bd20c49306677d2a6a7142343d004119910f75b241a5e956170d5c2281",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 51.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/walk/south-west-7.png",
+          "sha256": "cf56c4a4ea1eb5f582be112c5f9c58cae4df4e5d483c80998808a70b190138d4",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 47.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-west-0.png",
+          "sha256": "c56be2b01a838770c793d8c0b940a0ed2c617cc5edb34ea1b283c7396802e2fe",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 47.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-west-1.png",
+          "sha256": "7a2389c363c9b7a1aa634abf1023f15acd43a097d7f15972d7dd59313b2b3149",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 53.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-west-2.png",
+          "sha256": "aeaee52d6c9706cbd06b2ffcd19252471c3b75ff38bcec7b830c73319c357fb7",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 38.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-west-3.png",
+          "sha256": "f18e9086794e61181c96ed2ee929733a9566c439cc8ce5f50d7583777ca738b0",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 51.5,
+            "y": 58.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-west-4.png",
+          "sha256": "f7089e63a028d9c5bae68ea241167a050de24da277825118e4d803a0f778fc0a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-west-5.png",
+          "sha256": "6fa084f7faad004fbb45164f4bc53ff830576636a311c70a90e2df6af08a7421",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-west-6.png",
+          "sha256": "684d823585d206e32447374d56e58ea79b76337df6c3ec22649963fc6f98a3c1",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/attack/south-west-7.png",
+          "sha256": "523c5f784f33ab45697609271df64095579f21046ef43e63e97c4a6fd1903c76",
+          "neck": {
+            "x": 64,
+            "y": 46
+          },
+          "main": {
+            "x": 47.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-west-0.png",
+          "sha256": "14fead1a09fcdd0c89e35b1b14205cddf43ac1a4a233d517ebee96fa91bcecf6",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 52.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 81.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-west-1.png",
+          "sha256": "66c70a9754f463e876341679963c69eb977d9b70dd6ab324c649be8927ffa577",
+          "neck": {
+            "x": 60,
+            "y": 50
+          },
+          "main": {
+            "x": 48.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 89.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-west-2.png",
+          "sha256": "52cd96bc09bd850a98724ab0c5f6bdd23e82dcb483841cf0732e50b1c51969b7",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 85.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-west-3.png",
+          "sha256": "6de4948f08515c973c7f1aa4a438ccd95e419aa377650ed438e61a60a24d4a36",
+          "neck": {
+            "x": 60,
+            "y": 52
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 90.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-west-4.png",
+          "sha256": "5d458e5859beccbaf6c410150b521cdc2605e72a2376512277aa26f0ed3e6073",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 90.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-west-5.png",
+          "sha256": "bce04a536d2e67383ade042bea7a318ffd1facf8fa5a9f313f03760af17ef006",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-west-6.png",
+          "sha256": "c0ede32fc7cdc1149f23533f07ff3f55fc28a54dbba1bc7e5f7a673d13b51846",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 73.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "staff-rune-seer"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/rune-seer-detail/cast/south-west-7.png",
+          "sha256": "a39998ca9951957d91521d7b2432ef8cdfbcb7adc26623ea3cdf4ddc8198d322",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 79.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "staff-rune-seer"
+        }
+      ]
+    }
+  }
+}
