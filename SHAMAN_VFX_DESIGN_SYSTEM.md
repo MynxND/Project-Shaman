@@ -8,7 +8,7 @@ Boss creation and boss attack/telegraph/VFX changes must also follow [SHAMAN_BOS
 
 ## Reusable families
 
-One geometry `ritual-circle-v1`: original concentric inscriptions, stepped woven talisman knots, directional seal marks. Yantra = antique gold (ritual/protection/empowerment), Spirit = jade (summon/heal/soul), Binding = dark crimson (seal/curse/suppress). Reuse one PixelLab artistic base, with controlled runtime tint variations. No independent circle generation for each skill.
+One geometry `ritual-circle-v1`: original concentric inscriptions, stepped woven talisman knots, directional seal marks. Yantra = antique gold (ritual/protection/empowerment), Spirit = jade (summon/heal/soul), Binding = dark crimson (seal/curse/suppress). Reuse one existing suitable artistic base, or create the missing base with ImageGen, with controlled runtime tint variations. No independent circle generation for each skill.
 
 ## Anchoring and timeline
 
@@ -22,9 +22,9 @@ Use one reusable scene object per effect layer, update texture/position/alpha in
 
 PASSIVE_STAT has no VFX assets in the production manifest. Preserve old raw jobs as provenance only. PASSIVE_TRIGGER stays invisible until a meaningful event. PASSIVE_AURA and TOGGLE_BUFF use subtle loops only while state is active; remove them immediately when inactive. `selectVisibleAuras` chooses highest priority, stable-ID tie-break, default one visible aura per actor; this visual budget must never suppress gameplay modifiers. No hidden additional timers or abandoned sprites.
 
-## PixelLab and reuse
+## ImageGen and reuse
 
-Inspect actual tools and `docs/design/pixellab-tool-catalog.json`. Save original PNG, dimensions, prompt, job ID and provenance under `docs/design/skill-system`; runtime assets under `apps/client/public/assets/skills/shared-v1`. Transparent crisp pixels, no baked text, correct horizontal ground perspective. Programmatic alpha/scale/rotation/tint is permitted. Icons are shared 64px family; release assets can remain per-skill where meaning requires them. Existing cast poses contain colored hand glows and remain candidates for future palette normalization, not newly approved final animation art.
+Read the available imagegen skill and use ImageGen for new artwork (user, 2026-10-16). Do not call PixelLab or automatically switch generators. Historical PixelLab assets remain reusable with their original provenance. Save original PNG, dimensions, prompt, job ID and provenance under `docs/design/skill-system`; runtime assets under `apps/client/public/assets/skills/shared-v1`. Transparent crisp pixels, no baked text, correct horizontal ground perspective. Programmatic alpha/scale/rotation/tint is permitted. Icons are shared 64px family; release assets can remain per-skill where meaning requires them. Existing cast poses contain colored hand glows and remain candidates for future palette normalization, not newly approved final animation art.
 
 ## Validation
 

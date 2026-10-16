@@ -26,7 +26,7 @@ These precise swatches are **implementation proposals**, not additional user-app
 
 Nearest sampling; transparent PNG/RGBA, no blurry glow baked into pixels or baked text. Main reference rig is native 128px; icons are 64×64 with a 54px motif budget. Shared circle prototype canvas is 128×80, horizontal elliptical footprint about 1.2–1.8 actor body widths; preserve native aspect ratio and assess at normal gameplay zoom. World movement/range is in world units, independent of screen pixels.
 
-Reuse core geometry across all three families. Opacity/scale/subtle rotation are runtime operations; PixelLab creates artistic elements. Pixel scale, actor foot origin and material contrast must remain consistent across a sheet. Casting timing comes from the actual cast duration; aura loops communicate state without repeated casting. Release highlights briefly, then dissipates; cancellation fades without release. Keep bodies and nearby targets readable.
+Reuse core geometry across all three families. Opacity/scale/subtle rotation are runtime operations; ImageGen creates new artistic elements under the user's 2026-10-16 generator policy; suitable existing artwork remains reusable. Pixel scale, actor foot origin and material contrast must remain consistent across a sheet. Casting timing comes from the actual cast duration; aura loops communicate state without repeated casting. Release highlights briefly, then dissipates; cancellation fades without release. Keep bodies and nearby targets readable.
 
 User refinement 2026-10-09: active releases should feel more impressive and ritual-specific, especially Soul Heal. Increase layered spirit motion, silhouette and release rhythm while keeping the actor center transparent. Do not mistake restrained palette/readability for tiny static icon-like effects. Decorative release width is not gameplay range. See `docs/design/skill-system/medium-v2-art-review.md`.
 
@@ -34,7 +34,7 @@ Icons share dimensions, contrast and ornamental HUD frame. Passive distinction i
 
 ## Generation gate
 
-Read this bible, [skill design](SHAMAN_SKILL_DESIGN_SYSTEM.md), [VFX design](SHAMAN_VFX_DESIGN_SYSTEM.md), and [classification](SHAMAN_SKILL_CLASSIFICATION.md). Validate behavior in `packages/shared/src/skill-system.ts`; PASSIVE_STAT forbids new VFX. Review world/rig assets, inspect actual PixelLab schemas, save prompts/job IDs/native dimensions in the repository. Credentials belong only in user configuration. Do not mass-generate pending classifications.
+Read this bible, [skill design](SHAMAN_SKILL_DESIGN_SYSTEM.md), [VFX design](SHAMAN_VFX_DESIGN_SYSTEM.md), and [classification](SHAMAN_SKILL_CLASSIFICATION.md). Validate behavior in `packages/shared/src/skill-system.ts`; PASSIVE_STAT forbids new VFX. Review world/rig assets and read the available imagegen skill. Use ImageGen for new artwork, not PixelLab or an automatic alternate generator (user, 2026-10-16). Save source PNGs, prompts, generation receipts/job IDs when available, and native dimensions in the repository. Preserve historical generator attribution unchanged. Credentials belong only in user configuration. Do not mass-generate pending classifications.
 
 
 ## Japan exception (user 2026-10-11)

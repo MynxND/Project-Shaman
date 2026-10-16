@@ -1,5 +1,21 @@
 # Global Shaman art direction
 
+## Current artwork generator — user2026-10-16
+
+Use ImageGen for all new artwork, including characters, animation artwork, bosses,
+VFX, icons, map concepts, modular tiles, buildings, props and ground textures.
+This supersedes earlier PixelLab and ComfyUI generation defaults in this document
+and historical workflow notes. Do not call PixelLab or automatically fall back to
+another generator. Reuse suitable existing owned art and preserve its original
+source attribution; this change does not regenerate, relabel or publish assets.
+Read the imagegen skill; retain source PNGs, prompts, generation receipts and
+native dimensions in the repository. Existing art direction, approval boundaries,
+PASSIVE_STAT restrictions and server-authoritative combat remain unchanged.
+The separately gated Pose Studio motion exception in AGENTS.md is retained.
+ImageGen authorization includes Maiyarap and future bosses; no per-boss
+Shuten-only exception is needed. Maiyarap implementation and visual QA are still
+pending; this policy update is not a combat completion receipt.
+
 ## Hair V3 reference study and FRONT candidates — 2026-10-10
 
 USER reauthorizes V2 neutral-male-02 for this candidate round; V3 bodies remain

@@ -28,5 +28,5 @@ SP costs, target range in world units, tile-to-world size, Ghost Sight detection
 
 ## Delivery gate
 
-Audit → bible/policy → classify → one gold PixelLab circle → one existing CT skill → test timing/layering/interruption → family variants → stat modifier without VFX → state-bound aura prototype → remaining migration. Require typecheck/build, behavioral policy tests, desktop/portrait/landscape UI inspection and saved screenshots. Do not claim 370 combat skills are implemented merely because 370 records are classified.
+Audit → bible/policy → classify → one reusable gold circle (existing owned art, or ImageGen for missing art under the 2026-10-16 user policy) → one existing CT skill → test timing/layering/interruption → family variants → stat modifier without VFX → state-bound aura prototype → remaining migration. Require typecheck/build, behavioral policy tests, desktop/portrait/landscape UI inspection and saved screenshots. Do not claim 370 combat skills are implemented merely because 370 records are classified.
 

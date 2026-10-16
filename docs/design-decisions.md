@@ -687,3 +687,13 @@ Real-room edge probing found a hit just beyond the nominal cone line due to the 
 ## Boss VFX authoring standard — 2026-10-16
 
 Adopt [SHAMAN_BOSS_VFX_STANDARD.md](../SHAMAN_BOSS_VFX_STANDARD.md) and a mandatory per-boss vfx.md before boss implementation. AGENTS.md and the central VFX design system link the contract. Record real-game controls, temporal uncertainty, visual checks, asset gaps and actual delivery; no automatic future-agent compliance or added permission gate is claimed.
+
+## ImageGen is the default artwork generator — user2026-10-16
+
+The user explicitly replaces PixelLab with ImageGen for all new artwork, including
+Maiyarap sprites/VFX and future bosses. This supersedes previous PixelLab and
+ComfyUI generation defaults; do not automatically switch generators. Existing
+owned assets and their source attribution are preserved. Read the imagegen skill
+and retain prompts, original PNGs, receipts and native dimensions. Art direction,
+visual validation and combat acceptance gates are unchanged. This documentation
+change does not claim Maiyarap combat or assets are implemented.
