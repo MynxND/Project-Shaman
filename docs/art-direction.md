@@ -362,3 +362,7 @@ Shuten warnings now use charcoal/crimson ink, inset bronze stitches, original on
 ## Shuten three-phase combat QA — 2026-10-16
 
 Shuten warning borders now include player contact allowance; active shockwaves display a hollow band and head charges a moving ground contact marker. Ritual marks remain below actors. Actual phase1/2/3 captures and timing limitations are recorded in design/bosses/shuten-doji/combat-review/README.md.
+
+## Boss VFX authoring standard — 2026-10-16
+
+Apply the user-adopted [Boss VFX Standard](../SHAMAN_BOSS_VFX_STANDARD.md) to each boss: authored organic materials, readable lore-specific ritual warnings, player visibility and measured anchors. Share quality/architecture, not Shuten Japanese symbols, palette or numerical budgets across nations.

@@ -683,3 +683,7 @@ Replace plain Shuten warning outlines while keeping fixed world-space extents, s
 ## Shuten three-phase combat QA — 2026-10-16
 
 Real-room edge probing found a hit just beyond the nominal cone line due to the existing .3 body allowance. Share that value with presentation rather than nerfing collision. Preserve sector angles, damage and timelines; show wave thickness and stop painting a passed charge lane as active. See design/bosses/shuten-doji/combat-review/README.md.
+
+## Boss VFX authoring standard — 2026-10-16
+
+Adopt [SHAMAN_BOSS_VFX_STANDARD.md](../SHAMAN_BOSS_VFX_STANDARD.md) and a mandatory per-boss vfx.md before boss implementation. AGENTS.md and the central VFX design system link the contract. Record real-game controls, temporal uncertainty, visual checks, asset gaps and actual delivery; no automatic future-agent compliance or added permission gate is claimed.

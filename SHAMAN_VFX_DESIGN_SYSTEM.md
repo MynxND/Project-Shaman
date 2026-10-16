@@ -2,6 +2,10 @@
 
 Mandatory constraints: [world art bible](SHAMAN_WORLD_ART_BIBLE.md) and [skill policy](SHAMAN_SKILL_DESIGN_SYSTEM.md). Shared policy: `packages/shared/src/skill-system.ts`.
 
+## Boss encounter standard — user2026-10-16
+
+Boss creation and boss attack/telegraph/VFX changes must also follow [SHAMAN_BOSS_VFX_STANDARD.md](SHAMAN_BOSS_VFX_STANDARD.md) and maintain a per-boss `vfx.md` from [the template](docs/templates/BOSS_VFX_TEMPLATE.md). The player casting-circle family below does not require all enemy attacks to use one circle or share Shuten's art. Bosses retain their own national/lore identity while sharing authoritative geometry, readable layered presentation, bounded lifecycle and real-game evidence requirements. The player behavior policy and PASSIVE_STAT prohibition remain unchanged.
+
 ## Reusable families
 
 One geometry `ritual-circle-v1`: original concentric inscriptions, stepped woven talisman knots, directional seal marks. Yantra = antique gold (ritual/protection/empowerment), Spirit = jade (summon/heal/soul), Binding = dark crimson (seal/curse/suppress). Reuse one PixelLab artistic base, with controlled runtime tint variations. No independent circle generation for each skill.

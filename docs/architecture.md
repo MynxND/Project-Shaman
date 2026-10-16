@@ -637,3 +637,7 @@ The complete Shuten renderer delegates warning contours to shuten-telegraph.ts. 
 ## Shuten three-phase combat QA — 2026-10-16
 
 SHUTEN_CONTACT_PADDING centralizes the pre-existing .3 player-body collision allowance and the matching warning extent. Moving ring/head ground indicators now follow the damaging band/segment. No gameplay formula or network migration. Actual-room receipts: design/bosses/shuten-doji/combat-review/README.md.
+
+## Boss VFX authoring standard — 2026-10-16
+
+[Boss VFX Standard](../SHAMAN_BOSS_VFX_STANDARD.md) is the mandatory per-boss authoring and delivery contract. Maintain docs/design/bosses/<boss-id>/vfx.md from the template; keep authority, timed cues, presentation and evidence distinct. This adoption changes documentation only, not runtime systems.

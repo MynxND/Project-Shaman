@@ -713,3 +713,7 @@ Shuten ritual warning redesign implemented and inspected: eleven skill previews,
 ## Shuten three-phase combat QA — 2026-10-16
 
 Shuten actual-room phase QA complete:22 stationary/walking cases, all dodge routes remain inside the arena with0 damage;29 damage receipts checked against live hazard windows and27s of normal AI per phase. This is arranged guest phase testing, not a continuous balanced-character victory. Review /boss-review/shuten-combat/index.html; details and limits in design/bosses/shuten-doji/combat-review/README.md.
+
+## Boss VFX authoring standard — 2026-10-16
+
+Boss VFX standard v1.0 adopted: root contract, AGENTS.md read requirement, central VFX cross-link, per-boss template and populated Shuten reference. Future bosses must maintain their own coverage/geometry/timing/budget/evidence record. This task adds no new boss artwork or runtime changes.

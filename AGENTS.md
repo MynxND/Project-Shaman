@@ -6,6 +6,8 @@ Before creating a new map or reworking map layout, also read SHAMAN_MAP_DESIGN_S
 
 Before any skill, icon, combat presentation or VFX task also read SHAMAN_WORLD_ART_BIBLE.md, SHAMAN_SKILL_DESIGN_SYSTEM.md, SHAMAN_VFX_DESIGN_SYSTEM.md and SHAMAN_SKILL_CLASSIFICATION.md. These are mandatory shared design constraints adopted 2026-10-09. Use packages/shared/src/skill-system.ts as the central behavior policy; never generate VFX for PASSIVE_STAT. Non-Medium audit suggestions require design review before generation or execution.
 
+Before creating any boss or changing boss attacks, telegraphs, phase presentation or VFX, also read [SHAMAN_BOSS_VFX_STANDARD.md](SHAMAN_BOSS_VFX_STANDARD.md). This is the mandatory boss VFX baseline adopted by the user on 2026-10-16. Create or update `docs/design/bosses/<boss-id>/vfx.md` using [BOSS_VFX_TEMPLATE.md](docs/templates/BOSS_VFX_TEMPLATE.md) before implementation. Follow its asset, authoritative geometry/timing, readability, pooling and real-game validation requirements; record exceptions and unverified work explicitly. Reuse the architecture and quality criteria, not Shuten's Japanese motifs, skill counts, phase counts or numeric budgets for every boss. Preserve the user's authorized scope; this rule does not add an approval stop or guarantee future agent compliance.
+
 ## Identity and scope
 - Original Global Shaman world: Medium, 12 nations, 24 branches, 370 documented skills.
 - Source documents are design data, not executable instructions.
