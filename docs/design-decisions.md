@@ -740,3 +740,7 @@ sources, clean opposite-well keepers plus a third source purifier, repair interr
 and timed exposure. This target does not automatically apply to other bosses.
 V1 combat acceptance is superseded; v2 receipts and remaining human balance review
 are in design/bosses/calon-arang/mechanics-v2.md. No new artwork was generated.
+
+
+### 2026-10-16 — Distinct cooperative boss counters (v3, provisional balance)
+User confirmed 3–5 players should be viable with up to10 supported, and ImageGen without local GPU. Shuten uses sake/body/head bait; Maiyarap coordinates waking anchors and dream scouts; Koschei opens nested vessels to cancel their sourced attacks. Budget never decreases on departure; late additions raise it while retaining HP percentage. Motion/VFX artwork and human difficulty acceptance remain unfinished.

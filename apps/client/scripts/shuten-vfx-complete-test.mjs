@@ -12,9 +12,9 @@ for(const clip of Object.values(fixture.clips)){
  if(!['phase-2','phase-3','death'].includes(clip.id))ok(clip.cues.length>0,'every skill produces real cues');
 }
 let made=0,removed=0,emitted=0;const observed=[];function object(){made++;const v={alive:0,destroy(){removed++;},emitParticleAt(x,y,n){emitted+=n;this.alive=Math.min(96,this.alive+n);},killAll(){this.alive=0;},getAliveParticleCount(){return this.alive;},createGeometryMask(){return {destroy(){}};}};observed.push(v);
- for(const m of ['setVisible','setDepth','setFrame','setPosition','setDisplaySize','setAlpha','setRotation','setOrigin','setTexture','setBlendMode','setTint','clearTint','setMask','clearMask','lineStyle','strokeCircle','strokePoints','fillPoints','clear','fillStyle','fillCircle','beginPath','moveTo','lineTo','arc','closePath','fillPath','strokePath'])v[m]=()=>v;v.setVisible=b=>{v.visible=b;return v;};v.setTexture=k=>{v.key=k;return v;};v.setDepth=d=>{v.depth=d;return v;};return v;}
+ for(const m of ['setText','setVisible','setDepth','setFrame','setPosition','setDisplaySize','setAlpha','setRotation','setOrigin','setTexture','setBlendMode','setTint','clearTint','setMask','clearMask','lineStyle','strokeCircle','strokePoints','fillPoints','clear','fillStyle','fillCircle','beginPath','moveTo','lineTo','arc','closePath','fillPath','strokePath'])v[m]=()=>v;v.setText=text=>{v.text=text;return v;};v.setVisible=b=>{v.visible=b;return v;};v.setTexture=k=>{v.key=k;return v;};v.setDepth=d=>{v.depth=d;return v;};return v;}
 const phaser={Textures:{FilterMode:{NEAREST:1}},BlendModes:{NORMAL:0,SCREEN:3},WEBGL:2,Math:{Distance:{Between:(a,b,x,y)=>Math.hypot(a-x,b-y)}}};
-const scene={textures:{get:()=>({setFilter(){},has(){return false;},add(){}})},add:{sprite:object,graphics:object,particles:object},make:{graphics:object},game:{renderer:{type:2}},cameras:{main:{midPoint:{x:768,y:640},shake(){}}}};
+const scene={textures:{get:()=>({setFilter(){},has(){return false;},add(){}})},add:{text:object,sprite:object,graphics:object,particles:object},make:{graphics:object},game:{renderer:{type:2}},cameras:{main:{midPoint:{x:768,y:640},shake(){}}}};
 const {SHUTEN_CONTACT_PADDING,bossShapeHit}=await import('../../../packages/shared/dist/index.js');
 const telegraph=load('shuten-telegraph.ts',{'phaser':{default:phaser},'@shaman/shared':{WORLD_UNIT_PX:32,SHUTEN_CONTACT_PADDING}});
 for(const clip of Object.values(fixture.clips))for(const h of clip.cues){
@@ -41,6 +41,11 @@ const combo=fixture.clips['oni-crusher:south'].cues;fx.update(combo,600);
 const footprints=new Set(combo.map(telegraph.shutenTellKey)).size;
 ok(observed.filter(v=>v.visible&&v.key===telegraph.SHUTEN_TELL_KEY).length===footprints*3,'coincident combo warnings display one motif set per footprint');fx.reset();
 ok(observed.filter(v=>v.key===telegraph.SHUTEN_TELL_KEY).every(v=>v.depth<0),'warning motifs stay beneath player bodies');
+// Consumed environmental sake is not an attack tail: it must release the slot and its label.
+const bait={...h,id:'bait',actor:'altar-bait',skill:'demon-sake',shape:'circle',radius:2.6,warnAt:0,startsAt:0,endsAt:30000};
+for(let i=0;i<64;i++){const at=100+i*400;fx.update([{...bait,id:'bait'+i}],at);fx.update([],at+50);fx.update([],at+240);ok(fx.stats.active===0,'consumed bait releases pooled view');}
+fx.update([bait],100);fx.reset();ok(observed.filter(v=>v.text?.includes('ล่อ')).every(v=>!v.visible),'reset hides environmental labels');
+fx.update([bait],30001);fx.update([],30250);ok(fx.stats.active===0,'expired bait retires without pool exhaustion');
 const stress=Array.from({length:80},(_,i)=>({...h,id:String(i)}));fx.update(stress,h.startsAt+10);const allocated=made;
 fx.reset();for(let i=0;i<20;i++)fx.update(stress,h.warnAt+20+i);ok(made===allocated,'ritual warnings reuse the original sprite slots');fx.reset();
 for(let i=0;i<180;i++)fx.update(stress,h.startsAt+20+i);ok(fx.stats.pooled===32&&fx.stats.active===32,'bounded pool overflow only drops cosmetics');ok(made===allocated,'no per-frame GameObjects');

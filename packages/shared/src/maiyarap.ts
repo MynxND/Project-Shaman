@@ -22,14 +22,14 @@ export const MAIYARAP_SKILLS = {
   'sleep-enchantment': skill('มนตร์สะกดนิทรา', 1, 'teach sleep and waking', 'nearest locked position', 'disk', 1400, 500, 1200, 8000, 55, 'leave the blossom; gold symbols wake dreamers', 'dream'),
   'underworld-chains': skill('โซ่แห่งบาดาล', 1, 'cross-lane binding', 'farthest locked position', 'capsule', 1200, 500, 1300, 7500, 65, 'sidestep the two narrow chains'),
   'phantom-doppelganger': skill('เงามายาซ้อนร่าง', 1, 'staggered phantom thrusts', 'three flanking sources', 'capsule', 1400, 350, 1500, 11000, 60, 'move after each locked thrust'),
-  'patal-gate': skill('ทวารบาดาล', 1, 'paired expanding gate bands', 'two side gates', 'ring', 1500, 900, 1500, 12000, 70, 'cross a band early or remain in a gate center'),
+  'patal-gate': skill('ทวารบาดาล', 1, 'alternating awake/dream gate windows', 'lotus/flame sites', 'disk', 1500, 500, 1500, 12000, 70, 'avoid the gate window in your current realm; helpers keep the next symbol available'),
   'dream-theft': skill('ชิงห้วงฝัน', 2, 'tether into shared dream puzzle', 'nearest locked tether', 'capsule', 1500, 500, 1400, 10000, 65, 'leave tether sideways; finish the dream symbols', 'dream'),
-  'false-awakening': skill('ตื่นในมายา', 2, 'false exits spare gold symbols', 'three false exits', 'disk', 1600, 600, 1500, 12000, 70, 'gold symbols remain genuine; crimson exits are traps'),
+  'false-awakening': skill('ตื่นในมายา', 2, 'false dream exits spare the next ordered symbol', 'two wrong symbol sites plus awake target', 'disk', 1600, 600, 1500, 12000, 70, 'awake keeper anchors the next symbol; scout uses the genuine exit'),
   'nightmare-passage': skill('ทางผ่านฝันร้าย', 2, 'alternating corridor sweeps', 'parallel lanes leave a gap', 'capsule', 1500, 700, 1500, 11000, 75, 'walk through the open central corridor'),
-  'lucid-seal': skill('ตราสติรู้ฝัน', 3, 'sequential seals expose punish window', 'three locked positions', 'ring', 1400, 500, 1400, 10500, 75, 'safe seal centers; wake to stagger the caster'),
-  'underworld-court': skill('พิพากษาราชสภาบาดาล', 3, 'ordered royal judgments', 'four quadrants', 'sector', 1500, 500, 1600, 13000, 85, 'follow the staggered safe quadrants'),
-  'sleepwalker-hunt': skill('ล่าผู้ละเมอ', 3, 'three independently locked rushes', 'target sampled before each tell', 'charge', 1400, 350, 1600, 12000, 80, 'sidestep each marked rush; passed ground is safe'),
-  'eternal-slumber': skill('นิรันดร์นิทรา', 3, 'five-stage symbol/source counterplay', 'all players, finale safe pocket', 'finale', 1600, 800, 2000, 42000, 180, 'lotus → knot → flame, destroy source; south pocket survives failure'),
+  'lucid-seal': skill('ตราสติรู้ฝัน', 3, 'non-damaging ritual shortens unfinished dream time', 'dream source', 'ritual', 1600, 500, 1400, 10500, 75, 'complete the coordinated symbol route before the shortened dream expires'),
+  'underworld-court': skill('พิพากษาราชสภาบาดาล', 3, 'separate realm judgments', 'two false dream symbols and awake body sector', 'sector', 1500, 500, 1600, 13000, 85, 'scout uses the next symbol; awake players leave the body sector'),
+  'sleepwalker-hunt': skill('ล่าผู้ละเมอ', 3, 'one stalking shadow, cancelled by symbol progress', 'dream scout tracks 1.2s then locks', 'charge', 2200, 1100, 1600, 12000, 80, 'keeper anchors the next symbol so scout can cancel the hunt, or dodge the locked lane'),
+  'eternal-slumber': skill('นิรันดร์นิทรา', 3, 'five-stage symbol/source counterplay', 'dream scouts with at least two waking helpers', 'finale', 1600, 800, 2000, 42000, 180, 'awake keeper anchors lotus → knot → flame for scouts, destroy source; otherwise symbol sites erupt in reverse order'),
 } as const;
 export type MaiyarapSkill = keyof typeof MAIYARAP_SKILLS;
 export interface DreamHazard {
@@ -46,6 +46,7 @@ export function dreamSegmentDistance(p: Position, a: Position, b: Position) {
 export const dreamProgress = (h: DreamHazard, now: number) => Math.max(0, Math.min(1, (now - h.startsAt) / Math.max(1, h.endsAt - h.startsAt)));
 /** One geometry for server hit tests and Phaser tells; no Shuten collision dependency. */
 export function dreamHit(h: DreamHazard, p: Position, now: number, previous = now) {
+  if(h.shape==='ritual')return false;
   const r = h.radius + MAIYARAP_CONTACT, d = Math.hypot(p.x - h.x, p.y - h.y);
   if (h.shape === 'finale') return d <= r && Math.hypot(p.x - 24, p.y - 35) > 2.8 + MAIYARAP_CONTACT;
   if (h.shape === 'capsule') return dreamSegmentDistance(p, h, { x: h.toX, y: h.toY }) <= h.width + MAIYARAP_CONTACT;

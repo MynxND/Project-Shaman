@@ -1,0 +1,53 @@
+{
+  "cases": [
+    {
+      "env": "production",
+      "map": "mount-oe-fortress",
+      "option": true,
+      "phase": 1,
+      "mode": "dormant",
+      "hpMax": 120
+    },
+    {
+      "env": "production",
+      "map": "maiyarap-palace",
+      "option": true,
+      "phase": 1,
+      "mode": "dormant",
+      "hpMax": 120
+    },
+    {
+      "env": "production",
+      "map": "frozen-necropolis",
+      "option": true,
+      "phase": 1,
+      "mode": "dormant",
+      "hpMax": 120
+    },
+    {
+      "env": "development",
+      "map": "mount-oe-fortress",
+      "option": false,
+      "phase": 1,
+      "mode": "dormant",
+      "hpMax": 120
+    },
+    {
+      "env": "development",
+      "map": "maiyarap-palace",
+      "option": false,
+      "phase": 1,
+      "mode": "dormant",
+      "hpMax": 120
+    },
+    {
+      "env": "development",
+      "map": "frozen-necropolis",
+      "option": false,
+      "phase": 1,
+      "mode": "dormant",
+      "hpMax": 120
+    }
+  ],
+  "passed": true
+}

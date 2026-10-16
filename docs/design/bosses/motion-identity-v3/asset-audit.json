@@ -1,0 +1,58 @@
+{
+  "status": "NOT production accepted; review candidates only",
+  "runtimeAdopted": false,
+  "sources": {
+    "koschei/walk-south-01.png": {
+      "status": "rejected",
+      "reason": "insufficient alternating leg anatomy; exact historical prompt unavailable"
+    },
+    "koschei/walk-south-02.png": {
+      "status": "rejected",
+      "reason": "support/order not acceptable; exact historical prompt unavailable"
+    },
+    "koschei/walk-north-west-01.png": {
+      "status": "blocked",
+      "reason": "staff appears on near arm; anatomical hand continuity unresolved"
+    },
+    "koschei/walk-north-west-02.png": {
+      "status": "rejected",
+      "reason": "hand correction mirrored whole body toward north-east"
+    },
+    "koschei/cast-north-01.png": {
+      "status": "rejected",
+      "reason": "staff release points right instead of north"
+    },
+    "koschei/cast-north-west-01.png": {
+      "status": "blocked",
+      "reason": "staff hand and release direction need correction"
+    },
+    "koschei/cast-south-east-01.png": {
+      "status": "blocked",
+      "reason": "body turns away through release"
+    },
+    "maiyarap/walk-north-west-01.png": {
+      "status": "blocked",
+      "reason": "staff anatomical hand continuity unresolved"
+    },
+    "shuten-doji/walk-south-01.png": {
+      "status": "rejected",
+      "reason": "same leading leg through too many frames; does not show a balanced gait"
+    },
+    "shuten-doji/walk-south-02.png": {
+      "status": "blocked",
+      "reason": "both support poses exist but planned 0/4/8/12 sequence was not followed; order requires authoring"
+    },
+    "shuten-doji/gait-south-keyposes-01.png": {
+      "status": "keypose study",
+      "reason": "four contrasting support poses only; not a sixteen-frame cycle"
+    }
+  },
+  "limits": [
+    "Keypose sheets for all eight walk facings visually inspected; this is not complete frame-by-frame approval",
+    "Casts have not all passed hand/foot/loop/contact registration",
+    "Review packing is bounding-box based and can contain adjacent-row artifacts",
+    "No new motion or VFX artwork has replaced existing production actor atlases",
+    "Idle/stagger/transition/death and Shuten frenzy/headless/head action coverage remain incomplete",
+    "No local GPU or H3 was used"
+  ]
+}

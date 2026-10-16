@@ -56,8 +56,8 @@ export class MaiyarapVfx {
         g.setVisible(true);
         const lx=h.shape==='sector'?x+Math.cos(h.angle)*r*.6:h.shape==='charge'&&active?x+(h.toX*U-x)*progress:h.shape==='capsule'||h.shape==='charge'?(x+h.toX*U)/2:h.shape==='ring'&&active?x+(DREAM_RING_START+(h.radius-DREAM_RING_START)*progress)*U:h.shape==='finale'?24*U:x;
         const ly=h.shape==='sector'?y+Math.sin(h.angle)*r*.6:h.shape==='charge'&&active?y+(h.toY*U-y)*progress:h.shape==='capsule'||h.shape==='charge'?(y+h.toY*U)/2:h.shape==='finale'?35*U:y;
-        const prefix=h.skill==='underworld-court'?`${Math.round(h.angle/(Math.PI/2))+1} · `:'';
-        const text=h.shape==='finale'?'ช่องปลอดภัย':warning?prefix+Math.max(0,(h.startsAt-now)/1000).toFixed(1)+' วิ':h.shape==='ring'?'คลื่น':'!';
+        const prefix=h.actor==='dream'?'แดนฝัน · ':h.actor==='awake'?'โลกตื่น · ':'';
+        const text=h.shape==='ritual'?'ผนึกฝัน · ประสานสัญลักษณ์ก่อนตื่น':h.shape==='finale'?'ช่องปลอดภัย':warning?prefix+Math.max(0,(h.startsAt-now)/1000).toFixed(1)+' วิ':h.shape==='ring'?'คลื่น':'!';
         if(v.label.text!==text)v.label.setText(text);
         v.label.setPosition(lx,ly+16).setVisible(true);
         g.fillStyle(color, fill).lineStyle(2, color, edge);
@@ -92,7 +92,7 @@ export class MaiyarapVfx {
         }
         // Small woven corner rhythm communicates charge without changing the danger boundary.
         // Expanded into a boss-specific woven border and seal; the authoritative edge above stays fixed.
-        if (warning) drawRitualWarning(g, { shape:h.shape, x, y, ex:h.toX*U, ey:h.toY*U, radius:r+(h.shape==='ring'?h.width*U:0), width, angle:h.angle, arc:h.arc }, 'maiyarap', (now-h.warnAt)/Math.max(1,h.startsAt-h.warnAt));
+        if (warning&&h.shape!=='ritual') drawRitualWarning(g, { shape:h.shape, x, y, ex:h.toX*U, ey:h.toY*U, radius:r+(h.shape==='ring'?h.width*U:0), width, angle:h.angle, arc:h.arc }, 'maiyarap', (now-h.warnAt)/Math.max(1,h.startsAt-h.warnAt));
       }
       const key = h.skill;
       if (!this.scene.textures.exists('mai:' + key)) throw new Error('ASSET_REQUIRED: Maiyarap ' + key);
@@ -105,7 +105,7 @@ export class MaiyarapVfx {
       const layer = (img: Phaser.GameObjects.Image, frame: number, alpha: number, scale: number, depth: number) => img.setTexture('mai:' + key, frame).setPosition(px, py - size * .16).setDisplaySize(size * scale, size * scale).setOrigin(.5, .6).setRotation(direction).setDepth(depth).setAlpha(alpha).setVisible(alpha > .001);
       if (warning) layer(v.charge, Math.min(2, Math.floor(wind * 3)), .15 + wind * .4, .85 + wind * .15, -.47);
       if (active) {
-        layer(v.main, Math.min(5, 3 + Math.floor(progress * 3)), .9, 1, -.45);
+        layer(v.main, Math.min(5, 3 + Math.floor(progress * 3)), h.shape==='ritual'?.25:.9, 1, -.45);
         if (age < 180) layer(v.contact, 4, (this.reduced ? .06 : .14) * (1 - age / 180), 1.08, py + 2);
         layer(v.trail, 6, .16 * Math.sin(progress * Math.PI), 1.2, -.46);
         if (!this.emitted.has(h.id) && this.previousNow >= h.warnAt && this.previousNow < h.startsAt && age < 160) {

@@ -45,3 +45,9 @@ export function shutenActiveTell(h:ShutenCue,now:number):ShutenCue{
 }
 /** Eight-sided sampling is never used for geometry: all tells retain the server's exact arc. */
 export const smooth=(p:number)=>{const q=clamp01(p);return q*q*(3-2*q);};
+
+/** Resource pools expire independently of damaging attack tails and must release their pooled view. */
+export function shutenBaitAlpha(endsAt:number,now:number,cancelAt=0){
+ const expiry=now<=endsAt?1:1-smooth((now-endsAt)/240);
+ return expiry*(cancelAt?1-smooth((now-cancelAt)/180):1);
+}

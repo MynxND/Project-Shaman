@@ -759,3 +759,7 @@ Three actual SDK clients completed counters in all3 phases and ultimate; failure
 refuge, five-client cap and production QA isolation checked. Human party difficulty
 and normal-character victory remain pending. Other bosses are unchanged.
 See design/bosses/calon-arang/mechanics-v2.md.
+
+
+### 2026-10-16 — Remaining boss motion / identity v3 checkpoint
+Implemented distinct server counters for Shuten, Maiyarap and Koschei, 3–10 party capacity/scaling, shared motion validation and a 40-clip candidate review. Unit/SDK receipts are under docs/design/bosses/motion-identity-v3/evidence. NOT complete: no new candidate motion is adopted in live actors; anatomy/anchors, remaining animation states, new VFX coverage and full 3/5/10 human balance/visual checks remain open. Do not mark these bosses finished or start a new boss based on this checkpoint.

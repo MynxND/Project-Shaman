@@ -1,9 +1,9 @@
 import { BossHazardState, DreamPlayerState, MaiyarapEncounterState, MonsterState } from '@shaman/schema';
-import { MAIYARAP_HP, MAIYARAP_SKILLS, DREAM_SYMBOLS, DREAM_SOURCE, dreamClamp, dreamHit, inDreamCourt, createMonster, facingFromVector, type DreamRealm, type MaiyarapSkill, type MonsterMotion, type Position } from '@shaman/shared';
+import { bossPartyPlan, raiseBossPartyBudget, MAIYARAP_HP, MAIYARAP_SKILLS, DREAM_SYMBOLS, DREAM_SOURCE, dreamClamp, dreamHit, inDreamCourt, createMonster, facingFromVector, type DreamRealm, type MaiyarapSkill, type MonsterMotion, type Position } from '@shaman/shared';
 import type { CombatHost } from './combat-system.js';
 
 interface Hooks { sync(m: MonsterMotion): void; hit(id: string, m: MonsterMotion, damage: number): boolean; reset(id: string): void }
-interface Area { state: BossHazardState; damage: number; sleep: boolean; hit: Set<string>; previous: number }
+interface Area { state: BossHazardState; damage: number; sleep: boolean; hit: Set<string>; previous: number;target:string;progress:number;trackUntil:number }
 const dist = (a: Position, b: Position) => Math.hypot(a.x - b.x, a.y - b.y);
 
 /** Boss13 only. All realm, damage and source decisions stay on the room clock. */
@@ -16,7 +16,7 @@ export class MaiyarapEncounter {
   private deck = 0;
   private emptySince = 0;
   private reviewManual = false;
-  private poise = 0;
+  private poise = 0;private anchorHp=0;
   constructor(private host: CombatHost, private monsters: Map<string, MonsterMotion>, private hooks: Hooks) {
     host.state.maiyarap.set('maiyarap', this.state); this.reset();
   }
@@ -25,7 +25,7 @@ export class MaiyarapEncounter {
   controlled(m: MonsterMotion) { return m.kind === 'maiyarap' || m.kind === 'maiyarap-source'; }
   object(m: MonsterMotion) { return m.kind === 'maiyarap-source'; }
   private later(ms: number, run: () => void) { this.tasks.push({ at: this.host.now() + ms, run }); }
-  private clear() { this.tasks = []; this.areas.clear(); this.state.hazards.clear(); }
+  private clear() { this.tasks = []; this.areas.clear(); this.state.hazards.clear();this.state.anchorSymbol='';this.state.anchorOwner='';this.state.anchorUntil=0; }
   private players() { return [...this.host.state.players.entries()].filter(([, p]) => !p.dead && inDreamCourt(p)); }
   private wake(id: string, hint = 'ตื่นจากนิทรา') {
     const d = this.state.dreamers.get(id); if (d) Object.assign(d, { realm: 'awake', until: 0, progress: 0, hint });
@@ -44,7 +44,7 @@ export class MaiyarapEncounter {
     this.clear(); this.ready.clear(); this.state.dreamers.clear(); this.poise = 0; this.deck = 0; this.emptySince = 0;
     const b = this.body;
     if (b) { Object.assign(b, { hp: MAIYARAP_HP, state: 'idle', targetId: null, x: 24, y: 22, facing: 'south' }); this.hooks.reset(b.id); this.hooks.sync(b); }
-    Object.assign(this.state, { phase: 1, mode: 'dormant', skill: '', hp: MAIYARAP_HP, hpMax: MAIYARAP_HP, ultimateStage: 0, countered: false, actionAt: this.host.now(), endsAt: 0 });
+    Object.assign(this.state, { vulnerableUntil:0,sourceDefeated:false,participants: 0, phase: 1, mode: 'dormant', skill: '', hp: MAIYARAP_HP, hpMax: MAIYARAP_HP, ultimateStage: 0, countered: false, actionAt: this.host.now(), endsAt: 0 });
     this.sourceReset();
   }
   filterDamage(m: MonsterMotion, amount: number, playerId: string) {
@@ -56,12 +56,12 @@ export class MaiyarapEncounter {
     const dreamer = this.state.dreamers.get(playerId);
     const lucid = this.state.phase === 3 && dreamer?.realm === 'dream' && dreamer.progress === 3;
     if (dreamer?.realm === 'dream' && !lucid) return 0;
-    const floor = this.state.phase === 1 ? MAIYARAP_HP * .7 : this.state.phase === 2 ? MAIYARAP_HP * .35 : 0;
-    const n = Math.min(Math.max(0, m.hp - floor), Math.round(amount * (this.state.mode === 'stagger' ? 1.5 : lucid ? 1.35 : 1)));
+    const floor = this.state.phase === 1 ? this.state.hpMax * .7 : this.state.phase === 2 ? this.state.hpMax * .35 : this.state.sourceDefeated?0:1;
+    const n = Math.min(Math.max(0, m.hp - floor), Math.round(amount * (this.state.mode === 'stagger' ? 1.5 : this.host.now()<this.state.vulnerableUntil ? (lucid?1.35:1) : .2)));
     this.poise += n; return n;
   }
   objectDied() {
-    this.state.sourceExposed = false;
+    this.state.sourceExposed = false;this.state.sourceDefeated=true;this.state.vulnerableUntil=this.host.now()+10000;
     for (const id of this.state.dreamers.keys()) this.wake(id, 'ทำลายต้นกำเนิดมนตร์สำเร็จ');
     if (this.state.mode === 'ultimate') {
       this.clear(); this.state.countered = true; this.state.ultimateStage = 5;
@@ -73,41 +73,47 @@ export class MaiyarapEncounter {
   }
   /** Position, order, realm and rate are validated; no client-supplied success flag. */
   interact(playerId: string, symbol: unknown) {
-    const p = this.host.state.players.get(playerId);
-    if (p && !p.dead && this.state.phase === 3 && this.state.mode !== 'transition' && this.state.mode !== 'defeated' && symbol === 'lotus' && this.state.dreamers.get(playerId)?.realm !== 'dream' && dist(p, DREAM_SYMBOLS[0]) <= 2) this.sleep(playerId);
-    const d = this.state.dreamers.get(playerId);
-    if (!p || p.dead || !d || d.realm !== 'dream' || !inDreamCourt(p) || this.host.now() - d.interactedAt < 350) return false;
-    const node = DREAM_SYMBOLS.find(s => s.id === symbol);
-    if (!node || dist(p, node) > 2) return false;
-    d.interactedAt = this.host.now();
-    if (node !== DREAM_SYMBOLS[d.progress]) { d.hint = 'เลือกตามลำดับ บัว → ปม → เปลว'; return false; }
-    d.progress++;
-    d.hint = d.progress === 3 ? this.state.phase === 3 ? 'โจมตีไมยราพในฝันแรงขึ้น หรือทำลายต้นกำเนิดเพื่อปลุก' : 'ต้นกำเนิดมนตร์เผยตัวแล้ว โจมตีที่กลางลาน' : `ตามสัญลักษณ์ถัดไป: ${DREAM_SYMBOLS[d.progress]!.name}`;
-    if (d.progress === 3) this.state.sourceExposed = true;
-    return true;
+    const p=this.host.state.players.get(playerId),s=this.state,now=this.host.now();
+    if(!p||p.dead||!inDreamCourt(p)||['dormant','transition','defeated'].includes(s.mode))return false;
+    const d=s.dreamers.get(playerId);
+    if(symbol==='enter-dream'&&d?.realm!=='dream'&&dist(p,DREAM_SYMBOLS[0])<=2){this.sleep(playerId);return s.dreamers.get(playerId)?.realm==='dream';}
+    if(typeof symbol==='string'&&symbol.startsWith('anchor:')&&d?.realm!=='dream'){
+      const node=DREAM_SYMBOLS.find(n=>n.id===symbol.slice(7));if(!node||dist(p,node)>2)return false;
+      s.anchorSymbol=node.id;s.anchorOwner=playerId;s.anchorUntil=now+4000;this.anchorHp=p.hp;return true;
+    }
+    if(!d||d.realm!=='dream'||now-d.interactedAt<350)return false;
+    const node=DREAM_SYMBOLS.find(n=>n.id===symbol);if(!node||dist(p,node)>2)return false;
+    d.interactedAt=now;
+    if(node!==DREAM_SYMBOLS[d.progress]){d.hint='ตามสัญญาณจริง บัว → ปม → เปลว';return false;}
+    const keeper=this.host.state.players.get(s.anchorOwner);
+    if(s.anchorSymbol!==node.id||now>=s.anchorUntil||s.anchorOwner===playerId||!keeper||keeper.dead||dist(keeper,node)>2||s.dreamers.get(s.anchorOwner)?.realm==='dream'){d.hint='รอเพื่อนในโลกตื่นยืนยันสัญลักษณ์นี้';return false;}
+    d.progress++;s.anchorSymbol='';s.anchorOwner='';s.anchorUntil=0;
+    d.hint=d.progress===3?'ต้นกำเนิดเผยตัว · รวมโจมตีแท่นกลางลาน':'สัญลักษณ์ถัดไป: '+DREAM_SYMBOLS[d.progress]!.name;
+    if(d.progress===3)s.sourceExposed=true;return true;
   }
   private sleep(id: string, duration = 24000) {
     let d = this.state.dreamers.get(id);
     if (!d) { d = new DreamPlayerState(); this.state.dreamers.set(id, d); }
     // Repeat sleep does not reset progress or extend imprisonment indefinitely.
     if (d.realm === 'dream') return;
+    if(this.players().length>=3&&this.players().filter(([pid])=>this.state.dreamers.get(pid)?.realm!=='dream').length<=2)return;
     if (!this.source || this.source.state === 'dead') this.sourceReset();
     Object.assign(d, { realm: 'dream', progress: 0, until: this.host.now() + duration, hint: 'เดินตาม บัว → ปม → เปลว แล้วทำลายต้นกำเนิดมนตร์', interactedAt: -1000 });
   }
   private phase(phase: number) {
-    this.clear(); this.state.phase = phase; this.state.mode = 'transition'; this.state.ultimateStage = 0; this.state.countered = false; this.state.skill = phase === 2 ? 'dream-palace' : 'lucid-sovereign';
+    this.clear();this.state.vulnerableUntil=0;this.state.sourceDefeated=false; this.state.phase = phase; this.state.mode = 'transition'; this.state.ultimateStage = 0; this.state.countered = false; this.state.skill = phase === 2 ? 'dream-palace' : 'lucid-sovereign';
     this.state.actionAt = this.host.now(); this.state.endsAt = this.host.now() + 2600; this.poise = 0;
     for (const id of this.state.dreamers.keys()) this.wake(id, 'ม่านฝันเปลี่ยนชั้น');
     this.sourceReset();
     if (phase === 3) this.ready.set('eternal-slumber', this.host.now() + 6500);
     this.later(2600, () => { this.state.mode = 'recovery'; this.state.endsAt = this.host.now() + 1000; });
   }
-  private hazard(skill: MaiyarapSkill, shape: string, at: Position, radius: number, delay: number, duration: number, extra: Partial<{ toX: number; toY: number; width: number; angle: number; arc: number; realm: DreamRealm; sleep: boolean; damage: number }> = {}) {
+  private hazard(skill: MaiyarapSkill, shape: string, at: Position, radius: number, delay: number, duration: number, extra: Partial<{ toX: number; toY: number; width: number; angle: number; arc: number; realm: DreamRealm; sleep: boolean; damage: number;target:string;progress:number;trackMs:number }> = {}) {
     // Choreography has a bounded maximum below24; overflow is an error, never silently hidden danger.
     if (this.areas.size >= 24) throw new Error('Maiyarap hazard budget exceeded');
     const h = new BossHazardState(), now = this.host.now(), id = `maiyarap-hazard-${++this.sequence}`;
     Object.assign(h, { id, skill, effect: skill, actor: extra.realm ?? 'both', shape, x: at.x, y: at.y, toX: extra.toX ?? at.x, toY: extra.toY ?? at.y, radius, width: extra.width ?? .65, angle: extra.angle ?? 0, arc: extra.arc ?? Math.PI / 2, warnAt: now, startsAt: now + delay, endsAt: now + delay + duration });
-    this.state.hazards.set(id, h); this.areas.set(id, { state: h, damage: extra.damage ?? MAIYARAP_SKILLS[skill].damage, sleep: extra.sleep ?? false, hit: new Set(), previous: now });
+    this.state.hazards.set(id, h); this.areas.set(id, { state: h, damage: extra.damage ?? MAIYARAP_SKILLS[skill].damage, sleep: extra.sleep ?? false, hit: new Set(), previous: now,target:extra.target??'',progress:extra.progress??0,trackUntil:now+(extra.trackMs??0) });
   }
   private lane(skill: MaiyarapSkill, from: Position, to: Position, delay: number, width = .65, charge = false, sleep = false, realm: DreamRealm = 'both') {
     this.hazard(skill, charge ? 'charge' : 'capsule', from, 0, delay, MAIYARAP_SKILLS[skill].active, { toX: to.x, toY: to.y, width, sleep, realm });
@@ -132,28 +138,26 @@ export class MaiyarapEncounter {
         for (let i = 0; i < 3; i++) { const a = i * Math.PI * 2 / 3; this.lane(skill, { x: aim.x + Math.cos(a) * 6, y: aim.y + Math.sin(a) * 6 }, aim, tell + i * 550); }
         tail += 1100; break;
       case 'patal-gate':
-        for (const x of [14, 34]) this.hazard(skill, 'ring', { x, y: 23 }, 7, tell, spec.active, { width: .5 }); break;
+        for(let i=0;i<3;i++)for(const node of[DREAM_SYMBOLS[0],DREAM_SYMBOLS[2]])this.hazard(skill,'disk',node,2.3,tell+i*1200,500,{realm:i%2?'dream':'awake'});tail=tell+2900;break;
       case 'dream-theft': this.lane(skill, from, aim, tell, .9, false, true); break;
       case 'false-awakening':
-        for (const x of [12, 24, 36]) this.hazard(skill, 'disk', { x, y: 20 }, 2.6, tell, spec.active, { realm: 'dream' });
+        {const scout=[...this.state.dreamers.values()].find(d=>d.realm==='dream'),safe=scout?.progress??0;DREAM_SYMBOLS.forEach((node,i)=>{if(i!==safe)this.hazard(skill,'disk',node,2.6,tell,spec.active,{realm:'dream'});});}
         this.hazard(skill, 'disk', aim, 1.8, tell, spec.active, { realm: 'awake', sleep: true }); break;
       case 'nightmare-passage':
         for (const x of [12, 18, 30, 36]) this.lane(skill, { x, y: 14 }, { x, y: 35 }, tell + (x > 24 ? 500 : 0), 1.1);
         tail += 500; break;
       case 'lucid-seal':
-        for (let i = 0; i < 3; i++) this.hazard(skill, 'ring', { x: aim.x + (i - 1) * 4, y: aim.y }, 3.2, tell + i * 500, spec.active, { width: .45 });
-        tail += 1000; break;
-      case 'underworld-court':
-        for (let i = 0; i < 4; i++) this.hazard(skill, 'sector', { x: 24, y: 24 }, 16, tell + i * 700, spec.active, { angle: i * Math.PI / 2, arc: Math.PI / 2 });
-        tail += 2100; break;
-      case 'sleepwalker-hunt':
-        for (let i = 0; i < 3; i++) this.later(i * 2100, () => {
-          const target = this.host.state.players.get(playerId); if (!target || target.dead || !this.body) return;
-          const a = { x: this.body.x, y: this.body.y }, z = dreamClamp(target);
-          this.body.facing = facingFromVector(z.x-a.x,z.y-a.y) ?? this.body.facing; this.body.state = 'attack'; this.hooks.sync(this.body);
-          this.lane(skill, a, z, tell, .85, true);
-        });
-        tail += 4200; break;
+        this.hazard(skill,'ritual',DREAM_SOURCE,2,tell,1600,{realm:'dream',damage:0});this.later(tell,()=>{for(const d of this.state.dreamers.values())if(d.realm==='dream'&&d.progress<3){d.until=Math.min(d.until,this.host.now()+6000);d.hint='ผนึกกำลังปิด · ยืนยันสัญลักษณ์ให้ครบภายใน6วิ';}});tail=tell+1600;break;
+      case 'underworld-court':{
+        const scout=[...this.state.dreamers.values()].find(d=>d.realm==='dream'),safe=scout?.progress??0;
+        DREAM_SYMBOLS.forEach((node,i)=>{if(i!==safe)this.hazard(skill,'disk',node,4,tell+i*600,700,{realm:'dream'});});
+        this.hazard(skill,'sector',from,8,tell,650,{realm:'awake',angle:Math.atan2(aim.y-b.y,aim.x-b.x),arc:Math.PI*.55});tail=tell+1900;break;
+      }
+      case 'sleepwalker-hunt':{
+        const prey=this.players().find(([pid])=>this.state.dreamers.get(pid)?.realm==='dream');
+        if(prey){const[pid,q]=prey,d=this.state.dreamers.get(pid)!;this.hazard(skill,'charge',from,0,2200,1100,{toX:q.x,toY:q.y,width:.85,realm:'dream',target:pid,progress:d.progress,trackMs:1200});tail=3300;}
+        else{this.state.mode='stagger';this.state.endsAt=now+2200;return true;}break;
+      }
       case 'eternal-slumber': this.ultimate(); return true;
     }
     this.state.endsAt = now + tail + spec.recovery;
@@ -163,8 +167,8 @@ export class MaiyarapEncounter {
   }
   private ultimate() {
     this.state.ultimateStage = 1; this.sourceReset();
-    const skill = 'eternal-slumber' as const; this.state.endsAt = this.host.now() + 25000;
-    this.later(1600, () => { this.state.ultimateStage = 2; for (const [id] of this.players()) { this.wake(id); this.sleep(id, 26000); } });
+    const skill = 'eternal-slumber' as const; this.state.endsAt = this.host.now() + 35000;
+    this.later(1600, () => { this.state.ultimateStage = 2; for(const[id]of this.players())this.wake(id);const candidates=this.players().sort((a,b)=>dist(b[1],DREAM_SYMBOLS[0])-dist(a[1],DREAM_SYMBOLS[0]));const count=Math.min(candidates.length-2,bossPartyPlan(candidates.length).pressureTargets);for(const[id]of candidates.slice(0,Math.max(0,count)))this.sleep(id,36000); });
     this.later(2800, () => {
       this.state.ultimateStage = 3;
       // Never cross the symbol route y29–33 or the central approach to source.
@@ -172,11 +176,11 @@ export class MaiyarapEncounter {
       for (const y of [16, 20]) this.lane(skill, { x: 12, y }, { x: 36, y }, 2200, .8, false, false, 'dream');
     });
     this.later(5000, () => { this.state.ultimateStage = 4; });
-    this.later(22000, () => {
+    this.later(30000, () => {
       this.state.ultimateStage = 5;
-      this.hazard(skill, 'finale', { x: 24, y: 24 }, 24, 1600, 800);
+      [...DREAM_SYMBOLS].reverse().forEach((node,i)=>this.hazard(skill,'disk',node,5,1600+i*700,800,{realm:'both'}));
     });
-    this.later(24400, () => {
+    this.later(33800, () => {
       for (const id of this.state.dreamers.keys()) this.wake(id, 'คลื่นนิทราสลาย');
       this.state.mode = 'recovery'; this.state.endsAt = this.host.now() + 2000; this.state.sourceExposed = false;
       if (this.body) { this.body.state = 'idle'; this.hooks.sync(this.body); }
@@ -197,7 +201,7 @@ export class MaiyarapEncounter {
       p.x = message.x; p.y = message.y; return;
     }
     if (message.action === 'phase' && [1, 2, 3].includes(Number(message.phase))) {
-      const phase = Number(message.phase); if (this.body) this.body.hp = phase === 1 ? 18000 : phase === 2 ? 12600 : 6300;
+      const phase = Number(message.phase); if (this.body) this.body.hp = this.state.hpMax * (phase===1?1:phase===2?.7:.35);
       this.phase(phase); return;
     }
     if (message.action === 'skill' && typeof message.skill === 'string' && message.skill in MAIYARAP_SKILLS) {
@@ -228,12 +232,14 @@ export class MaiyarapEncounter {
       return;
     }
     this.emptySince = 0;
-    if (this.state.phase === 1 && b.hp <= MAIYARAP_HP * .7) this.phase(2);
-    else if (this.state.phase === 2 && b.hp <= MAIYARAP_HP * .35) this.phase(3);
+    if(raiseBossPartyBudget(this.state,b,MAIYARAP_HP,this.players().length))this.hooks.sync(b);
+    if (this.state.phase === 1 && b.hp <= this.state.hpMax * .7) this.phase(2);
+    else if (this.state.phase === 2 && b.hp <= this.state.hpMax * .35) this.phase(3);
+    if(this.state.anchorOwner){const keeper=this.host.state.players.get(this.state.anchorOwner),node=DREAM_SYMBOLS.find(n=>n.id===this.state.anchorSymbol);if(!keeper||keeper.dead||!node||dist(keeper,node)>2||keeper.hp<this.anchorHp||now>=this.state.anchorUntil||this.state.dreamers.get(this.state.anchorOwner)?.realm==='dream'){this.state.anchorOwner='';this.state.anchorSymbol='';this.state.anchorUntil=0;}}
     const due = this.tasks.filter(t => t.at <= now); this.tasks = this.tasks.filter(t => t.at > now);
     for (const task of due) task.run();
     for (const [id, area] of this.areas) {
-      const h = area.state;
+      const h = area.state;if(area.target){const prey=this.host.state.players.get(area.target),d=this.state.dreamers.get(area.target);if(!prey||prey.dead||d?.realm!=='dream'||d.progress>area.progress){this.areas.delete(id);this.state.hazards.delete(id);continue;}if(now<area.trackUntil){h.toX=prey.x;h.toY=prey.y;}}
       // Swept time interval prevents a late server tick skipping the contact window.
       const contact = Math.min(now, h.endsAt), previous = Math.max(h.startsAt, area.previous);
       if (now >= h.startsAt && area.previous < h.endsAt) {
@@ -242,7 +248,7 @@ export class MaiyarapEncounter {
           if (h.actor !== 'both' && h.actor !== realm || area.hit.has(pid)) continue;
           if (dreamHit(h, p, contact, previous)) { area.hit.add(pid); const landed = this.hooks.hit(pid, b, area.damage); if (landed && area.sleep && !p.dead) this.sleep(pid); }
         }
-        if (h.shape === 'charge') {
+        if (h.shape === 'charge'&&!area.target) {
           const q = Math.max(0, Math.min(1, (contact - h.startsAt) / (h.endsAt - h.startsAt)));
           b.x = h.x + (h.toX - h.x) * q; b.y = h.y + (h.toY - h.y) * q; this.hooks.sync(b);
         }
@@ -250,7 +256,7 @@ export class MaiyarapEncounter {
       area.previous = now;
       if (now > h.endsAt + 600) { this.areas.delete(id); this.state.hazards.delete(id); }
     }
-    if (this.state.mode === 'dormant') { this.state.mode = 'idle'; this.state.endsAt = now + 1200; }
+    if (this.state.mode === 'dormant') {const party=bossPartyPlan(this.players().length);if(!party.ready)return;this.state.participants=party.participants;this.state.hpMax=MAIYARAP_HP*party.hpMultiplier;b.hp=this.state.hpMax;this.hooks.sync(b);this.state.mode = 'idle'; this.state.endsAt = now + 1200; }
     if (this.state.mode === 'transition' || this.state.mode === 'ultimate' || now < this.state.endsAt) return;
     if (this.poise >= 1800) { this.poise = 0; this.clear(); this.state.mode = 'stagger'; this.state.endsAt = now + 2200; return; }
     this.state.mode = 'idle';

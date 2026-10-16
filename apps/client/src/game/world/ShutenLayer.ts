@@ -210,7 +210,7 @@ export class ShutenLayer {
         }
         if (time - this.hudAt > 120) {
             this.hudAt = time;
-            window.dispatchEvent(new CustomEvent('boss:snapshot', { detail: { hp: b.hp, hpMax: b.hpMax, phase: b.phase, mode: b.mode, skill: b.skill, name: SHUTEN_SKILLS[b.skill as keyof typeof SHUTEN_SKILLS]?.name ?? (b.skill==='armor-break'?'ทลายเกราะอสูร':b.skill==='severed-king'?'ราชันไร้เศียร':b.skill), altars: b.altarRemaining, sealed: b.sealed, seal: b.sealProgress, stage: b.ultimateStage, stagger: b.stagger, head: b.headSkill, hazards: b.hazards.size, vfx: this.combatVfx.stats, drums: [...room.state.monsters.values()].filter(m=>m.kind==='shuten-drum'&&m.state!=='dead').length, connected: true } }));
+            window.dispatchEvent(new CustomEvent('boss:snapshot', { detail: { participants:b.participants,dazed:Math.max(0,b.headDazedUntil-now),stumbled:Math.max(0,b.stumbleUntil-now),baits:b.sakeBaits,headBaiter:b.headTarget===room.sessionId,hp: b.hp, hpMax: b.hpMax, phase: b.phase, mode: b.mode, skill: b.skill, name: SHUTEN_SKILLS[b.skill as keyof typeof SHUTEN_SKILLS]?.name ?? (b.skill==='armor-break'?'ทลายเกราะอสูร':b.skill==='severed-king'?'ราชันไร้เศียร':b.skill), altars: b.altarRemaining, sealed: b.sealed, seal: b.sealProgress, stage: b.ultimateStage, stagger: b.stagger, head: b.headSkill, hazards: b.hazards.size, vfx: this.combatVfx.stats, drums: [...room.state.monsters.values()].filter(m=>m.kind==='shuten-drum'&&m.state!=='dead').length, connected: true } }));
         }
     }
     destroy() { this.combatVfx.destroy(); this.presentation.destroy(); for(const d of this.debris)d.destroy(); this.off(); for (const v of this.slots) {

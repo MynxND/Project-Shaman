@@ -1,7 +1,7 @@
 import { sweptRingRadii } from './boss-contact-footprint';
 import { drawRitualWarning } from './ritual-telegraph';
 import Phaser from 'phaser';
-import { KOSCHEI_RING_START, KOSCHEI_SKILLS, KOSCHEI_CONTACT as P, WORLD_UNIT_PX as U, koscheiProgress } from '@shaman/shared';
+import { KOSCHEI_RING_START, KOSCHEI_RELICS, KOSCHEI_SKILLS, KOSCHEI_CONTACT as P, WORLD_UNIT_PX as U, koscheiProgress } from '@shaman/shared';
 import type { BossHazardState } from '@shaman/schema';
 import { DARKNESS_DEPTH } from '../../world/Lighting';
 import staffPorts from '../../../../public/assets/boss/koschei/ports.json';
@@ -58,8 +58,9 @@ export class KoscheiVfx {
         g.setVisible(true);
         const lx=h.shape==='sector'?x+Math.cos(h.angle)*r*.6:h.shape==='charge'&&active?x+(h.toX*U-x)*progress:h.shape==='capsule'||h.shape==='charge'?(x+h.toX*U)/2:h.shape==='ring'&&active?x+(KOSCHEI_RING_START+(h.radius-KOSCHEI_RING_START)*progress)*U:h.shape==='finale'?24*U:x;
         const ly=h.shape==='sector'?y+Math.sin(h.angle)*r*.6:h.shape==='charge'&&active?y+(h.toY*U-y)*progress:h.shape==='capsule'||h.shape==='charge'?(y+h.toY*U)/2:h.shape==='finale'?35*U:y;
-        const prefix=h.skill==='throne-of-bones'?`${Math.round(h.angle/(Math.PI/2))+1} · `:'';
-        const text=h.shape==='finale'?'ช่องปลอดภัย':warning?prefix+Math.max(0,(h.startsAt-now)/1000).toFixed(1)+' วิ':h.shape==='ring'?'คลื่น':'!';
+        const source=h.actor.startsWith('relic:')?KOSCHEI_RELICS[Number(h.actor.slice(6))]?.name:undefined;
+        const prefix=source?source+' · ':'';
+        const text=h.shape==='ritual'?'พิธีคืนชีพ · เปิดวัตถุชั้นถัดไป':h.actor.startsWith('relic:')?prefix+'เปิดเพื่อตัดสกิล · '+Math.max(0,(h.startsAt-now)/1000).toFixed(1):h.shape==='finale'?'ช่องปลอดภัย':warning?prefix+Math.max(0,(h.startsAt-now)/1000).toFixed(1)+' วิ':h.shape==='ring'?'คลื่น':'!';
         if(v.label.text!==text)v.label.setText(text);
         v.label.setPosition(lx,ly+16).setVisible(true);
         g.fillStyle(color, fill).lineStyle(2, color, edge);
@@ -95,7 +96,7 @@ export class KoscheiVfx {
         }
         // Small woven corner rhythm communicates charge without changing the danger boundary.
         // Expanded into a boss-specific woven border and seal; the authoritative edge above stays fixed.
-        if (warning) drawRitualWarning(g, { shape:h.shape, x, y, ex:h.toX*U, ey:h.toY*U, radius:r+(h.shape==='ring'?h.width*U:0), width, angle:h.angle, arc:h.arc }, 'koschei', (now-h.warnAt)/Math.max(1,h.startsAt-h.warnAt));
+        if (warning&&h.shape!=='ritual') drawRitualWarning(g, { shape:h.shape, x, y, ex:h.toX*U, ey:h.toY*U, radius:r+(h.shape==='ring'?h.width*U:0), width, angle:h.angle, arc:h.arc }, 'koschei', (now-h.warnAt)/Math.max(1,h.startsAt-h.warnAt));
       }
       const key = h.skill;
       if (!this.scene.textures.exists('kos:' + key)) throw new Error('ASSET_REQUIRED: Koschei ' + key);
@@ -115,7 +116,7 @@ export class KoscheiVfx {
         v.charge.setPosition(x+port.x*this.actorScale,y+port.y*this.actorScale).setOrigin(.5).setDisplaySize(100,100);
       }
       if (active) {
-        layer(v.main, Math.min(5, 3 + Math.floor(progress * 3)), .9, 1, -.45);
+        layer(v.main, Math.min(5, 3 + Math.floor(progress * 3)), h.shape==='ritual'?.25:.9, 1, -.45);
         if (age < 180) layer(v.contact, 4, (this.reduced ? .06 : .14) * (1 - age / 180), 1.08, py + 2);
         layer(v.trail, 6, .16 * Math.sin(progress * Math.PI), 1.2, -.46);
         if (!this.emitted.has(h.id) && this.previousNow >= h.warnAt && this.previousNow < h.startsAt && age < 160) {

@@ -190,3 +190,9 @@ refuge obstruction. Full matrix, evidence, timing tolerance and unverified work:
 [full live audit](../telegraph-combat-review/README.md). New-contact1273 checks,
 existing behavior/regressions, production gating, typecheck/build PASS. No new
 artwork or gameplay tuning; no continuous balanced victory/user approval claim.
+
+
+## Motion / identity v3 — in progress
+User requested real authored locomotion and full animation upgrades plus distinct combat decisions.
+Shared audit, provisional design, production queue and acceptance: ../motion-identity-v3/README.md.
+Old evidence remains historical; no v3 completion or visual approval is claimed.

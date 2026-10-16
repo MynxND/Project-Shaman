@@ -412,3 +412,7 @@ substitution. Natural-aspect lane clusters and native-scale ultimate blossoms
 retain texture detail; elevated spirits are separate from ground contact. This
 is a reviewed implementation candidate, not user art approval. See
 design/bosses/calon-arang/README.md for sources, evidence and limits.
+
+
+### Boss motion v3 review — 2026-10-16
+ImageGen only; no local GPU/H3. Sixteen unique image hashes are insufficient if support feet, direction, weapon hands or registration fail. Candidate sources are isolated from production actors; see docs/design/bosses/motion-identity-v3/asset-audit.json and /boss-review/motion-v3/index.html.

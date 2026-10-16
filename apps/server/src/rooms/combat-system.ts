@@ -159,7 +159,7 @@ export class CombatSystem {
     const s = this.host.state.monsters.get(m.id);
     if (!s) return;
     const def = MONSTERS[m.kind]!;
-    s.x = m.x; s.y = m.y; s.facing = m.facing; s.state = m.state; s.hp = Math.max(0, m.hp); s.hpMax = m.kind === 'calon-arang' ? (this.calon?.state.hpMax ?? def.hp) : def.hp;
+    s.x = m.x; s.y = m.y; s.facing = m.facing; s.state = m.state; s.hp = Math.max(0, m.hp); s.hpMax = (m.kind==='calon-arang'?this.calon?.state.hpMax:m.kind==='koschei'?this.koschei?.state.hpMax:m.kind==='maiyarap'?this.maiyarap?.state.hpMax:m.kind==='shuten-doji'?this.shuten?.state.hpMax:undefined) ?? def.hp;
     const now = this.host.now();
     const statuses = m.state === 'dead' ? '' : (Object.keys(m.statuses) as MonsterStatus[]).filter((k) => (m.statuses[k] ?? 0) > now).join(',');
     if (s.statuses !== statuses) s.statuses = statuses;

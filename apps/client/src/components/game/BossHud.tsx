@@ -2,7 +2,7 @@
 import {useEffect,useState}from'react';
 import{SHUTEN_SKILLS,FACINGS}from'@shaman/shared';
 import styles from'./BossHud.module.css';
-type Snapshot={hp:number;hpMax:number;phase:number;mode:string;name:string;altars:number;sealed:boolean;seal:number;stage:number;stagger:number;head:string;hazards:number;drums:number;vfx?:{active:number;pooled:number;particles:number;peakParticles:number;cpuP95:number}};
+type Snapshot={participants:number;dazed:number;stumbled:number;baits:number;headBaiter:boolean;hp:number;hpMax:number;phase:number;mode:string;name:string;altars:number;sealed:boolean;seal:number;stage:number;stagger:number;head:string;hazards:number;drums:number;vfx?:{active:number;pooled:number;particles:number;peakParticles:number;cpuP95:number}};
 const command=(detail:object)=>window.dispatchEvent(new CustomEvent('boss:command',{detail}));
 const modes:Record<string,string>={windup:'เตรียมโจมตี',active:'โจมตี',recovery:'ช่องสวนกลับ',stagger:'เสียหลัก',transition:'เปลี่ยนร่าง',dead:'ปราบสำเร็จ',dormant:'รอผู้ท้าชิง'};
 export default function BossHud(){
@@ -17,10 +17,10 @@ export default function BossHud(){
   <div>{Math.ceil(s.hp).toLocaleString()} / {s.hpMax.toLocaleString()} · {modes[s.mode]??s.mode} {s.name}</div>
   <div>แท่นสาเก {s.altars}/3 · {s.sealed?'ผนึกแล้ว':s.stage?'อัลติเมต '+s.stage+'/5':'เสียหลัก '+Math.round(s.stagger*100)+'%'}</div>
  </section><aside className={styles.controls} onPointerDown={e=>e.stopPropagation()} onPointerUp={e=>e.stopPropagation()} onClick={e=>e.stopPropagation()}>
-  <div>{s.phase===3?'ทำลายแท่นทั้ง 3 แล้วยืนวงผนึกด้านใต้':'ทำลายแท่นสาเกเพื่อลดพลังอัลติเมต'}</div>
-  {s.drums>0&&<div>ทำลายกลองอัญเชิญ {s.drums} ใบ เพื่อหยุดกำลังเสริม</div>}
+  <div>{s.phase===3?'ทำลายแท่น → ล่อหัวลงสาเกสะกด → อีกคนร่ายผนึก':'ทำลายแท่นแล้วล่อร่างลงสาเกเพื่อเปิดช่องสวนกลับ'}</div>
+  <div>ทีม 3–10 คน · {s.participants||'รอเริ่ม / QA'} · คุมร่าง / ล่อหัว / ผนึก</div>{s.headBaiter&&<div>เศียรเลือกคุณ · ล่อผ่านสาเกสะกดแล้วหลบข้าง</div>}{s.dazed>0&&<div>เศียรมึน {Math.ceil(s.dazed/1000)} วิ · เปิดจังหวะผนึก</div>}{s.drums>0&&<div>ทำลายกลองอัญเชิญ {s.drums} ใบ เพื่อหยุดกำลังเสริม</div>}
   {s.stage>0&&<div>{['','จันทร์โลหิต · เศียรลอยสูง','วิญญาณโอนิล้อมสนาม','ออกจากวงเพลิงที่ทำเครื่องหมาย','หลบด้านข้างลมหายใจ','หลบคลื่นกระแทกสามระลอก'][s.stage]}</div>}
-  {s.phase===3&&<button className={styles.seal} disabled={s.altars>0||s.sealed||s.mode==='dead'} onClick={()=>command({action:'seal'})}>ผนึกเศียร {s.seal?Math.round(s.seal*100)+'%':'(ร่าย 2 วินาที)'}</button>}
+  {s.phase===3&&<button className={styles.seal} disabled={s.altars>0||s.sealed||s.mode==='dead'||!(s.dazed>0)} onClick={()=>command({action:'seal'})}>ผนึกเศียร {s.seal?Math.round(s.seal*100)+'%':'(ร่าย 2 วินาที)'}</button>}
   {review&&<details><summary>ตรวจบอสในเกมจริง · DEV</summary><div className={styles.row}>{[1,2,3].map(phase=><button key={phase} onClick={()=>command({action:'phase',phase})}>ระยะ {phase}</button>)}<button onClick={()=>command({action:'prepare'})}>เตรียมทดสอบ</button><button onClick={()=>command({action:'ai'})}>เริ่ม AI</button></div>
   <select aria-label="Boss skill" value={selected} onChange={e=>K(e.target.value)}>{Object.entries(SHUTEN_SKILLS).filter(([,v])=>v.phase<=s.phase).map(([k,v])=><option key={k} value={k}>{v.name}</option>)}</select><button onClick={()=>command({action:'skill',skill:selected})}>ใช้สกิล</button>
   <div><select aria-label="ทิศทดสอบในเกม" value={face} onChange={e=>F(e.target.value)}>{FACINGS.map(f=><option key={f} value={f}>{f}</option>)}</select><button onClick={()=>command({action:'aim',face,skill:selected})}>จัดตำแหน่งทดสอบ</button></div>

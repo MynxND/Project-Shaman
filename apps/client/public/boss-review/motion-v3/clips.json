@@ -1,0 +1,5920 @@
+[
+  {
+    "id": "koschei-walk-south",
+    "boss": "koschei",
+    "action": "walk",
+    "face": "south",
+    "image": "koschei-walk-south.png",
+    "source": "docs/design/bosses/motion-identity-v3/koschei/walk-south-03.png",
+    "sourceHash": "c6399b124d35852a993062838fbc9d6856550442757e725b6933b9251983d923",
+    "sourceHashes": [
+      "be9653fb043855a24b2513877afcb55952617b614084c4aa581baf2eedb553ba",
+      "1cb575ddaecd2a8a65fa2524fdfc160a341cd3b9f2152afcc20ad9653f14acae",
+      "c45e9d3d8ba1dd643e50361f8f3f19fd85118ac28ff10c5b4e3fd25907baf89f",
+      "a906e2bc6ae6869769fe2cef87371d0b2510c75d5f2933d99f501cf6d3fc90db",
+      "cdce56166f190b0adc484525fdd6adbfa8facf5d8b6fc5347f1739b89f7e08b4",
+      "2cbfd3bb45e43164007ec71dc5246881db20821949bd6529d9a84e2e9f9c76ca",
+      "ee8570620e80833d293f0a48d0370cb3cf389ab0f7f56723eda682e61c823d2c",
+      "3a9301f632fc6520c53f50f0d567935b3005bc13756edb889a801ae7ba266130",
+      "82ec2c67c5183c45aecdc0e1a16c04fdb931235875df80c9d8b1b222a335e2f1",
+      "2327208bb92d7530a83ecbb7a8392f05838f56ea701d2edc8ccd5d6b3d6e544c",
+      "139399a58e50748ddfcda76c413da0a6bef5ea247b72c12a193a47bcfd120b14",
+      "b865873b8b6e90ce0c67b829f7f7003090970ebc94f4160e4964c4d7dcb00feb",
+      "b888feb935e085f314d8c04e02f60ae35da674d0a8070ae41582aed5a6adba09",
+      "2d25d49770818be3b5d8b2dee6901f8ab0d57b9fa90e77159156da1155273340",
+      "a96da58e47b3b2a4c7edc2b1821ffb526711c4d7138cb686aa3f5dbffc360eb9",
+      "9f049128936cb708a3841a8750b76d15b81895dbada98585fc7fa85067b95f80"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7021943573667712,
+    "bounds": [
+      [
+        40,
+        26,
+        159,
+        206
+      ],
+      [
+        42,
+        30,
+        155,
+        202
+      ],
+      [
+        43,
+        26,
+        154,
+        206
+      ],
+      [
+        40,
+        26,
+        160,
+        206
+      ],
+      [
+        39,
+        21,
+        162,
+        211
+      ],
+      [
+        33,
+        25,
+        173,
+        207
+      ],
+      [
+        36,
+        26,
+        168,
+        206
+      ],
+      [
+        41,
+        21,
+        158,
+        211
+      ],
+      [
+        39,
+        11,
+        162,
+        221
+      ],
+      [
+        39,
+        8,
+        162,
+        224
+      ],
+      [
+        39,
+        8,
+        162,
+        224
+      ],
+      [
+        39,
+        9,
+        162,
+        223
+      ],
+      [
+        41,
+        30,
+        157,
+        202
+      ],
+      [
+        32,
+        30,
+        176,
+        202
+      ],
+      [
+        36,
+        33,
+        167,
+        199
+      ],
+      [
+        40,
+        31,
+        159,
+        201
+      ]
+    ],
+    "warnings": [
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "koschei-walk-south-west",
+    "boss": "koschei",
+    "action": "walk",
+    "face": "south-west",
+    "image": "koschei-walk-south-west.png",
+    "source": "docs/design/bosses/motion-identity-v3/koschei/walk-south-west-01.png",
+    "sourceHash": "d56ab5dd8b4127ebe9fd584b00857ea7a42892f58975940fe20da4068592c4d3",
+    "sourceHashes": [
+      "f2ec548ec069158ed189400dfd9801eda81eb74aa31142ff6a525927e4d05010",
+      "fbbb57d228f0988d12a4a85990779c3359c93d67aca1afacce7db5f52daccfd7",
+      "188bb69aaf4d08a1fea08753353a0ed97416ac167180eb5323b6dfeb7a2ff700",
+      "e263f3eb5b9ac242dfe570a47943d7b28c51e9aba17d430d44896d46d9c52e14",
+      "00a5efc43eaf98b6a7f8684a177917d75bec3cccaeadfd78e78278fd3f14aee8",
+      "f26774bed8c616968fea77b1bb091378da79e7ad70c99dee3748cd4a57a21942",
+      "d876b3de3556f2972b3659943a0dd2676122fc01d3ed374644f341d67c41286e",
+      "39d607bb5e416ecca007b59d45778f37d5aca386d54c1e4ebb5f0604f9e2caab",
+      "4efbb175d8da09db2a71173f2663e150ad4010b11356576580d7076bf092e16a",
+      "36804eaa204c46475f4bbfc02c305b4d75f9e1c11231210590649b26ff908320",
+      "01a0360895f4c67ba45e2eda151bbf15adb9dcf662b4bffc9a95c6c7376fca52",
+      "9cf8838e2e5bf0f2239895abac435fffb444a9cd062ef00b5e8932925ee8069a",
+      "35746a9e57ba018c89d9221f58853269168c32ef27adc577bed83ef441a3b14b",
+      "01ef3b9a568d0bd00b3557ae16f78d1cbe39d0fa28dcb204e1e7312b70bb091e",
+      "1d4df1191e1096a0f0696a7f8c82b5e19265a3e109eccd697f4ef06014365ef1",
+      "085f9baaafca028a083164d6e9024775d39973a708265aedca09ff4709a4ac60"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.6978193146417445,
+    "bounds": [
+      [
+        45,
+        39,
+        150,
+        193
+      ],
+      [
+        40,
+        37,
+        159,
+        195
+      ],
+      [
+        40,
+        31,
+        160,
+        201
+      ],
+      [
+        41,
+        35,
+        157,
+        197
+      ],
+      [
+        37,
+        34,
+        165,
+        198
+      ],
+      [
+        9,
+        37,
+        222,
+        195
+      ],
+      [
+        35,
+        37,
+        169,
+        195
+      ],
+      [
+        37,
+        36,
+        166,
+        196
+      ],
+      [
+        38,
+        27,
+        164,
+        205
+      ],
+      [
+        8,
+        26,
+        223,
+        206
+      ],
+      [
+        34,
+        39,
+        172,
+        193
+      ],
+      [
+        40,
+        24,
+        160,
+        208
+      ],
+      [
+        38,
+        37,
+        164,
+        195
+      ],
+      [
+        8,
+        39,
+        224,
+        193
+      ],
+      [
+        33,
+        39,
+        174,
+        193
+      ],
+      [
+        37,
+        38,
+        165,
+        194
+      ]
+    ],
+    "warnings": [
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "koschei-walk-west",
+    "boss": "koschei",
+    "action": "walk",
+    "face": "west",
+    "image": "koschei-walk-west.png",
+    "source": "docs/design/bosses/motion-identity-v3/koschei/walk-west-01.png",
+    "sourceHash": "3d52e4034010e5b011b475cc5396c8540e501b95ffc1140be8d8253b78f82cef",
+    "sourceHashes": [
+      "e8d06bbfca69d0586ba3f8bedbb7ece2b7081c83ce8e7ea124a4aa552814280d",
+      "7e85a46407b3ec2be677f72b56e3b395a444fb31f55cf53ed449a6f43ccf18a2",
+      "97b7fc0efc37edb31a66d2c898ac737548c209a4b554a0765117b067a75aa2e0",
+      "954bea7493e894f800d3e1f97e6764cf80958a65c20930896b6b7eab59680313",
+      "981daea8fa4c0ff366d58a3562320cedb956e4a27e44c08929eb11fb85f4410a",
+      "ff377bf98a7bfd6afdc529516f15b67bb5c09b36d7cf0da678a7b66ceb0cb648",
+      "45454e91d171dd876655d51a48fbe585cb41891935f33607be37674fa72c36dc",
+      "90f00c567b8a30a634bd7bdc48d1639d9cbf63fbb322f4014df881173fa50d4b",
+      "a37531b1403d240babf00ad902694ea5ccacc1f6b8ddc640164f61a99a0232a1",
+      "5d8f129f8eac3ab89d7fff1c457bd843b614af22e18fc2d7e78c6276c845bdb0",
+      "3d46b893f20f3535ecf495da8631a56e57b3654a66353bab7fa9bb5eb1f0ec87",
+      "5d28c6a462b937f32efeb72ab0657d51682bfbb1e329c8da861721f5bded1488",
+      "351900f65b8d1b0850724d0307020045bab563e0ea89653c86fd1136eaa28358",
+      "6bd794bad5c3d613452cb914e0300bc3f690de704668669eef239d77e768f173",
+      "1aadb883dddf833d252413c70bcf091dcb07b819060a238f1c49b32e85e77bc6",
+      "ffd8dc34068637c0040a125332323c9d4731e7025d7d18138ef00fb9e5aec73c"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7887323943661971,
+    "bounds": [
+      [
+        23,
+        11,
+        193,
+        221
+      ],
+      [
+        24,
+        8,
+        191,
+        224
+      ],
+      [
+        20,
+        9,
+        199,
+        223
+      ],
+      [
+        19,
+        9,
+        201,
+        223
+      ],
+      [
+        17,
+        11,
+        205,
+        221
+      ],
+      [
+        15,
+        11,
+        210,
+        221
+      ],
+      [
+        16,
+        10,
+        207,
+        222
+      ],
+      [
+        18,
+        12,
+        203,
+        220
+      ],
+      [
+        15,
+        13,
+        209,
+        219
+      ],
+      [
+        24,
+        11,
+        192,
+        221
+      ],
+      [
+        18,
+        12,
+        203,
+        220
+      ],
+      [
+        23,
+        14,
+        194,
+        218
+      ],
+      [
+        16,
+        10,
+        207,
+        222
+      ],
+      [
+        22,
+        10,
+        195,
+        222
+      ],
+      [
+        22,
+        10,
+        196,
+        222
+      ],
+      [
+        16,
+        10,
+        207,
+        222
+      ]
+    ],
+    "warnings": [],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "koschei-walk-north-west",
+    "boss": "koschei",
+    "action": "walk",
+    "face": "north-west",
+    "image": "koschei-walk-north-west.png",
+    "source": "docs/design/bosses/motion-identity-v3/koschei/walk-north-west-01.png",
+    "sourceHash": "39d8bcd6298b36ec364de149d018006988e101ed8b7289c491c83dc0bc3bea44",
+    "sourceHashes": [
+      "379102449fba6710eb390fe96f7b9edeb01597ddf10c831c92a178a46ee07cec",
+      "f9fa4cd90f1ae803229e21c72f101c0470879cb1a30e0ff2df48cb698cdb27b1",
+      "6da0ac0612819aa35a93f5fef282592c1e6fc050251ce4503a48802ef60ec9a4",
+      "07658c78b8cd0f2d436ce21c35401789a0145b5c199bd2d34551346cdfab56dd",
+      "9db528749915fa3eab8a1fc84e5710e4baaa47ea78a1d14d849269a5e965a9ed",
+      "78d4f43464143c580295e6aa6e02900fbb17d84af9061f5a1ff5d98293de0a8b",
+      "3bdf8c489e7b28120def9b15c8833f1c375a83fc5f2f551e1bab30217388669c",
+      "a7c7c15b6be087b547f36df566dd76d3ba5631cf5e95e2b0ebd8848a5d2815d1",
+      "b650d7f26c8ae321e0e61dc30eef9b0eac30400547570490ff3d95874dca4bd5",
+      "336ba1a807136a8b50f2169137b5a7f55781126647a7f5b8555a054e7c9f4d27",
+      "ef46ec1f66a0f87ad4fad7efa66fbaf26ff3b746ab475101fd9bc6cb9509638c",
+      "229c24708c42fc51870725e4e62ea4627a440ce15465a604f0426cac1329eadc",
+      "8253d0788b0f9987020e3dda0683f67d49387365abbd5af5a5d40fca132382ca",
+      "1c3f65e110135f053d83960e741e578d787bed9dfd2f41b9a85bc5b6ef48d667",
+      "33fbcbab7bc2631611ddcb17c9407403ed0da175700c198a0d4119240b5f651d",
+      "1103a574b9f20c5c1a29153eee65651545c48345e64110b6b5fafc956c0b8d29"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7021943573667712,
+    "bounds": [
+      [
+        46,
+        29,
+        148,
+        203
+      ],
+      [
+        44,
+        30,
+        152,
+        202
+      ],
+      [
+        43,
+        29,
+        154,
+        203
+      ],
+      [
+        42,
+        30,
+        156,
+        202
+      ],
+      [
+        38,
+        20,
+        164,
+        212
+      ],
+      [
+        34,
+        19,
+        171,
+        213
+      ],
+      [
+        39,
+        19,
+        162,
+        213
+      ],
+      [
+        37,
+        19,
+        166,
+        213
+      ],
+      [
+        36,
+        16,
+        168,
+        216
+      ],
+      [
+        8,
+        16,
+        224,
+        216
+      ],
+      [
+        10,
+        16,
+        220,
+        216
+      ],
+      [
+        38,
+        16,
+        164,
+        216
+      ],
+      [
+        37,
+        43,
+        166,
+        189
+      ],
+      [
+        8,
+        42,
+        224,
+        190
+      ],
+      [
+        8,
+        40,
+        224,
+        192
+      ],
+      [
+        11,
+        40,
+        217,
+        192
+      ]
+    ],
+    "warnings": [
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 6: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {
+      "status": "blocked",
+      "reason": "staff appears on near arm; anatomical hand continuity unresolved"
+    },
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "koschei-walk-north",
+    "boss": "koschei",
+    "action": "walk",
+    "face": "north",
+    "image": "koschei-walk-north.png",
+    "source": "docs/design/bosses/motion-identity-v3/koschei/walk-north-01.png",
+    "sourceHash": "93033f4e14d2b372bdacea9c7903d2d74775f5379ae5a21f0f21c35914921ac1",
+    "sourceHashes": [
+      "bc54af013f8140c28697c50178791add252ccfac9518a10b7cc7d49a35734169",
+      "044e04f7df4e83f08caa3aa2a178c63bf87feb7d04b89d5141aebb9b612a96bf",
+      "0e4bce1cf8f41ab61ab5185f591138f5eed0c26601ad31731c9488484e9a36c7",
+      "e4760604028d25cefc8ec9f2257523f9000c500257066213737a01ef20e264cf",
+      "10c3bc73e6c77382e51e7888c2ebc1f053fea6020373fb82ba4c63e2155ab5b1",
+      "79a4986c3a1ca3c72bfd3b90c9c934f588171e56df0c82e2a7c3988ceed032fa",
+      "3e4ed041eb3a003fa05e3693a71f5a3b4d07c6df4d3605c3f6f57290213f9dad",
+      "d33f54a0767664bf348b18e3e72f98bcf38181428f9f9c73721afe220c4531a4",
+      "c459de071f2a29a1e4042de2bf53686769522bd20c0585400e73199d9ce64386",
+      "468289149b60ca3ea1a26006d9b8c17692de9575f8ae621573bcd761c29a9924",
+      "b3e6ae50aebe8d24041efaed3e2231a2f443d6e7484cf7abd04d48c8f3cc5576",
+      "b352290e03086331285f716c46b58ed8828d2eafd730bc1e6dccd8cae8d82f64",
+      "1b611c434f3f2beeb4ec02b05298b5da64822cab79ecf30e2d46053a264c4571",
+      "6c9de3315065176361d4dcd4de6e0f398555fc7dec500e46bf2b54e4705b5e6c",
+      "9e6297679c41777eb8f2ffc9982d70ca680f83dabf2d6c43bd300c164a894931",
+      "91eb85a4f35d22b160d91ef42332e5a5f5056f25dbbd8275c8f75a4e98a71d0e"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7296416938110749,
+    "bounds": [
+      [
+        52,
+        16,
+        136,
+        216
+      ],
+      [
+        47,
+        25,
+        146,
+        207
+      ],
+      [
+        42,
+        15,
+        156,
+        217
+      ],
+      [
+        41,
+        20,
+        157,
+        212
+      ],
+      [
+        40,
+        9,
+        160,
+        223
+      ],
+      [
+        45,
+        19,
+        150,
+        213
+      ],
+      [
+        40,
+        20,
+        160,
+        212
+      ],
+      [
+        41,
+        23,
+        158,
+        209
+      ],
+      [
+        43,
+        8,
+        153,
+        224
+      ],
+      [
+        42,
+        8,
+        155,
+        224
+      ],
+      [
+        40,
+        9,
+        160,
+        223
+      ],
+      [
+        41,
+        9,
+        157,
+        223
+      ],
+      [
+        47,
+        28,
+        146,
+        204
+      ],
+      [
+        46,
+        26,
+        148,
+        206
+      ],
+      [
+        37,
+        29,
+        166,
+        203
+      ],
+      [
+        39,
+        30,
+        161,
+        202
+      ]
+    ],
+    "warnings": [
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "koschei-walk-north-east",
+    "boss": "koschei",
+    "action": "walk",
+    "face": "north-east",
+    "image": "koschei-walk-north-east.png",
+    "source": "docs/design/bosses/motion-identity-v3/koschei/walk-north-east-01.png",
+    "sourceHash": "49ef8483a7010b92ffd62ffab09102f9fd090dba2a8fc8eb00598f400b1132d7",
+    "sourceHashes": [
+      "7ce9e022b761ee32228a8d6a281a65f4f3d942f706442a19dbe8a1c1105a068a",
+      "043bfc6aea815386ad6ff00eb2f9c756475aaff2187eb35b10eaaa8982fa5dbc",
+      "8d3ef7b510dc1f1606f76963fb3f984f5a9e7ce6bc39bf0559fad6780905408c",
+      "c8a99fe1338e29ffa46cc97ebcece407a7b45cc5159ccdc0eb1841fa1efba5d9",
+      "2d82ef7342c3c39273730a6e19f4e0256122d4fa99c2fe7bae839b9bfca1b6d3",
+      "9172e5d59faa32da237f57c8087a10d63b409ccf1a1f4c2592656da779485869",
+      "ef9c81d976bbcd0dbc85381dc4dfdf7e504ecd00e34e0c6e20a9dd87d299b719",
+      "ba0338ece746b32da5f6c32f67c24d626cdf4a07dc5ab711086084718979eb6b",
+      "d7ce06ff7c97a76b22123705942fbeae66454fb1b5ab676d70131def17281355",
+      "cec6a0c2be8c16b829f719f16643f095d8cdd9728a36233ebd2f966580c9f947",
+      "370d879b47374668a45dacef262f1638f0f1718623544ff1416ab12424cabff2",
+      "b48b8b555ccf23c73fa223c4478572dd70c18cdf43d205e88f2e682fee846ddb",
+      "f59ee45f5f6e5ac70f9526e79053e956dbb6fce52fafd6a73307a6c3944e55f8",
+      "d76aa64f986a0693e63c2c3d3bcabe3773a4f04d825dfe761544295b155ccd50",
+      "250040f29f3d16063f054bba25a50b72b123a0c637b7c8b69750035f49d64a56",
+      "3f8ee38f7074c61ceedfe045a0a77daa8fac8c63d1db829463f0bb29757e91b1"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.797153024911032,
+    "bounds": [
+      [
+        34,
+        18,
+        172,
+        214
+      ],
+      [
+        32,
+        22,
+        176,
+        210
+      ],
+      [
+        33,
+        16,
+        174,
+        216
+      ],
+      [
+        30,
+        20,
+        179,
+        212
+      ],
+      [
+        30,
+        16,
+        179,
+        216
+      ],
+      [
+        31,
+        17,
+        178,
+        215
+      ],
+      [
+        28,
+        13,
+        183,
+        219
+      ],
+      [
+        26,
+        8,
+        187,
+        224
+      ],
+      [
+        31,
+        8,
+        177,
+        224
+      ],
+      [
+        28,
+        8,
+        184,
+        224
+      ],
+      [
+        31,
+        8,
+        178,
+        224
+      ],
+      [
+        26,
+        8,
+        187,
+        224
+      ],
+      [
+        29,
+        26,
+        181,
+        206
+      ],
+      [
+        28,
+        30,
+        183,
+        202
+      ],
+      [
+        29,
+        26,
+        182,
+        206
+      ],
+      [
+        27,
+        26,
+        185,
+        206
+      ]
+    ],
+    "warnings": [
+      "frame 0: cell-edge pixels require clipping/ownership inspection",
+      "frame 2: cell-edge pixels require clipping/ownership inspection",
+      "frame 3: cell-edge pixels require clipping/ownership inspection",
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 6: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "koschei-walk-east",
+    "boss": "koschei",
+    "action": "walk",
+    "face": "east",
+    "image": "koschei-walk-east.png",
+    "source": "docs/design/bosses/motion-identity-v3/koschei/walk-east-01.png",
+    "sourceHash": "3c5ded11719973f923d096e9a969b024e1ccc9d3d90d72cc89a319ef79af7f0c",
+    "sourceHashes": [
+      "2415b4518b7c6f24c0c03e1a5c5ad51fc9ec969cd25d777288c14b0cdf3ece93",
+      "3280339709bf551702a7a7f106458b265416b11b675a328ced3972cf3bbdd8e2",
+      "39f0798baae20d1933e6bd5a23c90b1bf89449328af36bcc6958bd53f6dc303e",
+      "fe4af1115ca61ea7fd2c240578d86634aa60a272195fedfbf891c2452e7e0d09",
+      "171de4b440643a2b71d1dfd2770e9aab70454ecbce65c8d522353598d82cf780",
+      "82dc881934434615170e7f00f13b01de48cac0a8e93a9ba53098cf3609310e91",
+      "c74af43b8a3bbf3c2079bce8f312fd015009eb0e3ca501b9c0df5d760b9e87ae",
+      "a89a351c85a48c8ba669f4f1194f94cc0fefdc0d6e63e0ab74d1f04e9c9aba37",
+      "4579dec69f51144907bae8c6fa0136de9525cd1e828d8c5c851fd808b0ba108e",
+      "0c54d06ad694e26c0c8244eb26cdfe7c687ee4966e68c089562e60ffc4586224",
+      "2cec5c712f43ab61aa15c720d5cc694e852d892ed868515769fe6531fe0d0623",
+      "b91feab1f78dd9cb2b82a7dde72bd5f99c5fa270fdb3162272055a7195502196",
+      "66c065fafe4e40296d7fb05b241f97988f00fe22f14664af57bbb1bf439bde50",
+      "45643d23d6941e067c307675db80b9a1485a6ad434f8c42105db4c5fe7cc3a88",
+      "de03f4c171e9dfb684db8046130b4cbe8227690c4dde77d77d88738342f1f25b",
+      "b7a725049ce9fb95790cc60fb94ce5a5285823b1bf831ef588fb82a7e8b560ec"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7296416938110749,
+    "bounds": [
+      [
+        21,
+        19,
+        198,
+        213
+      ],
+      [
+        22,
+        20,
+        196,
+        212
+      ],
+      [
+        18,
+        23,
+        204,
+        209
+      ],
+      [
+        18,
+        23,
+        203,
+        209
+      ],
+      [
+        32,
+        22,
+        175,
+        210
+      ],
+      [
+        27,
+        25,
+        185,
+        207
+      ],
+      [
+        24,
+        25,
+        191,
+        207
+      ],
+      [
+        24,
+        12,
+        192,
+        220
+      ],
+      [
+        19,
+        8,
+        202,
+        224
+      ],
+      [
+        20,
+        9,
+        199,
+        223
+      ],
+      [
+        18,
+        23,
+        204,
+        209
+      ],
+      [
+        15,
+        8,
+        209,
+        224
+      ],
+      [
+        33,
+        21,
+        174,
+        211
+      ],
+      [
+        24,
+        24,
+        191,
+        208
+      ],
+      [
+        24,
+        26,
+        191,
+        206
+      ],
+      [
+        19,
+        22,
+        202,
+        210
+      ]
+    ],
+    "warnings": [
+      "frame 1: cell-edge pixels require clipping/ownership inspection",
+      "frame 2: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "koschei-walk-south-east",
+    "boss": "koschei",
+    "action": "walk",
+    "face": "south-east",
+    "image": "koschei-walk-south-east.png",
+    "source": "docs/design/bosses/motion-identity-v3/koschei/walk-south-east-01.png",
+    "sourceHash": "82832896254fc9f8106d1da81a6041bd203ab587a8c6eed51484c369970d0c8a",
+    "sourceHashes": [
+      "72a3eadc9a81d7e5bec7eed10c87327a4602a94974e79195fbf55f8bc7f4bd53",
+      "a51370f94cec288ced30c6526244dd43928e7863a5ca5abdac0c96c6ae6bc612",
+      "ecc625e07254fed441cfb18159899c220beadfae77142acffee621041c537c11",
+      "c2cff529b72dc317bf642e3129a8e020aaa9d930527208992dde34ea1b7f05bd",
+      "febc515297aa4aa7b42bbc538b9932490fb79fb7b564d723f621fa415ca14b97",
+      "c67323b33592d9fd06cdbf81e0cbc402c3f0825dde35b6064023996d2c184f40",
+      "dc5af81af232a883ef122eaa407bc1e73e5af8207f6b268bc4e4bb8a0cce6262",
+      "d92b25a2568e9002a0bdb0203f527e23ee2cccf698f7c8cb4b104a44168bcbfa",
+      "f0ad97907ea6def1a153c17da714d2cac8ba19fd609e44ea5540ae22f2e11412",
+      "66f7d73d3fcbcc36d94be34dc3a9dd3a1f516e3da7589a10f22b19df080b913b",
+      "d4ca9ff0d38bd4913daccb57e47be1a801f0d724a577d0959148f5eeb4cdf40e",
+      "415d304c90b6c45748a1b52ebff956065b9e92799dbc4169ace0feb3ef2f0374",
+      "58036902c2d56a1da6108b1cbeab4929db0e1ed7e794237932253f599eeebce5",
+      "f9ce32837445bc1c720e23c2af492f85bfc21bf781af4b83d553c0b351b103da",
+      "6ec1691639a023cba8c5488e85c48c3af48974e407606ffba917b9ab6f32cdf0",
+      "2f47e2fdf2cfd422e43e43bc3e691cfaa286d92e2d7af7850990a311ada617b1"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7344262295081967,
+    "bounds": [
+      [
+        40,
+        19,
+        159,
+        213
+      ],
+      [
+        40,
+        16,
+        160,
+        216
+      ],
+      [
+        39,
+        21,
+        162,
+        211
+      ],
+      [
+        36,
+        17,
+        167,
+        215
+      ],
+      [
+        32,
+        22,
+        175,
+        210
+      ],
+      [
+        32,
+        18,
+        176,
+        214
+      ],
+      [
+        27,
+        20,
+        185,
+        212
+      ],
+      [
+        33,
+        20,
+        173,
+        212
+      ],
+      [
+        38,
+        11,
+        163,
+        221
+      ],
+      [
+        35,
+        11,
+        170,
+        221
+      ],
+      [
+        33,
+        9,
+        173,
+        223
+      ],
+      [
+        32,
+        8,
+        176,
+        224
+      ],
+      [
+        34,
+        26,
+        172,
+        206
+      ],
+      [
+        34,
+        24,
+        171,
+        208
+      ],
+      [
+        35,
+        26,
+        170,
+        206
+      ],
+      [
+        33,
+        26,
+        173,
+        206
+      ]
+    ],
+    "warnings": [
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "koschei-cast-south",
+    "boss": "koschei",
+    "action": "cast",
+    "face": "south",
+    "image": "koschei-cast-south.png",
+    "source": "docs/design/bosses/motion-identity-v3/koschei/cast-south-01.png",
+    "sourceHash": "cdc3c7166ab738c881092f432ab8d3c79f63acba8b1197686ccb3d5bfdc35897",
+    "sourceHashes": [
+      "817b1ccaa3ec28ac3ab9a26fd834bf96c18b244962894eb5431e4e22fe6ea015",
+      "c62fae573820fe9a9bdd0ed026438d44c1a83a7932118a643db2d06d92eea143",
+      "7c91d34281053b72201f2380dd9bd94f09afcb2e0de78f118d39b6d1048c3b68",
+      "c0f965cb4e17a37a92889c131b7ddf67b89e47b6b3a0247b9ef2cfd9540449f6",
+      "45bc754b56935a8a44455c40fefea36636f6ed57675d97e2df5dfd7df065a726",
+      "7d21119493ebe96319236831f663424399c383babc2b263d0036062fd17f7c25",
+      "fb49e596795df996892ec67b1f5685916a33b7d736b25b96a26a996bbfe01f46",
+      "a5d52c95be4f95204861a8d7747c2e88d834cbf8f40802abe7c4523b6c6ca873",
+      "2ef245acbcaffe3237dacc0319f5e24d88cb10f517ad27d8db784d8a5038c3e6",
+      "b21203b00eb44bfd329dd81a3efd27d279f36c525479ce54cf0959859891ac2f",
+      "89b8e12be5c7c7ebba388a286b436a6bd61d6e0208fd59cceeb41938542629d4",
+      "9b0b18eda77b4a361a52c7c3eaeb6089faf7e3df575944e21c7a27ad8a222b6f",
+      "61c093f42174fe226ad3d8cda40246806ea8baa7389bc0164c714c2c54257012",
+      "e18c8609258573b51a0e958319a618dbed7e4f38a8a905b41b58a063722160b1",
+      "b4195deaf868c581820e92165d8cb467cde5ea82d76c4e9c2a5274f07206e242",
+      "2ed4d645e5e240b4110e2027fd4027882889a6ee48bd350fa409fd10fad30070"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.797153024911032,
+    "bounds": [
+      [
+        44,
+        21,
+        151,
+        211
+      ],
+      [
+        43,
+        21,
+        154,
+        211
+      ],
+      [
+        42,
+        17,
+        155,
+        215
+      ],
+      [
+        32,
+        19,
+        176,
+        213
+      ],
+      [
+        24,
+        13,
+        191,
+        219
+      ],
+      [
+        27,
+        19,
+        185,
+        213
+      ],
+      [
+        19,
+        8,
+        202,
+        224
+      ],
+      [
+        26,
+        8,
+        187,
+        224
+      ],
+      [
+        29,
+        9,
+        181,
+        223
+      ],
+      [
+        28,
+        8,
+        184,
+        224
+      ],
+      [
+        20,
+        26,
+        199,
+        206
+      ],
+      [
+        12,
+        37,
+        216,
+        195
+      ],
+      [
+        10,
+        43,
+        219,
+        189
+      ],
+      [
+        26,
+        26,
+        188,
+        206
+      ],
+      [
+        32,
+        21,
+        176,
+        211
+      ],
+      [
+        41,
+        22,
+        157,
+        210
+      ]
+    ],
+    "warnings": [
+      "frame 3: cell-edge pixels require clipping/ownership inspection",
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 6: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "koschei-cast-south-west",
+    "boss": "koschei",
+    "action": "cast",
+    "face": "south-west",
+    "image": "koschei-cast-south-west.png",
+    "source": "docs/design/bosses/motion-identity-v3/koschei/cast-south-west-01.png",
+    "sourceHash": "81da52812270eeaab3835cf3985ae5cf334955c82ccd6500d53234f3aa0adf02",
+    "sourceHashes": [
+      "605f458d65f5c9a515b81c265e4bd94b758940624e2c3764a0b28d5f48572cc0",
+      "4699632fd26f7b2473e754a81e20845fd847d7fbdd10b72cb763b390794f5ff8",
+      "4904d91c9b6ec76085d21001e0c2a32762c725f0a600cf70371c9c5fcdec606d",
+      "419647556dd2889c5bcdf27ada1b70d8b07f0cb1c8daf1aaf838710ac5741116",
+      "3f13251206bde905ce3c85a68a13d6b5f1db1a3779b48dea4ddf34bde00b3980",
+      "d5096e8f2568b81bad4e1402504e49b555c4b0d3d8bc23487e441d3021df0059",
+      "d3587da826d4cc866ea94a867b323461f16d23230a3dfddbc73ed85134bd9dd8",
+      "b0f74a746fad5202874eda816ab5b5a9674ce395b7b5c8f71f7a38e230f10785",
+      "a93a9ef3acf076f26e5bb7f4c4edeb61e122d92eb3a93dc98b74349cf411e63f",
+      "6c9897e6520f01d36e5f71f1e20cb47fecdff6d1b46e34934fb24e75b3f1dc6a",
+      "2456f5d4d6e137cca9a81c7abb747e23962161bd03427355f7f30ae572c3f566",
+      "7281e07d0ec512792944f8b580205a351fbbd02e1f51a78951b69f7a2f39f615",
+      "b1fb00918fd3aae2344f86d9b4e650c4e20614476fcbc7f032b7eaa6de3428f8",
+      "fe4d10150f7089bad859bdb3d8c40515e5b183ac42d6dc0149528bfde217f7cb",
+      "a57c95374768d5e2f33250bc9845ad4b2ff12aa475b372f628cf36e38e5b7f6e",
+      "cbf5ae1469e2839bd0e634f3cb76eedc99f729b3c4033375a179a91cdc9aa4aa"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7088607594936709,
+    "bounds": [
+      [
+        34,
+        36,
+        171,
+        196
+      ],
+      [
+        24,
+        43,
+        191,
+        189
+      ],
+      [
+        30,
+        37,
+        180,
+        195
+      ],
+      [
+        25,
+        48,
+        190,
+        184
+      ],
+      [
+        33,
+        24,
+        173,
+        208
+      ],
+      [
+        8,
+        22,
+        223,
+        210
+      ],
+      [
+        30,
+        17,
+        179,
+        215
+      ],
+      [
+        13,
+        21,
+        213,
+        211
+      ],
+      [
+        12,
+        75,
+        215,
+        157
+      ],
+      [
+        8,
+        86,
+        224,
+        146
+      ],
+      [
+        8,
+        85,
+        223,
+        147
+      ],
+      [
+        12,
+        49,
+        215,
+        183
+      ],
+      [
+        24,
+        58,
+        191,
+        174
+      ],
+      [
+        9,
+        57,
+        222,
+        175
+      ],
+      [
+        8,
+        45,
+        223,
+        187
+      ],
+      [
+        12,
+        40,
+        215,
+        192
+      ]
+    ],
+    "warnings": [
+      "frame 2: cell-edge pixels require clipping/ownership inspection",
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 6: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "koschei-cast-west",
+    "boss": "koschei",
+    "action": "cast",
+    "face": "west",
+    "image": "koschei-cast-west.png",
+    "source": "docs/design/bosses/motion-identity-v3/koschei/cast-west-01.png",
+    "sourceHash": "990eb0d990459ac97d7abdff93904d44defaf60986d216039b67565ff9813e83",
+    "sourceHashes": [
+      "db12a7d1b6d96303c97c4a549279e2faf69849d47b42bce19c7401867079216e",
+      "434cc082f042c2f28ec1e8954316c0815aea9cbbf6624af91eb358115a7e3c3b",
+      "df0f41341400a7de1cd45711bcf9063f3b8b49322e13ad03971ce746a2a89256",
+      "925103f41f5ba494ae0be8cde772b9ae7a77d4a4b11cc10dd0243a8c2298610e",
+      "4264f7bbc220a3aa13714b9f3a366c710a0eebb0af6bef50f33cc4ca8d74fcd8",
+      "20aa8ee5ba0a37295c89b7a91c2301b1b2836c8a809db2378113baab7c5150da",
+      "40328e7c7b941d430e9d5b7de9b5051963f6a3cc67e6dee23fcf40fec59bbdd2",
+      "d34dbef12f48d954505930fff7315f42c398afb8fd7c3844fdee7fb8246d39ad",
+      "f7f19bc76bd484d5eef47294bb95aea72201f293a9f2660976795864857561ac",
+      "7145f6da1c0ff8d4654aa39d2cfbc2a695ce2533f32cd54663353d27bdfcd3a1",
+      "1840ee4ddbdf9763a45bce32eb22e9e0de275edfb929385b4bdd22bbe4f9a4b9",
+      "1ae0d8f613e08581d2a4dba4b12387e66dd3f4b735f5dc0f5b2376b7fcacecb7",
+      "cccee1423c2b84c88ae2ba2cca7a456eed3ab06bec721d2466fa2f7d916c0931",
+      "18470e1a0ad2e69f28f7ebd1d56cd09ae3e05f4fb935aa7656be70f944ac8176",
+      "7586644e89acc06ddf6d8a6a176308ce474847832cf557fb2a518f7fff6de49c",
+      "f790b088af7cade8f679be06c32f967e52fa6b534fca7e383925bff8a368c763"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.6381766381766382,
+    "bounds": [
+      [
+        57,
+        57,
+        126,
+        175
+      ],
+      [
+        54,
+        64,
+        131,
+        168
+      ],
+      [
+        45,
+        79,
+        149,
+        153
+      ],
+      [
+        43,
+        60,
+        153,
+        172
+      ],
+      [
+        47,
+        53,
+        146,
+        179
+      ],
+      [
+        43,
+        53,
+        153,
+        179
+      ],
+      [
+        42,
+        57,
+        156,
+        175
+      ],
+      [
+        47,
+        53,
+        146,
+        179
+      ],
+      [
+        17,
+        55,
+        205,
+        177
+      ],
+      [
+        10,
+        53,
+        220,
+        179
+      ],
+      [
+        8,
+        53,
+        224,
+        179
+      ],
+      [
+        11,
+        53,
+        218,
+        179
+      ],
+      [
+        41,
+        73,
+        157,
+        159
+      ],
+      [
+        47,
+        65,
+        145,
+        167
+      ],
+      [
+        50,
+        65,
+        140,
+        167
+      ],
+      [
+        58,
+        65,
+        124,
+        167
+      ]
+    ],
+    "warnings": [
+      "frame 1: cell-edge pixels require clipping/ownership inspection",
+      "frame 3: cell-edge pixels require clipping/ownership inspection",
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 6: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "koschei-cast-north-west",
+    "boss": "koschei",
+    "action": "cast",
+    "face": "north-west",
+    "image": "koschei-cast-north-west.png",
+    "source": "docs/design/bosses/motion-identity-v3/koschei/cast-north-west-01.png",
+    "sourceHash": "a0c6e3d92a353f79e7c052930936cb83cb02d78a548fc17b0025f0f175d2215f",
+    "sourceHashes": [
+      "9601e3a2d5cc673056ea25620847ba791cc0d656237dea7b4262b2b479bb530a",
+      "44dfdc278ccd6d36aa4ae17ecf7f1d859bcff9bd4182757b57977bb32e9e3787",
+      "386a832cfeaa6bf4801431376f0d7fadca7ea484c7c4215bebcb0ba68f3e9996",
+      "4b49365906df25a520bae1ac4fd8b179c848739df77672a56091e41032b4a2c3",
+      "b5341c47c5db2b52777d519421bd6f093c96fcae42e34efc4eaccb1d8b30d7b9",
+      "07a4b677def5a06b8bc3c3cfb42d6561b841a3a5b0c2c905ee52c1c3bd9393ff",
+      "5ada8eb4d6a6165273f8ceabdf638bf19f2c1dd5fdb015478c59b31f9d6638a1",
+      "180a06bb75d27801e00daaf2f581366c851cf81910ecf4f40a159a56f54f3ff4",
+      "55ee46354fdd4fe1c949da905671e29966d3518e8e45cf4b89bbf69d647cc4e7",
+      "40362b1054aea1ccf9633b31483b1f09d71ad5ca0092a72de3c187ac939defef",
+      "b35c03f2c7d0f6687ae641d83d09a0b33560b773548bd3fc36d3286b68debde9",
+      "18c8879c06d8c4f16d874133f2b6c06ce60c8eb58bb4a18be0dffeee763c3cce",
+      "5e86204f29a66f57c0775461acbd23ddb6759f1e237e7080f1988d138f3aeb65",
+      "848da979a02cb03bfd64f246cfdc7101e8d2a8b5fa5e5dfbeec348acee51877c",
+      "175372149147ce3c9ce2c427b1a53a9dab891f7ca1750936e7f42367b2fbd3c5",
+      "440080214cf84deb7c3214117496a9cf26750d40450aa7738392aa4e48ee1711"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7088607594936709,
+    "bounds": [
+      [
+        44,
+        24,
+        152,
+        208
+      ],
+      [
+        36,
+        50,
+        167,
+        182
+      ],
+      [
+        29,
+        48,
+        181,
+        184
+      ],
+      [
+        41,
+        45,
+        158,
+        187
+      ],
+      [
+        14,
+        13,
+        211,
+        219
+      ],
+      [
+        8,
+        26,
+        223,
+        206
+      ],
+      [
+        8,
+        23,
+        224,
+        209
+      ],
+      [
+        10,
+        26,
+        219,
+        206
+      ],
+      [
+        14,
+        12,
+        212,
+        220
+      ],
+      [
+        8,
+        12,
+        223,
+        220
+      ],
+      [
+        8,
+        55,
+        224,
+        177
+      ],
+      [
+        11,
+        12,
+        217,
+        220
+      ],
+      [
+        30,
+        47,
+        179,
+        185
+      ],
+      [
+        34,
+        46,
+        172,
+        186
+      ],
+      [
+        8,
+        45,
+        224,
+        187
+      ],
+      [
+        18,
+        46,
+        204,
+        186
+      ]
+    ],
+    "warnings": [
+      "frame 2: cell-edge pixels require clipping/ownership inspection",
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 6: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {
+      "status": "blocked",
+      "reason": "staff hand and release direction need correction"
+    },
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "koschei-cast-north",
+    "boss": "koschei",
+    "action": "cast",
+    "face": "north",
+    "image": "koschei-cast-north.png",
+    "source": "docs/design/bosses/motion-identity-v3/koschei/cast-north-02.png",
+    "sourceHash": "8488ccebeb18fe7a93295d2204a5b237942e047819351097c6f5cea24ee5a565",
+    "sourceHashes": [
+      "03f8edaf0bca91b3f8f336a51bac8ac87af0217d9e49f8948083c7d2ea4685c7",
+      "e38405772f1390e582995b343db3b92c5201a62d4b722430d3b954349029c0d6",
+      "a681fdbe2a4f16a31e1ad93e5a9c495b9352f4f344de856dabe33694d47502d8",
+      "c7f2986f916cbe1a903d931a26225b9e02dc4603054781db08b06e400874a644",
+      "a57c4b9104b596f4849c645352981ec093dcd5f8f42408ca470bac265267cd46",
+      "1f99c859c2116615d65b83a78aee8ee406e8783d11fba1e3e9157715735996bd",
+      "fcee4a5d8d3cc6001dc2eca64a0ce809614c27e388a9f0da0d856bc45946316d",
+      "0e3c1f9d97553793bfeed7ea621a13eaeaa2c7a1d5dffe55eddd89e1e0b0f562",
+      "233c28a7c652a5f85b17ba5989108b954222490350b78f96b87a41bd2bb323fe",
+      "f2ff9cb23e370142155f1e20a0ff7bf7d93da20e9bfd014457660d11db5870b8",
+      "fb023dc466039701ade793806d0e1b97d6751b5aa6ca27e25b8b2bd2ec1ae11d",
+      "7e64f8123327a53d1e7213c4c80982534d2ee55513f51d34f188cb11e42d716f",
+      "cc8951405a4234681c3c0f8dd84785456305b6a14f8bfbfebc841d54f20b42b4",
+      "f3e47215f5dbc5101a4486be6d94521eb5ca944405d9a5df8b5696038429c493",
+      "77daee85168f32bbad89818bbab7ade8c9f3e8589b55c63eb3f35a9027adbdd6",
+      "45cf6764edc3295ca7445d984f8031c19db82e9e9855dcbe41e62ae864055c7a"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7225806451612903,
+    "bounds": [
+      [
+        50,
+        30,
+        139,
+        202
+      ],
+      [
+        53,
+        34,
+        134,
+        198
+      ],
+      [
+        49,
+        29,
+        141,
+        203
+      ],
+      [
+        44,
+        27,
+        152,
+        205
+      ],
+      [
+        43,
+        9,
+        153,
+        223
+      ],
+      [
+        43,
+        9,
+        153,
+        223
+      ],
+      [
+        41,
+        9,
+        158,
+        223
+      ],
+      [
+        41,
+        9,
+        157,
+        223
+      ],
+      [
+        50,
+        8,
+        140,
+        224
+      ],
+      [
+        42,
+        10,
+        155,
+        222
+      ],
+      [
+        40,
+        9,
+        159,
+        223
+      ],
+      [
+        40,
+        9,
+        160,
+        223
+      ],
+      [
+        44,
+        20,
+        151,
+        212
+      ],
+      [
+        42,
+        34,
+        155,
+        198
+      ],
+      [
+        48,
+        33,
+        144,
+        199
+      ],
+      [
+        51,
+        34,
+        137,
+        198
+      ]
+    ],
+    "warnings": [
+      "frame 3: cell-edge pixels require clipping/ownership inspection",
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 6: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "koschei-cast-north-east",
+    "boss": "koschei",
+    "action": "cast",
+    "face": "north-east",
+    "image": "koschei-cast-north-east.png",
+    "source": "docs/design/bosses/motion-identity-v3/koschei/cast-north-east-01.png",
+    "sourceHash": "e11584d42db6be69ac5f1c9505484365b618e0c2d47aaa4c67f3275abe79ce21",
+    "sourceHashes": [
+      "24f2590c59aa69eeb595fd68a4464a5bd3f69e994c13f13e0f19fb853ecf7f14",
+      "ecff3f112fe35aa2b21ec29c086297ee3ebc8f64023593a0ea56fa8a3175ceee",
+      "fe8896eabda8d715156c88489df111c3acb0220fbeb192a85e04909ed77a7b2f",
+      "c9b0fcfd23fa0136dc78223b0eb9718e098ccc254f63d46ba53c25abcc666717",
+      "761199a2418be18b9cab60b9600b974e6da01a1058e04d937e50bb2482b5f0e9",
+      "625208aed1f2d9f360ad4a98f3af6d404ba20a68846c6a570bdaef65f06ca21c",
+      "9cab5f3ad843acab63a93af67c32dc00f4d62219cef9a3577f7af55d190599a6",
+      "93f6b89d544cbea66e0b484b8ece6c197b4691e6d19713659085ef84069701c5",
+      "a389269a12ac4e1b6d5a15463faea6b2a2148f5b49f994c071d6f525d06e9e62",
+      "5d9509a38b0c0f9a45f07b0bb45e92b4646fcdf245131fe1a04f1e360b3eacac",
+      "f158cc2c1f9bd77e974bed53b14641f0cfe3ae1616d5fdb640ac2cb6a86d24dc",
+      "90be298eb086fbf203f0c6661a29c2338d2b4c3139aec4244bf82b87509f62a8",
+      "cf84a4723de8a9a88204ab5e8c7693e201e44be900bcb1d54666b0b5dcd93f15",
+      "20da730c26142084ad1876dead382c40e64393161eee36916b3a01633bcaa6cf",
+      "51c7fcce80dbaaf1485ace55df69fc97dc3c2b005fcb23c439363d11eb97c04c",
+      "91979b5ce6d3b5301e73d1e4f61033f17ac83f617d0c9d7d6873af8143a9cacd"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.6787878787878788,
+    "bounds": [
+      [
+        54,
+        49,
+        132,
+        183
+      ],
+      [
+        46,
+        43,
+        148,
+        189
+      ],
+      [
+        38,
+        49,
+        164,
+        183
+      ],
+      [
+        24,
+        52,
+        192,
+        180
+      ],
+      [
+        36,
+        48,
+        167,
+        184
+      ],
+      [
+        37,
+        37,
+        166,
+        195
+      ],
+      [
+        23,
+        37,
+        193,
+        195
+      ],
+      [
+        22,
+        35,
+        196,
+        197
+      ],
+      [
+        28,
+        40,
+        183,
+        192
+      ],
+      [
+        19,
+        39,
+        201,
+        193
+      ],
+      [
+        8,
+        33,
+        224,
+        199
+      ],
+      [
+        14,
+        34,
+        211,
+        198
+      ],
+      [
+        35,
+        56,
+        170,
+        176
+      ],
+      [
+        38,
+        54,
+        163,
+        178
+      ],
+      [
+        44,
+        51,
+        151,
+        181
+      ],
+      [
+        53,
+        53,
+        134,
+        179
+      ]
+    ],
+    "warnings": [
+      "frame 1: cell-edge pixels require clipping/ownership inspection",
+      "frame 2: cell-edge pixels require clipping/ownership inspection",
+      "frame 3: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 6: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "koschei-cast-east",
+    "boss": "koschei",
+    "action": "cast",
+    "face": "east",
+    "image": "koschei-cast-east.png",
+    "source": "docs/design/bosses/motion-identity-v3/koschei/cast-east-01.png",
+    "sourceHash": "120973ca99afe4b5c8c36e1fee06b1db1ceb8b291a715ad45521ae6891057b22",
+    "sourceHashes": [
+      "9992a70ecc4f5c5388c313f9918fb566bbffbf40b4b4d200cc59feae356006a1",
+      "349290b68ed61cc4825623d9eb80dade007d550b0d942c23b0978e9188d996b1",
+      "8c8527b0dfc12f059826086b0c237c45514a0244d906c4ea32ddcbfbe250eabe",
+      "e307a373bc94db6daf509e754bc11f4a26cd0092cee179e6dfa57e8d994e4f1f",
+      "58d4de25665c7482d641fafb37f06c86e2db1c2f26361511a8792a7e865f01ab",
+      "b48c074a599c9fb4c7929907ce42fedbe8f353cfaa54a42f293f8397c8cb78f1",
+      "b73b8be2456b26deb20486d9d7b594f7ef6747f9dad6dc1eecb0e207a106ef73",
+      "5cf9d80fc6c11fae2c78e11ec3818e1a256d671d2e65a27ef5386203c684a230",
+      "cf0b6111870b6bbb72395bb81e77a617773d0d6f4013b034cb485ede041c466a",
+      "5ae2ab81b369eedff490971f69c47cf1ef54d78b06b375a5017a6f7a26b2ec2a",
+      "cc6f8f88f78cc3cf3c9cdf573333f7c77a5022e6d7fd7d70bd346f059c278047",
+      "3ef0ee737b3d7ee67f6b857e312c75fbef030c57aca4a107cb442b4d583460d2",
+      "edf2eca59492ec0023637440933855ba78123a769d158fd2fd50fccea849825d",
+      "fa29b3d251ddcbbfa6b7bfef25c6229f755387931f176c35d8ce4cbab1051c84",
+      "d003ba63af1e9b7152e69b9cb925a1c2645e8b5941374cf8f0a397a32a733451",
+      "eaf09bbf3faab87f6e46733a48e7df5e8aa5de3271200736a18d86049b18cde9"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.6549707602339181,
+    "bounds": [
+      [
+        67,
+        53,
+        105,
+        179
+      ],
+      [
+        62,
+        62,
+        116,
+        170
+      ],
+      [
+        46,
+        70,
+        147,
+        162
+      ],
+      [
+        48,
+        62,
+        144,
+        170
+      ],
+      [
+        56,
+        48,
+        128,
+        184
+      ],
+      [
+        49,
+        49,
+        142,
+        183
+      ],
+      [
+        45,
+        51,
+        150,
+        181
+      ],
+      [
+        42,
+        54,
+        155,
+        178
+      ],
+      [
+        41,
+        49,
+        158,
+        183
+      ],
+      [
+        18,
+        48,
+        203,
+        184
+      ],
+      [
+        11,
+        49,
+        218,
+        183
+      ],
+      [
+        8,
+        49,
+        224,
+        183
+      ],
+      [
+        39,
+        67,
+        162,
+        165
+      ],
+      [
+        67,
+        55,
+        106,
+        177
+      ],
+      [
+        64,
+        55,
+        111,
+        177
+      ],
+      [
+        66,
+        55,
+        108,
+        177
+      ]
+    ],
+    "warnings": [
+      "frame 0: cell-edge pixels require clipping/ownership inspection",
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 6: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "koschei-cast-south-east",
+    "boss": "koschei",
+    "action": "cast",
+    "face": "south-east",
+    "image": "koschei-cast-south-east.png",
+    "source": "docs/design/bosses/motion-identity-v3/koschei/cast-south-east-01.png",
+    "sourceHash": "990490065c97b7ba8f26d996cb3f4251272ca9a814733a3c7ed0f361be679139",
+    "sourceHashes": [
+      "9e36c9b413a7dd866cfabe4b653fab7db54e5cec6dfd72218384f5de61708266",
+      "99e766ec4b7fe2dab85da0ffe085d297feba2be296b49eb5f45948c3dd48fcfc",
+      "99681c2b99a0e7cec8661712fd633fab1ccac5f10f58ebabe6081b36dc099cb9",
+      "42621806af19aa2c6f5829bf2875b577e611c430fd3e5d69957e56f06fbb6684",
+      "5f2f2f2ec174edd0c86b4004cb7a58ffef51c18811511750540929771bf980cd",
+      "088855988a353b2246cbcf5d3794f92526f2abda5069d2ce20c947bf189afb19",
+      "89e21b3c55aff651176a79c38a0f6d1e31ada6243821f36535f77e9a3f4a1556",
+      "abe1ad29011299b4df84b452496d7b68175ca7e67a58272abd01d58d00b318bd",
+      "8d491c151b4ea9f47bbbbc838f9f428f7b1241d7e6bb95ce770df294369db63f",
+      "d6a8b268e6e8cd05ee8b7f842931e6728dd99baf164dfb1e9a78d58fcf160780",
+      "66cb2386fbd38f6f28287d69ab148ed33d356995362fdc3ee917be3ab28fb73f",
+      "32958c6cf442e22f80e088664e4060e21f6d132c81f4285cb7f95a93f518d905",
+      "692196147319ddc21fc235501ed50496ec80cb0da286946095a7c8e6eca45be7",
+      "45cd8bca32c6a95d0dfd6230bafb13f1c0c8e06b4820d75bf642cff4c42cfdc3",
+      "f2e5f92a31ddb5b8bac0a7cd92951f8125d042a8fff16642c7bff8f4bc9c1f4b",
+      "2f82e5a531f8f241c254a40ad95bedbf88d9eb307ff1ea94fc89ca337071f4a6"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7088607594936709,
+    "bounds": [
+      [
+        48,
+        16,
+        144,
+        216
+      ],
+      [
+        42,
+        32,
+        155,
+        200
+      ],
+      [
+        24,
+        48,
+        192,
+        184
+      ],
+      [
+        33,
+        60,
+        174,
+        172
+      ],
+      [
+        30,
+        21,
+        180,
+        211
+      ],
+      [
+        25,
+        14,
+        189,
+        218
+      ],
+      [
+        23,
+        19,
+        193,
+        213
+      ],
+      [
+        29,
+        12,
+        181,
+        220
+      ],
+      [
+        25,
+        21,
+        189,
+        211
+      ],
+      [
+        12,
+        73,
+        215,
+        159
+      ],
+      [
+        8,
+        57,
+        224,
+        175
+      ],
+      [
+        14,
+        53,
+        212,
+        179
+      ],
+      [
+        18,
+        64,
+        203,
+        168
+      ],
+      [
+        21,
+        48,
+        198,
+        184
+      ],
+      [
+        33,
+        29,
+        174,
+        203
+      ],
+      [
+        46,
+        24,
+        147,
+        208
+      ]
+    ],
+    "warnings": [
+      "frame 0: cell-edge pixels require clipping/ownership inspection",
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {
+      "status": "blocked",
+      "reason": "body turns away through release"
+    },
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "maiyarap-walk-south",
+    "boss": "maiyarap",
+    "action": "walk",
+    "face": "south",
+    "image": "maiyarap-walk-south.png",
+    "source": "docs/design/bosses/motion-identity-v3/maiyarap/walk-south-01.png",
+    "sourceHash": "1bad8db70921401883e8f2a92ec6b0c759fdff92d958bc726c5eca7984c10a62",
+    "sourceHashes": [
+      "e6e2f8a352e4ae0f64fbaabe63262b6fe9db9abe69ec9bfeb6a84b40e60d0257",
+      "e32f66ec4542c9694202261182a2bca96b6e811874258cb92317befefcc7041c",
+      "f26c30abdf155300472a21c3889c9cf305316d64b1cf9b24150247e13dd17163",
+      "3508118fd90c3c8fed33cb6c47bf30a76d98a0d65b88a6daa350729c08941ef3",
+      "61c23cfffaa6e70a14a1c28b9779767d870e185e8a2395b0e3e2e7f07456ba9b",
+      "19415db0bfaf96829d230c1be6cb75cd3ab7ee46193eb926c719f8c655e4cffe",
+      "77925d5ae8b43007fa280a4094c58ca109cbb10b9be1a99e2d699c1ed2171217",
+      "7f20809765539bb96fbdd4c885dbe61ccea288c60de8f065be74cfa6f51f0666",
+      "efaef0f9d002c9731047922a3a1336c29d9a3f2bb9622f74d9a09c43ba52d2fc",
+      "24255df77a5e9f8db60ef43c2f40d462c996ec0713dcc7d76995046ff7017ce2",
+      "1c5a6e326c181d901e704b7a1f6b5658b47f4e97374a97b40ba7f6a421e421d4",
+      "bcd43ac4668d119e93b19ac6998b1d18ea030b13ffe9f3179dc2f490cd3982d5",
+      "026a709ed86ac28feb2fc9c9d6d059cce79acb5fde7324e472a945225b4fb3b1",
+      "9d507ee80819d614d9b84e3c6b2e2db21f2df04a7ad3dec2a900e7d5c7aed7be",
+      "9a664a9a7f5399dbc8eaae8cb59048c003c7d6a681bae06f047f137aaa065529",
+      "548b0e8a67111742c5d52bf392395233106d4c25a48cd56e2bde503bbba3b837"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7249190938511327,
+    "bounds": [
+      [
+        52,
+        14,
+        136,
+        218
+      ],
+      [
+        51,
+        13,
+        138,
+        219
+      ],
+      [
+        48,
+        13,
+        144,
+        219
+      ],
+      [
+        52,
+        21,
+        136,
+        211
+      ],
+      [
+        52,
+        15,
+        136,
+        217
+      ],
+      [
+        59,
+        15,
+        121,
+        217
+      ],
+      [
+        45,
+        15,
+        149,
+        217
+      ],
+      [
+        55,
+        20,
+        130,
+        212
+      ],
+      [
+        45,
+        8,
+        149,
+        224
+      ],
+      [
+        49,
+        8,
+        142,
+        224
+      ],
+      [
+        49,
+        8,
+        141,
+        224
+      ],
+      [
+        51,
+        8,
+        137,
+        224
+      ],
+      [
+        53,
+        28,
+        133,
+        204
+      ],
+      [
+        53,
+        30,
+        133,
+        202
+      ],
+      [
+        48,
+        29,
+        144,
+        203
+      ],
+      [
+        56,
+        28,
+        128,
+        204
+      ]
+    ],
+    "warnings": [
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "maiyarap-walk-south-west",
+    "boss": "maiyarap",
+    "action": "walk",
+    "face": "south-west",
+    "image": "maiyarap-walk-south-west.png",
+    "source": "docs/design/bosses/motion-identity-v3/maiyarap/walk-south-west-01.png",
+    "sourceHash": "d9a7554940991510da43d85a25b57bdd52c7c6c8f6ff1973c2e0907caacf52fd",
+    "sourceHashes": [
+      "91e1cad9f703bf3df4bd7b9718c0d5036f0114ab1fcdc8f76e49d3522bf7133f",
+      "7fe46d46b2a46627705ac6d1d227409c3fde3b3264c0b8b23d26f2f1199d3c4e",
+      "60a30f6238e277b3b5874db8b7337ff88d4213002b0cfb6987729bb859d19c60",
+      "1a7b02d27921442387f2ad854c6e9bfe8a7cee7c2462f725996913dff0b8a615",
+      "17cb4d85efe37533ed6591d75df459ea295dc315475bfa093374e6b58b5a6c8a",
+      "49489c50a455f4ad6ec4e58df164fbf314f2a81a2711b86e64fa2be065f51e15",
+      "3115ab3f8e24ae6248764abf62f379a983c268eff30b7c7fd486a767a30e80ad",
+      "71034a7442ba9fa95216f6822838bdd9efbbe1d21fc072e05c7896a16f1b845b",
+      "efc254e939a9a3f5f78459225819a7dc4a3be4d4b34851ae35583687aeb99f69",
+      "2a9d11c00fc7d6cbd734b6f26ce3d8bcea4ff9afc0ecb81f940223fb5f77aea9",
+      "9ea147dee3f8c4690b7ec926350ac2061891939a8c468ff2d39496f5c1df6c62",
+      "2746966c950a3241a89776cd1e486eb1cd365bfb7728dc4a7951d9507d0484c3",
+      "227ba2d3a102e561cf2a39df628af6474f280209872062c38d5de5e66e482113",
+      "8680794a699761eddc159695b8abad1eb9eab622bc1028ded87c65bd531f7cec",
+      "ee3aa906bf69727bb2e58257ede6bcf53eef7ac5828d00f8b262c3993fff4093",
+      "3266d70408e9cb5f1907ed9f286043278faf26965621ee6f261a01add8f0ee4c"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7392739273927392,
+    "bounds": [
+      [
+        42,
+        10,
+        155,
+        222
+      ],
+      [
+        38,
+        9,
+        164,
+        223
+      ],
+      [
+        30,
+        12,
+        179,
+        220
+      ],
+      [
+        39,
+        10,
+        161,
+        222
+      ],
+      [
+        39,
+        9,
+        162,
+        223
+      ],
+      [
+        31,
+        11,
+        177,
+        221
+      ],
+      [
+        31,
+        8,
+        178,
+        224
+      ],
+      [
+        45,
+        9,
+        150,
+        223
+      ],
+      [
+        35,
+        11,
+        169,
+        221
+      ],
+      [
+        29,
+        10,
+        181,
+        222
+      ],
+      [
+        30,
+        12,
+        180,
+        220
+      ],
+      [
+        37,
+        19,
+        165,
+        213
+      ],
+      [
+        29,
+        18,
+        181,
+        214
+      ],
+      [
+        29,
+        23,
+        181,
+        209
+      ],
+      [
+        27,
+        21,
+        186,
+        211
+      ],
+      [
+        40,
+        19,
+        160,
+        213
+      ]
+    ],
+    "warnings": [
+      "frame 0: cell-edge pixels require clipping/ownership inspection",
+      "frame 1: cell-edge pixels require clipping/ownership inspection",
+      "frame 2: cell-edge pixels require clipping/ownership inspection",
+      "frame 3: cell-edge pixels require clipping/ownership inspection",
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 6: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "maiyarap-walk-west",
+    "boss": "maiyarap",
+    "action": "walk",
+    "face": "west",
+    "image": "maiyarap-walk-west.png",
+    "source": "docs/design/bosses/motion-identity-v3/maiyarap/walk-west-01.png",
+    "sourceHash": "df9f99db0dad4d43b0f2b1a495c2cacb08ba15c782401342817ff54325523c58",
+    "sourceHashes": [
+      "e6649560bfdc336314151f28d2014759e7548bba10a30567ece49950612d02c7",
+      "3f3687c5c1b3f1f20f23aad41fc527c99ff73a668a59b2a8408a3b5c4b1ff377",
+      "ac0c6b007a8f54c953283832da2440a9259e106fa09a65c6dbe2de21192580b9",
+      "00428d51b6d2d7b2b2c2cdef877e09e8e83459db029ae63dac7a7c30bf841b70",
+      "1c9dfcfa7fe4a00f39297b23eb79d8234c208b4a6a2ceca55e2c4259acc4f756",
+      "2edc791ee773ea99cddfdcd187958b3307aaa257088cc33246310be2bb38f87b",
+      "d57fd117b5cc770d044c5502d76d6fe2b61519d06b88fd94282668d3e95af818",
+      "58021c13a2ee5b104b3bcf4ef4250b4c0aa7cc3d18080af3c4cd6112002bdd05",
+      "c771f58a56e139b86806966ac39c842485e647f19ea1db3e7d75d524473299f5",
+      "3d48194c50a82857671168e1ef4a5372fe64b433d7a8c4d9c96f0a46798f59f9",
+      "d720dde338330d6372d436792d4561fdc0411833d451021e1466a24ddccffefa",
+      "3eba15ba605eb5f1a008a28e3d74800511f7de6dcf46aca35d77b16f64920d61",
+      "bb3903f85672ea64e1f9175049e23e82d26018a843cb14639314e3880853c9a6",
+      "bd7a64b7ef1ad9e3473ffd43417cc27641e9be670d4465eab0378e8f6320c2dc",
+      "c243525455222152a6f9b6ba7ff22ae18f5524c550716557467fda0ea478de2b",
+      "f0ed60bb1cfde02debb8cf443a86f8d7fc9f246a8a7a00e324bf6cbb30f7a082"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.717948717948718,
+    "bounds": [
+      [
+        37,
+        14,
+        165,
+        218
+      ],
+      [
+        41,
+        20,
+        158,
+        212
+      ],
+      [
+        40,
+        21,
+        159,
+        211
+      ],
+      [
+        43,
+        22,
+        154,
+        210
+      ],
+      [
+        34,
+        8,
+        171,
+        224
+      ],
+      [
+        41,
+        11,
+        158,
+        221
+      ],
+      [
+        33,
+        9,
+        173,
+        223
+      ],
+      [
+        41,
+        9,
+        157,
+        223
+      ],
+      [
+        36,
+        9,
+        167,
+        223
+      ],
+      [
+        36,
+        9,
+        168,
+        223
+      ],
+      [
+        33,
+        9,
+        173,
+        223
+      ],
+      [
+        42,
+        9,
+        155,
+        223
+      ],
+      [
+        35,
+        31,
+        169,
+        201
+      ],
+      [
+        39,
+        31,
+        162,
+        201
+      ],
+      [
+        37,
+        31,
+        166,
+        201
+      ],
+      [
+        39,
+        30,
+        162,
+        202
+      ]
+    ],
+    "warnings": [
+      "frame 0: cell-edge pixels require clipping/ownership inspection",
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 6: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "maiyarap-walk-north-west",
+    "boss": "maiyarap",
+    "action": "walk",
+    "face": "north-west",
+    "image": "maiyarap-walk-north-west.png",
+    "source": "docs/design/bosses/motion-identity-v3/maiyarap/walk-north-west-01.png",
+    "sourceHash": "532b72f3dbdda785b509b46a50948a3604bad563ab5bb1c8428ab05246609622",
+    "sourceHashes": [
+      "2988463356491b4710341e351da9846b5aa6db2f694c27b83938ea989e75b0c0",
+      "c848f2b018d005fc462a7326f908b5a5a1cfc5786190e1ee3d7fb57c024662d1",
+      "a260637b422d19acd680ad0720890757df903ca2c7101ca7d654d1658877f36d",
+      "3df2bb1a6fb2866b2c8f4efd6bf5c8cb337c2d15e71959c4255b5231da97e846",
+      "0c0a98db1ca541cd64b1aca1bdbfd1324a0bbcfec1aefa4a9fb0aa1a7aff943d",
+      "44b567c712fbe2cb09c93504f3a685631fa9a72968b52be3ef75e4db88517eee",
+      "3fe8bd63ae6a6967656f949f823b34b9fc316f9dd7230a8d39fa63cdd9b651c3",
+      "bf03849df34b06838560cd400fc2b431d9c5e58d440671c73c736f486fc54112",
+      "e9650252a49b15488eaa4c948ccae5dec288e1ed7a9a4c1a0d8f685a6abe5002",
+      "ac07787e8cd5635763ff3543e3508775c5b702f061833728e70b9115ff45909c",
+      "5dc224f96b7a01f563fd2cfbbf2a0cb905edea86d6b5301fe86861ea84e6dc03",
+      "5ab6eb3d7d8b7250c2240a609801402780629836cb4b5e9b34e1ea437196f717",
+      "44fff14003713c377ed2a0ff6d735c596cb780e6ddc646028c0d9cd3bf3a2b1e",
+      "2b9eca36a44ccc0353349e05e50c0d398ef30018e647912ff8ad0af682658aca",
+      "ae6208cca7ac97f58ecf1a3b46c0ea6535d234e44c67d9eec1f5d6e45fdb2058",
+      "228ffe8c16c9518cbe27125247eb6ce4f3ff6592a88bd2f423861f97736d7666"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7859649122807018,
+    "bounds": [
+      [
+        41,
+        10,
+        157,
+        222
+      ],
+      [
+        41,
+        10,
+        157,
+        222
+      ],
+      [
+        36,
+        9,
+        168,
+        223
+      ],
+      [
+        40,
+        8,
+        160,
+        224
+      ],
+      [
+        38,
+        10,
+        163,
+        222
+      ],
+      [
+        32,
+        15,
+        175,
+        217
+      ],
+      [
+        35,
+        11,
+        169,
+        221
+      ],
+      [
+        40,
+        10,
+        159,
+        222
+      ],
+      [
+        38,
+        17,
+        164,
+        215
+      ],
+      [
+        41,
+        17,
+        158,
+        215
+      ],
+      [
+        39,
+        17,
+        161,
+        215
+      ],
+      [
+        41,
+        17,
+        158,
+        215
+      ],
+      [
+        38,
+        21,
+        163,
+        211
+      ],
+      [
+        36,
+        15,
+        168,
+        217
+      ],
+      [
+        39,
+        13,
+        162,
+        219
+      ],
+      [
+        43,
+        18,
+        153,
+        214
+      ]
+    ],
+    "warnings": [],
+    "audit": {
+      "status": "blocked",
+      "reason": "staff anatomical hand continuity unresolved"
+    },
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "maiyarap-walk-north",
+    "boss": "maiyarap",
+    "action": "walk",
+    "face": "north",
+    "image": "maiyarap-walk-north.png",
+    "source": "docs/design/bosses/motion-identity-v3/maiyarap/walk-north-01.png",
+    "sourceHash": "af59aeb740a10b4c718b548aaaf2d0a659da581cd5dcf13f80f941b150c60293",
+    "sourceHashes": [
+      "03b35317456eecf0d170459016067ff83abe24d2bf61e8753a1f96945faf9af0",
+      "0f6c0de8fa21126acf6a0da5f0575a736015be76ecdb3d665952cb528c3560bd",
+      "db5feee5e5788ff569e87a73d6161001a330794dd4ba103ab23483b504421dbc",
+      "a5dc161219cc211d63b577cf0549a64eee8e841fb092d558e27874ee7ea2f934",
+      "062a57a8d3788cb22ae09efa3dc760d011dc55dd9826a0871d078cfaf224eaee",
+      "7f07dddc0fbbac1351c83a24397588c09a2d402b3ee591775da57c9841937e25",
+      "f56cd69843af48bcccf330f10d34348159f69b0aa00a910c6f908dce684df6ec",
+      "3e52d917f003ad6bc8e89db3cc351336e5b4a61ca0e64647b830cebe731efc92",
+      "5c1fa86f7e779b2741a6f2d61a3c1e7ea20c2d96b1f037c3fff93c2f48a6f706",
+      "56aec384056a73443088ca97b130d5edb6083e7a2db3642a62aa467466be01a1",
+      "e00e735245fcee9cd627551ab5ab5f440a83b8b513f76198ac417d3714ba7b5c",
+      "1b7822107088729c65c3d30d4fdfddec213d4c61a8f48feea573fe8b99c7abc8",
+      "a7409be1cff4318a5d9bf0a8efd2f1a386dcb8e51b55eb05a51772cbfe18cc3a",
+      "2b2d352be163295a654a05da44e3675591893157f9399a1ac85cae454e60eefa",
+      "539563f1fac78bc99fbcb6d3d3083ba0f152b3f51d62137b2ef58179d0ebaa00",
+      "fa8877f297a889825e06ec7613e556f0788969df4b47f6ff22d646373ece83fc"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7619047619047619,
+    "bounds": [
+      [
+        57,
+        17,
+        126,
+        215
+      ],
+      [
+        53,
+        14,
+        134,
+        218
+      ],
+      [
+        53,
+        14,
+        133,
+        218
+      ],
+      [
+        53,
+        13,
+        133,
+        219
+      ],
+      [
+        53,
+        16,
+        134,
+        216
+      ],
+      [
+        60,
+        14,
+        120,
+        218
+      ],
+      [
+        57,
+        14,
+        125,
+        218
+      ],
+      [
+        56,
+        16,
+        128,
+        216
+      ],
+      [
+        61,
+        13,
+        117,
+        219
+      ],
+      [
+        55,
+        13,
+        130,
+        219
+      ],
+      [
+        55,
+        16,
+        130,
+        216
+      ],
+      [
+        55,
+        11,
+        130,
+        221
+      ],
+      [
+        55,
+        11,
+        130,
+        221
+      ],
+      [
+        53,
+        13,
+        133,
+        219
+      ],
+      [
+        48,
+        8,
+        143,
+        224
+      ],
+      [
+        50,
+        10,
+        140,
+        222
+      ]
+    ],
+    "warnings": [
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "maiyarap-walk-north-east",
+    "boss": "maiyarap",
+    "action": "walk",
+    "face": "north-east",
+    "image": "maiyarap-walk-north-east.png",
+    "source": "docs/design/bosses/motion-identity-v3/maiyarap/walk-north-east-01.png",
+    "sourceHash": "e1693cb06dda060cee574dae2d68f4c1a0ac126647eb17aeb73562248bd89118",
+    "sourceHashes": [
+      "f15995f8ede17ea15b1cb7975bc82b223ef7d9fcf107d6094cdfe1fdff0cbbf3",
+      "fd03f8289989995fffb01c271639c9a7c474f6aedad7dc69b9bcf26e9478b83c",
+      "baf5214c96cbf0fa3b4c181a4deccc015536e96ac1dc2292718e2206a40cb913",
+      "ff388340541ff54be0f1d04d781b3a1fb4529cee3c3f84e47712eb0d728e7048",
+      "94e522bc6f2350864a00a0b127558c7989231ce600497e5df1861c6b9ad18fe0",
+      "a6ed2af79045107b771adb8a2524ae2703886037cde50d05215b740abfd2019f",
+      "5cda4c219c8a572124ef47de3953b3a3fe45740df989d32b42251df6af7ad3d2",
+      "9eb12df189af4a1f8dca0dc863cb7aa2e20fd68c8ce96ae7b717cc17e56ec567",
+      "304eed97757a701d66371dba1246769f24fb513b2255a12318e1e84522ac1b63",
+      "16a69e6fcae9f26997aa80e5ca1ff4bc324e209bf94c88c68d28f7dce215537c",
+      "4e7b0264b177311f1f299613027b7e04cf1a537c1e44eef361e149c14f26d1b6",
+      "2527ebe0618a9e20e3ebdff0f253e828e956d211258be7f54b1c52dccb820809",
+      "6c350f7136a3490d4708879a55544489abb54439f9b61cd65086680b7c73ae65",
+      "315403033b8b8c9c2c68d4df9449d174559ff570f635818183cccc714454754c",
+      "981685ba66f79742ea048421bbaf3d7eacf6797aeb9be5c764f74c750255086f",
+      "48fc0ae7cc8153f8fe704343387e956bcf5f5d963a4f14f8b8ef43835d806af0"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7320261437908496,
+    "bounds": [
+      [
+        39,
+        16,
+        162,
+        216
+      ],
+      [
+        41,
+        18,
+        157,
+        214
+      ],
+      [
+        41,
+        18,
+        158,
+        214
+      ],
+      [
+        41,
+        16,
+        157,
+        216
+      ],
+      [
+        41,
+        22,
+        157,
+        210
+      ],
+      [
+        44,
+        15,
+        152,
+        217
+      ],
+      [
+        45,
+        14,
+        149,
+        218
+      ],
+      [
+        48,
+        14,
+        144,
+        218
+      ],
+      [
+        45,
+        8,
+        149,
+        224
+      ],
+      [
+        46,
+        9,
+        147,
+        223
+      ],
+      [
+        48,
+        15,
+        143,
+        217
+      ],
+      [
+        44,
+        20,
+        152,
+        212
+      ],
+      [
+        45,
+        22,
+        149,
+        210
+      ],
+      [
+        43,
+        22,
+        153,
+        210
+      ],
+      [
+        46,
+        22,
+        147,
+        210
+      ],
+      [
+        43,
+        23,
+        153,
+        209
+      ]
+    ],
+    "warnings": [
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "maiyarap-walk-east",
+    "boss": "maiyarap",
+    "action": "walk",
+    "face": "east",
+    "image": "maiyarap-walk-east.png",
+    "source": "docs/design/bosses/motion-identity-v3/maiyarap/walk-east-01.png",
+    "sourceHash": "2354419aeb466b5729981366eaaf06b85dc2502b58c48e5213d796ec1f0d0326",
+    "sourceHashes": [
+      "78fad87695bd1b4720bd7b269dab0434ad3ce06f8c963edf19dfc9d9f461e134",
+      "55a1fc14399fb38bae2931114b44e0c92982f9519fa8c4c6317c6c0c5d995de0",
+      "471a76d03f8c78019ebc5f750b97bca057aa05b82e9b1e6b79a8059be30dfc50",
+      "0d3420ebda8833c478457577a8cbbc939d6fb9f973e5b10ae7983d3d5b0b61a1",
+      "a9f2f8a4e4b49dd41a5c6f1694ff478e180d22c528100d23e6a109252e285be5",
+      "8f17fc694f012e92979ddcdea9eb5307314527c61d0edae28f0a049cacf969e5",
+      "fd565da94b0363ab46cb38b1b1643b005c2c417f10c14afbeeba554c3aa3a455",
+      "8490d963d9543345df15ff2455bf09f7812e141454d3bedab43e49d3443e34f2",
+      "126dafb7c270037c49a6b5eaf1c0b1983a4b7ec502c341ceb93db7e84a9d1630",
+      "15af297efa3700544600ded4af61f1ae0ff31508bd2c2b7583f4a0a22fe67fe3",
+      "4cb3ee95386e2244cdfee859a2fb75219ac9d2359ad5798f5a1f0bc40fa46a6e",
+      "a3055f4e9d727d64c46bbb4ee1795c83846198c9c59b9cddbd277791d3292c08",
+      "da09d57360dea0c84b5b6055f70c804553fdebf2e638753df2207ac96761d60f",
+      "457afef37ec79991c35a9422fd1f7fe264c315e429f498104c0827010f973cb8",
+      "b6770db51178adbb66093133218484e5f821644588461f52f1c8f5b880abf5a2",
+      "d01f890ff3151ff1678927f084bce5422913a2ef20f251226e132354d37d33c3"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7466666666666667,
+    "bounds": [
+      [
+        48,
+        19,
+        143,
+        213
+      ],
+      [
+        49,
+        19,
+        142,
+        213
+      ],
+      [
+        48,
+        19,
+        143,
+        213
+      ],
+      [
+        47,
+        18,
+        146,
+        214
+      ],
+      [
+        45,
+        17,
+        150,
+        215
+      ],
+      [
+        47,
+        16,
+        145,
+        216
+      ],
+      [
+        49,
+        8,
+        141,
+        224
+      ],
+      [
+        45,
+        17,
+        149,
+        215
+      ],
+      [
+        45,
+        9,
+        149,
+        223
+      ],
+      [
+        43,
+        9,
+        153,
+        223
+      ],
+      [
+        43,
+        9,
+        153,
+        223
+      ],
+      [
+        47,
+        9,
+        146,
+        223
+      ],
+      [
+        49,
+        24,
+        142,
+        208
+      ],
+      [
+        47,
+        23,
+        146,
+        209
+      ],
+      [
+        43,
+        23,
+        154,
+        209
+      ],
+      [
+        47,
+        23,
+        145,
+        209
+      ]
+    ],
+    "warnings": [
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 6: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "maiyarap-walk-south-east",
+    "boss": "maiyarap",
+    "action": "walk",
+    "face": "south-east",
+    "image": "maiyarap-walk-south-east.png",
+    "source": "docs/design/bosses/motion-identity-v3/maiyarap/walk-south-east-01.png",
+    "sourceHash": "75297387107fd867d2090115ecfdd5b9da49e02cfd5661576fac2878da119831",
+    "sourceHashes": [
+      "41785282780df65796c0ef8f6947dc5402a315e7d27670dea3121c8eefcc2715",
+      "4e890c24bbe17f7900a1f520b5c5617d777b22252560bc326a515785d7ecc941",
+      "652b4ae91a68dce71901b8d824d7f9ada571a8da78714268977763d79a25ffc2",
+      "7f0c593eb02da7745a36db06081a95338125fdbdeb8b3773dcdd67c255c7d94c",
+      "53144203044a1d41e0d81c7bff2c76b2e9410e2b8cbbd06ed92834110b43bee7",
+      "9ea073b06e164053f5c28d61c5c99e2804115ae8d78b177e59f0f3d5bb0ed7af",
+      "8dac0e5227d06753bd2045be9e2692d68366702a9c763420bee32e30da75ef8c",
+      "660c2fc82735d67cff11d524de329122afb46de66db025648107a51995fd2819",
+      "95cb43694419e050e3aec38873b4a5291a1c03b54c01a7b0550ef0ee9d9fb968",
+      "df230e720ba58322f48f94f01b54da58edc6a7205370d55d18e2f6be61d4ac51",
+      "6b8012a10e10095c968e762b5b36f574528d9e39b038b56614a803977c2b1d77",
+      "cd1285193d64a0aad24dbc0088ea9ba37311b2c3f0f3f2988d04cc9723e073bb",
+      "582476fd3368eb43f5ce91c0d54600f3d36b76ab817e1d81a3cb10c3d7d41e11",
+      "d341d62be362cfbf73ebb271992c841f9b3874c96519b3c2c5c58dcfa85c5bff",
+      "6aa114914f29cbfa2c0f0d8a7dca8c09ea44d6e989c99e5b15e3844ab3e17316",
+      "1032d5f5e968abebb4a3a03cebe3f1df29fba8c7b897f9c60fad7eb5ed4b62d9"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7272727272727273,
+    "bounds": [
+      [
+        46,
+        13,
+        148,
+        219
+      ],
+      [
+        47,
+        13,
+        145,
+        219
+      ],
+      [
+        38,
+        13,
+        163,
+        219
+      ],
+      [
+        53,
+        18,
+        134,
+        214
+      ],
+      [
+        46,
+        17,
+        147,
+        215
+      ],
+      [
+        47,
+        20,
+        145,
+        212
+      ],
+      [
+        42,
+        17,
+        156,
+        215
+      ],
+      [
+        44,
+        17,
+        152,
+        215
+      ],
+      [
+        44,
+        8,
+        151,
+        224
+      ],
+      [
+        43,
+        8,
+        154,
+        224
+      ],
+      [
+        42,
+        10,
+        156,
+        222
+      ],
+      [
+        47,
+        11,
+        146,
+        221
+      ],
+      [
+        48,
+        25,
+        143,
+        207
+      ],
+      [
+        45,
+        25,
+        150,
+        207
+      ],
+      [
+        44,
+        25,
+        152,
+        207
+      ],
+      [
+        46,
+        20,
+        148,
+        212
+      ]
+    ],
+    "warnings": [
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "maiyarap-cast-south",
+    "boss": "maiyarap",
+    "action": "cast",
+    "face": "south",
+    "image": "maiyarap-cast-south.png",
+    "source": "docs/design/bosses/motion-identity-v3/maiyarap/cast-south-01.png",
+    "sourceHash": "97580c52730150f74250c5ac2c1912f73a90887c381ddd6c10384e7afedf7083",
+    "sourceHashes": [
+      "591991c8ffd26d276850c2ba2dc139cc7b6b48bd32f24a59ca53dfce52177cf8",
+      "3f3f361f349dc75fabf1c6a9a277517f021c1cf93b2e9e5c042f7c63029f6283",
+      "1c60557a19de9b86e6ccc6e6ac74fb087b7bd16b88b8ab26d5ebf02dd69f73c3",
+      "5fe32da61d7b3cf166596c0b53b505a34766a5839caa15b5643afdc30f5e6dfe",
+      "2dc80c59e9c2b69220a634358c1783675ab722ccdc78bc1b8eb53c61f8fca7ac",
+      "e182425e18001f169abc0d7d225c7eda791c438ec34e4aa1b9f03813b9c5ff6e",
+      "43cb7338a9c73efcd57e754aca3856904f3ed9206f32c44777dd0c42477aae09",
+      "e60b6ea43ed5a4feaf107758bb5daf02cf8d0f309d77e51750374cf2f2275c7c",
+      "2bb7231516150bb4b03e6a784498a812c0f98a29fe523ef381a918943aba075a",
+      "0769b9b0e04eef4bef485dd1a7535fcf2ca045dcb01f6503777e8d96987c4e4c",
+      "868a50d1878f0436bc3b46f5af3fce8a3bed8dd3e27166b973d7c8612f0f8410",
+      "340927df891e138216f358da546b62f8319073865aba4f2b78d506eed0544547",
+      "d1d0649ca606457660e7f55dc48a62f00431775ca1e11806bca7989774894181",
+      "32c2f0aacb18eb555a055cb9f56ab34c9565cd96bd7f75270f5366a0aa7c947a",
+      "4eec7543e4b0dda93d6a8b0f058402e3d4787b693355fef9202d0e87862c934f",
+      "464adb54aa43fe1cdc8e13897b95845d5cd50080bb7a145f167471d61ac4a7eb"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7225806451612903,
+    "bounds": [
+      [
+        57,
+        14,
+        125,
+        218
+      ],
+      [
+        54,
+        16,
+        132,
+        216
+      ],
+      [
+        53,
+        17,
+        134,
+        215
+      ],
+      [
+        51,
+        33,
+        137,
+        199
+      ],
+      [
+        49,
+        40,
+        142,
+        192
+      ],
+      [
+        45,
+        39,
+        150,
+        193
+      ],
+      [
+        34,
+        17,
+        171,
+        215
+      ],
+      [
+        49,
+        8,
+        142,
+        224
+      ],
+      [
+        42,
+        8,
+        155,
+        224
+      ],
+      [
+        36,
+        19,
+        168,
+        213
+      ],
+      [
+        15,
+        13,
+        210,
+        219
+      ],
+      [
+        41,
+        12,
+        158,
+        220
+      ],
+      [
+        38,
+        29,
+        163,
+        203
+      ],
+      [
+        46,
+        26,
+        147,
+        206
+      ],
+      [
+        49,
+        26,
+        141,
+        206
+      ],
+      [
+        56,
+        26,
+        127,
+        206
+      ]
+    ],
+    "warnings": [
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "maiyarap-cast-south-west",
+    "boss": "maiyarap",
+    "action": "cast",
+    "face": "south-west",
+    "image": "maiyarap-cast-south-west.png",
+    "source": "docs/design/bosses/motion-identity-v3/maiyarap/cast-south-west-01.png",
+    "sourceHash": "2ac70548c0a4f35fb16dd2c3057b4dc2f665bdba3fca19b994264e4a13b166eb",
+    "sourceHashes": [
+      "e6f3b86a55fa0531f1f7c70f6cde6046f67809cf0ac00cded043c0d599785e66",
+      "833a603350c8af3dc99ade5132bd61b8ef14a5e81cdf222ecfb0a18842e92c17",
+      "383d1b820456e5490c72fe76820b3d3ecc5b8da240eb94a9726e5bfec06ef273",
+      "f3aa84876e56f016584d4c31efbdaf030871f37df5cad2e4724860032fb5a918",
+      "ed166685791a225b06fcdc7d7c023a1ca0758c81d104492befce29d97d232d4d",
+      "e557a52445b83d920bfbb186e12df8ae2b59478d3f6d972573ba9e100d1f6b03",
+      "b7b6d4a38052e65d5fa94cbdbdf885e750f681c5d89d3aa121ffb994168d2df0",
+      "955b6e8365f7ed0bbf2d68c1c032369e43da56a02f84d6ce901959a5b5c4148d",
+      "e5b75160d9cb8d633e341b5563ac862de76777f934342517ba7c6216a531432f",
+      "9d3e9ee1e2fe9089dacc55275a13ef07718feb9107b66ac5ad1c95948ce9edbe",
+      "6629a0349a854de75f30c11cd4d34f1a7a4e43f192ce94ecc59a42727cf22d93",
+      "85386066e7614c55ac9daa3149457dcd54fbe3428fe990f656d448e50598de33",
+      "ac295b9935d08484f70feee2765e3e697927579c5637785e931721970e853fef",
+      "0d1e5cd1d60816a2aa1a622bf6898a71e8d4172158f0625d25b96182519da892",
+      "20e39a7ab187b7ceca9ae2111168ab7b6c1ea9a55b51cfe4a91ec8349b370f8d",
+      "c664b3f994299db277f65c2be163340d127273ef944f6fcd1ad2c089782a7ae2"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7066246056782335,
+    "bounds": [
+      [
+        49,
+        14,
+        142,
+        218
+      ],
+      [
+        46,
+        19,
+        147,
+        213
+      ],
+      [
+        43,
+        24,
+        154,
+        208
+      ],
+      [
+        45,
+        38,
+        150,
+        194
+      ],
+      [
+        49,
+        42,
+        141,
+        190
+      ],
+      [
+        41,
+        48,
+        158,
+        184
+      ],
+      [
+        33,
+        14,
+        173,
+        218
+      ],
+      [
+        42,
+        14,
+        156,
+        218
+      ],
+      [
+        40,
+        8,
+        160,
+        224
+      ],
+      [
+        30,
+        39,
+        179,
+        193
+      ],
+      [
+        13,
+        15,
+        214,
+        217
+      ],
+      [
+        38,
+        38,
+        163,
+        194
+      ],
+      [
+        41,
+        31,
+        158,
+        201
+      ],
+      [
+        48,
+        30,
+        143,
+        202
+      ],
+      [
+        44,
+        29,
+        151,
+        203
+      ],
+      [
+        48,
+        30,
+        143,
+        202
+      ]
+    ],
+    "warnings": [
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "maiyarap-cast-west",
+    "boss": "maiyarap",
+    "action": "cast",
+    "face": "west",
+    "image": "maiyarap-cast-west.png",
+    "source": "docs/design/bosses/motion-identity-v3/maiyarap/cast-west-01.png",
+    "sourceHash": "4dd10fab7af1f805296e42feaa62a029f16205fb9f705ef2863085ed09798df5",
+    "sourceHashes": [
+      "760c698e833553a29213aa69aaa9398599b4a6604953787f9bc9d5a22c93d3af",
+      "31a1059d24f9ba0f70823ae3ddf4be3a264b012f9a179396adae3d411d6f9e6b",
+      "b711a80c16e256737bb5e7f6de3875989c92e596300e1679a90085ecf436a79e",
+      "4535d09a0d40f4720f370a8e6234e79b666d0daafdd070064caf0758e6843f62",
+      "c1a4923991c458332c57cd44dd4240b30b090172ed7498dd41f3da3087937c1d",
+      "09d08574804f092be9e7ec594bcdfdd8405751ccd8005b7d0ed48132babb1a9e",
+      "2d9ec8586c572c3dbd21bd352e17750fbaa87556c4a9a2c972dada0a385d01b8",
+      "b0457f51ab96d13f85ac4ca445f1764ee31e1fb1b4472167210281108faf5e77",
+      "f8f9c1c9ab4f04fed8eb5bdde028cb2d12f8174879c3d810a0ad1d02106960c5",
+      "41318f19fbfa39f1e912260a83a749f081ce58c4a99c90bd7fbee0eeb1bbafbf",
+      "641353c0a6dc36afac1e18fa2f87931418820518929a200119427d104ef14986",
+      "5cc023d7b316104f7e770e9686d257490e1fe39403e2e75404e92fbdb7502552",
+      "4644e54cb05d035c2e9aad0e10cc11b169da39ae7d8cbffe18f2e6cce5b636be",
+      "a0fcbf0d6094afc4cc5a7d51257423673c4d3495f1ac8698b27161e05eeae82e",
+      "007852928ca7d686ab11127aa687267e39a5bb0e95507504c25e10eccb2d9f00",
+      "f95a26ecca15d21e6870cffda8ceeb186a56debc18d53abf5f96b258971ec8b4"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7296416938110749,
+    "bounds": [
+      [
+        39,
+        15,
+        161,
+        217
+      ],
+      [
+        46,
+        17,
+        147,
+        215
+      ],
+      [
+        44,
+        23,
+        152,
+        209
+      ],
+      [
+        11,
+        32,
+        218,
+        200
+      ],
+      [
+        37,
+        32,
+        166,
+        200
+      ],
+      [
+        35,
+        43,
+        169,
+        189
+      ],
+      [
+        33,
+        10,
+        174,
+        222
+      ],
+      [
+        38,
+        8,
+        163,
+        224
+      ],
+      [
+        31,
+        9,
+        177,
+        223
+      ],
+      [
+        38,
+        21,
+        163,
+        211
+      ],
+      [
+        33,
+        16,
+        173,
+        216
+      ],
+      [
+        10,
+        18,
+        220,
+        214
+      ],
+      [
+        38,
+        32,
+        164,
+        200
+      ],
+      [
+        44,
+        26,
+        152,
+        206
+      ],
+      [
+        44,
+        27,
+        152,
+        205
+      ],
+      [
+        14,
+        24,
+        212,
+        208
+      ]
+    ],
+    "warnings": [
+      "frame 2: cell-edge pixels require clipping/ownership inspection",
+      "frame 3: cell-edge pixels require clipping/ownership inspection",
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "maiyarap-cast-north-west",
+    "boss": "maiyarap",
+    "action": "cast",
+    "face": "north-west",
+    "image": "maiyarap-cast-north-west.png",
+    "source": "docs/design/bosses/motion-identity-v3/maiyarap/cast-north-west-01.png",
+    "sourceHash": "928d472b43ba98a09143a72707e232fd32796d97d02ee4b916e4df9dded7b5b8",
+    "sourceHashes": [
+      "3214cf181cedaf05857fd6ad8a07be59d29ee5c6bfcd29d5b155696cde657e9f",
+      "87f74e7a53f8c5d69afb1f6c7d7f1be2ae795d7ce629873d239f8b165eb7b3d5",
+      "1f123d931fbcaa2fc28b78e75baa2c4d58e49553da563ea52336b8994f118698",
+      "ff58b0ac261213c7198d1e7acb4d4d2e294140996fecc7775b95144818ba89b6",
+      "396f18e3895cae65fad20558e844fca4eff291b121e2793e6d2c814c070c0066",
+      "d6f71d1d27ec5d8820d9a7a37955c71d3ab2cccdf2a1a06c5307b893a65af8bc",
+      "72fc2244045e1d4740fe4b1cf0f362f71999858bfd8358e1e2f09185ce523e12",
+      "25170f2d73cee3c80dfcc58edb275d7036cd31aa40b980ad834744b8ce79ac4d",
+      "89e3c523af3a40ea89094d9bb05ddea8f2b708f6f251ea6ac3f697b9561665b5",
+      "ba5e11bfbe539f17ec367ab9046a9f8d5d8756a68c93186d2d4b1e7b2fd086f8",
+      "56e747cb0049dfbcde9c2a1148e949ec4173acf0827bd5058943b357ddb4759f",
+      "837c2693076c2a24eb4a947b50a256b9f9cd524637a7d5266d9bccc5d6b99d16",
+      "3f2265ec68360ade953607e88d79c9a65b912a634ae98c56c6cdb3d4fc6c1e0c",
+      "8381d630d8f889774a1866d289e105add988aa602ff634f9ca464058e1b708de",
+      "f00468b0fa51c84333fe8df01425a61ac6b83dd7b353b44946a69c9f5393b305",
+      "bc4987afc90732d7a72273b2bff97d949216095d39ed690463657580d7fe1405"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7066246056782335,
+    "bounds": [
+      [
+        49,
+        14,
+        142,
+        218
+      ],
+      [
+        49,
+        13,
+        141,
+        219
+      ],
+      [
+        48,
+        19,
+        143,
+        213
+      ],
+      [
+        50,
+        32,
+        139,
+        200
+      ],
+      [
+        43,
+        9,
+        154,
+        223
+      ],
+      [
+        41,
+        9,
+        158,
+        223
+      ],
+      [
+        35,
+        9,
+        169,
+        223
+      ],
+      [
+        44,
+        9,
+        152,
+        223
+      ],
+      [
+        37,
+        8,
+        165,
+        224
+      ],
+      [
+        33,
+        8,
+        173,
+        224
+      ],
+      [
+        18,
+        8,
+        204,
+        224
+      ],
+      [
+        40,
+        8,
+        160,
+        224
+      ],
+      [
+        36,
+        28,
+        167,
+        204
+      ],
+      [
+        47,
+        26,
+        146,
+        206
+      ],
+      [
+        41,
+        26,
+        158,
+        206
+      ],
+      [
+        50,
+        28,
+        140,
+        204
+      ]
+    ],
+    "warnings": [
+      "frame 0: cell-edge pixels require clipping/ownership inspection",
+      "frame 1: cell-edge pixels require clipping/ownership inspection",
+      "frame 2: cell-edge pixels require clipping/ownership inspection",
+      "frame 3: cell-edge pixels require clipping/ownership inspection",
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 6: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "maiyarap-cast-north",
+    "boss": "maiyarap",
+    "action": "cast",
+    "face": "north",
+    "image": "maiyarap-cast-north.png",
+    "source": "docs/design/bosses/motion-identity-v3/maiyarap/cast-north-01.png",
+    "sourceHash": "ad0407269e7cc6aea065006a0055325ecd0c8610d001b5a61c75258a469e1581",
+    "sourceHashes": [
+      "a48ea7a958cab904808e7c8c27e94047a7dab837938a792be62e4b8e71f8d175",
+      "390c098c4f8b0bb3ea7302df5adcb2cf7a6846151653c00c60ee0dbcdcb2a989",
+      "3e488d2aa85a747bf77c3627d12844c965eb6eb3e434868d1ee81a6b951e18df",
+      "fe97d54b1fbaccd5d7392640eeb58a7d8d10aa0c63f5994c692734b8a6541c0d",
+      "656a1055752727f56427ac97d60861777b6e508e9bfff9db95181408cf0be2b6",
+      "f613fa7f78db2fc85a6de903f894a8e69743040d4ae94c74162347b8db6f55b7",
+      "ebec721d6c4da70a291b1929edfda77441fac22f7779c437b39c284e350c0ee4",
+      "bf80627135ed84d93369f9d3a46b649f41f894e15207c0d06acae328aeb2f354",
+      "cdf468d80369e7db80e0afaaa8d3f36cd50e3a40eafd9db532a16c019adc4e67",
+      "6a7e32c645c2c1831f70cd12c8e1d38c12cac90d02380e034750fd37d82ca712",
+      "0e98f686cd4edc8ac5f981e0ae368a0013525ad666d34acdd7f954c340a15092",
+      "e98e63bb77f1c391c8ef7dfd9c21b8e625d4fd57a7158e6db37cc9d19e239d69",
+      "27e1ee9abd357065c8617f5071113a2a00756edbfb07cbf443fe069dd221e03c",
+      "97b46827700309ba1d7b011e32eab30fa4b34e539a149a6e4178ede4ebfc902e",
+      "338e2fccc8f56572f6e7e69cdf8304dacd5cbf86fad686422806ad1228dabd2a",
+      "cec612f9378e2224e921758c9c2e6ad699d009433b12e3f2c38b5d131c11dcea"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7542087542087542,
+    "bounds": [
+      [
+        51,
+        10,
+        137,
+        222
+      ],
+      [
+        51,
+        13,
+        137,
+        219
+      ],
+      [
+        50,
+        10,
+        139,
+        222
+      ],
+      [
+        44,
+        28,
+        152,
+        204
+      ],
+      [
+        44,
+        31,
+        152,
+        201
+      ],
+      [
+        46,
+        32,
+        147,
+        200
+      ],
+      [
+        39,
+        9,
+        162,
+        223
+      ],
+      [
+        38,
+        8,
+        164,
+        224
+      ],
+      [
+        41,
+        22,
+        158,
+        210
+      ],
+      [
+        41,
+        28,
+        158,
+        204
+      ],
+      [
+        41,
+        28,
+        158,
+        204
+      ],
+      [
+        36,
+        13,
+        167,
+        219
+      ],
+      [
+        41,
+        22,
+        157,
+        210
+      ],
+      [
+        43,
+        25,
+        154,
+        207
+      ],
+      [
+        48,
+        19,
+        143,
+        213
+      ],
+      [
+        51,
+        17,
+        137,
+        215
+      ]
+    ],
+    "warnings": [
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "maiyarap-cast-north-east",
+    "boss": "maiyarap",
+    "action": "cast",
+    "face": "north-east",
+    "image": "maiyarap-cast-north-east.png",
+    "source": "docs/design/bosses/motion-identity-v3/maiyarap/cast-north-east-01.png",
+    "sourceHash": "73144ccd45f305265487c7c85371d092346132d49afb77969c3271349b3bc292",
+    "sourceHashes": [
+      "84b2f0094c5ec9b12c6d13b51b818a00fbe3edc03a2f62f3198abf7a8cbff251",
+      "033e88a8b2772bdd8ad519219d75878c77252cf8f5986013b7b9c3e5771b3675",
+      "fb5b3006dbf720bf77e003b25a531f7efeea62fe1c404f707ffb1f48096c95e5",
+      "2ef92f7d71e3d9026958494997429039c830b292b471e7afc5ca7c7eed34a458",
+      "4baa2c7c0634072969fd33a53f7bd2160ea1b2899be5fab732694e207b61a9e5",
+      "1c2e8946f6cf6c392e5fb944d0741443503ad4bd075ed768662e1d2182fadd83",
+      "f40bf67d4075cefdfbf73b99c4eae935bff9522753e7d34f91b720ddb0ed6375",
+      "321c12df2f59236152f0475ead090f6e0117196683c292fea1e0644147a8323c",
+      "d2abaf08ad44dff2bfadd66b396997520485dca4f4507a3ba2adeb8d1351e4af",
+      "7c45b3354376992880a35efb94c5e8054366aada534d741c059eae8ee8ac8f63",
+      "c610eefc2cf80444ef3ae0f1e73b6849ee3b1a84a7df387f7043ee91149dc4ff",
+      "d0abd55969bdee443d627f3ef5a8bbcbeb5428edaa7d79ac31ee7bbc88f008bd",
+      "639c34d9a73134a03601e4e6ec1fff2e80ed66f36bac5de0cb3c9e31dbe3b9a9",
+      "4b977e71bf7fa0430786cc06942695499ce8644ce2b612a4723cc7a92f8680b3",
+      "a40cb0776bc7cec7ba1cab0afbcf27acf073d2c7515ae272fcfe49ba920c1800",
+      "d7edac6babe8ea2c9621ad194f74b0adafc9e1231985b686ec8c316b0c567540"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7202572347266881,
+    "bounds": [
+      [
+        61,
+        13,
+        117,
+        219
+      ],
+      [
+        57,
+        17,
+        125,
+        215
+      ],
+      [
+        56,
+        18,
+        128,
+        214
+      ],
+      [
+        48,
+        45,
+        144,
+        187
+      ],
+      [
+        50,
+        12,
+        139,
+        220
+      ],
+      [
+        47,
+        12,
+        145,
+        220
+      ],
+      [
+        35,
+        8,
+        169,
+        224
+      ],
+      [
+        45,
+        17,
+        150,
+        215
+      ],
+      [
+        38,
+        27,
+        163,
+        205
+      ],
+      [
+        41,
+        40,
+        158,
+        192
+      ],
+      [
+        38,
+        42,
+        164,
+        190
+      ],
+      [
+        14,
+        46,
+        211,
+        186
+      ],
+      [
+        35,
+        43,
+        169,
+        189
+      ],
+      [
+        8,
+        32,
+        223,
+        200
+      ],
+      [
+        54,
+        32,
+        132,
+        200
+      ],
+      [
+        57,
+        27,
+        125,
+        205
+      ]
+    ],
+    "warnings": [
+      "frame 0: cell-edge pixels require clipping/ownership inspection",
+      "frame 1: cell-edge pixels require clipping/ownership inspection",
+      "frame 2: cell-edge pixels require clipping/ownership inspection",
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 6: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "maiyarap-cast-east",
+    "boss": "maiyarap",
+    "action": "cast",
+    "face": "east",
+    "image": "maiyarap-cast-east.png",
+    "source": "docs/design/bosses/motion-identity-v3/maiyarap/cast-east-01.png",
+    "sourceHash": "2bcbd4e7010932c3a2a78f21092b81361b23d35a1549be22666df337a9effa34",
+    "sourceHashes": [
+      "da3acfa25c75f332dd5a7b483e8eab4b69443787f5f5dad00c8bd02363eedf3c",
+      "9128221201dc03128b47e19ea797e2b4b20dc5702f54bef071803a2d71e98828",
+      "7dab6667d8bcfbc2762f2b5225e1f3f20d099e4a598c78fcaac869d5ad628052",
+      "184fa4dff2f2d75777771a9fbce4b9fa0b4aed23305ef57c93a111305ef0e941",
+      "3e4d1ba15f693faf5e81c1e968359ae41b78866657e46f804a1df7056b8b1c06",
+      "27c686ae7d7ecbda79aef1aff4be10de769ee8dd75646b1cb4334692f80c1a1f",
+      "868100f3296c31a45a5fc6684e6b23d48c7a5779cc474a6c22957e9223b81427",
+      "aaa69e38cb753352c62ec4cf23b298428c7b88b93cff47a9d14974ad2ff878cf",
+      "af86c50a7b48ed6270496c083962d5d8f8d04a403cb67d411f9ed248f1cc715d",
+      "94f010e3f31190fb7e6604833a0270de9fe760202c38f32db2ab95b694d6fea7",
+      "cc64880198569314b047bf2fcbdef6f7d7e719e9677621c0508a6cfbc91612fa",
+      "b94e27793182ac1d3ee44e7a91b410bf73b186d3542cdfdad3c3d51d287040f0",
+      "0cbd359ee672e32e462fbdffa3b78060be2e0be7ea852d4e95ea4bf4580d3c13",
+      "ce9eaa0d6560b65263f8312253728251741e871df4a3def4abffa119ed740c15",
+      "f156c2c11489ccf051f17d7a3446d3d1734cf9935cdfccb5c91bbed6f84504c0",
+      "d960e4e0ae1e46e0a9f686f9b88e5f432c34b94a9dae1565d64bacb262253637"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7066246056782335,
+    "bounds": [
+      [
+        51,
+        12,
+        138,
+        220
+      ],
+      [
+        50,
+        15,
+        140,
+        217
+      ],
+      [
+        48,
+        21,
+        143,
+        211
+      ],
+      [
+        51,
+        28,
+        138,
+        204
+      ],
+      [
+        50,
+        39,
+        140,
+        193
+      ],
+      [
+        44,
+        41,
+        151,
+        191
+      ],
+      [
+        35,
+        19,
+        170,
+        213
+      ],
+      [
+        42,
+        9,
+        155,
+        223
+      ],
+      [
+        39,
+        8,
+        162,
+        224
+      ],
+      [
+        36,
+        13,
+        167,
+        219
+      ],
+      [
+        37,
+        24,
+        165,
+        208
+      ],
+      [
+        40,
+        22,
+        159,
+        210
+      ],
+      [
+        44,
+        36,
+        151,
+        196
+      ],
+      [
+        47,
+        33,
+        146,
+        199
+      ],
+      [
+        47,
+        30,
+        146,
+        202
+      ],
+      [
+        52,
+        30,
+        135,
+        202
+      ]
+    ],
+    "warnings": [
+      "frame 0: cell-edge pixels require clipping/ownership inspection",
+      "frame 3: cell-edge pixels require clipping/ownership inspection",
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "maiyarap-cast-south-east",
+    "boss": "maiyarap",
+    "action": "cast",
+    "face": "south-east",
+    "image": "maiyarap-cast-south-east.png",
+    "source": "docs/design/bosses/motion-identity-v3/maiyarap/cast-south-east-01.png",
+    "sourceHash": "d3d6c461f0c433da10c45cc2da8de4f1cb8e74170400c1524d6eff14d1a34811",
+    "sourceHashes": [
+      "59c467e6c5271218252b012831c89a1abd454c6c7a3502f254364da45ae192ca",
+      "cb2dbcee87df5c0c9afa2bfd54112d6a33b5f314b788b4668f48f45d90a7c868",
+      "cc9d85fb813bc4b42f367917459abcba124c04774ecad0ec7558034ad201a6b8",
+      "bf71dd70f2207837ffae0b43446f810c7ea1da3ed5fb5e63047ee263cda2c661",
+      "99bd810acdcbc5073c0c45e6d452dacb10501302761fa71731c66499dd041893",
+      "e8f9f58f5f3b6561160d72721c749f2ee1391b79b1c69980e614895b39e53213",
+      "063500d3ce660e8825339ebd8284b03c2738b78bc2ee69ead76aee1b9a46d16b",
+      "5d3d7f480d9c155778aa6b7bcd708621e26029d37c906464d387ddcafcc581b7",
+      "126f70e1ae9bbdf88a267e2ff2e06ee61cf6a4e615b2af23ef2a4c5d6c08e007",
+      "9eff56acb5864048538e8178974d681d1138277506c8dca33256c801d08fdb0e",
+      "28c947a1f9c708cd208a8203ae9bf5de45aaeed3eaa14330fa2ff9fb85001809",
+      "9090e34c7c498d5fceab5583d75fbfcbd1ea56eef1bf4e83369f539fd88915ea",
+      "240768753baf84f9a1d30ed71efc364c1f9ff027a6ad451bd1d0cab5c7ec0130",
+      "3af3015757684968b7e144570371ba116730dfc95643115406d046d66d7a3725",
+      "5b06738dc77389829b707d1f818a72129eec439dd6aad006dc365645a8fd2e9e",
+      "9e50a1d3e3b9129c383a311a8761665a465844b1f431ee28d6f976c8c98e5fa9"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7066246056782335,
+    "bounds": [
+      [
+        54,
+        20,
+        131,
+        212
+      ],
+      [
+        51,
+        22,
+        138,
+        210
+      ],
+      [
+        46,
+        26,
+        148,
+        206
+      ],
+      [
+        47,
+        40,
+        145,
+        192
+      ],
+      [
+        51,
+        9,
+        137,
+        223
+      ],
+      [
+        49,
+        9,
+        141,
+        223
+      ],
+      [
+        37,
+        9,
+        166,
+        223
+      ],
+      [
+        44,
+        9,
+        151,
+        223
+      ],
+      [
+        36,
+        8,
+        167,
+        224
+      ],
+      [
+        34,
+        8,
+        172,
+        224
+      ],
+      [
+        12,
+        8,
+        216,
+        224
+      ],
+      [
+        41,
+        8,
+        158,
+        224
+      ],
+      [
+        42,
+        31,
+        155,
+        201
+      ],
+      [
+        48,
+        32,
+        144,
+        200
+      ],
+      [
+        48,
+        32,
+        143,
+        200
+      ],
+      [
+        54,
+        29,
+        132,
+        203
+      ]
+    ],
+    "warnings": [
+      "frame 0: cell-edge pixels require clipping/ownership inspection",
+      "frame 1: cell-edge pixels require clipping/ownership inspection",
+      "frame 2: cell-edge pixels require clipping/ownership inspection",
+      "frame 3: cell-edge pixels require clipping/ownership inspection",
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 6: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "shuten-doji-walk-south",
+    "boss": "shuten-doji",
+    "action": "walk",
+    "face": "south",
+    "image": "shuten-doji-walk-south.png",
+    "source": "docs/design/bosses/motion-identity-v3/shuten-doji/walk-south-02.png",
+    "sourceHash": "e5bdae0649fd840eee80be2f99ce37c7ea186c83c312e98f18254013b177a9de",
+    "sourceHashes": [
+      "8e6dba543760b5cc70835f0383fa702333b2630628c1fac827600c11751cb87a",
+      "85c7f67c2346e1189bad798a81a1aec6cd371f1dd6a33841935584a0e530a2bd",
+      "22b0d6f9f7046dad351c6c0a569a4aef16baea698e14d2c4be6ed417c8eb4c8f",
+      "a742d88566164890289f94cd3aae6e43a9b5cd29cb3ea1e18448d5745cdca732",
+      "751a87a0fe036acf9ff61d89a611264a38df12310c01bc989443a781675382f5",
+      "d99cbb4335ec919a6596b2ef0080140ba7f772b22fbd4b90b3a17a05ae262588",
+      "8a236c52d765d1e776190449eca0117e855f8c4e7fd0f436151c47d7242d2add",
+      "78ae7006fc225cc05375a1caa708af96d61ec1142344e4663b51c39d43ba1117",
+      "7ab549fdbe06168cf6215ae9cba07667a45fc3556fdbaccc97cf69e03377c1c9",
+      "808ffe7b819848f2b31d3804018b2cc1cf774b438715a261322a2ca522db5dae",
+      "c24dff0605a05b90509b8b9fbdc0d66f37b131c7a4be36e3d508e2ccf8db2e00",
+      "aad38e91f37ce744c65208aeffee479f2aca50190e7f0dc012c56698879ce1b9",
+      "7190d0c5f86ca64f387168ae6709850d0e59f34645a8c427047e62e5418c5f52",
+      "6e568e02580bf4202fa0a16128da0022ba97db37955ef9a54622c2b9b554c640",
+      "93b94979984e57fe3233cb15015bcfbc26358ea3bc4498246c00ce13033b99ee",
+      "c42d66539711330582e8561745199f76d1941435e70b95d65467e7d2039643e7"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7,
+    "bounds": [
+      [
+        38,
+        18,
+        164,
+        214
+      ],
+      [
+        33,
+        16,
+        174,
+        216
+      ],
+      [
+        31,
+        18,
+        177,
+        214
+      ],
+      [
+        36,
+        19,
+        168,
+        213
+      ],
+      [
+        34,
+        16,
+        172,
+        216
+      ],
+      [
+        33,
+        9,
+        174,
+        223
+      ],
+      [
+        34,
+        8,
+        172,
+        224
+      ],
+      [
+        34,
+        18,
+        172,
+        214
+      ],
+      [
+        33,
+        12,
+        174,
+        220
+      ],
+      [
+        33,
+        14,
+        173,
+        218
+      ],
+      [
+        33,
+        13,
+        173,
+        219
+      ],
+      [
+        30,
+        23,
+        179,
+        209
+      ],
+      [
+        35,
+        21,
+        169,
+        211
+      ],
+      [
+        31,
+        21,
+        178,
+        211
+      ],
+      [
+        36,
+        20,
+        167,
+        212
+      ],
+      [
+        35,
+        20,
+        169,
+        212
+      ]
+    ],
+    "warnings": [
+      "frame 0: cell-edge pixels require clipping/ownership inspection",
+      "frame 1: cell-edge pixels require clipping/ownership inspection",
+      "frame 2: cell-edge pixels require clipping/ownership inspection",
+      "frame 3: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 6: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {
+      "status": "blocked",
+      "reason": "both support poses exist but planned 0/4/8/12 sequence was not followed; order requires authoring"
+    },
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "shuten-doji-walk-south-west",
+    "boss": "shuten-doji",
+    "action": "walk",
+    "face": "south-west",
+    "image": "shuten-doji-walk-south-west.png",
+    "source": "docs/design/bosses/motion-identity-v3/shuten-doji/walk-south-west-01.png",
+    "sourceHash": "587e3a273ace29b4a9e78ac531484ce67ace2ee5a9668f2b9304af24e94ddd75",
+    "sourceHashes": [
+      "99ee51cfd901de150316843511d8732d98dcf4d8b669076cdfcd934591023c78",
+      "58fb26eccc14d397d199d23d8d8102b65fb47c6cb38b8cd37d71ff445ba37d22",
+      "6940102ca2a6961775560bc8afab37e7aa46c7caceb53b4dfdddde4c3f8822b2",
+      "10c43a8da55189eb164ee2f737d5a3ccaee8fdade52d4c9d03f95f41e72425c0",
+      "dd439e4dfeeacf728d070474e6d9124c6a734ffb39b0c614ed2b0db226b88ad9",
+      "2609066cc1bca3c1ee17ed0beae2d0ca38cb333074cddfd0c09f872f64a769a1",
+      "1ead275f657ea1b2bb99fc2858cca49ee935beeeb6d8ff5ef2a65055570ad147",
+      "1029e960e63667750f68da9a21e5545d7476ee4ca204d1bcf609bf4cb708973c",
+      "20a6fa3ab3e028e57195ce28743ea78941bed4c4dbe33ae66a54bab0abb14558",
+      "15dcf914b8cf9e542e4558a2dbe23b9ee14b4cf1099ea3c91ea64c99e424829c",
+      "a7b60ac3011ee97aaed1aeddcc060dd08922831b1439c5fe0f9dff0f6e42df59",
+      "6137dbd3afde15ce4c5b24f4de5c1dcc2a16838abff71d6067a153e4b4793dc3",
+      "a4bbdaab8fc2454f7872ff9f763bf4bb497c6c907c366c7b9a6a7d42df2910e9",
+      "123d52a1e594d44e177be146b785922705c4677e74bef7c0d793e72ebccc3960",
+      "81c960fae2220b1c18a8f15057a90f896aa4c1cac09c0fc36b6683c9bf03e89c",
+      "d0aebfd145d930c6f3d2dc9d26a21531296d178a4eeb066e215c7d8fd39b57c4"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.717948717948718,
+    "bounds": [
+      [
+        27,
+        26,
+        186,
+        206
+      ],
+      [
+        25,
+        23,
+        190,
+        209
+      ],
+      [
+        21,
+        24,
+        197,
+        208
+      ],
+      [
+        30,
+        30,
+        179,
+        202
+      ],
+      [
+        28,
+        25,
+        184,
+        207
+      ],
+      [
+        27,
+        23,
+        186,
+        209
+      ],
+      [
+        25,
+        20,
+        190,
+        212
+      ],
+      [
+        30,
+        22,
+        179,
+        210
+      ],
+      [
+        31,
+        8,
+        177,
+        224
+      ],
+      [
+        29,
+        10,
+        182,
+        222
+      ],
+      [
+        24,
+        9,
+        192,
+        223
+      ],
+      [
+        34,
+        8,
+        172,
+        224
+      ],
+      [
+        25,
+        24,
+        190,
+        208
+      ],
+      [
+        22,
+        22,
+        196,
+        210
+      ],
+      [
+        23,
+        25,
+        193,
+        207
+      ],
+      [
+        29,
+        29,
+        182,
+        203
+      ]
+    ],
+    "warnings": [
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "shuten-doji-walk-west",
+    "boss": "shuten-doji",
+    "action": "walk",
+    "face": "west",
+    "image": "shuten-doji-walk-west.png",
+    "source": "docs/design/bosses/motion-identity-v3/shuten-doji/walk-west-01.png",
+    "sourceHash": "b18bbfbc325de32f843eb3149052d55afec84735252330dff312d32985c5760b",
+    "sourceHashes": [
+      "30c65ca68395f73936d29d8286cb09b5dd943787357c3c3c4c1d0f5ece07f917",
+      "8996858d65836f8a79bdf45c23867904ba6007a9227c02b857352720e2070522",
+      "482c8b8f5c8ae201174ba9cf8bd00a69be29da8b721a5af505a869391087beb4",
+      "792fd74af98de1b229ab3944be4c1d247d4da6eadd552e23ad0baa47b3c7edca",
+      "2c7fee9ddb04a264ccb3100c6c962fa08a5dabef77493f1a6281b953d589c950",
+      "b99607dc5589b75d618f6c291b3a8d0e89d4a2782e510ecc191c52e29a518f73",
+      "8a7ba0a3ba67438c2cbdcf49cf15c1be22af4ff2a448ef383e519d8c4361212a",
+      "c43a7eb6b2c11cbb38f98081d70f258698fb1e69c72128e386c95619c12a9b77",
+      "783e5f66a1bad3560d0f2edd7d4cd496f6ab656b4481f3296eb2298274c3782b",
+      "ddb0e7ee480e0bcdb83614d83b19fca62faa7ce696807645114b667e3f8f3d16",
+      "f24eeb543117ceaf3c67e16156eff0097a437d1bcfd4786ad1fc106db85add4a",
+      "fd5b878bf678bbc792a6a1fcb0525bc25cec95d905327d566277c42e73f8bd22",
+      "eb0bf86714dddc211c6c1a2024d8254d51c2728b4816344a2687e8bff80e4684",
+      "902cbd1f225eb38b00e910e3fd320eb8735fe4abd7cd8944cc8baf416b4f60f8",
+      "0e77921e31f2a7555858d6bf5f99581a852a18792f999da078d56fcfb2b3528c",
+      "46a7c163685fde031a3c87a9c8420ecf2da6fc88f6c4bb7ab0815d36df667093"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7567567567567568,
+    "bounds": [
+      [
+        24,
+        24,
+        191,
+        208
+      ],
+      [
+        15,
+        24,
+        210,
+        208
+      ],
+      [
+        17,
+        24,
+        205,
+        208
+      ],
+      [
+        18,
+        24,
+        204,
+        208
+      ],
+      [
+        19,
+        23,
+        201,
+        209
+      ],
+      [
+        16,
+        23,
+        207,
+        209
+      ],
+      [
+        17,
+        22,
+        205,
+        210
+      ],
+      [
+        21,
+        21,
+        197,
+        211
+      ],
+      [
+        13,
+        24,
+        213,
+        208
+      ],
+      [
+        15,
+        23,
+        210,
+        209
+      ],
+      [
+        15,
+        25,
+        210,
+        207
+      ],
+      [
+        20,
+        8,
+        199,
+        224
+      ],
+      [
+        15,
+        23,
+        209,
+        209
+      ],
+      [
+        15,
+        22,
+        210,
+        210
+      ],
+      [
+        19,
+        21,
+        202,
+        211
+      ],
+      [
+        20,
+        22,
+        199,
+        210
+      ]
+    ],
+    "warnings": [
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "shuten-doji-walk-north-west",
+    "boss": "shuten-doji",
+    "action": "walk",
+    "face": "north-west",
+    "image": "shuten-doji-walk-north-west.png",
+    "source": "docs/design/bosses/motion-identity-v3/shuten-doji/walk-north-west-01.png",
+    "sourceHash": "dd74111e58aaaa228c8781b64d64da7e74818cd34079be00eefb79737b3d0fcb",
+    "sourceHashes": [
+      "1400ddb20a84afcbf4f959b7d26c0b607497aa8da84ac38f0c53c2e3f016e3c1",
+      "3116c51be9a51e99657c0830287e8a21616dd2160adea241215cba21cfd98afe",
+      "bb0298f383e23c6a51501be24a8ad312fa55b2ccfdc5f0c0fe8e78f0b46951f1",
+      "3eb80f41192a91cdad162c35851ef78213e014f9dc21f1ca939d912922e4cd05",
+      "56b85b2fb3b974e083533ea2fe74d02d68ad66563b41e16dc8c2c3e746abaf4a",
+      "7f33454773af2d176e32ae0ad7292b5a7d04acacef9503a1e5742308496b21b9",
+      "6303d827501a67925204764add1dc45b238135dbf68bc6d7d57a2fa71039b7b2",
+      "25323a1271e122f17a8bfa9e498f282060f680a7a8861ed50a96cb1fe7594310",
+      "794d2f3349b87973b14134a43ac82f92e59c413fb6882b8bc8f2e99d32f848d7",
+      "5ac582d029780971c76125a3ba1f7d657f0686ae282d993e43cd00620dfa9339",
+      "dad86c7b6848a495bd3a3bc763923aac166e510c38211ad062974180f283d5e6",
+      "f279ed858645beebccd5df51bfa7f3ae4e743467818fbba44eb911728e6602e7",
+      "45c94fd6410b4327120c6e8a0db38f37f71bf1802c370e035f795d0d56202c4f",
+      "f0f7251110f9d5140394ffd76eeea43f69803bf923a0cae61f142c17095e45cf",
+      "ac2035b94cea10b273b2064a0fff63d6742f25e306917e848383563420f244b9",
+      "60af559a18a8f145810589299421d86938d6135c030839bd7221e4d2a565b620"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7915194346289752,
+    "bounds": [
+      [
+        25,
+        33,
+        190,
+        199
+      ],
+      [
+        23,
+        32,
+        193,
+        200
+      ],
+      [
+        25,
+        33,
+        189,
+        199
+      ],
+      [
+        19,
+        32,
+        202,
+        200
+      ],
+      [
+        21,
+        18,
+        198,
+        214
+      ],
+      [
+        24,
+        33,
+        191,
+        199
+      ],
+      [
+        21,
+        33,
+        198,
+        199
+      ],
+      [
+        13,
+        33,
+        213,
+        199
+      ],
+      [
+        12,
+        10,
+        215,
+        222
+      ],
+      [
+        16,
+        10,
+        208,
+        222
+      ],
+      [
+        15,
+        8,
+        209,
+        224
+      ],
+      [
+        17,
+        10,
+        205,
+        222
+      ],
+      [
+        21,
+        43,
+        198,
+        189
+      ],
+      [
+        20,
+        41,
+        200,
+        191
+      ],
+      [
+        16,
+        41,
+        207,
+        191
+      ],
+      [
+        18,
+        38,
+        204,
+        194
+      ]
+    ],
+    "warnings": [
+      "frame 0: cell-edge pixels require clipping/ownership inspection",
+      "frame 3: cell-edge pixels require clipping/ownership inspection",
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "shuten-doji-walk-north",
+    "boss": "shuten-doji",
+    "action": "walk",
+    "face": "north",
+    "image": "shuten-doji-walk-north.png",
+    "source": "docs/design/bosses/motion-identity-v3/shuten-doji/walk-north-01.png",
+    "sourceHash": "6f38e7bea8cf0dc7451fbf860b699f3a44734d72e18ecb72a098d1bc56da6f4c",
+    "sourceHashes": [
+      "29b0594bdc034f4cef6578daa084243d76b6c869a144b7c8fc3a46a790507353",
+      "c39f41b4180a59b6e99971ae172c0781cd18e83daf0222576b39e660bf5dd689",
+      "1d2cc181f170e42d0a63ed3301d2fe06ec0538a402feb6e162c8985af2b07abb",
+      "3a598faa0a885c29163914d44309909964fbccad06dbfc879c23996173131905",
+      "f232b1862dd66d737ffa3988f2b74e16aee0c91a1a04b0eb7a325a7f0de12ffd",
+      "09395d907896c451a20b175d97566c64104c9a1af87cccb3a685d6bd6651ab1b",
+      "95e03dd96d43a556e868e37e73618d5007d88c3fa1dd03a79bcebb5caa430c48",
+      "3c1f474438d8ea8efcaee092bf96ffd070e62d2b18aa9e15b2fc4020542982e8",
+      "e91458dd4839388f2bb987bfd594df60e194889db5f7c37826fcd0762c8f0c71",
+      "8ab63a0fd603f0838ba52333ea54b3fa73c8aca2649a953f439128abd6f2c8ec",
+      "8b392dfe7f3552b8e1155afce62c670ef26a1a4b3a41f11c61f225b25302bd0f",
+      "86cf28b964379c7dbd95ec3341306ddb6b111553590d2ae08990d165f9e3d1da",
+      "ec89dfa734e00e4e063bf1523a30308b099a4ffdf99d455e58713010de4d9c53",
+      "366ce74db46cf2977ba6e4b9ad53305f487441c2a6774224eaad7e88031acc55",
+      "17ba728fda6231eab7b600a21813a1057ae407bc57ff9764c4eb2041e662fb30",
+      "7b8c941df00b24bf6f1706dae41ea86b113df379232d65485da85209b4a2dc84"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7542087542087542,
+    "bounds": [
+      [
+        33,
+        28,
+        174,
+        204
+      ],
+      [
+        30,
+        28,
+        180,
+        204
+      ],
+      [
+        28,
+        28,
+        184,
+        204
+      ],
+      [
+        34,
+        27,
+        172,
+        205
+      ],
+      [
+        34,
+        22,
+        172,
+        210
+      ],
+      [
+        32,
+        28,
+        176,
+        204
+      ],
+      [
+        32,
+        25,
+        176,
+        207
+      ],
+      [
+        32,
+        26,
+        176,
+        206
+      ],
+      [
+        29,
+        13,
+        181,
+        219
+      ],
+      [
+        33,
+        10,
+        173,
+        222
+      ],
+      [
+        30,
+        8,
+        180,
+        224
+      ],
+      [
+        35,
+        8,
+        170,
+        224
+      ],
+      [
+        29,
+        30,
+        181,
+        202
+      ],
+      [
+        28,
+        31,
+        183,
+        201
+      ],
+      [
+        32,
+        30,
+        176,
+        202
+      ],
+      [
+        29,
+        31,
+        181,
+        201
+      ]
+    ],
+    "warnings": [
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "shuten-doji-walk-north-east",
+    "boss": "shuten-doji",
+    "action": "walk",
+    "face": "north-east",
+    "image": "shuten-doji-walk-north-east.png",
+    "source": "docs/design/bosses/motion-identity-v3/shuten-doji/walk-north-east-01.png",
+    "sourceHash": "e176707f88e60a5074755043b6f0749d8f15e49205f8091061e3c36343f1b471",
+    "sourceHashes": [
+      "1c386691293f8b482be0eeaa463a5cc525a3f0548ba96177244238fbb6450cb8",
+      "7cfcae831588f783dbf2b135ad90c1ab69902bdf30fb616cdd96e6ad12077c1f",
+      "5bcc9901b3749a3c78e1da2e9cc06922af0cbb65ac5aca5535557473e10dd679",
+      "a4f94b29b189563cc3db726a7f35aa2a296d816147416261b1984e9935372d4d",
+      "34b2f51d8dc6cd62dc56b5b32b200dd21f56f97fec0c55a3ae44e5a9d9984a1b",
+      "ca3b106315e3f1744a1fcfe5fb980ffa0b75915e22ce9f1d9036112412f2bb7a",
+      "aa7132f4ccf48e10872c208715fa4bc614302aeca23467988bc8567694e53ec8",
+      "cd68300a39309af710a5b45c01c6c4e5824c90973a57c699dbad0f17bf190484",
+      "36e1ab01989f064f8884e80f58e2f1ab200afbd550b6f5f92000a51afb482522",
+      "f4b8c1651ee63d0f83d77658a4e2817331e0941a28a9560c35c4bc83472fb8a7",
+      "b1376b8bec43cb96d0335086eb5c3c7369b03e3e7176860c2b75f3d865c2c56f",
+      "674e2ebd582c2b2aa71f5e500a0b407c16361d9a08534f162d5307c7d2cf27f2",
+      "2ece3ccfecba4c47f33095679e87f90b15e87cb12bc81c4887ecbc18430e5fcf",
+      "17bd1a5827e378f8fda2fd38282483c570162b5bfc7db401e109cfb442cc36a5",
+      "ab48c2e707e44e9adc4729679fba4cd3482a64b6aa8511a8b46011a04cb743f5",
+      "57a7531442ee2bb9c7b9cf5b12acd61d00f9c8452de8bb030ecfd78944071b36"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7567567567567568,
+    "bounds": [
+      [
+        28,
+        22,
+        183,
+        210
+      ],
+      [
+        32,
+        31,
+        176,
+        201
+      ],
+      [
+        29,
+        25,
+        181,
+        207
+      ],
+      [
+        34,
+        25,
+        171,
+        207
+      ],
+      [
+        27,
+        23,
+        185,
+        209
+      ],
+      [
+        26,
+        22,
+        188,
+        210
+      ],
+      [
+        28,
+        28,
+        183,
+        204
+      ],
+      [
+        39,
+        24,
+        161,
+        208
+      ],
+      [
+        29,
+        25,
+        182,
+        207
+      ],
+      [
+        30,
+        8,
+        180,
+        224
+      ],
+      [
+        32,
+        24,
+        176,
+        208
+      ],
+      [
+        32,
+        10,
+        176,
+        222
+      ],
+      [
+        26,
+        15,
+        188,
+        217
+      ],
+      [
+        27,
+        16,
+        185,
+        216
+      ],
+      [
+        27,
+        17,
+        185,
+        215
+      ],
+      [
+        29,
+        26,
+        182,
+        206
+      ]
+    ],
+    "warnings": [
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "shuten-doji-walk-east",
+    "boss": "shuten-doji",
+    "action": "walk",
+    "face": "east",
+    "image": "shuten-doji-walk-east.png",
+    "source": "docs/design/bosses/motion-identity-v3/shuten-doji/walk-east-01.png",
+    "sourceHash": "3e38abefb5b2b0d928c315fa7449587846eeda03eb1df174c7602311bdae811c",
+    "sourceHashes": [
+      "9101b0fc1089c3fceb77869e7f620a3798010e3fb60e43f9e02db74e1daa00c2",
+      "6a6ffc1b2762c574dbdd82acf26ddb4c9151c393a93b0de1b8868dfc1b04c79c",
+      "e2ce1acd0206fcaf5adbb4520070b84a14842e419e1460703be23e744a87b7b1",
+      "610b2f870ccfaaec9aeb334385ae3638133038922f453b29fe75885e0d493406",
+      "ba4a8cf8568ded7a496b1699f8eeb5fd93ecfba364c7ff4f3ff4489f21e652e6",
+      "5f3ef1568a0b0f1193657582973903ce0d219374620e12ba9085c1f480dc594f",
+      "d70842aa223cbb45ba08cbeb073c7ece119919da3c1e9b75fc3aa8a8731c5c3e",
+      "0ecd97cdc568b7239de6c5700310af82f36bcdeac4966c87a3e3a0099f5e543c",
+      "2a0c2536216204afa62e7fd942dc1158828352e147f63e6e4895980d8bf956a9",
+      "841edd2e17e7d3a6a2a6846eb8b5ab360e854dc4b4dab64fe6a88f67c9bcd4cd",
+      "075bb47533e9594c3d4b48e25e6b7d10bfd3ee3082a616f66576195f5a9a52f0",
+      "8e725d5126d96fca2c67329840063a83e0dd6dc6b6ca6197cc5acc63e3f27c5b",
+      "224b4c2b864507229bc9dbfb04ac6f23c824a92cdd40597f6e4e9b4c34ef1b40",
+      "fdb3a6f0dc19541c04fe19e4e046b4886c05731bcaeb257dfa02623bfcdbfc1a",
+      "c4122b09c531fb4569f52d3a4d3e3ad20e0f02b251fa8b0e2cf130768cecd39a",
+      "3ce3144cb60e413ec68e13da6bae1a8eb705f19412d6cb327ed5c6d5f5ca5be3"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7066246056782335,
+    "bounds": [
+      [
+        58,
+        36,
+        123,
+        196
+      ],
+      [
+        49,
+        38,
+        141,
+        194
+      ],
+      [
+        45,
+        38,
+        150,
+        194
+      ],
+      [
+        61,
+        37,
+        117,
+        195
+      ],
+      [
+        52,
+        12,
+        135,
+        220
+      ],
+      [
+        43,
+        14,
+        153,
+        218
+      ],
+      [
+        51,
+        13,
+        138,
+        219
+      ],
+      [
+        54,
+        14,
+        131,
+        218
+      ],
+      [
+        51,
+        8,
+        138,
+        224
+      ],
+      [
+        54,
+        8,
+        131,
+        224
+      ],
+      [
+        49,
+        8,
+        141,
+        224
+      ],
+      [
+        51,
+        8,
+        138,
+        224
+      ],
+      [
+        57,
+        46,
+        126,
+        186
+      ],
+      [
+        45,
+        49,
+        149,
+        183
+      ],
+      [
+        52,
+        47,
+        135,
+        185
+      ],
+      [
+        55,
+        48,
+        130,
+        184
+      ]
+    ],
+    "warnings": [
+      "frame 4: cell-edge pixels require clipping/ownership inspection",
+      "frame 5: cell-edge pixels require clipping/ownership inspection",
+      "frame 6: cell-edge pixels require clipping/ownership inspection",
+      "frame 7: cell-edge pixels require clipping/ownership inspection",
+      "frame 8: cell-edge pixels require clipping/ownership inspection",
+      "frame 9: cell-edge pixels require clipping/ownership inspection",
+      "frame 10: cell-edge pixels require clipping/ownership inspection",
+      "frame 11: cell-edge pixels require clipping/ownership inspection",
+      "frame 12: cell-edge pixels require clipping/ownership inspection",
+      "frame 13: cell-edge pixels require clipping/ownership inspection",
+      "frame 14: cell-edge pixels require clipping/ownership inspection",
+      "frame 15: cell-edge pixels require clipping/ownership inspection"
+    ],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  },
+  {
+    "id": "shuten-doji-walk-south-east",
+    "boss": "shuten-doji",
+    "action": "walk",
+    "face": "south-east",
+    "image": "shuten-doji-walk-south-east.png",
+    "source": "docs/design/bosses/motion-identity-v3/shuten-doji/walk-south-east-01.png",
+    "sourceHash": "8a45c9527b0862a98c7af996b8a940ae5df2f685b18391824c80c7aec66b9489",
+    "sourceHashes": [
+      "e05926b7d0d270db6f7d153a72a29ce5277e3412b132d7215756c0ef638bfe7e",
+      "d8cf14aaaea0687af69919239cac87b1555918ed98533e12e374900371ec746b",
+      "160d1128add5c80af83bcabff089a7e7b76474a24c0a79583401e6d1d51f85d5",
+      "74445395ad2e893cb8e9f2931296a99bd84df85a5c18a4a71e04fd9804ed1f8d",
+      "3fc7318b7ed251c0d0fb847931c046969ff4eaf283591727a5c543eac4b0a36b",
+      "a17a5196b188fc09e4a4a355c5ec0abce6e3e2ae74646009179d50c9e7158d56",
+      "dbc8cb496a27fc05f8d7c9ce646a3daae5103b2e70eebdf4d5a98576a3271f57",
+      "36d6f1a0c71aab548be53d8edcfaa1b3d9503c8745cf9567ff778fa5a758734e",
+      "abc80aeaedc68f65f650c66691752e68dc050ed7a79cd4ba6016e553e11396d3",
+      "338e4480e53f45ba2cff326bb10f0aebe676ccbb2906525fea3149c7c23193f6",
+      "860d7f6db13e7ece92526021e2c58ff0fe3d481b965bca2a599a5c6e60c238b0",
+      "fe5cd6fc0424b6efb4fc5f5c19f93fc60847035d3083c8f829c7c383b7d69232",
+      "c1da85f30f2b83fe9fceba2da07d01c12ccc525d88a4ed250fcf51498fdc7f42",
+      "cd5aa11a58e63b646731f13563e523564661642a5f142f77e95aaf1fc452f1c9",
+      "3a948812e6487f6f4f590718ee5c0c43df5776fca4b094a5b81092f30ef064c3",
+      "8a88c377864dff09058ff6ee782b8ecdbad615374881246616656375eaa38716"
+    ],
+    "frames": 16,
+    "frameMs": 100,
+    "cell": 240,
+    "columns": 4,
+    "anchor": [
+      120,
+      232
+    ],
+    "scale": 0.7697594501718213,
+    "bounds": [
+      [
+        24,
+        10,
+        191,
+        222
+      ],
+      [
+        29,
+        8,
+        182,
+        224
+      ],
+      [
+        20,
+        8,
+        199,
+        224
+      ],
+      [
+        32,
+        10,
+        176,
+        222
+      ],
+      [
+        26,
+        17,
+        188,
+        215
+      ],
+      [
+        29,
+        13,
+        182,
+        219
+      ],
+      [
+        21,
+        10,
+        197,
+        222
+      ],
+      [
+        27,
+        11,
+        185,
+        221
+      ],
+      [
+        27,
+        11,
+        186,
+        221
+      ],
+      [
+        35,
+        13,
+        169,
+        219
+      ],
+      [
+        33,
+        16,
+        174,
+        216
+      ],
+      [
+        31,
+        13,
+        177,
+        219
+      ],
+      [
+        24,
+        8,
+        192,
+        224
+      ],
+      [
+        21,
+        15,
+        197,
+        217
+      ],
+      [
+        22,
+        10,
+        196,
+        222
+      ],
+      [
+        32,
+        12,
+        176,
+        220
+      ]
+    ],
+    "warnings": [],
+    "audit": {},
+    "status": "candidate; bounding-box registration only; no runtime adoption or gait approval"
+  }
+]

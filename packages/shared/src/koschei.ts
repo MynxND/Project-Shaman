@@ -12,16 +12,16 @@ export const KOSCHEI_NEEDLE={x:24,y:25};
 const skill=(name:string,phase:number,intent:string,target:string,shape:string,tell:number,active:number,recovery:number,cooldown:number,damage:number,counter:string,status='')=>({name,phase,intent,target,shape,tell,active,recovery,cooldown,damage,status,counter,animation:'cast',audio:'cold-bell',layers:['ground','charge','main','trail','contact','secondary','aftermath'],cancel:'phase/death/wipe; relic opening interrupts rebirth; needle interrupts ultimate',ai:'ready cooldown deterministic phase deck, living target in court'});
 export const KOSCHEI_SKILLS={
   'gravefrost-spear':skill('หอกเหมันต์สุสาน',1,'staggered spear fan','three locked lanes','capsule',1400,400,1200,8000,65,'move between spear lanes'),
-  'deathly-chains':skill('โซ่มรณะเยือกแข็ง',1,'crossed binding lanes','farthest locked target','capsule',1300,500,1400,9000,60,'leave both chains sideways'),
+  'deathly-chains':skill('โซ่มรณะเยือกแข็ง',1,'curse bound to current death vessel','current relic to marked player','capsule',1300,800,1400,9000,60,'open the current relic to cancel its chain; otherwise sidestep'),
   'necropolis-guard':skill('องครักษ์สุสาน',1,'independent spectral guards','two flank sources','charge',1500,450,1500,11000,70,'sidestep each spectral guard'),
   'soul-lance':skill('ทวนวิญญาณ',1,'long narrow staff ray','nearest locked target','capsule',1200,350,1300,7500,80,'move sideways from the staff line'),
-  'immortal-rebirth':skill('คืนชีพอมตะ',2,'bounded healing and relic interrupt','body ring','ring',1600,900,1600,15000,65,'open next relic to stop rebirth','heal channel'),
-  'cursed-needle':skill('เข็มคำสาป',2,'three fresh-aim needles','target locked before each tell','capsule',1200,300,1400,10000,55,'sidestep every separately aimed needle'),
-  'royal-necromancy':skill('บัญชาราชันอสุภ',2,'delayed tomb eruptions','three target offsets','disk',1500,600,1500,12000,75,'walk between tombs'),
-  'deathstorm':skill('พายุมรณะ',3,'three staggered frost bands','spectral oak and body','ring',1500,900,1500,13000,80,'cross bands; passed ground is safe'),
-  'throne-of-bones':skill('บัลลังก์กระดูก',3,'ordered court judgments','four sectors','sector',1600,500,1600,14000,85,'follow the numbered safe quadrants'),
-  'soul-severance':skill('สะบั้นดวงวิญญาณ',3,'three newly locked body rushes','fresh player position','charge',1400,400,1600,12000,85,'sidestep each rush; never follow passed ground'),
-  'the-last-needle':skill('เข็มสุดท้ายแห่งมรณะ',3,'five-stage nested death counter','arena, safe southern refuge','finale',1600,800,2000,48000,190,'open oak/chest/hare/duck/egg and destroy needle; safe south pocket on failure'),
+  'immortal-rebirth':skill('คืนชีพอมตะ',2,'bounded healing and relic interrupt','non-damaging healing channel','ritual',1600,900,1600,15000,0,'open next relic to stop rebirth','heal channel'),
+  'cursed-needle':skill('เข็มคำสาป',2,'needles from current death vessel','target locked before each tell','capsule',1200,300,1400,10000,55,'sidestep every separately aimed needle'),
+  'royal-necromancy':skill('บัญชาราชันอสุภ',2,'delayed tomb eruptions','opened relic sites','disk',1500,600,1500,12000,75,'leave opened tomb sites toward the next relic'),
+  'deathstorm':skill('พายุมรณะ',3,'remaining death vessels project frost lanes','relic sources to marked target','capsule',1500,600,1500,13000,80,'open current relic to cancel its lane; cross between separate releases'),
+  'throne-of-bones':skill('บัลลังก์กระดูก',3,'remaining vessels defend their sealed death','short source-centered sectors','sector',1600,500,1600,14000,85,'open the next vessel to remove its short sector'),
+  'soul-severance':skill('สะบั้นดวงวิญญาณ',3,'one committed defense of next relic','current death vessel','charge',2000,700,1600,12000,85,'open the threatened relic before contact to interrupt; avoid committed path'),
+  'the-last-needle':skill('เข็มสุดท้ายแห่งมรณะ',3,'five-stage nested death counter','remaining nested death vessels','disk',1600,800,2000,48000,190,'open oak/chest/hare/duck/egg and destroy needle; unfinished vessels erupt sequentially'),
 } as const;
 export type KoscheiSkill=keyof typeof KOSCHEI_SKILLS;
 export const inKoscheiCourt=(p:Position)=>p.x>=7&&p.x<=41&&p.y>=11&&p.y<=38;
@@ -30,6 +30,7 @@ export interface KoscheiHazard {shape:string;x:number;y:number;toX:number;toY:nu
 export const koscheiProgress=(h:KoscheiHazard,t:number)=>Math.max(0,Math.min(1,(t-h.startsAt)/Math.max(1,h.endsAt-h.startsAt)));
 export function koscheiSegment(p:Position,a:Position,b:Position){const x=b.x-a.x,y=b.y-a.y,q=Math.max(0,Math.min(1,((p.x-a.x)*x+(p.y-a.y)*y)/(x*x+y*y||1)));return Math.hypot(p.x-a.x-x*q,p.y-a.y-y*q);}
 export function koscheiHit(h:KoscheiHazard,p:Position,now:number,previous=now){
+  if(h.shape==='ritual')return false;
   const r=h.radius+KOSCHEI_CONTACT,d=Math.hypot(p.x-h.x,p.y-h.y);
   if(h.shape==='finale')return d<=r&&Math.hypot(p.x-24,p.y-35)>2.8+KOSCHEI_CONTACT;
   if(h.shape==='capsule')return koscheiSegment(p,h,{x:h.toX,y:h.toY})<=h.width+KOSCHEI_CONTACT;

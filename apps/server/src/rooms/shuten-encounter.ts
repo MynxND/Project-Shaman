@@ -1,5 +1,5 @@
 import { BossEncounterState, BossHazardState, MonsterState } from '@shaman/schema';
-import { SHUTEN_ID, SHUTEN_SKILLS, OE_ALTARS, OE_DRUMS, OE_SEAL, OE_COLLAPSE, FACINGS, bossShapeHit, inOeCourt, oeClamp, shutenWalkMap, createMonster, facingFromVector, isBlocked, MONSTERS, stepMovement, type MonsterMotion, type Position, type ShutenSkill } from '@shaman/shared';
+import { bossPartyPlan, raiseBossPartyBudget, SHUTEN_ID, SHUTEN_SKILLS, OE_ALTARS, OE_DRUMS, OE_SEAL, OE_COLLAPSE, FACINGS, bossShapeHit, inOeCourt, oeClamp, shutenWalkMap, createMonster, facingFromVector, isBlocked, MONSTERS, stepMovement, type MonsterMotion, type Position, type ShutenSkill } from '@shaman/shared';
 import type { CombatHost } from './combat-system.js';
 interface Hooks {
     reset(id:string):void;
@@ -47,8 +47,8 @@ export class ShutenEncounter {
     private poise = 0;
     private sealHp = 0;
     private manual = false;
-    private reviewOwner = "";
-    private lastNow = 0;
+    private reviewOwner = "";private reviewParty=false;
+    private lastNow = 0;private nextBait=0;
     constructor(private host: CombatHost, private monsters: Map<string, MonsterMotion>, private hooks: Hooks) { this.state.id = SHUTEN_ID; host.state.bosses.set(SHUTEN_ID, this.state); this.reset(); }
     get body() { return [...this.monsters.values()].find(m => m.kind === 'shuten-doji'); }
     controlled(m: MonsterMotion) { return ['shuten-doji', 'shuten-head', 'shuten-altar', 'shuten-drum'].includes(m.kind); }
@@ -56,10 +56,10 @@ export class ShutenEncounter {
     damageTarget(m: MonsterMotion) { return m.kind === 'shuten-head' ? this.body ?? m : m; }
     filterDamage(m: MonsterMotion, amount: number) { if (m.kind !== 'shuten-doji')
         return amount; if (['transition', 'dormant', 'dead'].includes(this.state.mode))
-        return this.state.mode === 'dormant' ? Math.min(amount, Math.max(0, m.hp - 9800)) : 0; const floor = this.state.phase === 1 ? 9800 : this.state.phase === 2 ? 4900 : 0; return Math.min(Math.max(0, m.hp - floor), Math.round(amount * (this.state.mode === 'stagger' ? 1.25 : 1))); }
+        return 0; const floor = this.state.phase === 1 ? (this.state.hpMax*.7) : this.state.phase === 2 ? (this.state.hpMax*.35) : 0; return Math.min(Math.max(0, m.hp - floor), Math.round(amount * (this.host.now()<this.state.stumbleUntil?1.6:this.state.mode === 'stagger' ? 1.25 : 1))); }
     damaged(m: MonsterMotion, amount: number) { if (m.kind === 'shuten-doji')
         this.poise += Math.max(0, amount); }
-    objectDied(m: MonsterMotion) { this.drumNext.delete(m.id); this.poise += 200; this.state.altarRemaining = this.altars(); }
+    objectDied(m: MonsterMotion) { if(m.kind==='shuten-altar')this.baitPool(m);this.drumNext.delete(m.id); this.poise += 200; this.state.altarRemaining = this.altars(); }
     private later(ms: number, run: () => void) { this.tasks.push({ at: this.host.now() + ms, run }); }
     private spawn(kind: string, id: string, at: Position) { const region = this.host.map.spawnRegions![0]!, m = createMonster(id, kind, region, at, this.host.now()); m.summoned = true; m.aggressive = true; this.monsters.set(id, m); const s = new MonsterState(); s.kind = kind; this.host.state.monsters.set(id, s); this.hooks.sync(m); return m; }
     private altars() { return [...this.monsters.values()].filter(m => m.kind === 'shuten-altar' && m.hp > 0 && m.state !== 'dead').length; }
@@ -72,7 +72,7 @@ export class ShutenEncounter {
         Object.assign(b, { x: 24, y: 20, hp: 14000, facing: 'south', state: 'idle', targetId: null });
         this.hooks.sync(b);
         this.hooks.reset(b.id);
-    } Object.assign(this.state, { phase: 1, mode: 'dormant', skill: '', hp: 14000, hpMax: 14000, ultimateStage: 0, altarRemaining: 3, sealed: false, armorBroken: false, damageMask: 0, headId: '', stagger: 0, rejoinedUntil: 0 }); this.cooldowns.clear(); this.drumNext.clear(); this.poise = 0; this.deck = 0; this.emptyAt = 0; this.nextHead = 0; OE_ALTARS.forEach((p, i) => this.spawn('shuten-altar', 'oe-altar-' + i, p)); }
+    } Object.assign(this.state, { stumbleUntil:0,headDazedUntil:0,sakeBaits:0,headTarget:'',participants: 0, phase: 1, mode: 'dormant', skill: '', hp: 14000, hpMax: 14000, ultimateStage: 0, altarRemaining: 3, sealed: false, armorBroken: false, damageMask: 0, headId: '', stagger: 0, rejoinedUntil: 0 }); this.cooldowns.clear(); this.drumNext.clear(); this.poise = 0; this.deck = 0; this.emptyAt = 0; this.nextHead = 0;this.nextBait=0; OE_ALTARS.forEach((p, i) => this.spawn('shuten-altar', 'oe-altar-' + i, p)); }
     private target() { return [...this.host.state.players.entries()].filter(([, p]) => !p.dead && inOeCourt(p)).sort((a, b) => distance(a[1], this.body ?? a[1]) - distance(b[1], this.body ?? b[1]))[0]; }
     private face(m: MonsterMotion, to: Position) { m.facing = facingFromVector(to.x - m.x, to.y - m.y) ?? m.facing; }
     private phase(phase: number) {
@@ -93,7 +93,7 @@ export class ShutenEncounter {
             this.state.damageMask |= 1;
         }
         if (phase === 3) {
-            this.state.headId = 'oe-cursed-head';
+            this.state.headDazedUntil=0;this.nextBait=this.host.now();this.state.headId = 'oe-cursed-head';
             this.spawn('shuten-head', this.state.headId, { x: b.x + 4, y: b.y - 2 });
             this.nextHead = this.host.now() + 5000;
             this.cooldowns.set('wrath-severed-king', this.host.now() + 8500);
@@ -145,8 +145,8 @@ export class ShutenEncounter {
             last = 1600;
         }
         if (skill === 'demon-sake') {
-            for (const [dx, dy] of [[0, 0], [-2.5, 1.5], [2.5, -1.5]]) {
-                const a = oeClamp({ x: aim.x + dx!, y: aim.y + dy! });
+            const marked=[...this.host.state.players.entries()].filter(([,p])=>!p.dead&&inOeCourt(p)).sort((a,c)=>Number(c[0]===playerId)-Number(a[0]===playerId)).slice(0,Math.min(3,bossPartyPlan(this.state.participants||3).pressureTargets));for(const[,victim]of marked)for (const [dx, dy] of [[0, 0], [-2.5, 1.5], [2.5, -1.5]]) {
+                const a = oeClamp({ x: victim.x + dx!, y: victim.y + dy! });
                 this.hazard(skill, 'circle', a, 2.1, 1200, 1100, 0, { effect: 'sake' });
                 this.hazard(skill, 'circle', a, 2.1, 2300, 2500, 42, { effect: 'violet', repeat: 500 });
             }
@@ -225,7 +225,7 @@ export class ShutenEncounter {
             this.later(5100, () => { this.state.ultimateStage = 5; this.rings(skill, { x: b.x, y: b.y }, 0, 3, 12, 110, true); });
             this.later(8200, () => { this.state.headSkill = ''; if (!this.state.sealed && head) {
                 this.state.rejoinedUntil = this.host.now() + 5000;
-                b.hp = Math.max(b.hp, Math.min(4899, b.hp + 1120));
+                b.hp = Math.max(b.hp, Math.min(this.state.hpMax*.35-1, b.hp + this.state.hpMax*.08));
                 this.state.headSkill = 'rejoin';
             } this.nextHead = this.host.now() + 5000; });
         }
@@ -237,12 +237,24 @@ export class ShutenEncounter {
             b.state = 'idle';
         } });
     }
+    private baitPool(at:Position){this.hazard('demon-sake','circle',at,2.6,0,30000,0,{effect:'sake',actor:'altar-bait'});}
+    private stepBaits(now:number){
+      if(this.state.phase===3&&now>=this.nextBait){const pools=[...this.areas.values()].some(a=>a.state.actor==='altar-bait'&&now<a.state.endsAt);if(!pools){for(const m of this.monsters.values())if(m.kind==='shuten-altar'&&m.state==='dead')this.baitPool(m);}this.nextBait=now+1000;}
+      for(const[id,a]of this.areas){const h=a.state;if(h.actor!=='altar-bait'||now>=h.endsAt)continue;
+        const target=this.state.phase===3?this.monsters.get(this.state.headId):this.body;
+        if(!target||this.state.mode==='transition'||this.state.skill==='wrath-severed-king')continue;
+        let contact={x:target.x,y:target.y};if(this.state.phase===3&&this.headMove&&now>=this.headMove.at){const q=Math.max(0,Math.min(1,(now-this.headMove.at)/(this.headMove.until-this.headMove.at))),to={x:this.headMove.from.x+(this.headMove.to.x-this.headMove.from.x)*q,y:this.headMove.from.y+(this.headMove.to.y-this.headMove.from.y)*q},dx=to.x-target.x,dy=to.y-target.y,t=Math.max(0,Math.min(1,((h.x-target.x)*dx+(h.y-target.y)*dy)/(dx*dx+dy*dy||1)));contact={x:target.x+dx*t,y:target.y+dy*t};}if(distance(contact,h)>h.radius)continue;
+        if(this.state.phase===3){if(!this.headMove||now<this.headMove.at)continue;target.x=contact.x;target.y=contact.y;this.headMove=null;this.state.headSkill='dazed';this.state.headDazedUntil=now+8000;this.nextHead=now+8000;for(const[hid,area]of this.areas)if(area.state.actor==='head'){this.areas.delete(hid);this.state.hazards.delete(hid);}}
+        else{this.tasks=[];this.state.mode='stagger';this.state.skill='';this.state.stumbleUntil=now+4500;this.state.endsAt=now+4500;target.state='idle';for(const[hid,area]of this.areas)if(area.state.actor==='body'){this.areas.delete(hid);this.state.hazards.delete(hid);}}
+        this.state.sakeBaits++;this.areas.delete(id);this.state.hazards.delete(id);this.hooks.sync(target);break;
+      }
+    }
     private chargeHead(aim: Position) { const h = this.monsters.get(this.state.headId); if (!h || this.state.rejoinedUntil > this.host.now())
         return; const from = { x: h.x, y: h.y }, to = oeClamp(aim), now = this.host.now(); this.face(h, to); this.state.headSkill = 'cursed-head'; this.state.headAt = now; this.state.headUntil = now + 1600; this.headMove = { from, to, at: now + 900, until: now + 1600 }; this.hazard('cursed-head', 'line', from, 0, 900, 700, 70, { effect: 'bite', actor: 'head', toX: to.x, toY: to.y, width: 1.0 }); }
-    seal(playerId: string) { const p = this.host.state.players.get(playerId); if (!p || p.dead || this.state.phase !== 3 || this.state.mode === 'dead' || this.state.sealed || this.altars() > 0 || distance(p, OE_SEAL) > 2 || this.state.sealOwner)
+    seal(playerId: string) { const p = this.host.state.players.get(playerId); if (!p || p.dead || this.state.phase !== 3 || this.state.mode === 'dead' || this.state.sealed || this.altars() > 0 || this.host.now()>=this.state.headDazedUntil || distance(p, OE_SEAL) > 2 || this.state.sealOwner)
         return false; this.state.sealOwner = playerId; this.state.sealProgress = 0; this.sealHp = p.hp; return true; }
     private sealStep(dt: number) { if (!this.state.sealOwner)
-        return; const p = this.host.state.players.get(this.state.sealOwner); if (!p || p.dead || distance(p, OE_SEAL) > 2 || p.moving || p.hp < this.sealHp) {
+        return; const p = this.host.state.players.get(this.state.sealOwner); if (!p || p.dead || this.host.now()>=this.state.headDazedUntil || distance(p, OE_SEAL) > 2 || p.moving || p.hp < this.sealHp) {
         this.state.sealOwner = '';
         this.state.sealProgress = 0;
         return;
@@ -327,10 +339,11 @@ export class ShutenEncounter {
         const now = this.host.now(), b = this.body;
         if (!b)
             return;
-        if(this.manual&&(!this.host.state.players.has(this.reviewOwner)||this.host.state.players.size>1))this.manual=false;
+        if(this.manual&&(!this.host.state.players.has(this.reviewOwner)||(!this.reviewParty&&this.host.state.players.size>1)))this.manual=false;
         this.state.now = now;
         this.state.hp = Math.max(0, b.hp);
-        this.state.hpMax = 14000;
+
+        if(raiseBossPartyBudget(this.state,b,14000,[...this.host.state.players.values()].filter(p=>!p.dead&&inOeCourt(p)).length))this.hooks.sync(b);
         this.state.altarRemaining = this.altars();
         if (b.state === 'dead') {
             if (this.state.mode !== 'dead') {
@@ -375,15 +388,17 @@ export class ShutenEncounter {
         }
         this.emptyAt = 0;
         if (this.state.mode === 'dormant') {
+            const party=bossPartyPlan([...this.host.state.players.values()].filter(p=>!p.dead&&inOeCourt(p)).length);if(!party.ready)return;
+            this.state.participants=party.participants;this.state.hpMax=14000*party.hpMultiplier;b.hp=this.state.hpMax;this.hooks.sync(b);
             this.state.mode = 'recovery';
             this.state.endsAt = now + 1200;
             b.targetId = target[0];
         }
-        if (this.state.phase === 1 && b.hp <= 9800) {
+        if (this.state.phase === 1 && b.hp <= (this.state.hpMax*.7)) {
             this.phase(2);
             return;
         }
-        if (this.state.phase === 2 && b.hp <= 4900) {
+        if (this.state.phase === 2 && b.hp <= (this.state.hpMax*.35)) {
             this.phase(3);
             return;
         }
@@ -391,6 +406,7 @@ export class ShutenEncounter {
         this.tasks = this.tasks.filter(t => t.at > now);
         for (const t of due)
             t.run();
+        this.stepBaits(now);
         this.stepAreas(now);
         this.sealStep(dt);
         this.legion(now);
@@ -413,7 +429,7 @@ export class ShutenEncounter {
                 this.hooks.sync(h);
             }
             if (!this.manual && this.state.mode !== 'transition' && this.state.skill !== 'wrath-severed-king' && now >= this.nextHead) {
-                this.chargeHead(target[1]);
+                const headTarget=[...this.host.state.players.entries()].filter(([,p])=>!p.dead&&inOeCourt(p)).sort((u,v)=>distance(v[1],b)-distance(u[1],b))[0]??target;this.state.headTarget=headTarget[0];this.chargeHead(headTarget[1]);
                 this.nextHead = now + SHUTEN_SKILLS['cursed-head'].cooldown + (this.state.sealed ? 1500 : 0);
             }
         }
@@ -468,7 +484,7 @@ export class ShutenEncounter {
         skill?: unknown;
         phase?: unknown;
         face?: unknown;
-    }) { const p = this.host.state.players.get(playerId), b = this.body; if (!p || !b)
+    },party=false) {this.reviewParty=party; const p = this.host.state.players.get(playerId), b = this.body; if (!p || !b)
         return false; this.reviewOwner=playerId; if (cmd.action === 'reset') {
         this.reset();
         return true;
@@ -497,7 +513,7 @@ export class ShutenEncounter {
         return true;
     } if (cmd.action === 'phase' && [1, 2, 3].includes(Number(cmd.phase))) {
         this.manual = true;
-        b.hp = Number(cmd.phase) === 1 ? 14000 : Number(cmd.phase) === 2 ? 9800 : 4900;
+        b.hp = Number(cmd.phase) === 1 ? this.state.hpMax : Number(cmd.phase) === 2 ? (this.state.hpMax*.7) : (this.state.hpMax*.35);
         if (Number(cmd.phase) === 1)
             this.reset();
         else

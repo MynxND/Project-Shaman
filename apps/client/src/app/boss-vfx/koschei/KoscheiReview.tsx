@@ -18,10 +18,10 @@ export default function KoscheiReview() {
         <select aria-label="ซูมพรีวิว" defaultValue="1" onChange={e=>{control.current.zoom=Number(e.target.value);}}><option value="1">ภาพรวม</option><option value="1.5">ซูม 1.5×</option><option value="2">ซูม 2×</option></select>
         <a href="/?map=frozen-necropolis&koscheiReview=1">เข้าต่อสู้ในเกมจริง</a>
       </nav>
-      <label>เวลา <input aria-label="เวลา preview" type="range" value={seek} min="0" max={skill==='the-last-needle'?38000:skill==='soul-severance'?9000:7000} step="20" onChange={e => { control.current.seek = Number(e.target.value);setSeek(Number(e.target.value)); control.current.paused = true; setPaused(true); }} /></label>
+      <label>เวลา <input aria-label="เวลา preview" type="range" value={seek} min="0" max={skill==='the-last-needle'?42000:10000} step="20" onChange={e => { control.current.seek = Number(e.target.value);setSeek(Number(e.target.value)); control.current.paused = true; setPaused(true); }} /></label>
       <div ref={host} style={{ height: 'min(68dvh,700px)', minHeight: 280, width: '100%', marginTop: 12, border: '1px solid #74613e' }} />
       <output style={{ display: 'block', fontSize: 12, overflowWrap: 'anywhere' }}>{status}</output>
-      <p>เล่นซ้ำ 88 คลิปจาก CombatSystem จริง · 11 ท่า × 8 ทิศ · ความละเอียด 50ms · ทดสอบการหลบและแก้มนตร์ในเกมจริง · การอนุมัติภาพยังรอผู้ใช้</p>
+      <p>เล่นซ้ำ 88 คลิปจาก CombatSystem จริง · 11 ท่า × 8 ทิศ · ความละเอียด 50ms · กลไก v3 แหล่งโจมตีจากภาชนะมรณะ · ทดสอบการหลบและแก้มนตร์ในเกมจริง · การอนุมัติภาพยังรอผู้ใช้</p>
     </div>
   </main>;
 }

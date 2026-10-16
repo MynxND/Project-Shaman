@@ -48,3 +48,9 @@ Detailed geometry/asset/layer tables: [complete implementation](complete/README.
 - Collision allowance, inner wave hole and passed charge lane were corrected without changing damage/range/timings. Ground tells stay below actors; inspected impact samples retain player readability, with brief normal damage flashes. No claim that every organic effect can never overlap a character pixel.
 - Latest runtime verification: workspace typecheck/build,140749 VFX assertions over112 clips,179 authority checks, coordinated-AI/heal/death tests, real-room controls and receipt validation. Commands, exact scope and remaining physical-device/latency/balance limits live in the linked reports; reproduce instead of copying these numbers for a future boss.
 - Runtime baseline commit `e517f9bd` was pushed to `origin/develop`. This contract is a documentation-only adoption; future implementations must record their own changes and actual push outcome.
+
+
+## Motion / identity v3 — in progress
+User requested real authored locomotion and full animation upgrades plus distinct combat decisions.
+Shared audit, provisional design, production queue and acceptance: ../motion-identity-v3/README.md.
+Old evidence remains historical; no v3 completion or visual approval is claimed.

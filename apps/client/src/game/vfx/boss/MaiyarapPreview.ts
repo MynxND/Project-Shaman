@@ -3,13 +3,13 @@ import { DREAM_SYMBOLS, type MaiyarapSkill } from '@shaman/shared';
 import type { BossHazardState } from '@shaman/schema';
 import { MaiyarapVfx, preloadMaiyarapArt } from './MaiyarapVfx';
 import { maiyarapPose } from './maiyarap-pose';
-export interface MaiyarapPreviewControl { skill: MaiyarapSkill; facing: string; paused: boolean; speed: number; restart: number; seek: number; zoom: number }
-interface RecordedClip { skill: string; face: string; duration: number; cues: BossHazardState[]; actor: { at: number; x: number; y: number; facing:string; mode: string; stage: number }[] }
+export interface MaiyarapPreviewControl { skill: MaiyarapSkill; facing: string; paused: boolean; speed: number; restart: number; seek: number; zoom: number; realm: 'awake' | 'dream' }
+interface RecordedClip { skill: string; face: string; duration: number; cues: BossHazardState[]; samples: {at:number;cues:BossHazardState[]}[]; actor: { at: number; x: number; y: number; facing:string; mode: string; stage: number }[] }
 export function createMaiyarapPreview(parent: HTMLElement, read: () => MaiyarapPreviewControl, report: (value: string) => void) {
   class Lab extends Phaser.Scene {
     private fx!: MaiyarapVfx; private actor!: Phaser.GameObjects.Image; private transformation!: Phaser.GameObjects.Image; private clips: RecordedClip[] = [];
     private age = 0; private restart = -1; private lastSeek = -1; private at = 0; private intervals: number[] = [];
-    preload() { preloadMaiyarapArt(this); this.load.json('mai:clips', '/boss-review/maiyarap/clips.json'); this.load.image('mai:preview-stone', '/assets/boss/maiyarap/stone.png'); this.load.spritesheet('mai:cast-preview', '/assets/boss/maiyarap/cast-directions.png', { frameWidth: 256, frameHeight: 256 }); }
+    preload() { preloadMaiyarapArt(this); this.load.json('mai:clips', '/boss-review/maiyarap/clips-v3.json'); this.load.image('mai:preview-stone', '/assets/boss/maiyarap/stone.png'); this.load.spritesheet('mai:cast-preview', '/assets/boss/maiyarap/cast-directions.png', { frameWidth: 256, frameHeight: 256 }); }
     create() {
       this.clips = this.cache.json.get('mai:clips') as RecordedClip[];
       this.textures.get('mai:preview-stone').setFilter(Phaser.Textures.FilterMode.NEAREST);
@@ -34,8 +34,8 @@ export function createMaiyarapPreview(parent: HTMLElement, read: () => MaiyarapP
       this.actor.setTexture(pose.casting?'mai:cast-preview':'mai:idle-eight',pose.previewFrame).setPosition(body.x*32,body.y*32).setDepth(body.y*32);
       this.transformation.setVisible(sample.mode==='ultimate');
       if(this.transformation.visible)this.transformation.setPosition(body.x*32,body.y*32-85).setFrame(Math.min(7,Math.floor(sample.stage/5*8))).setAlpha(.35);
-      const cues=clip.cues.map(h=>({...h,id:c.skill+':'+c.facing+':'+h.id,actor:'both'}));
-      this.fx.update(cues, this.age, 'awake', 50);
+      const cues=(clip.samples[Math.min(clip.samples.length-1,Math.floor(this.age/50))]?.cues??[]).map(h=>({...h,id:c.skill+':'+c.facing+':'+h.id}));
+      this.fx.update(cues, this.age, c.realm, 50);
       this.intervals.push(delta); if (this.intervals.length > 1800) this.intervals.shift();
       if (time - this.at > 250) { this.at = time; const sorted = [...this.intervals].sort((a, b) => a - b); report(`${this.game.renderer.type === Phaser.WEBGL ? 'WebGL' : 'Canvas'} · ${Math.round(this.age)}/${clip.duration}ms · stage${sample.stage}/5 · VFX CPU p95 ${this.fx.stats.cpuP95.toFixed(3)}ms · frame p95 ${(sorted[Math.floor(sorted.length * .95)] ?? 0).toFixed(2)}ms · ${this.fx.stats.views}/24 views · particles${this.fx.stats.particles}/64 peak${this.fx.stats.peakParticles} · ${this.intervals.length} samples`); }
     }

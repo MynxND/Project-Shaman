@@ -22,7 +22,7 @@ export class MaiyarapLayer {
     const interact = () => {
       const r = room(), p = r?.state.players.get(r.sessionId); if (!r || !p) return;
       const s = [...DREAM_SYMBOLS].sort((a, b) => Math.hypot(a.x - p.x, a.y - p.y) - Math.hypot(b.x - p.x, b.y - p.y))[0]!;
-      if (Math.hypot(s.x - p.x, s.y - p.y) <= 2) r.send('maiyarap:symbol', s.id);
+      if (Math.hypot(s.x - p.x, s.y - p.y) <= 2) r.send('maiyarap:symbol', r.state.maiyarap.get('maiyarap')?.dreamers.get(r.sessionId)?.realm==='dream'?s.id:'anchor:'+s.id);
     };
     window.addEventListener('maiyarap:command', command); scene.input.keyboard?.on('keydown-E', interact);
     this.off = () => { window.removeEventListener('maiyarap:command', command); scene.input.keyboard?.off('keydown-E', interact); };
@@ -69,7 +69,7 @@ export class MaiyarapLayer {
     if (time - this.at > 120) {
       this.at = time;
       const self = room.state.players.get(room.sessionId);
-      window.dispatchEvent(new CustomEvent('maiyarap:snapshot', { detail: { hp: state.hp, hpMax: state.hpMax, phase: state.phase, mode: state.mode, skill: state.skill, realm, progress: d?.progress ?? 0, hint: d?.hint ?? '', remaining: Math.max(0, (d?.until ?? 0) - now), exposed: state.sourceExposed, stage: state.ultimateStage, countered: state.countered, nearby: DREAM_SYMBOLS.filter(s => self && Math.hypot(s.x - self.x, s.y - self.y) <= 2).map(s => s.id), vfx: this.fx.stats } }));
+      window.dispatchEvent(new CustomEvent('maiyarap:snapshot', { detail: { needs:[...new Set([...state.dreamers.values()].filter(q=>q.realm==='dream'&&q.progress<3).map(q=>DREAM_SYMBOLS[q.progress]?.name).filter(Boolean))],participants:state.participants,anchor:state.anchorSymbol,anchorRemaining:Math.max(0,state.anchorUntil-now),vulnerableRemaining:Math.max(0,state.vulnerableUntil-now),sourceDefeated:state.sourceDefeated,hp: state.hp, hpMax: state.hpMax, phase: state.phase, mode: state.mode, skill: state.skill, realm, progress: d?.progress ?? 0, hint: d?.hint ?? '', remaining: Math.max(0, (d?.until ?? 0) - now), exposed: state.sourceExposed, stage: state.ultimateStage, countered: state.countered, nearby: DREAM_SYMBOLS.filter(s => self && Math.hypot(s.x - self.x, s.y - self.y) <= 2).map(s => s.id), vfx: this.fx.stats } }));
     }
   }
   destroy() { this.off(); this.fx.destroy(); this.veil.destroy(); this.transform.destroy(); window.dispatchEvent(new CustomEvent('maiyarap:snapshot', { detail: null })); }

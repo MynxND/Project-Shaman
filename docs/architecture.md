@@ -688,3 +688,7 @@ hazards, well closure/recharge, source cancellation and infection-target hunting
 remain authoritative; new schema fields append after the existing contactStep.
 Lab v2 samples moving geometry every50ms, not just each hazard's final position.
 See design/bosses/calon-arang/mechanics-v2.md for contracts and validation limits.
+
+
+### Boss motion / party identity v3 — 2026-10-16 (in progress)
+Three existing encounters now use a shared 3–10 party budget with upward-only late-join adjustment preserving HP percentage. Koschei relic-source cancellation, Maiyarap awake/dream anchors and Shuten physical sake bait remain server authoritative. See docs/design/bosses/motion-identity-v3/README.md for acceptance and unresolved motion assets. The new motion clock is not yet adopted by actor renderers.

@@ -9,7 +9,7 @@ export function createKoscheiPreview(parent: HTMLElement, read: () => KoscheiPre
   class Lab extends Phaser.Scene {
     private fx!: KoscheiVfx; private actor!: Phaser.GameObjects.Image; private transformation!: Phaser.GameObjects.Image; private clips: RecordedClip[] = [];
     private age = 0; private restart = -1; private lastSeek = -1; private at = 0; private intervals: number[] = [];
-    preload() { preloadKoscheiArt(this); this.load.json('kos:clips', '/boss-review/koschei/clips.json'); this.load.image('kos:preview-stone', '/assets/boss/koschei/stone.png'); this.load.spritesheet('kos:cast-preview', '/assets/boss/koschei/cast-directions.png', { frameWidth: 256, frameHeight: 256 }); }
+    preload() { preloadKoscheiArt(this); this.load.json('kos:clips', '/boss-review/koschei/clips-v3.json'); this.load.image('kos:preview-stone', '/assets/boss/koschei/stone.png'); this.load.spritesheet('kos:cast-preview', '/assets/boss/koschei/cast-directions.png', { frameWidth: 256, frameHeight: 256 }); }
     create() {
       this.clips = this.cache.json.get('kos:clips') as RecordedClip[];
       this.textures.get('kos:preview-stone').setFilter(Phaser.Textures.FilterMode.NEAREST);

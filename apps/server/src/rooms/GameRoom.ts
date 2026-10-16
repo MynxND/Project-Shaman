@@ -100,8 +100,10 @@ export class GameRoom extends Room<{ state: GameState }> {
     this.clock.setInterval(() => this.saveAll(), AUTOSAVE_MS);
     this.map = getMap((options as { mapId?: unknown } | undefined)?.mapId);
     if (process.env.NODE_ENV === 'production' && this.map.elevation && !['mountain-sanctuary','mountain-spirit-sanctuary'].includes(this.map.id)) throw new Error('Elevation prototype is development-only');
+    const bossPartyReview=DEV_COMMANDS&&['mount-oe-fortress','maiyarap-palace','frozen-necropolis'].includes(this.map.id)&&(options as {bossPartyReview?:unknown}|undefined)?.bossPartyReview===true;
     const calonPartyReview=DEV_COMMANDS&&this.map.id==='girah-ruined-temple'&&(options as {calonPartyReview?:unknown}|undefined)?.calonPartyReview===true;
     if(this.map.id==='girah-ruined-temple')this.maxClients=5;
+    if(['mount-oe-fortress','maiyarap-palace','frozen-necropolis'].includes(this.map.id))this.maxClients=10;
     this.state.mapId = this.map.id;
     this.patchRate = 50;
     if ([UMBRAL_CAPITAL.id, 'umbral-elevation-baseline', 'umbral-elevation-lab'].includes(this.map.id)) {
@@ -133,11 +135,11 @@ export class GameRoom extends Room<{ state: GameState }> {
     this.onMessage('koschei:relic',(client,message:unknown)=>{this.combat.koschei?.interact(client.sessionId,message);});
     if(DEV_COMMANDS)this.onMessage('calon:review',(client,message:unknown)=>{if(this.map.id==='girah-ruined-temple'&&!this.accounts.has(client.sessionId)&&(this.clients.length===1||calonPartyReview&&this.clients.every(c=>!this.accounts.has(c.sessionId)))&&message&&typeof message==='object')this.combat.calon?.review(client.sessionId,message as Record<string,unknown>);});
     this.onMessage('calon:interact',(client,action:unknown)=>{if(this.map.id==='girah-ruined-temple')this.combat.calon?.interact(client.sessionId,action);});
-    if(DEV_COMMANDS)this.onMessage('koschei:review',(client,message:unknown)=>{if(this.map.id==='frozen-necropolis'&&!this.accounts.has(client.sessionId)&&this.clients.length===1&&message&&typeof message==='object')this.combat.koschei?.review(client.sessionId,message as Record<string,unknown>);});
+    if(DEV_COMMANDS)this.onMessage('koschei:review',(client,message:unknown)=>{if(this.map.id==='frozen-necropolis'&&!this.accounts.has(client.sessionId)&&(this.clients.length===1||bossPartyReview&&this.clients.every(c=>!this.accounts.has(c.sessionId)))&&message&&typeof message==='object')this.combat.koschei?.review(client.sessionId,message as Record<string,unknown>);});
     this.onMessage('maiyarap:symbol', (client, message: unknown) => { this.combat.maiyarap?.interact(client.sessionId, message); });
-    if (DEV_COMMANDS) this.onMessage('maiyarap:review', (client, message: unknown) => { if (this.map.id === 'maiyarap-palace' && !this.accounts.has(client.sessionId) && this.clients.length === 1 && message && typeof message === 'object') this.combat.maiyarap?.review(client.sessionId, message as Record<string, unknown>); });
+    if (DEV_COMMANDS) this.onMessage('maiyarap:review', (client, message: unknown) => { if (this.map.id === 'maiyarap-palace' && !this.accounts.has(client.sessionId) && (this.clients.length===1||bossPartyReview&&this.clients.every(c=>!this.accounts.has(c.sessionId))) && message && typeof message === 'object') this.combat.maiyarap?.review(client.sessionId, message as Record<string, unknown>); });
     this.onMessage('boss:seal',client=>{if(this.map.id==='mount-oe-fortress')this.combat.shuten?.seal(client.sessionId);});
-    if(DEV_COMMANDS)this.onMessage('boss:review',(client,message:unknown)=>{if(this.map.id==='mount-oe-fortress'&&!this.accounts.has(client.sessionId)&&this.clients.length===1&&message&&typeof message==='object')this.combat.shuten?.review(client.sessionId,message);});
+    if(DEV_COMMANDS)this.onMessage('boss:review',(client,message:unknown)=>{if(this.map.id==='mount-oe-fortress'&&!this.accounts.has(client.sessionId)&&(this.clients.length===1||bossPartyReview&&this.clients.every(c=>!this.accounts.has(c.sessionId)))&&message&&typeof message==='object')this.combat.shuten?.review(client.sessionId,message,bossPartyReview);});
     this.onMessage('move', (client, message: unknown) => {
       if (!isMovementInput(message)) return;
       if (this.travelling.has(client.sessionId) || this.combat.isDown(client.sessionId)) return;

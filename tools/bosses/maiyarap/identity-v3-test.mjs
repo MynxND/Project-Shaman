@@ -1,0 +1,27 @@
+import assert from 'node:assert/strict';
+import {mkdirSync,writeFileSync} from 'node:fs';
+import {GameState,PlayerState} from '../../../packages/schema/dist/index.js';
+import {getMap,newProfile,MAIYARAP_SKILLS,DREAM_SYMBOLS,DREAM_SOURCE,FACINGS} from '../../../packages/shared/dist/index.js';
+import {CombatSystem} from '../../../apps/server/dist/rooms/combat-system.js';
+const out='docs/design/bosses/motion-identity-v3/maiyarap/evidence';mkdirSync(out,{recursive:true});let checks=0;const check=(v,s)=>{assert(v,s);checks++;};
+export function fixture(count=3) {
+  let now = 1000; const state = new GameState(), profiles = new Map(), events = [], map = getMap('maiyarap-palace');
+  const host = { map, state, now: () => now, rng: () => .5, profile: id => profiles.get(id), setProfile: (id, p) => profiles.set(id, p), vitals(id) { const p = profiles.get(id), s = state.players.get(id); if (p && s) { s.hp = p.hp; s.hpMax = p.hpMax; } }, broadcast: e => events.push({ ...e, at: now }), reduceCooldown() {} };
+  const c = new CombatSystem(host), p = new PlayerState(); p.x = 24; p.y = 30; state.players.set('p', p);
+  const profile = newProfile(map.spawn); profiles.set('p', profile); c.maiyarap.review('p', { action: 'prepare' });
+  profile.hp = profile.hpMax = 100000; profiles.set('p', profile); host.vitals('p');
+  for(let i=1;i<count;i++){const q=new PlayerState();q.x=12+i*10;q.y=35;state.players.set('p'+i,q);const profile=newProfile(map.spawn);profile.hp=profile.hpMax=100000;profiles.set('p'+i,profile);host.vitals('p'+i);}
+  const step = (ms = 50) => { now += ms; c.step(ms); }, run = ms => { for (let i = 0; i < ms; i += 50) step(); };
+  return { c, e: c.maiyarap, p, state, profiles, events, map, now: () => now, step, run };
+}
+
+const phase=(f,n=3)=>{f.e.review('p',{action:'phase',phase:n});f.run(3650);};
+function enter(f){Object.assign(f.p,DREAM_SYMBOLS[0]);check(f.e.interact('p','enter-dream'),'explicit dream entry');return f.e.state.dreamers.get('p');}
+{const f=fixture();phase(f);const d=enter(f),keeper=f.state.players.get('p1');check(!f.e.interact('p','lotus'),'scout cannot solve alone');Object.assign(keeper,DREAM_SYMBOLS[0]);check(f.e.interact('p1','anchor:lotus'),'awake signal accepted');keeper.x=35;check(!f.e.interact('p','lotus'),'keeper must remain at real site');f.run(400);for(const node of DREAM_SYMBOLS){Object.assign(f.p,node);Object.assign(keeper,node);check(f.e.interact('p1','anchor:'+node.id),'keeper '+node.id);f.run(400);check(f.e.interact('p',node.id),'scout '+node.id);f.run(400);}check(d.progress===3&&f.e.state.sourceExposed,'coordinated source exposed');}
+{const f=fixture();phase(f);enter(f);const keeper=f.state.players.get('p1');Object.assign(keeper,DREAM_SYMBOLS[0]);f.e.interact('p1','anchor:lotus');f.run(4100);check(!f.e.interact('p','lotus')&&!f.e.state.anchorOwner,'stale signal cannot solve');}
+for(const count of[3,5,10]){const f=fixture(count);phase(f);f.e.review('p',{action:'skill',skill:'eternal-slumber'});f.run(1700);const asleep=[...f.e.state.dreamers.values()].filter(d=>d.realm==='dream').length;check(asleep>=1&&count-asleep>=2,'ultimate preserves waking roles '+count);}
+{const f=fixture();phase(f);const d=enter(f),keeper=f.state.players.get('p1');f.e.review('p',{action:'skill',skill:'sleepwalker-hunt'});const old={x:f.e.body.x,y:f.e.body.y};check(f.e.state.hazards.size===1,'one dream hunt not triple body rush');Object.assign(keeper,DREAM_SYMBOLS[0]);f.e.interact('p1','anchor:lotus');f.e.interact('p','lotus');f.step();check(!f.e.state.hazards.size,'symbol progress cancels hunt');check(f.e.body.x===old.x&&f.e.body.y===old.y,'real body never teleports with dream shadow');}
+{const f=fixture();phase(f);f.e.review('p',{action:'skill',skill:'underworld-court'});check([...f.e.state.hazards.values()].filter(h=>h.actor==='dream').length===2,'court judges two false sites');check(![...f.e.state.hazards.values()].some(h=>h.radius===16),'no four-global-quadrant copy');}
+{const f=fixture();phase(f);const hp=f.e.body.hp;check(f.e.filterDamage(f.e.body,1e9,'p2')===hp-1,'source counter is required before final death');f.e.objectDied();check(f.e.filterDamage(f.e.body,1e9,'p2')===hp,'source break permits final death');}
+writeFileSync(out+'/behavior.json',JSON.stringify({checks,passed:true,limits:'arranged server unit roles; not normal walking or human party balance'},null,2));console.log('PASS',checks,'Maiyarap identity cases');
+if(process.argv.includes('--record')){const clips=[];for(const[skill,s]of Object.entries(MAIYARAP_SKILLS))for(const face of FACINGS){const f=fixture();phase(f,s.phase);const angle=Math.PI/2-FACINGS.indexOf(face)*Math.PI/4;f.p.x=f.e.body.x+Math.cos(angle)*6;f.p.y=f.e.body.y+Math.sin(angle)*6;if(skill==='sleepwalker-hunt'){Object.assign(f.p,DREAM_SYMBOLS[0]);f.e.interact('p','enter-dream');}f.e.review('p',{action:'skill',skill});const start=f.now(),duration=skill==='eternal-slumber'?39000:10000,cues=new Map(),actor=[],samples=[];for(let at=0;at<=duration;at+=50){const hazards=[...f.e.state.hazards.values()].map(h=>({...h.toJSON(),warnAt:h.warnAt-start,startsAt:h.startsAt-start,endsAt:h.endsAt-start}));for(const h of hazards)cues.set(h.id,h);samples.push({at,cues:hazards});actor.push({at,x:f.e.body.x,y:f.e.body.y,facing:f.e.body.facing,mode:f.e.state.mode,stage:f.e.state.ultimateStage});f.step();}clips.push({skill,face,duration,cues:[...cues.values()],actor,samples});}writeFileSync('apps/client/public/boss-review/maiyarap/clips-v3.json',JSON.stringify(clips));console.log('Recorded',clips.length);}

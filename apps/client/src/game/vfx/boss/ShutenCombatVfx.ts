@@ -1,11 +1,12 @@
 import Phaser from 'phaser';
+import {shutenBaitAlpha} from './shuten-vfx-model';
 import {WORLD_UNIT_PX as U} from '@shaman/shared';
 import {clamp01} from './stomp-timeline';
 import {SHUTEN_ATLASES,sampleShutenCue,smooth,shutenMouthPort,shutenActiveTell,type ShutenCue,type ShutenMaterial} from './shuten-vfx-model';
 import {SHUTEN_TELL_KEY,prepareShutenTell,drawShutenTell,shutenTellKey} from './shuten-telegraph';
 const key=(name:string)=>'oe3:'+name;
 export function preloadShutenCombatVfx(s:Phaser.Scene){for(const id of [...SHUTEN_ATLASES,'drinking','fallen'])if(!s.textures.exists(key(id)))s.load.spritesheet(key(id),`/assets/vfx/boss/shuten-complete/${id}.png`,{frameWidth:256,frameHeight:256});if(!s.textures.exists(SHUTEN_TELL_KEY))s.load.svg(SHUTEN_TELL_KEY,'/assets/vfx/boss/shuten-complete/telegraph-marks.svg',{width:512,height:128});}
-type View={id:string;h:ShutenCue|null;seen:number;cancelAt:number;contact:boolean;sprites:Phaser.GameObjects.Sprite[];tell:Phaser.GameObjects.Graphics;clip:Phaser.GameObjects.Graphics;mask:Phaser.Display.Masks.GeometryMask};
+type View={label:Phaser.GameObjects.Text;id:string;h:ShutenCue|null;seen:number;cancelAt:number;contact:boolean;sprites:Phaser.GameObjects.Sprite[];tell:Phaser.GameObjects.Graphics;clip:Phaser.GameObjects.Graphics;mask:Phaser.Display.Masks.GeometryMask};
 /** One pooled view per authoritative hazard. Organic art and gameplay geometry have separate lifetimes. */
 export class ShutenCombatVfx {
     private pool:View[]=[];
@@ -25,7 +26,7 @@ export class ShutenCombatVfx {
     private make():View{
         const clip=this.scene.make.graphics({x:0,y:0},false),mask=clip.createGeometryMask();
         const sprites=Array.from({length:8},()=>this.scene.add.sprite(0,0,key('impact')).setVisible(false));
-        return {id:'',h:null,seen:0,cancelAt:0,contact:false,sprites,tell:this.scene.add.graphics().setDepth(-.57),clip,mask};
+        return {label:this.scene.add.text(0,0,'',{fontFamily:'Tahoma',fontSize:'14px',color:'#e5d3a4',stroke:'#10231f',strokeThickness:4}).setOrigin(.5).setDepth(99998).setVisible(false),id:'',h:null,seen:0,cancelAt:0,contact:false,sprites,tell:this.scene.add.graphics().setDepth(-.57),clip,mask};
     }
     private outline(g:Phaser.GameObjects.Graphics,h:ShutenCue,r:number,fill=false){
         const x=h.x*U,y=h.y*U;
@@ -54,11 +55,19 @@ export class ShutenCombatVfx {
             const h=v.h,p=sampleShutenCue(h,now),x=h.x*U,y=h.y*U,r=h.radius*U;
             if(v.seen!==now&&now<h.endsAt&&!v.cancelAt)v.cancelAt=now;
             const cancel=v.cancelAt?1-smooth((now-v.cancelAt)/180):1;
-            v.tell.clear();v.clip.clear();for(const s of v.sprites)s.setVisible(false).clearMask();
+            v.label.setVisible(false);v.tell.clear();v.clip.clear();for(const s of v.sprites)s.setVisible(false).clearMask();
             const draw=(i:number,material:ShutenMaterial,frame:number,px:number,py:number,w:number,height:number,alpha:number,depth:number,angle=0,originX=.5,originY=.5)=>{
                 const s=v.sprites[i]!;s.setTexture(key(material),frame).setPosition(px,py).setDisplaySize(Math.max(1,w),Math.max(1,height)).setOrigin(originX,originY)
                     .setRotation(angle).setAlpha(clamp01(alpha*cancel)).setDepth(depth).setBlendMode(Phaser.BlendModes.NORMAL).clearTint().setVisible(alpha*cancel>.001);return s;
             };
+            if(h.actor==='altar-bait'){
+                const fade=shutenBaitAlpha(h.endsAt,now,v.cancelAt);
+                if(fade<=0){v.id='';v.h=null;continue;}
+                v.tell.lineStyle(2,0xd6b46c,.9*fade).strokeCircle(x,y,r);
+                // draw() already applies cancellation alpha; avoid applying it twice.
+                draw(0,'liquid',4+Math.floor(Math.max(0,p.age)/150)%8,x,y,r*2.1,r*1.6,.65*fade/Math.max(.001,cancel),-.60,0,.5,.5);
+                v.label.setText(phase===3?'ล่อเศียรลงสาเก':'ล่อร่างลงสาเก').setPosition(x,y+r+12).setAlpha(fade).setVisible(true);continue;
+            }
             const indicator=h.effect==='portal'||h.effect==='faces'?0xd6b46c:h.actor==='head'?0xb4d1ca:0xdfae77;
             if(p.warning){
                 const first=warnings.get(shutenTellKey(h));if(first&&first.id!==h.id&&!v.cancelAt)continue;
@@ -117,11 +126,11 @@ export class ShutenCombatVfx {
                     draw(7,'impact',Math.min(15,Math.floor(p.age/22)),x+Math.cos(h.angle)*r*.4,y+Math.sin(h.angle)*r*.4,150,150,.45*fade,y+2,0,.5,.65);
                 }
             }
-            if(p.tail>=1||cancel<=0){v.id='';v.h=null;v.tell.clear();for(const s of v.sprites)s.setVisible(false).clearMask();}
+            if(p.tail>=1||cancel<=0){v.id='';v.h=null;v.label.setVisible(false);v.tell.clear();for(const s of v.sprites)s.setVisible(false).clearMask();}
         }
         this.peak=Math.max(this.peak,this.particles.getAliveParticleCount());this.cost.push(performance.now()-start);if(this.cost.length>1200)this.cost.shift();
     }
-    get stats(){const a=[...this.cost].sort((a,b)=>a-b);return {active:this.pool.filter(v=>v.id).length,pooled:this.pool.length,capacity:this.capacity,particles:this.particles.getAliveParticleCount(),peakParticles:this.peak,objects:this.pool.length*10+1,cpuP95:a[Math.floor(a.length*.95)]??0};}
-    reset(){for(const v of this.pool){v.id='';v.h=null;v.tell.clear();for(const s of v.sprites)s.setVisible(false).clearMask();}this.particles.killAll();}
-    destroy(){for(const v of this.pool){for(const s of v.sprites)s.destroy();v.tell.destroy();v.mask.destroy();v.clip.destroy();}this.pool=[];this.particles.destroy();}
+    get stats(){const a=[...this.cost].sort((a,b)=>a-b);return {active:this.pool.filter(v=>v.id).length,pooled:this.pool.length,capacity:this.capacity,particles:this.particles.getAliveParticleCount(),peakParticles:this.peak,objects:this.pool.length*11+1,cpuP95:a[Math.floor(a.length*.95)]??0};}
+    reset(){for(const v of this.pool){v.id='';v.h=null;v.label.setVisible(false);v.tell.clear();for(const s of v.sprites)s.setVisible(false).clearMask();}this.particles.killAll();}
+    destroy(){for(const v of this.pool){for(const s of v.sprites)s.destroy();v.label.destroy();v.tell.destroy();v.mask.destroy();v.clip.destroy();}this.pool=[];this.particles.destroy();}
 }

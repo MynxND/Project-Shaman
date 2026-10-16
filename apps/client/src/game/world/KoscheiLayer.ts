@@ -29,7 +29,7 @@ export class KoscheiLayer{
     }
     for(const[i,node]of KOSCHEI_RELICS.entries()){const prop=this.scene.children.getByName('kos-relic-'+node.id)as Phaser.GameObjects.Image|undefined;prop?.setVisible(i===s.relicStage).setAlpha(s.mode==='transition'?.35:1);const label=this.scene.children.getByName('kos-label-'+node.id);if(label) (label as Phaser.GameObjects.Text).setVisible(i===s.relicStage);}
     const needle=this.actors.spriteOf('koschei-hidden-needle');if(needle&&r.state.monsters.get('koschei-hidden-needle')?.state!=='dead')needle.setVisible(s.needleExposed).setAlpha(s.needleExposed?1:0);
-    if(time-this.reportAt>120){this.reportAt=time;const p=r.state.players.get(r.sessionId),node=KOSCHEI_RELICS[s.relicStage];window.dispatchEvent(new CustomEvent('koschei:snapshot',{detail:{hp:s.hp,hpMax:s.hpMax,phase:s.phase,mode:s.mode,skill:s.skill,relicStage:s.relicStage,hint:s.hint,exposed:s.needleExposed,broken:s.needleBroken,healing:s.healing,stage:s.ultimateStage,countered:s.countered,nearby:node&&p&&Math.hypot(p.x-node.x,p.y-node.y)<=2?node.id:null,vfx:this.fx.stats}}));}
+    if(time-this.reportAt>120){this.reportAt=time;const p=r.state.players.get(r.sessionId),node=KOSCHEI_RELICS[s.relicStage];window.dispatchEvent(new CustomEvent('koschei:snapshot',{detail:{participants:s.participants,hp:s.hp,hpMax:s.hpMax,phase:s.phase,mode:s.mode,skill:s.skill,relicStage:s.relicStage,hint:s.hint,exposed:s.needleExposed,broken:s.needleBroken,healing:s.healing,stage:s.ultimateStage,countered:s.countered,nearby:node&&p&&Math.hypot(p.x-node.x,p.y-node.y)<=2?node.id:null,vfx:this.fx.stats}}));}
   }
   destroy(){this.off();this.fx.destroy();this.transformation.destroy();window.dispatchEvent(new CustomEvent('koschei:snapshot',{detail:null}));}
 }
