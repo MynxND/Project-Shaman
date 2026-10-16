@@ -1,3 +1,4 @@
+import { drawRitualWarning } from './ritual-telegraph';
 import Phaser from 'phaser';
 import { KOSCHEI_RING_START, KOSCHEI_SKILLS, KOSCHEI_CONTACT as P, WORLD_UNIT_PX as U, koscheiProgress } from '@shaman/shared';
 import type { BossHazardState } from '@shaman/schema';
@@ -89,7 +90,8 @@ export class KoscheiVfx {
           }
         }
         // Small woven corner rhythm communicates charge without changing the danger boundary.
-        g.lineStyle(2, 0x8ec9ae, .7).strokeRect(x - 5, y - 5, 10, 10);
+        // Expanded into a boss-specific woven border and seal; the authoritative edge above stays fixed.
+        if (warning) drawRitualWarning(g, { shape:h.shape, x, y, ex:h.toX*U, ey:h.toY*U, radius:r+(h.shape==='ring'?h.width*U:0), width, angle:h.angle, arc:h.arc }, 'koschei', (now-h.warnAt)/Math.max(1,h.startsAt-h.warnAt));
       }
       const key = h.skill;
       if (!this.scene.textures.exists('kos:' + key)) throw new Error('ASSET_REQUIRED: Koschei ' + key);

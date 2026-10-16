@@ -1,3 +1,4 @@
+import { drawRitualWarning } from './ritual-telegraph';
 import Phaser from 'phaser';
 import { DREAM_RING_START, MAIYARAP_SKILLS, MAIYARAP_CONTACT as P, WORLD_UNIT_PX as U, dreamProgress } from '@shaman/shared';
 import type { BossHazardState } from '@shaman/schema';
@@ -45,6 +46,8 @@ export class MaiyarapVfx {
     for (const h of cues) {
       const v = this.views.find(v => v.id === h.id) ?? this.views.find(v => !v.id)!; v.id = h.id;
       const warning = now < h.startsAt, active = now >= h.startsAt && now <= h.endsAt;
+      // Coincident future tells share only presentation; all server hits remain intact.
+      if(warning&&cues.some(c=>c.id!==h.id&&c.skill===h.skill&&c.actor===h.actor&&c.shape===h.shape&&c.startsAt<h.startsAt&&now<c.startsAt&&c.x===h.x&&c.y===h.y&&c.toX===h.toX&&c.toY===h.toY&&c.radius===h.radius&&c.width===h.width&&c.angle===h.angle&&c.arc===h.arc))continue;
       const g = v.ground, x = h.x * U, y = h.y * U, width = (h.width + P) * U, r = (h.radius + P) * U;
       const progress = dreamProgress(h, now), color = h.skill === 'false-awakening' ? 0xbd6974 : 0xd8bb77;
       const fill = warning ? .055 : .1, edge = warning ? .65 + .3 * Math.max(0, (now - h.warnAt) / Math.max(1, h.startsAt - h.warnAt)) : .9;
@@ -69,7 +72,8 @@ export class MaiyarapVfx {
           if (rad > width) g.strokeCircle(x, y, rad - width);
         } else if (h.shape === 'ring') {
           const outer = r + h.width * U, inner = Math.max(0, (DREAM_RING_START - h.width - P) * U);
-          g.lineStyle(outer - inner, color, fill).strokeCircle(x, y, (outer + inner) / 2).lineStyle(2, color, edge).strokeCircle(x, y, outer);
+          // Thin exact contours avoid broad-stroke WebGL tessellation seams.
+          g.lineStyle(2, color, edge).strokeCircle(x, y, outer);
           if (inner > 0) g.strokeCircle(x, y, inner);
         } else if (h.shape === 'sector') {
           const points = [new Phaser.Math.Vector2(x, y)];
@@ -83,7 +87,8 @@ export class MaiyarapVfx {
           }
         }
         // Small woven corner rhythm communicates charge without changing the danger boundary.
-        g.lineStyle(2, 0x8ec9ae, .7).strokeRect(x - 5, y - 5, 10, 10);
+        // Expanded into a boss-specific woven border and seal; the authoritative edge above stays fixed.
+        if (warning) drawRitualWarning(g, { shape:h.shape, x, y, ex:h.toX*U, ey:h.toY*U, radius:r+(h.shape==='ring'?h.width*U:0), width, angle:h.angle, arc:h.arc }, 'maiyarap', (now-h.warnAt)/Math.max(1,h.startsAt-h.warnAt));
       }
       const key = h.skill;
       if (!this.scene.textures.exists('mai:' + key)) throw new Error('ASSET_REQUIRED: Maiyarap ' + key);

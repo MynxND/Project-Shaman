@@ -105,3 +105,33 @@ React HUD receives summaries, never authoritative hit decisions. The new palace
 is an actual GameRoom review arena, not a new atlas/portal adoption. Shuten and
 other bosses are unchanged. Reuse this separation for future bosses, not this
 boss's Thai motifs, provisional balance or dream-puzzle rules.
+
+
+## Telegraph redesign — 2026-10-16 (implementation contract)
+Audit: current warnings have accurate basic contours and countdowns, but no bespoke
+ritual border; the tiny central square is insufficient. This revision changes only
+client ground presentation. Server geometry, allowance, clocks, damage and actors
+remain unchanged. Koschei uses bone-chain links, needle teeth and a cold silver
+mortality seal; Maiyarap uses woven emerald/gold knots and a lotus dream seal.
+These are original game interpretations, not claims of historical ritual symbols.
+Graphics remain designed geometric gameplay indicators; organic attacks continue
+using existing authored ImageGen flipbooks. No new generation required.
+Fixed exact contour stays visible throughout windup. Inset border stitches and
+clock-driven perimeter tracing communicate urgency without shrinking the danger
+zone. Ring decoration stays near the outside swept boundary, not inside its safe
+hole; sector decoration stays inside its actual wedge; finale refuge stays clear.
+Use existing 24 pooled Graphics views, no additional GameObjects/tweens/listeners.
+Maiyarap also requires coincident-future-warning deduplication and thin annulus
+warning contours to avoid the WebGL seams already corrected for Koschei.
+Validation pending: synchronized preview images, geometry regression, build and
+real-room presentation. This contract is not user visual approval.
+
+
+### Telegraph revision results
+Implemented and visually inspected in the shared preview and representative actual
+DEV guest room casts. Evidence, exact checks and limitations:
+[telegraph review](../telegraph-review/README.md). Both per-boss identities now
+replace the former tiny square/plain border. No new artwork, combat tuning or
+GameObject allocation; old organic source art and comments retained.
+User acceptance remains pending; physical phone/GPU and a fresh exhaustive
+real-room dodge sweep were not performed for this presentation-only revision.
