@@ -1,0 +1,30 @@
+{
+  "status": "generated; modular head substitution is experimental and awaiting visual review",
+  "provider": "AutoSprite MCP",
+  "uploadCredits": 0,
+  "generationCredits": 15,
+  "classes": [
+    "rune-seer-detail"
+  ],
+  "actions": [
+    "looped walk"
+  ],
+  "directions": 8,
+  "framesPerDirection": 56,
+  "frameSize": 256,
+  "sourceHead": {
+    "hair": "natural-short",
+    "face": "neutral",
+    "direction": "south",
+    "originalSystemAsset": "heads/natural-short--neutral--south.png"
+  },
+  "seedSha256": "0b6bf4c2a468509ce59e46f0f305b1374693d3145594292bcd2b39aaf863ea7e",
+  "afterGeneration": [
+    "Inspect full headed animation and seam from final to first frame",
+    "Separate head/body masks and estimate head attachment transform per frame",
+    "Test original system hair/face swaps against motion in a separate preview"
+  ],
+  "extraPaidRetriesApproved": false,
+  "sevenClassBatchApproved": false,
+  "approvedCredits": 15
+}
