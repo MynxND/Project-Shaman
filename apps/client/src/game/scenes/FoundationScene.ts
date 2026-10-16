@@ -1,3 +1,4 @@
+import { MaiyarapLayer } from '../world/MaiyarapLayer';
 import{ShutenLayer}from'../world/ShutenLayer';
 import{SHUTEN_ID,shutenWalkMap}from'@shaman/shared';
 import{attachRangedReview}from'../world/attach-ranged-review';
@@ -64,6 +65,7 @@ export class FoundationScene extends Phaser.Scene {
   private nationVfx: NationVfxLayer | null = null;
   private monsters: MonsterLayer | null = null;
   private shuten:ShutenLayer|null=null;
+  private maiyarap: MaiyarapLayer | null = null;
   private portals: PortalLayer | null = null;
   /** The map this scene shows; set from the scene data on every (re)start. */
   private map: MapDefinition = UMBRAL_CAPITAL;
@@ -140,6 +142,7 @@ export class FoundationScene extends Phaser.Scene {
       if (this.gardenReview) zoom.set(this.gardenReview === 'wide' ? 0.01 : this.gardenReview === 'close' ? 1.5 : 1);
     };
     resize(this.scale.gameSize);
+    if (this.map.id === 'maiyarap-palace') zoom.set(.625);
     this.frameMountainReview(widthPx,heightPx);
     if(this.mountainPerf.enabled){
       const stopped=()=>{
@@ -177,6 +180,7 @@ export class FoundationScene extends Phaser.Scene {
       this.casts = null;
       this.nationVfx?.destroy();
       this.nationVfx = null;
+      this.maiyarap?.destroy(); this.maiyarap = null;
       this.shuten?.destroy();this.shuten=null;
       this.monsters?.destroy();
       this.monsters = null;
@@ -219,6 +223,7 @@ export class FoundationScene extends Phaser.Scene {
         view.sprite.playOnce('attack');
       },
     },this.map);
+    if (this.map.id === 'maiyarap-palace') this.maiyarap = new MaiyarapLayer(this, this.monsters, () => this.room);
     if(this.map.id==='mount-oe-fortress')this.shuten=new ShutenLayer(this,this.map,this.monsters,()=>this.room,()=>{this.movement?.setAuto(null);useTargetStore.getState().select(null);this.room?.send('attack:stop');});
     // World units, for the minimap: drawn sprite positions, so the map matches what the player sees.
     setPlayersProbe(() => {
@@ -477,7 +482,7 @@ export class FoundationScene extends Phaser.Scene {
           // The local sprite already moves smoothly every frame, so the camera tracks it exactly.
           // Slight north bias (player just below centre): more of what lies ahead is visible, and the plaza's
           // spirit pillar clears the HUD menu at spawn.
-          if (!this.gardenReview && !this.mountainReview && !this.villageOverview) this.cameras.main.startFollow(sprite, true, 1, 1, 0, CAMERA_LOOK_AHEAD_UNITS * WORLD_UNIT_PX);
+          if (!this.gardenReview && !this.mountainReview && !this.villageOverview) this.cameras.main.startFollow(sprite, true, 1, 1, 0, (this.map.id === 'maiyarap-palace' ? 4.5 : CAMERA_LOOK_AHEAD_UNITS) * WORLD_UNIT_PX);
           view.light = addPlayerLight(this);
           view.hpBar = this.add.graphics();
         }
@@ -539,6 +544,7 @@ export class FoundationScene extends Phaser.Scene {
     }
     this.casts?.update(time, (id) => { const v = this.players.get(id); return v ? { sprite: v.sprite, bodyType: v.bodyType } : null; });
     this.monsters?.update(room.state?.monsters, time, delta);
+    this.maiyarap?.update(time);
     this.shuten?.update(time);
     this.nationVfx?.update(time, this.vfxActors());
     // The local Rune Seer's queue and buffs for the HUD (small strings; only stored when they change).

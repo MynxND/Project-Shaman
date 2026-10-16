@@ -1,3 +1,4 @@
+import { MaiyarapEncounter } from './maiyarap-encounter.js';
 import{ShutenEncounter}from'./shuten-encounter.js';
 import{shutenWalkMap}from'@shaman/shared';
 import type{Facing}from'@shaman/shared';
@@ -60,6 +61,7 @@ const SKILL_IMPACT_MS: Record<string, number> = { 'spirit-bolt': 420, 'amulet-bl
 export class CombatSystem {
   readonly monsters = new Map<string, MonsterMotion>();
   readonly shuten:ShutenEncounter|null;
+  readonly maiyarap: MaiyarapEncounter | null;
   private respawns: { regionId: string; kind: string; id: string; at: number }[] = [];
   private attacks = new Map<string, { monsterId: string; nextAt: number }>();
   private lastCombat = new Map<string, number>();
@@ -131,6 +133,7 @@ export class CombatSystem {
       for (const group of region.monsters) for (let i = 0; i < group.count; i++) this.spawn(region, group.kind, `${region.id}-${group.kind}-${i}`, now);
     }
     this.shuten=host.map.id==='mount-oe-fortress'?new ShutenEncounter(host,this.monsters,{reset:id=>{this.damageBy.delete(id);for(const[pid,a]of this.attacks)if(a.monsterId===id||a.monsterId.startsWith('oe-'))this.attacks.delete(pid);},sync:m=>this.sync(m),hit:(id,m,damage)=>this.hitPlayer(id,m,damage),walkMap:()=>this.walkMap}):null;
+    this.maiyarap = host.map.id === 'maiyarap-palace' ? new MaiyarapEncounter(host, this.monsters, { sync: m => this.sync(m), hit: (id, m, damage) => { const hp = host.profile(id)?.hp ?? 0; this.hitPlayer(id, m, damage); return (host.profile(id)?.hp ?? hp) < hp; }, reset: id => { this.damageBy.delete(id); for (const [pid, a] of this.attacks) if (a.monsterId === id) this.attacks.delete(pid); } }) : null;
   }
 
   private region(id: string): SpawnRegion | undefined { return this.host.map.spawnRegions?.find((r) => r.id === id); }
@@ -234,7 +237,7 @@ export class CombatSystem {
     if(m.state==='dead'||m.hp<=0)return;
     // Player buffs/debuffs (curse, blessings, bonfire, kotodama, Oracle's Vision) scale every source of damage.
     const scaled = raw > 0 ? Math.max(1, Math.round(raw * this.japan.dealtMul(playerId, m) * this.nations.dealtMul(playerId, m))) : raw;
-    const amount=this.shuten?.filterDamage(m,scaled)??scaled;this.shuten?.damaged(m,amount);
+    const amount=this.maiyarap ? this.maiyarap.filterDamage(m,scaled,playerId) : this.shuten?.filterDamage(m,scaled)??scaled;this.shuten?.damaged(m,amount);
     if (amount > 0 && m.hp > 0) { let d = this.damageBy.get(m.id); if (!d) { d = new Map(); this.damageBy.set(m.id, d); } d.set(playerId, (d.get(playerId) ?? 0) + Math.min(amount, m.hp)); }
     m.hp -= amount;
     this.nations.onDamage(m, amount, playerId, skill);
@@ -251,6 +254,7 @@ export class CombatSystem {
     this.sync(m);
     this.host.broadcast({ type: 'death', target: { kind: 'monster', id: m.id }, killer });
     if(this.shuten?.object(m)){this.shuten.objectDied(m);for(const[pid,a]of this.attacks)if(a.monsterId===m.id)this.attacks.delete(pid);return;}
+    if (this.maiyarap?.object(m)) { this.maiyarap.objectDied(); for (const [pid, a] of this.attacks) if (a.monsterId === m.id) this.attacks.delete(pid); return; }
     this.nations.onKill(killer, m);
     for (const [pid, a] of this.attacks) if (a.monsterId === m.id) this.attacks.delete(pid);
     if (m.summoned) {
@@ -411,7 +415,7 @@ export class CombatSystem {
     // Monster AI.
     const targets = [...host.state.players.entries()].map(([id, p]) => ({ id, x: p.x, y: p.y, alive: !p.dead, hidden: this.nations.hidden(id) }));
     for (const m of this.monsters.values()) {
-      if (m.state === 'dead'||this.shuten?.controlled(m)) continue;
+      if (m.state === 'dead'||this.shuten?.controlled(m)||this.maiyarap?.controlled(m)) continue;
       const events = stepMonster(m, targets, dtMs, now, this.walkMap, () => host.rng());
       const def = MONSTERS[m.kind]!;
       for (const e of events) {
@@ -423,6 +427,7 @@ export class CombatSystem {
       if (m.state === 'idle' && m.hp >= def.hp && this.damageBy.has(m.id)) this.damageBy.delete(m.id);
       this.sync(m);
     }
+    this.maiyarap?.step(dtMs);
     this.shuten?.step(dtMs);
     if(this.shuten)this.walkMap=shutenWalkMap(this.walkMap,this.shuten.state.damageMask);
     // Player basic attacks.

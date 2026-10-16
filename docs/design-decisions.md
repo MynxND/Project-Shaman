@@ -697,3 +697,15 @@ owned assets and their source attribution are preserved. Read the imagegen skill
 and retain prompts, original PNGs, receipts and native dimensions. Art direction,
 visual validation and combat acceptance gates are unchanged. This documentation
 change does not claim Maiyarap combat or assets are implemented.
+
+
+## Maiyarap Boss13 — 2026-10-16
+
+Implement only supplied Boss13, preserving other bosses. Sleep changes the
+player realm without locking movement. Stable lotus/knot/flame order exposes
+a destructible source; solo ultimate counter and safe failure pocket prevent
+mandatory multiplayer or unavoidable failure. Phase3 permits optional lucid
+punish. All numerics/puzzle/geography are provisional game design. Critical
+tells have24 pooled views and cosmetics64 particles; overflow never silently
+hides a hit. Arena is review-only travel adoption; production blocks QA commands.
+See design/bosses/maiyarap/README.md for evidence and remaining art/audio polish.

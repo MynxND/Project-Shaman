@@ -22,6 +22,7 @@ import { useHudStore } from '@/stores/hud-store';
 import { NpcDialog } from '@/components/npc/NpcDialog';
 import { TalkPrompt } from '@/components/npc/TalkPrompt';
 import { useNpcStore } from '@/stores/npc-store';
+const MaiyarapHud = dynamic(() => import('./MaiyarapHud'), { ssr: false });
 const BossHud=dynamic(()=>import('./BossHud'),{ssr:false});
 const PhaserHost = dynamic(() => import('./PhaserHost'), { ssr: false });
 const RangedReview = process.env.NODE_ENV === 'development' ? dynamic(() => import('./RangedReview'), { ssr: false }) : null;
@@ -62,6 +63,7 @@ export function GameShell() {
       <MainHud />
       {RangedReview && <RangedReview />}
       <BossHud />
+      <MaiyarapHud />
       {inventoryOpen && <InventoryWindow />}
       {characterOpen && <CharacterWindow />}
       {marketOpen && <MarketWindow />}

@@ -79,5 +79,10 @@ export const BossHazardState=schema({id:t.string(),skill:t.string(),actor:t.stri
 export type BossHazardState=InstanceType<typeof BossHazardState>;
 export const BossEncounterState=schema({id:t.string(),phase:t.number().default(1),mode:t.string().default('dormant'),skill:t.string().default(''),now:t.number(),actionAt:t.number(),endsAt:t.number(),hp:t.number(),hpMax:t.number(),headId:t.string().default(''),headSkill:t.string().default(''),headAt:t.number(),headUntil:t.number(),ultimateStage:t.number(),altarRemaining:t.number().default(3),sealed:t.boolean().default(false),sealProgress:t.float32(),sealOwner:t.string().default(''),stagger:t.float32(),damageMask:t.number(),armorBroken:t.boolean().default(false),rejoinedUntil:t.number(),hazards:t.map(BossHazardState)},'BossEncounterState');
 export type BossEncounterState=InstanceType<typeof BossEncounterState>;
-export const GameState = schema({ mapId: t.string().default(''), players: t.map(PlayerState), citizens: t.map(CitizenState), monsters: t.map(MonsterState), zones: t.map(ZoneState), summons: t.map(SummonState),bosses:t.map(BossEncounterState) }, 'GameState');
+/** Boss13 realm state is independent of Shuten's coordinated head/body state. */
+export const DreamPlayerState = schema({realm:t.string().default('awake'),progress:t.number(),until:t.number(),hint:t.string().default(''),interactedAt:t.number()},'DreamPlayerState');
+export type DreamPlayerState=InstanceType<typeof DreamPlayerState>;
+export const MaiyarapEncounterState = schema({phase:t.number().default(1),mode:t.string().default('dormant'),skill:t.string().default(''),now:t.number(),actionAt:t.number(),endsAt:t.number(),hp:t.number().default(18000),hpMax:t.number().default(18000),ultimateStage:t.number(),sourceExposed:t.boolean().default(false),countered:t.boolean().default(false),hazards:t.map(BossHazardState),dreamers:t.map(DreamPlayerState)},'MaiyarapEncounterState');
+export type MaiyarapEncounterState=InstanceType<typeof MaiyarapEncounterState>;
+export const GameState = schema({ mapId: t.string().default(''), players: t.map(PlayerState), citizens: t.map(CitizenState), monsters: t.map(MonsterState), zones: t.map(ZoneState), summons: t.map(SummonState),bosses:t.map(BossEncounterState),maiyarap:t.map(MaiyarapEncounterState) }, 'GameState');
 export type GameState = InstanceType<typeof GameState>;

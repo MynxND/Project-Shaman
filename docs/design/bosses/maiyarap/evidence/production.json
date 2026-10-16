@@ -1,0 +1,12 @@
+{
+  "result": "pass",
+  "phase": 1,
+  "mode": "dormant",
+  "hpMax": 120,
+  "y": 42,
+  "sourceExposed": false,
+  "checks": [
+    "production rejects review prepare/phase",
+    "remote awake symbol cannot expose source"
+  ]
+}

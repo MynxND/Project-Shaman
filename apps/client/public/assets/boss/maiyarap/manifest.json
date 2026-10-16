@@ -1,0 +1,734 @@
+{
+  "generator": "ImageGen built-in",
+  "authorization": "user2026-10-16",
+  "sourcePolicy": "original PNG retained; no synthetic motion frames",
+  "faces": [
+    "south",
+    "south-west",
+    "west",
+    "north-west",
+    "north",
+    "north-east",
+    "east",
+    "south-east"
+  ],
+  "castFramesPerFacing": 4,
+  "castSourceBodyBoxes": [
+    [
+      67,
+      2,
+      195,
+      214
+    ],
+    [
+      273,
+      7,
+      419,
+      214
+    ],
+    [
+      479,
+      8,
+      630,
+      214
+    ],
+    [
+      710,
+      3,
+      838,
+      214
+    ],
+    [
+      58,
+      211,
+      207,
+      419
+    ],
+    [
+      265,
+      219,
+      426,
+      419
+    ],
+    [
+      462,
+      219,
+      638,
+      419
+    ],
+    [
+      709,
+      212,
+      849,
+      420
+    ],
+    [
+      62,
+      413,
+      213,
+      624
+    ],
+    [
+      267,
+      417,
+      425,
+      623
+    ],
+    [
+      446,
+      420,
+      647,
+      622
+    ],
+    [
+      716,
+      413,
+      854,
+      624
+    ],
+    [
+      54,
+      617,
+      194,
+      829
+    ],
+    [
+      261,
+      626,
+      417,
+      827
+    ],
+    [
+      478,
+      628,
+      659,
+      827
+    ],
+    [
+      700,
+      619,
+      839,
+      829
+    ],
+    [
+      62,
+      832,
+      196,
+      1047
+    ],
+    [
+      279,
+      835,
+      422,
+      1046
+    ],
+    [
+      480,
+      840,
+      665,
+      1046
+    ],
+    [
+      696,
+      833,
+      824,
+      1046
+    ],
+    [
+      74,
+      1051,
+      210,
+      1257
+    ],
+    [
+      268,
+      1051,
+      427,
+      1256
+    ],
+    [
+      495,
+      1054,
+      667,
+      1257
+    ],
+    [
+      717,
+      1051,
+      857,
+      1258
+    ],
+    [
+      49,
+      1261,
+      197,
+      1477
+    ],
+    [
+      261,
+      1260,
+      388,
+      1477
+    ],
+    [
+      482,
+      1267,
+      689,
+      1474
+    ],
+    [
+      709,
+      1261,
+      843,
+      1475
+    ],
+    [
+      65,
+      1487,
+      209,
+      1711
+    ],
+    [
+      281,
+      1484,
+      432,
+      1716
+    ],
+    [
+      495,
+      1495,
+      661,
+      1711
+    ],
+    [
+      709,
+      1487,
+      853,
+      1716
+    ]
+  ],
+  "castPacking": "32 measured anatomy components; equal-grid source assumption rejected after eight-direction runtime inspection",
+  "deathFrames": 8,
+  "deathFacing": "south-east only, direction-independent dissolution",
+  "move": "idle pose, server locomotion; not an authored walk cycle",
+  "palaceCuts": {
+    "palace": [
+      0,
+      0,
+      704,
+      585
+    ],
+    "pillar": [
+      705,
+      0,
+      880,
+      585
+    ],
+    "lotus": [
+      883,
+      290,
+      1225,
+      585
+    ],
+    "knot": [
+      1225,
+      250,
+      1536,
+      590
+    ],
+    "flame": [
+      0,
+      590,
+      350,
+      1024
+    ],
+    "source": [
+      352,
+      590,
+      820,
+      1024
+    ],
+    "stone": [
+      846,
+      632,
+      1200,
+      970
+    ],
+    "mist": [
+      1210,
+      590,
+      1536,
+      1024
+    ]
+  },
+  "assets": [
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/actor.png",
+      "size": [
+        2048,
+        1536
+      ],
+      "sha256": "1ba8a54fa95f317b057f2ec9be0d7d8b0d212f61eba8a651ae4dcd2c1d0e194e",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/cast-directions.png",
+      "size": [
+        1024,
+        2048
+      ],
+      "sha256": "2cc77b415b8f5ed82e8235c1e1836f995def1692e1881916e1250a1300b702e9",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/death.png",
+      "size": [
+        1024,
+        512
+      ],
+      "sha256": "c71090a48f899b4a25d997529b573fbd0d40a20b83589d18f3186028412f8396",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/dream-theft.png",
+      "size": [
+        1024,
+        512
+      ],
+      "sha256": "06db76c4df026de8e985c19c9a94396135cadd71634072895814db88b54fbf75",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/eternal-slumber.png",
+      "size": [
+        1024,
+        512
+      ],
+      "sha256": "584e49f502c5700c0c35733573f8ef24fd49558313ce4db0d2b758fc6eb1fb41",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/false-awakening.png",
+      "size": [
+        1024,
+        512
+      ],
+      "sha256": "0b0ff74b978adfe45cf8f2e04283654b728d560746b617282a725c5320e2c95c",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/flame.png",
+      "size": [
+        295,
+        381
+      ],
+      "sha256": "41b14b57060ea20f11210a4c84ca9c9a3385e41f44018cb170468abbd768ec9f",
+      "alpha": [
+        0,
+        253
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/idle-eight.png",
+      "size": [
+        1024,
+        512
+      ],
+      "sha256": "5a56f683c11a68da66ceb2243135982c3f699484869d4810a4097a4d2ae50433",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/knot.png",
+      "size": [
+        269,
+        325
+      ],
+      "sha256": "3d1371d98dfe5a0d7167c49ca12e1ba2a98ed4296d6928b87f139fcbcb7f615c",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/lotus.png",
+      "size": [
+        286,
+        243
+      ],
+      "sha256": "641a03a64042fffcf7d96d19d93dbfd5de91eaeba75315119ab724ef6b89de4f",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/lucid-seal.png",
+      "size": [
+        1024,
+        512
+      ],
+      "sha256": "943fbb3c593746466d563eab752c39b3721fde8b1f74b2eb22a1662517dd57a1",
+      "alpha": [
+        0,
+        253
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/mist.png",
+      "size": [
+        215,
+        415
+      ],
+      "sha256": "7b3797de9ba302aa4be3085441d09c2ff45d19c532fc9fc2a88e030bf79104ca",
+      "alpha": [
+        0,
+        251
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/nightmare-passage.png",
+      "size": [
+        1024,
+        512
+      ],
+      "sha256": "da7379dc8b419eff6ffa853a5548e480d918e6dad5c5b5f4ef0b2e85182b58dd",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/palace.png",
+      "size": [
+        688,
+        578
+      ],
+      "sha256": "7b023f17e8639b67b2404237d88550852529cdf80a82a6270778b31706849c77",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/patal-gate.png",
+      "size": [
+        1024,
+        512
+      ],
+      "sha256": "53ad2d28e1b0fc60865a48f4807618193462753b178cebc63d2b04e0017b8af8",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/phantom-doppelganger.png",
+      "size": [
+        1024,
+        512
+      ],
+      "sha256": "8b1b1d8a19cbe974735e137d32c25e32c00e1d66990137c2dd8e53267c07ffd3",
+      "alpha": [
+        0,
+        253
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/pillar.png",
+      "size": [
+        175,
+        540
+      ],
+      "sha256": "5aeafaf1b500ede2515fb840d3bc0d5cb4827ec458ab63152dcdb022332a1c66",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/sleep-enchantment.png",
+      "size": [
+        1024,
+        512
+      ],
+      "sha256": "d5bfa29c0f7cfce15ef5278f9ecca75b7c71b2fede94f71ff0132ca1c1695d5f",
+      "alpha": [
+        0,
+        253
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/sleepwalker-hunt.png",
+      "size": [
+        1024,
+        512
+      ],
+      "sha256": "30f1100a3bfad12e9354d484d07f7fefc4ffaab0c62f4c3b47af9e8c2d9b6f72",
+      "alpha": [
+        0,
+        253
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/source/cast-directions.png",
+      "size": [
+        887,
+        1774
+      ],
+      "sha256": "0e4929e78b6373e5f4befc176f069e76da67deeb39e1c4484f75c2879f1dd5a0",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/source/death.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "ffa19ba30a97d9002685b4a5c6771416fe38218c85b521070681c9bb5fbfaf26",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/source/dream-theft.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "c8868fb361408700f401b1402d2e130c9a6a4c274036ad19625d3c5d7466be76",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/source/eternal-slumber.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "ada596b1b2a3c9f7d746d9054978da688c2294facea77c1188791472720e09cb",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/source/false-awakening.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "11167f9ccb23a2e727fde80293d397ac1764942b1aef93e992fdd5684c0e0647",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/source/idle-eight.png",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "d413a6217b8d824f8ecdf0bdedfec714b123b089dd11ad7c5cd297775bccf496",
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/source/lucid-seal.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "346086585f60ff7bf4d29cd1e33852b0a238972282afd86e7aafcfc860bf6695",
+      "alpha": [
+        0,
+        253
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/source/nightmare-passage.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "305866b76ec6006c09a31b197447149b0fc599ad8d54d2c75f51a41b8d82cd29",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/source/palace-kit.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "ebebdb913c7d39cb473e30ddf4e0814b2c75977b19da98d7a4dbfb51be004c0b",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/source/patal-gate.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "23deb51d5e8e81c09ed58e353843e9aca2732dcedaf37c26b380b1c86eb9e615",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/source/phantom-doppelganger.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "e94b13b98cdf9e4515a23009824e7db6f56069a3cb97230b962fe07000a85419",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/source/sleep-enchantment.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "113ec0e22811078f1a664263d2e376ce500394982139e9a1932b8a83b36968f5",
+      "alpha": [
+        0,
+        253
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/source/sleepwalker-hunt.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "5b92859c01dcd02bc500156f0e0f99dd8ff111a0c1b41cf53c37a6047bc330bc",
+      "alpha": [
+        0,
+        253
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/source/underworld-chains.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "f9d74f05ca157682ae81f4db9e8b5be59b6efb994b46b499dc92f64b302dccea",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/source/underworld-court.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "09a0d2c47608a050b3c5102413ef14cdd2590992a4b1bd82405a42a049a69dcf",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/source-actor.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "c48a0b0385b72680f1351e0b6e9b9640f105f6e9547faa0fcb49069afd0fee69",
+      "alpha": [
+        0,
+        253
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/source.png",
+      "size": [
+        360,
+        392
+      ],
+      "sha256": "9d2fbf60c2f23a661ed7d3fd7f1ed0285b7f4935a54dc7c617e95c2c47c424fc",
+      "alpha": [
+        0,
+        253
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/stone.png",
+      "size": [
+        354,
+        338
+      ],
+      "sha256": "bd3f9268c51578f69f9d724273798ec628865eed08fe11aae560c437af144022",
+      "alpha": [
+        243,
+        253
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/underworld-chains.png",
+      "size": [
+        1024,
+        512
+      ],
+      "sha256": "d9f5b623c7ea779d8c16c6c927137f20cca6fa8825e77a7cee6cddf5a783b26b",
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "apps/client/public/assets/boss/maiyarap/underworld-court.png",
+      "size": [
+        1024,
+        512
+      ],
+      "sha256": "10d2c637b989242bc9d964a0d6d7334cb881638b46a768fce8d53c6203f50d56",
+      "alpha": [
+        0,
+        253
+      ]
+    }
+  ]
+}

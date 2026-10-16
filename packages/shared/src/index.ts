@@ -77,3 +77,5 @@ export * from './nations-combat.js';
 export * from './skill-text.js';
 
 export * from './shuten.js';
+
+export * from './maiyarap.js';

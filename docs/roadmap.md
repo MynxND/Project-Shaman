@@ -717,3 +717,14 @@ Shuten actual-room phase QA complete:22 stationary/walking cases, all dodge rout
 ## Boss VFX authoring standard — 2026-10-16
 
 Boss VFX standard v1.0 adopted: root contract, AGENTS.md read requirement, central VFX cross-link, per-boss template and populated Shuten reference. Future bosses must maintain their own coverage/geometry/timing/budget/evidence record. This task adds no new boss artwork or runtime changes.
+
+
+## Maiyarap Boss13 review implementation — 2026-10-16
+
+Three phases,10 abilities, five-stage Eternal Slumber, dream/source counter and
+authored ImageGen presentation implemented in an actual isolated review arena.
+620 behavior checks,20 positive/walk-dodge cases, eight room facings, solo counter,
+normal AI by phase, production isolation, typecheck/build and desktop/emulated
+mobile inspection pass. Balance and user visual review remain pending; no
+continuous balanced victory or new world portal adoption claimed. See
+design/bosses/maiyarap/README.md. Stop this boss batch for user review.

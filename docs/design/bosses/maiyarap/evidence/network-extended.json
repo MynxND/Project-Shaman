@@ -1,0 +1,123 @@
+{
+  "arrangement": "isolated actual GameRoom; unsaved guest, DEV pre-cast positions and phases; no post-cast teleport/invulnerability",
+  "uncertainty": "30Hz simulation,50ms schema patches,75ms observation; damage receipts ±125ms",
+  "cases": [
+    {
+      "skill": "sleep-enchantment",
+      "facing": "south",
+      "damage": 55,
+      "realm": "dream"
+    },
+    {
+      "skill": "sleep-enchantment",
+      "facing": "south-east",
+      "damage": 55,
+      "realm": "dream"
+    },
+    {
+      "skill": "sleep-enchantment",
+      "facing": "east",
+      "damage": 55,
+      "realm": "dream"
+    },
+    {
+      "skill": "sleep-enchantment",
+      "facing": "north-east",
+      "damage": 55,
+      "realm": "dream"
+    },
+    {
+      "skill": "sleep-enchantment",
+      "facing": "north",
+      "damage": 55,
+      "realm": "dream"
+    },
+    {
+      "skill": "sleep-enchantment",
+      "facing": "north-west",
+      "damage": 55,
+      "realm": "dream"
+    },
+    {
+      "skill": "sleep-enchantment",
+      "facing": "west",
+      "damage": 55,
+      "realm": "dream"
+    },
+    {
+      "skill": "sleep-enchantment",
+      "facing": "south-west",
+      "damage": 55,
+      "realm": "dream"
+    },
+    {
+      "skill": "eternal-slumber",
+      "mode": "outside-refuge",
+      "damage": 180,
+      "at": 25016,
+      "x": 24,
+      "y": 30,
+      "hits": [
+        {
+          "at": 1792134582917,
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "yOJT3q33J"
+          },
+          "amount": 180,
+          "source": "dream-king-maiyarap-0"
+        }
+      ]
+    },
+    {
+      "skill": "eternal-slumber",
+      "mode": "walk-to-refuge",
+      "damage": 0,
+      "at": 25019,
+      "x": 24,
+      "y": 34.85200119018555,
+      "hits": []
+    },
+    {
+      "skill": "lucid-punish",
+      "hp": 6295,
+      "route": [
+        {
+          "id": "lotus",
+          "realm": "dream"
+        },
+        {
+          "id": "knot",
+          "realm": "dream"
+        },
+        {
+          "id": "flame",
+          "realm": "dream"
+        }
+      ],
+      "hits": [
+        {
+          "at": 1792134624688,
+          "type": "damage",
+          "target": {
+            "kind": "monster",
+            "id": "dream-king-maiyarap-0"
+          },
+          "amount": 5,
+          "source": "yOJT3q33J"
+        }
+      ]
+    },
+    {
+      "kind": "late-join-and-review-gate",
+      "ownerRealm": "dream",
+      "otherRealm": "awake",
+      "phase": 1,
+      "remoteSymbolRejected": true
+    }
+  ],
+  "ai": [],
+  "failures": [],
+  "counterplay": null
+}

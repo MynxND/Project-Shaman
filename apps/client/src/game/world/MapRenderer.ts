@@ -1,3 +1,4 @@
+import { preloadMaiyarapPalace, decorateMaiyarapPalace } from './MaiyarapPalace';
 import{preloadOe,renderOe}from'./OeRegion';
 import{isRussiaMap,preloadRussiaRegion,renderRussiaRegion}from'./RussiaRegion';
 import{isIrelandMap,preloadIrelandRegion,renderIrelandRegion}from'./IrelandRegion';
@@ -44,6 +45,7 @@ const TILE_PX = 16;
 
 export function preloadMapAssets(scene: Phaser.Scene, map?: MapDefinition) {
   if(map?.id==='mount-oe-fortress')preloadOe(scene);
+  if (map?.id === 'maiyarap-palace') preloadMaiyarapPalace(scene);
   preloadChina(scene,map);
   if(isIrelandMap(map))preloadIrelandRegion(scene);
   if(isRussiaMap(map))preloadRussiaRegion(scene);
@@ -85,6 +87,7 @@ export function renderMap(scene: Phaser.Scene, map: MapDefinition) {
   ground(map.ground.base, 0, 0, map.width, map.height);
   for (const r of map.ground.regions) ground(r.material, r.x, r.y, r.w, r.h);
   const water=renderTerrain(scene, map, manifest);
+  if (map.id === 'maiyarap-palace') decorateMaiyarapPalace(scene);
   renderChinaGround(scene,map);
   if(!isChinaMap(map))renderQualityDecoration(scene,map);
   addSpiritwoodAtmosphere(scene,map,map.id==='mountain-spirit-sanctuary'?{fog:[{id:'spring-mist',x:58,y:50,w:10,h:10,alpha:.1},{id:'low-hollow-mist',x:6,y:55,w:10,h:6,alpha:.08}],graph:{edges:map.terrain?.paint.filter(p=>p.shape==='path'&&p.terrain!=='water').map(p=>({points:p.shape==='path'?p.points:[],width:p.shape==='path'?p.r*2:0}))??[]}}:undefined);

@@ -83,7 +83,7 @@ export function addMapLighting(scene: Phaser.Scene, map: MapDefinition) {
   ensureGlowTexture(scene);
   const U = WORLD_UNIT_PX;
   const village = map.objects.some(o=>o.asset==='village-sacred-totem');
-  const spiritwood = ['whispering-spiritwood','lantern-paddy','moon-mangrove','monsoon-marsh','cloud-tea-slopes'].includes(map.id);
+  const spiritwood = ['whispering-spiritwood','lantern-paddy','moon-mangrove','monsoon-marsh','cloud-tea-slopes','maiyarap-palace'].includes(map.id);
   scene.add.rectangle(0, 0, map.width * U, map.height * U, spiritwood ? 0x071c20 : village ? 0x081817 : DARKNESS.color, spiritwood ? .20 : village ? .28 : map.elevation?.artPass ? .42 : DARKNESS.alpha).setOrigin(0).setDepth(DARKNESS_DEPTH);
   for (const object of map.objects) {
     const light = LIGHTS[object.asset];

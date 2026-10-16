@@ -641,3 +641,12 @@ SHUTEN_CONTACT_PADDING centralizes the pre-existing .3 player-body collision all
 ## Boss VFX authoring standard — 2026-10-16
 
 [Boss VFX Standard](../SHAMAN_BOSS_VFX_STANDARD.md) is the mandatory per-boss authoring and delivery contract. Maintain docs/design/bosses/<boss-id>/vfx.md from the template; keep authority, timed cues, presentation and evidence distinct. This adoption changes documentation only, not runtime systems.
+
+
+## Maiyarap Boss13 — 2026-10-16
+
+Independent authoritative MaiyarapEncounter FSM and schema realm/hazard state
+reuse GameRoom/CombatSystem. Shared maiyarap.ts geometry drives both damage and
+Phaser tells; the world and88-clip lab share MaiyarapVfx and actor pose clocks.
+React owns summary HUD and proximity interactions. Palace is an actual review
+room without atlas/portal adoption. See design/bosses/maiyarap/README.md.

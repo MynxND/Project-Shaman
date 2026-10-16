@@ -382,3 +382,13 @@ Shuten warning borders now include player contact allowance; active shockwaves d
 ## Boss VFX authoring standard — 2026-10-16
 
 Apply the user-adopted [Boss VFX Standard](../SHAMAN_BOSS_VFX_STANDARD.md) to each boss: authored organic materials, readable lore-specific ritual warnings, player visibility and measured anchors. Share quality/architecture, not Shuten Japanese symbols, palette or numerical budgets across nations.
+
+
+## Maiyarap Boss13 — 2026-10-16
+
+Indigo Thai yaksha, aged gold royal ornaments and emerald dream materials use
+15 retained ImageGen sources;11 authored ability flipbooks,8 actor facings and
+measured32 cast poses. Organic ground layers remain below actors; shared exact
+danger geometry stays readable. Four cast poses/facing, idle-based glide and
+shared directional dissolve are explicit limits, not60-frame animation claims.
+User art approval pending. See design/bosses/maiyarap/vfx.md.
