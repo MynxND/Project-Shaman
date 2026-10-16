@@ -1,0 +1,271 @@
+{
+  "provider": "built-in ImageGen",
+  "alpha": "original preserved",
+  "packing": "nearest; stable foot anchor; no repaint",
+  "atlases": {
+    "wave": {
+      "frames": 16,
+      "grid": [
+        4,
+        4
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sourceSize": [
+        1240,
+        1268
+      ],
+      "source": "docs/design/bosses/shuten-doji/complete/sources/wave.png",
+      "sourceSha256": "dcd123e17612927bee76919b82f9c914554c210425273d2fc46d7a57a021bddf",
+      "sha256": "7c54d806982437d5c6784d1b7534382e8d9ad68314a8c6aee4043ef2d9972548"
+    },
+    "sweep": {
+      "frames": 16,
+      "grid": [
+        4,
+        4
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "source": "docs/design/bosses/shuten-doji/complete/sources/sweep.png",
+      "sourceSha256": "a53c2266b144f435351a3a5ffbc468028b9e404bcb224b4315a194708165e5d3",
+      "sha256": "13ccf06658cbfa3b12fb332e4210b5eb0728b74c1be3f9fa88529da28a120dee"
+    },
+    "sake": {
+      "frames": 16,
+      "grid": [
+        4,
+        4
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        0.5,
+        0.65
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "source": "docs/design/bosses/shuten-doji/complete/sources/sake.png",
+      "sourceSha256": "4701bc510602eb4b608dbc9ff0431b3e235cd7c1f45e27d471ade4d5af70ede6",
+      "sha256": "98a548a468ea2c27fa958f8291dda0059feefd155c83a8db6c7e232a2f0faea0"
+    },
+    "roar": {
+      "frames": 16,
+      "grid": [
+        4,
+        4
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "source": "docs/design/bosses/shuten-doji/complete/sources/roar.png",
+      "sourceSha256": "c368328f7ceec21c7535b96ba293df49422e3ab5895bd0a8f8a51cd59e889eb4",
+      "sha256": "d09e02895a0ea293707eb465dd65a87a31031ef9879609d2febc25b9014c2d4f"
+    },
+    "portal": {
+      "frames": 16,
+      "grid": [
+        4,
+        4
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "source": "docs/design/bosses/shuten-doji/complete/sources/portal.png",
+      "sourceSha256": "fd7ce3dfd26c487bbbe8544f4037674839a50bdf950abff0a149f91f245220f8",
+      "sha256": "81b0ffbab6b71210d9410f2185b7315c02621dcfb3ba09c2b3db4cc9d827df53"
+    },
+    "fist": {
+      "frames": 16,
+      "grid": [
+        4,
+        4
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        0.5,
+        0.7
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "source": "docs/design/bosses/shuten-doji/complete/sources/fist.png",
+      "sourceSha256": "f9cfce0e2c6ce3247f6bf034cddaf6d391a2aaca5ca84475b4b3f067eb24fbf6",
+      "sha256": "a649d8d27ca628e4dfcd6929b443a293f551965d32a52bd672a124dedb18aaf4"
+    },
+    "breath": {
+      "frames": 16,
+      "grid": [
+        4,
+        4
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "source": "docs/design/bosses/shuten-doji/complete/sources/breath.png",
+      "sourceSha256": "27284844a357f73e95c64429d96070661159255fe930a0d4e2f91b0aec6e4c0d",
+      "sha256": "e2619c9f1e564f4fab350a008e2f3c2da4ae4785cb094f2d72c43438dfbc0a33"
+    },
+    "impact": {
+      "frames": 16,
+      "grid": [
+        4,
+        4
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        0.5,
+        0.65
+      ],
+      "sourceSize": [
+        1402,
+        1122
+      ],
+      "source": "docs/design/bosses/shuten-doji/complete/sources/impact.png",
+      "sourceSha256": "efbc32f9c2c49e37e24fc245da80207e2d2e557c889229ab1902050c8880542f",
+      "sha256": "8bc20dffc683082c74fe3502e0978bb81d59b93423ba26a7fce3b20066e65d5c"
+    },
+    "smoke": {
+      "frames": 16,
+      "grid": [
+        4,
+        4
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        0.5,
+        0.85
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "source": "docs/design/bosses/shuten-doji/complete/sources/smoke.png",
+      "sourceSha256": "fac03f4614abbd25c64f19bfface0dbae1fa9c1283ff595802720359b81eb235",
+      "sha256": "974ec60abe75752380a3282f92ccc5612429f484f0120cb84e153c25d93c34a0"
+    },
+    "liquid": {
+      "frames": 16,
+      "grid": [
+        4,
+        4
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sourceSize": [
+        1263,
+        1246
+      ],
+      "source": "docs/design/bosses/shuten-doji/complete/sources/liquid.png",
+      "sourceSha256": "6ba57cc2c17f011beccac6d720062cee140defea68ef1fd0ab15cf6929f7a1e1",
+      "sha256": "cc94aa201e6c6bb9e1235e98636da54c517cb6d59bbb577bac99feb927b29cf4"
+    },
+    "drinking": {
+      "frames": 8,
+      "grid": [
+        4,
+        2
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        0.5,
+        0.94
+      ],
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "source": "docs/design/bosses/shuten-doji/complete/sources/drinking.png",
+      "sourceSha256": "95f5ddebb2bb2d155b6ec186a737034531cb42486af6aa1efc2074673bbd4f23",
+      "sha256": "72c3b77d943d1975059f7b7931af56384b77f39c44252afef409675332ae7a80"
+    },
+    "fallen": {
+      "frames": 8,
+      "grid": [
+        4,
+        2
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        0.5,
+        0.94
+      ],
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "source": "docs/design/bosses/shuten-doji/complete/sources/fallen.png",
+      "sourceSha256": "6516cb412ee1c5761f5823ae719b063d03d5ecf66dc2c4f42efa6e324eee634c",
+      "sha256": "ddb7a07bef87c502562afd6c9cedf7db3cb64de6f9d73853d90156c73017c2f1"
+    }
+  }
+}

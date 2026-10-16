@@ -1,5 +1,5 @@
 import { BossEncounterState, BossHazardState, MonsterState } from '@shaman/schema';
-import { SHUTEN_ID, SHUTEN_SKILLS, OE_ALTARS, OE_DRUMS, OE_SEAL, OE_COLLAPSE, bossShapeHit, inOeCourt, oeClamp, shutenWalkMap, createMonster, facingFromVector, isBlocked, MONSTERS, stepMovement, type MonsterMotion, type Position, type ShutenSkill } from '@shaman/shared';
+import { SHUTEN_ID, SHUTEN_SKILLS, OE_ALTARS, OE_DRUMS, OE_SEAL, OE_COLLAPSE, FACINGS, bossShapeHit, inOeCourt, oeClamp, shutenWalkMap, createMonster, facingFromVector, isBlocked, MONSTERS, stepMovement, type MonsterMotion, type Position, type ShutenSkill } from '@shaman/shared';
 import type { CombatHost } from './combat-system.js';
 interface Hooks {
     reset(id:string):void;
@@ -225,7 +225,7 @@ export class ShutenEncounter {
             this.later(5100, () => { this.state.ultimateStage = 5; this.rings(skill, { x: b.x, y: b.y }, 0, 3, 12, 110, true); });
             this.later(8200, () => { this.state.headSkill = ''; if (!this.state.sealed && head) {
                 this.state.rejoinedUntil = this.host.now() + 5000;
-                b.hp = Math.min(4899, b.hp + 1120);
+                b.hp = Math.max(b.hp, Math.min(4899, b.hp + 1120));
                 this.state.headSkill = 'rejoin';
             } this.nextHead = this.host.now() + 5000; });
         }
@@ -336,6 +336,7 @@ export class ShutenEncounter {
             if (this.state.mode !== 'dead') {
                 this.clear();
                 this.state.mode = 'dead';
+                this.state.actionAt = now;
                 this.state.skill = '';
                 for (const m of this.monsters.values())
                     if (m.kind === 'shuten-head' || m.kind === 'oe-elite-oni' || this.object(m)) {
@@ -466,10 +467,18 @@ export class ShutenEncounter {
         action?: unknown;
         skill?: unknown;
         phase?: unknown;
+        face?: unknown;
     }) { const p = this.host.state.players.get(playerId), b = this.body; if (!p || !b)
         return false; this.reviewOwner=playerId; if (cmd.action === 'reset') {
         this.reset();
         return true;
+    } if (cmd.action === 'aim') {
+        // Guest-only dev review is gated by GameRoom; this never changes production attack geometry.
+        const i=FACINGS.indexOf(cmd.face as typeof FACINGS[number]);if(i<0)return false;
+        const origin=cmd.skill==='cursed-head'?this.monsters.get(this.state.headId)??b:cmd.skill==='wrath-severed-king'?{x:24,y:14}:b;
+        const angle=Math.PI/2-i*Math.PI/4,at={x:origin.x+Math.cos(angle)*3,y:origin.y+Math.sin(angle)*3};
+        if(!inOeCourt(at)||isBlocked(this.hooks.walkMap(),at.x,at.y))return false;
+        p.x=at.x;p.y=at.y;p.moving=false;this.manual=true;return true;
     } if (cmd.action === 'prepare') {
         const profile = this.host.profile(playerId);
         if (profile) {

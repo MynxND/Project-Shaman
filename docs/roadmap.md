@@ -701,3 +701,7 @@ The first Shuten-dōji encounter is implemented for review: three phases, ten sk
 ## Boss VFX asset proof of concept — 2026-10-16
 
 Mountain Stomp migrated and reviewed in the real room with before/after, walking dodge, dedicated responsive Phaser preview, measured frame intervals/CPU and automated timeline/pool checks. Other attacks are intentionally not migrated. Production coherent flipbooks and final user visual approval remain open; see [asset requirements](design/bosses/shuten-doji/vfx-stomp-v2/README.md).
+
+## Complete Shuten boss VFX — 2026-10-16
+
+Shuten complete VFX batch implemented: all ten skills, five-stage ultimate, phase 2/3 and death. Typecheck/build, authority/live-room/pooling tests and desktop/portrait/landscape browser inspection completed; 88 live skill/direction receipts retained. Final user artistic acceptance, difficulty tuning and physical-phone GPU testing remain review work. Preview /boss-vfx/shuten; gallery /boss-review/shuten-complete/index.html.

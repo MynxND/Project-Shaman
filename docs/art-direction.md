@@ -350,3 +350,7 @@ Shuten-dōji adds original Japanese oni forms, eight directional ready/windup/st
 ## Shuten Stomp VFX review — 2026-10-16
 
 Asset-driven charcoal ash, cursed red spirit fire, basalt fragments and restrained textured flash replace the thick procedural ring for one attack. Generated four-pose material/smoke art is explicitly temporary POC artwork; crossfade does not replace authored in-between animation. Production gaps and before/after game screenshots are in [the review](design/bosses/shuten-doji/vfx-stomp-v2/README.md). Other boss attacks retain their prior presentation.
+
+## Complete Shuten boss VFX — 2026-10-16
+
+All ten Shuten skills, five ultimate stages, transitions and death now use owned layered RGBA materials: ten sixteen-frame effect atlases and two eight-view key-pose atlases. Original character sprites remain; this is not a new full locomotion flipbook. Actual-room and frozen-preview evidence are distinguished; user art acceptance remains open. See design/bosses/shuten-doji/complete/README.md.

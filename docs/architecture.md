@@ -625,3 +625,7 @@ Shuten-dōji uses the existing authoritative GameRoom: one encounter FSM, shared
 ## Boss asset VFX proof of concept — 2026-10-16
 
 Mountain Stomp alone now binds authoritative hazard timestamps to a fixed, asset-driven Phaser view/emitter pool. WaveArtProfile separates art clocks and assets from linear world-space radius; no damage, phase, protocol or server changes. Dedicated /boss-vfx/stomp preview owns no gameplay. Parent-driven positive-size resize preserves the preview scene. See [audit, architecture, performance and adoption](design/bosses/shuten-doji/vfx-stomp-v2/README.md).
+
+## Complete Shuten boss VFX — 2026-10-16
+
+Complete Shuten presentation now uses a bounded 32-view asset renderer, independent timestamped material clocks and a separate actor-presentation adapter. Server authority, hit geometry, schema and travel remain unchanged; the dedicated lab replays 112 real CombatSystem clips. See design/bosses/shuten-doji/complete/README.md.

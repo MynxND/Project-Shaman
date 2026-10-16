@@ -49,3 +49,7 @@ Desktop/mobile visual evidence is recorded in `evidence/`; the delivery report r
 Typecheck and production build pass. Shared test suite and client test:zone pass. Boss179 authority/geometry/counterplay checks, actual development/production GameRoom tests (including reciprocal portal travel), and136 RGBA atlas-cell checks pass. Desktop1440×900, portrait390×844 and landscape844×390 were inspected in the actual client; resize retained phase/room state. Browser keyboard walking avoided delayed sake ignition at4000/4000HP. HUD overlap, same-tick duplicate death attribution, stale wipe contributions, invalid review skill after phase change and manual-review ownership were corrected. North moon placement was revised after visual occlusion. The public gallery contains23 recorded game views plus original eight-view combat poses.
 
 No claim of final human art acceptance, full bespoke drawn locomotion/death animation, physical-phone GPU measurements or group-difficulty balance. Additive highlights are not physically computed lighting; scenery is an original modular ridge/fortress composition, not a real-site reconstruction.
+
+## Complete VFX migration — 2026-10-16
+
+The later [complete implementation and evidence](complete/README.md) supersedes the historical 64-slot visual renderer and Stomp-only POC scope. All ten skills, ultimate, transitions and death now use the bounded asset adapter. Earlier evidence remains historical.

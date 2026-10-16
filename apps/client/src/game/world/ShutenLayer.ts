@@ -3,11 +3,21 @@ import { FACINGS, SHUTEN_ID, SHUTEN_SKILLS, OE_SEAL, OE_COLLAPSE, WORLD_UNIT_PX 
 import type { GameState, BossHazardState } from '@shaman/schema';
 import type { Room } from '@colyseus/sdk';
 import type { MonsterLayer } from './MonsterLayer';
-import { StompVfx, preloadStomp } from '../vfx/boss/StompVfx';
+import { preloadStomp } from '../vfx/boss/StompVfx';
+import { ShutenCombatVfx, preloadShutenCombatVfx } from '../vfx/boss/ShutenCombatVfx';
+import { ShutenPresentation } from '../vfx/boss/ShutenPresentation';
 const BASE = '/assets/monsters/shuten/';
 const effects = ['impact', 'violet', 'sweep', 'breath', 'fist'] as const;
 export function preloadShuten(scene:Phaser.Scene){
+    if(process.env.NODE_ENV==='development'&&new URLSearchParams(location.search).get('bossReview')==='1'){
+        const progress=(n:number)=>window.dispatchEvent(new CustomEvent('boss:load',{detail:`โหลดภาพ ${Math.round(n*100)}%`}));
+        const failed=(f:{key:string})=>window.dispatchEvent(new CustomEvent('boss:load',{detail:`โหลดไม่สำเร็จ: ${f.key}`}));
+        scene.load.on('progress',progress);scene.load.on('loaderror',failed);
+        scene.load.once('complete',()=>window.dispatchEvent(new CustomEvent('boss:load',{detail:'โหลดภาพครบ · กำลังเชื่อมต่อห้อง'})));
+        scene.events.once('shutdown',()=>{scene.load.off('progress',progress);scene.load.off('loaderror',failed);});
+    }
     preloadStomp(scene);
+    preloadShutenCombatVfx(scene);
     for(const k of ['frenzy','headless','armored-windup','frenzy-windup','headless-windup','armored-strike','frenzy-strike','headless-strike',...effects,'props'])
         if(!scene.textures.exists('oe:'+k))scene.load.spritesheet('oe:'+k,BASE+k+'.png',{frameWidth:256,frameHeight:256});
 }
@@ -21,7 +31,8 @@ interface Slot {
 /** Fixed-capacity views read persistent server hazards, including warnings received on late join. */
 export class ShutenLayer {
     private slots: Slot[] = [];
-    private stomp: StompVfx;
+    private combatVfx: ShutenCombatVfx;
+    private presentation: ShutenPresentation;
     private legacyStomp = process.env.NODE_ENV === 'development' && new URLSearchParams(location.search).get('bossVfx') === 'before';
     private off: () => void;
     private hudAt = 0;
@@ -33,9 +44,12 @@ export class ShutenLayer {
     private flare: Phaser.GameObjects.Sprite;
     private rubble: Phaser.GameObjects.Graphics;
     private seal: Phaser.GameObjects.Graphics;
+    private debris: Phaser.GameObjects.Image[];
     constructor(private scene: Phaser.Scene, private map: MapDefinition, private actors: MonsterLayer, private room: () => Room<GameState> | null, private prepare:()=>void) {
-        this.stomp = new StompVfx(scene);
-        for (let i = 0; i < 64; i++)
+        this.combatVfx = new ShutenCombatVfx(scene);
+        this.presentation = new ShutenPresentation(scene);
+        this.debris = OE_COLLAPSE.map(r=>scene.add.image((r.x+r.w/2)*U,(r.y+r.h/2)*U,'oe3:impact',14).setOrigin(.5,.65).setDisplaySize(r.w*U*1.4,r.h*U*1.4).setDepth(-.51).setAlpha(.7).setVisible(false));
+        for (let i = 0; i < (this.legacyStomp ? 64 : 0); i++)
             this.slots.push({ id: '', ground: scene.add.graphics().setDepth(-.6), art: scene.add.sprite(0, 0, 'oe:impact').setVisible(false), light: scene.add.sprite(0, 0, 'oe:impact').setBlendMode(Phaser.BlendModes.ADD).setVisible(false), started: false });
         this.blade = scene.add.sprite(0, 0, 'oe:props', 7).setVisible(false);
         this.flare = scene.add.sprite(0, 0, 'oe:impact').setVisible(false);
@@ -74,7 +88,8 @@ export class ShutenLayer {
         }
         this.scene.cameras.main.setFollowOffset(0, 5 * U);
         const now = this.serverAt + Math.min(150, time - this.syncAt), reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        room.state.monsters.forEach((m, id) => { if (!['shuten-doji', 'shuten-head'].includes(m.kind))
+        if (!this.legacyStomp) this.presentation.update(b, room.state.monsters.entries(), this.actors, now);
+        if (this.legacyStomp) room.state.monsters.forEach((m, id) => { if (!['shuten-doji', 'shuten-head'].includes(m.kind))
             return; const s = this.actors.spriteOf(id); if (!s || m.state === 'dead')
             return; s.anims.stop(); const f = Math.max(0, FACINGS.indexOf(m.facing as typeof FACINGS[number])); if (m.kind === 'shuten-doji') {
             const form = b.phase === 1 ? 'armored' : b.phase === 2 || b.rejoinedUntil > now ? 'frenzy' : 'headless', wind = b.mode === 'windup' || (b.mode === 'active' && [...b.hazards.values()].some(h => h.startsAt > now && h.startsAt - now < 400));
@@ -99,9 +114,9 @@ export class ShutenLayer {
                 v.light.setVisible(false);
                 v.started = false;
             }
-        this.stomp.update(this.legacyStomp ? [] : b.hazards.values(), now);
+        this.combatVfx.update(this.legacyStomp ? [] : b.hazards.values(), now,1,b.phase);
         b.hazards.forEach(h => {
-            if (!this.legacyStomp && h.skill === 'mountain-stomp') return;
+            if (!this.legacyStomp) return;
             let v = this.slots.find(v => v.id === h.id);
             if (!v) {
                 v = this.slots.find(v => !v.id);
@@ -164,7 +179,9 @@ export class ShutenLayer {
         });
         this.rubble.clear();
         for (let i = 0; i < OE_COLLAPSE.length; i++)
-            if (b.damageMask & (1 << i)) {
+            this.debris[i]!.setVisible(!this.legacyStomp&&!!(b.damageMask&(1<<i)));
+        for (let i = 0; i < OE_COLLAPSE.length; i++)
+            if (this.legacyStomp && b.damageMask & (1 << i)) {
                 const r = OE_COLLAPSE[i]!;
                 this.rubble.fillStyle(0x0b0b10, .95).fillRect(r.x * U, r.y * U, r.w * U, r.h * U).lineStyle(3, 0x934439, .7).strokeRect(r.x * U, r.y * U, r.w * U, r.h * U);
             }
@@ -173,7 +190,7 @@ export class ShutenLayer {
             this.seal.lineStyle(5, 0xb8eddf).beginPath().arc(OE_SEAL.x * U, OE_SEAL.y * U, 1.6 * U, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * b.sealProgress).strokePath();
         this.blade.setVisible(false);
         this.flare.setVisible(false);
-        if (b.mode === 'transition') {
+        if (this.legacyStomp && b.mode === 'transition') {
             const body = [...room.state.monsters.values()].find(m => m.kind === 'shuten-doji');
             if (body) {
                 const p = Phaser.Math.Clamp((now - b.actionAt) / 3200, 0, 1);
@@ -193,10 +210,10 @@ export class ShutenLayer {
         }
         if (time - this.hudAt > 120) {
             this.hudAt = time;
-            window.dispatchEvent(new CustomEvent('boss:snapshot', { detail: { hp: b.hp, hpMax: b.hpMax, phase: b.phase, mode: b.mode, skill: b.skill, name: SHUTEN_SKILLS[b.skill as keyof typeof SHUTEN_SKILLS]?.name ?? b.skill, altars: b.altarRemaining, sealed: b.sealed, seal: b.sealProgress, stage: b.ultimateStage, stagger: b.stagger, head: b.headSkill, hazards: b.hazards.size, connected: true } }));
+            window.dispatchEvent(new CustomEvent('boss:snapshot', { detail: { hp: b.hp, hpMax: b.hpMax, phase: b.phase, mode: b.mode, skill: b.skill, name: SHUTEN_SKILLS[b.skill as keyof typeof SHUTEN_SKILLS]?.name ?? (b.skill==='armor-break'?'ทลายเกราะอสูร':b.skill==='severed-king'?'ราชันไร้เศียร':b.skill), altars: b.altarRemaining, sealed: b.sealed, seal: b.sealProgress, stage: b.ultimateStage, stagger: b.stagger, head: b.headSkill, hazards: b.hazards.size, vfx: this.combatVfx.stats, drums: [...room.state.monsters.values()].filter(m=>m.kind==='shuten-drum'&&m.state!=='dead').length, connected: true } }));
         }
     }
-    destroy() { this.stomp.destroy(); this.off(); for (const v of this.slots) {
+    destroy() { this.combatVfx.destroy(); this.presentation.destroy(); for(const d of this.debris)d.destroy(); this.off(); for (const v of this.slots) {
         v.ground.destroy();
         v.art.destroy();
         v.light.destroy();

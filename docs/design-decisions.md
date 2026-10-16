@@ -671,3 +671,7 @@ Use one server coordinator for coordinated head/body attacks and reward attribut
 ## One-attack asset VFX migration — 2026-10-16
 
 User requests diagnosis and one complete attack before expansion. Upgrade Mountain Stomp only; preserve authority and keep a dev-only actual baseline renderer. Independent asset clocks, a four-view pool, reserved capped live particles, cancellation fade and cosmetic aftermath avoid local damage/tween drift. No custom shader or excessive bloom. [Evidence and limitations](design/bosses/shuten-doji/vfx-stomp-v2/README.md).
+
+## Complete Shuten boss VFX — 2026-10-16
+
+Expand the completed Stomp proof of concept to Shuten only. Preserve server geometry and linear damaging wave speed; use authored mouth ports, exact cone masks and bounded cosmetic aftermath. Correct capped healing that could reduce HP and persist death actionAt. Run compiled non-watching server during final asset/build review to prevent shared-dist rebuild restart bursts. See design/bosses/shuten-doji/complete/README.md.
