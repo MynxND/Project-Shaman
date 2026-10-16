@@ -1,0 +1,47 @@
+{
+  "version": "front-sprite-study/1",
+  "size": 128,
+  "facing": "south",
+  "source": "../standard-male-front-source.png",
+  "sourceCrop": {
+    "left": 282,
+    "top": 266,
+    "width": 452,
+    "height": 1169
+  },
+  "preparation": {
+    "alphaThreshold": 200,
+    "filter": "nearest",
+    "figureHeight": 112,
+    "figureWidth": 43,
+    "left": 42,
+    "top": 8
+  },
+  "layers": [
+    "body",
+    "head",
+    "face",
+    "hair"
+  ],
+  "anchors": {
+    "foot": {
+      "x": 64,
+      "y": 120
+    },
+    "neck": {
+      "x": 64,
+      "y": 36
+    }
+  },
+  "validation": {
+    "differentBytes": 0,
+    "restoredHiddenPixels": 267,
+    "rgbaSha256": "60703f518188055a36bae4c2f613870feb13e4c2e986bb95162007738480a92c"
+  },
+  "limits": [
+    "Exact reconstruction applies to prepared128 sprite, not original1024x1536 source.",
+    "Hidden skull/feature support uses registered ImageGen restoration, not original source pixels.",
+    "Face overlay contains small skin patches around features; future faces must match skin palette. Hair is a single front-view layer, not front/back directional hair.",
+    "No other facings, animation or gameplay integration."
+  ]
+}
