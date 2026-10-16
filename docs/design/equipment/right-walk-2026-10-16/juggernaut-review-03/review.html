@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="th"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Juggernaut · ตรวจท่าเดินเทียบต้นแบบ</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#11282b;color:#eee2c4;font:16px system-ui}main{max-width:1050px;margin:auto;padding:24px}h1{font-size:25px}p{line-height:1.65}section{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{background:#203c40;border:1px solid #668184;border-radius:12px;padding:16px}h2{font-size:18px;margin:0}canvas{display:block;width:100%;image-rendering:pixelated;background:repeating-conic-gradient(#34494b 0 25%,#3b5052 0 50%) 0/24px 24px;margin-top:12px}button,select,a{font:inherit}button,select{background:#24464a;color:#fff0ce;border:1px solid #9e966e;border-radius:6px;padding:10px;min-height:44px}nav{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}input{width:100%;min-height:40px}a{color:#f0cb7d}.note{color:#c8d4cc}#status{font-variant-numeric:tabular-nums}@media(max-width:600px){main{padding:12px}section{gap:8px}.card{padding:8px}h2{font-size:15px}h1{font-size:21px}}
+</style>
+<main><h1>Juggernaut — จากชุด 8 ทิศที่แนบล่าสุด</h1><p>ต้นฉบับรายละเอียดชุด:</p><img src="costume-reference.png" alt="ชุด 8 ทิศต้นฉบับของคุณ" style="width:100%;image-rendering:pixelated;background:#34494b">
+<p>ดูจังหวะแขนสวนขา การงอศอก และช่วงเท้ารับน้ำหนัก เทียบกับภาพที่คุณส่งมา ฝั่งซ้ายใช้ภาพสะท้อนโดยตรง ภาพท่าเดินสร้างด้วย ImageGen จากภาพชุด 8 ทิศที่แนบล่าสุด โดยใช้ภาพเดินเป็นตัวอย่างจังหวะ ยังรอคุณตรวจ ก่อนทำอีก 7 อาชีพ</p>
+<section><article class="card"><h2>ต้นแบบที่คุณส่ง · 20 เฟรม</h2><canvas id="reference" width="320" height="320"></canvas></article><article class="card"><h2>Juggernaut · มือเปล่า · 20 เฟรม</h2><canvas id="candidate" width="320" height="320"></canvas></article></section>
+<nav><button id="play">เล่น</button><button id="previous">ก่อนหน้า</button><button id="next">ถัดไป</button><select id="speed" aria-label="ความเร็ว"><option value="1">ความเร็วทดลอง</option><option value="0.5">ช้า ½ เท่า</option><option value="0.25">ช้า ¼ เท่า</option></select><select id="direction" aria-label="ทิศ"><option value="east">ขวา</option><option value="west">ซ้าย · Mirror</option></select></nav>
+<label for="phase">เลื่อนตรวจจังหวะการเดินร่วมกัน</label><input id="phase" type="range" min="0" max="159" value="0"><p id="status" role="status"></p>
+<p class="note">เล่นเทียบที่รอบละ 0.8 วินาทีเพื่อการตรวจเท่านั้น ไฟล์ต้นแบบไม่มีข้อมูลเวลา จึงยังรับรองความเร็วเดิมไม่ได้ ใช้ 20 เฟรมแรกของต้นแบบ ส่วนช่องสุดท้ายเป็นท่ากลับ การเทียบจังหวะเริ่มต้นอาจคลาดกันได้</p>
+<p class="note">ขยายด้วย nearest-neighbor และจัดแนวพื้นเดียวกัน ตัวอย่าง Juggernaut แสดงชุดไม่มีหัว เพื่อให้ตรวจการเดินได้ชัด ใช้ภาพชุดเป็นต้นฉบับดีไซน์ และภาพเดินเป็นตัวอย่างการเคลื่อนไหวให้ ImageGen ตามคำขอรอบนี้</p>
+<p><a href="generated-source.png" download>ดาวน์โหลดภาพจาก ImageGen</a> · <a href="candidate-sheet.png" download>ดาวน์โหลด Sprite ตัวทดลอง</a> · <a href="candidate.gif" download>ดาวน์โหลด GIF</a></p>
+</main><script src="review-data.js"></script><script src="review.js"></script></html>
+
+
+
