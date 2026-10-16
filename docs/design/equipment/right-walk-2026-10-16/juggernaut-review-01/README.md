@@ -1,0 +1,13 @@
+# Juggernaut single-class walk review
+
+User 2026-10-16 narrows work to one profession for direct comparison before propagating to the other seven. Open `review.html`. This is a review candidate, not approved artwork or live adoption. Original outfit preview and downloads remain unchanged.
+
+Current displayed candidate: 20-phase deterministic two-bone rig using owned ImageGen-generated isolated Juggernaut clothing textures in `../juggernaut/rig-source.png`; prompt at `../juggernaut/rig-prompt.txt`. Receipt: `exec-42ea4711-cb95-4a25-afb3-fdf77152266f.png`. The texture generator changed upper-arm coverage from the original outfit; costume fidelity remains a limitation for review. Hands oppose same-side feet. Stance foot X travels linearly; swing foot lifts along a sine arch. The rig has fixed layer ordering and relatively rigid cape; do not describe it as matching the supplied animation exactly or visually approved. Numerical phase correctness does not establish natural-looking movement.
+
+Two additional whole-sheet ImageGen experiments in this folder are retained with raw output, prompts and receipts; they still held the hand forward too often and are NOT the currently displayed candidate. `prepare.cjs` packs that rejected eight-pose experiment. Run `../rig-walk.cjs juggernaut`, then `prepare-rig-review.cjs` to rebuild the displayed twenty-pose candidate.
+
+`reference-user.png` is a copy of the user-supplied R1 walk sheet for side-by-side viewing only. It was never a generation input or training asset. The viewer loops the first twenty cells; the final populated cell is treated as closure. Relative start phase and 0.8-second cycle are provisional: no timing metadata was supplied. Reference and candidate share loop time, foot baseline and direction selection, not a claim of identical anatomy or choreography.
+
+Controls: play/pause, slower playback, previous/next frame, normalized phase slider, right/left mirror. Left PNG exports are exact mirrors. File inputs use ordinary image loads and a generated JavaScript data packet, so no server is required. No gameplay, persistent head fitting or original ZIP is modified. Keep the parent MOTION_REJECTED.json guard until the wider batch is separately reviewed.
+
+Validation: root `pnpm typecheck` and `pnpm build` passed. `check.cjs` verifies twenty exact mirrored pairs and exercises controls in a fresh headless Edge test session against this new review document; desktop, portrait and landscape screenshots have been inspected. No runtime page errors or horizontal overflow. GIF export verified at twenty pages of 384×384. These checks do not approve the gait, cape rigidity, limb proportions or texture seams.
