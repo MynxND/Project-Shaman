@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 import {WORLD_UNIT_PX as U} from '@shaman/shared';
 import {clamp01} from './stomp-timeline';
-import {SHUTEN_ATLASES,sampleShutenCue,smooth,shutenMouthPort,type ShutenCue,type ShutenMaterial} from './shuten-vfx-model';
+import {SHUTEN_ATLASES,sampleShutenCue,smooth,shutenMouthPort,shutenActiveTell,type ShutenCue,type ShutenMaterial} from './shuten-vfx-model';
 import {SHUTEN_TELL_KEY,prepareShutenTell,drawShutenTell,shutenTellKey} from './shuten-telegraph';
 const key=(name:string)=>'oe3:'+name;
 export function preloadShutenCombatVfx(s:Phaser.Scene){for(const id of [...SHUTEN_ATLASES,'drinking','fallen'])if(!s.textures.exists(key(id)))s.load.spritesheet(key(id),`/assets/vfx/boss/shuten-complete/${id}.png`,{frameWidth:256,frameHeight:256});if(!s.textures.exists(SHUTEN_TELL_KEY))s.load.svg(SHUTEN_TELL_KEY,'/assets/vfx/boss/shuten-complete/telegraph-marks.svg',{width:512,height:128});}
@@ -72,7 +72,7 @@ export class ShutenCombatVfx {
                     if(!['sake','portal','faces','breath'].includes(h.effect))this.particles.emitParticleAt(p.x*U,p.y*U,this.reduced?2:h.effect==='fist'?12:8);
                     if(!this.reduced&&now-this.shakeAt>170&&['impact','fist','shock'].includes(h.effect)&&Phaser.Math.Distance.Between(this.scene.cameras.main.midPoint.x,this.scene.cameras.main.midPoint.y,x,y)<650){this.scene.cameras.main.shake(100,h.effect==='fist'?.0022:.0015);this.shakeAt=now;}
                 }}
-                if(p.live)drawShutenTell(v.tell,v.sprites,h,p.radius,1,false,1,this.reduced);
+                if(p.live)drawShutenTell(v.tell,v.sprites,shutenActiveTell(h,now),p.radius,1,false,1,this.reduced);
                 draw(0,'portal',Math.floor(p.age/60)%16,x,y,Math.min(r*1.2,150),Math.min(r*.85,105),.14*fade,-.63);
                 let px=x,py=y,w=r*2.05,height=w,rot=0,ox=.5,oy=.65,depth=y+1,alpha=.87*fade;
                 if(h.shape==='ring'){

@@ -679,3 +679,7 @@ Expand the completed Stomp proof of concept to Shuten only. Preserve server geom
 ## Shuten ritual telegraphs — 2026-10-16
 
 Replace plain Shuten warning outlines while keeping fixed world-space extents, server contact deadlines and the 270-degree rear safe wedge. True capsule contours replace intersecting endpoint circles. Cosmetic windup progress follows server timestamps; coincident combo warnings deduplicate presentation only. See design/bosses/shuten-doji/telegraphs/README.md.
+
+## Shuten three-phase combat QA — 2026-10-16
+
+Real-room edge probing found a hit just beyond the nominal cone line due to the existing .3 body allowance. Share that value with presentation rather than nerfing collision. Preserve sector angles, damage and timelines; show wave thickness and stop painting a passed charge lane as active. See design/bosses/shuten-doji/combat-review/README.md.

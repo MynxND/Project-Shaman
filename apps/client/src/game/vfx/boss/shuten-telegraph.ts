@@ -1,11 +1,15 @@
 import Phaser from 'phaser';
-import {WORLD_UNIT_PX as U} from '@shaman/shared';
+import {WORLD_UNIT_PX as U,SHUTEN_CONTACT_PADDING} from '@shaman/shared';
 import type {ShutenCue} from './shuten-vfx-model';
 
 export const SHUTEN_TELL_KEY='oe3:telegraph';
 type Point={x:number;y:number};
 /** Identical combo footprints share one warning, displaying the earliest pending contact. */
 export const shutenTellKey=(h:ShutenCue)=>[h.shape,h.x,h.y,h.toX,h.toY,h.radius,h.angle,h.arc,h.width].join(':');
+/** Include the same player-body allowance as bossShapeHit; do not alter its angle or timing. */
+export function shutenDangerFootprint(h:ShutenCue,r=h.radius):ShutenCue{
+    return {...h,radius:r+SHUTEN_CONTACT_PADDING+(h.shape==='ring'?h.width:0),width:h.width+SHUTEN_CONTACT_PADDING};
+}
 /** Native world-space perimeter. Decorations inset from it; authority never reads this module. */
 export function shutenTellPerimeter(h:ShutenCue,r=h.radius):Point[]{
     const points:Point[]=[],arc=(x:number,y:number,radius:number,a:number,b:number)=>{
@@ -29,10 +33,16 @@ export function prepareShutenTell(s:Phaser.Scene){
 /** Geometric ritual indicators only. Organic flames/smoke remain authored flipbooks in ShutenCombatVfx. */
 export function drawShutenTell(g:Phaser.GameObjects.Graphics,marks:Phaser.GameObjects.Sprite[],h:ShutenCue,
     radius:number,charge:number,warning:boolean,opacity:number,reduced:boolean){
-    const p=shutenTellPerimeter(h,radius),px=p.map(q=>({x:q.x*U,y:q.y*U}));
+    const danger=shutenDangerFootprint(h,radius),p=shutenTellPerimeter(danger,danger.radius),px=p.map(q=>({x:q.x*U,y:q.y*U}));
     const ink=0x32151c,red=h.effect==='violet'?0x974454:0xb34a40,gold=0xdfb77c;
     const pulse=warning&&!reduced?.92+.08*Math.sin(charge*Math.PI*2):1;
     const alpha=opacity*pulse,center=h.shape==='line'?{x:(h.x+h.toX)/2,y:(h.y+h.toY)/2}:{x:h.x,y:h.y};
+    if(!warning&&h.shape==='ring'){
+        // The moving damaging annulus has width, while the center behind it is safe.
+        const inner=Math.max(0,radius-h.width-SHUTEN_CONTACT_PADDING),outer=danger.radius;
+        g.lineStyle((outer-inner)*U,red,.12*alpha).strokeCircle(h.x*U,h.y*U,(inner+outer)*U/2);
+        if(inner>0)g.lineStyle(1.5,red,.45*alpha).strokeCircle(h.x*U,h.y*U,inner*U);
+    }
     // A fixed perimeter stays readable throughout the windup; charge never shrinks the danger area.
     if(warning)g.fillStyle(ink,.16*alpha).fillPoints(px,true);
     if(warning)g.fillStyle(red,(.035+.055*charge)*alpha).fillPoints(px,true);

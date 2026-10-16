@@ -23,3 +23,7 @@ Inspected eleven skill windups, cone and charge-lane orientation in all eight di
 Checks passed: workspace `pnpm typecheck`, two-worker `pnpm build`, `node apps/client/scripts/shuten-test.mjs` (179), and `node apps/client/scripts/shuten-vfx-complete-test.mjs` (139964). Added contour assertions cover all112 source clips: finite positions, unchanged radius, capsule endpoint/width geometry, sector angle/safe wedge, unchanged input cues, warning deduplication, existing pool reuse and cleanup. Local warm preview displayed adapter CPU p95 about0.10–0.20ms and frame p95 about16.68ms during this inspection; these are browser counters, not total CPU/GPU profiling or a universal frame-rate promise.
 
 The compiled non-watching local game server remains in use so shared-package builds do not interrupt its sessions. No reconnect logic was modified for this visual task.
+
+## Follow-up actual-room correction
+
+[Three-phase combat QA](../combat-review/README.md) found that nominal perimeters omitted the existing .3 player-contact allowance. Current warnings now include that unchanged allowance, with real wave-band thickness and moving charge contact markers. The earlier nominal-edge screenshots remain historical evidence.

@@ -1,6 +1,8 @@
 import type { Position, MapDefinition, Rect } from './world.js';
 /** Boss balance is provisional. User-specified phase thresholds/tells remain exact. */
 export const SHUTEN_ID = 'oe-king';
+/** Existing player-body contact allowance, shared with visible danger boundaries. */
+export const SHUTEN_CONTACT_PADDING = .3;
 export const OE_ALTARS = [{ x: 12, y: 16 }, { x: 36, y: 16 }, { x: 24, y: 31 }] as const;
 export const OE_DRUMS = [{ x: 10, y: 25 }, { x: 38, y: 25 }] as const;
 export const OE_SEAL = { x: 24, y: 35 };
@@ -36,11 +38,11 @@ export function segmentDistance(p: Position, a: Position, b: Position) { const d
 /** Geometry is shared by authoritative collision and the visible warning, in world units. */
 export function bossShapeHit(h: BossShape, p: Position, radius = h.radius, previousRadius = radius) {
     if (h.shape === 'line')
-        return segmentDistance(p, h, { x: h.toX, y: h.toY }) <= h.width + .3;
+        return segmentDistance(p, h, { x: h.toX, y: h.toY }) <= h.width + SHUTEN_CONTACT_PADDING;
     const d = Math.hypot(p.x - h.x, p.y - h.y);
     if (h.shape === 'ring')
-        return d >= Math.max(0, previousRadius - h.width - .3) && d <= radius + h.width + .3;
-    if (d > radius + .3)
+        return d >= Math.max(0, previousRadius - h.width - SHUTEN_CONTACT_PADDING) && d <= radius + h.width + SHUTEN_CONTACT_PADDING;
+    if (d > radius + SHUTEN_CONTACT_PADDING)
         return false;
     if (h.shape === 'cone') {
         const a = Math.atan2(p.y - h.y, p.x - h.x), delta = Math.atan2(Math.sin(a - h.angle), Math.cos(a - h.angle));

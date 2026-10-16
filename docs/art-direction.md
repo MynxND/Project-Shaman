@@ -358,3 +358,7 @@ All ten Shuten skills, five ultimate stages, transitions and death now use owned
 ## Shuten ritual telegraphs — 2026-10-16
 
 Shuten warnings now use charcoal/crimson ink, inset bronze stitches, original oni crests and torn ofuda with fictional marks. This is geometric gameplay-indicator art; organic attack materials remain the complete flipbooks. Desktop, simulated portrait/landscape and actual-room evidence: design/bosses/shuten-doji/telegraphs/README.md.
+
+## Shuten three-phase combat QA — 2026-10-16
+
+Shuten warning borders now include player contact allowance; active shockwaves display a hollow band and head charges a moving ground contact marker. Ritual marks remain below actors. Actual phase1/2/3 captures and timing limitations are recorded in design/bosses/shuten-doji/combat-review/README.md.

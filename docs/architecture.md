@@ -633,3 +633,7 @@ Complete Shuten presentation now uses a bounded 32-view asset renderer, independ
 ## Shuten ritual telegraphs — 2026-10-16
 
 The complete Shuten renderer delegates warning contours to shuten-telegraph.ts. Its original sprite slots4–7 carry vector-authored ground stamps during windup; no extra GameObjects or authoritative state. Identical warning footprints show the earliest contact once. See design/bosses/shuten-doji/telegraphs/README.md.
+
+## Shuten three-phase combat QA — 2026-10-16
+
+SHUTEN_CONTACT_PADDING centralizes the pre-existing .3 player-body collision allowance and the matching warning extent. Moving ring/head ground indicators now follow the damaging band/segment. No gameplay formula or network migration. Actual-room receipts: design/bosses/shuten-doji/combat-review/README.md.

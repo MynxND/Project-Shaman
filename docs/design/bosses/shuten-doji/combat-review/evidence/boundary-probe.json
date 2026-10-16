@@ -1,0 +1,80 @@
+{
+  "arrangement": "guest-only development commands; real authoritative GameRoom and movement",
+  "cases": [],
+  "ai": [],
+  "failures": [],
+  "boundaryProbe": {
+    "position": {
+      "x": 24,
+      "y": 23.559999465942383
+    },
+    "events": [
+      {
+        "amount": 60,
+        "source": "oe-king-shuten-doji-0",
+        "observedServerAt": 1792129659174,
+        "position": {
+          "x": 24,
+          "y": 23.559999465942383
+        },
+        "hazards": [
+          {
+            "id": "oe-fx-1",
+            "skill": "oni-crusher",
+            "actor": "body",
+            "shape": "cone",
+            "effect": "sweep",
+            "x": 24,
+            "y": 20,
+            "toX": 24,
+            "toY": 20,
+            "radius": 3.4000000953674316,
+            "angle": 1.5707963705062866,
+            "arc": 2.0420353412628174,
+            "width": 0.6499999761581421,
+            "warnAt": 1792129658288,
+            "startsAt": 1792129659188,
+            "endsAt": 1792129659448
+          },
+          {
+            "id": "oe-fx-2",
+            "skill": "oni-crusher",
+            "actor": "body",
+            "shape": "cone",
+            "effect": "sweep",
+            "x": 24,
+            "y": 20,
+            "toX": 24,
+            "toY": 20,
+            "radius": 3.4000000953674316,
+            "angle": 1.5707963705062866,
+            "arc": 2.0420353412628174,
+            "width": 0.6499999761581421,
+            "warnAt": 1792129658288,
+            "startsAt": 1792129659538,
+            "endsAt": 1792129659798
+          },
+          {
+            "id": "oe-fx-3",
+            "skill": "oni-crusher",
+            "actor": "body",
+            "shape": "cone",
+            "effect": "impact",
+            "x": 24,
+            "y": 20,
+            "toX": 24,
+            "toY": 20,
+            "radius": 6,
+            "angle": 1.5707963705062866,
+            "arc": 1.3194688558578491,
+            "width": 0.6499999761581421,
+            "warnAt": 1792129658288,
+            "startsAt": 1792129659888,
+            "endsAt": 1792129660148
+          }
+        ]
+      }
+    ],
+    "description": "Nominal first cone radius3.4; server body allowance extends to3.7. Compare rendered warning to this real hit."
+  }
+}

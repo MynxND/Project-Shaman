@@ -709,3 +709,7 @@ Shuten complete VFX batch implemented: all ten skills, five-stage ultimate, phas
 ## Shuten ritual telegraphs — 2026-10-16
 
 Shuten ritual warning redesign implemented and inspected: eleven skill previews, cone/charge warnings in eight directions, live Stomp windup and mobile portrait/landscape. Typecheck/build, authority and extended geometry/pool tests passed. User artistic acceptance remains open. Review /boss-review/shuten-telegraphs/index.html.
+
+## Shuten three-phase combat QA — 2026-10-16
+
+Shuten actual-room phase QA complete:22 stationary/walking cases, all dodge routes remain inside the arena with0 damage;29 damage receipts checked against live hazard windows and27s of normal AI per phase. This is arranged guest phase testing, not a continuous balanced-character victory. Review /boss-review/shuten-combat/index.html; details and limits in design/bosses/shuten-doji/combat-review/README.md.

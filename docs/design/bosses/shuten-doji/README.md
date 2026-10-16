@@ -57,3 +57,7 @@ The later [complete implementation and evidence](complete/README.md) supersedes 
 ## Ritual warning redesign — 2026-10-16
 
 The complete renderer now uses [oni ritual telegraphs](telegraphs/README.md) in the real room and lab. Nominal geometry and server collision tolerance remain unchanged; warning progress/deduplication is presentation only.
+
+## Three-phase combat review — 2026-10-16
+
+[Real-room QA and collision-aware warning corrections](combat-review/README.md) follow the ritual redesign. Guest phase arrangements, positive/negative damage controls, AI observations and visual/transport limitations are explicit.

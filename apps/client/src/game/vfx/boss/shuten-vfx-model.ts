@@ -37,5 +37,11 @@ export function sampleShutenCue(h:ShutenCue,now:number){
         x:h.shape==='line'?h.x+(h.toX-h.x)*p:h.x,y:h.shape==='line'?h.y+(h.toY-h.y)*p:h.y,
         tail:clamp01((now-h.endsAt)/600)};
 }
+/** A charge's warning covers its future lane; active contact follows the head's current swept segment. */
+export function shutenActiveTell(h:ShutenCue,now:number):ShutenCue{
+    if(h.shape!=='line')return h;
+    const previous=sampleShutenCue(h,Math.max(h.startsAt,now-1000/30)),current=sampleShutenCue(h,now);
+    return {...h,x:previous.x,y:previous.y,toX:current.x,toY:current.y};
+}
 /** Eight-sided sampling is never used for geometry: all tells retain the server's exact arc. */
 export const smooth=(p:number)=>{const q=clamp01(p);return q*q*(3-2*q);};
