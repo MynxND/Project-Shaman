@@ -342,3 +342,7 @@ User rejected thin procedural ranged effects. Study of haowg/GODOT-VFX-LIBRARY i
 
 ### Ranged art08 — remaining fourteen materials
 All seventeen ranged folklore species now select unique authored materials: flame, mourning hair, empty cloth, water hand/talons, nine-tail fan, wet tresses, wail crescents, crimson silk, fox mirage, reed hook, waterfall sound and shadow palms alongside art07. Original alpha/prompts retained;112px padding preserves diagonal tips. This completes implementation of the requested batch, not final user visual approval. See docs/design/monsters/folklore-01/vfx-08/README.md.
+
+### 2026-10-16 — Shuten-dōji boss encounter
+
+Shuten-dōji adds original Japanese oni forms, eight directional ready/windup/strike poses, separate head, sake-fire/fist/breath material atlases and a ruined basalt fortress. Reuse the owned Japanese ground/cedar/lantern/rock kit. GDQuest shader principles inform layered emission and dissipation; no upstream artwork or Godot runtime is imported. Technical passing is not user visual approval. See docs/design/bosses/shuten-doji/README.md.

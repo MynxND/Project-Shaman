@@ -1,3 +1,4 @@
+import{preloadOe,renderOe}from'./OeRegion';
 import{isRussiaMap,preloadRussiaRegion,renderRussiaRegion}from'./RussiaRegion';
 import{isIrelandMap,preloadIrelandRegion,renderIrelandRegion}from'./IrelandRegion';
 import{isNorwayMap,preloadNorwayRegion,renderNorwayRegion}from'./NorwayRegion';
@@ -42,6 +43,7 @@ const TERRAIN_KEY = 'umbral:terrain';
 const TILE_PX = 16;
 
 export function preloadMapAssets(scene: Phaser.Scene, map?: MapDefinition) {
+  if(map?.id==='mount-oe-fortress')preloadOe(scene);
   preloadChina(scene,map);
   if(isIrelandMap(map))preloadIrelandRegion(scene);
   if(isRussiaMap(map))preloadRussiaRegion(scene);
@@ -66,6 +68,7 @@ export function preloadMapAssets(scene: Phaser.Scene, map?: MapDefinition) {
 
 /** Draws ground regions and objects for a map. Objects depth-sort by their base y, like characters. */
 export function renderMap(scene: Phaser.Scene, map: MapDefinition) {
+  if(map.id==='mount-oe-fortress'){const{water}=renderOe(scene,map);return{widthPx:map.width*WORLD_UNIT_PX,heightPx:map.height*WORLD_UNIT_PX,water};}
   if(isRussiaMap(map)){const {water}=renderRussiaRegion(scene,map);return{widthPx:map.width*WORLD_UNIT_PX,heightPx:map.height*WORLD_UNIT_PX,water};}
   if(isIrelandMap(map)){const {water}=renderIrelandRegion(scene,map);return{widthPx:map.width*WORLD_UNIT_PX,heightPx:map.height*WORLD_UNIT_PX,water};}
   if(isNorwayMap(map)){const {water}=renderNorwayRegion(scene,map);return{widthPx:map.width*WORLD_UNIT_PX,heightPx:map.height*WORLD_UNIT_PX,water};}

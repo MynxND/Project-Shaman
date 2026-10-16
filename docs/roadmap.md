@@ -693,3 +693,7 @@ Three new prototypes (Yuki-onna, Vodyanoy, Sending) have authored eight-directio
 
 ### Ranged art08 — fourteen-effect implementation batch
 The fourteen effects remaining after art07 now have original distinct eight-direction material atlases and the actual-game238-case review workflow with flight/impact evidence. Together with the three prior prototypes, all seventeen select authored art. Existing national spawns and Korea-planned status remain. Review evidence and measured limits: docs/design/monsters/folklore-01/vfx-08/README.md and /monster-review/ranged-vfx-08/index.html. User art approval remains open.
+
+### 2026-10-16 — Shuten-dōji boss encounter
+
+The first Shuten-dōji encounter is implemented for review: three phases, ten skills and a five-stage ultimate, destructible sake altars/drums, shared head/body HP, seal channel and reciprocal fortress travel. Original art, real-game captures and desktop/portrait/landscape inspection are recorded in docs/design/bosses/shuten-doji; review gallery: /boss-review/shuten-doji/index.html. Difficulty/group balancing and physical-mobile performance remain playtest work; no final art approval is claimed.

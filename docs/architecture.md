@@ -617,3 +617,7 @@ Development-only ranged-review Colyseus room isolates unsaved guests while reusi
 
 ### Ranged art08 — all seventeen authored materials
 Extend the existing map-scoped MonsterArtVfxLayer with fourteen additional species-specific RGBA atlases. The actual-game recorder saves flight and server-confirmed impact screenshots; remaining-batch review covers fourteen species in the existing isolated development room. No authoritative formula, spawn, portal, map geometry, account or protocol migration. See docs/design/monsters/folklore-01/vfx-08/README.md.
+
+### 2026-10-16 — Shuten-dōji boss encounter
+
+Shuten-dōji uses the existing authoritative GameRoom: one encounter FSM, shared body/head HP, schema-timestamped persistent hazards, destructible combat objects and normal travel tickets. Phaser owns a64-slot VFX pool and the normal monster actors; React owns Thai boss/seal controls. Production rejects review commands. See docs/design/bosses/shuten-doji/README.md.

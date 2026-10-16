@@ -663,3 +663,7 @@ Use a guest-only development room for repeatable real-renderer combat evidence, 
 
 ### Ranged art08 — species identity with shared lifecycle
 Keep one bounded authoritative-hit presentation layer, but give each ranged folklore species its own material atlas rather than recoloring a shared ball. Reuse the established encounter lore and provisional range/speed; no extra status/AoE. Four Korean ranged species are isolated review fixtures and remain unspawned in planned national maps. Capture both flight and impact with the real Phaser renderer. Correct visible anatomical emission points without modifying original character PNGs.
+
+### 2026-10-16 — Shuten-dōji boss encounter
+
+Use one server coordinator for coordinated head/body attacks and reward attribution. Share telegraph geometry with damage checks, keep head flight lift cosmetic, and preserve a safe path to every altar/seal/exit under all16 collapse masks. Boss balance beyond the supplied phase gates/timings is provisional. Add the fortress through a reciprocal Snowbound Torii boundary portal without replacing earlier exits or residents. See docs/design/bosses/shuten-doji/README.md.

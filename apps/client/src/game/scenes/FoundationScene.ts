@@ -1,3 +1,5 @@
+import{ShutenLayer}from'../world/ShutenLayer';
+import{SHUTEN_ID,shutenWalkMap}from'@shaman/shared';
 import{attachRangedReview}from'../world/attach-ranged-review';
 import Phaser from 'phaser';
 import type { Room } from '@colyseus/sdk';
@@ -61,6 +63,7 @@ export class FoundationScene extends Phaser.Scene {
   private casts: SkillCastLayer | null = null;
   private nationVfx: NationVfxLayer | null = null;
   private monsters: MonsterLayer | null = null;
+  private shuten:ShutenLayer|null=null;
   private portals: PortalLayer | null = null;
   /** The map this scene shows; set from the scene data on every (re)start. */
   private map: MapDefinition = UMBRAL_CAPITAL;
@@ -174,6 +177,7 @@ export class FoundationScene extends Phaser.Scene {
       this.casts = null;
       this.nationVfx?.destroy();
       this.nationVfx = null;
+      this.shuten?.destroy();this.shuten=null;
       this.monsters?.destroy();
       this.monsters = null;
       this.portals?.destroy();
@@ -215,6 +219,7 @@ export class FoundationScene extends Phaser.Scene {
         view.sprite.playOnce('attack');
       },
     },this.map);
+    if(this.map.id==='mount-oe-fortress')this.shuten=new ShutenLayer(this,this.map,this.monsters,()=>this.room,()=>{this.movement?.setAuto(null);useTargetStore.getState().select(null);this.room?.send('attack:stop');});
     // World units, for the minimap: drawn sprite positions, so the map matches what the player sees.
     setPlayersProbe(() => {
       const U = WORLD_UNIT_PX;
@@ -534,6 +539,7 @@ export class FoundationScene extends Phaser.Scene {
     }
     this.casts?.update(time, (id) => { const v = this.players.get(id); return v ? { sprite: v.sprite, bodyType: v.bodyType } : null; });
     this.monsters?.update(room.state?.monsters, time, delta);
+    this.shuten?.update(time);
     this.nationVfx?.update(time, this.vfxActors());
     // The local Rune Seer's queue and buffs for the HUD (small strings; only stored when they change).
     const self = room.state?.players?.get(room.sessionId);
@@ -548,7 +554,7 @@ export class FoundationScene extends Phaser.Scene {
     this.room?.state?.zones?.forEach((z) => { if (z.kind === 'ice-wall') cells.push({ x: z.x, y: z.y }); });
     const key = cells.map((c) => c.x.toFixed(2) + ',' + c.y.toFixed(2)).join(';');
     if (key !== this.wallKey || (!cells.length && this.wallMap !== this.map)) { this.wallKey = key; this.wallMap = withBlockers(this.map, cells); }
-    return this.wallMap;
+    return shutenWalkMap(this.wallMap,this.room?.state?.bosses?.get(SHUTEN_ID)?.damageMask??0);
   }
 
   /** What the nation VFX layer reads each frame: drawn sprite positions (px), monster positions (units) and synced state. */

@@ -74,5 +74,10 @@ export const SummonState = schema({
   acts: t.number().default(0),
 }, 'SummonState');
 export type SummonState = InstanceType<typeof SummonState>;
-export const GameState = schema({ mapId: t.string().default(''), players: t.map(PlayerState), citizens: t.map(CitizenState), monsters: t.map(MonsterState), zones: t.map(ZoneState), summons: t.map(SummonState) }, 'GameState');
+/** Persistent attack warnings/active hit areas support late joins; timestamps use the room clock. */
+export const BossHazardState=schema({id:t.string(),skill:t.string(),actor:t.string(),shape:t.string(),effect:t.string(),x:t.float32(),y:t.float32(),toX:t.float32(),toY:t.float32(),radius:t.float32(),angle:t.float32(),arc:t.float32(),width:t.float32(),warnAt:t.number(),startsAt:t.number(),endsAt:t.number()},'BossHazardState');
+export type BossHazardState=InstanceType<typeof BossHazardState>;
+export const BossEncounterState=schema({id:t.string(),phase:t.number().default(1),mode:t.string().default('dormant'),skill:t.string().default(''),now:t.number(),actionAt:t.number(),endsAt:t.number(),hp:t.number(),hpMax:t.number(),headId:t.string().default(''),headSkill:t.string().default(''),headAt:t.number(),headUntil:t.number(),ultimateStage:t.number(),altarRemaining:t.number().default(3),sealed:t.boolean().default(false),sealProgress:t.float32(),sealOwner:t.string().default(''),stagger:t.float32(),damageMask:t.number(),armorBroken:t.boolean().default(false),rejoinedUntil:t.number(),hazards:t.map(BossHazardState)},'BossEncounterState');
+export type BossEncounterState=InstanceType<typeof BossEncounterState>;
+export const GameState = schema({ mapId: t.string().default(''), players: t.map(PlayerState), citizens: t.map(CitizenState), monsters: t.map(MonsterState), zones: t.map(ZoneState), summons: t.map(SummonState),bosses:t.map(BossEncounterState) }, 'GameState');
 export type GameState = InstanceType<typeof GameState>;

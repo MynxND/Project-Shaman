@@ -31,6 +31,7 @@ export function preloadMonsters(scene: Phaser.Scene,map?:MapDefinition) {
   const queue=(manifest:Manifest)=>{
     const review=process.env.NODE_ENV==='development'&&new URLSearchParams(location.search).get('rangedReview')==='1';
     const needed=review?new Set(new URLSearchParams(location.search).get('vfxPrototype')==='1'?['yuki-onna','vodyanoy','sending']:Object.keys(manifest.monsters).filter(k=>MONSTERS[k]?.projectile?.motif&&(new URLSearchParams(location.search).get('vfxBatch')!=='remaining'||!['yuki-onna','vodyanoy','sending'].includes(k)))):map?new Set((map.spawnRegions??[]).flatMap(r=>r.monsters.map(m=>m.kind))):new Set(Object.keys(manifest.monsters));
+    if(map?.id==='mount-oe-fortress')for(const k of ['shuten-head','shuten-altar','shuten-drum','oe-elite-oni'])needed.add(k);
     preloadMonsterArtVfx(scene,needed);
     for(const kind of needed){const summon=MONSTERS[kind]?.boss?.summon.kind;if(summon)needed.add(summon);}
     for(const kind of needed){const s=manifest.monsters[kind];if(!s)continue;loaded.push(kind);if(!scene.textures.exists(sheetKey(kind)))scene.load.spritesheet(sheetKey(kind),`${BASE}/${s.image}`,{frameWidth:s.frameWidth,frameHeight:s.frameHeight});}
@@ -96,6 +97,7 @@ export class MonsterLayer {
     }
   }
 
+  spriteOf(id:string){return this.views.get(id)?.sprite;}
   private readonly logicalPositions=new Map<string,{x:number;y:number}>();
   private y(x:number,y:number){return this.map?projectedY(this.map,x,y):y*WORLD_UNIT_PX;}
 

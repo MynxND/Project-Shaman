@@ -24687,6 +24687,2186 @@
         "death"
       ],
       "motionProfile": "hover"
+    },
+    "shuten-doji": {
+      "image": "shuten/armored.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 4,
+      "anchor": {
+        "x": 128,
+        "y": 240
+      },
+      "scale": 0.92,
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 4,
+          "loop": true
+        },
+        "move": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 4,
+          "loop": true
+        },
+        "attack": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 4,
+          "loop": false
+        },
+        "hurt": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 4,
+          "loop": false
+        },
+        "death": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 4,
+          "loop": false
+        }
+      },
+      "directions": {
+        "south": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "south-east": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "east": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              2
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              2
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              2
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              2
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              2
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "north-east": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              3
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              3
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              3
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              3
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              3
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "north": {
+          "idle": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              4
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              4
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              4
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              4
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              4
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "north-west": {
+          "idle": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              5
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              5
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              5
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              5
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              5
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "west": {
+          "idle": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              6
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              6
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              6
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              6
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              6
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "south-west": {
+          "idle": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              7
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              7
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              7
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              7
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              7
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        }
+      }
+    },
+    "shuten-head": {
+      "image": "shuten/head.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 4,
+      "anchor": {
+        "x": 128,
+        "y": 240
+      },
+      "scale": 0.48,
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 4,
+          "loop": true
+        },
+        "move": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 4,
+          "loop": true
+        },
+        "attack": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 4,
+          "loop": false
+        },
+        "hurt": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 4,
+          "loop": false
+        },
+        "death": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 4,
+          "loop": false
+        }
+      },
+      "directions": {
+        "south": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "south-east": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "east": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              2
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              2
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              2
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              2
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              2
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "north-east": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              3
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              3
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              3
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              3
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              3
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "north": {
+          "idle": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              4
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              4
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              4
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              4
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              4
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "north-west": {
+          "idle": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              5
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              5
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              5
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              5
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              5
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "west": {
+          "idle": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              6
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              6
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              6
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              6
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              6
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "south-west": {
+          "idle": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              7
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              7
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              7
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              7
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              7
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        }
+      }
+    },
+    "oe-elite-oni": {
+      "image": "shuten/elite.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 4,
+      "anchor": {
+        "x": 128,
+        "y": 240
+      },
+      "scale": 0.42,
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 4,
+          "loop": true
+        },
+        "move": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 4,
+          "loop": true
+        },
+        "attack": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 4,
+          "loop": false
+        },
+        "hurt": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 4,
+          "loop": false
+        },
+        "death": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 4,
+          "loop": false
+        }
+      },
+      "directions": {
+        "south": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "south-east": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "east": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              2
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              2
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              2
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              2
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              2
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "north-east": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              3
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              3
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              3
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              3
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              3
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "north": {
+          "idle": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              4
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              4
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              4
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              4
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              4
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "north-west": {
+          "idle": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              5
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              5
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              5
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              5
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              5
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "west": {
+          "idle": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              6
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              6
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              6
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              6
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              6
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        },
+        "south-west": {
+          "idle": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              7
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "move": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              7
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "attack": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              7
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "hurt": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              7
+            ],
+            "fps": 4,
+            "loop": false
+          },
+          "death": {
+            "row": 1,
+            "frames": 1,
+            "indices": [
+              7
+            ],
+            "fps": 4,
+            "loop": false
+          }
+        }
+      }
+    },
+    "shuten-altar": {
+      "image": "shuten/props.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 4,
+      "anchor": {
+        "x": 128,
+        "y": 240
+      },
+      "scale": 0.38,
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "move": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "attack": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "hurt": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "death": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            0
+          ],
+          "fps": 1,
+          "loop": false
+        }
+      },
+      "directions": {
+        "south": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          }
+        },
+        "south-east": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          }
+        },
+        "east": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          }
+        },
+        "north-east": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          }
+        },
+        "north": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          }
+        },
+        "north-west": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          }
+        },
+        "west": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          }
+        },
+        "south-west": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              0
+            ],
+            "fps": 1,
+            "loop": false
+          }
+        }
+      }
+    },
+    "shuten-drum": {
+      "image": "shuten/props.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 4,
+      "anchor": {
+        "x": 128,
+        "y": 240
+      },
+      "scale": 0.38,
+      "animations": {
+        "idle": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            1
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "move": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            1
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "attack": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            1
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "hurt": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            1
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "death": {
+          "row": 0,
+          "frames": 1,
+          "indices": [
+            1
+          ],
+          "fps": 1,
+          "loop": false
+        }
+      },
+      "directions": {
+        "south": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          }
+        },
+        "south-east": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          }
+        },
+        "east": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          }
+        },
+        "north-east": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          }
+        },
+        "north": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          }
+        },
+        "north-west": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          }
+        },
+        "west": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          }
+        },
+        "south-west": {
+          "idle": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "move": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": true
+          },
+          "attack": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "hurt": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          },
+          "death": {
+            "row": 0,
+            "frames": 1,
+            "indices": [
+              1
+            ],
+            "fps": 1,
+            "loop": false
+          }
+        }
+      }
     }
   }
 }

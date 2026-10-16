@@ -128,6 +128,8 @@ export class GameRoom extends Room<{ state: GameState }> {
         if (ready?.[skillId]) { ready[skillId] = Math.max(this.clock.currentTime, ready[skillId]! - ms); this.client(id)?.send('cooldown', { skillId, readyInMs: ready[skillId]! - this.clock.currentTime }); }
       },
     });
+    this.onMessage('boss:seal',client=>{if(this.map.id==='mount-oe-fortress')this.combat.shuten?.seal(client.sessionId);});
+    if(DEV_COMMANDS)this.onMessage('boss:review',(client,message:unknown)=>{if(this.map.id==='mount-oe-fortress'&&!this.accounts.has(client.sessionId)&&this.clients.length===1&&message&&typeof message==='object')this.combat.shuten?.review(client.sessionId,message);});
     this.onMessage('move', (client, message: unknown) => {
       if (!isMovementInput(message)) return;
       if (this.travelling.has(client.sessionId) || this.combat.isDown(client.sessionId)) return;
