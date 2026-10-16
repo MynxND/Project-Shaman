@@ -18,7 +18,7 @@ export default function ShutenReview({initialSkill='oni-crusher'}:{initialSkill?
             <label>ความเร็ว <select defaultValue="1" onChange={e=>{ctrl.current.speed=Number(e.target.value);}}><option value=".25">0.25×</option><option value=".5">0.5×</option><option value="1">1×</option></select></label>
             <label>มุมมอง <select aria-label="ขยายภาพ" defaultValue="1" onChange={e=>{ctrl.current.zoom=Number(e.target.value);}}><option value="1">ภาพรวม</option><option value="1.5">1.5×</option><option value="2">2× รายละเอียด</option></select></label>
         </nav>
-        <p style={{fontSize:13}}>ข้อมูลจังหวะจาก CombatSystem จริง · พรีวิวนี้ไม่ทำดาเมจ · สีอำพันคือขอบเขตโจมตี ส่วนควันและเศษสะเก็ดเป็นภาพตกแต่ง</p>
+        <p style={{fontSize:13}}>ข้อมูลจังหวะจาก CombatSystem จริง · พรีวิวนี้ไม่ทำดาเมจ · รอยอาคมสีชาดคือเขตอันตราย ขอบทองเรืองเต็มก่อนโจมตี · ควันและสะเก็ดเป็นภาพตกแต่ง</p>
         <div ref={host} style={{height:'clamp(300px,65vw,68dvh)',width:'100%',overflow:'hidden',border:'1px solid #786749'}}/>
         <label style={{display:'block',marginTop:10}}>ตำแหน่งเวลา <input aria-label="ตำแหน่งเวลา" type="range" min="0" max="1" step=".001" value={progress} style={{width:'min(650px,90vw)'}} onChange={e=>{const p=Number(e.target.value);G(p);ctrl.current.scrub=p;ctrl.current.seek++;ctrl.current.paused=true;P(true);}}/></label>
         <output style={{fontSize:12,display:'block',overflowWrap:'anywhere'}}>{stats}</output>

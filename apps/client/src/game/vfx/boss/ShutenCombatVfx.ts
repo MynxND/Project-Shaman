@@ -2,8 +2,9 @@ import Phaser from 'phaser';
 import {WORLD_UNIT_PX as U} from '@shaman/shared';
 import {clamp01} from './stomp-timeline';
 import {SHUTEN_ATLASES,sampleShutenCue,smooth,shutenMouthPort,type ShutenCue,type ShutenMaterial} from './shuten-vfx-model';
+import {SHUTEN_TELL_KEY,prepareShutenTell,drawShutenTell,shutenTellKey} from './shuten-telegraph';
 const key=(name:string)=>'oe3:'+name;
-export function preloadShutenCombatVfx(s:Phaser.Scene){for(const id of [...SHUTEN_ATLASES,'drinking','fallen'])if(!s.textures.exists(key(id)))s.load.spritesheet(key(id),`/assets/vfx/boss/shuten-complete/${id}.png`,{frameWidth:256,frameHeight:256});}
+export function preloadShutenCombatVfx(s:Phaser.Scene){for(const id of [...SHUTEN_ATLASES,'drinking','fallen'])if(!s.textures.exists(key(id)))s.load.spritesheet(key(id),`/assets/vfx/boss/shuten-complete/${id}.png`,{frameWidth:256,frameHeight:256});if(!s.textures.exists(SHUTEN_TELL_KEY))s.load.svg(SHUTEN_TELL_KEY,'/assets/vfx/boss/shuten-complete/telegraph-marks.svg',{width:512,height:128});}
 type View={id:string;h:ShutenCue|null;seen:number;cancelAt:number;contact:boolean;sprites:Phaser.GameObjects.Sprite[];tell:Phaser.GameObjects.Graphics;clip:Phaser.GameObjects.Graphics;mask:Phaser.Display.Masks.GeometryMask};
 /** One pooled view per authoritative hazard. Organic art and gameplay geometry have separate lifetimes. */
 export class ShutenCombatVfx {
@@ -14,6 +15,7 @@ export class ShutenCombatVfx {
     private cost:number[]=[];
     private peak=0;
     constructor(private scene:Phaser.Scene,private capacity=32){
+        prepareShutenTell(scene);
         for(const id of [...SHUTEN_ATLASES,'drinking','fallen'])scene.textures.get(key(id)).setFilter(Phaser.Textures.FilterMode.NEAREST);
         // ParticleEmitter total-count limits include the reserved dead pool in Phaser 3.90.
         this.particles=scene.add.particles(0,0,'stomp-v2',{frame:[13,14],reserve:96,maxAliveParticles:96,emitting:false,
@@ -40,11 +42,13 @@ export class ShutenCombatVfx {
     }
     update(cues:Iterable<ShutenCue>,now:number,rate=1,phase=1){
         const start=performance.now();this.particles.timeScale=rate;
+        const warnings=new Map<string,ShutenCue>();
         for(const h of cues){let v=this.pool.find(v=>v.id===h.id);
             if(!v){v=this.pool.find(v=>!v.id);if(!v&&this.pool.length<this.capacity){v=this.make();this.pool.push(v);}if(!v)continue;
                 v.id=h.id;v.contact=false;v.cancelAt=0;}
             // Copy primitive fields; schema removal must not erase the cosmetic tail.
             v.h={...h};v.seen=now;
+            if(now>=h.warnAt&&now<h.startsAt){const k=shutenTellKey(h),previous=warnings.get(k);if(!previous||h.startsAt<previous.startsAt)warnings.set(k,h);}
         }
         for(const v of this.pool){if(!v.id||!v.h)continue;
             const h=v.h,p=sampleShutenCue(h,now),x=h.x*U,y=h.y*U,r=h.radius*U;
@@ -57,8 +61,8 @@ export class ShutenCombatVfx {
             };
             const indicator=h.effect==='portal'||h.effect==='faces'?0xd6b46c:h.actor==='head'?0xb4d1ca:0xdfae77;
             if(p.warning){
-                v.tell.lineStyle(1.5,indicator,.85*cancel);this.outline(v.tell,h,r);
-                v.tell.fillStyle(indicator,.035*cancel);this.outline(v.tell,h,r,true);
+                const first=warnings.get(shutenTellKey(h));if(first&&first.id!==h.id&&!v.cancelAt)continue;
+                drawShutenTell(v.tell,v.sprites,h,h.radius,p.charge,true,cancel,this.reduced);
                 draw(0,'portal',Math.floor(p.charge*15),x,y,Math.min(r*1.1,135),Math.min(r*.8,100),.16+.13*p.charge,-.62).setTint(indicator);
                 if(h.effect!=='sake'&&h.effect!=='violet')draw(1,'smoke',Math.min(4,Math.floor(p.charge*5)),x,y,75,105,.1+.2*p.charge,y+.2,0,.5,.9);
                 if(h.effect==='fist'&&p.age>-180)draw(2,'fist',Math.min(3,Math.floor((p.age+180)/45)),x,y,Math.max(90,r*2.1),Math.max(90,r*2.1),smooth((p.age+180)/180)*.8,y+2,0,.5,.7);
@@ -68,7 +72,7 @@ export class ShutenCombatVfx {
                     if(!['sake','portal','faces','breath'].includes(h.effect))this.particles.emitParticleAt(p.x*U,p.y*U,this.reduced?2:h.effect==='fist'?12:8);
                     if(!this.reduced&&now-this.shakeAt>170&&['impact','fist','shock'].includes(h.effect)&&Phaser.Math.Distance.Between(this.scene.cameras.main.midPoint.x,this.scene.cameras.main.midPoint.y,x,y)<650){this.scene.cameras.main.shake(100,h.effect==='fist'?.0022:.0015);this.shakeAt=now;}
                 }}
-                if(p.live){v.tell.lineStyle(1,indicator,.55);this.outline(v.tell,h,p.radius*U);}
+                if(p.live)drawShutenTell(v.tell,v.sprites,h,p.radius,1,false,1,this.reduced);
                 draw(0,'portal',Math.floor(p.age/60)%16,x,y,Math.min(r*1.2,150),Math.min(r*.85,105),.14*fade,-.63);
                 let px=x,py=y,w=r*2.05,height=w,rot=0,ox=.5,oy=.65,depth=y+1,alpha=.87*fade;
                 if(h.shape==='ring'){

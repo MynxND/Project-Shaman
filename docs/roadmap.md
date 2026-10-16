@@ -705,3 +705,7 @@ Mountain Stomp migrated and reviewed in the real room with before/after, walking
 ## Complete Shuten boss VFX — 2026-10-16
 
 Shuten complete VFX batch implemented: all ten skills, five-stage ultimate, phase 2/3 and death. Typecheck/build, authority/live-room/pooling tests and desktop/portrait/landscape browser inspection completed; 88 live skill/direction receipts retained. Final user artistic acceptance, difficulty tuning and physical-phone GPU testing remain review work. Preview /boss-vfx/shuten; gallery /boss-review/shuten-complete/index.html.
+
+## Shuten ritual telegraphs — 2026-10-16
+
+Shuten ritual warning redesign implemented and inspected: eleven skill previews, cone/charge warnings in eight directions, live Stomp windup and mobile portrait/landscape. Typecheck/build, authority and extended geometry/pool tests passed. User artistic acceptance remains open. Review /boss-review/shuten-telegraphs/index.html.

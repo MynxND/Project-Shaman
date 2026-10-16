@@ -629,3 +629,7 @@ Mountain Stomp alone now binds authoritative hazard timestamps to a fixed, asset
 ## Complete Shuten boss VFX — 2026-10-16
 
 Complete Shuten presentation now uses a bounded 32-view asset renderer, independent timestamped material clocks and a separate actor-presentation adapter. Server authority, hit geometry, schema and travel remain unchanged; the dedicated lab replays 112 real CombatSystem clips. See design/bosses/shuten-doji/complete/README.md.
+
+## Shuten ritual telegraphs — 2026-10-16
+
+The complete Shuten renderer delegates warning contours to shuten-telegraph.ts. Its original sprite slots4–7 carry vector-authored ground stamps during windup; no extra GameObjects or authoritative state. Identical warning footprints show the earliest contact once. See design/bosses/shuten-doji/telegraphs/README.md.

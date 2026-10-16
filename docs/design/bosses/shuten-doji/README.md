@@ -53,3 +53,7 @@ No claim of final human art acceptance, full bespoke drawn locomotion/death anim
 ## Complete VFX migration — 2026-10-16
 
 The later [complete implementation and evidence](complete/README.md) supersedes the historical 64-slot visual renderer and Stomp-only POC scope. All ten skills, ultimate, transitions and death now use the bounded asset adapter. Earlier evidence remains historical.
+
+## Ritual warning redesign — 2026-10-16
+
+The complete renderer now uses [oni ritual telegraphs](telegraphs/README.md) in the real room and lab. Nominal geometry and server collision tolerance remain unchanged; warning progress/deduplication is presentation only.

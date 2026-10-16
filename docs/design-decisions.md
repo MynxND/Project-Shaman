@@ -675,3 +675,7 @@ User requests diagnosis and one complete attack before expansion. Upgrade Mounta
 ## Complete Shuten boss VFX — 2026-10-16
 
 Expand the completed Stomp proof of concept to Shuten only. Preserve server geometry and linear damaging wave speed; use authored mouth ports, exact cone masks and bounded cosmetic aftermath. Correct capped healing that could reduce HP and persist death actionAt. Run compiled non-watching server during final asset/build review to prevent shared-dist rebuild restart bursts. See design/bosses/shuten-doji/complete/README.md.
+
+## Shuten ritual telegraphs — 2026-10-16
+
+Replace plain Shuten warning outlines while keeping fixed world-space extents, server contact deadlines and the 270-degree rear safe wedge. True capsule contours replace intersecting endpoint circles. Cosmetic windup progress follows server timestamps; coincident combo warnings deduplicate presentation only. See design/bosses/shuten-doji/telegraphs/README.md.

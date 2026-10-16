@@ -354,3 +354,7 @@ Asset-driven charcoal ash, cursed red spirit fire, basalt fragments and restrain
 ## Complete Shuten boss VFX — 2026-10-16
 
 All ten Shuten skills, five ultimate stages, transitions and death now use owned layered RGBA materials: ten sixteen-frame effect atlases and two eight-view key-pose atlases. Original character sprites remain; this is not a new full locomotion flipbook. Actual-room and frozen-preview evidence are distinguished; user art acceptance remains open. See design/bosses/shuten-doji/complete/README.md.
+
+## Shuten ritual telegraphs — 2026-10-16
+
+Shuten warnings now use charcoal/crimson ink, inset bronze stitches, original oni crests and torn ofuda with fictional marks. This is geometric gameplay-indicator art; organic attack materials remain the complete flipbooks. Desktop, simulated portrait/landscape and actual-room evidence: design/bosses/shuten-doji/telegraphs/README.md.
