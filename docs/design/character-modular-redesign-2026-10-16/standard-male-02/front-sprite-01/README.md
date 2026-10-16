@@ -1,5 +1,9 @@
 # Front sprite layers — 2026-10-16
 
+## Rejected by user — 2026-10-16
+
+User rejected the visual result as broken/noisy pixels. Exact reconstruction and passing code checks did not establish acceptable sprite art. This128 conversion is historical rejected output, not an approved production base. Follow-up is `../front-sprite-02/`; approved high-resolution proportions remain the identity reference. Do not adopt these assets into gameplay.
+
 User approved the compact standard-male-02 proportions and authorized front-sprite preparation and head/face/hair/body separation. This is an offline art deliverable; gameplay is unchanged.
 
 ## Files and composition

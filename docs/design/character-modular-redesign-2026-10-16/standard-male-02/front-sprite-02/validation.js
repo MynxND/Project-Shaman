@@ -1,0 +1,1 @@
+window.spriteValidation={"size":128,"sourceDimensions":{"width":1254,"height":1254},"method":"128-grid area vote, 8-channel-value bins, authored26-color palette, zero dithering","opaqueColors":23,"differentBytes":0,"hiddenPixels":461,"sha256":"d17b0a1510b15b06ab6d05faeabf5b9e008173fdc7cd85ff5e912915c881c5bd"};
