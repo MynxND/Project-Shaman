@@ -679,3 +679,12 @@ authoritative geometry/contactStep as the recorded lab. CalonMotion advances by
 world travel and preserves facing phase. React holds summaries only. The isolated
 girah-ruined-temple room has no atlas/portal adoption. Details and actual-room
 evidence: design/bosses/calon-arang/README.md.
+
+
+## Calon party mechanics v2 — 2026-10-16
+Calon now requires3–5 living participants for normal activation. Server-owned clean
+well keepers and a distinct source channel open timed exposure. Moving tracked
+hazards, well closure/recharge, source cancellation and infection-target hunting
+remain authoritative; new schema fields append after the existing contactStep.
+Lab v2 samples moving geometry every50ms, not just each hazard's final position.
+See design/bosses/calon-arang/mechanics-v2.md for contracts and validation limits.

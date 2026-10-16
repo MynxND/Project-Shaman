@@ -53,13 +53,13 @@ export class CalonVfx {
       if(warning&&cues.some(c=>c.id!==h.id&&c.skill===h.skill&&c.shape===h.shape&&c.startsAt<h.startsAt&&now<c.startsAt&&c.x===h.x&&c.y===h.y&&c.toX===h.toX&&c.toY===h.toY&&c.radius===h.radius&&c.width===h.width&&c.angle===h.angle&&c.arc===h.arc))continue;
       const g = v.ground, x = h.x * U, y = h.y * U, width = (h.width + P) * U, r = (h.radius + P) * U;
       const progress = calonProgress(h, now), color = h.skill === 'cursed-altar' ? 0xbd6974 : 0xd8bb77;
-      const fill = warning ? .055 : .1, edge = warning ? .65 + .3 * Math.max(0, (now - h.warnAt) / Math.max(1, h.startsAt - h.warnAt)) : .9;
+      const fill = h.shape==='ritual'?.02:warning ? .055 : .1, edge = warning ? .65 + .3 * Math.max(0, (now - h.warnAt) / Math.max(1, h.startsAt - h.warnAt)) : .9;
       if (warning || active) {
         g.setVisible(true);
-        const lx=h.shape==='sector'?x+Math.cos(h.angle)*r*.6:h.shape==='charge'&&active?x+(h.toX*U-x)*progress:h.shape==='capsule'||h.shape==='charge'?(x+h.toX*U)/2:h.shape==='ring'&&active?x+(CALON_RING_START+(h.radius-CALON_RING_START)*progress)*U:h.shape==='finale'?24*U:x;
-        const ly=h.shape==='sector'?y+Math.sin(h.angle)*r*.6:h.shape==='charge'&&active?y+(h.toY*U-y)*progress:h.shape==='capsule'||h.shape==='charge'?(y+h.toY*U)/2:h.shape==='finale'?35*U:y;
+        const lx=h.shape==='sector'?x+Math.cos(h.angle)*r*.6:h.shape==='charge'&&active?x+(h.toX*U-x)*progress:h.shape==='capsule'||h.shape==='charge'?(x+h.toX*U)/2:h.shape==='ring'&&active?x+(CALON_RING_START+(h.radius-CALON_RING_START)*progress)*U:h.shape==='quarantine'?h.toX*U:h.shape==='finale'?24*U:x;
+        const ly=h.shape==='sector'?y+Math.sin(h.angle)*r*.6:h.shape==='charge'&&active?y+(h.toY*U-y)*progress:h.shape==='capsule'||h.shape==='charge'?(y+h.toY*U)/2:h.shape==='quarantine'?h.toY*U:h.shape==='finale'?35*U:y;
         const prefix=h.skill==='thousand-cursed-hands'?`${Math.round(h.angle/(Math.PI/2))+1} · `:'';
-        const text=h.shape==='finale'?'ช่องปลอดภัย':warning?prefix+Math.max(0,(h.startsAt-now)/1000).toFixed(1)+' วิ':h.shape==='ring'?'คลื่น':'!';
+        const text=h.shape==='ritual'?'ขัดพิธี · โจมตีแม่มด':h.shape==='quarantine'?'เข้าบ่อนี้ · '+Math.max(0,(h.startsAt-now)/1000).toFixed(1)+' วิ':h.actor==='spore'?(warning?'ลากเชื้อออก · ':'พื้นติดเชื้อ · ')+Math.max(0,((warning?h.startsAt:h.endsAt)-now)/1000).toFixed(1):h.actor==='tether'?'ถอยให้สายขาด / ล้างเชื้อ':h.actor==='harvest'?'ล้างเชื้อหยุดการพุ่ง':h.shape==='finale'?'ช่องปลอดภัย':warning?prefix+Math.max(0,(h.startsAt-now)/1000).toFixed(1)+' วิ':h.shape==='ring'?'คลื่น':'!';
         if(v.label.text!==text)v.label.setText(text);
         v.label.setPosition(lx,ly+16).setVisible(true);
         g.fillStyle(color, fill).lineStyle(2, color, edge);
@@ -88,14 +88,14 @@ export class CalonVfx {
           g.fillPoints(points, true).strokePoints(points, true);
         } else {
           g.fillCircle(x, y, r).strokeCircle(x, y, r);
-          if (h.shape === 'finale') {
+          if (h.shape === 'finale'||h.shape==='quarantine') {
             // Mark the authoritative safe pocket explicitly rather than hiding it in the main effect.
-            g.fillStyle(0x132d29, 1).fillCircle(24 * U, 35 * U, (2.8 + P) * U).lineStyle(3, 0xf1d28a, 1).strokeCircle(24 * U, 35 * U, (2.8 + P) * U);
+            const sx=h.shape==='quarantine'?h.toX*U:24*U,sy=h.shape==='quarantine'?h.toY*U:35*U,sr=(h.shape==='quarantine'?h.width+P:2.8+P)*U;g.fillStyle(0x132d29,1).fillCircle(sx,sy,sr).lineStyle(3,0x9bddba,1).strokeCircle(sx,sy,sr);
           }
         }
         // Small woven corner rhythm communicates charge without changing the danger boundary.
         // Expanded into a boss-specific woven border and seal; the authoritative edge above stays fixed.
-        if (warning) drawRitualWarning(g, { shape:h.shape, x, y, ex:h.toX*U, ey:h.toY*U, radius:r+(h.shape==='ring'?h.width*U:0), width, angle:h.angle, arc:h.arc }, 'calon', (now-h.warnAt)/Math.max(1,h.startsAt-h.warnAt));
+        if (warning&&h.shape!=='ritual'&&h.shape!=='quarantine') drawRitualWarning(g, { shape:h.shape, x, y, ex:h.toX*U, ey:h.toY*U, radius:r+(h.shape==='ring'?h.width*U:0), width, angle:h.angle, arc:h.arc }, 'calon', (now-h.warnAt)/Math.max(1,h.startsAt-h.warnAt));
       }
       const key = h.skill;
       if (!this.scene.textures.exists('ca:' + key)) throw new Error('ASSET_REQUIRED: Calon ' + key);
@@ -110,7 +110,7 @@ export class CalonVfx {
       const direction=lane?Math.atan2(h.toY-h.y,h.toX-h.x):h.shape==='sector'?h.angle:0;
       drawCalonMaterialMask(v.clip,h,Math.min(now,h.endsAt),warning,contactStep);
       const layer=(img:Phaser.GameObjects.Image,frame:number,alpha:number,scale:number,depth:number)=>img.setTexture('ca:'+key,frame).setPosition(px,py).setDisplaySize(Math.max(32,size)*scale,Math.max(32,height)*scale).setOrigin(.5).setRotation(direction).setDepth(depth).setAlpha(alpha).setVisible(alpha>.001).setMask(v.materialMask);
-      if(h.shape==='finale'){
+      if(h.shape==='finale'||h.shape==='quarantine'){
         // Author a field of native-scale plague blossoms; a256px image enlarged across48 units destroys detail.
         const anchors=[[12,15],[20,15],[28,15],[36,15],[11,23],[19,23],[29,23],[37,23],[12,31],[20,31],[28,31],[36,31]];
         const after=Math.max(0,1-(now-h.endsAt)/600),base=warning?Math.min(7,Math.floor(wind*8)):Math.min(15,8+Math.floor(progress*8));
@@ -122,7 +122,7 @@ export class CalonVfx {
         if(lane)v.charge.setPosition(x,y).setDisplaySize(width*3,width*3).setMask(this.mask);
       }
       if (active) {
-        layer(v.main, Math.min(15, 8 + Math.floor(progress * 8)), .9, 1, -.45);
+        layer(v.main,h.actor==='spore'&&age>500?12+Math.floor(age/120)%4:Math.min(15,8+Math.floor(progress*8)),h.shape==='ritual'?.3:.9,1,-.45);
         if(h.shape==='capsule'){
           // Preserve authored moth/effigy anatomy: tile natural-aspect clusters, never squash into a laser.
           v.main.setVisible(false);const count=Math.min(12,Math.max(1,Math.ceil(length/(width*2.4))));

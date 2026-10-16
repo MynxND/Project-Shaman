@@ -1,3 +1,38 @@
+# Current: Calon Arang mechanics v2 — party3–5
+
+The user rejected v1 combat similarity and selected a3–5-player role encounter.
+[Mechanics and acceptance](mechanics-v2.md) supersede the v1 delivery below.
+The lab now loads `clips-v2.json`, with50ms sampled moving geometry and visible
+objective locations; original clips/receipts remain historical.
+
+Cut effigies → two clean players hold opposite available wells → a third clean
+player channels the central source2.4s → converge during8–12s exposure. Marked
+carriers place persistent infection away from the team. Sources cancel their own
+attacks; processions close wells; attack the repair ritual to prevent regrowth;
+cleanse to deny Harvest. Eclipse publishes a well and grants travel time for the
+farthest living participant. Ultimate gives36s for the coordinated objective,
+then publishes an emergency refuge rather than a permanent southern safe pocket.
+These numbers are provisional game design, not approved balance or folklore.
+
+Actual room: `/?map=girah-ruined-temple` (same map, up to5 clients;3 living in the
+court activates normal AI). Existing portals and other bosses are unchanged.
+`calonReview=1` exposes development guest QA. Single-client QA remains available;
+multi-client QA is allowed only in explicitly created DEV `calonPartyReview:true`
+rooms with exclusively unsaved guests. Production ignores that option and review.
+No public party matchmaking/invite UI is newly implemented here.
+
+Validation: `node tools/bosses/calon-arang/party-test.mjs`,
+`party-network-test.mjs --failure`, `party-production-test.mjs`, `motion-test.mjs`.
+Regenerate lab recordings with `record-v2.mjs` after building shared/schema/server.
+Receipts: [v2 evidence](mechanics-v2/evidence/). QA HP4000 supports collision and
+counter testing, not a balanced normal-character victory. Human party difficulty,
+4–5-person real-match balance and physical phone/GPU performance remain unverified.
+No new image generation or motion-source replacement was needed in this revision.
+
+---
+
+## Historical v1 delivery (superseded combat acceptance)
+
 # Calon Arang — Boss15 review delivery
 
 Implemented only Calon Arang from the selected shared rules and Boss15 Word section.

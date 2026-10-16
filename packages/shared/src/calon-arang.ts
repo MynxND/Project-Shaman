@@ -4,19 +4,19 @@ export const CALON_HP=22000, CALON_CONTACT=.28, CALON_RING_START=1.2;
 export const CALON_SOURCE={x:24,y:26};
 export const CALON_WELLS=[{id:'west',x:12,y:33},{id:'east',x:36,y:33}] as const;
 export const CALON_CONNECTIONS=[{id:'west',x:18.5,y:21,from:{x:15,y:24},to:{x:22,y:18}},{id:'north',x:27,y:21,from:{x:22,y:18},to:{x:32,y:24}},{id:'east',x:28.5,y:27.5,from:{x:32,y:24},to:{x:25,y:31}},{id:'south',x:20,y:27.5,from:{x:25,y:31},to:{x:15,y:24}}] as const;
-const skill=(name:string,phase:number,shape:string,target:string,tell:number,active:number,recovery:number,cooldown:number,damage:number)=>({name,phase,shape,target,tell,active,recovery,cooldown,damage,intent:target,status:'bounded infection on bloom/swarm/siphon',animation:'cast',audio:'plague-chime',counter:'leave locked footprint; sever network; cleanse at quarantine wells',layers:['ground','charge','main','trail','contact','secondary','aftermath'],cancel:'phase/death/wipe and purified ultimate',ai:'ready cooldown deterministic phase deck, living target in court'});
+const skill=(name:string,phase:number,shape:string,target:string,tell:number,active:number,recovery:number,cooldown:number,damage:number)=>({name,phase,shape,target,tell,active,recovery,cooldown,damage,intent:target,status:'bounded infection on bloom/swarm/siphon',animation:'cast',audio:'plague-chime',counter:target,layers:['ground','charge','main','trail','contact','secondary','aftermath'],cancel:'phase/death/wipe and purified ultimate',ai:'ready cooldown deterministic phase deck, living target in court'});
 export const CALON_SKILLS={
- 'plague-bloom':skill('ดอกโรคระบาด',1,'disk','locked target bloom',1400,500,1200,8000,55),
- 'cursed-effigy':skill('หุ่นสาปแช่ง',1,'capsule','crossed effigy threads',1400,500,1400,9000,60),
- 'spirit-swarm':skill('ฝูงผีเสื้อวิญญาณ',1,'capsule','three staggered moth lanes',1500,400,1500,11000,60),
- 'black-ritual':skill('พิธีดำ',1,'ring','body ash annulus',1600,900,1500,12000,65),
- 'graveyard-procession':skill('ขบวนสุสาน',2,'charge','two independently moving funeral spirits',1500,600,1600,12000,70),
- 'soul-withering':skill('วิญญาณเหี่ยวเฉา',2,'capsule','locked siphon ray',1500,600,1400,10000,70),
- 'cursed-altar':skill('แท่นคำสาป',2,'disk','target offsets spare quarantine routes',1600,600,1500,12000,75),
- 'thousand-cursed-hands':skill('พันมืออาถรรพ์',3,'sector','ordered hand quadrants',1600,500,1600,14000,80),
- 'plague-eclipse':skill('คราสโรคระบาด',3,'ring','three expanding moth bands',1600,900,1600,14000,80),
- 'soul-harvest':skill('เก็บเกี่ยววิญญาณ',3,'charge','three separately locked harvest rushes',1500,500,1600,12000,85),
- 'night-of-a-thousand-curses':skill('ราตรีพันคำสาป',3,'finale','five stages and live sever/purify challenge',1600,800,2000,48000,180),
+ 'plague-bloom':skill('ดอกโรคระบาด',1,'disk','carry tracked bloom away; persistent infected ground',2200,6000,1000,10500,24),
+ 'cursed-effigy':skill('หุ่นสาปแช่ง',1,'capsule','destroy the surviving effigy source to cancel its curse',1400,1800,1400,9000,60),
+ 'spirit-swarm':skill('ฝูงผีเสื้อวิญญาณ',1,'capsule','bait tracking moths; kill their source before contact',1500,650,1500,11000,60),
+ 'black-ritual':skill('พิธีดำ',1,'capsule','surviving network edges; destroy sources',1800,1800,1500,13000,40),
+ 'graveyard-procession':skill('ขบวนสุสาน',2,'charge','intercept effigy sources before spirits contaminate both wells',1500,2600,1600,12000,70),
+ 'soul-withering':skill('วิญญาณเหี่ยวเฉา',2,'capsule','living tether; distance or cleanse breaks drain',2200,3200,1600,12000,35),
+ 'cursed-altar':skill('แท่นคำสาป',2,'ritual','attack exposed caster to interrupt network repair',1600,3000,1600,16000,0),
+ 'thousand-cursed-hands':skill('พันมืออาถรรพ์',3,'sector','hands from intact effigies; sever a corridor',1600,650,1600,14000,80),
+ 'plague-eclipse':skill('คราสโรคระบาด',3,'quarantine','relocate to selected cleansing well',5000,700,1600,19000,110),
+ 'soul-harvest':skill('เก็บเกี่ยววิญญาณ',3,'charge','hunts infected prey; cleanse to cancel',2200,600,1600,12000,100),
+ 'night-of-a-thousand-curses':skill('ราตรีพันคำสาป',3,'quarantine','sever four effigies; two clean well keepers plus a third purifier; otherwise reach published refuge',1600,800,2000,48000,180),
 } as const;
 export type CalonSkill=keyof typeof CALON_SKILLS;
 export const inCalonCourt=(p:Position)=>p.x>=7&&p.x<=41&&p.y>=11&&p.y<=38;
@@ -25,6 +25,8 @@ export interface CalonHazard {shape:string;x:number;y:number;toX:number;toY:numb
 export const calonProgress=(h:CalonHazard,t:number)=>Math.max(0,Math.min(1,(t-h.startsAt)/Math.max(1,h.endsAt-h.startsAt)));
 export function calonSegment(p:Position,a:Position,b:Position){const x=b.x-a.x,y=b.y-a.y,q=Math.max(0,Math.min(1,((p.x-a.x)*x+(p.y-a.y)*y)/(x*x+y*y||1)));return Math.hypot(p.x-a.x-x*q,p.y-a.y-y*q);}
 export function calonHit(h:CalonHazard,p:Position,now:number,previous=now){
+  if(h.shape==='ritual')return false;
+  if(h.shape==='quarantine')return Math.hypot(p.x-h.x,p.y-h.y)<=h.radius+CALON_CONTACT&&Math.hypot(p.x-h.toX,p.y-h.toY)>h.width+CALON_CONTACT;
   const r=h.radius+CALON_CONTACT,d=Math.hypot(p.x-h.x,p.y-h.y);
   if(h.shape==='finale')return d<=r&&Math.hypot(p.x-24,p.y-35)>2.8+CALON_CONTACT;
   if(h.shape==='capsule')return calonSegment(p,h,{x:h.toX,y:h.toY})<=h.width+CALON_CONTACT;

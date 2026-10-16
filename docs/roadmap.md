@@ -751,3 +751,11 @@ checks pass. Desktop and emulated phone portrait/landscape inspected; physical
 phone performance, balance and human art approval remain pending. No new portal
 adoption or continuous balanced-character victory claimed. Stop for review;
 older boss motion is future work. See design/bosses/calon-arang/README.md.
+
+
+## Calon mechanics v2 review — 2026-10-16
+Role-based3–5-player Calon implementation and revised88-timeline lab are available.
+Three actual SDK clients completed counters in all3 phases and ultimate; failure
+refuge, five-client cap and production QA isolation checked. Human party difficulty
+and normal-character victory remain pending. Other bosses are unchanged.
+See design/bosses/calon-arang/mechanics-v2.md.

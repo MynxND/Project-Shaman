@@ -1,0 +1,239 @@
+{
+  "cases": [
+    {
+      "kind": "pre-channel",
+      "phase": 1,
+      "elapsed": 10903,
+      "infections": [],
+      "west": "KFR24y8Ym",
+      "east": "0NjtxHd7_",
+      "mode": "idle",
+      "uncut": 0,
+      "wells": [
+        {
+          "id": "west",
+          "blockedUntil": 0,
+          "readyAt": 0
+        },
+        {
+          "id": "east",
+          "blockedUntil": 0,
+          "readyAt": 0
+        }
+      ],
+      "players": [
+        {
+          "id": "KFR24y8Ym",
+          "x": 11.999999046325684,
+          "y": 33,
+          "dead": false
+        },
+        {
+          "id": "0NjtxHd7_",
+          "x": 35.89678192138672,
+          "y": 32.9243049621582,
+          "dead": false
+        },
+        {
+          "id": "kY03v0csZ",
+          "x": 24,
+          "y": 26.107999801635742,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "elapsed": 13330,
+      "countered": false,
+      "exposedUntil": 1792152372211,
+      "players": [
+        {
+          "id": "KFR24y8Ym",
+          "x": 11.999999046325684,
+          "y": 33,
+          "hp": 4000
+        },
+        {
+          "id": "0NjtxHd7_",
+          "x": 35.89678192138672,
+          "y": 32.9243049621582,
+          "hp": 4000
+        },
+        {
+          "id": "kY03v0csZ",
+          "x": 24,
+          "y": 26.107999801635742,
+          "hp": 4000
+        }
+      ]
+    },
+    {
+      "kind": "pre-channel",
+      "phase": 2,
+      "elapsed": 15788,
+      "infections": [],
+      "west": "KFR24y8Ym",
+      "east": "0NjtxHd7_",
+      "mode": "idle",
+      "uncut": 0,
+      "wells": [
+        {
+          "id": "west",
+          "blockedUntil": 0,
+          "readyAt": 0
+        },
+        {
+          "id": "east",
+          "blockedUntil": 0,
+          "readyAt": 0
+        }
+      ],
+      "players": [
+        {
+          "id": "KFR24y8Ym",
+          "x": 12.280254364013672,
+          "y": 32.90690612792969,
+          "dead": false
+        },
+        {
+          "id": "0NjtxHd7_",
+          "x": 36.02174758911133,
+          "y": 33.00752258300781,
+          "dead": false
+        },
+        {
+          "id": "kY03v0csZ",
+          "x": 24,
+          "y": 26.107999801635742,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "elapsed": 18309,
+      "countered": false,
+      "exposedUntil": 1792152393000,
+      "players": [
+        {
+          "id": "KFR24y8Ym",
+          "x": 12.280254364013672,
+          "y": 32.90690612792969,
+          "hp": 4000
+        },
+        {
+          "id": "0NjtxHd7_",
+          "x": 36.02174758911133,
+          "y": 33.00752258300781,
+          "hp": 4000
+        },
+        {
+          "id": "kY03v0csZ",
+          "x": 24,
+          "y": 26.107999801635742,
+          "hp": 4000
+        }
+      ]
+    },
+    {
+      "kind": "pre-channel",
+      "phase": 3,
+      "elapsed": 23670,
+      "infections": [],
+      "west": "KFR24y8Ym",
+      "east": "0NjtxHd7_",
+      "mode": "ultimate",
+      "uncut": 0,
+      "wells": [
+        {
+          "id": "west",
+          "blockedUntil": 1792152408635,
+          "readyAt": 1792152412635
+        },
+        {
+          "id": "east",
+          "blockedUntil": 1792152408635,
+          "readyAt": 1792152412635
+        }
+      ],
+      "players": [
+        {
+          "id": "KFR24y8Ym",
+          "x": 11.943886756896973,
+          "y": 33.018619537353516,
+          "dead": false
+        },
+        {
+          "id": "0NjtxHd7_",
+          "x": 36.0043830871582,
+          "y": 33.00151062011719,
+          "dead": false
+        },
+        {
+          "id": "kY03v0csZ",
+          "x": 24,
+          "y": 26.107999801635742,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "phase": 3,
+      "elapsed": 26128,
+      "countered": true,
+      "exposedUntil": 1792152421686,
+      "players": [
+        {
+          "id": "KFR24y8Ym",
+          "x": 11.943886756896973,
+          "y": 33.018619537353516,
+          "hp": 4000
+        },
+        {
+          "id": "0NjtxHd7_",
+          "x": 36.0043830871582,
+          "y": 33.00151062011719,
+          "hp": 4000
+        },
+        {
+          "id": "kY03v0csZ",
+          "x": 24,
+          "y": 26.107999801635742,
+          "hp": 4000
+        }
+      ]
+    },
+    {
+      "kind": "ultimate failure refuge",
+      "protected": 2,
+      "outsideHit": 1,
+      "contact": [
+        {
+          "type": "damage",
+          "target": {
+            "kind": "player",
+            "id": "kY03v0csZ"
+          },
+          "amount": 180,
+          "source": "plague-sorceress-calon-arang-0",
+          "at": 1792152461674
+        }
+      ]
+    }
+  ],
+  "limits": "DEV HP4000 is collision/counter QA, not party balance or a normal-character victory",
+  "failureHits": [
+    {
+      "type": "damage",
+      "target": {
+        "kind": "player",
+        "id": "kY03v0csZ"
+      },
+      "amount": 180,
+      "source": "plague-sorceress-calon-arang-0",
+      "at": 1792152461674
+    }
+  ],
+  "passed": true
+}

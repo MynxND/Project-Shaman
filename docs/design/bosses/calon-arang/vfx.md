@@ -1,4 +1,7 @@
 # Calon Arang — Boss15 VFX contract
+Current revision: [mechanics-v2](mechanics-v2.md), party-role implementation after the user
+rejected v1 combat similarity. All results below describe v1 until replaced by
+explicit v2 receipts. Existing artwork is reused; behavior and tells are revised.
 Standard: [v1.1](../../../../SHAMAN_BOSS_VFX_STANDARD.md).
 Source: [shared Word rules + Boss15](source.md). Indonesia, Javanese ruined temple.
 Scope: this boss only,3 phases,10 named skills and multi-stage ultimate;

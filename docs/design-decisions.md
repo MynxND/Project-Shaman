@@ -731,3 +731,12 @@ are reachable solo. Numbers/geography remain provisional. Existing boss behavior
 and portals are preserved; motion defects of older bosses remain separate work.
 ImageGen creates the new actor/material artwork; generic owned audio cues are
 reused with original attribution. No physical GPU generation queue was used.
+
+
+## Calon encounter identity revision — user2026-10-16
+User selected a3–5-person party requiring divided roles after rejecting repeated
+ring/sector/charge choreography. Calon uses infection placement, destructible spell
+sources, clean opposite-well keepers plus a third source purifier, repair interrupts
+and timed exposure. This target does not automatically apply to other bosses.
+V1 combat acceptance is superseded; v2 receipts and remaining human balance review
+are in design/bosses/calon-arang/mechanics-v2.md. No new artwork was generated.

@@ -1,0 +1,9 @@
+import assert from 'node:assert/strict';
+import {spawn} from 'node:child_process';
+import {createRequire} from 'node:module';
+import {resolve} from 'node:path';
+import {writeFileSync} from 'node:fs';
+const{Client}=createRequire(resolve('apps/client/package.json'))('@colyseus/sdk'),sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const server=spawn(process.execPath,['apps/server/dist/index.js'],{env:{...process.env,GAME_SERVER_PORT:'2612',NODE_ENV:'production'},stdio:['ignore','pipe','pipe']});let room;
+try{await new Promise((ok,no)=>{const timer=setTimeout(()=>no(Error('boot timeout')),8000);server.stdout.on('data',b=>{if(b.toString().includes('listening')){clearTimeout(timer);ok();}});server.once('error',no);});room=await new Client('ws://localhost:2612').joinOrCreate('game',{mapId:'girah-ruined-temple',calonPartyReview:true});for(const type of['profile','vitals','skill','combat','chat:message'])room.onMessage(type,()=>{});for(let i=0;i<100&&!room.state.calon?.get('calon-arang');i++)await sleep(25);room.send('calon:review',{action:'prepare'});room.send('calon:review',{action:'phase',phase:3});room.send('calon:interact','purify');await sleep(300);const b=room.state.calon.get('calon-arang'),p=room.state.players.get(room.sessionId);assert.equal(b.phase,1);assert.equal(b.mode,'dormant');assert.notEqual(p.hpMax,4000);assert.equal(p.y,42);assert.equal(b.purifyOwner,'');writeFileSync('docs/design/bosses/calon-arang/mechanics-v2/evidence/production.json',JSON.stringify({status:'pass',phase:b.phase,mode:b.mode,hpMax:p.hpMax,purifyOwner:b.purifyOwner,checks:['DEV review rejected in production','remote locked source rejected']},null,2));console.log('PASS production review isolation');}
+finally{const leaving=room?.leave().catch(()=>{});server.kill();room?.connection?.close();await Promise.race([leaving??Promise.resolve(),sleep(1000)]);}

@@ -29,7 +29,7 @@ export function drawCalonMaterialMask(g:Phaser.GameObjects.Graphics,h:CalonHazar
   }else if(h.shape==='sector')poly=[{x,y},...Array.from({length:49},(_,i)=>{const a=h.angle-h.arc/2+h.arc*i/48;return{x:x+Math.cos(a)*r,y:y+Math.sin(a)*r};})];
   else poly=circle(x,y,r);
   const data=poly.flatMap(p=>[p.x,p.y]),holes:number[]=[];
-  if(h.shape==='finale'){holes.push(poly.length);data.push(...circle(24*U,35*U,(2.8+P)*U).flatMap(p=>[p.x,p.y]));}
+  if(h.shape==='finale'||h.shape==='quarantine'){holes.push(poly.length);data.push(...circle(h.shape==='quarantine'?h.toX*U:24*U,h.shape==='quarantine'?h.toY*U:35*U,(h.shape==='quarantine'?h.width+P:2.8+P)*U).flatMap(p=>[p.x,p.y]));}
   const ix=Phaser.Geom.Polygon.Earcut(data,holes,2);
   for(let i=0;i<ix.length;i+=3)clip(ix.slice(i,i+3).map(k=>({x:data[k*2]!,y:data[k*2+1]!})));
 }

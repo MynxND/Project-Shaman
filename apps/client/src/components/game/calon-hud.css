@@ -16,6 +16,8 @@
 
 /* Keep the southern ultimate refuge visible before the player walks into it. */
 @media(min-width:900px) and (min-height:501px){
+  .calon-help{max-height:40dvh}
+  .game-shell:has(.calon-hud) .hud-chat-log{height:40px}
   .game-shell:has(.calon-hud) .hud-root:not([data-touch="true"]) .hud-hotbar{
     left:auto;right:calc(var(--hud-right) + 144px);transform:none;width:max-content;max-width:260px;
   }
