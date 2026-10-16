@@ -1,0 +1,244 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.golden-part",
+  "kind": "hairFront",
+  "variant": "golden-part-eight-candidate",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": false,
+  "images": [
+    {
+      "id": "hairFront.golden-part:south-fixed",
+      "url": "/assets/ssr/candidates/golden-part-eight-01/south-fixed.png",
+      "sha256": "5003f511fd754a6d5354c4d4b1ec2ebe8d094d2c7daa2b3d263471c48cd13db5",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.golden-part:south-ramp",
+      "url": "/assets/ssr/candidates/golden-part-eight-01/south-ramp.png",
+      "sha256": "48d99d3fb299503b513c173b914b36f261997616a63159f092ff6027ab2c98c4",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.golden-part:south-east-fixed",
+      "url": "/assets/ssr/candidates/golden-part-eight-01/south-east-fixed.png",
+      "sha256": "8d98cdde6f25a654ae80ff80f9205bffb30cc56ed4f9f88ac696f689e06e6436",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.golden-part:south-east-ramp",
+      "url": "/assets/ssr/candidates/golden-part-eight-01/south-east-ramp.png",
+      "sha256": "d4a5e5f37852ca31ad14d6ee997237624507dfac28e23859d0ca1bd48333164f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.golden-part:east-fixed",
+      "url": "/assets/ssr/candidates/golden-part-eight-01/east-fixed.png",
+      "sha256": "77ce115791de80b02ded276ed4df158a78c9616bf999117b390fd18499282615",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.golden-part:east-ramp",
+      "url": "/assets/ssr/candidates/golden-part-eight-01/east-ramp.png",
+      "sha256": "243186b1987609109183cc65533edfe59b17318b4fb7ef723cf751a6069f56cc",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.golden-part:north-east-fixed",
+      "url": "/assets/ssr/candidates/golden-part-eight-01/north-east-fixed.png",
+      "sha256": "edc794159fcb42e0ce03aa3935ad5a91dbb44f1179eeb94702134af5458c6381",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.golden-part:north-east-ramp",
+      "url": "/assets/ssr/candidates/golden-part-eight-01/north-east-ramp.png",
+      "sha256": "059a54ed6e80d8ebb15e066d8be46f096f3def8fd16c66ad64a0913d5e49f2b0",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.golden-part:north-fixed",
+      "url": "/assets/ssr/candidates/golden-part-eight-01/north-fixed.png",
+      "sha256": "663e24793cbc4dc61334e221749b61933cf97bb1682f8e7d967055fb554ccbb5",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.golden-part:north-ramp",
+      "url": "/assets/ssr/candidates/golden-part-eight-01/north-ramp.png",
+      "sha256": "be72367bea0409e7cdb216c05b83ac681b1bae88c5615fd6b8acd795e405ef5e",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "hairFront.golden-part:south-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "hairFront.golden-part:south-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "1": {
+      "action": "idle",
+      "direction": "south-west",
+      "intervalMs": 1000,
+      "mirrorOf": 7
+    },
+    "2": {
+      "action": "idle",
+      "direction": "west",
+      "intervalMs": 1000,
+      "mirrorOf": 6
+    },
+    "3": {
+      "action": "idle",
+      "direction": "north-west",
+      "intervalMs": 1000,
+      "mirrorOf": 5
+    },
+    "4": {
+      "action": "idle",
+      "direction": "north",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "hairFront.golden-part:north-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "hairFront.golden-part:north-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 64,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "5": {
+      "action": "idle",
+      "direction": "north-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "hairFront.golden-part:north-east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "hairFront.golden-part:north-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "6": {
+      "action": "idle",
+      "direction": "east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "hairFront.golden-part:east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "hairFront.golden-part:east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "7": {
+      "action": "idle",
+      "direction": "south-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "hairFront.golden-part:south-east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "hairFront.golden-part:south-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 65,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Approved Golden Apprentice FRONT reused byte-identically; four remaining views in one original owned-reference inpaint. Left views mirrored per Hair Layer Standard v1. Staged visual review only. Published for gameplay by user request 2026-10-11; original image bytes retained."
+}

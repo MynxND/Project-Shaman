@@ -744,3 +744,8 @@ are in design/bosses/calon-arang/mechanics-v2.md. No new artwork was generated.
 
 ### 2026-10-16 — Distinct cooperative boss counters (v3, provisional balance)
 User confirmed 3–5 players should be viable with up to10 supported, and ImageGen without local GPU. Shuten uses sake/body/head bait; Maiyarap coordinates waking anchors and dream scouts; Koschei opens nested vessels to cancel their sourced attacks. Budget never decreases on departure; late additions raise it while retaining HP percentage. Motion/VFX artwork and human difficulty acceptance remain unfinished.
+
+
+## Eight-class head fitting adoption — user2026-10-17
+
+User authorized the preview attachment system in gameplay for8 existing classes and confirmed the supplied Miko preset offsets may initialize all8. Miko sword stays. Existing owned art only; no new generation or credits. Additional imported calibration stays local, head appearance keeps existing server synchronization. Other combat/map changes are separate.

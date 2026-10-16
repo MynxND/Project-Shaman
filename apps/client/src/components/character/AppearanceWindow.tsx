@@ -1,4 +1,5 @@
 'use client';
+import { AutoHeadPresetPanel } from './AutoHeadPresetPanel';
 import { useEffect, useRef, useState } from 'react';
 import { EXPRESSIONS, HAIR_COLORS, HAIRSTYLES, hairTint, type ExpressionId, type HeadAppearance } from '@shaman/shared';
 import { Button, IconButton, Window } from '@/components/ui-kit';
@@ -100,6 +101,7 @@ export function AppearanceWindow() {
         </div>
         <div className="ap-controls">
           <a href="/characters/create">เปิดหน้าสร้างตัวละคร</a>
+          <AutoHeadPresetPanel />
           {pick('ทรงผม', styles, head.hair, (hair) => setHead({ hair }))}
           {pick('สีผม', HAIR_COLORS, head.hairColor, (hairColor) => setHead({ hairColor }), swatch)}
           {pick('หน้าเริ่มต้น', ssrOn ? faces.filter((e) => e.id !== 'closed') : faces, head.face, (face) => setHead({ face }))}

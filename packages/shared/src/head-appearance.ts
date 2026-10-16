@@ -7,6 +7,13 @@ export const HAIRSTYLES = [
   { id: 'side-sweep', th: 'ปัดข้าง' },
   { id: 'spiky-up', th: 'สั้นตั้ง' },
   { id: 'high-topknot', th: 'มวยสูง' },
+  { id: 'golden-part', th: 'แสกข้างยาว' },
+  { id: 'kid-clean', th: 'แสกกลางสั้น' },
+  { id: 'face-fit-short', th: 'หน้าม้าปัดเต็ม' },
+  { id: 'eye-veil', th: 'หน้าม้าปิดตาบางส่วน' },
+  { id: 'korean-wolf', th: 'แสกกลางเกาหลี Wolf Cut · ปลายเงิน' },
+  { id: 'swept-spikes', th: 'ผมตั้งปัดหลัง' },
+  { id: 'curtain-gold', th: 'แสกกลางกรอบหน้า' },
 ] as const;
 export type HairstyleId = (typeof HAIRSTYLES)[number]['id'];
 
@@ -31,6 +38,9 @@ export const EXPRESSIONS = [
   { id: 'sad', th: 'เศร้า' },
   { id: 'surprised', th: 'ตกใจ' },
   { id: 'closed', th: 'หลับตา' },
+  { id: 'violet-sharp', th: 'หน้าคม · ตาสีม่วง' },
+  { id: 'teal-soft', th: 'หน้าละมุน · ตาฟ้าอมเขียว' },
+  { id: 'cold-detached', th: 'เย็นชา · เบื่อโลก' },
 ] as const;
 export type ExpressionId = (typeof EXPRESSIONS)[number]['id'];
 

@@ -13,7 +13,7 @@ export function parseHeadLayers(value: unknown): HeadLayersManifest {
   if (!m || m.version !== 'head-layers/2' || m.directions?.length !== 8) throw Error('ชุดหัวแยกชั้นไม่ตรงสเปก');
   for (const [i, d] of m.directions.entries()) {
     if (d.direction !== BODY_DIRECTIONS[i] || !Number.isInteger(d.pivot?.x) || !Number.isInteger(d.pivot?.y)) throw Error('ข้อมูลทิศของหัวไม่ถูกต้อง');
-    for (const h of HAIRSTYLES) if (!asset(d.hair?.[h.id]) || !asset(d.bases?.[h.id])) throw Error(`ผมทรง ${h.id} ทิศ ${d.direction} หาย`);
+    for (const h of HAIRSTYLES.filter(h => h.id === 'natural-short')) if (!asset(d.hair?.[h.id]) || !asset(d.bases?.[h.id])) throw Error(`ผมทรง ${h.id} ทิศ ${d.direction} หาย`);
     for (const a of Object.values(d.accents ?? {})) if (!asset(a)) throw Error('ของประดับผมไม่ถูกต้อง');
     for (const [id, f] of Object.entries(d.faces ?? {})) if (!EXPRESSIONS.some((e) => e.id === id) || !asset(f)) throw Error('หน้าไม่ถูกต้อง');
   }

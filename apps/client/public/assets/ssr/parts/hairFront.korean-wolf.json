@@ -1,0 +1,244 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.korean-wolf",
+  "kind": "hairFront",
+  "variant": "korean-wolf-eight-candidate",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": false,
+  "images": [
+    {
+      "id": "hairFront.korean-wolf:south-fixed",
+      "url": "/assets/ssr/candidates/korean-wolf-eight-01/south-fixed.png",
+      "sha256": "9d05f3028bf9386aa72f37aff963b3777a3f51e18fa44b1e009462568778b741",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.korean-wolf:south-ramp",
+      "url": "/assets/ssr/candidates/korean-wolf-eight-01/south-ramp.png",
+      "sha256": "44284512c26214357a79a43e2355b60429e1f026272f31efcb2e1818a71c6de0",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.korean-wolf:south-east-fixed",
+      "url": "/assets/ssr/candidates/korean-wolf-eight-01/south-east-fixed.png",
+      "sha256": "3b9893d12310df2533f84abe9b645731b431d479e063553fb1f110ce35194b7a",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.korean-wolf:south-east-ramp",
+      "url": "/assets/ssr/candidates/korean-wolf-eight-01/south-east-ramp.png",
+      "sha256": "7d9cee32121ee262d6f2623a03e3f6d305e5cc3855635a1c5f02d152ef956282",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.korean-wolf:east-fixed",
+      "url": "/assets/ssr/candidates/korean-wolf-eight-01/east-fixed.png",
+      "sha256": "fac539e6279133d04aced3a27209299b74638f2d8d77c8afef5b9d3c23605f4e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.korean-wolf:east-ramp",
+      "url": "/assets/ssr/candidates/korean-wolf-eight-01/east-ramp.png",
+      "sha256": "39699a21796ed6af3ab4a6c66c0399d761ff2bcb46b48582e06b18758c784dae",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.korean-wolf:north-east-fixed",
+      "url": "/assets/ssr/candidates/korean-wolf-eight-01/north-east-fixed.png",
+      "sha256": "986a083f1ce271dbff6b6d33b79bf1522a443c5e766421b9551eea7ffe15735c",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.korean-wolf:north-east-ramp",
+      "url": "/assets/ssr/candidates/korean-wolf-eight-01/north-east-ramp.png",
+      "sha256": "f0300ae19ad57bfa7956b19c1f9ec6ac9df4318d5bb53b9c860541b8af777674",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.korean-wolf:north-fixed",
+      "url": "/assets/ssr/candidates/korean-wolf-eight-01/north-fixed.png",
+      "sha256": "3c4732d77233974dae3cb272711ef926cadb030d689f49e9b483a3e9e48430ac",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.korean-wolf:north-ramp",
+      "url": "/assets/ssr/candidates/korean-wolf-eight-01/north-ramp.png",
+      "sha256": "76aca0981b92ee0e8cfe117d555127a6f4a7e53e9a270ef2b7c45e79bcfe16fc",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "hairFront.korean-wolf:south-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "hairFront.korean-wolf:south-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "1": {
+      "action": "idle",
+      "direction": "south-west",
+      "intervalMs": 1000,
+      "mirrorOf": 7
+    },
+    "2": {
+      "action": "idle",
+      "direction": "west",
+      "intervalMs": 1000,
+      "mirrorOf": 6
+    },
+    "3": {
+      "action": "idle",
+      "direction": "north-west",
+      "intervalMs": 1000,
+      "mirrorOf": 5
+    },
+    "4": {
+      "action": "idle",
+      "direction": "north",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "hairFront.korean-wolf:north-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "hairFront.korean-wolf:north-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 64,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "5": {
+      "action": "idle",
+      "direction": "north-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "hairFront.korean-wolf:north-east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "hairFront.korean-wolf:north-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "6": {
+      "action": "idle",
+      "direction": "east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "hairFront.korean-wolf:east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "hairFront.korean-wolf:east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "7": {
+      "action": "idle",
+      "direction": "south-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "hairFront.korean-wolf:south-east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "hairFront.korean-wolf:south-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 65,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Approved Korean Wolf Long FRONT reused byte-identically; four remaining views in one original owned-reference inpaint. Left views mirrored per Hair Layer Standard v1. Staged visual review only. Published for gameplay by user request 2026-10-11; original image bytes retained."
+}

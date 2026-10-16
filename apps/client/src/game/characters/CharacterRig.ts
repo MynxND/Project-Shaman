@@ -74,6 +74,7 @@ function ensureAnimations(scene: Phaser.Scene, manifest: RigManifest) {
 export class CharacterSprite extends Phaser.GameObjects.Sprite {
   private look: Look = {};
   private lookText = '';
+  private autoHeadBranch = '';
   private layers: EquipmentLayers;
   private modular: ModularManifest | undefined;
   private modularAction: RigAction | null = null;
@@ -132,7 +133,7 @@ export class CharacterSprite extends Phaser.GameObjects.Sprite {
   setAppearance(appearance: CharacterAppearance) {
     const scale = this.v3 ? this.scaleX / V3_SIZE_RATIO : this.scaleX;
     this.appearance = appearance;
-    this.v3?.destroy(); this.v3 = this.makeV3(); this.setScale(scale);
+    this.v3?.destroy(); this.v3 = this.makeV3();this.autoHeadBranch=''; this.setScale(scale);
     return this.redraw();
   }
 
@@ -143,6 +144,7 @@ export class CharacterSprite extends Phaser.GameObjects.Sprite {
     return this;
   }
 
+  setAutoHeadBranch(branch: string) { const effective=this.look.body?'':branch;if(effective===this.autoHeadBranch)return this;this.autoHeadBranch=effective;this.v3?.setAutomaticBranch(effective);return this.redraw(); }
   setLook(text: string) {
     if (text === this.lookText) return this;
     this.lookText = text; this.look = decodeLook(text);
@@ -179,7 +181,7 @@ export class CharacterSprite extends Phaser.GameObjects.Sprite {
 
   syncLayers() {
     // V3: weapons ride the hand anchors (v3-weapon.ts); headgear stays off (the SSR head has no crown point yet).
-    if (this.v3) { this.layers.sync(this, { weapon: this.look.weapon }, this.facing, v3WeaponFrame(this.scene, this.texture.key, this.weaponMode()), 128); this.v3.sync(this, this.facing); return; }
+    if (this.v3) { this.v3.sync(this,this.facing);if(this.v3.automaticActive()){this.layers.sync(this,{},this.facing,undefined,128);return;}this.layers.sync(this, { weapon: this.look.weapon }, this.facing, v3WeaponFrame(this.scene, this.texture.key, this.weaponMode()), 128); return; }
     const action = this.castFrame !== null ? 'cast' : this.modularAction;
     const facing = this.castFrame !== null ? this.castFacing : this.facing;
     const frame = this.previewFrame ?? this.castFrame ?? Math.max(0, (this.anims.currentFrame?.index ?? 1) - 1);

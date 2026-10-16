@@ -1,3 +1,4 @@
+import { AutoHeadActor,preloadAutoHeads } from './AutoHeadActor';
 import Phaser from 'phaser';
 import { DEFAULT_HEAD, hairTint, WALK_CYCLE_UNITS, WALK_SPEED, type ExpressionId, type Facing, type HeadAppearance } from '@shaman/shared';
 import { parseHeadLayers, type HeadLayersManifest } from './head-layers-model';
@@ -28,6 +29,7 @@ const BLINK_MS = 130, BLINK_EVERY_MS = 3800;
 
 export function preloadV3(scene: Phaser.Scene) {
   preloadSsr(scene);
+  preloadAutoHeads(scene);
   scene.load.once(`filecomplete-json-${BODY_KEY}`, (_k: string, _t: string, raw: unknown) => {
     for (const f of parseBodyEight(raw, 'body-eight-02').frames) { scene.load.image(idleKey(f.direction as Facing), f.url); scene.load.image(headKey(f.direction as Facing), f.headUrl); }
   });
@@ -82,7 +84,11 @@ export class V3Puppet {
   private attackStyle: AttackStyle = 'palm';
   /** Keris: the next attack plays the right (a) or left (b) stab half. */
   private nextHalf: 'a' | 'b' = 'a';
+  private automatic: AutoHeadActor;
+  setAutomaticBranch(branch: string) { this.automatic.setBranch(branch); }
+  automaticActive() { return this.automatic.active; }
   constructor(scene: Phaser.Scene, private assets: V3Assets) {
+    this.automatic = new AutoHeadActor(scene,assets.ssr);
     this.ssr = assets.ssr ? new SsrHead(scene, assets.ssr) : null;
     this.head = scene.add.image(0, 0, headKey('south')).setVisible(false);
     this.face = scene.add.image(0, 0, headKey('south')).setVisible(false);
@@ -127,6 +133,7 @@ export class V3Puppet {
   /** Shows walk / attack or the idle rotation. */
   show(sprite: Phaser.GameObjects.Sprite, facing: Facing, motion: 'walk' | 'attack' | null) {
     this.castFrame = null;
+    this.automatic.setMotion(motion);
     const still = this.still(facing);
     const played: Motion | null = motion === 'attack' ? this.attackMotion() : motion;
     if (played && this.dirOf(played, facing)) {
@@ -142,6 +149,7 @@ export class V3Puppet {
 
   /** Server-timed cast pose; false when there is no V3 cast frame for it. */
   showCast(sprite: Phaser.GameObjects.Sprite, facing: Facing, frame: number) {
+    this.automatic.setMotion('cast');
     const d = this.dirOf('cast', facing);
     if (!d) return false;
     const i = Math.max(0, Math.min(d.frames.length - 1, frame)), still = this.still(facing);
@@ -152,6 +160,8 @@ export class V3Puppet {
 
   /** Places the head at the current frame's neck pivot. */
   sync(sprite: Phaser.GameObjects.Sprite, facing: Facing) {
+    if (this.automatic.draw(sprite,facing,{...this.look,face:this.expression(sprite.scene.time.now)})) { this.ssr?.hide();this.head.setVisible(false);this.face.setVisible(false);this.hair.setVisible(false);this.accent.setVisible(false);return; }
+    if(sprite.texture.key.startsWith('auto-actor:'))this.show(sprite,facing,this.automatic.walking?'walk':null);
     if (this.castFrame) facing = this.castFrame.facing;
     const still = this.still(facing);
     let neck = still.neckPivot, action: 'idle' | Motion = 'idle', frame = 0, weaponAction = false;
@@ -202,5 +212,5 @@ export class V3Puppet {
   }
   /** True when this head is drawn by the SSR composer. */
   usesSsr() { return !!this.ssr?.supports(this.look.hair); }
-  destroy() { this.ssr?.destroy(); this.head.destroy(); this.face.destroy(); this.hair.destroy(); this.accent.destroy(); }
+  destroy() { this.automatic.destroy();this.ssr?.destroy(); this.head.destroy(); this.face.destroy(); this.hair.destroy(); this.accent.destroy(); }
 }

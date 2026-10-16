@@ -1,0 +1,244 @@
+{
+  "version": "ssr/1",
+  "id": "hairFront.face-fit-short",
+  "kind": "hairFront",
+  "variant": "face-fit-short-eight-candidate",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "asymmetric": false,
+  "images": [
+    {
+      "id": "hairFront.face-fit-short:south-fixed",
+      "url": "/assets/ssr/candidates/face-fit-short-eight-02/south-fixed.png",
+      "sha256": "73fdc782d3ee025b85ab3f29e6cd43f79fba52e016f9738db605473537fdecc9",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.face-fit-short:south-ramp",
+      "url": "/assets/ssr/candidates/face-fit-short-eight-02/south-ramp.png",
+      "sha256": "3e3a4b18c15b65650d25bf91c90b799eb6cb76fe25bd00364523174328abf367",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.face-fit-short:south-east-fixed",
+      "url": "/assets/ssr/candidates/face-fit-short-eight-02/south-east-fixed.png",
+      "sha256": "4227843d9dd03f9f1886a69181fe8040e91c7ae177f1eb4ae8a2a13697033d5a",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.face-fit-short:south-east-ramp",
+      "url": "/assets/ssr/candidates/face-fit-short-eight-02/south-east-ramp.png",
+      "sha256": "5b3f37ad15bb5d055e0a7038d059093a4fab7489c35991caab9e4966624e485f",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.face-fit-short:east-fixed",
+      "url": "/assets/ssr/candidates/face-fit-short-eight-02/east-fixed.png",
+      "sha256": "715221693337ab5887a8e524bbe28415384c49e95f0ecfcfdf9f725478dd19e6",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.face-fit-short:east-ramp",
+      "url": "/assets/ssr/candidates/face-fit-short-eight-02/east-ramp.png",
+      "sha256": "f64b29d9ef344d315574f077c5795785ab7220d7ada241bf5b54dee9ad5ac837",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.face-fit-short:north-east-fixed",
+      "url": "/assets/ssr/candidates/face-fit-short-eight-02/north-east-fixed.png",
+      "sha256": "4a0dd9f4dc643cd1d3c9773d83df0303a98669271a74d06ffd2e888d3c7679f1",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.face-fit-short:north-east-ramp",
+      "url": "/assets/ssr/candidates/face-fit-short-eight-02/north-east-ramp.png",
+      "sha256": "b126296eefddb1b8734a090cb5ad802d6a92059c27f8abc400138c2353e8dfe8",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.face-fit-short:north-fixed",
+      "url": "/assets/ssr/candidates/face-fit-short-eight-02/north-fixed.png",
+      "sha256": "d8ac86c15e8239e998a5342ae112cb7e5d15c4003f0070ef6a76388f03e8e69b",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "hairFront.face-fit-short:north-ramp",
+      "url": "/assets/ssr/candidates/face-fit-short-eight-02/north-ramp.png",
+      "sha256": "0ecda38dc30908ee59f98159228c5f7ef0f170b7585eb3018dd489a5e70c1e65",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "clips": {
+    "0": {
+      "action": "idle",
+      "direction": "south",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "hairFront.face-fit-short:south-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "hairFront.face-fit-short:south-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 62,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "1": {
+      "action": "idle",
+      "direction": "south-west",
+      "intervalMs": 1000,
+      "mirrorOf": 7
+    },
+    "2": {
+      "action": "idle",
+      "direction": "west",
+      "intervalMs": 1000,
+      "mirrorOf": 6
+    },
+    "3": {
+      "action": "idle",
+      "direction": "north-west",
+      "intervalMs": 1000,
+      "mirrorOf": 5
+    },
+    "4": {
+      "action": "idle",
+      "direction": "north",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "hairFront.face-fit-short:north-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "hairFront.face-fit-short:north-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 64,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "5": {
+      "action": "idle",
+      "direction": "north-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "hairFront.face-fit-short:north-east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "hairFront.face-fit-short:north-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "6": {
+      "action": "idle",
+      "direction": "east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "hairFront.face-fit-short:east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "hairFront.face-fit-short:east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 63,
+              "y": 49
+            }
+          }
+        }
+      ]
+    },
+    "7": {
+      "action": "idle",
+      "direction": "south-east",
+      "intervalMs": 1000,
+      "frames": [
+        {
+          "layers": [
+            {
+              "image": "hairFront.face-fit-short:south-east-fixed",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image": "hairFront.face-fit-short:south-east-ramp",
+              "x": 0,
+              "y": 0,
+              "palette": "hair"
+            }
+          ],
+          "anchors": {
+            "neck": {
+              "x": 65,
+              "y": 49
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source": "Approved Face Fit Short FRONT reused byte-identically; four remaining views in one original owned-reference inpaint. Left views mirrored per Hair Layer Standard v1. Staged visual review only. Published for gameplay by user request 2026-10-11; original image bytes retained."
+}

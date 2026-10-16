@@ -692,3 +692,8 @@ See design/bosses/calon-arang/mechanics-v2.md for contracts and validation limit
 
 ### Boss motion / party identity v3 — 2026-10-16 (in progress)
 Three existing encounters now use a shared 3–10 party budget with upward-only late-join adjustment preserving HP percentage. Koschei relic-source cancellation, Maiyarap awake/dream anchors and Shuten physical sake bait remain server authoritative. See docs/design/bosses/motion-identity-v3/README.md for acceptance and unresolved motion assets. The new motion clock is not yet adopted by actor renderers.
+
+
+## Live automatic head composition — 2026-10-17
+
+Eight authorized class branches select lazy native walk atlases and actor-local160px canvas composition in the actual player update. SSR hairstyle/face/palette synchronization remains authoritative; per-machine imported calibration is cosmetic only. Defaults use the supplied Miko preset across8 classes. Existing attack/cast and female/legacy paths remain. See design/equipment/auto-head-game-2026-10-17/README.md.

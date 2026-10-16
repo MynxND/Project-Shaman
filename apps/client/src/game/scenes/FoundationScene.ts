@@ -503,6 +503,7 @@ export class FoundationScene extends Phaser.Scene {
       const { sprite, label, shadow, light } = view;
       sprite.setLook(player.look);
       sprite.setHead(player.head, player.emote);
+      sprite.setAutoHeadBranch(player.branch);
       if (id === room.sessionId && this.movement) {
         // Client-side prediction: move by real frame time with the same rules as the server, so the
         // local character is smooth at any refresh rate instead of stepping with 50ms patches.
