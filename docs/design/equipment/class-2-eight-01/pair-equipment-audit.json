@@ -1,0 +1,1139 @@
+{
+  "scope": "16 static offline candidate placements using real equipment renderer. SVG rasterization differs from Phaser; no novice hand overlay, motion or runtime certification.",
+  "results": {
+    "achan": {
+      "south": {
+        "headOffset": {
+          "x": 0,
+          "y": -1
+        },
+        "bodySha256": "381ed6a0410c80ad19a405f60025ad86ae2a8d8dbce41e15b271c5bc3a75e9fd",
+        "hands": [
+          {
+            "name": "weapon",
+            "sourceAnchor": [
+              41.5,
+              80
+            ],
+            "candidatePixel": [
+              223,
+              147,
+              115,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          },
+          {
+            "name": "other",
+            "sourceAnchor": [
+              82.5,
+              76.8
+            ],
+            "candidatePixel": [
+              223,
+              147,
+              115,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          }
+        ],
+        "gear": [
+          {
+            "texture": "gear:staff-achan:south",
+            "origin": [
+              0.375,
+              0.62
+            ],
+            "position": [
+              107,
+              111
+            ],
+            "rotation": 0,
+            "scale": [
+              0.75,
+              0.75
+            ],
+            "depth": 144.04,
+            "artSha256": "e24e547628d0b5d2d3a853562dcfb3463a8bfc848882d22a844794614ae4a0aa"
+          }
+        ],
+        "visualApproved": false,
+        "runtimeCompatible": false
+      },
+      "south-east": {
+        "headOffset": {
+          "x": -3,
+          "y": -1
+        },
+        "bodySha256": "d2df31ae7f57246293bf96889f7bc346c7a6aaf059516680e66c8d1c5a21215a",
+        "hands": [
+          {
+            "name": "weapon",
+            "sourceAnchor": [
+              74.3,
+              66.3
+            ],
+            "candidatePixel": [
+              230,
+              162,
+              127,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          },
+          {
+            "name": "other",
+            "sourceAnchor": [
+              50.5,
+              82.3
+            ],
+            "candidatePixel": [
+              207,
+              129,
+              101,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          }
+        ],
+        "gear": [
+          {
+            "texture": "gear:staff-achan:south-east",
+            "origin": [
+              0.563,
+              0.62
+            ],
+            "position": [
+              137.8,
+              95.3
+            ],
+            "rotation": 0.35,
+            "scale": [
+              0.7875000000000001,
+              0.7875000000000001
+            ],
+            "depth": 143.96,
+            "artSha256": "93ea1064fefebf5d231c9d641c71716342e1d1e97cf62f249c8078908e2cc5bd"
+          }
+        ],
+        "visualApproved": false,
+        "runtimeCompatible": false
+      },
+      "east": {
+        "headOffset": {
+          "x": -4,
+          "y": -1
+        },
+        "bodySha256": "4d2f07841e95a4062dc6144872b9104a04b3e1e63c945a561c395977fef26c13",
+        "hands": [
+          {
+            "name": "weapon",
+            "sourceAnchor": [
+              60.8,
+              81.8
+            ],
+            "candidatePixel": [
+              207,
+              129,
+              101,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          },
+          {
+            "name": "other",
+            "sourceAnchor": [
+              55,
+              66.4
+            ],
+            "candidatePixel": [
+              69,
+              30,
+              25,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          }
+        ],
+        "gear": [
+          {
+            "texture": "gear:staff-achan:east",
+            "origin": [
+              0.667,
+              0.62
+            ],
+            "position": [
+              125.3,
+              111.8
+            ],
+            "rotation": 0,
+            "scale": [
+              0.7875000000000001,
+              0.7875000000000001
+            ],
+            "depth": 144.04,
+            "artSha256": "ba5151d42d750485d5cdf54faba80f71c6af024f76e844eb494a5028d3d58a17"
+          }
+        ],
+        "visualApproved": false,
+        "runtimeCompatible": false
+      },
+      "north-east": {
+        "headOffset": {
+          "x": -1,
+          "y": -1
+        },
+        "bodySha256": "bf30371d2c24316ab491c63df34441ed94edac51dd373b521738d3ba4b0ce156",
+        "hands": [
+          {
+            "name": "weapon",
+            "sourceAnchor": [
+              73,
+              80.5
+            ],
+            "candidatePixel": [
+              32,
+              31,
+              34,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          },
+          {
+            "name": "other",
+            "sourceAnchor": [
+              47,
+              75.6
+            ],
+            "candidatePixel": [
+              4,
+              4,
+              5,
+              0
+            ],
+            "candidateOpaqueAtSourceAnchor": false,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          }
+        ],
+        "gear": [
+          {
+            "texture": "gear:staff-achan:north-east",
+            "origin": [
+              0.64,
+              0.62
+            ],
+            "position": [
+              137.5,
+              111.5
+            ],
+            "rotation": 0,
+            "scale": [
+              0.7875000000000001,
+              0.7875000000000001
+            ],
+            "depth": 144.04,
+            "artSha256": "617cba8327bf425ee23cfdfc22dfceece6a7860d8cec9d4a927f3f26c03e45ac"
+          }
+        ],
+        "visualApproved": false,
+        "runtimeCompatible": false
+      },
+      "north": {
+        "headOffset": {
+          "x": -2,
+          "y": -1
+        },
+        "bodySha256": "c6215b1c85b80c89c52c6067fae17b3385eef868a429cd7ed7a0eac23887ff6a",
+        "hands": [
+          {
+            "name": "weapon",
+            "sourceAnchor": [
+              83.5,
+              77.5
+            ],
+            "candidatePixel": [
+              46,
+              23,
+              20,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          },
+          {
+            "name": "other",
+            "sourceAnchor": [
+              46.9,
+              76.3
+            ],
+            "candidatePixel": [
+              98,
+              54,
+              45,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          }
+        ],
+        "gear": [
+          {
+            "texture": "gear:staff-achan:north",
+            "origin": [
+              0.614,
+              0.62
+            ],
+            "position": [
+              148,
+              108.5
+            ],
+            "rotation": 0,
+            "scale": [
+              0.7875000000000001,
+              0.7875000000000001
+            ],
+            "depth": 144.04,
+            "artSha256": "a6cac822222d887a95bd262d633dcffec62ee33a3e12082705201aaba4e41397"
+          }
+        ],
+        "visualApproved": false,
+        "runtimeCompatible": false
+      },
+      "north-west": {
+        "headOffset": {
+          "x": -2,
+          "y": -1
+        },
+        "bodySha256": "c0587a6a5f3fbf32177df99b163ca891319d576d60f92a4ad7c374c831239576",
+        "hands": [
+          {
+            "name": "weapon",
+            "sourceAnchor": [
+              49.5,
+              81.5
+            ],
+            "candidatePixel": [
+              230,
+              156,
+              122,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          },
+          {
+            "name": "other",
+            "sourceAnchor": [
+              77.5,
+              75.8
+            ],
+            "candidatePixel": [
+              4,
+              4,
+              5,
+              0
+            ],
+            "candidateOpaqueAtSourceAnchor": false,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          }
+        ],
+        "gear": [
+          {
+            "texture": "gear:staff-achan:north-west",
+            "origin": [
+              0.433,
+              0.62
+            ],
+            "position": [
+              115,
+              112.5
+            ],
+            "rotation": 0,
+            "scale": [
+              0.7875000000000001,
+              0.7875000000000001
+            ],
+            "depth": 144.04,
+            "artSha256": "6426d07a3619c7a12d6ed0f8c11ab60d7c054407ac2fa21bd212a56c549e4d5b"
+          }
+        ],
+        "visualApproved": false,
+        "runtimeCompatible": false
+      },
+      "west": {
+        "headOffset": {
+          "x": 0,
+          "y": -1
+        },
+        "bodySha256": "9dc05b8c6e5850f02750eacf3e0efcf535f17174f26be21b727c943891a85545",
+        "hands": [
+          {
+            "name": "weapon",
+            "sourceAnchor": [
+              64.5,
+              81.5
+            ],
+            "candidatePixel": [
+              245,
+              181,
+              141,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          },
+          {
+            "name": "other",
+            "sourceAnchor": [
+              65.4,
+              63.8
+            ],
+            "candidatePixel": [
+              230,
+              162,
+              127,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          }
+        ],
+        "gear": [
+          {
+            "texture": "gear:staff-achan:west",
+            "origin": [
+              0.326,
+              0.62
+            ],
+            "position": [
+              131,
+              111.5
+            ],
+            "rotation": 0,
+            "scale": [
+              0.7875000000000001,
+              0.7875000000000001
+            ],
+            "depth": 144.04,
+            "artSha256": "1ae460db88ef0e346997c31686abc03ee843242389f31705caff1f6fe5f47e07"
+          }
+        ],
+        "visualApproved": false,
+        "runtimeCompatible": false
+      },
+      "south-west": {
+        "headOffset": {
+          "x": -1,
+          "y": -1
+        },
+        "bodySha256": "ada50681452c1f325b5c224effec8dcbff124ff646d312f75106313902c1162e",
+        "hands": [
+          {
+            "name": "weapon",
+            "sourceAnchor": [
+              51,
+              63.8
+            ],
+            "candidatePixel": [
+              230,
+              162,
+              127,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          },
+          {
+            "name": "other",
+            "sourceAnchor": [
+              73.9,
+              81.8
+            ],
+            "candidatePixel": [
+              192,
+              116,
+              92,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          }
+        ],
+        "gear": [
+          {
+            "texture": "gear:staff-achan:south-west",
+            "origin": [
+              0.385,
+              0.62
+            ],
+            "position": [
+              117.5,
+              92.8
+            ],
+            "rotation": -0.35,
+            "scale": [
+              0.7875000000000001,
+              0.7875000000000001
+            ],
+            "depth": 143.96,
+            "artSha256": "39f4c248f0ed956717d40a03b4c444c72f9142c7c41ef320d3d1592f18b4f674"
+          }
+        ],
+        "visualApproved": false,
+        "runtimeCompatible": false
+      }
+    },
+    "juggernaut": {
+      "south": {
+        "headOffset": {
+          "direction": "south",
+          "x": 1,
+          "y": 4
+        },
+        "bodySha256": "f1630eb37aadcb31a9217392904c7b930607a8b232fa8aa85996989e2f4a33d3",
+        "hands": [
+          {
+            "name": "weapon",
+            "sourceAnchor": [
+              41.5,
+              80
+            ],
+            "candidatePixel": [
+              223,
+              147,
+              115,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          },
+          {
+            "name": "other",
+            "sourceAnchor": [
+              82.5,
+              76.8
+            ],
+            "candidatePixel": [
+              223,
+              147,
+              115,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          }
+        ],
+        "gear": [
+          {
+            "texture": "gear:axe-juggernaut:south",
+            "origin": [
+              0.629,
+              0.8
+            ],
+            "position": [
+              107,
+              111
+            ],
+            "rotation": 0,
+            "scale": [
+              0.7,
+              0.7
+            ],
+            "depth": 144.04,
+            "offlineOutwardOverride": true,
+            "artSha256": "a5e4576c7e825540775f19c99dcd6369c4be6d03a4362d7b5092b77e3dd32b83"
+          },
+          {
+            "texture": "gear:shield-juggernaut:south",
+            "origin": [
+              0.5,
+              0.5
+            ],
+            "position": [
+              148,
+              107.8
+            ],
+            "rotation": 0,
+            "scale": [
+              0.65,
+              0.65
+            ],
+            "depth": 144.04,
+            "artSha256": "b85d6efa60ffb594ddf24b4cfe55482e583621874c44bc187c1ef4af2b042130"
+          }
+        ],
+        "visualApproved": false,
+        "runtimeCompatible": false
+      },
+      "south-east": {
+        "headOffset": {
+          "direction": "south-east",
+          "x": -1,
+          "y": 3
+        },
+        "bodySha256": "e186790663bd4cd4d85ae6c104ce0d54b9135c2c8af95bfc3fe8fee5e335c6cc",
+        "hands": [
+          {
+            "name": "weapon",
+            "sourceAnchor": [
+              74.3,
+              66.3
+            ],
+            "candidatePixel": [
+              45,
+              35,
+              33,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          },
+          {
+            "name": "other",
+            "sourceAnchor": [
+              50.5,
+              82.3
+            ],
+            "candidatePixel": [
+              247,
+              203,
+              173,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          }
+        ],
+        "gear": [
+          {
+            "texture": "gear:axe-juggernaut:south-east",
+            "origin": [
+              0.48,
+              0.8
+            ],
+            "position": [
+              137.8,
+              95.3
+            ],
+            "rotation": 0.45,
+            "scale": [
+              0.84,
+              0.84
+            ],
+            "depth": 143.96,
+            "artSha256": "507b0bf6a81ad88c4aeb2b3cd997a8679228ea57c36e5e37ec8245449639e098"
+          },
+          {
+            "texture": "gear:shield-juggernaut:south-east",
+            "origin": [
+              0.5,
+              0.5
+            ],
+            "position": [
+              114,
+              111.3
+            ],
+            "rotation": 0,
+            "scale": [
+              0.7474999999999999,
+              0.7474999999999999
+            ],
+            "depth": 144.04,
+            "artSha256": "2911a7bbdec0e0533216fc4298f7b234ebc220c92caa50f02670e752d959f8f2"
+          }
+        ],
+        "visualApproved": false,
+        "runtimeCompatible": false
+      },
+      "east": {
+        "headOffset": {
+          "direction": "east",
+          "x": 2,
+          "y": 4
+        },
+        "bodySha256": "7d3f88b90f23db6934040218aca2a36828cc2ac3be4c498d5a16e1a51ed3ffee",
+        "hands": [
+          {
+            "name": "weapon",
+            "sourceAnchor": [
+              60.8,
+              81.8
+            ],
+            "candidatePixel": [
+              247,
+              203,
+              173,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          },
+          {
+            "name": "other",
+            "sourceAnchor": [
+              55,
+              66.4
+            ],
+            "candidatePixel": [
+              125,
+              127,
+              131,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          }
+        ],
+        "gear": [
+          {
+            "texture": "gear:axe-juggernaut:south-east",
+            "origin": [
+              0.48,
+              0.8
+            ],
+            "position": [
+              125.3,
+              111.8
+            ],
+            "rotation": 0.29999999999999993,
+            "scale": [
+              0.84,
+              0.84
+            ],
+            "depth": 144.04,
+            "artSha256": "507b0bf6a81ad88c4aeb2b3cd997a8679228ea57c36e5e37ec8245449639e098"
+          },
+          {
+            "texture": "gear:shield-juggernaut:south-east",
+            "origin": [
+              0.5,
+              0.5
+            ],
+            "position": [
+              119.5,
+              96.4
+            ],
+            "rotation": -0.25,
+            "scale": [
+              0.7474999999999999,
+              0.7474999999999999
+            ],
+            "depth": 143.96,
+            "artSha256": "2911a7bbdec0e0533216fc4298f7b234ebc220c92caa50f02670e752d959f8f2"
+          }
+        ],
+        "visualApproved": false,
+        "runtimeCompatible": false
+      },
+      "north-east": {
+        "headOffset": {
+          "direction": "north-east",
+          "x": 0,
+          "y": 1
+        },
+        "bodySha256": "28028ac66dc85971b26762162426daee3c8ae6f615ff215fa2e62d61fd3eecac",
+        "hands": [
+          {
+            "name": "weapon",
+            "sourceAnchor": [
+              73,
+              80.5
+            ],
+            "candidatePixel": [
+              32,
+              21,
+              19,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          },
+          {
+            "name": "other",
+            "sourceAnchor": [
+              47,
+              75.6
+            ],
+            "candidatePixel": [
+              59,
+              47,
+              43,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          }
+        ],
+        "gear": [
+          {
+            "texture": "gear:axe-juggernaut:north-east",
+            "origin": [
+              0.536,
+              0.8
+            ],
+            "position": [
+              137.5,
+              111.5
+            ],
+            "rotation": 0.29999999999999993,
+            "scale": [
+              0.84,
+              0.84
+            ],
+            "depth": 144.04,
+            "artSha256": "970ca013978394284711fe5e9c48230dbd072aa18107a1c5f77b1a4423d3033b"
+          },
+          {
+            "texture": "gear:shield-juggernaut:north-east",
+            "origin": [
+              0.5,
+              0.5
+            ],
+            "position": [
+              111.5,
+              106.6
+            ],
+            "rotation": 0,
+            "scale": [
+              0.7474999999999999,
+              0.7474999999999999
+            ],
+            "depth": 143.96,
+            "artSha256": "30ffc5b431cff125c5ab4e1d22f1e2b473a6bccaee26a3a6308310215dbd5e42"
+          }
+        ],
+        "visualApproved": false,
+        "runtimeCompatible": false
+      },
+      "north": {
+        "headOffset": {
+          "direction": "north",
+          "x": -1,
+          "y": 2
+        },
+        "bodySha256": "2dbfbebb8385888580870bc372715c9f4f15b9e4cab7f0c524fd2ba3e5cccdac",
+        "hands": [
+          {
+            "name": "weapon",
+            "sourceAnchor": [
+              83.5,
+              77.5
+            ],
+            "candidatePixel": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "candidateOpaqueAtSourceAnchor": false,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          },
+          {
+            "name": "other",
+            "sourceAnchor": [
+              46.9,
+              76.3
+            ],
+            "candidatePixel": [
+              202,
+              127,
+              104,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          }
+        ],
+        "gear": [
+          {
+            "texture": "gear:axe-juggernaut:north",
+            "origin": [
+              0.611,
+              0.8
+            ],
+            "position": [
+              148,
+              108.5
+            ],
+            "rotation": 0.25,
+            "scale": [
+              0.84,
+              0.84
+            ],
+            "depth": 144.04,
+            "artSha256": "df330ee0394d79b692bfd64a8fa1fc2623eb305dce8e50c6a35af8382627d124"
+          },
+          {
+            "texture": "gear:shield-juggernaut:north",
+            "origin": [
+              0.5,
+              0.5
+            ],
+            "position": [
+              111.4,
+              107.3
+            ],
+            "rotation": 0,
+            "scale": [
+              0.7474999999999999,
+              0.7474999999999999
+            ],
+            "depth": 144.04,
+            "artSha256": "d3a69f6f046f9c6b4939c67e5bd899529bfce303e66f460b6bfccf8747edf001"
+          }
+        ],
+        "visualApproved": false,
+        "runtimeCompatible": false
+      },
+      "north-west": {
+        "headOffset": {
+          "direction": "north-west",
+          "x": -2,
+          "y": 1
+        },
+        "bodySha256": "e7a903a2c3bd198f201fa671db3bcd315f7d9c5381891028da608394cbea566d",
+        "hands": [
+          {
+            "name": "weapon",
+            "sourceAnchor": [
+              49.5,
+              81.5
+            ],
+            "candidatePixel": [
+              127,
+              118,
+              107,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          },
+          {
+            "name": "other",
+            "sourceAnchor": [
+              77.5,
+              75.8
+            ],
+            "candidatePixel": [
+              80,
+              65,
+              58,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          }
+        ],
+        "gear": [
+          {
+            "texture": "gear:axe-juggernaut:north-west",
+            "origin": [
+              0.577,
+              0.8
+            ],
+            "position": [
+              115,
+              112.5
+            ],
+            "rotation": -0.29999999999999993,
+            "scale": [
+              0.84,
+              0.84
+            ],
+            "depth": 144.04,
+            "artSha256": "8cc11608fedf8764126ad6d4476545341cc0c8168ec5a418da0e7b583fde34cc"
+          },
+          {
+            "texture": "gear:shield-juggernaut:north-west",
+            "origin": [
+              0.5,
+              0.5
+            ],
+            "position": [
+              143,
+              106.8
+            ],
+            "rotation": 0,
+            "scale": [
+              0.7474999999999999,
+              0.7474999999999999
+            ],
+            "depth": 143.96,
+            "artSha256": "3ccfe3e7efa15b4635fc127551d49bdee4baa7b6b6351056c43d9d8a040c6009"
+          }
+        ],
+        "visualApproved": false,
+        "runtimeCompatible": false
+      },
+      "west": {
+        "headOffset": {
+          "direction": "west",
+          "x": -4,
+          "y": 4
+        },
+        "bodySha256": "c3d85dcfca2f53d1bcfa0829704455c02bd314308eac873a100c0b23062e2017",
+        "hands": [
+          {
+            "name": "weapon",
+            "sourceAnchor": [
+              64.5,
+              81.5
+            ],
+            "candidatePixel": [
+              211,
+              143,
+              114,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          },
+          {
+            "name": "other",
+            "sourceAnchor": [
+              65.4,
+              63.8
+            ],
+            "candidatePixel": [
+              130,
+              104,
+              88,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          }
+        ],
+        "gear": [
+          {
+            "texture": "gear:axe-juggernaut:south-west",
+            "origin": [
+              0.419,
+              0.8
+            ],
+            "position": [
+              131,
+              111.5
+            ],
+            "rotation": -0.29999999999999993,
+            "scale": [
+              0.84,
+              0.84
+            ],
+            "depth": 144.04,
+            "artSha256": "2d5ed0ff992f3bef55215ee1bb45476094c1a8f53c03f2dc2904d30311c9030a"
+          },
+          {
+            "texture": "gear:shield-juggernaut:south-west",
+            "origin": [
+              0.5,
+              0.5
+            ],
+            "position": [
+              131.9,
+              93.8
+            ],
+            "rotation": 0.25,
+            "scale": [
+              0.7474999999999999,
+              0.7474999999999999
+            ],
+            "depth": 143.96,
+            "artSha256": "ce05b14e5e1f938ff4f9c328995ffe403c309c19550b9d4b23120951f4999c9e"
+          }
+        ],
+        "visualApproved": false,
+        "runtimeCompatible": false
+      },
+      "south-west": {
+        "headOffset": {
+          "direction": "south-west",
+          "x": -1,
+          "y": 4
+        },
+        "bodySha256": "900c8086da59a3c5cba4cb43b09d7d96973adbe590dcd945ee8262b6159a4176",
+        "hands": [
+          {
+            "name": "weapon",
+            "sourceAnchor": [
+              51,
+              63.8
+            ],
+            "candidatePixel": [
+              32,
+              21,
+              19,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          },
+          {
+            "name": "other",
+            "sourceAnchor": [
+              73.9,
+              81.8
+            ],
+            "candidatePixel": [
+              223,
+              147,
+              115,
+              255
+            ],
+            "candidateOpaqueAtSourceAnchor": true,
+            "note": "Opaque is not hand/grip alignment; visually review generated fist versus source anchor"
+          }
+        ],
+        "gear": [
+          {
+            "texture": "gear:axe-juggernaut:south-west",
+            "origin": [
+              0.419,
+              0.8
+            ],
+            "position": [
+              117.5,
+              92.8
+            ],
+            "rotation": -0.45,
+            "scale": [
+              0.84,
+              0.84
+            ],
+            "depth": 143.96,
+            "artSha256": "2d5ed0ff992f3bef55215ee1bb45476094c1a8f53c03f2dc2904d30311c9030a"
+          },
+          {
+            "texture": "gear:shield-juggernaut:south-west",
+            "origin": [
+              0.5,
+              0.5
+            ],
+            "position": [
+              140.4,
+              110.8
+            ],
+            "rotation": 0,
+            "scale": [
+              0.7474999999999999,
+              0.7474999999999999
+            ],
+            "depth": 144.04,
+            "artSha256": "ce05b14e5e1f938ff4f9c328995ffe403c309c19550b9d4b23120951f4999c9e"
+          }
+        ],
+        "visualApproved": false,
+        "runtimeCompatible": false
+      }
+    }
+  },
+  "paidGenerations": 0
+}

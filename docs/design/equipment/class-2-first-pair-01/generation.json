@@ -1,0 +1,30 @@
+{
+  "source": "apps/client/public/assets/character-v3/body-eight-02/south.png",
+  "scope": "Male SOUTH static first pair only. No retries, no other directions, no runtime integration.",
+  "prompts": {
+    "achan": "Edit ONLY clothing of this exact headless male SOUTH idle pixel sprite. Preserve its headless neck opening, anatomy, skin, exposed hands, stance, foot positions and 128x128 canvas exactly. Do not add a head or hair. Premium original Thai occult fantasy class-two Achan Saiyasat ceremonial teacher outfit: ivory cotton high-collar three-quarter-sleeve tunic with slim indigo trousers, restrained aged bronze trim, one diagonal ivory sash and long split front cloth ending above ankles, tightly bound dark waist sash, three tiny bronze rolled amulets and a flat ritual pouch. Main ivory #D8CBA7, dark indigo #273743, bronze #A88A51. Calm narrow shoulders and vertical silhouette, distinguished craftsmanship, crisp material clusters, clean selective dark contours, upper-left light consistent with input. Bare hands remain visible ready to hold existing staff; NO weapon, no hat, no head, no sacred writing, no letters, no magic effects, no background, no anatomy redesign. Same native pixel scale and compact proportions. This is an isolated outfit concept, not a new character.",
+    "juggernaut": "Edit ONLY clothing of this exact headless male SOUTH idle pixel sprite. Preserve its headless neck opening, anatomy, skin, exposed hands, stance, foot positions and 128x128 canvas exactly. Do not add a head or hair. Premium original Russia/Taiga fantasy class-two Juggernaut Volkhv fortress outfit: muted blue steel small lamellar plates over thick woven tunic, low compact leather shoulder guards with short grey fur collar, dark leather fitted belt, split armored skirt ending above knees, strong greaves and weathered boots aligned to existing feet. Main blue steel #465563, dark leather #3A302C, grey fur #A6A296, earthy crimson #874844 only belt/trim. Broad square COSTUME silhouette without enlarging the underlying anatomy, exposed elbows and wrists for one-hand axe and shield, one tiny original carved wolf pendant, no giant wolf-head shoulder. Clearly layered fastening and matte steel wear, crisp selective contours, upper-left light consistent with input. NO weapon, no shield, no head, no hair, no hat, no runic letters, no text, no glow, no background. Same native pixel scale and compact male base."
+  },
+  "receipts": {
+    "achan": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: e76263ef-577a-4a68-943a-0cd05328ab08\njob_id: e76263ef-577a-4a68-943a-0cd05328ab08\nmode: text\nframes: 1\nsize: 128x128px\ntransparent: True\nedit: Edit ONLY clothing of this exact headless male SOUTH idle pixel sprite. Preserve its headless neck opening, anatomy, skin, exposed hands, stance, foot positions and 128x128 canvas exactly. Do not add a head or hair. Premium original Thai occult fantasy class-two Achan Saiyasat ceremonial teacher outfit: ivory cotton high-collar three-quarter-sleeve tunic with slim indigo trousers, restrained aged bronze trim, one diagonal ivory sash and long split front cloth ending above ankles, tightly bound dark waist sash, three tiny bronze rolled amulets and a flat ritual pouch. Main ivory #D8CBA7, dark indigo #273743, bronze #A88A51. Calm narrow shoulders and vertical silhouette, distinguished craftsmanship, crisp material clusters, clean selective dark contours, upper-left light consistent with input. Bare hands remain visible ready to hold existing staff; NO weapon, no hat, no head, no sacred writing, no letters, no magic effects, no background, no anatomy redesign. Same native pixel scale and compact proportions. This is an isolated outfit concept, not a new character.\nseed: 2101\nasset_id: f2aed0f7-fc4f-51eb-af5b-10592fe0ce7e\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~30-90s)\n\nhint: get_image(job_id=\"e76263ef-577a-4a68-943a-0cd05328ab08\")"
+        }
+      ],
+      "isError": false
+    },
+    "juggernaut": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: 8f170d27-cee3-48f7-9a8c-226bf627bfb1\njob_id: 8f170d27-cee3-48f7-9a8c-226bf627bfb1\nmode: text\nframes: 1\nsize: 128x128px\ntransparent: True\nedit: Edit ONLY clothing of this exact headless male SOUTH idle pixel sprite. Preserve its headless neck opening, anatomy, skin, exposed hands, stance, foot positions and 128x128 canvas exactly. Do not add a head or hair. Premium original Russia/Taiga fantasy class-two Juggernaut Volkhv fortress outfit: muted blue steel small lamellar plates over thick woven tunic, low compact leather shoulder guards with short grey fur collar, dark leather fitted belt, split armored skirt ending above knees, strong greaves and weathered boots aligned to existing feet. Main blue steel #465563, dark leather #3A302C, grey fur #A6A296, earthy crimson #874844 only belt/trim. Broad square COSTUME silhouette without enlarging the underlying anatomy, exposed elbows and wrists for one-hand axe and shield, one tiny original carved wolf pendant, no giant wolf-head shoulder. Clearly layered fastening and matte steel wear, crisp selective contours, upper-left light consistent with input. NO weapon, no shield, no head, no hair, no hat, no runic letters, no text, no glow, no background. Same native pixel scale and compact male base.\nseed: 2102\nasset_id: 4d19be4a-c33c-538e-8e9f-9e60255dcb6a\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~30-90s)\n\nhint: get_image(job_id=\"8f170d27-cee3-48f7-9a8c-226bf627bfb1\")"
+        }
+      ],
+      "isError": false
+    }
+  },
+  "visualApproved": false,
+  "runtimeCompatible": false
+}

@@ -1,0 +1,391 @@
+{
+  "purpose": "Production motion for Thailand/Russia; user authorized 2026-10-13; no test jobs or automatic paid retries",
+  "creditCap": 144,
+  "openingBalance": 151,
+  "jobs": [
+    {
+      "id": "achan",
+      "action": "walk",
+      "direction": "south",
+      "path": "docs/design/equipment/class-2-production-01/achan/walk/south-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "walk",
+      "direction": "south",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/walk/south-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "walk",
+      "direction": "south-east",
+      "path": "docs/design/equipment/class-2-production-01/achan/walk/south-east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "walk",
+      "direction": "south-east",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/walk/south-east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "walk",
+      "direction": "east",
+      "path": "docs/design/equipment/class-2-production-01/achan/walk/east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "walk",
+      "direction": "east",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/walk/east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "walk",
+      "direction": "north-east",
+      "path": "docs/design/equipment/class-2-production-01/achan/walk/north-east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "walk",
+      "direction": "north-east",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/walk/north-east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "walk",
+      "direction": "north",
+      "path": "docs/design/equipment/class-2-production-01/achan/walk/north-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "walk",
+      "direction": "north",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/walk/north-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "walk",
+      "direction": "north-west",
+      "path": "docs/design/equipment/class-2-production-01/achan/walk/north-west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "walk",
+      "direction": "north-west",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/walk/north-west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "walk",
+      "direction": "west",
+      "path": "docs/design/equipment/class-2-production-01/achan/walk/west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "walk",
+      "direction": "west",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/walk/west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "walk",
+      "direction": "south-west",
+      "path": "docs/design/equipment/class-2-production-01/achan/walk/south-west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "walk",
+      "direction": "south-west",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/walk/south-west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "attack",
+      "direction": "south",
+      "path": "docs/design/equipment/class-2-production-01/achan/attack/south-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "attack",
+      "direction": "south",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/attack/south-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "attack",
+      "direction": "south-east",
+      "path": "docs/design/equipment/class-2-production-01/achan/attack/south-east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "attack",
+      "direction": "south-east",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/attack/south-east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "attack",
+      "direction": "east",
+      "path": "docs/design/equipment/class-2-production-01/achan/attack/east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "attack",
+      "direction": "east",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/attack/east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "attack",
+      "direction": "north-east",
+      "path": "docs/design/equipment/class-2-production-01/achan/attack/north-east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "attack",
+      "direction": "north-east",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/attack/north-east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "attack",
+      "direction": "north",
+      "path": "docs/design/equipment/class-2-production-01/achan/attack/north-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "attack",
+      "direction": "north",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/attack/north-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "attack",
+      "direction": "north-west",
+      "path": "docs/design/equipment/class-2-production-01/achan/attack/north-west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "attack",
+      "direction": "north-west",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/attack/north-west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "attack",
+      "direction": "west",
+      "path": "docs/design/equipment/class-2-production-01/achan/attack/west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "attack",
+      "direction": "west",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/attack/west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "attack",
+      "direction": "south-west",
+      "path": "docs/design/equipment/class-2-production-01/achan/attack/south-west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "attack",
+      "direction": "south-west",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/attack/south-west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "cast",
+      "direction": "south",
+      "path": "docs/design/equipment/class-2-production-01/achan/cast/south-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "cast",
+      "direction": "south",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/cast/south-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "cast",
+      "direction": "south-east",
+      "path": "docs/design/equipment/class-2-production-01/achan/cast/south-east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "cast",
+      "direction": "south-east",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/cast/south-east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "cast",
+      "direction": "east",
+      "path": "docs/design/equipment/class-2-production-01/achan/cast/east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "cast",
+      "direction": "east",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/cast/east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "cast",
+      "direction": "north-east",
+      "path": "docs/design/equipment/class-2-production-01/achan/cast/north-east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "cast",
+      "direction": "north-east",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/cast/north-east-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "cast",
+      "direction": "north",
+      "path": "docs/design/equipment/class-2-production-01/achan/cast/north-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "cast",
+      "direction": "north",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/cast/north-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "cast",
+      "direction": "north-west",
+      "path": "docs/design/equipment/class-2-production-01/achan/cast/north-west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "cast",
+      "direction": "north-west",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/cast/north-west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "cast",
+      "direction": "west",
+      "path": "docs/design/equipment/class-2-production-01/achan/cast/west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "cast",
+      "direction": "west",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/cast/west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "achan",
+      "action": "cast",
+      "direction": "south-west",
+      "path": "docs/design/equipment/class-2-production-01/achan/cast/south-west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    },
+    {
+      "id": "juggernaut",
+      "action": "cast",
+      "direction": "south-west",
+      "path": "docs/design/equipment/class-2-production-01/juggernaut/cast/south-west-request.json",
+      "estimatedGenerations": 3,
+      "frames": 8
+    }
+  ]
+}

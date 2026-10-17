@@ -1,0 +1,35 @@
+{
+  "scope": "male first pair SOUTH-EAST static proof only",
+  "source": "apps/client/public/assets/character-v3/body-eight-02/south-east.png",
+  "balanceBefore": 195,
+  "maxAttempts": 2,
+  "noAutomaticRetries": true,
+  "visualApproved": false,
+  "runtimeCompatible": false,
+  "prompts": {
+    "achan": {
+      "prompt": "Transfer only the reference costume onto the input SOUTH-EAST facing male headless body. Preserve exact input idle pose, anatomy proportions, hand locations, neck attachment, boot grounding, canvas and crisp pixel art. Do not rotate the input to face front. No head, hair, weapon, shield, background, glow or extra limbs. Thai occult Achan: shirtless chest and arms with dense dark fictional protective tattoos, fang amulet necklace, black wrapped lower cloth. Reference is SOUTH costume identity only; reconstruct its side surfaces in SOUTH-EAST perspective. Transparent 128x128.",
+      "submission": {
+        "content": [
+          {
+            "type": "text",
+            "text": "id: 50843014-0bd9-4d33-9342-7423eb507915\njob_id: 50843014-0bd9-4d33-9342-7423eb507915\nmode: reference\nframes: 1\nsize: 128x128px\ntransparent: True\nedit: Transfer only the reference costume onto the input SOUTH-EAST facing male headless body. Preserve exact input idle pose, anatomy proportions, hand locations, neck attachment, boot grounding, canvas and crisp pixel art. Do not rotate the input to face front. No head, hair, weapon, shield, background, glow or extra limbs. Thai occult Achan: shirtless chest and arms with dense dark fictional protective tattoos, fang amulet necklace, black wrapped lower cloth. Reference is SOUTH costume identity only; reconstruct its side surfaces in SOUTH-EAST perspective. Transparent 128x128.\nseed: 2401\nasset_id: c9efc060-2ca0-59dd-8e15-7ddf682d048a\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~30-90s)\n\nhint: get_image(job_id=\"50843014-0bd9-4d33-9342-7423eb507915\")"
+          }
+        ],
+        "isError": false
+      }
+    },
+    "juggernaut": {
+      "prompt": "Transfer only the reference costume onto the input SOUTH-EAST facing male headless body. Preserve exact input idle pose, anatomy proportions, hand locations, neck attachment, boot grounding, canvas and crisp pixel art. Do not rotate the input to face front. No head, hair, weapon, shield, background, glow or extra limbs. Russian ominous powerful war shaman: asymmetric heavy dark fur mantle, bone fang amulets, dark blue steel armor, crimson ritual waist cloth; compact greaves and boots matching input ground line. Reference is SOUTH costume identity only; reconstruct its side surfaces in SOUTH-EAST perspective. Transparent 128x128.",
+      "submission": {
+        "content": [
+          {
+            "type": "text",
+            "text": "id: 234ad7cf-cb13-4583-97ce-cb0e41fb8c2a\njob_id: 234ad7cf-cb13-4583-97ce-cb0e41fb8c2a\nmode: reference\nframes: 1\nsize: 128x128px\ntransparent: True\nedit: Transfer only the reference costume onto the input SOUTH-EAST facing male headless body. Preserve exact input idle pose, anatomy proportions, hand locations, neck attachment, boot grounding, canvas and crisp pixel art. Do not rotate the input to face front. No head, hair, weapon, shield, background, glow or extra limbs. Russian ominous powerful war shaman: asymmetric heavy dark fur mantle, bone fang amulets, dark blue steel armor, crimson ritual waist cloth; compact greaves and boots matching input ground line. Reference is SOUTH costume identity only; reconstruct its side surfaces in SOUTH-EAST perspective. Transparent 128x128.\nseed: 2402\nasset_id: fb51ba4b-5c63-5717-9bbd-09e283b4d61d\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~30-90s)\n\nhint: get_image(job_id=\"234ad7cf-cb13-4583-97ce-cb0e41fb8c2a\")"
+          }
+        ],
+        "isError": false
+      }
+    }
+  }
+}

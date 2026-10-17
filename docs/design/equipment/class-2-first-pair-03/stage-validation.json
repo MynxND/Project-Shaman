@@ -1,0 +1,157 @@
+{
+  "scope": "Offline male SOUTH static candidates only; not a production manifest or runtime certification",
+  "staticChecksPassed": true,
+  "checks": [
+    "body repair bounds/contact/ground/source hash",
+    "head source hash",
+    "axe source hash/dimensions/exact reflection",
+    "mirrored axe grip origin/scale/hand pin",
+    "audit candidate hashes"
+  ],
+  "candidateAxeSha256": "a5e4576c7e825540775f19c99dcd6369c4be6d03a4362d7b5092b77e3dd32b83",
+  "coverage": {
+    "achan-saiyasat": {
+      "south": {
+        "idle": "one static candidate",
+        "walk": "missing",
+        "attack": "missing",
+        "cast": "missing",
+        "hurt": "unsupported by current V3",
+        "death": "unsupported by current V3"
+      },
+      "south-east": {
+        "idle": "missing",
+        "walk": "missing",
+        "attack": "missing",
+        "cast": "missing",
+        "hurt": "unsupported by current V3",
+        "death": "unsupported by current V3"
+      },
+      "east": {
+        "idle": "missing",
+        "walk": "missing",
+        "attack": "missing",
+        "cast": "missing",
+        "hurt": "unsupported by current V3",
+        "death": "unsupported by current V3"
+      },
+      "north-east": {
+        "idle": "missing",
+        "walk": "missing",
+        "attack": "missing",
+        "cast": "missing",
+        "hurt": "unsupported by current V3",
+        "death": "unsupported by current V3"
+      },
+      "north": {
+        "idle": "missing",
+        "walk": "missing",
+        "attack": "missing",
+        "cast": "missing",
+        "hurt": "unsupported by current V3",
+        "death": "unsupported by current V3"
+      },
+      "north-west": {
+        "idle": "missing",
+        "walk": "missing",
+        "attack": "missing",
+        "cast": "missing",
+        "hurt": "unsupported by current V3",
+        "death": "unsupported by current V3"
+      },
+      "west": {
+        "idle": "missing",
+        "walk": "missing",
+        "attack": "missing",
+        "cast": "missing",
+        "hurt": "unsupported by current V3",
+        "death": "unsupported by current V3"
+      },
+      "south-west": {
+        "idle": "missing",
+        "walk": "missing",
+        "attack": "missing",
+        "cast": "missing",
+        "hurt": "unsupported by current V3",
+        "death": "unsupported by current V3"
+      }
+    },
+    "juggernaut": {
+      "south": {
+        "idle": "one static candidate",
+        "walk": "missing",
+        "attack": "missing",
+        "cast": "missing",
+        "hurt": "unsupported by current V3",
+        "death": "unsupported by current V3"
+      },
+      "south-east": {
+        "idle": "missing",
+        "walk": "missing",
+        "attack": "missing",
+        "cast": "missing",
+        "hurt": "unsupported by current V3",
+        "death": "unsupported by current V3"
+      },
+      "east": {
+        "idle": "missing",
+        "walk": "missing",
+        "attack": "missing",
+        "cast": "missing",
+        "hurt": "unsupported by current V3",
+        "death": "unsupported by current V3"
+      },
+      "north-east": {
+        "idle": "missing",
+        "walk": "missing",
+        "attack": "missing",
+        "cast": "missing",
+        "hurt": "unsupported by current V3",
+        "death": "unsupported by current V3"
+      },
+      "north": {
+        "idle": "missing",
+        "walk": "missing",
+        "attack": "missing",
+        "cast": "missing",
+        "hurt": "unsupported by current V3",
+        "death": "unsupported by current V3"
+      },
+      "north-west": {
+        "idle": "missing",
+        "walk": "missing",
+        "attack": "missing",
+        "cast": "missing",
+        "hurt": "unsupported by current V3",
+        "death": "unsupported by current V3"
+      },
+      "west": {
+        "idle": "missing",
+        "walk": "missing",
+        "attack": "missing",
+        "cast": "missing",
+        "hurt": "unsupported by current V3",
+        "death": "unsupported by current V3"
+      },
+      "south-west": {
+        "idle": "missing",
+        "walk": "missing",
+        "attack": "missing",
+        "cast": "missing",
+        "hurt": "unsupported by current V3",
+        "death": "unsupported by current V3"
+      }
+    }
+  },
+  "unresolved": [
+    "visual acceptance of repaired costume geometry",
+    "candidate-specific fingers-over-shaft overlays",
+    "complete neck/skin protection masks",
+    "outfit architecture and appearance policy approval",
+    "live Phaser/SSR review",
+    "seven remaining static directions",
+    "supported action clips"
+  ],
+  "runtimeCompatible": false,
+  "paidGenerationsThisStep": 0
+}

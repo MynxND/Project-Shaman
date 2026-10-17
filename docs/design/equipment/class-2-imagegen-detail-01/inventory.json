@@ -1,0 +1,2742 @@
+{
+  "pixelLabCredits": 0,
+  "scope": "User requested all six male motions to match exact idle detail; 8-frame directional edits",
+  "jobs": [
+    {
+      "id": "santet",
+      "action": "walk",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/south-idle-reference.png",
+      "referenceSha256": "6f4d6446bcdfa843a09be850f95c545df2381fb96efb8cb74fdd14afd9b0070f",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-south-raw.png",
+      "status": "generated",
+      "outputSha256": "77f6571920a53bd7ca0ad95fababac5a2dc4a7ef06bef71efe1027af0b0b4cc0",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-south-raw.png",
+      "rawSha256": "77f6571920a53bd7ca0ad95fababac5a2dc4a7ef06bef71efe1027af0b0b4cc0"
+    },
+    {
+      "id": "santet",
+      "action": "attack",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/south-idle-reference.png",
+      "referenceSha256": "6f4d6446bcdfa843a09be850f95c545df2381fb96efb8cb74fdd14afd9b0070f",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-south-raw.png",
+      "status": "generated",
+      "outputSha256": "b674315472ab163caa566a4871079287cc5c9aa338245c3d4196755b222ba4c7",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-south-raw.png",
+      "rawSha256": "b674315472ab163caa566a4871079287cc5c9aa338245c3d4196755b222ba4c7"
+    },
+    {
+      "id": "santet",
+      "action": "cast",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/south-idle-reference.png",
+      "referenceSha256": "6f4d6446bcdfa843a09be850f95c545df2381fb96efb8cb74fdd14afd9b0070f",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-south-raw.png",
+      "status": "generated",
+      "outputSha256": "80f52ceb35f594f929cfb26d76f15a1b743cd600213b7828593300eef9ba3fc4",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-south-raw.png",
+      "rawSha256": "80f52ceb35f594f929cfb26d76f15a1b743cd600213b7828593300eef9ba3fc4"
+    },
+    {
+      "id": "santet",
+      "action": "walk",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/south-east-idle-reference.png",
+      "referenceSha256": "bf090d7815c46066dab916629b80fa720d8e020c038d67a528161765ed1a11c9",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-south-east-raw.png",
+      "status": "generated",
+      "outputSha256": "6856b3646987edd29ac09ebc74d22c0101c97223f23ddb12ac3e4417574ccecc",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-south-east-raw.png",
+      "rawSha256": "6856b3646987edd29ac09ebc74d22c0101c97223f23ddb12ac3e4417574ccecc"
+    },
+    {
+      "id": "santet",
+      "action": "attack",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/south-east-idle-reference.png",
+      "referenceSha256": "bf090d7815c46066dab916629b80fa720d8e020c038d67a528161765ed1a11c9",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-south-east-raw.png",
+      "status": "generated",
+      "outputSha256": "d10947264dc0d0d6b21229acd36da69709c0cccb7cceabe06d42c2e175dd05c0",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-south-east-raw.png",
+      "rawSha256": "d10947264dc0d0d6b21229acd36da69709c0cccb7cceabe06d42c2e175dd05c0"
+    },
+    {
+      "id": "santet",
+      "action": "cast",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/south-east-idle-reference.png",
+      "referenceSha256": "bf090d7815c46066dab916629b80fa720d8e020c038d67a528161765ed1a11c9",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-south-east-raw.png",
+      "status": "generated",
+      "outputSha256": "42acdbf1d11897fe825cb523e6a87e4145cb63017a763c3168fcff9e089a9a06",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-south-east-raw.png",
+      "rawSha256": "42acdbf1d11897fe825cb523e6a87e4145cb63017a763c3168fcff9e089a9a06"
+    },
+    {
+      "id": "santet",
+      "action": "walk",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/east-idle-reference.png",
+      "referenceSha256": "589f7efad1cac3aa6c565366fb59ac1673de34d854fe18c5fa30b6911b8eb8d0",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-east-raw.png",
+      "status": "generated",
+      "outputSha256": "da2bc541a42b2678ec3d63ee436596350d7abd366cb84b8d259eb61cd5ccf750",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-east-raw.png",
+      "rawSha256": "da2bc541a42b2678ec3d63ee436596350d7abd366cb84b8d259eb61cd5ccf750"
+    },
+    {
+      "id": "santet",
+      "action": "attack",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/east-idle-reference.png",
+      "referenceSha256": "589f7efad1cac3aa6c565366fb59ac1673de34d854fe18c5fa30b6911b8eb8d0",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-east-raw.png",
+      "status": "generated",
+      "outputSha256": "ab3e3c5449ef9674e7385f83231bd46ba4f81c9be0eb87796cc9886a0c63ffa6",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-east-raw.png",
+      "rawSha256": "ab3e3c5449ef9674e7385f83231bd46ba4f81c9be0eb87796cc9886a0c63ffa6"
+    },
+    {
+      "id": "santet",
+      "action": "cast",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/east-idle-reference.png",
+      "referenceSha256": "589f7efad1cac3aa6c565366fb59ac1673de34d854fe18c5fa30b6911b8eb8d0",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-east-raw.png",
+      "status": "generated",
+      "outputSha256": "167b10513a4d63715db227136a3ecee317bab49a0246adecfcebe87afe94b7ef",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-east-raw.png",
+      "rawSha256": "167b10513a4d63715db227136a3ecee317bab49a0246adecfcebe87afe94b7ef"
+    },
+    {
+      "id": "santet",
+      "action": "walk",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/north-east-idle-reference.png",
+      "referenceSha256": "b2e4dfb6564d6181e20751222c61935aee7f3935884fd47c03ec7566f08e1366",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-north-east-raw.png",
+      "status": "generated",
+      "outputSha256": "7d50f41f27d3d8108cd09b8d12fd030b5b0186217d86a18c71ddc89692d36c0f",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-north-east-raw.png",
+      "rawSha256": "7d50f41f27d3d8108cd09b8d12fd030b5b0186217d86a18c71ddc89692d36c0f"
+    },
+    {
+      "id": "santet",
+      "action": "attack",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/north-east-idle-reference.png",
+      "referenceSha256": "b2e4dfb6564d6181e20751222c61935aee7f3935884fd47c03ec7566f08e1366",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-north-east-raw.png",
+      "status": "generated",
+      "outputSha256": "7c8fe53343d1544dd395c47072a18cf81c5d1b34ee955684b3160b83565ec5aa",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-north-east-alpha-cleanup.png",
+      "rawSha256": "847a0d4d82903dcccf7b06282ea163a68d47d4743a95c02e9ea9d3dcf9364852"
+    },
+    {
+      "id": "santet",
+      "action": "cast",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/north-east-idle-reference.png",
+      "referenceSha256": "b2e4dfb6564d6181e20751222c61935aee7f3935884fd47c03ec7566f08e1366",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-north-east-raw.png",
+      "status": "generated",
+      "outputSha256": "5d0488775aaeeca8fdcaf9010582ef76d710f510e161335e0a7cece18123b417",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-north-east-raw.png",
+      "rawSha256": "5d0488775aaeeca8fdcaf9010582ef76d710f510e161335e0a7cece18123b417"
+    },
+    {
+      "id": "santet",
+      "action": "walk",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/north-idle-reference.png",
+      "referenceSha256": "23ce4ec899c8fbda7015af3bd482dca35f822dd3f06095bc252327203668ba94",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-north-raw.png",
+      "status": "generated",
+      "outputSha256": "63e7a5c7c93c1da34748fab3e1cb49ba9a871f1d9b256ce5f7ace9c6d69235c3",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-north-raw.png",
+      "rawSha256": "63e7a5c7c93c1da34748fab3e1cb49ba9a871f1d9b256ce5f7ace9c6d69235c3"
+    },
+    {
+      "id": "santet",
+      "action": "attack",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/north-idle-reference.png",
+      "referenceSha256": "23ce4ec899c8fbda7015af3bd482dca35f822dd3f06095bc252327203668ba94",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-north-raw.png",
+      "status": "generated",
+      "outputSha256": "97dc54a4364e91e6d883d7868adcecccc6fccde5e713ae024b446712335c0179",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-north-raw.png",
+      "rawSha256": "97dc54a4364e91e6d883d7868adcecccc6fccde5e713ae024b446712335c0179"
+    },
+    {
+      "id": "santet",
+      "action": "cast",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/north-idle-reference.png",
+      "referenceSha256": "23ce4ec899c8fbda7015af3bd482dca35f822dd3f06095bc252327203668ba94",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-north-raw.png",
+      "status": "generated",
+      "outputSha256": "a35512a86780353c0977fb00000404f2b99286163943f7a819ad38796be9c566",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-north-raw.png",
+      "rawSha256": "a35512a86780353c0977fb00000404f2b99286163943f7a819ad38796be9c566"
+    },
+    {
+      "id": "santet",
+      "action": "walk",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/north-west-idle-reference.png",
+      "referenceSha256": "72d15097607cf8c5f4b6556bc9cd1f6d605fcbad50d3c60f35ef52a02d0db63c",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-north-west-raw.png",
+      "status": "generated",
+      "outputSha256": "2938a4d42b8a59d389d210ec3b2b725fe2dda50905c2e999d5e4ce23cb446a28",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-north-west-raw.png",
+      "rawSha256": "2938a4d42b8a59d389d210ec3b2b725fe2dda50905c2e999d5e4ce23cb446a28"
+    },
+    {
+      "id": "santet",
+      "action": "attack",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/north-west-idle-reference.png",
+      "referenceSha256": "72d15097607cf8c5f4b6556bc9cd1f6d605fcbad50d3c60f35ef52a02d0db63c",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-north-west-raw.png",
+      "status": "generated",
+      "outputSha256": "885a3ed7ecd913c30829c781537d20bf3e42b6045a4a6bbdec7ce0dce7bfeda1",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-north-west-raw.png",
+      "rawSha256": "885a3ed7ecd913c30829c781537d20bf3e42b6045a4a6bbdec7ce0dce7bfeda1"
+    },
+    {
+      "id": "santet",
+      "action": "cast",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/north-west-idle-reference.png",
+      "referenceSha256": "72d15097607cf8c5f4b6556bc9cd1f6d605fcbad50d3c60f35ef52a02d0db63c",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-north-west-raw.png",
+      "status": "generated",
+      "outputSha256": "92b39cf5eb076c59749063421ee358e666333901acb182dfefa90597e1b94924",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-north-west-raw.png",
+      "rawSha256": "92b39cf5eb076c59749063421ee358e666333901acb182dfefa90597e1b94924"
+    },
+    {
+      "id": "santet",
+      "action": "walk",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/west-idle-reference.png",
+      "referenceSha256": "52cddeec1ee2e7dd3a62fa2077ab02c65aa42d0a57cb93024407b383c26f4ade",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-west-raw.png",
+      "status": "generated",
+      "outputSha256": "245ab64469f8c92407b4931bfd73fdbb01ea83cf5703a9c44f8c93c8878f0a9c",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-west-raw.png",
+      "rawSha256": "245ab64469f8c92407b4931bfd73fdbb01ea83cf5703a9c44f8c93c8878f0a9c"
+    },
+    {
+      "id": "santet",
+      "action": "attack",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/west-idle-reference.png",
+      "referenceSha256": "52cddeec1ee2e7dd3a62fa2077ab02c65aa42d0a57cb93024407b383c26f4ade",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-west-raw.png",
+      "status": "generated",
+      "outputSha256": "080d2f56050a85e72b02c2015088e8f933d63dfb2404bfe9b9a63293c933c448",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-west-raw.png",
+      "rawSha256": "080d2f56050a85e72b02c2015088e8f933d63dfb2404bfe9b9a63293c933c448"
+    },
+    {
+      "id": "santet",
+      "action": "cast",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/west-idle-reference.png",
+      "referenceSha256": "52cddeec1ee2e7dd3a62fa2077ab02c65aa42d0a57cb93024407b383c26f4ade",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-west-raw.png",
+      "status": "generated",
+      "outputSha256": "559a54c37ddde64e6b88213080be74587d984ef4fb66fb24aafb57103e209fb7",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-west-raw.png",
+      "rawSha256": "559a54c37ddde64e6b88213080be74587d984ef4fb66fb24aafb57103e209fb7"
+    },
+    {
+      "id": "santet",
+      "action": "walk",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/south-west-idle-reference.png",
+      "referenceSha256": "d7e06b6cebd31c05ff3a74728b7136227a38c6d4a5bbbdb581da8cbc505f966d",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-south-west-raw.png",
+      "status": "generated",
+      "outputSha256": "97edd56ef7cbe88fc3c56ffbb018e4ed325d594287eb4b3ddb30649bc2a499c5",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/walk-south-west-raw.png",
+      "rawSha256": "97edd56ef7cbe88fc3c56ffbb018e4ed325d594287eb4b3ddb30649bc2a499c5"
+    },
+    {
+      "id": "santet",
+      "action": "attack",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/south-west-idle-reference.png",
+      "referenceSha256": "d7e06b6cebd31c05ff3a74728b7136227a38c6d4a5bbbdb581da8cbc505f966d",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-south-west-raw.png",
+      "status": "generated",
+      "outputSha256": "3067f2443cb47e05b83a62293edf257bec21de9096cce87680b9087517647772",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/attack-south-west-raw.png",
+      "rawSha256": "3067f2443cb47e05b83a62293edf257bec21de9096cce87680b9087517647772"
+    },
+    {
+      "id": "santet",
+      "action": "cast",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/santet/south-west-idle-reference.png",
+      "referenceSha256": "d7e06b6cebd31c05ff3a74728b7136227a38c6d4a5bbbdb581da8cbc505f966d",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png",
+      "idleSourceSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-south-west-raw.png",
+      "status": "generated",
+      "outputSha256": "fafc2506e0348d7bf0f1182690895dc9d09f11bf329c3eddd51d6e2f59a4c59d",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/santet/cast-south-west-raw.png",
+      "rawSha256": "fafc2506e0348d7bf0f1182690895dc9d09f11bf329c3eddd51d6e2f59a4c59d"
+    },
+    {
+      "id": "keris",
+      "action": "walk",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/south-idle-reference.png",
+      "referenceSha256": "ab5b24a07f65134042df0bebff75b82c1c8dccb13fbb1806579451a922e169f4",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-south-raw.png",
+      "status": "generated",
+      "outputSha256": "fe1f0d3feb842279938c2454cbb329be6f3fc4d4397679b5e217313914d67247",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-south-raw.png",
+      "rawSha256": "fe1f0d3feb842279938c2454cbb329be6f3fc4d4397679b5e217313914d67247"
+    },
+    {
+      "id": "keris",
+      "action": "attack",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/south-idle-reference.png",
+      "referenceSha256": "ab5b24a07f65134042df0bebff75b82c1c8dccb13fbb1806579451a922e169f4",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-south-raw.png",
+      "status": "generated",
+      "outputSha256": "70a0c14dfe15288057246834a05e2e83248f06061ca89d48f73a21e7e6306257",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-south-raw.png",
+      "rawSha256": "70a0c14dfe15288057246834a05e2e83248f06061ca89d48f73a21e7e6306257"
+    },
+    {
+      "id": "keris",
+      "action": "cast",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/south-idle-reference.png",
+      "referenceSha256": "ab5b24a07f65134042df0bebff75b82c1c8dccb13fbb1806579451a922e169f4",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-south-raw.png",
+      "status": "generated",
+      "outputSha256": "891ba74c18b2f058607866dfd16f450aaafd9ac621d091afeb8cff2da2703063",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-south-raw.png",
+      "rawSha256": "891ba74c18b2f058607866dfd16f450aaafd9ac621d091afeb8cff2da2703063"
+    },
+    {
+      "id": "keris",
+      "action": "walk",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/south-east-idle-reference.png",
+      "referenceSha256": "64c03d9b70c028063a4010cee9199cd5ff31c191b691c36a2c7508b52a88b79e",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-south-east-raw.png",
+      "status": "generated",
+      "outputSha256": "cdf45b2293bca6f02d720c949bdb5da1e89729a559cd2f24518c0cc5734a84ad",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-south-east-raw.png",
+      "rawSha256": "cdf45b2293bca6f02d720c949bdb5da1e89729a559cd2f24518c0cc5734a84ad"
+    },
+    {
+      "id": "keris",
+      "action": "attack",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/south-east-idle-reference.png",
+      "referenceSha256": "64c03d9b70c028063a4010cee9199cd5ff31c191b691c36a2c7508b52a88b79e",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-south-east-raw.png",
+      "status": "generated",
+      "outputSha256": "f565844d4e10b99dec47355d30b5e7a328b98a8f35c1d6857d310d96c2520fd3",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-south-east-raw.png",
+      "rawSha256": "f565844d4e10b99dec47355d30b5e7a328b98a8f35c1d6857d310d96c2520fd3"
+    },
+    {
+      "id": "keris",
+      "action": "cast",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/south-east-idle-reference.png",
+      "referenceSha256": "64c03d9b70c028063a4010cee9199cd5ff31c191b691c36a2c7508b52a88b79e",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-south-east-raw.png",
+      "status": "generated",
+      "outputSha256": "6da08bd01d445d51a537e8c2839f425df6e6caba2e22d2eba66231010088d575",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-south-east-raw.png",
+      "rawSha256": "6da08bd01d445d51a537e8c2839f425df6e6caba2e22d2eba66231010088d575"
+    },
+    {
+      "id": "keris",
+      "action": "walk",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/east-idle-reference.png",
+      "referenceSha256": "6668634ecd71530bdf8c90beba00ba06b215ec01e6e8ad9402b125434ae4e587",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-east-raw.png",
+      "status": "generated",
+      "outputSha256": "ecf40d65d92b9df37575dddfa00d91b741e899c9a05bf47c37d38c20292316a7",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-east-raw.png",
+      "rawSha256": "ecf40d65d92b9df37575dddfa00d91b741e899c9a05bf47c37d38c20292316a7"
+    },
+    {
+      "id": "keris",
+      "action": "attack",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/east-idle-reference.png",
+      "referenceSha256": "6668634ecd71530bdf8c90beba00ba06b215ec01e6e8ad9402b125434ae4e587",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-east-raw.png",
+      "status": "generated",
+      "outputSha256": "8fb7bdbcf7ef16d897636a9f816e925694c5a9f69f49e243116a7b75b70e3297",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-east-raw.png",
+      "rawSha256": "8fb7bdbcf7ef16d897636a9f816e925694c5a9f69f49e243116a7b75b70e3297"
+    },
+    {
+      "id": "keris",
+      "action": "cast",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/east-idle-reference.png",
+      "referenceSha256": "6668634ecd71530bdf8c90beba00ba06b215ec01e6e8ad9402b125434ae4e587",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-east-raw.png",
+      "status": "generated",
+      "outputSha256": "0066d89b517b82c4c489c6d4a3136dc1a02773f225ef4e539cda7faf10e93a00",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-east-raw.png",
+      "rawSha256": "0066d89b517b82c4c489c6d4a3136dc1a02773f225ef4e539cda7faf10e93a00"
+    },
+    {
+      "id": "keris",
+      "action": "walk",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/north-east-idle-reference.png",
+      "referenceSha256": "8f35780fc323c1525584cd3f927e5d883f87193f7531d8a0b387fc5a8aba6821",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-north-east-raw.png",
+      "status": "generated",
+      "outputSha256": "6796eff97fd8c7d6be712dc44c8b7cfb06e28044d49ad28c514c3225731e205f",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-north-east-raw.png",
+      "rawSha256": "6796eff97fd8c7d6be712dc44c8b7cfb06e28044d49ad28c514c3225731e205f"
+    },
+    {
+      "id": "keris",
+      "action": "attack",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/north-east-idle-reference.png",
+      "referenceSha256": "8f35780fc323c1525584cd3f927e5d883f87193f7531d8a0b387fc5a8aba6821",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-north-east-raw.png",
+      "status": "generated",
+      "outputSha256": "e34777d76622818ffdc69fcb518ad15521c7373b84cac5b24cdf8a22efbae429",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-north-east-raw.png",
+      "rawSha256": "e34777d76622818ffdc69fcb518ad15521c7373b84cac5b24cdf8a22efbae429"
+    },
+    {
+      "id": "keris",
+      "action": "cast",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/north-east-idle-reference.png",
+      "referenceSha256": "8f35780fc323c1525584cd3f927e5d883f87193f7531d8a0b387fc5a8aba6821",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-north-east-raw.png",
+      "status": "generated",
+      "outputSha256": "200d13c1f8dbed74c66760eaae3e5be8f679277ce6df686cbc854bd6fa03350e",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-north-east-raw.png",
+      "rawSha256": "200d13c1f8dbed74c66760eaae3e5be8f679277ce6df686cbc854bd6fa03350e"
+    },
+    {
+      "id": "keris",
+      "action": "walk",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/north-idle-reference.png",
+      "referenceSha256": "171e700e5107f995476ce47dc607df4d2ca41f4c27c70569c889f46f45093c0d",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-north-raw.png",
+      "status": "generated",
+      "outputSha256": "76c330aa0801f30ae4fb986154c4c6d3a26da93d09a266b0ec48100615af9821",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-north-raw.png",
+      "rawSha256": "76c330aa0801f30ae4fb986154c4c6d3a26da93d09a266b0ec48100615af9821"
+    },
+    {
+      "id": "keris",
+      "action": "attack",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/north-idle-reference.png",
+      "referenceSha256": "171e700e5107f995476ce47dc607df4d2ca41f4c27c70569c889f46f45093c0d",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-north-raw.png",
+      "status": "generated",
+      "outputSha256": "e5560a517cfd80b9b6189e1b67279e161f6c3453deb42a7397bff574493c5e7a",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-north-raw.png",
+      "rawSha256": "e5560a517cfd80b9b6189e1b67279e161f6c3453deb42a7397bff574493c5e7a"
+    },
+    {
+      "id": "keris",
+      "action": "cast",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/north-idle-reference.png",
+      "referenceSha256": "171e700e5107f995476ce47dc607df4d2ca41f4c27c70569c889f46f45093c0d",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-north-raw.png",
+      "status": "generated",
+      "outputSha256": "18fbbd34c36c27d507429cbf523d5d327611bff37a3526eda397100c06656861",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-north-raw.png",
+      "rawSha256": "18fbbd34c36c27d507429cbf523d5d327611bff37a3526eda397100c06656861"
+    },
+    {
+      "id": "keris",
+      "action": "walk",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/north-west-idle-reference.png",
+      "referenceSha256": "1cfa7335e95fdbd5b4e141b6ecf94291893185d0a1f23ff4a2abc43a602a516f",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-north-west-raw.png",
+      "status": "generated",
+      "outputSha256": "1404fac75cf485ef0a01d191b2e1bc7c883b26d19629f6fefa44233cca0da158",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-north-west-raw.png",
+      "rawSha256": "1404fac75cf485ef0a01d191b2e1bc7c883b26d19629f6fefa44233cca0da158"
+    },
+    {
+      "id": "keris",
+      "action": "attack",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/north-west-idle-reference.png",
+      "referenceSha256": "1cfa7335e95fdbd5b4e141b6ecf94291893185d0a1f23ff4a2abc43a602a516f",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-north-west-raw.png",
+      "status": "generated",
+      "outputSha256": "f11c7906d667816cd048e2ba5c862220379e8c707e8476b59b5e1a26263160db",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-north-west-raw.png",
+      "rawSha256": "f11c7906d667816cd048e2ba5c862220379e8c707e8476b59b5e1a26263160db"
+    },
+    {
+      "id": "keris",
+      "action": "cast",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/north-west-idle-reference.png",
+      "referenceSha256": "1cfa7335e95fdbd5b4e141b6ecf94291893185d0a1f23ff4a2abc43a602a516f",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-north-west-raw.png",
+      "status": "generated",
+      "outputSha256": "0edfb99c1b3304a55f19914e317209044e659d0b61e9274899694660c17c5cf3",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-north-west-raw.png",
+      "rawSha256": "0edfb99c1b3304a55f19914e317209044e659d0b61e9274899694660c17c5cf3"
+    },
+    {
+      "id": "keris",
+      "action": "walk",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/west-idle-reference.png",
+      "referenceSha256": "bcb33e534c1b691601ed3f5f948d0be8f444eb9cd0ad809c4dbacd498bde181a",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-west-raw.png",
+      "status": "generated",
+      "outputSha256": "e84061eac34c33d444dfc74989eb094f9cb201562d9481ccee344ba9b83d5692",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-west-raw.png",
+      "rawSha256": "e84061eac34c33d444dfc74989eb094f9cb201562d9481ccee344ba9b83d5692"
+    },
+    {
+      "id": "keris",
+      "action": "attack",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/west-idle-reference.png",
+      "referenceSha256": "bcb33e534c1b691601ed3f5f948d0be8f444eb9cd0ad809c4dbacd498bde181a",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-west-raw.png",
+      "status": "generated",
+      "outputSha256": "ee6f9ca8b36c269af53bd396e380ada1a3057c6c9e637c1166dc697030e4c703",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-west-raw.png",
+      "rawSha256": "ee6f9ca8b36c269af53bd396e380ada1a3057c6c9e637c1166dc697030e4c703"
+    },
+    {
+      "id": "keris",
+      "action": "cast",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/west-idle-reference.png",
+      "referenceSha256": "bcb33e534c1b691601ed3f5f948d0be8f444eb9cd0ad809c4dbacd498bde181a",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-west-raw.png",
+      "status": "generated",
+      "outputSha256": "5c89630d7fabdc5f7f01da331427ad9b78c8de509cc00a354a1e35f8a91949fa",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-west-raw.png",
+      "rawSha256": "5c89630d7fabdc5f7f01da331427ad9b78c8de509cc00a354a1e35f8a91949fa"
+    },
+    {
+      "id": "keris",
+      "action": "walk",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/south-west-idle-reference.png",
+      "referenceSha256": "af34f0e94793954199ea603acb80c26891c003adcad3c44dfa2d33f211f62bf2",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-south-west-raw.png",
+      "status": "generated",
+      "outputSha256": "c27497efda1a7bdc38dcfca859820096be0aa9c9aa0b4c949e6c1f95df22e508",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/walk-south-west-raw.png",
+      "rawSha256": "c27497efda1a7bdc38dcfca859820096be0aa9c9aa0b4c949e6c1f95df22e508"
+    },
+    {
+      "id": "keris",
+      "action": "attack",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/south-west-idle-reference.png",
+      "referenceSha256": "af34f0e94793954199ea603acb80c26891c003adcad3c44dfa2d33f211f62bf2",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-south-west-raw.png",
+      "status": "generated",
+      "outputSha256": "5f0eeee00624f4532d6992aaa30e8d5ccb02d56bdd9562ecf006e8f795c2cb71",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/attack-south-west-raw.png",
+      "rawSha256": "5f0eeee00624f4532d6992aaa30e8d5ccb02d56bdd9562ecf006e8f795c2cb71"
+    },
+    {
+      "id": "keris",
+      "action": "cast",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/keris/south-west-idle-reference.png",
+      "referenceSha256": "af34f0e94793954199ea603acb80c26891c003adcad3c44dfa2d33f211f62bf2",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png",
+      "idleSourceSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-south-west-raw.png",
+      "status": "generated",
+      "outputSha256": "a3b2e49e86e48988e78b80e85d062c1b2127c9ea9c088c88f923073b8b8a891f",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/keris/cast-south-west-raw.png",
+      "rawSha256": "a3b2e49e86e48988e78b80e85d062c1b2127c9ea9c088c88f923073b8b8a891f"
+    },
+    {
+      "id": "onmyoji",
+      "action": "walk",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/south-idle-reference.png",
+      "referenceSha256": "49295000704aba165710da039101f9d18127365230e66692b27ffd69a1a9cbf3",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-south-raw.png",
+      "status": "generated",
+      "outputSha256": "78ba36c8f4a1095c057a50f5a899f8273d228312ecfe8feb848d12224b09cd9b",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-south-raw.png",
+      "rawSha256": "78ba36c8f4a1095c057a50f5a899f8273d228312ecfe8feb848d12224b09cd9b"
+    },
+    {
+      "id": "onmyoji",
+      "action": "attack",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/south-idle-reference.png",
+      "referenceSha256": "49295000704aba165710da039101f9d18127365230e66692b27ffd69a1a9cbf3",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-south-raw.png",
+      "status": "generated",
+      "outputSha256": "c7d1ed61309bff343a1c638a66f353596dd2b22c2eaa3c5c1021358cb77ddeaf",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-south-raw.png",
+      "rawSha256": "c7d1ed61309bff343a1c638a66f353596dd2b22c2eaa3c5c1021358cb77ddeaf"
+    },
+    {
+      "id": "onmyoji",
+      "action": "cast",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/south-idle-reference.png",
+      "referenceSha256": "49295000704aba165710da039101f9d18127365230e66692b27ffd69a1a9cbf3",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-south-raw.png",
+      "status": "generated",
+      "outputSha256": "50b8c4f554a4e887a8b6a1bbb293ffa0f8b802447ab80d0cdf4819ab865e9092",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-south-raw.png",
+      "rawSha256": "50b8c4f554a4e887a8b6a1bbb293ffa0f8b802447ab80d0cdf4819ab865e9092"
+    },
+    {
+      "id": "onmyoji",
+      "action": "walk",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/south-east-idle-reference.png",
+      "referenceSha256": "83850980964312eecb2fb9c384ca427b46f3c3b321eb5d271215a2b725c13fba",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-south-east-raw.png",
+      "status": "generated",
+      "outputSha256": "bd4fd3dfc5a5775f5397d66b156ceec50b97607ad6e512228dca3f74f0a81389",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-south-east-raw.png",
+      "rawSha256": "bd4fd3dfc5a5775f5397d66b156ceec50b97607ad6e512228dca3f74f0a81389"
+    },
+    {
+      "id": "onmyoji",
+      "action": "attack",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/south-east-idle-reference.png",
+      "referenceSha256": "83850980964312eecb2fb9c384ca427b46f3c3b321eb5d271215a2b725c13fba",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-south-east-raw.png",
+      "status": "generated",
+      "outputSha256": "6c08138ea94851b01895cdc55d7ee94b5c3a9eeab06d08d7e2ceecc74ad9a51a",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-south-east-raw.png",
+      "rawSha256": "6c08138ea94851b01895cdc55d7ee94b5c3a9eeab06d08d7e2ceecc74ad9a51a"
+    },
+    {
+      "id": "onmyoji",
+      "action": "cast",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/south-east-idle-reference.png",
+      "referenceSha256": "83850980964312eecb2fb9c384ca427b46f3c3b321eb5d271215a2b725c13fba",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-south-east-raw.png",
+      "status": "generated",
+      "outputSha256": "2ec685ad2bf1b49f9118b58435cc7b565f84d95b682eecb0d40d9aa912b7f9ed",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-south-east-raw.png",
+      "rawSha256": "2ec685ad2bf1b49f9118b58435cc7b565f84d95b682eecb0d40d9aa912b7f9ed"
+    },
+    {
+      "id": "onmyoji",
+      "action": "walk",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/east-idle-reference.png",
+      "referenceSha256": "4619525ef9c8aef613efa419dd55e4a224d9e13220ad366adb5bf1fc86c846dc",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-east-raw.png",
+      "status": "generated",
+      "outputSha256": "8a29f19cb23813b6b80eb463c66cf2333ddfd2a02391baab0f7b53d6e9baaf27",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-east-raw.png",
+      "rawSha256": "8a29f19cb23813b6b80eb463c66cf2333ddfd2a02391baab0f7b53d6e9baaf27"
+    },
+    {
+      "id": "onmyoji",
+      "action": "attack",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/east-idle-reference.png",
+      "referenceSha256": "4619525ef9c8aef613efa419dd55e4a224d9e13220ad366adb5bf1fc86c846dc",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-east-raw.png",
+      "status": "generated",
+      "outputSha256": "d1d00cacb1cf8d04a52ac0529068a01328556ca9c6fbc7b97fa6adc9f28b4dbb",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-east-raw.png",
+      "rawSha256": "d1d00cacb1cf8d04a52ac0529068a01328556ca9c6fbc7b97fa6adc9f28b4dbb"
+    },
+    {
+      "id": "onmyoji",
+      "action": "cast",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/east-idle-reference.png",
+      "referenceSha256": "4619525ef9c8aef613efa419dd55e4a224d9e13220ad366adb5bf1fc86c846dc",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-east-raw.png",
+      "status": "generated",
+      "outputSha256": "60a1f068b2d9248bc7fbedc3c9eac9ad8dea88141e2a3cfed90819aa52d8f1b7",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-east-raw.png",
+      "rawSha256": "60a1f068b2d9248bc7fbedc3c9eac9ad8dea88141e2a3cfed90819aa52d8f1b7"
+    },
+    {
+      "id": "onmyoji",
+      "action": "walk",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/north-east-idle-reference.png",
+      "referenceSha256": "f491fdd6f9d218d35211f02563fe7ddcc3a4e4dd748fe7eb11c6d02a3c6673bd",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-north-east-raw.png",
+      "status": "generated",
+      "outputSha256": "83dc592a199e9eb2b154e2ec019abb23007579ec6c5cb5e59f2bc2575bfe7fd3",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-north-east-raw.png",
+      "rawSha256": "83dc592a199e9eb2b154e2ec019abb23007579ec6c5cb5e59f2bc2575bfe7fd3"
+    },
+    {
+      "id": "onmyoji",
+      "action": "attack",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/north-east-idle-reference.png",
+      "referenceSha256": "f491fdd6f9d218d35211f02563fe7ddcc3a4e4dd748fe7eb11c6d02a3c6673bd",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-north-east-raw.png",
+      "status": "generated",
+      "outputSha256": "d50eb573bdbe11d61689f0714d237e8a517ddfa61f72501036c66c02f45dad24",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-north-east-raw.png",
+      "rawSha256": "d50eb573bdbe11d61689f0714d237e8a517ddfa61f72501036c66c02f45dad24"
+    },
+    {
+      "id": "onmyoji",
+      "action": "cast",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/north-east-idle-reference.png",
+      "referenceSha256": "f491fdd6f9d218d35211f02563fe7ddcc3a4e4dd748fe7eb11c6d02a3c6673bd",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-north-east-raw.png",
+      "status": "generated",
+      "outputSha256": "a2195fc40cac3e7d904ae6b2d9b2b2674f66a0118de9d5b1f917622b6acfa3a8",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-north-east-raw.png",
+      "rawSha256": "a2195fc40cac3e7d904ae6b2d9b2b2674f66a0118de9d5b1f917622b6acfa3a8"
+    },
+    {
+      "id": "onmyoji",
+      "action": "walk",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/north-idle-reference.png",
+      "referenceSha256": "2c3adb16963fa11d1cfac01825bfe88d5048270602c0c821c1f37c98b4365c79",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-north-raw.png",
+      "status": "generated",
+      "outputSha256": "fe169e0d90a82cdbaa2b49db3a8960213f25b5ea2a1c918e1cff07f8036f801b",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-north-raw.png",
+      "rawSha256": "fe169e0d90a82cdbaa2b49db3a8960213f25b5ea2a1c918e1cff07f8036f801b"
+    },
+    {
+      "id": "onmyoji",
+      "action": "attack",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/north-idle-reference.png",
+      "referenceSha256": "2c3adb16963fa11d1cfac01825bfe88d5048270602c0c821c1f37c98b4365c79",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-north-raw.png",
+      "status": "generated",
+      "outputSha256": "50a22743be80b85aec889d2bccca8e9a44c0a67d64c47d7f87061de336e20e2b",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-north-raw.png",
+      "rawSha256": "50a22743be80b85aec889d2bccca8e9a44c0a67d64c47d7f87061de336e20e2b"
+    },
+    {
+      "id": "onmyoji",
+      "action": "cast",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/north-idle-reference.png",
+      "referenceSha256": "2c3adb16963fa11d1cfac01825bfe88d5048270602c0c821c1f37c98b4365c79",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-north-raw.png",
+      "status": "generated",
+      "outputSha256": "86322c06a64837cb29c61f82ce5bf2449687d9df6853baa21fa8748738eb3863",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-north-raw.png",
+      "rawSha256": "86322c06a64837cb29c61f82ce5bf2449687d9df6853baa21fa8748738eb3863"
+    },
+    {
+      "id": "onmyoji",
+      "action": "walk",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/north-west-idle-reference.png",
+      "referenceSha256": "cf307aa60cf3a84c3f45c681b09b77146f4fc0c841f748375c5313930caa3af0",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-north-west-raw.png",
+      "status": "generated",
+      "outputSha256": "a2ffc4067676eedd330ef3932eeea235fbcdf86fb3548dae91a8eab3439a2183",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-north-west-raw.png",
+      "rawSha256": "a2ffc4067676eedd330ef3932eeea235fbcdf86fb3548dae91a8eab3439a2183"
+    },
+    {
+      "id": "onmyoji",
+      "action": "attack",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/north-west-idle-reference.png",
+      "referenceSha256": "cf307aa60cf3a84c3f45c681b09b77146f4fc0c841f748375c5313930caa3af0",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-north-west-raw.png",
+      "status": "generated",
+      "outputSha256": "f0106a62541e8222c20e9f8871e44549e6b4ae5eacca21e36de127b987be782d",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-north-west-raw.png",
+      "rawSha256": "f0106a62541e8222c20e9f8871e44549e6b4ae5eacca21e36de127b987be782d"
+    },
+    {
+      "id": "onmyoji",
+      "action": "cast",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/north-west-idle-reference.png",
+      "referenceSha256": "cf307aa60cf3a84c3f45c681b09b77146f4fc0c841f748375c5313930caa3af0",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-north-west-raw.png",
+      "status": "generated",
+      "outputSha256": "925d20954acfd417fa2eb0a0bdb83ee2df392be33fdfcc10d0d6e0fef3d83aaf",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-north-west-raw.png",
+      "rawSha256": "925d20954acfd417fa2eb0a0bdb83ee2df392be33fdfcc10d0d6e0fef3d83aaf"
+    },
+    {
+      "id": "onmyoji",
+      "action": "walk",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/west-idle-reference.png",
+      "referenceSha256": "3e2f588fa058fdd3ab9ad078f91916b061b0389bfef86964baadd1789163615c",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-west-raw.png",
+      "status": "generated",
+      "outputSha256": "45266079293f491ba1808fb6d726654bd593c18051870455b048310260d4009b",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-west-raw.png",
+      "rawSha256": "45266079293f491ba1808fb6d726654bd593c18051870455b048310260d4009b"
+    },
+    {
+      "id": "onmyoji",
+      "action": "attack",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/west-idle-reference.png",
+      "referenceSha256": "3e2f588fa058fdd3ab9ad078f91916b061b0389bfef86964baadd1789163615c",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-west-raw.png",
+      "status": "generated",
+      "outputSha256": "6e5f2860a71880ece0c8b1bef7545c98533ae51e835f8cf8a81c762c284c3311",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-west-raw.png",
+      "rawSha256": "6e5f2860a71880ece0c8b1bef7545c98533ae51e835f8cf8a81c762c284c3311"
+    },
+    {
+      "id": "onmyoji",
+      "action": "cast",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/west-idle-reference.png",
+      "referenceSha256": "3e2f588fa058fdd3ab9ad078f91916b061b0389bfef86964baadd1789163615c",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-west-raw.png",
+      "status": "generated",
+      "outputSha256": "6bf77f3c996d33c7f9305884c35fb37fb09e3867386f16f47b0fc6c0c964394b",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-west-raw.png",
+      "rawSha256": "6bf77f3c996d33c7f9305884c35fb37fb09e3867386f16f47b0fc6c0c964394b"
+    },
+    {
+      "id": "onmyoji",
+      "action": "walk",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/south-west-idle-reference.png",
+      "referenceSha256": "ea3f7d44d3338674df643b9578d24c4945dd015d45d4b5a01895c11d71856411",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-south-west-raw.png",
+      "status": "generated",
+      "outputSha256": "3de7d73a094a6ab27777c39e28411fb252e868224e3323b51cc2c76ea6df7178",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/walk-south-west-raw.png",
+      "rawSha256": "3de7d73a094a6ab27777c39e28411fb252e868224e3323b51cc2c76ea6df7178"
+    },
+    {
+      "id": "onmyoji",
+      "action": "attack",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/south-west-idle-reference.png",
+      "referenceSha256": "ea3f7d44d3338674df643b9578d24c4945dd015d45d4b5a01895c11d71856411",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-south-west-raw.png",
+      "status": "generated",
+      "outputSha256": "c4d8a16372958affba69bd838827c52da1b015f115012dda422d00f7e106133c",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/attack-south-west-raw.png",
+      "rawSha256": "c4d8a16372958affba69bd838827c52da1b015f115012dda422d00f7e106133c"
+    },
+    {
+      "id": "onmyoji",
+      "action": "cast",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/south-west-idle-reference.png",
+      "referenceSha256": "ea3f7d44d3338674df643b9578d24c4945dd015d45d4b5a01895c11d71856411",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png",
+      "idleSourceSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-south-west-raw.png",
+      "status": "generated",
+      "outputSha256": "6efbbaef4cbcfd8088fa22d21f0444ad332dea81b499d24df79075b34205bab9",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/onmyoji/cast-south-west-raw.png",
+      "rawSha256": "6efbbaef4cbcfd8088fa22d21f0444ad332dea81b499d24df79075b34205bab9"
+    },
+    {
+      "id": "miko",
+      "action": "walk",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/south-idle-reference.png",
+      "referenceSha256": "cf9860785f6478fa41717ff384328257f5a5cf81b43178835079897164b2d39d",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-south-raw.png",
+      "status": "generated",
+      "outputSha256": "39f30f46980e53232676d7d14b5ed15e2f50a30fa1f9560fee7167aafb10615f",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-south-raw.png",
+      "rawSha256": "39f30f46980e53232676d7d14b5ed15e2f50a30fa1f9560fee7167aafb10615f"
+    },
+    {
+      "id": "miko",
+      "action": "attack",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/south-idle-reference.png",
+      "referenceSha256": "cf9860785f6478fa41717ff384328257f5a5cf81b43178835079897164b2d39d",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-south-raw.png",
+      "status": "generated",
+      "outputSha256": "ae369e292fc545fe73d3d7505bdc947cfd15fb671c39bd9bf7afc17671481325",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-south-raw.png",
+      "rawSha256": "ae369e292fc545fe73d3d7505bdc947cfd15fb671c39bd9bf7afc17671481325"
+    },
+    {
+      "id": "miko",
+      "action": "cast",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/south-idle-reference.png",
+      "referenceSha256": "cf9860785f6478fa41717ff384328257f5a5cf81b43178835079897164b2d39d",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-south-raw.png",
+      "status": "generated",
+      "outputSha256": "06b057dd576c9c0db7b127b997fc0334a04824aa221131c206aba8310cc1098e",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-south-raw.png",
+      "rawSha256": "06b057dd576c9c0db7b127b997fc0334a04824aa221131c206aba8310cc1098e"
+    },
+    {
+      "id": "miko",
+      "action": "walk",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/south-east-idle-reference.png",
+      "referenceSha256": "3afcd28a1a521ea7a1780bf2a961256e741b70339ee20457ddc56030bf533974",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-south-east-raw.png",
+      "status": "generated",
+      "outputSha256": "2e58ce973e7e1899c3ac08791661292c59442f4788561f8ca99318bd6b534eee",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-south-east-raw.png",
+      "rawSha256": "2e58ce973e7e1899c3ac08791661292c59442f4788561f8ca99318bd6b534eee"
+    },
+    {
+      "id": "miko",
+      "action": "attack",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/south-east-idle-reference.png",
+      "referenceSha256": "3afcd28a1a521ea7a1780bf2a961256e741b70339ee20457ddc56030bf533974",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-south-east-raw.png",
+      "status": "generated",
+      "outputSha256": "59c69be2208610932a9f5dccd42e015a9cb58649ff659bd1157faf8805f265a6",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-south-east-raw.png",
+      "rawSha256": "59c69be2208610932a9f5dccd42e015a9cb58649ff659bd1157faf8805f265a6"
+    },
+    {
+      "id": "miko",
+      "action": "cast",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/south-east-idle-reference.png",
+      "referenceSha256": "3afcd28a1a521ea7a1780bf2a961256e741b70339ee20457ddc56030bf533974",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-south-east-raw.png",
+      "status": "generated",
+      "outputSha256": "212595cadadc9a0cfb696a94a39984df0083f544a18317ef51fed0da8007ca72",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-south-east-raw.png",
+      "rawSha256": "212595cadadc9a0cfb696a94a39984df0083f544a18317ef51fed0da8007ca72"
+    },
+    {
+      "id": "miko",
+      "action": "walk",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/east-idle-reference.png",
+      "referenceSha256": "42633e5bfce8429ca7577912238837632b4d9b553e5ebfef200bb5085cea1484",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-east-raw.png",
+      "status": "generated",
+      "outputSha256": "302899f921003d1185f4c47f23d91fb4a32dc77b86301b27eb4c501e7d47a8be",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-east-raw.png",
+      "rawSha256": "302899f921003d1185f4c47f23d91fb4a32dc77b86301b27eb4c501e7d47a8be"
+    },
+    {
+      "id": "miko",
+      "action": "attack",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/east-idle-reference.png",
+      "referenceSha256": "42633e5bfce8429ca7577912238837632b4d9b553e5ebfef200bb5085cea1484",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-east-raw.png",
+      "status": "generated",
+      "outputSha256": "1ad18a67c61998a23aee3257a8a2898b0bad0e75514af0033340f687ca5b29cf",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-east-raw.png",
+      "rawSha256": "1ad18a67c61998a23aee3257a8a2898b0bad0e75514af0033340f687ca5b29cf"
+    },
+    {
+      "id": "miko",
+      "action": "cast",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/east-idle-reference.png",
+      "referenceSha256": "42633e5bfce8429ca7577912238837632b4d9b553e5ebfef200bb5085cea1484",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-east-raw.png",
+      "status": "generated",
+      "outputSha256": "a67f9a53807848ea405248f881c6424d183814c57c5c5434882893ed79d82d6a",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-east-raw.png",
+      "rawSha256": "a67f9a53807848ea405248f881c6424d183814c57c5c5434882893ed79d82d6a"
+    },
+    {
+      "id": "miko",
+      "action": "walk",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/north-east-idle-reference.png",
+      "referenceSha256": "c1a30f71c771126e3844c547da44ad6e8f2b724b6035c43a830d2b26850d275f",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-north-east-raw.png",
+      "status": "generated",
+      "outputSha256": "f491fdab4424102a0af22fc3317c7b339a74b2cf86a96a72a7d816be2dac938b",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-north-east-raw.png",
+      "rawSha256": "f491fdab4424102a0af22fc3317c7b339a74b2cf86a96a72a7d816be2dac938b"
+    },
+    {
+      "id": "miko",
+      "action": "attack",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/north-east-idle-reference.png",
+      "referenceSha256": "c1a30f71c771126e3844c547da44ad6e8f2b724b6035c43a830d2b26850d275f",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-north-east-raw.png",
+      "status": "generated",
+      "outputSha256": "ce8520c9194d0c3f4e0fa6fa7aaeeba17d4074b57e8d44bf45431d7d7db6b9da",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-north-east-raw.png",
+      "rawSha256": "ce8520c9194d0c3f4e0fa6fa7aaeeba17d4074b57e8d44bf45431d7d7db6b9da"
+    },
+    {
+      "id": "miko",
+      "action": "cast",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/north-east-idle-reference.png",
+      "referenceSha256": "c1a30f71c771126e3844c547da44ad6e8f2b724b6035c43a830d2b26850d275f",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-north-east-raw.png",
+      "status": "generated",
+      "outputSha256": "72512b4e539b8860a1111c81d7afdb0029dcbd2edb50f42893534fd9bcb4df8e",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-north-east-raw.png",
+      "rawSha256": "72512b4e539b8860a1111c81d7afdb0029dcbd2edb50f42893534fd9bcb4df8e"
+    },
+    {
+      "id": "miko",
+      "action": "walk",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/north-idle-reference.png",
+      "referenceSha256": "45694b62e6def4729c52c48de4c818fd858b0b7a4ceceb560ea4b548ad8a72b2",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-north-raw.png",
+      "status": "generated",
+      "outputSha256": "bb99ec6a55f5e7f70947214b27902a3d3393e15a425b301d7defeb8c1abbf375",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-north-raw.png",
+      "rawSha256": "bb99ec6a55f5e7f70947214b27902a3d3393e15a425b301d7defeb8c1abbf375"
+    },
+    {
+      "id": "miko",
+      "action": "attack",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/north-idle-reference.png",
+      "referenceSha256": "45694b62e6def4729c52c48de4c818fd858b0b7a4ceceb560ea4b548ad8a72b2",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-north-raw.png",
+      "status": "generated",
+      "outputSha256": "65e92a832403eaf4b442b221b4c8618b05bf47f91f175dcf1f8be27eb4fbca77",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-north-raw.png",
+      "rawSha256": "65e92a832403eaf4b442b221b4c8618b05bf47f91f175dcf1f8be27eb4fbca77"
+    },
+    {
+      "id": "miko",
+      "action": "cast",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/north-idle-reference.png",
+      "referenceSha256": "45694b62e6def4729c52c48de4c818fd858b0b7a4ceceb560ea4b548ad8a72b2",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-north-raw.png",
+      "status": "generated",
+      "outputSha256": "226f55bb8be0d58fe40ce4c4465cd294906373c526a4212a3f660cd7f5dc8013",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-north-raw.png",
+      "rawSha256": "226f55bb8be0d58fe40ce4c4465cd294906373c526a4212a3f660cd7f5dc8013"
+    },
+    {
+      "id": "miko",
+      "action": "walk",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/north-west-idle-reference.png",
+      "referenceSha256": "82dc7248e886cb93b914bb4e559c542d0f22fb04befd5bc16b9f07d112d819fa",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-north-west-raw.png",
+      "status": "generated",
+      "outputSha256": "2bbd941f101cc7a9900cc48350aa48622787c9f57eac2bb74441868b48948255",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-north-west-raw.png",
+      "rawSha256": "2bbd941f101cc7a9900cc48350aa48622787c9f57eac2bb74441868b48948255"
+    },
+    {
+      "id": "miko",
+      "action": "attack",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/north-west-idle-reference.png",
+      "referenceSha256": "82dc7248e886cb93b914bb4e559c542d0f22fb04befd5bc16b9f07d112d819fa",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-north-west-raw.png",
+      "status": "generated",
+      "outputSha256": "ed9b2348d0c06078dc676a09e86f51e5e7bff3828f0b780507f7a9c6aa77dc2b",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-north-west-raw.png",
+      "rawSha256": "ed9b2348d0c06078dc676a09e86f51e5e7bff3828f0b780507f7a9c6aa77dc2b"
+    },
+    {
+      "id": "miko",
+      "action": "cast",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/north-west-idle-reference.png",
+      "referenceSha256": "82dc7248e886cb93b914bb4e559c542d0f22fb04befd5bc16b9f07d112d819fa",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-north-west-raw.png",
+      "status": "generated",
+      "outputSha256": "00539bcfd0a5a9f385942ed856c214849576d8f4f3ee03bcea5995bafd75248c",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-north-west-raw.png",
+      "rawSha256": "00539bcfd0a5a9f385942ed856c214849576d8f4f3ee03bcea5995bafd75248c"
+    },
+    {
+      "id": "miko",
+      "action": "walk",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/west-idle-reference.png",
+      "referenceSha256": "d3b4a3d92acc06871a27b090894be89511021f75ce351b545a9de939fde99524",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-west-raw.png",
+      "rawSha256": "6c8bae46668e17657ffa3d3495f624c1796862d84ea745629f7a1a32bc03e71f",
+      "outputSha256": "6c8bae46668e17657ffa3d3495f624c1796862d84ea745629f7a1a32bc03e71f",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "miko",
+      "action": "attack",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/west-idle-reference.png",
+      "referenceSha256": "d3b4a3d92acc06871a27b090894be89511021f75ce351b545a9de939fde99524",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-west-raw.png",
+      "rawSha256": "cc47da98d27573157c182e6e87716df101f67affdb5f392099a3612df204eb08",
+      "outputSha256": "cc47da98d27573157c182e6e87716df101f67affdb5f392099a3612df204eb08",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "miko",
+      "action": "cast",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/west-idle-reference.png",
+      "referenceSha256": "d3b4a3d92acc06871a27b090894be89511021f75ce351b545a9de939fde99524",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-west-raw.png",
+      "rawSha256": "3dfef0e7440c8b665dbe5ba99ac021073f4e1e0404fd89e95c846e4469df27aa",
+      "outputSha256": "3dfef0e7440c8b665dbe5ba99ac021073f4e1e0404fd89e95c846e4469df27aa",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "miko",
+      "action": "walk",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/south-west-idle-reference.png",
+      "referenceSha256": "5f691e1ac719ed0932b244e3b48c4115fb7791c5aba3a7785d16ceefb806e3ca",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-south-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/walk-south-west-raw.png",
+      "rawSha256": "5468211e7270aa752808bac480ee7ab19d912a105959cf61829cd474c7d84615",
+      "outputSha256": "5468211e7270aa752808bac480ee7ab19d912a105959cf61829cd474c7d84615",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "miko",
+      "action": "attack",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/south-west-idle-reference.png",
+      "referenceSha256": "5f691e1ac719ed0932b244e3b48c4115fb7791c5aba3a7785d16ceefb806e3ca",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-south-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/attack-south-west-raw.png",
+      "rawSha256": "4f79ec50e47c29bba6267befccd938cb0d543994cc0fe616e3770486471ff534",
+      "outputSha256": "4f79ec50e47c29bba6267befccd938cb0d543994cc0fe616e3770486471ff534",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "miko",
+      "action": "cast",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/miko/south-west-idle-reference.png",
+      "referenceSha256": "5f691e1ac719ed0932b244e3b48c4115fb7791c5aba3a7785d16ceefb806e3ca",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png",
+      "idleSourceSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-south-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/miko/cast-south-west-raw.png",
+      "rawSha256": "0f752699212eca774f988c1b10315ce0b4de9c3fecf4abbf07a671f20141c62f",
+      "outputSha256": "0f752699212eca774f988c1b10315ce0b4de9c3fecf4abbf07a671f20141c62f",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "walk",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/south-idle-reference.png",
+      "referenceSha256": "94ca8dd0cc69aaedf7064f76a88c7dbaece1a612b6d867ea7513d941a37a516d",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-south-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-south-raw.png",
+      "rawSha256": "15de450cf496f0dc6ed63a27c5ffadd7da394172261d2f1533ceb585bc89ca16",
+      "outputSha256": "15de450cf496f0dc6ed63a27c5ffadd7da394172261d2f1533ceb585bc89ca16",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "attack",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/south-idle-reference.png",
+      "referenceSha256": "94ca8dd0cc69aaedf7064f76a88c7dbaece1a612b6d867ea7513d941a37a516d",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-south-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-south-raw.png",
+      "rawSha256": "1319f829921e223ace954a08b7c2f79be531fcc112496ffafae95d30ebe0b22c",
+      "outputSha256": "1319f829921e223ace954a08b7c2f79be531fcc112496ffafae95d30ebe0b22c",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "cast",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/south-idle-reference.png",
+      "referenceSha256": "94ca8dd0cc69aaedf7064f76a88c7dbaece1a612b6d867ea7513d941a37a516d",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-south-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-south-raw.png",
+      "rawSha256": "78a06cba2aac5beae14a8b68a5f9f6c699496758093f5e913a4a42f7de5d1b9b",
+      "outputSha256": "78a06cba2aac5beae14a8b68a5f9f6c699496758093f5e913a4a42f7de5d1b9b",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "walk",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/south-east-idle-reference.png",
+      "referenceSha256": "422b1dfa7922cccc9337ac950ab7a6f20f9fb03baa0b26a8a07b8b53e5a5a4bf",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-south-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-south-east-raw.png",
+      "rawSha256": "6335bd17e53696933f7b7a746534128b07bdb7416b780f2c18c970ffc99403da",
+      "outputSha256": "6335bd17e53696933f7b7a746534128b07bdb7416b780f2c18c970ffc99403da",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "attack",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/south-east-idle-reference.png",
+      "referenceSha256": "422b1dfa7922cccc9337ac950ab7a6f20f9fb03baa0b26a8a07b8b53e5a5a4bf",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-south-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-south-east-raw.png",
+      "rawSha256": "b023ad7bfc5be9ade9164b46a8b348b4c9eb19e12598ca298099923d11390c29",
+      "outputSha256": "b023ad7bfc5be9ade9164b46a8b348b4c9eb19e12598ca298099923d11390c29",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "cast",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/south-east-idle-reference.png",
+      "referenceSha256": "422b1dfa7922cccc9337ac950ab7a6f20f9fb03baa0b26a8a07b8b53e5a5a4bf",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-south-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-south-east-raw.png",
+      "rawSha256": "439b30433fc47f79bc2612ba5f803962fb1d322b419531b3a3019eca5707202b",
+      "outputSha256": "439b30433fc47f79bc2612ba5f803962fb1d322b419531b3a3019eca5707202b",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "walk",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/east-idle-reference.png",
+      "referenceSha256": "a6e2a65c03a631c723ccda0362b9bff9f1e19fa8e237445843d547bf8b353afc",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-east-raw.png",
+      "rawSha256": "0959a306d4abfc7692b4a1f06c5ccca56652d64db4dccef06637455206d09217",
+      "outputSha256": "0959a306d4abfc7692b4a1f06c5ccca56652d64db4dccef06637455206d09217",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "attack",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/east-idle-reference.png",
+      "referenceSha256": "a6e2a65c03a631c723ccda0362b9bff9f1e19fa8e237445843d547bf8b353afc",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-east-raw.png",
+      "rawSha256": "bbf7b032055b32e95fc9fe33c66959c259be6f46198ac3c9ec2b4c5fa70ea604",
+      "outputSha256": "bbf7b032055b32e95fc9fe33c66959c259be6f46198ac3c9ec2b4c5fa70ea604",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "cast",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/east-idle-reference.png",
+      "referenceSha256": "a6e2a65c03a631c723ccda0362b9bff9f1e19fa8e237445843d547bf8b353afc",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-east-raw.png",
+      "rawSha256": "dbf2f8828e0cb72265dd652da609cbec9e4244072ca39c858a3ca13e30135f28",
+      "outputSha256": "dbf2f8828e0cb72265dd652da609cbec9e4244072ca39c858a3ca13e30135f28",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "walk",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/north-east-idle-reference.png",
+      "referenceSha256": "35952b3cdf647d29bd0fe9b95cdee989d75b497b96bddab99ec94c44591fa49a",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-north-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-north-east-raw.png",
+      "rawSha256": "cf8fbb71e6b1aee9c28a9e8eec48050f53d69ac5e9249a87d905b0dd2958dbe3",
+      "outputSha256": "cf8fbb71e6b1aee9c28a9e8eec48050f53d69ac5e9249a87d905b0dd2958dbe3",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "attack",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/north-east-idle-reference.png",
+      "referenceSha256": "35952b3cdf647d29bd0fe9b95cdee989d75b497b96bddab99ec94c44591fa49a",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-north-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-north-east-raw.png",
+      "rawSha256": "ebce547fa8ae5b530a99c03850ee71250ac1e8eb0452a990532dd5edf5f78d95",
+      "outputSha256": "ebce547fa8ae5b530a99c03850ee71250ac1e8eb0452a990532dd5edf5f78d95",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "cast",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/north-east-idle-reference.png",
+      "referenceSha256": "35952b3cdf647d29bd0fe9b95cdee989d75b497b96bddab99ec94c44591fa49a",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-north-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-north-east-raw.png",
+      "rawSha256": "00be99026140a2057bfe8b7ff713bf559a2de3aa41ac6168afb0fb0f42ee77d8",
+      "outputSha256": "00be99026140a2057bfe8b7ff713bf559a2de3aa41ac6168afb0fb0f42ee77d8",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "walk",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/north-idle-reference.png",
+      "referenceSha256": "989cd7302cc8636a9db15d47bb5a1de5980b246c77512bb788b033719b78accb",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-north-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-north-raw.png",
+      "rawSha256": "e8a8f3572af5e0e9e575981695ab660844641779bcb1ae50d502ef54c0d88850",
+      "outputSha256": "e8a8f3572af5e0e9e575981695ab660844641779bcb1ae50d502ef54c0d88850",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "attack",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/north-idle-reference.png",
+      "referenceSha256": "989cd7302cc8636a9db15d47bb5a1de5980b246c77512bb788b033719b78accb",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-north-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-north-raw.png",
+      "rawSha256": "5fbf2cdb0bd2a6b574ca5afa54568e97a4f662f4c2658ba88f45897ad434d22b",
+      "outputSha256": "5fbf2cdb0bd2a6b574ca5afa54568e97a4f662f4c2658ba88f45897ad434d22b",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "cast",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/north-idle-reference.png",
+      "referenceSha256": "989cd7302cc8636a9db15d47bb5a1de5980b246c77512bb788b033719b78accb",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-north-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-north-raw.png",
+      "rawSha256": "28a4d31c95455e63e53e23447575c942837c3fdac3cbc942fc263d86f96a7358",
+      "outputSha256": "28a4d31c95455e63e53e23447575c942837c3fdac3cbc942fc263d86f96a7358",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "walk",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/north-west-idle-reference.png",
+      "referenceSha256": "125e4f6fb6766536626ade5b040efc637c3dbe342e6d6a7f5d61f06d9b2f431d",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-north-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-north-west-raw.png",
+      "rawSha256": "9811be25d2d36ad601d16fa2163804bec2ff8ba466ab18b0c9a33872957ac005",
+      "outputSha256": "9811be25d2d36ad601d16fa2163804bec2ff8ba466ab18b0c9a33872957ac005",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "attack",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/north-west-idle-reference.png",
+      "referenceSha256": "125e4f6fb6766536626ade5b040efc637c3dbe342e6d6a7f5d61f06d9b2f431d",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-north-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-north-west-raw.png",
+      "rawSha256": "fdc8794cbc70a8184205130af5b799465e56ceef22f11608810652bf2e58007b",
+      "outputSha256": "fdc8794cbc70a8184205130af5b799465e56ceef22f11608810652bf2e58007b",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "cast",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/north-west-idle-reference.png",
+      "referenceSha256": "125e4f6fb6766536626ade5b040efc637c3dbe342e6d6a7f5d61f06d9b2f431d",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-north-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-north-west-raw.png",
+      "rawSha256": "a0d2db681171acd67e4dfa8fb3b9fde55e4df6691bf2401b0475c1e45903048e",
+      "outputSha256": "a0d2db681171acd67e4dfa8fb3b9fde55e4df6691bf2401b0475c1e45903048e",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "walk",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/west-idle-reference.png",
+      "referenceSha256": "a868841cfb27db929ff979a337e7083df1d31e963ed7abe51783c27429c2939c",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-west-raw.png",
+      "rawSha256": "a3c78a03590b690c5d6aeadf80ea86b82d6c063800e559c6e0274773a8e62559",
+      "outputSha256": "a3c78a03590b690c5d6aeadf80ea86b82d6c063800e559c6e0274773a8e62559",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "attack",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/west-idle-reference.png",
+      "referenceSha256": "a868841cfb27db929ff979a337e7083df1d31e963ed7abe51783c27429c2939c",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-west-raw.png",
+      "rawSha256": "e7ffd73a947472f99c4ef1d90b278b2407cd1317b826100377c331c13f59f365",
+      "outputSha256": "e7ffd73a947472f99c4ef1d90b278b2407cd1317b826100377c331c13f59f365",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "cast",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/west-idle-reference.png",
+      "referenceSha256": "a868841cfb27db929ff979a337e7083df1d31e963ed7abe51783c27429c2939c",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-west-raw.png",
+      "rawSha256": "17e990578db00eac5987894a6d03e28db450a7ec3fdb63f2479593e35714dd38",
+      "outputSha256": "17e990578db00eac5987894a6d03e28db450a7ec3fdb63f2479593e35714dd38",
+      "dimensions": {
+        "width": 1448,
+        "height": 1086
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "walk",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/south-west-idle-reference.png",
+      "referenceSha256": "234e49f4295aadac9da3d41de53a39af762b5283c6af76844cba24b465bd1563",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-south-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/walk-south-west-raw.png",
+      "rawSha256": "6f21c21b05b5389973dc60bc9ae83af974b0307a36a2083b3f87788f68ce6182",
+      "outputSha256": "6f21c21b05b5389973dc60bc9ae83af974b0307a36a2083b3f87788f68ce6182",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "attack",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/south-west-idle-reference.png",
+      "referenceSha256": "234e49f4295aadac9da3d41de53a39af762b5283c6af76844cba24b465bd1563",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-south-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/attack-south-west-raw.png",
+      "rawSha256": "85fbd5e98924b9b4ab071eb4859d6e856246c64d4e943105c2033d2013d2e30d",
+      "outputSha256": "85fbd5e98924b9b4ab071eb4859d6e856246c64d4e943105c2033d2013d2e30d",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "rune-seer",
+      "action": "cast",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/south-west-idle-reference.png",
+      "referenceSha256": "234e49f4295aadac9da3d41de53a39af762b5283c6af76844cba24b465bd1563",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png",
+      "idleSourceSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-south-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/rune-seer/cast-south-west-raw.png",
+      "rawSha256": "ebf823e1d4f3b3ba40f0a4590923fa91a92412ba15447c02a283f184eab903a3",
+      "outputSha256": "ebf823e1d4f3b3ba40f0a4590923fa91a92412ba15447c02a283f184eab903a3",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "walk",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/south-idle-reference.png",
+      "referenceSha256": "52f049814df531e67ab4e6e86bc60ff8a62d7caffd90063a329e231c78963599",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-south-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-south-raw.png",
+      "rawSha256": "f20ce1d8ad166b6fd08472a246d654abee231bd8b39522fcc2cdb554cb753f0f",
+      "outputSha256": "f20ce1d8ad166b6fd08472a246d654abee231bd8b39522fcc2cdb554cb753f0f",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "attack",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/south-idle-reference.png",
+      "referenceSha256": "52f049814df531e67ab4e6e86bc60ff8a62d7caffd90063a329e231c78963599",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-south-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-south-raw.png",
+      "rawSha256": "4a19fdbd84eca7f66319f57ad5105e7f5e20aaafa34b56dc06832e4375170c01",
+      "outputSha256": "4a19fdbd84eca7f66319f57ad5105e7f5e20aaafa34b56dc06832e4375170c01",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "cast",
+      "direction": "south",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/south-idle-reference.png",
+      "referenceSha256": "52f049814df531e67ab4e6e86bc60ff8a62d7caffd90063a329e231c78963599",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-south-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-south-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-south-raw.png",
+      "rawSha256": "1646c01f730d326e6a6dd381e4c5870c17c8b5e57e1f63f5d475e90a6786eeb2",
+      "outputSha256": "1646c01f730d326e6a6dd381e4c5870c17c8b5e57e1f63f5d475e90a6786eeb2",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "walk",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/south-east-idle-reference.png",
+      "referenceSha256": "36a447d17e1206b8ba185705150e8eba8126940abdb737c45d7b1ad2d105eb7e",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-south-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-south-east-raw.png",
+      "rawSha256": "eb0ad9a8604851eee655a78ebe1ea7e809af338ee3fba3569dbd9fc3233de3e5",
+      "outputSha256": "eb0ad9a8604851eee655a78ebe1ea7e809af338ee3fba3569dbd9fc3233de3e5",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "attack",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/south-east-idle-reference.png",
+      "referenceSha256": "36a447d17e1206b8ba185705150e8eba8126940abdb737c45d7b1ad2d105eb7e",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-south-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-south-east-raw.png",
+      "rawSha256": "3e33e37cbf2077fbe38d3331e318190676988cf42d7a06839d030fd591db3cca",
+      "outputSha256": "3e33e37cbf2077fbe38d3331e318190676988cf42d7a06839d030fd591db3cca",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "cast",
+      "direction": "south-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/south-east-idle-reference.png",
+      "referenceSha256": "36a447d17e1206b8ba185705150e8eba8126940abdb737c45d7b1ad2d105eb7e",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-south-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-south-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-south-east-raw.png",
+      "rawSha256": "e71986b6e7f38b850058f27969cd56d6d36df8736187143fc1c8c2d1dc137758",
+      "outputSha256": "e71986b6e7f38b850058f27969cd56d6d36df8736187143fc1c8c2d1dc137758",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "walk",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/east-idle-reference.png",
+      "referenceSha256": "d097ced9201c0ba0a3dbd1ca92fc1cb45d21354b6f0b711f50214cba277a867a",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-east-raw.png",
+      "rawSha256": "bbbad10af12fd801c1b9e268f65ee6b4c4a100ad2767ede053789bea748bfbaf",
+      "outputSha256": "bbbad10af12fd801c1b9e268f65ee6b4c4a100ad2767ede053789bea748bfbaf",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "attack",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/east-idle-reference.png",
+      "referenceSha256": "d097ced9201c0ba0a3dbd1ca92fc1cb45d21354b6f0b711f50214cba277a867a",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-east-raw.png",
+      "rawSha256": "0cae8c36a9edc48b82730434afc2153cb5ec996a32623a74264f53857687232c",
+      "outputSha256": "0cae8c36a9edc48b82730434afc2153cb5ec996a32623a74264f53857687232c",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "cast",
+      "direction": "east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/east-idle-reference.png",
+      "referenceSha256": "d097ced9201c0ba0a3dbd1ca92fc1cb45d21354b6f0b711f50214cba277a867a",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-east-raw.png",
+      "rawSha256": "c4281d776a6b03f909154adcb6635b44b5dd1a7e8e03d58bea65ac49bfd7f95b",
+      "outputSha256": "c4281d776a6b03f909154adcb6635b44b5dd1a7e8e03d58bea65ac49bfd7f95b",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "walk",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/north-east-idle-reference.png",
+      "referenceSha256": "eb198e16b272ab099b65fe6c833e304bb5cafd964c616fbba9141506b695aa23",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-north-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-north-east-raw.png",
+      "rawSha256": "2421decdb5b957372597707c8a09d230c4e3d3e2f6d0536bc06689f2c46ba1b1",
+      "outputSha256": "2421decdb5b957372597707c8a09d230c4e3d3e2f6d0536bc06689f2c46ba1b1",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "attack",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/north-east-idle-reference.png",
+      "referenceSha256": "eb198e16b272ab099b65fe6c833e304bb5cafd964c616fbba9141506b695aa23",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-north-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-north-east-raw.png",
+      "rawSha256": "2334f18d1a57d9e3e7cf4c42106a515a34de3914a3ba498ce8157a474550d330",
+      "outputSha256": "2334f18d1a57d9e3e7cf4c42106a515a34de3914a3ba498ce8157a474550d330",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "cast",
+      "direction": "north-east",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/north-east-idle-reference.png",
+      "referenceSha256": "eb198e16b272ab099b65fe6c833e304bb5cafd964c616fbba9141506b695aa23",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-north-east-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-north-east-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-north-east-raw.png",
+      "rawSha256": "778754b06bbab5a2698191aa3e7499f3a44753dc2fd3bdb4dd9e31cb7fea06fa",
+      "outputSha256": "778754b06bbab5a2698191aa3e7499f3a44753dc2fd3bdb4dd9e31cb7fea06fa",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "walk",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/north-idle-reference.png",
+      "referenceSha256": "54f758524237dd5d737b9f75d39cfebb21280a2d5342c9b8c9b3bfce762be791",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-north-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-north-raw.png",
+      "rawSha256": "8d8b58bec2f50988965c46091d992d5162b7c7cc2498503fa877bfb4fc1775c5",
+      "outputSha256": "8d8b58bec2f50988965c46091d992d5162b7c7cc2498503fa877bfb4fc1775c5",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "attack",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/north-idle-reference.png",
+      "referenceSha256": "54f758524237dd5d737b9f75d39cfebb21280a2d5342c9b8c9b3bfce762be791",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-north-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-north-raw.png",
+      "rawSha256": "fd03a4ccc3e0443ac967f3a419ac5d99771b026025ff9f596bc73c74df5f2cd3",
+      "outputSha256": "fd03a4ccc3e0443ac967f3a419ac5d99771b026025ff9f596bc73c74df5f2cd3",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "cast",
+      "direction": "north",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/north-idle-reference.png",
+      "referenceSha256": "54f758524237dd5d737b9f75d39cfebb21280a2d5342c9b8c9b3bfce762be791",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-north-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-north-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-north-raw.png",
+      "rawSha256": "3f937cf586dbe9c49143471d5da1d0296a9d8c19ee0acf326882d66687d5efe2",
+      "outputSha256": "3f937cf586dbe9c49143471d5da1d0296a9d8c19ee0acf326882d66687d5efe2",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "walk",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/north-west-idle-reference.png",
+      "referenceSha256": "5bf9612fda99614c08210b436af7ba8d841de4844efefe3b6f17938175f9d0b2",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-north-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-north-west-raw.png",
+      "rawSha256": "367345c7bf4ccc2a084416e109828c2bab32924c1198210678095d060389d20f",
+      "outputSha256": "367345c7bf4ccc2a084416e109828c2bab32924c1198210678095d060389d20f",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "attack",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/north-west-idle-reference.png",
+      "referenceSha256": "5bf9612fda99614c08210b436af7ba8d841de4844efefe3b6f17938175f9d0b2",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-north-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-north-west-raw.png",
+      "rawSha256": "dc1989d7c74f6abc3397c9380a6ae13d9afc1db4b2f27926fe6564daebfa71b0",
+      "outputSha256": "dc1989d7c74f6abc3397c9380a6ae13d9afc1db4b2f27926fe6564daebfa71b0",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "cast",
+      "direction": "north-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/north-west-idle-reference.png",
+      "referenceSha256": "5bf9612fda99614c08210b436af7ba8d841de4844efefe3b6f17938175f9d0b2",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-north-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-north-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-north-west-raw.png",
+      "rawSha256": "4bced2ad134954dc03cf6b218218252ad41a79e15ce98f86e80565f59c30c9d4",
+      "outputSha256": "4bced2ad134954dc03cf6b218218252ad41a79e15ce98f86e80565f59c30c9d4",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "walk",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/west-idle-reference.png",
+      "referenceSha256": "29613ebddfe230ad6b193ff7a38869e76fc4f452aed2518627b3945f87e0d5d2",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-west-raw.png",
+      "rawSha256": "ca5d3e24c6fd9068fdf6c4f68c92735c587f9788782d44bbae75b12f2b4d8fe6",
+      "outputSha256": "ca5d3e24c6fd9068fdf6c4f68c92735c587f9788782d44bbae75b12f2b4d8fe6",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "attack",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/west-idle-reference.png",
+      "referenceSha256": "29613ebddfe230ad6b193ff7a38869e76fc4f452aed2518627b3945f87e0d5d2",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-west-raw.png",
+      "rawSha256": "71a206a46df92f0ee26ddab0e0e56a9467685bde72ca250ef487074740be5310",
+      "outputSha256": "71a206a46df92f0ee26ddab0e0e56a9467685bde72ca250ef487074740be5310",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "cast",
+      "direction": "west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/west-idle-reference.png",
+      "referenceSha256": "29613ebddfe230ad6b193ff7a38869e76fc4f452aed2518627b3945f87e0d5d2",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-west-raw.png",
+      "rawSha256": "60903eed8549a24ec7b809aae6bee6a788a51bb9500bf7c1ebbee793b07f9a70",
+      "outputSha256": "60903eed8549a24ec7b809aae6bee6a788a51bb9500bf7c1ebbee793b07f9a70",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "walk",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/south-west-idle-reference.png",
+      "referenceSha256": "355cfb171bd2ca83b3a27b5be844bd69d49d1c64db9314c780167396e59cdade",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-south-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/walk-south-west-raw.png",
+      "rawSha256": "b58a552e1c08dca9d4fd947ae9a3130377d243aad60ea4ad579279807efc1191",
+      "outputSha256": "b58a552e1c08dca9d4fd947ae9a3130377d243aad60ea4ad579279807efc1191",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "attack",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/south-west-idle-reference.png",
+      "referenceSha256": "355cfb171bd2ca83b3a27b5be844bd69d49d1c64db9314c780167396e59cdade",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-south-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/attack-south-west-raw.png",
+      "rawSha256": "a705e6a1540fc160754b57ccf0d7c3b94301810a253b68c5888b07b2d5be03ee",
+      "outputSha256": "a705e6a1540fc160754b57ccf0d7c3b94301810a253b68c5888b07b2d5be03ee",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "ullr-hunter",
+      "action": "cast",
+      "direction": "south-west",
+      "reference": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/south-west-idle-reference.png",
+      "referenceSha256": "355cfb171bd2ca83b3a27b5be844bd69d49d1c64db9314c780167396e59cdade",
+      "idleSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png",
+      "idleSourceSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "prompt": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-south-west-prompt.txt",
+      "output": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-south-west-raw.png",
+      "status": "generated",
+      "exportSource": "docs/design/equipment/class-2-imagegen-detail-01/ullr-hunter/cast-south-west-raw.png",
+      "rawSha256": "26b40f66e56d4dd8d1f03cb1b6ad041bb43b91e937cf88d8fc5ff37d1fe668c5",
+      "outputSha256": "26b40f66e56d4dd8d1f03cb1b6ad041bb43b91e937cf88d8fc5ff37d1fe668c5",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      }
+    }
+  ]
+}

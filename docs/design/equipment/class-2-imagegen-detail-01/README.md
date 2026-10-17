@@ -1,0 +1,35 @@
+# Motion detail correction from exact idle art
+
+2026-10-13. User rejects costume drift and soft/simplified walk/attack/cast frames and explicitly requests detail as close as possible to the existing idle artwork. Six male Indonesia/Japan/Norway sets only. Original idle PNGs, original independent head, Thai/Russian publication, gameplay and paused female pipeline remain unchanged.
+
+## Production method
+
+144 directional action sheets:6 classes ×8 facings ×3 actions;8frames per sheet,4columns ×2rows. Built-in imagegen edits each exact cropped idle-facing reference; no PixelLab calls/credits. This is not sharpening/upscaling the rejected64-frame sheets. Prompts explicitly lock garment cut, ornamental panels, seams, hems, belts, fasteners, pouches, jewelry, straps, footwear, palette and weapon dimensions. Hands/weapons stay baked together. All prompts/references/raw outputs are stored here, with provenance in `inventory.json`.
+
+The generated image remains an edit proposal: pixel-identical moving garment details or anatomical accuracy are not guaranteed by a prompt. Inspect the8frames and retained idle at native128 and enlarged nearest-neighbour view before publishing. No generated animation has user visual approval merely because its files exist.
+
+## Export and review
+
+`tools/rig/export_class2_detail.mjs` isolates neighbour-cell fragments, then uses one measured registration for all8frames in a clip. It measures first-pose neck and lower-body span against its actual idle reference. Weapon bounding boxes do not determine body scale; no independent per-frame fitting is used. Newly measured anchors are provisional; head placement still needs review after costume detail acceptance. Existing old-frame head offsets must not transfer to changed body hashes.
+
+**http://127.0.0.1:8771/** compares unchanged idle / rejected old motion / corrected motion at the same128px canvas size. Class/action/facing selection, scrub/playback and source-sheet inspection are available. Missing new clips are explicitly labelled in progress, never filled with old art and called complete. Use “โหลดงานล่าสุด” after export. Generation receipts, current counts, registration measurements and canvas-edge flags are in `inventory.json` and `export-report.json`.
+
+This directory is a separate correction batch. Existing8770 review and normal gameplay remain untouched while generation/review is incomplete. Do not claim completion of all1,152 motion frames until144clips are actually present and validated. Do not treat source resolution or technical passes alone as final visual approval.
+
+## Completed detail batch — 2026-10-13
+
+All144 directional action sheets are saved and exported:1,152 new motion frames plus48 byte-exact retained idle frames. Built-in imagegen was used for144 main edits and one targeted Santet NE attack background cleanup,145 requests total for this correction batch; PixelLab calls/credits0. Three interrupted Miko NW results were recovered from their completed provider output files without generating replacements. Prompts, cropped idle references, raw outputs and cleanup derivative remain retained. Selected export source/raw hashes are recorded in `inventory.json`.
+
+`detail-quality-verification.json` confirms144 clips,1,152 native motion frames,48 exact idle hashes, no missing/blank frames and source-cell pixel area at least the integer idle-cell reference area. `export-report.json` records measured first-pose registrations and zero canvas-clipping flags. Source-cell area is a resolution check, not proof of artistic identity; representative native contact sheets for all6 classes are `<class>/idle-walk-attack-cast-native.png`, with columns idle / walk0 / attack3 / cast3 and the existing8-facing order.
+
+The complete set is separately staged as `*-detail` assets and `manifest-imagegen-detail-draft.json`. It is available only in development with `carryReview=1&outfitDraft=1&outfitBaked=1&outfitDetail=1`. Default gameplay/default manifest, original Thai/Russian publication and the old armed draft remain unchanged. `verification.json` checks1,200 staged native/hash/nonblank frames,1,200 separate-equipment suppression cases and unequip/swap/missing-texture fallbacks.
+
+**http://127.0.0.1:8771/head-editor** now uses these detailed frames and links to their guarded Phaser preview. Its separate JSON file and fingerprint-specific browser draft prevent transferring coordinates from changed old body frames. Old saved head edits stay intact in the old batch. Both variants use the same original head assets and editor implementation. Human positioning is still needed: current necks are initial idle-derived anchors, not1,200 approved moving anatomical placements. The PNG costume source and head pixels are never modified by saving coordinates.
+
+Root `pnpm build` including TypeScript checks, existing class-outfit behavior checks and head-offset behavioral checks pass. The detail head-editor browser check passes all6 classes, integer nudges, seed protection, local reload, save-payload and origin/stale-source rejection, with desktop/portrait/landscape evidence under `head-editor-evidence/`. Synthetic QA offsets were not written into the project. `final-comparison.png` records the three-column before/after viewer; actual Phaser captures/report are under `phaser-evidence/`.
+
+Remaining review:small generated pattern/proportion changes, neck motion, limb/weapon occlusion and animation continuity still require visual acceptance. The batch fixes the former64-frame source-detail bottleneck and makes costume appearance substantially closer to the unchanged idle references; it does not promise pixel-identical garment deformation or complete character production approval. No normal-game publication, female changes, base redesign or combat/hitbox changes.
+
+Actual renderer result:`phaser-evidence/report.json` records6 boards ×96 costume sprites, zero separate equipment images for every board, and zero asset/page errors. Desktop boards and portrait/landscape screenshots are retained. Representative native contact sheets were visually inspected for all6 classes; live head placement remains provisional as described above.
+
+Changed files for this correction: this entire detail batch and its `review.mjs`; `tools/rig/{prepare_class2_detail,export_class2_detail,check_class2_detail}.mjs`; detail-mode options in existing staging/validation/Phaser capture tools; shared head-handler/editor storage and head-editor capture tool; detail ID support in `armed-head-offsets.mjs`; the development-only manifest selector in client `class-outfit.ts` and its existing behavioral test; separate public `*-detail` frame directories/manifest; architecture/design-decisions/roadmap documentation. Current prompts are all144 `<class>/<action>-<facing>-prompt.txt` files plus the retained background-cleanup prompt, indexed by `inventory.json`. Original idle/head PNGs, old manual head JSON, old armed assets/default manifest and unrelated temporary files are retained.

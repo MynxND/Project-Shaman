@@ -1,0 +1,54 @@
+{
+  "lower": [
+    {
+      "type": "text",
+      "text": "status: completed\nid: 36b31d5b-a174-433c-89f1-3798e7fcc036\njob_id: 36b31d5b-a174-433c-89f1-3798e7fcc036\nframes: 1\ntransparent: yes\nasset_id: f41c6ee4-33e4-50ee-91c0-084fab046973\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 10 generations\ndownload: https://api.pixellab.ai/mcp/images/36b31d5b-a174-433c-89f1-3798e7fcc036/download"
+    }
+  ],
+  "hands": [
+    {
+      "type": "text",
+      "text": "status: completed\nid: 0b5ac5f7-e4b9-4934-8e3b-ee6f39d2a057\njob_id: 0b5ac5f7-e4b9-4934-8e3b-ee6f39d2a057\nframes: 1\ntransparent: yes\nasset_id: 76cc7783-6b94-5f7e-9551-b8cf2afd8979\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 10 generations\ndownload: https://api.pixellab.ai/mcp/images/0b5ac5f7-e4b9-4934-8e3b-ee6f39d2a057/download"
+    }
+  ],
+  "handsRequestReceipt": {
+    "content": [
+      {
+        "type": "text",
+        "text": "id: 0b5ac5f7-e4b9-4934-8e3b-ee6f39d2a057\njob_id: 0b5ac5f7-e4b9-4934-8e3b-ee6f39d2a057\nsize: 128x128px\nmask: custom mask\nfill: Fix ONLY masked forearms/hands of this approved HEADLESS SOUTH male war-shaman to ORIGINAL COMPACT BASE hand coordinates. Main right fist is on SCREEN LEFT: grip center native x41.5,y80. Off left fist is on SCREEN RIGHT: grip center native x82.5,y76.8. These are exact target contacts. Current covered fists hang too low: REMOVE the low fists and shorten sleeve/forearm wraps so small exposed warm-skinned fists sit around these target coordinates, connect naturally to elbows. Main hand around x39..47 y75..84, off hand around x79..85 y73..81. Keep gloves off contact points, weathered cuff wraps end ABOVE bare fists. Transparent outside limb silhouette. No weapons added. Preserve existing shoulder fur, wolf charm, torso armor, crimson belt, cloak, feet and all nonmasked pixels exactly. Same compact anatomy/pose, no bigger arms, no whole-body shift, 128x128 crisp pixel art. This is a precision rig attachment repair.\ntransparent: True\nseed: 2302\nasset_id: 76cc7783-6b94-5f7e-9551-b8cf2afd8979\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~30-90s)\n\nhint: get_image(job_id=\"0b5ac5f7-e4b9-4934-8e3b-ee6f39d2a057\")"
+      }
+    ],
+    "isError": false
+  },
+  "workbench": {
+    "repair03-achanEdit": [
+      {
+        "type": "text",
+        "text": "image_id: a24977b6-33cc-4f31-9a08-c9ae72f71383\ncanvas: 128x128, 1 frame(s)\n1. patch_pixels: 121 px changed\nsheet rows: frames [1]\npalette (59): #201f22ff x169, #38363aff x169, #f5b58dff x159, #040405ff x104, #0b0b0cff x88, #e69c7aff x85, #e5aa8bff x79, #2c2a2dff x77, #da8e6fff x71, #391d19ff x55, #503a33ff x49, #c0745cff x49, #1e1312ff x45, #291d1cff x45, #542a22ff x44, #2e1714ff x44, … +43 more\ndownload https://api.pixellab.ai/mcp/pixel-tools/a24977b6-33cc-4f31-9a08-c9ae72f71383/: image.png, frames.png, animation.gif\nnext: edit a24977b6-33cc-4f31-9a08-c9ae72f71383 --changes […]"
+      }
+    ],
+    "repair03-lowerEdit": [
+      {
+        "type": "text",
+        "text": "image_id: 77c7bbb6-36ba-4262-a3bc-1b83df308bfe\ncanvas: 128x128, 1 frame(s)\n1. patch_pixels: 1022 px changed\nsheet rows: frames [1]\npalette (21): #201513ff x476, #2d2321ff x317, #675e56ff x215, #8d8377ff x200, #3b2f2bff x166, #50413aff x147, #79383aff x136, #353130ff x135, #e8b395ff x103, #c5856fff x96, #34393fff x82, #532425ff x81, #666c70ff x73, #8b8f8bff x72, #634f45ff x70, #474e55ff x69, … +5 more\ndownload https://api.pixellab.ai/mcp/pixel-tools/77c7bbb6-36ba-4262-a3bc-1b83df308bfe/: image.png, frames.png, animation.gif\nnext: edit 77c7bbb6-36ba-4262-a3bc-1b83df308bfe --changes […]"
+      }
+    ],
+    "repair03-finalEdit": [
+      {
+        "type": "text",
+        "text": "image_id: 66382af8-fc35-4151-89b8-e3e0e94f1a5c\ncanvas: 128x128, 1 frame(s)\n1. patch_pixels: 457 px changed\nsheet rows: frames [1]\npalette (51): #201513ff x500, #2d2321ff x297, #675e56ff x179, #353130ff x135, #79383aff x130, #8d8377ff x128, #3b2f2bff x128, #50413aff x102, #34393fff x82, #532425ff x75, #666c70ff x72, #8b8f8bff x72, #474e55ff x69, #656c6dff x67, #484d4fff x63, #eba675ff x62, … +35 more\ndownload https://api.pixellab.ai/mcp/pixel-tools/66382af8-fc35-4151-89b8-e3e0e94f1a5c/: image.png, frames.png, animation.gif\nnext: edit 66382af8-fc35-4151-89b8-e3e0e94f1a5c --changes […]"
+      }
+    ],
+    "repair03-cleanEdit": [
+      {
+        "type": "text",
+        "text": "image_id: 28072ba6-fc15-482a-a0dc-71711941086b\ncanvas: 128x128, 1 frame(s)\n1. patch_pixels: 170 px changed\nsheet rows: frames [1]\npalette (48): #201513ff x466, #2d2321ff x283, #675e56ff x179, #353130ff x135, #79383aff x130, #8d8377ff x128, #3b2f2bff x123, #50413aff x100, #34393fff x82, #532425ff x75, #666c70ff x72, #8b8f8bff x72, #474e55ff x69, #656c6dff x67, #484d4fff x63, #1f1c1cff x56, … +32 more\ndownload https://api.pixellab.ai/mcp/pixel-tools/28072ba6-fc15-482a-a0dc-71711941086b/: image.png, frames.png, animation.gif\nnext: edit 28072ba6-fc15-482a-a0dc-71711941086b --changes […]"
+      }
+    ]
+  },
+  "spent": 20,
+  "balanceBefore": 215,
+  "balanceAfter": 195,
+  "visualApproved": false,
+  "runtimeCompatible": false
+}

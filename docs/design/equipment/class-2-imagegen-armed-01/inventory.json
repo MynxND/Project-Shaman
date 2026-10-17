@@ -1,0 +1,704 @@
+{
+  "pixelLabCredits": 0,
+  "scope": "User explicitly requests weapons drawn with gripping hands, male six-class draft only",
+  "jobs": [
+    {
+      "id": "santet",
+      "weapon": "wand-santet",
+      "action": "idle",
+      "frames": 8,
+      "status": "generated",
+      "rawSha256": "b801f33b976c1c020db0abaa6bc3b0ed1f70ced936ce58b54caff0f17db30706",
+      "rawWidth": 1774,
+      "rawHeight": 887,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/idle-raw.png"
+    },
+    {
+      "id": "santet",
+      "weapon": "wand-santet",
+      "action": "walk",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "dc57c7cc28c2b2ca22090597d9120b207a306c2e95ac24318880c94dc87b3d8c",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/walk-raw.png"
+    },
+    {
+      "id": "santet",
+      "weapon": "wand-santet",
+      "action": "attack",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "7db90d0ca107f313f00542ed623d1cb4fb2f745f7c9b34a748271584547548b5",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/attack-raw.png"
+    },
+    {
+      "id": "santet",
+      "weapon": "wand-santet",
+      "action": "cast",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "8827e0b8580cd8bd77b770afb1f9bddec6dde75c9016a6d8f5960654fd69ea30",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/santet/cast-raw.png"
+    },
+    {
+      "id": "keris",
+      "weapon": "keris",
+      "action": "idle",
+      "frames": 8,
+      "status": "generated",
+      "rawSha256": "d243f66c122a836e08d84974eab2fa78c719347811d05fcf6dae7a99a7f7054c",
+      "rawWidth": 1774,
+      "rawHeight": 887,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/idle-raw.png"
+    },
+    {
+      "id": "keris",
+      "weapon": "keris",
+      "action": "walk",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "ca2647336f59474fe1ea2427d283e35d1850d73aa12599d5ca950a72be93d50c",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/walk-raw.png"
+    },
+    {
+      "id": "keris",
+      "weapon": "keris",
+      "action": "attack",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "eda04347f5362457aec1e9311c725e61574b87de40ad510545446a46411160a1",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/attack-raw.png"
+    },
+    {
+      "id": "keris",
+      "weapon": "keris",
+      "action": "cast",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "e5a6bc0643112fd59acb4ed53d965819572f6ff183f166d83d83ffe205a0d17d",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/keris/cast-raw.png"
+    },
+    {
+      "id": "onmyoji",
+      "weapon": "fan-onmyoji",
+      "action": "idle",
+      "frames": 8,
+      "status": "generated",
+      "rawSha256": "536a01419d40c785244e02659ca9811534e8d7f226ebe51fb26b219360f199b7",
+      "rawWidth": 1774,
+      "rawHeight": 887,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/idle-fan-cleanup.png"
+    },
+    {
+      "id": "onmyoji",
+      "weapon": "fan-onmyoji",
+      "action": "walk",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "a2408971bc22a71300be0392b12af29d60cc3308bad3d139f1d111c0ec4a56de",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/walk-fan-cleanup.png"
+    },
+    {
+      "id": "onmyoji",
+      "weapon": "fan-onmyoji",
+      "action": "attack",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "b6958a0e091aa63a8162a5f5444b906cc2189d972d4b373f92dce2bb44a2d846",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/attack-fan-cleanup.png"
+    },
+    {
+      "id": "onmyoji",
+      "weapon": "fan-onmyoji",
+      "action": "cast",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "0f13c7f07de05c9af16ce2fb4eeb8a7a6cfc0554504ef63909323e68690c7af2",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/onmyoji/cast-fan-cleanup.png"
+    },
+    {
+      "id": "miko",
+      "weapon": "gohei-miko",
+      "action": "idle",
+      "frames": 8,
+      "status": "generated",
+      "rawSha256": "09122ef7c9041bbc9fef979b60a33a5deacacddc74e71d4868b313f7d40668af",
+      "rawWidth": 1774,
+      "rawHeight": 887,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/idle-raw.png"
+    },
+    {
+      "id": "miko",
+      "weapon": "gohei-miko",
+      "action": "walk",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "c79f3826c909d07bc8cca200de12e41f733dc4ad9a1149d389e9d9792ff598eb",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/walk-raw.png"
+    },
+    {
+      "id": "miko",
+      "weapon": "gohei-miko",
+      "action": "attack",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "6a0465604e2bc2a3eb1e2dfab1f471f5cf92ad1f7396633da3e800a6111f3971",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/attack-raw.png"
+    },
+    {
+      "id": "miko",
+      "weapon": "gohei-miko",
+      "action": "cast",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "6a6aa931954e39f5da5f6436a8a6808ef20eb748176f55e09debd7de3f86b921",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/miko/cast-raw.png"
+    },
+    {
+      "id": "rune-seer",
+      "weapon": "staff-rune-seer",
+      "action": "idle",
+      "frames": 8,
+      "status": "generated",
+      "rawSha256": "e26fa7acdf73ccbc7fe05f1dfa374305b9757b6060bfe4512309ba7dedf0b1b3",
+      "rawWidth": 1774,
+      "rawHeight": 887,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/idle-raw.png"
+    },
+    {
+      "id": "rune-seer",
+      "weapon": "staff-rune-seer",
+      "action": "walk",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "f586d4dbca1cea059ad0e987f1c18f4681d7cebb13dbb6e1ec175999ef5cd11e",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/walk-raw.png"
+    },
+    {
+      "id": "rune-seer",
+      "weapon": "staff-rune-seer",
+      "action": "attack",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "cc5e3810ea42d7a66ac32d4f059d754f6abd3e95a1f5caf909d1674c40aaad3a",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/attack-raw.png"
+    },
+    {
+      "id": "rune-seer",
+      "weapon": "staff-rune-seer",
+      "action": "cast",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "1c29bf1b34bc8a8ce42e8b4b7f587db3c4bf7b87aaa6c103cb0cf550c6f2a11e",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/rune-seer/cast-raw.png"
+    },
+    {
+      "id": "ullr-hunter",
+      "weapon": "bow-ullr",
+      "action": "idle",
+      "frames": 8,
+      "status": "generated",
+      "rawSha256": "6af3ff1284ce1f7bd37a8aa6c5129589f667edb5ccf78c265845086f834b2d2e",
+      "rawWidth": 1774,
+      "rawHeight": 887,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/idle-raw.png"
+    },
+    {
+      "id": "ullr-hunter",
+      "weapon": "bow-ullr",
+      "action": "walk",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "4556994cc6a1f0b3ad4afba6a38025c922f126e02e18fb624023d777d4f31f50",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/walk-raw.png"
+    },
+    {
+      "id": "ullr-hunter",
+      "weapon": "bow-ullr",
+      "action": "attack",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "0c402535c0e629533a78041771f3b105a28545a03aeb8da5ba41ca2c4503d39e",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/attack-raw.png"
+    },
+    {
+      "id": "ullr-hunter",
+      "weapon": "bow-ullr",
+      "action": "cast",
+      "frames": 64,
+      "status": "generated",
+      "rawSha256": "d9d59fbfe1f61845b53a43f884ca5512b642c8fcc6cad6c243a566f87d3593d3",
+      "rawWidth": 1254,
+      "rawHeight": 1254,
+      "exportSource": "docs/design/equipment/class-2-imagegen-armed-01/ullr-hunter/cast-raw.png"
+    }
+  ],
+  "weapons": [
+    {
+      "id": "santet",
+      "weapon": "wand-santet",
+      "direction": "south",
+      "path": "apps/client/public/assets/equipment/wand-santet/south.png",
+      "sha256": "37a96502edd5d41311f4175eacfa2f3b5587853ca6b393316eba6d24391d4b87",
+      "width": 32,
+      "height": 94
+    },
+    {
+      "id": "santet",
+      "weapon": "wand-santet",
+      "direction": "south-east",
+      "path": "apps/client/public/assets/equipment/wand-santet/south-east.png",
+      "sha256": "593f51440bff192a833f82a7065f39f11508c627c5691b968a5ce26e2d06a2ac",
+      "width": 27,
+      "height": 95
+    },
+    {
+      "id": "santet",
+      "weapon": "wand-santet",
+      "direction": "east",
+      "path": "apps/client/public/assets/equipment/wand-santet/east.png",
+      "sha256": "7b92539e886d754fbecd998a35af38213b8733513d5cb1912953d5505af34e0e",
+      "width": 39,
+      "height": 92
+    },
+    {
+      "id": "santet",
+      "weapon": "wand-santet",
+      "direction": "north-east",
+      "path": "apps/client/public/assets/equipment/wand-santet/north-east.png",
+      "sha256": "3f4b3f97faa74b4f88ec8869067563977b644ff3234fc9d7fd4dcfb9dc9ca694",
+      "width": 41,
+      "height": 89
+    },
+    {
+      "id": "santet",
+      "weapon": "wand-santet",
+      "direction": "north",
+      "path": "apps/client/public/assets/equipment/wand-santet/north.png",
+      "sha256": "dcb7041998df80302142f54f70a752b27487f182f2b18aac6df836639d5c95e5",
+      "width": 34,
+      "height": 85
+    },
+    {
+      "id": "santet",
+      "weapon": "wand-santet",
+      "direction": "north-west",
+      "path": "apps/client/public/assets/equipment/wand-santet/north-west.png",
+      "sha256": "70c0a7076ac28bfd2cef2d695aca79e7a23d328f906b2573e9c6f2b884c9c07f",
+      "width": 26,
+      "height": 85
+    },
+    {
+      "id": "santet",
+      "weapon": "wand-santet",
+      "direction": "west",
+      "path": "apps/client/public/assets/equipment/wand-santet/west.png",
+      "sha256": "c11709fe98e4053404a100d5fdce32367977a88d6c1b4614b5e9c93cd00b5463",
+      "width": 39,
+      "height": 91
+    },
+    {
+      "id": "santet",
+      "weapon": "wand-santet",
+      "direction": "south-west",
+      "path": "apps/client/public/assets/equipment/wand-santet/south-west.png",
+      "sha256": "a51264cc841fa7c529cc989d6fbb5f5dc74d7e379b9610c3b7b911f716c607d8",
+      "width": 39,
+      "height": 93
+    },
+    {
+      "id": "keris",
+      "weapon": "keris",
+      "direction": "south",
+      "path": "apps/client/public/assets/equipment/keris/south.png",
+      "sha256": "0269619686066d1c71d0fde84b088ef5cf5c664c9e9f78457ac7467f81227092",
+      "width": 19,
+      "height": 64
+    },
+    {
+      "id": "keris",
+      "weapon": "keris",
+      "direction": "south-east",
+      "path": "apps/client/public/assets/equipment/keris/south-east.png",
+      "sha256": "8a35c94c71e18469bae4944c245d88dae2d741f5d26cc7122453a2144a65802a",
+      "width": 47,
+      "height": 53
+    },
+    {
+      "id": "keris",
+      "weapon": "keris",
+      "direction": "east",
+      "path": "apps/client/public/assets/equipment/keris/east.png",
+      "sha256": "c5e1141d70698b0dc78e7141d5bea6564b0a135f8d345fb8538c36ce00c3a8d4",
+      "width": 61,
+      "height": 32
+    },
+    {
+      "id": "keris",
+      "weapon": "keris",
+      "direction": "north-east",
+      "path": "apps/client/public/assets/equipment/keris/north-east.png",
+      "sha256": "254be5267b2b17521c1a031139311bed646e1f53850a4807b4a99ead5735fc5e",
+      "width": 41,
+      "height": 20
+    },
+    {
+      "id": "keris",
+      "weapon": "keris",
+      "direction": "north",
+      "path": "apps/client/public/assets/equipment/keris/north.png",
+      "sha256": "a1c60e518eec53b63c0e41ca2fb9174b7575117ea8829f00e9cdd25f64abb847",
+      "width": 17,
+      "height": 37
+    },
+    {
+      "id": "keris",
+      "weapon": "keris",
+      "direction": "north-west",
+      "path": "apps/client/public/assets/equipment/keris/north-west.png",
+      "sha256": "4250b4ccb45146124915897a4deaa8b03a139e64e768eb72a99c3b16c7185681",
+      "width": 52,
+      "height": 19
+    },
+    {
+      "id": "keris",
+      "weapon": "keris",
+      "direction": "west",
+      "path": "apps/client/public/assets/equipment/keris/west.png",
+      "sha256": "5f1eefd971f40276149d9aa4572e6f12cc1468e3cf67a8bd851f8c1851bf12da",
+      "width": 61,
+      "height": 40
+    },
+    {
+      "id": "keris",
+      "weapon": "keris",
+      "direction": "south-west",
+      "path": "apps/client/public/assets/equipment/keris/south-west.png",
+      "sha256": "3ad9eb06221d54f11aad8d855b538a1ab39a887dc5a217e9c8e29ced3fce6272",
+      "width": 42,
+      "height": 59
+    },
+    {
+      "id": "onmyoji",
+      "weapon": "fan-onmyoji",
+      "direction": "south",
+      "path": "apps/client/public/assets/equipment/fan-onmyoji/south.png",
+      "sha256": "6b57492772dd858fb2645e59aa730a5e4e8f6a1a5dabd6d0dedcdfcaa0d6b99c",
+      "width": 52,
+      "height": 51
+    },
+    {
+      "id": "onmyoji",
+      "weapon": "fan-onmyoji",
+      "direction": "south-east",
+      "path": "apps/client/public/assets/equipment/fan-onmyoji/south-east.png",
+      "sha256": "6616dd3a2970ac8939a745a92a8a8d55f42440465a23ef280db7f472a72ded94",
+      "width": 36,
+      "height": 52
+    },
+    {
+      "id": "onmyoji",
+      "weapon": "fan-onmyoji",
+      "direction": "east",
+      "path": "apps/client/public/assets/equipment/fan-onmyoji/east.png",
+      "sha256": "5da36755592b4a970934def4293fc5283985bb2931c5a771ff748d99c7f74fa5",
+      "width": 21,
+      "height": 51
+    },
+    {
+      "id": "onmyoji",
+      "weapon": "fan-onmyoji",
+      "direction": "north-east",
+      "path": "apps/client/public/assets/equipment/fan-onmyoji/north-east.png",
+      "sha256": "84a6301525631837fa711270a618497a9b55d8e5805fc19521da94d5b38a2a97",
+      "width": 45,
+      "height": 42
+    },
+    {
+      "id": "onmyoji",
+      "weapon": "fan-onmyoji",
+      "direction": "north",
+      "path": "apps/client/public/assets/equipment/fan-onmyoji/north.png",
+      "sha256": "3addf3b592203614894e88db0e2281301d980411d8c040ded95ecf3d01964d01",
+      "width": 52,
+      "height": 41
+    },
+    {
+      "id": "onmyoji",
+      "weapon": "fan-onmyoji",
+      "direction": "north-west",
+      "path": "apps/client/public/assets/equipment/fan-onmyoji/north-west.png",
+      "sha256": "a3971740fe8549b8c385f3921b58eaa41269b61a7bd484b805ac80479d774557",
+      "width": 41,
+      "height": 42
+    },
+    {
+      "id": "onmyoji",
+      "weapon": "fan-onmyoji",
+      "direction": "west",
+      "path": "apps/client/public/assets/equipment/fan-onmyoji/west.png",
+      "sha256": "bd524bc2dce4b76cf9e7eb38c6fb58ce8c72d38a1b091192cd3f4a293c6de823",
+      "width": 21,
+      "height": 51
+    },
+    {
+      "id": "onmyoji",
+      "weapon": "fan-onmyoji",
+      "direction": "south-west",
+      "path": "apps/client/public/assets/equipment/fan-onmyoji/south-west.png",
+      "sha256": "6c84f241d893c4e48b9eb2b56ffbdf6e37cc493e3fe4e574c7034a8a9edcf6a6",
+      "width": 44,
+      "height": 51
+    },
+    {
+      "id": "miko",
+      "weapon": "gohei-miko",
+      "direction": "south",
+      "path": "apps/client/public/assets/equipment/gohei-miko/south.png",
+      "sha256": "9b10692e1f1aa8a42747dcb2ea82ed3ebd95f2b65c3389004874e613d1acb8da",
+      "width": 29,
+      "height": 71
+    },
+    {
+      "id": "miko",
+      "weapon": "gohei-miko",
+      "direction": "south-east",
+      "path": "apps/client/public/assets/equipment/gohei-miko/south-east.png",
+      "sha256": "143223be476140212243d6606760265616b91fb9ee17ce59f04edd39686526de",
+      "width": 26,
+      "height": 71
+    },
+    {
+      "id": "miko",
+      "weapon": "gohei-miko",
+      "direction": "east",
+      "path": "apps/client/public/assets/equipment/gohei-miko/east.png",
+      "sha256": "c6ed599326731ad2ed47791bed27dd60ef019a15d4862c9f68d46a065c30ed43",
+      "width": 25,
+      "height": 70
+    },
+    {
+      "id": "miko",
+      "weapon": "gohei-miko",
+      "direction": "north-east",
+      "path": "apps/client/public/assets/equipment/gohei-miko/north-east.png",
+      "sha256": "6be3bed3e1ba87fb06bddb143a52f0ae51a543909b99d7d7da49d2f432f3cf8f",
+      "width": 27,
+      "height": 69
+    },
+    {
+      "id": "miko",
+      "weapon": "gohei-miko",
+      "direction": "north",
+      "path": "apps/client/public/assets/equipment/gohei-miko/north.png",
+      "sha256": "da97115bd998891c31e0c1b4ddd590d190d60bcadc2517007acbd6d0d280056c",
+      "width": 31,
+      "height": 69
+    },
+    {
+      "id": "miko",
+      "weapon": "gohei-miko",
+      "direction": "north-west",
+      "path": "apps/client/public/assets/equipment/gohei-miko/north-west.png",
+      "sha256": "6ab90dfd7cb3fcb937cb7a6ee2a559b220d44169f429fa7013347843b3b0c722",
+      "width": 28,
+      "height": 69
+    },
+    {
+      "id": "miko",
+      "weapon": "gohei-miko",
+      "direction": "west",
+      "path": "apps/client/public/assets/equipment/gohei-miko/west.png",
+      "sha256": "dff13316d051279ceaf4f5dce7050fc2fec0c389a343ebb90765d3bdaaaae44d",
+      "width": 25,
+      "height": 70
+    },
+    {
+      "id": "miko",
+      "weapon": "gohei-miko",
+      "direction": "south-west",
+      "path": "apps/client/public/assets/equipment/gohei-miko/south-west.png",
+      "sha256": "c534bdce5ded0ab2d6b24c2877bfb9d0f827f1e0b01822de1bc46dde8f601310",
+      "width": 27,
+      "height": 71
+    },
+    {
+      "id": "rune-seer",
+      "weapon": "staff-rune-seer",
+      "direction": "south",
+      "path": "apps/client/public/assets/equipment/staff-rune-seer/south.png",
+      "sha256": "1d60de7291a77fbd8093ee77480ca90628154df0d24397217de38b63b775324f",
+      "width": 26,
+      "height": 95
+    },
+    {
+      "id": "rune-seer",
+      "weapon": "staff-rune-seer",
+      "direction": "south-east",
+      "path": "apps/client/public/assets/equipment/staff-rune-seer/south-east.png",
+      "sha256": "4efee3e5fa3e2810b29a998564495d4da348418742aa452f4b71afe583b76f8b",
+      "width": 22,
+      "height": 95
+    },
+    {
+      "id": "rune-seer",
+      "weapon": "staff-rune-seer",
+      "direction": "east",
+      "path": "apps/client/public/assets/equipment/staff-rune-seer/east.png",
+      "sha256": "69207bede873515a7a5b4154335dd12e8d9c641dc9c94c40d7356babd76e8658",
+      "width": 20,
+      "height": 95
+    },
+    {
+      "id": "rune-seer",
+      "weapon": "staff-rune-seer",
+      "direction": "north-east",
+      "path": "apps/client/public/assets/equipment/staff-rune-seer/north-east.png",
+      "sha256": "4b3773d07baadf4f410de431b6b56e3db5ea3da5597b838e3fa22f8bc17c2919",
+      "width": 29,
+      "height": 95
+    },
+    {
+      "id": "rune-seer",
+      "weapon": "staff-rune-seer",
+      "direction": "north",
+      "path": "apps/client/public/assets/equipment/staff-rune-seer/north.png",
+      "sha256": "cd9b85be69616048db4db2d2ce80a0b0c2620cbca9dc530b6b9139aa01403365",
+      "width": 28,
+      "height": 95
+    },
+    {
+      "id": "rune-seer",
+      "weapon": "staff-rune-seer",
+      "direction": "north-west",
+      "path": "apps/client/public/assets/equipment/staff-rune-seer/north-west.png",
+      "sha256": "4adfde8225d2cf71bbc6aa505428a6aaa02c9a45dee168e24aac5aa6d595e58f",
+      "width": 22,
+      "height": 95
+    },
+    {
+      "id": "rune-seer",
+      "weapon": "staff-rune-seer",
+      "direction": "west",
+      "path": "apps/client/public/assets/equipment/staff-rune-seer/west.png",
+      "sha256": "a79731c8cd02371baf703eb8fa99995f0d510438933e08d9a2da0c9c24ef7668",
+      "width": 19,
+      "height": 95
+    },
+    {
+      "id": "rune-seer",
+      "weapon": "staff-rune-seer",
+      "direction": "south-west",
+      "path": "apps/client/public/assets/equipment/staff-rune-seer/south-west.png",
+      "sha256": "303887e4fda1905aa9b98b80522e317f9133cb61a3f2379ec2c34054cd40d6fd",
+      "width": 27,
+      "height": 95
+    },
+    {
+      "id": "ullr-hunter",
+      "weapon": "bow-ullr",
+      "direction": "south",
+      "path": "apps/client/public/assets/equipment/bow-ullr/south.png",
+      "sha256": "dbd65a30a60c30764ce10244c337198b7baaa374dad501680321b60c62d40d2e",
+      "width": 26,
+      "height": 96
+    },
+    {
+      "id": "ullr-hunter",
+      "weapon": "bow-ullr",
+      "direction": "south-east",
+      "path": "apps/client/public/assets/equipment/bow-ullr/south-east.png",
+      "sha256": "5296e28b77ea70d15e8e49c1f21a9ae350215b4f450ba23af7cb37d2b58f907c",
+      "width": 30,
+      "height": 96
+    },
+    {
+      "id": "ullr-hunter",
+      "weapon": "bow-ullr",
+      "direction": "east",
+      "path": "apps/client/public/assets/equipment/bow-ullr/east.png",
+      "sha256": "d1dacaf799a7dac13177c4114dcffd3bd52ca4e40bf43229053dfd9ab4015263",
+      "width": 28,
+      "height": 96
+    },
+    {
+      "id": "ullr-hunter",
+      "weapon": "bow-ullr",
+      "direction": "north-east",
+      "path": "apps/client/public/assets/equipment/bow-ullr/north-east.png",
+      "sha256": "27355976c9b87a6832035f45284572c823d731df068c68e8f927edb4387f44ea",
+      "width": 16,
+      "height": 96
+    },
+    {
+      "id": "ullr-hunter",
+      "weapon": "bow-ullr",
+      "direction": "north",
+      "path": "apps/client/public/assets/equipment/bow-ullr/north.png",
+      "sha256": "5cc759b8a0b6228ddc5ce5b665c7afb7adfe6cb6efe09b1ce1245a2c9e7de3fa",
+      "width": 28,
+      "height": 96
+    },
+    {
+      "id": "ullr-hunter",
+      "weapon": "bow-ullr",
+      "direction": "north-west",
+      "path": "apps/client/public/assets/equipment/bow-ullr/north-west.png",
+      "sha256": "ce3d4ad673024095f4e115ead9a90e9c000cd7856ae3ea1ffc1cf7414f00081c",
+      "width": 27,
+      "height": 96
+    },
+    {
+      "id": "ullr-hunter",
+      "weapon": "bow-ullr",
+      "direction": "west",
+      "path": "apps/client/public/assets/equipment/bow-ullr/west.png",
+      "sha256": "cdcd7257fc35161bd9843c7e04cfdb061e90fe3db3fd20b38994e35dc0bfc75c",
+      "width": 18,
+      "height": 96
+    },
+    {
+      "id": "ullr-hunter",
+      "weapon": "bow-ullr",
+      "direction": "south-west",
+      "path": "apps/client/public/assets/equipment/bow-ullr/south-west.png",
+      "sha256": "b2e8ec920c0aedf4d1ae3c18e85e861bf46e9d36e05fead44daa4fb5b129cb6d",
+      "width": 18,
+      "height": 96
+    }
+  ]
+}

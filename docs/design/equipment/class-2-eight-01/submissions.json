@@ -1,0 +1,36 @@
+{
+  "mode": "v3",
+  "directions": 8,
+  "scope": "male offline headless costume rotations",
+  "balanceBefore": 175,
+  "attempts": 2,
+  "retries": 0,
+  "submissions": {
+    "achan": {
+      "description": "Rotate this exact SOUTH-facing modular male costume BODY into all eight directions. It is intentionally HEADLESS for an existing separate head rig: keep the open neck socket, do not add any head, hair, face, helmet, weapon or shield. Same compact chibi anatomy, relaxed idle stance, body size, foot baseline, hand height and crisp pixel style as reference. Do not redesign or enlarge the body. Thai occult shaman: shirtless dense dark fictional protective tattoos covering chest, arms and back; fang amulet necklace, black wrapped cloth and strapped sandals. Transparent background, isolated modular body only.",
+      "source": "docs/design/equipment/class-2-first-pair-03/achan-raw.png",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "id: 05e4e4fd-9203-499e-b242-1172d878a478\nname: Project Shaman class2 achan male eight proof01\nmode: v3 reference (2 generations, 8 directions)\nbody: humanoid\nsize: 128x128px\nview: low top-down\nstyle: from reference image (outline/detail hints ignored)\nstatus: processing (~3-5 min)\n\nhint: get_character(character_id=\"05e4e4fd-9203-499e-b242-1172d878a478\")"
+          }
+        ],
+        "isError": false
+      }
+    },
+    "juggernaut": {
+      "description": "Rotate this exact SOUTH-facing modular male costume BODY into all eight directions. It is intentionally HEADLESS for an existing separate head rig: keep the open neck socket, do not add any head, hair, face, helmet, weapon or shield. Same compact chibi anatomy, relaxed idle stance, body size, foot baseline, hand height and crisp pixel style as reference. Do not redesign or enlarge the body. Russian powerful sinister war shaman: asymmetric dark fur mantle, bone fang charms, dark blue armor, crimson ritual waist strip, compact steel greaves. Preserve left/right asymmetric mantle identity through rotation. Transparent background, isolated modular body only.",
+      "source": "docs/design/equipment/class-2-first-pair-03/juggernaut-raw.png",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "id: f91f67fa-0465-4146-b4fc-e266342a2790\nname: Project Shaman class2 juggernaut male eight proof01\nmode: v3 reference (2 generations, 8 directions)\nbody: humanoid\nsize: 128x128px\nview: low top-down\nstyle: from reference image (outline/detail hints ignored)\nstatus: processing (~3-5 min)\n\nhint: get_character(character_id=\"f91f67fa-0465-4146-b4fc-e266342a2790\")"
+          }
+        ],
+        "isError": false
+      }
+    }
+  }
+}

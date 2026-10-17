@@ -1,0 +1,83 @@
+import {sharp,hash} from '../../../../tools/rig/body-eight-lib.mjs';
+import {readFile,writeFile} from 'node:fs/promises';
+import ts from 'typescript';
+import {EQUIPMENT_VISUALS} from '../../../../packages/shared/dist/index.js';
+const root='docs/design/equipment/class-2-first-pair-03/',out=root+(process.env.AXE_OUTWARD==='1'?'axe-outward/':'rig-audit/');
+const json=async p=>JSON.parse((await readFile(p,'utf8')).replace(/^\uFEFF/,''));
+const codeUrl=s=>`data:text/javascript;base64,${Buffer.from(s).toString('base64')}`;
+const compile=async n=>ts.transpileModule(await readFile(`apps/client/src/game/characters/${n}.ts`,'utf8'),{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;
+const carry=codeUrl(await compile('weapon-carry')),review=codeUrl(await compile('legacy-offhand-review'));
+const shared=new URL('../../../../packages/shared/dist/index.js',import.meta.url).href;
+const stub=codeUrl('export default {Textures:{FilterMode:{NEAREST:0}},Math:{DegToRad:x=>x*Math.PI/180}}');
+const rig=codeUrl((await compile('ModularRig')).replace(/from 'phaser'/g,`from '${stub}'`).replace(/from '@shaman\/shared'/g,`from '${shared}'`).replace(/from '.\/weapon-carry'/g,`from '${carry}'`).replace(/from '.\/legacy-offhand-review'/g,`from '${review}'`).replace(/import \{ HAND_ANCHORS_KEY \} from '.\/v3-weapon';/,"const HAND_ANCHORS_KEY='v3-hand-anchors';").replace(/import \{ WEAPON_ACTIONS \} from '.\/walk-eight-model';/,'const WEAPON_ACTIONS=[];'));
+const {EquipmentLayers}=await import(rig);
+const {v3WeaponFrame}=await import(codeUrl((await compile('v3-weapon')).replace(/from '.\/ModularRig'/g,`from '${rig}'`)));
+const anchors=await json('apps/client/public/assets/character-v3/hand-anchors.json'),grips=await json('apps/client/public/assets/equipment/grips.json');
+const pairRoot='docs/design/equipment/class-2-eight-01/';
+const manifest=await json('apps/client/public/assets/character-v3/body-eight-02/manifest.json');
+const user=await json(pairRoot+'user-head-offsets.json');
+const checks=await json(pairRoot+'checks.json');
+const candidateMode=process.env.PAIR_CANDIDATE==='1';
+const fingerMode=candidateMode&&process.env.PAIR_FINGERS==='1';
+const suffix=candidateMode?(fingerMode?'-fingers':'-candidate'):'';
+const candidateConfig=await json(pairRoot+'candidate-carry.json');
+const {default:assert}=await import('node:assert/strict');
+const facings=['south','south-east','east','north-east','north','north-west','west','south-west'];
+const report={scope:'16 static offline candidate placements using real equipment renderer. SVG rasterization differs from Phaser; no novice hand overlay, motion or runtime certification.',results:{},paidGenerations:0};
+for(const id of ['achan','juggernaut']){
+ const cells=[],contactCells=[];report.results[id]={};
+ for(const [index,direction] of facings.entries()){
+  const idle=manifest.frames.find(f=>f.direction===direction),images=[];
+  const scene={cache:{json:{get:k=>k==='v3-hand-anchors'?anchors:grips}},textures:{exists:()=>true},add:{image:()=>{const img={texture:{setFilter(){}},destroy(){}};for(const m of ['Visible','Texture','Origin','Position','Rotation','Scale','Depth','Alpha','Tint'])img['set'+m]=(...v)=>{img[m]=v;return img;};images.push(img);return img;}}};
+  const actor={scene,x:128,y:144,originX:(idle.bodyOrigin.x+.5)/128,originY:(idle.bodyOrigin.y+1)/128,scaleX:1,scaleY:1,depth:144,visible:true,alpha:1,tintTopLeft:0xffffff};
+  const mode=id==='achan'?'bolt':'swing',weapon=id==='achan'?'staff-achan':'axe-juggernaut',action=id==='achan'?'attack-cast-staff':'attack-axe-shield';
+  const frame=v3WeaponFrame(scene,`v3:idle:${direction}`,mode,action);assert.ok(frame,'missing frame');
+  const sourceGrip=[...frame.grip];
+  if(candidateMode){const c=candidateConfig[id][direction];const move=(old,p,tip)=>[tip[0]+p[0]-old[0],tip[1]+p[1]-old[1]];frame.tip=move(frame.grip,c.main,frame.tip);frame.grip=c.main;if(frame.off){frame.off.tip=move(frame.off.grip,c.off,frame.off.tip);frame.off.grip=c.off;}}
+  new EquipmentLayers(scene).sync(actor,{weapon},direction,frame,128);
+  const gear=images.filter(i=>i.Visible?.[0]&&i.Texture?.[0]?.startsWith('gear:')).map(i=>({texture:i.Texture[0],origin:i.Origin,position:i.Position,rotation:i.Rotation[0],scale:i.Scale,depth:i.Depth[0]}));
+  if(candidateMode){const main=gear.find(g=>g.texture.startsWith('gear:'+weapon+':'));main.rotation=candidateConfig[id][direction].tilt*Math.PI/180;}
+  assert.equal(gear.length,id==='achan'?1:2);
+  const sourceBytes=await readFile(`${pairRoot}${id}/${direction}.png`);
+  const tattoo=candidateMode&&id==='achan'&&['north','north-east','north-west'].includes(direction);
+  const handRepair=candidateMode&&id==='juggernaut'&&direction==='north-west';
+  const bytes=tattoo?await readFile(`${pairRoot}achan-tattoo/${direction}.png`):handRepair?await readFile(`${pairRoot}juggernaut-hand/${direction}.png`):sourceBytes,head=await readFile('apps/client/public'+idle.headUrl),base=await readFile('apps/client/public'+idle.url);
+  assert.equal(hash(sourceBytes),checks.classes[id][direction].sha256);assert.equal(hash(base),idle.sha256);assert.equal(hash(head),idle.headSha256);
+  if(tattoo){const p=await json(pairRoot+`achan-${direction}-tattoo-patches.json`);assert.equal(hash(sourceBytes),p.sourceSha256);const old=await sharp(sourceBytes).ensureAlpha().raw().toBuffer(),now=await sharp(bytes).ensureAlpha().raw().toBuffer(),allowed=new Map(p.changes[0].pixels.map(([x,y,before,after])=>[(y*128+x)*4,{before,after}]));for(let i=0;i<old.length;i+=4){const change=allowed.get(i);if(change){assert.equal('#'+old.subarray(i,i+4).toString('hex'),change.before);assert.equal('#'+now.subarray(i,i+4).toString('hex'),change.after);}else assert.ok(old.subarray(i,i+4).equals(now.subarray(i,i+4)),'outside tattoo drift');}}
+  if(handRepair){const p=await json(pairRoot+'juggernaut-nw-hand-patches.json');assert.equal(hash(sourceBytes),p.originalSha256);assert.equal(hash(base),p.sourceSha256);const a=await sharp(sourceBytes).ensureAlpha().raw().toBuffer(),b=await sharp(bytes).ensureAlpha().raw().toBuffer(),allowed=new Map(p.changes[0].pixels.map(([x,y,before,after])=>[(y*128+x)*4,{before,after}]));for(let i=0;i<a.length;i+=4){const v=allowed.get(i);if(v){assert.equal('#'+a.subarray(i,i+4).toString('hex'),v.before);assert.equal('#'+b.subarray(i,i+4).toString('hex'),v.after);}else assert.ok(a.subarray(i,i+4).equals(b.subarray(i,i+4)),'outside hand repair drift');}}
+  const offset=id==='juggernaut'?user.offsets.find(v=>v.direction===direction):{x:idle.neckPivot.x-idle.headPivot.x,y:idle.neckPivot.y-idle.headPivot.y};
+  const bx=actor.x-actor.originX*128,by=actor.y-actor.originY*128;
+  const svgImage=(b,x,y,w,h)=>`<image href="data:image/png;base64,${b.toString('base64')}" x="${x}" y="${y}" width="${w}" height="${h}"/>`;
+  const back=[],front=[];
+  for(const g of gear){
+   const [,item,view]=g.texture.split(':');
+   const path=id==='juggernaut'&&direction==='south'&&item==='axe-juggernaut'?'docs/design/equipment/class-2-first-pair-03/axe-south-outward.png':`apps/client/public/assets/equipment/${item}/${view}.png`;
+   if(path.includes('outward')){g.origin=[1-g.origin[0],g.origin[1]];g.offlineOutwardOverride=true;}
+   const art=await readFile(path),m=await sharp(art).metadata();g.artSha256=hash(art);
+   const image=svgImage(art,-g.origin[0]*m.width,-g.origin[1]*m.height,m.width,m.height);
+   const s=`<g transform="translate(${g.position[0]},${g.position[1]}) rotate(${g.rotation*180/Math.PI}) scale(${g.scale[0]},${g.scale[1]})">${image}</g>`;
+   (g.depth<actor.depth?back:front).push(s);
+  }
+  const raw=await sharp(bytes).ensureAlpha().raw().toBuffer();
+  const mainGear=gear.find(g=>g.texture.startsWith('gear:'+weapon+':'));
+  const fingerPixels=[];
+  // Recompose only existing skin pixels from an authored 3x3 contact window.
+  // Far-hand gear stays behind the body. Shield face is not covered with a floating fist.
+  if(fingerMode&&mainGear.depth>=actor.depth){const hx=Math.round(frame.grip[0]),hy=Math.round(frame.grip[1]);for(let y=hy-1;y<=hy+1;y++)for(let x=hx-1;x<=hx+1;x++){const i=(y*128+x)*4,r=raw[i],g=raw[i+1],b=raw[i+2];if(raw[i+3]&&r>145&&r>g*1.15&&g>b*1.08)fingerPixels.push([x,y]);}}
+  const clip=fingerPixels.map(([x,y])=>`<rect x="${bx+x}" y="${by+y}" width="1" height="1"/>`).join('');
+  const fingers=fingerPixels.length?`<defs><clipPath id="fingers">${clip}</clipPath></defs><g clip-path="url(#fingers)">${svgImage(bytes,bx,by,128,128)}</g>`:'';
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="256" height="176"><rect width="256" height="176" fill="#263b35"/>${back.join('')}${svgImage(bytes,bx,by,128,128)}${svgImage(head,bx+offset.x,by+offset.y,128,128)}${front.join('')}${fingers}</svg>`;
+  const canvas=await sharp(Buffer.from(svg)).png().toBuffer();
+  cells.push({input:canvas,left:(index%4)*256,top:Math.floor(index/4)*176});
+  const cx=Math.round(bx+frame.grip[0]),cy=Math.round(by+frame.grip[1]);
+  contactCells.push({input:await sharp(canvas).extract({left:cx-12,top:cy-12,width:24,height:24}).png().toBuffer(),left:(index%4)*24,top:Math.floor(index/4)*24});
+  const hand=(name,p)=>{const x=Math.round(p[0]),y=Math.round(p[1]),i=(y*128+x)*4;return{name,sourceAnchor:p,candidatePixel:[...raw.subarray(i,i+4)],candidateOpaqueAtSourceAnchor:raw[i+3]>0,note:'Opaque is not hand/grip alignment; visually review generated fist versus source anchor'};};
+  report.results[id][direction]={headOffset:offset,bodySha256:hash(bytes),sourceGrip,candidateMode,fingerOverlay:{enabled:fingerMode,pixels:fingerPixels,source:'unchanged candidate body pixels',farHand:mainGear.depth<actor.depth,status:mainGear.depth<actor.depth?'body occludes far-hand gear':fingerPixels.length?'static contact overlay candidate':'unverified/no eligible contact pixels'},hands:[hand('weapon',frame.grip),...(frame.off?[hand('other',frame.off.grip)]:[])],gear,visualApproved:false,runtimeCompatible:false};
+ }
+ const sheet=await sharp({create:{width:1024,height:352,channels:4,background:'#263b35'}}).composite(cells).png().toBuffer();
+ await sharp(sheet).resize(2048,704,{kernel:'nearest'}).toFile(pairRoot+`${id}-equipment-eight${suffix}-2x.png`);
+ const contacts=await sharp({create:{width:96,height:48,channels:4,background:'#263b35'}}).composite(contactCells).png().toBuffer();
+ await sharp(contacts).resize(768,384,{kernel:'nearest'}).toFile(pairRoot+`${id}-hand-contacts${suffix}-8x.png`);
+}
+await writeFile(pairRoot+`pair-equipment-audit${suffix}.json`,JSON.stringify(report,null,2)+'\n');
+console.log('PASS: 16 static renderer cases; source/candidate hashes and gear counts. Visual grip/clipping acceptance pending.');

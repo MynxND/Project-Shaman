@@ -1,0 +1,168 @@
+{
+  "scope": "SOUTH static audit. Production renderer placement executed with recorded Phaser calls. Offline raster preview rounds positions/sizes; not a browser runtime screenshot. Offline axe orientation override, not current runtime: reflected SOUTH art with mirrored gripX.",
+  "baseSha256": "c4c0ade151545e99ba6fa003d4f597142e004c6b8c214147a552df17ed5ab906",
+  "sourceOrigin": {
+    "x": 62,
+    "y": 112
+  },
+  "results": {
+    "achan": {
+      "weapon": "staff-achan",
+      "action": "attack-cast-staff",
+      "candidateSha256": "e03e4f6080232006455a15f60432d69ffc556d0bd04231c9c626aa0d1ada5666",
+      "hands": [
+        {
+          "name": "main",
+          "grip": [
+            41.5,
+            80
+          ],
+          "sourcePixel": [
+            223,
+            147,
+            115,
+            255
+          ],
+          "candidatePixel": [
+            223,
+            147,
+            115,
+            255
+          ],
+          "changedPixelsIn7x7": 0
+        },
+        {
+          "name": "off",
+          "grip": [
+            82.5,
+            76.8
+          ],
+          "sourcePixel": [
+            223,
+            147,
+            115,
+            255
+          ],
+          "candidatePixel": [
+            223,
+            147,
+            115,
+            255
+          ],
+          "changedPixelsIn7x7": 0
+        }
+      ],
+      "lowestOpaqueRow": 112,
+      "sourceFootRow": 112,
+      "gear": [
+        {
+          "texture": "gear:staff-achan:south",
+          "origin": [
+            0.375,
+            0.62
+          ],
+          "position": [
+            43,
+            95
+          ],
+          "rotation": 0,
+          "scale": [
+            0.75,
+            0.75
+          ],
+          "depth": 128.04
+        }
+      ],
+      "passed": false,
+      "disposition": "Revision03 repair derivative: bounded static checks in repair-verification.json pass; visual review, full anatomy and runtime compatibility remain pending. Original revision02 approval is not automatically inherited."
+    },
+    "juggernaut": {
+      "weapon": "axe-juggernaut",
+      "action": "attack-axe-shield",
+      "candidateSha256": "3bdd1d0654299caf46752d20d45f11067b14e10ad9bcfcb9a17af1e39bb8c1db",
+      "hands": [
+        {
+          "name": "main",
+          "grip": [
+            41.5,
+            80
+          ],
+          "sourcePixel": [
+            223,
+            147,
+            115,
+            255
+          ],
+          "candidatePixel": [
+            223,
+            147,
+            115,
+            255
+          ],
+          "changedPixelsIn7x7": 0
+        },
+        {
+          "name": "off",
+          "grip": [
+            82.5,
+            76.8
+          ],
+          "sourcePixel": [
+            223,
+            147,
+            115,
+            255
+          ],
+          "candidatePixel": [
+            223,
+            147,
+            115,
+            255
+          ],
+          "changedPixelsIn7x7": 7
+        }
+      ],
+      "lowestOpaqueRow": 112,
+      "sourceFootRow": 112,
+      "gear": [
+        {
+          "texture": "gear:axe-juggernaut:south",
+          "origin": [
+            0.629,
+            0.8
+          ],
+          "position": [
+            43,
+            95
+          ],
+          "rotation": 0,
+          "scale": [
+            0.7,
+            0.7
+          ],
+          "depth": 128.04,
+          "candidatePath": "docs/design/equipment/class-2-first-pair-03/axe-south-outward.png"
+        },
+        {
+          "texture": "gear:shield-juggernaut:south",
+          "origin": [
+            0.5,
+            0.5
+          ],
+          "position": [
+            84,
+            91.8
+          ],
+          "rotation": 0,
+          "scale": [
+            0.65,
+            0.65
+          ],
+          "depth": 128.04
+        }
+      ],
+      "passed": false,
+      "disposition": "Revision03 repair derivative: bounded static checks in repair-verification.json pass; visual review, full anatomy and runtime compatibility remain pending. Original revision02 approval is not automatically inherited."
+    }
+  }
+}

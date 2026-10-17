@@ -1,0 +1,29 @@
+{
+  "baseSha256": "c4c0ade151545e99ba6fa003d4f597142e004c6b8c214147a552df17ed5ab906",
+  "headSha256": "1ac5ca0956848a2886484a8955e3d4d5f4206bc513c96581b55ade60bf6a4215",
+  "headOffset": {
+    "x": 0,
+    "y": -1
+  },
+  "note": "Static composite uses existing idle neck minus head pivot. Head unchanged; not runtime clothing integration.",
+  "outputs": {
+    "medium": {
+      "sha256": "c4c0ade151545e99ba6fa003d4f597142e004c6b8c214147a552df17ed5ab906",
+      "width": 128,
+      "height": 128,
+      "outsideBodyBandChangedPixels": 0
+    },
+    "achan": {
+      "sha256": "8d4b72bb04a7c5cced77d5bdbe4635e6a4615befec0d231413fedebcd7d91692",
+      "width": 128,
+      "height": 128,
+      "outsideBodyBandChangedPixels": 15
+    },
+    "juggernaut": {
+      "sha256": "fe732ce8d2100c7cec728f25a638f2c6a257b3d28d725fd291c72bd11aa47fc2",
+      "width": 128,
+      "height": 128,
+      "outsideBodyBandChangedPixels": 44
+    }
+  }
+}

@@ -1,0 +1,1 @@
+Latest two-pose generation attempt cancelled by user. NORTH native outputs restored byte-exact from before snapshots. NE/SW new pair outputs were never applied. Generated sources retained as inactive history; head data untouched.

@@ -1,0 +1,39 @@
+{
+  "scope": "Offline static costume comparison, unchanged directional head; no gear or runtime integration",
+  "results": {
+    "achan": {
+      "sha256": "3d29ca19b855a10cb080e34f47326ca1da85e9fcc1f5ecb6affe398899382799",
+      "width": 128,
+      "height": 128,
+      "opaquePixels": 1843,
+      "lowestOpaqueRow": 114,
+      "sourceLowestOpaqueRow": 114,
+      "groundDelta": 0,
+      "sourceBodySha256": "1ddd879674457c1555543edde9fc1a9dabebf55fd158eebc373c01b859909d8b",
+      "headSha256": "3cd756ea681a3571bf619505373ec6f78e200c0b3d6088936b26ad587c08b0b5",
+      "headOffset": {
+        "x": -3,
+        "y": -1
+      },
+      "visualApproved": false,
+      "runtimeCompatible": false
+    },
+    "juggernaut": {
+      "sha256": "d515532641576b7c769d3ca98a967b21bdacf4c482c663550c9b193af776c2d2",
+      "width": 128,
+      "height": 128,
+      "opaquePixels": 2489,
+      "lowestOpaqueRow": 120,
+      "sourceLowestOpaqueRow": 114,
+      "groundDelta": 6,
+      "sourceBodySha256": "1ddd879674457c1555543edde9fc1a9dabebf55fd158eebc373c01b859909d8b",
+      "headSha256": "3cd756ea681a3571bf619505373ec6f78e200c0b3d6088936b26ad587c08b0b5",
+      "headOffset": {
+        "x": -3,
+        "y": -1
+      },
+      "visualApproved": false,
+      "runtimeCompatible": false
+    }
+  }
+}

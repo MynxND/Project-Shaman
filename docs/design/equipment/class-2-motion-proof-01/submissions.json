@@ -1,0 +1,39 @@
+{
+  "scope": "Offline three source walk keyframes per class, not a complete clip or production architecture adoption",
+  "sourceIndices": [
+    0,
+    3,
+    7
+  ],
+  "sourceRoot": "apps/client/public/assets/character-v3/walk-eight-02/",
+  "referenceRoot": "docs/design/equipment/class-2-first-pair-03/",
+  "balanceBefore": 171,
+  "attempts": 2,
+  "retries": 0,
+  "submissions": {
+    "achan": {
+      "instructions": "Three selected frames from the SAME original male SOUTH walk, indices0,3,7, not a whole loop. Keep each input pose, exact arm/hand positions, neck socket and foot contact. Transfer only costume appearance from reference. Intentionally headless modular body: no head, hair, weapons, shields, background or effects. Do not freeze all frames into the reference idle pose. Do not change anatomy or enlarge cape/feet. Shirtless dense fictional dark protective tattoos, fang amulet necklace, black wrapped cloth and sandals.",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "id: d40341ae-47e4-4d3f-b171-3905b39936b9\njob_id: d40341ae-47e4-4d3f-b171-3905b39936b9\nframes: 3\nsize: 128x128px\ntransparent: True\ninstructions: Three selected frames from the SAME original male SOUTH walk, indices0,3,7, not a whole loop. Keep each input pose, exact arm/hand positions, neck socket and foot contact. Transfer only costume appearance from reference. Intentionally headless modular body: no head, hair, weapons, shields, background or effects. Do not freeze all frames into the reference idle pose. Do not change anatomy or enlarge cape/feet. Shirtless dense fictional dark protective tattoos, fang amulet necklace, black wrapped cloth and sandals.\nseed: 2601\nasset_id: 5624f53b-31f9-5e4a-bba2-83e58c7c8e49\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"d40341ae-47e4-4d3f-b171-3905b39936b9\")"
+          }
+        ],
+        "isError": false
+      }
+    },
+    "juggernaut": {
+      "instructions": "Three selected frames from the SAME original male SOUTH walk, indices0,3,7, not a whole loop. Keep each input pose, exact arm/hand positions, neck socket and foot contact. Transfer only costume appearance from reference. Intentionally headless modular body: no head, hair, weapons, shields, background or effects. Do not freeze all frames into the reference idle pose. Do not change anatomy or enlarge cape/feet. Dark blue armor, asymmetric dark fur mantle, bone charms, short crimson waist cloth and compact greaves; keep hands exposed.",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "id: bb9891ff-9fff-49e2-947e-1f1274844c9d\njob_id: bb9891ff-9fff-49e2-947e-1f1274844c9d\nframes: 3\nsize: 128x128px\ntransparent: True\ninstructions: Three selected frames from the SAME original male SOUTH walk, indices0,3,7, not a whole loop. Keep each input pose, exact arm/hand positions, neck socket and foot contact. Transfer only costume appearance from reference. Intentionally headless modular body: no head, hair, weapons, shields, background or effects. Do not freeze all frames into the reference idle pose. Do not change anatomy or enlarge cape/feet. Dark blue armor, asymmetric dark fur mantle, bone charms, short crimson waist cloth and compact greaves; keep hands exposed.\nseed: 2602\nasset_id: fa823b82-03c9-57b6-bcd5-d6d698d6e0e0\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"bb9891ff-9fff-49e2-947e-1f1274844c9d\")"
+          }
+        ],
+        "isError": false
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+import {sharp,hash} from '../../../../../tools/rig/body-eight-lib.mjs';
+import {readFile,writeFile} from 'node:fs/promises';
+import ts from 'typescript';
+import {EQUIPMENT_VISUALS} from '../../../../../packages/shared/dist/index.js';
+const root='docs/design/equipment/class-2-first-pair-03/',out=root+(process.env.AXE_OUTWARD==='1'?'axe-outward/':'rig-audit/');
+const json=async p=>JSON.parse((await readFile(p,'utf8')).replace(/^\uFEFF/,''));
+const codeUrl=s=>`data:text/javascript;base64,${Buffer.from(s).toString('base64')}`;
+const compile=async n=>ts.transpileModule(await readFile(`apps/client/src/game/characters/${n}.ts`,'utf8'),{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;
+const carry=codeUrl(await compile('weapon-carry')),review=codeUrl(await compile('legacy-offhand-review'));
+const shared=new URL('../../../../../packages/shared/dist/index.js',import.meta.url).href;
+const stub=codeUrl('export default {Textures:{FilterMode:{NEAREST:0}},Math:{DegToRad:x=>x*Math.PI/180}}');
+const rig=codeUrl((await compile('ModularRig')).replace(/from 'phaser'/g,`from '${stub}'`).replace(/from '@shaman\/shared'/g,`from '${shared}'`).replace(/from '.\/weapon-carry'/g,`from '${carry}'`).replace(/from '.\/legacy-offhand-review'/g,`from '${review}'`).replace(/import \{ HAND_ANCHORS_KEY \} from '.\/v3-weapon';/,"const HAND_ANCHORS_KEY='v3-hand-anchors';").replace(/import \{ WEAPON_ACTIONS \} from '.\/walk-eight-model';/,'const WEAPON_ACTIONS=[];'));
+const {EquipmentLayers}=await import(rig);
+const {v3WeaponFrame}=await import(codeUrl((await compile('v3-weapon')).replace(/from '.\/ModularRig'/g,`from '${rig}'`)));
+const anchors=await json('apps/client/public/assets/character-v3/hand-anchors.json'),grips=await json('apps/client/public/assets/equipment/grips.json');
+const manifest=await json('apps/client/public/assets/character-v3/body-eight-02/manifest.json'),idle=manifest.frames[0];
+const images=[];const scene={cache:{json:{get:k=>k==='v3-hand-anchors'?anchors:grips}},textures:{exists:()=>true},add:{image:()=>{const img={texture:{setFilter(){}},destroy(){}};for(const m of ['Visible','Texture','Origin','Position','Rotation','Scale','Depth','Alpha','Tint'])img['set'+m]=(...v)=>{img[m]=v;return img;};images.push(img);return img;}}};
+const layers=new EquipmentLayers(scene),actor={scene,x:64,y:128,originX:(idle.bodyOrigin.x+.5)/128,originY:(idle.bodyOrigin.y+1)/128,scaleX:1,scaleY:1,depth:128,visible:true,alpha:1,tintTopLeft:0xffffff};
+const base=await readFile('apps/client/public/assets/character-v3/body-eight-02/south.png'),baseRaw=await sharp(base).ensureAlpha().raw().toBuffer();
+const report={scope:'SOUTH static audit. Production renderer placement executed with recorded Phaser calls. Offline raster preview rounds positions/sizes; not a browser runtime screenshot.',baseSha256:hash(base),sourceOrigin:idle.bodyOrigin,results:{}};
+const cells=[];
+for(const [index,id] of ['achan','juggernaut'].entries()){
+ const weapon=id==='achan'?'staff-achan':'axe-juggernaut',action=id==='achan'?'attack-cast-staff':'attack-axe-shield';
+ const frame=v3WeaponFrame(scene,'v3:idle:south',id==='achan'?'bolt':'swing',action);
+ layers.sync(actor,{weapon},'south',frame,128);
+ const bytes=await readFile(root+id+'-raw.png'),raw=await sharp(bytes).ensureAlpha().raw().toBuffer();
+ const pixel=(buf,x,y)=>[...buf.subarray((y*128+x)*4,(y*128+x)*4+4)];
+ const hands=[['main',frame.grip],...(frame.off?[['off',frame.off.grip]]:[])].map(([name,p])=>{const x=Math.round(p[0]),y=Math.round(p[1]);let changed=0;for(let yy=y-3;yy<=y+3;yy++)for(let xx=x-3;xx<=x+3;xx++)if(JSON.stringify(pixel(raw,xx,yy))!==JSON.stringify(pixel(baseRaw,xx,yy)))changed++;return{name,grip:p,sourcePixel:pixel(baseRaw,x,y),candidatePixel:pixel(raw,x,y),changedPixelsIn7x7:changed};});
+ let lowest=-1;for(let y=0;y<128;y++)for(let x=0;x<128;x++)if(raw[(y*128+x)*4+3])lowest=y;
+ const gear=images.filter(i=>i.Visible?.[0]&&i.Texture?.[0]?.startsWith('gear:')).map(i=>({texture:i.Texture[0],origin:i.Origin,position:i.Position,rotation:i.Rotation[0],scale:i.Scale,depth:i.Depth[0]}));
+ if(process.env.AXE_OUTWARD==='1'&&id==='juggernaut'){const axe=gear.find(g=>g.texture==='gear:axe-juggernaut:south');axe.origin=[1-axe.origin[0],axe.origin[1]];axe.candidatePath=root+'axe-south-outward.png';report.scope+=' Offline axe orientation override, not current runtime: reflected SOUTH art with mirrored gripX.';}
+ report.results[id]={weapon,action,candidateSha256:hash(bytes),hands,lowestOpaqueRow:lowest,sourceFootRow:idle.bodyOrigin.y,gear,passed:false,disposition:'Revision03 repair derivative: bounded static checks in repair-verification.json pass; visual review, full anatomy and runtime compatibility remain pending. Original revision02 approval is not automatically inherited.'};
+ const composite=[];const body=await readFile(root+id+'-with-head.png');
+ const bodyLeft=Math.round(actor.x-actor.originX*128),bodyTop=Math.round(actor.y-actor.originY*128);
+ const draw=async g=>{if(Math.abs(g.rotation)>1e-8)throw Error('preview requires additional rotation handling');const art=g.texture.split(':')[1];const b=await readFile(g.candidatePath??`apps/client/public/assets/equipment/${art}/south.png`),m=await sharp(b).metadata();const w=Math.round(m.width*g.scale[0]),h=Math.round(m.height*g.scale[1]);const scaled=await sharp(b).resize(w,h,{kernel:'nearest'}).png().toBuffer();composite.push({input:scaled,left:Math.round(g.position[0]-g.origin[0]*w)+64,top:Math.round(g.position[1]-g.origin[1]*h)+32});};
+ for(const g of gear.filter(g=>g.depth<actor.depth))await draw(g);
+ composite.push({input:body,left:bodyLeft+64,top:bodyTop+32});
+ for(const g of gear.filter(g=>g.depth>=actor.depth))await draw(g);
+ const canvas=await sharp({create:{width:256,height:192,channels:4,background:'#263b35'}}).composite(composite).png().toBuffer();
+ await sharp(canvas).resize(768,576,{kernel:'nearest'}).toFile(out+id+'-equipment-3x.png');cells.push({input:canvas,left:index*256,top:0});
+}
+const sheet=await sharp({create:{width:512,height:192,channels:4,background:'#263b35'}}).composite(cells).png().toBuffer();await sharp(sheet).resize(1536,576,{kernel:'nearest'}).toFile(out+'equipment-comparison-3x.png');await writeFile(out+'report.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
+

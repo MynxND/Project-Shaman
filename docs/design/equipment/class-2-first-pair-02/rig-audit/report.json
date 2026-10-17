@@ -1,0 +1,167 @@
+{
+  "scope": "SOUTH static audit. Production renderer placement executed with recorded Phaser calls. Offline raster preview rounds positions/sizes; not a browser runtime screenshot.",
+  "baseSha256": "c4c0ade151545e99ba6fa003d4f597142e004c6b8c214147a552df17ed5ab906",
+  "sourceOrigin": {
+    "x": 62,
+    "y": 112
+  },
+  "results": {
+    "achan": {
+      "weapon": "staff-achan",
+      "action": "attack-cast-staff",
+      "candidateSha256": "2cb7e911ee165916d0bc0fdeb33146f43f41b2b17e39a804955768849a38821c",
+      "hands": [
+        {
+          "name": "main",
+          "grip": [
+            41.5,
+            80
+          ],
+          "sourcePixel": [
+            223,
+            147,
+            115,
+            255
+          ],
+          "candidatePixel": [
+            207,
+            129,
+            101,
+            255
+          ],
+          "changedPixelsIn7x7": 35
+        },
+        {
+          "name": "off",
+          "grip": [
+            82.5,
+            76.8
+          ],
+          "sourcePixel": [
+            223,
+            147,
+            115,
+            255
+          ],
+          "candidatePixel": [
+            207,
+            129,
+            101,
+            255
+          ],
+          "changedPixelsIn7x7": 33
+        }
+      ],
+      "lowestOpaqueRow": 112,
+      "sourceFootRow": 112,
+      "gear": [
+        {
+          "texture": "gear:staff-achan:south",
+          "origin": [
+            0.375,
+            0.62
+          ],
+          "position": [
+            43,
+            95
+          ],
+          "rotation": 0,
+          "scale": [
+            0.75,
+            0.75
+          ],
+          "depth": 128.04
+        }
+      ],
+      "passed": false,
+      "disposition": "Concept visually approved; exact anatomy/hand compatibility not certified. No pivot changes or source repairs."
+    },
+    "juggernaut": {
+      "weapon": "axe-juggernaut",
+      "action": "attack-axe-shield",
+      "candidateSha256": "1189dfafa726de7d89519fb54d14495236c2f6977c634c0052578719355d7f5d",
+      "hands": [
+        {
+          "name": "main",
+          "grip": [
+            41.5,
+            80
+          ],
+          "sourcePixel": [
+            223,
+            147,
+            115,
+            255
+          ],
+          "candidatePixel": [
+            141,
+            131,
+            119,
+            255
+          ],
+          "changedPixelsIn7x7": 44
+        },
+        {
+          "name": "off",
+          "grip": [
+            82.5,
+            76.8
+          ],
+          "sourcePixel": [
+            223,
+            147,
+            115,
+            255
+          ],
+          "candidatePixel": [
+            141,
+            131,
+            119,
+            255
+          ],
+          "changedPixelsIn7x7": 49
+        }
+      ],
+      "lowestOpaqueRow": 125,
+      "sourceFootRow": 112,
+      "gear": [
+        {
+          "texture": "gear:axe-juggernaut:south",
+          "origin": [
+            0.371,
+            0.8
+          ],
+          "position": [
+            43,
+            95
+          ],
+          "rotation": 0,
+          "scale": [
+            0.7,
+            0.7
+          ],
+          "depth": 128.04
+        },
+        {
+          "texture": "gear:shield-juggernaut:south",
+          "origin": [
+            0.5,
+            0.5
+          ],
+          "position": [
+            84,
+            91.8
+          ],
+          "rotation": 0,
+          "scale": [
+            0.65,
+            0.65
+          ],
+          "depth": 128.04
+        }
+      ],
+      "passed": false,
+      "disposition": "Concept visually approved; exact anatomy/hand compatibility not certified. No pivot changes or source repairs."
+    }
+  }
+}

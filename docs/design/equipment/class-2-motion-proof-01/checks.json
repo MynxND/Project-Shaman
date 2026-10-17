@@ -1,0 +1,414 @@
+{
+  "scope": "SOUTH walk indices0/3/7 only, not consecutive frames or complete animation",
+  "classes": {
+    "achan": {
+      "frames": [
+        {
+          "sourceIndex": 0,
+          "sha256": "5ebebdbd6f0fca9c7afbf233ee5abdce65b41f2647665494971ded7dc24c6132",
+          "sourceBounds": {
+            "x0": 40,
+            "y0": 47,
+            "x1": 84,
+            "y1": 112
+          },
+          "candidateBounds": {
+            "x0": 40,
+            "y0": 47,
+            "x1": 85,
+            "y1": 112
+          },
+          "groundDelta": 0,
+          "headOffset": {
+            "x": 1,
+            "y": -1
+          },
+          "contacts": [
+            {
+              "name": "main",
+              "sourceAnchor": {
+                "x": 42.5,
+                "y": 80
+              },
+              "sourcePixel": [
+                240,
+                176,
+                139,
+                255
+              ],
+              "candidatePixel": [
+                210,
+                136,
+                108,
+                255
+              ],
+              "sourceAnchorAlreadyTransparent": false,
+              "changedPixelsIn5x5": 22
+            },
+            {
+              "name": "off",
+              "sourceAnchor": {
+                "x": 83.5,
+                "y": 76.8
+              },
+              "sourcePixel": [
+                42,
+                25,
+                24,
+                255
+              ],
+              "candidatePixel": [
+                213,
+                151,
+                125,
+                255
+              ],
+              "sourceAnchorAlreadyTransparent": false,
+              "changedPixelsIn5x5": 19
+            }
+          ],
+          "visualApproved": false
+        },
+        {
+          "sourceIndex": 3,
+          "sha256": "e0d71c7deb3be1d2b6be9eb8fea63c1d97318b50676c6b1e23cc38e69a4b54b3",
+          "sourceBounds": {
+            "x0": 44,
+            "y0": 46,
+            "x1": 80,
+            "y1": 112
+          },
+          "candidateBounds": {
+            "x0": 44,
+            "y0": 46,
+            "x1": 80,
+            "y1": 112
+          },
+          "groundDelta": 0,
+          "headOffset": {
+            "x": 0,
+            "y": -2
+          },
+          "contacts": [
+            {
+              "name": "main",
+              "sourceAnchor": {
+                "x": 41.5,
+                "y": 79
+              },
+              "sourcePixel": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "candidatePixel": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "sourceAnchorAlreadyTransparent": true,
+              "changedPixelsIn5x5": 1
+            },
+            {
+              "name": "off",
+              "sourceAnchor": {
+                "x": 82.5,
+                "y": 75.8
+              },
+              "sourcePixel": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "candidatePixel": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "sourceAnchorAlreadyTransparent": true,
+              "changedPixelsIn5x5": 0
+            }
+          ],
+          "visualApproved": false
+        },
+        {
+          "sourceIndex": 7,
+          "sha256": "6161dd7b3908412f224f094c9963213cd9cc5d854fc0dd45e354138c28f2bd49",
+          "sourceBounds": {
+            "x0": 39,
+            "y0": 46,
+            "x1": 83,
+            "y1": 112
+          },
+          "candidateBounds": {
+            "x0": 39,
+            "y0": 46,
+            "x1": 83,
+            "y1": 112
+          },
+          "groundDelta": 0,
+          "headOffset": {
+            "x": 1,
+            "y": -2
+          },
+          "contacts": [
+            {
+              "name": "main",
+              "sourceAnchor": {
+                "x": 42.5,
+                "y": 79
+              },
+              "sourcePixel": [
+                81,
+                45,
+                38,
+                255
+              ],
+              "candidatePixel": [
+                56,
+                28,
+                22,
+                255
+              ],
+              "sourceAnchorAlreadyTransparent": false,
+              "changedPixelsIn5x5": 14
+            },
+            {
+              "name": "off",
+              "sourceAnchor": {
+                "x": 83.5,
+                "y": 75.8
+              },
+              "sourcePixel": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "candidatePixel": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "sourceAnchorAlreadyTransparent": true,
+              "changedPixelsIn5x5": 9
+            }
+          ],
+          "visualApproved": false
+        }
+      ],
+      "fullClip": false,
+      "identicalOutputs": false
+    },
+    "juggernaut": {
+      "frames": [
+        {
+          "sourceIndex": 0,
+          "sha256": "09a59616afc197be5275060c6913b4826cd9c82293c4d7084482d36a000b4a36",
+          "sourceBounds": {
+            "x0": 40,
+            "y0": 47,
+            "x1": 84,
+            "y1": 112
+          },
+          "candidateBounds": {
+            "x0": 38,
+            "y0": 46,
+            "x1": 92,
+            "y1": 112
+          },
+          "groundDelta": 0,
+          "headOffset": {
+            "x": 1,
+            "y": -1
+          },
+          "contacts": [
+            {
+              "name": "main",
+              "sourceAnchor": {
+                "x": 42.5,
+                "y": 80
+              },
+              "sourcePixel": [
+                240,
+                176,
+                139,
+                255
+              ],
+              "candidatePixel": [
+                199,
+                134,
+                109,
+                255
+              ],
+              "sourceAnchorAlreadyTransparent": false,
+              "changedPixelsIn5x5": 23
+            },
+            {
+              "name": "off",
+              "sourceAnchor": {
+                "x": 83.5,
+                "y": 76.8
+              },
+              "sourcePixel": [
+                42,
+                25,
+                24,
+                255
+              ],
+              "candidatePixel": [
+                57,
+                46,
+                41,
+                255
+              ],
+              "sourceAnchorAlreadyTransparent": false,
+              "changedPixelsIn5x5": 25
+            }
+          ],
+          "visualApproved": false
+        },
+        {
+          "sourceIndex": 3,
+          "sha256": "469d377cd9c8976e553f080537ffff5b35574e29e5b5cff3d4a4834046467588",
+          "sourceBounds": {
+            "x0": 44,
+            "y0": 46,
+            "x1": 80,
+            "y1": 112
+          },
+          "candidateBounds": {
+            "x0": 40,
+            "y0": 41,
+            "x1": 93,
+            "y1": 112
+          },
+          "groundDelta": 0,
+          "headOffset": {
+            "x": 0,
+            "y": -2
+          },
+          "contacts": [
+            {
+              "name": "main",
+              "sourceAnchor": {
+                "x": 41.5,
+                "y": 79
+              },
+              "sourcePixel": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "candidatePixel": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "sourceAnchorAlreadyTransparent": true,
+              "changedPixelsIn5x5": 1
+            },
+            {
+              "name": "off",
+              "sourceAnchor": {
+                "x": 82.5,
+                "y": 75.8
+              },
+              "sourcePixel": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "candidatePixel": [
+                57,
+                46,
+                41,
+                255
+              ],
+              "sourceAnchorAlreadyTransparent": true,
+              "changedPixelsIn5x5": 25
+            }
+          ],
+          "visualApproved": false
+        },
+        {
+          "sourceIndex": 7,
+          "sha256": "f29ad7c623b39c47b72ed61f60d625bff7f918d31c45d595fb2e45e7951bffee",
+          "sourceBounds": {
+            "x0": 39,
+            "y0": 46,
+            "x1": 83,
+            "y1": 112
+          },
+          "candidateBounds": {
+            "x0": 39,
+            "y0": 41,
+            "x1": 92,
+            "y1": 112
+          },
+          "groundDelta": 0,
+          "headOffset": {
+            "x": 1,
+            "y": -2
+          },
+          "contacts": [
+            {
+              "name": "main",
+              "sourceAnchor": {
+                "x": 42.5,
+                "y": 79
+              },
+              "sourcePixel": [
+                81,
+                45,
+                38,
+                255
+              ],
+              "candidatePixel": [
+                33,
+                23,
+                20,
+                255
+              ],
+              "sourceAnchorAlreadyTransparent": false,
+              "changedPixelsIn5x5": 14
+            },
+            {
+              "name": "off",
+              "sourceAnchor": {
+                "x": 83.5,
+                "y": 75.8
+              },
+              "sourcePixel": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "candidatePixel": [
+                57,
+                46,
+                41,
+                255
+              ],
+              "sourceAnchorAlreadyTransparent": true,
+              "changedPixelsIn5x5": 25
+            }
+          ],
+          "visualApproved": false
+        }
+      ],
+      "fullClip": false,
+      "identicalOutputs": false
+    }
+  },
+  "runtimeCompatible": false
+}

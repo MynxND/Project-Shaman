@@ -1,0 +1,17 @@
+Edit this headless Keris eight-cell 4x2 sprite sheet. Keep the upper body, costume, hands, blades, headless neck, exact scale, camera, cell boundaries and high-detail pixel-art unchanged. Change ONLY boots/legs below the cropped trouser knees. Correct the phase contradiction. Do not follow the defective leg sequence in the input.
+
+Use SCREEN LEFT and SCREEN RIGHT to avoid anatomical ambiguity in this SOUTH facing. All eight sprites face forward as now. Screen-left leg is A, screen-right leg is B, same identities all frames.
+
+CRITICAL SUPPORT RULE: top row frames0,1,2,3 screen-left A foot supports the body: its sole is FLAT/PLANTED (toe points forward, NO exposed underside facing camera), extending from the left knee. The right B leg travels behind, rises through passing, then swings forward. Bottom row frames4,5,6,7 screen-right B foot supports the body FLAT/PLANTED; left A leg travels behind, rises through passing, then swings forward. Frame0 and frame4 MUST have opposite supporting/front legs. DO NOT duplicate their lower body.
+
+Exactly eight phases reading left-to-right, top then bottom:
+0: LEFT foot flat down in front, RIGHT foot back with toe on ground. Both contact.
+1: LEFT foot flat down supporting, RIGHT heel raised with toe leaving behind.
+2: LEFT foot flat down supporting, RIGHT knee bends and lifts foot higher, approaching midline behind apron. Only LEFT planted.
+3: LEFT foot flat down supporting slightly behind, RIGHT lower leg unfolds forward in air. Only LEFT planted.
+4: RIGHT foot flat down in front, LEFT foot back with toe on ground. Both contact. This is the opposite of0.
+5: RIGHT foot flat down supporting, LEFT heel raised with toe leaving behind.
+6: RIGHT foot flat down supporting, LEFT knee bends and lifts foot higher approaching midline behind apron. Only RIGHT planted.
+7: RIGHT foot flat down supporting slightly behind, LEFT lower leg unfolds forward in air, preparing frame0. Only RIGHT planted.
+
+Use small stride/lift, consistent leg lengths and boot sizes. Supporting foot and ankle never float; do not substitute black boot underside for a planted front contact. Knees connect to correct boot. Preserve perspective depth. No both-feet-floating pose, head, hair, new clothing, new weapon, VFX, lines, labels, background or shadows. Transparent RGBA 1774x887, eight complete full-body figures. Do not create mirrored whole-body frames; only animate legs with their original trousers/wraps/boots.

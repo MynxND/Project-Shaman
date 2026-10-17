@@ -1,0 +1,9 @@
+# Walk gait audit — 2026-10-14
+
+User reports repeated lifting of one foot instead of alternating steps. Inspected native walk contact sheets for Keris, Onmyoji, Rune Seer and Ullr, earlier Miko sheet, plus high-resolution Santet SOUTH source. Santet SOUTH source1,2,4,6 visibly repeat the same screen-side foot lift; other poses exist but contact/passing phases are not balanced. This is a source-pose problem as well as possible ordering, not resolved by image sharpness, fps or head positioning. No claim that all48 clips have been anatomically classified.
+
+Diagnostic tool exports enlarged lower-body crops for all48 clips /384 frames, respecting saved per-clip permutations. `/head-walk-audit` displays them with playback position and source index. Original PNGs, user head coordinates, saved order and manifests remain unchanged.
+
+Repair acceptance: two distinct opposite-leg contact poses; intermediate recoil/passing/lift for each half-cycle; planted foot stays grounded while opposite leg advances; front/back depth consistent in each facing; cloth/boots retain appearance; seamless final-to-first transition. Require playback review, not just eight unique file hashes. Side views can occlude the far leg; do not infer anatomical identity from left/right screen coordinates alone.
+
+Repair strategy: classify each frame before reordering. Reorder only when both halves actually exist. For missing poses, replace lower-body art in a separate version, preserve upper body/grip and original head-anchor coordinates by exact compositing, then review at native scale and compare against original. Do not mirror the whole character (asymmetric equipment/costume) or stretch feet. No new art generated yet; no PixelLab credits spent. Generation/repair is still required for rejected gait clips; the current walk assets are not certified production-ready.

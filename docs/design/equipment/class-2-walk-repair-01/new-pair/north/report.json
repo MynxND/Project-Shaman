@@ -1,0 +1,107 @@
+{
+  "input": "docs/design/equipment/class-2-walk-repair-01/santet-north-new-two-pose.png",
+  "sourceSha256": "62c8ba11fdd21a32a675d17218934e66d65f68280d1ed01462ebb7525d26584e",
+  "from": {
+    "top": 130,
+    "bottom": 793,
+    "x": 574.1734693877551
+  },
+  "to": {
+    "top": 45,
+    "bottom": 113,
+    "x": 64.5
+  },
+  "scale": 0.10256410256410256,
+  "registrations": [
+    {
+      "measured": {
+        "top": 130,
+        "bottom": 793,
+        "x": 574.1734693877551
+      },
+      "scale": 0.10256410256410256,
+      "offsetX": 5.61041339612769,
+      "offsetY": 31.666666666666668
+    },
+    {
+      "measured": {
+        "top": 130,
+        "bottom": 801,
+        "x": 353.6666666666667
+      },
+      "scale": 0.10256410256410256,
+      "offsetX": 28.226495726495727,
+      "offsetY": 31.666666666666668
+    }
+  ],
+  "sequence": [
+    "left",
+    "right",
+    "left",
+    "right",
+    "left",
+    "right",
+    "left",
+    "right"
+  ],
+  "records": [
+    {
+      "direction": "north",
+      "index": 0,
+      "newPose": "left",
+      "sha256": "0f5fac009e931baeed89c5c56809459a737e2a0fe2352c5f16228e1260a192e9",
+      "upperPixelsUnchanged": true
+    },
+    {
+      "direction": "north",
+      "index": 1,
+      "newPose": "right",
+      "sha256": "a16b6fcc53be0186befb60fee6a6bff43d94eb4e37b2f90057c96981517b7884",
+      "upperPixelsUnchanged": true
+    },
+    {
+      "direction": "north",
+      "index": 2,
+      "newPose": "left",
+      "sha256": "2abbc0c78ee7f9adbde8a3e7f481e759eba8245d4b971b13a231d5965588f326",
+      "upperPixelsUnchanged": true
+    },
+    {
+      "direction": "north",
+      "index": 3,
+      "newPose": "right",
+      "sha256": "2cd97dc469118c382c0133f5c195ece18f76adf2b58dedb7dd9928340ecdee3a",
+      "upperPixelsUnchanged": true
+    },
+    {
+      "direction": "north",
+      "index": 4,
+      "newPose": "left",
+      "sha256": "9090dfb62bd076389e23cc0ffcde56ee49bc2f8468f542bdd71cc4432b522e89",
+      "upperPixelsUnchanged": true
+    },
+    {
+      "direction": "north",
+      "index": 5,
+      "newPose": "right",
+      "sha256": "1bc7bc9ba41c85fe0735d3c0da5791012067e6e2bcbf326724bf8405d0f4792c",
+      "upperPixelsUnchanged": true
+    },
+    {
+      "direction": "north",
+      "index": 6,
+      "newPose": "left",
+      "sha256": "18b0c0f886c712b6246d669d2c4119ec326622dff8c3db9b6c4ce484902b6daa",
+      "upperPixelsUnchanged": true
+    },
+    {
+      "direction": "north",
+      "index": 7,
+      "newPose": "right",
+      "sha256": "3c64d247c8e260e04141067b16897320461ad48cbf136e39498f7583363f2714",
+      "upperPixelsUnchanged": true
+    }
+  ],
+  "pixelLabCredits": 0,
+  "headOffsetsModified": false
+}
