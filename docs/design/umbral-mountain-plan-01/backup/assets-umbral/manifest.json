@@ -1,0 +1,1326 @@
+{
+  "objects": {
+    "temple": {
+      "image": "objects/temple.png",
+      "width": 184,
+      "height": 127,
+      "anchor": {
+        "x": 92,
+        "y": 125
+      },
+      "source": "temple_00006_.png"
+    },
+    "academy": {
+      "image": "objects/academy.png",
+      "width": 108,
+      "height": 112,
+      "anchor": {
+        "x": 54,
+        "y": 110
+      },
+      "source": "academy_00004_.png"
+    },
+    "city-gate": {
+      "image": "objects/city-gate.png",
+      "width": 155,
+      "height": 112,
+      "anchor": {
+        "x": 77,
+        "y": 110
+      },
+      "source": "city-gate_00001_.png"
+    },
+    "curse-shop": {
+      "image": "objects/curse-shop.png",
+      "width": 90,
+      "height": 96,
+      "anchor": {
+        "x": 46,
+        "y": 94
+      },
+      "source": "curse-shop_00003_.png"
+    },
+    "apothecary": {
+      "image": "objects/apothecary.png",
+      "width": 94,
+      "height": 96,
+      "anchor": {
+        "x": 54,
+        "y": 94
+      },
+      "source": "apothecary_00003_.png"
+    },
+    "house-a": {
+      "image": "objects/house-a.png",
+      "width": 78,
+      "height": 88,
+      "anchor": {
+        "x": 36,
+        "y": 86
+      },
+      "source": "house-a_00003_.png"
+    },
+    "house-b": {
+      "image": "objects/house-b.png",
+      "width": 55,
+      "height": 104,
+      "anchor": {
+        "x": 24,
+        "y": 102
+      },
+      "source": "house-b_00003_.png"
+    },
+    "well": {
+      "image": "objects/well.png",
+      "width": 20,
+      "height": 38,
+      "anchor": {
+        "x": 10,
+        "y": 37
+      },
+      "source": "well_00003_.png"
+    },
+    "brazier": {
+      "image": "objects/brazier.png",
+      "width": 18,
+      "height": 35,
+      "anchor": {
+        "x": 8,
+        "y": 34
+      },
+      "source": "brazier_00007_.png"
+    },
+    "bone-totem": {
+      "image": "objects/bone-totem.png",
+      "width": 24,
+      "height": 51,
+      "anchor": {
+        "x": 12,
+        "y": 50
+      },
+      "source": "bone-totem_00003_.png"
+    },
+    "skull-lantern": {
+      "image": "objects/skull-lantern.png",
+      "width": 22,
+      "height": 45,
+      "anchor": {
+        "x": 10,
+        "y": 44
+      },
+      "source": "skull-lantern_00003_.png"
+    },
+    "cauldron": {
+      "image": "objects/cauldron.png",
+      "width": 17,
+      "height": 22,
+      "anchor": {
+        "x": 7,
+        "y": 21
+      },
+      "source": "cauldron_00003_.png"
+    },
+    "market-stall": {
+      "image": "objects/market-stall.png",
+      "width": 53,
+      "height": 48,
+      "anchor": {
+        "x": 28,
+        "y": 47
+      },
+      "source": "market-stall_00003_.png"
+    },
+    "dead-tree": {
+      "image": "objects/dead-tree.png",
+      "width": 51,
+      "height": 72,
+      "anchor": {
+        "x": 26,
+        "y": 70
+      },
+      "source": "dead-tree_00003_.png"
+    },
+    "stele": {
+      "image": "objects/stele.png",
+      "width": 19,
+      "height": 38,
+      "anchor": {
+        "x": 8,
+        "y": 37
+      },
+      "source": "stele_00003_.png"
+    },
+    "banner-pole": {
+      "image": "objects/banner-pole.png",
+      "width": 30,
+      "height": 58,
+      "anchor": {
+        "x": 12,
+        "y": 57
+      },
+      "source": "banner-pole_00003_.png"
+    },
+    "crates": {
+      "image": "objects/crates.png",
+      "width": 36,
+      "height": 35,
+      "anchor": {
+        "x": 18,
+        "y": 34
+      },
+      "source": "crates_00003_.png"
+    },
+    "barrels": {
+      "image": "objects/barrels.png",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 31
+      },
+      "source": "barrels_00003_.png"
+    },
+    "ritual-lantern": {
+      "image": "objects/ritual-lantern.png",
+      "width": 26,
+      "height": 64,
+      "anchor": {
+        "x": 12,
+        "y": 62
+      },
+      "source": "pixellab:lantern"
+    },
+    "spirit-pillar": {
+      "image": "objects/spirit-pillar.png",
+      "width": 40,
+      "height": 110,
+      "anchor": {
+        "x": 20,
+        "y": 108
+      },
+      "source": "pixellab:spirit-pillar"
+    },
+    "sacred-tree": {
+      "image": "objects/sacred-tree.png",
+      "width": 115,
+      "height": 153,
+      "anchor": {
+        "x": 53,
+        "y": 151
+      },
+      "source": "pixellab:sacred-tree"
+    },
+    "teak-house": {
+      "image": "objects/teak-house.png",
+      "width": 133,
+      "height": 144,
+      "anchor": {
+        "x": 66,
+        "y": 142
+      },
+      "source": "pixellab:house-front"
+    },
+    "ritual-pillar": {
+      "image": "objects/ritual-pillar.png",
+      "width": 31,
+      "height": 61,
+      "anchor": {
+        "x": 14,
+        "y": 59
+      },
+      "source": "pixellab:ritual-pillar-s"
+    },
+    "bronze-brazier": {
+      "image": "objects/bronze-brazier.png",
+      "width": 26,
+      "height": 34,
+      "anchor": {
+        "x": 8,
+        "y": 32
+      },
+      "source": "pixellab:brazier-s"
+    },
+    "yak-guardian": {
+      "image": "objects/yak-guardian.png",
+      "width": 45,
+      "height": 80,
+      "anchor": {
+        "x": 19,
+        "y": 79
+      },
+      "source": "pixellab:guardian-s"
+    },
+    "talisman-banner": {
+      "image": "objects/talisman-banner.png",
+      "width": 26,
+      "height": 96,
+      "anchor": {
+        "x": 12,
+        "y": 95
+      },
+      "source": "pixellab:banner-pole"
+    },
+    "lotus-flowerbed": {
+      "image": "objects/lotus-flowerbed.png",
+      "width": 42,
+      "height": 32,
+      "anchor": {
+        "x": 20,
+        "y": 30
+      },
+      "source": "pixellab:flowerbed-s"
+    },
+    "incense-urn": {
+      "image": "objects/incense-urn.png",
+      "width": 31,
+      "height": 43,
+      "anchor": {
+        "x": 15,
+        "y": 41
+      },
+      "source": "pixellab:incense"
+    },
+    "thai-temple": {
+      "image": "objects/thai-temple.png",
+      "width": 168,
+      "height": 173,
+      "anchor": {
+        "x": 84,
+        "y": 171
+      },
+      "source": "pixellab:temple-thai"
+    },
+    "training-hall": {
+      "image": "objects/training-hall.png",
+      "width": 138,
+      "height": 147,
+      "anchor": {
+        "x": 68,
+        "y": 145
+      },
+      "source": "pixellab:training-hall"
+    },
+    "stilt-house": {
+      "image": "objects/stilt-house.png",
+      "width": 91,
+      "height": 111,
+      "anchor": {
+        "x": 45,
+        "y": 109
+      },
+      "source": "pixellab:house-stilt"
+    },
+    "row-house": {
+      "image": "objects/row-house.png",
+      "width": 150,
+      "height": 98,
+      "anchor": {
+        "x": 74,
+        "y": 96
+      },
+      "source": "pixellab:house-row"
+    },
+    "teak-fence": {
+      "image": "objects/teak-fence.png",
+      "width": 44,
+      "height": 28,
+      "anchor": {
+        "x": 22,
+        "y": 26
+      },
+      "source": "pixellab:fence"
+    },
+    "training-dummy": {
+      "image": "objects/training-dummy.png",
+      "width": 20,
+      "height": 48,
+      "anchor": {
+        "x": 9,
+        "y": 47
+      },
+      "source": "pixellab:dummy"
+    },
+    "bridge-h": {
+      "image": "objects/bridge-h.png",
+      "width": 61,
+      "height": 41,
+      "anchor": {
+        "x": 22,
+        "y": 39
+      },
+      "source": "pixellab:bridge-h"
+    },
+    "bridge-v": {
+      "image": "objects/bridge-v.png",
+      "width": 46,
+      "height": 61,
+      "anchor": {
+        "x": 24,
+        "y": 59
+      },
+      "source": "pixellab:bridge-v"
+    },
+    "city-wall": {
+      "image": "objects/city-wall.png",
+      "width": 118,
+      "height": 45,
+      "anchor": {
+        "x": 58,
+        "y": 43
+      },
+      "source": "pixellab:wall"
+    },
+    "wall-tower": {
+      "image": "objects/wall-tower.png",
+      "width": 51,
+      "height": 107,
+      "anchor": {
+        "x": 25,
+        "y": 105
+      },
+      "source": "pixellab:tower"
+    },
+    "cypress": {
+      "image": "objects/cypress.png",
+      "width": 31,
+      "height": 80,
+      "anchor": {
+        "x": 14,
+        "y": 78
+      },
+      "source": "pixellab:pine2"
+    },
+    "blossom-tree": {
+      "image": "objects/blossom-tree.png",
+      "width": 77,
+      "height": 88,
+      "anchor": {
+        "x": 38,
+        "y": 86
+      },
+      "source": "pixellab:blossom"
+    },
+    "flower-bush": {
+      "image": "objects/flower-bush.png",
+      "width": 35,
+      "height": 30,
+      "anchor": {
+        "x": 16,
+        "y": 28
+      },
+      "source": "pixellab:bush"
+    },
+    "lotus-pads": {
+      "image": "objects/lotus-pads.png",
+      "width": 27,
+      "height": 22,
+      "anchor": {
+        "x": 13,
+        "y": 20
+      },
+      "source": "pixellab:lotus-pads"
+    },
+    "thai-gate": {
+      "image": "objects/thai-gate.png",
+      "width": 134,
+      "height": 150,
+      "anchor": {
+        "x": 66,
+        "y": 148
+      },
+      "source": "pixellab:gate-thai"
+    },
+    "city-wall-side": {
+      "image": "objects/city-wall-side.png",
+      "width": 38,
+      "height": 128,
+      "anchor": {
+        "x": 19,
+        "y": 127
+      },
+      "source": "pixellab:wall-side (tiled rows 87-118)"
+    },
+    "city-wall-side-banner": {
+      "image": "objects/city-wall-side-banner.png",
+      "width": 38,
+      "height": 128,
+      "anchor": {
+        "x": 19,
+        "y": 127
+      },
+      "source": "pixellab:wall-side (tiled rows 87-118 + banner rows 43-70)"
+    },
+    "talisman-lantern": {
+      "image": "objects/talisman-lantern.png",
+      "width": 27,
+      "height": 48,
+      "anchor": {
+        "x": 14,
+        "y": 47
+      },
+      "source": "pixellab:light-talisman"
+    },
+    "spirit-lantern": {
+      "image": "objects/spirit-lantern.png",
+      "width": 30,
+      "height": 48,
+      "anchor": {
+        "x": 14,
+        "y": 46
+      },
+      "source": "pixellab:light-spirit"
+    },
+    "ritual-fire": {
+      "image": "objects/ritual-fire.png",
+      "width": 42,
+      "height": 44,
+      "anchor": {
+        "x": 20,
+        "y": 42
+      },
+      "source": "pixellab:light-brazier"
+    },
+    "hanging-lantern": {
+      "image": "objects/hanging-lantern.png",
+      "width": 12,
+      "height": 22,
+      "anchor": {
+        "x": 6,
+        "y": 20
+      },
+      "source": "pixellab:light-hanging"
+    },
+    "reed-planter": {
+      "image": "objects/reed-planter.png",
+      "width": 26,
+      "height": 30,
+      "anchor": {
+        "x": 15,
+        "y": 28
+      },
+      "source": "pixellab:reeds"
+    },
+    "garden-shrine": {
+      "image": "objects/garden-shrine.png",
+      "width": 30,
+      "height": 29,
+      "anchor": {
+        "x": 14,
+        "y": 27
+      },
+      "source": "pixellab:moss-stones"
+    },
+    "clay-pots": {
+      "image": "objects/clay-pots.png",
+      "width": 28,
+      "height": 25,
+      "anchor": {
+        "x": 13,
+        "y": 23
+      },
+      "source": "pixellab:clay-pots"
+    },
+    "stone-bed": {
+      "image": "objects/stone-bed.png",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 21,
+        "y": 31
+      },
+      "source": "pixellab:stone-bed"
+    },
+    "shade-tree": {
+      "image": "objects/shade-tree.png",
+      "width": 38,
+      "height": 59,
+      "anchor": {
+        "x": 20,
+        "y": 57
+      },
+      "source": "pixellab:small-tree"
+    },
+    "garden-understory": {
+      "image": "objects/garden-understory.png",
+      "width": 121,
+      "height": 39,
+      "anchor": {
+        "x": 60,
+        "y": 38
+      },
+      "source": "pixellab:27380409-63ab-478e-b95b-943ab1266bb8; alpha-crop only; native 128x48; no resampling"
+    },
+    "bamboo": {
+      "image": "objects/bamboo.png",
+      "width": 47,
+      "height": 78,
+      "anchor": {
+        "x": 24,
+        "y": 76
+      },
+      "source": "pixellab:sw-bamboo"
+    },
+    "jungle-tree": {
+      "image": "objects/jungle-tree.png",
+      "width": 93,
+      "height": 110,
+      "anchor": {
+        "x": 50,
+        "y": 108
+      },
+      "source": "pixellab:sw-jungle-tree"
+    },
+    "mossy-rock": {
+      "image": "objects/mossy-rock.png",
+      "width": 48,
+      "height": 32,
+      "anchor": {
+        "x": 24,
+        "y": 30
+      },
+      "source": "pixellab:sw-mossy-rock"
+    },
+    "fern": {
+      "image": "objects/fern.png",
+      "width": 30,
+      "height": 31,
+      "anchor": {
+        "x": 17,
+        "y": 29
+      },
+      "source": "pixellab:sw-fern"
+    },
+    "cursed-tree": {
+      "image": "objects/cursed-tree.png",
+      "width": 64,
+      "height": 96,
+      "anchor": {
+        "x": 32,
+        "y": 94
+      },
+      "source": "pixellab:sw-cursed-tree"
+    },
+    "ruined-shrine": {
+      "image": "objects/ruined-shrine.png",
+      "width": 90,
+      "height": 90,
+      "anchor": {
+        "x": 44,
+        "y": 88
+      },
+      "source": "pixellab:sw-ruined-shrine"
+    },
+    "spirit-house": {
+      "image": "objects/spirit-house.png",
+      "width": 26,
+      "height": 45,
+      "anchor": {
+        "x": 11,
+        "y": 43
+      },
+      "source": "pixellab:sw-spirit-house"
+    },
+    "noticeboard": {
+      "image": "objects/noticeboard.png",
+      "width": 40,
+      "height": 46,
+      "anchor": {
+        "x": 20,
+        "y": 44
+      },
+      "source": "pixellab:sw-noticeboard"
+    }
+  },
+  "ground": {
+    "basalt-cobble": {
+      "image": "ground/basalt-cobble.png",
+      "source": "basalt-cobble_tile_00001_.png"
+    },
+    "dark-earth": {
+      "image": "ground/dark-earth.png",
+      "source": "dark-earth_tile_00001_.png"
+    },
+    "ritual-paving": {
+      "image": "ground/ritual-paving.png",
+      "source": "ritual-paving_tile_00001_.png"
+    },
+    "dark-grass": {
+      "image": "ground/dark-grass.png",
+      "source": "dark-grass_tile_00001_.png"
+    }
+  },
+  "decals": {
+    "yantra-disc": {
+      "image": "decals/yantra-disc.png",
+      "width": 232,
+      "height": 234,
+      "source": "pixellab:yantra-disc"
+    }
+  },
+  "tilesets": {
+    "grass-road": {
+      "image": "tilesets/grass-road.png",
+      "lower": "grass",
+      "upper": "road",
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "size": 16,
+          "corners": [
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "x": 16,
+          "y": 0,
+          "size": 16,
+          "corners": [
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 32,
+          "y": 0,
+          "size": 16,
+          "corners": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "x": 48,
+          "y": 0,
+          "size": 16,
+          "corners": [
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "size": 16,
+          "corners": [
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 16,
+          "y": 16,
+          "size": 16,
+          "corners": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "x": 32,
+          "y": 16,
+          "size": 16,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "x": 48,
+          "y": 16,
+          "size": 16,
+          "corners": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "x": 0,
+          "y": 32,
+          "size": 16,
+          "corners": [
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "x": 16,
+          "y": 32,
+          "size": 16,
+          "corners": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "x": 32,
+          "y": 32,
+          "size": 16,
+          "corners": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 48,
+          "y": 32,
+          "size": 16,
+          "corners": [
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "x": 0,
+          "y": 48,
+          "size": 16,
+          "corners": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "x": 16,
+          "y": 48,
+          "size": 16,
+          "corners": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 32,
+          "y": 48,
+          "size": 16,
+          "corners": [
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "x": 48,
+          "y": 48,
+          "size": 16,
+          "corners": [
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "source": "pixellab:5cbe16b4-81e0-4a34-8cc3-57bbda417231"
+    },
+    "water-grass": {
+      "image": "tilesets/water-grass.png",
+      "lower": "water",
+      "upper": "grass",
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "size": 16,
+          "corners": [
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "x": 16,
+          "y": 0,
+          "size": 16,
+          "corners": [
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 32,
+          "y": 0,
+          "size": 16,
+          "corners": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "x": 48,
+          "y": 0,
+          "size": 16,
+          "corners": [
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "size": 16,
+          "corners": [
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 16,
+          "y": 16,
+          "size": 16,
+          "corners": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "x": 32,
+          "y": 16,
+          "size": 16,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "x": 48,
+          "y": 16,
+          "size": 16,
+          "corners": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "x": 0,
+          "y": 32,
+          "size": 16,
+          "corners": [
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "x": 16,
+          "y": 32,
+          "size": 16,
+          "corners": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "x": 32,
+          "y": 32,
+          "size": 16,
+          "corners": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 48,
+          "y": 32,
+          "size": 16,
+          "corners": [
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "x": 0,
+          "y": 48,
+          "size": 16,
+          "corners": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "x": 16,
+          "y": 48,
+          "size": 16,
+          "corners": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 32,
+          "y": 48,
+          "size": 16,
+          "corners": [
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "x": 48,
+          "y": 48,
+          "size": 16,
+          "corners": [
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "source": "pixellab:b09cc7d9-011e-4839-8042-a7b5b22ad877"
+    },
+    "grass-dirt": {
+      "image": "tilesets/grass-dirt.png",
+      "lower": "grass",
+      "upper": "dirt",
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "size": 16,
+          "corners": [
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "x": 16,
+          "y": 0,
+          "size": 16,
+          "corners": [
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 32,
+          "y": 0,
+          "size": 16,
+          "corners": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "x": 48,
+          "y": 0,
+          "size": 16,
+          "corners": [
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "size": 16,
+          "corners": [
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 16,
+          "y": 16,
+          "size": 16,
+          "corners": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "x": 32,
+          "y": 16,
+          "size": 16,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "x": 48,
+          "y": 16,
+          "size": 16,
+          "corners": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "x": 0,
+          "y": 32,
+          "size": 16,
+          "corners": [
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "x": 16,
+          "y": 32,
+          "size": 16,
+          "corners": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "x": 32,
+          "y": 32,
+          "size": 16,
+          "corners": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 48,
+          "y": 32,
+          "size": 16,
+          "corners": [
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "x": 0,
+          "y": 48,
+          "size": 16,
+          "corners": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "x": 16,
+          "y": 48,
+          "size": 16,
+          "corners": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "x": 32,
+          "y": 48,
+          "size": 16,
+          "corners": [
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "x": 48,
+          "y": 48,
+          "size": 16,
+          "corners": [
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "source": "pixellab:5d2cd5e0-6670-45f7-811a-9e45f7e0a592"
+    }
+  },
+  "npcs": {
+    "npc-elder": {
+      "image": "npcs/npc-elder.png",
+      "width": 53,
+      "height": 126,
+      "anchor": {
+        "x": 23,
+        "y": 124
+      },
+      "source": "pixellab:npc-elder"
+    },
+    "npc-guard": {
+      "image": "npcs/npc-guard.png",
+      "width": 53,
+      "height": 125,
+      "anchor": {
+        "x": 28,
+        "y": 123
+      },
+      "source": "pixellab:npc-guard"
+    },
+    "npc-guide": {
+      "image": "npcs/npc-guide.png",
+      "width": 46,
+      "height": 123,
+      "anchor": {
+        "x": 22,
+        "y": 121
+      },
+      "source": "pixellab:npc-guide"
+    },
+    "npc-herbalist": {
+      "image": "npcs/npc-herbalist.png",
+      "width": 60,
+      "height": 118,
+      "anchor": {
+        "x": 25,
+        "y": 116
+      },
+      "source": "pixellab:npc-herbalist"
+    },
+    "npc-instructor": {
+      "image": "npcs/npc-instructor.png",
+      "width": 65,
+      "height": 122,
+      "anchor": {
+        "x": 27,
+        "y": 120
+      },
+      "source": "pixellab:npc-instructor"
+    },
+    "npc-keeper": {
+      "image": "npcs/npc-keeper.png",
+      "width": 53,
+      "height": 120,
+      "anchor": {
+        "x": 24,
+        "y": 118
+      },
+      "source": "pixellab:npc-keeper"
+    },
+    "npc-smith": {
+      "image": "npcs/npc-smith.png",
+      "width": 64,
+      "height": 123,
+      "anchor": {
+        "x": 36,
+        "y": 121
+      },
+      "source": "pixellab:npc-smith"
+    },
+    "npc-storage": {
+      "image": "npcs/npc-storage.png",
+      "width": 68,
+      "height": 120,
+      "anchor": {
+        "x": 24,
+        "y": 118
+      },
+      "source": "pixellab:npc-storage"
+    },
+    "npc-talisman": {
+      "image": "npcs/npc-talisman.png",
+      "width": 52,
+      "height": 121,
+      "anchor": {
+        "x": 25,
+        "y": 119
+      },
+      "source": "pixellab:npc-talisman"
+    },
+    "npc-teleporter": {
+      "image": "npcs/npc-teleporter.png",
+      "width": 59,
+      "height": 120,
+      "anchor": {
+        "x": 31,
+        "y": 118
+      },
+      "source": "pixellab:npc-teleporter"
+    },
+    "npc-trader": {
+      "image": "npcs/npc-trader.png",
+      "width": 65,
+      "height": 121,
+      "anchor": {
+        "x": 32,
+        "y": 119
+      },
+      "source": "pixellab:npc-trader"
+    }
+  }
+}

@@ -1,0 +1,2079 @@
+{
+  "id": "umbral-capital",
+  "name": "นครมนตร์ทมิฬ",
+  "nameEn": "Umbral Capital",
+  "landmarks": [
+    {
+      "id": "temple",
+      "name": {
+        "th": "วิหารวิญญาณดำ",
+        "en": "Temple of the Black Spirit"
+      },
+      "x": 40,
+      "y": 4.6,
+      "kind": "temple"
+    },
+    {
+      "id": "plaza",
+      "name": {
+        "th": "ลานมหายันต์",
+        "en": "Great Yantra Plaza"
+      },
+      "x": 40,
+      "y": 40.4,
+      "kind": "plaza"
+    },
+    {
+      "id": "spirit-garden",
+      "name": {
+        "th": "สวนศิรวิญญาณ",
+        "en": "Spirit Garden"
+      },
+      "x": 18,
+      "y": 9.6,
+      "kind": "garden"
+    },
+    {
+      "id": "training",
+      "name": {
+        "th": "สำนักฝึกคาถา",
+        "en": "Incantation School"
+      },
+      "x": 19.6,
+      "y": 20.6,
+      "kind": "school"
+    },
+    {
+      "id": "herbal",
+      "name": {
+        "th": "โรงต้มสมุนไพร",
+        "en": "Herbal Brewery"
+      },
+      "x": 56.4,
+      "y": 21.4,
+      "kind": "shop"
+    },
+    {
+      "id": "market",
+      "name": {
+        "th": "ตลาดเครื่องราง",
+        "en": "Talisman Market"
+      },
+      "x": 64,
+      "y": 40.4,
+      "kind": "market"
+    },
+    {
+      "id": "brahmin",
+      "name": {
+        "th": "เรือนพราหมณ์",
+        "en": "Brahmin Lane"
+      },
+      "x": 66,
+      "y": 9.4,
+      "kind": "quarter"
+    },
+    {
+      "id": "shaman-houses",
+      "name": {
+        "th": "เรือนหมอผี",
+        "en": "Shaman Houses"
+      },
+      "x": 20,
+      "y": 48.4,
+      "kind": "quarter"
+    },
+    {
+      "id": "community",
+      "name": {
+        "th": "ชุมชนชาวเมือง",
+        "en": "Community Quarter"
+      },
+      "x": 59,
+      "y": 48.6,
+      "kind": "quarter"
+    },
+    {
+      "id": "city-gate",
+      "name": {
+        "th": "ประตูเมือง",
+        "en": "City Gate"
+      },
+      "x": 40,
+      "y": 52.6,
+      "kind": "gate"
+    }
+  ],
+  "width": 80,
+  "height": 60,
+  "spawn": {
+    "x": 40,
+    "y": 36
+  },
+  "ground": {
+    "base": "dark-grass",
+    "regions": []
+  },
+  "terrain": {
+    "base": "grass",
+    "paint": [
+      {
+        "terrain": "water",
+        "shape": "rect",
+        "x": 2,
+        "y": 6,
+        "w": 3,
+        "h": 50
+      },
+      {
+        "terrain": "water",
+        "shape": "rect",
+        "x": 75,
+        "y": 6,
+        "w": 3,
+        "h": 50
+      },
+      {
+        "terrain": "water",
+        "shape": "rect",
+        "x": 5,
+        "y": 44,
+        "w": 28,
+        "h": 2
+      },
+      {
+        "terrain": "water",
+        "shape": "rect",
+        "x": 47,
+        "y": 44,
+        "w": 28,
+        "h": 2
+      },
+      {
+        "terrain": "water",
+        "shape": "circle",
+        "x": 15,
+        "y": 13,
+        "r": 3
+      },
+      {
+        "terrain": "dirt",
+        "shape": "rect",
+        "x": 9,
+        "y": 36,
+        "w": 17,
+        "h": 6
+      },
+      {
+        "terrain": "dirt",
+        "shape": "path",
+        "points": [
+          [
+            16,
+            42
+          ],
+          [
+            16,
+            49
+          ],
+          [
+            12,
+            50
+          ],
+          [
+            8,
+            49
+          ]
+        ],
+        "r": 1.1
+      },
+      {
+        "terrain": "dirt",
+        "shape": "path",
+        "points": [
+          [
+            37,
+            49
+          ],
+          [
+            32,
+            48
+          ],
+          [
+            25,
+            50
+          ],
+          [
+            19,
+            50
+          ],
+          [
+            16,
+            49
+          ]
+        ],
+        "r": 1.1
+      },
+      {
+        "terrain": "dirt",
+        "shape": "path",
+        "points": [
+          [
+            62,
+            30
+          ],
+          [
+            62,
+            24
+          ],
+          [
+            63,
+            20
+          ],
+          [
+            66,
+            17
+          ],
+          [
+            70,
+            17
+          ]
+        ],
+        "r": 1.1
+      },
+      {
+        "terrain": "dirt",
+        "shape": "path",
+        "points": [
+          [
+            63,
+            20
+          ],
+          [
+            59,
+            17
+          ],
+          [
+            57,
+            16
+          ]
+        ],
+        "r": 1
+      },
+      {
+        "terrain": "dirt",
+        "shape": "path",
+        "points": [
+          [
+            64,
+            42
+          ],
+          [
+            64,
+            49
+          ],
+          [
+            60,
+            50.5
+          ],
+          [
+            52,
+            50
+          ],
+          [
+            44,
+            49.5
+          ]
+        ],
+        "r": 1.1
+      },
+      {
+        "terrain": "dirt",
+        "shape": "path",
+        "points": [
+          [
+            64,
+            49
+          ],
+          [
+            68,
+            53
+          ],
+          [
+            70,
+            53
+          ]
+        ],
+        "r": 1
+      },
+      {
+        "terrain": "road",
+        "shape": "path",
+        "points": [
+          [
+            33,
+            23
+          ],
+          [
+            28,
+            21
+          ],
+          [
+            24,
+            19.3
+          ],
+          [
+            21,
+            18.4
+          ],
+          [
+            18.5,
+            17.1
+          ],
+          [
+            15.4,
+            16.9
+          ],
+          [
+            12,
+            18
+          ]
+        ],
+        "r": 1.1
+      },
+      {
+        "terrain": "road",
+        "shape": "path",
+        "points": [
+          [
+            24,
+            19.3
+          ],
+          [
+            24.7,
+            17.8
+          ],
+          [
+            24.9,
+            16.8
+          ]
+        ],
+        "r": 0.9
+      },
+      {
+        "terrain": "road",
+        "shape": "rect",
+        "x": 37,
+        "y": 21,
+        "w": 6,
+        "h": 39
+      },
+      {
+        "terrain": "road",
+        "shape": "rect",
+        "x": 32,
+        "y": 13,
+        "w": 16,
+        "h": 9
+      },
+      {
+        "terrain": "road",
+        "shape": "rect",
+        "x": 15,
+        "y": 28,
+        "w": 10,
+        "h": 2
+      },
+      {
+        "terrain": "road",
+        "shape": "rect",
+        "x": 9,
+        "y": 30,
+        "w": 21,
+        "h": 4
+      },
+      {
+        "terrain": "road",
+        "shape": "rect",
+        "x": 50,
+        "y": 30,
+        "w": 23,
+        "h": 5
+      },
+      {
+        "terrain": "road",
+        "shape": "rect",
+        "x": 54,
+        "y": 35,
+        "w": 18,
+        "h": 7
+      },
+      {
+        "terrain": "road",
+        "shape": "circle",
+        "x": 40,
+        "y": 32,
+        "r": 11
+      }
+    ]
+  },
+  "decals": [
+    {
+      "id": "plaza-yantra",
+      "asset": "yantra-disc",
+      "x": 40,
+      "y": 32
+    }
+  ],
+  "npcs": [
+    {
+      "id": "guide",
+      "sprite": "npc-guide",
+      "role": "guide",
+      "x": 42.8,
+      "y": 38.8,
+      "name": {
+        "th": "นวลจันทร์",
+        "en": "Nuanchan"
+      },
+      "title": "ผู้นำทางเมือง",
+      "greeting": "ยินดีต้อนรับสู่นครมนตร์ทมิฬ ผู้เดินทาง! ถ้าหลงทาง ถามข้าได้เสมอ"
+    },
+    {
+      "id": "keeper",
+      "sprite": "npc-keeper",
+      "role": "save",
+      "x": 37,
+      "y": 33.8,
+      "name": {
+        "th": "แม่ศรีเรือน",
+        "en": "Mae Si Ruean"
+      },
+      "title": "ผู้ดูแลศาลหลักเมือง",
+      "greeting": "เสาหลักเมืองคุ้มครองทุกดวงวิญญาณที่ผูกพันกับที่นี่ จะให้ข้าบันทึกจุดกลับมาของเจ้าไหม"
+    },
+    {
+      "id": "elder",
+      "sprite": "npc-elder",
+      "role": "quest",
+      "x": 44.6,
+      "y": 19.6,
+      "name": {
+        "th": "หลวงตาธรรม",
+        "en": "Luang Ta Tham"
+      },
+      "title": "พระอาจารย์แห่งวิหาร",
+      "greeting": "วิญญาณมืดเริ่มกระสับกระส่าย ข้าต้องการร่างทรงที่ใจกล้า เจ้าพร้อมหรือยัง"
+    },
+    {
+      "id": "instructor",
+      "sprite": "npc-instructor",
+      "role": "trainer",
+      "x": 12,
+      "y": 35.6,
+      "name": {
+        "th": "อาจารย์คง",
+        "en": "Ajarn Khong"
+      },
+      "title": "อาจารย์สอนคาถา",
+      "greeting": "คาถาไม่ได้อยู่ที่ปาก แต่อยู่ที่ใจ ฝึกให้หนัก แล้วข้าจะสอนวิชาใหม่ให้"
+    },
+    {
+      "id": "herbalist",
+      "sprite": "npc-herbalist",
+      "role": "shop-consumable",
+      "x": 53.6,
+      "y": 31.4,
+      "name": {
+        "th": "ป้าบุญมี",
+        "en": "Pa Bunmi"
+      },
+      "title": "ร้านยาสมุนไพร",
+      "greeting": "ยาต้มร้อนๆ มาแล้วจ้า แผลหาย พลังวิญญาณกลับมา ราคาเป็นกันเอง"
+    },
+    {
+      "id": "talisman",
+      "sprite": "npc-talisman",
+      "role": "shop-equipment",
+      "x": 72.6,
+      "y": 31.4,
+      "name": {
+        "th": "ช่างเพียร",
+        "en": "Chang Phian"
+      },
+      "title": "ร้านเครื่องรางและอาวุธ",
+      "greeting": "ยันต์ทุกแผ่นข้าเขียนเอง เครื่องรางทุกชิ้นปลุกเสกเต็มพิธี เลือกดูได้เลย"
+    },
+    {
+      "id": "trader",
+      "sprite": "npc-trader",
+      "role": "exchange",
+      "x": 64.6,
+      "y": 40.6,
+      "name": {
+        "th": "เถ้าแก่ทอง",
+        "en": "Thao Kae Thong"
+      },
+      "title": "นายวาณิชแลกทอง",
+      "greeting": "ทองขึ้น ทองลง ข้ารู้หมด อยากซื้อขายทองก็มาที่ข้า"
+    },
+    {
+      "id": "storage",
+      "sprite": "npc-storage",
+      "role": "storage",
+      "x": 52.6,
+      "y": 36.4,
+      "name": {
+        "th": "ลุงมั่น",
+        "en": "Lung Man"
+      },
+      "title": "ผู้ดูแลคลังสินค้า",
+      "greeting": "ของหนักเกินแบกไหว ฝากไว้กับข้าได้ คลังของข้าไม่เคยมีของหาย"
+    },
+    {
+      "id": "smith",
+      "sprite": "npc-smith",
+      "role": "refine",
+      "x": 60.6,
+      "y": 25.2,
+      "name": {
+        "th": "ช่างเหล็กอินทร์",
+        "en": "Chang In"
+      },
+      "title": "ช่างหลอมและลงอาคม",
+      "greeting": "อาวุธดีต้องผ่านไฟและอาคม เอามาให้ข้า แล้วจะคมกว่าเดิม"
+    },
+    {
+      "id": "teleporter",
+      "sprite": "npc-teleporter",
+      "role": "teleport",
+      "x": 46.6,
+      "y": 53.4,
+      "name": {
+        "th": "แม่มดเรไร",
+        "en": "Rerai"
+      },
+      "title": "ร่างทรงนำทางวิญญาณ",
+      "greeting": "วิญญาณนำทางจะพาเจ้าไปได้ทุกที่ที่เคยเหยียบ บอกข้ามาว่าจะไปไหน"
+    },
+    {
+      "id": "guard",
+      "sprite": "npc-guard",
+      "role": "guard",
+      "x": 34.4,
+      "y": 51.4,
+      "name": {
+        "th": "พลทหารเสือ",
+        "en": "Guard Suea"
+      },
+      "title": "ทหารรักษาประตู",
+      "greeting": "นอกกำแพงมีภูตผีเร่ร่อน ออกไปก็ระวังตัวด้วย"
+    }
+  ],
+  "portals": [
+    {
+      "id": "south-gate",
+      "area": {
+        "x": 38.6,
+        "y": 58.6,
+        "w": 2.8,
+        "h": 1
+      },
+      "to": {
+        "mapId": "whispering-spiritwood",
+        "portalId": "village-gate"
+      },
+      "arrival": {
+        "x": 40,
+        "y": 55.6
+      },
+      "label": {
+        "th": "ทางไปชายป่าวิญญาณ",
+        "en": "To Whispering Spiritwood"
+      }
+    }
+  ],
+  "safeZones": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 80,
+      "h": 60
+    }
+  ],
+  "objects": [
+    {
+      "id": "plaza-spirit-pillar",
+      "asset": "spirit-pillar",
+      "x": 40,
+      "y": 31,
+      "footprint": {
+        "w": 1.6,
+        "h": 0.9
+      }
+    },
+    {
+      "id": "plaza-incense-w",
+      "asset": "incense-urn",
+      "x": 38.2,
+      "y": 31.4,
+      "footprint": {
+        "w": 0.7,
+        "h": 0.4
+      }
+    },
+    {
+      "id": "plaza-incense-e",
+      "asset": "incense-urn",
+      "x": 41.8,
+      "y": 31.4,
+      "footprint": {
+        "w": 0.7,
+        "h": 0.4
+      }
+    },
+    {
+      "id": "plaza-pillar-nw",
+      "asset": "ritual-pillar",
+      "x": 35.6,
+      "y": 27.6,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "plaza-pillar-ne",
+      "asset": "ritual-pillar",
+      "x": 44.4,
+      "y": 27.6,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "plaza-pillar-sw",
+      "asset": "ritual-pillar",
+      "x": 35.6,
+      "y": 36.4,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "plaza-pillar-se",
+      "asset": "ritual-pillar",
+      "x": 44.4,
+      "y": 36.4,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "plaza-brazier-nw",
+      "asset": "bronze-brazier",
+      "x": 32.4,
+      "y": 26.4,
+      "footprint": {
+        "w": 1,
+        "h": 0.6
+      }
+    },
+    {
+      "id": "plaza-brazier-ne",
+      "asset": "bronze-brazier",
+      "x": 47.6,
+      "y": 26.4,
+      "footprint": {
+        "w": 1,
+        "h": 0.6
+      }
+    },
+    {
+      "id": "plaza-brazier-sw",
+      "asset": "bronze-brazier",
+      "x": 32.4,
+      "y": 38.4,
+      "footprint": {
+        "w": 1,
+        "h": 0.6
+      }
+    },
+    {
+      "id": "plaza-brazier-se",
+      "asset": "bronze-brazier",
+      "x": 47.6,
+      "y": 38.4,
+      "footprint": {
+        "w": 1,
+        "h": 0.6
+      }
+    },
+    {
+      "id": "plaza-guardian-w",
+      "asset": "yak-guardian",
+      "x": 36.2,
+      "y": 42.2,
+      "footprint": {
+        "w": 1.6,
+        "h": 0.7
+      }
+    },
+    {
+      "id": "plaza-guardian-e",
+      "asset": "yak-guardian",
+      "x": 43.8,
+      "y": 42.2,
+      "footprint": {
+        "w": 1.6,
+        "h": 0.7
+      },
+      "flip": true
+    },
+    {
+      "id": "plaza-spirit-w",
+      "asset": "spirit-lantern",
+      "x": 29.4,
+      "y": 29.4,
+      "footprint": {
+        "w": 0.9,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "plaza-spirit-e",
+      "asset": "spirit-lantern",
+      "x": 50.6,
+      "y": 35.4,
+      "footprint": {
+        "w": 0.9,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "temple",
+      "asset": "thai-temple",
+      "x": 40,
+      "y": 13.5,
+      "footprint": {
+        "w": 9.2,
+        "h": 4.2
+      }
+    },
+    {
+      "id": "temple-guardian-w",
+      "asset": "yak-guardian",
+      "x": 34.8,
+      "y": 15.8,
+      "footprint": {
+        "w": 1.6,
+        "h": 0.7
+      }
+    },
+    {
+      "id": "temple-guardian-e",
+      "asset": "yak-guardian",
+      "x": 45.2,
+      "y": 15.8,
+      "footprint": {
+        "w": 1.6,
+        "h": 0.7
+      },
+      "flip": true
+    },
+    {
+      "id": "temple-banner-w",
+      "asset": "talisman-banner",
+      "x": 33.2,
+      "y": 12.8,
+      "footprint": {
+        "w": 0.6,
+        "h": 0.4
+      }
+    },
+    {
+      "id": "temple-banner-e",
+      "asset": "talisman-banner",
+      "x": 46.8,
+      "y": 12.8,
+      "footprint": {
+        "w": 0.6,
+        "h": 0.4
+      }
+    },
+    {
+      "id": "temple-fire-w",
+      "asset": "ritual-fire",
+      "x": 37,
+      "y": 18.6,
+      "footprint": {
+        "w": 1.2,
+        "h": 0.6
+      }
+    },
+    {
+      "id": "temple-fire-e",
+      "asset": "ritual-fire",
+      "x": 43,
+      "y": 18.6,
+      "footprint": {
+        "w": 1.2,
+        "h": 0.6
+      }
+    },
+    {
+      "id": "temple-altar",
+      "asset": "incense-urn",
+      "x": 47.2,
+      "y": 18.4,
+      "footprint": {
+        "w": 0.7,
+        "h": 0.4
+      }
+    },
+    {
+      "id": "garden-sacred-tree",
+      "asset": "sacred-tree",
+      "x": 23.6,
+      "y": 16.4,
+      "footprint": {
+        "w": 2.4,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "garden-lotus-1",
+      "asset": "lotus-pads",
+      "x": 13.6,
+      "y": 12.4,
+      "footprint": null
+    },
+    {
+      "id": "garden-lotus-2",
+      "asset": "lotus-pads",
+      "x": 16.8,
+      "y": 14.2,
+      "footprint": null
+    },
+    {
+      "id": "garden-lotus-3",
+      "asset": "lotus-pads",
+      "x": 14.4,
+      "y": 15,
+      "footprint": null
+    },
+    {
+      "id": "garden-incense",
+      "asset": "incense-urn",
+      "x": 26.9,
+      "y": 19.5,
+      "footprint": {
+        "w": 0.7,
+        "h": 0.4
+      }
+    },
+    {
+      "id": "garden-spirit",
+      "asset": "spirit-lantern",
+      "x": 18.8,
+      "y": 13.2,
+      "footprint": {
+        "w": 0.9,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "garden-stilt-house",
+      "asset": "stilt-house",
+      "x": 11,
+      "y": 22.6,
+      "footprint": {
+        "w": 4.8,
+        "h": 2
+      }
+    },
+    {
+      "id": "training-hall",
+      "asset": "training-hall",
+      "x": 19.6,
+      "y": 28.6,
+      "footprint": {
+        "w": 7.6,
+        "h": 3
+      }
+    },
+    {
+      "id": "training-dorm",
+      "asset": "stilt-house",
+      "x": 10.8,
+      "y": 28.2,
+      "footprint": {
+        "w": 4.8,
+        "h": 2
+      }
+    },
+    {
+      "id": "training-banner",
+      "asset": "talisman-banner",
+      "x": 25.2,
+      "y": 28.8,
+      "footprint": {
+        "w": 0.6,
+        "h": 0.4
+      }
+    },
+    {
+      "id": "training-lantern-2",
+      "asset": "talisman-lantern",
+      "x": 24,
+      "y": 35.6,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "training-dummy-1",
+      "asset": "training-dummy",
+      "x": 13.2,
+      "y": 38.8,
+      "footprint": {
+        "w": 0.7,
+        "h": 0.4
+      }
+    },
+    {
+      "id": "training-dummy-2",
+      "asset": "training-dummy",
+      "x": 15.6,
+      "y": 38.8,
+      "footprint": {
+        "w": 0.7,
+        "h": 0.4
+      }
+    },
+    {
+      "id": "training-dummy-3",
+      "asset": "training-dummy",
+      "x": 18,
+      "y": 38.8,
+      "footprint": {
+        "w": 0.7,
+        "h": 0.4
+      }
+    },
+    {
+      "id": "training-target-1",
+      "asset": "ritual-pillar",
+      "x": 21.6,
+      "y": 40.6,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "training-target-2",
+      "asset": "ritual-pillar",
+      "x": 23.8,
+      "y": 40.6,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "training-fire",
+      "asset": "ritual-fire",
+      "x": 10.4,
+      "y": 37.4,
+      "footprint": {
+        "w": 1.2,
+        "h": 0.6
+      }
+    },
+    {
+      "id": "training-fence-1",
+      "asset": "teak-fence",
+      "x": 10.4,
+      "y": 43,
+      "footprint": {
+        "w": 2.6,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "training-fence-2",
+      "asset": "teak-fence",
+      "x": 13,
+      "y": 43,
+      "footprint": {
+        "w": 2.6,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "training-fence-3",
+      "asset": "teak-fence",
+      "x": 19.2,
+      "y": 43,
+      "footprint": {
+        "w": 2.6,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "training-fence-4",
+      "asset": "teak-fence",
+      "x": 21.8,
+      "y": 43,
+      "footprint": {
+        "w": 2.6,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "training-fence-5",
+      "asset": "teak-fence",
+      "x": 24.4,
+      "y": 43,
+      "footprint": {
+        "w": 2.6,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "herbal-brewery",
+      "asset": "teak-house",
+      "x": 56.4,
+      "y": 28.8,
+      "footprint": {
+        "w": 7,
+        "h": 2.6
+      }
+    },
+    {
+      "id": "herbal-cauldron",
+      "asset": "cauldron",
+      "x": 60.8,
+      "y": 29.4,
+      "footprint": {
+        "w": 1,
+        "h": 0.6
+      }
+    },
+    {
+      "id": "talisman-shop",
+      "asset": "row-house",
+      "x": 67.2,
+      "y": 29,
+      "footprint": {
+        "w": 8.6,
+        "h": 2.4
+      }
+    },
+    {
+      "id": "talisman-sign",
+      "asset": "talisman-banner",
+      "x": 72.4,
+      "y": 29.6,
+      "footprint": {
+        "w": 0.6,
+        "h": 0.4
+      }
+    },
+    {
+      "id": "market-lantern-1",
+      "asset": "talisman-lantern",
+      "x": 52.6,
+      "y": 29.4,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "herbal-hanging",
+      "asset": "hanging-lantern",
+      "x": 53.4,
+      "y": 29,
+      "footprint": null,
+      "lift": 2.6
+    },
+    {
+      "id": "talisman-hanging",
+      "asset": "hanging-lantern",
+      "x": 71.6,
+      "y": 29.2,
+      "footprint": null,
+      "lift": 2.4
+    },
+    {
+      "id": "stall-hanging-1",
+      "asset": "hanging-lantern",
+      "x": 58.2,
+      "y": 38.6,
+      "footprint": null,
+      "lift": 2
+    },
+    {
+      "id": "stall-hanging-2",
+      "asset": "hanging-lantern",
+      "x": 71.9,
+      "y": 42,
+      "footprint": null,
+      "lift": 2
+    },
+    {
+      "id": "stall-hanging-3",
+      "asset": "hanging-lantern",
+      "x": 54.6,
+      "y": 38.6,
+      "footprint": null,
+      "lift": 2
+    },
+    {
+      "id": "stall-hanging-4",
+      "asset": "hanging-lantern",
+      "x": 67.8,
+      "y": 37.8,
+      "footprint": null,
+      "lift": 2
+    },
+    {
+      "id": "talisman-hanging-2",
+      "asset": "hanging-lantern",
+      "x": 63.4,
+      "y": 29.2,
+      "footprint": null,
+      "lift": 2.4
+    },
+    {
+      "id": "herbal-hanging-2",
+      "asset": "hanging-lantern",
+      "x": 59.6,
+      "y": 29,
+      "footprint": null,
+      "lift": 2.4
+    },
+    {
+      "id": "market-crates-1",
+      "asset": "crates",
+      "x": 52.8,
+      "y": 24.6,
+      "footprint": {
+        "w": 1.8,
+        "h": 1
+      }
+    },
+    {
+      "id": "market-barrels-1",
+      "asset": "barrels",
+      "x": 71.6,
+      "y": 25,
+      "footprint": {
+        "w": 1.6,
+        "h": 0.9
+      }
+    },
+    {
+      "id": "market-stall-1",
+      "asset": "market-stall",
+      "x": 56,
+      "y": 38.4,
+      "footprint": {
+        "w": 3,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "market-stall-2",
+      "asset": "market-stall",
+      "x": 60.4,
+      "y": 38.4,
+      "footprint": {
+        "w": 3,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "market-stall-3",
+      "asset": "market-stall",
+      "x": 69.2,
+      "y": 37.6,
+      "footprint": {
+        "w": 3,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "market-stall-4",
+      "asset": "market-stall",
+      "x": 70.6,
+      "y": 41.8,
+      "footprint": {
+        "w": 3,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "market-crates-2",
+      "asset": "crates",
+      "x": 53.6,
+      "y": 41.6,
+      "footprint": {
+        "w": 1.8,
+        "h": 1
+      }
+    },
+    {
+      "id": "market-barrels-2",
+      "asset": "barrels",
+      "x": 58.4,
+      "y": 42.2,
+      "footprint": {
+        "w": 1.6,
+        "h": 0.9
+      }
+    },
+    {
+      "id": "brahmin-house",
+      "asset": "teak-house",
+      "x": 68.8,
+      "y": 15.4,
+      "footprint": {
+        "w": 7,
+        "h": 2.6
+      }
+    },
+    {
+      "id": "brahmin-stilt",
+      "asset": "stilt-house",
+      "x": 58.6,
+      "y": 13.8,
+      "footprint": {
+        "w": 4.8,
+        "h": 2
+      }
+    },
+    {
+      "id": "ne-well",
+      "asset": "well",
+      "x": 63.8,
+      "y": 18.4,
+      "footprint": {
+        "w": 1.1,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "ne-fence-1",
+      "asset": "teak-fence",
+      "x": 56.2,
+      "y": 18.6,
+      "footprint": {
+        "w": 2.6,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "ne-fence-2",
+      "asset": "teak-fence",
+      "x": 72,
+      "y": 19.6,
+      "footprint": {
+        "w": 2.6,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "ne-lantern",
+      "asset": "talisman-lantern",
+      "x": 63.6,
+      "y": 22.4,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "brahmin-hanging",
+      "asset": "hanging-lantern",
+      "x": 65,
+      "y": 15.6,
+      "footprint": null,
+      "lift": 2.6
+    },
+    {
+      "id": "sw-stilt-1",
+      "asset": "stilt-house",
+      "x": 11.2,
+      "y": 52.6,
+      "footprint": {
+        "w": 4.8,
+        "h": 2
+      }
+    },
+    {
+      "id": "sw-row",
+      "asset": "row-house",
+      "x": 24.6,
+      "y": 53.8,
+      "footprint": {
+        "w": 8.6,
+        "h": 2.4
+      }
+    },
+    {
+      "id": "sw-stilt-2",
+      "asset": "stilt-house",
+      "x": 30.8,
+      "y": 50.2,
+      "footprint": {
+        "w": 4.8,
+        "h": 2
+      }
+    },
+    {
+      "id": "sw-fence-1",
+      "asset": "teak-fence",
+      "x": 8.2,
+      "y": 55.6,
+      "footprint": {
+        "w": 2.6,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "sw-fence-2",
+      "asset": "teak-fence",
+      "x": 14.4,
+      "y": 55.6,
+      "footprint": {
+        "w": 2.6,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "sw-incense",
+      "asset": "incense-urn",
+      "x": 16.4,
+      "y": 52.2,
+      "footprint": {
+        "w": 0.7,
+        "h": 0.4
+      }
+    },
+    {
+      "id": "sw-lantern-1",
+      "asset": "talisman-lantern",
+      "x": 17.6,
+      "y": 48,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "sw-hanging",
+      "asset": "hanging-lantern",
+      "x": 20,
+      "y": 54,
+      "footprint": null,
+      "lift": 2.2
+    },
+    {
+      "id": "sw-barrels",
+      "asset": "barrels",
+      "x": 20.2,
+      "y": 55.6,
+      "footprint": {
+        "w": 1.6,
+        "h": 0.9
+      }
+    },
+    {
+      "id": "se-row",
+      "asset": "row-house",
+      "x": 55.2,
+      "y": 52.6,
+      "footprint": {
+        "w": 8.6,
+        "h": 2.4
+      }
+    },
+    {
+      "id": "se-stilt-1",
+      "asset": "stilt-house",
+      "x": 66.6,
+      "y": 50.8,
+      "footprint": {
+        "w": 4.8,
+        "h": 2
+      }
+    },
+    {
+      "id": "se-stilt-2",
+      "asset": "stilt-house",
+      "x": 71,
+      "y": 55.8,
+      "footprint": {
+        "w": 4.8,
+        "h": 2
+      }
+    },
+    {
+      "id": "se-well",
+      "asset": "well",
+      "x": 62.4,
+      "y": 54.4,
+      "footprint": {
+        "w": 1.1,
+        "h": 0.8
+      }
+    },
+    {
+      "id": "se-crates",
+      "asset": "crates",
+      "x": 50.2,
+      "y": 55.4,
+      "footprint": {
+        "w": 1.8,
+        "h": 1
+      }
+    },
+    {
+      "id": "se-fence-1",
+      "asset": "teak-fence",
+      "x": 58.8,
+      "y": 56.4,
+      "footprint": {
+        "w": 2.6,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "se-fence-2",
+      "asset": "teak-fence",
+      "x": 66,
+      "y": 57,
+      "footprint": {
+        "w": 2.6,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "se-lantern-1",
+      "asset": "talisman-lantern",
+      "x": 62,
+      "y": 48.2,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "se-hanging",
+      "asset": "hanging-lantern",
+      "x": 64,
+      "y": 51,
+      "footprint": null,
+      "lift": 2.2
+    },
+    {
+      "id": "city-gate",
+      "asset": "thai-gate",
+      "x": 40,
+      "y": 58.5,
+      "footprint": null
+    },
+    {
+      "id": "gate-guardian-w",
+      "asset": "yak-guardian",
+      "x": 33.8,
+      "y": 56.6,
+      "footprint": {
+        "w": 1.6,
+        "h": 0.7
+      }
+    },
+    {
+      "id": "gate-guardian-e",
+      "asset": "yak-guardian",
+      "x": 46.2,
+      "y": 56.6,
+      "footprint": {
+        "w": 1.6,
+        "h": 0.7
+      },
+      "flip": true
+    },
+    {
+      "id": "gate-banner-w",
+      "asset": "talisman-banner",
+      "x": 35.8,
+      "y": 52.6,
+      "footprint": {
+        "w": 0.6,
+        "h": 0.4
+      }
+    },
+    {
+      "id": "gate-banner-e",
+      "asset": "talisman-banner",
+      "x": 44.2,
+      "y": 52.6,
+      "footprint": {
+        "w": 0.6,
+        "h": 0.4
+      }
+    },
+    {
+      "id": "gate-fire-w",
+      "asset": "ritual-fire",
+      "x": 36.8,
+      "y": 54.8,
+      "footprint": {
+        "w": 1.2,
+        "h": 0.6
+      }
+    },
+    {
+      "id": "gate-fire-e",
+      "asset": "ritual-fire",
+      "x": 43.2,
+      "y": 54.8,
+      "footprint": {
+        "w": 1.2,
+        "h": 0.6
+      }
+    },
+    {
+      "id": "avenue-lantern-sw",
+      "asset": "talisman-lantern",
+      "x": 35.6,
+      "y": 48.6,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "avenue-lantern-se",
+      "asset": "talisman-lantern",
+      "x": 44.6,
+      "y": 50.8,
+      "footprint": {
+        "w": 0.8,
+        "h": 0.5
+      }
+    },
+    {
+      "id": "north-wall-0",
+      "asset": "city-wall",
+      "x": 10.6,
+      "y": 3.4,
+      "footprint": {
+        "w": 7.4,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "north-wall-1",
+      "asset": "city-wall",
+      "x": 18,
+      "y": 3.4,
+      "footprint": {
+        "w": 7.4,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "north-wall-2",
+      "asset": "city-wall",
+      "x": 25.4,
+      "y": 3.4,
+      "footprint": {
+        "w": 7.4,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "north-wall-3",
+      "asset": "city-wall",
+      "x": 54.6,
+      "y": 3.4,
+      "footprint": {
+        "w": 7.4,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "north-wall-4",
+      "asset": "city-wall",
+      "x": 62,
+      "y": 3.4,
+      "footprint": {
+        "w": 7.4,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "north-wall-5",
+      "asset": "city-wall",
+      "x": 69.4,
+      "y": 3.4,
+      "footprint": {
+        "w": 7.4,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "south-wall-0",
+      "asset": "city-wall",
+      "x": 10.6,
+      "y": 59.6,
+      "footprint": {
+        "w": 7.4,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "south-wall-1",
+      "asset": "city-wall",
+      "x": 18,
+      "y": 59.6,
+      "footprint": {
+        "w": 7.4,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "south-wall-2",
+      "asset": "city-wall",
+      "x": 25.4,
+      "y": 59.6,
+      "footprint": {
+        "w": 7.4,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "south-wall-3",
+      "asset": "city-wall",
+      "x": 54.6,
+      "y": 59.6,
+      "footprint": {
+        "w": 7.4,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "south-wall-4",
+      "asset": "city-wall",
+      "x": 62,
+      "y": 59.6,
+      "footprint": {
+        "w": 7.4,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "south-wall-5",
+      "asset": "city-wall",
+      "x": 69.4,
+      "y": 59.6,
+      "footprint": {
+        "w": 7.4,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "north-wall-w",
+      "asset": "city-wall",
+      "x": 32.2,
+      "y": 3.4,
+      "footprint": {
+        "w": 5,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "north-wall-e",
+      "asset": "city-wall",
+      "x": 47.8,
+      "y": 3.4,
+      "footprint": {
+        "w": 5,
+        "h": 1.2
+      }
+    },
+    {
+      "id": "north-wall-fill-w",
+      "asset": "city-wall",
+      "x": 7,
+      "y": 3.4,
+      "footprint": null
+    },
+    {
+      "id": "north-wall-fill-e",
+      "asset": "city-wall",
+      "x": 73,
+      "y": 3.4,
+      "footprint": null
+    },
+    {
+      "id": "south-wall-fill-w",
+      "asset": "city-wall",
+      "x": 8,
+      "y": 59.6,
+      "footprint": null
+    },
+    {
+      "id": "south-wall-fill-e",
+      "asset": "city-wall",
+      "x": 72,
+      "y": 59.6,
+      "footprint": null
+    },
+    {
+      "id": "west-wall-0",
+      "asset": "city-wall-side",
+      "x": 1.3,
+      "y": 10,
+      "footprint": null
+    },
+    {
+      "id": "west-wall-1",
+      "asset": "city-wall-side-banner",
+      "x": 1.3,
+      "y": 18,
+      "footprint": null
+    },
+    {
+      "id": "west-wall-2",
+      "asset": "city-wall-side",
+      "x": 1.3,
+      "y": 26,
+      "footprint": null
+    },
+    {
+      "id": "west-wall-3",
+      "asset": "city-wall-side-banner",
+      "x": 1.3,
+      "y": 34,
+      "footprint": null
+    },
+    {
+      "id": "west-wall-4",
+      "asset": "city-wall-side",
+      "x": 1.3,
+      "y": 42,
+      "footprint": null
+    },
+    {
+      "id": "west-wall-5",
+      "asset": "city-wall-side-banner",
+      "x": 1.3,
+      "y": 50,
+      "footprint": null
+    },
+    {
+      "id": "west-wall-6",
+      "asset": "city-wall-side",
+      "x": 1.3,
+      "y": 58,
+      "footprint": null
+    },
+    {
+      "id": "east-wall-0",
+      "asset": "city-wall-side-banner",
+      "x": 78.7,
+      "y": 10,
+      "footprint": null,
+      "flip": true
+    },
+    {
+      "id": "east-wall-1",
+      "asset": "city-wall-side",
+      "x": 78.7,
+      "y": 18,
+      "footprint": null,
+      "flip": true
+    },
+    {
+      "id": "east-wall-2",
+      "asset": "city-wall-side-banner",
+      "x": 78.7,
+      "y": 26,
+      "footprint": null,
+      "flip": true
+    },
+    {
+      "id": "east-wall-3",
+      "asset": "city-wall-side",
+      "x": 78.7,
+      "y": 34,
+      "footprint": null,
+      "flip": true
+    },
+    {
+      "id": "east-wall-4",
+      "asset": "city-wall-side-banner",
+      "x": 78.7,
+      "y": 42,
+      "footprint": null,
+      "flip": true
+    },
+    {
+      "id": "east-wall-5",
+      "asset": "city-wall-side",
+      "x": 78.7,
+      "y": 50,
+      "footprint": null,
+      "flip": true
+    },
+    {
+      "id": "east-wall-6",
+      "asset": "city-wall-side-banner",
+      "x": 78.7,
+      "y": 58,
+      "footprint": null,
+      "flip": true
+    },
+    {
+      "id": "tower-nw",
+      "asset": "wall-tower",
+      "x": 3.6,
+      "y": 5,
+      "footprint": {
+        "w": 2.6,
+        "h": 1.4
+      }
+    },
+    {
+      "id": "tower-ne",
+      "asset": "wall-tower",
+      "x": 76.4,
+      "y": 5,
+      "footprint": {
+        "w": 2.6,
+        "h": 1.4
+      }
+    },
+    {
+      "id": "tower-sw",
+      "asset": "wall-tower",
+      "x": 3.6,
+      "y": 59.4,
+      "footprint": {
+        "w": 2.6,
+        "h": 1.4
+      }
+    },
+    {
+      "id": "tower-se",
+      "asset": "wall-tower",
+      "x": 76.4,
+      "y": 59.4,
+      "footprint": {
+        "w": 2.6,
+        "h": 1.4
+      }
+    },
+    {
+      "id": "tower-gate-w",
+      "asset": "wall-tower",
+      "x": 31,
+      "y": 59.4,
+      "footprint": {
+        "w": 2.6,
+        "h": 1.4
+      }
+    },
+    {
+      "id": "tower-gate-e",
+      "asset": "wall-tower",
+      "x": 49,
+      "y": 59.4,
+      "footprint": {
+        "w": 2.6,
+        "h": 1.4
+      }
+    },
+    {
+      "id": "sw-bridge",
+      "asset": "bridge-v",
+      "x": 16,
+      "y": 46.6,
+      "footprint": null
+    },
+    {
+      "id": "se-bridge",
+      "asset": "bridge-v",
+      "x": 64,
+      "y": 46.6,
+      "footprint": null
+    },
+    {
+      "id": "canal-lotus-w1",
+      "asset": "lotus-pads",
+      "x": 3.4,
+      "y": 18.6,
+      "footprint": null
+    },
+    {
+      "id": "canal-lotus-w2",
+      "asset": "lotus-pads",
+      "x": 3.8,
+      "y": 38.2,
+      "footprint": null
+    },
+    {
+      "id": "canal-lotus-e1",
+      "asset": "lotus-pads",
+      "x": 76.4,
+      "y": 26.4,
+      "footprint": null
+    },
+    {
+      "id": "canal-lotus-e2",
+      "asset": "lotus-pads",
+      "x": 76,
+      "y": 47.8,
+      "footprint": null
+    },
+    {
+      "id": "garden-blossom",
+      "asset": "blossom-tree",
+      "x": 9.6,
+      "y": 11.2,
+      "footprint": {
+        "w": 1.6,
+        "h": 0.9
+      }
+    },
+    {
+      "id": "garden-bank-west",
+      "asset": "garden-understory",
+      "x": 9.5,
+      "y": 17.7,
+      "footprint": null
+    },
+    {
+      "id": "garden-bank-north",
+      "asset": "garden-understory",
+      "x": 16.4,
+      "y": 8.2,
+      "footprint": null,
+      "flip": true
+    },
+    {
+      "id": "garden-tree-shoulder",
+      "asset": "garden-understory",
+      "x": 24.9,
+      "y": 13.4,
+      "footprint": null
+    },
+    {
+      "id": "garden-shrine",
+      "asset": "garden-shrine",
+      "x": 25.8,
+      "y": 18.9,
+      "footprint": {
+        "w": 1.2,
+        "h": 0.6
+      }
+    },
+    {
+      "id": "temple-blossom-w",
+      "asset": "blossom-tree",
+      "x": 29.8,
+      "y": 11.6,
+      "footprint": {
+        "w": 1.6,
+        "h": 0.9
+      }
+    },
+    {
+      "id": "temple-blossom-e",
+      "asset": "blossom-tree",
+      "x": 50.2,
+      "y": 11.6,
+      "footprint": {
+        "w": 1.6,
+        "h": 0.9
+      },
+      "flip": true
+    },
+    {
+      "id": "sw-blossom",
+      "asset": "blossom-tree",
+      "x": 18.2,
+      "y": 50.2,
+      "footprint": {
+        "w": 1.6,
+        "h": 0.9
+      }
+    }
+  ],
+  "blockers": [
+    {
+      "x": 36.6,
+      "y": 57.4,
+      "w": 2,
+      "h": 1.1
+    },
+    {
+      "x": 41.4,
+      "y": 57.4,
+      "w": 2,
+      "h": 1.1
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "w": 3,
+      "h": 50
+    },
+    {
+      "x": 75,
+      "y": 6,
+      "w": 3,
+      "h": 50
+    },
+    {
+      "x": 5,
+      "y": 44,
+      "w": 9.8,
+      "h": 2
+    },
+    {
+      "x": 17.2,
+      "y": 44,
+      "w": 15.8,
+      "h": 2
+    },
+    {
+      "x": 47,
+      "y": 44,
+      "w": 15.799999999999997,
+      "h": 2
+    },
+    {
+      "x": 65.2,
+      "y": 44,
+      "w": 9.8,
+      "h": 2
+    },
+    {
+      "x": 12.9,
+      "y": 10.9,
+      "w": 4.2,
+      "h": 4.2
+    }
+  ]
+}

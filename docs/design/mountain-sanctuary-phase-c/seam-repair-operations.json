@@ -1,0 +1,42 @@
+[
+  {
+    "operation": "copy_region",
+    "layer": "image",
+    "frames": [
+      1
+    ],
+    "source_layer": "image",
+    "source_frame": 1,
+    "region": [
+      0,
+      0,
+      7,
+      95
+    ],
+    "at": [
+      56,
+      0
+    ],
+    "reason": "Fill five empty right columns with same-source rock and cap without stretching native pixels."
+  },
+  {
+    "operation": "copy_region",
+    "layer": "image",
+    "frames": [
+      1
+    ],
+    "source_layer": "image",
+    "source_frame": 1,
+    "region": [
+      0,
+      0,
+      0,
+      95
+    ],
+    "at": [
+      63,
+      0
+    ],
+    "reason": "Match final boundary column exactly to first column for gap-free horizontal repeat."
+  }
+]

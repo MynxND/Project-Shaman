@@ -1,0 +1,276 @@
+[
+    {
+        "name":  "create_topdown_tileset",
+        "description":  "Generate a Wang tileset for top-down game maps with corner-based autotiling.\n\nThis tool starts an asynchronous tileset generation that returns immediately with a tileset ID.\nUse get_topdown_tileset to check status and retrieve the completed tileset.\n\nCost: standard mode is 1-4 generations, usually 3 or 4 â NOT 1. (Measured\nover 6,124 prod charges: mean 3.1, only 4% cost exactly 1.) mode=\"pro\" costs\n15 generations for tiles up to 32 px, 25 above. Budget accordingly; six\nstandard tilesets is ~18 generations, not 6. Failed jobs are not charged.\n\nTile count depends on mode and transition depth:\n  - standard mode: 0.0 / 0.25 / 0.5 â 16 tiles (4x4); 1.0 â 25 tiles (4x8)\n  - pro mode:      0.0 / 0.25       â 16 tiles;        0.5 / 1.0 â 25 tiles\n  - shape_style:   0.0 through 0.5   â 16 tiles;       \u003e0.5 â 25 tiles\n(pro promotes 0.5 past the 0.4 threshold, so a pro request at 0.5 returns 25,\nnot 16.) The 25-tile layout has 21 distinct corner combos â the 4 extra\nwall-continuation tiles share corners with a twin and are distinguished by\npattern_4x4, not corners.\nVertices define terrain, tiles render based on their 4 corner values.\n\nUse case: Building top-down game maps with seamless terrain transitions.\n\nAlgorithm: For each grid cell, sample terrain at 4 vertices, select matching tile.\n\n## Creating Connected Tilesets\n\nUse base tile IDs to create multiple tilesets that seamlessly connect:\n\n1. Create first tileset (e.g., oceanâbeach) and wait for completion\n2. Use get_topdown_tileset to retrieve the base tile IDs\n3. Use the beach base tile ID as lower_base_tile_id for next tileset (beachâgrass)\n\nExample workflow:\n- Tileset 1: ocean (lower) â beach (upper) â get beach base tile ID\n- Tileset 2: beach (lower, using base tile ID) â grass (upper) â get grass base tile ID\n- Tileset 3: grass (lower, using base tile ID) â stone (upper)\n\nThis ensures visual consistency across terrain transitions.\n\nGeneration time: ~100 seconds (async processing)",
+        "inputSchema":  {
+                            "additionalProperties":  false,
+                            "properties":  {
+                                               "lower_description":  {
+                                                                         "description":  "Lower terrain type (e.g., \u0027ocean water\u0027, \u0027dirt path\u0027)",
+                                                                         "type":  "string"
+                                                                     },
+                                               "upper_description":  {
+                                                                         "description":  "Upper/elevated terrain type (e.g., \u0027sandy beach\u0027, \u0027grass\u0027)",
+                                                                         "type":  "string"
+                                                                     },
+                                               "transition_size":  {
+                                                                       "default":  0.0,
+                                                                       "description":  "Size of terrain transition. Often affects the height difference between terrains (0.0, 0.25, 0.5, or 1.0 for full tile transition)",
+                                                                       "type":  "number"
+                                                                   },
+                                               "transition_description":  {
+                                                                              "default":  null,
+                                                                              "description":  "Blending between terrains (optional, recommended when transition_size \u003e 0, e.g. \u0027wet sand with foam\u0027)",
+                                                                              "type":  [
+                                                                                           "string",
+                                                                                           "null"
+                                                                                       ]
+                                                                          },
+                                               "tile_size":  {
+                                                                 "additionalProperties":  false,
+                                                                 "default":  {
+                                                                                 "width":  16,
+                                                                                 "height":  16
+                                                                             },
+                                                                 "description":  "Tile dimensions as {\"width\": N, \"height\": N}, OR a bare int N for a square tile (same shape create_tiles_pro accepts). 16 or 32 for standard; 64 requires mode=\u0027pro\u0027.",
+                                                                 "properties":  {
+                                                                                    "width":  {
+                                                                                                  "examples":  [
+                                                                                                                   16
+                                                                                                               ],
+                                                                                                  "type":  "integer"
+                                                                                              },
+                                                                                    "height":  {
+                                                                                                   "examples":  [
+                                                                                                                    16
+                                                                                                                ],
+                                                                                                   "type":  "integer"
+                                                                                               }
+                                                                                },
+                                                                 "required":  [
+                                                                                  "width",
+                                                                                  "height"
+                                                                              ],
+                                                                 "type":  "object"
+                                                             },
+                                               "mode":  {
+                                                            "default":  "standard",
+                                                            "description":  "Generation pipeline. \"standard\": classic Wang tileset (16 or 32px). \"pro\": richer painted tilesets, 16/32/64px; raggedness shapes the border (not shape_style - mode=\u0027pro\u0027 with shape_style is rejected); connects through lower_base_tile_id/upper_base_tile_id like standard. Experimental.",
+                                                            "enum":  [
+                                                                         "standard",
+                                                                         "pro"
+                                                                     ],
+                                                            "type":  "string"
+                                                        },
+                                               "shape_style":  {
+                                                                   "default":  null,
+                                                                   "description":  "Optional terrain-boundary geometry, mode=\u0027standard\u0027 ONLY â passing it with mode=\u0027pro\u0027 is rejected. Use \u0027square\u0027 for stepped corners or \u0027round\u0027 for circular arcs. When supplied, transition_size is continuous from 0 to 1 and values above 0.5 use a 4x8 sheet.",
+                                                                   "enum":  [
+                                                                                "square",
+                                                                                "round",
+                                                                                null
+                                                                            ],
+                                                                   "type":  [
+                                                                                "string",
+                                                                                "null"
+                                                                            ]
+                                                               },
+                                               "enhance":  {
+                                                               "default":  true,
+                                                               "description":  "shape_style tilesets only (ignored otherwise). AI-enhances the terrain descriptions at the chosen detail/shading levels and picks matching base colours before generation. The stored tileset keeps the enhanced text; your original prompts are kept in its metadata.",
+                                                               "type":  "boolean"
+                                                           },
+                                               "spread_x":  {
+                                                                "default":  0.5,
+                                                                "description":  "No effect - the Pro pipeline no longer uses it; kept so existing calls work.",
+                                                                "maximum":  1.0,
+                                                                "minimum":  0.0,
+                                                                "type":  "number"
+                                                            },
+                                               "slope_size":  {
+                                                                  "default":  0.0,
+                                                                  "description":  "No effect - the Pro pipeline no longer uses it; kept so existing calls work.",
+                                                                  "maximum":  1.0,
+                                                                  "minimum":  0.0,
+                                                                  "type":  "number"
+                                                              },
+                                               "raggedness":  {
+                                                                  "default":  0.0,
+                                                                  "description":  "Pro only. Terrain boundary noise (0=smooth, 1=rough).",
+                                                                  "maximum":  1.0,
+                                                                  "minimum":  0.0,
+                                                                  "type":  "number"
+                                                              },
+                                               "outline":  {
+                                                               "default":  null,
+                                                               "description":  "Outline style",
+                                                               "enum":  [
+                                                                            "single color outline",
+                                                                            "selective outline",
+                                                                            "lineless",
+                                                                            null
+                                                                        ],
+                                                               "type":  [
+                                                                            "string",
+                                                                            "null"
+                                                                        ]
+                                                           },
+                                               "shading":  {
+                                                               "default":  null,
+                                                               "description":  "Shading style",
+                                                               "enum":  [
+                                                                            "flat shading",
+                                                                            "basic shading",
+                                                                            "medium shading",
+                                                                            "detailed shading",
+                                                                            "highly detailed shading",
+                                                                            null
+                                                                        ],
+                                                               "type":  [
+                                                                            "string",
+                                                                            "null"
+                                                                        ]
+                                                           },
+                                               "detail":  {
+                                                              "default":  null,
+                                                              "description":  "Detail level",
+                                                              "enum":  [
+                                                                           "low detail",
+                                                                           "medium detail",
+                                                                           "highly detailed",
+                                                                           null
+                                                                       ],
+                                                              "type":  [
+                                                                           "string",
+                                                                           "null"
+                                                                       ]
+                                                          },
+                                               "view":  {
+                                                            "default":  "high top-down",
+                                                            "description":  "Camera angle",
+                                                            "enum":  [
+                                                                         "low top-down",
+                                                                         "high top-down"
+                                                                     ],
+                                                            "type":  "string"
+                                                        },
+                                               "tile_strength":  {
+                                                                     "default":  1.0,
+                                                                     "description":  "Pattern consistency",
+                                                                     "maximum":  2.0,
+                                                                     "minimum":  0.1,
+                                                                     "type":  "number"
+                                                                 },
+                                               "lower_base_tile_id":  {
+                                                                          "default":  null,
+                                                                          "description":  "ID of existing tile to use as lower terrain reference. Use to create connected tilesets",
+                                                                          "type":  [
+                                                                                       "string",
+                                                                                       "null"
+                                                                                   ]
+                                                                      },
+                                               "upper_base_tile_id":  {
+                                                                          "default":  null,
+                                                                          "description":  "ID of existing tile to use as upper terrain reference. Use to create connected tilesets",
+                                                                          "type":  [
+                                                                                       "string",
+                                                                                       "null"
+                                                                                   ]
+                                                                      },
+                                               "tileset_adherence":  {
+                                                                         "default":  100.0,
+                                                                         "description":  "Structure strictness and adherence to reference image",
+                                                                         "maximum":  500.0,
+                                                                         "minimum":  0.0,
+                                                                         "type":  "number"
+                                                                     },
+                                               "tileset_adherence_freedom":  {
+                                                                                 "default":  500.0,
+                                                                                 "description":  "Structure flexibility, higher values means more flexibility",
+                                                                                 "maximum":  900.0,
+                                                                                 "minimum":  0.0,
+                                                                                 "type":  "number"
+                                                                             },
+                                               "text_guidance_scale":  {
+                                                                           "default":  8.0,
+                                                                           "description":  "Prompt adherence strength",
+                                                                           "maximum":  20.0,
+                                                                           "minimum":  1.0,
+                                                                           "type":  "number"
+                                                                       }
+                                           },
+                            "required":  [
+                                             "lower_description",
+                                             "upper_description"
+                                         ],
+                            "type":  "object"
+                        },
+        "annotations":  {
+                            "readOnlyHint":  false,
+                            "destructiveHint":  false,
+                            "idempotentHint":  false,
+                            "openWorldHint":  false
+                        },
+        "_meta":  {
+                      "fastmcp":  {
+                                      "tags":  [
+
+                                               ]
+                                  }
+                  }
+    },
+    {
+        "name":  "get_topdown_tileset",
+        "description":  "Get a topdown Wang tileset by ID. Returns status, download links, base tile IDs for chaining, and an example map image.\n\nDownload: no auth, the UUID is the key. GET /mcp/tilesets/{id}/image for the sheet PNG (add ?inline=true to be served the bytes instead of a CDN redirect, which Python stdlib clients need), GET /mcp/tilesets/{id}/metadata for per-tile bounding_box (x/y/width/height, use as atlas regions), corners (NW/NE/SW/SE, each lower/upper/transition, use for Wang autotiling) and pattern_4x4. Both answer 423 + Retry-After while generating. Godot walkthrough: the MCP resource pixellab://docs/godot/wang-tilesets.",
+        "inputSchema":  {
+                            "additionalProperties":  false,
+                            "properties":  {
+                                               "tileset_id":  {
+                                                                  "description":  "The UUID of the topdown tileset to retrieve",
+                                                                  "type":  "string"
+                                                              }
+                                           },
+                            "required":  [
+                                             "tileset_id"
+                                         ],
+                            "type":  "object"
+                        },
+        "annotations":  {
+                            "readOnlyHint":  true,
+                            "destructiveHint":  false,
+                            "idempotentHint":  true,
+                            "openWorldHint":  false
+                        },
+        "_meta":  {
+                      "fastmcp":  {
+                                      "tags":  [
+
+                                               ]
+                                  }
+                  }
+    },
+    {
+        "name":  "get_balance",
+        "description":  "Check your account balance: remaining credits (USD) and subscription generations.",
+        "inputSchema":  {
+                            "additionalProperties":  false,
+                            "properties":  {
+
+                                           },
+                            "type":  "object"
+                        },
+        "annotations":  {
+                            "readOnlyHint":  true,
+                            "destructiveHint":  false,
+                            "idempotentHint":  true,
+                            "openWorldHint":  false
+                        },
+        "_meta":  {
+                      "fastmcp":  {
+                                      "tags":  [
+
+                                               ]
+                                  }
+                  }
+    }
+]

@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-11",
+  "budgetCapGenerations": 50,
+  "providerCalls": 5,
+  "chargedGenerations": 41,
+  "remainingProofBudget": 9,
+  "balanceBefore": 763,
+  "balanceAfter": 722,
+  "jobs": [
+    {
+      "id": "ac16429e-6db8-46d0-b405-bd9a857ed14a",
+      "charged": 10,
+      "candidates": 4,
+      "status": "completed; raw front candidates not seamless; front0 selected for free exact boundary repair"
+    },
+    {
+      "id": "c12353cd-3dbc-432a-b2da-66e9c573b5c3",
+      "charged": 10,
+      "candidates": 4,
+      "status": "completed; rejected for requested side-return slope"
+    },
+    {
+      "id": "a0ab8f36-858d-42fd-b815-7c072d5fa994",
+      "charged": 10,
+      "candidates": 16,
+      "status": "completed; rejected diagonal orientation"
+    },
+    {
+      "id": "1b21a5be-fe18-4420-8aca-38f76e9df5f1",
+      "charged": 10,
+      "candidates": 4,
+      "status": "completed; candidate0 selected static waterfall"
+    },
+    {
+      "id": "145fad6d-4b84-4b24-a682-0d1b8a9889eb",
+      "charged": 1,
+      "candidates": 1,
+      "status": "completed; incomplete overlay composed with authored native straight stair geometry"
+    }
+  ],
+  "workbench": {
+    "imageId": "61050307-42bb-42fc-893a-164742e5823d",
+    "charged": 0,
+    "operations": "seam-repair-operations.json"
+  },
+  "manualSideDerivatives": {
+    "charged": 0,
+    "method": "exact per-column native pixel translations; explicitly not provider side outputs"
+  },
+  "fullKitComplete": false,
+  "productionIntegrated": false,
+  "visualApproved": false,
+  "initialDraftKitDelivered": true
+}
