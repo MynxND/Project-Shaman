@@ -1,0 +1,25 @@
+{
+  "schema": "shaman-sprite3d-config/1",
+  "reference": "docs/design/sprite3d-poc/references/exec-937d34de-6178-4dd6-9fd0-29664d2ca26b.png",
+  "referenceCatalog": "docs/design/sprite3d-poc/references/provenance.json",
+  "historicalConceptReference": "docs/design/comfyui/reference/shamen-base-sheet.webp",
+  "output": "docs/design/sprite3d-poc",
+  "size": 128,
+  "pixelScale": 2,
+  "paletteLevels": 16,
+  "alphaThreshold": 128,
+  "frames": 12,
+  "durationMs": 1000,
+  "orthoScale": 3.5,
+  "cameraTarget": [0, 0, 1.2],
+  "cameraElevation": 25,
+  "stride": 0.32,
+  "footLift": 0.16,
+  "action": "walk",
+  "boneMap": {
+    "root": "root", "torso": "torso", "head": "head",
+    "thigh.L": "thigh.L", "shin.L": "shin.L", "foot.L": "foot.L",
+    "thigh.R": "thigh.R", "shin.R": "shin.R", "foot.R": "foot.R",
+    "arm.L": "arm.L", "arm.R": "arm.R"
+  }
+}

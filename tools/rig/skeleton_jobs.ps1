@@ -10,10 +10,29 @@ $call = Join-Path $root 'tools/rig/hair_pixellab.ps1'
 New-Item -ItemType Directory -Force "$Folder/raw" | Out-Null
 foreach ($dir in $Dirs) {
   if (Test-Path "$Folder/$dir-poll.json") { "$dir already submitted"; continue }
-  try { powershell -NoProfile -File $call -Action call -Tool animate_with_skeleton_v3 -ArgumentsFile "$Folder/$dir-request.json" -OutputFile "$Folder/$dir-submit.json" 2>$null | Out-Null } catch {}
-  $t = Get-Content -Raw "$Folder/$dir-submit.json"
-  $job = [regex]::Match($t, 'job_id:\s*([0-9a-f-]{36})').Groups[1].Value
-  if (-not $job) { "SUBMIT FAILED $dir (see $dir-submit.json)"; continue }
+  # Recover a known successful receipt before any retry (the process may have stopped before writing its poll file).
+  $job = ''
+  if (Test-Path "$Folder/$dir-submit.json") {
+    $previous = Get-Content -Raw "$Folder/$dir-submit.json"
+    $job = [regex]::Match($previous, 'job_id:\s*([0-9a-f-]{36})').Groups[1].Value
+    if (-not $job -and $previous -notmatch 'rate limit exceeded \(\d+/\d+ jobs\)') { throw "Existing ambiguous receipt $dir; inspect before retrying" }
+  }
+  for ($attempt = 0; -not $job -and $attempt -lt 90; $attempt++) {
+    # A transport failure must not be confused with a stale rate-limit receipt from the previous attempt.
+    if (Test-Path "$Folder/$dir-submit.json") {
+      Move-Item -LiteralPath "$Folder/$dir-submit.json" -Destination "$Folder/$dir-admission-$([DateTime]::UtcNow.Ticks).json"
+    }
+    try { powershell -NoProfile -File $call -Action call -Tool animate_with_skeleton_v3 -ArgumentsFile "$Folder/$dir-request.json" -OutputFile "$Folder/$dir-submit.json" 2>$null | Out-Null } catch {}
+    if (-not (Test-Path "$Folder/$dir-submit.json")) { throw "Ambiguous submission $dir; inspect before retrying" }
+    $t = Get-Content -Raw "$Folder/$dir-submit.json"
+    $job = [regex]::Match($t, 'job_id:\s*([0-9a-f-]{36})').Groups[1].Value
+    if ($job) { break }
+    # Only a definite admission rejection is safe to retry. Never retry an unknown/failed paid job automatically.
+    if ($t -notmatch 'rate limit exceeded \(\d+/\d+ jobs\)') { throw "Submission rejected $dir; inspect $dir-submit.json" }
+    if ($attempt -eq 0) { "$dir waiting for provider job slot" }
+    Start-Sleep 10
+  }
+  if (-not $job) { throw "No provider slot for $dir; no job submitted" }
   '{"job_id":"' + $job + '"}' | Out-File -Encoding ascii "$Folder/$dir-poll.json"
   "$dir submitted $job"
 }

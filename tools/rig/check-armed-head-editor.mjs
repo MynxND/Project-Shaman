@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {trackPatch,trackNeck} from '../../docs/design/equipment/class-2-imagegen-armed-01/head-tracking.mjs';
+import {validateHeadOffsets,applyHeadOffsets,frameKey} from './armed-head-offsets.mjs';
+const a=new Uint8ClampedArray(128*128*4),b=new Uint8ClampedArray(a.length);
+for(let y=40;y<=56;y++)for(let x=52;x<=72;x++){
+ const i=(y*128+x)*4,j=((y-2)*128+x+3)*4;
+ a[i]=(x*37+y*19)%256;a[i+1]=(x*23+y*47)%256;a[i+2]=(x*61+y*11)%256;a[i+3]=255;b.set(a.slice(i,i+4),j);
+}
+const p=trackPatch(a,b,{x:62,y:48},{x:62,y:48});assert.equal(p.x,65);assert.equal(p.y,46);assert.equal(p.accepted,true);
+assert.equal(trackPatch(new Uint8Array(a.length),b,{x:62,y:48},{x:62,y:48}).accepted,false);
+const consensus=trackNeck(a,b,{x:62,y:48},{x:62,y:48});assert.equal(consensus.x,65);assert.equal(consensus.y,46);assert.equal(consensus.accepted,true);assert.equal(consensus.roundTrip,0);
+assert.equal(trackNeck(new Uint8Array(a.length),b,{x:62,y:48},{x:62,y:48}).accepted,false);
+const root='docs/design/equipment/class-2-imagegen-armed-01';
+const bytes=await readFile(root+'/export-report.json'),report=JSON.parse(bytes),fingerprint=createHash('sha256').update(bytes).digest('hex'),f=report.frames.find(f=>f.id==='onmyoji'&&f.action==='walk');
+const packet={version:1,sourceFingerprint:fingerprint,offsets:[{key:frameKey(f),sha256:f.sha256,dx:2,dy:-1,status:'manual'}]};
+validateHeadOffsets(packet,report,fingerprint);
+for(const bad of [ {...packet,sourceFingerprint:'stale'}, {...packet,offsets:[{...packet.offsets[0],sha256:'wrong'}]}, {...packet,offsets:[{...packet.offsets[0],dx:.5}]}, {...packet,offsets:[{...packet.offsets[0],status:'proposal'}]}, {...packet,offsets:[packet.offsets[0],packet.offsets[0]]} ])assert.throws(()=>validateHeadOffsets(bad,report,fingerprint));
+const manifest=JSON.parse(await readFile('apps/client/public/assets/character-v3/class-outfits/manifest-imagegen-armed-draft.json'));
+const original=structuredClone(manifest),bodyHashes=report.frames.map(f=>f.sha256);
+assert.equal(applyHeadOffsets(manifest,report,packet),1);
+const edited=manifest.outfits.find(o=>o.id===f.id+'-armed').directions[f.direction].walk[f.index];assert.deepEqual(edited.neck,{x:f.neck.x+2,y:f.neck.y-1});
+assert.equal(applyHeadOffsets(manifest,report,packet),1);assert.deepEqual(edited.neck,{x:f.neck.x+2,y:f.neck.y-1},'apply is idempotent');
+applyHeadOffsets(manifest,report,{...packet,offsets:[]});assert.deepEqual(edited.neck,f.neck,'reset removes prior correction');
+assert.deepEqual(manifest.outfits.filter(o=>!o.id.endsWith('-armed')),original.outfits.filter(o=>!o.id.endsWith('-armed')));
+assert.deepEqual(report.frames.map(f=>f.sha256),bodyHashes);
+const orderKey=[f.id,f.action,f.direction].join('/'),indices=report.frames.filter(v=>[v.id,v.action,v.direction].join('/')===orderKey).map(v=>v.index).reverse();
+const reordered=validateHeadOffsets({...packet,orders:[{key:orderKey,indices}]},report,fingerprint);
+applyHeadOffsets(manifest,report,reordered);const ordered=manifest.outfits.find(o=>o.id===f.id+'-armed').directions[f.direction][f.action];
+assert.equal(ordered.at(-1).sha256,f.sha256);assert.deepEqual(ordered.at(-1).neck,{x:f.neck.x+2,y:f.neck.y-1});
+applyHeadOffsets(manifest,report,reordered);assert.equal(manifest.outfits.find(o=>o.id===f.id+'-armed').directions[f.direction][f.action].at(-1).sha256,f.sha256);
+assert.throws(()=>validateHeadOffsets({...packet,orders:[{key:orderKey,indices:indices.map(()=>0)}]},report,fingerprint));
+applyHeadOffsets(manifest,report,{...packet,orders:[]});assert.equal(manifest.outfits.find(o=>o.id===f.id+'-armed').directions[f.direction][f.action][0].sha256,f.sha256);
+console.log('Known patch translation, low-detail rejection, stale/hash/range/proposal guards, idempotent draft application and reset pass; production pair preserved.');

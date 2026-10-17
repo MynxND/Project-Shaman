@@ -1,0 +1,27 @@
+{
+  "schema": "shaman-sprite3d-config/1",
+  "character": "santet-3d-01",
+  "modelBuilder": "santet",
+  "reference": "docs/design/santet-3d-01/reference.png",
+  "output": "docs/design/santet-3d-01",
+  "size": 128,
+  "pixelScale": 1,
+  "paletteLevels": 32,
+  "alphaThreshold": 128,
+  "frames": 12,
+  "durationMs": 1000,
+  "orthoScale": 2.95,
+  "cameraTarget": [0, 0, 1.18],
+  "cameraElevation": 18,
+  "samples": 32,
+  "stride": 0.27,
+  "footLift": 0.13,
+  "heldArm": "R",
+  "action": "walk",
+  "boneMap": {
+    "root": "root", "torso": "torso", "head": "head",
+    "thigh.L": "thigh.L", "shin.L": "shin.L", "foot.L": "foot.L",
+    "thigh.R": "thigh.R", "shin.R": "shin.R", "foot.R": "foot.R",
+    "arm.L": "arm.L", "arm.R": "arm.R"
+  }
+}

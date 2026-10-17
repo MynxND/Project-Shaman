@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pose Studio</title>
+<link rel="stylesheet" href="/ui/style.css">
+</head>
+<body>
+<header class="top">
+  <h1>Pose Studio <small>MiniMax H3 · ภาพ → วิดีโอ → sprite</small></h1>
+  <div class="chips" id="status"><span class="chip">กำลังเชื่อมต่อ…</span></div>
+</header>
+<main class="layout">
+  <section class="panel" id="order">
+    <h2>สั่งท่าใหม่</h2>
+    <label class="field">ตัวละคร<select id="character"></select></label>
+    <div class="field">ทิศ (เลือกได้หลายทิศ)
+      <div class="compass" id="compass"></div>
+      <div class="row"><button type="button" class="ghost" id="allDirs">ทั้ง 8 ทิศ</button><button type="button" class="ghost" id="noDirs">ล้าง</button></div>
+    </div>
+    <div class="field">ท่า<div class="presets" id="presets"></div></div>
+    <label class="field">อธิบายท่าเอง (ไม่บังคับ, ภาษาอังกฤษได้ผลดีสุด)<textarea id="custom" rows="3" placeholder="เช่น swings the keris twice in a quick X pattern then returns to stance"></textarea></label>
+    <details class="field"><summary>ตั้งค่าขั้นสูง</summary>
+      <div class="grid2">
+        <label>จำนวนเฟรม sprite<input id="frames" type="number" min="4" max="24" value="8"></label>
+        <label>ความยาววิดีโอ (เฟรม@24fps)<select id="length"><option>22</option><option selected>39</option><option>56</option><option>73</option></select></label>
+        <label>FPS ในเกม<input id="fps" type="number" min="4" max="24" value="12"></label>
+        <label>Seed (ว่าง = สุ่ม)<input id="seed" type="number" min="0"></label>
+        <label class="check"><input id="loop" type="checkbox"> วนลูป (เฟรมสุดท้าย = idle)</label>
+        <label class="check"><input id="turbo" type="checkbox" checked> Turbo 8 ขั้น (เร็ว)</label>
+      </div>
+    </details>
+    <button class="primary" id="submit">เพิ่มเข้าคิว</button>
+    <p class="hint" id="orderMsg"></p>
+    <p class="hint">สั่งผ่าน Codex/Claude ได้: <code>node tools/pose-studio/cli.mjs generate --character santet --direction all --action walk</code></p>
+  </section>
+
+  <section class="panel" id="queue">
+    <div class="row between"><h2>งาน</h2>
+      <select id="filter"><option value="">ทั้งหมด</option><option value="review">รอตรวจ</option><option value="queued">ในคิว</option><option value="generating">กำลังสร้าง</option><option value="approved">อนุมัติแล้ว</option><option value="rejected">ไม่ผ่าน</option><option value="failed">ล้มเหลว</option></select></div>
+    <ul class="jobs" id="jobs"></ul>
+  </section>
+
+  <section class="panel" id="detail">
+    <p class="empty">เลือกงานจากรายการเพื่อดูผล</p>
+  </section>
+</main>
+<template id="detailTpl">
+  <div class="row between"><h2 class="title"></h2><span class="badge status"></span></div>
+  <p class="meta"></p>
+  <div class="progress" hidden><div class="bar"></div><span></span></div>
+  <p class="error" hidden></p>
+  <div class="stage">
+    <figure><canvas class="idle" width="128" height="128"></canvas><figcaption>idle ต้นฉบับ</figcaption></figure>
+    <figure><canvas class="play" width="128" height="128"></canvas><figcaption>ผลลัพธ์ <span class="frameNo"></span></figcaption></figure>
+  </div>
+  <div class="row controls">
+    <button type="button" class="ghost toggle">⏸ หยุด</button>
+    <label class="check"><input type="checkbox" class="onion"> ซ้อน idle (onion)</label>
+    <label>FPS <input type="number" class="pfps" min="1" max="30" value="8"></label>
+    <label>ขยาย <select class="zoom"><option>2</option><option selected>3</option><option>4</option></select></label>
+  </div>
+  <h3>QA อัตโนมัติ <span class="badge qa"></span></h3>
+  <ul class="checks"></ul>
+  <p class="hint qanote"></p>
+  <h3>เลือกเฟรมจากวิดีโอ <small>(คลิกเพื่อเลือก/ไม่เลือก)</small></h3>
+  <div class="strip"></div>
+  <div class="row"><button type="button" class="ghost saveSel">บันทึกเฟรมที่เลือก + ตรวจใหม่</button><button type="button" class="ghost evenSel">เลือกห่างเท่ากัน</button></div>
+  <details><summary>Prompt / ไฟล์</summary><pre class="prompt"></pre><p class="files"></p></details>
+  <h3>ตรวจด้วยตา</h3>
+  <textarea class="note" rows="2" placeholder="หมายเหตุ เช่น ขาซ้ายหาย เฟรม 3"></textarea>
+  <div class="row review">
+    <button type="button" class="primary approve">✔ อนุมัติ</button>
+    <button type="button" class="danger reject">✘ ไม่ผ่าน</button>
+    <button type="button" class="ghost retry">↻ สร้างใหม่ (seed ใหม่)</button>
+    <button type="button" class="ghost cancel">หยุดงาน</button>
+    <button type="button" class="ghost remove">ลบงาน</button>
+  </div>
+</template>
+<script type="module" src="/ui/app.js"></script>
+</body>
+</html>

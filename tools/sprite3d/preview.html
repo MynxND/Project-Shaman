@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="th"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shaman · 3D sprite review</title>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:max(18px,env(safe-area-inset-top)) 18px;background:#102b2c;color:#e9dbb8;font:16px system-ui}main{max-width:1200px;margin:auto}h1{font-size:26px;color:#dfb964}button,select,input{font:inherit}button,select{background:#254546;color:#f0e0ba;border:1px solid #ae8b49;padding:10px;border-radius:5px}button{cursor:pointer}nav{display:flex;gap:12px;flex-wrap:wrap;align-items:center}#grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:18px}.card{padding:12px;border:1px solid #8b7448;border-radius:6px;background:#153233}.card canvas{display:block;width:100%;image-rendering:pixelated;background:repeating-conic-gradient(#224344 0% 25%,#1c393a 0% 50%) 50%/20px 20px}.selected{border:2px solid #dfb964}#reference{max-width:100%;margin-top:12px}#status{min-height:24px;color:#dfb964}label{display:flex;gap:6px;align-items:center}input[type=range]{max-width:180px}small{line-height:1.6}details{margin:20px 0}a{color:#dfb964}
+</style>
+<main><h1>Shaman · ทดลอง 3D → Sprite</h1>
+<p>ตัวละครจำลอง • 1 walk cycle • 8 ทิศ • 12 เฟรม/ทิศ · ยังไม่อนุมัติภาพและยังไม่ใช้ในเกมหลัก</p>
+<nav><button id="play">หยุด / Pause</button><button id="step">+1 frame</button>
+<label>ทิศ <select id="direction"></select></label>
+<label>ความเร็ว <select id="speed"><option value="0.25">¼×</option><option value="0.5">½×</option><option value="1" selected>1×</option></select></label>
+<label>เฟรม <input id="seek" type="range" min="0" max="11" value="0"></label>
+<label><input id="onion" type="checkbox">Onion skin</label><label><input id="guides" type="checkbox" checked>Ground / feet</label>
+<label><input id="travel" type="checkbox">พื้นเลื่อน / treadmill</label></nav>
+<p id="status">Loading…</p><div id="grid"></div>
+<details><summary>วิธีตรวจภาพ / Visual validation</summary><ol>
+<li>ดู EAST / WEST ช้า ¼×: ขาซ้ายและขวาต้องสลับกัน ไม่มีข้างเดียวก้าวซ้ำ</li>
+<li>เปิด treadmill: จุดเท้าสัมผัสพื้นต้องเคลื่อนพร้อมพื้นช่วง stance; เขียว = stance, แดง = swing</li>
+<li>หยุดแล้วเลื่อนเฟรม 11 → 0 พร้อม onion skin: ตรวจการกระโดดของเท้า รูปร่าง และจังหวะ</li>
+<li>เปลี่ยนทิศขณะเล่น: เลขเฟรมและ phase ต้องต่อเนื่อง ตรวจทุกมุมและพื้นหลังโปร่งใส</li>
+<li>Technical QA ไม่ใช่การอนุมัติภาพ ต้องให้ผู้ใช้ตรวจ gait / style ก่อนนำไปใช้จริง</li></ol>
+<pre id="qa"></pre><a href="/manifest.json">JSON metadata</a> · <a href="/sheet.png">Sprite sheet</a></details>
+<details open><summary>Sprite references จากโฟลเดอร์ที่คุณระบุ</summary><img id="reference" src="/reference.png" alt="Owned six-class Shaman artwork"><p>ชีตชุดหกอาชีพที่เคยอนุมัติ • ภาพอื่นด้านล่างใช้ศึกษารูปทรงหลายทิศและรายละเอียดชุด สถานะอนุมัติแต่ละภาพยังแยกกัน</p><div id="references"></div><p>ภาพ 2D เป็น visual reference เท่านั้น; ต้องสร้าง model / skin weights / rig แยกต่างหาก ตัวจำลองด้านบนยังไม่ใช่โมเดลที่สร้างตรงตาม sprite เหล่านี้</p></details></main>
+<script type="module">
+import {SpriteClock} from '/playback.mjs';
+try {
+const m=await (await fetch('/manifest.json')).json(), gait=await (await fetch('/gait.json')).json();
+const image=new Image();image.src='/sheet.png';await image.decode();
+const clock=new SpriteClock(m), cards=[];
+const $=id=>document.getElementById(id);
+for(const d of m.directions){const option=document.createElement('option');option.value=d;option.textContent=d;$('direction').append(option);
+const card=document.createElement('div');card.className='card';const title=document.createElement('div');title.textContent=d;const canvas=document.createElement('canvas');canvas.width=canvas.height=256;card.append(title,canvas);$('grid').append(card);cards.push({card,canvas,d});card.onclick=()=>{$('direction').value=d;clock.setDirection(d);};}
+let playing=true,last=performance.now();
+$('play').onclick=()=>{playing=!playing;$('play').textContent=playing?'หยุด / Pause':'เล่น / Play';};
+$('direction').onchange=()=>clock.setDirection($('direction').value);
+$('seek').oninput=()=>{playing=false;clock.seek(Number($('seek').value)*m.durationMs/m.framesPerDirection);};
+$('step').onclick=()=>{playing=false;clock.seek(((clock.frame().index+1)%12)*m.durationMs/12+0.001);};
+const qa=await (await fetch('/qa.json')).json();$('qa').textContent=JSON.stringify(qa,null,2);
+const refs=await (await fetch('/references/provenance.json')).json();
+const referenceLabels={0:'Santet · 8 directions',9:'Keris · 8 directions',24:'Ullr Hunter · 8 directions',87:'Rune Seer · 8 directions',91:'Six-class SOUTH outfit study',104:'Onmyoji · 8 directions',138:'Rune Seer · motion study',214:'Rune Seer · armed idle study'};
+for(const ref of refs){if(ref.index===115)continue;const detail=document.createElement('details');const title=document.createElement('summary');title.textContent=referenceLabels[ref.index]||'Sprite study';const img=document.createElement('img');img.src='/'+ref.repositoryCopy.split('/sprite3d-poc/')[1];img.alt=title.textContent;img.style.maxWidth='100%';img.loading='lazy';detail.append(title,img);$('references').append(detail);}
+function draw(now){if(playing)clock.advance(Math.min(100,now-last)*Number($('speed').value));last=now;
+const index=clock.frame().index;$('seek').value=index;$('status').textContent=`${clock.direction} · frame ${index+1}/12 · phase ${(clock.elapsedMs%m.durationMs/m.durationMs).toFixed(3)}`;
+for(const {card,canvas,d} of cards){card.classList.toggle('selected',d===clock.direction);const ctx=canvas.getContext('2d');ctx.clearRect(0,0,256,256);ctx.imageSmoothingEnabled=false;const f=clock.frame(d),r=f.rect,a=f.groundAnchor;
+if($('travel').checked){ctx.strokeStyle='#b59a5970';for(let j=-4;j<5;j++){const angle=m.directions.indexOf(d)*Math.PI/4;const drift=(clock.elapsedMs/m.durationMs*2*m.config.stride)%0.5;const x=128+Math.sin(angle)*(j*.5+drift)*65,y=a[1]*2+Math.cos(angle)*(j*.5+drift)*65*Math.sin(m.config.cameraElevation*Math.PI/180);ctx.beginPath();ctx.moveTo(x-14,y);ctx.lineTo(x+14,y);ctx.stroke();}}
+if($('onion').checked){const prev=m.frames.find(f=>f.direction===d&&f.index===(index+11)%12);ctx.globalAlpha=.25;ctx.drawImage(image,prev.rect.x,prev.rect.y,r.w,r.h,0,0,256,256);ctx.globalAlpha=1;}
+ctx.drawImage(image,r.x,r.y,r.w,r.h,0,0,256,256);
+if($('guides').checked){ctx.strokeStyle='#dfb964';ctx.beginPath();ctx.moveTo(a[0]*2-12,a[1]*2);ctx.lineTo(a[0]*2+12,a[1]*2);ctx.moveTo(a[0]*2,a[1]*2-8);ctx.lineTo(a[0]*2,a[1]*2+8);ctx.stroke();
+const angle=m.directions.indexOf(d)*Math.PI/4,elev=m.config.cameraElevation*Math.PI/180;
+for(const foot of Object.values(gait[index].feet)){const [x,y,z]=foot.actual,scale=256/m.config.orthoScale;const px=128+(x*Math.cos(angle)+y*Math.sin(angle))*scale,py=a[1]*2+(y*Math.cos(angle)-x*Math.sin(angle))*Math.sin(elev)*scale-z*Math.cos(elev)*scale;ctx.fillStyle=foot.stance?'#5eea91':'#ed7676';ctx.beginPath();ctx.arc(px,py,3,0,Math.PI*2);ctx.fill();}}}
+requestAnimationFrame(draw);}requestAnimationFrame(draw);
+}catch(error){document.getElementById('status').textContent=`Preview failed: ${error.message}`;}
+</script></html>
+
