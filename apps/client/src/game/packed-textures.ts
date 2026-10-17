@@ -46,7 +46,9 @@ export function installPackedTextures() {
     if (!cleaned.has(this)) { cleaned.add(this); this.on('complete', () => { for (let i = 0; i < INDEX.atlases.length; i++) if (textures.exists(SHEET(i))) textures.remove(SHEET(i)); }); }
     // Cut when the sheet arrives (it is queued once; later keys for the same sheet just wait for it).
     this.once(`filecomplete-image-${sheet}`, cut);
-    if (!this.keyExists({ type: 'image', key: sheet } as Phaser.Loader.File)) image.call(this, sheet, INDEX.atlases[entry[0]]!.url);
+    const queued = [this.list, this.inflight, this.queue].some(files =>
+      files.entries.some(file => file.type === 'image' && file.key === sheet));
+    if (!queued) image.call(this, sheet, INDEX.atlases[entry[0]]!.url);
     return this;
   });
 }
