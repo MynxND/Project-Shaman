@@ -115,6 +115,10 @@ export class FoundationScene extends Phaser.Scene {
     useTargetStore.getState().select(null);
   }
   preload() {
+    if (process.env.NODE_ENV === 'development' && new URLSearchParams(window.location.search).get('carryReview') === '1') {
+      preloadCharacterRig(this);
+      return;
+    }
     if(this.mountainPerf.enabled){console.info('[mountain-load] preload',this.map.id);this.load.on('loaderror',(file: {key:string})=>console.error('[mountain-load] failed',file.key));this.load.once('complete',()=>console.info('[mountain-load] complete',this.map.id));}
     preloadMapAssets(this,this.map);
     preloadCharacterRig(this);
@@ -615,17 +619,25 @@ export class FoundationScene extends Phaser.Scene {
     const bodyType = parseBodyType(params.get('body'));
     const allRows = ['idle', 'walk', 'attack 0', 'attack 1', 'attack 3', 'attack 7', 'attack live', ...(params.get('outfit') === '1' || params.get('motion') === 'cast' ? ['cast 0','cast 5','cast 8','cast 11','cast live'] : [])];
     const requestedMotion = params.get('motion');
-    const rows = requestedMotion && ['idle','walk','attack','cast'].includes(requestedMotion) ? allRows.filter(row => row.startsWith(requestedMotion)) : allRows;
+    let rows = requestedMotion && ['idle','walk','attack','cast'].includes(requestedMotion) ? allRows.filter(row => row.startsWith(requestedMotion)) : allRows;
+    const solo = params.get('solo') === '1';
+    const reviewFacings = solo ? FACINGS.filter(f => f === (params.get('facing') ?? 'south')) : FACINGS;
+    const shownFacings = reviewFacings.length ? reviewFacings : ['south' as const];
+    if (solo) {
+      const motion = requestedMotion === 'attack' || requestedMotion === 'cast' ? requestedMotion : 'idle';
+      const frame = Number(params.get('frame'));
+      rows = [motion === 'idle' ? 'idle' : motion + ' ' + (params.has('frame') && Number.isInteger(frame) && frame >= 0 && frame < (motion === 'cast' ? 12 : 8) ? frame : 'live')];
+    }
     let outfitSprites = 0;
     this.cameras.main.setBackgroundColor('#263b35').setRoundPixels(true);
     const text = (x: number, y: number, label: string) => this.add.text(x, y, label, { fontFamily: 'monospace', fontSize: '12px', color: '#f0dfb6' });
-    text(16, 8, `${bodyType} | ${weapon} | actual renderer | ${params.get('outfit') === '1' ? 'class outfit' : params.get('femaleOffhand') === '1' ? 'OFF-HAND DRAFT: SOUTH IDLE ONLY' : 'baseline'} | development only`);
-    FACINGS.forEach((facing, col) => text(120 + col * 100, 35, facing));
+    if (!solo) text(16, 8, `${bodyType} | ${weapon} | actual renderer | ${params.get('outfit') === '1' ? 'class outfit' : params.get('femaleOffhand') === '1' ? 'OFF-HAND DRAFT: SOUTH IDLE ONLY' : 'baseline'} | development only`);
+    shownFacings.forEach((facing, col) => text(solo ? 16 : 120 + col * 100, 35, facing));
     rows.forEach((row, r) => {
-      text(8, 105 + r * 110, row);
-      FACINGS.forEach((facing, col) => {
-        const sprite = new CharacterSprite(this, 150 + col * 100, 145 + r * 110, { ...DEFAULT_APPEARANCE, bodyType }, facing)
-          .setScale(0.65).setDepth(r * 110).setAnimation(row === 'walk' ? 'walk' : null);
+      text(8, solo ? 60 : 105 + r * 110, row);
+      shownFacings.forEach((facing, col) => {
+        const sprite = new CharacterSprite(this, solo ? 160 : 150 + col * 100, solo ? 240 : 145 + r * 110, { ...DEFAULT_APPEARANCE, bodyType }, facing)
+          .setScale(solo ? 1.2 : 0.65).setDepth(r * 110).setAnimation(row === 'walk' ? 'walk' : null);
         sprite.setLook(`weapon:${weapon}`);
         if (params.get('outfit') === '1') sprite.setClassBranch(Object.entries(BRANCH_WEAPONS).find(([,item]) => item === weapon)?.[0] ?? '');
         if(params.get('outfit')==='1')sprite.setAutoHeadBranch(Object.entries(BRANCH_WEAPONS).find(([,item])=>item===weapon)?.[0]??'');
@@ -637,8 +649,8 @@ export class FoundationScene extends Phaser.Scene {
       });
     });
     const resize = (size: Phaser.Structs.Size) => {
-      const height = rows.length*110+60;
-      this.cameras.main.setSize(size.width, size.height).setZoom(Math.min(size.width / 950, size.height / height)).centerOn(475, height/2);
+      const height = solo ? 290 : rows.length*110+60;
+      this.cameras.main.setSize(size.width, size.height).setZoom(Math.min(size.width / (solo ? 320 : 950), size.height / height)).centerOn(solo ? 160 : 475, height/2);
     };
     resize(this.scale.gameSize);
     this.scale.on('resize', resize);

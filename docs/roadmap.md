@@ -448,3 +448,6 @@ Implemented distinct server counters for Shuten, Maiyarap and Koschei, 3–10 pa
 ## Automatic head fitting in gameplay — 2026-10-17
 
 Eight-class male V3 idle/walk composition, canonical user preset, appearance controls and local preset import implemented. Actual-room movement/head-peer tests and responsive checks are recorded in design/equipment/auto-head-game-2026-10-17/. Physical-phone performance, human visual calibration and new attack/cast artwork remain separate.
+
+## Weapon pose reference — 2026-10-18
+Unified eight-class reference at /weapon-poses/index.html (development): front default, existing attack/cast playback and held frames. No new art; user plans replacement attacks. See design/combat/weapon-poses-2026-10-18/README.md.
