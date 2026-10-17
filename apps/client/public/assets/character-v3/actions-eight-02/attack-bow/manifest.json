@@ -1,0 +1,876 @@
+{
+  "version": "action-eight/1",
+  "action": "attack-bow",
+  "name": "Ullr · ง้างและปล่อยธนู",
+  "bodySet": "body-eight-02",
+  "fps": 16,
+  "loop": false,
+  "hits": [
+    4
+  ],
+  "directions": [
+    {
+      "direction": "south",
+      "headUrl": "/assets/character-v3/head-eight-01/south.png",
+      "headSha256": "1ac5ca0956848a2886484a8955e3d4d5f4206bc513c96581b55ade60bf6a4215",
+      "headPivot": {
+        "x": 62,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-0.png",
+          "sha256": "23fe20a6c67424917038d8a022e94449d81649ff74f3faa320daa71eb3ce4a97",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-1.png",
+          "sha256": "4a5c3d5e34572adba9af2a7411dddb88a1dec28ebd9ecf1e311ed27cd41f8f74",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-2.png",
+          "sha256": "762406ff14ebdd74e86d23bdb511404cdfbb47de4b01b90ab11f792d75aa1f90",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-3.png",
+          "sha256": "03b222645ad2955ead7ee3cacda1a34ba819d8e28f68b3949711d67f5a3c5fbc",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-4.png",
+          "sha256": "0d42ad5fb55540cc81fe83ea4d149cb91fc331df97bff3fefcbf4e7e2a8e3032",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-5.png",
+          "sha256": "40fa267cca59755301529e50ef2ed2167b0a58c86a6fa0cc58b25e0e5e1c9b2b",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-6.png",
+          "sha256": "4efc1cd9562c305138cbfec9fdb3549dc5dbea6aa29c8ffdb09fe08424a362c1",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-7.png",
+          "sha256": "08c96a6726c4e593d98365ce35933b39a7820ba6d2147eb2ad8492c6d672bf70",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "south-east",
+      "headUrl": "/assets/character-v3/head-eight-01/south-east.png",
+      "headSha256": "3cd756ea681a3571bf619505373ec6f78e200c0b3d6088936b26ad587c08b0b5",
+      "headPivot": {
+        "x": 65,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-east-0.png",
+          "sha256": "afde1703ce3cc7397cc6d9523bee6a4e151ebb59acd71b92ec9c3f5f6004c2ac",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-east-1.png",
+          "sha256": "91bfae399028426869ba776d802f715207d711e781bb9b11439cedc69a11ed85",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-east-2.png",
+          "sha256": "9d893f7b56a3e62b62ca7eec23a59705bc33f99e613c023115ce0b0e00d9dcdb",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-east-3.png",
+          "sha256": "19093057c8dc89acbe2c3f03a5d1dc1a57aa57d2c20780c5e371f9d2c62307e7",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-east-4.png",
+          "sha256": "2904b2e645b3a6cd3721128586b96e801d6bc605f6b186b4c1c5b68ae63e8735",
+          "neckPivot": {
+            "x": 64,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-east-5.png",
+          "sha256": "c8428d0e923846549f4f66737ea3b942d0aa30db9af13b684e6b4130c1d30550",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-east-6.png",
+          "sha256": "c63e66e750e9583520cffbe9313ce791a5ecb7fcd4a4e64baaf764ab7ddabf84",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-east-7.png",
+          "sha256": "3ee939e712e9138b35e2bdfe6e76fe69b33d36e7db9a11de5c86925edae93aac",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        }
+      ]
+    },
+    {
+      "direction": "east",
+      "headUrl": "/assets/character-v3/head-eight-01/east.png",
+      "headSha256": "e0ff194091acadf4042ffd76627c88f444830239d59a7dc8dcd62e84d4952ec8",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/east-0.png",
+          "sha256": "6e3192b9a5cb3515d3f2990b77646a4b1e141ee8163d75fe7cc504598b48b902",
+          "neckPivot": {
+            "x": 59,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/east-1.png",
+          "sha256": "97db51e22783c3f9500fe8866afdfebfa1e9f564bd8aaa06a95ab32171953774",
+          "neckPivot": {
+            "x": 60,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/east-2.png",
+          "sha256": "4427bb7d199c454cfd482b48dff4778878b5fd86ee8071d2eb40084765b0f03e",
+          "neckPivot": {
+            "x": 60,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/east-3.png",
+          "sha256": "95447fcf147d6c7b08ce9a556cc27f04819056c81146dfaae692a0de1916a056",
+          "neckPivot": {
+            "x": 61,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/east-4.png",
+          "sha256": "1c7b9fa943e10b09cf727861651ee0d73bf7967dc330687ff4dba98962115daa",
+          "neckPivot": {
+            "x": 61,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/east-5.png",
+          "sha256": "cd43ebba5c2bb1cf0d2452630746aba9f32b9d4c1d0e4c6298680514ff58c7a3",
+          "neckPivot": {
+            "x": 60,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/east-6.png",
+          "sha256": "3a87723c531007dc2f59ecc221861e7db1561942d03ff16f9df3c7ab6cbc87bd",
+          "neckPivot": {
+            "x": 60,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/east-7.png",
+          "sha256": "da9e52900b5732e1293c6c90529f0f125836a13e5d452cbdcee2d36d329aaba8",
+          "neckPivot": {
+            "x": 59,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north-east",
+      "headUrl": "/assets/character-v3/head-eight-01/north-east.png",
+      "headSha256": "22f5b66ce480a0c2eecc4ebd361aaa57ccfa6b4d78fd8ba89a332f9750dbf9bb",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-east-0.png",
+          "sha256": "04c778feebe06e8b43b26b7b6c968f279480c32887af97c6286e75744fbb6433",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-east-1.png",
+          "sha256": "0ad9068a2de0343175210b285a0c625615f7d81a7cbc550bfee0815058e4c4b4",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-east-2.png",
+          "sha256": "fbd9015ac8bf72b7873186c027a3200d94f8c758a1daf13b3fc244951989d115",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-east-3.png",
+          "sha256": "b6697a47021224df54e0b3ba578683e59bfe6f05780644bf9ba68ebb08353c7e",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-east-4.png",
+          "sha256": "574a4a0f81117f236f6402e2c0bdaa97c1f398971b4d60378906046d3af0dcea",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-east-5.png",
+          "sha256": "c41f77c4424332d2d4eb11b295dc5b6e9ffb6f9d0ac1131cbd0da5bfbfab54f1",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-east-6.png",
+          "sha256": "82c48700017decb1c8b213ddf141e89dbbe4a59a8ea4405a7b56af368d35da83",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-east-7.png",
+          "sha256": "202eaf0ca2db2236b23eb96cb059be06615160545d6cfc6941b224205e6f66a2",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north",
+      "headUrl": "/assets/character-v3/head-eight-01/north.png",
+      "headSha256": "954eb387ddec4a48dcb63c037705753d1a524a6396ee03ac1d353ca624dd98d1",
+      "headPivot": {
+        "x": 64,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-0.png",
+          "sha256": "9ce018bd93ac4bc1c1563173ed4fb3146d2dd31a62106964d2c2293c6ec5cad9",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-1.png",
+          "sha256": "cbed3a8ec3236bbd51152b2e55e81d6c19c0c125d8d6073c8f61e598eb226a92",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-2.png",
+          "sha256": "5f44e06e4ce81e4cb5ef3265ad25d289945284f731dfe2685ceb8c968ac4e080",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-3.png",
+          "sha256": "ad0ba1e3d7c2d090a47cacbfc33c58d1e46a5a1bc06858aa219d3d2ee7bc879f",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-4.png",
+          "sha256": "8b3280f4f5bf010ae64b25159c3a25111e4c72e0c26c75ce2d9ff4d325ba65af",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-5.png",
+          "sha256": "2a5b880e598c20baede45b2adc04e7f59ac1413479ff8a79163ee164370fcbfb",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-6.png",
+          "sha256": "b4f137c85f5363774b21458ab1407bece2ff1170230ea484d8baa21291e78a47",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-7.png",
+          "sha256": "5ae873d49042f498eab9c2abf692e552c0f9c4d69718901d82b40b15e38c1584",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north-west",
+      "headUrl": "/assets/character-v3/head-eight-01/north-west.png",
+      "headSha256": "f7cfab464653ebb612bffee7c196ba547d7590e953a5a9c5ac725d36767e4172",
+      "headPivot": {
+        "x": 64,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-west-0.png",
+          "sha256": "718b411aa430f5ff7044b512ac3dd976e8d697228522eda4c18c6993b1b8e449",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-west-1.png",
+          "sha256": "9829501cc6fef2bf126f0cb2a0e5a3454aefc94fcd8a9d07572b9acf09b96234",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-west-2.png",
+          "sha256": "22705b03d62526dd4b0c16b5d868358e912abd6b9acc5237a4d7e0dc8d56897f",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-west-3.png",
+          "sha256": "2eea992fc833c7c0b14d254b9b32e4fb04e4888fadd3a1c3453417ed990cd106",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-west-4.png",
+          "sha256": "e132991ec75f02a4ecd7ee1e775a0c6edf6ec5cdac0fd109baa3f38a6c8739ba",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-west-5.png",
+          "sha256": "9e8db3cf0c5ce51249e9382483fb7cb90f0b021b8a772ef51c2dc59c44eb1d1d",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-west-6.png",
+          "sha256": "0317e7a4ac7fac0f884ae8321f10d439b9812167566c697f8575d390a11ac240",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/north-west-7.png",
+          "sha256": "7dde37467cb3c646c84893cb40fb8947406aa6b618571fab4537f117b3326766",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "west",
+      "headUrl": "/assets/character-v3/head-eight-01/west.png",
+      "headSha256": "f72b693fd621fc79b1cd76ef6cf4828ef98d9d65f883e2abfb9d888985a808b8",
+      "headPivot": {
+        "x": 65,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/west-0.png",
+          "sha256": "360afe5408feefaf998effbd4f18defc4146d558577bca217fe3a06eac101a90",
+          "neckPivot": {
+            "x": 65,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/west-1.png",
+          "sha256": "1c5e21f882743afd486949f15489ffa9b0dbfc21feadbafdd5dd0db0bf4b4528",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/west-2.png",
+          "sha256": "c4a96d74fa2270aca18b7939c7378621e5d7171b6dc75f0d3a8ebe51efb8fdef",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/west-3.png",
+          "sha256": "248890ab30816552de3ea7fbd96cc202dbc9c7aec1cfdeb9e86a4989c597aa73",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/west-4.png",
+          "sha256": "f70cd292eee62269f5387e0f3c5707f867943fc119b5da70ebf6b6c9ea770ec6",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/west-5.png",
+          "sha256": "018355e2f74511c6fcdb35c5ca7a3a96ad1337e8c30a4f9552f68185ba5b243f",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/west-6.png",
+          "sha256": "6b4fc06ed594d85d1f86d03c667e29ce275561acf0fc2f4eaaaeb274f6319c55",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/west-7.png",
+          "sha256": "d4a9192a8e0720b562751db56489d3294f472033eba7c8298062bcf8ac402c57",
+          "neckPivot": {
+            "x": 65,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        }
+      ]
+    },
+    {
+      "direction": "south-west",
+      "headUrl": "/assets/character-v3/head-eight-01/south-west.png",
+      "headSha256": "72bd0701ea25e028f807a707c33600aeb0f3dc6a6656a29ee645ec87c2d273e9",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-west-0.png",
+          "sha256": "ca1c628037917126a1ccbbbafb6ad2fb7e46344170adb374e0a2d12532e50a89",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-west-1.png",
+          "sha256": "f0211d18931a6b623872b86f179419df4e9428ccdd37fd6044fd3276f9b77853",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-west-2.png",
+          "sha256": "2bd90fadc99272027b62d0506186499ddbed5d7716e15605ca7d8c4582f51740",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-west-3.png",
+          "sha256": "4f73d37ca729ef1ad982dfe07466e174e2a37055409b14fedb1ee77f58785932",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-west-4.png",
+          "sha256": "954b565db564ca8186a7ce70147b85e10360073eeaf11c138c321264c19e7dbd",
+          "neckPivot": {
+            "x": 61,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-west-5.png",
+          "sha256": "63aa3ed36fe04bf62b5e9fb482863638801958cfcb1a1189b8f5e74aab903c2c",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-west-6.png",
+          "sha256": "effd2617fd73b5733ed473f932a39ad01871b3356c197ebeeb5c78e28b3b9f42",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-bow/south-west-7.png",
+          "sha256": "c1ab8ffda15ff8393233a1a499b9930d3beb02fdb2366943f763c4b4591e0c6a",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        }
+      ]
+    }
+  ],
+  "sheet": {
+    "url": "/assets/character-v3/actions-eight-02/attack-bow/sheet.png",
+    "sha256": "d731d243dce18121b4de4c1c0a5cddb00538d0b57b7a9dd0fd3494226c50cbfb",
+    "frameWidth": 128,
+    "frameHeight": 128
+  },
+  "visualApproved": false
+}

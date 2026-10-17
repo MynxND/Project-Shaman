@@ -11,6 +11,32 @@
 			"isBackground": false,
 			"problemMatcher": [],
 			"group": "build"
+		},
+		{
+			"label": "Cliff Terrain Review Client",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"--filter",
+				"@shaman/client",
+				"dev",
+				"--port",
+				"3000"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Cliff Terrain Gameplay Server",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"--filter",
+				"@shaman/server",
+				"dev"
+			],
+			"isBackground": true,
+			"problemMatcher": []
 		}
 	]
 }

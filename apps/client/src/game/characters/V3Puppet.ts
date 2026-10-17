@@ -4,7 +4,9 @@ import { DEFAULT_HEAD, hairTint, WALK_CYCLE_UNITS, WALK_SPEED, type ExpressionId
 import { parseHeadLayers, type HeadLayersManifest } from './head-layers-model';
 import { parseBodyEight, type BodyEightManifest } from './body-eight-model';
 import { parseActionEight, parseWalkEight, type ActionEightManifest, type WalkDirection, type WalkEightManifest, type WeaponActionId } from './walk-eight-model';
+import { WEAPON_ACTIONS } from './walk-eight-model';
 import { preloadSsr, ssrAssets, SsrHead, type SsrAssets } from './SsrHead';
+import { preloadClassOutfits, outfitTexture, type ClassOutfit } from './class-outfit';
 
 // Character V3 (Medium novice): separate headless body (idle body-eight-02, walk walk-eight-02, attack/cast
 // actions-eight-02) plus a head parented to each frame's neck pivot: the layered head-layers-01 (bald base, expression,
@@ -12,24 +14,22 @@ import { preloadSsr, ssrAssets, SsrHead, type SsrAssets } from './SsrHead';
 // head is drawn by the shared SSR composer instead (SsrHead); hairstyles without an SSR part keep the layered head.
 const LAYERS_KEY = 'v3-head-layers', BODY_KEY = 'v3-body-manifest', WALK_KEY = 'v3-walk-manifest', ATTACK_KEY = 'v3-attack-manifest', CAST_KEY = 'v3-cast-manifest';
 type Motion = 'walk' | 'attack' | 'cast' | WeaponActionId;
-/** Basic-attack style by weapon class (ATTACK_MOTION_STUDY.md): palm strike, keris stabs (two alternating halves), cast. */
-export type AttackStyle = 'palm' | 'dagger' | 'cast';
-const WEAPON_ACTIONS: readonly WeaponActionId[] = ['attack-dagger', 'attack-cast'];
+/** Basic-attack body by weapon class (ATTACK_MOTION_STUDY.md); optional sets retain the palm fallback. */
+export type AttackStyle = 'attack' | WeaponActionId;
 const weaponActionKey = (a: WeaponActionId) => `v3-${a}-manifest`;
 const idleKey = (f: Facing) => `v3:idle:${f}`, headKey = (f: Facing) => `v3:head:${f}`;
 const baseKey = (h: string, f: Facing) => `v3:hbase:${h}:${f}`, faceKey = (e: ExpressionId, f: Facing) => `v3:face:${e}:${f}`, hairKey = (h: string, f: Facing) => `v3:hair:${h}:${f}`, accentKey = (h: string, f: Facing) => `v3:accent:${h}:${f}`;
 const frameKey = (m: Motion, f: Facing, i: number) => `v3:${m}:${f}:${i}`, animKey = (m: Motion, f: Facing) => `v3:${m}:${f}`;
 /** Native V3 is ~97px tall vs ~118px for rig-v2, so it is drawn larger to read the same size on the map. */
 export const V3_SIZE_RATIO = 118 / 97;
-export type V3Assets = { body: BodyEightManifest; walk: WalkEightManifest; attack: ActionEightManifest | null; cast: ActionEightManifest | null; layers: HeadLayersManifest | null; ssr: SsrAssets | null;
-  /** Weapon-class attacks; each optional (the palm strike stays the fallback). */
-  'attack-dagger'?: ActionEightManifest | null; 'attack-cast'?: ActionEightManifest | null };
+export type V3Assets = { body: BodyEightManifest; walk: WalkEightManifest; attack: ActionEightManifest | null; cast: ActionEightManifest | null; layers: HeadLayersManifest | null; ssr: SsrAssets | null } & Partial<Record<WeaponActionId, ActionEightManifest | null>>;
 /** Neutral faces blink: closed eyes for BLINK_MS every BLINK_EVERY_MS +- jitter. */
 const BLINK_MS = 130, BLINK_EVERY_MS = 3800;
 
 export function preloadV3(scene: Phaser.Scene) {
   preloadSsr(scene);
   preloadAutoHeads(scene);
+  preloadClassOutfits(scene);
   scene.load.once(`filecomplete-json-${BODY_KEY}`, (_k: string, _t: string, raw: unknown) => {
     for (const f of parseBodyEight(raw, 'body-eight-02').frames) { scene.load.image(idleKey(f.direction as Facing), f.url); scene.load.image(headKey(f.direction as Facing), f.headUrl); }
   });
@@ -64,7 +64,7 @@ export function v3Assets(scene: Phaser.Scene): V3Assets | null {
   const optional = (key: string, m: Motion) => scene.cache.json.get(key) && scene.textures.exists(frameKey(m, 'south', 0)) ? scene.cache.json.get(key) as ActionEightManifest : null;
   const layers = scene.cache.json.get(LAYERS_KEY) && scene.textures.exists(baseKey('natural-short', 'south')) ? scene.cache.json.get(LAYERS_KEY) as HeadLayersManifest : null;
   return { body: body as BodyEightManifest, walk: walk as WalkEightManifest, attack: optional(ATTACK_KEY, 'attack'), cast: optional(CAST_KEY, 'cast'), layers, ssr: ssrAssets(scene),
-    'attack-dagger': optional(weaponActionKey('attack-dagger'), 'attack-dagger'), 'attack-cast': optional(weaponActionKey('attack-cast'), 'attack-cast') };
+    ...Object.fromEntries(WEAPON_ACTIONS.map(a => [a, optional(weaponActionKey(a), a)])) };
 }
 
 /** Drives a body sprite and owns its head image; the head never moves the body. */
@@ -81,12 +81,29 @@ export class V3Puppet {
   /** Cast frames are driven by the server cast timeline, not a Phaser animation. */
   private castFrame: { facing: Facing; frame: number } | null = null;
   private ssr: SsrHead | null;
-  private attackStyle: AttackStyle = 'palm';
+  private attackStyle: AttackStyle = 'attack';
   /** Keris: the next attack plays the right (a) or left (b) stab half. */
   private nextHalf: 'a' | 'b' = 'a';
   private automatic: AutoHeadActor;
   setAutomaticBranch(branch: string) { this.automatic.setBranch(branch); }
   automaticActive() { return this.automatic.active; }
+  automaticEquipmentFrame() { return this.automatic.equipmentFrame(); }
+  private outfit: ClassOutfit | null = null;
+  setClassOutfit(scene: Phaser.Scene, outfit: ClassOutfit | null) {
+    if (this.outfit?.id === outfit?.id) return false;
+    this.outfit = outfit;
+    if (outfit) for (const [f,d] of Object.entries(outfit.directions)) for (const a of ['walk','attack','cast'] as const) {
+      const motion = a === 'attack' ? outfit.attackAction : a;
+      const keys = d[a].map((_,i) => outfitTexture(outfit.id,motion,f as Facing,i));
+      for (const k of keys) scene.textures.get(k).setFilter(Phaser.Textures.FilterMode.NEAREST);
+      scene.textures.get(outfitTexture(outfit.id,'idle',f as Facing)).setFilter(Phaser.Textures.FilterMode.NEAREST);
+      const key = `${animKey(motion as Motion,f as Facing)}:outfit:${outfit.id}`;
+      if (a !== 'cast' && !scene.anims.exists(key)) scene.anims.create({key,frames:keys.map(key=>({key})),frameRate:a==='walk'?keys.length*WALK_SPEED/WALK_CYCLE_UNITS:(this.assets[outfit.attackAction as WeaponActionId]?.fps??16),repeat:a==='walk'?-1:0});
+    }
+    return true;
+  }
+  private bodyTexture(m: 'idle' | Motion, facing: Facing, i?: number) { return this.outfit ? outfitTexture(this.outfit.id,m,facing,i) : m === 'idle' ? idleKey(facing) : frameKey(m,facing,i!); }
+  private bodyAnimation(m: Motion, facing: Facing) { return `${animKey(m,facing)}${this.outfit?`:outfit:${this.outfit.id}`:''}`; }
   constructor(scene: Phaser.Scene, private assets: V3Assets) {
     this.automatic = new AutoHeadActor(scene,assets.ssr);
     this.ssr = assets.ssr ? new SsrHead(scene, assets.ssr) : null;
@@ -98,7 +115,7 @@ export class V3Puppet {
     for (const d of assets.layers?.directions ?? []) for (const key of [...Object.keys(d.bases).map((h) => baseKey(h, d.direction as Facing)), ...Object.keys(d.faces).map((e) => faceKey(e as ExpressionId, d.direction as Facing)), ...Object.keys(d.hair).map((h) => hairKey(h, d.direction as Facing)), ...Object.keys(d.accents ?? {}).map((h) => accentKey(h, d.direction as Facing))]) scene.textures.get(key).setFilter(Phaser.Textures.FilterMode.NEAREST);
     const sets: [Motion, { directions: WalkDirection[] } | null, number, number][] = [
       ['walk', assets.walk, -1, 0], ['attack', assets.attack, 0, assets.attack?.fps ?? 0], ['cast', assets.cast, 0, 0],
-      ['attack-cast', assets['attack-cast'] ?? null, 0, assets['attack-cast']?.fps ?? 0]];
+      ...WEAPON_ACTIONS.filter(a => a !== 'attack-dagger').map(a => [a, assets[a] ?? null, 0, assets[a]?.fps ?? 0] as [Motion, ActionEightManifest | null, number, number])];
     // Keris: two one-shot halves of the 8-frame loop, right stab (frames 0-3) and left stab (4-7), alternated per hit.
     for (const d of assets['attack-dagger']?.directions ?? []) {
       const facing = d.direction as Facing, keys = d.frames.map((_, i) => frameKey('attack-dagger', facing, i));
@@ -120,11 +137,14 @@ export class V3Puppet {
   hasAttack() { return !!this.assets.attack; }
   /** Which basic-attack animation the next attack plays (the weapon class; falls back to the palm strike). */
   setAttackStyle(style: AttackStyle) { this.attackStyle = style; }
-  private attackMotion(): Motion { return this.attackStyle === 'dagger' && this.assets['attack-dagger'] ? 'attack-dagger' : this.attackStyle === 'cast' && this.assets['attack-cast'] ? 'attack-cast' : 'attack'; }
+  private attackMotion(): Motion { return this.outfit ? this.outfit.attackAction as Motion : this.assets[this.attackStyle] ? this.attackStyle : 'attack'; }
   setLook(look: HeadAppearance) { this.look = look; }
   /** Temporary expression from the server (null = the chosen face). */
   setEmote(face: ExpressionId | null) { this.emote = face; }
-  private still(facing: Facing) { return this.assets.body.frames.find(f => f.direction === facing)!; }
+  private still(facing: Facing) {
+    const source = this.assets.body.frames.find(f => f.direction === facing)!;
+    return this.outfit ? {...source,bodyOrigin:this.outfit.directions[facing].bodyOrigin} : source;
+  }
   private dirOf(motion: Motion, facing: Facing) {
     const set = motion === 'walk' ? this.assets.walk : this.assets[motion] ?? null;
     return set?.directions.find(d => d.direction === facing);
@@ -134,15 +154,16 @@ export class V3Puppet {
   show(sprite: Phaser.GameObjects.Sprite, facing: Facing, motion: 'walk' | 'attack' | null) {
     this.castFrame = null;
     this.automatic.setMotion(motion);
+    this.automatic.setActionFrame(null);
     const still = this.still(facing);
     const played: Motion | null = motion === 'attack' ? this.attackMotion() : motion;
     if (played && this.dirOf(played, facing)) {
       const sameCycle = played === 'walk' && sprite.anims.isPlaying && sprite.anims.currentAnim?.key.startsWith('v3:walk:');
       const progress = sameCycle ? sprite.anims.getProgress() : 0;
       if (played === 'attack-dagger') { sprite.play(`${animKey(played, facing)}:${this.nextHalf}`); this.nextHalf = this.nextHalf === 'a' ? 'b' : 'a'; }
-      else sprite.play(animKey(played, facing), played === 'walk');
+      else sprite.play(this.bodyAnimation(played, facing), played === 'walk');
       if (progress > 0) sprite.anims.setProgress(progress);
-    } else { sprite.stop(); sprite.setTexture(idleKey(facing)); }
+    } else { sprite.stop(); sprite.setTexture(this.bodyTexture('idle',facing)); }
     // Action frames are ground-locked to the idle baseline, so one feet origin serves all of them.
     sprite.setFlipX(false).setOrigin((still.bodyOrigin.x + 0.5) / 128, (still.bodyOrigin.y + 1) / 128);
   }
@@ -153,8 +174,22 @@ export class V3Puppet {
     const d = this.dirOf('cast', facing);
     if (!d) return false;
     const i = Math.max(0, Math.min(d.frames.length - 1, frame)), still = this.still(facing);
-    sprite.stop(); sprite.setTexture(frameKey('cast', facing, i)).setFlipX(false).setOrigin((still.bodyOrigin.x + 0.5) / 128, (still.bodyOrigin.y + 1) / 128);
+    const bodyFrame = this.outfit ? Math.round(i*(this.outfit.directions[facing].cast.length-1)/(d.frames.length-1)) : i;
+    sprite.stop(); sprite.setTexture(this.bodyTexture('cast', facing, bodyFrame)).setFlipX(false).setOrigin((still.bodyOrigin.x + 0.5) / 128, (still.bodyOrigin.y + 1) / 128);
     this.castFrame = { facing, frame: i };
+    this.automatic.setActionFrame({frame:i,count:d.frames.length,facing});
+    return true;
+  }
+
+  /** Offline frame review uses the same selected body motion, origin and head attachment as gameplay. */
+  showAttackFrame(sprite: Phaser.GameObjects.Sprite, facing: Facing, frame: number) {
+    this.automatic.setMotion('attack');
+    const motion = this.attackMotion(), d = this.dirOf(motion, facing);
+    if (!d) return false;
+    const i = Math.max(0, Math.min(d.frames.length - 1, frame)), still = this.still(facing);
+    this.castFrame = null;
+    this.automatic.setActionFrame({frame:i,count:d.frames.length,facing});
+    sprite.stop(); sprite.setTexture(this.bodyTexture(motion, facing, i)).setFlipX(false).setOrigin((still.bodyOrigin.x + .5) / 128, (still.bodyOrigin.y + 1) / 128);
     return true;
   }
 
@@ -168,11 +203,18 @@ export class V3Puppet {
     if (this.castFrame) { action = 'cast'; frame = this.castFrame.frame; neck = this.dirOf('cast', facing)!.frames[frame]!.neckPivot; }
     else {
       const key = sprite.anims.isPlaying ? sprite.anims.currentAnim?.key : undefined;
-      const motion = key === animKey('walk', facing) ? 'walk' : key === animKey('attack', facing) ? 'attack' : null;
+      const motion = key === this.bodyAnimation('walk', facing) ? 'walk' : key === this.bodyAnimation('attack', facing) ? 'attack' : null;
       if (motion) { action = motion; frame = Math.max(0, (sprite.anims.currentFrame?.index ?? 1) - 1); neck = this.dirOf(motion, facing)!.frames[frame]!.neckPivot; }
       // Weapon-class attacks: the frame index is in the texture key (v3:<action>:<dir>:<i>), the halves included.
-      const tex = /^v3:(attack-dagger|attack-cast):[a-z-]+:(\d+)$/.exec(sprite.texture.key);
-      if (!motion && tex && sprite.anims.isPlaying) { const a = tex[1] as WeaponActionId, i = Number(tex[2]); const f = this.dirOf(a, facing)?.frames[i]; if (f) { neck = f.neckPivot; weaponAction = true; } }
+      const tex = /^v3:(attack-[a-z-]+):[a-z-]+:(\d+)(?::outfit:[a-z-]+)?$/.exec(sprite.texture.key);
+      if (!motion && tex) { const a = tex[1] as WeaponActionId, i = Number(tex[2]); const f = this.dirOf(a, facing)?.frames[i]; if (f) { neck = f.neckPivot; weaponAction = true; } }
+    }
+    if (this.outfit) {
+      const match = /^v3:([a-z-]+):[a-z-]+(?::(\d+))?:outfit:[a-z-]+$/.exec(sprite.texture.key);
+      const d = this.outfit.directions[facing], a = match?.[1]?.startsWith('attack') ? 'attack' : match?.[1] as 'idle'|'walk'|'cast';
+      const p = a === 'idle' ? d.idle : d[a]?.[Number(match?.[2]??0)];
+      if (p) neck = {x:p.neck.x+d.headOffset.x-(still.neckPivot.x-still.headPivot.x),y:p.neck.y+d.headOffset.y-(still.neckPivot.y-still.headPivot.y)};
+      weaponAction = true; // Independent head follows costume neck, using the same idle SSR head identity.
     }
     const expression = this.expression(sprite.scene.time.now);
     if (this.ssr?.supports(this.look.hair)) {
@@ -189,7 +231,7 @@ export class V3Puppet {
     const place = (img: Phaser.GameObjects.Image, key: string, depth: number, visible: boolean) => img.setTexture(key)
       .setOrigin((pivot.x + 0.5) / 128, (pivot.y + 0.5) / 128).setPosition(x, y).setScale(sx, sy)
       .setDepth(sprite.depth + depth).setAlpha(sprite.alpha).setVisible(sprite.visible && visible);
-    if (!layer) {
+    if (!layer || !layer.bases[this.look.hair]) {
       place(this.head, headKey(facing), 0.01, true).setTint(sprite.tintTopLeft);
       this.face.setVisible(false); this.hair.setVisible(false); this.accent.setVisible(false);
       return;

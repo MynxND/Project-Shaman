@@ -3,8 +3,9 @@ export type WalkFrame={url:string;sha256:string;neckPivot:NativePoint;bodyOrigin
 export type WalkDirection={direction:string;headUrl:string;headSha256:string;headPivot:NativePoint;frames:WalkFrame[]};
 export type WalkEightManifest={version:'walk-eight/1';name:string;bodySet:string;fps:number;loop:true;directions:WalkDirection[];credits:{spent:number;cap:number};sheet:{url:string;sha256:string;frameWidth:128;frameHeight:128}};
 /** One-shot V3 action (attack, cast) in the same per-frame neck-pivot format as the walk. */
-/** Weapon-class attacks (tools/rig/publish_weapon_action.mjs): keris stabs, magic-weapon point-and-cast. */
-export type WeaponActionId='attack-dagger'|'attack-cast';
+/** Weapon-class attacks published by tools/rig/publish_weapon_action.mjs. */
+export const WEAPON_ACTIONS = ['attack-dagger', 'attack-cast', 'attack-bow', 'attack-knife', 'attack-axe-shield', 'attack-axe-twohand', 'attack-cast-staff', 'attack-cast-rune', 'attack-cast-wand', 'attack-cast-fan', 'attack-cast-gohei'] as const;
+export type WeaponActionId = typeof WEAPON_ACTIONS[number];
 export type ActionEightManifest={version:'action-eight/1';action:'attack'|'cast'|WeaponActionId;hits?:number[];name:string;bodySet:string;fps:number;loop:false;directions:WalkDirection[];credits:{spent:number;cap:number};sheet:{url:string;sha256:string;frameWidth:128;frameHeight:128}};
 const point=(p:NativePoint)=>p&&Number.isInteger(p.x)&&Number.isInteger(p.y)&&p.x>=0&&p.x<128&&p.y>=0&&p.y<128;
 const sha=(h:string)=>/^[a-f0-9]{64}$/.test(h);

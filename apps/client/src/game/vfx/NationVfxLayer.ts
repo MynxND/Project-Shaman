@@ -2,7 +2,7 @@ import Phaser from 'phaser';
 import {
   NATION_AREA_BUFFS, RUNE_ART, NATION_CIRCLES, NATION_SKILL_INDEX, NORWAY_PROJECTILE_TRAVEL, NORWAY_VFX_LAYERS, NORWAY_VFX_MAIN,
   NATION_COMPANIONS, SKILL_BEHAVIOR_POLICY, TRAP_RUNES, WORLD_UNIT_PX, type SkillCastEvent, type VfxLayer,
-  RUSSIA_VFX_LAYERS, RUSSIA_VFX_MAIN, GOGYO_TINT, JAPAN_RELEASE_MS, JAPAN_VFX_LAYERS, JAPAN_VFX_MAIN, japanCircleArt, japanCircleTints, type GogyoElement,
+  RUSSIA_VFX_LAYERS, RUSSIA_VFX_MAIN, THAILAND_VFX_MAIN, GOGYO_TINT, JAPAN_RELEASE_MS, JAPAN_VFX_LAYERS, JAPAN_VFX_MAIN, japanCircleArt, japanCircleTints, type GogyoElement,
 } from '@shaman/shared';
 import { DARKNESS_DEPTH } from '../world/Lighting';
 
@@ -23,7 +23,7 @@ const manifestKey = (n: string) => `nation-vfx-${n}`;
 const fx = (id: string) => `nfx:${id}`;
 const DISPLAY_MS = 1400;
 const LAYERS: Readonly<Record<string, readonly VfxLayer[]>> = { ...NORWAY_VFX_LAYERS, ...JAPAN_VFX_LAYERS, ...RUSSIA_VFX_LAYERS };
-const MAIN: Readonly<Record<string, { layer: string; asset?: string; tint?: number; offsetY?: number; offsetX?: number }>> = { ...NORWAY_VFX_MAIN, ...JAPAN_VFX_MAIN, ...RUSSIA_VFX_MAIN };
+const MAIN: Readonly<Record<string, { layer: string; asset?: string; tint?: number; offsetY?: number; offsetX?: number; revealMs?: number }>> = { ...NORWAY_VFX_MAIN, ...JAPAN_VFX_MAIN, ...RUSSIA_VFX_MAIN, ...THAILAND_VFX_MAIN };
 /** Japan circle (archetype art and element tints) or the nation's master circle. */
 const circleOf = (skillId: string, nation: string, branch: string): { art: string; tints: number[] } | null => {
   if (nation === 'jp') return { art: japanCircleArt(skillId), tints: [...japanCircleTints(skillId)] };
@@ -37,7 +37,9 @@ const TRAP_GLYPH = ['rune-naudiz', 'rune-isa', 'rune-thurisaz', 'rune-dagaz'] as
 const STATUS_COLOR: Readonly<Record<string, number>> = { stun: 0xfff07a, fear: 0x9a5ad8, taunt: 0xe0503a, poison: 0x6ad84a, 'heal-block': 0x404040, cursed: 0x7a3aa8, 'def-down': 0xc89a50, silence: 0xc8c8ff, burn: 0xff8a3a, mark: 0xb98cff, revealed: 0xfff2a8, trapped: 0x7fe0c8, root: 0x9ccf6a, freeze: 0x9fdcff, blind: 0x5a5a6e, bleed: 0xe0503a, slow: 0x8ab4e0 };
 
 interface Sheet { image: string; width: number; height: number; frames: number; anchor: { x: number; y: number }; packedAt?: number }
-interface Pos { x: number; y: number }
+interface Pos { x: number; y: number; depth?: number }
+/** A top-down ring art turning inside a parent squashed onto the ground, so the ellipse never tilts. */
+interface GroundRing { box: Phaser.GameObjects.Container; img: Phaser.GameObjects.Image }
 /** Positions in world px; `caster`/`target` are looked up every frame so effects follow moving actors. */
 interface Play {
   start: number; ms: number; skillId: string; variant: number;
@@ -69,10 +71,10 @@ export class NationVfxLayer {
   private readonly k: number;
   private plays: Play[] = [];
   /** Casting circles by caster: the cast event and when it started / released / was cancelled (scene ms). */
-  private circles = new Map<string, { event: SkillCastEvent; start: number; released: number | null; cancelled: number | null; img: Phaser.GameObjects.Image }>();
-  private buffCircles = new Map<string, Phaser.GameObjects.Image>();
+  private circles = new Map<string, { event: SkillCastEvent; start: number; released: number | null; cancelled: number | null; ring: GroundRing }>();
+  private buffCircles = new Map<string, GroundRing>();
   private companions = new Map<string, Phaser.GameObjects.Image>();
-  private zones = new Map<string, { base: Phaser.GameObjects.Image; glyph: Phaser.GameObjects.Image | null; extra: Phaser.GameObjects.Image | null }>();
+  private zones = new Map<string, { base: Phaser.GameObjects.Image; ring: Phaser.GameObjects.Container | null; glyph: Phaser.GameObjects.Image | null; extra: Phaser.GameObjects.Image | null }>();
   private markers = new Map<string, { glyph: Phaser.GameObjects.Image; dots: Phaser.GameObjects.Graphics }>();
 
   constructor(private readonly scene: Phaser.Scene, characterScale: number) {
@@ -88,6 +90,10 @@ export class NationVfxLayer {
     const s = this.sheets[id]!;
     return this.scene.add.image(0, 0, fx(id), 0).setOrigin(s.anchor.x / s.width, s.anchor.y / s.height).setDepth(depth).setVisible(false);
   }
+  private groundRing(id: string, depth: number): GroundRing {
+    const img = this.image(id, 0).setOrigin(0.5).setVisible(true);
+    return { box: this.scene.add.container(0, 0, [img]).setDepth(depth).setVisible(false), img };
+  }
 
   /** Server cast event for a nation skill: circle during the cast, composed release on 'release'. */
   receive(event: SkillCastEvent, now: number, actors: NationVfxActors) {
@@ -98,9 +104,8 @@ export class NationVfxLayer {
     if (event.phase === 'start') {
       const art = circleOf(skill.id, skill.nation, skill.branch)?.art ?? '';
       if (policy.circle && event.castMs > 0 && this.has(art)) {
-        circle?.img.destroy();
-        const img = this.image(art, 0).setOrigin(0.5);
-        this.circles.set(event.caster, { event, start: now, released: null, cancelled: null, img });
+        circle?.ring.box.destroy();
+        this.circles.set(event.caster, { event, start: now, released: null, cancelled: null, ring: this.groundRing(art, 0) });
       }
       if (event.castMs <= 0) this.release(event, now, actors);
       return;
@@ -115,7 +120,7 @@ export class NationVfxLayer {
     if (event.skillId === 'ice-wall') return;
     const variant = event.variant ? Math.max(0, TRAP_RUNES.indexOf(event.variant as never)) : 0;
     const U = WORLD_UNIT_PX;
-    const caster = () => { const p = actors.player(event.caster); return p ? { x: p.x, y: p.y } : null; };
+    const caster = () => { const p = actors.player(event.caster); return p ? { x: p.x, y: p.y, depth: p.depth } : null; };
     const fixed = { x: event.aimX * U, y: event.aimY * U };
     const target = event.targetId ? () => { const m = actors.monster(event.targetId!); return m ? { x: m.x * U, y: m.y * U } : fixed; } : () => fixed;
     // Ski Dash plays where the hunter left from (the server already moved them).
@@ -183,10 +188,10 @@ export class NationVfxLayer {
       if (c.cancelled !== null) alpha = 0.9 * Math.max(0, 1 - (now - c.cancelled) / 180);
       else if (c.released === null) { const grow = Math.min(1, t / (cast * 0.2)); alpha = 0.9 * grow; scale = 0.9 + 0.4 * grow; if (t > cast + 3000) alpha = 0; }
       else { const since = now - c.released; alpha = since < 80 ? 1 : Math.max(0, 1 - (since - 80) / 180); scale = since < 80 ? 1.42 : 1.3; }
-      if (!p || alpha <= 0.01) { c.img.setVisible(false); if (alpha <= 0.01 && (c.cancelled !== null || c.released !== null || t > cast + 3000)) { c.img.destroy(); this.circles.delete(id); } continue; }
+      if (!p || alpha <= 0.01) { c.ring.box.setVisible(false); if (alpha <= 0.01 && (c.cancelled !== null || c.released !== null || t > cast + 3000)) { c.ring.box.destroy(); this.circles.delete(id); } continue; }
       const tints = circleOf(skill.id, skill.nation, skill.branch)?.tints ?? [0xe8c876];
-      c.img.setPosition(p.x, p.y).setScale(scale * k, scale * k * 0.5).setRotation(t / 1000 * (c.released === null ? 1.2 : 0.6))
-        .setTint(tints[Math.floor(now / 400) % tints.length]!).setAlpha(alpha).setDepth(p.depth - 0.5).setVisible(true);
+      c.ring.box.setPosition(p.x, p.y).setScale(scale * k, scale * k * 0.5).setAlpha(alpha).setDepth(p.depth - 0.5).setVisible(true);
+      c.ring.img.setRotation(t / 1000 * (c.released === null ? 1.2 : 0.6)).setTint(tints[Math.floor(now / 400) % tints.length]!);
     }
     // Composed releases.
     this.plays = this.plays.filter((pl) => this.drawPlay(pl, now, k) || (this.destroyPlay(pl), false));
@@ -199,13 +204,13 @@ export class NationVfxLayer {
       const hunt = p.statuses.split(',').includes('great-hunt') && this.has('no-cast-circle');
       let ring = this.buffCircles.get(id);
       if (hunt) {
-        ring ??= this.image('no-cast-circle', 0).setOrigin(0.5);
+        ring ??= this.groundRing('no-cast-circle', 0);
         this.buffCircles.set(id, ring);
         const cells = NATION_AREA_BUFFS['great-hunt'] ?? 11, size = cells * U / 192;
         const tints = [NATION_CIRCLES.no!.tints['ullr-hunter']!].flat();
-        ring.setPosition(p.x, p.y).setScale(size, size * 0.5).setRotation(now / 1000 * 0.25 * Math.PI).setTint(tints[Math.floor(now / 400) % tints.length]!)
-          .setAlpha(0.55 + 0.1 * Math.sin(now / 300)).setDepth(p.depth - 0.6).setVisible(true);
-      } else ring?.setVisible(false);
+        ring.box.setPosition(p.x, p.y).setScale(size, size * 0.5).setAlpha(0.55 + 0.1 * Math.sin(now / 300)).setDepth(p.depth - 0.6).setVisible(true);
+        ring.img.setRotation(now / 1000 * 0.25 * Math.PI).setTint(tints[Math.floor(now / 400) % tints.length]!);
+      } else ring?.box.setVisible(false);
       let comp = this.companions.get(id);
       const def = p.companion ? Object.values(NATION_COMPANIONS).find((c) => c.asset === p.companion) : undefined;
       if (def && this.has(def.asset)) {
@@ -219,7 +224,7 @@ export class NationVfxLayer {
       } else comp?.setVisible(false);
     }
     for (const [id, img] of this.companions) if (!seenPlayers.has(id)) { img.destroy(); this.companions.delete(id); }
-    for (const [id, img] of this.buffCircles) if (!seenPlayers.has(id)) { img.destroy(); this.buffCircles.delete(id); }
+    for (const [id, ring] of this.buffCircles) if (!seenPlayers.has(id)) { ring.box.destroy(); this.buffCircles.delete(id); }
     this.updateZones(now, actors);
     this.updateRunes(now, actors, seenPlayers);
     this.updateSummons(now, actors);
@@ -252,9 +257,13 @@ export class NationVfxLayer {
       const arrived = pl.placement === 'projectile' && amount > travel + 0.02;
       const main = MAIN[pl.skillId];
       const frames = sheet.frames, frame = bow ? Math.floor(now / 50) % frames : Math.max(0, Math.min(frames - 1, Math.floor(amount * frames)));
+      const reveal = main?.revealMs, revealing = reveal !== undefined && t < reveal;
+      const depth = main?.layer === 'ground' ? to.y - 0.3 : reveal !== undefined && !revealing ? (casterPos?.depth ?? from.y) - 0.1 : FRONT;
+      // Fades while in front so the hop behind the caster does not pop.
+      const revealAlpha = revealing ? 1 - 0.45 * (t / reveal) : 1;
       pl.main.setFrame(frame).setRotation(pl.placement === 'projectile' ? rotation : 0)
         .setScale((bow ? 1 : skill?.vfxScale ?? 1) * k).setPosition(Math.round(x + (main?.offsetX ?? 0) * k), Math.round(y + (main?.offsetY ?? 0) * k))
-        .setDepth(main?.layer === 'ground' ? to.y - 0.3 : FRONT).setAlpha(0.95 * (bow ? 1 : fade)).setVisible(!arrived);
+        .setDepth(depth).setAlpha(0.95 * (bow ? 1 : fade) * revealAlpha).setVisible(!arrived);
       if (main?.tint) pl.main.setTint(main.tint); else pl.main.clearTint();
     }
     const recipe = bow ? [{ asset: 'kit-spirit-impact', layer: 'front', atTarget: true, delay: travel, scale: 0.6 } as VfxLayer] : LAYERS[pl.skillId] ?? [];
@@ -298,12 +307,14 @@ export class NationVfxLayer {
         if (!baseId || !this.has(baseId)) continue;
         const rune = z.kind === 'trap' ? TRAP_GLYPH[Math.max(0, TRAP_RUNES.indexOf(z.variant as never))]! : z.kind === 'runestone' ? 'rune-isa' : null;
         const extra = z.kind === 'falcon-storm' ? 'kit-bone-falcon-dive' : z.kind === 'fimbulwinter' ? 'absolute-zero-field' : null;
+        const flat = z.kind === 'falcon-storm' || z.kind === 'fimbulwinter' || z.kind === 'thread-fortress';
+        const ring = flat ? this.groundRing(baseId, y - 0.4) : null;
         view = {
-          base: this.image(baseId, y - 0.4),
+          base: ring?.img ?? this.image(baseId, y - 0.4),
+          ring: ring?.box ?? null,
           glyph: rune && this.has(rune) ? this.image(rune, FRONT) : null,
           extra: extra && this.has(extra) ? this.image(extra, FRONT) : null,
         };
-        if (z.kind === 'falcon-storm' || z.kind === 'fimbulwinter' || z.kind === 'thread-fortress') view.base.setOrigin(0.5);
         this.zones.set(id, view);
       }
       const sheet = this.sheets[view.base.texture.key.slice(4)]!;
@@ -323,7 +334,7 @@ export class NationVfxLayer {
         const g = this.threadLines(id); const r = z.radius * U;
         g.clear().lineStyle(2, 0xf2ecd8, 0.85).strokeRect(x - r, y - r * 0.6, r * 2, r * 1.2).setDepth(y - 0.3);
       }
-      else if (z.kind === 'thread-fortress') { const size = z.radius * 2 * U / 192; view.base.setScale(size, size * 0.5).setRotation(now / 4000).setTint(0xe8c876).setPosition(x, y).setAlpha(0.35).setVisible(true); }
+      else if (z.kind === 'thread-fortress') { const size = z.radius * 2 * U / 192; view.ring?.setScale(size, size * 0.5).setPosition(x, y).setAlpha(0.35).setVisible(true); view.base.setRotation(now / 4000).setTint(0xe8c876); }
       else if (z.kind === 'runestone') view.base.setFrame(sheet.frames - 1).setScale(k).setPosition(x, y).setDepth(y).setAlpha(0.95).setVisible(true);
       else if (z.kind === 'ice-wall') {
         // One upright slab per cell: the sheet's settled frame, narrowed to one cell, taller with the level (variant).
@@ -334,7 +345,8 @@ export class NationVfxLayer {
         // Area circles: falcon storm (Hunter purple) and Fimbulwinter (ice blue, whole screen around the caster).
         const size = z.radius * 2 * U / 192;
         const tints = z.kind === 'fimbulwinter' ? [0x8ab4e0, 0xf2f8ff] : [NATION_CIRCLES.no!.tints['ullr-hunter']!].flat();
-        view.base.setScale(size, size * 0.5).setRotation(now / 1000 * (z.kind === 'fimbulwinter' ? 0.3 : 0.8)).setTint(tints[Math.floor(now / 300) % tints.length]!).setPosition(x, y).setAlpha(z.kind === 'fimbulwinter' ? 0.45 : 0.7).setVisible(true);
+        view.ring?.setScale(size, size * 0.5).setPosition(x, y).setAlpha(z.kind === 'fimbulwinter' ? 0.45 : 0.7).setVisible(true);
+        view.base.setRotation(now / 1000 * (z.kind === 'fimbulwinter' ? 0.3 : 0.8)).setTint(tints[Math.floor(now / 300) % tints.length]!);
       }
       view.glyph?.setScale(1.2 * k).setPosition(x, y - (z.kind === 'runestone' ? 70 : 18) * k + Math.sin(now / 400) * 2).setTint(z.kind === 'runestone' ? 0xbfe8ff : 0xe8dcff).setAlpha(0.95).setVisible(true);
       if (view.extra && z.kind === 'falcon-storm') {
@@ -346,7 +358,7 @@ export class NationVfxLayer {
         view.extra.setFrame(Math.floor(now / 100) % es.frames).setScale(1.3 * k).setPosition(x + Math.cos(a) * z.radius * U * 0.5, y + Math.sin(a) * z.radius * U * 0.25).setDepth(y + Math.sin(a) * z.radius * U * 0.25).setAlpha(0.8).setVisible(true);
       }
     }
-    for (const [id, v] of this.zones) if (!seen.has(id)) { v.base.destroy(); v.glyph?.destroy(); v.extra?.destroy(); this.zones.delete(id); this.lines.get(id)?.destroy(); this.lines.delete(id); }
+    for (const [id, v] of this.zones) if (!seen.has(id)) { (v.ring ?? v.base).destroy(); v.glyph?.destroy(); v.extra?.destroy(); this.zones.delete(id); this.lines.get(id)?.destroy(); this.lines.delete(id); }
   }
 
   private runeViews = new Map<string, Phaser.GameObjects.Image[]>();
@@ -499,15 +511,16 @@ export class NationVfxLayer {
   }
 
   forget(caster: string) {
-    const c = this.circles.get(caster); c?.img.destroy(); this.circles.delete(caster);
+    const c = this.circles.get(caster); c?.ring.box.destroy(); this.circles.delete(caster);
   }
 
   destroy() {
     for (const pl of this.plays) this.destroyPlay(pl);
     this.plays = [];
-    for (const c of this.circles.values()) c.img.destroy();
-    for (const img of [...this.buffCircles.values(), ...this.companions.values()]) img.destroy();
-    for (const v of this.zones.values()) { v.base.destroy(); v.glyph?.destroy(); v.extra?.destroy(); }
+    for (const c of this.circles.values()) c.ring.box.destroy();
+    for (const r of this.buffCircles.values()) r.box.destroy();
+    for (const img of this.companions.values()) img.destroy();
+    for (const v of this.zones.values()) { (v.ring ?? v.base).destroy(); v.glyph?.destroy(); v.extra?.destroy(); }
     for (const mk of this.markers.values()) { mk.glyph.destroy(); mk.dots.destroy(); }
     for (const g of this.lines.values()) g.destroy();
     for (const t of this.stackLabels.values()) t.destroy();

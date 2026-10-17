@@ -1,4 +1,5 @@
 import { SKILL_BEHAVIOR_POLICY, type SkillBehavior, type SkillPresentation, type VfxFamily } from './skill-system.js';
+import type { VfxLayerKind } from './skills-russia.js';
 
 // Thailand job skills (docs/design/skill-database-source.txt lines 53–207): branch A Achan Saiyasat → Grand Necromancer,
 // branch B Mor Phhee → Prai Phhee Lord. Behaviour/VFX plan reviewed with the user 2026-10-10
@@ -175,6 +176,11 @@ export const THAILAND_PRESENTATION: Readonly<Record<string, SkillPresentation>> 
     circle: p.circle ? 'ritual-circle-v1' : null, releaseEffect: p.release ? (k.reuses ?? k.id) : null, aura: null,
   } satisfies SkillPresentation];
 }));
+
+/** Release art placement overrides (same shape as RUSSIA_VFX_MAIN). */
+export const THAILAND_VFX_MAIN: Readonly<Record<string, { layer: VfxLayerKind; revealMs?: number }>> = {
+  'ghost-possession': { layer: 'behind', revealMs: 280 },
+};
 
 /** Skills whose release needs new PixelLab art (not PASSIVE_STAT, not reused). */
 export const THAILAND_NEW_VFX: readonly string[] = THAILAND_SKILLS.filter((k) => SKILL_BEHAVIOR_POLICY[k.behavior].generateVfx && !k.reuses).map((k) => k.id);

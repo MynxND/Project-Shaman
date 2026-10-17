@@ -2,8 +2,12 @@ import Phaser from 'phaser';
 import { decodeHead, decodeLook, EQUIPMENT_VISUALS, isExpression, outfitOf, type Look } from '@shaman/shared';
 import { EquipmentLayers, MODULAR_KEY, preloadModularRig, rigKey, type ModularManifest, type RigAction } from './ModularRig';
 import { v3WeaponFrame, type WeaponMode } from './v3-weapon';
+import { attackPlaybackScale } from './attack-timing';
+import { weaponAttackAction } from './weapon-action';
+import { LEGACY_OFFHAND_REVIEW_KEY, withLegacyOffhand, type LegacyOffhandReview } from './legacy-offhand-review';
 import { FACINGS, WALK_CYCLE_UNITS, WALK_SPEED, type BodyType, type CharacterAppearance, type Facing } from '@shaman/shared';
 import { preloadV3, v3Assets, V3Puppet, V3_SIZE_RATIO, type AttackStyle } from './V3Puppet';
+import { selectClassOutfit } from './class-outfit';
 
 // PixelLab main characters (main-v1); manifest built by tools/sprites/build_main_v1.py.
 const BASE = '/assets/pixellab';
@@ -74,6 +78,7 @@ function ensureAnimations(scene: Phaser.Scene, manifest: RigManifest) {
 export class CharacterSprite extends Phaser.GameObjects.Sprite {
   private look: Look = {};
   private lookText = '';
+  private classBranch = '';
   private autoHeadBranch = '';
   private layers: EquipmentLayers;
   private modular: ModularManifest | undefined;
@@ -86,6 +91,7 @@ export class CharacterSprite extends Phaser.GameObjects.Sprite {
   private animation: CharacterAnimation | null = null;
   /** The loop to return to when a one-shot (attack) finishes. */
   private resume: CharacterAnimation | null = null;
+  private attackDelayMs: number | undefined;
   private readonly manifest: RigManifest;
   /** Character V3 (separate body + head) for the male main character; null keeps the previous rig. */
   private v3: V3Puppet | null = null;
@@ -134,6 +140,7 @@ export class CharacterSprite extends Phaser.GameObjects.Sprite {
     const scale = this.v3 ? this.scaleX / V3_SIZE_RATIO : this.scaleX;
     this.appearance = appearance;
     this.v3?.destroy(); this.v3 = this.makeV3();this.autoHeadBranch=''; this.setScale(scale);
+    this.updateClassOutfit();
     return this.redraw();
   }
 
@@ -144,12 +151,19 @@ export class CharacterSprite extends Phaser.GameObjects.Sprite {
     return this;
   }
 
-  setAutoHeadBranch(branch: string) { const effective=this.look.body?'':branch;if(effective===this.autoHeadBranch)return this;this.autoHeadBranch=effective;this.v3?.setAutomaticBranch(effective);return this.redraw(); }
   setLook(text: string) {
     if (text === this.lookText) return this;
     this.lookText = text; this.look = decodeLook(text);
+    this.updateClassOutfit();
     return this.redraw();
   }
+  setAutoHeadBranch(branch: string) { const effective=this.look.body?'':branch;if(effective===this.autoHeadBranch)return this;this.autoHeadBranch=effective;this.v3?.setAutomaticBranch(effective);return this.redraw(); }
+  setClassBranch(branch: string) {
+    if (!this.v3 || branch === this.classBranch) return this;
+    this.classBranch = branch; this.updateClassOutfit();
+    return this.redraw();
+  }
+  private updateClassOutfit() { this.v3?.setClassOutfit(this.scene,this.look.body ? null : selectClassOutfit(this.scene,this.classBranch,this.look.weapon)); }
 
   /** Cast uses the same body/outfit and attachment timeline, rather than a detached pose sprite. */
   setCastFrame(frame: number | null, facing: Facing = this.facing): boolean {
@@ -176,17 +190,27 @@ export class CharacterSprite extends Phaser.GameObjects.Sprite {
 
   /** Swing weapons ride the striking hand, magic weapons the casting hand (both in view when they attack). */
   private weaponMode(): WeaponMode { const v = this.look.weapon ? EQUIPMENT_VISUALS[this.look.weapon] : undefined; return v?.kind !== 'weapon' ? 'rest' : v.bolt ? 'bolt' : v.swing ? 'swing' : 'rest'; }
-  /** Basic-attack animation for the weapon class: keris stabs, magic weapons cast, everything else the palm strike. */
-  private attackStyle(): AttackStyle { const w = this.look.weapon; const v = w ? EQUIPMENT_VISUALS[w] : undefined; return w === 'keris' ? 'dagger' : v?.kind === 'weapon' && v.bolt ? 'cast' : 'palm'; }
+  /** Basic-attack body by weapon class; unarmed uses the palm strike. */
+  private attackStyle(): AttackStyle { const w = this.look.weapon; const v = w ? EQUIPMENT_VISUALS[w] : undefined; return weaponAttackAction(w, v?.kind === 'weapon' && !!v.bolt); }
 
   syncLayers() {
     // V3: weapons ride the hand anchors (v3-weapon.ts); headgear stays off (the SSR head has no crown point yet).
-    if (this.v3) { this.v3.sync(this,this.facing);if(this.v3.automaticActive()){this.layers.sync(this,{},this.facing,undefined,128);return;}this.layers.sync(this, { weapon: this.look.weapon }, this.facing, v3WeaponFrame(this.scene, this.texture.key, this.weaponMode()), 128); return; }
+    if (this.v3) { this.v3.sync(this,this.facing);if(this.v3.automaticActive()){this.layers.sync(this,{weapon:this.look.weapon},this.facing,this.v3.automaticEquipmentFrame(),160);return;}this.layers.sync(this, { weapon: this.look.weapon }, this.facing, v3WeaponFrame(this.scene, this.texture.key, this.weaponMode(), this.attackStyle()), 128); return; }
     const action = this.castFrame !== null ? 'cast' : this.modularAction;
     const facing = this.castFrame !== null ? this.castFacing : this.facing;
     const frame = this.previewFrame ?? this.castFrame ?? Math.max(0, (this.anims.currentFrame?.index ?? 1) - 1);
     const data = action ? this.modular?.bodies[this.appearance.bodyType]?.layers[action][facing]?.[frame] : undefined;
-    this.layers.sync(this, this.look, facing, data, this.modular?.frame ?? 128);
+    const reviewed = withLegacyOffhand(data, this.scene.cache.json.get(LEGACY_OFFHAND_REVIEW_KEY) as LegacyOffhandReview | undefined, this.appearance.bodyType, action, facing, frame);
+    this.layers.sync(this, this.look, facing, reviewed, this.modular?.frame ?? 128);
+  }
+
+  /** Asset inspector only. Gameplay uses the server-driven normal/cast timeline. */
+  showAttackFrame(facing: Facing, frame: number) {
+    if (!this.v3) { this.showRigFrame('attack', facing, frame); return; }
+    this.facing = facing;
+    this.v3.setAttackStyle(this.attackStyle());
+    this.v3.showAttackFrame(this, facing, frame);
+    this.syncLayers();
   }
 
   /** Asset inspector only. Gameplay uses the server-driven normal/cast timeline. */
@@ -222,17 +246,25 @@ export class CharacterSprite extends Phaser.GameObjects.Sprite {
   }
 
   /** Plays a one-shot animation (the basic attack) from its first frame, then returns to the current loop. */
-  playOnce(animation: CharacterAnimation) {
+  playOnce(animation: CharacterAnimation, attackDelayMs?: number) {
     if (this.v3 ? !this.v3.hasAttack() : !this.animationSource(animation)) return this;
     if (!this.animation || !ONE_SHOT.has(this.animation)) this.resume = this.animation;
     this.animation = animation;
+    this.attackDelayMs = attackDelayMs;
     this.anims.stop();
     return this.redraw();
   }
 
   private redraw() {
     this.previewFrame = null;
-    if (this.v3) { this.castFrame = null; this.v3.setAttackStyle(this.attackStyle()); this.v3.show(this, this.facing, this.animation === 'walk' || this.animation === 'attack' ? this.animation : null); this.syncLayers(); return this; }
+    this.anims.timeScale = 1;
+    if (this.v3) {
+      this.castFrame = null; this.v3.setAttackStyle(this.attackStyle());
+      this.v3.show(this, this.facing, this.animation === 'walk' || this.animation === 'attack' ? this.animation : null);
+      const anim = this.anims.currentAnim;
+      if (this.animation === 'attack' && anim) this.anims.timeScale = attackPlaybackScale(anim.duration, this.attackDelayMs, anim.frames.length);
+      this.syncLayers(); return this;
+    }
     const body = this.appearance.bodyType;
     const action = this.animation ?? 'idle';
     const outfit = outfitOf(this.look);

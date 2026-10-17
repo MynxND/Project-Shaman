@@ -1,0 +1,876 @@
+{
+  "version": "action-eight/1",
+  "action": "attack-cast-rune",
+  "name": "Rune Seer · กระแทกไม้เท้าวาดรูน",
+  "bodySet": "body-eight-02",
+  "fps": 16,
+  "loop": false,
+  "hits": [
+    4
+  ],
+  "directions": [
+    {
+      "direction": "south",
+      "headUrl": "/assets/character-v3/head-eight-01/south.png",
+      "headSha256": "1ac5ca0956848a2886484a8955e3d4d5f4206bc513c96581b55ade60bf6a4215",
+      "headPivot": {
+        "x": 62,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-0.png",
+          "sha256": "2397d90527fce92b8a88a9afb21d6cf73db5e2236af10f4a22e9f28eca65ef71",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-1.png",
+          "sha256": "4ec14daf37a4823a265c80425ba0c05b610eb3d18a95d8b808c1156de3a630f4",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-2.png",
+          "sha256": "4492e097196b98c43b5b99fc9703fb89fa117bf162fdcbe3f98fd7d1b9cbd9bb",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-3.png",
+          "sha256": "4a44e93d4fbc8cf73b20c785003bd33d872a9696444dc0ac465ba4ad65692789",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-4.png",
+          "sha256": "8b22e1ce52ad3e949978bdc7b425422066beeea7e56e000e5938c4be82ac3a4f",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-5.png",
+          "sha256": "316f4920154af2e6060998a2d3ab2a10e5355af8f5bce2080dd42d2ae73b5651",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-6.png",
+          "sha256": "12fe4016b04a89cf95e70c3895ce48587f57f705172d92b118bdcc44c26f1893",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-7.png",
+          "sha256": "f8f68704c794404c81ad5946d9f98a0f620bc83a46ef93524e67526e6e277d0e",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "south-east",
+      "headUrl": "/assets/character-v3/head-eight-01/south-east.png",
+      "headSha256": "3cd756ea681a3571bf619505373ec6f78e200c0b3d6088936b26ad587c08b0b5",
+      "headPivot": {
+        "x": 65,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-east-0.png",
+          "sha256": "af08cc9129967714f9b138735e5f98da1bc794d9a90839d5f959d5b02070cfd1",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-east-1.png",
+          "sha256": "6ab3b9fc80156702c7202065c30b2e065be4bceb32ba40e1a26a98fce1bb31e6",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-east-2.png",
+          "sha256": "34ebd24af24a03b21ddb92bcc52c4d24fe0ebfa93d83af26b2a4b8ece73777d4",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-east-3.png",
+          "sha256": "893b99b79d4d4bae2b43ca5f82cb1e593415644691db70e6a776db7b0273571d",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-east-4.png",
+          "sha256": "e22477e3fba8a58321ee2490a5dfd3c64705d17eee5aa4a85d88a388749fb011",
+          "neckPivot": {
+            "x": 64,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-east-5.png",
+          "sha256": "8894b19e184cfb782d1a445687d135cd803f3b3d5df3d0811d6591e0df9b09d0",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-east-6.png",
+          "sha256": "30918bcf8e2a89a3e315c4121d5350520581ef453485916c7f8563d09b2521ba",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-east-7.png",
+          "sha256": "b6b2be74356d6dab7cf1a926bbe4e228c04fd155d5537055e9f4dc3bc50bd6be",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        }
+      ]
+    },
+    {
+      "direction": "east",
+      "headUrl": "/assets/character-v3/head-eight-01/east.png",
+      "headSha256": "e0ff194091acadf4042ffd76627c88f444830239d59a7dc8dcd62e84d4952ec8",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/east-0.png",
+          "sha256": "68832a1fd44d2b326c1c6da1a3096601d7a3ff38ca8e7d1347aba043395fe4d3",
+          "neckPivot": {
+            "x": 59,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/east-1.png",
+          "sha256": "dcb1de126911ea8754061e6c5f686b1089de796dff09c24fc866cf0555152449",
+          "neckPivot": {
+            "x": 60,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/east-2.png",
+          "sha256": "5b9df08e044c4e59daafd06347c7728db0b0b0ee6c67ce3b1c8c21e0f7796ea2",
+          "neckPivot": {
+            "x": 60,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/east-3.png",
+          "sha256": "7ee8daed8a97c5fd3f4f6376e25b75417b30394c041a001ebb7535c0f1096805",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/east-4.png",
+          "sha256": "be61c50ffb9fe70bf4060337a4beb5a52e6569b6a90b8f5378056c663ce37e79",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/east-5.png",
+          "sha256": "100068c117e27338ea29ba07ee632d5f4fe09e9a4abb0416683a46608386da55",
+          "neckPivot": {
+            "x": 60,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/east-6.png",
+          "sha256": "165bcbbf759291f3cf97b8a6ae390d104a83e2e6e4ce327359746d2480cfac24",
+          "neckPivot": {
+            "x": 60,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/east-7.png",
+          "sha256": "49d3ccc39a2a88121dcd71ec5a2631d6396a09c273c2aa0a5e6db4202a6286cb",
+          "neckPivot": {
+            "x": 59,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north-east",
+      "headUrl": "/assets/character-v3/head-eight-01/north-east.png",
+      "headSha256": "22f5b66ce480a0c2eecc4ebd361aaa57ccfa6b4d78fd8ba89a332f9750dbf9bb",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-east-0.png",
+          "sha256": "a39bc202540c9c7236da8af46738d0c2bf61e97ce73129be6c760be28156ca1e",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-east-1.png",
+          "sha256": "42524d54d611eed52028e78d7cd530eb745044c066f489561f5b534e4ae66f3d",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-east-2.png",
+          "sha256": "9e9634bb02be5ae7504103bdf1952812914fdac223bdd42b1390ef44b576e129",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-east-3.png",
+          "sha256": "fbf56624aad339659d269929333982aedafddd0ffd1d8ca0fea1ffb8aa2df808",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-east-4.png",
+          "sha256": "8fbc6bcc3083a453d479adc1dbbde49c35ffd05f3c3b5f54585e7f63caf504e3",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-east-5.png",
+          "sha256": "2e69352b80c84df26503123a55d26944f779ce94935f22fe098248036d351070",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-east-6.png",
+          "sha256": "4d78a6aa57272da8e4193c9f8613d49ea125283315f8c1667febfdcf94fec42e",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-east-7.png",
+          "sha256": "337c0ed27e17d623f699f5b320f51c57d51d74a30e6a4d87fe25e304cf46d3d1",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north",
+      "headUrl": "/assets/character-v3/head-eight-01/north.png",
+      "headSha256": "954eb387ddec4a48dcb63c037705753d1a524a6396ee03ac1d353ca624dd98d1",
+      "headPivot": {
+        "x": 64,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-0.png",
+          "sha256": "ec30b06bd25799e22b8200bc6b8f14ff9f036e0acf7101dc37c6c54f206d402b",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-1.png",
+          "sha256": "6fd8f8bd185d8a7c7e7e73fe9fbffa93f178ea631b4559dce41030bedac5ba99",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-2.png",
+          "sha256": "7deedd8ba1c364d04f45c3f94bbe96238a6d08730392ac868aeb6e87c6a04a20",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-3.png",
+          "sha256": "ea2a8ea3bd8cd51ee417488d659d4724f7482cb8aba2598827426652d29dd09a",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-4.png",
+          "sha256": "4f16a6e099a6a51249e861082c48ecf5178fdb1a09b7ab12c8f3efd4acfd1995",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-5.png",
+          "sha256": "a5bc91e41bca38238b394eaa8e2e82fb72b1ae6590824d141a1e9d98828875fd",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-6.png",
+          "sha256": "8d8659bda0895705f1d9df1fd1c754575469a134e055f6481b06d60f08fdef50",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-7.png",
+          "sha256": "1d5acfc0b86b447815edd5c7d82cb49f31f6ffc12b4e5a721780c9b6b42dd4b6",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north-west",
+      "headUrl": "/assets/character-v3/head-eight-01/north-west.png",
+      "headSha256": "f7cfab464653ebb612bffee7c196ba547d7590e953a5a9c5ac725d36767e4172",
+      "headPivot": {
+        "x": 64,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-west-0.png",
+          "sha256": "dedeaaeadbe4d0ea29dd1f9971917343f0718d3cf2cc651b3fc09e1033b167b8",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-west-1.png",
+          "sha256": "190da7157e3cbc74c1f9dec0259925200577cd8dc70c01903f876f1b4742e27b",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-west-2.png",
+          "sha256": "6c6c0c6912e429eb92f63cfa51296f6c465394d83c386edbd056f3911a1a6d49",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-west-3.png",
+          "sha256": "8ce8bf8430135a1fb914f33bf2b9e73fe75f1ad184ad22194204c16e021f1925",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-west-4.png",
+          "sha256": "6657e8e66a524607ce1480051b01e99913743be4dbf199c3674feb406541c1a5",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-west-5.png",
+          "sha256": "d34b990cdfedbafbeeaf94021b4689a9d22e6edb91afb600e8fb5d4152155a1f",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-west-6.png",
+          "sha256": "8a93a7289b2b56d3d039191b56a94d9d76ebbe35908c9925735eb12c09389a7d",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/north-west-7.png",
+          "sha256": "9a444e282754913461543254b9108278e8800f52230477678a6b08859fe3ddd0",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "west",
+      "headUrl": "/assets/character-v3/head-eight-01/west.png",
+      "headSha256": "f72b693fd621fc79b1cd76ef6cf4828ef98d9d65f883e2abfb9d888985a808b8",
+      "headPivot": {
+        "x": 65,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/west-0.png",
+          "sha256": "4e61c235f07645608af5750136bd6c168f969ddeca6ec85ed6d3337408c878eb",
+          "neckPivot": {
+            "x": 65,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/west-1.png",
+          "sha256": "216307445919efe0a2f361f5d422d3b6177a7d077baebf214a30668e228deb77",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/west-2.png",
+          "sha256": "51d6b9f77f22ba947a7ea2075bb8b72570ecd364a2f2937f8b6bd173e73c3878",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/west-3.png",
+          "sha256": "f6739e3b57f3da33a60f23c60ab3d68bdf9a1ebf92a67c1f1ac30cc140e7837f",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/west-4.png",
+          "sha256": "f8df958b813cdee64d037773c5b41c9fa61d8c8da552ceb763d0b1d6832aa07a",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/west-5.png",
+          "sha256": "faf2952e94f939af57b6b818eff890f10e65ffd807e5b19e1cbba647c19ef6e7",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/west-6.png",
+          "sha256": "1f954d2bacf9ff353ae02f39addf310f64cc13c484711cf0556f5ef538e4de8f",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/west-7.png",
+          "sha256": "6e86f416afd11eefc21a69b316dcc6c34cb1765dfd8e82c2fbc0b3addd2ac76c",
+          "neckPivot": {
+            "x": 65,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        }
+      ]
+    },
+    {
+      "direction": "south-west",
+      "headUrl": "/assets/character-v3/head-eight-01/south-west.png",
+      "headSha256": "72bd0701ea25e028f807a707c33600aeb0f3dc6a6656a29ee645ec87c2d273e9",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-west-0.png",
+          "sha256": "220c0d48bc23faf99f53dd15ebc484237f2a3d82e6335c6f81d7423b8cc180e2",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-west-1.png",
+          "sha256": "04ed03c3ab96177bb3984adea4089d4e960261ed637a782b78bd681f48e14396",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-west-2.png",
+          "sha256": "ffbdd55e8506e23ca5d8834256cae54dc3f3e9cd9b08e3a1915bdcb80d32fa7c",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-west-3.png",
+          "sha256": "78e5366b5f6ab2ce2188790a6118a899b35af78b67edc0a026b31c107263fe8a",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-west-4.png",
+          "sha256": "5aaa12cbbcb615fcbd4b628638dc5b0192e8cba2a7eb60c8422707a67760213f",
+          "neckPivot": {
+            "x": 61,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-west-5.png",
+          "sha256": "e2e8e30c06e3e20b170145112af1f3a3a3cf113c6f4d66f29f80f5655295c70d",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-west-6.png",
+          "sha256": "e16de262dc373af8756b2d4ed3d6754f04667e3857745a5eb3ede941a4d9708f",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/south-west-7.png",
+          "sha256": "7a0b0f9e60c11e9eadf2a0141defd4b5aecf34a14e898aa991d20ac23d74ca44",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        }
+      ]
+    }
+  ],
+  "sheet": {
+    "url": "/assets/character-v3/actions-eight-02/attack-cast-rune/sheet.png",
+    "sha256": "d04b97c2105cd74a1da39d8539ac1406ed5e689a7e5cf45ba514fbc66b9ed946",
+    "frameWidth": 128,
+    "frameHeight": 128
+  },
+  "visualApproved": false
+}

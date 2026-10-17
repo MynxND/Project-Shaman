@@ -20,7 +20,7 @@ import { NationsEffects } from './nations-effects.js';
 // (provisional). Clients only send intents ('attack', 'skill' with a target) and draw the 'combat' events.
 
 export type CombatEvent =
-  | { type: 'swing'; attacker: { kind: 'player' | 'monster'; id: string }; target: { kind: 'player' | 'monster'; id: string }; facing?: Facing }
+  | { type: 'swing'; attacker: { kind: 'player' | 'monster'; id: string }; target: { kind: 'player' | 'monster'; id: string }; attackDelayMs?: number; facing?: Facing }
   | { type: 'damage'; target: { kind: 'player' | 'monster'; id: string }; amount: number; source: string; skill?: string }
   | { type: 'heal'; target: { kind: 'player'; id: string }; amount: number }
   | { type: 'death'; target: { kind: 'player' | 'monster'; id: string }; killer?: string }
@@ -450,9 +450,10 @@ export class CombatSystem {
       const basic = basicAttackFor(profile, BASIC_ATTACK);
       if (d > Math.max(10, basic.range + 2)) { this.attacks.delete(pid); continue; }
       if (d > basic.range + 0.4 || now < a.nextAt) continue;
-      a.nextAt = now + basic.delayMs / (this.japan.aspdMul(pid) * this.nations.aspdMul(pid));
+      const attackDelayMs = basic.delayMs / (this.japan.aspdMul(pid) * this.nations.aspdMul(pid));
+      a.nextAt = now + attackDelayMs;
       player.facing = m.x >= player.x ? (m.y > player.y + 0.6 ? 'south-east' : m.y < player.y - 0.6 ? 'north-east' : 'east') : (m.y > player.y + 0.6 ? 'south-west' : m.y < player.y - 0.6 ? 'north-west' : 'west');
-      host.broadcast({ type: 'swing', attacker: { kind: 'player', id: pid }, target: { kind: 'monster', id: m.id } });
+      host.broadcast({ type: 'swing', attacker: { kind: 'player', id: pid }, target: { kind: 'monster', id: m.id }, attackDelayMs });
       // Blind (a monster debuff) makes half of the blows miss.
       if (this.japan.misses(pid)) { host.broadcast({ type: 'damage', target: { kind: 'monster', id: m.id }, amount: 0, source: pid }); continue; }
       if (basic.bolt) {

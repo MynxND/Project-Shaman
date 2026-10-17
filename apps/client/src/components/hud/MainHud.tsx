@@ -53,12 +53,22 @@ export function MainHud() {
   // Phones start with the chat and quest folded to icons so the world stays visible; short touch screens also fold
   // the minimap, which would otherwise meet the attack button and skill arc.
   useEffect(() => {
-    const s = useHudStore.getState();
-    if (window.matchMedia('(max-width: 700px), (max-height: 520px)').matches) {
+    const compact = window.matchMedia('(max-width: 700px), (max-height: 520px)');
+    const short = window.matchMedia('(max-height: 520px)');
+    const foldCompact = () => {
+      if (!compact.matches) return;
+      const s = useHudStore.getState();
       if (s.chatOpen) s.toggleChat();
       if (s.questOpen) s.toggleQuest();
-    }
-    if (window.matchMedia('(max-height: 520px)').matches && s.minimapOpen) s.toggleMinimap();
+    };
+    const foldShort = () => {
+      const s = useHudStore.getState();
+      if (short.matches && s.minimapOpen) s.toggleMinimap();
+    };
+    foldCompact(); foldShort();
+    compact.addEventListener('change', foldCompact);
+    short.addEventListener('change', foldShort);
+    return () => { compact.removeEventListener('change', foldCompact); short.removeEventListener('change', foldShort); };
   }, []);
   return (
     <div className="hud-root" data-touch={touch}>

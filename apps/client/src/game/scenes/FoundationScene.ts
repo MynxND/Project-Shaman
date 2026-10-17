@@ -6,6 +6,7 @@ import{SHUTEN_ID,shutenWalkMap}from'@shaman/shared';
 import{attachRangedReview}from'../world/attach-ranged-review';
 import Phaser from 'phaser';
 import type { Room } from '@colyseus/sdk';
+import { BRANCH_WEAPONS } from '@shaman/shared';
 import type { GameState } from '@shaman/schema';
 import { projectedY, terrainHeight, BASIC_ATTACK, basicAttackFor, DEFAULT_APPEARANCE, DEFAULT_MAP_ID, FACINGS, FacingTracker, facingFromVector, getMap, parseBodyType, stepMovement, UMBRAL_CAPITAL, WORLD_UNIT_PX, type BodyType, type Facing, type MapDefinition, type Position, withBlockers } from '@shaman/shared';
 import { CharacterSprite, preloadCharacterRig } from '../characters/CharacterRig';
@@ -123,6 +124,10 @@ export class FoundationScene extends Phaser.Scene {
     preloadMonsters(this,this.map);
   }
   create() {
+    if (process.env.NODE_ENV === 'development' && new URLSearchParams(window.location.search).get('carryReview') === '1') {
+      this.showCarryReview();
+      return;
+    }
     if(this.mountainPerf.enabled)console.info('[mountain-load] create',this.map.id);
     const { widthPx, heightPx } = renderMap(this, this.map);
     if(this.mountainPerf.enabled)console.info('[mountain-load] rendered',this.children.length);
@@ -225,12 +230,12 @@ export class FoundationScene extends Phaser.Scene {
       selected: () => useTargetStore.getState().targetId,
       playerAt: (id) => { const v = this.players.get(id); return v ? { x: v.sprite.x, y: v.sprite.y } : null; },
       playerSprite: (id) => this.players.get(id)?.sprite ?? null,
-      playerAttack: (id, at) => {
+      playerAttack: (id, at, attackDelayMs) => {
         const view = this.players.get(id);
         if (!view) return;
         const facing = facingFromVector(at.x - view.sprite.x, at.y - view.sprite.y);
         if (facing) { view.facing.set(facing); view.sprite.setFacing(facing); }
-        view.sprite.playOnce('attack');
+        view.sprite.playOnce('attack', attackDelayMs);
       },
     },this.map);
     if(this.map.id==='girah-ruined-temple')this.calon=new CalonLayer(this,this.monsters,()=>this.room);
@@ -502,6 +507,7 @@ export class FoundationScene extends Phaser.Scene {
       }
       const { sprite, label, shadow, light } = view;
       sprite.setLook(player.look);
+      sprite.setClassBranch(player.branch);
       sprite.setHead(player.head, player.emote);
       sprite.setAutoHeadBranch(player.branch);
       if (id === room.sessionId && this.movement) {
@@ -597,6 +603,51 @@ export class FoundationScene extends Phaser.Scene {
     };
   }
 
+  /** Isolated development board using actual CharacterSprite/EquipmentLayers, never a gameplay session. */
+  private showCarryReview() {
+    const params = new URLSearchParams(window.location.search);
+    const weapon = params.get('weapon') ?? 'axe-juggernaut';
+    const bodyType = parseBodyType(params.get('body'));
+    const allRows = ['idle', 'walk', 'attack 0', 'attack 1', 'attack 3', 'attack 7', 'attack live', ...(params.get('outfit') === '1' || params.get('motion') === 'cast' ? ['cast 0','cast 5','cast 8','cast 11','cast live'] : [])];
+    const requestedMotion = params.get('motion');
+    const rows = requestedMotion && ['idle','walk','attack','cast'].includes(requestedMotion) ? allRows.filter(row => row.startsWith(requestedMotion)) : allRows;
+    let outfitSprites = 0;
+    this.cameras.main.setBackgroundColor('#263b35').setRoundPixels(true);
+    const text = (x: number, y: number, label: string) => this.add.text(x, y, label, { fontFamily: 'monospace', fontSize: '12px', color: '#f0dfb6' });
+    text(16, 8, `${bodyType} | ${weapon} | actual renderer | ${params.get('outfit') === '1' ? 'class outfit' : params.get('femaleOffhand') === '1' ? 'OFF-HAND DRAFT: SOUTH IDLE ONLY' : 'baseline'} | development only`);
+    FACINGS.forEach((facing, col) => text(120 + col * 100, 35, facing));
+    rows.forEach((row, r) => {
+      text(8, 105 + r * 110, row);
+      FACINGS.forEach((facing, col) => {
+        const sprite = new CharacterSprite(this, 150 + col * 100, 145 + r * 110, { ...DEFAULT_APPEARANCE, bodyType }, facing)
+          .setScale(0.65).setDepth(r * 110).setAnimation(row === 'walk' ? 'walk' : null);
+        sprite.setLook(`weapon:${weapon}`);
+        if (params.get('outfit') === '1') sprite.setClassBranch(Object.entries(BRANCH_WEAPONS).find(([,item]) => item === weapon)?.[0] ?? '');
+        if(params.get('outfit')==='1')sprite.setAutoHeadBranch(Object.entries(BRANCH_WEAPONS).find(([,item])=>item===weapon)?.[0]??'');
+        if (sprite.texture.key.includes(':outfit:')) outfitSprites++;
+        if (row === 'attack live') this.time.addEvent({ delay: 1400, loop: true, startAt: 1400, callback: () => sprite.playOnce('attack') });
+        else if (row.startsWith('attack')) sprite.showAttackFrame(facing, Number(row.split(' ')[1]));
+        if (row === 'cast live') this.time.addEvent({delay:100,loop:true,callback:()=>sprite.setCastFrame(Math.floor(this.time.now/100)%12,facing)});
+        else if (row.startsWith('cast')) sprite.setCastFrame(Number(row.split(' ')[1]),facing);
+      });
+    });
+    const resize = (size: Phaser.Structs.Size) => {
+      const height = rows.length*110+60;
+      this.cameras.main.setSize(size.width, size.height).setZoom(Math.min(size.width / 950, size.height / height)).centerOn(475, height/2);
+    };
+    resize(this.scale.gameSize);
+    this.scale.on('resize', resize);
+    this.game.canvas.setAttribute('data-carry-ready', weapon);
+    this.game.canvas.setAttribute('data-class-outfit-count', String(outfitSprites));
+    this.game.canvas.setAttribute('data-separate-equipment-count', String(this.children.list.filter(child => child instanceof Phaser.GameObjects.Image && child.visible && child.texture.key.startsWith('gear:')).length));
+    this.events.once(Phaser.Scenes.Events.SHUTDOWN, () => {
+      this.scale.off('resize', resize);
+      this.game.canvas.removeAttribute('data-carry-ready');
+      this.game.canvas.removeAttribute('data-class-outfit-count');
+      this.game.canvas.removeAttribute('data-separate-equipment-count');
+    });
+  }
+
   /** Art review line-up (?rig=preview): both main characters in all 8 facings on the plaza, walking in place. */
   private showRigPreview() {
     const bodies: BodyType[] = ['male', 'female'];
@@ -604,12 +655,23 @@ export class FoundationScene extends Phaser.Scene {
     const startX = this.map.spawn.x * WORLD_UNIT_PX - step * 3.5;
     // &pose=attack repeats the basic attack; &pose=cast&frame=N holds cast pose frame N (art review only).
     const params = new URLSearchParams(window.location.search), pose = params.get('pose'), frame = Number(params.get('frame') ?? 6);
+    const weapon = params.get('weapon');
     bodies.forEach((bodyType, row) => FACINGS.forEach((facing, col) => {
       const y = (this.map.spawn.y - 2 + row * 3) * WORLD_UNIT_PX;
       const sprite = new CharacterSprite(this, startX + col * step, y, { ...DEFAULT_APPEARANCE, bodyType }, facing)
         .setScale(CHARACTER_SCALE).setDepth(y).setAnimation(pose ? null : 'walk');
-      if (pose === 'attack') this.time.addEvent({ delay: 900, loop: true, startAt: 900, callback: () => sprite.playOnce('attack') });
+      // Review the same equipped weapon selection as gameplay, across all eight views (no profile mutation).
+      if (weapon) sprite.setLook(`weapon:${weapon}`);
+      if (pose === 'attack') {
+        if (params.has('frame')) sprite.showAttackFrame(facing, Number.isInteger(frame) ? frame : 0);
+        else this.time.addEvent({ delay: 900, loop: true, startAt: 900, callback: () => sprite.playOnce('attack') });
+      }
       if (pose === 'cast') sprite.setCastFrame(Number.isInteger(frame) ? frame : 6, facing);
     }));
   }
 }
+
+
+
+
+

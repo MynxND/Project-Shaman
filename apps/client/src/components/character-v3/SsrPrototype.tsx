@@ -11,7 +11,6 @@ const DIR_TH: Record<SsrDirection, string> = { south: 'S หน้า', 'south-w
 const ACTION_TH: Record<SsrAction, string> = { idle: 'ยืน', walk: 'เดิน', attack: 'โจมตี', cast: 'ร่าย' };
 const HEADS = {
   default: { th: 'ผม default (เปลี่ยนสีได้)', parts: ['headBase.skin', 'hairFront.default'] },
-  'side-sweep': { th: 'ปัดข้าง (หน้าล็อก)', parts: ['headBase.skin', 'hairFront.side-sweep'] },
   original: { th: 'ภาพต้นฉบับ default (เทียบ)', parts: ['headBase.default'] },
 } as const;
 const FACES = { neutral: 'ปกติ', cold: 'เย็นชา', sad: 'เศร้า', closed: 'หลับตา' } as const;

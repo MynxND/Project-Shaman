@@ -21,6 +21,7 @@ export type HairstyleId = (typeof HAIRSTYLES)[number]['id'];
 export const HAIR_COLORS = [
   { id: 'silver', th: 'เงินม่วง', tint: 0xc9c3e6 },
   { id: 'white', th: 'ขาว', tint: 0xffffff },
+  { id: 'gray', th: 'เทา', tint: 0xbeb8d4 },
   { id: 'black', th: 'ดำ', tint: 0x4a4658 },
   { id: 'brown', th: 'น้ำตาล', tint: 0x9a6a48 },
   { id: 'gold', th: 'ทอง', tint: 0xe8c370 },

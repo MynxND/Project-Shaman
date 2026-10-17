@@ -1,0 +1,876 @@
+{
+  "version": "action-eight/1",
+  "action": "attack-cast-gohei",
+  "name": "Miko · โบกโกเฮชำระ",
+  "bodySet": "body-eight-02",
+  "fps": 16,
+  "loop": false,
+  "hits": [
+    3
+  ],
+  "directions": [
+    {
+      "direction": "south",
+      "headUrl": "/assets/character-v3/head-eight-01/south.png",
+      "headSha256": "1ac5ca0956848a2886484a8955e3d4d5f4206bc513c96581b55ade60bf6a4215",
+      "headPivot": {
+        "x": 62,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-0.png",
+          "sha256": "d4c978a0de794cbc7cd85414f4b2107e61b427e27f779aafc911f8c140fe53c4",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-1.png",
+          "sha256": "9e34b752070aef82f44564e8c0350dc11ca8a386fc009218f701d7046a23223c",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-2.png",
+          "sha256": "e8902d85f67bbf33fd4c73c0bbb4668a8ea7a934fd46d4f56886293b8b10d739",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-3.png",
+          "sha256": "d9fc705965fc5c36cd26ea3b0257e89ce90294baac3cb3f72b7556ad4b5e1015",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-4.png",
+          "sha256": "034f047229bbd2cfc545aeadb08522d0781a3e0a86fd7c539f0be52045c42059",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-5.png",
+          "sha256": "8959647db59abbf4e7b95104c83eebd3fbf53b6d7f12ecd26b20429f3740e79d",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-6.png",
+          "sha256": "9dae9b5d7f947b40e2137936475ac29e56fa6d5618a3767c8036c2fe3da7b5db",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-7.png",
+          "sha256": "85e90ec8a9ebb9dd3daae7a1616871b1e1c9b28e5fee7afb6bac1920d88dfca2",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "south-east",
+      "headUrl": "/assets/character-v3/head-eight-01/south-east.png",
+      "headSha256": "3cd756ea681a3571bf619505373ec6f78e200c0b3d6088936b26ad587c08b0b5",
+      "headPivot": {
+        "x": 65,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-east-0.png",
+          "sha256": "f7ae6e2070266525e4218cd066ae7b9112ac6ec4a925c80402ce969c28cee73f",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-east-1.png",
+          "sha256": "fddcd15d0d9a771b23045fbd131abb9c5384f4eb7726986b01ae249b319b4d39",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-east-2.png",
+          "sha256": "433d710b91fb33cc2e07574d943dc7dd41d34088ef5f29aec40a6f1f12c0dfd7",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-east-3.png",
+          "sha256": "6ea8bc02d64d7ed77f6dc070aaa043ba5875d9a4a818e6c3daefb97791383da0",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-east-4.png",
+          "sha256": "d924723dc4791d91778350f6139e3f60ec56e8f6ca656c236657066dc18e95b9",
+          "neckPivot": {
+            "x": 64,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-east-5.png",
+          "sha256": "949429e5b5adc4f910ba15f3a7afecabf6a8ea0b75f88f53ea117081d5c15ab4",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-east-6.png",
+          "sha256": "dd7980df2e2a5f7ca3146c92863d865c67780eff25854bd8a0fbe6e510be1977",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-east-7.png",
+          "sha256": "41cb560375b920be6f627f98a873fd1323394495b6f914769f5454ec1c987b21",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        }
+      ]
+    },
+    {
+      "direction": "east",
+      "headUrl": "/assets/character-v3/head-eight-01/east.png",
+      "headSha256": "e0ff194091acadf4042ffd76627c88f444830239d59a7dc8dcd62e84d4952ec8",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/east-0.png",
+          "sha256": "70040e110d2a2180ceb960efdffe5288fcd47920a2618d9112059019754ee360",
+          "neckPivot": {
+            "x": 59,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/east-1.png",
+          "sha256": "6910d77b5459e9a384b774ede53998d5c1c0001f8ce8903f0e84ee28c916f37d",
+          "neckPivot": {
+            "x": 60,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/east-2.png",
+          "sha256": "fa31004403e2d7793c6312cb27fd0439d4e4b429f9dcd6c6e7c90afc70b61e3d",
+          "neckPivot": {
+            "x": 60,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/east-3.png",
+          "sha256": "fe7d4cdc78778a5e3973092dfc4f311e33dda0cefc9a9e9ffdadcf654747f59f",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/east-4.png",
+          "sha256": "5065ee6024f9cdcfccc429f34c11516faafa2ca3f2f6036771ab94d11a369c27",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/east-5.png",
+          "sha256": "c72f074a900e9683bb90ec0f965f7cd2e01b1745b8dbce4ce8ae0264b12e9b2f",
+          "neckPivot": {
+            "x": 60,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/east-6.png",
+          "sha256": "1c50568f5f6058fd6fc19774d75c6c0b13fbc82fede7e5f86c1afed963ec2b45",
+          "neckPivot": {
+            "x": 60,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/east-7.png",
+          "sha256": "92ffa1d42700388927bdcaffc77c87a4e873edd6c5d18f45e90e0f6b39c9eba1",
+          "neckPivot": {
+            "x": 59,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north-east",
+      "headUrl": "/assets/character-v3/head-eight-01/north-east.png",
+      "headSha256": "22f5b66ce480a0c2eecc4ebd361aaa57ccfa6b4d78fd8ba89a332f9750dbf9bb",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-east-0.png",
+          "sha256": "a1a967304b49dabb4aff38de8fc409aa5cc40b8683b7a36e0597d98edf1e5f5b",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-east-1.png",
+          "sha256": "42b54dd480985b1dfe2ecf0b58de1a7c2d05131ec6daaf09ecc55ae26b97529e",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-east-2.png",
+          "sha256": "052809008f098955d81a3e9d7bdd6c86dd6d84c1670abcb15389bb532566e311",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-east-3.png",
+          "sha256": "840b7debc175c17a9f3c35297baa5a17628e93120619d5d4cdfe713091803f69",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-east-4.png",
+          "sha256": "e1b1a49ec0eb12f11f1d32f97e45c07e523191e07e7492a2110909a08cad8c38",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-east-5.png",
+          "sha256": "389635b9f131a488d97eea641aad345e9188c6747b0323e8455acf2f831bfefc",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-east-6.png",
+          "sha256": "93e2b4156fe4a434f6d2e01839b01c9c862ab4bcdef58b2fc7acf3aadbcbf845",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-east-7.png",
+          "sha256": "4b13af7f06c86927c1fe7c2d96488e651b35249e1cc846742bd5636ed4b07650",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north",
+      "headUrl": "/assets/character-v3/head-eight-01/north.png",
+      "headSha256": "954eb387ddec4a48dcb63c037705753d1a524a6396ee03ac1d353ca624dd98d1",
+      "headPivot": {
+        "x": 64,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-0.png",
+          "sha256": "200a7f5ebad35815f36aefdb0bc8d5c7e0de049c5ec3b0e309309cdda22d1012",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-1.png",
+          "sha256": "bec3a597842bb6c7cf56189b6eb60fb4f7b0b7200def8d9a6ef9d3cda90208e2",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-2.png",
+          "sha256": "4347fbc576a1282688c9548eaae23764870993c23e0265e1017fe8f6e9b6db86",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-3.png",
+          "sha256": "e4a832be7587d3749136f788bf584c46c93a03dc9f4bef9fdd96ce3cdb4991f1",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-4.png",
+          "sha256": "3008062d41d180186fe4308fe5d8eb9a8c665444f8458c757bc05e8f55ff114b",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-5.png",
+          "sha256": "a999b9104223f980b84972fbcbe62cf18cf8c28c7ea421f3cd428be4bcb2a2db",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-6.png",
+          "sha256": "ffcc34cfa319805176ea97f9c3b6a55952fb2b902308dcaa3478a05fc48d6d0a",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-7.png",
+          "sha256": "8ca16d1024cd55d282db8868bb5fd9a5d990dbffdad0094cdcb80772325d3093",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north-west",
+      "headUrl": "/assets/character-v3/head-eight-01/north-west.png",
+      "headSha256": "f7cfab464653ebb612bffee7c196ba547d7590e953a5a9c5ac725d36767e4172",
+      "headPivot": {
+        "x": 64,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-west-0.png",
+          "sha256": "b9cdcb82b14bbedbf4cb69361add55d3c8453ea4a93e6674dfd2d0bbb4121b2c",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-west-1.png",
+          "sha256": "14ee8f2ac5c50422936b2e2e115d362b2acd6672ade548bbed559f9a85eada5d",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-west-2.png",
+          "sha256": "c9f74afc7d8e520503e0df07bafbf4997be162d9518fff07ba6a9c4c519338b4",
+          "neckPivot": {
+            "x": 61,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-west-3.png",
+          "sha256": "3b8363301b129b504504e1a0e410126d2251266ecae1d875f58517e5a475676e",
+          "neckPivot": {
+            "x": 61,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-west-4.png",
+          "sha256": "d95ba8538504e1e6b15533e343cf7de433a456f43467694b5dab57fb235085e0",
+          "neckPivot": {
+            "x": 61,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-west-5.png",
+          "sha256": "38a054284db75071cb8c879460012aacb3d19ac0a0133651cb5b7a7a1382319a",
+          "neckPivot": {
+            "x": 61,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-west-6.png",
+          "sha256": "0bcf0ac3acdaa28c93c6ae58a36556b645bbcbb240d0d5ad2fe1216a08d24890",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/north-west-7.png",
+          "sha256": "8beecdfeb3b1ec52277776155d21e0589648a6130e2a2266d35aef6035020fe8",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "west",
+      "headUrl": "/assets/character-v3/head-eight-01/west.png",
+      "headSha256": "f72b693fd621fc79b1cd76ef6cf4828ef98d9d65f883e2abfb9d888985a808b8",
+      "headPivot": {
+        "x": 65,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/west-0.png",
+          "sha256": "90bf9c93c155bed4c4333e8082414d8480f96ea748b6875703dee864762ac5ac",
+          "neckPivot": {
+            "x": 65,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/west-1.png",
+          "sha256": "314e88e9e51cb191d28c7ba450dc0a73fa46eb2f6550e6ee4bb25d7452ae4b94",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/west-2.png",
+          "sha256": "2440d69fee912cd0ec5def2916c27897b8248c62cb06e8fc9f1cbbf16fccf288",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/west-3.png",
+          "sha256": "50f9b6bc6481b31aa257db3cff8e285f42d7f9c582d8015d4f7da3689a356256",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/west-4.png",
+          "sha256": "d572c4e976b3526c9e4cb8fa60c6c80589c565aea9bcaf28204dd5982fa8cbb1",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/west-5.png",
+          "sha256": "b82f52f4f6575f008f58addc6018d5396d5932d27a2a9b8fba02cbcfc9ee32c7",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/west-6.png",
+          "sha256": "562b67224ca92e7fa884d2c0ea2398cf38d670b1a816767c5d723360c30e23f0",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/west-7.png",
+          "sha256": "9e95f94486d8288af101bbd6db14e4c7368dd412d2c333d3818fe31f358455fd",
+          "neckPivot": {
+            "x": 65,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        }
+      ]
+    },
+    {
+      "direction": "south-west",
+      "headUrl": "/assets/character-v3/head-eight-01/south-west.png",
+      "headSha256": "72bd0701ea25e028f807a707c33600aeb0f3dc6a6656a29ee645ec87c2d273e9",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-west-0.png",
+          "sha256": "046334300e324f5702c60ca97ac40ab83ed50c75290c3d7a22b5d1e46d6e5cd2",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-west-1.png",
+          "sha256": "b9ab6e4923f308d7a6eb57e2872544aaccd5c613aec78da19014503b5b51b2da",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-west-2.png",
+          "sha256": "2b45dd2a2159a7014981485a807191be00b4448541f4661667d656030d2241d4",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-west-3.png",
+          "sha256": "2b9a488ba597725d33da97fa70c5855e0cb97fb13e66d8b73cb82da99350828a",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-west-4.png",
+          "sha256": "2d76c97409262258a0a4fd9244f010a6fee0ad183860c24ae46217bf4badbdf8",
+          "neckPivot": {
+            "x": 61,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-west-5.png",
+          "sha256": "8688cdd77f4dfaff71cb290cc54e544233fc4126737b2bf921cdea610fdc302a",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-west-6.png",
+          "sha256": "6d24819cc14fbede2151b6a8ceb93954a009db7472e9585964a1b5341f28502a",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/south-west-7.png",
+          "sha256": "62464de54e01a1f1afc933c79f6e125d34ca1ce15e055e08f7ff353e90a842aa",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        }
+      ]
+    }
+  ],
+  "sheet": {
+    "url": "/assets/character-v3/actions-eight-02/attack-cast-gohei/sheet.png",
+    "sha256": "49e0c8694aa21b0a587d48851dc34df6ed62991724fad0f38f993247849d2fa5",
+    "frameWidth": 128,
+    "frameHeight": 128
+  },
+  "visualApproved": false
+}

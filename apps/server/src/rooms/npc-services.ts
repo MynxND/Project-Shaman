@@ -1,5 +1,5 @@
 import {
-  acceptQuest, advanceJobWithWeapon, buy, exchangeGold, heal, isBlocked, learnSkill, moveStack, NPC_TALK_RANGE, QUESTS, questEvent, refine, sell, setSavePoint, teleport,
+  terrainHeight, acceptQuest, advanceJobWithWeapon, buy, exchangeGold, heal, isBlocked, learnSkill, moveStack, NPC_TALK_RANGE, QUESTS, questEvent, refine, sell, setSavePoint, teleport,
   type MapDefinition, type NpcDefinition, type PlayerProfile, type Position, type ServiceResult,
 } from '@shaman/shared';
 
@@ -63,6 +63,7 @@ export type NpcOutcome =
  */
 export function runNpcRequest(map: MapDefinition, profile: PlayerProfile, at: Position, req: NpcRequest, roll: number, now: number): NpcOutcome {
   const npc = map.npcs?.find((n) => n.id === req.npc);
+  if(npc&&map.elevation&&Math.abs(terrainHeight(map,at.x,at.y)-terrainHeight(map,npc.x,npc.y))>.2)return {ok:false,error:"ต้องอยู่บนชานเดียวกับ NPC"};
   if (!npc || !ALLOWED[npc.role].includes(req.action)) return { ok: false, error: 'bad-request' };
   if (Math.hypot(npc.x - at.x, npc.y - at.y) > NPC_TALK_RANGE + 0.6) return { ok: false, error: 'too-far' };
   let result: ServiceResult & { to?: Position };

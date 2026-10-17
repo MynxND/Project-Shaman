@@ -1,0 +1,876 @@
+{
+  "version": "action-eight/1",
+  "action": "attack-cast-fan",
+  "name": "Onmyoji · สะบัดพัดกวาด",
+  "bodySet": "body-eight-02",
+  "fps": 16,
+  "loop": false,
+  "hits": [
+    3
+  ],
+  "directions": [
+    {
+      "direction": "south",
+      "headUrl": "/assets/character-v3/head-eight-01/south.png",
+      "headSha256": "1ac5ca0956848a2886484a8955e3d4d5f4206bc513c96581b55ade60bf6a4215",
+      "headPivot": {
+        "x": 62,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-0.png",
+          "sha256": "b8ab68fbb28f483e38ad5adcec62596c758245f26d62381ba94402a79f00a9e3",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-1.png",
+          "sha256": "f0f99a653803ee9da038bc1d5a7184e2db429499f8fd7244e9039ce798ed164d",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-2.png",
+          "sha256": "33ce193e1eb05905eca851d25e7c8cb2c7688b2320c60b9589c1e75da973ebc2",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-3.png",
+          "sha256": "8019e483fb5be91b18e29910634a8cf772b41d79e796f3dfe634b5235e8ecd04",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-4.png",
+          "sha256": "0dc392f4faf95c46ea75e88b3000f3f4c4e0bb5a2fdb176088a926dc1b97d19f",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-5.png",
+          "sha256": "7e7bc8f49bc2c129bed2618fa28c19b81380db7ebb6571b34e6a2acef02de8c9",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-6.png",
+          "sha256": "c6c7a19e54ada0484b8ac7a9d5e03808e682762d4fe9eb895245f0aa9989616c",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-7.png",
+          "sha256": "2046c531924f73b6b0523e7108e9bab2b9363e7095e75435a6f62229dc00c59d",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "south-east",
+      "headUrl": "/assets/character-v3/head-eight-01/south-east.png",
+      "headSha256": "3cd756ea681a3571bf619505373ec6f78e200c0b3d6088936b26ad587c08b0b5",
+      "headPivot": {
+        "x": 65,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-east-0.png",
+          "sha256": "6fe68c46df67ea4557dba2542cf810eb74a5a54eee0afcaeb696806e5c1b6ab7",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-east-1.png",
+          "sha256": "42c5c0ef4cd173ef6e79e0eac1b9698df28f59fd4f98694519fdf7e248720bb2",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-east-2.png",
+          "sha256": "ca0c5a057c2a4ca1097ba9fe2e59b725c806f64212a88cb926a16bcc14b9c9f9",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-east-3.png",
+          "sha256": "65a8948a27a4a62f377e3b3bf874bba51dc6ed1cd6029c89c9a8841ab675e582",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-east-4.png",
+          "sha256": "83cb3058c7f3b08bc889648cb4c1b689b1e26e1fef2804cce3f2214154e7be43",
+          "neckPivot": {
+            "x": 64,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-east-5.png",
+          "sha256": "ced7995ed1cedc403ef9342777c28657c38b8e57a54ec8b626404a6ae1b668cf",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-east-6.png",
+          "sha256": "c0afe7fff93b76cf795a9d06e6245be480880c421a8d15c4c846158693dd1086",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-east-7.png",
+          "sha256": "2647c92233e31247cf46224e80a7be0163898fdab42dbac5a60fa2a521738fdd",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        }
+      ]
+    },
+    {
+      "direction": "east",
+      "headUrl": "/assets/character-v3/head-eight-01/east.png",
+      "headSha256": "e0ff194091acadf4042ffd76627c88f444830239d59a7dc8dcd62e84d4952ec8",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/east-0.png",
+          "sha256": "3c493ff6d9628693fe1fb9d5e2a0369581dae598f5525e58671bc0a11d77e290",
+          "neckPivot": {
+            "x": 59,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/east-1.png",
+          "sha256": "1317b148c1f15170b3d02fbfbf0d7041ed615c8e7be41467957905e726738e5b",
+          "neckPivot": {
+            "x": 60,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/east-2.png",
+          "sha256": "497c898f13e906464a210842eb1eb63cfeba743af8915021fb1fc990a4e0ad69",
+          "neckPivot": {
+            "x": 60,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/east-3.png",
+          "sha256": "fbfde8741fbc53f55c9079d62f80ca3e05016a30b0e13c264dcbfdd2fa2fe27d",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/east-4.png",
+          "sha256": "adcd476e4d6c577dcd219704f19ef3ffdf151919b048097815f2784482e25f8f",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/east-5.png",
+          "sha256": "0b3c7b15ec48424766812beee5aa31eaef53625366d79c8203918cd20e0da20f",
+          "neckPivot": {
+            "x": 60,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/east-6.png",
+          "sha256": "f74a63f0a96eb8b861e0804c86bb747ecc3871cfc661b34af211c0aec68ddfca",
+          "neckPivot": {
+            "x": 60,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/east-7.png",
+          "sha256": "d050bd23f78f0bc0ed006698daeeb2fe9e03cd659a9c4d869e579f526c668341",
+          "neckPivot": {
+            "x": 59,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north-east",
+      "headUrl": "/assets/character-v3/head-eight-01/north-east.png",
+      "headSha256": "22f5b66ce480a0c2eecc4ebd361aaa57ccfa6b4d78fd8ba89a332f9750dbf9bb",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-east-0.png",
+          "sha256": "001a7755c1cf30df58baf91ae5e4db49626617e01ec9d0ce771bc9f70a7761a6",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-east-1.png",
+          "sha256": "6cd0210dc4cb054657ac431a7e40a35c0d963846cd770dfd60f6e233e1129a45",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-east-2.png",
+          "sha256": "7a6ba65983eb072d843796409c40ac27d203380172738f6e67105b2651818a1d",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-east-3.png",
+          "sha256": "738454ab2083f0b01965ee297ea1b4ec8fa252ec9b9cd55e91dd269b87cff47b",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-east-4.png",
+          "sha256": "4679234a50bc1b102e17a9ed400d477d5e9d2d303b91acb0d0f09f808bacf12c",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-east-5.png",
+          "sha256": "1ffb7c408b8104beafe015e6231857cbefcd71861a9743c575b1be2a61d9fcbb",
+          "neckPivot": {
+            "x": 63,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-east-6.png",
+          "sha256": "cf48d4dd12ffa0938449afd742e40f4f10493c19fa8cf95b8495f079ab3e8b1b",
+          "neckPivot": {
+            "x": 63,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-east-7.png",
+          "sha256": "9e1c65ec3a18777c375b63290612802ffa00bc3db9cb0b4ae46607237e496f6c",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north",
+      "headUrl": "/assets/character-v3/head-eight-01/north.png",
+      "headSha256": "954eb387ddec4a48dcb63c037705753d1a524a6396ee03ac1d353ca624dd98d1",
+      "headPivot": {
+        "x": 64,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-0.png",
+          "sha256": "f2ea9b10f94eed59f6330613919881cadb71bee2fef2b58a5e1311af0a3c840b",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-1.png",
+          "sha256": "f433c1e921fe21c1b8ec6a7188b99955530198e83099e36aa4ea352f4f90e683",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-2.png",
+          "sha256": "42a65739c87334473150a1f257535a8c3a58e0f2e0c0e2a1cb1d2770422bb933",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-3.png",
+          "sha256": "58b927544d18cb130cf1d8b4ef77c393a1fa3eac2b2a0daba2fd76699b501b40",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-4.png",
+          "sha256": "d55d72ace75bbfd92dfb9783267b4a9c0ff3d445964f847770722f526f5973db",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-5.png",
+          "sha256": "aed48656e9674ffe00136783a5255f1a3aa53e8cd332a49d150b26a97c94eefc",
+          "neckPivot": {
+            "x": 62,
+            "y": 50
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-6.png",
+          "sha256": "8d7971f62c77b43a0502c6566f544fd71c1d2362a2ef2446230af785e4e3a5b7",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-7.png",
+          "sha256": "594e43e2764580d909e63c88b090ff44bd2f221b878d5815a320ed62b75e74e6",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north-west",
+      "headUrl": "/assets/character-v3/head-eight-01/north-west.png",
+      "headSha256": "f7cfab464653ebb612bffee7c196ba547d7590e953a5a9c5ac725d36767e4172",
+      "headPivot": {
+        "x": 64,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-west-0.png",
+          "sha256": "c064aea2acc4367ec8160d40fd3eabefb39bc3cb78d1838889af8efa09a5a936",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-west-1.png",
+          "sha256": "e398156ce2fb35a51cf261068e06ea50b724c61d3f82252aff5345a59b0de87b",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-west-2.png",
+          "sha256": "55106cb5c3f1d50d8b9f8f9a3c9409473274e87adf3d073fd48231d842ee966c",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-west-3.png",
+          "sha256": "d167e1e23eaaa79cfaabe96ec0fa036e757b547044eb856dcc6a7408dacd85af",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-west-4.png",
+          "sha256": "5ce5e7720d55e50587d12e4bb9a8aee02ab800811d7822358e1a43b1337824d8",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-west-5.png",
+          "sha256": "2c8f45a45fef0b649e27900b7fd6bc0e7821b40333870c6e4a91f4d8066daac0",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-west-6.png",
+          "sha256": "345433f8b3110205e079231d5ba070b1a608ce838f99ca993612f0ff3ca0c77e",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/north-west-7.png",
+          "sha256": "28fe812ae241a1bddd67b02f9ee5c879f6295fbca2fc7ec69a0d314ca6d7c850",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "west",
+      "headUrl": "/assets/character-v3/head-eight-01/west.png",
+      "headSha256": "f72b693fd621fc79b1cd76ef6cf4828ef98d9d65f883e2abfb9d888985a808b8",
+      "headPivot": {
+        "x": 65,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/west-0.png",
+          "sha256": "e1ed65830a01b9ea6e3f2dd1057bf7fc6b41b491839243542d1c2b9f17646dc6",
+          "neckPivot": {
+            "x": 65,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/west-1.png",
+          "sha256": "ee6e60a08b58a26de37278c9d4b627562b2fd911f314e994733a4a8b3f9a175c",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/west-2.png",
+          "sha256": "95aada8dc91b5f79e07780a661c9fb3a3798f12abd01b97b35b8a13cc463ea30",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/west-3.png",
+          "sha256": "81f0409342ff983fb1f2b3701c6b31b5e214797ae6d648a81f9275d56fd24f27",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/west-4.png",
+          "sha256": "77e104addb228dfdd48b507a7939ee98357241730af6729058d26caa62a83f65",
+          "neckPivot": {
+            "x": 63,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/west-5.png",
+          "sha256": "a7b0ce08ee08f0f8f982d127bf6ce38a2b1b020778b765f774e8d15e184ff8fc",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/west-6.png",
+          "sha256": "f623fe2f8e8f4240f99e94afc17266247bb39617253011b26eeeb8051d080d61",
+          "neckPivot": {
+            "x": 64,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/west-7.png",
+          "sha256": "0eaaadee1657310fae7f4e69dbf1df560d61351c13f3e549bd54adb932b46d79",
+          "neckPivot": {
+            "x": 65,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        }
+      ]
+    },
+    {
+      "direction": "south-west",
+      "headUrl": "/assets/character-v3/head-eight-01/south-west.png",
+      "headSha256": "72bd0701ea25e028f807a707c33600aeb0f3dc6a6656a29ee645ec87c2d273e9",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-west-0.png",
+          "sha256": "76603a4764c79ecd2c81a5d9fe2244466a1eda3d9c4692a8f7e19ac12057db25",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-west-1.png",
+          "sha256": "5d0ec5373a396d4ce64b7057c725c27d125f2e29ddaeca1f5b439a7689cb94ca",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-west-2.png",
+          "sha256": "15c804b437e8f710dd7d6eab3ec34f62885e799e579a8c6e154fb40ff3c3dde7",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-west-3.png",
+          "sha256": "a7f3b1c18ecb5f70f667272a985b4320ff5203b71f7470898e745ea586c6bf66",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-west-4.png",
+          "sha256": "b14da2880b9a798bc7a38b383e9657e014489733ccd158e5f3403899b80bb77b",
+          "neckPivot": {
+            "x": 61,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-west-5.png",
+          "sha256": "11363149e183ac5e29175c52c8fd2d0bbb98701a74a0f6f559b490efa192f5a9",
+          "neckPivot": {
+            "x": 61,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-west-6.png",
+          "sha256": "6b7bc98ff849d6faca985079f48c54809b625b1b3f95150202679dee23e12917",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/south-west-7.png",
+          "sha256": "4af2b33d7226cd2018d070b5f886a2e0cbc07a8bfca8f3508eabd6bdba213b2e",
+          "neckPivot": {
+            "x": 62,
+            "y": 51
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        }
+      ]
+    }
+  ],
+  "sheet": {
+    "url": "/assets/character-v3/actions-eight-02/attack-cast-fan/sheet.png",
+    "sha256": "fe1f9236d9f992114ca1b2b2f25d315f9a78e1be2c6e2ee9ee2b9f111a3716a2",
+    "frameWidth": 128,
+    "frameHeight": 128
+  },
+  "visualApproved": false
+}

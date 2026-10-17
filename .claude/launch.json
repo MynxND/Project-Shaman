@@ -18,6 +18,14 @@
         "dev"
       ],
       "port": 2567
+    },
+    {
+      "name": "pose-studio",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "tools/pose-studio/server.mjs"
+      ],
+      "port": 8790
     }
   ]
 }

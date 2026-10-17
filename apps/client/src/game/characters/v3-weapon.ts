@@ -1,6 +1,7 @@
 import type Phaser from 'phaser';
 import type { Facing } from '@shaman/shared';
 import { handsKey, type LayerFrame } from './ModularRig';
+import { outfitLayerFrame } from './class-outfit';
 
 // Weapon attachment for the Character V3 body. V3 frames have no hand joints, so hand points come from
 // /assets/character-v3/hand-anchors.json (tools/rig/v3_hand_anchors.mjs: skin islands + attack skeleton poses +
@@ -8,16 +9,22 @@ import { handsKey, type LayerFrame } from './ModularRig';
 // and leaning along the arm (shoulder -> hand) as the arm extends, so it swings with the blow.
 export const HAND_ANCHORS_KEY = 'v3-hand-anchors';
 type Point = { x: number; y: number };
-interface HandEntry { main: Point | null; off: Point | null; neck: Point }
+interface HandEntry { main: Point | null; off: Point | null; neck: Point; weaponHand?: 'main' | 'off'; rotation?: number }
 interface HandAnchors { weaponHand: Record<string, 'main' | 'off'>; castHand?: Record<string, 'main' | 'off'>; actions: Record<string, Record<string, HandEntry[]>> }
 /** How the held weapon picks its hand: rest (right hand), swing (the striking hand), bolt (the casting hand). */
 export type WeaponMode = 'rest' | 'swing' | 'bolt';
 
-const KEY = /^v3:(idle|walk|attack|cast|attack-dagger|attack-cast):([a-z-]+)(?::(\d+))?$/;
+const KEY = /^v3:(idle|walk|attack|cast|attack-[a-z-]+):([a-z-]+)(?::(\d+))?$/;
 /** Screen facing vectors; the character's right side is the facing turned clockwise. A hand on the camera side (or
  *  level with the body, facing straight toward/away) draws its weapon in front of the body, the far hand behind. */
 const FACE: Readonly<Record<string, [number, number]>> = { south: [0, 1], 'south-east': [1, 1], east: [1, 0], 'north-east': [1, -1], north: [0, -1], 'north-west': [-1, -1], west: [-1, 0], 'south-west': [-1, 1] };
 const inFront = (dir: string, hand: 'main' | 'off') => { const [fx] = FACE[dir] ?? [0, 1]; return (hand === 'main' ? fx : -fx) >= 0; };
+/** Resting carry weight: full while idle/walking/casting; an attack eases out over its first frames and back in over
+ *  its last, so the swing starts and ends on the carry pose. */
+const carryWeight = (action: string, index: number, frames: number) => {
+  if (!action.startsWith('attack')) return 1;
+  return Math.max(0, Math.min(1, 1 - Math.min(index, frames - 1 - index) / 1.5));
+};
 
 function tipFor(hand: Point, neck: Point): [number, number] {
   const shoulder = { x: neck.x, y: neck.y + 7 };
@@ -30,7 +37,11 @@ function tipFor(hand: Point, neck: Point): [number, number] {
 }
 
 /** Weapon (and off-hand) frame for the V3 sprite's current texture key, or undefined when anchors are not loaded. */
-export function v3WeaponFrame(scene: Phaser.Scene, textureKey: string, mode: WeaponMode = 'rest'): (LayerFrame & { view: Facing }) | undefined {
+export function v3WeaponFrame(scene: Phaser.Scene, textureKey: string, mode: WeaponMode = 'rest', weaponAction?: string): (LayerFrame & { view: Facing }) | undefined {
+  if (textureKey.includes(':outfit:')) {
+    const base = v3WeaponFrame(scene,textureKey.replace(/:outfit:[a-z-]+$/,''),mode,weaponAction);
+    return base ? outfitLayerFrame(scene,textureKey,base) : undefined;
+  }
   const m = KEY.exec(textureKey);
   const anchors = scene.cache.json.get(HAND_ANCHORS_KEY) as HandAnchors | undefined;
   if (!m || !anchors) return undefined;
@@ -39,15 +50,23 @@ export function v3WeaponFrame(scene: Phaser.Scene, textureKey: string, mode: Wea
   const [, action, dir, index] = m as unknown as [string, string, Facing, string | undefined];
   const entry = anchors.actions[action]?.[dir]?.[Number(index ?? 0)];
   // Swing weapons ride the striking hand; staffs, wands, bows and fans stay in the right hand at the body's side.
-  const hand = mode === 'bolt' ? anchors.castHand?.[dir] ?? 'main' : mode === 'swing' ? anchors.weaponHand[dir] ?? 'main' : 'main';
+  // Use the class's guard hand during idle/walk/cast too: an attack must never swap the held item to another hand.
+  const authoredHand = weaponAction ? anchors.actions[weaponAction]?.[dir]?.[0]?.weaponHand : undefined;
+  const hand = entry?.weaponHand ?? authoredHand ?? (mode === 'bolt' ? anchors.castHand?.[dir] ?? 'main' : mode === 'swing' ? anchors.weaponHand[dir] ?? 'main' : 'main');
   const grip = entry?.[hand], other = entry?.[hand === 'main' ? 'off' : 'main'];
   if (!grip || !entry) return undefined;
   const neck = entry.neck;
+  // Which side of the body each hand is on, from the idle pose so it never flips mid-swing.
+  const rest = anchors.actions.idle?.[dir]?.[0];
+  const sideOf = (h: 'main' | 'off') => { const p = rest?.[h]; return p && rest ? Math.sign(p.x - rest.neck.x) || 1 : 1; };
+  const frames = anchors.actions[action]?.[dir]?.length ?? 1;
   return {
     grip: [grip.x, grip.y], tip: tipFor(grip, neck), front: inFront(dir, hand), crown: [0, 0], tilt: 0, view: dir, offFront: inFront(dir, hand === 'main' ? 'off' : 'main'),
+    carry: carryWeight(action, Number(index ?? 0), frames), side: sideOf(hand), offSide: sideOf(hand === 'main' ? 'off' : 'main'), ahead: FACE[dir]?.[0] ? Math.sign(FACE[dir]![0]) : 0,
     // Strike frames: the hand rises above mid-torso (a hanging hand sits ~25-30 px below the neck).
     strike: (action === 'attack' || action === 'attack-cast') && grip.y - neck.y < 20,
     hands: { key: handsKey(action, dir), frame: Number(index ?? 0) },
+    ...(entry.rotation !== undefined ? { rotation: entry.rotation } : {}),
     ...(other ? { off: { grip: [other.x, other.y] as [number, number], tip: tipFor(other, neck) } } : {}),
   };
 }

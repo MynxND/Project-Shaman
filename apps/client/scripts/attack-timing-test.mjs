@@ -1,0 +1,34 @@
+import assert from 'node:assert/strict';
+import { attackPlaybackScale } from '../src/game/characters/attack-timing.ts';
+import { GameState, PlayerState } from '../../../packages/schema/dist/index.js';
+import { newProfile, WHISPERING_SPIRITWOOD } from '../../../packages/shared/dist/index.js';
+import { CombatSystem } from '../../server/dist/rooms/combat-system.js';
+
+assert.equal(attackPlaybackScale(500, 900, 8), 1, 'normal attacks keep authored speed');
+assert.equal(attackPlaybackScale(500, 300, 8), 500 / 300, 'fast attacks complete before the next server swing');
+assert.equal(attackPlaybackScale(250, 150, 4), 250 / 150, 'alternating dagger half remains readable');
+assert.equal(attackPlaybackScale(500, 50, 8), 500 / 264, 'extreme ASPD keeps all eight contact frames at >=33ms');
+for (const delay of [undefined, NaN, Infinity, 0, -1]) assert.equal(attackPlaybackScale(500, delay, 8), 1, 'legacy/malformed event uses authored timing');
+// The broadcast interval must agree with the real server scheduler, including an ASPD buff.
+let now = 1000;
+const state = new GameState(), events = [];
+const profile = newProfile(WHISPERING_SPIRITWOOD.spawn);
+Object.assign(profile, {branch:'taiga', level:60, hp:99999, hpMax:99999, equipment:{weapon:'axe-taiga'}, skills:{'bloodthirsty-wolf-frenzy':5}});
+const player = new PlayerState(); state.players.set('qa',player);
+const combat = new CombatSystem({map:WHISPERING_SPIRITWOOD,state,now:()=>now,rng:()=>0.5,profile:()=>profile,setProfile:()=>{},vitals:()=>{},broadcast:e=>events.push({...e,at:now})});
+const monster = [...combat.monsters.values()].find(m=>m.kind==='clay-guardian');
+monster.hp = 999999; player.x = monster.x - 1; player.y = monster.y;
+assert.equal(combat.requestAttack('qa',monster.id,player),null);
+combat.step(50);
+const first = events.find(e=>e.type==='swing'&&e.attacker.id==='qa');
+assert.equal(first.attackDelayMs,900);
+combat.releaseSkill('qa','bloodthirsty-wolf-frenzy',null,player);
+now += 900; combat.step(50);
+const fast = events.filter(e=>e.type==='swing'&&e.attacker.id==='qa').at(-1);
+assert.ok(fast.attackDelayMs < first.attackDelayMs,'buff cadence is transmitted');
+const count = events.filter(e=>e.type==='swing'&&e.attacker.id==='qa').length;
+now += fast.attackDelayMs - 1; combat.step(50);
+assert.equal(events.filter(e=>e.type==='swing'&&e.attacker.id==='qa').length,count,'no swing before broadcast interval');
+now += 1; combat.step(50);
+assert.equal(events.filter(e=>e.type==='swing'&&e.attacker.id==='qa').length,count+1,'next swing at broadcast interval');
+console.log('attack timing: server cadence, dagger halves, readability floor and legacy events passed');

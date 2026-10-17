@@ -11,7 +11,8 @@
     "typecheck": "pnpm -r typecheck",
     "test": "pnpm --filter @shaman/shared test && pnpm --filter @shaman/client test:network && pnpm --filter @shaman/client test:npc && pnpm --filter @shaman/client test:skill && pnpm --filter @shaman/client test:zone && pnpm --filter @shaman/client test:equipment",
     "rig:convert": "node tools/rig/ssr-convert.mjs",
-    "rig:validate": "node tools/rig/ssr-validate.mjs"
+    "rig:validate": "node tools/rig/ssr-validate.mjs",
+    "test:weapon-actions": "node tools/rig/test_weapon_attack_03.mjs"
   },
   "devDependencies": {
     "typescript": "5.9.3",

@@ -1,6 +1,7 @@
 'use client';
 import dynamic from 'next/dynamic';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { CharacterCreator } from '@/components/character/CharacterCreator';
 import { AccountGate, ReplacedNotice } from '@/components/account/AccountGate';
 import { useAccountStore } from '@/stores/account-store';
 import { useUiStore } from '@/stores/ui-store';
@@ -28,10 +29,20 @@ const MaiyarapHud = dynamic(() => import('./MaiyarapHud'), { ssr: false });
 const BossHud=dynamic(()=>import('./BossHud'),{ssr:false});
 const PhaserHost = dynamic(() => import('./PhaserHost'), { ssr: false });
 const RangedReview = process.env.NODE_ENV === 'development' ? dynamic(() => import('./RangedReview'), { ssr: false }) : null;
+const CombatReview = process.env.NODE_ENV === 'development' ? dynamic(() => import('./CombatReview'), { ssr: false }) : null;
 
 export function GameShell() {
+  const [created, setCreated] = useState<boolean | null>(null);
+  const [carryReview, setCarryReview] = useState(false);
+  useEffect(() => { setCarryReview(process.env.NODE_ENV === 'development' && new URLSearchParams(location.search).get('carryReview') === '1'); }, []);
   const account = useAccountStore();
   useEffect(() => { void useAccountStore.getState().check(); }, []);
+  useEffect(() => {
+    // A signed-in account with a saved character goes straight in; otherwise the (local) character creator runs first.
+    if (account.status === 'signed-in' && account.character) { setCreated(true); return; }
+    try { setCreated(localStorage.getItem('shaman.character.created.v1') === 'yes'); }
+    catch { setCreated(false); }
+  }, [account.status, account.character]);
   const menuOpen = useUiStore((s) => s.menuOpen);
   const inventoryOpen = useInventoryStore((s) => s.open);
   const characterOpen = useCharacterStore((s) => s.open);
@@ -55,14 +66,18 @@ export function GameShell() {
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, []);
-  // Sign in (or play as a guest) before the world loads; a session taken over elsewhere stops here.
+  // Development art board returns before FoundationScene opens a room; no account or saved character is needed.
+  if (carryReview) return <main className="game-shell relative isolate overflow-hidden"><PhaserHost /></main>;
   if (account.status === 'checking') return <main className="cc-page" role="status">กำลังตรวจบัญชี…</main>;
   if (account.status === 'signed-out') return <AccountGate />;
   if (account.status === 'replaced') return <ReplacedNotice />;
+  if (created === null) return <main className="cc-page" role="status">กำลังโหลดตัวละคร…</main>;
+  if (!created) return <CharacterCreator onEnter={() => setCreated(true)}/>;
   return <main className="game-shell relative isolate overflow-hidden">
     <PhaserHost/><div className="world-vignette"/>
     <div className="hud pointer-events-none absolute inset-0">
       <MainHud />
+      {CombatReview && <CombatReview />}
       {RangedReview && <RangedReview />}
       <BossHud />
       <MaiyarapHud />

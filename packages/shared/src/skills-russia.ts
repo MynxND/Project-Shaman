@@ -151,9 +151,10 @@ export const RUSSIA_VFX_LAYERS: Readonly<Record<string, readonly VfxLayer[]>> = 
   'blood-moon': [{ asset: 'kit-wolf-ridge-ring', layer: 'behind', scale: 2 }, { asset: 'kit-embroidery-ground-band', layer: 'ground', scale: 1.6 }],
 };
 
-/** Where a skill's own art sits when it is not the default (front of the actor); `offsetY` lifts it (moon above heads). */
-export const RUSSIA_VFX_MAIN: Readonly<Record<string, { layer: VfxLayerKind; offsetY?: number }>> = {
+/** Where a skill's own art sits when it is not the default (front of the actor); `offsetY` lifts it (moon above heads).
+ *  `revealMs`: the art opens in front of the caster for that long, then moves behind so body and weapon stay readable. */
+export const RUSSIA_VFX_MAIN: Readonly<Record<string, { layer: VfxLayerKind; offsetY?: number; revealMs?: number }>> = {
   'snow-fort': { layer: 'behind' }, 'taigas-absolute-fortress': { layer: 'behind' }, 'warlords-command': { layer: 'behind' },
   'blood-moon': { layer: 'behind', offsetY: -150 },
-  'wolf-spirit-armor': { layer: 'behind' }, 'taunting-howl': { layer: 'behind' },
+  'wolf-spirit-armor': { layer: 'behind', revealMs: 280 }, 'taunting-howl': { layer: 'behind' },
 };

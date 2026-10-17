@@ -1,0 +1,876 @@
+{
+  "version": "action-eight/1",
+  "action": "attack-axe-twohand",
+  "name": "Taiga · ฟันขวานสองมือ",
+  "bodySet": "body-eight-02",
+  "fps": 16,
+  "loop": false,
+  "hits": [
+    4
+  ],
+  "directions": [
+    {
+      "direction": "south",
+      "headUrl": "/assets/character-v3/head-eight-01/south.png",
+      "headSha256": "1ac5ca0956848a2886484a8955e3d4d5f4206bc513c96581b55ade60bf6a4215",
+      "headPivot": {
+        "x": 62,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-0.png",
+          "sha256": "eec94ec6b8f518fbf5a2c37b90c46d1e21c2ad09fb28dd094f3e42f9afccd3e9",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-1.png",
+          "sha256": "b2417b962e1f64d37cd3a5028e5b261cb4b890ba075c348adc61094f2c5dc379",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-2.png",
+          "sha256": "4080c96c0db687fc054add02957109aefc859ac720a5269e866a96e7d3d52467",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-3.png",
+          "sha256": "1209806512584e07b1b7b967878ab9cf2910bea165287cec63eb1a8bce2709b0",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-4.png",
+          "sha256": "59fe672919ce2b106d16ff137d5af028ed6ed2e0aed60aa2b0a586890ab1db80",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-5.png",
+          "sha256": "a91918b133dd618c0da09fb25dfadd683f4f536e75fd31f0185b68345a8871ef",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-6.png",
+          "sha256": "6a10da2e2c49714c3122b17a0bf4f3605bd5ac3cb936aad52f11d38799e3ffae",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-7.png",
+          "sha256": "736acbe9de504c11ecb02b2dfe85c361e310926e1e45330f1c70bfaa7f858416",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "south-east",
+      "headUrl": "/assets/character-v3/head-eight-01/south-east.png",
+      "headSha256": "3cd756ea681a3571bf619505373ec6f78e200c0b3d6088936b26ad587c08b0b5",
+      "headPivot": {
+        "x": 65,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-east-0.png",
+          "sha256": "db2b211af6ed956e2f5f6f1c229fb39a62eb3cb2291da1938368b8f9f5bad710",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-east-1.png",
+          "sha256": "0f0e3aa0bb7d6e280977fd196bfdab978d18b1f72825d4a24ae5911f224b826e",
+          "neckPivot": {
+            "x": 63,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-east-2.png",
+          "sha256": "9442977bd5a1ef99e58d59056a3fbc2a84c1aba11c5a28c8e14f871238e90899",
+          "neckPivot": {
+            "x": 63,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-east-3.png",
+          "sha256": "8c1857c716bd186ee54f704667152b827981ba0650d20530f31da91d73a08123",
+          "neckPivot": {
+            "x": 63,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-east-4.png",
+          "sha256": "fdbc93d430199cd94fd81f542652e22f1984ff07138c7fa559da8d65412b5da5",
+          "neckPivot": {
+            "x": 64,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-east-5.png",
+          "sha256": "0c95ba5afd3284776e69dd42d5beb928da95d5ed947321ad7924564d210067b1",
+          "neckPivot": {
+            "x": 63,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-east-6.png",
+          "sha256": "5001bd8682bc0812dd1b74352e1eb0bdc14a609ff353f733f81f644dfcabbc2d",
+          "neckPivot": {
+            "x": 63,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-east-7.png",
+          "sha256": "3bc57b42e93db358708b649f5385ab1167547a64d69f5ea57c5164e71b7d8dd0",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 64,
+            "y": 114
+          }
+        }
+      ]
+    },
+    {
+      "direction": "east",
+      "headUrl": "/assets/character-v3/head-eight-01/east.png",
+      "headSha256": "e0ff194091acadf4042ffd76627c88f444830239d59a7dc8dcd62e84d4952ec8",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/east-0.png",
+          "sha256": "6cafb3fd8e86f1613920929cb3d530a34b733de3f9834d1a6964ad4f917510e2",
+          "neckPivot": {
+            "x": 59,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/east-1.png",
+          "sha256": "14b1bd854cccb5a7db72c64b4e21326ce1107fda3b3a49bfa954a7b9ce69913b",
+          "neckPivot": {
+            "x": 60,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/east-2.png",
+          "sha256": "26de1e8aa1de8a4cb56791a215e2eaf9968c92983c3c8f3247a46a0e0856839e",
+          "neckPivot": {
+            "x": 60,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/east-3.png",
+          "sha256": "7c1fdcb62d3adb1a8a761100c5706bf995788c04547e38859b4067b325453782",
+          "neckPivot": {
+            "x": 61,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/east-4.png",
+          "sha256": "9d35352318fe6fc8b67d67414ff45f3c6edacf89853aeba81a1a6ab826f08185",
+          "neckPivot": {
+            "x": 61,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/east-5.png",
+          "sha256": "5b0c39c5bd16510e087c3dd00fb8e355834040d66bc809eb824aeec44f13526e",
+          "neckPivot": {
+            "x": 60,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/east-6.png",
+          "sha256": "5f3435dc4483601c0ebf081787f6d8a8b066a704600663f4805bfa4a71f9d95a",
+          "neckPivot": {
+            "x": 60,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/east-7.png",
+          "sha256": "5bcb5036f56c39a3bf319c7f31dc5a6a4e6e891d2ca699e632bd19de34a4ef6b",
+          "neckPivot": {
+            "x": 59,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 113
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north-east",
+      "headUrl": "/assets/character-v3/head-eight-01/north-east.png",
+      "headSha256": "22f5b66ce480a0c2eecc4ebd361aaa57ccfa6b4d78fd8ba89a332f9750dbf9bb",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-east-0.png",
+          "sha256": "7c6a21515e1ec2eee941a6e7b08fc0ea9a5ecdb177088a08fb8ad68fa4da0f52",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-east-1.png",
+          "sha256": "42f47dac2e51f73bde2fce58b59c1dd357b4817f52742ee539c9eef26b761bb6",
+          "neckPivot": {
+            "x": 63,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-east-2.png",
+          "sha256": "e622a78153dece2f5c2f080104cf25cce0a6c120e2713b26755c405820afe22f",
+          "neckPivot": {
+            "x": 63,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-east-3.png",
+          "sha256": "18951b1fc55f5064f965f395c103dc474fa2aa6a38ddf6a600f189659410f409",
+          "neckPivot": {
+            "x": 63,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-east-4.png",
+          "sha256": "e17f26875860ded96faf7bc4286aa121d114bb1b651f17489b0abf8e8d222912",
+          "neckPivot": {
+            "x": 64,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-east-5.png",
+          "sha256": "6ff487aee24328707ef066ae5d5eff42b157038d036465a5c10820a029b32076",
+          "neckPivot": {
+            "x": 63,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-east-6.png",
+          "sha256": "89cd466dc827484604ee888089cc9091fef1766b189577f4b72a2f1d0ac8a4c5",
+          "neckPivot": {
+            "x": 63,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-east-7.png",
+          "sha256": "958b4ba25467bd2d70d4cc318dc332c92b71bb908c9cac5bb994e7b47b9659ee",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north",
+      "headUrl": "/assets/character-v3/head-eight-01/north.png",
+      "headSha256": "954eb387ddec4a48dcb63c037705753d1a524a6396ee03ac1d353ca624dd98d1",
+      "headPivot": {
+        "x": 64,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-0.png",
+          "sha256": "2e8e2978a2b344679cdf9273f7ae280c41f431e8972bcf1375e14ee014b98be1",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-1.png",
+          "sha256": "f10300333f803f888a84c51eb4b458002da5113bb8e9fb9c70648b61f126e6fb",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-2.png",
+          "sha256": "793992afaf6e830b9f738b188d02bcbc68c276a62ef39515860e002b03caba4a",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-3.png",
+          "sha256": "48e14eed94636b1420e6070f4a276f71e81c03afec17952260f0c9180a2e109f",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-4.png",
+          "sha256": "69be23ef6ba73c0ed7b6d26d8d249c7e1ac9d32cf63ad4684890e2535f928d9e",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-5.png",
+          "sha256": "54c4f4fd3d741683d532550d347a1167310e8d5056c1cfa5ddb8f0616c7fb23b",
+          "neckPivot": {
+            "x": 62,
+            "y": 52
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-6.png",
+          "sha256": "5d4ac99b566f5db22f5ad07a7a984b5a3870b2fcccab2b8c565bdf4d53c72ad0",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-7.png",
+          "sha256": "380606e5637228870c464343ef562748011d3d85f300bffa65276238136e7881",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 63,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "north-west",
+      "headUrl": "/assets/character-v3/head-eight-01/north-west.png",
+      "headSha256": "f7cfab464653ebb612bffee7c196ba547d7590e953a5a9c5ac725d36767e4172",
+      "headPivot": {
+        "x": 64,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-west-0.png",
+          "sha256": "5534d115269db082daeb13087a572f5c43d160cf04fac522a8a0b7672e65a91e",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-west-1.png",
+          "sha256": "e08f3bd909a0cef6250dbbeb17e74169604b8f46e16af7e97938ef38f32edead",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-west-2.png",
+          "sha256": "60741548da3b09e99d00d91923b7b3d1e8ff87777125bdea6afe0675e0c13422",
+          "neckPivot": {
+            "x": 61,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-west-3.png",
+          "sha256": "f082e7974f887f1dc9cc0f8a5bcd69e8546b06b99fd2b7027bba6c6597a8c856",
+          "neckPivot": {
+            "x": 61,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-west-4.png",
+          "sha256": "16e712129cec9d6c67a596d044b6f3d00a739157d4a994f0384ca36c29437efc",
+          "neckPivot": {
+            "x": 61,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-west-5.png",
+          "sha256": "cafbad6dfd6675448e9a8dbb7976d87ccff79a777fcd8add9df9990066a206d5",
+          "neckPivot": {
+            "x": 61,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-west-6.png",
+          "sha256": "6f743419f7c943932e20062b6eec702a225a5a5872bcd7d7e4a866ae014bc279",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/north-west-7.png",
+          "sha256": "c239ab2281396b3195df6756abdb88690adc6c63bb5cb7fe4e5932b5a1137170",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 62,
+            "y": 112
+          }
+        }
+      ]
+    },
+    {
+      "direction": "west",
+      "headUrl": "/assets/character-v3/head-eight-01/west.png",
+      "headSha256": "f72b693fd621fc79b1cd76ef6cf4828ef98d9d65f883e2abfb9d888985a808b8",
+      "headPivot": {
+        "x": 65,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/west-0.png",
+          "sha256": "77bc6d4d417ca2f50d2a955df3a31ecde89cf12f7e7dc37f549226ec485665aa",
+          "neckPivot": {
+            "x": 65,
+            "y": 55
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/west-1.png",
+          "sha256": "9b38c8c54aaac716af7198e2f37a302d3260b0b57bea158ff11e498a4420f019",
+          "neckPivot": {
+            "x": 64,
+            "y": 55
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/west-2.png",
+          "sha256": "4b17532774556df5f1b9215a4789ebfbd9ce53eb944e1cf86d342901ce71d876",
+          "neckPivot": {
+            "x": 64,
+            "y": 55
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/west-3.png",
+          "sha256": "0114551ff243d60bd03676d2427b7ef7c9ec40dcb66a02f62e36582cdebb4a32",
+          "neckPivot": {
+            "x": 63,
+            "y": 55
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/west-4.png",
+          "sha256": "0139cba47e249757220c9fefaf092c1c0b834c01d0d65fe53f4b341f28f8211b",
+          "neckPivot": {
+            "x": 63,
+            "y": 55
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/west-5.png",
+          "sha256": "5c07b95dd5c4edca5c254f2905b8fa7edafa4571e56ea96b1c33818959b0bb73",
+          "neckPivot": {
+            "x": 64,
+            "y": 55
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/west-6.png",
+          "sha256": "8468f293f7800bad173b8816adc6482e89bfffd90eb9deab400a7f180902e376",
+          "neckPivot": {
+            "x": 64,
+            "y": 55
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/west-7.png",
+          "sha256": "8ea3144ff1005c3184b01cc1366821a775107c22b4dab5f1fb6cb95df98563aa",
+          "neckPivot": {
+            "x": 65,
+            "y": 55
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 113
+          }
+        }
+      ]
+    },
+    {
+      "direction": "south-west",
+      "headUrl": "/assets/character-v3/head-eight-01/south-west.png",
+      "headSha256": "72bd0701ea25e028f807a707c33600aeb0f3dc6a6656a29ee645ec87c2d273e9",
+      "headPivot": {
+        "x": 63,
+        "y": 49
+      },
+      "frames": [
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-west-0.png",
+          "sha256": "a43b15745d5f9a658e2248a5d97fe359a18b3c625be5241fc4b19d46a0812308",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-west-1.png",
+          "sha256": "2fd8e81a2ed9d932b8317820617c6dfae66c18710429392d120e0950a888594b",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-west-2.png",
+          "sha256": "ee8c973f99ae1d855689582f2838eca34b594e52a6e1c303b8fa84e75e51d3d2",
+          "neckPivot": {
+            "x": 61,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-west-3.png",
+          "sha256": "40632c349328bb3130d4ed3fc2726a2ce93a14a13154c8aa404440b003b761aa",
+          "neckPivot": {
+            "x": 61,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-west-4.png",
+          "sha256": "399c812b06d6de06e85594a47dd8d80528394caec181311d7eeaf884bb12bef5",
+          "neckPivot": {
+            "x": 61,
+            "y": 54
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-west-5.png",
+          "sha256": "5e86e5ef5f9489a0620e921d0c7e97d993b757d8ed798fb5c56c1a96472c8d95",
+          "neckPivot": {
+            "x": 61,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-west-6.png",
+          "sha256": "3262bf75a97db1ee0ac7cc70a569b86cdaaca8ae358629bb377c172bb1ff0519",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        },
+        {
+          "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/south-west-7.png",
+          "sha256": "079e77a3f2d74613bc5b0396c627d5f2e6229fc73ca6c2b0d1d937b4e04f3bfb",
+          "neckPivot": {
+            "x": 62,
+            "y": 53
+          },
+          "bodyOrigin": {
+            "x": 61,
+            "y": 114
+          }
+        }
+      ]
+    }
+  ],
+  "sheet": {
+    "url": "/assets/character-v3/actions-eight-02/attack-axe-twohand/sheet.png",
+    "sha256": "05b8a6d6c9b969e655aa44f6e565462670f67b5ceb1117d787d5d3cbfec4698f",
+    "frameWidth": 128,
+    "frameHeight": 128
+  },
+  "visualApproved": false
+}

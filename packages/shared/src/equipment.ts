@@ -22,8 +22,9 @@ export type EquipmentVisual =
    *  upright (RO-style fixed poses, no arm-following rotation); `swing` weapons (axes, blades) tilt to a fixed strike
    *  angle toward the facing while the arm is out in the attack. `bolt`: a magic weapon (staff, wand, fan, gohei) whose
    *  basic attack is a short-range spirit bolt using MATK (MAGIC_BOLT) instead of a melee blow; like swing weapons it rides
-   *  the striking hand and points toward the target on the cast, so the staff is seen thrust forward. */
-  | { slot: 'weapon'; kind: 'weapon'; grip: number; scale?: number; offhand?: { art: string; grip: number; scale?: number; upright?: boolean }; southOnly?: boolean; upright?: boolean; swing?: boolean; bolt?: boolean }
+   *  the striking hand and points toward the target on the cast, so the staff is seen thrust forward. `carry`: the
+   *  client's resting carry-pose category (presentation only, apps/client/src/game/characters/weapon-carry.ts). */
+  | { slot: 'weapon'; kind: 'weapon'; grip: number; scale?: number; carry?: string; offhand?: { art: string; grip: number; scale?: number; upright?: boolean; carry?: string }; southOnly?: boolean; upright?: boolean; swing?: boolean; bolt?: boolean }
   /** Headgear on the crown; `lift` moves it along the head axis (rig pixels, + = down onto the head). */
   | { slot: 'head'; kind: 'headgear'; lift: number; scale?: number };
 
@@ -34,19 +35,19 @@ export const BASE_OUTFIT = 'base';
 export const EQUIPMENT_VISUALS: Readonly<Record<string, EquipmentVisual>> = {
   // bronze-ward was rejected: full-body generation changed face/hair/proportions.
   // Do not expose an outfit until identity-preserving garment art is reviewed.
-  'staff-bell': { slot: 'weapon', kind: 'weapon', grip: 0.62, scale: 0.8, bolt: true },
-  'staff-bone': { slot: 'weapon', kind: 'weapon', grip: 0.62, scale: 0.8, bolt: true },
+  'staff-bell': { slot: 'weapon', kind: 'weapon', grip: 0.62, scale: 0.8, bolt: true, carry: 'staff' },
+  'staff-bone': { slot: 'weapon', kind: 'weapon', grip: 0.62, scale: 0.8, bolt: true, carry: 'staff' },
   // Job weapons (user-approved list 2026-10-12, PixelLab create_object_pro_flash 8 views, docs/design/equipment/items.json).
-  'axe-taiga': { slot: 'weapon', kind: 'weapon', grip: 0.72, scale: 0.7, swing: true },
-  'knife-mor': { slot: 'weapon', kind: 'weapon', grip: 0.75, scale: 0.6, swing: true },
-  'keris': { slot: 'weapon', kind: 'weapon', grip: 0.85, scale: 0.6, offhand: { art: 'keris', grip: 0.85, scale: 0.6 }, southOnly: true, swing: true },
-  'axe-juggernaut': { slot: 'weapon', kind: 'weapon', grip: 0.8, scale: 0.7, swing: true, offhand: { art: 'shield-juggernaut', grip: 0.5, scale: 0.65, upright: true } },
-  'gohei-miko': { slot: 'weapon', kind: 'weapon', grip: 0.8, scale: 0.7, bolt: true },
-  'bow-ullr': { slot: 'weapon', kind: 'weapon', grip: 0.5, scale: 0.8, upright: true },
-  'staff-achan': { slot: 'weapon', kind: 'weapon', grip: 0.62, scale: 0.75, bolt: true },
-  'wand-santet': { slot: 'weapon', kind: 'weapon', grip: 0.75, scale: 0.75, bolt: true },
-  'fan-onmyoji': { slot: 'weapon', kind: 'weapon', grip: 0.8, scale: 0.5, bolt: true },
-  'staff-rune-seer': { slot: 'weapon', kind: 'weapon', grip: 0.62, scale: 0.75, bolt: true },
+  'axe-taiga': { slot: 'weapon', kind: 'weapon', grip: 0.72, scale: 0.7, swing: true, carry: 'axe-twohand' },
+  'knife-mor': { slot: 'weapon', kind: 'weapon', grip: 0.75, scale: 0.6, swing: true, carry: 'knife' },
+  'keris': { slot: 'weapon', kind: 'weapon', grip: 0.85, scale: 0.6, carry: 'dagger', offhand: { art: 'keris', grip: 0.85, scale: 0.6, carry: 'dagger' }, southOnly: true, swing: true },
+  'axe-juggernaut': { slot: 'weapon', kind: 'weapon', grip: 0.8, scale: 0.7, swing: true, carry: 'axe', offhand: { art: 'shield-juggernaut', grip: 0.5, scale: 0.65, upright: true, carry: 'shield' } },
+  'gohei-miko': { slot: 'weapon', kind: 'weapon', grip: 0.8, scale: 0.7, bolt: true, carry: 'wand' },
+  'bow-ullr': { slot: 'weapon', kind: 'weapon', grip: 0.5, scale: 0.8, upright: true, carry: 'bow' },
+  'staff-achan': { slot: 'weapon', kind: 'weapon', grip: 0.62, scale: 0.75, bolt: true, carry: 'staff' },
+  'wand-santet': { slot: 'weapon', kind: 'weapon', grip: 0.75, scale: 0.75, bolt: true, carry: 'wand' },
+  'fan-onmyoji': { slot: 'weapon', kind: 'weapon', grip: 0.8, scale: 0.5, bolt: true, carry: 'fan' },
+  'staff-rune-seer': { slot: 'weapon', kind: 'weapon', grip: 0.62, scale: 0.75, bolt: true, carry: 'staff' },
   'hat-ngob': { slot: 'head', kind: 'headgear', lift: 18, scale: 0.9 },
   'hat-ritual': { slot: 'head', kind: 'headgear', lift: 34, scale: 0.75 },
 };
