@@ -1,0 +1,136 @@
+{
+  "version": "legacy-offhand-review/1",
+  "body": "female",
+  "visualApproved": false,
+  "productionReady": false,
+  "source": {
+    "path": "apps/client/public/assets/rig-v2/female/base/idle-south.png",
+    "sha256": "b047a076234e01b4fa96388bf395462d435f3e191591688892196a31567a60f5",
+    "method": "manual visible left-palm measurement; no V3 coordinates or automatic nearest-pixel attachment"
+  },
+  "frames": {
+    "idle": {
+      "south": [
+        {
+          "grip": [
+            80,
+            72
+          ],
+          "tip": [
+            80,
+            60
+          ],
+          "front": true
+        },
+        {
+          "grip": [
+            80,
+            72
+          ],
+          "tip": [
+            80,
+            60
+          ],
+          "front": true
+        },
+        {
+          "grip": [
+            80,
+            72
+          ],
+          "tip": [
+            80,
+            60
+          ],
+          "front": true
+        },
+        {
+          "grip": [
+            80,
+            72
+          ],
+          "tip": [
+            80,
+            60
+          ],
+          "front": true
+        }
+      ]
+    }
+  },
+  "unavailable": {
+    "directions": [
+      "south-east",
+      "east",
+      "north-east",
+      "north",
+      "north-west",
+      "west",
+      "south-west"
+    ],
+    "actions": [
+      "walk",
+      "attack",
+      "cast"
+    ],
+    "reason": "not measured/reviewed; source skeleton drifts from actual palms"
+  },
+  "evidence": [
+    {
+      "frame": 0,
+      "grip": [
+        80,
+        72
+      ],
+      "rgba": [
+        49,
+        30,
+        29,
+        255
+      ],
+      "sourceFrameSha256": "d4a51a39af1b1537a26902aafabaee1893946685847fea2eb8a31099298df2e6"
+    },
+    {
+      "frame": 1,
+      "grip": [
+        80,
+        72
+      ],
+      "rgba": [
+        199,
+        157,
+        133,
+        255
+      ],
+      "sourceFrameSha256": "c3a5010c2169e6dcb207447ed2a04a355a9fc51e4059800ac4f6ff5a0f654f91"
+    },
+    {
+      "frame": 2,
+      "grip": [
+        80,
+        72
+      ],
+      "rgba": [
+        230,
+        178,
+        151,
+        255
+      ],
+      "sourceFrameSha256": "76d72344beaa3881e6f5e121b66953121326c866b088bc075b3b7fdc2745846e"
+    },
+    {
+      "frame": 3,
+      "grip": [
+        80,
+        72
+      ],
+      "rgba": [
+        236,
+        193,
+        166,
+        255
+      ],
+      "sourceFrameSha256": "8bec14308b65b4f68490613387a8e64a8e24e27bc2bbf44616d717d6a3a1fa20"
+    }
+  ]
+}

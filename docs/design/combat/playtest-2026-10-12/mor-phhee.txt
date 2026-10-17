@@ -1,0 +1,402 @@
+- button "Open Next.js Dev Tools":
+- alert
+- main:
+  - navigation "เมนูหลัก":
+    - button "สถานะ Status":
+      - generic: สถานะ
+      - generic: Status
+    - button "ทักษะ Skills":
+      - generic: ทักษะ
+      - generic: Skills
+    - button "อุปกรณ์ Equipment":
+      - generic: อุปกรณ์
+      - generic: Equipment
+    - button "เงินตรา Gold":
+      - generic: เงินตรา
+      - generic: Gold
+    - button "อาชีพ Class":
+      - generic: อาชีพ
+      - generic: Class
+    - button "แผนที่ Map":
+      - generic: แผนที่
+      - generic: Map
+    - button "กระเป๋า Bag":
+      - generic: กระเป๋า
+      - generic: Bag
+    - generic "ผู้ช่วย — ยังไม่เปิด":
+      - generic: ผู้ช่วย
+      - generic: ยังไม่เปิด
+    - generic "พรีเมียม — ยังไม่เปิด":
+      - generic: พรีเมียม
+      - generic: ยังไม่เปิด
+    - button "เพิ่มเติม More":
+      - generic: เพิ่มเติม
+      - generic: More
+  - region "สถานะตัวละคร":
+    - button "เปิดข้อมูลตัวละคร":
+      - img "ตัวอย่างตัวละคร หันหน้า"
+      - generic: "60"
+    - heading "ผู้เล่นรับเชิญ" [level=2]
+    - generic: Lv. 60 Prai Phhee Lord · Job 1
+    - generic: HP
+    - progressbar "HP":
+      - emphasis: 1,890 / 1,890
+    - generic: SP
+    - progressbar "SP":
+      - emphasis: 512 / 512
+    - progressbar "Base EXP":
+      - emphasis: EXP 0.0%
+    - generic "เงิน Silver": ◉ 3,000
+    - generic: ออนไลน์
+  - region "แผนที่ย่อ":
+    - group "ซูมแผนที่ย่อ":
+      - button "ซูมออก": −
+      - button "ซูมเข้า": +
+    - button "ขยายเป็นแผนที่ใหญ่ (M)": ⤢
+    - button "ย่อแผนที่เป็นไอคอน" [expanded]: ▾
+    - img "แผนที่ย่อ ซูม 2 เท่า ลูกศรสีทองคือคุณ จุดสีฟ้าคือผู้เล่นอื่น"
+    - generic: ชายป่าวิญญาณ
+    - generic: WHISPERING SPIRITWOOD
+    - generic "ผู้เล่นในห้องนี้":
+      - text: "2"
+    - generic "ตำแหน่งของคุณ":
+      - text: 40,58
+  - region "ติดตามเควสต์":
+    - heading "เควสต์" [level=2]
+    - button "ย่อเควสต์เป็นไอคอน" [expanded]: ▾
+    - text: ไม่มีภารกิจ · คุยกับหลวงตาธรรมหน้าวิหาร (!)
+  - region "แถบสกิล":
+    - button "Spirit Bolt Lv 1 · กด 1":
+      - generic: "1"
+    - button "พรายเข้าสิง · Ghost Possession Lv 1 · กด 2":
+      - generic: "2"
+    - button "ปล่อยพรายสิง · Prai Haunt Lv 1 · กด 3":
+      - generic: "3"
+    - button "สูบวิญญาณ · Soul Drain Lv 1 · กด 4":
+      - generic: "4"
+    - button "เสียงกรีดร้องพราย · Terrorize Howl Lv 1 · กด 5":
+      - generic: "5"
+    - button "บ่วงเงาพราย · Shadow Snare Lv 1 · กด 6":
+      - generic: "6"
+    - button "ระเบิดคำสาปพราย · Prai Curse Explosion Lv 1 · กด 7":
+      - generic: "7"
+    - button "อวตารเงาพราย · Shadow Ghost Avatar Lv 1 · กด 8":
+      - generic: "8"
+    - button "อาถรรพ์ขวัญผวา · Mass Fear Lv 1 · กด 9":
+      - generic: "9"
+    - generic: คลิกมอนสเตอร์เพื่อเลือกเป้าหมาย · K เปิดหน้าต่างสกิล
+  - button "โจมตีปกติ (Q)":
+    - generic: โจมตี
+    - generic: Q
+  - generic "ออกจากเกมแล้วข้อมูลจะหาย":
+    - generic: เล่นแบบไม่บันทึก
+    - button "เข้าสู่ระบบ"
+  - region "แชท":
+    - tablist "ช่องแชท":
+      - tab "ทั่วไป"
+      - tab "ปาร์ตี้"
+      - tab "กิลด์"
+      - tab "ระบบ" [selected]
+      - button "ย่อแชทเป็นไอคอน" [expanded]: ▾
+    - log:
+      - paragraph:
+        - time: 12:43
+        - text: กำลังเชื่อมต่อเซิร์ฟเวอร์…
+      - paragraph:
+        - time: 12:43
+        - text: เชื่อมต่อเซิร์ฟเวอร์แล้ว · เดินด้วย WASD / ลูกศร · ซูมด้วยล้อเมาส์หรือ − / =
+      - paragraph:
+        - time: 12:43
+        - text: "โหมดทดสอบ: Base Lv 60"
+      - paragraph:
+        - time: 12:43
+        - text: "โหมดทดสอบ: Job Level 10 และผ่านบททดสอบอาชีพแล้ว"
+      - paragraph:
+        - time: 12:43
+        - text: "โหมดทดสอบ: เปลี่ยนอาชีพแล้ว"
+      - paragraph:
+        - time: 12:43
+        - text: "โหมดทดสอบ: Job Level 40 และผ่านบททดสอบอาชีพแล้ว"
+      - paragraph:
+        - time: 12:43
+        - text: พรายเข้าสิง · Ghost Possession เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ปล่อยพรายสิง · Prai Haunt เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: สูบวิญญาณ · Soul Drain เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: เสียงกรีดร้องพราย · Terrorize Howl เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: บ่วงเงาพราย · Shadow Snare เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: สายเลือดมืด · Dark Affinity เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: กระหายโลหิต · Vampiric Instinct เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: เก็บวิญญาณ · Soul Harvest เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: กายเบาดั่งผี · Agile Spirit เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: น้ำมันพรายล่อวิญญาณ · Prai Lure เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ระเบิดคำสาปพราย · Prai Curse Explosion เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: อวตารเงาพราย · Shadow Ghost Avatar เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: อาถรรพ์ขวัญผวา · Mass Fear เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ยมทูต · Soul Harvester เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: พรายรับเคราะห์ · Prai Takes the Blow เลเวล 1
+    - textbox "พิมพ์ข้อความ (ยังใช้งานไม่ได้)" [disabled]:
+      - /placeholder: แชทยังไม่เชื่อมเซิร์ฟเวอร์
+  - status:
+    - button "อาถรรพ์ขวัญผวา · Mass Fear เลเวล 1":
+      - generic: ✓
+      - generic: อาถรรพ์ขวัญผวา · Mass Fear เลเวล 1
+    - button "ยมทูต · Soul Harvester เลเวล 1":
+      - generic: ✓
+      - generic: ยมทูต · Soul Harvester เลเวล 1
+    - button "พรายรับเคราะห์ · Prai Takes the Blow เลเวล 1":
+      - generic: ✓
+      - generic: พรายรับเคราะห์ · Prai Takes the Blow เลเวล 1
+  - generic "Combat QA · guest · mor-phhee"
+  - text: สายทดสอบ
+  - combobox "สายทดสอบ":
+    - option "achan-saiyasat"
+    - option "mor-phhee" [selected]
+    - option "santet"
+    - option "keris"
+    - option "juggernaut"
+    - option "taiga"
+    - option "onmyoji"
+    - option "miko"
+    - option "rune-seer"
+    - option "ullr-hunter"
+  - button "เตรียมสายทดสอบ"
+  - button "ฟื้น HP/SP"
+  - button "จุดฝึก 16,38"
+  - button "หยุดโจมตี"
+  - status: "พร้อม: Tier 3 · สกิลทุกอัน Lv 1 · ตัวเลขไม่ใช่ผลบาลานซ์"
+  - paragraph: Base 60 · Tier 3 · Points 36
+  - paragraph: "Weapon: knife-mor"
+  - button "Ghost Possession"
+  - button "Prai Haunt"
+  - button "Soul Drain"
+  - button "Terrorize Howl"
+  - button "Shadow Snare"
+  - button "Prai Curse Explosion"
+  - button "Shadow Ghost Avatar"
+  - button "Mass Fear"
+
+AFTER CAST AND ATTACK
+- button "Open Next.js Dev Tools":
+- alert
+- main:
+  - navigation "เมนูหลัก":
+    - button "สถานะ Status":
+      - generic: สถานะ
+      - generic: Status
+    - button "ทักษะ Skills":
+      - generic: ทักษะ
+      - generic: Skills
+    - button "อุปกรณ์ Equipment":
+      - generic: อุปกรณ์
+      - generic: Equipment
+    - button "เงินตรา Gold":
+      - generic: เงินตรา
+      - generic: Gold
+    - button "อาชีพ Class":
+      - generic: อาชีพ
+      - generic: Class
+    - button "แผนที่ Map":
+      - generic: แผนที่
+      - generic: Map
+    - button "กระเป๋า Bag":
+      - generic: กระเป๋า
+      - generic: Bag
+    - generic "ผู้ช่วย — ยังไม่เปิด":
+      - generic: ผู้ช่วย
+      - generic: ยังไม่เปิด
+    - generic "พรีเมียม — ยังไม่เปิด":
+      - generic: พรีเมียม
+      - generic: ยังไม่เปิด
+    - button "เพิ่มเติม More":
+      - generic: เพิ่มเติม
+      - generic: More
+  - region "สถานะตัวละคร":
+    - button "เปิดข้อมูลตัวละคร":
+      - img "ตัวอย่างตัวละคร หันหน้า"
+      - generic: "60"
+    - heading "ผู้เล่นรับเชิญ" [level=2]
+    - generic: Lv. 60 Prai Phhee Lord · Job 1
+    - generic: HP
+    - progressbar "HP":
+      - emphasis: 1,890 / 1,890
+    - generic: SP
+    - progressbar "SP":
+      - emphasis: 492 / 512
+    - progressbar "Base EXP":
+      - emphasis: EXP 0.0%
+    - generic "เงิน Silver": ◉ 3,000
+    - generic: ออนไลน์
+  - region "เป้าหมาย":
+    - generic: ภูตใบไม้
+    - generic: Lv. 1 · ไม่โจมตีก่อน
+    - button "ยกเลิกเป้าหมาย": ×
+    - progressbar "HP เป้าหมาย":
+      - emphasis: 40 / 40
+  - region "แผนที่ย่อ":
+    - group "ซูมแผนที่ย่อ":
+      - button "ซูมออก": −
+      - button "ซูมเข้า": +
+    - button "ขยายเป็นแผนที่ใหญ่ (M)": ⤢
+    - button "ย่อแผนที่เป็นไอคอน" [expanded]: ▾
+    - img "แผนที่ย่อ ซูม 2 เท่า ลูกศรสีทองคือคุณ จุดสีฟ้าคือผู้เล่นอื่น"
+    - generic: ชายป่าวิญญาณ
+    - generic: WHISPERING SPIRITWOOD
+    - generic "ผู้เล่นในห้องนี้":
+      - text: "2"
+    - generic "ตำแหน่งของคุณ":
+      - text: 15,38
+  - region "ติดตามเควสต์":
+    - heading "เควสต์" [level=2]
+    - button "ย่อเควสต์เป็นไอคอน" [expanded]: ▾
+    - text: ไม่มีภารกิจ · คุยกับหลวงตาธรรมหน้าวิหาร (!)
+  - region "แถบสกิล":
+    - button "Spirit Bolt Lv 1 · กด 1":
+      - generic: "1"
+    - button "พรายเข้าสิง · Ghost Possession Lv 1 · กด 2":
+      - generic: "2"
+      - generic: "60"
+    - button "ปล่อยพรายสิง · Prai Haunt Lv 1 · กด 3":
+      - generic: "3"
+    - button "สูบวิญญาณ · Soul Drain Lv 1 · กด 4":
+      - generic: "4"
+    - button "เสียงกรีดร้องพราย · Terrorize Howl Lv 1 · กด 5":
+      - generic: "5"
+    - button "บ่วงเงาพราย · Shadow Snare Lv 1 · กด 6":
+      - generic: "6"
+    - button "ระเบิดคำสาปพราย · Prai Curse Explosion Lv 1 · กด 7":
+      - generic: "7"
+    - button "อวตารเงาพราย · Shadow Ghost Avatar Lv 1 · กด 8":
+      - generic: "8"
+    - button "อาถรรพ์ขวัญผวา · Mass Fear Lv 1 · กด 9":
+      - generic: "9"
+    - generic: คลิกมอนสเตอร์เพื่อเลือกเป้าหมาย · K เปิดหน้าต่างสกิล
+  - button "โจมตีปกติ (Q)" [active]:
+    - generic: โจมตี
+    - generic: Q
+  - list "สถานะของคุณ":
+    - listitem "ผีเข้า"
+  - generic "ออกจากเกมแล้วข้อมูลจะหาย":
+    - generic: เล่นแบบไม่บันทึก
+    - button "เข้าสู่ระบบ"
+  - region "แชท":
+    - tablist "ช่องแชท":
+      - tab "ทั่วไป"
+      - tab "ปาร์ตี้"
+      - tab "กิลด์"
+      - tab "ระบบ" [selected]
+      - button "ย่อแชทเป็นไอคอน" [expanded]: ▾
+    - log:
+      - paragraph:
+        - time: 12:43
+        - text: กำลังเชื่อมต่อเซิร์ฟเวอร์…
+      - paragraph:
+        - time: 12:43
+        - text: เชื่อมต่อเซิร์ฟเวอร์แล้ว · เดินด้วย WASD / ลูกศร · ซูมด้วยล้อเมาส์หรือ − / =
+      - paragraph:
+        - time: 12:43
+        - text: "โหมดทดสอบ: Base Lv 60"
+      - paragraph:
+        - time: 12:43
+        - text: "โหมดทดสอบ: Job Level 10 และผ่านบททดสอบอาชีพแล้ว"
+      - paragraph:
+        - time: 12:43
+        - text: "โหมดทดสอบ: เปลี่ยนอาชีพแล้ว"
+      - paragraph:
+        - time: 12:43
+        - text: "โหมดทดสอบ: Job Level 40 และผ่านบททดสอบอาชีพแล้ว"
+      - paragraph:
+        - time: 12:43
+        - text: พรายเข้าสิง · Ghost Possession เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ปล่อยพรายสิง · Prai Haunt เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: สูบวิญญาณ · Soul Drain เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: เสียงกรีดร้องพราย · Terrorize Howl เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: บ่วงเงาพราย · Shadow Snare เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: สายเลือดมืด · Dark Affinity เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: กระหายโลหิต · Vampiric Instinct เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: เก็บวิญญาณ · Soul Harvest เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: กายเบาดั่งผี · Agile Spirit เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: น้ำมันพรายล่อวิญญาณ · Prai Lure เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ระเบิดคำสาปพราย · Prai Curse Explosion เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: อวตารเงาพราย · Shadow Ghost Avatar เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: อาถรรพ์ขวัญผวา · Mass Fear เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ยมทูต · Soul Harvester เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: พรายรับเคราะห์ · Prai Takes the Blow เลเวล 1
+    - textbox "พิมพ์ข้อความ (ยังใช้งานไม่ได้)" [disabled]:
+      - /placeholder: แชทยังไม่เชื่อมเซิร์ฟเวอร์
+  - status:
+    - button "อาถรรพ์ขวัญผวา · Mass Fear เลเวล 1":
+      - generic: ✓
+      - generic: อาถรรพ์ขวัญผวา · Mass Fear เลเวล 1
+    - button "ยมทูต · Soul Harvester เลเวล 1":
+      - generic: ✓
+      - generic: ยมทูต · Soul Harvester เลเวล 1
+    - button "พรายรับเคราะห์ · Prai Takes the Blow เลเวล 1":
+      - generic: ✓
+      - generic: พรายรับเคราะห์ · Prai Takes the Blow เลเวล 1
+  - generic "Combat QA · guest · mor-phhee"
+  - option "achan-saiyasat"
+  - option "mor-phhee" [selected]
+  - option "santet"
+  - option "keris"
+  - option "juggernaut"
+  - option "taiga"
+  - option "onmyoji"
+  - option "miko"
+  - option "rune-seer"
+  - option "ullr-hunter"

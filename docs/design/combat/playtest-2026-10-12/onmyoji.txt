@@ -1,0 +1,191 @@
+- button "Open Next.js Dev Tools":
+- alert
+- main:
+  - navigation "เมนูหลัก":
+    - button "สถานะ Status":
+      - generic: สถานะ
+      - generic: Status
+    - button "ทักษะ Skills":
+      - generic: ทักษะ
+      - generic: Skills
+    - button "อุปกรณ์ Equipment":
+      - generic: อุปกรณ์
+      - generic: Equipment
+    - button "เงินตรา Gold":
+      - generic: เงินตรา
+      - generic: Gold
+    - button "อาชีพ Class":
+      - generic: อาชีพ
+      - generic: Class
+    - button "แผนที่ Map":
+      - generic: แผนที่
+      - generic: Map
+    - button "กระเป๋า Bag":
+      - generic: กระเป๋า
+      - generic: Bag
+    - generic "ผู้ช่วย — ยังไม่เปิด":
+      - generic: ผู้ช่วย
+      - generic: ยังไม่เปิด
+    - generic "พรีเมียม — ยังไม่เปิด":
+      - generic: พรีเมียม
+      - generic: ยังไม่เปิด
+    - button "เพิ่มเติม More":
+      - generic: เพิ่มเติม
+      - generic: More
+  - region "สถานะตัวละคร":
+    - button "เปิดข้อมูลตัวละคร":
+      - img "ตัวอย่างตัวละคร หันหน้า"
+      - generic: "60"
+    - heading "ผู้เล่นรับเชิญ" [level=2]
+    - generic: Lv. 60 Grand Onmyoji Master · Job 1
+    - generic: HP
+    - progressbar "HP":
+      - emphasis: 1,890 / 1,890
+    - generic: SP
+    - progressbar "SP":
+      - emphasis: 512 / 512
+    - progressbar "Base EXP":
+      - emphasis: EXP 0.1%
+    - generic "เงิน Silver": ◉ 3,000
+    - generic: ออนไลน์
+  - region "แผนที่ย่อ":
+    - group "ซูมแผนที่ย่อ":
+      - button "ซูมออก": −
+      - button "ซูมเข้า": +
+    - button "ขยายเป็นแผนที่ใหญ่ (M)": ⤢
+    - button "ย่อแผนที่เป็นไอคอน" [expanded]: ▾
+    - img "แผนที่ย่อ ซูม 2 เท่า ลูกศรสีทองคือคุณ จุดสีฟ้าคือผู้เล่นอื่น"
+    - generic: ชายป่าวิญญาณ
+    - generic: WHISPERING SPIRITWOOD
+    - generic "ผู้เล่นในห้องนี้":
+      - text: "3"
+    - generic "ตำแหน่งของคุณ":
+      - text: 17,39
+  - region "ติดตามเควสต์":
+    - heading "เควสต์" [level=2]
+    - button "ย่อเควสต์เป็นไอคอน" [expanded]: ▾
+    - text: ไม่มีภารกิจ · คุยกับหลวงตาธรรมหน้าวิหาร (!)
+  - region "แถบสกิล":
+    - button "Spirit Bolt Lv 1 · กด 1":
+      - generic: "1"
+    - button "ยันต์ธาตุไม้ · Wood Talisman Lv 1 · กด 2":
+      - generic: "2"
+    - button "ยันต์ธาตุไฟ · Fire Talisman Lv 1 · กด 3":
+      - generic: "3"
+    - button "ยันต์ธาตุดิน · Earth Talisman Lv 1 · กด 4":
+      - generic: "4"
+    - button "ยันต์ธาตุโลหะ · Metal Talisman Lv 1 · กด 5":
+      - generic: "5"
+    - button "ยันต์ธาตุน้ำ · Water Talisman Lv 1 · กด 6":
+      - generic: "6"
+    - button "มณฑลเบญจธาตุ · Gogyō Mandala Lv 1 · กด 7":
+      - generic: "7"
+    - button "วงผนึกเบญจธาตุ · Gogyō Ring Seal Lv 1 · กด 8":
+      - generic: "8"
+    - button "ชิกิงามิร่างใหญ่ · Shikigami Ascension Lv 1 · กด 9":
+      - generic: "9"
+    - button "Invoke → ฝนชุ่มใบ Lv 1 · กด 0" [active]:
+      - generic: "0"
+    - generic: คลิกมอนสเตอร์เพื่อเลือกเป้าหมาย · K เปิดหน้าต่างสกิล
+  - button "โจมตีปกติ (Q)":
+    - generic: โจมตี
+    - generic: Q
+  - region "ยันต์ที่ถือ":
+    - list:
+      - listitem "ยันต์ไม้": ไม้
+      - listitem "ยันต์น้ำ": น้ำ
+    - generic: Invoke → ฝนชุ่มใบ · คาถาสร้าง
+  - generic "ออกจากเกมแล้วข้อมูลจะหาย":
+    - generic: เล่นแบบไม่บันทึก
+    - button "เข้าสู่ระบบ"
+  - region "แชท":
+    - tablist "ช่องแชท":
+      - tab "ทั่วไป"
+      - tab "ปาร์ตี้"
+      - tab "กิลด์"
+      - tab "ระบบ" [selected]
+      - button "ย่อแชทเป็นไอคอน" [expanded]: ▾
+    - log:
+      - paragraph:
+        - time: 12:44
+        - text: กำลังเชื่อมต่อเซิร์ฟเวอร์…
+      - paragraph:
+        - time: 12:44
+        - text: เชื่อมต่อเซิร์ฟเวอร์แล้ว · เดินด้วย WASD / ลูกศร · ซูมด้วยล้อเมาส์หรือ − / =
+      - paragraph:
+        - time: 12:44
+        - text: "โหมดทดสอบ: Base Lv 60"
+      - paragraph:
+        - time: 12:44
+        - text: "โหมดทดสอบ: Job Level 10 และผ่านบททดสอบอาชีพแล้ว"
+      - paragraph:
+        - time: 12:44
+        - text: "โหมดทดสอบ: เปลี่ยนอาชีพแล้ว"
+      - paragraph:
+        - time: 12:44
+        - text: "โหมดทดสอบ: Job Level 40 และผ่านบททดสอบอาชีพแล้ว"
+      - paragraph:
+        - time: 12:44
+        - text: ยันต์ธาตุไม้ · Wood Talisman เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ยันต์ธาตุไฟ · Fire Talisman เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ยันต์ธาตุดิน · Earth Talisman เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ยันต์ธาตุโลหะ · Metal Talisman เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ยันต์ธาตุน้ำ · Water Talisman เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ตราประทับองเมียว · Onmyō Seal เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: วงธาตุส่งเสริม · Sōshō Flow เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ธาตุข่มทำลาย · Sōkoku Break เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: สมดุลหยินหยาง · Taikyoku Balance เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: พันธะชิกิงามิ · Shikigami Pact เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: มณฑลเบญจธาตุ · Gogyō Mandala เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: วงผนึกเบญจธาตุ · Gogyō Ring Seal เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ชิกิงามิร่างใหญ่ · Shikigami Ascension เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ยันต์ใบที่สาม · Third Talisman เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ชำนาญองเมียว · Onmyō Mastery เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: เป้าหมายอยู่ไกลเกินระยะร่าย
+      - paragraph:
+        - time: 12:44
+        - text: +18 EXP · +14 Job EXP · ได้รับ มัดสมุนไพร ×1
+    - textbox "พิมพ์ข้อความ (ยังใช้งานไม่ได้)" [disabled]:
+      - /placeholder: แชทยังไม่เชื่อมเซิร์ฟเวอร์
+  - status
+  - generic "Combat QA · guest · onmyoji"
+  - option "achan-saiyasat"
+  - option "mor-phhee"
+  - option "santet"
+  - option "keris"
+  - option "juggernaut"
+  - option "taiga"
+  - option "onmyoji" [selected]
+  - option "miko"
+  - option "rune-seer"
+  - option "ullr-hunter"

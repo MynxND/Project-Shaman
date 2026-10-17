@@ -1,0 +1,85 @@
+- button "Open Next.js Dev Tools":
+- alert
+- main:
+  - navigation "เมนูหลัก":
+    - button "สถานะ":
+      - generic: สถานะ
+    - button "ทักษะ":
+      - generic: ทักษะ
+    - button "อุปกรณ์":
+      - generic: อุปกรณ์
+    - button "เงินตรา":
+      - generic: เงินตรา
+    - button "อาชีพ":
+      - generic: อาชีพ
+    - button "แผนที่":
+      - generic: แผนที่
+    - button "กระเป๋า":
+      - generic: กระเป๋า
+    - generic "ผู้ช่วย — ยังไม่เปิด":
+      - generic: ผู้ช่วย
+    - generic "พรีเมียม — ยังไม่เปิด":
+      - generic: พรีเมียม
+    - button "เพิ่มเติม":
+      - generic: เพิ่มเติม
+  - region "สถานะตัวละคร":
+    - button "เปิดข้อมูลตัวละคร":
+      - img "ตัวอย่างตัวละคร หันหน้า"
+      - generic: "60"
+    - heading "ผู้เล่นรับเชิญ" [level=2]
+    - generic: HP
+    - progressbar "HP":
+      - emphasis: 1,890 / 1,890
+    - generic: SP
+    - progressbar "SP":
+      - emphasis: 512 / 512
+    - progressbar "Base EXP":
+      - emphasis: EXP 0.0%
+    - generic "เงิน Silver": ◉ 3,000
+    - generic: ออนไลน์
+  - button "เปิดแผนที่ย่อ"
+  - button "เปิดเควสต์"
+  - region "แถบสกิล":
+    - button "Spirit Bolt Lv 1 · กด 1":
+      - generic: "1"
+    - button "ยันต์ธาตุไม้ · Wood Talisman Lv 1 · กด 2":
+      - generic: "2"
+    - button "ยันต์ธาตุไฟ · Fire Talisman Lv 1 · กด 3":
+      - generic: "3"
+    - button "ยันต์ธาตุดิน · Earth Talisman Lv 1 · กด 4":
+      - generic: "4"
+    - button "ยันต์ธาตุโลหะ · Metal Talisman Lv 1 · กด 5":
+      - generic: "5"
+    - button "ยันต์ธาตุน้ำ · Water Talisman Lv 1 · กด 6":
+      - generic: "6"
+    - button "มณฑลเบญจธาตุ · Gogyō Mandala Lv 1 · กด 7":
+      - generic: "7"
+    - button "วงผนึกเบญจธาตุ · Gogyō Ring Seal Lv 1 · กด 8":
+      - generic: "8"
+    - button "ชิกิงามิร่างใหญ่ · Shikigami Ascension Lv 1 · กด 9":
+      - generic: "9"
+    - button "Invoke · ถือยันต์ 2 ใบก่อน Lv 1 · กด 0":
+      - generic: "0"
+  - button "โจมตีปกติ (Q)":
+    - generic: โจมตี
+    - generic: Q
+  - region "ยันต์ที่ถือ":
+    - list:
+      - listitem: ยังไม่ได้จารยันต์
+    - generic: จารยันต์ 2 ใบแล้วกด Invoke
+  - generic "ออกจากเกมแล้วข้อมูลจะหาย":
+    - generic: เล่นแบบไม่บันทึก
+    - button "เข้าสู่ระบบ"
+  - button "เปิดแชท"
+  - status
+  - generic "Combat QA · guest · onmyoji" [active]
+  - option "achan-saiyasat"
+  - option "mor-phhee"
+  - option "santet"
+  - option "keris"
+  - option "juggernaut"
+  - option "taiga"
+  - option "onmyoji" [selected]
+  - option "miko"
+  - option "rune-seer"
+  - option "ullr-hunter"

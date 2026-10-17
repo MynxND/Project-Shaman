@@ -1,0 +1,399 @@
+- button "Open Next.js Dev Tools":
+- alert
+- main:
+  - navigation "เมนูหลัก":
+    - button "สถานะ Status":
+      - generic: สถานะ
+      - generic: Status
+    - button "ทักษะ Skills":
+      - generic: ทักษะ
+      - generic: Skills
+    - button "อุปกรณ์ Equipment":
+      - generic: อุปกรณ์
+      - generic: Equipment
+    - button "เงินตรา Gold":
+      - generic: เงินตรา
+      - generic: Gold
+    - button "อาชีพ Class":
+      - generic: อาชีพ
+      - generic: Class
+    - button "แผนที่ Map":
+      - generic: แผนที่
+      - generic: Map
+    - button "กระเป๋า Bag":
+      - generic: กระเป๋า
+      - generic: Bag
+    - generic "ผู้ช่วย — ยังไม่เปิด":
+      - generic: ผู้ช่วย
+      - generic: ยังไม่เปิด
+    - generic "พรีเมียม — ยังไม่เปิด":
+      - generic: พรีเมียม
+      - generic: ยังไม่เปิด
+    - button "เพิ่มเติม More":
+      - generic: เพิ่มเติม
+      - generic: More
+  - region "สถานะตัวละคร":
+    - button "เปิดข้อมูลตัวละคร":
+      - img "ตัวอย่างตัวละคร หันหน้า"
+      - generic: "60"
+    - heading "ผู้เล่นรับเชิญ" [level=2]
+    - generic: Lv. 60 Ullr's Huntmaster · Job 1
+    - generic: HP
+    - progressbar "HP":
+      - emphasis: 1,890 / 1,890
+    - generic: SP
+    - progressbar "SP":
+      - emphasis: 512 / 512
+    - progressbar "Base EXP":
+      - emphasis: EXP 0.0%
+    - generic "เงิน Silver": ◉ 3,000
+    - generic: ออนไลน์
+  - region "แผนที่ย่อ":
+    - group "ซูมแผนที่ย่อ":
+      - button "ซูมออก": −
+      - button "ซูมเข้า": +
+    - button "ขยายเป็นแผนที่ใหญ่ (M)": ⤢
+    - button "ย่อแผนที่เป็นไอคอน" [expanded]: ▾
+    - img "แผนที่ย่อ ซูม 2 เท่า ลูกศรสีทองคือคุณ จุดสีฟ้าคือผู้เล่นอื่น"
+    - generic: ชายป่าวิญญาณ
+    - generic: WHISPERING SPIRITWOOD
+    - generic "ผู้เล่นในห้องนี้":
+      - text: "2"
+    - generic "ตำแหน่งของคุณ":
+      - text: 40,58
+  - region "ติดตามเควสต์":
+    - heading "เควสต์" [level=2]
+    - button "ย่อเควสต์เป็นไอคอน" [expanded]: ▾
+    - text: ไม่มีภารกิจ · คุยกับหลวงตาธรรมหน้าวิหาร (!)
+  - region "แถบสกิล":
+    - button "Spirit Bolt Lv 1 · กด 1":
+      - generic: "1"
+    - button "ยิงศรคู่ · Twin Shot Lv 1 · กด 2":
+      - generic: "2"
+    - button "เหยี่ยวจู่โจม · Falcon Strike Lv 1 · กด 3":
+      - generic: "3"
+    - button "ไถลสกีหลบ · Ski Dash Lv 1 · กด 4":
+      - generic: "4"
+    - button "กับดักรูน · Rune Trap Kit Lv 1 · กด 5 · รูน ᚾ ตรึง":
+      - generic: "5"
+    - button "เปลี่ยนรูนกับดัก ตอนนี้ ᚾ ตรึง": ᚾ
+    - button "ศรรูนอัดพลัง · Charged Rune Arrow Lv 1 · กด 6":
+      - generic: "6"
+    - button "ห่าศรอุลล์ · Ullr's Volley Lv 1 · กด 7":
+      - generic: "7"
+    - button "มหาการล่า · Great Hunt Lv 1 · กด 8":
+      - generic: "8"
+    - button "พายุเหยี่ยว · Falcon Storm Lv 1 · กด 9":
+      - generic: "9"
+    - generic: คลิกมอนสเตอร์เพื่อเลือกเป้าหมาย · K เปิดหน้าต่างสกิล
+  - button "โจมตีปกติ (Q)":
+    - generic: โจมตี
+    - generic: Q
+  - generic "ออกจากเกมแล้วข้อมูลจะหาย":
+    - generic: เล่นแบบไม่บันทึก
+    - button "เข้าสู่ระบบ"
+  - region "แชท":
+    - tablist "ช่องแชท":
+      - tab "ทั่วไป"
+      - tab "ปาร์ตี้"
+      - tab "กิลด์"
+      - tab "ระบบ" [selected]
+      - button "ย่อแชทเป็นไอคอน" [expanded]: ▾
+    - log:
+      - paragraph:
+        - time: 12:44
+        - text: กำลังเชื่อมต่อเซิร์ฟเวอร์…
+      - paragraph:
+        - time: 12:44
+        - text: เชื่อมต่อเซิร์ฟเวอร์แล้ว · เดินด้วย WASD / ลูกศร · ซูมด้วยล้อเมาส์หรือ − / =
+      - paragraph:
+        - time: 12:44
+        - text: "โหมดทดสอบ: Base Lv 60"
+      - paragraph:
+        - time: 12:44
+        - text: "โหมดทดสอบ: Job Level 10 และผ่านบททดสอบอาชีพแล้ว"
+      - paragraph:
+        - time: 12:44
+        - text: "โหมดทดสอบ: เปลี่ยนอาชีพแล้ว"
+      - paragraph:
+        - time: 12:44
+        - text: "โหมดทดสอบ: Job Level 40 และผ่านบททดสอบอาชีพแล้ว"
+      - paragraph:
+        - time: 12:44
+        - text: ยิงศรคู่ · Twin Shot เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: เหยี่ยวจู่โจม · Falcon Strike เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ไถลสกีหลบ · Ski Dash เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: กับดักรูน · Rune Trap Kit เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ศรรูนอัดพลัง · Charged Rune Arrow เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ชำนาญธนู · Bow Mastery เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: เหยี่ยวคู่ใจ · Falcon Bond เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ช่างกับดัก · Trapper's Craft เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ตานักตามรอย · Tracker's Eye เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ก้าวนักล่า · Hunter's Stride เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ห่าศรอุลล์ · Ullr's Volley เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: มหาการล่า · Great Hunt เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: พายุเหยี่ยว · Falcon Storm เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ชำนาญศรรูน · Rune Arrow Mastery เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ความอดทนของนักล่า · Hunter's Patience เลเวล 1
+    - textbox "พิมพ์ข้อความ (ยังใช้งานไม่ได้)" [disabled]:
+      - /placeholder: แชทยังไม่เชื่อมเซิร์ฟเวอร์
+  - status:
+    - button "พายุเหยี่ยว · Falcon Storm เลเวล 1":
+      - generic: ✓
+      - generic: พายุเหยี่ยว · Falcon Storm เลเวล 1
+    - button "ชำนาญศรรูน · Rune Arrow Mastery เลเวล 1":
+      - generic: ✓
+      - generic: ชำนาญศรรูน · Rune Arrow Mastery เลเวล 1
+    - button "ความอดทนของนักล่า · Hunter's Patience เลเวล 1":
+      - generic: ✓
+      - generic: ความอดทนของนักล่า · Hunter's Patience เลเวล 1
+  - generic "Combat QA · guest · ullr-hunter"
+  - text: สายทดสอบ
+  - combobox "สายทดสอบ":
+    - option "achan-saiyasat"
+    - option "mor-phhee"
+    - option "santet"
+    - option "keris"
+    - option "juggernaut"
+    - option "taiga"
+    - option "onmyoji"
+    - option "miko"
+    - option "rune-seer"
+    - option "ullr-hunter" [selected]
+  - button "เตรียมสายทดสอบ"
+  - button "ฟื้น HP/SP"
+  - button "จุดฝึก 16,38"
+  - button "หยุดโจมตี"
+  - status: "พร้อม: Tier 3 · สกิลทุกอัน Lv 1 · ตัวเลขไม่ใช่ผลบาลานซ์"
+  - paragraph: Base 60 · Tier 3 · Points 36
+  - paragraph: "Weapon: bow-ullr"
+  - button "Twin Shot"
+  - button "Falcon Strike"
+  - button "Ski Dash"
+  - button "Rune Trap Kit"
+  - button "Charged Rune Arrow"
+  - button "Ullr's Volley"
+  - button "Great Hunt"
+  - button "Falcon Storm"
+
+AFTER CAST AND ATTACK
+- button "Open Next.js Dev Tools":
+- alert
+- main:
+  - navigation "เมนูหลัก":
+    - button "สถานะ Status":
+      - generic: สถานะ
+      - generic: Status
+    - button "ทักษะ Skills":
+      - generic: ทักษะ
+      - generic: Skills
+    - button "อุปกรณ์ Equipment":
+      - generic: อุปกรณ์
+      - generic: Equipment
+    - button "เงินตรา Gold":
+      - generic: เงินตรา
+      - generic: Gold
+    - button "อาชีพ Class":
+      - generic: อาชีพ
+      - generic: Class
+    - button "แผนที่ Map":
+      - generic: แผนที่
+      - generic: Map
+    - button "กระเป๋า Bag":
+      - generic: กระเป๋า
+      - generic: Bag
+    - generic "ผู้ช่วย — ยังไม่เปิด":
+      - generic: ผู้ช่วย
+      - generic: ยังไม่เปิด
+    - generic "พรีเมียม — ยังไม่เปิด":
+      - generic: พรีเมียม
+      - generic: ยังไม่เปิด
+    - button "เพิ่มเติม More":
+      - generic: เพิ่มเติม
+      - generic: More
+  - region "สถานะตัวละคร":
+    - button "เปิดข้อมูลตัวละคร":
+      - img "ตัวอย่างตัวละคร หันหน้า"
+      - generic: "60"
+    - heading "ผู้เล่นรับเชิญ" [level=2]
+    - generic: Lv. 60 Ullr's Huntmaster · Job 1
+    - generic: HP
+    - progressbar "HP":
+      - emphasis: 1,890 / 1,890
+    - generic: SP
+    - progressbar "SP":
+      - emphasis: 502 / 512
+    - progressbar "Base EXP":
+      - emphasis: EXP 0.0%
+    - generic "เงิน Silver": ◉ 3,000
+    - generic: ออนไลน์
+  - region "แผนที่ย่อ":
+    - group "ซูมแผนที่ย่อ":
+      - button "ซูมออก": −
+      - button "ซูมเข้า": +
+    - button "ขยายเป็นแผนที่ใหญ่ (M)": ⤢
+    - button "ย่อแผนที่เป็นไอคอน" [expanded]: ▾
+    - img "แผนที่ย่อ ซูม 2 เท่า ลูกศรสีทองคือคุณ จุดสีฟ้าคือผู้เล่นอื่น"
+    - generic: ชายป่าวิญญาณ
+    - generic: WHISPERING SPIRITWOOD
+    - generic "ผู้เล่นในห้องนี้":
+      - text: "2"
+    - generic "ตำแหน่งของคุณ":
+      - text: 16,38
+  - region "ติดตามเควสต์":
+    - heading "เควสต์" [level=2]
+    - button "ย่อเควสต์เป็นไอคอน" [expanded]: ▾
+    - text: ไม่มีภารกิจ · คุยกับหลวงตาธรรมหน้าวิหาร (!)
+  - region "แถบสกิล":
+    - button "Spirit Bolt Lv 1 · กด 1":
+      - generic: "1"
+    - button "ยิงศรคู่ · Twin Shot Lv 1 · กด 2":
+      - generic: "2"
+    - button "เหยี่ยวจู่โจม · Falcon Strike Lv 1 · กด 3":
+      - generic: "3"
+    - button "ไถลสกีหลบ · Ski Dash Lv 1 · กด 4":
+      - generic: "4"
+    - button "กับดักรูน · Rune Trap Kit Lv 1 · กด 5 · รูน ᚾ ตรึง":
+      - generic: "5"
+      - generic: "3"
+    - button "เปลี่ยนรูนกับดัก ตอนนี้ ᚾ ตรึง": ᚾ
+    - button "ศรรูนอัดพลัง · Charged Rune Arrow Lv 1 · กด 6":
+      - generic: "6"
+    - button "ห่าศรอุลล์ · Ullr's Volley Lv 1 · กด 7":
+      - generic: "7"
+    - button "มหาการล่า · Great Hunt Lv 1 · กด 8":
+      - generic: "8"
+    - button "พายุเหยี่ยว · Falcon Storm Lv 1 · กด 9":
+      - generic: "9"
+    - generic: คลิกมอนสเตอร์เพื่อเลือกเป้าหมาย · K เปิดหน้าต่างสกิล
+  - button "โจมตีปกติ (Q)" [active]:
+    - generic: โจมตี
+    - generic: Q
+  - generic "ออกจากเกมแล้วข้อมูลจะหาย":
+    - generic: เล่นแบบไม่บันทึก
+    - button "เข้าสู่ระบบ"
+  - region "แชท":
+    - tablist "ช่องแชท":
+      - tab "ทั่วไป"
+      - tab "ปาร์ตี้"
+      - tab "กิลด์"
+      - tab "ระบบ" [selected]
+      - button "ย่อแชทเป็นไอคอน" [expanded]: ▾
+    - log:
+      - paragraph:
+        - time: 12:44
+        - text: กำลังเชื่อมต่อเซิร์ฟเวอร์…
+      - paragraph:
+        - time: 12:44
+        - text: เชื่อมต่อเซิร์ฟเวอร์แล้ว · เดินด้วย WASD / ลูกศร · ซูมด้วยล้อเมาส์หรือ − / =
+      - paragraph:
+        - time: 12:44
+        - text: "โหมดทดสอบ: Base Lv 60"
+      - paragraph:
+        - time: 12:44
+        - text: "โหมดทดสอบ: Job Level 10 และผ่านบททดสอบอาชีพแล้ว"
+      - paragraph:
+        - time: 12:44
+        - text: "โหมดทดสอบ: เปลี่ยนอาชีพแล้ว"
+      - paragraph:
+        - time: 12:44
+        - text: "โหมดทดสอบ: Job Level 40 และผ่านบททดสอบอาชีพแล้ว"
+      - paragraph:
+        - time: 12:44
+        - text: ยิงศรคู่ · Twin Shot เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: เหยี่ยวจู่โจม · Falcon Strike เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ไถลสกีหลบ · Ski Dash เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: กับดักรูน · Rune Trap Kit เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ศรรูนอัดพลัง · Charged Rune Arrow เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ชำนาญธนู · Bow Mastery เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: เหยี่ยวคู่ใจ · Falcon Bond เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ช่างกับดัก · Trapper's Craft เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ตานักตามรอย · Tracker's Eye เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ก้าวนักล่า · Hunter's Stride เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ห่าศรอุลล์ · Ullr's Volley เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: มหาการล่า · Great Hunt เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: พายุเหยี่ยว · Falcon Storm เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ชำนาญศรรูน · Rune Arrow Mastery เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: ความอดทนของนักล่า · Hunter's Patience เลเวล 1
+      - paragraph:
+        - time: 12:44
+        - text: +8 EXP · +6 Job EXP · ได้รับ มัดสมุนไพร ×1
+    - textbox "พิมพ์ข้อความ (ยังใช้งานไม่ได้)" [disabled]:
+      - /placeholder: แชทยังไม่เชื่อมเซิร์ฟเวอร์
+  - status:
+    - button "ชำนาญศรรูน · Rune Arrow Mastery เลเวล 1":
+      - generic: ✓
+      - generic: ชำนาญศรรูน · Rune Arrow Mastery เลเวล 1
+    - button "ความอดทนของนักล่า · Hunter's Patience เลเวล 1":
+      - generic: ✓
+      - generic: ความอดทนของนักล่า · Hunter's Patience เลเวล 1
+    - button "+8 EXP · +6 Job EXP · ได้รับ มัดสมุนไพร ×1":
+      - generic: ✓
+      - generic: +8 EXP · +6 Job EXP · ได้รับ มัดสมุนไพร ×1
+  - generic "Combat QA · guest · ullr-hunter"
+  - option "achan-saiyasat"
+  - option "mor-phhee"
+  - option "santet"
+  - option "keris"
+  - option "juggernaut"
+  - option "taiga"
+  - option "onmyoji"
+  - option "miko"
+  - option "rune-seer"
+  - option "ullr-hunter" [selected]

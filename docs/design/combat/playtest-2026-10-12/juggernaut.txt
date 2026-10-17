@@ -1,0 +1,404 @@
+- button "Open Next.js Dev Tools":
+- alert
+- main:
+  - navigation "เมนูหลัก":
+    - button "สถานะ Status":
+      - generic: สถานะ
+      - generic: Status
+    - button "ทักษะ Skills":
+      - generic: ทักษะ
+      - generic: Skills
+    - button "อุปกรณ์ Equipment":
+      - generic: อุปกรณ์
+      - generic: Equipment
+    - button "เงินตรา Gold":
+      - generic: เงินตรา
+      - generic: Gold
+    - button "อาชีพ Class":
+      - generic: อาชีพ
+      - generic: Class
+    - button "แผนที่ Map":
+      - generic: แผนที่
+      - generic: Map
+    - button "กระเป๋า Bag":
+      - generic: กระเป๋า
+      - generic: Bag
+    - generic "ผู้ช่วย — ยังไม่เปิด":
+      - generic: ผู้ช่วย
+      - generic: ยังไม่เปิด
+    - generic "พรีเมียม — ยังไม่เปิด":
+      - generic: พรีเมียม
+      - generic: ยังไม่เปิด
+    - button "เพิ่มเติม More":
+      - generic: เพิ่มเติม
+      - generic: More
+  - region "สถานะตัวละคร":
+    - button "เปิดข้อมูลตัวละคร":
+      - img "ตัวอย่างตัวละคร หันหน้า"
+      - generic: "60"
+    - heading "ผู้เล่นรับเชิญ" [level=2]
+    - generic: Lv. 60 Juggernaut Warlord of Taiga · Job 1
+    - generic: HP
+    - progressbar "HP":
+      - emphasis: 1,890 / 1,890
+    - generic: SP
+    - progressbar "SP":
+      - emphasis: 512 / 512
+    - progressbar "Base EXP":
+      - emphasis: EXP 0.0%
+    - generic "เงิน Silver": ◉ 3,000
+    - generic: ออนไลน์
+  - region "แผนที่ย่อ":
+    - group "ซูมแผนที่ย่อ":
+      - button "ซูมออก": −
+      - button "ซูมเข้า": +
+    - button "ขยายเป็นแผนที่ใหญ่ (M)": ⤢
+    - button "ย่อแผนที่เป็นไอคอน" [expanded]: ▾
+    - img "แผนที่ย่อ ซูม 2 เท่า ลูกศรสีทองคือคุณ จุดสีฟ้าคือผู้เล่นอื่น"
+    - generic: ชายป่าวิญญาณ
+    - generic: WHISPERING SPIRITWOOD
+    - generic "ผู้เล่นในห้องนี้":
+      - text: "2"
+    - generic "ตำแหน่งของคุณ":
+      - text: 40,58
+  - region "ติดตามเควสต์":
+    - heading "เควสต์" [level=2]
+    - button "ย่อเควสต์เป็นไอคอน" [expanded]: ▾
+    - text: ไม่มีภารกิจ · คุยกับหลวงตาธรรมหน้าวิหาร (!)
+  - region "แถบสกิล":
+    - button "Spirit Bolt Lv 1 · กด 1":
+      - generic: "1"
+    - button "เกราะวิญญาณหมาป่า · Wolf Spirit Armor Lv 1 · กด 2":
+      - generic: "2"
+    - button "เคาะโล่ท้ารบ · Shield Clang Lv 1 · กด 3":
+      - generic: "3"
+    - button "ก้าวน้ำแข็ง · Siberian Frost Step Lv 1 · กด 4":
+      - generic: "4"
+    - button "กระแทกโล่ · Shield Bash Lv 1 · กด 5":
+      - generic: "5"
+    - button "ป้อมหิมะ · Snow Fort Lv 1 · กด 6":
+      - generic: "6"
+    - button "มหาปราการไทกา · Taiga’s Absolute Fortress Lv 1 · กด 7":
+      - generic: "7"
+    - button "กระทืบธรณี · Titan Stomp Lv 1 · กด 8":
+      - generic: "8"
+    - button "บัญชาแม่ทัพ · Warlord's Command Lv 1 · กด 9":
+      - generic: "9"
+    - generic: คลิกมอนสเตอร์เพื่อเลือกเป้าหมาย · K เปิดหน้าต่างสกิล
+  - button "โจมตีปกติ (Q)":
+    - generic: โจมตี
+    - generic: Q
+  - region "เกจ Guard": Guard 0/100
+  - generic "ออกจากเกมแล้วข้อมูลจะหาย":
+    - generic: เล่นแบบไม่บันทึก
+    - button "เข้าสู่ระบบ"
+  - region "แชท":
+    - tablist "ช่องแชท":
+      - tab "ทั่วไป"
+      - tab "ปาร์ตี้"
+      - tab "กิลด์"
+      - tab "ระบบ" [selected]
+      - button "ย่อแชทเป็นไอคอน" [expanded]: ▾
+    - log:
+      - paragraph:
+        - time: 12:43
+        - text: กำลังเชื่อมต่อเซิร์ฟเวอร์…
+      - paragraph:
+        - time: 12:43
+        - text: เชื่อมต่อเซิร์ฟเวอร์แล้ว · เดินด้วย WASD / ลูกศร · ซูมด้วยล้อเมาส์หรือ − / =
+      - paragraph:
+        - time: 12:43
+        - text: "โหมดทดสอบ: Base Lv 60"
+      - paragraph:
+        - time: 12:43
+        - text: "โหมดทดสอบ: Job Level 10 และผ่านบททดสอบอาชีพแล้ว"
+      - paragraph:
+        - time: 12:43
+        - text: "โหมดทดสอบ: เปลี่ยนอาชีพแล้ว"
+      - paragraph:
+        - time: 12:43
+        - text: "โหมดทดสอบ: Job Level 40 และผ่านบททดสอบอาชีพแล้ว"
+      - paragraph:
+        - time: 12:43
+        - text: เกราะวิญญาณหมาป่า · Wolf Spirit Armor เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: เคาะโล่ท้ารบ · Shield Clang เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ก้าวน้ำแข็ง · Siberian Frost Step เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: กระแทกโล่ · Shield Bash เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ป้อมหิมะ · Snow Fort เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: จิตใจเหล็ก · Iron Will เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: กายทรหด · Vitality Boost เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ชำนาญเกราะหนัก · Heavy Armor Mastery เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ผู้รอดแห่งไทกา · Taiga Survivor เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ชำนาญยั่วยุ · Aggro Mastery เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: มหาปราการไทกา · Taiga’s Absolute Fortress เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: กระทืบธรณี · Titan Stomp เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: บัญชาแม่ทัพ · Warlord's Command เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: จิตไม่หยุดยั้ง · Unstoppable Will เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ยืนหยัดแนวหน้า · Hold the Line เลเวล 1
+    - textbox "พิมพ์ข้อความ (ยังใช้งานไม่ได้)" [disabled]:
+      - /placeholder: แชทยังไม่เชื่อมเซิร์ฟเวอร์
+  - status:
+    - button "บัญชาแม่ทัพ · Warlord's Command เลเวล 1":
+      - generic: ✓
+      - generic: บัญชาแม่ทัพ · Warlord's Command เลเวล 1
+    - button "จิตไม่หยุดยั้ง · Unstoppable Will เลเวล 1":
+      - generic: ✓
+      - generic: จิตไม่หยุดยั้ง · Unstoppable Will เลเวล 1
+    - button "ยืนหยัดแนวหน้า · Hold the Line เลเวล 1":
+      - generic: ✓
+      - generic: ยืนหยัดแนวหน้า · Hold the Line เลเวล 1
+  - generic "Combat QA · guest · juggernaut"
+  - text: สายทดสอบ
+  - combobox "สายทดสอบ":
+    - option "achan-saiyasat"
+    - option "mor-phhee"
+    - option "santet"
+    - option "keris"
+    - option "juggernaut" [selected]
+    - option "taiga"
+    - option "onmyoji"
+    - option "miko"
+    - option "rune-seer"
+    - option "ullr-hunter"
+  - button "เตรียมสายทดสอบ"
+  - button "ฟื้น HP/SP"
+  - button "จุดฝึก 16,38"
+  - button "หยุดโจมตี"
+  - status: "พร้อม: Tier 3 · สกิลทุกอัน Lv 1 · ตัวเลขไม่ใช่ผลบาลานซ์"
+  - paragraph: Base 60 · Tier 3 · Points 36
+  - paragraph: "Weapon: axe-juggernaut"
+  - button "Wolf Spirit Armor"
+  - button "Shield Clang"
+  - button "Siberian Frost Step"
+  - button "Shield Bash"
+  - button "Snow Fort"
+  - button "Taiga’s Absolute Fortress"
+  - button "Titan Stomp"
+  - button "Warlord's Command"
+
+AFTER CAST AND ATTACK
+- button "Open Next.js Dev Tools":
+- alert
+- main:
+  - navigation "เมนูหลัก":
+    - button "สถานะ Status":
+      - generic: สถานะ
+      - generic: Status
+    - button "ทักษะ Skills":
+      - generic: ทักษะ
+      - generic: Skills
+    - button "อุปกรณ์ Equipment":
+      - generic: อุปกรณ์
+      - generic: Equipment
+    - button "เงินตรา Gold":
+      - generic: เงินตรา
+      - generic: Gold
+    - button "อาชีพ Class":
+      - generic: อาชีพ
+      - generic: Class
+    - button "แผนที่ Map":
+      - generic: แผนที่
+      - generic: Map
+    - button "กระเป๋า Bag":
+      - generic: กระเป๋า
+      - generic: Bag
+    - generic "ผู้ช่วย — ยังไม่เปิด":
+      - generic: ผู้ช่วย
+      - generic: ยังไม่เปิด
+    - generic "พรีเมียม — ยังไม่เปิด":
+      - generic: พรีเมียม
+      - generic: ยังไม่เปิด
+    - button "เพิ่มเติม More":
+      - generic: เพิ่มเติม
+      - generic: More
+  - region "สถานะตัวละคร":
+    - button "เปิดข้อมูลตัวละคร":
+      - img "ตัวอย่างตัวละคร หันหน้า"
+      - generic: "60"
+    - heading "ผู้เล่นรับเชิญ" [level=2]
+    - generic: Lv. 60 Juggernaut Warlord of Taiga · Job 1
+    - generic: HP
+    - progressbar "HP":
+      - emphasis: 1,890 / 1,890
+    - generic: SP
+    - progressbar "SP":
+      - emphasis: 497 / 512
+    - progressbar "Base EXP":
+      - emphasis: EXP 0.0%
+    - generic "เงิน Silver": ◉ 3,000
+    - generic: ออนไลน์
+  - region "เป้าหมาย":
+    - generic: ภูตใบไม้
+    - generic: Lv. 1 · ไม่โจมตีก่อน
+    - button "ยกเลิกเป้าหมาย": ×
+    - progressbar "HP เป้าหมาย":
+      - emphasis: 40 / 40
+  - region "แผนที่ย่อ":
+    - group "ซูมแผนที่ย่อ":
+      - button "ซูมออก": −
+      - button "ซูมเข้า": +
+    - button "ขยายเป็นแผนที่ใหญ่ (M)": ⤢
+    - button "ย่อแผนที่เป็นไอคอน" [expanded]: ▾
+    - img "แผนที่ย่อ ซูม 2 เท่า ลูกศรสีทองคือคุณ จุดสีฟ้าคือผู้เล่นอื่น"
+    - generic: ชายป่าวิญญาณ
+    - generic: WHISPERING SPIRITWOOD
+    - generic "ผู้เล่นในห้องนี้":
+      - text: "2"
+    - generic "ตำแหน่งของคุณ":
+      - text: 16,37
+  - region "ติดตามเควสต์":
+    - heading "เควสต์" [level=2]
+    - button "ย่อเควสต์เป็นไอคอน" [expanded]: ▾
+    - text: ไม่มีภารกิจ · คุยกับหลวงตาธรรมหน้าวิหาร (!)
+  - region "แถบสกิล":
+    - button "Spirit Bolt Lv 1 · กด 1":
+      - generic: "1"
+    - button "เกราะวิญญาณหมาป่า · Wolf Spirit Armor Lv 1 · กด 2":
+      - generic: "2"
+      - generic: "30"
+    - button "เคาะโล่ท้ารบ · Shield Clang Lv 1 · กด 3":
+      - generic: "3"
+    - button "ก้าวน้ำแข็ง · Siberian Frost Step Lv 1 · กด 4":
+      - generic: "4"
+    - button "กระแทกโล่ · Shield Bash Lv 1 · กด 5":
+      - generic: "5"
+    - button "ป้อมหิมะ · Snow Fort Lv 1 · กด 6":
+      - generic: "6"
+    - button "มหาปราการไทกา · Taiga’s Absolute Fortress Lv 1 · กด 7":
+      - generic: "7"
+    - button "กระทืบธรณี · Titan Stomp Lv 1 · กด 8":
+      - generic: "8"
+    - button "บัญชาแม่ทัพ · Warlord's Command Lv 1 · กด 9":
+      - generic: "9"
+    - generic: คลิกมอนสเตอร์เพื่อเลือกเป้าหมาย · K เปิดหน้าต่างสกิล
+  - button "โจมตีปกติ (Q)" [active]:
+    - generic: โจมตี
+    - generic: Q
+  - list "สถานะของคุณ":
+    - listitem "เกราะวิญญาณหมาป่า"
+  - region "เกจ Guard": Guard 2/100
+  - generic "ออกจากเกมแล้วข้อมูลจะหาย":
+    - generic: เล่นแบบไม่บันทึก
+    - button "เข้าสู่ระบบ"
+  - region "แชท":
+    - tablist "ช่องแชท":
+      - tab "ทั่วไป"
+      - tab "ปาร์ตี้"
+      - tab "กิลด์"
+      - tab "ระบบ" [selected]
+      - button "ย่อแชทเป็นไอคอน" [expanded]: ▾
+    - log:
+      - paragraph:
+        - time: 12:43
+        - text: กำลังเชื่อมต่อเซิร์ฟเวอร์…
+      - paragraph:
+        - time: 12:43
+        - text: เชื่อมต่อเซิร์ฟเวอร์แล้ว · เดินด้วย WASD / ลูกศร · ซูมด้วยล้อเมาส์หรือ − / =
+      - paragraph:
+        - time: 12:43
+        - text: "โหมดทดสอบ: Base Lv 60"
+      - paragraph:
+        - time: 12:43
+        - text: "โหมดทดสอบ: Job Level 10 และผ่านบททดสอบอาชีพแล้ว"
+      - paragraph:
+        - time: 12:43
+        - text: "โหมดทดสอบ: เปลี่ยนอาชีพแล้ว"
+      - paragraph:
+        - time: 12:43
+        - text: "โหมดทดสอบ: Job Level 40 และผ่านบททดสอบอาชีพแล้ว"
+      - paragraph:
+        - time: 12:43
+        - text: เกราะวิญญาณหมาป่า · Wolf Spirit Armor เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: เคาะโล่ท้ารบ · Shield Clang เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ก้าวน้ำแข็ง · Siberian Frost Step เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: กระแทกโล่ · Shield Bash เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ป้อมหิมะ · Snow Fort เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: จิตใจเหล็ก · Iron Will เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: กายทรหด · Vitality Boost เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ชำนาญเกราะหนัก · Heavy Armor Mastery เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ผู้รอดแห่งไทกา · Taiga Survivor เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ชำนาญยั่วยุ · Aggro Mastery เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: มหาปราการไทกา · Taiga’s Absolute Fortress เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: กระทืบธรณี · Titan Stomp เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: บัญชาแม่ทัพ · Warlord's Command เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: จิตไม่หยุดยั้ง · Unstoppable Will เลเวล 1
+      - paragraph:
+        - time: 12:43
+        - text: ยืนหยัดแนวหน้า · Hold the Line เลเวล 1
+    - textbox "พิมพ์ข้อความ (ยังใช้งานไม่ได้)" [disabled]:
+      - /placeholder: แชทยังไม่เชื่อมเซิร์ฟเวอร์
+  - status:
+    - button "บัญชาแม่ทัพ · Warlord's Command เลเวล 1":
+      - generic: ✓
+      - generic: บัญชาแม่ทัพ · Warlord's Command เลเวล 1
+    - button "จิตไม่หยุดยั้ง · Unstoppable Will เลเวล 1":
+      - generic: ✓
+      - generic: จิตไม่หยุดยั้ง · Unstoppable Will เลเวล 1
+    - button "ยืนหยัดแนวหน้า · Hold the Line เลเวล 1":
+      - generic: ✓
+      - generic: ยืนหยัดแนวหน้า · Hold the Line เลเวล 1
+  - generic "Combat QA · guest · juggernaut"
+  - option "achan-saiyasat"
+  - option "mor-phhee"
+  - option "santet"
+  - option "keris"
+  - option "juggernaut" [selected]
+  - option "taiga"
+  - option "onmyoji"
+  - option "miko"
+  - option "rune-seer"
+  - option "ullr-hunter"
