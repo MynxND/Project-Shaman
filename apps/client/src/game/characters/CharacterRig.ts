@@ -84,6 +84,25 @@ export class CharacterSprite extends Phaser.GameObjects.Sprite {
   private modular: ModularManifest | undefined;
   private modularAction: RigAction | null = null;
   private castFrame: number | null = null;
+
+  /**
+   * Pixel-art body drawn at a fractional zoom (camera ~1.87 × sprite ~0.61): the camera floors the world position, so
+   * while walking the screen anchor lands on a different sub-pixel every step and nearest sampling re-picks the edge
+   * columns — the outline shimmers on side and diagonal walks (user 2026-10-17). Snap the anchor to a whole screen
+   * pixel for this draw so the texel pattern never changes; the real position is restored right after.
+   */
+  renderWebGL(renderer: unknown, src: unknown, camera: Phaser.Cameras.Scene2D.Camera, parentMatrix?: unknown) {
+    const draw = (Phaser.GameObjects.Sprite.prototype as unknown as { renderWebGL: (...a: unknown[]) => void }).renderWebGL;
+    // Camera.matrix is the render transform Phaser has just computed for this camera (public at runtime, untyped).
+    const cam = camera as unknown as { matrix: { a: number; d: number; e: number; f: number; b: number; c: number } }, m = cam.matrix;
+    if (parentMatrix || m.b || m.c || !m.a || !m.d) { draw.call(this, renderer, src, camera, parentMatrix); return; }
+    const x = this.x, y = this.y, round = camera.roundPixels;
+    const sx = m.a * (x - camera.scrollX * this.scrollFactorX) + m.e, sy = m.d * (y - camera.scrollY * this.scrollFactorY) + m.f;
+    this.x = x + (Math.round(sx) - sx) / m.a;
+    this.y = y + (Math.round(sy) - sy) / m.d;
+    camera.roundPixels = false;
+    try { draw.call(this, renderer, src, camera, parentMatrix); } finally { camera.roundPixels = round; this.x = x; this.y = y; }
+  }
   private castFacing: Facing = 'south';
   private previewFrame: number | null = null;
   private appearance: CharacterAppearance;
