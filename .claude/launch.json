@@ -26,6 +26,18 @@
         "tools/pose-studio/server.mjs"
       ],
       "port": 8790
+    },
+    {
+      "name": "anim-preview",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8798",
+        "--bind",
+        "127.0.0.1"
+      ],
+      "port": 8798
     }
   ]
 }
