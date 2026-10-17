@@ -1,0 +1,2367 @@
+{
+  "schema": "shaman-sprite3d/1",
+  "character": "santet-3d-01",
+  "action": "walk",
+  "image": "sheet.png",
+  "size": 128,
+  "framesPerDirection": 12,
+  "directions": [
+    "south",
+    "south-east",
+    "east",
+    "north-east",
+    "north",
+    "north-west",
+    "west",
+    "south-west"
+  ],
+  "durationMs": 1000,
+  "loop": true,
+  "groundAnchorSpace": "frame-local pixels; projected world origin",
+  "visualApproved": false,
+  "reference": "docs/design/santet-3d-01/reference.png",
+  "config": {
+    "schema": "shaman-sprite3d-config/1",
+    "character": "santet-3d-01",
+    "modelBuilder": "santet",
+    "reference": "docs/design/santet-3d-01/reference.png",
+    "output": "docs/design/santet-3d-01",
+    "size": 128,
+    "pixelScale": 1,
+    "paletteLevels": 32,
+    "alphaThreshold": 128,
+    "frames": 12,
+    "durationMs": 1000,
+    "orthoScale": 2.95,
+    "cameraTarget": [
+      0,
+      0,
+      1.18
+    ],
+    "cameraElevation": 18,
+    "samples": 32,
+    "stride": 0.27,
+    "footLift": 0.13,
+    "heldArm": "R",
+    "action": "walk",
+    "boneMap": {
+      "root": "root",
+      "torso": "torso",
+      "head": "head",
+      "thigh.L": "thigh.L",
+      "shin.L": "shin.L",
+      "foot.L": "foot.L",
+      "thigh.R": "thigh.R",
+      "shin.R": "shin.R",
+      "foot.R": "foot.R",
+      "arm.L": "arm.L",
+      "arm.R": "arm.R"
+    }
+  },
+  "frames": [
+    {
+      "direction": "south",
+      "angle": 0,
+      "index": 0,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        38,
+        10,
+        89,
+        118
+      ],
+      "file": "frames/south/00.png",
+      "sha256": "a09f1e4cdf338a324880e772c5f5b415d1163b3feb2d4aff8c979f609fcbae01"
+    },
+    {
+      "direction": "south",
+      "angle": 0,
+      "index": 1,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 128,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        38,
+        10,
+        89,
+        117
+      ],
+      "file": "frames/south/01.png",
+      "sha256": "930b589909bb45dd5401a3527e2ccfb56fc95244315b5ca3e1e899783e9353a2"
+    },
+    {
+      "direction": "south",
+      "angle": 0,
+      "index": 2,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 256,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        38,
+        10,
+        89,
+        116
+      ],
+      "file": "frames/south/02.png",
+      "sha256": "7988230d560737f596106dbc72c02aea8781c85eee8295b15187af1cd1382bf0"
+    },
+    {
+      "direction": "south",
+      "angle": 0,
+      "index": 3,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 384,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        38,
+        10,
+        89,
+        116
+      ],
+      "file": "frames/south/03.png",
+      "sha256": "ae94ee60beb94cb2529363d4f868aac1295d7b9c0a8ed84cd19337644870b8b2"
+    },
+    {
+      "direction": "south",
+      "angle": 0,
+      "index": 4,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 512,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        38,
+        10,
+        89,
+        115
+      ],
+      "file": "frames/south/04.png",
+      "sha256": "3f2ca799989d5bace986ac94b3c04c92056d71629abff1bcc01abed258233204"
+    },
+    {
+      "direction": "south",
+      "angle": 0,
+      "index": 5,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 640,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        38,
+        10,
+        89,
+        116
+      ],
+      "file": "frames/south/05.png",
+      "sha256": "4abd8f1fb637446093d27adfa5d60572f85d90b58a768c333a1682d114bce208"
+    },
+    {
+      "direction": "south",
+      "angle": 0,
+      "index": 6,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 768,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        38,
+        10,
+        89,
+        118
+      ],
+      "file": "frames/south/06.png",
+      "sha256": "b9353e66f1f8dcc8095da47c3dc1422e7c0ac42f35f6322b899b7a15c202c56f"
+    },
+    {
+      "direction": "south",
+      "angle": 0,
+      "index": 7,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 896,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        10,
+        89,
+        117
+      ],
+      "file": "frames/south/07.png",
+      "sha256": "bd8d9e415ae64c816a844f5d7d7860474c5d7f63ff217b445e33c92e02510aac"
+    },
+    {
+      "direction": "south",
+      "angle": 0,
+      "index": 8,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1024,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        10,
+        89,
+        116
+      ],
+      "file": "frames/south/08.png",
+      "sha256": "4f245b193885e5130f79bdd3489281b4e4e7579e4d86ede7d391d98d581d127d"
+    },
+    {
+      "direction": "south",
+      "angle": 0,
+      "index": 9,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1152,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        10,
+        89,
+        116
+      ],
+      "file": "frames/south/09.png",
+      "sha256": "f61acd67797e998998077714c9f5978bbccbe71e4bbaabd29d409315b5c897dc"
+    },
+    {
+      "direction": "south",
+      "angle": 0,
+      "index": 10,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1280,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        10,
+        89,
+        115
+      ],
+      "file": "frames/south/10.png",
+      "sha256": "b5fbf1c935dadd6842861703898a7c2946292b40cdd73937c7c382def91cbacc"
+    },
+    {
+      "direction": "south",
+      "angle": 0,
+      "index": 11,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1408,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        10,
+        89,
+        116
+      ],
+      "file": "frames/south/11.png",
+      "sha256": "4b54de201ac710a6be5411f63536d9c01bd1341e0b1ba2549af02beb995852c7"
+    },
+    {
+      "direction": "south-east",
+      "angle": 45,
+      "index": 0,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 0,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        10,
+        84,
+        119
+      ],
+      "file": "frames/south-east/00.png",
+      "sha256": "39d7a00a35800ef2d242b1ee07f649eef7a46253579e1f284c0c0cfbaf1da86b"
+    },
+    {
+      "direction": "south-east",
+      "angle": 45,
+      "index": 1,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 128,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        10,
+        84,
+        119
+      ],
+      "file": "frames/south-east/01.png",
+      "sha256": "ebcc3d29fceb1f9e79091e04df084e8e6af24b9bf15e096850d7b453a4d5f332"
+    },
+    {
+      "direction": "south-east",
+      "angle": 45,
+      "index": 2,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 256,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        10,
+        83,
+        118
+      ],
+      "file": "frames/south-east/02.png",
+      "sha256": "2491ef33950417ed56919231aec445c25a648f4d04241fc7a658e72ad63c38f3"
+    },
+    {
+      "direction": "south-east",
+      "angle": 45,
+      "index": 3,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 384,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        10,
+        83,
+        118
+      ],
+      "file": "frames/south-east/03.png",
+      "sha256": "5e1ce93816483f72fae0f7364334002a1b6ff6fad65e3028b78410f58275a0e2"
+    },
+    {
+      "direction": "south-east",
+      "angle": 45,
+      "index": 4,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 512,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        10,
+        83,
+        117
+      ],
+      "file": "frames/south-east/04.png",
+      "sha256": "68b2b489ddc5f13c537f2a50888cf4acb725bf04f831bbe3e81cef6b190a999c"
+    },
+    {
+      "direction": "south-east",
+      "angle": 45,
+      "index": 5,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 640,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        10,
+        84,
+        117
+      ],
+      "file": "frames/south-east/05.png",
+      "sha256": "8d8840a1769300893d3954f99d821ffb63d64c2bd446d1fb363543b54f3a4fe5"
+    },
+    {
+      "direction": "south-east",
+      "angle": 45,
+      "index": 6,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 768,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        10,
+        84,
+        116
+      ],
+      "file": "frames/south-east/06.png",
+      "sha256": "48df14f4e04e6e39b92b8405f5afc80154cb1af2972d1c571460b5c97b8d364a"
+    },
+    {
+      "direction": "south-east",
+      "angle": 45,
+      "index": 7,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 896,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        10,
+        84,
+        115
+      ],
+      "file": "frames/south-east/07.png",
+      "sha256": "cce2affd8c8422bbc1fdcf902b7bde39c4694557d25ed35bf1491c3770982534"
+    },
+    {
+      "direction": "south-east",
+      "angle": 45,
+      "index": 8,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1024,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        10,
+        85,
+        114
+      ],
+      "file": "frames/south-east/08.png",
+      "sha256": "4c02a174c8cd58a9b396c23717ec3f70d99eea2b39ec5262a89c0d25c3487834"
+    },
+    {
+      "direction": "south-east",
+      "angle": 45,
+      "index": 9,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1152,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        10,
+        85,
+        114
+      ],
+      "file": "frames/south-east/09.png",
+      "sha256": "8e9ddea2e29d0be90ea36f7d9aaeb1d5ef6c2541c1ad60ed7edc93b5d2866dcd"
+    },
+    {
+      "direction": "south-east",
+      "angle": 45,
+      "index": 10,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1280,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        10,
+        85,
+        115
+      ],
+      "file": "frames/south-east/10.png",
+      "sha256": "ac65aec416d9e38fecd3328d7473604f8607de8834e002f35448b244fb2d4a4f"
+    },
+    {
+      "direction": "south-east",
+      "angle": 45,
+      "index": 11,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1408,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        10,
+        84,
+        118
+      ],
+      "file": "frames/south-east/11.png",
+      "sha256": "741720d53596ed66a6d021c2a1491cf639751c33c066e489b157dad0a4760e2d"
+    },
+    {
+      "direction": "east",
+      "angle": 90,
+      "index": 0,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 0,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        47,
+        10,
+        80,
+        117
+      ],
+      "file": "frames/east/00.png",
+      "sha256": "feb385aa7b5a17074f6937c488e6fcc6e45307c249f47e18848be04b8f5abcd5"
+    },
+    {
+      "direction": "east",
+      "angle": 90,
+      "index": 1,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 128,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        49,
+        10,
+        80,
+        117
+      ],
+      "file": "frames/east/01.png",
+      "sha256": "269f43f6b7b1b392cf6e562c619f32f6eab128dc51df3a541aeb03535ca99f56"
+    },
+    {
+      "direction": "east",
+      "angle": 90,
+      "index": 2,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 256,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        49,
+        10,
+        80,
+        117
+      ],
+      "file": "frames/east/02.png",
+      "sha256": "dfecda9f5b044e8d95de2779f09007acecfda22e79bb24e090880c3b7b3f0791"
+    },
+    {
+      "direction": "east",
+      "angle": 90,
+      "index": 3,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 384,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        48,
+        10,
+        80,
+        117
+      ],
+      "file": "frames/east/03.png",
+      "sha256": "1fb0ee851e0a8249b02127cefb25da099fc8d3d4b0daaa08ab87280e575bd3a8"
+    },
+    {
+      "direction": "east",
+      "angle": 90,
+      "index": 4,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 512,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        48,
+        10,
+        80,
+        117
+      ],
+      "file": "frames/east/04.png",
+      "sha256": "1201394e7ef9397430a3c8d55ed934bd7d16c18af1205850299b86523da25ae0"
+    },
+    {
+      "direction": "east",
+      "angle": 90,
+      "index": 5,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 640,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        47,
+        10,
+        80,
+        117
+      ],
+      "file": "frames/east/05.png",
+      "sha256": "f02e12703fb47195fc61c89edc4e4944994e1f72a4e6c4576484bc2435d1b002"
+    },
+    {
+      "direction": "east",
+      "angle": 90,
+      "index": 6,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 768,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        47,
+        10,
+        80,
+        117
+      ],
+      "file": "frames/east/06.png",
+      "sha256": "fd95f12c5de638ea0906bf8f57c18192e0ace8be91fd3ec15527dab778aeed54"
+    },
+    {
+      "direction": "east",
+      "angle": 90,
+      "index": 7,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 896,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        49,
+        10,
+        80,
+        116
+      ],
+      "file": "frames/east/07.png",
+      "sha256": "30f5e9b9f64c304a7a65e0e46acdd34347f542a2130317b3c1f11440df0bdc3d"
+    },
+    {
+      "direction": "east",
+      "angle": 90,
+      "index": 8,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1024,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        49,
+        10,
+        80,
+        113
+      ],
+      "file": "frames/east/08.png",
+      "sha256": "b545d7cc9a0f236a1ce75f3c2381b851bad796259863c2c33df0f06b5433b74a"
+    },
+    {
+      "direction": "east",
+      "angle": 90,
+      "index": 9,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1152,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        48,
+        10,
+        80,
+        112
+      ],
+      "file": "frames/east/09.png",
+      "sha256": "f90501fe7e59b0a0efa593594df8409b56331a40fc131856950310596f631226"
+    },
+    {
+      "direction": "east",
+      "angle": 90,
+      "index": 10,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1280,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        48,
+        10,
+        80,
+        113
+      ],
+      "file": "frames/east/10.png",
+      "sha256": "7b1a79cc20be8cd377536d99d93db7901a4507fbba982baeb3c3880c21eb482b"
+    },
+    {
+      "direction": "east",
+      "angle": 90,
+      "index": 11,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1408,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        47,
+        10,
+        80,
+        116
+      ],
+      "file": "frames/east/11.png",
+      "sha256": "5ebc3f324691d6f5bd89105071416c5c33e7a8eead05edc962032902fc893004"
+    },
+    {
+      "direction": "north-east",
+      "angle": 135,
+      "index": 0,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 0,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        42,
+        9,
+        84,
+        115
+      ],
+      "file": "frames/north-east/00.png",
+      "sha256": "90507198b680b7d4affc3adfc2359a877bb82c5107c9417e77af3fbc7c5b0421"
+    },
+    {
+      "direction": "north-east",
+      "angle": 135,
+      "index": 1,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 128,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        9,
+        84,
+        116
+      ],
+      "file": "frames/north-east/01.png",
+      "sha256": "4f42380e3ba28ccd07e7c022b2f533da13952e2322d6472d1f1ae7ed34877481"
+    },
+    {
+      "direction": "north-east",
+      "angle": 135,
+      "index": 2,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 256,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        9,
+        84,
+        116
+      ],
+      "file": "frames/north-east/02.png",
+      "sha256": "6d8991b9c572c49b52bcbd6621109f5e58fce36edba1bce5ab01914a5fa3a594"
+    },
+    {
+      "direction": "north-east",
+      "angle": 135,
+      "index": 3,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 384,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        9,
+        84,
+        117
+      ],
+      "file": "frames/north-east/03.png",
+      "sha256": "c3ac0d421bc3fdf5be265f3019dcde0a5a5613bbdb0cac2d07ecb1b0391b71e4"
+    },
+    {
+      "direction": "north-east",
+      "angle": 135,
+      "index": 4,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 512,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        9,
+        84,
+        117
+      ],
+      "file": "frames/north-east/04.png",
+      "sha256": "c21f333385990d238aa6598fb7ac14056bf5ec0833bacb9b6d63c94f1045be62"
+    },
+    {
+      "direction": "north-east",
+      "angle": 135,
+      "index": 5,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 640,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        9,
+        84,
+        117
+      ],
+      "file": "frames/north-east/05.png",
+      "sha256": "bc5a0f1af161316d7aee696ddac187a0b83ad78e599a028086f06708fee83239"
+    },
+    {
+      "direction": "north-east",
+      "angle": 135,
+      "index": 6,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 768,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        9,
+        84,
+        118
+      ],
+      "file": "frames/north-east/06.png",
+      "sha256": "0583fc3674964351cb088bd8a8818e832417483e73c517bf4170accf6994e7a7"
+    },
+    {
+      "direction": "north-east",
+      "angle": 135,
+      "index": 7,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 896,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        9,
+        84,
+        117
+      ],
+      "file": "frames/north-east/07.png",
+      "sha256": "4360923877769c962039f2b609ef2be18cbfe70c078d5eb2bfa49033c1f52074"
+    },
+    {
+      "direction": "north-east",
+      "angle": 135,
+      "index": 8,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1024,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        9,
+        84,
+        113
+      ],
+      "file": "frames/north-east/08.png",
+      "sha256": "dba2fd56456cc20dad3f1c37d61041c793e53ad31230261cafc162582b42d85c"
+    },
+    {
+      "direction": "north-east",
+      "angle": 135,
+      "index": 9,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        9,
+        84,
+        113
+      ],
+      "file": "frames/north-east/09.png",
+      "sha256": "7e64eecaa17d2997b12b09cd350b138fb0f3fe15a318b8516ec5c6ae06249f8f"
+    },
+    {
+      "direction": "north-east",
+      "angle": 135,
+      "index": 10,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1280,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        9,
+        84,
+        113
+      ],
+      "file": "frames/north-east/10.png",
+      "sha256": "37a59c0ae9091b4592fd7ab50af3142aa2508c688861b2183d1f2ee69fd892a6"
+    },
+    {
+      "direction": "north-east",
+      "angle": 135,
+      "index": 11,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1408,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        42,
+        9,
+        84,
+        114
+      ],
+      "file": "frames/north-east/11.png",
+      "sha256": "a1b83c8b1bd3e3b9d77136460140ad4f5dcff75b3db97a4586ce064039c18e07"
+    },
+    {
+      "direction": "north",
+      "angle": 180,
+      "index": 0,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 0,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        9,
+        90,
+        116
+      ],
+      "file": "frames/north/00.png",
+      "sha256": "cddbbe858da2674c85fd146e18dabd0105edf6a491552d1e330257cf7a541be1"
+    },
+    {
+      "direction": "north",
+      "angle": 180,
+      "index": 1,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 128,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        9,
+        90,
+        115
+      ],
+      "file": "frames/north/01.png",
+      "sha256": "f8ad165e51663b31680313c7834bce538eb348fa39f2d44a720594b1b309750c"
+    },
+    {
+      "direction": "north",
+      "angle": 180,
+      "index": 2,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 256,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        9,
+        90,
+        114
+      ],
+      "file": "frames/north/02.png",
+      "sha256": "cd3bc1c3975d93bb95192c20d08ea1ba4a0991678cec68ec685a05b5ac6650b6"
+    },
+    {
+      "direction": "north",
+      "angle": 180,
+      "index": 3,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 384,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        9,
+        90,
+        114
+      ],
+      "file": "frames/north/03.png",
+      "sha256": "c5328fd2959b4d5e3cb8ea4951a2400ddec4a9c9bb0fbf87992c20ec3e5c1910"
+    },
+    {
+      "direction": "north",
+      "angle": 180,
+      "index": 4,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 512,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        9,
+        90,
+        115
+      ],
+      "file": "frames/north/04.png",
+      "sha256": "feec91643569735b24da3c77bd59d5210952a1ade9b11c501449097ec3d97784"
+    },
+    {
+      "direction": "north",
+      "angle": 180,
+      "index": 5,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 640,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        9,
+        90,
+        115
+      ],
+      "file": "frames/north/05.png",
+      "sha256": "f78bece575966cb790831a419d4a770a5253f3f03cea79b99105d62992c71738"
+    },
+    {
+      "direction": "north",
+      "angle": 180,
+      "index": 6,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 768,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        9,
+        90,
+        116
+      ],
+      "file": "frames/north/06.png",
+      "sha256": "4a4125c22d5d7d836e9d322994f49995f36f3dac98f5c72d9a0d76aad6024c47"
+    },
+    {
+      "direction": "north",
+      "angle": 180,
+      "index": 7,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 896,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        9,
+        89,
+        115
+      ],
+      "file": "frames/north/07.png",
+      "sha256": "cdcd4491df36bea07cda2520db65bb1f2e1e9aef805565c298eb47824597a6c1"
+    },
+    {
+      "direction": "north",
+      "angle": 180,
+      "index": 8,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1024,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        9,
+        89,
+        114
+      ],
+      "file": "frames/north/08.png",
+      "sha256": "5c8b810bb69cc989b99f6e6248d710e728bdabd2bd6a45e6262ac7c780a2f085"
+    },
+    {
+      "direction": "north",
+      "angle": 180,
+      "index": 9,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1152,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        9,
+        89,
+        114
+      ],
+      "file": "frames/north/09.png",
+      "sha256": "20b0fe85a6a6d058bb43f595ce2eadc4192ed12fde1545a41d03699d62887bb0"
+    },
+    {
+      "direction": "north",
+      "angle": 180,
+      "index": 10,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1280,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        9,
+        89,
+        115
+      ],
+      "file": "frames/north/10.png",
+      "sha256": "a3c43523786ef7aa2899ab3a475d5ce6ffc88dd29c8b573909133ce0a9225042"
+    },
+    {
+      "direction": "north",
+      "angle": 180,
+      "index": 11,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1408,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        39,
+        9,
+        89,
+        115
+      ],
+      "file": "frames/north/11.png",
+      "sha256": "f4031869ff0d373323f1f43c8644b50723fa24870931e788ddcf19bce66b7058"
+    },
+    {
+      "direction": "north-west",
+      "angle": 225,
+      "index": 0,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 0,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        88,
+        118
+      ],
+      "file": "frames/north-west/00.png",
+      "sha256": "be6db218465ac1bd6cf2ee5d1928b35708f2694efb145b8fee9506659d57f23b"
+    },
+    {
+      "direction": "north-west",
+      "angle": 225,
+      "index": 1,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 128,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        88,
+        117
+      ],
+      "file": "frames/north-west/01.png",
+      "sha256": "418c2520eed8463c037eee40f00a11310155848bb1093bc9b1123c1913112b15"
+    },
+    {
+      "direction": "north-west",
+      "angle": 225,
+      "index": 2,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 256,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        45,
+        10,
+        88,
+        113
+      ],
+      "file": "frames/north-west/02.png",
+      "sha256": "3c525665aea03b903ebeec069381d9030cffbd12595beae94088186efd3f6c5f"
+    },
+    {
+      "direction": "north-west",
+      "angle": 225,
+      "index": 3,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 384,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        45,
+        10,
+        88,
+        113
+      ],
+      "file": "frames/north-west/03.png",
+      "sha256": "12e36e9875bdbc20fe0f1fec0a3d5cb7b85988be9aea77a24b960935fde43601"
+    },
+    {
+      "direction": "north-west",
+      "angle": 225,
+      "index": 4,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 512,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        45,
+        10,
+        88,
+        113
+      ],
+      "file": "frames/north-west/04.png",
+      "sha256": "e4f6addd8b7922f6b88d1307fa448f51c6f2b775031a8d7809be4cbede883a2a"
+    },
+    {
+      "direction": "north-west",
+      "angle": 225,
+      "index": 5,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 640,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        88,
+        114
+      ],
+      "file": "frames/north-west/05.png",
+      "sha256": "c8205b24ba38fc2f1ab5154a7c1fb364e67351db704f479571145eb8af88e98d"
+    },
+    {
+      "direction": "north-west",
+      "angle": 225,
+      "index": 6,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 768,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        88,
+        115
+      ],
+      "file": "frames/north-west/06.png",
+      "sha256": "f47556f015f4c732089e399f898964c124fa5cda139a3bcb093bfeb7ee25bc94"
+    },
+    {
+      "direction": "north-west",
+      "angle": 225,
+      "index": 7,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 896,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        85,
+        116
+      ],
+      "file": "frames/north-west/07.png",
+      "sha256": "032be40908f50cba2e5708439379845c971bb002c7bb6967650b53140469a4a4"
+    },
+    {
+      "direction": "north-west",
+      "angle": 225,
+      "index": 8,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1024,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        10,
+        85,
+        116
+      ],
+      "file": "frames/north-west/08.png",
+      "sha256": "ea2bb737cb0e8a7e97244c0d5c765afc73b996d9d6f05bec9719bef325bb832f"
+    },
+    {
+      "direction": "north-west",
+      "angle": 225,
+      "index": 9,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1152,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        10,
+        85,
+        117
+      ],
+      "file": "frames/north-west/09.png",
+      "sha256": "d955932c9a0cc2a1423fd7431e09bb256b510b3783cbee7954356496f9d60120"
+    },
+    {
+      "direction": "north-west",
+      "angle": 225,
+      "index": 10,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1280,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        43,
+        10,
+        85,
+        117
+      ],
+      "file": "frames/north-west/10.png",
+      "sha256": "d9ae466dee700b7fc41a12cf9d0332d20a71daf074b42b9f46f6eb1c797ef536"
+    },
+    {
+      "direction": "north-west",
+      "angle": 225,
+      "index": 11,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1408,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        85,
+        117
+      ],
+      "file": "frames/north-west/11.png",
+      "sha256": "0cdff8f8e48d45980e90ef694f2cb206b4a3e519e3ddac44b56111d70ac9e766"
+    },
+    {
+      "direction": "west",
+      "angle": 270,
+      "index": 0,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 0,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        48,
+        10,
+        81,
+        117
+      ],
+      "file": "frames/west/00.png",
+      "sha256": "6b664385864cfa9799c0414cc9c090a9872df8c7669f1130f52a20b6247112f6"
+    },
+    {
+      "direction": "west",
+      "angle": 270,
+      "index": 1,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 128,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        48,
+        10,
+        79,
+        116
+      ],
+      "file": "frames/west/01.png",
+      "sha256": "853ab76f286765bd00e4f4f467768e8c85f2a69c3cecfd54bcf817855c57aaca"
+    },
+    {
+      "direction": "west",
+      "angle": 270,
+      "index": 2,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 256,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        48,
+        10,
+        79,
+        113
+      ],
+      "file": "frames/west/02.png",
+      "sha256": "a1cb433ba3447448d2f4fc0785d84253f863fcf1c656af93a28cd5ce13c624f8"
+    },
+    {
+      "direction": "west",
+      "angle": 270,
+      "index": 3,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 384,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        48,
+        10,
+        80,
+        112
+      ],
+      "file": "frames/west/03.png",
+      "sha256": "89050fbd24db05e65e597377916f003db93183fb687e2738cd45f60a999a4f34"
+    },
+    {
+      "direction": "west",
+      "angle": 270,
+      "index": 4,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 512,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        48,
+        10,
+        80,
+        113
+      ],
+      "file": "frames/west/04.png",
+      "sha256": "d87f7ff7748852f428c5b6c77b1da43d9a178e0717f8d920f875ab1da29bc515"
+    },
+    {
+      "direction": "west",
+      "angle": 270,
+      "index": 5,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 640,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        48,
+        10,
+        81,
+        116
+      ],
+      "file": "frames/west/05.png",
+      "sha256": "93b6fb729a610c49d62d6923c21189364a26fcafbded1b882d5cd12de34a231e"
+    },
+    {
+      "direction": "west",
+      "angle": 270,
+      "index": 6,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 768,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        48,
+        10,
+        81,
+        117
+      ],
+      "file": "frames/west/06.png",
+      "sha256": "655b99b0ed51faaf1b3b011324216b0a12d72821ba0de0eae7f86f6d8e2c4027"
+    },
+    {
+      "direction": "west",
+      "angle": 270,
+      "index": 7,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 896,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        48,
+        10,
+        79,
+        117
+      ],
+      "file": "frames/west/07.png",
+      "sha256": "e0f1ece30c69b416f9dc64b7b41b3a98d48f739f4576522dcd01b65b46e5e9ad"
+    },
+    {
+      "direction": "west",
+      "angle": 270,
+      "index": 8,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1024,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        48,
+        10,
+        79,
+        117
+      ],
+      "file": "frames/west/08.png",
+      "sha256": "93c5bb12c1cf112dfbc7dd08e4d01eb5d3a8368660d8b1fb2e623c4a26122690"
+    },
+    {
+      "direction": "west",
+      "angle": 270,
+      "index": 9,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1152,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        48,
+        10,
+        80,
+        117
+      ],
+      "file": "frames/west/09.png",
+      "sha256": "3c61d7c6712262de10e9487e3193bfc0674b04d93513a13b08c2446f588a9013"
+    },
+    {
+      "direction": "west",
+      "angle": 270,
+      "index": 10,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1280,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        48,
+        10,
+        80,
+        117
+      ],
+      "file": "frames/west/10.png",
+      "sha256": "0a4781df19c5075d2e0d839122600bbc3874bc804becc32a49009173e195b13c"
+    },
+    {
+      "direction": "west",
+      "angle": 270,
+      "index": 11,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1408,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        48,
+        10,
+        81,
+        117
+      ],
+      "file": "frames/west/11.png",
+      "sha256": "82ae47bcabea430eba403846a792041ad406d66dd45f9ca77e625aec309f7b57"
+    },
+    {
+      "direction": "south-west",
+      "angle": 315,
+      "index": 0,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 0,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        86,
+        116
+      ],
+      "file": "frames/south-west/00.png",
+      "sha256": "8d4f677df5e9ef4a509cf14822422e4b9e77b9ec329931f0730a6cb30bd95b7f"
+    },
+    {
+      "direction": "south-west",
+      "angle": 315,
+      "index": 1,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 128,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        85,
+        115
+      ],
+      "file": "frames/south-west/01.png",
+      "sha256": "1efdb06a22e18ee9852e8a5df3d0ce5eb5d41a56ef54e66e66737b4de352ecf0"
+    },
+    {
+      "direction": "south-west",
+      "angle": 315,
+      "index": 2,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 256,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        85,
+        114
+      ],
+      "file": "frames/south-west/02.png",
+      "sha256": "aec129bb7e95a21113a7a1304f79258ea659f386c1276729c55d0605bc0cb939"
+    },
+    {
+      "direction": "south-west",
+      "angle": 315,
+      "index": 3,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 384,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        85,
+        114
+      ],
+      "file": "frames/south-west/03.png",
+      "sha256": "9b6cd8d54fafedad0ca82054ed0fdf2cd4216d6680fa78437e13a438920fa174"
+    },
+    {
+      "direction": "south-west",
+      "angle": 315,
+      "index": 4,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 512,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        85,
+        115
+      ],
+      "file": "frames/south-west/04.png",
+      "sha256": "535e8eaf396764e8ff02ad3e13042d225ad148d70c776b45f90f43ebf7d4f70d"
+    },
+    {
+      "direction": "south-west",
+      "angle": 315,
+      "index": 5,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 640,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        85,
+        118
+      ],
+      "file": "frames/south-west/05.png",
+      "sha256": "081d2c58a0fb6f7d37328d507993f823fd5e3d073f5bef87a6b05806225faa94"
+    },
+    {
+      "direction": "south-west",
+      "angle": 315,
+      "index": 6,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 768,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        85,
+        119
+      ],
+      "file": "frames/south-west/06.png",
+      "sha256": "64ab42feeea587e5c2c578701857dc15ed3b2a228991bda87f7b126861f334a5"
+    },
+    {
+      "direction": "south-west",
+      "angle": 315,
+      "index": 7,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 896,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        85,
+        119
+      ],
+      "file": "frames/south-west/07.png",
+      "sha256": "d10575f38932148018db8de410537179b82dd9b22a6ac7551718c8f3bc1e5177"
+    },
+    {
+      "direction": "south-west",
+      "angle": 315,
+      "index": 8,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1024,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        85,
+        118
+      ],
+      "file": "frames/south-west/08.png",
+      "sha256": "d01836e308ec0d2df80d9997151bbe83956c2324c3a1a1c0bd77c0bfaaf00402"
+    },
+    {
+      "direction": "south-west",
+      "angle": 315,
+      "index": 9,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1152,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        85,
+        118
+      ],
+      "file": "frames/south-west/09.png",
+      "sha256": "533f05336f78fa2b600cd6f6b53c6a6b5084b430dfddd7d303b67715f85638fe"
+    },
+    {
+      "direction": "south-west",
+      "angle": 315,
+      "index": 10,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1280,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        85,
+        117
+      ],
+      "file": "frames/south-west/10.png",
+      "sha256": "44ecb699c1b86e0f1018d2a50ecb12bb1d8d918dd6914384e0fbb8340ac7d75b"
+    },
+    {
+      "direction": "south-west",
+      "angle": 315,
+      "index": 11,
+      "groundAnchor": [
+        64,
+        113
+      ],
+      "durationMs": 83.33333333333333,
+      "rect": {
+        "x": 1408,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      "bounds": [
+        44,
+        10,
+        86,
+        117
+      ],
+      "file": "frames/south-west/11.png",
+      "sha256": "188047c832b6b94025e3679f3789ec7edc06b274e48d2114bd75f64b94d26a25"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "unet": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "clip": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    }
+  },
+  "vae": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+    }
+  },
+  "first": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "pose-studio/20261014-040244-santet-south-walk-first.png"
+    }
+  },
+  "i2v": {
+    "class_type": "MiniMaxH3ImageToVideo",
+    "inputs": {
+      "clip": [
+        "clip",
+        0
+      ],
+      "vae": [
+        "vae",
+        0
+      ],
+      "prompt": "Pixel-art video game character animation of the exact character in the first frame: Indonesian dark shaman in layered ritual robes with long sleeves, full body, facing the camera (toward the viewer, slightly from above).\nThe character walks in place with left and right feet alternating clearly; the staff-holding hand keeps a firm unchanged resting grip, staff remains upright, free arm moves only slightly, no hopping or repeated same-foot lift.\nThe motion is a seamless loop that ends exactly in the starting pose.\nThe character keeps the same facing direction the whole time and does not turn around.\nLocked-off static camera: no camera movement, no zoom, no pan, no cuts. The character stays centered at the same size and position on the ground.\nKeep the identical costume, colors, proportions, face and crisp pixel-art shading as the first frame. The background stays a perfectly flat solid color with no shadow, no floor, no texture and no lighting change. No particles, no text, no extra objects or people.\nAudio: silence.",
+      "width": 768,
+      "height": 768,
+      "length": 39,
+      "first_frame": [
+        "first",
+        0
+      ],
+      "last_frame": [
+        "last",
+        0
+      ]
+    }
+  },
+  "noise": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 17
+    }
+  },
+  "sampler": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "res_multistep"
+    }
+  },
+  "sched": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "lora",
+        0
+      ],
+      "scheduler": "simple",
+      "steps": 8,
+      "denoise": 1
+    }
+  },
+  "guider": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "lora",
+        0
+      ],
+      "conditioning": [
+        "i2v",
+        0
+      ]
+    }
+  },
+  "sample": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "noise",
+        0
+      ],
+      "guider": [
+        "guider",
+        0
+      ],
+      "sampler": [
+        "sampler",
+        0
+      ],
+      "sigmas": [
+        "sched",
+        0
+      ],
+      "latent_image": [
+        "i2v",
+        1
+      ]
+    }
+  },
+  "decode": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "sample",
+        0
+      ],
+      "vae": [
+        "vae",
+        0
+      ]
+    }
+  },
+  "save": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "decode",
+        0
+      ],
+      "filename_prefix": "pose-studio/20261014-040244-santet-south-walk/f"
+    }
+  },
+  "lora": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "unet",
+        0
+      ],
+      "lora_name": "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+      "strength_model": 1
+    }
+  },
+  "last": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "pose-studio/20261014-040244-santet-south-walk-first.png"
+    }
+  }
+}

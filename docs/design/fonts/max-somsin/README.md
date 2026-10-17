@@ -1,0 +1,3 @@
+# MAX somsin
+
+Original MAX Design typeface, user-requested2026-10-14. Source: https://www.f0nt.com/release/max-somsin/ ; original download https://www.f0nt.com/?dl_name=maxdesign/MAX-somsin.zip . General distribution terms: https://www.f0nt.com/about/license/ . Download ZIP and original bundled author text preserved here; bundled Thai text is CP874. Original TTF copied unchanged into apps/client/public/assets/fonts/max-somsin/MAX-somsin.ttf, scoped @font-face to the world atlas. No font modification, subsetting, resale or standalone font distribution product. Headings/country labels use MAX somsin; interactive controls and long Thai detail text use existing Noto Sans Thai for small-screen reading.

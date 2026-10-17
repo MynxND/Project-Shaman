@@ -1,0 +1,27 @@
+{
+  "id": "20261014-032341-santet-south-walk",
+  "character": "santet",
+  "direction": "south",
+  "action": "walk",
+  "custom": null,
+  "prompt": "Pixel-art video game character animation of the exact character in the first frame: Indonesian dark shaman in layered ritual robes with long sleeves, full body, facing the camera (toward the viewer, slightly from above).\nThe character walks in place with a clear alternating gait: left foot steps forward while the right arm swings, then the right foot steps forward while the left arm swings, knees bend on each contact, the body bobs slightly.\nThe motion is a seamless loop that ends exactly in the starting pose.\nThe character keeps the same facing direction the whole time and does not turn around.\nLocked-off static camera: no camera movement, no zoom, no pan, no cuts. The character stays centered at the same size and position on the ground.\nKeep the identical costume, colors, proportions, face and crisp pixel-art shading as the first frame. The background stays a perfectly flat solid color with no shadow, no floor, no texture and no lighting change. No particles, no text, no extra objects or people.\nAudio: silence.",
+  "params": {
+    "canvas": 768,
+    "length": 39,
+    "frames": 8,
+    "seed": 7,
+    "turbo": true,
+    "loop": true,
+    "groundLock": true,
+    "fps": 8
+  },
+  "status": "failed",
+  "progress": null,
+  "error": "server restarted during the run; re-queue it",
+  "createdAt": "2026-10-14T03:23:41.059Z",
+  "requestedBy": "claude",
+  "notes": null,
+  "review": null,
+  "qa": null,
+  "selected": null
+}

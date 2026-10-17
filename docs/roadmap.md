@@ -1,504 +1,183 @@
-# Roadmap
-
-## Hair V3 reference study and FRONT candidates — 2026-10-10
-
-USER reauthorizes V2 neutral-male-02 for this candidate round; V3 bodies remain
-unapproved. Official RO galleries are studied remotely for techniques only; no
-third-party sprite files enter the repo or AI inputs. See design/hair-v3 for
-reference catalog, original five-color guide,14 silhouette concepts and three
-original dark-hair FRONT candidates. Inspector defaults to these hash-checked
-PNGs, supports flat/shaded comparison and back/main/fringe visibility. Actual
-source/body/origin unchanged. Seven free guarded Workbench edits including one
-pixel knot-root cleanup, paid0, live balance125 to125; old paid18 untouched.
-Typecheck/build and source/layer tests pass; visual approval remains USER-only.
-No other directions, animation, approved asset overwrite or gameplay adoption.
-
-
-## FRONT redesign after USER rejection — 2026-10-10
-
-USER rejected all three manual-repair-01 images and requested all corrections.
-Current inspector uses hair-front-pipeline-02/redesign-02: natural open hairlines,
-no blanket gray scalp fill, and bob back/base/front layering around unchanged V2
-neutral-male-02. Root attachment targets exclude intentional visible skin.
-Zero root gaps is a technical measurement, never visual approval. All three new
-FRONT drafts remain unapproved. Four free exact PixelLab Workbench edits added0
-paid generations. Original18 /three attempts /no retry remains frozen. No other
-directions, animation, extra generation or gameplay adoption. Rejected inspector
-is collapsed as history. See redesign-02/README.md.
-
-## Three FRONT hair manual repairs for review — 2026-10-10
-
-Same3 rejected PixelLab prototypes repaired through free Workbench exact edits.
-Manual layers and raw/repair editor comparison delivered; skin palette removed,
-scalp gaps0/protected overlap0. Original source/body/receipts/ledgers unchanged,
-added paid generations0. Artistic shading/joins and full modular production
-quality remain unapproved. STOP for FRONT review before direction/animation work.
-Evidence: `design/character-v2/hair-front-pipeline-02/manual-repair-01/README.md`.
-
-## V2 modular FRONT hair pipeline — 2026-10-10
-
-Delivered for review: actual-head templates,14 silhouette specifications,
-FRONT editor at `/characters/v2`,3 PixelLab attempts under newly approved18 cap.
-Actual18 spent, pending0/retries0. All3 raw outputs fail isolated hair-only quality;
-knot also misses scalp. Production hair remains incomplete. Original V2 base,
-gameplay manifest and old20/20 ledger unchanged. STOP: USER visual review before
-any cleanup/retry/other style/direction/animation. Evidence:
-`design/character-v2/hair-front-pipeline-02/README.md`.
-
-## Original V2 FRONT Hair Fit Review - 2026-10-10
-
-Exactly three original manual SOUTH hair pairs on approved neutral-male-02 now
-selected at /characters/v2 with bare/hair/composite/before-after/head4x diagnostics.
-Scalp gaps/face mismatch/source hash mismatch0; body4/ledger20/20 unchanged, paid0.
-45 browser cases and additional12 checks pass; actual captures host-clipped, no
-responsive visual sign-off. Draft art still needs USER review; no directions,
-outfits, animation or live adoption. See design/character-v2/hair-fit-front-01/ROW_FRONT_REVIEW.md.
-
-## V3 Compact FRONT Review - 2026-10-10
-
-Three independently authored bald static FRONT candidates A/B/C now at
-`/characters/v3`, alongside unchanged V2 neutral-male-02. Native128, head30x34
-identical byte pattern, heights90/98/105, baseline112, real native/exact4x sheets.
-Original row/polygon source, provisional21 anchors per pose, measurements and
-live read-only capability receipts retained. Paid0, prior ledger20/20 unchanged,
-192 old V2 files frozen. Focused V3/V2 regressions, workspace typecheck/build and
-editor checks pass. Browser6 viewport/scale cases:24 canvases mismatch0,
-guide/anchor coordinates pass, no page overflow; screenshots inspected but host
-reflow prevents responsive screenshot/real-device sign-off. A suggested for
-compactness; flat torso/angular limbs remain concerns. All visual/rig/body-lock
-gates false. STOP for USER A/B/C review; no further views/hair/outfit/animation
-or main-world migration. See [V3 review](design/character-v3/proportion-front-01/README.md).
-
-## Character V2 Hair Redesign Review - 2026-10-10
-
-Long-manual01 FRONT is USER rejected, archived unchanged. One newly authored
-SOUTH silver hair pair now replaces it in the inspector; no paid calls, ledger
-byte-exact20/20, bodies4 unchanged. Swept curtain fringe and curved separate waist
-locks; hair/full acceptance false. Publication/history/shared tests, typecheck and
-build pass. Browser15 sorted-source/toggle cases pass at1280/390/844, no horizontal
-overflow; six actual screenshots inspected, host reflow prevents responsive
-screenshot/real-device sign-off. Outer strands remain angular/outline-heavy.
-STOP for USER review, no additional direction/outfit/animation/live migration.
-See [redesign proposal](design/character-v2/hair-long-redesign-02/README.md).
-
-## Character V2 Long Hair SOUTH - 2026-10-10
-
-Latest requested long silver-ivory style, no red bow/tie, now published as one
-new original manual hairBack/hairFront pair for SOUTH review. Native128/origin
-61,112/staticnull; rear2042 pixels to y78/front675 to y66, forehead29 intentional,
-eyes/ears/jaw/neck mismatch0/scalp gaps0. Four approved bodies and old crop draft
-remain byte-exact; crop binding archived unavailable in split pose. No V1 pixel
-reuse/provider call, paid20/20 unchanged/additional0. Focused publication/shared
-tests, typecheck/build pass. Full visual acceptance false; STOP for USER SOUTH
-review before any additional hair direction/outfit/animation/live integration.
-Actual browser15 cases: on953/off0, sorted/hash/face mismatch0, no DOM overflow;
-six screenshots inspected. Keyboard verified; host pointer/capture fidelity and
-real-device mobile sign-off remain unverified.
-See [long hair proof](design/character-v2/hair-long-manual-01/README.md).
-
-## Character V2 FRONT Manual Draft - 2026-10-10
-
-Latest USER proceed authorizes zero-credit from-scratch SOUTH hair authoring.
-One real transparent ivory-crop01-manual layer is published for review only;
-four body PNGs and rejected paid output remain exact. Paid20/cap20/remaining0,
-additional0; no provider jobs. Seven-color427-pixel hair,21 forehead pixels
-deliberately covered, eyes/ears/jaw/neck mismatch0. All other hair directions
-absent; outfit/animation/full visual milestone remain incomplete and unapproved.
-Focused/shared/publication/typecheck/build pass; browser15 DOM/canvas cases pass.
-Actual screenshots inspected, but host reflow prevents responsive screenshot
-sign-off. STOP for USER FRONT hair review; no live adoption. See
-[manual draft](design/character-v2/hair-manual-01/README.md).
-
-## Character V2 Hair Attempt Rejected - 2026-10-09
-
-All four byte-exact V2 bodies now USER approved; anchors/fit still provisional.
-One explicitly authorized SOUTH cap-only hair inpaint completed/charged6 after
-cap18-to20 approval, cumulative20/remaining0/pending0. Visible scalp contaminates
-raw changes-only output: rejected, no runtime hair or retries. Preparation remains
-historical unchanged; separate paid-stage receipts/diagnostics/screenshots retained.
-Full body/hair/outfit milestone remains false. STOP: further hair/outfit work needs
-new authorization/budget, no animation or live migration. Typecheck/build, focused
-provenance/conservation/publication/shared checks and12 browser body cases pass.
-
-## Character V2 Rotation Delivered For Review - 2026-10-09
-
-FRONT02 now USER approved; one authorized same-reference rotation completed at
-actual2, no first-image charge. Four real128 static cardinal bodies in inspector;
-only SOUTH visualApprovedtrue. E/N/W true profile/back candidates await USER
-review; shading differences and actual foot drift remain open. Common origin61,112
-is provisional template only; no alignment transforms. Raw8 and billing evidence
-retained in character-v2/body-rotation-01. V2cap18/spent14/remaining4/pending0.
-STOP for four-view review. Independent hair/outfit, bindings and animations are
-not delivered/authorized; full modular milestone and live adoption remain blocked.
-
-## Character V2 Readiness - 2026-10-09
-
-New shared contract and separate `/characters/v2` inspector added;
-FRONT01 remains rejected evidence. Separately authorized SINGLE revised FRONT02
-completed/receipt6 supplies one unapproved static SOUTH body candidate.
-Spec accepted; cumulative12/cap18/reserved0/pending0/remaining6. Large head and
-compact body improved; estimated3.1-3.33 heads and chest shading need USER review.
-Target remains four static idle views, independent hair/outfit; not delivered.
-No old repair continuation, animation or live renderer change. Next: USER visual
-review of actual revised FRONT at `/characters/v2`; no automatic paid retry,
-rotation, reference reuse, hair or outfit. See `docs/design/character-v2/body-front-02/README.md`.
-
-## Costume Repair Result - 2026-10-09
-
-Bounded18 continuation attempted actual RIGHT garment artwork once; estimate6,
-job-specific actual6, pending0, no retry. Raw native image and exact2x comparison
-are delivered under `character-turnaround/costume-repair-01`; protected14,832
-RGBA pixels unchanged, but broad pale side hem and FRONT garment construction
-remain visually rejected. BACK/LEFT stopped; unused12 retained. Runtime review
-bundle only, no approved-source/live registry replacement. Next needs reviewed
-garment topology and reconstruction masks; clean occluded body/scalp, crown fit
-and all new-base animation remain blocked. Numerical anatomy/animation approval
-has not been granted; minimum native masked proof quote6 remains provisional.
-
-## Expanded Foundation Continuation - 2026-10-09
-
-Scope now includes RIGHT90 costume/hem/belt/shading, BACK/LEFT identity, clean
-body/head/outfit, hair/headgear anchors and new-base animation. Foundation01
-provides four native source reviews, exact visible partitions, conservative
-costume masks, provisional anchors and 24 state/view coverage records. Sixteen
-original clips exist; zero new-base clips or clean hidden anatomical bodies are
-delivered. Earlier right-only stop records below are history, not current scope.
-FRONT-only approval remains. Live native128 inpaint quote is provisional6 per
-image; sequential three-view costume stage is estimated18, awaiting explicit
-numerical cost approval. No paid jobs/credits added. See
-`docs/design/character-turnaround/foundation-01/README.md` for blockers and checks.
-
-Client evidence integration is now delivered at `/characters/modular`, retaining
-the right-only inspector: source and all four visible partitions, native1x/2x,
-provisional anchors, archived per-frame evidence and 24/16/ZERO coverage. Workspace
-typecheck/build, foundation pixel/contract checks and 30 browser combinations
-passed; actual React screenshot is saved in foundation-01. This does not complete
-the art roadmap or approve layers/anchors. ZERO paid jobs authorized/submitted;
-corrected costumes, clean anatomy and all new-base clips remain blocked.
-
-## Critical Base Quality Gate — 2026-10-09
-
-Latest right-only manual correction: explicit user approval now applies only to
-the byte-exact original rig-v2 male idle-south frame0. A real native128 hair-only
-source-pixel draft restores the crimson bow/tied ivory tail on the cleaner raw
-rotation profile, changing1,033 pixels with15,351 unmasked RGBA protected.
-East status `manual-right90-proposal-awaiting-review`, overall approvedfalse;
-rotation costume/apron/texture consistency remains unresolved, not production
-ready. Native/2x browser evidence inspected, pixel regressions/typecheck/build
-pass. No paid jobs or additional credits; cumulative8/reserved0/pending0
-accounting retained. Back/left remain null and unchanged; stop for right review.
-Evidence: `docs/design/character-turnaround/right90-manual-01/README.md`.
-Earlier null-candidate/service-failure entries below are retained history.
-
-Latest narrow existing-master hair/tie repair: one native128 masked submission
-after rotation-experiment-01 failed on the service with no output. No retry;
-observed charge0, cumulative8, reserved0, pending0. Raw/front bytes stay exact,
-mask1351 selected/15033 protected excludes profile skin. East candidate remains
-null; latest real rejectedPreview and rejection history retained. Main UI/TS
-untouched. North/west review/generation stays blocked. Evidence and limitations:
-`docs/design/character-turnaround/right90-hair-repair-01/README.md`.
-
-Latest user request stops hairstyle/equipment/animation generation until a coherent
-four-direction base is approved. Audit/template retained the native128 rig-v2 male
-front frame0 byte-exact; no claim that source selection itself is user approval.
-One reference-guided right90 PixelLab edit was attempted for6 credits and rejected:
-it generated a frontal pose and changed costume construction. Back/left generation
-stopped immediately. A later actual owned-front Pro Flash/V3 rotation completed
-all8 native views with first-direction creation skipped, observed additional2
-credits (8 cumulative). East improved toward a right profile and matched baseline,
-but invented long loose white hair and lost crimson ties; it is rejected.
-Back/left raw are archived but unreviewed after the east stop. No pending jobs.
-Corrected turnaround is BLOCKED, not completed.
-Continuation: owned-front reference rotation improved east profile and met baseline,
-but changed hair to loose long white hair and removed crimson ties. It remains a
-rejected preview, not a candidate. Observed additional2 credits (billing attribution
-caveat retained in ledger), cumulative8. One narrow master-hair restoration request
-then failed at the service with no returned image, observed additional0, no retry
-and no pending jobs. Inspector exposes this failure separately as Rejected rotation.
-Back/left review stays gated on a genuinely identity-consistent right view.
-Right-only manual01 now restores existing native rear hair/bow/tail by recorded
-source masks on the rotation profile, with no paid generation or full-body reroll.
-Front is explicitly approved by the latest user request and stays byte-exact.
-The actual inspector exposes front/original-right/rotation-before/manual-after at
-native1x and nearest2x. Candidate stays a draft: clothing projection and shading
-join unresolved, clean modular body/outfit not delivered. No back/left changes,
-animation or equipment generation. See `right90-manual-01/README.md` under the
-character-turnaround design folder for full file inventory and remaining issues.
-`/characters/modular` now exposes originals at equal2x scale, head/silhouette bounds,
-centerline, shared foot baseline and original/candidate comparison. Missing candidate
-views remain blocked, never silently substituted. An optional manifest
-rejectedPreview exposes the latest failed east comparison, not a candidate. See
-`docs/design/character-turnaround/audit.md` and `proportion-template.json`.
-Next requires reliable source-art profile authoring and explicit master/template
-review, followed by sequential right/back/left checks; no bulk hair or animations.
-
-## Current continuation — modular equipment, 2026-10-09
-Male hair collection requested from the user's 14-style guide: all fourteen
-designs are catalogued, but only natural-short, tapered-short, center-part and
-high-topknot have complete static candidates. `/characters/head` shows four views
-and disables ten pending styles. West is explicitly mirrored, not independently
-painted. Additional84 credits used, zero pending jobs; completing remaining art
-is provisionally192 further credits before retries, awaiting a cost decision.
-No animation or main-player migration. See `docs/design/hair-collection/README.md`.
-
-**Latest head proof gate:** delivered at `/characters/head`: headless Medium class
-body, original hair-free Shaman head, original/short hair, four palettes and ritual
-crown in south/east/north. All 27 native PNGs exist. Tests verify protected face
-bytes, hair silhouettes, fixed materials and crown/face disjointness. Desktop,
-portrait/landscape and breakpoint browser checks preserve one scene with no
-horizontal overflow. Typecheck/build pass. Art remains unapproved, particularly
-short-hair cross-view texture and crown fit. Next: user three-view review, then
-eight-direction idle/walk and a second review, then attack/cast/hurt/death. No new
-animations or main-world migration yet. Class-fixed clothing is permitted;
-earlier garment expansion below is historical. See `docs/design/head-proof/README.md`.
-
-
-Rebuild first proof: `/characters/modular` now demonstrates one synchronized eight-slot layer renderer using extracted original art, two textile palettes, two staves and two headgear. 32 supported state/direction clips, 256 source frames; hurt/death art absent. Tests cover 2,048 renderer frame/loadout cases plus equipment clock preservation and exact source reconstruction. This is not full outfit/hair reconstruction or a main-world migration. Next: approve one protected garment mask, reconstruct the hidden body/full hair, produce two complete garment layers and missing poses, review every frame, then integrate behind the old-renderer fallback. See `docs/design/modular-character/README.md` and `PIPELINE.md`.
-
-**User correction:** bronze-ward changed character identity and is rejected. Outfit selection/equipping is now blocked, rejected art is excluded from the runtime manifest, and automatic generation is stopped. Next wardrobe work is one identity-preserving garment proof on the existing character before bulk animation. Weapon/head attachments and authoritative equipment plumbing remain; a working interchangeable clothing system has not been delivered.
-
-Continue Claude's interrupted character/equipment task. The renderer, authoritative equip/unequip, peer look synchronization, bag controls, live status slots/portrait and `/characters` inspector are implemented. Typecheck/build, unit and two-client behavioral tests pass, including equipping during a cast without cancellation. PixelLab native frame coverage and all-direction visual review are still in progress; see `docs/design/equipment/README.md`. Independent hair/top/pants require reconstructed artwork; equipment combat bonuses and persistence are not implemented.
-
-## Phase 0 — repository scaffold (current scope)
-
-Workspace packages, strict compilation, offline responsive Phaser shell, authoritative room boilerplate, imported source and architecture documents.
-
-Visual slice: original spirit sanctuary backdrop, PixelLab main characters (male/female, 8 directions) on the character rig; customisation layers are later work (docs/design/character-rig.md), ornamental HUD and world chronicle sheet. Root AGENTS.md establishes shared AI standards; docs/art-direction.md and docs/design/asset-prompts.md record art direction and provenance. Not a navigable map or combat demo.
-
-## Phase 1 — playable multiplayer foundation
-
-Unify test map bounds/spawn; add typed network runtime, keyboard and joystick, connection HUD, interpolation and disconnect cleanup.
-
-Status (2026-10-08): Umbral Capital map with object collision, keyboard movement, server-authoritative facing/moving, remote players, smoothing, connection HUD and room cleanup are in. Joystick, reconnect and real-device checks remain. Walk animations: male 7 generated + 1 mirrored (template mode, some identity drift), female 5 generated (skeleton-v3) + 3 mirrored.
-
-Acceptance:
-- Two independent sessions see each other join, move and leave.
-- Diagonal input cannot increase speed; invalid input cannot teleport.
-- Stale input stops movement; map bounds and collision are respected.
-- Portrait/landscape changes preserve room and game instance.
-- Mount/unmount leaves no duplicate canvas, observer or socket.
-- Check actual desktop and mobile devices; measure bandwidth and frame time.
-
-## Phase 2 — representative combat slice
-
-Skill/VFX centralization (2026-10-09): audit all 370 entries; establish four mandatory root design documents and shared typed policy; prototype one PixelLab gold circle with source CT/cancellation, reuse geometry for tint variants, and demonstrate a separate state-bound aura fixture. Medium five stat passives now have no VFX in the packaged manifest; Spirit Sense pure modifier tested. Remaining: design-review non-Medium suggestions, approve final family palettes and normalize cast-pose hand glow, authoritative cast/target/cost/event integration, and gameplay aura/trigger/channel/toggle implementation. The overall project remains in Phase 2 preparation; 370 executable skills are not delivered.
-
-Visual review gate (2026-10-09): northwest Sacred Spirit Garden correction only; other garden zones await user review and approval. See `LANDSCAPE_LAYOUT_PLAN.md` and `docs/design/umbral-v2/screens/garden-fix-*`. No new NPC, quest or shop functionality is introduced by the landscape pass.
-
-Start with Medium damage/heal, Thai summon branch and one status/area skill. Add stat calculation, targeting, server effects and tests for interaction rules. Do not claim all 370 entries are executable.
-
-Medium visual preparation (2026-10-09): all ten first-job skill designs, original PixelLab animated effects/icons and a reusable male/female casting rig in eight directions are available for review at `/skills`. Source formulas and timings are preserved, unresolved costs/ranges remain null. This is an asset preview; server combat, status duration, targets and passive triggers are still pending. See `docs/design/skills/medium-v1/README.md`.
-
-## Phase 3 — persistence and progression
-
-Authentication, character IDs, database, inventory/wallet, skill points, class transitions and durable transactions.
-
-## Phase 4 — content and world
-
-Approve hub/region themes, one polished nation, enemies and encounters; expand remaining nations using validated patterns. Profile rooms before selecting distributed infrastructure.
-
-## Town prototype — 2026-10-09
-
-Medium active VFX revision 2 is available in `/skills`: five PixelLab effects, 69 native frames, shared thematic release composition and preserved source rules. Desktop preview, build and behavioral checks pass. User art review and verified mobile portrait/landscape inspection remain open; authoritative skill combat remains a separate Phase 2 task.
-
-Working server-backed NPC services and five autonomous noninteractive citizens are implemented for the Umbral hub. Unit and live two-client network tests cover role/range validation, resource transactions, profile isolation and synchronized movement. PixelLab child/elder walking assets are retained under docs/design/citizens and apps/client/public/assets/umbral/citizens. Authentication, durable inventory/wallet, combat execution for learned skills and actual-device mobile testing remain open.
-
-
-Skill casting (2026-10-09): learned Medium active skills cast in the Umbral hub through the server. It covers source
-CT and cooldown, walking cancels, and broadcast pose, circle and release VFX. There is still no SP cost, targeting,
-damage, healing, slow or reveal. Those wait on the unresolved SP, world-range, target and percentage-basis decisions,
-and on monsters or PvP rules.
-
-Starter hunting zone (2026-10-09), brief phases 1-5:
-- The Umbral south gate portal leads to Whispering Spiritwood (ชายป่าวิญญาณ), with a return portal and profile carried
-  across rooms.
-- The safe village has a hunter (quest), a healer and a merchant.
-- Leaf Wisp is complete: PixelLab animations, server AI and spawn region.
-- Combat is server-authoritative: targeting, auto-attack, skill damage, death, EXP, level-ups, loot and respawn.
-- Quest "การล่าครั้งแรก" works.
-- Live tests: `test:zone` plus the shared `combat-test`.
-
-Next (brief phases 6-8):
-- Strawling, Spirit Flame, Shadow Macaque, Clay Guardian and the Rootkeeper mini boss.
-- East and north spawn regions, and quests 2-5.
-- Polish: vegetation and lighting.
-- Open decisions: real combat balance, party EXP, ground loot, a player attack animation and persistence.
-
-Starter zone phases 6-7 (2026-10-09):
-- All six monsters are live, with ranged shots and the Rootkeeper's telegraphed slam and summons.
-- Six spawn regions and the five-quest chain from พรานเดช.
-- Remaining: phase 8 polish (lighting, east/north dressing, unique village NPC sprites), ground loot, party EXP,
-  persistence, and a hand-played balance pass to level 10.
+# Project Shaman — current roadmap
 
-## V3 separated FRONT milestone — 2026-10-10
-Implemented original independent headless body, two bald heads, native NeckAnchor parent-child attachment and V3 Inspector A-E demonstrations. Typecheck/build and body invariance/source preservation checks pass; user visual approval pending. Hair-swap F remains unverified under no-hairstyle-generation scope. No other directions, new gear, animation or live-world adoption before approval. New paid stage15/15,3 calls,no retries; V2 frozen unchanged. Evidence: design/character-v3/separated-front-01.
+2026-10-14: Terrain quality candidate implemented in8793 before/after and optional
+development game renderer.12new material art variants,10ground details,
+deterministic weights/seed, compatible Wang rims and separate ambient shadows.
+Actual village/shrine normal-camera inspection completed; visual acceptance,
+full junction/height-kit/live-network-game review remain open.
+[Assets, scope and checks](design/maps/terrain-quality-01/README.md).
 
-## Identity-preserving FRONT revision02 — 2026-10-10
-Replaced rejected small-body V3 default with independent reconstructed original-V2 body and full face+hair head. Native attachment and whole-head swaps implemented; body/face conservation and original rest assembly tested. Paid0, free Workbench1. User art approval pending. FRONT only; no further directions or animations. Evidence: design/character-v3/separated-front-02.
+2026-10-14: First four numbered leveling maps now have isolated8793 preview,
+complete layout briefs,7new static monster candidates and8localized fog zones.
+4map/42destination/collision/support/mask checks and typecheck/build pass;
+desktop/mobile review captured. Visual acceptance, specific map props,
+monster animations and server integration remain open; other16maps not started.
+[Actual scope](design/maps/leveling-first-four/README.md).
 
-## One hairstyle x8 static heads — 2026-10-10
-Generated and published one eight-view whole-head candidate set plus native atlas/metadata and Inspector selection. Actual2 credits, one rotation submission, no retry. FRONT source preserved, body unchanged. Other-direction neck/body fit remains unreviewed. Stop for user visual approval before more sets, animation or body integration. Evidence: design/character-v3/head-eight-01.
+2026-10-14:20-map catalogue refined per USER's shaman design-system request:
+per-map gloomy lighting/materials, localized fog and separate dust/ash/snow/steam
+profiles. [Design-only proposal](design/maps/leveling-20-proposal.json).
+Layout briefs, visual concepts and actual map-atmosphere implementation remain
+future stages; no assets generated or gameplay changes.
 
-## Dressed headless body, eight static views — 2026-10-10
-User approves head-eight-01 visually and requests one full-body costume set in eight static directions. Separate user-approval.json preserves historical head manifest/PNG/ledger. New body-eight-01 uses one PixelLab outfit edit6 and rotation-only2, no retries. Original FRONT neck/limbs/hands/feet outside clothing region preserved exactly; approved head files frozen. Native BodyOrigin/NeckPivot/HeadPivot drive nested Phaser attachments in Inspector, with actual body/head/assembled modes and head-only offsets. Costume changes replace headless body as a unit, not independent shirt/pants items. No animation, more outfits or live-world migration. Body and cross-direction neck fit require user visual review. See design/character-v3/body-eight-01/README.md.
+2026-10-14: USER rejected the regenerated walk candidates and stopped this work.
+Do not continue generation or adopt these assets. Original gameplay remains.
+New requested scope: design20 varied-climate leveling maps and monster rosters;
+this is a proposal stage, not authorization to generate or publish20 maps.
 
+## Walk regeneration follow-up — 2026-10-14
 
-## Medium novice outfit, eight static views — 2026-10-10
-User replaces the novice outfit with their "Medium (Base Class)" concept sheet and requests eight new body frames. New set body-eight-02: one PixelLab edit_image_pro_flash (reference = headless crop of the concept FRONT) on the original headless body, then rotation-only create_object_pro_flash; actual 8 generations (used 1988 → 1996), no retries. Approved head-eight-01 frozen and reused; neck anchors measured per direction. body-eight-01 kept for comparison; Inspector /characters/v3 now has an outfit selector that swaps the whole headless body under the same head. Body pipeline scripts take BODY_SET. Static views only, visualApproved false pending user review. See design/character-v3/body-eight-02/README.md.
+36 confirmed problematic detailed clips regenerated as isolated candidates across six classes, six facings each.288 transparent128px timing frames, four authored poses held twice. Technical checks/typecheck/build pass; review supports all eight classes/eight directions on desktop/mobile. Foot contact/loop continuity, intermediate poses, lower seams and Keris NORTH/NORTH-WEST source-facing errors remain open. No gameplay publication. [Evidence](design/walk-regeneration-2026-10-14/README.md).
 
+2026-10-14 walk audit **64clips inspected /18existing-frame reduced candidates /
+visual review pending**: actual8male class sprite sets ×8directions; source pose
+and timing defects separated from uncertain hidden-leg identity. No confidently
+complete pure-permutation repair; candidates improve alternation only, missing
+passing/contact art remains. Existing preview8771/head-walk-review compares
+before/after. No generation, PNG/head/order edits or gameplay adoption.
+[Findings and scope](design/walk-cycle-audit-2026-10-14/README.md).
 
-## Eight-direction walk (walk-eight-02) — 2026-10-10
-User approved body-eight-02 and requested walking. One animate_object v3 call on the headless body object, 8 frames/direction, actual 16 generations; south and north regenerated at user request; north now uses an explicit contralateral skeleton (animate_with_skeleton_v3), total 23. Approved static heads ride a per-frame NeckAnchor measured from each frame neck stump; frames are ground-locked to the idle baseline. New walk-eight model, WalkEightInspector on /characters/v3, publish/test scripts. Not yet wired into the live world; visual approval pending. See design/character-v3/walk-eight-02/README.md.
+2026-10-14 Blender sprite proof **implemented / technical checks pass / visual
+review pending**: CPU headless model/rig/import/animation/render/export pipeline,
+one11-bone placeholder walk,8directions ×12frames, transparent128px atlas and
+metadata; read-only preview8792 with shared phase/onion/contact guides and owned
+sprite reference gallery. GLB/FBX skinned round-trips, saved deformed-sole contact,
+gait symmetry/loop velocity and phase tests pass; existing typecheck/build and
+Pose Studio synthetic test pass. Real style-matched model/rig retargeting, other
+authored actions and live adoption remain separate future stages. [Tool](../tools/sprite3d/README.md).
 
+2026-10-14 Pose Studio **implemented / first real H3 render not yet completed**: local server + web UI (127.0.0.1:8790) and CLI (`tools/pose-studio`) queue MiniMax H3 image→video jobs from exact idle frames of the six male class-2 sets, convert video to 128px idle-palette sprites with original-head restamping and a headless variant, run automatic QA, and hold clips for human approval. GPU-free behavioural test passes; desktop/mobile UI checked. The first real job (Santet SOUTH walk) did not finish because the PC lost power while H3 was loading its models, so H3 quality on these sprites is still unmeasured. Nothing is published to the game. [Tool](../tools/pose-studio/README.md).
 
-## Character V3 in the live world — 2026-10-10
-The male main character now renders with Character V3: `CharacterSprite` delegates to `V3Puppet` (apps/client/src/game/characters/V3Puppet.ts) when the body-eight-02 and walk-eight-02 manifests load. The body sprite plays the headless walk (8 frames/direction, step rate from WALK_SPEED/WALK_CYCLE_UNITS) or the idle rotation; a separate head image (head-eight-01) is placed every frame at that frame neck pivot, at body depth +0.01. V3 is drawn at 118/97 of the scene character scale to match rig-v2 height. No V3 attack/cast art yet: attack is a no-op and casts report handled so no old-rig pose sprite appears; equipment layers are hidden for V3. Female keeps rig-v2. If V3 assets fail to load the previous rig is used.
+2026-10-14 user-requested simplification: Santet north/north-east/south-west previews now use explicit left-neutral-right-neutral leg poses held2frames each (24frames), selected from existing assets with phase labels. Upper/head data and other5 directions unchanged; no generation/credits. Visual acceptance pending.
 
+2026-10-14 EAST clipping follow-up: generated rear feet extend left of x38 patch. EAST lower composition now spans full128px width below y88; measured bounds x31..92 fit canvas, all8 frames pass zero lost-leg-pixel assertion. No generation/credits/head changes.
 
-## V3 attack and cast in the live world — 2026-10-10
-Character V3 now has an 8-direction palm-strike attack (8 frames) and cast (12 frames on the shared castPoseFrame timeline), headless bodies with the approved head on a per-frame neck pivot. Mixed sources per direction (prompt animation, explicit skeleton, one mirrored NW cast); 72 generations. `?rig=preview&pose=attack|cast&frame=N` shows them in the map. See design/character-v3/actions-eight-02/README.md.
+2026-10-14 EAST walk preview seam fixed: user's accepted generated source had full legs, but lower patch bounds/old transparent staff rectangle cut the attachment. Re-exported8 EAST frames with y88 hem/leg overlap and opaque-only staff protection; head data unchanged, no generation/credits.
 
+2026-10-14 Santet walk repair now has all8 facing previews /64 native frames, SOUTH user-approved and new7 facings pending visual review.9 built-in edits this stage, PixelLab0; protected upper body/head data unchanged, no gameplay publication. Other five classes'40 clips remain unresolved. [Output and scope](design/equipment/class-2-walk-repair-01/README.md#eight-direction-santet-review--2026-10-14).
 
-## Layered V3 head: hairstyles, colours, expressions — 2026-10-10
-Head split into bald base + expression overlay + tinted hair on the neck pivot. 4 hairstyles x 8 directions, 8 runtime hair colours, 6 expressions (5 overlays x 5 facing views) with auto-blink. PlayerState.head/emote synced and validated by the server; Appearance window (V) for creation-time choice and in-game emotes. 130 generations. Next: hair-back layer and the remaining 10 styles, women V3. See design/character-v3/head-layers-01/README.md.
+2026-10-14 user approves Santet SOUTH walk repair and requests lower-left residue cleanup. Removed detached old-foot fragments in native frames6/7 (8+23 opaque pixels), preserved main body/weapon and head data. Approval covers this single clip only; other47 gait clips remain unresolved. No additional generation/credits.
 
+2026-10-14 gait repair **in progress / not accepted**:3 built-in edits attempt Santet SOUTH opposite-leg and passing poses.8 legs-only candidates preserve upper-body/neck pixels and existing head/order data, isolated `/head-walk-repair` comparison. Passing/contact still unreliable; not published; other47 clips untouched. PixelLab0. [Actual results and limitations](design/equipment/class-2-walk-repair-01/README.md).
 
-## Hair redesign (head-layers-02) — 2026-10-10
-User rejected v1 hair (scalp visible from side/back, inconsistent faces). Four new approved designs, each direction drawn on the shared bald base; only hair pixels kept, faces always from the one base. Automated scalp-coverage gate (>=97%) and a head-on-body review before delivery. Topknot cord moved to an untinted accent layer. 156 generations. See design/character-v3/head-layers-02/README.md.
+2026-10-14 walk gait issue confirmed: Santet SOUTH source repeats same-side lift (1,2,4,6); frame count/detail checks did not validate alternating anatomy. Added48-clip lower-body diagnostic page `/head-walk-audit`, respecting saved order. Walk pose repair/classification and native playback acceptance remain open. No source art/head/order changes or generations. [Findings](design/equipment/class-2-imagegen-detail-01/walk-audit/README.md).
 
+2026-10-14 frame-order editor implemented: select a thumbnail, move left/right, reset original order, save draft or apply to isolated Phaser variant. Source frame identities/head offsets retained; permutations validated for uniqueness/completeness. No automatic reordering of user animations. No generation/credits/female changes.
 
-## SSR Phase 1 — contract, validator, converter — 2026-10-10
-User approved Phase 1 of docs/design/character-sprite-architecture.md. Added shared `sprite-rig.ts` (+ tests), `pnpm rig:convert` and `pnpm rig:validate`. Existing V3 assets converted without generation; first report: 3 anchor-jump errors (walk W 8 px), face lock 0 px changed, fringe/expression zone overlap, 2 small hair holes, no hit events, non-integer scale. Game untouched. See design/ssr/README.md.
+2026-10-14 Santet attack recovery investigation: user reports corrected attack reverted. Saved file, pre-transfer snapshots and exported Edge draft contain only16 explicit Santet attack placements (SOUTH/SOUTH-WEST); missing placements have not been recovered. Earlier assumption that missing entries represented approved zero is withdrawn. Added saved-file revision checks to refuse stale tab writes and offset snapshots before every save/apply. Do not describe Santet reference as fully captured or repeat transfer until missing source coordinates are resolved.
 
-## SSR Phase 2 — prototype /characters/ssr — 2026-10-10
-Isolated prototype: shared ssrCompose composer, integer scale, head set/expression/blink switching, anchor editor saving neck fixes via a dev-only API into docs/design/ssr/anchor-overrides.json, live contract validation. Game untouched, no generation. See design/ssr/README.md.
+2026-10-14 Santet reference transfer: user's finished Santet preserved/snapshotted.960 motion candidates computed for five other male classes;466 pass paired collar checks and applied to isolated detail draft,494 uncertain proposals await placement review. No generation/credits/default publication/female change. [Scope](design/equipment/class-2-imagegen-detail-01/head-fit/santet-transfer/README.md).
 
-## SSR Phase 3 — palette-ramp hair colour — 2026-10-10
-Hair layers split into 8-step ramp + fixed layers; 8 palettes (silver measured from the approved hair, 5–7/255 mean error); prototype colour picker; validator checks. No generation, game untouched.
+2026-10-13 head fitting **in progress**: three-size/reverse-match helper produced1,152 hash-bound proposals (763 pass similarity heuristics).144 SOUTH motion heads across six male classes visually inspected by Codex and applied to the isolated detailed draft; seven other facings remain proposals, user visual approval pending. No generation/PixelLab/female changes. [Exact scope and evidence](design/equipment/class-2-imagegen-detail-01/head-fit/README.md).
 
-## Hair Layer Standard v1 (SSR) — 2026-10-10
-User found doubled ears/brows/eyes and cut faces in the side-sweep test. Adopted docs/design/ssr/HAIR_STANDARD.md: one reference face (approved head), left views mirrored, generations contribute hair/accents only, face-band protection, hole fill, new gates (face-cover, generated-pixels, hair-hole error, scalp-gap). No generation; game untouched.
+2026-10-13 motion-detail correction **implemented / technical checks passed / visual review pending**:all6 male sets rebuilt from exact idle-facing references,8frames per directional/action sheet,144sheets /1,152 new motion frames plus48 byte-exact idle frames. Separate8771 comparison/head editor and guarded detail Phaser manifest; old8770 edits/default gameplay retained.145 built-in edits including one alpha cleanup, PixelLab0. Moving head alignment and final costume/animation acceptance remain open. [Batch and evidence](design/equipment/class-2-imagegen-detail-01/README.md#completed-detail-batch--2026-10-13).
 
-## SSR Phase 4 — game draws V3 heads with the SSR composer — 2026-10-10
-Game V3 heads now draw through the shared `ssrCompose` (apps/client/src/game/characters/SsrHead.ts): SSR skin base + expression part + palette-recoloured hair, mirrored left views and SSR body neck anchors (anchor overrides baked by `rig:convert`). Body sprite/animations, server and protocol unchanged except the shared expression list gains `cold`. Hairstyles without SSR parts (spiky-up, high-topknot) and the switch `?rig=legacy` / localStorage `shaman.rig=legacy` use the head-layers-01 head. Appearance window (V) previews with the same parts (ssr-canvas.ts) and lists only SSR styles (natural-short, side-sweep) and faces (neutral, cold, sad; closed = blink/emote). Back views regenerated (12 credits, approved) and volume cap/tone lock added to the hair standard. Remaining: 3 neck anchor jumps (walk W, attack N/SE) to fix in /characters/ssr; female characters still use the previous rig.
+2026-10-13 head-alignment tooling:8770/head-editor implemented for all6 male armed drafts with manual integer nudges, onion skin, seed-based patch proposals, hash-bound saving and explicit Phaser-draft application. Tool behavioral/responsive checks pass; placement of1,200 heads and visual approval remain open. No generation/PixelLab/female changes. [Workflow](design/equipment/class-2-imagegen-armed-01/README.md#per-frame-head-editor-and-local-tracking--2026-10-13).
 
-## New Golden Apprentice FRONT design — 2026-10-10
-One original soft side-part hair candidate based on written visual observations of the user's customization screenshot. Current SSR Hair Layer Standard: FRONT first; no 8-view generation before review. One64-native inpaint actual5 credits, no retry, approved face/eyes unchanged and production parts/body/palettes frozen. Separate candidate ramp/fixed part plus shared-composer gold/silver/black before/after previews on /characters/v3 and /characters/ssr. Not added to gameplay selection or production part index. See design/ssr/golden-part-01/README.md. User visual approval pending.
+2026-10-13 armed-atlas cleanup:567 detached neighbour components removed across434 of1,200 frames, original raw art retained. Cleaned six-class draft re-staged; transition comparison added to8770. One single-pixel Keris canvas flag and cross-action costume/anatomy consistency remain open; no normal-game publication. Follow-up generation/PixelLab0. [Current findings](design/equipment/class-2-imagegen-armed-01/README.md#atlas-isolation-follow-up--2026-10-13).
 
-## Golden Apprentice eight-view candidate — 2026-10-10
+2026-10-13 armed-art revision: user requests body+held weapon generation for all6 Indonesia/Japan/Norway male outfits to replace floating independent attachments. [Armed idle/walk/attack/cast sets and baked-item contract](design/equipment/class-2-imagegen-armed-01/README.md). Dedicated development armed variant suppresses extra equipment and preserves unequip/swap fallback; normal gameplay adoption and final visual acceptance remain pending. PixelLab0; female unchanged.
 
-User approved the soft side-part FRONT (“ทรงนี้ผมโอเคครับเริ่มเลย”). Approval receipt and frozen source hashes: docs/design/ssr/golden-part-eight-01/front-approval.json. Reused FRONT unchanged; one native128 packed inpaint for SE/E/NE/N, three mirrored left views including anchors under Hair Layer Standard v1. Actual6 additional credits, one attempt, no retries (style total11 including FRONT5). Runtime SSR part and96 verified comparison PNGs remain staged under /assets/ssr/candidates/golden-part-eight-01/; production index, gameplay selection, approved body/head base/palettes remain unchanged. V3 and SSR Inspectors show eight static views, native/4x, three palettes, body/head/before/silhouette. Local face-lock, coverage, hole, anchor, mirror, hash checks and typecheck/client build pass. Desktop/mobile review performed. Additional views await user visual approval; no new animation or other hairstyle generated. See docs/design/ssr/golden-part-eight-01/README.md.
-## Golden Apprentice eight directions — USER APPROVED 2026-10-10
-User reviewed the V3 Inspector and replied “ผ่านครับ”. All eight static views are visually approved. Exact part/image hashes and the user's statement are recorded in docs/design/ssr/golden-part-eight-01/approval.json (runtime copy beside part.json). Manifest and Inspector now reflect approval; publisher refuses overwriting this approved version. No extra PixelLab credits, new assets, animations or live selection changes in this approval step.
-## Style3 Kid Stripe FRONT — 2026-10-10
-User requested a Death the Kid-inspired hairstyle as style3. New center-part FRONT candidate on the same owned Shaman face/body, three intentional white bands on character-left hair. One64-native inpaint actual5 credits, no retries; no third-party image inputs. Main mass uses black SSR palette, declared untinted white stripe mask remains fixed. Local mask/face/coverage/hole/stripe gates pass; FRONT awaits user visual approval before more directions. Earlier approved Golden Apprentice untouched; production index/gameplay unchanged. See docs/design/ssr/kid-stripe-01/README.md. Future directional stripe placement must preserve anatomical left rather than blindly mirror white markings.
-## Eight replacement hairstyle FRONT prototypes — 2026-10-10
-User rejected Kid Stripe and requested eight distinct designs from a supplied hairstyle prototype sheet. One packed FRONT inpaint on owned reference heads, actual9 credits, one attempt/no retries. Eight silhouettes: short, medium side-part, ponytail, round bun, messy, eye-swept fringe, loose long, pointed tied tuft. New independent hairBack layers for long styles; original face/body and approved Golden Apprentice unchanged. Per-design prototype masks explicitly permit tied top volume and style6 reversible eye occlusion per user reference; these are awaiting visual review, not blanket production standard changes. V3/SSR Inspector has eight-style native/4x and hair/head/body/silhouette review. Kid Stripe moved to rejected history. No new directions, animations or gameplay publication. See docs/design/ssr/hair-eight-prototypes-01/README.md.
-## Clean black center-part eight-view candidate — 2026-10-10
-User selected the former Kid Stripe silhouette and requested removing white bands plus eight directions. New clean FRONT restores46 stripe pixels only; original silhouette/other pixels frozen. One128 packed owned-reference PixelLab inpaint, actual6 credits, one attempt/no retry, four new right/back views and three standard left mirrors. SSR neck anchors and original face/body unchanged. V3/SSR Inspectors show native/4x staged comparisons; no gameplay publication or animation. Technical gates pass; awaiting user visual review. See design/ssr/kid-clean-eight-01/README.md.
+2026-10-13 motion update: Indonesia/Japan/Norway6 male outfits have [1,152 native motion candidates +48 idle poses and isolated draft renderer staging](design/equipment/class-2-imagegen-motion-01/README.md).18 built-in imagegen calls,0 PixelLab credits. All walk/own-attack/cast files exist across8 facings; native polish/edge flags, NW torso consistency and authored grips remain **in progress**. Development carry board can load draft manifest with `outfitDraft=1`; normal gameplay/default Thai-Russian manifest unchanged. These six sets are not production-ready or adopted in gameplay. Female untouched.
 
-## Thailand skills — catalogue, lab and first VFX test — 2026-10-10
-User moved focus to per-nation skills, Thailand first, effects before casting poses. Design review docs/design/skills/thailand-v1/DESIGN_REVIEW.md approved. 30 Thai skills in shared `skills-thailand.ts` (source-matched, policy-valid; stat passives no VFX), `/skills` lab tabs for both branches. Test effects: Prai Whispering Curse and Sacred Thread Barrier (PixelLab, user-gated, ledger in thailand-v1/LEDGER.md). Not combat: no job change, learning or server effects yet.
+2026-10-13 eight-direction update: all six Indonesia/Japan/Norway male outfits now have [48 offline128px idle candidates and original-head review](design/equipment/class-2-imagegen-eight-01/README.md), including byte-exact reuse of6 SOUTH frames. Built-in imagegen6 calls this stage,0 PixelLab credits. Local review8768 offers class/head/coordinate comparison. Direction art remains visual-review pending; authored weapon contacts/native polish and actual walk/attack/cast remain unfinished. These six outfits are not published as complete runtime sets. Female unchanged.
 
-## Complete silhouettes for eight FRONT prototypes — 2026-10-10
-User reports clipped ends in the eight-design sheet. New hair-eight-prototypes-02 expands generation margins; one intentional repair inpaint actual9 credits/no retry, plus pixel cleanup on three flat-cut tied fan tips. Full original face/body/head anchors retained, with existing style6 eye occlusion exception. V3/SSR Inspectors show repaired version and before comparison. Selected4x details remove empty canvas margins only, preserve every opaque pixel and fit mobile width. Native/contour/face/layer/hash gates pass; visual approval pending. No new directions or gameplay publication. See design/ssr/hair-eight-prototypes-02/README.md.
+2026-10-13 fitting update: [six SOUTH male costume candidates](design/equipment/class-2-imagegen-fit-01/README.md) exported at128px, with original-head comparison and measured source lock. Built-in imagegen2 calls,0 PixelLab credits. Static fitting only: native finishing/grips, remaining directions and motions still pending; no six-class runtime publication. Original male source/head and female pipeline unchanged.
 
-## Single-style FRONT face-fit redesign — 2026-10-10
-User rejects eight-design face fit and authorizes proposed one-style-first redesign. face-fit-short-01: longer brow-adjacent fringe, compact crown, original owned face/body; one64-native inpaint actual5/no retry. V3/SSR Inspector top panel compares prior plain-short vs new body/head in three palettes/native/4x. Technical gates pass, visual approval pending before any expansion. Other styles/approved assets untouched. See design/ssr/face-fit-short-01/README.md.
+2026-10-13 outfit update: Indonesia Santet/Keris, Japan Onmyoji/male Miko and Norway Rune Seer/Ullr concept sheet **visually approved by user**. [Approved source and receipt](design/equipment/class-2-imagegen-concepts-01/README.md). Created with built-in imagegen,0 PixelLab credits. Next asset stage: fit approved costume designs to the unchanged male V3 base, then author directional/motion coverage; these six are not runtime assets yet. Female work stays paused.
 
-## User approved style1 FRONT — 2026-10-10
-User replied “ผ่านครับอันนี้”. face-fit-short-01 FRONT is visually approved; exact image/part hashes recorded in approval.json, publisher refuses overwriting this version. Inspector reflects approval. This receipt does not approve other styles, directions or gameplay publication. Approval step uses0 additional PixelLab credits.
+Updated 2026-10-12 (Asia/Bangkok). This is the active work queue. Historical experiment logs and superseded statuses are preserved in [the previous roadmap](history/roadmap-before-reset-2026-10-12.md); they are not automatically pending tasks.
 
-## Approved face-fit FRONT extended to eight views — 2026-10-10
-User requests eight directions for approved face-fit-short-01. New face-fit-short-eight-01 reuses FRONT pixels exactly, one native128 packed inpaint for four right/back views, three standard left mirrors including neck anchors. Actual6 credits/one attempt/no retries;5 SE skull edge pixels cleaned locally. Original face/body/base/palettes frozen. V3/SSR Inspectors top panel shows96 hashed native/4x comparisons in three palettes; technical gates pass, added views await visual review. No other hairstyles, animation or gameplay publication. See design/ssr/face-fit-short-eight-01/README.md.
+Status meanings: **implemented** = code/assets exist; **verified** = named checks passed; **visual review pending** = no user art approval yet; **planned** = not implemented; **in progress** = active work. Technical passes never imply visual approval.
 
-## Fuller diagonal fringe and Eye Veil FRONT — 2026-10-10
-User requests fuller SE/SW bangs then a new full eye-cover fringe. face-fit-short-eight-02 changes SE/SW only; other six views exact, lower forehead coverage20->49 pixels. eye-veil-front-01 FRONT uses explicitly authorized reversible both-eye occlusion, base face/eyes remain untouched, eye whites fully covered. Two controlled64-native calls, actual5+5=10 credits, no retries; local eye-slit and scalp cleanup archived. Inspectors show both candidates, before/after and native/4x. Tests/typecheck/build pass; visual review pending, no extra directions for new style or gameplay publication.
+## Current playable baseline
 
+| Area | Current state | Evidence |
+|---|---|---|
+| Multiplayer world | Implemented; server-authoritative movement, collisions, monsters, basic attacks, loot, EXP and portals; network tests pass | architecture.md; client network/zone tests |
+| Jobs and skills | Medium + Thailand/Indonesia/Russia/Japan/Norway, ten nation branches; job progression, skill learning, Invoke/runes and typed server effects implemented | design/GAME_INTEGRATION_PLAN.md |
+| Accounts and saves | SQLite accounts, session tokens, autosave, load and account takeover implemented; persistence network tests pass | design/PERSISTENCE_AND_ACCOUNTS.md |
+| Character creation | V3 male/SSR customization and eight playable hairstyles integrated; female remains the previous rig | architecture.md; design/character-creation-01/ |
+| UI | Real-profile status/record, job-aware hotbar, skill book and Silver skill reset implemented | design-decisions.md; client skill-reset tests |
+| Equipment | Branch weapons and class attacks implemented. Option 1+ carry uses real hand anchors/category poses. 1,568 renderer cases and 576 published-frame checks pass; visual approval pending | design/combat/weapon-carry-2026-10-12/README.md |
+| Balance | Initial simulator, provisional adjustments and 20-player server simulation exist; final balance is not approved | design/combat/BALANCE_REPORT.md |
+| Browser QA | Representative ten-branch smoke review and small viewport checks exist; exhaustive effects and physical touch remain open | design/combat/playtest-2026-10-12/README.md |
+| Hosting | Local client/server supported; public deployment not configured or verified | server/client configuration |
 
-## Eye Veil FRONT 02 whole-hair redesign — 2026-10-10
-User rejected the patched vertical fringe and requested a new generation. One64-native owned-head inpaint, actual5 credits / one attempt / no retry; new crown-to-tip diagonal locks, small directional eye-slit cleanup. FRONT remains pending visual approval. Inspector compares rejected01 with new02; original face/body, approved styles and gameplay selection unchanged. See design/ssr/eye-veil-front-02/README.md.
+## Milestone 1 — close QA on the current game (active)
 
+| ID | Task | Status / completion criterion |
+|---|---|---|
+| QA-01 | Equipment synchronization across all ten branches | **Verified 2026-10-12.** Two real clients, ten branches, tier 2/3 grant/deduplication, 80 facing/movement checks, 50 swaps, unowned-item refusals, observer isolation and leave cleanup pass. Test included in `test:equipment`. [Evidence](design/qa-current-game-2026-10-12/README.md). |
+| QA-02 | Weapon visual and temporal review | **In progress / visual review pending.** 1,568 V3 placement cases + 512 real legacy main-hand frames pass, as do off-hand swap/missing-texture/hidden-body regressions. Female legacy frames lack off-hand data (QA-F01); shield/dual wield support is not certified. A source-measured female SOUTH idle draft is available only in development review; other directions/actions remain unmeasured. [Draft and before/after](design/female-offhand-2026-10-12/README.md). Full temporal/fast-attack and source-art overlap review remains open. [Evidence](design/qa-current-game-2026-10-12/README.md). |
+| QA-03 | Combat/VFX multiplayer matrix | **Open.** Track every active/variant. Verify both clients see release/cancel, moving targets, walls/block/break, summon replacement, resurrection, stealth/aggro and repeated travel; prioritize uncovered paths over rerunning existing tests. |
+| QA-04 | Mobile physical playtest | **Open.** Coarse-pointer phone/tablet: joystick + cast/target together, paging, Invoke, interruption, orientation, safe areas and frame rate. Browser resizing alone cannot close this. |
+| QA-05 | Release QA report | **Open.** Record reproducible failures, fixes, exact evidence, visual approvals and remaining limitations. No known blocking regressions before a small public playtest. |
 
-## Eye Veil partial fringe FRONT03 — 2026-10-10
-User clarifies partial hair occlusion with original eyes visible, superseding full cover. Local alpha trim, crown unchanged, source02 retained,0 additional credits. V3/SSR Inspector selects03; eyes verified against original SSR base. FRONT visual review pending, no direction expansion or gameplay changes. See design/ssr/eye-veil-front-03/README.md.
+## Milestone 2 — stats and balance
 
+| ID | Task | Status / dependency |
+|---|---|---|
+| STAT-01 | Audit existing attribute/profile data and design real stat allocation | **Planned.** Confirm sources before claiming missing subsystems; document formulas, point costs, caps, reset rules and migration. New economy/formula decisions need design review. |
+| STAT-02 | Implement approved authoritative stat rules + UI + save migration | **Planned**, after STAT-01 design review; preserve old characters and validate client intent on server. |
+| BAL-01 | Review outliers and role targets | **Design review needed.** Taiga Frenzy, Rune Seer Blizzard, Mor Phhee single target and tank/support target bands; do not silently rewrite approved catalogue formulas. |
+| BAL-02 | Repeat simulation and actual party-style encounters | **Planned**, after approved stats/balance changes. Measure survivability, SP, time-to-kill, early/late progression as well as DPS. |
 
-## Partial Eye Veil eight static views — 2026-10-10
-User requests eight directions from partial-eye FRONT03. Exact FRONT reuse; one128 packed inpaint for SE/E/NE/N plus three standard left mirrors. Actual6 credits, one attempt, no retries. Separate SSR candidate and96 comparisons in V3/SSR Inspector; original body/base/palettes frozen, no gameplay publication or animation. Technical gates pass, added directions await user visual review. See design/ssr/eye-veil-eight-01/README.md.
+## Milestone 3 — small external playtest
 
-## Thailand skills — Thai shaman VFX, names and icons — 2026-10-10
-All 16 Thai skills that need effects have PixelLab art in the Thai shaman style (docs/design/skills/thailand-v1/THAI_SHAMAN_VFX_LANGUAGE.md), all 30 skills have icons and proposed Thai names (pending approval). Presentation only in /skills; no job change, learning or combat yet. Spend in thailand-v1/LEDGER.md.
+| ID | Task | Status / completion criterion |
+|---|---|---|
+| OPS-01 | Prepare reviewable production configuration | **Planned.** Single-server deployment first, correct GAME_SERVER_PORT and client endpoint, NODE_ENV=production, persistent database path, graceful stop and restart. |
+| OPS-02 | Hosting and transport | **Planned.** Choose host/domain; HTTPS/WSS + WebSocket proxy, allowed origins and request limits. External account purchases/public deployment require concrete user authorization. |
+| OPS-03 | Operations and recovery | **Planned.** DB backups with restore rehearsal, logs, health monitoring and restart policy. Multi-process shared sessions/locks only if scaling is actually required. |
+| OPS-04 | External acceptance test | **Planned.** Two devices on different networks, login, gameplay, portal, disconnect/rejoin, restart persistence and measured latency. Public playtest can precede complete world content; record any accepted balance limitations. |
 
+## Milestone 4 — expand content (not a blocker for local play)
 
-## Korean center-part Wolf Cut FRONT — 2026-10-11
-User chooses charcoal black-grey with silver tips. One native64 owned-head inpaint, actual5 credits/one attempt/no retries. Separate fixed silver-tip mask plus recolorable dark hair ramp; original face/body/neck frozen. V3/SSR Inspector defaults to black and shows actual candidate PNGs, native/4x and head/body comparison. FRONT visual review pending; no directions, animation or gameplay publication. See design/ssr/korean-wolf-front-01/README.md.
+- **First-pair real production — 2026-10-13 (implemented / locally verified):** Male Thailand Achan / Russia Juggernaut are integrated through synchronized branch selection. [Delivery and evidence](design/equipment/class-2-production-01/README.md):48 completed skeleton clips/384 motion frames plus16 idle =400 native body frames, all8 facings, walk/own attack/cast. Paid144, balance7, paid tests/retries0; free guarded cleanup1,839 pixels/24 derivatives and four measured grip overrides.400 asset checks,464 actual puppet attachment/timeline cases, existing carry regressions and build pass; actual-renderer before/after and supported-motion recording supplied. Exact Russian saved head offsets retained, female unchanged. Eight cast poses sample the unchanged12-step cast timeline. Unsupported weapons use the complete original rig. Other eight branches, broader weapon coverage, human art acceptance and physical-touch/two-client visual QA remain separate; this closes the authorized first-pair production work, not the whole game roadmap.
 
+- **Paired motion feasibility — 2026-10-13:** [SOUTH walk0/3/7 transfer proof](design/equipment/class-2-motion-proof-01/README.md) delivered for both:6 native outputs, ground delta0, distinct source step poses retained. Original frame3 hand anchors already hit transparent source pixels; moving head/hand fitting remains open. Actual20 generations (171→151),2 attempts/no retries. Russian NW static hand restored separately with39 guarded original male skin pixels, paid0. No complete animation, runtime or female changes.
 
-## Korean Wolf Cut longer FRONT02 — 2026-10-11
-User requests jaw-length sides and nape to neck base. One64-native inpaint on owned prior art, job charged5/one attempt/no retry. Expanded mask and fixed silver tips retain original face/eyes/body/neck. FRONT01 frozen and shown before02 in V3/SSR Inspector. FRONT visual review pending; no other directions or gameplay publication. See design/ssr/korean-wolf-front-02/README.md.
+- **First-pair contact/motion preflight — 2026-10-13:** Near-hand candidate-specific skin overlay and8x contact sheets delivered for both; far gear stays behind, shield face receives no detached fist. Sixteen static source/hash/tattoo checks pass. Motion preflight verifies288 unique novice source frames; each outfit still lacks224 representative walk/own-attack/cast frames. localhost8767 updated with comparison/zoom. [Evidence](design/equipment/class-2-eight-01/CONTACT_REVIEW_2026-10-13.md). Paid0, no runtime/female changes; anatomical/live/motion and production-path gates remain open.
 
+- **First pair joint static equipment pass:** Thai/Russian16 source placements plus16 candidate placements audited; actual renderer adapter, original hashes/counts and three Thai guarded back tattoo patches pass. Russian user head positions retained. Joint offline localhost8767 review and [readiness report](design/equipment/class-2-eight-01/PAIR_READINESS.md) delivered. Added paid0; fingers/occluded hands, visual acceptance, outfit motions and architecture/runtime policy remain open. Not game-ready; no female changes.
 
-## Korean Wolf Cut Long eight views — 2026-10-11
-User approves FRONT02 and requests eight static directions. FRONT exact reuse, one128 owned-head inpaint for SE/E/NE/N and three mirrored left views, job charged6/one attempt/no retries. Fixed silver-tip masks retain dye independently of charcoal ramp.96 real comparisons and native/4x in V3/SSR Inspector; original face/body/neck frozen. Technical gates pass; added views await user visual review. No animation or gameplay publication. See design/ssr/korean-wolf-eight-01/README.md.
+- **Russian user-offset review:** Actual saved eight-direction offsets rendered unchanged and inspected at full-sheet/8x neck detail. Named integer/source-hash checks pass; no obvious open neck seam observed in static image. User visual approval, motion and equipment checks remain open; earlier automatic fits rejected. No runtime/female edits or credits.
 
-## Three remaining eight-view hairstyles reviewed — 2026-10-11
-Agent review completed for kid-clean-eight-01, face-fit-short-eight-02 and eye-veil-eight-01. Targeted checks and native/4x visual inspection pass; Clean Center Part Inspector overflow corrected with lossless detail previews. Original artwork unchanged, no extra credits or gameplay publication. User visual acceptance remains separate. See design/ssr/hair-review-2026-10-11/README.md.
+- **Russian user head editor:** Both automatic head fits rejected. Standalone localhost8766 editor now lets user adjust all8 heads via drag/1px controls and save candidate offsets for review. Image load/right/reset browser verified; user positions pending. No game/female edits or credits.
 
+- **Russian head fit revision02:** User rejected first fit (neck protrusion). Second offline candidate lowers heads2–3 native pixels with1px directional horizontal corrections; eight-view and8x collar details inspected, original hashes pass. First fit retained as rejected. Paid0, runtime unchanged, user visual acceptance pending.
 
-## Indonesia skills — catalogue, visual language, icons and VFX — 2026-10-11
-Second nation done the same way as Thailand: 30-skill catalogue (`skills-indonesia.ts`, Thai names proposed), INDONESIA_VFX_LANGUAGE.md (approved; dual keris), 30 icons and 16 effects in /skills. The lab supports multiple nations and projectile/dash/impact placements. Presentation only.
+- **CLASS-OUTFIT Russian head fit:** Eight generated collar targets now drive a separate offline head-placement preview, replacing source-body neck assumptions for this review. Original head/costume hashes pass; before/after evidence in class-2-eight-01. Paid0, no runtime/female changes; static visual review pending, not animation anchors.
 
-## Two additional FRONT hairstyle candidates — 2026-10-11
-Swept Spikes (black) and Golden Curtains (warm brown/gold) added to top of V3/SSR Inspector. Two controlled native64 inpaints, actual5+5=10 credits, no retries. Owned head inputs only; face/body/neck preserved. Native/4x and mobile review plus targeted tests/typecheck/build pass. FRONT visual approval pending before eight-view expansion; no gameplay publication. See design/ssr/dual-front-spec.json and each candidate README.
+- **CLASS-OUTFIT eight-direction batch:** [Two V3 reference rotation jobs](design/equipment/class-2-eight-01/README.md) completed;16 native128 PNGs downloaded, observed cost4 total (175→171), no retries. Dimension/source-hash diagnostics pass; ground deltas Achan -1..+1px, Juggernaut -2..+2px. Returned SOUTH differs from input; originals retained. Thai back tattoos and Russian arm/grip/collar consistency remain open. Complete static art proofs, not runtime-certified outfits or animation; female pipeline unchanged.
 
+- **CLASS-OUTFIT diagonal proof:** [SOUTH-EAST first pair](design/equipment/class-2-diagonal-01/README.md) generated from actual directional source with SOUTH costume reference, two attempts/no retries, charged20 (195→175). Achan ground extent matches; Juggernaut extends6px below source and shows arm drift, so its raw result is rejected for rig use and needs bounded repair. Both remain unapproved art proofs; no runtime/female changes or additional directions/animation.
 
-## Swept Spikes and Golden Curtains — eight static views plus red — 2026-10-11
-User approved both FRONT designs and requested eight directions plus red hair. Exact FRONT reuse; one native128 packed inpaint per style, actual6+6=12 credits, attempts2/no retries. Added red palette without paid generation. Directional/face/neck/mirror/hash gates and red-face/silhouette checks pass. Added directions await user visual review; no walking/combat or gameplay publication. See design/ssr/dual-eight-spec.json.
+- **CLASS-OUTFIT preflight:** Revision03 now has a repeatable offline validator (`validate-stage.mjs`) and explicit eight-direction/action coverage report. SOUTH body/contact/ground invariants, unchanged source head/axe, exact outward axe reflection, paired grip origin and preview hash bindings pass. One static SOUTH candidate per class exists; seven directions and outfit motion are missing. This is not the full production validator, art approval or runtime integration. Added paid generations0; female work remains paused.
 
+- **CLASS-OUTFIT repair03:** [SOUTH derivatives](design/equipment/class-2-first-pair-03/README.md) now pass bounded canvas/ground/contact/outside-mask checks. Rejected lower inpaint retained; repaired lower geometry and arm seams await visual acceptance. Actual repair spend20, balance195. No runtime or female changes; eight-direction expansion remains gated.
 
-## Default white hair palette — 2026-10-11
-White added as default to all candidate hairstyle panels and new-character shared defaults.630 additive previews across20 candidate sets; no credits, original approved images unchanged. Verify with test_white_hair_default.mjs and Inspector. Existing chosen colours retained.
+- **CLASS-OUTFIT technical follow-up:** User visually approved revision02 SOUTH Achan/Juggernaut. [Offline rig audit](design/equipment/class-2-first-pair-02/rig-audit/README.md) now records actual renderer gear placement; Russian ground extent is13px below source and hands require correction. Technical compatibility is open; preserve approved art originals and resolve source-bound derivative repairs before eight-direction expansion. Audit spent0 credits; female work stays paused.
 
+- **CLASS-OUTFIT-01:** Male class-2 outfit specification for five implemented nations / ten branches is documented in [the outfit brief](design/equipment/class-2-outfits-2026-10-12.md), revision 2: audited V3 anchors/timelines/depths, proposed layer contract, animation checklist, appearance override policy, validation pipeline and G0–G7 gates. Production is blocked pending approved outfit architecture (V3 body clothing is currently baked), appearance policy and first-pair scope. Achan/Juggernaut lead; no generation, credits or runtime changes in this documentation phase. Female model/rig/outfit work is paused by explicit user instruction, including QA-F01; do not continue female work until reauthorized.
 
-## Two V3 FRONT face identities — 2026-10-11
-Violet Sharp and Teal Soft neutral-expression candidates use independent SSR face replacement parts beneath existing hair. V3 Inspector adds face/hair selection, head/body and native/4x comparisons. Actual10 credits /2 attempts/no retry. Existing gameplay protocol and approved assets unchanged; FRONT visual approval pending. See docs/design/ssr/face-styles-front-01/README.md.
+- **WORLD-01:** Mountain Sanctuary composition reset: new zone/route/entrance brief following SHAMAN_MAP_DESIGN_STANDARD.md. Phase D was rejected; NPCs/quests/warps/multiplayer come only after approved layout. Original city stays intact.
+- **WORLD-02:** Original world target remains 12 nations, 24 branches, 370 documented skills. Extend remaining nations through design review → representative art → authoritative effects → UI → tests → browser evidence, not bulk generation without review/budget.
+- **SOCIAL-01:** Design and implement real parties; current proportional damage-share EXP is not a party system.
+- **CHAR-01:** Decide female V3 migration and additional approved customization/equipment scope. Existing female legacy rig stays supported meanwhile.
+- **ACCOUNT-01:** Optional later scope: multiple character slots, names/deletion, password recovery and stronger session UX. These are not silently included in current QA.
 
+## Deferred / historical
 
-## Cold Detached V3 face FRONT — 2026-10-11
-Added third FRONT face candidate to V3 Inspector: half-lidded deadpan eyes and flat mouth. Independent face part below hair, frozen head/body/neck. New approved cap5, actual5, one attempt/no retry; prior two faces unchanged. Local cleanup logged; visual approval pending before other directions. See docs/design/ssr/face-cold-front-01/README.md.
+V2 repair rounds, rejected hair variants and superseded V3 candidates are historical, not active migration work. Cancelled mountain decoration remains inactive. FRONT-only customization stays preview-only until proper directions and user review. No new PixelLab generation, approved-asset overwrite or new map placement is authorized by this roadmap alone.
 
+## Working order and delivery
 
-## Cold face FRONT02 regeneration — 2026-10-11
-User rejected patched FRONT01 and authorized one new5-credit generation. Wider eyebrow/face mask produces shading and expression together; owned V3 head only. Separate candidate version; prior files retained. Inspector selects02; FRONT approval pending, no extra directions or gameplay publication. See docs/design/ssr/face-cold-front-02/README.md.
+QA-01 is verified. Next continue QA-02 (female off-hand and full temporal review) and QA-03 with evidence. Keep QA-04 explicitly open until real-device access exists; continue independent work. Then perform STAT-01 design audit and prepare OPS-01 locally. Record status changes here and keep detailed results in dated design/QA reports. Use existing stack, framework-independent shared rules and server authority. Run typecheck/build and relevant behavioral checks for code changes. Do not treat the whole long-term roadmap as completed when one work session ends.
 
 
-## Three V3 faces extended to eight static directions — 2026-10-11
-User approved exact FRONTs and new cap18 /3 attempts/no retry. One128 face-only SE/E inpaint per style, actual6+6+6=18. FRONT exact file reuse; SW/W mirror right with native anchors; back views retain head with no face overlay. V3 Inspector adds three-face eight-direction native/4x head/body comparisons. No gameplay publication, hair/body changes or animation. New-angle visual approval pending. See docs/design/ssr/face-eight-01/README.md.
 
-
-## Cold diagonal eye balance revision — 2026-10-11
-face-eight-02 changes only cold SE/SW eye clusters after user reports imbalance. Original mask cut through near eye; new complete near/far half-lidded clusters keep perspective. FRONT, other directions/faces and rig frozen. Local cleanup extra0 credits. Inspector revision awaits visual review. See docs/design/ssr/face-eight-02/README.md.
-
-
-## Russia skills — tank/berserker catalogue, layered VFX kit, icons and effects — 2026-10-11
-Third nation: 30-skill catalogue (`skills-russia.ts`, Juggernaut one-handed axe + shield tank and Taiga berserker, Thai names proposed), RUSSIA_VFX_LANGUAGE.md, PRODUCTION_SPEC.md (layers, phases, REUSE/MODIFY/REGENERATE), a reusable kit of 8 layer sheets, 30 icons and 17 effects composed in /skills from `RUSSIA_VFX_LAYERS`/`RUSSIA_VFX_MAIN`. Presentation only; open QA notes in russia-v1/DESIGN_REVIEW.md.
-
-## Japan v2 skills — Onmyoji Five Phases invoker + Miko purification, VFX, icons — 2026-10-11
-First nation after the uniqueness audit. Onmyoji v2 (5 element talismans, Invoke turns 2 elements into 15 spells by the generating/overcoming cycles, residue combos) and Miko v2 (cleansed debuffs become blessings) in `skills-japan.ts`; 7 kit sheets, 16 effects, 45 icons in /skills with a five-element Invoke wheel. Presentation only; QA notes in japan-v1/DESIGN_REVIEW.md. Thailand, Indonesia and Russia reworks follow.
-- 2026-10-11 Japan follow-up: casting circle + 8 Onmyoji circle archetypes by skill function (Gogyō tint), buff auras and area circles, grander releases, real shikigami (5 creatures + 5 Ascension great forms). Japan total spend 408 credits (exact, see japan-v1/LEDGER.md).
-- 2026-10-11 Rework v2 for Thailand, Indonesia, Russia (signature mechanics, range classes, renamed skills; catalogue only, no credits). See docs/design/skills/REWORK_V2.md.
-- 2026-10-11 Rework v2 art (Shield Clang, Keris Soul), master casting circles + buff circles/auras for Thailand/Indonesia/Russia (36 credits exact); Norway catalogue + design (no credits; VFX awaiting approval).
-- 2026-10-11 Norway VFX done (163 credits exact): Ullr Hunter v2 (RO-Hunter-like bow class: Twin Shot, auto-diving falcon, 4 real-rune traps, Charged Rune Arrow) + Rune Seer (Rune Cast queue), code-drawn real runes, Norway circle. See norway-v1/DESIGN_REVIEW.md.
-- 2026-10-11 Game integration Phase 1: job progression (Base/Job Level, tiers 1→2→3 with advancement quests, skill points per Job Level), unified skill registry for Medium + 5 nations, profile versioning/migration, server Job EXP and trainer job change. Plan: docs/design/GAME_INTEGRATION_PLAN.md.
-- 2026-10-11 Game integration slice 1 — Ullr Hunter playable on the server: job change UI, skill tree (K), job hotbar, typed Hunter effects, synced statuses/zones/companion, world VFX. See docs/design/combat/ULLR_HUNTER_COMBAT.md.
-- 2026-10-11 Game integration slice 2 — Rune Seer on the server: Rune Cast queue with 4 rune effects, Runestone echo, Cast the Lots, blocking breakable Ice Wall, Blizzard, Shatter, Absolute Zero, Fimbulwinter, rune HUD. Browser check pending. See docs/design/combat/RUNE_SEER_COMBAT.md.
-- 2026-10-11 Game integration slice 3 — Japan on the server: Onmyoji talismans + Invoke (15 spells), residue Flow/Break, shikigami + Ascension, Mandala, Ring Seal; Miko purification → blessing, heals, Sun Pillar, resurrection; shared player buff/debuff layer. Browser check pending. See docs/design/combat/JAPAN_COMBAT.md.
-- 2026-10-11 Game integration slice 4 — Russia (Juggernaut Guard, Taiga bleed hunt), Indonesia (Santet needles, Keris pamor/stealth), Thailand (Achan thread + Hun Phayon, Mor Phhee prai) on the server; every active of Medium + 5 nations is castable. Browser check pending. See docs/design/combat/SLICE4_COMBAT.md.
-- 2026-10-12 Game integration Phase 4 — persistence + accounts: SQLite store (node:sqlite) behind a repository interface, scrypt accounts + hashed session tokens, /auth endpoints, characters saved on leave/portal/autosave/shutdown and restored on join, one session per account (takeover), sign-in screen with guest mode. See docs/design/PERSISTENCE_AND_ACCOUNTS.md.
-- 2026-10-12 Game integration Phase 5 — balance + polish: balance simulator over real server effects, scaled flat ATK bonuses, in-combat SP trickle, damage-share EXP, boss HP 3200, 20-player performance check, phone badge. Catalogue outliers await design review. See docs/design/combat/BALANCE_REPORT.md.
-- 2026-10-12 Skill book + record refresh: skill book (K) rebuilt to the user's mockup (category rail, tier tabs over a nation night banner with the current model, gem-rail board, detail page with real release VFX preview and Ragnarok-style per-level text in % of ATK/MATK via shared skillLevelText); status panel and spirit record show the current Character V3 model and server profile data. PixelLab skill-book-v1 art: 13 images, 86 generations (docs/design/ui/skill-book-v1.json). No skill reset yet (needs a design rule).
-- 2026-10-12 Job weapons on Character V3: per-frame hand anchors for the V3 body, weapon layer back on V3 (lean with the arm, off-hand shield / second keris), branch weapons given at the job change and on load, 11 PixelLab weapons (72 generations). See docs/design/equipment/README.md.
 
 ## Map reference rebuild — 2026-10-14
 First playable village revision is wired into umbral-capital with preserved NPC/portal/spawn contracts and five new reference-led asset families. Navigation, typecheck/build, NPC multiplayer services and forest round-trip/combat tests pass; actual screenshots remain visual-review evidence, not approval. Natural shoreline/canal redesign, coherent fence/understory kit and additional hut variation remain open in design/maps/shaman-village-01/README.md. Do not expand to the other three reference panels before the first-village direction review required by the user. Cancelled walk/3D tasks stay cancelled.
@@ -693,6 +372,7 @@ Three new prototypes (Yuki-onna, Vodyanoy, Sending) have authored eight-directio
 
 ### Ranged art08 — fourteen-effect implementation batch
 The fourteen effects remaining after art07 now have original distinct eight-direction material atlases and the actual-game238-case review workflow with flight/impact evidence. Together with the three prior prototypes, all seventeen select authored art. Existing national spawns and Korea-planned status remain. Review evidence and measured limits: docs/design/monsters/folklore-01/vfx-08/README.md and /monster-review/ranged-vfx-08/index.html. User art approval remains open.
+
 
 ### 2026-10-16 — Shuten-dōji boss encounter
 

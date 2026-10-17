@@ -1,5 +1,81 @@
 # Architecture
 
+## Optional terrain quality adapter — 2026-10-14
+
+Existing Phaser MapRenderer supports development-only `terrainQuality=1`
+native art variants and a cached decorative/shadow ground layer. Pure seeded
+weighted selection is shared with8793 before/after preview through transpiled
+`terrain-variation.ts`. Terrain vertices/collision/game RNG stay unchanged;
+The later reference village slice opts in by default; other maps retain old assets unless
+explicitly reviewed. [Artwork and verification](design/maps/terrain-quality-01/README.md).
+
+## Four leveling-map review — 2026-10-14
+
+Local Phaser review8793 loads independent JSON placement data for the existing
+Spiritwood and three new maps. `tools/map/leveling-preview-model.mjs` shares
+world-unit terrain/collision/route/fog rules with the authoring checks; scene
+objects own camera, presentation and teardown. No new MAPS registry entries,
+combat/economy state or Colyseus rooms. Seven new static monster seeds are
+review assets only. [Design, scope and commands](design/maps/leveling-first-four/README.md).
+
+## Generated walk review — 2026-10-14
+
+User-authorized lower-body regeneration adds36 separate four-key-pose candidates /288 timing frames to `/head-walk-review` on8771. Stable SHA-checked candidate URLs preserve original frame head translations; top88 rows are byte-exact. Source PNGs, saved heads/orders and gameplay manifests stay unchanged. Four poses are held twice; intermediate art, contact stability and visual approval remain open. See [scope and evidence](design/walk-regeneration-2026-10-14/README.md).
+
+## Existing-frame walk audit — 2026-10-14
+
+Read-only `/head-walk-review` on8771 compares64actual class clips (two production
+sets and six detailed drafts).18reduced contact/neutral candidates use existing
+source identities with equal holds; missing art remains explicitly unresolved.
+No PNG, saved head/order packet or runtime manifest changes. [Evidence](design/walk-cycle-audit-2026-10-14/README.md).
+
+## Blender sprite proof — 2026-10-14
+
+`tools/sprite3d` adds independent model/rig/import/animation/render/export stages
+using headless Blender5.2.1 on CPU and Pillow. One original skinned placeholder
+walk drives96 transparent frames through a fixed orthographic camera in8 views.
+Local read-only review8792 has synchronized playback, contact/treadmill guides,
+onion skin and the user's owned sprite references. `playback.mjs` offers a tested
+phase-preserving clock/Phaser adapter; live players and Pose Studio remain on
+their existing paths. GLB/FBX import validates skinning, while arbitrary skeleton
+retargeting remains manual. [Contracts, commands and limits](../tools/sprite3d/README.md).
+
+## Pose Studio (MiniMax H3 motion tool) — 2026-10-14
+
+Offline art tool, not part of the runtime. `tools/pose-studio/server.mjs` (node:http, 127.0.0.1:8790) serves a static UI and a JSON API and runs one GPU job at a time against local ComfyUI (8188); `cli.mjs` is a thin client for people and agents. The libraries in `lib/` keep the jobs (`docs/design/pose-studio/jobs/<id>/job.json`), build an API-format H3 fl2va graph, convert frames with sharp (key → 6×6 block medoid → idle palette → island cleanup → frame-0 registration → baseline lock → original-head track/restamp) and run QA. Approval copies a clip to `docs/design/pose-studio/approved/` (`pose-studio-clip/1` manifest with per-frame head offsets); there is no automatic adoption into `apps/client/public` or the class-outfit manifests.
+
+2026-10-14: local head editor adds per-class/action/facing frame permutations in the existing hash-bound offset packet. Applying rebuilds draft action arrays by source SHA so head corrections follow original images and repeat application is idempotent. No PNG or published gameplay edits. Revision guards and save snapshots remain active.
+
+## Detailed head fitting — 2026-10-13
+
+Shared local head editor now supports three-size patch consensus and reverse checks, plus optional source-fingerprint/body-hash-bound batch proposals. Proposals remain separate from confirmed placements.144 SOUTH detailed motion neck deltas were applied after agent contact-sheet inspection; other facings remain review candidates. Original PNGs/default gameplay are unchanged. [Scope](design/equipment/class-2-imagegen-detail-01/head-fit/README.md).
+
+## Idle-referenced detail draft — 2026-10-13
+
+Six male class motion sets now use8-frame per-direction/action sheets with one measured registration per clip and byte-exact existing idle art. Separate `*-detail` textures/manifest require development carry review plus draft/baked/detail flags; production/default publication is unchanged. The local8771 head editor shares the guarded handler with8770 but has independent source report, saved JSON, snapshot history and fingerprint-specific browser drafts. [Output, contract and unresolved head placement](design/equipment/class-2-imagegen-detail-01/README.md#completed-detail-batch--2026-10-13).
+
+## Armed-draft head editor — 2026-10-13
+
+Local review8770 adds `/head-editor` with per-frame integer deltas, original-head composition, onion skin and local patch-matching proposals. Confirmed coordinates persist separately with body SHA256/export fingerprint. Explicit editor application updates only the guarded armed draft manifest's existing neck metadata, with a prior-manifest snapshot; staging retains valid saved offsets. No gameplay/server protocol, sprite pixels or female changes. [Workflow and validation](design/equipment/class-2-imagegen-armed-01/README.md#per-frame-head-editor-and-local-tracking--2026-10-13).
+
+## Armed costume frames — 2026-10-13
+
+User-authorized six-class draft adds optional per-frame `bakedWeapon` validated against shared branch equipment. Such a frame returns no separate equipment layer; own weapon remains visible in the body PNG. Unequip and unsupported swaps restore the original complete rig. Head/SSR rendering stays independent. `outfitBaked=1` selects a separate armed draft manifest only with development carry review and `outfitDraft=1`; normal gameplay manifest and Thai/Russian publication remain unchanged. See [armed-frame contract](design/equipment/class-2-imagegen-armed-01/README.md).
+
+## Isolated six-class outfit draft — 2026-10-13
+
+`classOutfitManifestUrl` selects `manifest-imagegen-draft.json` only when NODE_ENV is development and both `carryReview=1` and `outfitDraft=1` are present. Default gameplay and production always load the existing Thai/Russian manifest. The development board resolves branch from shared `BRANCH_WEAPONS`; no class authority or server change. Six additional sets have complete file coverage but known visual/contact issues and remain review-only. See [motion draft and limitations](design/equipment/class-2-imagegen-motion-01/README.md). Female unchanged.
+
+## Male class outfit production — 2026-10-13
+
+Client-only `class-outfit.ts` adds a separately validated complete-set registry for the first male Achan/Juggernaut pair. Existing synchronized `PlayerState.branch` selects the cosmetic; no protocol, item grants, stats or hitboxes change. `V3Puppet` retains original head identity and uses namespaced outfit textures, authored necks, exact user head offsets and measured static ground origins. `v3-weapon.ts` samples outfit hand data; `EquipmentLayers` keeps category scales/front/back layering and a separate reflected SOUTH axe/grip pair. Cast equipment can draw above the torso but below the independent head. Unsupported swapped weapons, explicit body items and incomplete/malformed optional assets preserve the original rig; new body-equipment support is not claimed. Registry now contains400 native body frames from48 completed clips plus existing idle art. Eight cast poses map to the unchanged12-step presentation timeline. See [delivery and evidence](design/equipment/class-2-production-01/README.md). Female unchanged.
+
+Female legacy off-hand candidate review is isolated to development `carryReview=1&body=female&femaleOffhand=1`. Its source-measured partial table overlays existing frame data without mutating manifests; missing measurements preserve the baseline. SOUTH idle is the initial proof, with other directions/actions still unverified. See `design/female-offhand-2026-10-12/README.md`.
+
+## Directional equipment carry — 2026-10-12
+
+V3 equipment uses client-only category/facing carry configuration, independent main/off-hand depth and selected-art grip origins. South size is retained; other facing sizes stay constant through attacks. Carry rotation blends over the shortest arc, without translating equipment away from its hand. Development-only `?carryReview=1&weapon=...` renders an isolated real-rig board without joining a room. See `design/combat/weapon-carry-2026-10-12/README.md` for inherited/new evidence and visual limitations.
+
 ## Hair V3 reference study and FRONT candidates — 2026-10-10
 
 USER reauthorizes V2 neutral-male-02 for this candidate round; V3 bodies remain
@@ -395,23 +471,17 @@ Added third FRONT face candidate to V3 Inspector: half-lidded deadpan eyes and f
 User approved exact FRONTs and new cap18 /3 attempts/no retry. One128 face-only SE/E inpaint per style, actual6+6+6=18. FRONT exact file reuse; SW/W mirror right with native anchors; back views retain head with no face overlay. V3 Inspector adds three-face eight-direction native/4x head/body comparisons. No gameplay publication, hair/body changes or animation. New-angle visual approval pending. See docs/design/ssr/face-eight-01/README.md.
 
 
-## Optional terrain quality adapter — 2026-10-14
+## Isolated Umbral elevation lab (2026-10-11)
 
-Existing Phaser MapRenderer supports development-only `terrainQuality=1`
-native art variants and a cached decorative/shadow ground layer. Pure seeded
-weighted selection is shared with8793 before/after preview through transpiled
-`terrain-variation.ts`. Terrain vertices/collision/game RNG stay unchanged;
-The later reference village slice opts in by default; other maps retain old assets unless
-explicitly reviewed. [Artwork and verification](design/maps/terrain-quality-01/README.md).
+`umbral-elevation-lab` clones the current city without changing its source map, NPC positions or approved assets. Optional shared elevation rules gate segment movement and stop correction on client/server; PlayerState synchronizes server-derived elevation after each simulation tick. Phaser projects terrain, actors, decals, shadows and lights with the same 48 px/level rise, while sorting uses logical foot Y. S1/S2 connect lower → middle → upper. Lab portals/casts are disabled and production servers reject this prototype map. This is a layout-specific height field, not a general stacked-surface/pathfinding system. See `docs/design/umbral-mountain-plan-01/prototype/README.md` for scope and evidence.
 
-## Four leveling-map review — 2026-10-14
+## Umbral Environmental Art Pass 02 (2026-10-11)
 
-Local Phaser review8793 loads independent JSON placement data for the existing
-Spiritwood and three new maps. `tools/map/leveling-preview-model.mjs` shares
-world-unit terrain/collision/route/fog rules with the authoring checks; scene
-objects own camera, presentation and teardown. No new MAPS registry entries,
-combat/economy state or Colyseus rooms. Seven new static monster seeds are
-review assets only. [Design, scope and commands](design/maps/leveling-first-four/README.md).
+Prototype-only `umbral-mountain-art.ts` authors stepped ridge profiles and clustered existing props; `umbral-elevation-baseline` freezes the Phase1 layout for reproducible comparison. MountainArt draws front/side faces by sampling the same shared height field used for collision, batches contiguous front runs before texturing, and reuses existing PNG textures only. Optional artPass lighting leaves flat production maps on their previous branch. Development-only mountainReview pins camera/zoom; mountainMetrics logs 10-second real-frame samples after warmup and resets while hidden. No production map, approved PNG or HUD rewrite.
+
+Mountain decoration rollback (2026-10-11): umbral-elevation-lab now clones UMBRAL_ELEVATION_BASELINE, preserving preliminary logical elevation and server validation. UMBRAL_MOUNTAIN_ART is inactive; artPass lighting and experimental 176px cliffs no longer apply to the playable lab.
+
+
 
 ## Mountain Sanctuary Phase D — 2026-10-11
 User advances isolated full96x112 terrain/building draft at `/maps/mountain-sanctuary`.
@@ -420,6 +490,18 @@ existing Thai buildings/vegetation plus candidate Phase C materials. Production
 map/manifest and gameplay registration unchanged; added credits0. Local tests and
 browser evidence documented in design/mountain-sanctuary-phase-d/README.md.
 Visual review pending; NPCs, quests, warps and multiplayer remain Phase E.
+
+## Character creation and hairstyle publication — 2026-10-11
+User authorizes gameplay integration. /characters/create and first-entry GameShell gate preview the actual V3 idle body via the same SSR composer/anchors as Phaser. Seven latest complete directional hair sets and three latest face identities are published as uniquely namespaced part JSONs referencing unchanged original PNGs. Shared head allowlists synchronize eleven playable hairstyles and nine colours through the existing Colyseus head protocol. Eight FRONT-only prototypes remain visibly labelled non-playable previews. Appearance is browser-local convenience storage, not account persistence. Existing walking/attack/cast body frames attach the static directional head; no new hair animation or paid generation.
+
+
+Hairstyle removal 2026-10-11: active head allowlist has eight styles after user removes side-sweep/spiky-up/high-topknot. Legacy saved appearance and incoming server head requests sanitize removed IDs to natural-short; remaining colours/faces preserved.
+
+
+## Combat presentation QA — 2026-10-12
+Player swing events optionally carry authoritative attackDelayMs (including ASPD). V3 one-shots fit the interval with a 33ms/frame readability floor, returning to normal playback for idle/walk; gameplay damage remains server-owned. Existing attack-cast hand overlays now load. MainHud folds panels on entering compact/short media queries with cleaned-up listeners. combatReview=1 exposes development-only guest QA controls through existing server commands/profile confirmations, never a client-owned combat state. See design/combat/playtest-2026-10-12/README.md.
+
+
 
 ## Shaman village reference slice — 2026-10-14
 The authoritative umbral-capital registry now uses a separately authored village layout while preserving the original source/comments, stable ID, spawn, eleven NPC service definitions, safe zone and reciprocal forest portal. Shared footprints remain client/server authority; Phaser uses five new isolated village sprite families, illustrated seeded terrain and Y-depth anchors. Other maps retain their old terrain unless explicitly reviewed. The development villageReview=overview changes camera only. See design/maps/shaman-village-01/README.md for evidence and remaining natural-shore/asset-fidelity gaps. No visual approval or four-map completion is implied.
@@ -617,6 +699,7 @@ Development-only ranged-review Colyseus room isolates unsaved guests while reusi
 
 ### Ranged art08 — all seventeen authored materials
 Extend the existing map-scoped MonsterArtVfxLayer with fourteen additional species-specific RGBA atlases. The actual-game recorder saves flight and server-confirmed impact screenshots; remaining-batch review covers fourteen species in the existing isolated development room. No authoritative formula, spawn, portal, map geometry, account or protocol migration. See docs/design/monsters/folklore-01/vfx-08/README.md.
+
 
 ### 2026-10-16 — Shuten-dōji boss encounter
 

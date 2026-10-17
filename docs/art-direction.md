@@ -16,6 +16,27 @@ ImageGen authorization includes Maiyarap and future bosses; no per-boss
 Shuten-only exception is needed. Maiyarap implementation and visual QA are still
 pending; this policy update is not a combat completion receipt.
 
+## Leveling-map atmosphere refinement — 2026-10-14
+
+USER requests gloomy occult-shaman atmosphere and fog where appropriate for
+the20-map proposal. Retain distinct climates with muted materials, overcast or
+twilight lighting, aged ritual props and localized antique-gold/jade/crimson
+semantic accents. Do not reduce every biome to the same dark overlay.
+Fog follows water/valley/coast/fissure zones; routes, actors and combat tells stay
+readable. Ash, dust, snow and steam are separate environmental treatments.
+Per-map art notes and presentation limits are in
+[the updated proposal](design/maps/leveling-20-proposal.json).
+This records design intent; actual map art/fog rendering remain unimplemented
+and visual acceptance is pending.
+
+## Map composition standard — 2026-10-11
+
+Before new maps or layout reworks, follow [SHAMAN_MAP_DESIGN_STANDARD.md](../SHAMAN_MAP_DESIGN_STANDARD.md)
+and start from [MAP_DESIGN_TEMPLATE.md](templates/MAP_DESIGN_TEMPLATE.md).
+Terrain masses, functional zones, route/entrance connectivity and landmarks precede dressing.
+The Tiled examples study informs structure and modular connections, not a change to the Classic RO camera.
+USER rejected Mountain Sanctuary Phase D composition; its technical checks are not art approval.
+
 ## Hair V3 reference study and FRONT candidates — 2026-10-10
 
 USER reauthorizes V2 neutral-male-02 for this candidate round; V3 bodies remain
@@ -193,28 +214,6 @@ User requests jaw-length sides and nape to neck base. One64-native inpaint on ow
 ## Korean Wolf Cut Long eight views — 2026-10-11
 User approves FRONT02 and requests eight static directions. FRONT exact reuse, one128 owned-head inpaint for SE/E/NE/N and three mirrored left views, job charged6/one attempt/no retries. Fixed silver-tip masks retain dye independently of charcoal ramp.96 real comparisons and native/4x in V3/SSR Inspector; original face/body/neck frozen. Technical gates pass; added views await user visual review. No animation or gameplay publication. See design/ssr/korean-wolf-eight-01/README.md.
 
-## Leveling-map atmosphere refinement — 2026-10-14
-
-USER requests gloomy occult-shaman atmosphere and fog where appropriate for
-the20-map proposal. Retain distinct climates with muted materials, overcast or
-twilight lighting, aged ritual props and localized antique-gold/jade/crimson
-semantic accents. Do not reduce every biome to the same dark overlay.
-Fog follows water/valley/coast/fissure zones; routes, actors and combat tells stay
-readable. Ash, dust, snow and steam are separate environmental treatments.
-Per-map art notes and presentation limits are in
-[the updated proposal](design/maps/leveling-20-proposal.json).
-This records design intent; actual map art/fog rendering remain unimplemented
-and visual acceptance is pending.
-
-## Map composition standard — 2026-10-11
-
-Before new maps or layout reworks, follow [SHAMAN_MAP_DESIGN_STANDARD.md](../SHAMAN_MAP_DESIGN_STANDARD.md)
-and start from [MAP_DESIGN_TEMPLATE.md](templates/MAP_DESIGN_TEMPLATE.md).
-Terrain masses, functional zones, route/entrance connectivity and landmarks precede dressing.
-The Tiled examples study informs structure and modular connections, not a change to the Classic RO camera.
-USER rejected Mountain Sanctuary Phase D composition; its technical checks are not art approval.
-
-
 
 ## Cloud Tea Slopes China preview — 2026-10-15
 User asks to leave the Thai-looking sequence and requests commit/push after major verified changes. Current seven live content maps are global hub1/Thailand5/China1 (mist-bamboo). Next WORLD-30 Phase2 cloud-tea-slopes has independent86×64 authored valley/tea contour layout, original96×64 Chinese tile-roof hall (PixelLab5 daily generations/no retry) and existing crop proxy/ground/water/localized mist. Local review /maps/cloud-tea-slopes, three proposed camps30–45, nine reachable points and route return. Flat logical terrain; elevation/special tea art/NPC services/live portal remain deferred. No changes to seven live map registrations. Geometry/typecheck/build and desktop/phone browser review pass. Evidence/limits: design/maps/cloud-tea-slopes/README.md.
@@ -358,6 +357,7 @@ User rejected thin procedural ranged effects. Study of haowg/GODOT-VFX-LIBRARY i
 
 ### Ranged art08 — remaining fourteen materials
 All seventeen ranged folklore species now select unique authored materials: flame, mourning hair, empty cloth, water hand/talons, nine-tail fan, wet tresses, wail crescents, crimson silk, fox mirage, reed hook, waterfall sound and shadow palms alongside art07. Original alpha/prompts retained;112px padding preserves diagonal tips. This completes implementation of the requested batch, not final user visual approval. See docs/design/monsters/folklore-01/vfx-08/README.md.
+
 
 ### 2026-10-16 — Shuten-dōji boss encounter
 

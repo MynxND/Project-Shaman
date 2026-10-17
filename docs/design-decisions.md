@@ -1,5 +1,88 @@
 # Design decisions
 
+## Terrain artwork quality review — 2026-10-14
+
+USER requests richer authored grass/soil/stone, deterministic weighted variants,
+seam-compatible transitions and separate decor without gameplay changes.
+New native art is a review candidate, not final premium approval; preserve source
+tiles and layout. Before/after uses the same camera/actors. New dirt-road pair
+fills a missing material pair; existing triple-junction simplification remains.
+Default gameplay art stays old until review. [Evidence](design/maps/terrain-quality-01/README.md).
+
+## First four leveling maps in isolated review — 2026-10-14
+
+USER authorizes four-map preview with staged architecture, monsters and localized
+fog before expanding20. Follow numbered catalogue entries1–4 (Spiritwood,
+paddy, mangrove, marsh). Keep existing Spiritwood layout; write complete briefs
+before new placement and retain original gameplay. Reuse map art, generate seven
+static monster candidates via PixelLab PixFlux (7generations, no retry), mark
+placeholder props and absent animations explicitly. [Review evidence](design/maps/leveling-first-four/README.md).
+
+## Occult atmosphere for20 leveling maps — 2026-10-14
+
+USER refines the catalogue to match the shared shaman art bible: gloomy,
+ritual-specific materials and selective environmental fog. Added individual
+lighting/fog notes for all20 maps. Preserve climate variety and gameplay
+readability; environmental fog is cosmetic, not a passive skill effect or
+visibility debuff. Runtime lighting is not proof of configurable fog support.
+[Draft specification](design/maps/leveling-20-proposal.json); no generation or
+gameplay changes in this stage.
+
+## Modular heads and generated walk candidates — 2026-10-14
+
+Keep heads/hair separate:25 hairstyle/color combinations should reuse body animations; recoloring need not generate new motion. New lower-leg candidates inherit source-frame head metadata and protect upper88 pixel rows. No automatic gameplay adoption or visual approval. Four key poses held twice do not constitute eight unique authored phases. Existing source-facing errors remain explicit. [Review](design/walk-regeneration-2026-10-14/README.md).
+
+## 3D → 2D proof and sprite references — 2026-10-14
+
+User requests replacing AI video motion with skeleton animation/rendering,
+starting with a separate rigged placeholder, one walk cycle,8 directions and
+12frames per direction. No independently generated AI walk images. Existing
+features/comments and video tools stay intact; production migration waits for
+review. User explicitly directs visual references from the217PNG generated-image
+folder `01a12fb0-f3fd-7c61-9a13-adb474158593`; selected originals are copied and
+SHA-bound in the proof, with old apprentice concept retained as historical
+context. A2D reference does not supply usable geometry/rig/weights automatically.
+The placeholder remains an engineering draft; no visual approval is inferred.
+[Evidence and reusable stages](../tools/sprite3d/README.md).
+
+## Pose Studio: MiniMax H3 motion from exact idle frames — 2026-10-14
+
+User installed local MiniMax H3 (ComfyUI 0.39 on C:, fl2va int8 + Qwen3-VL nvfp4 + turbo LoRA, checksums verified) and requests a local website plus Codex/Claude control that turns the existing eight-direction character briefs into motion, because current sprite poses do not match. User choices: the keyframe includes the original head, and output frames keep a head that is restamped from the original head pixels so the face is identical; a separate local server (127.0.0.1:8790); the six male class-2 sets go first. This narrows the earlier "ComfyUI concept-only for characters" rule to motion clips seeded by approved idle frames. QA is technical only; clips stay in docs/design/pose-studio until the user approves them visually, and game adoption is a separate step. The PC lost power three times on 2026-10-14 under heavy disk/GPU load (D: NVMe dropped off the bus; a later loss came during H3 model load), so GPU jobs need user go-ahead. MiniMax H3 Community License applies. [Tool and rules](../tools/pose-studio/README.md).
+
+## Preserve idle costume detail in motion — 2026-10-13
+
+User rejects divergent costumes and softened64-frame motion atlases, requesting maximal similarity/detail to the existing idle poses. Keep all48 existing male idle PNGs byte-exact and edit each own facing into a separate8-frame walk/attack/cast sheet:144 completed main edits plus one background-only cleanup, PixelLab0. Stage separately with detail-only development guards; do not transfer old moving-head offsets to changed body hashes or declare anatomical/visual approval from file checks. Original heads, Thai/Russian publication, gameplay and female pause remain unchanged. [Evidence](design/equipment/class-2-imagegen-detail-01/README.md).
+
+## User authorizes per-frame head alignment tool — 2026-10-13
+
+Extend the local six-class review with head dragging/nudges, onion skin and semi-automatic neck-patch suggestions. Suggestions require acceptance and preserve confirmed frames. Save only hash-bound coordinate deltas; explicit apply updates the development armed manifest and preserves its predecessor. Retain approved original head pixels, all body/weapon pixels and female pause. Tool completion is separate from human approval of actual head positions. [Contract](design/equipment/class-2-imagegen-armed-01/README.md#per-frame-head-editor-and-local-tracking--2026-10-13).
+
+## User chooses weapons drawn with hands — 2026-10-13
+
+User rejects floating separate attachments in the six-country-branch draft and requests generating weapons held by closed hands in the animation itself. Indonesia/Japan/Norway six male outfits now use a separately staged armed-art variant for idle/walk/own attack/cast. `bakedWeapon` metadata suppresses the extra main/off weapon rendering and rejects mismatched branch items; unequip/swaps restore a compatible complete original rig. Original head remains separate; no combat authority or female changes. Review-only `outfitBaked=1` remains guarded behind development carry review. [Art, policy and evidence](design/equipment/class-2-imagegen-armed-01/README.md). PixelLab0.
+
+## Three-country motion candidates and isolated staging — 2026-10-13
+
+User requests continuation for all three countries. Generate6 male class sets with built-in imagegen,0 PixelLab credits; preserve original male head/equipment and pause female work.18 motion atlases yield1,152 native candidate frames, plus48 retained idle poses. An explicitly guarded development carry board can load the separate draft registry; normal gameplay/default manifest remains the original Thai/Russian pair. Real Phaser loading of576 costume instances and root checks pass, but source-cell edge flags, some unverified grips/neck fallback and NW torso consistency remain unresolved. These are review candidates, not approved gameplay adoption. [Evidence, files and defects](design/equipment/class-2-imagegen-motion-01/README.md).
+
+## Remaining three-country outfit concepts approved — 2026-10-13
+
+User: “เอาแบบนี้เลยครับยืนยัน”. All six male concepts in [imagegen concept01](design/equipment/class-2-imagegen-concepts-01/README.md) are visually approved: Indonesia Santet/Keris, Japan Onmyoji/Miko, Norway Rune Seer/Ullr. Preserve the pictured costume silhouettes and palettes, including Santet sleeves and Rune Seer mantle, over earlier unapproved correction suggestions. Built-in imagegen was explicitly chosen instead of PixelLab; this stage used0 PixelLab credits. Existing male base/head and registered equipment remain authoritative; female remains paused. This is concept approval, not evidence of completed eight-direction assets, animation or runtime adoption.
+
+## First-pair production authorization — 2026-10-13
+
+User: “ไม่ต้องทดสอบแล้วทำจริงไปเลย…รอบนี้ปิดจบงาน2ประเทศนี้เลยทำที่ต้องทำให้หมด”. Stop paid proof-image rounds; produce and integrate the existing male Achan/Juggernaut art, preserving Russian manually saved head offsets and leaving female work paused. Use the existing headless clothed-body replacement architecture for this pair, not invented garment bones. A client-only class cosmetic follows the already synchronized branch; explicit body equipment wins and unsupported swapped weapons use the unchanged complete original rig. No item permissions, combat or persistence migration is introduced. Production queue cap144 from balance151, no automatic paid rerolls. Runtime assets are not complete until all48 clips are downloaded/published; human art acceptance stays distinct from technical completion. Other-country cosmetics, hide/show policy and additional weapon motions remain future scope.
+
+## 2026-10-11 — Reusable map design standard after Phase D composition rejection
+
+USER requests study of mapeditor/tiled/examples and reusable Markdown standards.
+Pinned28 source files, inspected tile-layer reconstructions and checked official manuals;
+findings and Phase D audit in [Tiled study](research/tiled-map-examples/README.md).
+[Root map standard](../SHAMAN_MAP_DESIGN_STANDARD.md) and [layout template](templates/MAP_DESIGN_TEMPLATE.md)
+are required by AGENTS.md for new maps/layout reworks. Design terrain/zones/routes/entrances
+before dressing; report failed placements; separate visual acceptance from technical passes.
+Documentation only: no map edits, importer installation, asset generation or Phase E advancement.
+
 ## Hair V3 reference study and FRONT candidates — 2026-10-10
 
 USER reauthorizes V2 neutral-male-02 for this candidate round; V3 bodies remain
@@ -411,45 +494,18 @@ Norway designed and catalogued (`skills-norway.ts`, docs/design/skills/norway-v1
 ## Norway rune exception + Hunter v2 — 2026-10-11
 User: focus Norway on the Ullr Hunter as an RO-Hunter-like bow class (best bow class, unique skills) and allow real runes. Hunter v2: Twin Shot (two arrows, marks prey), Falcon Strike + Falcon Bond (falcon also dives on its own from LUK), Rune Trap Kit (Naudiz snare, Isa freeze, Thurisaz thorn blast, Dagaz flash) + Trapper's Craft, Charged Rune Arrow (Uruz), longest bow range, shoot while moving. Rune Seer queue: Isa, Hagalaz, Perthro, Kenaz. Runes are drawn in code from the Unicode Runic block; extremist-associated runes excluded.
 
-2026-10-12: Skill reset costs Silver (user approved): every learned level returns to skill points except the free starting Spirit Bolt Lv 1; price = max(500, 100 Silver per refunded point) (economy.ts SKILL_RESET); refused while in combat (5 s lock), with nothing to refund or too little Silver.
+## 2026-10-11 — Prototype-only elevation approval
 
-## Terrain artwork quality review — 2026-10-14
+User approved zero PixelLab-credit work on a separate clone of the existing city; no new game image assets and no production map edits. Keep original building/NPC/spawn world coordinates. Use a shared height field and transition corridors instead of treating Phaser depth as elevation. Reuse existing stone/rock/vegetation textures as temporary retaining faces and composed clusters. S5 uses two stair flights with a landing, narrowed to x61–62.5 to avoid existing footprints; S6 slopes before the original level-zero bridge. Require visual approval before further city expansion or asset generation.
 
-USER requests richer authored grass/soil/stone, deterministic weighted variants,
-seam-compatible transitions and separate decor without gameplay changes.
-New native art is a review candidate, not final premium approval; preserve source
-tiles and layout. Before/after uses the same camera/actors. New dirt-road pair
-fills a missing material pair; existing triple-junction simplification remains.
-Default gameplay art stays old until review. [Evidence](design/maps/terrain-quality-01/README.md).
+## 2026-10-11 — Environmental Art Pass prototype scope
 
-## First four leveling maps in isolated review — 2026-10-14
+User accepts preliminary elevation behavior but rejects Phase1 visuals. Authorizes composition with existing assets only, zero PixelLab credits and no production edits. Hand-authored irregular contours must be shared by renderer/collision; S1–S6 and original buildings/NPCs remain fixed. Use asymmetric cliff vegetation masses, dirt/grass variation, stronger contact shadows and temple-first lighting in the prototype only. The remaining minimal terrain kit is a proposal, not generation approval. See docs/design/umbral-mountain-art-02/README.md.
 
-USER authorizes four-map preview with staged architecture, monsters and localized
-fog before expanding20. Follow numbered catalogue entries1–4 (Spiritwood,
-paddy, mangrove, marsh). Keep existing Spiritwood layout; write complete briefs
-before new placement and retain original gameplay. Reuse map art, generate seven
-static monster candidates via PixelLab PixFlux (7generations, no retry), mark
-placeholder props and absent animations explicitly. [Review evidence](design/maps/leveling-first-four/README.md).
+## 2026-10-11 — Mountain decoration cancelled
+User cancelled the mountain decoration experiments. The playable elevation lab now restores the Phase 1 baseline (48px rise, original terraces and S1–S6), without Environmental Art Pass or subsequent cliff geometry experiments. Historical candidate files remain inactive for reference. Production map and approved image files are unchanged. No generation or polling is performed for this rollback.
 
-## Occult atmosphere for20 leveling maps — 2026-10-14
 
-USER refines the catalogue to match the shared shaman art bible: gloomy,
-ritual-specific materials and selective environmental fog. Added individual
-lighting/fog notes for all20 maps. Preserve climate variety and gameplay
-readability; environmental fog is cosmetic, not a passive skill effect or
-visibility debuff. Runtime lighting is not proof of configurable fog support.
-[Draft specification](design/maps/leveling-20-proposal.json); no generation or
-gameplay changes in this stage.
-
-## 2026-10-11 — Reusable map design standard after Phase D composition rejection
-
-USER requests study of mapeditor/tiled/examples and reusable Markdown standards.
-Pinned28 source files, inspected tile-layer reconstructions and checked official manuals;
-findings and Phase D audit in [Tiled study](research/tiled-map-examples/README.md).
-[Root map standard](../SHAMAN_MAP_DESIGN_STANDARD.md) and [layout template](templates/MAP_DESIGN_TEMPLATE.md)
-are required by AGENTS.md for new maps/layout reworks. Design terrain/zones/routes/entrances
-before dressing; report failed placements; separate visual acceptance from technical passes.
-Documentation only: no map edits, importer installation, asset generation or Phase E advancement.
 
 ## Mountain Sanctuary Phase D — 2026-10-11
 User advances isolated full96x112 terrain/building draft at `/maps/mountain-sanctuary`.
@@ -663,6 +719,7 @@ Use a guest-only development room for repeatable real-renderer combat evidence, 
 
 ### Ranged art08 — species identity with shared lifecycle
 Keep one bounded authoritative-hit presentation layer, but give each ranged folklore species its own material atlas rather than recoloring a shared ball. Reuse the established encounter lore and provisional range/speed; no extra status/AoE. Four Korean ranged species are isolated review fixtures and remain unspawned in planned national maps. Capture both flight and impact with the real Phaser renderer. Correct visible anatomical emission points without modifying original character PNGs.
+
 
 ### 2026-10-16 — Shuten-dōji boss encounter
 

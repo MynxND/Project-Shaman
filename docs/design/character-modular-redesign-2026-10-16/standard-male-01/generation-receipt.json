@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-16",
+  "generator": "built-in image_gen.imagegen",
+  "calls": 1,
+  "prompt": "prompt.txt",
+  "references": ["docs/design/comfyui/reference/shamen-base-sheet.webp", "docs/design/character-modular-redesign-2026-10-16/concept-board.png"],
+  "output": "standard-male-front-source.png",
+  "sourceOutputName": "exec-d7c6ae47-53ae-4565-b091-4c0863226615.png",
+  "nativeDimensions": {"width": 1024, "height": 1536},
+  "transparentBackgroundRequested": true,
+  "alphaVerified": false,
+  "status": "visual candidate; no runtime adoption or user approval",
+  "inspection": ["Complete front-facing male with connected head, neck and shoulders, empty hands, training trousers and sandals.", "Anatomy reads more muscular and taller than the compact prior study; target head-height ratio has not been measured.", "Visible soft surrounding halo/background requires inspection and cleanup before sprite extraction.", "Original source preserved without rescaling; this is not a native128 production sprite or separated-layer asset."]
+}
