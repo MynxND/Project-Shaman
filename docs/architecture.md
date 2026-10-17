@@ -282,6 +282,8 @@ Next: mobile joystick, client-side prediction/reconciliation for the local playe
 
 Production work remains: authentication, persistence, robust rate limiting, authorized origins, reconnect policy, collision, monitoring and load testing. No deployment is configured.
 
+Update 2026-10-17 (OPS-01): accounts and SQLite persistence exist (design/PERSISTENCE_AND_ACCOUNTS.md). The server now reads validated environment settings (`apps/server/src/config.ts`), enforces an origin allow-list on WebSocket handshakes and `/auth`, stamps an unforgeable client address for the login limit, exposes `/health` (rooms, players, event-loop delay, memory) and saves through batched transactions. Run, backup/restore and load-test procedures: [ops/DEPLOYMENT.md](ops/DEPLOYMENT.md). Public hosting, HTTPS proxy and service supervision are still not configured.
+
 ## Skill system boundaries
 
 Definitions specify stable IDs, tier, prerequisites and effects. Execution belongs to server effect handlers, not descriptions or parsed LaTeX. Unresolved fields are null and must block use until resolved.

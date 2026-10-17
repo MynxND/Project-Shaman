@@ -6,7 +6,7 @@ import { advanceJobWithWeapon, castRule, castsWhileMoving, maxHpFor, maxSpFor, c
 import { parseNpcRequest, runNpcRequest } from './npc-services.js';
 import { CombatSystem } from './combat-system.js';
 import { consumeTicket, issueTicket, peekTicket } from './travel.js';
-import { onlineAccounts, store, type Account } from '../persistence/store.js';
+import { onlineAccounts, store, type Account, type SavedCharacter } from '../persistence/store.js';
 import { decodeHead, EMOTE_MS, encodeHead, encodeLook, equipItem, isExpression, sanitizeEquipment, sanitizeHead } from '@shaman/shared';
 const TICK_MS = 1000 / 30;
 const INPUT_TTL_MS = 300;
@@ -16,6 +16,8 @@ const DEV_COMMANDS = process.env.NODE_ENV !== 'production';
 /** Every live room, so the process can save all signed-in characters before it exits. */
 const ROOMS = new Set<GameRoom>();
 export function flushAllRooms() { for (const room of ROOMS) room.saveAll(); }
+/** Live counts for /health: open map rooms and connected players. */
+export function roomStats() { let players = 0; for (const room of ROOMS) players += room.clients.length; return { rooms: ROOMS.size, players }; }
 /** Autosave period for signed-in characters (also saved on leave, on map travel and on Ctrl+C). SHAMAN_AUTOSAVE_MS overrides it. */
 const AUTOSAVE_MS = Number(process.env.SHAMAN_AUTOSAVE_MS) || 10_000;
 
@@ -425,12 +427,21 @@ export class GameRoom extends Room<{ state: GameState }> {
 
   /** Saves a signed-in session's character (profile, look, map and position). Guests are skipped. */
   save(id: string, at?: { mapId: string; x: number; y: number }) {
-    const account = this.accounts.get(id), profile = this.profiles.get(id), player = this.state.players.get(id);
-    if (!account || !profile || !player) return;
-    store().saveCharacter({ accountId: account.id, bodyType: (this.bodyTypes.get(id) ?? 'male') as BodyType, head: player.head, profile,
-      mapId: at?.mapId ?? this.map.id, x: at?.x ?? player.x, y: at?.y ?? player.y, updatedAt: Date.now() });
+    const record = this.savedCharacter(id, at);
+    if (record) store().saveCharacter(record);
   }
-  saveAll() { for (const id of this.accounts.keys()) if (!this.travelling.has(id)) this.save(id); }
+  private savedCharacter(id: string, at?: { mapId: string; x: number; y: number }): SavedCharacter | null {
+    const account = this.accounts.get(id), profile = this.profiles.get(id), player = this.state.players.get(id);
+    if (!account || !profile || !player) return null;
+    return { accountId: account.id, bodyType: (this.bodyTypes.get(id) ?? 'male') as BodyType, head: player.head, profile,
+      mapId: at?.mapId ?? this.map.id, x: at?.x ?? player.x, y: at?.y ?? player.y, updatedAt: Date.now() };
+  }
+  /** Autosave: the whole room in one transaction, so the disk is synced once per room rather than once per player. */
+  saveAll() {
+    const records: SavedCharacter[] = [];
+    for (const id of this.accounts.keys()) if (!this.travelling.has(id)) { const r = this.savedCharacter(id); if (r) records.push(r); }
+    if (records.length) store().saveCharacters(records);
+  }
   onDispose() { ROOMS.delete(this); }
 
   onJoin(client: Client, options?: unknown, auth?: unknown) {

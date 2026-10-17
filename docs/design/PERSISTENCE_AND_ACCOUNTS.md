@@ -17,6 +17,13 @@ The game no longer forgets a signed-in player. Accounts and characters live in a
 
 - Saved profiles go through the existing `migrateProfile()` / `profileVersion` on load, so older saves keep working when fields are added.
 
+## Production tuning (OPS-01, 2026-10-17)
+- **SQLite settings:** WAL with `synchronous=NORMAL` and `busy_timeout=5000`. Prepared statements are cached.
+- **Autosave:** writes each room's characters in one transaction (`Store.saveCharacters`) and skips characters identical to their last written row.
+- **Password hashing:** scrypt is asynchronous (thread pool), so logins do not block the rooms.
+- **Shutdown:** `close()` checkpoints the WAL.
+- **Settings, backup/restore and load-test results:** see [docs/ops/DEPLOYMENT.md](../ops/DEPLOYMENT.md).
+
 ## Accounts (HTTP on the game server port; CORS from Colyseus)
 
 | Endpoint | |
@@ -26,7 +33,8 @@ The game no longer forgets a signed-in player. Accounts and characters live in a
 | `GET /auth/me` (Bearer token) | → `{username, character}` or 401 |
 | `POST /auth/logout` (Bearer token) | ends the session |
 
-- Login and register are rate limited to 10 attempts per minute per IP.
+- Login and register are rate limited per client address (`SHAMAN_AUTH_ATTEMPTS_PER_MINUTE`, default 10/min). The address comes from the socket, or from the trusted proxy with `SHAMAN_TRUST_PROXY=1`, and cannot be forged by request headers.
+- In production, only `SHAMAN_ALLOWED_ORIGINS` may call `/auth/*` or open WebSockets from a browser.
 - Wrong username and wrong password give the same answer, with the same timing.
 - No credentials or secrets live in the repository.
 

@@ -127,7 +127,7 @@ Status meanings: **implemented** = code/assets exist; **verified** = named check
 
 | ID | Task | Status / completion criterion |
 |---|---|---|
-| OPS-01 | Prepare reviewable production configuration | **Planned.** Single-server deployment first, correct GAME_SERVER_PORT and client endpoint, NODE_ENV=production, persistent database path, graceful stop and restart. |
+| OPS-01 | Prepare reviewable production configuration | **Implemented / verified locally 2026-10-17.** Validated env config (`.env.example`, production refuses missing origins/DB path), origin allow-list on WebSocket + /auth, unforgeable login rate-limit address, `/health` with event-loop delay, batched/skipped SQLite saves, async password hashing, graceful shutdown with checkpoint, `pnpm build:prod / start:server / start:client`, online `db:backup` with rotation and guarded `db:restore`. Load test 100/300/1,000 walking bots passed on this PC (p99 loop +20 ms at 1,000). `pnpm test:ops` passes. Service install, proxy/HTTPS and real-device test remain OPS-02–04. [Deployment guide](ops/DEPLOYMENT.md). |
 | OPS-02 | Hosting and transport | **Planned.** Choose host/domain; HTTPS/WSS + WebSocket proxy, allowed origins and request limits. External account purchases/public deployment require concrete user authorization. |
 | OPS-03 | Operations and recovery | **Planned.** DB backups with restore rehearsal, logs, health monitoring and restart policy. Multi-process shared sessions/locks only if scaling is actually required. |
 | OPS-04 | External acceptance test | **Planned.** Two devices on different networks, login, gameplay, portal, disconnect/rejoin, restart persistence and measured latency. Public playtest can precede complete world content; record any accepted balance limitations. |
