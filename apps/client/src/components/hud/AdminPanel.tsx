@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NATION_BRANCHES } from '@shaman/shared';
 import { jobTitle, NATION_TH } from '@/game-data/skill-catalog';
 import { useProfileStore } from '@/stores/profile-store';
@@ -14,6 +14,13 @@ export function AdminPanel() {
   const [open, setOpen] = useState(false);
   const [tier, setTier] = useState<2 | 3>(2);
   const [level, setLevel] = useState(60);
+  // Esc closes the panel.
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [open]);
   if (!admin || !profile || !send) return null;
   const nations = [...new Set(NATION_BRANCHES.map((b) => b.nation))];
   const current = jobTitle(profile);
@@ -22,7 +29,10 @@ export function AdminPanel() {
       <button className="hud-mini-btn hud-admin-toggle" onClick={() => setOpen(!open)} aria-expanded={open} title="เครื่องมือแอดมิน">แอด</button>
       {open && (
         <div className="hud-panel hud-admin-panel" role="dialog" aria-label="เครื่องมือแอดมิน">
-          <h2>เครื่องมือแอดมิน</h2>
+          <div className="hud-admin-head">
+            <h2>เครื่องมือแอดมิน</h2>
+            <button className="hud-mini-btn" onClick={() => setOpen(false)} aria-label="ปิดเครื่องมือแอดมิน" title="ปิด (Esc)">✕</button>
+          </div>
           <p className="hud-admin-now">ตอนนี้: {current.th} · ขั้น {profile.jobTier} · Base Lv {profile.level} · แต้มสกิล {profile.skillPoints}</p>
           <div className="hud-admin-row">
             <span>ขั้นอาชีพ</span>
