@@ -9,3 +9,13 @@ dist/
 .claude/settings.local.json
 .claude/*.lock
 apps/server/data/
+
+# Pose Studio: raw 768px video frames are re-creatable intermediates; processed frames/sheets/QA stay tracked
+docs/design/pose-studio/jobs/*/raw/
+
+# Python bytecode, Blender autosave backups and local tool logs are re-creatable
+__pycache__/
+*.blend1
+docs/design/pose-studio/*.log
+# Root-level bundled ZIPs duplicate artifacts/headless-outfits-2026-10-16 (rebuild with its export.cjs)
+artifacts/*.zip
