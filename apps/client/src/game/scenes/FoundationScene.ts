@@ -640,7 +640,7 @@ export class FoundationScene extends Phaser.Scene {
           .setScale(solo ? 1.2 : 0.65).setDepth(r * 110).setAnimation(row === 'walk' ? 'walk' : null);
         sprite.setLook(`weapon:${weapon}`);
         if (params.get('outfit') === '1') sprite.setClassBranch(Object.entries(BRANCH_WEAPONS).find(([,item]) => item === weapon)?.[0] ?? '');
-        if(params.get('outfit')==='1')sprite.setAutoHeadBranch(Object.entries(BRANCH_WEAPONS).find(([,item])=>item===weapon)?.[0]??'');
+        if(params.get('outfit')==='1' && params.get('autohead')!=='0')sprite.setAutoHeadBranch(Object.entries(BRANCH_WEAPONS).find(([,item])=>item===weapon)?.[0]??'');
         if (sprite.texture.key.includes(':outfit:')) outfitSprites++;
         if (row === 'attack live') this.time.addEvent({ delay: 1400, loop: true, startAt: 1400, callback: () => sprite.playOnce('attack') });
         else if (row.startsWith('attack')) sprite.showAttackFrame(facing, Number(row.split(' ')[1]));
