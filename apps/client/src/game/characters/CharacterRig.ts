@@ -97,9 +97,19 @@ export class CharacterSprite extends Phaser.GameObjects.Sprite {
     const cam = camera as unknown as { matrix: { a: number; d: number; e: number; f: number; b: number; c: number } }, m = cam.matrix;
     if (parentMatrix || m.b || m.c || !m.a || !m.d) { draw.call(this, renderer, src, camera, parentMatrix); return; }
     const x = this.x, y = this.y, round = camera.roundPixels;
-    const sx = m.a * (x - camera.scrollX * this.scrollFactorX) + m.e, sy = m.d * (y - camera.scrollY * this.scrollFactorY) + m.f;
-    this.x = x + (Math.round(sx) - sx) / m.a;
-    this.y = y + (Math.round(sy) - sy) / m.d;
+    // The followed character: the camera floors its scroll, so the gap between scroll and this sprite flips by a pixel
+    // every few frames and the character judders on screen while walking (side/diagonal walks, user 2026-10-17). Draw
+    // it exactly where the camera aims instead, so it holds still on screen and the world does the stepping.
+    const follow = camera as unknown as { _follow: unknown; followOffset: { x: number; y: number }; width: number; height: number; originX: number; originY: number };
+    let rx = x, ry = y;
+    if (follow._follow === this) {
+      const ax = camera.scrollX + follow.followOffset.x + follow.width * follow.originX, ay = camera.scrollY + follow.followOffset.y + follow.height * follow.originY;
+      if (Math.abs(ax - x) < 1.5) rx = ax; // At the map edges the camera stops following; keep the real position there.
+      if (Math.abs(ay - y) < 1.5) ry = ay;
+    }
+    const sx = m.a * (rx - camera.scrollX * this.scrollFactorX) + m.e, sy = m.d * (ry - camera.scrollY * this.scrollFactorY) + m.f;
+    this.x = rx + (Math.round(sx) - sx) / m.a;
+    this.y = ry + (Math.round(sy) - sy) / m.d;
     camera.roundPixels = false;
     try { draw.call(this, renderer, src, camera, parentMatrix); } finally { camera.roundPixels = round; this.x = x; this.y = y; }
   }

@@ -393,6 +393,7 @@ export class FoundationScene extends Phaser.Scene {
   /** Dev-only read-out of the local character for automated walk checks (window.__shamanDebug). */
   private exposeDebug() {
     const w = window as unknown as { __shamanDebug?: { local: () => unknown; mapArt: () => string | null; zoom: (level?: number) => unknown; camera: () => unknown; lookAt: (x: number, y: number) => void; monsters: () => unknown; send: (type: string, message?: unknown) => void; engage: (id: string) => void } };
+    (window as unknown as { __shamanScene?: unknown }).__shamanScene = this; // Dev-only: frame-by-frame checks (e.g. walk jitter traces).
     w.__shamanDebug = {
       // Send a room message (dev testing of server commands, e.g. dev:job).
       send: (type, message) => this.room?.send(type, message ?? {}),
