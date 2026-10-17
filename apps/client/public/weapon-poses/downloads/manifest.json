@@ -1,0 +1,107 @@
+{
+  "credits": 0,
+  "source": "Existing detailed SOUTH idle outfit + production EquipmentLayers transforms",
+  "exports": [
+    {
+      "class": "achan-saiyasat",
+      "file": "achan-saiyasat-front-armed-headless.png",
+      "size": 256,
+      "head": false,
+      "background": "transparent",
+      "sources": [
+        "/assets/character-v3/class-outfits/achan/idle/south.png",
+        "/assets/equipment/staff-achan/south.png",
+        "/assets/character-v3/class-outfits/achan/idle/hands-south.png"
+      ],
+      "baked": false,
+      "visiblePixels": 2253
+    },
+    {
+      "class": "juggernaut",
+      "file": "juggernaut-front-armed-headless.png",
+      "size": 256,
+      "head": false,
+      "background": "transparent",
+      "sources": [
+        "/assets/character-v3/class-outfits/juggernaut/idle/south.png",
+        "/assets/character-v3/class-outfits/axe-south-outward.png",
+        "/assets/equipment/shield-juggernaut/south.png",
+        "/assets/character-v3/class-outfits/juggernaut/idle/hands-south.png"
+      ],
+      "baked": false,
+      "visiblePixels": 2972
+    },
+    {
+      "class": "santet",
+      "file": "santet-front-armed-headless.png",
+      "size": 256,
+      "head": false,
+      "background": "transparent",
+      "sources": [
+        "/assets/character-v3/class-outfits/santet-detail/idle/south.png"
+      ],
+      "baked": true,
+      "visiblePixels": 2394
+    },
+    {
+      "class": "keris",
+      "file": "keris-front-armed-headless.png",
+      "size": 256,
+      "head": false,
+      "background": "transparent",
+      "sources": [
+        "/assets/character-v3/class-outfits/keris-detail/idle/south.png"
+      ],
+      "baked": true,
+      "visiblePixels": 2430
+    },
+    {
+      "class": "onmyoji",
+      "file": "onmyoji-front-armed-headless.png",
+      "size": 256,
+      "head": false,
+      "background": "transparent",
+      "sources": [
+        "/assets/character-v3/class-outfits/onmyoji-detail/idle/south.png"
+      ],
+      "baked": true,
+      "visiblePixels": 2949
+    },
+    {
+      "class": "miko",
+      "file": "miko-front-armed-headless.png",
+      "size": 256,
+      "head": false,
+      "background": "transparent",
+      "sources": [
+        "/assets/character-v3/class-outfits/miko-detail/idle/south.png"
+      ],
+      "baked": true,
+      "visiblePixels": 2645
+    },
+    {
+      "class": "rune-seer",
+      "file": "rune-seer-front-armed-headless.png",
+      "size": 256,
+      "head": false,
+      "background": "transparent",
+      "sources": [
+        "/assets/character-v3/class-outfits/rune-seer-detail/idle/south.png"
+      ],
+      "baked": true,
+      "visiblePixels": 2813
+    },
+    {
+      "class": "ullr-hunter",
+      "file": "ullr-hunter-front-armed-headless.png",
+      "size": 256,
+      "head": false,
+      "background": "transparent",
+      "sources": [
+        "/assets/character-v3/class-outfits/ullr-hunter-detail/idle/south.png"
+      ],
+      "baked": true,
+      "visiblePixels": 2783
+    }
+  ]
+}
