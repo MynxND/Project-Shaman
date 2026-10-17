@@ -1,0 +1,3607 @@
+{
+  "id": "miko-detail",
+  "branch": "miko",
+  "attackAction": "attack-cast-gohei",
+  "directions": {
+    "south": {
+      "headOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 62,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/miko-detail/idle/south.png",
+        "sha256": "99f19529be742a73d4f14be156ef3c9dae06b0b60a09169acf3e9051f98ebf04",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 41.5,
+          "y": 79.5
+        },
+        "off": {
+          "x": 82.5,
+          "y": 76.5
+        },
+        "bakedWeapon": "gohei-miko"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-0.png",
+          "sha256": "f6cbd49ec7257907af7987cfaf5bb6bc930d247e9fbc49d4142a23e10bee1e86",
+          "neck": {
+            "x": 67,
+            "y": 45
+          },
+          "main": {
+            "x": 42.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-1.png",
+          "sha256": "0f035ba7c9b96af59edf56e2ecd4e6b85f70681e5fd2639cc51aa2587284f7ca",
+          "neck": {
+            "x": 63,
+            "y": 44
+          },
+          "main": {
+            "x": 42.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-2.png",
+          "sha256": "d9afcc66585e1c8ee66ced76cd0dcade41460e9da50bcadc53cfb86f1c9df907",
+          "neck": {
+            "x": 65,
+            "y": 45
+          },
+          "main": {
+            "x": 42.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-3.png",
+          "sha256": "2d73455f0fb7a7a301bb616ba65f87f4d64df6ebd9012521d7faf4b299133ad4",
+          "neck": {
+            "x": 62,
+            "y": 45
+          },
+          "main": {
+            "x": 41.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-4.png",
+          "sha256": "4ba1ccd3a6116ae38877b52038e362421236ea8ac8b9c2c5dc725bbdc77b8418",
+          "neck": {
+            "x": 65,
+            "y": 45
+          },
+          "main": {
+            "x": 41.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-5.png",
+          "sha256": "d93de3b9ec66840e7ee2d075b8afb5173efe1c61da97143f320f3b7fc244a4bc",
+          "neck": {
+            "x": 65,
+            "y": 45
+          },
+          "main": {
+            "x": 41.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-6.png",
+          "sha256": "c7b76624698481dda7d1e1e66d9aa094335cd3c5561f388ad066027d0fa37966",
+          "neck": {
+            "x": 63,
+            "y": 45
+          },
+          "main": {
+            "x": 41.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-7.png",
+          "sha256": "d166d1360357c0508eb9753a8580bcb57812f467c8cc3c0efb2bfbc166d6fb66",
+          "neck": {
+            "x": 63,
+            "y": 45
+          },
+          "main": {
+            "x": 42.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "gohei-miko"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-0.png",
+          "sha256": "bb0a79dd4014d84921236e394d1bf11ecd55552732daeb9a68257b797752e8c9",
+          "neck": {
+            "x": 63,
+            "y": 49
+          },
+          "main": {
+            "x": 54.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-1.png",
+          "sha256": "7b97ebdf4383dc86cfd82cfbf9f9970cb10e89f45e4f944b9b865f01deb37b9d",
+          "neck": {
+            "x": 66,
+            "y": 49
+          },
+          "main": {
+            "x": 64.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-2.png",
+          "sha256": "10a5f471d5b963004d034a5ff3ea7a19f6d591da4c0a467f1db6fb37f5cee595",
+          "neck": {
+            "x": 54,
+            "y": 55
+          },
+          "main": {
+            "x": 54.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-3.png",
+          "sha256": "d5f62b46e77d8c221b129f479ca4339852728642547951b05dc49219757519b3",
+          "neck": {
+            "x": 53,
+            "y": 55
+          },
+          "main": {
+            "x": 44.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-4.png",
+          "sha256": "52e523bbb8aa68f6c1a3e3832bd86e9e4556517bf1d03206e1a9ebade22159f1",
+          "neck": {
+            "x": 77,
+            "y": 64
+          },
+          "main": {
+            "x": 54.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-5.png",
+          "sha256": "a3522a5b87b7f9a8c130a73ce434f0acb30855cbc21f8a27622fa94fb91c179e",
+          "neck": {
+            "x": 68,
+            "y": 45
+          },
+          "main": {
+            "x": 64.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-6.png",
+          "sha256": "d730f17d02ed2f161ef956c6911975cf9e7047b318bcf25b9cfceda42a0ab6dc",
+          "neck": {
+            "x": 65,
+            "y": 46
+          },
+          "main": {
+            "x": 58.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-7.png",
+          "sha256": "68981c0e39ea4566010893b58f98e58ac58febaa7fb205e844240583c569b78b",
+          "neck": {
+            "x": 65,
+            "y": 47
+          },
+          "main": {
+            "x": 54.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-0.png",
+          "sha256": "56fd28daeda5521d65d2071393de0bbd7e71ee12f05245a39de886e0cb696d95",
+          "neck": {
+            "x": 64,
+            "y": 49
+          },
+          "main": {
+            "x": 43.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 74.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-1.png",
+          "sha256": "7a9239d9aefa3e7d5d115a91a9c0e4b1fdf514c654e421d8b5fe769f5ead991a",
+          "neck": {
+            "x": 62,
+            "y": 49
+          },
+          "main": {
+            "x": 45.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 71.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-2.png",
+          "sha256": "90f914e7a6dde3012f8a99dff798134d5ee8a8e02c4656f2096f124562f6919e",
+          "neck": {
+            "x": 63,
+            "y": 49
+          },
+          "main": {
+            "x": 44.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 71.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-3.png",
+          "sha256": "402749a7fa896f184ccb66f9bc3458f11b671908c04c5fc450b4636e24810e11",
+          "neck": {
+            "x": 59,
+            "y": 49
+          },
+          "main": {
+            "x": 46.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 72.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-4.png",
+          "sha256": "c606d2330d571e0560806805843939381c324f95caec4f096f09e56957e76379",
+          "neck": {
+            "x": 63,
+            "y": 48
+          },
+          "main": {
+            "x": 45.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 74.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-5.png",
+          "sha256": "08b4abf545e25ab0e7507684233069c863806b7b63087bcce8e273587f56aedf",
+          "neck": {
+            "x": 66,
+            "y": 47
+          },
+          "main": {
+            "x": 43.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 71.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-6.png",
+          "sha256": "aef77e98ce2d2f73516e87b8ab1e70e94566c63ff802695ea912fd04c8175399",
+          "neck": {
+            "x": 63,
+            "y": 48
+          },
+          "main": {
+            "x": 44.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 74.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-7.png",
+          "sha256": "81b16e9e9cfb7575081d87831d4a2a920c1e3c1ce745b96055d1409398ddcb8b",
+          "neck": {
+            "x": 63,
+            "y": 48
+          },
+          "main": {
+            "x": 40.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 85.5,
+            "y": 76.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "gohei-miko"
+        }
+      ]
+    },
+    "south-east": {
+      "headOffset": {
+        "x": -3,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 64,
+        "y": 114
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/miko-detail/idle/south-east.png",
+        "sha256": "63d26145d3b3a8c92d6a1edcaa01379232e12bc2679b90fe4a808f5e9e3818a7",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 73.5,
+          "y": 66.5
+        },
+        "off": {
+          "x": 50.5,
+          "y": 81.5
+        },
+        "bakedWeapon": "gohei-miko"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-east-0.png",
+          "sha256": "1f21a30292115f682f43775fde01ea9b3d514702cd9ff2914586c6e3bb0b788b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 84.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-east-1.png",
+          "sha256": "20fd4af33b8e32e2429153d7ccea8cf1a1d247c8673935ec1f4585f59076beb1",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 84.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-east-2.png",
+          "sha256": "d6047b84d8dec048f39e0420ef491e89962b0ca100553b4c6edd31cf6dc4d93e",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-east-3.png",
+          "sha256": "65363c40dab511a8ec7969b70f23bafd887382cd90e63a847857c8a3264a1ac3",
+          "neck": {
+            "x": 62,
+            "y": 47
+          },
+          "main": {
+            "x": 75.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 84.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-east-4.png",
+          "sha256": "b4265dc7a7755a9a9af7297f1b8f8b4a606e967bd9787f4845834090b69ad602",
+          "neck": {
+            "x": 67,
+            "y": 44
+          },
+          "main": {
+            "x": 74.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-east-5.png",
+          "sha256": "fa58588dc890e9139ebc32b68cee7075234a4f9c4215c36f12a950dbac8365b8",
+          "neck": {
+            "x": 63,
+            "y": 43
+          },
+          "main": {
+            "x": 74.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-east-6.png",
+          "sha256": "dc892c9b569caddf189b27dcf8073c80762d7f380fd1928e80c72cccbd24379f",
+          "neck": {
+            "x": 62,
+            "y": 44
+          },
+          "main": {
+            "x": 72.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 84.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-east-7.png",
+          "sha256": "b51d6598e992d477a3b3b92415c6377d9ae926569c39130da8aa509162bb95f7",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "gohei-miko"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-east-0.png",
+          "sha256": "c41dae77b682a28717a2c8c0bebeda48f7dd3ba40c20c432006a7d46b770462e",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 61.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-east-1.png",
+          "sha256": "341c385346e10ca33605dafb46f11b49bbbad3d0f332e9c630f565188a3c3fe5",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 71.5,
+            "y": 52.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-east-2.png",
+          "sha256": "eb8b37faa72c1b875aba6b7d454b2f086bcd80eb6ac8c90208bf9c6435028007",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 57.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-east-3.png",
+          "sha256": "75f08d2dfa0efc0b803492b5e8e9d3f056eb0731198b89c8ba6abe8b009b10b0",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 65.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-east-4.png",
+          "sha256": "c80bb145b6ee715b5624d9123f56b898eacce1fb96b288cf1de75d3d26294248",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 70.5,
+            "y": 58.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-east-5.png",
+          "sha256": "f366dac3fec4eb91bf906f3bab1e3289f57f49cd5be4ab6f24ecabe38f869eec",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 49.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-east-6.png",
+          "sha256": "16d0042777b9bfbabec2aa30e5d21bcf6d1258e5070b2e9920d5bf10dc89b059",
+          "neck": {
+            "x": 71,
+            "y": 44
+          },
+          "main": {
+            "x": 71.5,
+            "y": 56.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-east-7.png",
+          "sha256": "b5b33f6866c1a94967900482780be547cb839a1acb09936121c3e6f80d543d5e",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "gohei-miko"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-east-0.png",
+          "sha256": "f259072f19fbdf15ad6bbe6023cc66a78610863f4196d6c6b70eb8535aaf9f06",
+          "neck": {
+            "x": 72,
+            "y": 52
+          },
+          "main": {
+            "x": 74.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 81.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-east-1.png",
+          "sha256": "9222b915f6efa4daa0da397ca65f3335efc02044bc44bba4625333a47ae9ca5a",
+          "neck": {
+            "x": 70,
+            "y": 49
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-east-2.png",
+          "sha256": "dbf2e12fef3dfef7f4b7058592e1a83774a34b11344fce1a1c68c493a5615e1c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 76.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-east-3.png",
+          "sha256": "ccb9d60fdd5c3c7e16ff71d57cf1a9b6827765993c38ee8dfaf14c90080aead2",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-east-4.png",
+          "sha256": "e85b259f9dfeccb865c7bc25b62209efa99dae8b3184c8f00d68c8b40232a150",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-east-5.png",
+          "sha256": "4b6bec70f76a79fa9385fb4ba4715c7904481e7304728883f0faa98d6807a8db",
+          "neck": {
+            "x": 76,
+            "y": 44
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-east-6.png",
+          "sha256": "42c8e53b3053a02a1474236d4d3d886059d6a173cc4e064810dc128a057fc9a5",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-east-7.png",
+          "sha256": "bab60f8efc711e32249c2ca23789b65e4ced9532864ba91f79e4420e3d981b3b",
+          "neck": {
+            "x": 62,
+            "y": 47
+          },
+          "main": {
+            "x": 74.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 80.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "gohei-miko"
+        }
+      ]
+    },
+    "east": {
+      "headOffset": {
+        "x": -4,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 113
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/miko-detail/idle/east.png",
+        "sha256": "afdd3552f43555f62056782d560cca0d0bab253ce8ce74eb565511ec53577d25",
+        "neck": {
+          "x": 59,
+          "y": 48
+        },
+        "main": {
+          "x": 60.5,
+          "y": 81.5
+        },
+        "off": {
+          "x": 54.5,
+          "y": 64.5
+        },
+        "bakedWeapon": "gohei-miko"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/east-0.png",
+          "sha256": "ddb1a437972fd4bf6627ba64fceb96b09139554edc60682b7b02af88db726e24",
+          "neck": {
+            "x": 56,
+            "y": 44
+          },
+          "main": {
+            "x": 60.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/east-1.png",
+          "sha256": "807715209d81a7026a250af9ad81f3744657acb7f63b1b76c7129b603ada5b60",
+          "neck": {
+            "x": 54,
+            "y": 44
+          },
+          "main": {
+            "x": 62.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/east-2.png",
+          "sha256": "14bef48b82fce5b5b3bb1f75051aca533faef498d9a76b283040438f8da078d6",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 70.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/east-3.png",
+          "sha256": "87ce1c8ff6b79f3049402cd7f0a3dcd1d9b131325bd1cbc33333318804a26397",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/east-4.png",
+          "sha256": "a9a9e95f04d6b83faf40eaa9554b88b9f7ec937c23ec6bb3ad1284c090b3930a",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/east-5.png",
+          "sha256": "8de1a4df48fb75f082a34c7eb634d71c392c4e2316110e880c3ba92d7c7f30bc",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 60.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/east-6.png",
+          "sha256": "7533acc802ec639f248f744291250c74df1b034601c3926225520ad9e12b8332",
+          "neck": {
+            "x": 55,
+            "y": 44
+          },
+          "main": {
+            "x": 58.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 70.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/east-7.png",
+          "sha256": "b7bdd1d68699f88a0458177c62931c99c885001dde1859e437662cff652d752a",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 60.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 69.5
+          },
+          "bakedWeapon": "gohei-miko"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/east-0.png",
+          "sha256": "3ebf5b33bd5cbdec476996e3c950e772a95caf3cf0bc4ecef8382c41967faca1",
+          "neck": {
+            "x": 64,
+            "y": 43
+          },
+          "main": {
+            "x": 68.5,
+            "y": 58.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 70.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/east-1.png",
+          "sha256": "fe1ccfb81dbb7a620e673aa6dcec0cc123885f72ec80e88358e7fa10c7a6e17e",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 45.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/east-2.png",
+          "sha256": "cae03c327643d9364ac7bad6f28ce47500c555d6ddfe8370b1d7c988f8d9efae",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 55.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/east-3.png",
+          "sha256": "4524e73ba97a786f4748026afc4643181e4b6e38313fc9de1d126fb071a7bdb7",
+          "neck": {
+            "x": 58,
+            "y": 50
+          },
+          "main": {
+            "x": 69.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/east-4.png",
+          "sha256": "161f11250a0803f036b0e80bf3eada4b36ea4d54d8acde2ff9490ac943cec977",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 55.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/east-5.png",
+          "sha256": "6d75c011b895bcdfa90f2e5f0a8688b5d543cc4bef58d32dc0aa052a7bc4c14f",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 45.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/east-6.png",
+          "sha256": "0ecbe00269dbf167edc9bf8b4efad5b99ef11c2dd098d2c3ae96de6966af6a67",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 53.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/east-7.png",
+          "sha256": "b5ab467b9f5fbcea7a50b7617db824331086f4d1b1894db9f968b605a569f1e8",
+          "neck": {
+            "x": 64,
+            "y": 40
+          },
+          "main": {
+            "x": 67.5,
+            "y": 58.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 69.5
+          },
+          "bakedWeapon": "gohei-miko"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/east-0.png",
+          "sha256": "01a68c874aa425d95083f11ffabf807374f5f6b2ffaa7e233848143353958c9b",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 65.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/east-1.png",
+          "sha256": "6b59c5db50601121a20705ae65746c6df957ab4eac09e7545a6047e563903044",
+          "neck": {
+            "x": 55,
+            "y": 49
+          },
+          "main": {
+            "x": 62.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 67.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/east-2.png",
+          "sha256": "12b0626b2c4d0962811b26ad8437ccba976954039147ef955d6fd6b469bb7559",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 67.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/east-3.png",
+          "sha256": "71bf7392f19a2fc0476c972071cbdc08dbc130da00f36a166587f0d3008160fb",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 67.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/east-4.png",
+          "sha256": "f1e20a5015b72e6a189995cfa31e1f164e46bfe09a79254b48dc91d92af5fd67",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 65.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/east-5.png",
+          "sha256": "970d09b593a0c93e4f9e755f0c9211e93a2faeb5ddb72d7ffc34b55eeaf0edd6",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/east-6.png",
+          "sha256": "f85b087d028e2e689ed42b478c2e62b1966d2e39878e6c1d4cd7bee42422b05c",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 67.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/east-7.png",
+          "sha256": "bf23ccd760556d369f7b6fa3625ef62e2d58b548dda7bd8ffe221e223e11af81",
+          "neck": {
+            "x": 68,
+            "y": 49
+          },
+          "main": {
+            "x": 64.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 67.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "gohei-miko"
+        }
+      ]
+    },
+    "north-east": {
+      "headOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/miko-detail/idle/north-east.png",
+        "sha256": "32bf897a8c84c805d12d17ebd28d848ec0f7343da9248be686e33594c9d6db63",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 73.5,
+          "y": 80.5
+        },
+        "off": {
+          "x": 45.5,
+          "y": 77.5
+        },
+        "bakedWeapon": "gohei-miko"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-east-0.png",
+          "sha256": "6611ffacb2d6dbf08f4a83c765565a4bcca7d3c142a8e94be4ea1037b86b9638",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-east-1.png",
+          "sha256": "2a1bf9000cfe003feb0b5c2ca7e815058b0bfe75b1821db1f25fb66f7d4c35b2",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-east-2.png",
+          "sha256": "ad32a47442ba82d6fbceb3a8a91dfca0eec20058175bb3481f4095cfa92ad99a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-east-3.png",
+          "sha256": "9e225a978349fef8c0418bc735302a4aa77204c92a3b0fe007b3da5489c96e48",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-east-4.png",
+          "sha256": "10490e3f6d09568ceee50e72e5831c2f6c2e095f4175393d918a57f5bb24b7f5",
+          "neck": {
+            "x": 60,
+            "y": 45
+          },
+          "main": {
+            "x": 75.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-east-5.png",
+          "sha256": "16c78bfc46679a0113a2183d3ba2aaef0ac0b87c1bb6b74afa6a3d194c3b6327",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-east-6.png",
+          "sha256": "91e81f482b362e08c9918c4fd1d61e610e613291ee74cc879a868697d1995072",
+          "neck": {
+            "x": 60,
+            "y": 45
+          },
+          "main": {
+            "x": 73.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-east-7.png",
+          "sha256": "99a2ddd627d6f0afbd571199d712279654b7c8c7e40eb7db1c78328712db9716",
+          "neck": {
+            "x": 59,
+            "y": 45
+          },
+          "main": {
+            "x": 73.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "gohei-miko"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-east-0.png",
+          "sha256": "2ea4f966424f3cbfaeaad8f3107912f1b71560a4b4541dd7d41bf1bdeab9eb0f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-east-1.png",
+          "sha256": "a2fef0f537f0ae771471270a316501aeedcbaf0bf1557f3a8681f2f96874ada1",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 65.5,
+            "y": 47.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-east-2.png",
+          "sha256": "aedbd9bc11612bea348bd4b6ddffdc6fa797752ef6b6f144448aacf35b7321b5",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 70.5,
+            "y": 56.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-east-3.png",
+          "sha256": "a95ba5d94835be4c31dc31022af37c7136da11f6002b900538d25573db65e92e",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-east-4.png",
+          "sha256": "716927c1c1c82ab3ac9426bc5f013926ee8a608f7ca4190b33c788c400b9d1f2",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 70.5,
+            "y": 54.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-east-5.png",
+          "sha256": "1576c0c68b969668e6b6dab19a3430eacc3b13efb8bf41fdf9d920f4c172f85c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 65.5,
+            "y": 47.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-east-6.png",
+          "sha256": "ed4da5f48d4c644f05d92235bab0304b33211abc83b33ceb84d3eaa7963d33ac",
+          "neck": {
+            "x": 52,
+            "y": 49
+          },
+          "main": {
+            "x": 67.5,
+            "y": 52.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-east-7.png",
+          "sha256": "ce44f76074bab2367be81e022d10aea78a0b382e356883106d49d50f4659727c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 57.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "gohei-miko"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-east-0.png",
+          "sha256": "ce31dee4f941a68c0924a71ae2b1099a9f063a3be3d0c2665f658be2c04e8a03",
+          "neck": {
+            "x": 61,
+            "y": 47
+          },
+          "main": {
+            "x": 76.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 75.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-east-1.png",
+          "sha256": "41e8b6d853f39d7bf7e5831b79f45c5c8e9f1cdfbd149ffbeb33241475d17e6f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76,
+            "y": 83.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 72.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-east-2.png",
+          "sha256": "ba1b1b1fbe21fb906d4fcde25bb7e28a36ed3eeb0c03e0222201158474280f3f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76,
+            "y": 83.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 73.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-east-3.png",
+          "sha256": "5aee6d73f9c27a491779caeaf4fc3012718ebb59dfb5d946f17a6b787fcfcdfd",
+          "neck": {
+            "x": 66,
+            "y": 44
+          },
+          "main": {
+            "x": 76,
+            "y": 83.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 72.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-east-4.png",
+          "sha256": "7b2b4786b6b6998385bf3ef70c5f3ea13d4168a1987a44d088f2e51700d385f1",
+          "neck": {
+            "x": 64,
+            "y": 46
+          },
+          "main": {
+            "x": 68.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 72.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-east-5.png",
+          "sha256": "f8c91fd86bce726db4f57d6c607061e678becbc991ee79a5ac44c55ca1eb589d",
+          "neck": {
+            "x": 67,
+            "y": 46
+          },
+          "main": {
+            "x": 76,
+            "y": 83.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 72.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-east-6.png",
+          "sha256": "76b7c7bcc79d9abc66159d12528397bf78a4c4636bdc7f46edf848685b0430ac",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 78.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 72.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-east-7.png",
+          "sha256": "affa2253f2ef081cda260d1a3afbe3f3b76b80203c5f518e1ae20c0693d76496",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 76.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "gohei-miko"
+        }
+      ]
+    },
+    "north": {
+      "headOffset": {
+        "x": -2,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/miko-detail/idle/north.png",
+        "sha256": "8fde3242c89f79472c0d734706ecb088ed8f4de3384e57530e134e4be07cf1a1",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 83.5,
+          "y": 77.5
+        },
+        "off": {
+          "x": 48.5,
+          "y": 76.5
+        },
+        "bakedWeapon": "gohei-miko"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-0.png",
+          "sha256": "681bd2e8b32cbfb91bda2e7a74ae0d81ef1da247304a66edb84e1097b5677f51",
+          "neck": {
+            "x": 65,
+            "y": 47
+          },
+          "main": {
+            "x": 82.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-1.png",
+          "sha256": "bda58ec469e6de397e1bfdc8a6c37c3e69e386ba06a6fa260f8a23cc8238df45",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-2.png",
+          "sha256": "d011a0503fa3204b87761e8fd07e922479787deb16f9ac2bfed9d4829f3d95ff",
+          "neck": {
+            "x": 67,
+            "y": 47
+          },
+          "main": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-3.png",
+          "sha256": "1976f833503ad1e927532fe92082d4ed13d0a23a12ddc1d9956b4dae75fc8aec",
+          "neck": {
+            "x": 66,
+            "y": 47
+          },
+          "main": {
+            "x": 82.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-4.png",
+          "sha256": "3880fb37ef0e0f86bbab66b02de61a7e50e4e80514377f90396a577529272ce9",
+          "neck": {
+            "x": 66,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-5.png",
+          "sha256": "8b9298f5df556dec94a1a916028def46b38e24ecd3bec6b772cad55060d6c70e",
+          "neck": {
+            "x": 66,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-6.png",
+          "sha256": "87a2c69f0d0df5b980e6726370bd14df495c53afa3d6a2d3a608102627b1f2f2",
+          "neck": {
+            "x": 67,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-7.png",
+          "sha256": "a739a1dd87c66928a57fe6a7208dd53aa4d1e9f3933b296239cd41a118d8fe87",
+          "neck": {
+            "x": 66,
+            "y": 49
+          },
+          "main": {
+            "x": 82.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 73.5
+          },
+          "bakedWeapon": "gohei-miko"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-0.png",
+          "sha256": "f1e011d23472c3a57678da563ef1da8d58478135e91a0a5bdf8568cf48ec37d5",
+          "neck": {
+            "x": 60,
+            "y": 50
+          },
+          "main": {
+            "x": 67.5,
+            "y": 53.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-1.png",
+          "sha256": "dad66ddbd40b9659b49f70fbf0fdaaa244eed96f1511a73d13a35ac6c87450ae",
+          "neck": {
+            "x": 61,
+            "y": 47
+          },
+          "main": {
+            "x": 58.5,
+            "y": 53.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-2.png",
+          "sha256": "d64841a279966251c3f8f6ded3914d790fdf1470265e67f50ebb78d77beca655",
+          "neck": {
+            "x": 59,
+            "y": 47
+          },
+          "main": {
+            "x": 68.5,
+            "y": 50.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-3.png",
+          "sha256": "fe933b6bd62f719bec05f8ecaf9c4c2438fa8b793cd3c4b7ffe8b7b6e9ba44a2",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 51.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-4.png",
+          "sha256": "c5e4ba4101c9bcfd65d615847a3f534a18ca6b549ff8049eba736ee7b74a991d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 52.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-5.png",
+          "sha256": "ab87136683eae5b51852fd2d75d95abeea6c65d0d38e50e6244ecc305eec6202",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 51.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-6.png",
+          "sha256": "8a29bd7bf151be7c8cac6e671868fc686646cec017d14d9abfc3332090551c9c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 56.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-7.png",
+          "sha256": "e5d43668d85b441e5d1990341f8b3859a7154855871d73b5d14248376fc80f45",
+          "neck": {
+            "x": 61,
+            "y": 51
+          },
+          "main": {
+            "x": 69.5,
+            "y": 56.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "gohei-miko"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-0.png",
+          "sha256": "a8eb5f8b4f3a90918b86c992e6c5f8ae89a5c735d5c8d189d9283e9f4506fcaa",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 76.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-1.png",
+          "sha256": "56a7dcb361305b814ff6bb753cbbd763183413456f72cd03008dd0a33980fb50",
+          "neck": {
+            "x": 53,
+            "y": 44
+          },
+          "main": {
+            "x": 81.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-2.png",
+          "sha256": "d90560bb8d21054bcf185adbe33342c58a2e3d95a9774cfa9fd25132c1795147",
+          "neck": {
+            "x": 59,
+            "y": 40
+          },
+          "main": {
+            "x": 80.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 73.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-3.png",
+          "sha256": "d0f9d79f758cc4c09d2cb7fff659c83d5bae852a327c30611dae65e99fd44066",
+          "neck": {
+            "x": 56,
+            "y": 41
+          },
+          "main": {
+            "x": 79.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 73.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-4.png",
+          "sha256": "f6e98e8fe17e820471cbd424e5f259963ba8624448e9979579e3986b6c7a7b1a",
+          "neck": {
+            "x": 62,
+            "y": 40
+          },
+          "main": {
+            "x": 80.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 73.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-5.png",
+          "sha256": "866466e71f5defe255fe04b441a50dac96e4588fbc440ccd5277f1db5c37947b",
+          "neck": {
+            "x": 59,
+            "y": 43
+          },
+          "main": {
+            "x": 81.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 73.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-6.png",
+          "sha256": "f7a0ed5c110a41708d283b7ea3db22b273e0121c772fdf391c8f4542f834f0a6",
+          "neck": {
+            "x": 60,
+            "y": 46
+          },
+          "main": {
+            "x": 80.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 73.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-7.png",
+          "sha256": "a135761180e9b6c497c9757724a2a85bc1526e0847e415c92609b469678cfa4d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 81.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 73.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "gohei-miko"
+        }
+      ]
+    },
+    "north-west": {
+      "headOffset": {
+        "x": -2,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 62,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/miko-detail/idle/north-west.png",
+        "sha256": "237420dde0c4ce656bde628b6bf0d720904181bb9db2bd2de269d4d8f43fb7ca",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 48.5,
+          "y": 80.5
+        },
+        "off": {
+          "x": 78.5,
+          "y": 75.5
+        },
+        "bakedWeapon": "gohei-miko"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-west-0.png",
+          "sha256": "0065d23d77c70f4c594e7237647cb5db15ed133169a7eb46328274bcb8a21878",
+          "neck": {
+            "x": 76,
+            "y": 49
+          },
+          "main": {
+            "x": 48.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-west-1.png",
+          "sha256": "130c70f2ae86cfd5d93f2cdcb079399742010eb53260bde0efdc2541d90e5433",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 47.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 72.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-west-2.png",
+          "sha256": "dd6d743a0bcccde76098727cba8b05f8f422476da1134e95ef3ece40ffeeb271",
+          "neck": {
+            "x": 70,
+            "y": 49
+          },
+          "main": {
+            "x": 47.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 78.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-west-3.png",
+          "sha256": "323a9ba6069255a4b9e32aba3092de5da4e3c4311dce8be697ab586dad4ce625",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-west-4.png",
+          "sha256": "91657963b69f6c1aba61f4e8525a785da047bcec853d6726768302e30da01288",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-west-5.png",
+          "sha256": "4bb6166788ffe8e1efe0651c1cf16dda21704dbc33da44c485f531cf23e54a20",
+          "neck": {
+            "x": 69,
+            "y": 49
+          },
+          "main": {
+            "x": 48.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-west-6.png",
+          "sha256": "67a94183071b5d85e7c0348979ad8acf1dfab0ed64a309568b578b820280c618",
+          "neck": {
+            "x": 68,
+            "y": 49
+          },
+          "main": {
+            "x": 47.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/north-west-7.png",
+          "sha256": "c0013e13499653efadddb9dd883423b175fa3633e3ef3fbf99ba296c263f9207",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "gohei-miko"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-west-0.png",
+          "sha256": "118193855000af7d8be2932c2b36101a6371eff5cb618c11ae43b2d190c02776",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-west-1.png",
+          "sha256": "c7b7858e0c7f1e8e8060a2cc6998ad1227de4c5bb63c0020c3a536aa40dfb591",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-west-2.png",
+          "sha256": "bb29c24e0009d94d11e2e43f0039cad14d9ff8e9b8f4610e1deff4cc85c6d163",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 54.5,
+            "y": 55.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-west-3.png",
+          "sha256": "cab950229f70925d1baddb6b6621312e5b0e46264e6ad80e407da6d8c68cf28e",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 48.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-west-4.png",
+          "sha256": "e0fe0cd4acbcf457134e1a4c94bcce719d3d6066f697c2c506dc53a07a307ab9",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 54.5,
+            "y": 55.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-west-5.png",
+          "sha256": "e608043891023cbffe4217411c43d9d3ab804587fb380017e9a31240f1f55bf8",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 61.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-west-6.png",
+          "sha256": "1ab37bb433c66356f53514b19776c2e244c9bd07b66d115a74329f776d162ee2",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 52.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/north-west-7.png",
+          "sha256": "c2d772d83847b986f100ccb386e16661e8e918b4a3abfdfedcfbd9eb2c646296",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 55.5,
+            "y": 58.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "gohei-miko"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-west-0.png",
+          "sha256": "9daa4288f07d242950689ce3eb55a01c06809549666aafef253a2e274b54c3b1",
+          "neck": {
+            "x": 63,
+            "y": 47
+          },
+          "main": {
+            "x": 51.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 77.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-west-1.png",
+          "sha256": "1d78130ad91b58b256e5df7bbb050e37f81b2da34911cd2fa60d7bdaa248e2ee",
+          "neck": {
+            "x": 63,
+            "y": 49
+          },
+          "main": {
+            "x": 48.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 73.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-west-2.png",
+          "sha256": "e320d431b3d5ec093a031c288d05f0d65a34edc65b40d41720d35a5b712b5121",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 73.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-west-3.png",
+          "sha256": "ee6653890cf0886134895ffdd9d42b896163189f1ea61348b8ee61b96b0f5788",
+          "neck": {
+            "x": 65,
+            "y": 47
+          },
+          "main": {
+            "x": 48.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 73.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-west-4.png",
+          "sha256": "90e055e1e33b3e17292cf4b3ff2acdc409edee3aa3bde49dae076fe3c1c4ed8b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 73.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-west-5.png",
+          "sha256": "e4c278d4fe901ffed1965936955540e99d4a19313575708207742bee32a96965",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 73.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-west-6.png",
+          "sha256": "3d9c2136e43f63c7cbe83bcc04fd5c85a4b4240f9e148d2f7828426b9c1f2c27",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 73.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/north-west-7.png",
+          "sha256": "60d760afd7b2f44a696e5945a8d9aeade3113d984d8ac4de951727f3c08447e3",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 51.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 76.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "gohei-miko"
+        }
+      ]
+    },
+    "west": {
+      "headOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 61,
+        "y": 113
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/miko-detail/idle/west.png",
+        "sha256": "8a2d8e33c010b2b78a1043af69f3a90c80f3586d1e646133ee9aa680cb46f332",
+        "neck": {
+          "x": 65,
+          "y": 48
+        },
+        "main": {
+          "x": 64.5,
+          "y": 81.5
+        },
+        "off": {
+          "x": 65.5,
+          "y": 63.5
+        },
+        "bakedWeapon": "gohei-miko"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/west-0.png",
+          "sha256": "1a20c81f379308923159e5a6cc6947eabe948595088d37315f4c314cd3d7fe6b",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 65.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/west-1.png",
+          "sha256": "e6c736d20a903346ceb8f767109df7b95882cda6c1477ace257e8b0ed5ceb41d",
+          "neck": {
+            "x": 71,
+            "y": 41
+          },
+          "main": {
+            "x": 63.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/west-2.png",
+          "sha256": "8bd6c8a62cfa401ab12586efe86f35b3563bc3c71ba33b9f110f18c720b99b18",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/west-3.png",
+          "sha256": "eaeb77ae54aa30596dd640c8a1672aea274e963dc7cbd8946a01e5da6fa9fc28",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/west-4.png",
+          "sha256": "b0e1a4a0f56e990dcc7b94439358a9ff9b2e52b6e32d332c2ea1b14742a5ba38",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/west-5.png",
+          "sha256": "b8d2a4e848345b816c02eb3c3ba15054e80b36684010a4a39181a44da165b7b3",
+          "neck": {
+            "x": 69,
+            "y": 41
+          },
+          "main": {
+            "x": 63.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/west-6.png",
+          "sha256": "496d1703569dc6720722de58672ad438f8784a8f751cb6ef08649af4c92cc067",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 67.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/west-7.png",
+          "sha256": "066bc00429100974a7976c96e1cca7b9670ca5b047608cc34f427979bd0d3551",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 57.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 70.5
+          },
+          "bakedWeapon": "gohei-miko"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/west-0.png",
+          "sha256": "ca1bff41568bca66a18e26b3ea537b006ad3673ea17352fb7888facd72439c39",
+          "neck": {
+            "x": 65,
+            "y": 55
+          },
+          "main": {
+            "x": 55.5,
+            "y": 58.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/west-1.png",
+          "sha256": "da0586a32b0041448ce5c2dfd1883f4094be84dbdb89788871e76cdc29deb2ae",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 54.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/west-2.png",
+          "sha256": "8ce36fbb5c5d6a3adea7f1a4c126b98ecf971f0b685dc455ebff68b3af731793",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 54.5,
+            "y": 56.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/west-3.png",
+          "sha256": "41fd487dd319327b143712d4bb220685bbf1597c28f071efb51bb6af7e4a1cd9",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 45.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/west-4.png",
+          "sha256": "0a54da0705ec63bb95045a947bd8dbda7e9c6976b3ad9134b71d83db096b67f4",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 55.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/west-5.png",
+          "sha256": "bc887e1b4a79535986e9897c87fc7d1c0d3d3aaa6fbf7182d5504d1349bcaf2f",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 54.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/west-6.png",
+          "sha256": "23b9f25662a5cb424f10aaf57593ec79ac26abfa5e3f05447fa11760f9d692f6",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 54.5,
+            "y": 61.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/west-7.png",
+          "sha256": "57df278ae69e5a57ea9013c4d318d79228aa858407a6aa5f69dc881910f54692",
+          "neck": {
+            "x": 64,
+            "y": 56
+          },
+          "main": {
+            "x": 55.5,
+            "y": 58.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "gohei-miko"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/west-0.png",
+          "sha256": "95a8a0060e461ca5ae01fc609d9d33270dd0fc5c13911d5c8b3c219bfb62e293",
+          "neck": {
+            "x": 65,
+            "y": 46
+          },
+          "main": {
+            "x": 64.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 62.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/west-1.png",
+          "sha256": "3fcd6229ff4d660c5953eb5420b56ac6e650a2d55c4017755f2543a60392bbde",
+          "neck": {
+            "x": 56,
+            "y": 43
+          },
+          "main": {
+            "x": 63.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 64.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/west-2.png",
+          "sha256": "3acbd8321df2cd86d15739e791c1f5956e32042c3a31bfc06592a0d4196e7405",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/west-3.png",
+          "sha256": "57715ff348df128b5a0b610f2f85d00897d6d32ed8aa21efc1be3a62c243c43d",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/west-4.png",
+          "sha256": "d9dc7cd01578cff540ffeb3c1ea59bf65babfdd7dafa6330cc4e3356c45c3ebf",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 67.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/west-5.png",
+          "sha256": "22e4c17a5906ec4bc544262fd29dd486dd61c89ca9d05927917fa8a593fae637",
+          "neck": {
+            "x": 65,
+            "y": 46
+          },
+          "main": {
+            "x": 62.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/west-6.png",
+          "sha256": "4d3773998957fa8b174a351db80164e8f95924dac73c7a39dfa7a31df1a6e570",
+          "neck": {
+            "x": 63,
+            "y": 46
+          },
+          "main": {
+            "x": 62.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/west-7.png",
+          "sha256": "66d501ee0f7c6a66537a20175f170da597e2b348f9d69e57c290c1874c8e9ad1",
+          "neck": {
+            "x": 62,
+            "y": 46
+          },
+          "main": {
+            "x": 61.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 63.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "gohei-miko"
+        }
+      ]
+    },
+    "south-west": {
+      "headOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 61,
+        "y": 114
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/miko-detail/idle/south-west.png",
+        "sha256": "ba2a19dbb6d4b2b98c62510075163d387cca105fcfd67bc09cf2a9f2d71eb44e",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 50.5,
+          "y": 63.5
+        },
+        "off": {
+          "x": 73.5,
+          "y": 81.5
+        },
+        "bakedWeapon": "gohei-miko"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-west-0.png",
+          "sha256": "c74597483ef2cc0ec957b2cab7a0e177452265ebeb8ebdad711b5bb7fda57e49",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 51.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-west-1.png",
+          "sha256": "28983ba688fa7be8ea40c636fe99a1e6d2eed4d6504686b1ed00fa9300b51654",
+          "neck": {
+            "x": 63,
+            "y": 45
+          },
+          "main": {
+            "x": 49.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 84.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-west-2.png",
+          "sha256": "5a64934f26eaf3fb12fa9dd1a53409e4aa330612c32360ccdd959a73f193e2ba",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 84.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-west-3.png",
+          "sha256": "d03c72123ead61a8f3f04f12c49f3415a1291dba6f5f5d3f68cdcf0e456bebcc",
+          "neck": {
+            "x": 63,
+            "y": 46
+          },
+          "main": {
+            "x": 50.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-west-4.png",
+          "sha256": "852c48d34821a5ee95e9b0f4d3d128ad644723e46d6c6e28cf4bff7b26e7a0c4",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-west-5.png",
+          "sha256": "6e8aae5b7aadabcc23cf8001fb9fc30772d0949a0fe4f66b4caec17c0de9b3bd",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 85.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-west-6.png",
+          "sha256": "cdd8f906b06fff28fc53704b55a6450388241d096a02eb43d43d8197a3868858",
+          "neck": {
+            "x": 63,
+            "y": 43
+          },
+          "main": {
+            "x": 48.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/walk/south-west-7.png",
+          "sha256": "fb07790401ed957180ba7b03cc2992137ebe786ef7e8a8f18a915904c6d4e246",
+          "neck": {
+            "x": 65,
+            "y": 42
+          },
+          "main": {
+            "x": 50.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "gohei-miko"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-west-0.png",
+          "sha256": "7ff6066cafa653f6577143330d4f2e691b436c19d1bd47a9d6d6317ff06bf97a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 55.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-west-1.png",
+          "sha256": "ef76932a8089b186023b5b0ef0bf58992db310c5723731a86bf5e63791514dde",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-west-2.png",
+          "sha256": "a0dc49eee26e816a47e4a502f860beb05b5865331a1de8b0d73787a9968c5e6c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 54.5,
+            "y": 57.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-west-3.png",
+          "sha256": "858844557c79ca1c02f2b84008239b1297ee0fd9986893fc4b92ef9dec8722b9",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 49.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-west-4.png",
+          "sha256": "dcfc34f8d6d7e2b0ce4606838496d23d703b093840a2f9168a4d3094397ed36c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 58.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-west-5.png",
+          "sha256": "1cf42abe69587018c2a5aac8661ff63abac3987c496149617a47a1d3d19b1771",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-west-6.png",
+          "sha256": "c9bf44664c05e74bc239544e0ffc4c8fb52206a7d6114192e95501a77c786d9d",
+          "neck": {
+            "x": 60,
+            "y": 40
+          },
+          "main": {
+            "x": 56.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/attack/south-west-7.png",
+          "sha256": "a5ad8f2af4ce4cac3e24b7bd58e141a50b097d3d1ff624dfebfc2bbd5b87d572",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 55.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "gohei-miko"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-west-0.png",
+          "sha256": "4c10615e2b20d33ffe0577f1f42ad10e5d618e69bca0e6ca4a2b27442122d6f2",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 81.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-west-1.png",
+          "sha256": "6d9a9f14e155d612cb3742b2a9edb5ffc5d5c8a481fb4570522ef3710fa4be3e",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 82.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-west-2.png",
+          "sha256": "8f614ba3a2c3ee5fb30fc36010b4caec23f3397d6fb99b258e8ee6b7c8fa1e46",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-west-3.png",
+          "sha256": "edecb7fa981650276e6b5f91a576147986f971d0ac5d1be3aa777da294523b7c",
+          "neck": {
+            "x": 58,
+            "y": 44
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 79.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-west-4.png",
+          "sha256": "c053cd4ca4f202862f345a975433fda2d43440ff3d8714eb858148a11db9f616",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 86.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-west-5.png",
+          "sha256": "075e59ef929ec7b5e32270f8adc44218ba8246549c847df4f504eb7e8a3e84a6",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-west-6.png",
+          "sha256": "ee8653310bc740c230f6e735d7e944d808b84066eed047f9fc721bf8130aaa01",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "gohei-miko"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/miko-detail/cast/south-west-7.png",
+          "sha256": "9212bfcaf302345036ab8f69ff5d62de9324fad083fac3b0465e385884196992",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 51.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 81.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "gohei-miko"
+        }
+      ]
+    }
+  }
+}

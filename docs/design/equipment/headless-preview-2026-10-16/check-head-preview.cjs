@@ -1,6 +1,6 @@
 const fs=require('node:fs'),path=require('node:path'),{pathToFileURL}=require('node:url'),{chromium}=require('playwright');
 async function run(){
- const root=__dirname,b=await chromium.launch({channel:'msedge',headless:true}),p=await b.newPage({viewport:{width:1280,height:1000}}),errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(pathToFileURL(path.join(root,'preview.html')).href);await p.locator('#head-enabled').check();
+ const root=__dirname,b=await chromium.launch({channel:'msedge',headless:true}),p=await b.newPage({viewport:{width:1280,height:1000}}),errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(pathToFileURL(path.join(root,'preview.html')).href);await p.selectOption('#walk-version','original');await p.locator('#head-enabled').check();
  await p.waitForFunction(()=>!document.querySelector('#head').hidden&&document.querySelector('#head').complete);
  await p.locator('#head-x').fill('3');await p.locator('#head-y').fill('-2');await p.locator('#head-scale').fill('110');await p.selectOption('#hair','korean-wolf');await p.selectOption('#face','teal-soft');await p.locator('#save-fit').click();await p.reload();
  await p.waitForFunction(()=>!document.querySelector('#head').hidden);if(await p.locator('#head-x').inputValue()!=='3'||await p.locator('#head-scale').inputValue()!=='110')throw Error('Restore failed');
@@ -17,3 +17,4 @@ async function run(){
  if(errors.length)throw Error(errors.join('\n'));const report={headCombinations:heads,zipLinks:links.length,saveReload:true,classDirectionFrameIsolation:true,jsonRoundtrip:true,incompatibleImportRejected:true,viewports,pageErrors:errors};fs.writeFileSync(path.join(root,'head-validation.json'),JSON.stringify(report,null,2));console.log(report);await b.close();
 }
 run().catch(e=>{console.error(e);process.exitCode=1});
+

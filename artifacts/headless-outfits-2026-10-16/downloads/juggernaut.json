@@ -1,0 +1,3735 @@
+{
+  "id": "juggernaut",
+  "branch": "juggernaut",
+  "attackAction": "attack-axe-shield",
+  "directions": {
+    "south": {
+      "headOffset": {
+        "x": 1,
+        "y": 4
+      },
+      "bodyOrigin": {
+        "x": 62,
+        "y": 112
+      },
+      "tilt": 0,
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-0.png",
+          "sha256": "5cfd1bdc3bb72e3d50b680037bd7ecbe1e76dc6a3e50f77a94a32365af469b02",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 44.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 76.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-0.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-1.png",
+          "sha256": "68556bf65619636eeb7923c48f330c32b6d976a300456a2655962a35e308f408",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 44.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 77.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-1.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-2.png",
+          "sha256": "5865fb409816db4d44aad3d9b184f78995fc106207aba2b9b37cddbcc97f63d8",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 44.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 78.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-2.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-3.png",
+          "sha256": "4ce807c83f8198a113fd65c300e9966e848bbbcb00f9c0dc031d2a60d811cc3f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 44.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 79.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-3.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-4.png",
+          "sha256": "a2c9598f6d365bd02a112bb41e1268a7ab987ba696ab43bbec15f74dee0d125d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 44.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 80.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-4.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-5.png",
+          "sha256": "fd10fd6dfa17e0a5fb46f369505153b2731c2d9bff3625699eeb6a573b9b0f05",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 44.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 79.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-5.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-6.png",
+          "sha256": "91fa87ecc7856466abe1b1b6fefe6668cfedcc339ef18673cf344182dc52ce16",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 44.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 78.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-6.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-7.png",
+          "sha256": "eb64fadf44805ad832e5a717a77b8ab7fb7c29aa954d449c9bbea8b65fc9bfd5",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 44.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 77.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-7.png"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-0.png",
+          "sha256": "28ef552c0c6f000eddbd677195b1d2aa035cd5f472cad1bbdd3261090eb365a1",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 44.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 78.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-0.png",
+          "rotation": -0.25
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-1.png",
+          "sha256": "308937f09ffab7d38bc8d5f474f02140c72f1bc6ea6ddb6b8f320c64ba2c7994",
+          "neck": {
+            "x": 62,
+            "y": 51
+          },
+          "main": {
+            "x": 49.5,
+            "y": 43.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 70.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-1.png",
+          "rotation": 0.6
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-2.png",
+          "sha256": "4d8edab9e7ee42967b83051e267244ab8dfe89691e2870c617386eadd8231b36",
+          "neck": {
+            "x": 62,
+            "y": 52
+          },
+          "main": {
+            "x": 49.5,
+            "y": 44.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 71.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-2.png",
+          "rotation": 0.7
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-3.png",
+          "sha256": "0f40c7ba56cd654b533a0146428364a8a4e1eb581713b0dba12f2558cd607ef6",
+          "neck": {
+            "x": 62,
+            "y": 52
+          },
+          "main": {
+            "x": 50.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 71.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-3.png",
+          "rotation": -2
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-4.png",
+          "sha256": "d48a049e03aaf43e992daeca20c50c1d41763b52a32bcb0bf291528c1fb6649f",
+          "neck": {
+            "x": 62,
+            "y": 52
+          },
+          "main": {
+            "x": 53.5,
+            "y": 99.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 71.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-4.png",
+          "rotation": -2.3
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-5.png",
+          "sha256": "01b952706c65b84977632a6fa0bf59910111eb6df018f8565496d799c88379bf",
+          "neck": {
+            "x": 62,
+            "y": 52
+          },
+          "main": {
+            "x": 51.5,
+            "y": 88.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 71.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-5.png",
+          "rotation": -1.5
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-6.png",
+          "sha256": "bca9a1551a7fe372ff7beeb48962ed43c4292d2d610df943440cb41b0caedb05",
+          "neck": {
+            "x": 62,
+            "y": 51
+          },
+          "main": {
+            "x": 49.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 71.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-6.png",
+          "rotation": -0.5
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-7.png",
+          "sha256": "b7fa16ee9fa48dd9c22eecfb8a02889b5dd967df7d9117f88a870c97eeb50d01",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 44.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 78.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-7.png",
+          "rotation": -0.25
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-0.png",
+          "sha256": "96a6bfa2970dbb57423d59a57ea114595736b7ea7dc7decc4649a8b2fe5bb1f3",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 44.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 78.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-0.png",
+          "carryTilt": 0,
+          "headSafe": false
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-1.png",
+          "sha256": "d458c83e5a17d55738f5ec29c37223bef0d47de1d81e6bc19cfd5219711430c5",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 52.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 73.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-1.png",
+          "carryTilt": 0.35,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-2.png",
+          "sha256": "385cd8bd53d18b0ca123726ed3b66c27c29e9fef9c412b9d7f3eae1a3829f561",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 67.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-2.png",
+          "carryTilt": 0.7,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-3.png",
+          "sha256": "1bc2f650af503d10b40399dd1301143cdf44044252d5bcbc6e94fcb02d2377c9",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 63.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-3.png",
+          "carryTilt": 1,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-4.png",
+          "sha256": "bf0fa280a83e0a87dbf0f67e824e403352ffbdc60eb33fce4b9b08ef1a29754a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 63.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-4.png",
+          "carryTilt": 1,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-5.png",
+          "sha256": "a107057671382327d9085fbb63765135d377c8a725eaaae415fddee65e154146",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 67.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-5.png",
+          "carryTilt": 0.65,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-6.png",
+          "sha256": "73cb66c25cc9da5e861d93e4d9678953aac66b560dc387b6fa88dd95d719367b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 73.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-6.png",
+          "carryTilt": 0.3,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-7.png",
+          "sha256": "d57594757634bd1fa47d7bbb665f2c637e52934309b1e390508d3fd1d6debc1f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 44.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 78.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-7.png",
+          "carryTilt": 0,
+          "headSafe": false
+        }
+      ],
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/juggernaut/idle/south.png",
+        "sha256": "f1630eb37aadcb31a9217392904c7b930607a8b232fa8aa85996989e2f4a33d3",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 44.5,
+          "y": 77.5
+        },
+        "off": {
+          "x": 80.5,
+          "y": 78.5
+        },
+        "hands": "/assets/character-v3/class-outfits/juggernaut/idle/hands-south.png"
+      }
+    },
+    "south-east": {
+      "headOffset": {
+        "x": -1,
+        "y": 3
+      },
+      "bodyOrigin": {
+        "x": 64,
+        "y": 115
+      },
+      "tilt": 26,
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-east-0.png",
+          "sha256": "28cf8064eaa01267d318f9fddf24db00c26e80ae5a753648801c09013a5befc9",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 83.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-east-0.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-east-1.png",
+          "sha256": "7c50852aaa864496eecf0d6688697534669cbcfb9bffe3a5756bc6de043d3040",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 82.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-east-1.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-east-2.png",
+          "sha256": "007725060dc20b654dd763d6a1a380ec8cc6a78587ce881f0ab5898fff2429b0",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-east-2.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-east-3.png",
+          "sha256": "f10ccb220d1e082492f64058b870f0436dac3526ef9b63a09b32ae137a6eb481",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 80.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-east-3.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-east-4.png",
+          "sha256": "09ab599dcd296220adaa184e096b65170ff55bea4e97bfe425a498a09a98d671",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 79.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-east-4.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-east-5.png",
+          "sha256": "5a54f98980a81fc25c9c3d90af7861d8cf462d20b366bb6b765453c329af20e3",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 80.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-east-5.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-east-6.png",
+          "sha256": "5498e6a41b50da049b994e1448f707a24264bc84e591ac89ea3c28ff30863741",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-east-6.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-east-7.png",
+          "sha256": "8b41f9f531949fc199404dc8bc5d21a142e0b4e1da4c815d7bb30e8625414774",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 82.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-east-7.png"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-east-0.png",
+          "sha256": "b0af159ca15dd5b1b3345308f8e99926801076ce166b28ab2c2e95267e370e2e",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-east-0.png",
+          "rotation": 0.25
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-east-1.png",
+          "sha256": "eb0423da106bd8b2f16c59380615a40f57df02ca0f17cc92696f7adcfb720f43",
+          "neck": {
+            "x": 62,
+            "y": 51
+          },
+          "main": {
+            "x": 76.5,
+            "y": 43.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 70.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-east-1.png",
+          "rotation": -0.6
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-east-2.png",
+          "sha256": "6b5d984913995b87a1932448ccd021b00ad36860d1cc344a26974b12af07a3c5",
+          "neck": {
+            "x": 63,
+            "y": 51
+          },
+          "main": {
+            "x": 77.5,
+            "y": 43.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 70.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-east-2.png",
+          "rotation": -0.7
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-east-3.png",
+          "sha256": "e27cbbb5aea78a522400b403395c2bf0ca7bb9da971f87241d6f239ff0bdf9cd",
+          "neck": {
+            "x": 63,
+            "y": 51
+          },
+          "main": {
+            "x": 85.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 70.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-east-3.png",
+          "rotation": 2
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-east-4.png",
+          "sha256": "29f040f36f531309cfccbfc4fbb7deeca522481d4688767fd6c077fa6634a22b",
+          "neck": {
+            "x": 63,
+            "y": 51
+          },
+          "main": {
+            "x": 84.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 70.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-east-4.png",
+          "rotation": 2.3
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-east-5.png",
+          "sha256": "8baa156c0f66c78ad07680c853519ea3730d774c6de6b5572c940768c5f2e338",
+          "neck": {
+            "x": 63,
+            "y": 51
+          },
+          "main": {
+            "x": 83.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 70.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-east-5.png",
+          "rotation": 1.5
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-east-6.png",
+          "sha256": "cf35b35cb14fe2fe02b41d3842f86883e2542d0d06d759e87ec8d459e620e5be",
+          "neck": {
+            "x": 62,
+            "y": 51
+          },
+          "main": {
+            "x": 79.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 70.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-east-6.png",
+          "rotation": 0.5
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-east-7.png",
+          "sha256": "ed03e6ff085d773b3205914988c945b7bc9856b3510ef83797a29555230f0948",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-east-7.png",
+          "rotation": 0.25
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-east-0.png",
+          "sha256": "7b84fbf044569b2991dda7ebc22c1d0e2d9a02249e5f4d5465ecb264c957d3fd",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-east-0.png",
+          "carryTilt": 0.4537856055185257,
+          "headSafe": false
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-east-1.png",
+          "sha256": "d0d170943df497b92b02bf29e8c8220bd4bb87ee9ea68109e3d64ecf3412bd1c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 75.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-east-1.png",
+          "carryTilt": -0.05503935641295826,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-east-2.png",
+          "sha256": "08451e54ab96d26de9f51448187ea923574b61681e6deea5bb6be573f26401eb",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 65.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 68.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-east-2.png",
+          "carryTilt": -0.5638643183444423,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-east-3.png",
+          "sha256": "93182d5d290dafd8b11c71d4fedd867fb900da3bb200ef3b09d8cffd073266dd",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 63.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-east-3.png",
+          "carryTilt": -1,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-east-4.png",
+          "sha256": "b7feb9f538ee1aa7e34725c5d0c2c84a5e1db33f810cebef94ccb7344afd900f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 63.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-east-4.png",
+          "carryTilt": -1,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-east-5.png",
+          "sha256": "35232a341524324cb525feeaca5aa0290a13ab9e87d72155b9b25299748a75f9",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 68.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-east-5.png",
+          "carryTilt": -0.491175038068516,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-east-6.png",
+          "sha256": "5de8fb4c63c8a1634e98e78ea7afedc5f9c87ab96c6efaf9ffcea9c8a11dc2ff",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 75.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-east-6.png",
+          "carryTilt": 0.017649923862968042,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-east-7.png",
+          "sha256": "0fbc9aa0252c61b394ad0901a4fdf4fbca787198ce53008afc1a71045bb2f5f7",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-east-7.png",
+          "carryTilt": 0.4537856055185257,
+          "headSafe": false
+        }
+      ],
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/juggernaut/idle/south-east.png",
+        "sha256": "e186790663bd4cd4d85ae6c104ce0d54b9135c2c8af95bfc3fe8fee5e335c6cc",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 79.5,
+          "y": 72.5
+        },
+        "off": {
+          "x": 48.5,
+          "y": 81.5
+        },
+        "hands": "/assets/character-v3/class-outfits/juggernaut/idle/hands-south-east.png"
+      }
+    },
+    "east": {
+      "headOffset": {
+        "x": 2,
+        "y": 4
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 115
+      },
+      "tilt": 34,
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/east-0.png",
+          "sha256": "9ed259d2014f58a0c86f6ce974c8f6d1c55d49d3f6a402a0bbed9b372f314939",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 75.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-east-0.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/east-1.png",
+          "sha256": "8742e6ee93f4427fbf294fafc1478fde35f7577be8e8103e1e0d6a9abd8da730",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 76.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-east-1.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/east-2.png",
+          "sha256": "822ad1f5f2464d369afdc5ea440b349046268dce653cb6937c301cb044fe4b34",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 77.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-east-2.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/east-3.png",
+          "sha256": "291d953c8b73ee7f167c5cd251d6d31550abf96c05ab8ffd9ed46d66f37f19f8",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 78.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-east-3.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/east-4.png",
+          "sha256": "4d646f9ea2e4c9cfee47b146235cfecf9977aca4bc0a04e0f9061037316d320d",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 79.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-east-4.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/east-5.png",
+          "sha256": "5ff943ce9b7735b28eaedd90cf09cc10067083cbaddfc76ee5893d8dd596cd0d",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 60.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 78.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-east-5.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/east-6.png",
+          "sha256": "9a931aab8452a35f27ca75d43579bfa35e6a3a35e522424fb2f48e3b7e01a5f7",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 77.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-east-6.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/east-7.png",
+          "sha256": "ff0b462317c15daa0dff3672ef9b40ef0824ed7e41ecc7ad51391607a94194a0",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 76.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-east-7.png"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/east-0.png",
+          "sha256": "2cb7b985c5b0639e709a9ec36c08e1f6a3abfa6e74da8949dc4a3604b3b57b0c",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 77.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-east-0.png",
+          "rotation": 0.25
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/east-1.png",
+          "sha256": "e454ec99bdfc10e94c3619e1e7e77abbcbfeb4c1e6376c98b78801171aa23a4e",
+          "neck": {
+            "x": 60,
+            "y": 51
+          },
+          "main": {
+            "x": 77.5,
+            "y": 43.5
+          },
+          "off": {
+            "x": 60.5952,
+            "y": 70.0032
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-east-1.png",
+          "rotation": -0.6
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/east-2.png",
+          "sha256": "0ff577083acd13ccc675c88822cbcfb3d04517f19c81d51591b8c2da689238bc",
+          "neck": {
+            "x": 60,
+            "y": 51
+          },
+          "main": {
+            "x": 77.5,
+            "y": 43.5
+          },
+          "off": {
+            "x": 61.1968,
+            "y": 70.0032
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-east-2.png",
+          "rotation": -0.7
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/east-3.png",
+          "sha256": "e9f027613a9d74eb9e9ebb56cea0e2e559f0644109e6b3143d70c03edf51984c",
+          "neck": {
+            "x": 61,
+            "y": 51
+          },
+          "main": {
+            "x": 89.5,
+            "y": 86.5
+          },
+          "off": {
+            "x": 61.7984,
+            "y": 70.0032
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-east-3.png",
+          "rotation": 2
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/east-4.png",
+          "sha256": "a42b12c2cd0078d645c1b4369f91265140fc07b01aaadecf5c8438c241a54dc9",
+          "neck": {
+            "x": 61,
+            "y": 51
+          },
+          "main": {
+            "x": 89.5,
+            "y": 93.5
+          },
+          "off": {
+            "x": 62.0032,
+            "y": 70.0032
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-east-4.png",
+          "rotation": 2.3
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/east-5.png",
+          "sha256": "619d51634085f7b42694ccc1a2db579956f4ec7952934a23b3b50bbe32131f36",
+          "neck": {
+            "x": 60,
+            "y": 51
+          },
+          "main": {
+            "x": 85.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 61.4016,
+            "y": 70.0032
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-east-5.png",
+          "rotation": 1.5
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/east-6.png",
+          "sha256": "6f4b1168f7f945b000bb1379cad6641a9aafb071c007c8cff71908713f7cfbf5",
+          "neck": {
+            "x": 60,
+            "y": 51
+          },
+          "main": {
+            "x": 80.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 60.5952,
+            "y": 70.0032
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-east-6.png",
+          "rotation": 0.5
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/east-7.png",
+          "sha256": "63ff93ae919b62b593639005c873845fa1c00be91b149cd3e4aefbf7aab7eac6",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 77.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-east-7.png",
+          "rotation": 0.25
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/east-0.png",
+          "sha256": "4cbc6a83f91ff3f8ab006a6d9fd069f38755fa5d69c0bf1cd9bcda0ece31c9b0",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 77.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-east-0.png",
+          "carryTilt": 0.5934119456780721,
+          "headSafe": false
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/east-1.png",
+          "sha256": "837e8918a7f75f43598afda674dddf311a86562856dc31020ddef72a33becae6",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 72.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-east-1.png",
+          "carryTilt": 0.7357177646907469,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/east-2.png",
+          "sha256": "9e7866954b5423864cacc90f7201a2c171234e5394a2206adaf05eb993eb6902",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 65.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 67.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-east-2.png",
+          "carryTilt": 0.8780235837034216,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/east-3.png",
+          "sha256": "44a3da3b3273f476d077eaa9115ea2b1f12cd0c3367104e2c91f7165fc36c827",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 67.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 64.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-east-3.png",
+          "carryTilt": 1,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/east-4.png",
+          "sha256": "3bafdc6111acd2d3de6a13fd39d96b5e3349c0f5f01d78607dad57fe5d70fe54",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 67.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 63.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-east-4.png",
+          "carryTilt": 1,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/east-5.png",
+          "sha256": "44f7aaa8722a84ec7c7e2dbf529207d58c6394c1ac3a8f0a989cf22b1824b2d6",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 70.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 67.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-east-5.png",
+          "carryTilt": 0.8576941809873253,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/east-6.png",
+          "sha256": "52a669c0a2cecf06dc259ecb6eb1b6f119ed2ed45e0218da2ca6296d92d926b9",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 68.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-east-6.png",
+          "carryTilt": 0.7153883619746505,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/east-7.png",
+          "sha256": "cff4adec606d4817ff1194d7daa423e8ce444a2a5e164a5f9a2a085da29942a5",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 77.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-east-7.png",
+          "carryTilt": 0.5934119456780721,
+          "headSafe": false
+        }
+      ],
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/juggernaut/idle/east.png",
+        "sha256": "7d3f88b90f23db6934040218aca2a36828cc2ac3be4c498d5a16e1a51ed3ffee",
+        "neck": {
+          "x": 59,
+          "y": 48
+        },
+        "main": {
+          "x": 62.5,
+          "y": 82.5
+        },
+        "off": {
+          "x": 55.5,
+          "y": 77.5
+        },
+        "hands": "/assets/character-v3/class-outfits/juggernaut/idle/hands-east.png"
+      }
+    },
+    "north-east": {
+      "headOffset": {
+        "x": 0,
+        "y": 1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 112
+      },
+      "tilt": 24,
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-east-0.png",
+          "sha256": "0c017f65336af33d720a120ed59949250003746442294240cc29440aa4b2320c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 43.5,
+            "y": 69.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-east-0.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-east-1.png",
+          "sha256": "3fab6601172e6ad3c51f68e8affabcea1d2b326fd47d3c21ff12380c1e828786",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 43.5,
+            "y": 70.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-east-1.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-east-2.png",
+          "sha256": "2effd987c3f7ef6f73e121bc3ad5b90208d94c15a44a370cb9b605f4611a434a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 43.5,
+            "y": 71.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-east-2.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-east-3.png",
+          "sha256": "3cbbb2358f94c22935154e29c70b57cf1b0592089a40c3a501153b83559984ae",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 43.5,
+            "y": 72.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-east-3.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-east-4.png",
+          "sha256": "af9c6fb96032b49437d614cc0cfd23226d35f2a559f224f6b25bf55c832738ad",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 43.5,
+            "y": 73.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-east-4.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-east-5.png",
+          "sha256": "00818adfe41b2626230fe42258f9ce5203a6ae1f85176c92ec9fc8cfbbdb26cc",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 43.5,
+            "y": 72.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-east-5.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-east-6.png",
+          "sha256": "25f4721670ebfdfb4e09abec34832a2cc883634117998f5853775804b28759ca",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 43.5,
+            "y": 71.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-east-6.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-east-7.png",
+          "sha256": "169fdd8bc6ab8195159d1efd1087ad902c6745f594546b2879116f427e8fd5e1",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 43.5,
+            "y": 70.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-east-7.png"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-east-0.png",
+          "sha256": "72f8cc8f0e9905f01d5a5f5a5285404d080ae8dce97a467b49b124e7dabfff6e",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 43.5,
+            "y": 71.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-east-0.png",
+          "rotation": 0.25
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-east-1.png",
+          "sha256": "775360dd44d073010bb1a1809b3026e6a79c2491e3839b2c09256225ac37196b",
+          "neck": {
+            "x": 62,
+            "y": 51
+          },
+          "main": {
+            "x": 77.5,
+            "y": 43.5
+          },
+          "off": {
+            "x": 60.1984,
+            "y": 69.8624
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-east-1.png",
+          "rotation": -0.6
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-east-2.png",
+          "sha256": "8143bf0bca574a832062966d0365588c21bbcf4b2e6ad0361706820049cb1cbe",
+          "neck": {
+            "x": 63,
+            "y": 51
+          },
+          "main": {
+            "x": 78.5,
+            "y": 43.5
+          },
+          "off": {
+            "x": 60.6464,
+            "y": 69.7344
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-east-2.png",
+          "rotation": -0.7
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-east-3.png",
+          "sha256": "08a7a633b04979907f22566c53d810f4121e68c11eb52d83a80d74164a00270f",
+          "neck": {
+            "x": 63,
+            "y": 51
+          },
+          "main": {
+            "x": 86.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 61.0944,
+            "y": 69.5936
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-east-3.png",
+          "rotation": 2
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-east-4.png",
+          "sha256": "b4a6b2e233425c007e20ea9632afcd45e9472e7e1aaa989241f3e0cb413d81f6",
+          "neck": {
+            "x": 63,
+            "y": 51
+          },
+          "main": {
+            "x": 86.5,
+            "y": 90.5
+          },
+          "off": {
+            "x": 61.248,
+            "y": 69.5552
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-east-4.png",
+          "rotation": 2.3
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-east-5.png",
+          "sha256": "9f4d597cd59e894a7046e05707fbba4b69824eba0a92bcac75ef57ac6bda89df",
+          "neck": {
+            "x": 63,
+            "y": 51
+          },
+          "main": {
+            "x": 83.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 60.8,
+            "y": 69.6832
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-east-5.png",
+          "rotation": 1.5
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-east-6.png",
+          "sha256": "fc2a6c2e7ae9fde7f0e657a5e83d61f8f5a70c7c6736b525a89c448e37b11183",
+          "neck": {
+            "x": 62,
+            "y": 51
+          },
+          "main": {
+            "x": 80.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 60.1984,
+            "y": 69.8624
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-east-6.png",
+          "rotation": 0.5
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-east-7.png",
+          "sha256": "ade8479e3d87dcc4c25f31c608bbf99f033d19606d7badc47c18530ca709f31b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 43.5,
+            "y": 71.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-east-7.png",
+          "rotation": 0.25
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-east-0.png",
+          "sha256": "e75dba962257dea579aff1c164ccb871d3b3eefbebfc7a3c71c7487805e799cb",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 43.5,
+            "y": 71.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-east-0.png",
+          "carryTilt": 0.41887902047863906,
+          "headSafe": false
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-east-1.png",
+          "sha256": "a2736cdf129efe98cdee58dbc51c26e0c3bb80088ca3421e5de9dc3f0255b7f7",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 77.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 69.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-east-1.png",
+          "carryTilt": 0.6222713633111154,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-east-2.png",
+          "sha256": "adc666bfc59024f9398844e4a388ad28b0412a907107848d0954f29e7cfb72bc",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 54.8992,
+            "y": 65.3952
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-east-2.png",
+          "carryTilt": 0.8256637061435917,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-east-3.png",
+          "sha256": "cb52917fd196baa5512812719220fb039961969fadd768d64c0ab6317f1596e1",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 63.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-east-3.png",
+          "carryTilt": 1,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-east-4.png",
+          "sha256": "d15749e9fdacf5a9c5d9ba1f328ed106fd61f6c1b7f60f46ba4b985be21a9b7f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 62.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-east-4.png",
+          "carryTilt": 1,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-east-5.png",
+          "sha256": "76ecac2a137121f81c6b1882f811f6e0737fcf6d94d5043fd6167c4c5d88d268",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 77.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 49.4976,
+            "y": 64.4992
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-east-5.png",
+          "carryTilt": 0.7966076571675238,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-east-6.png",
+          "sha256": "a257dce3db637910c8cda9016de0f3b4cdd1546c07f96ec6e26dcd1aac8db735",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 80.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 69.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-east-6.png",
+          "carryTilt": 0.5932153143350474,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-east-7.png",
+          "sha256": "4a961eeb1220c6a9f0be867d8bb72e9364389ac517433905d0b7e54ef01f53f5",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 43.5,
+            "y": 71.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-east-7.png",
+          "carryTilt": 0.41887902047863906,
+          "headSafe": false
+        }
+      ],
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/juggernaut/idle/north-east.png",
+        "sha256": "28028ac66dc85971b26762162426daee3c8ae6f615ff215fa2e62d61fd3eecac",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 82.5,
+          "y": 78.5
+        },
+        "off": {
+          "x": 43.5,
+          "y": 71.5
+        },
+        "hands": "/assets/character-v3/class-outfits/juggernaut/idle/hands-north-east.png"
+      }
+    },
+    "north": {
+      "headOffset": {
+        "x": -1,
+        "y": 2
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 110
+      },
+      "tilt": 18,
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-0.png",
+          "sha256": "881b9e48492e52c454b60960689b57b82e49ad637d27818ecc13b2da02f9fb3d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 84.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 75.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-0.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-1.png",
+          "sha256": "73baf26ab02b61d705a2b75c1e3a0bdaa8c4ccc688b4eba66ecb2b243a6a5d20",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 84.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 76.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-1.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-2.png",
+          "sha256": "cf4322a023f45d1e625e726b1e5b2ebb1ec49aad875c988ad27ad4336262c963",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 84.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 77.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-2.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-3.png",
+          "sha256": "4daf29f0e7a933956a98279f4ae87f809513289eb86ae5bf0558707f71c9b2b1",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 84.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 78.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-3.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-4.png",
+          "sha256": "356bbcb7126c7e6d51e3a580b11503ba54a5eb8cb8179f791fd30326ab07de0d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 84.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 79.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-4.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-5.png",
+          "sha256": "e0e0a22585fe46c414f7105a0f3fe871489503219af4bf87e53a171b274ba388",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 84.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 78.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-5.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-6.png",
+          "sha256": "32c1636e13a0c60f0d88e2c83f1701703e406b7199ec1015638b2ed690995d99",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 84.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 77.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-6.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-7.png",
+          "sha256": "608e24158c992f9f8bc0768bf1be25bf1cbfb94ed774c27496f3ecf84cd04e4f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 84.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 76.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-7.png"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-0.png",
+          "sha256": "44994f86a513ecaa1c960d4a84b326016baa32c33673ae74e33061aaf78f18df",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 84.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 77.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-0.png",
+          "rotation": 0.25
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-1.png",
+          "sha256": "73e7a1fbe0db683e27ab67d0862168e30f4d886039f9bb4f9b09da20cbfb6039",
+          "neck": {
+            "x": 62,
+            "y": 51
+          },
+          "main": {
+            "x": 75.5,
+            "y": 43.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 70.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-1.png",
+          "rotation": -0.6
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-2.png",
+          "sha256": "60fa2ff3c16dd2af6541f232d60a45cbbfd14c5b7e8afa22b8d2d9a1373ab171",
+          "neck": {
+            "x": 62,
+            "y": 50
+          },
+          "main": {
+            "x": 74.5,
+            "y": 42.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 69.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-2.png",
+          "rotation": -0.7
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-3.png",
+          "sha256": "a8bc383c11d70263da904ccb0f1c3c7e7aa3e5573b78de56b3e8a5f225ace800",
+          "neck": {
+            "x": 62,
+            "y": 50
+          },
+          "main": {
+            "x": 71.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 69.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-3.png",
+          "rotation": 2
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-4.png",
+          "sha256": "25d3a90d4c5e9c89e1a3eb398f578c3243f14f281ee70463e88366f7d5d91c61",
+          "neck": {
+            "x": 62,
+            "y": 50
+          },
+          "main": {
+            "x": 71.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 69.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-4.png",
+          "rotation": 2.3
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-5.png",
+          "sha256": "3ede4d7c5015dcd18e6cf387c74df7f10d5adad7b5561a281242e6cef6d55872",
+          "neck": {
+            "x": 62,
+            "y": 50
+          },
+          "main": {
+            "x": 73.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 69.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-5.png",
+          "rotation": 1.5
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-6.png",
+          "sha256": "271f906aa38e78752ee80fe7f1a4e86100d0b1a523f535ad58f6bd5730bf42e0",
+          "neck": {
+            "x": 62,
+            "y": 51
+          },
+          "main": {
+            "x": 75.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 70.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-6.png",
+          "rotation": 0.5
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-7.png",
+          "sha256": "8e7c622e1e6a0741e3733bc97bb1902a1f88a49558614e65cc917abd57647b21",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 84.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 77.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-7.png",
+          "rotation": 0.25
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-0.png",
+          "sha256": "66049d145a66e364a0f267921b460fba57ad91644191c0d9aa7fd38447fffc48",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 84.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 77.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-0.png",
+          "carryTilt": 0.3141592653589793,
+          "headSafe": false
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-1.png",
+          "sha256": "0fe5e86152f12bb8b959c08841b3efd3e432c7cf6c20ea94c7a2f4a7516af90f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 78.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 72.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-1.png",
+          "carryTilt": 0.5542035224833366,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-2.png",
+          "sha256": "1710bf244fa20670db00dfee792209972f35701a2bdc0f3b7ffa6b779f97d7c7",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 71.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 67.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-2.png",
+          "carryTilt": 0.7942477796076938,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-3.png",
+          "sha256": "db956a22058daf78d2adf8892ac4d387d0ce3d5d38c54aca057382145166616b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 63.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-3.png",
+          "carryTilt": 1,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-4.png",
+          "sha256": "ade68926666c9142d1ffa566f759aa431c1aae0960a41ddfcaacd1d9402dcb70",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 63.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-4.png",
+          "carryTilt": 1,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-5.png",
+          "sha256": "0c8f9764b5bb91ca0ba533cbd67de2012321180c73782d3219ae20406aa7cd21",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 77.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 67.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-5.png",
+          "carryTilt": 0.7599557428756427,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-6.png",
+          "sha256": "a90d0ee34cc088d81afa0521b3f161110a10db280e70147d8cadd7c42c7b8bf9",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 81.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 72.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-6.png",
+          "carryTilt": 0.5199114857512855,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-7.png",
+          "sha256": "92316e079edb48a677529672d33ea97e8b1791c660e92dedee0d990e31d4ddcc",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 84.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 77.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-7.png",
+          "carryTilt": 0.3141592653589793,
+          "headSafe": false
+        }
+      ],
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/juggernaut/idle/north.png",
+        "sha256": "2dbfbebb8385888580870bc372715c9f4f15b9e4cab7f0c524fd2ba3e5cccdac",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 84.5,
+          "y": 73.5
+        },
+        "off": {
+          "x": 45.5,
+          "y": 77.5
+        },
+        "hands": "/assets/character-v3/class-outfits/juggernaut/idle/hands-north.png"
+      }
+    },
+    "north-west": {
+      "headOffset": {
+        "x": -2,
+        "y": 1
+      },
+      "bodyOrigin": {
+        "x": 62,
+        "y": 112
+      },
+      "tilt": -24,
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-west-0.png",
+          "sha256": "0364d7669144671ac789555d91f065dc2d5269d36ac079171ace9660e97447c5",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 68.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-west-0.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-west-1.png",
+          "sha256": "1158d8ac3e50321170a8844addaf0c22eaea388c71d839e6a62b0653976ba6c4",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 68.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-west-1.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-west-2.png",
+          "sha256": "067bea127e57a8b9aebe0fe0621b0871ac84d4295b899ed0bce3d0ec9f42323d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 67.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-west-2.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-west-3.png",
+          "sha256": "1bb73d12833b68972babf2c9fe49bdd83557287256d8af402fe5310585de3984",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 66.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-west-3.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-west-4.png",
+          "sha256": "211d7e1733d0d21663d5c242751527cbff3465c84d29f9c64155e4f2dc3b2723",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 65.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-west-4.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-west-5.png",
+          "sha256": "5048614385a830f42566effb6e67ab2374ca64356d12328a8f94c7ed76681296",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 66.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-west-5.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-west-6.png",
+          "sha256": "8b1b9fe97f238456654fc80023929597eb70c10a036f23637973ac3f44be0924",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 67.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-west-6.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/north-west-7.png",
+          "sha256": "27aba4a68ab671896ff23bdeeae159b0c63f0a4fc7e5e687cc878b68539c0b72",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 68.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-north-west-7.png"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-west-0.png",
+          "sha256": "ea544a1b576eb00d7f0cf0f3b58594e4f062de1eb494d6789555c934872e8789",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 67.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-west-0.png",
+          "rotation": -0.25
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-west-1.png",
+          "sha256": "1e1f4515f402fa0a7f6e8b7adbbb9007503063881279b69239d646d3f24b7e24",
+          "neck": {
+            "x": 62,
+            "y": 51
+          },
+          "main": {
+            "x": 49.5,
+            "y": 43.5
+          },
+          "off": {
+            "x": 65.8048,
+            "y": 69.8624
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-west-1.png",
+          "rotation": 0.6
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-west-2.png",
+          "sha256": "b9dd863ef779217c6df7287b446b47afb239084d4974ea8b8dc2715b8d872633",
+          "neck": {
+            "x": 61,
+            "y": 51
+          },
+          "main": {
+            "x": 48.5,
+            "y": 43.5
+          },
+          "off": {
+            "x": 65.344,
+            "y": 69.7344
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-west-2.png",
+          "rotation": 0.7
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-west-3.png",
+          "sha256": "4b3df46bd3411812cbecb019f6e8a70d763875056b6ed0bf124167b241c7e7e8",
+          "neck": {
+            "x": 61,
+            "y": 51
+          },
+          "main": {
+            "x": 40.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 64.896,
+            "y": 69.5936
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-west-3.png",
+          "rotation": -2
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-west-4.png",
+          "sha256": "387d30f227f2aad4de39e592c1107e3f4ce9ccf8cf7a435cc2fe73ff9328e493",
+          "neck": {
+            "x": 61,
+            "y": 51
+          },
+          "main": {
+            "x": 40.5,
+            "y": 90.5
+          },
+          "off": {
+            "x": 64.7552,
+            "y": 69.5552
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-west-4.png",
+          "rotation": -2.3
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-west-5.png",
+          "sha256": "0205ee69a0ea6078b72363fc1c62bfec30c3ae4fba48b7e291b8845f77ddf6d2",
+          "neck": {
+            "x": 61,
+            "y": 51
+          },
+          "main": {
+            "x": 43.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 65.2032,
+            "y": 69.6832
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-west-5.png",
+          "rotation": -1.5
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-west-6.png",
+          "sha256": "ebe0a3c3b160682fd50b8d321ed91a584f24498a54a5381ef9d913f906e46f81",
+          "neck": {
+            "x": 62,
+            "y": 51
+          },
+          "main": {
+            "x": 46.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 65.8048,
+            "y": 69.8624
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-west-6.png",
+          "rotation": -0.5
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/north-west-7.png",
+          "sha256": "dcd3c175452cc0048e384ac28176645b1ae9bfd01b8bf6b3c890a35e70dfad10",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 67.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-north-west-7.png",
+          "rotation": -0.25
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-west-0.png",
+          "sha256": "ba1cef791e5364ca131ff769ca92054b04023ddee032beb19be56a1e324513e0",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 67.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-west-0.png",
+          "carryTilt": -0.41887902047863906,
+          "headSafe": false
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-west-1.png",
+          "sha256": "842ca452657ef32e5a8a5ff23a2fccd0fa61ecc75639b4930b159fbc3bcb70e7",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 52.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 77.056,
+            "y": 65.6
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-west-1.png",
+          "carryTilt": -0.6222713633111154,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-west-2.png",
+          "sha256": "917246ee7aa59e1221fb0d1c28049f5b90359648aae7da79d141b88716f6c6ea",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 55.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 71.104,
+            "y": 64.2048
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-west-2.png",
+          "carryTilt": -0.8256637061435917,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-west-3.png",
+          "sha256": "388d0dee52bd6e87c224aeb978c98e2a3794d05d1073cb03ab8a867b2c203ba0",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 63.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-west-3.png",
+          "carryTilt": -1,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-west-4.png",
+          "sha256": "6110cd35a603e12ffd9a5f44c9466384d829f69632c68a874b1e970ec2f106e1",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 63.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-west-4.png",
+          "carryTilt": -1,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-west-5.png",
+          "sha256": "f478d3c805181e96edb68e0132184bc2bd4fc9a15cadb7b61cc7d3f4db7e2fb7",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 76.5056,
+            "y": 63.104
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-west-5.png",
+          "carryTilt": -0.7966076571675238,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-west-6.png",
+          "sha256": "121e94e15447927ba15af51344fc26e87930330c93d2775d64a321f392cb3e9a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 63.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-west-6.png",
+          "carryTilt": -0.5932153143350474,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/north-west-7.png",
+          "sha256": "d64f2c88da64223e12c598afa79ec2d92ed8b048b5df442c511b3592851ef23e",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 67.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-north-west-7.png",
+          "carryTilt": -0.41887902047863906,
+          "headSafe": false
+        }
+      ],
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/juggernaut/idle/north-west.png",
+        "sha256": "f76b562f4e39ace75551d32170771c43465be0d64fdde8099080f02d2f64688a",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 49.5,
+          "y": 81.5
+        },
+        "off": {
+          "x": 83.5,
+          "y": 67.5
+        },
+        "hands": "/assets/character-v3/class-outfits/juggernaut/idle/hands-north-west.png"
+      }
+    },
+    "west": {
+      "headOffset": {
+        "x": -4,
+        "y": 4
+      },
+      "bodyOrigin": {
+        "x": 61,
+        "y": 115
+      },
+      "tilt": -34,
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/west-0.png",
+          "sha256": "db8a1860e09222bb63cc7c4e752ebf70b142e3741e27591015f72025747a3e51",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 82.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-west-0.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/west-1.png",
+          "sha256": "9a0519caea852de7bc86b243b2059e02133be56b95e0d43bfc08ee191b449fed",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-west-1.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/west-2.png",
+          "sha256": "25de94f66565739e7955410e8feb20a01e4380e9cf21f84c139ecfbac0f92e67",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-west-2.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/west-3.png",
+          "sha256": "cf89064e08ceb1681ed88f70ddc05719bfc16aa44d29e55dab87710a4f446a36",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-west-3.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/west-4.png",
+          "sha256": "771c08096f4ce0f9e1565f127c8416c3d26fd396356f7b63dbadb06523575d91",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 86.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 80.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-west-4.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/west-5.png",
+          "sha256": "f25e7e35bf1573b250c52d3c2939ade5aafcd9d7ee3397a19dcecd0e3b465058",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-west-5.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/west-6.png",
+          "sha256": "5a830e63936b8b2d7e9ca387be9b8ce2a8f83884b5881631954cbf629894e128",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 80.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-west-6.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/west-7.png",
+          "sha256": "4a262a634c679243b176e530f7931899d5e8ea9150a4b7e8cf7e7ec1e049f3be",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-west-7.png"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/west-0.png",
+          "sha256": "bf5ffda46e2212853f2b1549a3d98a5bfdfc29f8d755aa202cc3db421a904c83",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-west-0.png",
+          "rotation": -0.25
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/west-1.png",
+          "sha256": "38a73f61e74cd97514fc867a90d5a5817104ce51966270c20157c77a5dc13713",
+          "neck": {
+            "x": 64,
+            "y": 51
+          },
+          "main": {
+            "x": 49.5,
+            "y": 43.5
+          },
+          "off": {
+            "x": 65.3952,
+            "y": 70.0032
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-west-1.png",
+          "rotation": 0.6
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/west-2.png",
+          "sha256": "5a446fd036b02a019f97a9122c2ab69719e8d2bee99685b982ac12aed3d38d9b",
+          "neck": {
+            "x": 64,
+            "y": 51
+          },
+          "main": {
+            "x": 49.5,
+            "y": 43.5
+          },
+          "off": {
+            "x": 64.7936,
+            "y": 70.0032
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-west-2.png",
+          "rotation": 0.7
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/west-3.png",
+          "sha256": "bf12f7ae8d98324850a44506a84d41dddd73b35a8b5dc2882bf5e10a039fff24",
+          "neck": {
+            "x": 63,
+            "y": 51
+          },
+          "main": {
+            "x": 37.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 64.2048,
+            "y": 70.0032
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-west-3.png",
+          "rotation": -2
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/west-4.png",
+          "sha256": "422784ada1ffe67d6066a55b22711b137627edff1e34122283a9646ccb1a74b2",
+          "neck": {
+            "x": 63,
+            "y": 51
+          },
+          "main": {
+            "x": 36.5,
+            "y": 94.5
+          },
+          "off": {
+            "x": 64,
+            "y": 70.0032
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-west-4.png",
+          "rotation": -2.3
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/west-5.png",
+          "sha256": "277ce1c266d16df76e808a2378c177bc17b41509fb10d6e39571688a67c4af53",
+          "neck": {
+            "x": 64,
+            "y": 51
+          },
+          "main": {
+            "x": 41.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 64.6016,
+            "y": 70.0032
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-west-5.png",
+          "rotation": -1.5
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/west-6.png",
+          "sha256": "1b67a0c57055db05a14d06c16d39c13988d8d0e6f49cb1d5f1b20ecf4f511fde",
+          "neck": {
+            "x": 64,
+            "y": 51
+          },
+          "main": {
+            "x": 46.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 65.3952,
+            "y": 70.0032
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-west-6.png",
+          "rotation": -0.5
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/west-7.png",
+          "sha256": "c0623479db4d50f56e37bfcafea5e16614f5dd445f812460ecf9ceb58d58edfa",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 82.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-west-7.png",
+          "rotation": -0.25
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/west-0.png",
+          "sha256": "3df4e412562ff79bd998f59f97d28f272f32a70110a04bdfe27cc145e74cc540",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-west-0.png",
+          "carryTilt": -0.5934119456780721,
+          "headSafe": false
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/west-1.png",
+          "sha256": "52215c56ab5e8fc89ea729cb14ec017732a84b59864ad28ff792386604fffdcd",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 76.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-west-1.png",
+          "carryTilt": -0.7357177646907469,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/west-2.png",
+          "sha256": "d1152b730435776bedea3d7bd2d59abe3982e8cde400afcd60b9af37edde2548",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 69.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-west-2.png",
+          "carryTilt": -0.8780235837034216,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/west-3.png",
+          "sha256": "ecb3a256908e6da92ff404a1e5e51564bc7860a79d7e3328a3acec27295a7045",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 65.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-west-3.png",
+          "carryTilt": -1,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/west-4.png",
+          "sha256": "869db7994a7ff3222ee18acbe11d1f6a4fe4f05de4b3aba04af20b126f57cc0a",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 65.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-west-4.png",
+          "carryTilt": -1,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/west-5.png",
+          "sha256": "9c8db73f1e1d471a943daeb3945450505c8d0050a62994ccbf219703b04c53df",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 69.4528,
+            "y": 67.648
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-west-5.png",
+          "carryTilt": -0.8576941809873253,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/west-6.png",
+          "sha256": "a8c541ed2c1431e300c3596fbd655147cbb01001ede3757962f17cc2368e6ace",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 74.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-west-6.png",
+          "carryTilt": -0.7153883619746505,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/west-7.png",
+          "sha256": "76d910900b9fd2f77f9eddb4ffd267446dc3c4090d269d4260aa13f5348db57e",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-west-7.png",
+          "carryTilt": -0.5934119456780721,
+          "headSafe": false
+        }
+      ],
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/juggernaut/idle/west.png",
+        "sha256": "c3d85dcfca2f53d1bcfa0829704455c02bd314308eac873a100c0b23062e2017",
+        "neck": {
+          "x": 65,
+          "y": 48
+        },
+        "main": {
+          "x": 69.5,
+          "y": 84.5
+        },
+        "off": {
+          "x": 63.5,
+          "y": 81.5
+        },
+        "hands": "/assets/character-v3/class-outfits/juggernaut/idle/hands-west.png"
+      }
+    },
+    "south-west": {
+      "headOffset": {
+        "x": -1,
+        "y": 4
+      },
+      "bodyOrigin": {
+        "x": 61,
+        "y": 114
+      },
+      "tilt": -26,
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-west-0.png",
+          "sha256": "718c7234530768a4d1d74bd5bdbe7cc4b9b8bcc8e66fd23a2f26343285714cf5",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 45.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 79.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-west-0.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-west-1.png",
+          "sha256": "1c0edcb9246ef07049a4892bd8c36b1dc34c07671a0e11d7303ad004ebc2c0ab",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 45.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 80.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-west-1.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-west-2.png",
+          "sha256": "29c0c8f4a85e3c9517542c0c43252ee5a49e3d1e60f8c7b5839dee4357a07cdb",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 45.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-west-2.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-west-3.png",
+          "sha256": "aeac1836c602ceb3d81e96516d5bb42c59a9d7acd94facb508ec2e2a485ea0d5",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 45.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 82.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-west-3.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-west-4.png",
+          "sha256": "852e985795f58aa8475ab11abe0ffa48279544d80590be0ec2721e0ed0e6f21a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 45.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 83.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-west-4.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-west-5.png",
+          "sha256": "258fcdbc54eaab7f3438f242554269dbfd1c41e4ad5f5be9e0e114c12ac425c1",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 45.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 82.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-west-5.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-west-6.png",
+          "sha256": "00132f71c20415641db7340ffb03c1d75799810753b54250d5596df2ef48d3cb",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 45.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-west-6.png"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/walk/south-west-7.png",
+          "sha256": "8eccd6d34cfa2a5898f6dc3e9167c329033cbd2012a9ec592ad975b1363b1148",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 45.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 80.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/walk/hands-south-west-7.png"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-west-0.png",
+          "sha256": "e2954e9e76cfc8efc48959ee08698a5da12fc1e26917554b1d9da7eb035bf788",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 45.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-west-0.png",
+          "rotation": -0.25
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-west-1.png",
+          "sha256": "ad7ab139f6a97438e809b9155b9d7a193addc3596eced0eaf30ed39b0a7b7bb7",
+          "neck": {
+            "x": 62,
+            "y": 51
+          },
+          "main": {
+            "x": 50.5,
+            "y": 45.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 70.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-west-1.png",
+          "rotation": 0.6
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-west-2.png",
+          "sha256": "0f68d2d8b995c316737aa2f32449c6832c350d6128397f2223c43230323d4f0d",
+          "neck": {
+            "x": 61,
+            "y": 51
+          },
+          "main": {
+            "x": 49.5,
+            "y": 45.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 70.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-west-2.png",
+          "rotation": 0.7
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-west-3.png",
+          "sha256": "dae92ca47569ef2ae467ec315408494a0dab5b36ff9c36f44551c6418dd04fcd",
+          "neck": {
+            "x": 61,
+            "y": 51
+          },
+          "main": {
+            "x": 41.5,
+            "y": 93.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 70.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-west-3.png",
+          "rotation": -2
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-west-4.png",
+          "sha256": "5930816b42f8b997bfbf6aac34a87e4d3da8775136a339a5429b45a3c709fb3c",
+          "neck": {
+            "x": 61,
+            "y": 51
+          },
+          "main": {
+            "x": 41.5,
+            "y": 96.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 70.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-west-4.png",
+          "rotation": -2.3
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-west-5.png",
+          "sha256": "22639c280e9cb7a4ae0a45e12c17e1df75f8792e7fdcf52356559d3b7b83b6f4",
+          "neck": {
+            "x": 61,
+            "y": 51
+          },
+          "main": {
+            "x": 44.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 70.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-west-5.png",
+          "rotation": -1.5
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-west-6.png",
+          "sha256": "c1341da225f984f6b610ef274acf83b354ad7630b10a4af561fb9aee6a796e9a",
+          "neck": {
+            "x": 62,
+            "y": 51
+          },
+          "main": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 70.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-west-6.png",
+          "rotation": -0.5
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/attack/south-west-7.png",
+          "sha256": "770e52224e03484b8df1d9cef57b24af7364adee3a77d1661efb5ce7dbc29a5d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 46.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/attack/hands-south-west-7.png",
+          "rotation": -0.25
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-west-0.png",
+          "sha256": "039942f1c543b8290edcc895cab8725cfbc7ad4230b848942334eb2bbdd45784",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 45.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-west-0.png",
+          "carryTilt": -0.4537856055185257,
+          "headSafe": false
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-west-1.png",
+          "sha256": "e833a3dd5dbbccdb47371131b7d5e1f2ff3f719eda929460bcfe1d879f6587d2",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 75.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-west-1.png",
+          "carryTilt": 0.05503935641295826,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-west-2.png",
+          "sha256": "e3c93bad14cb100f6aa3cad937ddc5b53fcac7bdfdb08f500291f8999d0894aa",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 60.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 68.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-west-2.png",
+          "carryTilt": 0.5638643183444423,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-west-3.png",
+          "sha256": "a5fb8b0afe6a6355dc847c39a6dbe6181e24ce6f79c6b84eafe5b792a0fa0413",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 67.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 63.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-west-3.png",
+          "carryTilt": 1,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-west-4.png",
+          "sha256": "37def87d27e417d96c2e18062110bc2635bf213c6655fe9a1d2edecf5d3b6c67",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 67.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 63.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-west-4.png",
+          "carryTilt": 1,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-west-5.png",
+          "sha256": "51bd923283e13a4ccc95559bfe036ed4c95fe72cfc76ff4f15feeef3b18c7232",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 68.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-west-5.png",
+          "carryTilt": 0.491175038068516,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-west-6.png",
+          "sha256": "8d0d425f26b32d1d13176721f1854b2d552850b1b7d93639c0a70098f7497c63",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 54.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 75.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-west-6.png",
+          "carryTilt": -0.017649923862968042,
+          "headSafe": true
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/juggernaut/cast/south-west-7.png",
+          "sha256": "dee2f7169b901f00bb859c41028d582afb9ddf075b936d43fe2deedca2c66acb",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 45.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 81.5
+          },
+          "hands": "/assets/character-v3/class-outfits/juggernaut/cast/hands-south-west-7.png",
+          "carryTilt": -0.4537856055185257,
+          "headSafe": false
+        }
+      ],
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/juggernaut/idle/south-west.png",
+        "sha256": "900c8086da59a3c5cba4cb43b09d7d96973adbe590dcd945ee8262b6159a4176",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 45.5,
+          "y": 73.5
+        },
+        "off": {
+          "x": 78.5,
+          "y": 81.5
+        },
+        "hands": "/assets/character-v3/class-outfits/juggernaut/idle/hands-south-west.png"
+      }
+    }
+  }
+}

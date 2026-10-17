@@ -1,0 +1,3607 @@
+{
+  "id": "ullr-hunter-detail",
+  "branch": "ullr-hunter",
+  "attackAction": "attack-bow",
+  "directions": {
+    "south": {
+      "headOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 62,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/idle/south.png",
+        "sha256": "70cf3f474981d6bc0e8e68790c3263295dfd6194a2e4ed0e9fadde38c8351572",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 42.5,
+          "y": 79.5
+        },
+        "off": {
+          "x": 82.5,
+          "y": 76.5
+        },
+        "bakedWeapon": "bow-ullr"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-0.png",
+          "sha256": "995e35c7155ae83189dcafa407608f09d78af70a396316297be4c94a8b0a1d40",
+          "neck": {
+            "x": 63,
+            "y": 48
+          },
+          "main": {
+            "x": 42.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-1.png",
+          "sha256": "66c9933c818eb9b671493410f3b4c3a2242425ee6eb50d788a1f159ddea79f53",
+          "neck": {
+            "x": 60,
+            "y": 48
+          },
+          "main": {
+            "x": 43.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-2.png",
+          "sha256": "222d381e4c3fe83886998f4c7adf2df50d688489456b605cd65f176886d8bd3b",
+          "neck": {
+            "x": 60,
+            "y": 49
+          },
+          "main": {
+            "x": 42.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 81.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-3.png",
+          "sha256": "e3b307e5836cb8b2a55d5f6c1ccc2c8845d1f07d8e1f15ba45604503f64f0dc3",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 43.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 81.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-4.png",
+          "sha256": "54cb76c50166eba4ef24b8f4ae80bcc73aac528e76e406bfe9d29f0574a89d0b",
+          "neck": {
+            "x": 63,
+            "y": 47
+          },
+          "main": {
+            "x": 42.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 81.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-5.png",
+          "sha256": "8f640c8cb74bb996460055828edecaf41df3ae7f0d2cf5c3239d10518228a819",
+          "neck": {
+            "x": 61,
+            "y": 47
+          },
+          "main": {
+            "x": 42.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-6.png",
+          "sha256": "3eae18ee9caa48ccaf04ccbdc10b82d0fd2c9dd68994f140d0676d0eb267deec",
+          "neck": {
+            "x": 60,
+            "y": 47
+          },
+          "main": {
+            "x": 42.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-7.png",
+          "sha256": "0cbe7074b669ad645e67ff1f62b2c319b4ea795cc66f84a3b7c6c2e80247c601",
+          "neck": {
+            "x": 59,
+            "y": 47
+          },
+          "main": {
+            "x": 44.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "bow-ullr"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-0.png",
+          "sha256": "3fe988259078ac660e9dac6393e3af1eeb5e69c9fd113e0845b8846800a8a004",
+          "neck": {
+            "x": 63,
+            "y": 48
+          },
+          "main": {
+            "x": 44.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 71.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-1.png",
+          "sha256": "5649d60baf123d5383b0001cd2e2a7c2afce88065e7d17d4786c2a23a2d62b81",
+          "neck": {
+            "x": 56,
+            "y": 48
+          },
+          "main": {
+            "x": 44.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-2.png",
+          "sha256": "d2f258c4ed05233e051d8ea3c8cbaaf187cc448d6e273df3133f7f367accd58f",
+          "neck": {
+            "x": 58,
+            "y": 48
+          },
+          "main": {
+            "x": 44.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 61.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-3.png",
+          "sha256": "8c82b1c963b5bf692971b4be69d319f5d389e5795ed4b4c7247308910ffce1f3",
+          "neck": {
+            "x": 59,
+            "y": 47
+          },
+          "main": {
+            "x": 44.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 51.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-4.png",
+          "sha256": "1a252b2037d88b8cbc2a43b1433e1021d7a0e18e4974ffbfea1e8cd323c9b62c",
+          "neck": {
+            "x": 60,
+            "y": 46
+          },
+          "main": {
+            "x": 44.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 52.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-5.png",
+          "sha256": "f704051a771f7e8e4ac651c84462e928b6e64872aa1d1fd2a06edc56af52d585",
+          "neck": {
+            "x": 58,
+            "y": 46
+          },
+          "main": {
+            "x": 44.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 58.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-6.png",
+          "sha256": "a32a46dced1c1a326957554c729bfe9a2438e9d17c23b184783f2ecacc7e7cd7",
+          "neck": {
+            "x": 60,
+            "y": 46
+          },
+          "main": {
+            "x": 44.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-7.png",
+          "sha256": "79d94e5c74541563b1a94c56ef29d9436f8b5038f95fdb510a2ad1168a66b98a",
+          "neck": {
+            "x": 63,
+            "y": 46
+          },
+          "main": {
+            "x": 44.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 71.5
+          },
+          "bakedWeapon": "bow-ullr"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-0.png",
+          "sha256": "56fbdadbe4623dafd56797e9b414d5070657f883c6f629d2b6e711b306410814",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 41.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 76.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-1.png",
+          "sha256": "2033dfa2e03001bdb038b662def29e8f8a1769f2e6a14236ef07857d0f799ede",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 41.5,
+            "y": 82
+          },
+          "off": {
+            "x": 83.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-2.png",
+          "sha256": "a4b52ab4f5d81ccc68274933ed8c0e06e0f9a253817db34fe6612a0a796e03e3",
+          "neck": {
+            "x": 63,
+            "y": 48
+          },
+          "main": {
+            "x": 41.5,
+            "y": 82
+          },
+          "off": {
+            "x": 84.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-3.png",
+          "sha256": "8cd3c935bbf34f051395a0073f1116ef8d68d056fde85a170b4def84cd0481d6",
+          "neck": {
+            "x": 65,
+            "y": 50
+          },
+          "main": {
+            "x": 50.5,
+            "y": 90.5
+          },
+          "off": {
+            "x": 84.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-4.png",
+          "sha256": "fa989f0e654a063be56f76156591175c739a21e7b148411a21204cba33625c58",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 89.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-5.png",
+          "sha256": "a7830d795db4676f53a25fc24f483ff2a6a6d5c646e223d971e1a00003e8693b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 90.5
+          },
+          "off": {
+            "x": 84.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-6.png",
+          "sha256": "07ea42df0be4f9c8dd398c0bae8a533842353921f8d92adcca1965c4fd58cc02",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 41.5,
+            "y": 81
+          },
+          "off": {
+            "x": 73.5,
+            "y": 70.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-7.png",
+          "sha256": "612c1f3e58945f05d5e2347aede4302f3fa1c39234b5e7e874f9ed685bd9719c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 41.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 68.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "bow-ullr"
+        }
+      ]
+    },
+    "south-east": {
+      "headOffset": {
+        "x": -3,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 64,
+        "y": 114
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/idle/south-east.png",
+        "sha256": "841d2926f560332ce0237a4b9310971637db67b82cb4406be98868ecc4e9f874",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 76.5,
+          "y": 65.5
+        },
+        "off": {
+          "x": 49.5,
+          "y": 81.5
+        },
+        "bakedWeapon": "bow-ullr"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-east-0.png",
+          "sha256": "358bfdfa454d0ae12d6cf667d33024a1e852655e0a2b6214603511fde2ce14df",
+          "neck": {
+            "x": 60,
+            "y": 49
+          },
+          "main": {
+            "x": 70.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-east-1.png",
+          "sha256": "fb37579f0777826db67191c270851babd63368dd80d4609846ad3ec40371f0b7",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 92.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-east-2.png",
+          "sha256": "ff640eb8334b3129ab2987751779e487a488f142b96e4ed0c32aaa0484223d33",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 85.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-east-3.png",
+          "sha256": "9609c29fb7da6d25b25148724e1ab16b1039a8904e6ede17c4538017e6a9847c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-east-4.png",
+          "sha256": "9f355e89e783fa319953ce8e66d7debb6825dc6c5be0e00be3a751a0024dab50",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-east-5.png",
+          "sha256": "0617fada74b3a418bfd46781c0bf8bff67da1c914c568eb99390ac04b428ea3d",
+          "neck": {
+            "x": 60,
+            "y": 49
+          },
+          "main": {
+            "x": 73.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 84.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-east-6.png",
+          "sha256": "6d306ba29f117b7667d53a1c87e5308c5e1236f71bde12ff6d7cb80a0d4bbc0e",
+          "neck": {
+            "x": 61,
+            "y": 49
+          },
+          "main": {
+            "x": 71.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-east-7.png",
+          "sha256": "c2afad5b2e3fe5869cb4b7e63b46b56bbdcfa3ea492ee864dc478f7e3a9a4382",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "bow-ullr"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-east-0.png",
+          "sha256": "de0ce954304d6f8352d9381c40f6b77ab72a3c4498fc895a2be05379006af0c8",
+          "neck": {
+            "x": 57,
+            "y": 44
+          },
+          "main": {
+            "x": 80.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-east-1.png",
+          "sha256": "21ad4421be54b5f2f7d78cd319a124df449fe0278adf0c95574ab3e6d96b0ae0",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-east-2.png",
+          "sha256": "7a04ca3598d412ca481a2992494274acaf42fb8c2d1ed4b439a945ffb5f1c3e0",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 58.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-east-3.png",
+          "sha256": "8a53a70dd46f09b18c0d2d02332b5767aa5c3da60468b06d7b1a57d351a6ea13",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 54.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-east-4.png",
+          "sha256": "2e247554db53d1c2a2283a0e7274ce57dcc22e98fb00fe428cc3a9c45de90606",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 81.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 54.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-east-5.png",
+          "sha256": "cc5db70b87dd11b3a1accf69bd603a12a338309de1ae8294f90ba406ee77282d",
+          "neck": {
+            "x": 66,
+            "y": 45
+          },
+          "main": {
+            "x": 80.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 53.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-east-6.png",
+          "sha256": "cf06f754ee88aa337cdc7de95a20038c209f5e9caecafd7ab1552be328c6f384",
+          "neck": {
+            "x": 72,
+            "y": 45
+          },
+          "main": {
+            "x": 80.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-east-7.png",
+          "sha256": "82a74217fd63b91bae1d225ed443b6371928fefe59349b6dfab52ed2443dde8a",
+          "neck": {
+            "x": 58,
+            "y": 45
+          },
+          "main": {
+            "x": 79.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "bow-ullr"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-east-0.png",
+          "sha256": "76fa0f6971821fb68353b274f0c1a39d29d23477e6cf43b026ce9f296dd91ea3",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 82.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-east-1.png",
+          "sha256": "9df8057b6c076862c3a09e42c88639ee76264a0aef0113d9d0f79c365911ab02",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 92.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-east-2.png",
+          "sha256": "23975cccde3c56f58cde66ee76ea27797d01a6472ab18586cc24e31eff5eb2ca",
+          "neck": {
+            "x": 63,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 92.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-east-3.png",
+          "sha256": "19826fd9d9b42daed1ab6d58b26a2cf5363d79cdccfcbd487c655ef2fb246af5",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 79.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-east-4.png",
+          "sha256": "b427ae728c86a4c4a6c50c75b669b344208fe6c816dc750bb59fe5ab776c84f5",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-east-5.png",
+          "sha256": "ecf8769f994e4468182ac3da6b7b02f50bdfda44523cc67188b7fc211eb1e214",
+          "neck": {
+            "x": 62,
+            "y": 44
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 83.3
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-east-6.png",
+          "sha256": "bbcd5c7c7435b2f655900a88cbf6fb0fc9c3a4c2b1b5743ed0c2909d80cd977a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 73.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-east-7.png",
+          "sha256": "6225db26495dcfde5cecaca4319ac342e603a13f7509e719c99455e3e5515126",
+          "neck": {
+            "x": 57,
+            "y": 47
+          },
+          "main": {
+            "x": 68.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 77.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "bow-ullr"
+        }
+      ]
+    },
+    "east": {
+      "headOffset": {
+        "x": -4,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 113
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/idle/east.png",
+        "sha256": "95bc88415846a8ef92b6c9f0c90cecfea94c31e90998b827e89a4097820215dd",
+        "neck": {
+          "x": 59,
+          "y": 48
+        },
+        "main": {
+          "x": 60.5,
+          "y": 81.5
+        },
+        "off": {
+          "x": 56.5,
+          "y": 67.5
+        },
+        "bakedWeapon": "bow-ullr"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/east-0.png",
+          "sha256": "d9a1edcf73ae188ad734a6414c7d02eee1df7a2feb60db5a8fad76f27d10cf51",
+          "neck": {
+            "x": 52,
+            "y": 47
+          },
+          "main": {
+            "x": 61.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/east-1.png",
+          "sha256": "37810f918623f32ad88bd60d0bf27e2adb5dfafd8a86e5ca9c4ffd8e0377d992",
+          "neck": {
+            "x": 50,
+            "y": 47
+          },
+          "main": {
+            "x": 63.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/east-2.png",
+          "sha256": "5d386b0b913a8ee6720745f3f3b6473f5ffbaf920aadaf32e1b882f84c8fb238",
+          "neck": {
+            "x": 47,
+            "y": 47
+          },
+          "main": {
+            "x": 63.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/east-3.png",
+          "sha256": "c96a6b6b30f623322f8dd34afdb4b0552c3954bdb9b8d144f77d5e1f590cd7cc",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 65.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/east-4.png",
+          "sha256": "e36827be4fc578c59ef6c747501d21d0da64bb938bbae5755c20a3854ed353c5",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/east-5.png",
+          "sha256": "74cdcd88f6745bab4111f6b0a45e972fe74ec889728caa883440bdb669e386a9",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/east-6.png",
+          "sha256": "0c270343c660dd31ce10916aa1280f1dc151ab932dec6d63f0f8b7b9c293c71b",
+          "neck": {
+            "x": 48,
+            "y": 45
+          },
+          "main": {
+            "x": 61.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/east-7.png",
+          "sha256": "513f7ad75c3a66b3aab8e60281878f9974f7e056689eafe030aa83eb0a238b04",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 69.5
+          },
+          "bakedWeapon": "bow-ullr"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/east-0.png",
+          "sha256": "c7c0e20c66b1242e9b5d5a26c36cd6c726820f980b4626912e0a6d0cdc6faf6b",
+          "neck": {
+            "x": 57,
+            "y": 47
+          },
+          "main": {
+            "x": 81.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/east-1.png",
+          "sha256": "c5a1f07906056cf491014adf9f8db109009cddf5d75340a40b21c366d53447ca",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/east-2.png",
+          "sha256": "1172799da69a9dee5b81d5c6dd0fca2e81050a948e3bd36ffed77df719cee8ab",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 57.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/east-3.png",
+          "sha256": "6939e566e6aa61fbcceff411db2088c38b73522c633e6a0b5d9746b0707438b5",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 85.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 53.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/east-4.png",
+          "sha256": "4246a354c6447c437c63fc49df010cd4bc9876205a5a5397fd69ccbc32dc3e10",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 53.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/east-5.png",
+          "sha256": "7c1164af6bb4ce2fc6d9e460e3262b4109ced4ead78e2bb4c490a40cf6b3a80d",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 56.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/east-6.png",
+          "sha256": "bb1f84bac954effe30e71f689b100a2b704d0c3a720745f91c0a74ab40ac10d2",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/east-7.png",
+          "sha256": "459bffbb6a9831465cbb10d7d897a59506e084df363faacb23058b4298ca2ceb",
+          "neck": {
+            "x": 61,
+            "y": 49
+          },
+          "main": {
+            "x": 81.5,
+            "y": 60.5
+          },
+          "off": {
+            "x": 81.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "bow-ullr"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/east-0.png",
+          "sha256": "93eec3f54e904d2602c40b408c2c5ef4feea59202efd24892eb057cfac441ea7",
+          "neck": {
+            "x": 56,
+            "y": 47
+          },
+          "main": {
+            "x": 51.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 65.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/east-1.png",
+          "sha256": "516183664e065821be787cc5e51a8bb0203d678eee2c312531ad47aedb3d5d08",
+          "neck": {
+            "x": 55,
+            "y": 51
+          },
+          "main": {
+            "x": 54.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 62.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/east-2.png",
+          "sha256": "b7a832105b09606b7ce91d8b70897e475ca60331138b411aa8a97b0675a00721",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 51.5,
+            "y": 88.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/east-3.png",
+          "sha256": "c42941d4d07d34ebfa47cba9cbfcd0b7b794712c7d8bca3f22f35b109d851307",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/east-4.png",
+          "sha256": "a770fcef18194178da6f9f683ee97de2f768c595bb9e30f32296ca969adec572",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/east-5.png",
+          "sha256": "71896eac7d2f73ea991760fb31e5173b6065ac17b92dd807486078d9d20b4b1a",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/east-6.png",
+          "sha256": "e45cea9db484966114659799c50881047ee82a6c28070750646168cdfd5ebdbf",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 86.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 67.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/east-7.png",
+          "sha256": "01d2bfa558afae549190d654b30936293eb89ac13ac92cc7ba074f8fece87cb4",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 66.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "bow-ullr"
+        }
+      ]
+    },
+    "north-east": {
+      "headOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/idle/north-east.png",
+        "sha256": "df29e8636d7d98996c0c7fc417df8abb744581e89f0f37735e1c8ce2ea670237",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 76.5,
+          "y": 80.5
+        },
+        "off": {
+          "x": 46.5,
+          "y": 76.5
+        },
+        "bakedWeapon": "bow-ullr"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-east-0.png",
+          "sha256": "3fbdbdf7a27f313817b426f9b1fe33caa3aabe55ff554ce0de1e2bb401d23b15",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-east-1.png",
+          "sha256": "9a1633f03a6cdae0780347e6ea4ee03c31e536784d189ec9896ee6a9161a0974",
+          "neck": {
+            "x": 68,
+            "y": 45
+          },
+          "main": {
+            "x": 67.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-east-2.png",
+          "sha256": "339725d7efcb9b4016d992507870ff76bd73210087a2027346ed2064210d7d58",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 81.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-east-3.png",
+          "sha256": "e0b85317e2669b3bf2a0f78f6196bf9448ba32cd0df92afaf6d43161489ab954",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-east-4.png",
+          "sha256": "5dd85517cded2dd578f7ae941151285e9f94851e2a1ad62ac1a94e63500b8265",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 71.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-east-5.png",
+          "sha256": "80f4985c4443b00a9069c1136ec44692a802e65bfa9c5c181c3fb29cd71581fd",
+          "neck": {
+            "x": 68,
+            "y": 45
+          },
+          "main": {
+            "x": 75.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-east-6.png",
+          "sha256": "fe30d2d6fcd28f609e19878a6b0e60f16f7528566a57b1ab10716b5b9805fc31",
+          "neck": {
+            "x": 69,
+            "y": 45
+          },
+          "main": {
+            "x": 76.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-east-7.png",
+          "sha256": "72f7b0d916fc5b2d329023ee531249f0a8a56ff12e3ff806c4fa46bbec175455",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "bow-ullr"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-east-0.png",
+          "sha256": "d0a403f2616b86e1fdfe45f6343fbc445d29ee826d4000c464c7dc246834fffb",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 53.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-east-1.png",
+          "sha256": "c23f0d5fe21d09f77dde88e8fe60359f7d01a2be52f2dd84448d78562540c6b9",
+          "neck": {
+            "x": 71,
+            "y": 52
+          },
+          "main": {
+            "x": 77.5,
+            "y": 56.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 59.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-east-2.png",
+          "sha256": "78750ddf02a49b8cfc7901429abaee29aaaf0c1094c8696c074c3f58b9db5871",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 56.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 57.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-east-3.png",
+          "sha256": "3dbea7b077be1c0a3730a662a85a748724f109d00ce490b8b918b917f2d10e11",
+          "neck": {
+            "x": 86,
+            "y": 44
+          },
+          "main": {
+            "x": 79.5,
+            "y": 55.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 51.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-east-4.png",
+          "sha256": "e7866c2d2e18a78408fe67e034733bae4360d52086a6cb5ce9d4bc190cc23bb1",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 54.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 50.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-east-5.png",
+          "sha256": "9805a32deb66afb4629db5853d48fe0767b4e1d861595dbd928c3e827315d50d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 78.5,
+            "y": 57.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 50.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-east-6.png",
+          "sha256": "573f414d21b797278e3009ee224d99ce1f598f3538c81d56a5367eb35d0ce4fb",
+          "neck": {
+            "x": 71,
+            "y": 53
+          },
+          "main": {
+            "x": 82.5,
+            "y": 54.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 59.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-east-7.png",
+          "sha256": "3ef216a6712a854ce89fdc1cc288bd1bef9e12bf31837177e059f2148b063411",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 78.5,
+            "y": 56.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 59.5
+          },
+          "bakedWeapon": "bow-ullr"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-east-0.png",
+          "sha256": "d8c5bcb8b9afa15876ef912debf9a934cc985a2105aebc2dc4103b610d23c3eb",
+          "neck": {
+            "x": 63,
+            "y": 47
+          },
+          "main": {
+            "x": 74.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 72.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-east-1.png",
+          "sha256": "27da6c2460a32003e836bed24ea4efdc2b2841461022a779fe491ba3d74fd96c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 88.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 74.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-east-2.png",
+          "sha256": "3f22e8d060dbbb84df22188a7201dfb93f1b3729824888d37b0bdfe36f869f0a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 50,
+            "y": 78.6
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-east-3.png",
+          "sha256": "cea4d1bfe6fb4621c70151bc7766e5add10725cbf23f425e2bb191142de93dd1",
+          "neck": {
+            "x": 70,
+            "y": 52
+          },
+          "main": {
+            "x": 80.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 87.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-east-4.png",
+          "sha256": "31104387ac3507631e4b8f17ab31b02024f3d01a9de33bb1cff69d86ddb80715",
+          "neck": {
+            "x": 67,
+            "y": 53
+          },
+          "main": {
+            "x": 80.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 50,
+            "y": 78.6
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-east-5.png",
+          "sha256": "81d0466e6633331d4e3477581278e81bb18d14f51d4588c47cf84f6ed4eb018a",
+          "neck": {
+            "x": 66,
+            "y": 50
+          },
+          "main": {
+            "x": 79.5,
+            "y": 88.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 87.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-east-6.png",
+          "sha256": "77afa393d46ee78d2153af734c3e4253824a65ca8110b567a727d8996abd93f9",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 50,
+            "y": 76.6
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-east-7.png",
+          "sha256": "053378513cefef75e582f4a319a2edf24b8c8eeaea110192d62b41f7c41e2561",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 77.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 72.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "bow-ullr"
+        }
+      ]
+    },
+    "north": {
+      "headOffset": {
+        "x": -2,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/idle/north.png",
+        "sha256": "87e1f40d6e82b73af011a6253f50f131c34ca7583163829c3a9df5b1d2205d48",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 83.5,
+          "y": 77.5
+        },
+        "off": {
+          "x": 44.5,
+          "y": 76.5
+        },
+        "bakedWeapon": "bow-ullr"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-0.png",
+          "sha256": "f9bd0f9ebc16114eb3368538588b73b32de17742e8f807ebfbd6c83d6e3967a3",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 70.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-1.png",
+          "sha256": "2c088eee7232ec2eab423f9f67922e606c797406751761d6f7cac6b85f4a9741",
+          "neck": {
+            "x": 66,
+            "y": 49
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-2.png",
+          "sha256": "99edbff8dd9f0f1c946c73bfaa74a93fb210724c6e2e5eee0e167da5f2c63e99",
+          "neck": {
+            "x": 66,
+            "y": 49
+          },
+          "main": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-3.png",
+          "sha256": "0eb6a1247a3d169c5874c2f398a61615a4d8a501d7a5ce83c4fbfd7153ea2725",
+          "neck": {
+            "x": 64,
+            "y": 49
+          },
+          "main": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-4.png",
+          "sha256": "4e507dfe173d998f453fff3c846aa3d4175e46fe3a55c4ed490a98551d7bc379",
+          "neck": {
+            "x": 66,
+            "y": 47
+          },
+          "main": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-5.png",
+          "sha256": "b587c411290b534b94104f3dd481a1db0baad7bab067003142e40a45d9764842",
+          "neck": {
+            "x": 66,
+            "y": 47
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-6.png",
+          "sha256": "b9a4b19a6eb9cb1f6837e9aeee61558c7f16878d51e7aca8359ef6d571bc6e3e",
+          "neck": {
+            "x": 66,
+            "y": 47
+          },
+          "main": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 73.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-7.png",
+          "sha256": "51ab1b007d9010e209970066dd4c477578b68211232d927c3524db2cbb82b088",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 84.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 70.5
+          },
+          "bakedWeapon": "bow-ullr"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-0.png",
+          "sha256": "a3283645976f6e30267f71f98bfa4b58c9baca1a7b1cecc79fa5dc4180b31020",
+          "neck": {
+            "x": 64,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 54.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 61.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-1.png",
+          "sha256": "59b42e7944316e384a3b98c2bae99de5f5dac05b8f110bf97b88b20e90922dac",
+          "neck": {
+            "x": 62,
+            "y": 41
+          },
+          "main": {
+            "x": 79.5,
+            "y": 51.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 56.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-2.png",
+          "sha256": "4fa0864e1660e6767ae92d7ac4c1da64fda039630d92a8b4680fe2d8a28e9f89",
+          "neck": {
+            "x": 71,
+            "y": 44
+          },
+          "main": {
+            "x": 78.5,
+            "y": 50.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 51.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-3.png",
+          "sha256": "2d7ccb99c3d457afffaa38b80f26c93d26215e73fe575c9c8cb64215bb7fa7a3",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 78.5,
+            "y": 50.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 52.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-4.png",
+          "sha256": "59529def69d0f3b18a12aecf178bd00edef4c0b43dc1dc6fb92d9d60ca28e015",
+          "neck": {
+            "x": 63,
+            "y": 42
+          },
+          "main": {
+            "x": 79.5,
+            "y": 51.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 51.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-5.png",
+          "sha256": "e20ff58834821423073aabd9f6ff8243f83a0d1fec433ea62e9ebe59d2fe1ca1",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 79.5,
+            "y": 50.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 50.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-6.png",
+          "sha256": "b1f5271f3468b38a9d8a0a8712f0172c5da4eed52692508b4de455827aafea8f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 77.5,
+            "y": 52.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 57.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-7.png",
+          "sha256": "e430526792cb8ef4ef15cd3eefc9ec5286532c421e4e9df90562063a5591c4fa",
+          "neck": {
+            "x": 63,
+            "y": 47
+          },
+          "main": {
+            "x": 79.5,
+            "y": 54.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 57.5
+          },
+          "bakedWeapon": "bow-ullr"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-0.png",
+          "sha256": "9b279147895458fbf1fe6e144109b4519a4a53c376b1a74816aa030d7c02b0cd",
+          "neck": {
+            "x": 63,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 43.5,
+            "y": 76.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-1.png",
+          "sha256": "d9797b5b90d3f747dfc27739c370400941e53be6d61c69375e7ea7a81f61d6df",
+          "neck": {
+            "x": 58,
+            "y": 46
+          },
+          "main": {
+            "x": 83.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 39.5,
+            "y": 72.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-2.png",
+          "sha256": "f62d20828d1b85504acd568dcc8fb125a6eb0d5eb8f77a8d39bcd109c03e1906",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 85.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 41.5,
+            "y": 72.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-3.png",
+          "sha256": "a02ba1e626a8db9174da94cfb985d1341ac137a0a0587b77623e221ba484b9e8",
+          "neck": {
+            "x": 59,
+            "y": 42
+          },
+          "main": {
+            "x": 78.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 67.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-4.png",
+          "sha256": "eafcf27e132b9163b46a3a9e3a21bbb5fa1bad01d2872c675fa810f0ea074bf9",
+          "neck": {
+            "x": 59,
+            "y": 41
+          },
+          "main": {
+            "x": 76.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 39.5,
+            "y": 72.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-5.png",
+          "sha256": "72f9735b6f48bb7929cb9a58f78e4f1749f6e3bd0d05c699ec93e26de230c090",
+          "neck": {
+            "x": 59,
+            "y": 44
+          },
+          "main": {
+            "x": 77.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 40.5,
+            "y": 72.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-6.png",
+          "sha256": "54bd3ca353047c74d18a9db08eb30ec93eccb301eed52fb00b83dc59a37d0ad2",
+          "neck": {
+            "x": 59,
+            "y": 47
+          },
+          "main": {
+            "x": 77.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 40.5,
+            "y": 72.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-7.png",
+          "sha256": "edd3a0faf7887863bcaef8d667a70735f7885b571787b1193bd605d3ff8a11b9",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 84.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 67.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "bow-ullr"
+        }
+      ]
+    },
+    "north-west": {
+      "headOffset": {
+        "x": -2,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 62,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/idle/north-west.png",
+        "sha256": "f65cb4ce6de240747e3bc65a0d30080bd427f70c8b2a3190a3507383a9116a8c",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 51.5,
+          "y": 82.5
+        },
+        "off": {
+          "x": 77.5,
+          "y": 76.5
+        },
+        "bakedWeapon": "bow-ullr"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-west-0.png",
+          "sha256": "7629a970091ab10a9e2651af0da46f4c33fc8c4ffbae5626f86138f7a93b35a6",
+          "neck": {
+            "x": 69,
+            "y": 47
+          },
+          "main": {
+            "x": 48.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 69.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-west-1.png",
+          "sha256": "d049d361cabfbb2db4ab0ae75389245d577b547e61e086fb4e1672d4c9281f18",
+          "neck": {
+            "x": 68,
+            "y": 47
+          },
+          "main": {
+            "x": 47.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-west-2.png",
+          "sha256": "e9388d108c446589fc477fed8b087a76061899a440e153f4e79d084f48345b50",
+          "neck": {
+            "x": 69,
+            "y": 51
+          },
+          "main": {
+            "x": 47.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 86.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-west-3.png",
+          "sha256": "08230632f190fb72718411c8cb8e9c5e9dc961c9cea79b977ae436da5e8fde56",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-west-4.png",
+          "sha256": "0f2184bf8fe55da628cee63370678b6d543e1607ee334d228f8029ece00b329d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-west-5.png",
+          "sha256": "7798acf64c95f7699accc4558da0e65f9d01809869f5d7a6f750a6db3256bd32",
+          "neck": {
+            "x": 69,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-west-6.png",
+          "sha256": "3cabaf97193944b0a126a9817160419ca2b9134e3344c1c35af9ee6e1a93ad46",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 52.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/north-west-7.png",
+          "sha256": "1f226c83a0bd259bafcc0127d7fbe78d0f3e1567488d91b519968f5aae95cef6",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "bow-ullr"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-west-0.png",
+          "sha256": "8ddaf3596968366647a9d8041dff929c65db580e76afb32265a2c137e7369793",
+          "neck": {
+            "x": 67,
+            "y": 50
+          },
+          "main": {
+            "x": 42.5,
+            "y": 57.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 61.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-west-1.png",
+          "sha256": "7042ce7bcd3e94a94c1713d15e3920500e3835eac8f428ec6f6e1ab92c055a6c",
+          "neck": {
+            "x": 63,
+            "y": 49
+          },
+          "main": {
+            "x": 44.5,
+            "y": 57.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 58.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-west-2.png",
+          "sha256": "2877313696b9267224042722da673ca0b6c9f982bb36b0acddfdff62ea9277cf",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 43.5,
+            "y": 58.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 51.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-west-3.png",
+          "sha256": "c34806e3c2bc75aa44275eab84d0777c218b8e3cd92f9e3aa1495f69d99e5768",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 43.5,
+            "y": 56.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 50.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-west-4.png",
+          "sha256": "2c557592877039b38fb8b5f8207e9ebf72e211ee3b38e32a23ca942b1869c183",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 43.5,
+            "y": 56.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 52.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-west-5.png",
+          "sha256": "def62221143f8fbbc4306350d6c77f6d8524fb595a7717f9914bbc2870401ed8",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 43.5,
+            "y": 56.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 55.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-west-6.png",
+          "sha256": "267d334d2d1e27d73b044783305faa71da9c9cd00aae9fde635ceae557ccdb40",
+          "neck": {
+            "x": 68,
+            "y": 53
+          },
+          "main": {
+            "x": 43.5,
+            "y": 57.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 59.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/north-west-7.png",
+          "sha256": "34d138ef26008b70689ae6d0af4e84dea76c56a3fea3ae6ff6b9f0a8f38df9e9",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 45.5,
+            "y": 58.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "bow-ullr"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-west-0.png",
+          "sha256": "f64a7ea91be05066ca317952fab94c13213fcd5d25ea46952625cb3afeadcd58",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 73.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-west-1.png",
+          "sha256": "61f3cdd09f1e184bbc11449c5d92f5729b43d156e6894636031cdd208bb05468",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 77.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-west-2.png",
+          "sha256": "38985000221d831b174e6e8e0bd28295e0e7c304f7d4d5f275befb5e424a2586",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-west-3.png",
+          "sha256": "e0fceb3285706c6d26f2c91aa6136a12d45105a6105944373bed07372e6c041c",
+          "neck": {
+            "x": 63,
+            "y": 47
+          },
+          "main": {
+            "x": 49.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 86.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-west-4.png",
+          "sha256": "4a9e68dbf786a49bf6a2769daf9d7bdec995f6b725396936f1f695abcd66d808",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 51.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 79.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-west-5.png",
+          "sha256": "5d62d7b67636b1b4e04f615631fde1d9da308704c7514feb690a1313d8cc5b1e",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 87.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-west-6.png",
+          "sha256": "d772793a3da6050d6f87d6da33617b84e125ce099df13776c48b669b92006ef4",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 52.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 76.8
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/north-west-7.png",
+          "sha256": "0fa34f8645b3a4875d4fd08aa508ada8b5352af8b75405d3d1639c5a659c9157",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 52.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 81.5,
+            "y": 73.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "bow-ullr"
+        }
+      ]
+    },
+    "west": {
+      "headOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 61,
+        "y": 113
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/idle/west.png",
+        "sha256": "43eda2fbefce9bf87ded6ed331bd8a291964ff6dc68f7e67d9266c2d82e8271a",
+        "neck": {
+          "x": 65,
+          "y": 48
+        },
+        "main": {
+          "x": 64.5,
+          "y": 81.5
+        },
+        "off": {
+          "x": 63.5,
+          "y": 64.5
+        },
+        "bakedWeapon": "bow-ullr"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/west-0.png",
+          "sha256": "d3ffad406f01ac3de51f30f693939bf9d2f36968b4d5484c4920d2ab0d8fbf55",
+          "neck": {
+            "x": 73,
+            "y": 44
+          },
+          "main": {
+            "x": 61.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/west-1.png",
+          "sha256": "629eced1aad5b2eb185b3158123dbf0a197c9b7c14e9983016f3f259c38305f9",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/west-2.png",
+          "sha256": "1a6d8d9d86575a4b0d114a860046bddb79bbe7615fb79c04dea3a63ffe6f0486",
+          "neck": {
+            "x": 71,
+            "y": 46
+          },
+          "main": {
+            "x": 56.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/west-3.png",
+          "sha256": "243de305715d762bc968c4f054643dc7a6e1de83868fb5547fc1d51e6807a581",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/west-4.png",
+          "sha256": "32ec30fede3dbf2c87287b15f5caaf471f77ebd814fe9dd9dcaebffd18b3b0d0",
+          "neck": {
+            "x": 72,
+            "y": 43
+          },
+          "main": {
+            "x": 62.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/west-5.png",
+          "sha256": "35b1cb77833c498a3f8b29e3b6048f3b05f9f64c054acc79c1e68fa5d4633691",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/west-6.png",
+          "sha256": "65f9649883cf1c2cef4e3744c08f343aa4e6e77776430ee25a629e679d2863ae",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/west-7.png",
+          "sha256": "62d81fbed477097b0e7d5ccb9edf3a1f241724927862cd8dbdc6f2a411ac195d",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 57.5,
+            "y": 88.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 69.5
+          },
+          "bakedWeapon": "bow-ullr"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/west-0.png",
+          "sha256": "73451999666e766203d6b7f0a11306ec9c58ddcd8882fe0fede381ae491c0515",
+          "neck": {
+            "x": 54,
+            "y": 41
+          },
+          "main": {
+            "x": 41.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/west-1.png",
+          "sha256": "aa9f0beb605aecf8a027621f29fca254fc483846a8cf3d257fad18c43e41cebc",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 40.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/west-2.png",
+          "sha256": "d9d6cd06577e3e7b5c1de11198cf3a87d0ffa1b78cc92a1418b63d260f829227",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 40.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 57.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/west-3.png",
+          "sha256": "0595acf32f271eac5f8df93faf397f1119c21b601bf7f2ef769734149b951a42",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 39.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 54.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/west-4.png",
+          "sha256": "60f6a9a6b0907767e40fbb8f5b8331eade759261f25dcbec734801448cfda393",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 39.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 52.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/west-5.png",
+          "sha256": "1a4facd1b0599dd67b8ca00c37a499e392f202716deab0f76c887f9cd77da3e0",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 40.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 55.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/west-6.png",
+          "sha256": "e7d0b03a7c812de6f299d3606a4504ec525b8e796f29c46e3514d36901b2c6a7",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 40.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/west-7.png",
+          "sha256": "8a36373e288d257d4800d54bf4c6c5252c6dd8bb70ab156f2032c94067b07b09",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 42.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "bow-ullr"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/west-0.png",
+          "sha256": "05f9d9b6bb604facd91570c58aa97913db64547245ba18f4b7167c5225a7e33b",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 65.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/west-1.png",
+          "sha256": "f72c0a1f603a6318da20d85a27f898eb7b08b59b5304378e8d6823c22d3973be",
+          "neck": {
+            "x": 60,
+            "y": 44
+          },
+          "main": {
+            "x": 66.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 62.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/west-2.png",
+          "sha256": "67bab0c52a37039ed7f8eb5cd8dd694b8176ce45795fc057976401746d580f78",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 63.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/west-3.png",
+          "sha256": "49d6c8dc17889c8646f333eda0cd81adb15feeda6bc6937a621ba6e30b8a7215",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 62.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/west-4.png",
+          "sha256": "cce9d912f70e492e1f0d21f338ab8604d469083ed7f04906405487ee5aa7b877",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/west-5.png",
+          "sha256": "3d71a0a053b109202573fe399c499b20ed12e6361729609c8a0d9d213575bac6",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 92.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 64.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/west-6.png",
+          "sha256": "8ea54be5c33682cb8219b956bbbf5e23dffc9d356fafd1db10e3ea3898c37f0e",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/west-7.png",
+          "sha256": "56346e043f541bc8b3f9f9b9a5c8f9475bcf8287f74af1bfdb9ce4e5ad68fb41",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 60.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 64.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "bow-ullr"
+        }
+      ]
+    },
+    "south-west": {
+      "headOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 61,
+        "y": 114
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/idle/south-west.png",
+        "sha256": "c7497a37671ac213106800c95b593a4a0236a184f0d95468596848276f3dbfad",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 50.5,
+          "y": 64.5
+        },
+        "off": {
+          "x": 74.5,
+          "y": 81.5
+        },
+        "bakedWeapon": "bow-ullr"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-west-0.png",
+          "sha256": "54416d356ed11cf70237b7fcea672c1d4cebb266829d50f7fa497e153bf9b859",
+          "neck": {
+            "x": 73,
+            "y": 44
+          },
+          "main": {
+            "x": 48.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-west-1.png",
+          "sha256": "73be5043974de3bcf7d261c97fd2229135530714bf70078ff9adc20f7bd34e4c",
+          "neck": {
+            "x": 69,
+            "y": 43
+          },
+          "main": {
+            "x": 48.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-west-2.png",
+          "sha256": "8c074bc6f284182248f87e128c2e4a35f3168dc454a3b73bb25cf425c4e54728",
+          "neck": {
+            "x": 67,
+            "y": 43
+          },
+          "main": {
+            "x": 47.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-west-3.png",
+          "sha256": "fb94247b5ccfbc4c64788e552c9feafb03247be298d26e715ee756ec109d3b68",
+          "neck": {
+            "x": 69,
+            "y": 45
+          },
+          "main": {
+            "x": 54.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-west-4.png",
+          "sha256": "7165a11978e665965608c909252af8c5206a42a2f5d7774a286faa9cbb74f60a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 47.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-west-5.png",
+          "sha256": "a468d2d0f440df8195a01be20eba7563caa0efddb02e3906e6bc3c747829c5ea",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-west-6.png",
+          "sha256": "29d2434a9981e2c3366e63c8550847378bd6a0007fda2c7e8c6f2d27561cd550",
+          "neck": {
+            "x": 68,
+            "y": 43
+          },
+          "main": {
+            "x": 49.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/walk/south-west-7.png",
+          "sha256": "c1a1efc273211a7f2a4d85b258691b7e0ce7ec371b5ee11844cc74f72c89f924",
+          "neck": {
+            "x": 68,
+            "y": 43
+          },
+          "main": {
+            "x": 49.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "bow-ullr"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-west-0.png",
+          "sha256": "92c0c1a2284038ccfd54b8f65849fd1a9969c36de87dd1e939db4151c8d674de",
+          "neck": {
+            "x": 66,
+            "y": 44
+          },
+          "main": {
+            "x": 44.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-west-1.png",
+          "sha256": "91af59b22f06523837abb42f0f0cf0d0aaa1af78e25de7825ece72d34e9e2d25",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 45.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-west-2.png",
+          "sha256": "f327d26c93744821e57364bf2a98a8b719ee9040e98f38b7582937c445e4b867",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 43.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 59.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-west-3.png",
+          "sha256": "6923c841406063414e51ba02744970cac5fcdc360a9d5a5ed29da2d231554b71",
+          "neck": {
+            "x": 68,
+            "y": 45
+          },
+          "main": {
+            "x": 43.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 52.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-west-4.png",
+          "sha256": "1970531a079fe266d7d245d16fbc48319ad6f9b7544da78c722c522302ff9cb3",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 43.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 54.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-west-5.png",
+          "sha256": "4e6b8334d1adf7a717f7851cac4ca99363a9a89a9f2dafe96991b59353a97d7a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 43.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 54.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-west-6.png",
+          "sha256": "03725ecc9f0e2dde1c463737f9ae72e1e2ed5d2668f978dd7877b45419856993",
+          "neck": {
+            "x": 67,
+            "y": 43
+          },
+          "main": {
+            "x": 44.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/attack/south-west-7.png",
+          "sha256": "8e7dccd07a1261699fcc920f720af018599da3d5aa9feb8c57785a151751a4f6",
+          "neck": {
+            "x": 67,
+            "y": 43
+          },
+          "main": {
+            "x": 44.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "bow-ullr"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-west-0.png",
+          "sha256": "4c41e8cef382a6f9509644d46ba8df4ada2169ca873740338a46105c27a08581",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 61.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 81.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-west-1.png",
+          "sha256": "da0e15c006e6c1f45539d89ed045910422cf8bc1d0b90139996415bb19fb61ce",
+          "neck": {
+            "x": 62,
+            "y": 49
+          },
+          "main": {
+            "x": 49.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 81.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-west-2.png",
+          "sha256": "f3bf8acffaffc6c50ce8fdfd5b06a24fbfbbeed1692f50ca9cbc95f62bb5fced",
+          "neck": {
+            "x": 60,
+            "y": 51
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 82.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-west-3.png",
+          "sha256": "0aa59e2f9e7636253ebf3767cb7ae9d7bc6e84393d414347e3e162d8ae5f532c",
+          "neck": {
+            "x": 66,
+            "y": 51
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 79.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-west-4.png",
+          "sha256": "c8efb2d6d975ed5c79fdf0b59cb6db0587b1e8e35fde39af19a555221fc32b29",
+          "neck": {
+            "x": 66,
+            "y": 50
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 82.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-west-5.png",
+          "sha256": "7d8c23928b4cea6f83b6287d354ba47d5c55dadf0bcc278b2e5c1b71a354c7d0",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 81.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-west-6.png",
+          "sha256": "a21d890983c6944a58e67ed7196d53211cc4af19abd983c56aa57934a08892ba",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 81.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "bow-ullr"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/ullr-hunter-detail/cast/south-west-7.png",
+          "sha256": "41218374a7af95b3a2c39d7331e344a2a7269111d9926da5cd4dd3a2c35742e0",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 51.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 79.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "bow-ullr"
+        }
+      ]
+    }
+  }
+}

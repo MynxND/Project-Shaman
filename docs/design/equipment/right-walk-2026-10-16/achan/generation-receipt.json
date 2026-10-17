@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-16",
+  "generator": "built-in image_gen.imagegen",
+  "calls": 2,
+  "initial": {
+    "receiptName": "exec-4e1222bc-28a9-4c8c-8d7b-85229d94ef17.png",
+    "prompt": "prompt.txt",
+    "output": "source-armed-superseded.png",
+    "status": "superseded by user weapon-only-attack instruction"
+  },
+  "corrected": {
+    "receiptName": "exec-222aeeac-8b29-4997-9a35-3005ea9326b8.png",
+    "prompt": "../unarmed-correction-prompt.txt",
+    "reference": "source-armed-superseded.png",
+    "output": "source.png",
+    "status": "unarmed walk candidate; not approved"
+  },
+  "thirdPartySpriteInputs": 0
+}

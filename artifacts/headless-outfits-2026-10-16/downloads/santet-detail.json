@@ -1,0 +1,3607 @@
+{
+  "id": "santet-detail",
+  "branch": "santet",
+  "attackAction": "attack-cast-wand",
+  "directions": {
+    "south": {
+      "headOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 62,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/santet-detail/idle/south.png",
+        "sha256": "dc5d4f9589fd670284c211d6b1ea22c818610afaa5ce31911ea09c4df751cec8",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 43.5,
+          "y": 78.5
+        },
+        "off": {
+          "x": 81.5,
+          "y": 76.5
+        },
+        "bakedWeapon": "wand-santet"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-0.png",
+          "sha256": "54f01a6b022c3eaa1d3824b6e372df3887eb956c303cfac1dff8a2aad94eeb93",
+          "neck": {
+            "x": 63,
+            "y": 47
+          },
+          "main": {
+            "x": 42.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-1.png",
+          "sha256": "797d8c69a89777c2bce6f216e9959948e1d0be289ad2aede18e0eda5d6922385",
+          "neck": {
+            "x": 60,
+            "y": 47
+          },
+          "main": {
+            "x": 42.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-2.png",
+          "sha256": "2ed38dcd42659a5c2e6ba8334452f76649b5830fc9ba6307a51621d4cdfd4716",
+          "neck": {
+            "x": 58,
+            "y": 47
+          },
+          "main": {
+            "x": 43.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-3.png",
+          "sha256": "ddcb101f266fae127c71a39ec7d0455f9bb50b046c5eae0530b8b5c22fee4b02",
+          "neck": {
+            "x": 58,
+            "y": 46
+          },
+          "main": {
+            "x": 41.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-4.png",
+          "sha256": "d24ee3462bea8490ab981cdaf54d2c64ec4593ae3e343c5a1360b7ae81427af5",
+          "neck": {
+            "x": 60,
+            "y": 47
+          },
+          "main": {
+            "x": 41.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-5.png",
+          "sha256": "19dc511853811032300a0f4236f3cac636d77c8e988230365b748fc176a5b3fa",
+          "neck": {
+            "x": 60,
+            "y": 46
+          },
+          "main": {
+            "x": 41.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-6.png",
+          "sha256": "d0c8bed3da96945b34131c8cda57761823580146ecd2b2075f5785057f1fb78b",
+          "neck": {
+            "x": 57,
+            "y": 47
+          },
+          "main": {
+            "x": 41.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-7.png",
+          "sha256": "a30c09a1431cd652db38f0710d8cbf8ccc8272e51906e99902606b890211fdd5",
+          "neck": {
+            "x": 59,
+            "y": 46
+          },
+          "main": {
+            "x": 42.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "wand-santet"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-0.png",
+          "sha256": "9f73018ccde31f774f3faa135fab56c32d23acb8b16c863b3a19c2d2f33d37ed",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 55.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-1.png",
+          "sha256": "a20468a469b46024b106e53e2bd1c6aa6f4e7d348826b43bbdb950e80dd5be10",
+          "neck": {
+            "x": 64,
+            "y": 55
+          },
+          "main": {
+            "x": 61.5,
+            "y": 50.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-2.png",
+          "sha256": "58692047bcca9f3b52ec07737d9a6f65b6a32f5e7924ee8325876270ed8760e1",
+          "neck": {
+            "x": 60,
+            "y": 54
+          },
+          "main": {
+            "x": 52.5,
+            "y": 56.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 71.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-3.png",
+          "sha256": "84e352f27f659f89afa0fa4b2c34cad23bd0cb4e1cab926c6bf83b247157cb88",
+          "neck": {
+            "x": 46,
+            "y": 55
+          },
+          "main": {
+            "x": 47.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 71.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-4.png",
+          "sha256": "c719b24ebaa531a9eb2b081c49b87f5f309992fc5e851051d0e2045363ea2042",
+          "neck": {
+            "x": 68,
+            "y": 50
+          },
+          "main": {
+            "x": 46.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-5.png",
+          "sha256": "654b4d9dad4cc30f4d1b2c5fade8e0e9dcfc07fda46920e7edbb0103241442b2",
+          "neck": {
+            "x": 66,
+            "y": 50
+          },
+          "main": {
+            "x": 52.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-6.png",
+          "sha256": "c673ac09cf76469143612f9f2c5c7236ccc590bb915c0f1e29c3124a13767f65",
+          "neck": {
+            "x": 60,
+            "y": 49
+          },
+          "main": {
+            "x": 56.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 69.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-7.png",
+          "sha256": "747ed9abebc94f52a86cc4b753043a999c36d0b9a9897c1036a0737278480e8b",
+          "neck": {
+            "x": 62,
+            "y": 49
+          },
+          "main": {
+            "x": 57.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "wand-santet"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-0.png",
+          "sha256": "e1dcfc4ea99d32da6f592d536f8ef115ba443ab5742f6c0ca17e92d43e4a17fe",
+          "neck": {
+            "x": 69,
+            "y": 45
+          },
+          "main": {
+            "x": 48.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 71.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-1.png",
+          "sha256": "830c7c3cd188460b428821a0c862fabe9f820bc2717f97d079a085e4403c92f1",
+          "neck": {
+            "x": 68,
+            "y": 46
+          },
+          "main": {
+            "x": 49.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-2.png",
+          "sha256": "f07b702db864b3f8a8922b32977227a7b81bdb481748432983ab2ccf8969fa0f",
+          "neck": {
+            "x": 60,
+            "y": 49
+          },
+          "main": {
+            "x": 48.5,
+            "y": 86.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 74.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-3.png",
+          "sha256": "2b75bd7f847c09d37b55511ccd5e9e2fbc6a5ce92d58b1743b40f26629b40931",
+          "neck": {
+            "x": 60,
+            "y": 47
+          },
+          "main": {
+            "x": 47.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-4.png",
+          "sha256": "14465826ecf3ffa2eb5ea9bb14cdbc2e1de06424a2372d45eabcef695baed384",
+          "neck": {
+            "x": 67,
+            "y": 47
+          },
+          "main": {
+            "x": 48.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-5.png",
+          "sha256": "5c88598e55192144d4d33ba6126944527f539f1bc07cbe979a32581974c23a62",
+          "neck": {
+            "x": 66,
+            "y": 47
+          },
+          "main": {
+            "x": 48.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-6.png",
+          "sha256": "3372a34f09a2c80e77fb00a4205069401a274080ad963250e23d385c0dc26de4",
+          "neck": {
+            "x": 62,
+            "y": 47
+          },
+          "main": {
+            "x": 49.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-7.png",
+          "sha256": "f3e24cac7e3e93dca556692f1305f679274450c681a4a07b571fb8a685e6ecbe",
+          "neck": {
+            "x": 62,
+            "y": 44
+          },
+          "main": {
+            "x": 38.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 87.5,
+            "y": 72.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "wand-santet"
+        }
+      ]
+    },
+    "south-east": {
+      "headOffset": {
+        "x": -3,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 64,
+        "y": 114
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/santet-detail/idle/south-east.png",
+        "sha256": "05466324f6a272f20609b5eac3bb271839454d6b01988cdc68e31d3a53a3b115",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 74.5,
+          "y": 66.5
+        },
+        "off": {
+          "x": 50.5,
+          "y": 84.5
+        },
+        "bakedWeapon": "wand-santet"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-east-0.png",
+          "sha256": "763b8e924783149be066ab39eb35b51512500bd096c9074dccb85141467588d2",
+          "neck": {
+            "x": 62,
+            "y": 47
+          },
+          "main": {
+            "x": 74.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-east-1.png",
+          "sha256": "cdcd2d74a6001d513ec814d6baf89a861c1fbfc527cb18ad2051bd1c240c191e",
+          "neck": {
+            "x": 62,
+            "y": 47
+          },
+          "main": {
+            "x": 74.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 84.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-east-2.png",
+          "sha256": "2b62c4e83b700fa2479e4a9b2a442635cfe748b04078bc82cd621b8bed480fd7",
+          "neck": {
+            "x": 62,
+            "y": 47
+          },
+          "main": {
+            "x": 74.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 84.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-east-3.png",
+          "sha256": "c8db54e368fcbf1153b5e6a7592a21b111747a8a1539c80614ebd61019597cb4",
+          "neck": {
+            "x": 62,
+            "y": 47
+          },
+          "main": {
+            "x": 75.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-east-4.png",
+          "sha256": "b41748feb5c56161edd8206d41e1bc4bb709e5ae99078b8aeb5e765b226ce82d",
+          "neck": {
+            "x": 62,
+            "y": 47
+          },
+          "main": {
+            "x": 75.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-east-5.png",
+          "sha256": "ca4006ba47e151cd009992bed5d18c705c7bc1849a01d8643572c0c82bee16b9",
+          "neck": {
+            "x": 62,
+            "y": 47
+          },
+          "main": {
+            "x": 74.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-east-6.png",
+          "sha256": "42a0590c686c144a641e23da673f8da0bd56f7fe26ebede235b828c6ad95172b",
+          "neck": {
+            "x": 62,
+            "y": 47
+          },
+          "main": {
+            "x": 75.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-east-7.png",
+          "sha256": "d62803354add900587a3cc3494a4a08c622084b7fd9672b83a34d73353e9fbd9",
+          "neck": {
+            "x": 62,
+            "y": 47
+          },
+          "main": {
+            "x": 73.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "wand-santet"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-east-0.png",
+          "sha256": "09b7b8697e5ec3a5dba30dac36e91f00a17926d077652ff867a4858ae4799eb4",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-east-1.png",
+          "sha256": "154a850d869428d406501031938368e06ed9d142b08b909e7ed2e993a438e90a",
+          "neck": {
+            "x": 60,
+            "y": 48
+          },
+          "main": {
+            "x": 65.5,
+            "y": 44.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-east-2.png",
+          "sha256": "6afad2a03f230fbeb245117fa56273063afd303a94032747f50f5c5142079468",
+          "neck": {
+            "x": 49,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 54.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-east-3.png",
+          "sha256": "b5794f3036c9f9041d9a47681dcba879402d2d31770e0d53806654684ee7f4b2",
+          "neck": {
+            "x": 41,
+            "y": 57
+          },
+          "main": {
+            "x": 78.5,
+            "y": 61.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 71.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-east-4.png",
+          "sha256": "eeb027212ebfd5a5e71824c47a488415127d9dcb714ea69a4300e539cc9bf5b7",
+          "neck": {
+            "x": 59,
+            "y": 47
+          },
+          "main": {
+            "x": 80.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-east-5.png",
+          "sha256": "14d8d39d4ff2b5c4749acb0c7a70909212ededd2c23003bce01c16ec86c9134a",
+          "neck": {
+            "x": 53,
+            "y": 44
+          },
+          "main": {
+            "x": 74.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-east-6.png",
+          "sha256": "fe36781e7e996b8cc5e87a336105a19866fc1d545797addf1bd28add2da7a20e",
+          "neck": {
+            "x": 45,
+            "y": 43
+          },
+          "main": {
+            "x": 69.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 69.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-east-7.png",
+          "sha256": "f6df8f694b7da18d7e081a324df61c5ec29b4f78fa4dd4b9c0158c55ee904cad",
+          "neck": {
+            "x": 57,
+            "y": 44
+          },
+          "main": {
+            "x": 65.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-east-0.png",
+          "sha256": "8cfe93ce99357d906c143766e9ed4eeb4501a5df147909f420625378e58af186",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 81.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-east-1.png",
+          "sha256": "f3e5cde4e19006e6c2c0c821c705601c552c3cacd99c375f8623ef4df03b1271",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 79.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-east-2.png",
+          "sha256": "7bbf35070f9012aeb26a8f7523aadc8e03f49eca515aa7628f97deb5b4e7dc12",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 79.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-east-3.png",
+          "sha256": "a39f3a16a917cb7dedcd9e2ab2b6d0928766f55294ff631629002473baed9534",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 79.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-east-4.png",
+          "sha256": "f1a22c7a5e54fe834916bdacb0271ef4520cc828814a52fa1846e3fa682ee97d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 79.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-east-5.png",
+          "sha256": "41ce09d47bdaa7cf77cdcd0b2774ad33c887513b5b536a062d69f823aea24d42",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 79.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-east-6.png",
+          "sha256": "cdb379b2f6e025b39628500786be051bad4497632656f142860d6215a7b4ab7b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-east-7.png",
+          "sha256": "e479b5da0b610d1e47b7d6fcbf39964765e8e0bc817c67bdd6daff55cb999c1a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 79.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "wand-santet"
+        }
+      ]
+    },
+    "east": {
+      "headOffset": {
+        "x": -4,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 113
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/santet-detail/idle/east.png",
+        "sha256": "c6ac3927781df8ef8f9d32b3c529b214724a1b27214794d842d3d59b6681fdbf",
+        "neck": {
+          "x": 53,
+          "y": 48
+        },
+        "main": {
+          "x": 60.5,
+          "y": 79.5
+        },
+        "off": {
+          "x": 54.5,
+          "y": 66.5
+        },
+        "bakedWeapon": "wand-santet"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/east-0.png",
+          "sha256": "a7f0a95bf4c4d849a0e387b0ff5c7bdfee821fbf7713a72046db7dc0c860591c",
+          "neck": {
+            "x": 48,
+            "y": 42
+          },
+          "main": {
+            "x": 60.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/east-1.png",
+          "sha256": "63a955384862441bab78fb63088be7ecccf979d2684bfda4a18efc62ff165336",
+          "neck": {
+            "x": 50,
+            "y": 42
+          },
+          "main": {
+            "x": 60.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/east-2.png",
+          "sha256": "7fc1bb36dfc679f77fe3fccdfcc058da14ab43eba72a05272982bb08c67b5a96",
+          "neck": {
+            "x": 51,
+            "y": 42
+          },
+          "main": {
+            "x": 59.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/east-3.png",
+          "sha256": "b382a2ab3c971302d41df26eea51d9fcb138952f6801c7b9ee2b57a68da947d5",
+          "neck": {
+            "x": 55,
+            "y": 43
+          },
+          "main": {
+            "x": 60.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/east-4.png",
+          "sha256": "c48ac13f5ee165e185176b54f13920f32c2007ef2e6e3f8126975a70c3c95887",
+          "neck": {
+            "x": 53,
+            "y": 41
+          },
+          "main": {
+            "x": 60.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/east-5.png",
+          "sha256": "3511e6e304bdf998c31569bfe7f1883160c6d71bbafd5cacea4f5aa36b446bd7",
+          "neck": {
+            "x": 51,
+            "y": 41
+          },
+          "main": {
+            "x": 60.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/east-6.png",
+          "sha256": "26a7aa1517fcbf4f442f57b9d30591c12921d29f7fcd2dc064152aff5d6a1217",
+          "neck": {
+            "x": 53,
+            "y": 41
+          },
+          "main": {
+            "x": 59.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/east-7.png",
+          "sha256": "e3f58479d557473ee226b85966f77ff3640a82d824374432e14416f759ceb911",
+          "neck": {
+            "x": 55,
+            "y": 41
+          },
+          "main": {
+            "x": 61.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "wand-santet"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/east-0.png",
+          "sha256": "0d0ebdfb765645bc32a87b7e4adebe3860bb0a1b6c8407e52bdcf6d44bc94000",
+          "neck": {
+            "x": 53,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/east-1.png",
+          "sha256": "084a6fbf222985c49291675bb1f2c6fae6c3adaa77a4fea988df6fd3fcacc084",
+          "neck": {
+            "x": 49,
+            "y": 50
+          },
+          "main": {
+            "x": 62.5,
+            "y": 44.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/east-2.png",
+          "sha256": "ca7d8a4df1a4cef7689e63cdb8b5e27f19536c10074214ae6a93bcd81d6ac046",
+          "neck": {
+            "x": 38,
+            "y": 49
+          },
+          "main": {
+            "x": 71.5,
+            "y": 53.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/east-3.png",
+          "sha256": "df6871737214a88eb09365b14d08b6f8a939d918badae7f90910b37feaf21233",
+          "neck": {
+            "x": 35,
+            "y": 54
+          },
+          "main": {
+            "x": 79.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/east-4.png",
+          "sha256": "b5b43d5ad14600e42d63d5943c82a2567971d91f8b43a7085aaa8a3abff5f6cf",
+          "neck": {
+            "x": 54,
+            "y": 49
+          },
+          "main": {
+            "x": 79.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/east-5.png",
+          "sha256": "cbe96831dd2133743ee0c18dcccbe7c644a315447b7ceb9bd5a4fcb582fd1364",
+          "neck": {
+            "x": 50,
+            "y": 45
+          },
+          "main": {
+            "x": 72.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/east-6.png",
+          "sha256": "2b4090bbc581ec958d60fc951896fb73817bcef377d9b99b06eb01ccb279548c",
+          "neck": {
+            "x": 47,
+            "y": 45
+          },
+          "main": {
+            "x": 68.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/east-7.png",
+          "sha256": "ffef61b793cb01331597c98dae2da6f381fdf24f9327321213ec41b4249f83ef",
+          "neck": {
+            "x": 49,
+            "y": 45
+          },
+          "main": {
+            "x": 68.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/east-0.png",
+          "sha256": "191d23b2621ba43bc5c734ca6e124fc85a5a22b6bc7925848c6f88ca776a7f89",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 68.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/east-1.png",
+          "sha256": "8aa51064041d086a956c634b6661e266113f48085e54b501e5114f36e22df382",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/east-2.png",
+          "sha256": "c75dbd45825ab66263207ee80e3c5131d86ddbd5d3b7436bb0d35ae04e8977f1",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 72.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/east-3.png",
+          "sha256": "f8a9f2cb0dac471450d741d3d71c06476e1a486540b416c94520bc99b1dc4453",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 60.5,
+            "y": 88.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 70.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/east-4.png",
+          "sha256": "83e453a83bec096e2580d168c50835eab4852dcd6e798e9e97dd9740b3f1fb8c",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 60.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/east-5.png",
+          "sha256": "640a40026d0fb944ee83160d4f317defca6ea376024baaa62474c2cdbf571f5c",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 86.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/east-6.png",
+          "sha256": "963e7b2884a81aecfe939133a55c1b02d8ca31f755235d486e508298c8f9d96f",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 86.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 71.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/east-7.png",
+          "sha256": "07744a3becfcd0a7785d97b29b9250fb129dcced8f63da3c83e44e5ea45b0094",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 66.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "wand-santet"
+        }
+      ]
+    },
+    "north-east": {
+      "headOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/santet-detail/idle/north-east.png",
+        "sha256": "8c69069be648e415dc54ab4eb20b4a45d5e9f61552a39aa68d6e5db04c08f92d",
+        "neck": {
+          "x": 59,
+          "y": 48
+        },
+        "main": {
+          "x": 72.5,
+          "y": 78.5
+        },
+        "off": {
+          "x": 47.5,
+          "y": 74.5
+        },
+        "bakedWeapon": "wand-santet"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-east-0.png",
+          "sha256": "fe1af8ecbef8f928b71624885176e82b49a2e02c7ffc28bf89e49ab177ed7fd2",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 70.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-east-1.png",
+          "sha256": "35efb4986f27d350d07c0ce16e6688b6eb617a13acdb0798b01c7e72bf0ec4d9",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 71.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-east-2.png",
+          "sha256": "5c7fd6a3b3e453424c16c7e0ab1332b8bbebf85ca5a92d788ad34c86c693f5f9",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 71.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-east-3.png",
+          "sha256": "39a7533aef4bd270a656404e0f087acac533970ff6f5bda8dc1477acdcb0edae",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 71.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-east-4.png",
+          "sha256": "1176c9a66a3de0a0e47a007d444ac162f6816aac9ab87bd80f92f6d096f36de2",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-east-5.png",
+          "sha256": "0949f042a334f465658b0e84473e9bb72ddc59785fced50f73c63146fffef550",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-east-6.png",
+          "sha256": "7445dc9ffe26dd1a52ad6bfcda0ff9295107f3f2f499a8e5b071c079114d9c56",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-east-7.png",
+          "sha256": "303daa276c3651edca64c250408d25971d4929c955446438256538cea945998e",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "wand-santet"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-east-0.png",
+          "sha256": "fc0b09670d058311eb0d73376dcff1e4f05e4e879a67da86cd2f0afa98fe8828",
+          "neck": {
+            "x": 52,
+            "y": 43
+          },
+          "main": {
+            "x": 65.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-east-1.png",
+          "sha256": "2d04615f74a39246c44c1d561353ad1660237dc887cfe1348c96c8ff977256e3",
+          "neck": {
+            "x": 53,
+            "y": 45
+          },
+          "main": {
+            "x": 65.5,
+            "y": 43.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-east-2.png",
+          "sha256": "eac8e5144c8c6fd3661ae3ab504c2d9e6bfb6e06efccdebe9eae0c432062a78f",
+          "neck": {
+            "x": 55,
+            "y": 47
+          },
+          "main": {
+            "x": 72.5,
+            "y": 52.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-east-3.png",
+          "sha256": "54b563a4403e93ea5cb76ecc66e4fdad90c220065113fd1cd00cf2480efca37d",
+          "neck": {
+            "x": 45,
+            "y": 52
+          },
+          "main": {
+            "x": 76.5,
+            "y": 54.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 72.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-east-4.png",
+          "sha256": "65105d78feba0f7cb9a9829f730e034c548feb0e58b13efb38d81136024e31be",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 81.5,
+            "y": 61.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-east-5.png",
+          "sha256": "f2719072063ce3ad55f6daabbf5e6daf9e645d8d15f49906144b45fe6605cb94",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-east-6.png",
+          "sha256": "7523f6b8d3cdab04581ac1970ef1a125b73ac3add3d1dfb4008552c3350d374f",
+          "neck": {
+            "x": 68,
+            "y": 44
+          },
+          "main": {
+            "x": 68.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-east-7.png",
+          "sha256": "19a0ff24b08c9a41a27c50ec017db45cb235cfa7edef57bd432bf04cd49510c7",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-east-0.png",
+          "sha256": "b967a4722acdd05cde2df8fbf27602716c93ab0988c20e9b73a76731904dc2f0",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 86.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 73.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-east-1.png",
+          "sha256": "ace73e49930e1b54888a2225edc85babc87a31718368ec2bd8710a1e849a6050",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 82.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-east-2.png",
+          "sha256": "588d96ea6389938611f85cf3e0caac361c97a35eb5ce39a8fbcf8aba074d0c86",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 88.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 83.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-east-3.png",
+          "sha256": "4627203ceb22ad596be210c196c58db6f62bf6eb759633b2d783eefaada4423d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 78.5,
+            "y": 89.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 83.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-east-4.png",
+          "sha256": "d27545824ca8611565d5398a042afb873b0ba1806a5934f58f3b19703860d7c7",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 77.5,
+            "y": 88.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 87.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-east-5.png",
+          "sha256": "84984ddfdfe0e9220819bddd7013e67dedf5dbc359564a3c165d959107b9ed22",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 83.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-east-6.png",
+          "sha256": "dae5c8ed9acafa85b58419a0ba5eced9fbc865349a2f9462e5795c10227fe5c6",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 77.5,
+            "y": 88.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-east-7.png",
+          "sha256": "aef40404e655f90f88875c886fbc7d0f3534f0009fb634cba401d24b2265d510",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 74.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "wand-santet"
+        }
+      ]
+    },
+    "north": {
+      "headOffset": {
+        "x": -2,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/santet-detail/idle/north.png",
+        "sha256": "1ab63094e0d8fd48d238d68708c12dc9c0a7d1f9e30bc1f316c965caa06cee95",
+        "neck": {
+          "x": 61,
+          "y": 49
+        },
+        "main": {
+          "x": 83.5,
+          "y": 76.5
+        },
+        "off": {
+          "x": 46.5,
+          "y": 76.5
+        },
+        "bakedWeapon": "wand-santet"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-0.png",
+          "sha256": "e7dbbcf05460d570a87e4e854b11833466a46f7b8efdc1ae348563e2dd50ab40",
+          "neck": {
+            "x": 63,
+            "y": 46
+          },
+          "main": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-1.png",
+          "sha256": "c6de9de2fe28803a8f298f5b599698f785c5085e49b7b5f5a0b85b2886b2bf01",
+          "neck": {
+            "x": 61,
+            "y": 45
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-2.png",
+          "sha256": "28fdd61f9ddb887c3323d3b01cf7f7daa45ca167b6d75053b23e509134e2a607",
+          "neck": {
+            "x": 59,
+            "y": 45
+          },
+          "main": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-3.png",
+          "sha256": "a21416f256dc38fca1607622a1169a01452e1f20e2877047673d1bccd00af179",
+          "neck": {
+            "x": 59,
+            "y": 46
+          },
+          "main": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-4.png",
+          "sha256": "3f40bbdf12957f2190db6cc1be4bc58c017e2c9a173507611fc11d212c4f0a25",
+          "neck": {
+            "x": 64,
+            "y": 45
+          },
+          "main": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-5.png",
+          "sha256": "e1cbf6517beef9821819d6383df5d3dcc2936822a5630553c8123d3a8a3943d3",
+          "neck": {
+            "x": 62,
+            "y": 45
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-6.png",
+          "sha256": "101064ae009692f3706e18512ccd418b0e1fc2576238e9d509ca1d9c1ba7b7f4",
+          "neck": {
+            "x": 59,
+            "y": 45
+          },
+          "main": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-7.png",
+          "sha256": "65cb1a25077c2b3ffedfb9a53614d88373186b5a32fd196aa51820aa67cb9280",
+          "neck": {
+            "x": 59,
+            "y": 45
+          },
+          "main": {
+            "x": 82.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 72.5
+          },
+          "bakedWeapon": "wand-santet"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-0.png",
+          "sha256": "1bf39efafc58bf0e2ee4ceb9005ffdda9fc1c215b091eaab6a45105522f71a7b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-1.png",
+          "sha256": "2eb92fce0b3993617adad3963dae5ffbb4bf279393fce5d32c094419fa46955f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 47.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-2.png",
+          "sha256": "22a0f9317a4222da2b8eff0c13a971c60e125735b9b4ccd0edb44ad86c89edbe",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 47.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-3.png",
+          "sha256": "5c72fed39fa10e4445517c67b84c82a1dce3b98b0629fdbb71af31a7a6a17fd8",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 77.5,
+            "y": 51.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 72.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-4.png",
+          "sha256": "15b85b80e9daf3ffd78e98c8ab1090fc6998a5a4c197baa172f9b37128f4a47f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 76.5,
+            "y": 55.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 78.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-5.png",
+          "sha256": "1eac6d39b5d5b5b69e316953b61a898a1a6ee855cbd3f00908ec9923c679a532",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 71.5,
+            "y": 57.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 78.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-6.png",
+          "sha256": "7d88449841a9a30aa52c49862142efd324685b60c73d6be5aa9bd52e72cb9333",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 70.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-7.png",
+          "sha256": "408969a99ee6d2569bf41553673b09fd601123c5679be57d202493416e0d8fb1",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 65.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-0.png",
+          "sha256": "78841e6caa38b5922b807888ee27ea7bd552039bab879aacc7ef1c8103812de5",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 76.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-1.png",
+          "sha256": "3f5f8d93b0308c7ab52dfa0059333bff697706028b347e00cec40054276481be",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 78.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 75.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-2.png",
+          "sha256": "e4135982db0f3af13d9f22be6a3af15d11c408f58edf10c652e917c4d0b633d5",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 70.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-3.png",
+          "sha256": "86d818f582c1a890f6372f7e443f19926e03a9c2a78eb1285ce0d93bdda97c00",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 78.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-4.png",
+          "sha256": "381211b045680d246a8caf5ea99de1b9a5c7bd40f26540e3011026eb27de2225",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 77.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 68.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-5.png",
+          "sha256": "99f9140c97462aaee4678f66848410be25bd1ea4559057ae2300d8816bcc28a6",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 77.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-6.png",
+          "sha256": "6ba38eb1120bf439efce52cf9ddd7e6dd07f758127db8c95a899fd674bfcc80d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 78.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 69.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-7.png",
+          "sha256": "943230c113d0ecbe50e81daffdc4fa92831dfd8128ca07fda1c4b8e6c103dd12",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 77.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 69.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "wand-santet"
+        }
+      ]
+    },
+    "north-west": {
+      "headOffset": {
+        "x": -2,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 62,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/santet-detail/idle/north-west.png",
+        "sha256": "67cb8ec254d3c42763a4809cf7ca906f7b1dc34a3b1dda9456185535164140f3",
+        "neck": {
+          "x": 64,
+          "y": 48
+        },
+        "main": {
+          "x": 51.5,
+          "y": 81.5
+        },
+        "off": {
+          "x": 76.5,
+          "y": 75.5
+        },
+        "bakedWeapon": "wand-santet"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-west-0.png",
+          "sha256": "60ddd9a384831396c1c7d4085765036a08c30b10f04405ed4485e13b37812d40",
+          "neck": {
+            "x": 63,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 72.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-west-1.png",
+          "sha256": "41b175150413b728906285b31e3b439e38aca1bd8ad24db6b59601744223981d",
+          "neck": {
+            "x": 63,
+            "y": 48
+          },
+          "main": {
+            "x": 47.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-west-2.png",
+          "sha256": "f8034124b073845da269a489bdb45d80a05e27cb2cccb6d16aea590f0613ac80",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 47.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-west-3.png",
+          "sha256": "bd7c1ab20404c24b2d4859e0f673b1a8f3b22fb5f9702d8dd081ae310ef8c553",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-west-4.png",
+          "sha256": "c50b29eef8fdb49d4f927f368961b570e7ef24dfc7eb6bb2fbee74fa5c3f543f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-west-5.png",
+          "sha256": "11a6433210ba45fcfdc9fa9d4ffda1c8e405eea1d03925579198713c5b9b0f34",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 51.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-west-6.png",
+          "sha256": "0cd5cb46d732408967ad8c56a0e6c4a98333f1ef52169718331d504990c69708",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 46.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/north-west-7.png",
+          "sha256": "a8933c1eddb57c61723f2f2904e0c368d37b0924631e7044c747e75ff0ed76a8",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "wand-santet"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-west-0.png",
+          "sha256": "9ad5e34e4cb5617d35869d3420e499f8cf8bc55de119faf0c044927aee10223e",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-west-1.png",
+          "sha256": "1532ffdb60be50307d9f56698d89b119ae6c9bcd5df2862727b1ced8edeccfe2",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 44.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-west-2.png",
+          "sha256": "e179777ab144aff092c3dbaef13455f8450d9e2d3bf309151f735a080f850599",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 51.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-west-3.png",
+          "sha256": "b96f9d8e4d91619d7ee7906b6a4d50edd08203474d064086d49f431224c988e1",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 45.5,
+            "y": 57.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 72.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-west-4.png",
+          "sha256": "50f1aa9b233d2f74d655a63a018111d7d602e8747a94789469d9e12cbd40557c",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 46.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-west-5.png",
+          "sha256": "cd70c749e7f214036966eb47545f0f4d8366babdbcb488a780384c0ed0adfef4",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-west-6.png",
+          "sha256": "4cb7715075b505c1d77754a5fdbb27b249d0e5285f0f4eb8a29d4daa67468dd2",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/north-west-7.png",
+          "sha256": "c99ef1de32a144c554c5f66247c83a7392868fe345e051b2d46ae2c45deb528f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 60.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "wand-santet"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-west-0.png",
+          "sha256": "e630f63e04d001647c13afd7300114be27572ce15a9681ed44e93d7212cdd158",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 47.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 75.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-west-1.png",
+          "sha256": "b0000abbf6618dc1b2631786aaab4d86318a26799d94d6f92e2a75c9fdfb3fe0",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 52.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 71.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-west-2.png",
+          "sha256": "05d324951467c9bdffbde1a544bd12764db935fd2f224d9fe6cf26ae5ab07ddb",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 47.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 85.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-west-3.png",
+          "sha256": "d2a8def21148202f693604103587b0a314d51a30dff6ed165274f35604ad5950",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 47.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 70.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-west-4.png",
+          "sha256": "72f08e4bba72972c19fe9e2ec87093e2e00c143a0b7a5e9c325b26bdadf78602",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 52.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 77.5,
+            "y": 70.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-west-5.png",
+          "sha256": "f81fb848906a3cb8dbb5705937aad2cb904973f41a85f08c7b588cfa95af0652",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 70.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-west-6.png",
+          "sha256": "356792dd9ab463769f066ca411cbe9c98cd41c77621d78f4dbf32040cf44a4a9",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 70.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/north-west-7.png",
+          "sha256": "305454d59f62363cc13b42832f32a2e4c7d5848d67179de4901557edaf04be3e",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 47.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 75.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "wand-santet"
+        }
+      ]
+    },
+    "west": {
+      "headOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 61,
+        "y": 113
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/santet-detail/idle/west.png",
+        "sha256": "5f7a481e3d5598b6ebe18222f20a73ef948b57299fac8ffeb3d46e3ae44e98c9",
+        "neck": {
+          "x": 67,
+          "y": 48
+        },
+        "main": {
+          "x": 63.5,
+          "y": 80.5
+        },
+        "off": {
+          "x": 65.5,
+          "y": 63.5
+        },
+        "bakedWeapon": "wand-santet"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/west-0.png",
+          "sha256": "ae1f13148015c5e5804afee9faa06abe5757548a2c4407a27e36e2be81eabb83",
+          "neck": {
+            "x": 71,
+            "y": 44
+          },
+          "main": {
+            "x": 62.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 63.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/west-1.png",
+          "sha256": "fd4f7ef8559bcb23846c6075fa036e45ae1df5f62d01517b730f38a202c73b15",
+          "neck": {
+            "x": 70,
+            "y": 44
+          },
+          "main": {
+            "x": 61.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/west-2.png",
+          "sha256": "a2918cd8f7bb664f2be4dc00577f0e448957c5f2df44e0f9023f18d05d7a8763",
+          "neck": {
+            "x": 69,
+            "y": 45
+          },
+          "main": {
+            "x": 63.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/west-3.png",
+          "sha256": "bcd709deec52d0259d92caf01a1251ada2cd23dd235dd630f71b4339adfbf6c4",
+          "neck": {
+            "x": 69,
+            "y": 45
+          },
+          "main": {
+            "x": 62.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/west-4.png",
+          "sha256": "47d08b35e6d7761e7f41638a7a94b88b7e150c4f0b60783f39357aa3d9452ed8",
+          "neck": {
+            "x": 71,
+            "y": 44
+          },
+          "main": {
+            "x": 63.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/west-5.png",
+          "sha256": "36ed80c46c5261790baafc525f19c2282a59f0f706083099305aea5621d66e11",
+          "neck": {
+            "x": 71,
+            "y": 43
+          },
+          "main": {
+            "x": 63.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/west-6.png",
+          "sha256": "998ba75e13afdc05be227c1f1954ba1766dac9d972ab10c4ba4a386cd3ed45bf",
+          "neck": {
+            "x": 69,
+            "y": 43
+          },
+          "main": {
+            "x": 65.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/west-7.png",
+          "sha256": "31589da5c7153d6706166e8e03a0c7e8090b2b4975321f74944397345ce451f3",
+          "neck": {
+            "x": 70,
+            "y": 44
+          },
+          "main": {
+            "x": 64.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 69.5
+          },
+          "bakedWeapon": "wand-santet"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/west-0.png",
+          "sha256": "2671e56919aa8fd38b4ff092207c394c5547957d69249123bf05f75fd7bcd50b",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/west-1.png",
+          "sha256": "2409969969148a9e2da54613154dbdd3c4fc91eac872d70d0e1dd246001cb887",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 44.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/west-2.png",
+          "sha256": "53722ea16e6aad8cb435f75f6f47ceda863525a7120afa0941044bdad92f0130",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 53.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/west-3.png",
+          "sha256": "f12a68e27ab2ab16b6548b8ecbdbbc51541b648691e96d1434f184384c443b00",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 43.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 69.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/west-4.png",
+          "sha256": "1ab9fda1b89e77e1c856325acf8765bf64410d1727f8a45a7d945786d43aca8a",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 43.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/west-5.png",
+          "sha256": "61dbebfbd8985070ae2eb2ebc91e5fd6e13d1bb687ee2a0b8a103b29b8d73524",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 51.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/west-6.png",
+          "sha256": "00c010d2869698324c3c5750ca9b7c3adb09299767586840186f2b49e972c3be",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 56.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 69.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/west-7.png",
+          "sha256": "c5b59529d3c6b271c613aa32513f81f8a475efb541cf11859dd19e67d388d28b",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/west-0.png",
+          "sha256": "85effa9e92f008a1fbc7bfd567f3fd4cbe316d5fa417b50f67d836d0c3110901",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 65.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/west-1.png",
+          "sha256": "9b17b329ab362f0f1621078e330ecd5a9a95dccb7a05eb23e2b45dcfcd26da34",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 64.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/west-2.png",
+          "sha256": "717fcccacf565d6698129c484ef6153c9775d0487fa3493f9d808ba6a53ad429",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 67.5,
+            "y": 86.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 65.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/west-3.png",
+          "sha256": "f616938d192830d52bdc931752962f7b1e494f2429cab089ecd8964acda0037e",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 67.5,
+            "y": 86.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/west-4.png",
+          "sha256": "4b0b99fa556ccd568ac08b8c9d729cbe3b8adbac7a3470f04cd13767da77f901",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 67.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/west-5.png",
+          "sha256": "add6c270758b6a811562b640c4a322d15f12f413092c9ce59f450a7511fe1eca",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 67.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/west-6.png",
+          "sha256": "0ad03b78b009f35ecacda76bf2c5798538671c413c2c374345004564a4cc8b28",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 65.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 65.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/west-7.png",
+          "sha256": "4c0b46d022b3f04306c0598f56a2ab6fa0599c063a76f56476c4455cba588527",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 64.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "wand-santet"
+        }
+      ]
+    },
+    "south-west": {
+      "headOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 61,
+        "y": 114
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/santet-detail/idle/south-west.png",
+        "sha256": "ab5a053285b66e2cf516d7d7f14a79990d0f4dbd54a1f2823ede4e98fdc633fa",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 50.5,
+          "y": 64.5
+        },
+        "off": {
+          "x": 75.5,
+          "y": 79.5
+        },
+        "bakedWeapon": "wand-santet"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-west-0.png",
+          "sha256": "ca9d833c656095e51c148fea9e7eb09171073e73616ffb1400df7be8d2306a47",
+          "neck": {
+            "x": 66,
+            "y": 45
+          },
+          "main": {
+            "x": 50.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 88.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-west-1.png",
+          "sha256": "1e4d0267ffaf1d3a2042e08e944550394ca286b5c4bac0cd6973a5dd5992cce3",
+          "neck": {
+            "x": 65,
+            "y": 45
+          },
+          "main": {
+            "x": 49.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 90.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-west-2.png",
+          "sha256": "481bcb167801a5525cafaa0d886c797f66e3e11a14b3ad336aabfd2ebf228f45",
+          "neck": {
+            "x": 64,
+            "y": 46
+          },
+          "main": {
+            "x": 49.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-west-3.png",
+          "sha256": "b066ee49e84182a545be6aff34580f32d737512a96bab38083e70d1973e8f2b8",
+          "neck": {
+            "x": 62,
+            "y": 45
+          },
+          "main": {
+            "x": 48.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-west-4.png",
+          "sha256": "9bfd5bfd082a1515d640c8f9afb9090f107d0c626f781b3bd3078f20a5d493fb",
+          "neck": {
+            "x": 65,
+            "y": 46
+          },
+          "main": {
+            "x": 50.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-west-5.png",
+          "sha256": "a5fbfdb56ae7a982938441de7639f937d8ac658d7f3daaecc9339fa0098075e6",
+          "neck": {
+            "x": 63,
+            "y": 44
+          },
+          "main": {
+            "x": 48.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 84.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-west-6.png",
+          "sha256": "011f6e7ff33cdf64eebe5a44f077901d51365426b93487f8795d4aea40954e85",
+          "neck": {
+            "x": 64,
+            "y": 45
+          },
+          "main": {
+            "x": 47.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/walk/south-west-7.png",
+          "sha256": "7c0407b848e3b7e1984defec46c93a1f39dd5db6c411edc3222da08c8335cb48",
+          "neck": {
+            "x": 63,
+            "y": 45
+          },
+          "main": {
+            "x": 51.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 78.5
+          },
+          "bakedWeapon": "wand-santet"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-west-0.png",
+          "sha256": "b90337e8cb06474d37c692058aec9c1c19dcf8f022339e78444ed1139c0a3fd4",
+          "neck": {
+            "x": 62,
+            "y": 47
+          },
+          "main": {
+            "x": 58.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-west-1.png",
+          "sha256": "baccb16170b39b3713ee3d5df2d08936bced500933c003c49c325962e815255e",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 60.5,
+            "y": 47.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-west-2.png",
+          "sha256": "9eb82282e7b03cab487ed5562bdfcfb9caca19ec742798fd0439b05e09a4d2e8",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 51.5,
+            "y": 54.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 67.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-west-3.png",
+          "sha256": "b604c5db24e6398d566992a4a3f2279b26d851275edad365e005a34403e9a987",
+          "neck": {
+            "x": 62,
+            "y": 51
+          },
+          "main": {
+            "x": 46.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 72.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-west-4.png",
+          "sha256": "26bef790ae51fc95987254ee5df2eecb92eba8b42da54a36523e3fbee3e29a2d",
+          "neck": {
+            "x": 68,
+            "y": 48
+          },
+          "main": {
+            "x": 46.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-west-5.png",
+          "sha256": "049ca0d9250427b7aec2d7b5f99ad6ff8dd266e462437ba521a3817c47d8c4d9",
+          "neck": {
+            "x": 66,
+            "y": 45
+          },
+          "main": {
+            "x": 51.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-west-6.png",
+          "sha256": "fe4b57dcf57e8d530211b289835c7181e14a991d02c8d53adbf94ba445d44adc",
+          "neck": {
+            "x": 63,
+            "y": 44
+          },
+          "main": {
+            "x": 56.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 70.5
+          },
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/attack/south-west-7.png",
+          "sha256": "f41b061ae12cb4a0381fad665ea676594c14412401bffc2d223a137ff68ae1d6",
+          "neck": {
+            "x": 59,
+            "y": 43
+          },
+          "main": {
+            "x": 56.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "wand-santet"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-west-0.png",
+          "sha256": "8a1e3be9fc81b4f631ac11a075e4c17cdef640d2c0c048a7d3e6ce0c06cf4dc2",
+          "neck": {
+            "x": 65,
+            "y": 44
+          },
+          "main": {
+            "x": 50.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 81.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-west-1.png",
+          "sha256": "764732343ecef275e4af3937f9e69a52155814129277894433fc975ac29460be",
+          "neck": {
+            "x": 67,
+            "y": 46
+          },
+          "main": {
+            "x": 49.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 86.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-west-2.png",
+          "sha256": "a30378cfdc88ee40296d27fbcba26983e84edf708ee40b84046fa588563fd648",
+          "neck": {
+            "x": 67,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 87.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-west-3.png",
+          "sha256": "2d8d0e57e5fd37be8b18eda774b85efd196658e14f76652a993337458aaaeab7",
+          "neck": {
+            "x": 65,
+            "y": 49
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 83.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-west-4.png",
+          "sha256": "3168b6ea282384e3cc299fe40c68ffead98612550309c555247d7df178d7d799",
+          "neck": {
+            "x": 65,
+            "y": 46
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 86.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-west-5.png",
+          "sha256": "474fd28b8c07147c39e2437d003c02857ae15033a540759bc0da267a235ab561",
+          "neck": {
+            "x": 64,
+            "y": 44
+          },
+          "main": {
+            "x": 49.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 81.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-west-6.png",
+          "sha256": "1c24455b28abca5c4b87da27ce4eb4499c1879ab51d7093e33911e90e8cfeece",
+          "neck": {
+            "x": 64,
+            "y": 43
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 82.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "wand-santet"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/santet-detail/cast/south-west-7.png",
+          "sha256": "7facc8d25aab028d05080667b7a28651dfbde7d8b51d8232be60a2eaedddf4ae",
+          "neck": {
+            "x": 64,
+            "y": 42
+          },
+          "main": {
+            "x": 52.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 81.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "wand-santet"
+        }
+      ]
+    }
+  }
+}

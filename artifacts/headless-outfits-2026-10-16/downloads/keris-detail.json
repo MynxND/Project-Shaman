@@ -1,0 +1,3607 @@
+{
+  "id": "keris-detail",
+  "branch": "keris",
+  "attackAction": "attack-dagger",
+  "directions": {
+    "south": {
+      "headOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 62,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/keris-detail/idle/south.png",
+        "sha256": "15ce1151b19cbfb528f98473f10d647bca0b87c0156b03e471ef8b1ad33acee0",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 43.5,
+          "y": 79.5
+        },
+        "off": {
+          "x": 82.5,
+          "y": 76.5
+        },
+        "bakedWeapon": "keris"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-0.png",
+          "sha256": "5b18984414a2691ac6bab3c1ee89a3a4f4d0855354df098135c5fc1cbe4bee10",
+          "neck": {
+            "x": 63,
+            "y": 49
+          },
+          "main": {
+            "x": 42.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-1.png",
+          "sha256": "8291bfe6ce2bde8bb2ea0298891ee1f913f5897ab2d6cdaffa9213569c4cacc8",
+          "neck": {
+            "x": 61,
+            "y": 49
+          },
+          "main": {
+            "x": 43.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-2.png",
+          "sha256": "3104eccd50bd4b3b1e7a1746a9e73bd639a2e97dd113b9fc622762aa2e355278",
+          "neck": {
+            "x": 60,
+            "y": 50
+          },
+          "main": {
+            "x": 45.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-3.png",
+          "sha256": "d5d23e2d034fce9023f28e3514b61204a018dd1a429c87633f4d1c39cbf43429",
+          "neck": {
+            "x": 61,
+            "y": 49
+          },
+          "main": {
+            "x": 43.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-4.png",
+          "sha256": "f3234e12d7c30925c4d6bf73a879ffffaeae63822cea69621e2cf4de393efc48",
+          "neck": {
+            "x": 63,
+            "y": 48
+          },
+          "main": {
+            "x": 44.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-5.png",
+          "sha256": "95797bcb43994b4594c71c2ffd111b4773ed2363e05fbd9f1d7496d2678dd5fa",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 42.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-6.png",
+          "sha256": "c67a5a239845875b86ccdfe348bb9ab4a4a344afdb08a30adcbb9a1114f42086",
+          "neck": {
+            "x": 60,
+            "y": 48
+          },
+          "main": {
+            "x": 42.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 82.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-7.png",
+          "sha256": "61abd1c45d0f6e43b21932d49960b9399dfe4e0a817ac6b75bf7a8e37ca902e8",
+          "neck": {
+            "x": 60,
+            "y": 48
+          },
+          "main": {
+            "x": 43.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "keris"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-0.png",
+          "sha256": "ed21b33061471561f7605281cf6be93cf0b4194b10240fd20f492b972e797af2",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 54.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-1.png",
+          "sha256": "8e79a9d8e1186ae1af280258bc842d8724b74b53818fd3bb4fb8de0d4fb32a6f",
+          "neck": {
+            "x": 65,
+            "y": 52
+          },
+          "main": {
+            "x": 54.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-2.png",
+          "sha256": "1109daeff09dc73415f53a4eaa7cdef56558330129e74f7ef014c7926d9e86e5",
+          "neck": {
+            "x": 62,
+            "y": 50
+          },
+          "main": {
+            "x": 42.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 71.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-3.png",
+          "sha256": "2670ecdbcc0ddce1a9e72046ac3a98415a2cb9aee0b67f77f2c7218472b699dd",
+          "neck": {
+            "x": 53,
+            "y": 51
+          },
+          "main": {
+            "x": 51.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-4.png",
+          "sha256": "3bd94870e727a2446f9756181f85bc267c3bc4d38b8849de228cf70290ef8b78",
+          "neck": {
+            "x": 58,
+            "y": 47
+          },
+          "main": {
+            "x": 59.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 72.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-5.png",
+          "sha256": "1b684491ca69ff55d327a602cf7c94206c02258ba4b2ed0eecd836367097529f",
+          "neck": {
+            "x": 62,
+            "y": 46
+          },
+          "main": {
+            "x": 60.5,
+            "y": 73.5
+          },
+          "off": {
+            "x": 81.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-6.png",
+          "sha256": "74eaa84d6403d87a45aa2dff2dd9495332a0992a49398f6a96e001587cd84117",
+          "neck": {
+            "x": 67,
+            "y": 45
+          },
+          "main": {
+            "x": 59.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-7.png",
+          "sha256": "91a1e8aa6eb5dfca6f7d3e849aee8320ccb264c002b474fd6d45f8c2935ee0a7",
+          "neck": {
+            "x": 59,
+            "y": 44
+          },
+          "main": {
+            "x": 54.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "keris"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-0.png",
+          "sha256": "c42663885b8fcd4f0fbf9fdedfb77f3c455804eb1511b2b18a7940c6d50014a2",
+          "neck": {
+            "x": 63,
+            "y": 49
+          },
+          "main": {
+            "x": 47.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 73.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-1.png",
+          "sha256": "066c5f8df2f45ab4751dbd5825663d6e60458bf1231f96151d0789d05dbd9834",
+          "neck": {
+            "x": 56,
+            "y": 49
+          },
+          "main": {
+            "x": 49.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 84.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-2.png",
+          "sha256": "7bd77f4f94abafe36f1478a35bb9431b2a463e948d857d56f6da451a40d710f1",
+          "neck": {
+            "x": 44,
+            "y": 51
+          },
+          "main": {
+            "x": 46.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 84.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-3.png",
+          "sha256": "4b457ca478a4e62590b29297a354e02a4b83cc5240d45d2cec798730c6376374",
+          "neck": {
+            "x": 52,
+            "y": 49
+          },
+          "main": {
+            "x": 46.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 85.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-4.png",
+          "sha256": "2cac7049ca873dd62093b495196c7e55d7c72d6391a46465751cdc9ff83bb4e7",
+          "neck": {
+            "x": 63,
+            "y": 41
+          },
+          "main": {
+            "x": 46.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 84.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-5.png",
+          "sha256": "c251ddce27ef366ffb1862f2fcf84f6303cb46b58ebf4253517845ae5f529f8b",
+          "neck": {
+            "x": 58,
+            "y": 41
+          },
+          "main": {
+            "x": 47.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 84.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-6.png",
+          "sha256": "f150f8004be2fa3bc362bc8756dc39ce0164437861894a0e6ff30deacacaf7cc",
+          "neck": {
+            "x": 54,
+            "y": 41
+          },
+          "main": {
+            "x": 47.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 84.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-7.png",
+          "sha256": "569ead9bbcfe4b8a462a63157acc6d94609189bf16ba34f4a8c5c8c66aae271f",
+          "neck": {
+            "x": 56,
+            "y": 41
+          },
+          "main": {
+            "x": 46.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 87.5,
+            "y": 73.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "keris"
+        }
+      ]
+    },
+    "south-east": {
+      "headOffset": {
+        "x": -3,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 64,
+        "y": 114
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/keris-detail/idle/south-east.png",
+        "sha256": "327438dd20e30448462fbe3496831816a8756eaf3b55125d353272101b2070b3",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 74.5,
+          "y": 66.5
+        },
+        "off": {
+          "x": 49.5,
+          "y": 83.5
+        },
+        "bakedWeapon": "keris"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-east-0.png",
+          "sha256": "9f054d8ea04850e30741abebfdc6c89d32a021cfb975089e2fe07a5608c1da68",
+          "neck": {
+            "x": 62,
+            "y": 49
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 84.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-east-1.png",
+          "sha256": "3916c032f7c695e812fc29699f6e8b99c6bee5de0599f4f46de7cf483df8ce07",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 86.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-east-2.png",
+          "sha256": "2b0dd9c8786412ea36f22e03c483c5fc118e29c935f900cd091007a8f7daad10",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 84.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-east-3.png",
+          "sha256": "59e8de5a2ec52a69b1e07af73473e61a69c18087f1b8eb473de45da79b210a94",
+          "neck": {
+            "x": 65,
+            "y": 51
+          },
+          "main": {
+            "x": 74.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-east-4.png",
+          "sha256": "4f6d0641df1174f673bb83d1dc5f7a8326fe9c090ca91e79b5fed5d518acb932",
+          "neck": {
+            "x": 64,
+            "y": 49
+          },
+          "main": {
+            "x": 75.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 52.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-east-5.png",
+          "sha256": "ca988e204f70cd0f31d24867db54c0af882d7adada3645b3f1c592a3771a084e",
+          "neck": {
+            "x": 64,
+            "y": 49
+          },
+          "main": {
+            "x": 74.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-east-6.png",
+          "sha256": "e54b9c1ff4fb71158f6800ce5319b9fdd913be1aa9a30dd0cbbb7cd79687ddac",
+          "neck": {
+            "x": 64,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-east-7.png",
+          "sha256": "01ed868e6c0ea1b5fd287db46a6ab2ef4d62b1e09b220e03c20f1149d839713b",
+          "neck": {
+            "x": 63,
+            "y": 49
+          },
+          "main": {
+            "x": 74.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "keris"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-east-0.png",
+          "sha256": "d0f01ef1c7bd8c3ba4029ccfcf03ab5a3d369f41b69e64b7b6bf2e1755e88b00",
+          "neck": {
+            "x": 60,
+            "y": 46
+          },
+          "main": {
+            "x": 59.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-east-1.png",
+          "sha256": "d054b2973d6aec7043f972264481107acb1bbde1a15c972726d29cec27aa6e50",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 54.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-east-2.png",
+          "sha256": "f0864be49e9e5f505b8d99d5b213f57192f3e9bd34e94963afaf1f199a4a4da8",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-east-3.png",
+          "sha256": "3c6bf562b0fb8e6900f69b73d49215c44f49335ca1b33e8c2f33383686ed495d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 61.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 68.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-east-4.png",
+          "sha256": "93f447e3be4ade796aae420d040829c19aa341f49e6de922320e3c569341538a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 65.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 78.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-east-5.png",
+          "sha256": "8222afc0397e3e313db3e1206d4c5476b7ad9bd1851810e0bf05da6b821c82fc",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 93.5,
+            "y": 72.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-east-6.png",
+          "sha256": "c4ea6d41d3fa60d9abeab822b460f04aaa64f66353768287bd06baba00bbcb0b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 80.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-east-7.png",
+          "sha256": "8ae2e7eaf2aad9bd597de9301338b9bf7cb95368b0926d228876a0194b39b59c",
+          "neck": {
+            "x": 71,
+            "y": 46
+          },
+          "main": {
+            "x": 59.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "keris"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-east-0.png",
+          "sha256": "598c1f9d021c99c4e673fe28f92bc10eca52b1369bb52152adafc1367d3c4c36",
+          "neck": {
+            "x": 58,
+            "y": 51
+          },
+          "main": {
+            "x": 74.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 82.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-east-1.png",
+          "sha256": "9db5b9cc187f245647feef18bc06338778890b7be7de5b400d84c5864f10d721",
+          "neck": {
+            "x": 57,
+            "y": 49
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 81.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-east-2.png",
+          "sha256": "84299607d0f6028baf6f2b8ad03520e17d908ff87c5e8c971df93bbd597edf0c",
+          "neck": {
+            "x": 57,
+            "y": 50
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-east-3.png",
+          "sha256": "903fb38c2747cd19ff9170bdc5453204c13167c018347ad3d92c91a961b49bd3",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-east-4.png",
+          "sha256": "f0f44f46512a5dae6a5ac82c511bb17dfa5a87b8f38c66b56f6870b1e139b748",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 49.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-east-5.png",
+          "sha256": "68ba2787d9c6d5ddea564ed088748eccd184ad93f87e15ee6b8f700b427a2b03",
+          "neck": {
+            "x": 60,
+            "y": 46
+          },
+          "main": {
+            "x": 73.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-east-6.png",
+          "sha256": "25375168247db2206644121029d7beadbea14db74999496679d1505e8414ed59",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 74.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-east-7.png",
+          "sha256": "77a920cb9e86d5b73b26a5f5737b394ddc379e429dbb7f58cb63fbe6cbf01104",
+          "neck": {
+            "x": 60,
+            "y": 49
+          },
+          "main": {
+            "x": 73.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 79.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "keris"
+        }
+      ]
+    },
+    "east": {
+      "headOffset": {
+        "x": -4,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 113
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/keris-detail/idle/east.png",
+        "sha256": "d90616a52b0fc5c01fd9871c5aea9a80eabc2909266ab3383073ce37fbf0c7f5",
+        "neck": {
+          "x": 59,
+          "y": 48
+        },
+        "main": {
+          "x": 54.5,
+          "y": 66.5
+        },
+        "off": {
+          "x": 60.5,
+          "y": 81.5
+        },
+        "bakedWeapon": "keris"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/east-0.png",
+          "sha256": "d039b9950757508f8cb4bddad1fa74661507daf446897e91113d9e35f687d40c",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 55.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/east-1.png",
+          "sha256": "824e7473c22ef532a812f4b346a9966c41c231c4c8b03205aade59ad7a9cd367",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 54.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/east-2.png",
+          "sha256": "a9ce4416a7fb2c08502be58ff164995892bbf67d96eb27fc246de4ce89ed6e33",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 55.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/east-3.png",
+          "sha256": "d4046c00f32ca8db7ed0d01ab80dd18c48b8c33e078235382b23d067c6134622",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 55.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/east-4.png",
+          "sha256": "17b61c22696f2239b8950597727ed5e55c02c80311e087b595b4930759261420",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 54.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/east-5.png",
+          "sha256": "2d37443cffe05bca7a213644e1f17a5059b328c26754e13d7873bdc180e09d72",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 54.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/east-6.png",
+          "sha256": "d3e68482b47953382bd5a588bf1b3d7bdf730b3b2fe763253d407c80a72446d7",
+          "neck": {
+            "x": 52,
+            "y": 45
+          },
+          "main": {
+            "x": 56.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/east-7.png",
+          "sha256": "3f1c920d3ace65fcf59dd1ad126a19f477d23834f777db0da6e6b3fdc5dc5230",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "keris"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/east-0.png",
+          "sha256": "0c3fb0c81ad32f8c1f89409fb6049da42231808798463c01b6a8e4b4d8f5068f",
+          "neck": {
+            "x": 51,
+            "y": 42
+          },
+          "main": {
+            "x": 68.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 78.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/east-1.png",
+          "sha256": "227ae7d5b73647a6091a88ca4be41279a7545b16f5409dfd407554b3bbae8fb6",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/east-2.png",
+          "sha256": "6849dab53e95d682e911ba2eb8ff5395736b64c1f6d07cbcfbbf86e1db8e454a",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 84.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/east-3.png",
+          "sha256": "f7d6e4d2dd2520c47b614c309819d116417a7b9f92137656d02f38905a1a68dc",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/east-4.png",
+          "sha256": "743c18c578e8bc340fbd1a08a3f1ee261a3820854b435fcdaadc881255b96304",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/east-5.png",
+          "sha256": "608d542c787a95912ee3927c5dc771e1be4d54d558d158edeb1855b3283ee5e8",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 69.5
+          },
+          "off": {
+            "x": 81.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/east-6.png",
+          "sha256": "95e0a0aace12750bb1082ca20aacd674f814a54de981a46fc66157da59fa3a62",
+          "neck": {
+            "x": 57,
+            "y": 43
+          },
+          "main": {
+            "x": 65.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 73.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/east-7.png",
+          "sha256": "22d7bf685d40ac7810113a8654e4fb999245e8648e5d1780cf93d4235380aed7",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 63.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "keris"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/east-0.png",
+          "sha256": "4e37d783053f3f5072b151a799c3e47c1c16125f69cf0b66b2dcfd20fc6c5601",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 85.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/east-1.png",
+          "sha256": "65f819e926e009682253c3544f0824aedd7702b293c5cd8abba6fac88be7ff49",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 56.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 83.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/east-2.png",
+          "sha256": "1002d2b84e15ae9a84ac4193d39ac1bad4f49ec28f2384aee007c66e4ac3092b",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 82.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/east-3.png",
+          "sha256": "7706aff6a8cb65b8808c75ae66f0b21a9fb0ff90c7e26d5dd9de4810b9ca5c0b",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 88.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/east-4.png",
+          "sha256": "f1477c6cf94c55849aea0a799a532f6cf6b7261bcbdf45ace4bc3e3f13a8361d",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 83.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/east-5.png",
+          "sha256": "0014054db33b52246d848dfc2113d6f6a8ecc4ae804292e8b93da2eaaa31351d",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 56.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 60.5,
+            "y": 89.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/east-6.png",
+          "sha256": "1674204f431b7d82e11c7d2453a39fb7fd37fc5c3e7ceedc0b022a8fd952c8ed",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 55.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 83.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/east-7.png",
+          "sha256": "a9216aa09fab4ca5bb605ceeff586e2597364e290d4e8cc5fee985a76ae912c3",
+          "neck": {
+            "x": 59,
+            "y": 48
+          },
+          "main": {
+            "x": 57.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 78.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "keris"
+        }
+      ]
+    },
+    "north-east": {
+      "headOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/keris-detail/idle/north-east.png",
+        "sha256": "a47684866e942a6faa69618b3136cfa210557763457a11c949700cae9ab1d1fc",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 46.5,
+          "y": 75.5
+        },
+        "off": {
+          "x": 71.5,
+          "y": 79.5
+        },
+        "bakedWeapon": "keris"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-east-0.png",
+          "sha256": "c36a5eb9f34857959992c04141596807f4a92c2dfad51ab42c33086239a983d6",
+          "neck": {
+            "x": 59,
+            "y": 49
+          },
+          "main": {
+            "x": 46.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-east-1.png",
+          "sha256": "f5778e987e03cdad83accff2b690391e5865dbc41178c7d95d266284b029aebc",
+          "neck": {
+            "x": 61,
+            "y": 49
+          },
+          "main": {
+            "x": 46.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 78.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-east-2.png",
+          "sha256": "35d5efc35393c1175a4979ac3ab35515f058d14a1bbb5b214a2307b5b31cbab3",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 46.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-east-3.png",
+          "sha256": "5069ae36ae1d4136725262c4a51521170f6b0abe8dabfb9428ab3859b5f99caa",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 46.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-east-4.png",
+          "sha256": "b182ad7d65fcad9c6d895eafb3a452ba6ce294d70fff8f184f22cd308c0f95e0",
+          "neck": {
+            "x": 60,
+            "y": 48
+          },
+          "main": {
+            "x": 46.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-east-5.png",
+          "sha256": "bffa06b9c58dfe667343d0a53d6b81f5ccb0d2b4f590e76b8e386da13b8d8575",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 47.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-east-6.png",
+          "sha256": "cfb5cd211d191b30fc3bfe4142aa1c6edcbb3f129dbf53fb6f6adbdeb3981793",
+          "neck": {
+            "x": 60,
+            "y": 49
+          },
+          "main": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-east-7.png",
+          "sha256": "b97b30e7320ad3cfd026f49a0e5b4832ac7b14c7e3988dce21f2ef7454c57cd9",
+          "neck": {
+            "x": 60,
+            "y": 48
+          },
+          "main": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "keris"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-east-0.png",
+          "sha256": "4408c8c21f06275ceb42260902d8336585e06110fd6cd81a9fec5d48a385bbf7",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 78.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 71.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-east-1.png",
+          "sha256": "ec09040e3f6df339a43378092f7f727daececf752f3455b9562184799530126b",
+          "neck": {
+            "x": 72,
+            "y": 56
+          },
+          "main": {
+            "x": 70.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 61.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-east-2.png",
+          "sha256": "e2579fb6f110c2438ed1ac33b789d8220ea5905cc201f4fe6acf462884b243cb",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 95.5,
+            "y": 57.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 60.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-east-3.png",
+          "sha256": "7c15e70808243a78d03582afa1293bbf07463369aec09d1c07cc6940a3d3253e",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 82.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 59.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-east-4.png",
+          "sha256": "238ed3391468d395f041149bac958820a04b1641a5658ab357a102673a1abc05",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 66.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-east-5.png",
+          "sha256": "96bcfb3e121254131d92fb2f271356f2ac3129c843eb3a84b55fff6e2b780296",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 40.5,
+            "y": 58.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-east-6.png",
+          "sha256": "0e55c8bfc324ac51a19c2a067e7505e4abe33d69ae2a04dd87351f8116fb030b",
+          "neck": {
+            "x": 57,
+            "y": 51
+          },
+          "main": {
+            "x": 65.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-east-7.png",
+          "sha256": "0df375e7acf4eb982280331e41965b1409c98e17e18c02866a41377344f9295d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 77.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 69.5,
+            "y": 73.5
+          },
+          "bakedWeapon": "keris"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-east-0.png",
+          "sha256": "fb5076e22663777dbcd7ba386d5d3d214ce94ff239874cd84095763331fda406",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 47.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 81.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-east-1.png",
+          "sha256": "d489acfdeaefb9ed84fb9a5b02132bf6a198333c674d8e09c5e8619ec53c8bd3",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 84.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-east-2.png",
+          "sha256": "aa1a28aeab7db7ea77a3b70ca51b57dd02b232d55226790b2c2cede5b67d54ab",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 84.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-east-3.png",
+          "sha256": "2b8c22417cb872823fe093eb4ba710a9145ac97a82a9f6979beeee7cab0dc097",
+          "neck": {
+            "x": 62,
+            "y": 46
+          },
+          "main": {
+            "x": 53.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 84.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-east-4.png",
+          "sha256": "867c87aa96221784e2ccd51da13a9545f9fc0d472412a16649d4760b3d781cee",
+          "neck": {
+            "x": 58,
+            "y": 46
+          },
+          "main": {
+            "x": 53.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 84.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-east-5.png",
+          "sha256": "dd4c769958b8e59753b5bce92cfa2d37343d46ba580de63bb4fa191268a01d79",
+          "neck": {
+            "x": 62,
+            "y": 46
+          },
+          "main": {
+            "x": 53.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 83.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-east-6.png",
+          "sha256": "604267083669f9102aca6ba7344d39ab04336822c6ced4ac659cf5dc7bee2eb6",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 51.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 83.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-east-7.png",
+          "sha256": "c1ab28b2563eaedc71d964cfe918e11bce6a4237b50eacf9e69afb61490fc5f8",
+          "neck": {
+            "x": 64,
+            "y": 46
+          },
+          "main": {
+            "x": 46.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 81.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "keris"
+        }
+      ]
+    },
+    "north": {
+      "headOffset": {
+        "x": -2,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 63,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/keris-detail/idle/north.png",
+        "sha256": "ca0ef4f2e872337360cc17f30b1c097609a9f06145ba99384c18d7914d181fe4",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 83.5,
+          "y": 77.5
+        },
+        "off": {
+          "x": 46.5,
+          "y": 76.5
+        },
+        "bakedWeapon": "keris"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-0.png",
+          "sha256": "4d89bd33ad07575734ce7d8ed8e2c66eec379affc5e3ffe360586b1d50283f61",
+          "neck": {
+            "x": 59,
+            "y": 50
+          },
+          "main": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 45.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-1.png",
+          "sha256": "b6cf0bda821460a9e6156192874e5e6cd95d8b6e4499358c0052252bc0fda2aa",
+          "neck": {
+            "x": 59,
+            "y": 51
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-2.png",
+          "sha256": "8baa7555308a2c98b8777ed1bab510f9db832691cb2f35cfe57a67350350d8fc",
+          "neck": {
+            "x": 60,
+            "y": 50
+          },
+          "main": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-3.png",
+          "sha256": "91576a91cb9b11fe7170b944d8f253f5b1cd60b8d04a3425fc568b195453a819",
+          "neck": {
+            "x": 60,
+            "y": 50
+          },
+          "main": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-4.png",
+          "sha256": "36e839e381ac3bc6976cb275b211e42638f3917f608aa28e6a5c0349f982d261",
+          "neck": {
+            "x": 60,
+            "y": 51
+          },
+          "main": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-5.png",
+          "sha256": "c316a87aa2ca2e12ffda9337430fcfa779b27cd29e8d91443d1a99b75f47a88d",
+          "neck": {
+            "x": 60,
+            "y": 52
+          },
+          "main": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-6.png",
+          "sha256": "a243ce97880afee3e875a12e5376c80b6c04fbbfcc77e83c20f473a4ae06057e",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 83.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-7.png",
+          "sha256": "746376b5a4f266d0b7308dab9889a55d8a51f9a467ba2860ca42b5a99da04926",
+          "neck": {
+            "x": 60,
+            "y": 51
+          },
+          "main": {
+            "x": 83.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "keris"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-0.png",
+          "sha256": "93fd5d1136ef8e09807ea3335daa707586ba70f54d85b01cb33a9f393d6015f6",
+          "neck": {
+            "x": 59,
+            "y": 50
+          },
+          "main": {
+            "x": 66.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-1.png",
+          "sha256": "63fb83a50dd5080c15cb565479c281a4cefb90f60e23ef7deace2ef80e4dbd21",
+          "neck": {
+            "x": 53,
+            "y": 45
+          },
+          "main": {
+            "x": 68.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 58.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-2.png",
+          "sha256": "4af726e8cdadb397bdddd6a79a0ea2a60dc14d0b06c90545510096da0594c221",
+          "neck": {
+            "x": 62,
+            "y": 46
+          },
+          "main": {
+            "x": 90.5,
+            "y": 53.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 55.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-3.png",
+          "sha256": "9942c434e908ac8e0be7fe089e54c1f4e4bae382eae560d99b9557ee4a822968",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 75.5,
+            "y": 61.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 56.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-4.png",
+          "sha256": "65e0bd4099ed35ca4299032a9526976851bf524d960483b3da48ab2c3ae17448",
+          "neck": {
+            "x": 51,
+            "y": 47
+          },
+          "main": {
+            "x": 64.5,
+            "y": 59.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-5.png",
+          "sha256": "50940c8b0701f5a96c84c8e0c3b7b317ac32070c406817ef18f979104cb7184d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 55.5
+          },
+          "off": {
+            "x": 35.5,
+            "y": 53.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-6.png",
+          "sha256": "83c638c5c2d9769c931ae3b4684874b3afb8766443735bdbd103eaec0fd4ef73",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 63.5,
+            "y": 55.5
+          },
+          "off": {
+            "x": 48.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-7.png",
+          "sha256": "4d7ed1f92190454d637491c0824c8704e170c2c9875a234bfd4b85ab630bcbcf",
+          "neck": {
+            "x": 60,
+            "y": 52
+          },
+          "main": {
+            "x": 68.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 54.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "keris"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-0.png",
+          "sha256": "11fb51be6d2bf690b3e6b4fa44e8d7536e59443ad92c962802868ee10c37333d",
+          "neck": {
+            "x": 68,
+            "y": 46
+          },
+          "main": {
+            "x": 83.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 76.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-1.png",
+          "sha256": "f03e685bef805b1c64d104dbb55c88f283d2385ba401658eaeddb4139243c0ba",
+          "neck": {
+            "x": 57,
+            "y": 42
+          },
+          "main": {
+            "x": 80.5,
+            "y": 72.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 72.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-2.png",
+          "sha256": "bd83ad78f89114480adfa079453576f241072b9c5c45164139e2a5803697f2a9",
+          "neck": {
+            "x": 56,
+            "y": 39
+          },
+          "main": {
+            "x": 80.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 70.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-3.png",
+          "sha256": "1b54c9048d06c4a7aac4cc9814a40d2896f13dfa6c0203fe6040f51eda4c18f0",
+          "neck": {
+            "x": 49,
+            "y": 38
+          },
+          "main": {
+            "x": 79.5,
+            "y": 71.5
+          },
+          "off": {
+            "x": 51.5,
+            "y": 77.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-4.png",
+          "sha256": "4b71e1ca98b0d970f8c7dead525d624acd41e11b817e3bb91afeb870e9073c28",
+          "neck": {
+            "x": 64,
+            "y": 32
+          },
+          "main": {
+            "x": 80.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 70.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-5.png",
+          "sha256": "9511f63f8242358aa8809194769852a43eeda4d085654f7b78d4ee679c96fc8a",
+          "neck": {
+            "x": 59,
+            "y": 35
+          },
+          "main": {
+            "x": 80.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 70.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-6.png",
+          "sha256": "26ce75b822d45e6d168af740ccc38f2b5172e76023de4c67c1b1bcdc0abbb3ff",
+          "neck": {
+            "x": 56,
+            "y": 38
+          },
+          "main": {
+            "x": 80.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 46.5,
+            "y": 70.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-7.png",
+          "sha256": "ec1bb55e7c3aff21f3bac2a466050f1a7acb43df7d844e37cdd7b26a0424b213",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 80.5,
+            "y": 70.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 81.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "keris"
+        }
+      ]
+    },
+    "north-west": {
+      "headOffset": {
+        "x": -2,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 62,
+        "y": 112
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/keris-detail/idle/north-west.png",
+        "sha256": "cb8c48ddf52203029df57f76c4d0708ecadb7169e2439fdbf7132ff7068c3f4c",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 46.5,
+          "y": 81.5
+        },
+        "off": {
+          "x": 77.5,
+          "y": 75.5
+        },
+        "bakedWeapon": "keris"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-west-0.png",
+          "sha256": "2543fcc81a64d8d17aa2e30d582cce6df52f613026759b8d697a9586b57bb5bd",
+          "neck": {
+            "x": 61,
+            "y": 49
+          },
+          "main": {
+            "x": 48.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-west-1.png",
+          "sha256": "b06723c11a7c6e3d20dae650edf018a9990a8c70ed1843fed830f459c2d76acb",
+          "neck": {
+            "x": 60,
+            "y": 49
+          },
+          "main": {
+            "x": 47.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-west-2.png",
+          "sha256": "27d7045e62e5cf15b21e0e74f696b109b53719fbe0deb2fc228a25d669ecf0ed",
+          "neck": {
+            "x": 62,
+            "y": 50
+          },
+          "main": {
+            "x": 48.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 77.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-west-3.png",
+          "sha256": "8e1651f5a92d76f7042043578dd4a376ebe9b3b35db13fdf31b1b4d418ed756b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-west-4.png",
+          "sha256": "2fde01ee26639d04d6f7e42a862e7bee68a421e23de8181fbf6135753bd14b30",
+          "neck": {
+            "x": 58,
+            "y": 50
+          },
+          "main": {
+            "x": 50.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-west-5.png",
+          "sha256": "50b36e13070598a51283e3a34aa1bfbe9390956d45d66206d949dc315154044a",
+          "neck": {
+            "x": 60,
+            "y": 50
+          },
+          "main": {
+            "x": 50.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-west-6.png",
+          "sha256": "886a893848426ef00b6daf4a3e4f832830f304f43aaa952d9d4b37bc339cb3a7",
+          "neck": {
+            "x": 62,
+            "y": 50
+          },
+          "main": {
+            "x": 50.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 78.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/north-west-7.png",
+          "sha256": "a72c77a31834aebe251d268454210692de850327c1f610d1d60b7cca1ee4507a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 76.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "keris"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-west-0.png",
+          "sha256": "53a04b96ec590616fce1826e4ab89ba790c5933bfee933e2366b13138b3e746f",
+          "neck": {
+            "x": 60,
+            "y": 52
+          },
+          "main": {
+            "x": 57.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 78.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-west-1.png",
+          "sha256": "c9a20833abd81bee3c767cb8f5541290cf2fadd50e7c3a0057533340545dd03b",
+          "neck": {
+            "x": 58,
+            "y": 54
+          },
+          "main": {
+            "x": 68.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-west-2.png",
+          "sha256": "278d23f7ce67ddfddd29a2e4d7fb39e782260b226a0a7441cf0915fa3b721e86",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 86.5,
+            "y": 61.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-west-3.png",
+          "sha256": "63bd30e371c982a3208979d03c56de7954225e99b3cedea691b7fab3b07fb6c7",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 68.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-west-4.png",
+          "sha256": "8d40965ae285caa2f830b4731281ccc1ca3aa3ab29f58d236d752ce23a062f08",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 60.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 53.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-west-5.png",
+          "sha256": "1533bb7ca4c106b9ef3458c4a9640cf37e74d77f4e67b7c4e0515b319330013d",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 57.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 29.5,
+            "y": 60.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-west-6.png",
+          "sha256": "f971a032b2e64111142e29b05cf9390c36587496891e78fc3616cc57c3316124",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 44.5,
+            "y": 74.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/north-west-7.png",
+          "sha256": "9b871fc2c92856a081a572f9f56f0cd7f6f3072429715e5b377a758faf59b90c",
+          "neck": {
+            "x": 55,
+            "y": 54
+          },
+          "main": {
+            "x": 58.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 47.5,
+            "y": 76.5
+          },
+          "bakedWeapon": "keris"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-west-0.png",
+          "sha256": "5bdebeaf003a50f9e1433afc367f57c599ed9d99b1dfd16d23d608f7873c99ba",
+          "neck": {
+            "x": 62,
+            "y": 47
+          },
+          "main": {
+            "x": 51.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 75.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-west-1.png",
+          "sha256": "c28d79edb6c907fedd7bbea928484c6a46b309aaad6921bdccbf17c3e9c9a335",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-west-2.png",
+          "sha256": "0f25879ffb90a2ab85f3187a027a13537e51341cbe77f9bbf7ec0e4757497c15",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-west-3.png",
+          "sha256": "df6b4b1566981db1f693c6cc5f1592c1d05271e499eb45c127e09c60c823c9cd",
+          "neck": {
+            "x": 61,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-west-4.png",
+          "sha256": "b47459fb756069a75b0238cdc9e7b061c5b4125185329f6c2ed12135553b4e3a",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-west-5.png",
+          "sha256": "83760987a4cc977c3a6722a95ac2a1cfa10cca6dcc23afb8a88122a24aa0f824",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 81.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-west-6.png",
+          "sha256": "6d23e7c42eeaca833a0b355610b481c528d109624f5b3ddee2e852902628ff26",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 80.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/north-west-7.png",
+          "sha256": "c1aa7881584dc0266b777f924a2c92a8cb4e1e03702eb6d531464172331526ed",
+          "neck": {
+            "x": 62,
+            "y": 49
+          },
+          "main": {
+            "x": 49.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 79.5,
+            "y": 75.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "keris"
+        }
+      ]
+    },
+    "west": {
+      "headOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 61,
+        "y": 113
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/keris-detail/idle/west.png",
+        "sha256": "b0f97dce22c54da94dc2001f3db9439be18be355c9484ec970f386c14a0d6e0f",
+        "neck": {
+          "x": 65,
+          "y": 48
+        },
+        "main": {
+          "x": 64.5,
+          "y": 81.5
+        },
+        "off": {
+          "x": 65.5,
+          "y": 63.5
+        },
+        "bakedWeapon": "keris"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/west-0.png",
+          "sha256": "13fe6db4260a70738d6396e3930246ae26a458eb98f987cb9b2f7faa6dbefffc",
+          "neck": {
+            "x": 70,
+            "y": 46
+          },
+          "main": {
+            "x": 64.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 61.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/west-1.png",
+          "sha256": "2924adb44c6d82fcdb82b20736e208277f4261426e12f57a24a2b2830345cec5",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 62.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/west-2.png",
+          "sha256": "dc152c582862eeac877068a9c9775809e14c930531465312305da288e24c6ef7",
+          "neck": {
+            "x": 69,
+            "y": 48
+          },
+          "main": {
+            "x": 65.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/west-3.png",
+          "sha256": "bd5df31c8c9211e819bbf71b0f744fc0a903287445abae7e4e3a0ebb2216bb80",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/west-4.png",
+          "sha256": "ca53ee0b0d5b8e38f118d838a00f8b3f79c3b25204d83e0a3fcc31e3249c725a",
+          "neck": {
+            "x": 70,
+            "y": 46
+          },
+          "main": {
+            "x": 64.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 65.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/west-5.png",
+          "sha256": "e995e9060e5120cf4ccd310ca8cfdae03f604c019957a66f66dba9f928a8548f",
+          "neck": {
+            "x": 71,
+            "y": 45
+          },
+          "main": {
+            "x": 63.5,
+            "y": 82.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 64.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/west-6.png",
+          "sha256": "3925827c2b053cee5096a0c0405a02bc63c7d6a6fcaec04edf27743c250137b9",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 64.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 67.5,
+            "y": 66.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/west-7.png",
+          "sha256": "cae152f3b13fca7d44f59ebab21f521d2d85af2b8de00d28c932a02f25c3a102",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 60.5,
+            "y": 87.5
+          },
+          "off": {
+            "x": 64.5,
+            "y": 69.5
+          },
+          "bakedWeapon": "keris"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/west-0.png",
+          "sha256": "28f727760759d50d7b543b1dce7787409da15d69e14f472391d154f8db77ab46",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/west-1.png",
+          "sha256": "95da68404b6355c8bcea6f4b782c05f67cffdc14c2091da923044b9670511b97",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 67.5,
+            "y": 81.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 70.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/west-2.png",
+          "sha256": "bfe4f05815e5737b04573bbbbfd23b6e43919dd52efeee69da3e12ff6ebdc550",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 41.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 71.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/west-3.png",
+          "sha256": "a70ff3ea2709647e208a3552e0b8b7a36961651c771e161573d535c9c5a51160",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 55.5,
+            "y": 75.5
+          },
+          "off": {
+            "x": 58.5,
+            "y": 72.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/west-4.png",
+          "sha256": "88fef031680d969cd0722ba60b91da7a686dca044fa1bbbc3be4f85e710723d4",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 82.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/west-5.png",
+          "sha256": "7891e7309129eb63125211825774456d8269e93e4762ea58c65f87a761af6bcd",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 56.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 41.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/west-6.png",
+          "sha256": "6e25d5e68890f466d6162ec01faef500dc58c65307fe21ccaa2ba47e935031dd",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 58.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 50.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/west-7.png",
+          "sha256": "e4ba2d789620f9ac8e5059d9e0d38a838c70f1ae870481d0982265308c4557d7",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 59.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 79.5
+          },
+          "bakedWeapon": "keris"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/west-0.png",
+          "sha256": "804a786725a889fae2843fbd98d4c9e45e8885d29763811570ef9adb7ecdbc92",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 62.5,
+            "y": 78.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 63.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/west-1.png",
+          "sha256": "c3dc3bf7d557a17d89fb203ddd9dec159d461ee3af1aa10658d96eb6c98e3ead",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 63.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/west-2.png",
+          "sha256": "226cb7de7d4ef2d1e3f8ce5772ce354d046b964979d52e246ea68dcb3b1d0fcb",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 71.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 65.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/west-3.png",
+          "sha256": "15cf1e59da181c846b5a099725c1ce7745162ad9515ebbe0cefc828d248c47b0",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 72.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/west-4.png",
+          "sha256": "acc5bc12d24c7ad279b5158d091bd774bd21fb25223eb7e1fe81af7812e99fa6",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 71.5,
+            "y": 84.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/west-5.png",
+          "sha256": "af7f5db9514941059b94303b18f5ca97b4114373878d38ace290b4cc795fdf4b",
+          "neck": {
+            "x": 63,
+            "y": 45
+          },
+          "main": {
+            "x": 71.5,
+            "y": 85.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 66.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/west-6.png",
+          "sha256": "b6b455f15a5d4024b2df62cf72ddbc89401d68742e94f02a73dfe9569c5c5a91",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 71.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 66.5,
+            "y": 65.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/west-7.png",
+          "sha256": "61f74049048e75a66ee268dae75fa6fdf946ea0127282951ef38b63665394e05",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 69.5,
+            "y": 83.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 63.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "keris"
+        }
+      ]
+    },
+    "south-west": {
+      "headOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "bodyOrigin": {
+        "x": 61,
+        "y": 114
+      },
+      "tilt": 0,
+      "idle": {
+        "url": "/assets/character-v3/class-outfits/keris-detail/idle/south-west.png",
+        "sha256": "ffb74cddd42e36d1373c409595d3d73b4bb57c56b743145c2fc9743b08c515e8",
+        "neck": {
+          "x": 62,
+          "y": 48
+        },
+        "main": {
+          "x": 49.5,
+          "y": 63.5
+        },
+        "off": {
+          "x": 74.5,
+          "y": 80.5
+        },
+        "bakedWeapon": "keris"
+      },
+      "walk": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-west-0.png",
+          "sha256": "b182a3f461403035b1b8da7dd1cf393071919f71cf823e8a78f987df01a3f8b9",
+          "neck": {
+            "x": 66,
+            "y": 47
+          },
+          "main": {
+            "x": 49.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 84.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-west-1.png",
+          "sha256": "cdd714c67eb77ebf0388783b586a729622f720f6edf9426bbba6a0bb0da71350",
+          "neck": {
+            "x": 65,
+            "y": 46
+          },
+          "main": {
+            "x": 48.5,
+            "y": 67.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 85.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-west-2.png",
+          "sha256": "a6319b50508a7a1e07235ac6aa45568429f8f4c82662575ec4acddc76c54797f",
+          "neck": {
+            "x": 65,
+            "y": 47
+          },
+          "main": {
+            "x": 48.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 84.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-west-3.png",
+          "sha256": "3bf8974e31f7674f814ae2ac525de445d195dd72de9da5e2f6a77f22341c97eb",
+          "neck": {
+            "x": 65,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 72.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-west-4.png",
+          "sha256": "39974880592bbf1f26b5066748b1559818337009a8efaaced6c5fb5dbc5ebcfb",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 70.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-west-5.png",
+          "sha256": "e93590f816037b64fe21b8365919e1b3c29d99df226020d20e45bd79f6eb7f5f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 84.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-west-6.png",
+          "sha256": "500f322894283590c4191675dc9860881a45cae0854014d71e268a3505d34f93",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 48.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 83.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/walk/south-west-7.png",
+          "sha256": "66e4e4367e20cfa3babb69b3d3b4ee926c30dacc2773ecf4c8fa4cb4da8d9aa2",
+          "neck": {
+            "x": 66,
+            "y": 47
+          },
+          "main": {
+            "x": 49.5,
+            "y": 62.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 81.5
+          },
+          "bakedWeapon": "keris"
+        }
+      ],
+      "attack": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-west-0.png",
+          "sha256": "9ee1ba547629e5ef5c1957e9d10380a34b8b38fa7468a274b128db2ee6668721",
+          "neck": {
+            "x": 64,
+            "y": 47
+          },
+          "main": {
+            "x": 48.5,
+            "y": 79.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-west-1.png",
+          "sha256": "28cd1bb5e2ab2eabf556d0eaa0ff9177e799d7e75a5e329d5b826b27152616c1",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 77.5
+          },
+          "off": {
+            "x": 59.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-west-2.png",
+          "sha256": "c6881598a157ecf017f2ff5312cb14baa94c609ff1b4a0a61fde0ab4dd397bac",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 31.5,
+            "y": 74.5
+          },
+          "off": {
+            "x": 56.5,
+            "y": 71.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-west-3.png",
+          "sha256": "f32269aa94031934ea7a500b9f09b6c64b2cc085de83f420afa77b4934ccb61b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 42.5,
+            "y": 76.5
+          },
+          "off": {
+            "x": 57.5,
+            "y": 68.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-west-4.png",
+          "sha256": "a107043e0187664c59a3693cc1382975120d4970267389b13c8ed086d095da20",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 57.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 78.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-west-5.png",
+          "sha256": "69b069b4fc26a30b5decdad6ca4669f2b495618face3e32078dc122ecf82958b",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 53.5,
+            "y": 66.5
+          },
+          "off": {
+            "x": 55.5,
+            "y": 72.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-west-6.png",
+          "sha256": "82405d6fecf068cf14ba6141e992b0c8413e13072360154db744e362d5f50411",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 55.5,
+            "y": 68.5
+          },
+          "off": {
+            "x": 61.5,
+            "y": 75.5
+          },
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/attack/south-west-7.png",
+          "sha256": "9e2febc2476b783ac53feebc75c65b84a95509c0ed9dafce5927ba8d9abc6c94",
+          "neck": {
+            "x": 62,
+            "y": 40
+          },
+          "main": {
+            "x": 48.5,
+            "y": 80.5
+          },
+          "off": {
+            "x": 65.5,
+            "y": 80.5
+          },
+          "bakedWeapon": "keris"
+        }
+      ],
+      "cast": [
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-west-0.png",
+          "sha256": "d142d0a1dc0748e076c78d24fe71917bb7ca14265a6c2d1963ecb9db31dafd76",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 81.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-west-1.png",
+          "sha256": "cf037ac7a7a9ff52b1694672f93605301610fd15eac4ac3a01e57877e9e17191",
+          "neck": {
+            "x": 66,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 71.5,
+            "y": 82.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-west-2.png",
+          "sha256": "635c4b94180a4c2ea5df2d8cdb6f9f1a20607ced1647bf160d6ed635f929f9e1",
+          "neck": {
+            "x": 63,
+            "y": 51
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-west-3.png",
+          "sha256": "e0b8041487c3d055c47feb24d965526d0a1cde00fb40db0302884453f765f931",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-west-4.png",
+          "sha256": "220bcf3897000309ad18dfeea2b47e1b5ef248eee3c645b4510040c337c71b0f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 64.5
+          },
+          "off": {
+            "x": 73.5,
+            "y": 77.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-west-5.png",
+          "sha256": "174632524b2291569ae60a7e50de75a0bb33b61c6a46f8f71902d93583d46974",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 49.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-west-6.png",
+          "sha256": "a11c61f3304c1698922af141a74c64c125bde44cf070cae5fff2e87beaf9255f",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 63.5
+          },
+          "off": {
+            "x": 74.5,
+            "y": 78.5
+          },
+          "headSafe": true,
+          "bakedWeapon": "keris"
+        },
+        {
+          "url": "/assets/character-v3/class-outfits/keris-detail/cast/south-west-7.png",
+          "sha256": "d02101cab3269d17d09e418f04d774234332236cb45c2f8854552372deb2e256",
+          "neck": {
+            "x": 62,
+            "y": 48
+          },
+          "main": {
+            "x": 50.5,
+            "y": 65.5
+          },
+          "off": {
+            "x": 75.5,
+            "y": 81.5
+          },
+          "headSafe": false,
+          "bakedWeapon": "keris"
+        }
+      ]
+    }
+  }
+}
