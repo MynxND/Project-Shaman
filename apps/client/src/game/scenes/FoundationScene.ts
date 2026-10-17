@@ -300,6 +300,9 @@ export class FoundationScene extends Phaser.Scene {
       room.onMessage('profile', (data: Parameters<ReturnType<typeof useProfileStore.getState>['receive']>[0]) => useProfileStore.getState().receive(data));
       useProfileStore.getState().setSender((type, message) => room.send(type, message));
       room.send('profile:get');
+      // Admin tools: the server answers whether this session may use them (and re-checks every admin request).
+      room.onMessage('admin', (d: { enabled: boolean }) => useProfileStore.setState({ admin: d.enabled === true }));
+      room.send('admin:get');
       // Skill casts: the server decides start / release / cancel; the scene draws them and the hotbar follows ours.
       room.onMessage('skill', (event: SkillCastEvent) => {
         this.casts?.receive(event, this.time.now);
@@ -335,6 +338,7 @@ export class FoundationScene extends Phaser.Scene {
         setStatus('connected');
         useProfileStore.getState().setSender((type, message) => room.send(type, message));
         room.send('profile:get');
+        room.send('admin:get');
       } });
       room.onLeave((code) => {
         if (stale()) return;

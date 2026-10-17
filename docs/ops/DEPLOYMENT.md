@@ -23,8 +23,9 @@ Copy `.env.example` to `.env` in the repository root on the server machine and f
 | `NODE_ENV=production` | yes | Disables the dev-only commands (`dev:job`, `dev:warp`…) and review rooms. |
 | `SHAMAN_ALLOWED_ORIGINS` | yes | Comma-separated exact web origins, e.g. `https://play.example.com`. Browsers from any other site are refused at the WebSocket handshake (`verifyClient`) and on `/auth/*` (403). CORS echoes only allowed origins. Non-browser clients (no `Origin`) are not affected. |
 | `SHAMAN_DB_PATH` | yes | SQLite file **outside the repository**, e.g. `D:/shaman-data/shaman.sqlite`. Opened at start-up, so a bad path stops the server immediately. |
-| `GAME_SERVER_PORT` / `GAME_SERVER_HOST` | no (2567 / 0.0.0.0) | Use `127.0.0.1` when the proxy runs on the same machine, so the raw port is not exposed. |
+| `GAME_SERVER_PORT` / `GAME_SERVER_HOST` | no (2567 / all IPv4+IPv6 interfaces) | Use `127.0.0.1` when the proxy runs on the same machine, so the raw port is not exposed. |
 | `SHAMAN_TRUST_PROXY=1` | behind a proxy | The client address for the login rate limit becomes the right-most `X-Forwarded-For` entry (the one our proxy adds). Leave unset without a proxy, because then that header is client-controlled and ignored. |
+| `SHAMAN_ADMINS` | no (none) | Usernames allowed to use the in-game admin panel (instant job change, Base Level, skill points, heal). In development every session is an admin; in production nobody else is, and the server re-checks every admin request. |
 | `SHAMAN_AUTH_ATTEMPTS_PER_MINUTE` | no (10) | Login/register attempts per client address per minute. |
 | `SHAMAN_AUTOSAVE_MS` | no (10000) | Autosave period. |
 | `SHAMAN_BACKUP_DIR` / `SHAMAN_BACKUP_KEEP` | for backups | Where `pnpm db:backup` writes, and how many verified copies it keeps (48). |

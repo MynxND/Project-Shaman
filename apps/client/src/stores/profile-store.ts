@@ -9,6 +9,8 @@ import { useHudStore } from './hud-store';
 interface ProfileState {
   profile: PlayerProfile | null;
   busy: boolean;
+  /** The server allows this session to use the admin tools (AdminPanel). */
+  admin: boolean;
   send: ((type: string, message: unknown) => void) | null;
   setSender: (send: ((type: string, message: unknown) => void) | null) => void;
   receive: (data: { profile: PlayerProfile; result?: { ok: boolean; note?: string; error?: string } }) => void;
@@ -24,8 +26,8 @@ interface ProfileState {
 }
 
 export const useProfileStore = create<ProfileState>((set, get) => ({
-  profile: null, busy: false, send: null,
-  setSender: (send) => set(send ? { send } : { send: null, profile: null, busy: false }),
+  profile: null, busy: false, send: null, admin: false,
+  setSender: (send) => set(send ? { send } : { send: null, profile: null, busy: false, admin: false }),
   receive: ({ profile, result }) => {
     set({ profile, busy: false });
     if (!result) return;

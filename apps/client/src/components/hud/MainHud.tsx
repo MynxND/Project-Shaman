@@ -16,6 +16,7 @@ import { BuffBar } from './BuffBar';
 import { JobGauge } from './JobGauge';
 import { AccountBadge } from '@/components/account/AccountGate';
 import { StatusPanel } from './StatusPanel';
+import { AdminPanel } from './AdminPanel';
 import { TargetFrame } from './TargetFrame';
 import { TravelOverlay } from './TravelOverlay';
 import { Toasts } from './Toasts';
@@ -87,6 +88,7 @@ export function MainHud() {
       <BuffBar />
       <JobGauge />
       <AccountBadge />
+      <AdminPanel />
       <ChatPanel />
       {touch && <Joystick />}
       <Toasts />

@@ -7,7 +7,7 @@ import type { Position } from './world.js';
 import { gainExp, maxHpFor, maxSpFor } from './combat.js';
 import { BRANCH_WEAPONS, EQUIPMENT_VISUALS } from './equipment.js';
 import { advanceJob, learnError, migrateJobProfile, PROFILE_VERSION, type JobError, type JobProfile } from './job-progression.js';
-import { NATION_BRANCHES, SKILL_TREE, type JobTier } from './skill-registry.js';
+import { findBranch, NATION_BRANCHES, SKILL_TREE, type JobTier } from './skill-registry.js';
 
 /** `count` tracks kills toward the current 'kill' step. */
 export interface QuestProgress { step: number; done: boolean; count?: number }
@@ -271,6 +271,23 @@ export function advanceJobWithWeapon(profile: PlayerProfile, branch?: string): {
   const g = grantBranchWeapon(a.profile);
   const name = g.given ? ITEMS[g.given]?.name.th : null;
   return { ok: true, profile: g.profile, note: `เปลี่ยนอาชีพสำเร็จ · ขั้น ${g.profile.jobTier}${g.profile.branch ? ` · ${g.profile.branch}` : ''} · Job Lv 1${name ? ` · ได้รับ${name}` : ''}` };
+}
+
+/** Admin/test tool: put the character straight into a job (branch null = Medium, tier 1). Skills the new job cannot use
+ *  are refunded as skill points; the branch weapon is given and worn so the class outfit shows immediately. */
+export function adminSetJob(profile: PlayerProfile, branch: string | null, tier: JobTier): { ok: true; profile: PlayerProfile; note: string } | { ok: false; error: 'bad-branch' } {
+  const target = branch === null ? null : findBranch(branch);
+  if ((branch === null) !== (tier === 1) || (branch !== null && !target) || ![1, 2, 3].includes(tier)) return { ok: false, error: 'bad-branch' };
+  const p = clone(profile);
+  p.nation = target?.nation ?? null; p.branch = target?.branch ?? null; p.jobTier = tier; p.jobLevel = 1; p.jobExp = 0;
+  for (const [id, level] of Object.entries(p.skills)) {
+    const k = SKILL_TREE[id];
+    if (k && (k.tier > tier || (k.tier > 1 && k.branch !== p.branch))) { p.skillPoints += level; delete p.skills[id]; }
+  }
+  const weapon = p.branch ? BRANCH_WEAPONS[p.branch] : undefined;
+  const g = grantBranchWeapon(p);
+  if (weapon && ITEMS[weapon] && g.profile.stacks.some((s) => s.itemId === weapon)) g.profile.equipment = { ...g.profile.equipment, weapon };
+  return { ok: true, profile: g.profile, note: `แอดมิน: เปลี่ยนเป็น${p.branch ? ` ${target!.info.thai || target!.info.name}` : ' Medium'} ขั้น ${tier}` };
 }
 
 // ---- Quests ----

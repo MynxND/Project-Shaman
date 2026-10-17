@@ -2,7 +2,7 @@ import { Room, type Client } from '@colyseus/core';
 import { CitizenState, GameState, PlayerState } from '@shaman/schema';
 import { createCitizenMotion, stepCitizen, UMBRAL_CAPITAL, UMBRAL_CITIZENS, type CitizenMotion } from '@shaman/shared';
 import { terrainHeight, acceptStopAt, getMap, isBlocked, isMovementInput, MAPS, migrateProfile, newProfile, parseBodyType, pointInRect, questEvent, stepMovement, type BodyType, type MapDefinition, type MovementInput, type PlayerProfile } from '@shaman/shared';
-import { advanceJobWithWeapon, castRule, castsWhileMoving, maxHpFor, maxSpFor, combatSpec, companionFor, FACINGS, JOB_PROGRESSION, advancementQuest, learnSkill, resetSkills, parseSkillCastRequest, skillAimPoint, skillCastError, type Facing, type SkillCastEvent } from '@shaman/shared';
+import { adminSetJob, advanceJobWithWeapon, castRule, castsWhileMoving, maxHpFor, maxSpFor, combatSpec, companionFor, FACINGS, JOB_PROGRESSION, advancementQuest, learnSkill, resetSkills, parseSkillCastRequest, skillAimPoint, skillCastError, type Facing, type SkillCastEvent } from '@shaman/shared';
 import { parseNpcRequest, runNpcRequest } from './npc-services.js';
 import { CombatSystem } from './combat-system.js';
 import { consumeTicket, issueTicket, peekTicket } from './travel.js';
@@ -12,6 +12,8 @@ const TICK_MS = 1000 / 30;
 const INPUT_TTL_MS = 300;
 /** Dev-only shortcuts (job level / trial) for testing job advancement; never available in production builds. */
 const DEV_COMMANDS = process.env.NODE_ENV !== 'production';
+/** Accounts allowed to use the admin tools on a production server (SHAMAN_ADMINS=name1,name2). Development: everyone. */
+const ADMINS = new Set((process.env.SHAMAN_ADMINS ?? '').split(',').map((n) => n.trim().toLowerCase()).filter(Boolean));
 
 /** Every live room, so the process can save all signed-in characters before it exits. */
 const ROOMS = new Set<GameRoom>();
@@ -280,6 +282,32 @@ export class GameRoom extends Room<{ state: GameState }> {
       this.profiles.set(client.sessionId, out.profile);
       this.sendProfile(client, out.profile, { ok: true, note: 'โหมดทดสอบ: เปลี่ยนอาชีพแล้ว' });
     });
+    // Admin tools (HUD admin panel): instant job change, Base Level, skill points and full heal. Allowed in development
+    // and for SHAMAN_ADMINS accounts in production; the server checks every request.
+    this.onMessage('admin:get', (client) => client.send('admin', { enabled: this.isAdmin(client.sessionId) }));
+    this.onMessage('admin:job', (client, message: unknown) => {
+      const profile = this.profiles.get(client.sessionId);
+      const { branch, tier } = (message ?? {}) as { branch?: unknown; tier?: unknown };
+      if (!profile || !this.isAdmin(client.sessionId) || this.travelling.has(client.sessionId) || !(branch === null || typeof branch === 'string') || (tier !== 1 && tier !== 2 && tier !== 3)) return;
+      const out = adminSetJob(profile, branch, tier);
+      if (!out.ok) { this.sendProfile(client, profile, { ok: false, error: out.error }); return; }
+      this.profiles.set(client.sessionId, out.profile);
+      this.sendProfile(client, out.profile, { ok: true, note: out.note });
+      this.save(client.sessionId);
+    });
+    this.onMessage('admin:stats', (client, message: unknown) => {
+      const profile = this.profiles.get(client.sessionId);
+      const { level, skillPoints, heal } = (message ?? {}) as { level?: unknown; skillPoints?: unknown; heal?: unknown };
+      if (!profile || !this.isAdmin(client.sessionId)) return;
+      const p = structuredClone(profile);
+      if (Number.isInteger(level) && (level as number) >= 1 && (level as number) <= 99) { p.level = level as number; p.hpMax = maxHpFor(p.level); p.spMax = maxSpFor(p.level); }
+      if (Number.isInteger(skillPoints) && (skillPoints as number) > 0 && (skillPoints as number) <= 200) p.skillPoints += skillPoints as number;
+      if (heal === true || level !== undefined) { p.hp = p.hpMax; p.sp = p.spMax; }
+      this.profiles.set(client.sessionId, p);
+      this.sendProfile(client, p, { ok: true, note: `แอดมิน: Base Lv ${p.level} · แต้มสกิล ${p.skillPoints}` });
+      this.sendVitals(client.sessionId);
+      this.save(client.sessionId);
+    });
     // Basic attack on a monster: repeats on the server until the player moves, the target dies or leaves reach.
     this.onMessage('attack', (client, message: unknown) => {
       const player = this.state.players.get(client.sessionId);
@@ -425,6 +453,7 @@ export class GameRoom extends Room<{ state: GameState }> {
     return account;
   }
 
+  private isAdmin(id: string) { return DEV_COMMANDS || ADMINS.has(this.accounts.get(id)?.username ?? ''); }
   /** Saves a signed-in session's character (profile, look, map and position). Guests are skipped. */
   save(id: string, at?: { mapId: string; x: number; y: number }) {
     const record = this.savedCharacter(id, at);

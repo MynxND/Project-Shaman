@@ -4,8 +4,8 @@
 export interface ServerConfig {
   production: boolean;
   port: number;
-  /** Interface to listen on; '0.0.0.0' accepts LAN/proxy traffic, '127.0.0.1' only a proxy on the same machine. */
-  host: string;
+  /** Interface to listen on; unset = every IPv4/IPv6 interface (localhost works either way), '127.0.0.1' = only a proxy on the same machine. */
+  host: string | undefined;
   /** Browser origins allowed to open WebSockets and call /auth (exact match, e.g. https://play.example.com). Empty = any (development only). */
   allowedOrigins: readonly string[];
   /** Trust the right-most X-Forwarded-For entry (set by our own reverse proxy) as the client address. */
@@ -31,7 +31,7 @@ export function loadConfig(): ServerConfig {
   if (production && !process.env.SHAMAN_DB_PATH) throw new Error('Production requires SHAMAN_DB_PATH (a persistent location outside the repository)');
   return {
     production, port,
-    host: process.env.GAME_SERVER_HOST || '0.0.0.0',
+    host: process.env.GAME_SERVER_HOST || undefined,
     allowedOrigins,
     trustProxy: process.env.SHAMAN_TRUST_PROXY === '1',
     authAttemptsPerMinute: int('SHAMAN_AUTH_ATTEMPTS_PER_MINUTE', 10, 1, 100000),

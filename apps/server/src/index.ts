@@ -66,4 +66,4 @@ for (const signal of ['SIGINT', 'SIGTERM'] as const) {
 // Open the database now, so a wrong or unwritable SHAMAN_DB_PATH stops start-up instead of the first login.
 store();
 await server.listen(config.port, config.host);
-console.log(`Shaman server listening on ${config.host}:${config.port} (${config.production ? 'production' : 'development'}${config.allowedOrigins.length ? `, origins ${config.allowedOrigins.join(' ')}` : ', any origin'})`);
+console.log(`Shaman server listening on ${config.host ?? 'all interfaces'}:${config.port} (${config.production ? 'production' : 'development'}${config.allowedOrigins.length ? `, origins ${config.allowedOrigins.join(' ')}` : ', any origin'})`);
